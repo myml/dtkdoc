@@ -154,11 +154,11 @@ $(document).ready(function(){initNavTree('classDtk_1_1Widget_1_1DSlider.html',''
 </div><!--header-->
 <div class="contents">
 
-<p>DSlider一个聚合 QSlider 的滑块，DSlider提供了在滑块两侧设置图标函数，且设置的滑块更加美观  
+<p>DSlider一个聚合 <a class="elRef" href="http://doc.qt.io/qt-5/qslider.html">QSlider</a> 的滑块，DSlider提供了在滑块两侧设置图标函数，且设置的滑块更加美观  
  <a href="classDtk_1_1Widget_1_1DSlider.html#details">更多...</a></p>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
-<div class="textblock"><p>DSlider一个聚合 QSlider 的滑块，DSlider提供了在滑块两侧设置图标函数，且设置的滑块更加美观 </p>
-<p>DSlider一个聚合 QSlider 的滑块</p>
+<div class="textblock"><p>DSlider一个聚合 <a class="elRef" href="http://doc.qt.io/qt-5/qslider.html">QSlider</a> 的滑块，DSlider提供了在滑块两侧设置图标函数，且设置的滑块更加美观 </p>
+<p>DSlider一个聚合 <a class="elRef" href="http://doc.qt.io/qt-5/qslider.html">QSlider</a> 的滑块</p>
 <h2><a class="anchor" id="autotoc_md55"></a>
 DSlider 简单示例</h2>
 <p>通过使用 <a class="el" href="classDtk_1_1Widget_1_1DSlider.html" title="DSlider一个聚合 QSlider 的滑块，DSlider提供了在滑块两侧设置图标函数，且设置的滑块更加美观">DSlider</a> 实现一个简单需求，有一个按钮，需要通过一个DSlider滑块改变按钮的位置，滑块左滑按钮左移，滑块右滑按钮右移</p>
@@ -210,25 +210,25 @@ main.cpp</h3>
 <div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> *argv[]){</div>
 <div class="line">    <a class="code" href="classDApplication.html">DApplication</a> app(argc, argv);</div>
 <div class="line">    <a class="code" href="classDMainWindow.html">DMainWindow</a> win;</div>
-<div class="line">    win.resize(800,500);</div>
+<div class="line">    win.<a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html#resize-1">resize</a>(800,500);</div>
 <div class="line"> </div>
-<div class="line">    <a class="code" href="classDSlider.html">DSlider</a> *dslider = <span class="keyword">new</span> <a class="code" href="classDSlider.html">DSlider</a>(Qt::Horizontal, &amp;win); <span class="comment">//新建一个水平方向的DSlider，父亲设置为主窗口</span></div>
-<div class="line">    dslider-&gt;move(0,50);</div>
-<div class="line">    dslider-&gt;<a class="code" href="classDSlider.html#a6b643c186ffd8d01bc021de01007678f">setLeftIcon</a>(win.style()-&gt;standardIcon(DStyle::SP_ArrowLeft)); <span class="comment">//给滑块设置一个左图标，这里使用一个自带的左箭头</span></div>
-<div class="line">    dslider-&gt;<a class="code" href="classDSlider.html#af29fc03cebda04d6a645f16292d3bcbf">setRightIcon</a>(win.style()-&gt;standardIcon(DStyle::SP_ArrowRight)); <span class="comment">//给滑块设置一个右图标，这里使用自带的右箭头</span></div>
-<div class="line">    dslider-&gt;setFixedWidth(400); <span class="comment">//设置滑块的宽度</span></div>
+<div class="line">    <a class="code" href="classDSlider.html">DSlider</a> *dslider = <span class="keyword">new</span> <a class="code" href="classDSlider.html">DSlider</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qt.html#Orientation-enum">Qt::Horizontal</a>, &amp;win); <span class="comment">//新建一个水平方向的DSlider，父亲设置为主窗口</span></div>
+<div class="line">    dslider-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html#move-1">move</a>(0,50);</div>
+<div class="line">    dslider-&gt;<a class="code" href="classDSlider.html#a6b643c186ffd8d01bc021de01007678f">setLeftIcon</a>(win.<a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html#style">style</a>()-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qstyle.html#standardIcon">standardIcon</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qstyle.html#StandardPixmap-enum">DStyle::SP_ArrowLeft</a>)); <span class="comment">//给滑块设置一个左图标，这里使用一个自带的左箭头</span></div>
+<div class="line">    dslider-&gt;<a class="code" href="classDSlider.html#af29fc03cebda04d6a645f16292d3bcbf">setRightIcon</a>(win.<a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html#style">style</a>()-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qstyle.html#standardIcon">standardIcon</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qstyle.html#StandardPixmap-enum">DStyle::SP_ArrowRight</a>)); <span class="comment">//给滑块设置一个右图标，这里使用自带的右箭头</span></div>
+<div class="line">    dslider-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html#setFixedWidth">setFixedWidth</a>(400); <span class="comment">//设置滑块的宽度</span></div>
 <div class="line"> </div>
-<div class="line">    DPushButton *btn = <span class="keyword">new</span> DPushButton(<span class="stringliteral">&quot;按钮&quot;</span>, &amp;win); <span class="comment">//设置一个按钮</span></div>
-<div class="line">    btn-&gt;move(0,100); <span class="comment">//移动按钮的位置</span></div>
+<div class="line">    <a class="codeRef" href="http://doc.qt.io/qt-5/qpushbutton.html">DPushButton</a> *btn = <span class="keyword">new</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qpushbutton.html">DPushButton</a>(<span class="stringliteral">&quot;按钮&quot;</span>, &amp;win); <span class="comment">//设置一个按钮</span></div>
+<div class="line">    btn-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html#move-1">move</a>(0,100); <span class="comment">//移动按钮的位置</span></div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">//建立一个滑块与按钮的连接，滑块滑动发出信号，按钮接收，lambda函数中设置按钮的移动，并且打印出滑块的当前数值</span></div>
-<div class="line">    QObject::connect(dslider, &amp;<a class="code" href="classDSlider.html#a59dfaf1bf476a1288ac324c4a2c3a315">DSlider::valueChanged</a>, btn, [dslider, btn](){</div>
+<div class="line">    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#connect">QObject::connect</a>(dslider, &amp;<a class="code" href="classDSlider.html#a59dfaf1bf476a1288ac324c4a2c3a315">DSlider::valueChanged</a>, btn, [dslider, btn](){</div>
 <div class="line">        <span class="keywordtype">int</span> sliderValue = dslider-&gt;<a class="code" href="classDSlider.html#adcd55c60d7155ac1d955fffcb4789aa6">value</a>();</div>
 <div class="line">        qDebug() &lt;&lt; sliderValue;</div>
-<div class="line">        btn-&gt;move(sliderValue * 5, 100);</div>
+<div class="line">        btn-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html#move-1">move</a>(sliderValue * 5, 100);</div>
 <div class="line">    });</div>
 <div class="line"> </div>
-<div class="line">    win.show();</div>
+<div class="line">    win.<a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html#show">show</a>();</div>
 <div class="line">    <span class="keywordflow">return</span> app.exec();</div>
 <div class="line">}</div>
 <div class="ttc" id="aclassDApplication_html"><div class="ttname"><a href="classDApplication.html">DApplication</a></div><div class="ttdef"><b>Definition:</b> dapplication.h:31</div></div>
@@ -238,6 +238,16 @@ main.cpp</h3>
 <div class="ttc" id="aclassDSlider_html_a6b643c186ffd8d01bc021de01007678f"><div class="ttname"><a href="classDSlider.html#a6b643c186ffd8d01bc021de01007678f">DSlider::setLeftIcon</a></div><div class="ttdeci">void setLeftIcon(const QIcon &amp;left)</div><div class="ttdoc">设置滑块左侧图标.</div><div class="ttdef"><b>Definition:</b> dslider.cpp:170</div></div>
 <div class="ttc" id="aclassDSlider_html_adcd55c60d7155ac1d955fffcb4789aa6"><div class="ttname"><a href="classDSlider.html#adcd55c60d7155ac1d955fffcb4789aa6">DSlider::value</a></div><div class="ttdeci">int value() const</div><div class="ttdoc">DSlider::value</div><div class="ttdef"><b>Definition:</b> dslider.cpp:283</div></div>
 <div class="ttc" id="aclassDSlider_html_af29fc03cebda04d6a645f16292d3bcbf"><div class="ttname"><a href="classDSlider.html#af29fc03cebda04d6a645f16292d3bcbf">DSlider::setRightIcon</a></div><div class="ttdeci">void setRightIcon(const QIcon &amp;right)</div><div class="ttdoc">设置滑块右图标.</div><div class="ttdef"><b>Definition:</b> dslider.cpp:199</div></div>
+<div class="ttc" id="aqobject_html_connect"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#connect">QObject::connect</a></div><div class="ttdeci">QMetaObject::Connection connect(const QObject *sender, const char *signal, const QObject *receiver, const char *method, Qt::ConnectionType type)</div></div>
+<div class="ttc" id="aqpushbutton_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qpushbutton.html">QPushButton</a></div></div>
+<div class="ttc" id="aqstyle_html_StandardPixmap-enum"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstyle.html#StandardPixmap-enum">QStyle::SP_ArrowLeft</a></div><div class="ttdeci">SP_ArrowLeft</div></div>
+<div class="ttc" id="aqstyle_html_standardIcon"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstyle.html#standardIcon">QStyle::standardIcon</a></div><div class="ttdeci">virtual QIcon standardIcon(QStyle::StandardPixmap standardIcon, const QStyleOption *option, const QWidget *widget) const const=0</div></div>
+<div class="ttc" id="aqt_html_Orientation-enum"><div class="ttname"><a href="http://doc.qt.io/qt-5/qt.html#Orientation-enum">Qt::Horizontal</a></div><div class="ttdeci">Horizontal</div></div>
+<div class="ttc" id="aqwidget_html_move-1"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html#move-1">QWidget::move</a></div><div class="ttdeci">void move(int x, int y)</div></div>
+<div class="ttc" id="aqwidget_html_resize-1"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html#resize-1">QWidget::resize</a></div><div class="ttdeci">void resize(int w, int h)</div></div>
+<div class="ttc" id="aqwidget_html_setFixedWidth"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html#setFixedWidth">QWidget::setFixedWidth</a></div><div class="ttdeci">void setFixedWidth(int w)</div></div>
+<div class="ttc" id="aqwidget_html_show"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html#show">QWidget::show</a></div><div class="ttdeci">void show()</div></div>
+<div class="ttc" id="aqwidget_html_style"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html#style">QWidget::style</a></div><div class="ttdeci">QStyle * style() const const</div></div>
 </div><!-- fragment --><p> 程序运行效果如下：</p>
 <p><img src="/docs/images/dslider_example.png" alt="dslider_example" class="inline"/></p>
 <p>DSlider提供了在滑块两侧设置图标函数, DSlider提供了滑块的刻度及刻度标识 </p>
@@ -251,7 +261,7 @@ main.cpp</h3>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classDtk_1_1Widget_1_1DSlider.html">DSlider</a></li>
-    <li class="footer">文档生成时间:2023-01-03-09:26  +00</li>
+    <li class="footer">文档生成时间:2023-01-03-09:52  +00</li>
     <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
     <li class="footer">制作者:deepin doc doc go SIG</li>
     <li class="footer">文档使用CC-BY-4.0共享 </a>

@@ -1,5 +1,9 @@
 var NAVTREEINDEX7 =
 {
+"classDFontManager.html#a43b8fb2d41a7d1f1dc2daf792c68e9cc":[10,0,186,1],
+"classDFontManager.html#a5c99b84c6e2977ae4368bfcf1864394c":[10,0,186,13],
+"classDFontManager.html#a634d45ddaa2b5f215210ec6e7327342e":[10,0,186,21],
+"classDFontManager.html#a6361bf851964ee8f3d1530bf06d2d7d1":[10,0,186,32],
 "classDFontManager.html#a664ee5d6e69246fea0642f39b0a2fffb":[10,0,186,28],
 "classDFontManager.html#a67742de80041b41ecb9993d264068ff3":[10,0,186,14],
 "classDFontManager.html#a6fb5e0a1de5877644eae1fca8ad16145":[10,0,186,7],
@@ -245,9 +249,5 @@ var NAVTREEINDEX7 =
 "classDGuiApplicationHelper.html#ae92557847cc314f12a60f52f569229b2":[10,0,208,14],
 "classDGuiApplicationHelper.html#ae9c067f93061fcdf3ee263045223e538":[10,0,208,49],
 "classDGuiApplicationHelper.html#af2609d4dc9b44f180e93c23f2bc1155c":[10,0,208,1],
-"classDGuiApplicationHelper.html#af2609d4dc9b44f180e93c23f2bc1155ca0477d73aad74e1f0f28ef39745a85fec":[10,0,208,1,5],
-"classDGuiApplicationHelper.html#af2609d4dc9b44f180e93c23f2bc1155ca4b2fd01fb675d8834a977785369b1488":[10,0,208,1,1],
-"classDGuiApplicationHelper.html#af2609d4dc9b44f180e93c23f2bc1155ca8ecc4fb76e90051745834fd066dbad4d":[10,0,208,1,8],
-"classDGuiApplicationHelper.html#af2609d4dc9b44f180e93c23f2bc1155ca9b429f61321b3c1623f2f3d3a24963f7":[10,0,208,1,2],
-"classDGuiApplicationHelper.html#af2609d4dc9b44f180e93c23f2bc1155caa2f8de4bba85fadf6df1e46fa09ae6a9":[10,0,208,1,6]
+"classDGuiApplicationHelper.html#af2609d4dc9b44f180e93c23f2bc1155ca0477d73aad74e1f0f28ef39745a85fec":[10,0,208,1,5]
 };

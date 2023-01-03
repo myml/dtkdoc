@@ -114,9 +114,6 @@ var hierarchy =
     [ "DForeignWindow", "classDtk_1_1Gui_1_1DForeignWindow.html", null ],
     [ "DGraphicsClipEffect", "classDtk_1_1Widget_1_1DGraphicsClipEffect.html", null ],
     [ "DGraphicsGlowEffect", "classDtk_1_1Widget_1_1DGraphicsGlowEffect.html", null ],
-    [ "DGraphicsView", null, [
-      [ "DImageViewer", "classDImageViewer.html", null ]
-    ] ],
     [ "DGuiApplicationHelper", "classDtk_1_1Gui_1_1DGuiApplicationHelper.html", null ],
     [ "DHBoxWidget", "classDtk_1_1Widget_1_1DHBoxWidget.html", null ],
     [ "DHeaderLine", "classDtk_1_1Widget_1_1DHeaderLine.html", [
@@ -451,10 +448,6 @@ var hierarchy =
       [ "PrintPreviewSettingsPlugin", "classPrintPreviewSettingsPlugin.html", null ]
     ] ],
     [ "DPrintPreviewWidget", "classDtk_1_1Widget_1_1DPrintPreviewWidget.html", null ],
-    [ "DPushButton", null, [
-      [ "ColorButton", "classColorButton.html", null ],
-      [ "DWarningButton", "classDWarningButton.html", null ]
-    ] ],
     [ "Dtk::Core::DRecentData", "structDtk_1_1Core_1_1DRecentData.html", null ],
     [ "Dtk::Core::DRecentManager", "classDtk_1_1Core_1_1DRecentManager.html", null ],
     [ "DRegionMonitor", "classDtk_1_1Gui_1_1DRegionMonitor.html", null ],
@@ -483,9 +476,6 @@ var hierarchy =
     [ "DStackWidget", "classDtk_1_1Widget_1_1DStackWidget.html", null ],
     [ "DStandardItem", "classDtk_1_1Widget_1_1DStandardItem.html", null ],
     [ "Dtk::Core::DStandardPaths", "classDtk_1_1Core_1_1DStandardPaths.html", null ],
-    [ "DStatusBar", null, [
-      [ "ExampStatusBar", "classExampStatusBar.html", null ]
-    ] ],
     [ "DStyle", "classDtk_1_1Widget_1_1DStyle.html", null ],
     [ "DStyledIconEngine", "classDtk_1_1Widget_1_1DStyledIconEngine.html", null ],
     [ "DStyleHelper", "classDStyleHelper.html", null ],
@@ -531,9 +521,6 @@ var hierarchy =
     [ "Dtk::Core::DVtableHook", "classDtk_1_1Core_1_1DVtableHook.html", null ],
     [ "DWarningButton", "classDtk_1_1Widget_1_1DWarningButton.html", null ],
     [ "DWaterProgress", "classDtk_1_1Widget_1_1DWaterProgress.html", null ],
-    [ "DWidget", null, [
-      [ "DPrintPickColorWidget", "classDPrintPickColorWidget.html", null ]
-    ] ],
     [ "DWindowCloseButton", "classDtk_1_1Widget_1_1DWindowCloseButton.html", null ],
     [ "DWindowGroupLeader", "classDtk_1_1Gui_1_1DWindowGroupLeader.html", null ],
     [ "DWindowGroupLeader", "classDWindowGroupLeader.html", null ],
@@ -572,12 +559,6 @@ var hierarchy =
     [ "Pop", "structPop.html", null ],
     [ "PreviewSettingsPluginHelper", "classPreviewSettingsPluginHelper.html", null ],
     [ "DThumbnailProviderPrivate::ProduceInfo", "structDThumbnailProviderPrivate_1_1ProduceInfo.html", null ],
-    [ "QAbstractButton", null, [
-      [ "DButtonBoxButton", "classDButtonBoxButton.html", null ],
-      [ "DCommandLinkButton", "classDCommandLinkButton.html", null ],
-      [ "DIconButton", "classDIconButton.html", null ],
-      [ "DSwitchButton", "classDSwitchButton.html", null ]
-    ] ],
     [ "QAbstractFileEngine", null, [
       [ "Dtk::Core::DDciFileEngine", "classDtk_1_1Core_1_1DDciFileEngine.html", null ]
     ] ],
@@ -588,29 +569,10 @@ var hierarchy =
     [ "QAbstractFileEngineIterator", null, [
       [ "Dtk::Core::DDciFileEngineIterator", "classDtk_1_1Core_1_1DDciFileEngineIterator.html", null ]
     ] ],
-    [ "QAbstractListModel", null, [
-      [ "DVariantListModel", "classDVariantListModel.html", null ]
-    ] ],
-    [ "QAbstractNativeEventFilter", null, [
+    [ "QAbstractNativeEventFilter", "http://doc.qt.io/qt-5/qabstractnativeeventfilter.html", [
       [ "StartupNotificationMonitor", "classStartupNotificationMonitor.html", [
         [ "StartupNotificationMonitorSub", "classStartupNotificationMonitorSub.html", null ]
       ] ]
-    ] ],
-    [ "QAbstractTableModel", null, [
-      [ "CalendarModel", "classCalendarModel.html", null ]
-    ] ],
-    [ "QAction", null, [
-      [ "DViewItemAction", "classDViewItemAction.html", null ]
-    ] ],
-    [ "QApplication", null, [
-      [ "DApplication", "classDApplication.html", null ]
-    ] ],
-    [ "QComboBox", null, [
-      [ "ComboBox", "classComboBox.html", null ],
-      [ "DComboBox", "classDComboBox.html", null ]
-    ] ],
-    [ "QCommonStyle", null, [
-      [ "DStyle", "classDStyle.html", null ]
     ] ],
     [ "QDBusAbstractInterface", null, [
       [ "ComDeepinApiXEventMonitorInterface", "classComDeepinApiXEventMonitorInterface.html", null ],
@@ -628,73 +590,33 @@ var hierarchy =
     [ "QDesignerCustomWidgetCollectionInterface", null, [
       [ "DCustomWidgets", "classDCustomWidgets.html", null ]
     ] ],
-    [ "QDialog", null, [
-      [ "DAbstractDialog", "classDAbstractDialog.html", null ]
-    ] ],
-    [ "QDir", null, [
+    [ "QDir", "http://doc.qt.io/qt-5/qdir.html", [
       [ "Dtk::Core::DCapDir", "classDtk_1_1Core_1_1DCapDir.html", null ]
     ] ],
-    [ "QDoubleSpinBox", null, [
-      [ "DDoubleSpinBox", "classDDoubleSpinBox.html", null ]
-    ] ],
-    [ "QDrag", null, [
-      [ "DFileDrag", "classDFileDrag.html", null ]
-    ] ],
-    [ "QEventLoop", null, [
-      [ "Dtk::Core::DTimedLoop", "classDtk_1_1Core_1_1DTimedLoop.html", null ]
-    ] ],
-    [ "QFile", null, [
-      [ "Dtk::Core::DCapFile", "classDtk_1_1Core_1_1DCapFile.html", null ]
-    ] ],
-    [ "QFileDialog", null, [
-      [ "DFileDialog", "classDFileDialog.html", null ]
-    ] ],
-    [ "QFileIconProvider", null, [
+    [ "QFileIconProvider", "http://doc.qt.io/qt-5/qfileiconprovider.html", [
       [ "DFileIconProvider", "classDFileIconProvider.html", null ]
-    ] ],
-    [ "QFrame", null, [
-      [ "ButtonGroup", "classButtonGroup.html", null ],
-      [ "ContentLoader", "classContentLoader.html", null ],
-      [ "DBoxWidget", "classDBoxWidget.html", null ],
-      [ "DFrame", "classDFrame.html", null ],
-      [ "DHorizontalLine", "classDHorizontalLine.html", null ],
-      [ "DMPRISControl", "classDMPRISControl.html", null ],
-      [ "DTitlebar", "classDTitlebar.html", null ],
-      [ "DVerticalLine", "classDVerticalLine.html", null ],
-      [ "DropArea", "classDropArea.html", null ],
-      [ "Navigation", "classNavigation.html", null ]
     ] ],
     [ "QFSFileEngine", null, [
       [ "Dtk::Core::DCapFSFileEngine", "classDtk_1_1Core_1_1DCapFSFileEngine.html", null ]
     ] ],
-    [ "QGraphicsEffect", null, [
-      [ "DGraphicsClipEffect", "classDGraphicsClipEffect.html", null ],
-      [ "DGraphicsGlowEffect", "classDGraphicsGlowEffect.html", null ],
-      [ "DTickEffect", "classDTickEffect.html", null ]
-    ] ],
-    [ "QGraphicsItem", null, [
+    [ "QGraphicsItem", "http://doc.qt.io/qt-5/qgraphicsitem.html", [
       [ "ContentItem", "classContentItem.html", null ],
       [ "DGraphicsCropItem", "classDGraphicsCropItem.html", null ],
       [ "DPrintPreviewWidgetPrivate::NumberUpData::NumberItem", "classDPrintPreviewWidgetPrivate_1_1NumberUpData_1_1NumberItem.html", null ],
       [ "PageItem", "classPageItem.html", null ],
+      [ "QGraphicsObject", "http://doc.qt.io/qt-5/qgraphicsobject.html", [
+        [ "DGraphicsSVGItem", "classDGraphicsSVGItem.html", null ]
+      ] ],
+      [ "QGraphicsPixmapItem", "http://doc.qt.io/qt-5/qgraphicspixmapitem.html", [
+        [ "DGraphicsMovieItem", "classDGraphicsMovieItem.html", null ],
+        [ "DGraphicsPixmapItem", "classDGraphicsPixmapItem.html", null ]
+      ] ],
       [ "WaterMark", "classWaterMark.html", null ]
     ] ],
-    [ "QGraphicsObject", null, [
-      [ "DGraphicsSVGItem", "classDGraphicsSVGItem.html", null ]
-    ] ],
-    [ "QGraphicsPixmapItem", null, [
-      [ "DGraphicsMovieItem", "classDGraphicsMovieItem.html", null ],
-      [ "DGraphicsPixmapItem", "classDGraphicsPixmapItem.html", null ]
-    ] ],
-    [ "QGraphicsView", null, [
-      [ "DLoadingIndicator", "classDLoadingIndicator.html", null ],
-      [ "DPictureSequenceView", "classDPictureSequenceView.html", null ],
-      [ "GraphicsView", "classGraphicsView.html", null ]
-    ] ],
-    [ "QIcon", null, [
+    [ "QIcon", "http://doc.qt.io/qt-5/qicon.html", [
       [ "DIcon", "classDIcon.html", null ]
     ] ],
-    [ "QIconEngine", null, [
+    [ "QIconEngine", "http://doc.qt.io/qt-5/qiconengine.html", [
       [ "DBuiltinIconEngine", "classDBuiltinIconEngine.html", null ],
       [ "DStyledIconEngine", "classDStyledIconEngine.html", null ]
     ] ],
@@ -703,39 +625,13 @@ var hierarchy =
         [ "DirImageEntry", "classDirImageEntry.html", null ]
       ] ]
     ] ],
-    [ "QIODevice", null, [
-      [ "Dtk::Core::LogDevice", "classDtk_1_1Core_1_1LogDevice.html", null ]
+    [ "QLayoutItem", "http://doc.qt.io/qt-5/qlayoutitem.html", [
+      [ "QLayout", "http://doc.qt.io/qt-5/qlayout.html", [
+        [ "DFlowLayout", "classDFlowLayout.html", null ]
+      ] ]
     ] ],
-    [ "QLabel", null, [
-      [ "ArrowButtonIcon", "classArrowButtonIcon.html", null ],
-      [ "DArrowButton", "classDArrowButton.html", null ],
-      [ "DBaseLine", "classDBaseLine.html", [
-        [ "DHeaderLine", "classDHeaderLine.html", [
-          [ "ArrowHeaderLine", "classArrowHeaderLine.html", null ],
-          [ "DSwitchHeaderLine", "classDSwitchHeaderLine.html", null ]
-        ] ]
-      ] ],
-      [ "DLabel", "classDLabel.html", null ],
-      [ "DShortcutEditLabel", "classDShortcutEditLabel.html", null ],
-      [ "DraggableLabel", "classDraggableLabel.html", null ],
-      [ "MessageLabel", "classMessageLabel.html", null ],
-      [ "MessageLabel", "classMessageLabel.html", null ],
-      [ "MessageLabel", "classMessageLabel.html", null ]
-    ] ],
-    [ "QLayout", null, [
-      [ "DFlowLayout", "classDFlowLayout.html", null ]
-    ] ],
-    [ "QLineEdit", null, [
-      [ "DIpv4LineEdit", "classDIpv4LineEdit.html", null ],
-      [ "DKeySequenceEdit", "classDKeySequenceEdit.html", null ]
-    ] ],
-    [ "QListView", null, [
-      [ "DListView", "classDListView.html", null ]
-    ] ],
-    [ "QMainWindow", null, [
-      [ "DMainWindow", "classDMainWindow.html", null ]
-    ] ],
-    [ "QObject", null, [
+    [ "QList", "http://doc.qt.io/qt-5/qlist.html", null ],
+    [ "QObject", "http://doc.qt.io/qt-5/qobject.html", [
       [ "CreatorWindowEventFile", "classCreatorWindowEventFile.html", null ],
       [ "CrumbObjectInterface", "classCrumbObjectInterface.html", null ],
       [ "DAbstractStackWidgetTransition", "classDAbstractStackWidgetTransition.html", null ],
@@ -799,200 +695,333 @@ var hierarchy =
       [ "Dtk::Core::DtkCorePrivate::MainWorker", "classDtk_1_1Core_1_1DtkCorePrivate_1_1MainWorker.html", null ],
       [ "MultiSingletonTester", "classMultiSingletonTester.html", null ],
       [ "PrintPreviewSettingsPlugin", "classPrintPreviewSettingsPlugin.html", null ],
+      [ "QAbstractAnimation", "http://doc.qt.io/qt-5/qabstractanimation.html", [
+        [ "QVariantAnimation", "http://doc.qt.io/qt-5/qvariantanimation.html", [
+          [ "DTabBarPrivate::TabBarAnimation", "structDTabBarPrivate_1_1TabBarAnimation.html", null ]
+        ] ]
+      ] ],
+      [ "QAbstractItemDelegate", "http://doc.qt.io/qt-5/qabstractitemdelegate.html", [
+        [ "QStyledItemDelegate", "http://doc.qt.io/qt-5/qstyleditemdelegate.html", [
+          [ "DStyledItemDelegate", "classDStyledItemDelegate.html", null ]
+        ] ]
+      ] ],
+      [ "QAbstractItemModel", "http://doc.qt.io/qt-5/qabstractitemmodel.html", [
+        [ "QAbstractListModel", "http://doc.qt.io/qt-5/qabstractlistmodel.html", [
+          [ "DVariantListModel", "classDVariantListModel.html", null ]
+        ] ],
+        [ "QAbstractTableModel", "http://doc.qt.io/qt-5/qabstracttablemodel.html", [
+          [ "CalendarModel", "classCalendarModel.html", null ]
+        ] ]
+      ] ],
+      [ "QAction", "http://doc.qt.io/qt-5/qaction.html", [
+        [ "DViewItemAction", "classDViewItemAction.html", null ]
+      ] ],
+      [ "QCoreApplication", "http://doc.qt.io/qt-5/qcoreapplication.html", [
+        [ "QGuiApplication", "http://doc.qt.io/qt-5/qguiapplication.html", [
+          [ "QApplication", "http://doc.qt.io/qt-5/qapplication.html", [
+            [ "DApplication", "classDApplication.html", null ]
+          ] ]
+        ] ]
+      ] ],
+      [ "QDrag", "http://doc.qt.io/qt-5/qdrag.html", [
+        [ "DFileDrag", "classDFileDrag.html", null ]
+      ] ],
+      [ "QEventLoop", "http://doc.qt.io/qt-5/qeventloop.html", [
+        [ "Dtk::Core::DTimedLoop", "classDtk_1_1Core_1_1DTimedLoop.html", null ]
+      ] ],
+      [ "QGraphicsEffect", "http://doc.qt.io/qt-5/qgraphicseffect.html", [
+        [ "DGraphicsClipEffect", "classDGraphicsClipEffect.html", null ],
+        [ "DGraphicsGlowEffect", "classDGraphicsGlowEffect.html", null ],
+        [ "DTickEffect", "classDTickEffect.html", null ]
+      ] ],
+      [ "QGraphicsObject", "http://doc.qt.io/qt-5/qgraphicsobject.html", null ],
+      [ "QIODevice", "http://doc.qt.io/qt-5/qiodevice.html", [
+        [ "Dtk::Core::LogDevice", "classDtk_1_1Core_1_1LogDevice.html", null ],
+        [ "QFileDevice", "http://doc.qt.io/qt-5/qfiledevice.html", [
+          [ "QFile", "http://doc.qt.io/qt-5/qfile.html", [
+            [ "Dtk::Core::DCapFile", "classDtk_1_1Core_1_1DCapFile.html", null ]
+          ] ]
+        ] ]
+      ] ],
+      [ "QLayout", "http://doc.qt.io/qt-5/qlayout.html", null ],
+      [ "QStyle", "http://doc.qt.io/qt-5/qstyle.html", [
+        [ "QCommonStyle", "http://doc.qt.io/qt-5/qcommonstyle.html", [
+          [ "DStyle", "classDStyle.html", null ],
+          [ "QProxyStyle", "http://doc.qt.io/qt-5/qproxystyle.html", [
+            [ "PopupMenuStyle", "classPopupMenuStyle.html", null ]
+          ] ]
+        ] ]
+      ] ],
+      [ "QThread", "http://doc.qt.io/qt-5/qthread.html", [
+        [ "DKeyboardMonitor", "classDKeyboardMonitor.html", null ],
+        [ "DThumbnailProvider", "classDThumbnailProvider.html", null ],
+        [ "LoadManualServiceWorker", "classLoadManualServiceWorker.html", null ]
+      ] ],
+      [ "QWidget", "http://doc.qt.io/qt-5/qwidget.html", [
+        [ "Content", "classContent.html", null ],
+        [ "ContentBox", "classContentBox.html", null ],
+        [ "ContentTitle", "classContentTitle.html", null ],
+        [ "DArrowRectangle", "classDArrowRectangle.html", null ],
+        [ "DBackgroundGroup", "classDBackgroundGroup.html", null ],
+        [ "DBlurEffectWidget", "classDBlurEffectWidget.html", null ],
+        [ "DButtonBox", "classDButtonBox.html", null ],
+        [ "DCircleProgress", "classDCircleProgress.html", null ],
+        [ "DClipEffectWidget", "classDClipEffectWidget.html", null ],
+        [ "DCrumbEditPanelFrame", "classDCrumbEditPanelFrame.html", null ],
+        [ "DFloatingWidget", "classDFloatingWidget.html", null ],
+        [ "DKeyWidget", "classDKeyWidget.html", null ],
+        [ "DLineEdit", "classDLineEdit.html", null ],
+        [ "DMovableTabWidget", "classDMovableTabWidget.html", null ],
+        [ "DPageIndicator", "classDPageIndicator.html", null ],
+        [ "DPrintPickColorWidget", "classDPrintPickColorWidget.html", null ],
+        [ "DShadowLine", "classDShadowLine.html", null ],
+        [ "DSimpleListView", "classDSimpleListView.html", null ],
+        [ "DSlider", "classDSlider.html", null ],
+        [ "DSpinner", "classDSpinner.html", null ],
+        [ "DStackWidget", "classDStackWidget.html", null ],
+        [ "DTabBar", "classDTabBar.html", null ],
+        [ "DTabBarPrivate::FullWidget", "classDTabBarPrivate_1_1FullWidget.html", null ],
+        [ "DWaterProgress", "classDWaterProgress.html", null ],
+        [ "ExampleWindowInterface", "classExampleWindowInterface.html", [
+          [ "DArrowRectangleExample", "classDArrowRectangleExample.html", null ],
+          [ "DBackgroundGroupExample", "classDBackgroundGroupExample.html", null ],
+          [ "DButtonBoxExample", "classDButtonBoxExample.html", null ],
+          [ "DCalendarWidgetExample", "classDCalendarWidgetExample.html", null ],
+          [ "DCheckButtonExample", "classDCheckButtonExample.html", null ],
+          [ "DColoredProgressBarExample", "classDColoredProgressBarExample.html", null ],
+          [ "DColumnViewExample", "classDColumnViewExample.html", null ],
+          [ "DComboBoxExample", "classDComboBoxExample.html", null ],
+          [ "DCrumbTextFormatExample", "classDCrumbTextFormatExample.html", null ],
+          [ "DDialogExample", "classDDialogExample.html", null ],
+          [ "DFileChooserEditExample", "classDFileChooserEditExample.html", null ],
+          [ "DFileDialogExample", "classDFileDialogExample.html", null ],
+          [ "DFloatingButtonExample", "classDFloatingButtonExample.html", null ],
+          [ "DFontComboBoxExample", "classDFontComboBoxExample.html", null ],
+          [ "DFrameExample", "classDFrameExample.html", null ],
+          [ "DGroupBoxExample", "classDGroupBoxExample.html", null ],
+          [ "DHeaderViewExample", "classDHeaderViewExample.html", null ],
+          [ "DHorizontalLineExample", "classDHorizontalLineExample.html", null ],
+          [ "DIconButtonExample", "classDIconButtonExample.html", null ],
+          [ "DIpv4LineEditExample", "classDIpv4LineEditExample.html", null ],
+          [ "DKeySequenceEditExample", "classDKeySequenceEditExample.html", null ],
+          [ "DLCDNumberExample", "classDLCDNumberExample.html", null ],
+          [ "DLineEditExample", "classDLineEditExample.html", null ],
+          [ "DListViewExample", "classDListViewExample.html", null ],
+          [ "DMainWindowExample", "classDMainWindowExample.html", null ],
+          [ "DMenuExample", "classDMenuExample.html", null ],
+          [ "DMessageManagerExample", "classDMessageManagerExample.html", null ],
+          [ "DPasswordEditExample", "classDPasswordEditExample.html", null ],
+          [ "DProgressBarExample", "classDProgressBarExample.html", null ],
+          [ "DPushButtonExample", "classDPushButtonExample.html", null ],
+          [ "DRadioButtonExample", "classDRadioButtonExample.html", null ],
+          [ "DRubberBandExample", "classDRubberBandExample.html", null ],
+          [ "DScrollBarExample", "classDScrollBarExample.html", null ],
+          [ "DSearchComboBoxExample", "classDSearchComboBoxExample.html", null ],
+          [ "DSearchEditExample", "classDSearchEditExample.html", null ],
+          [ "DSizegripExample", "classDSizegripExample.html", null ],
+          [ "DSliderExample", "classDSliderExample.html", null ],
+          [ "DSpinBoxExample", "classDSpinBoxExample.html", null ],
+          [ "DSpinnerExample", "classDSpinnerExample.html", null ],
+          [ "DSplitterExample", "classDSplitterExample.html", null ],
+          [ "DStatusBarExample", "classDStatusBarExample.html", null ],
+          [ "DSuggestButtonExample", "classDSuggestButtonExample.html", null ],
+          [ "DSwitchButtonExample", "classDSwitchButtonExample.html", null ],
+          [ "DTabBarExample", "classDTabBarExample.html", null ],
+          [ "DTableWidgetExample", "classDTableWidgetExample.html", null ],
+          [ "DTextEditExample", "classDTextEditExample.html", null ],
+          [ "DTitleBarExample", "classDTitleBarExample.html", null ],
+          [ "DToolButtonExample", "classDToolButtonExample.html", null ],
+          [ "DToolTipExample", "classDToolTipExample.html", null ],
+          [ "DTreeViewExample", "classDTreeViewExample.html", null ],
+          [ "DVerticalLineExample", "classDVerticalLineExample.html", null ],
+          [ "DWarningButtonExample", "classDWarningButtonExample.html", null ],
+          [ "DWaterProgressExample", "classDWaterProgressExample.html", null ],
+          [ "ImageViewerExample", "classImageViewerExample.html", null ]
+        ] ],
+        [ "PageWindowInterface", "classPageWindowInterface.html", [
+          [ "ButtonExampleWindow", "classButtonExampleWindow.html", null ],
+          [ "DialogExampleWindow", "classDialogExampleWindow.html", null ],
+          [ "EditExampleWindow", "classEditExampleWindow.html", null ],
+          [ "ImageViewerExampleWindow", "classImageViewerExampleWindow.html", null ],
+          [ "LCDNumberExampleWindow", "classLCDNumberExampleWindow.html", null ],
+          [ "LayoutExampleWindow", "classLayoutExampleWindow.html", null ],
+          [ "ListViewExampleWindow", "classListViewExampleWindow.html", null ],
+          [ "MenuExampleWindow", "classMenuExampleWindow.html", null ],
+          [ "ProgressBarExampleWindow", "classProgressBarExampleWindow.html", null ],
+          [ "RubberBandExampleWindow", "classRubberBandExampleWindow.html", null ],
+          [ "ScrollBarExampleWindow", "classScrollBarExampleWindow.html", null ],
+          [ "SliderExampleWindow", "classSliderExampleWindow.html", null ],
+          [ "SpinnerExampleWindow", "classSpinnerExampleWindow.html", null ],
+          [ "ToolTipExampleWindow", "classToolTipExampleWindow.html", null ],
+          [ "WidgetExampleWindow", "classWidgetExampleWindow.html", null ],
+          [ "WindowExampleWindow", "classWindowExampleWindow.html", null ]
+        ] ],
+        [ "QAbstractButton", "http://doc.qt.io/qt-5/qabstractbutton.html", [
+          [ "DButtonBoxButton", "classDButtonBoxButton.html", null ],
+          [ "DCommandLinkButton", "classDCommandLinkButton.html", null ],
+          [ "DIconButton", "classDIconButton.html", null ],
+          [ "DSwitchButton", "classDSwitchButton.html", null ],
+          [ "QPushButton", "http://doc.qt.io/qt-5/qpushbutton.html", [
+            [ "ColorButton", "classColorButton.html", null ],
+            [ "DSuggestButton", "classDSuggestButton.html", null ],
+            [ "DWarningButton", "classDWarningButton.html", null ]
+          ] ],
+          [ "QToolButton", "http://doc.qt.io/qt-5/qtoolbutton.html", [
+            [ "DSegmentedHighlight", "classDSegmentedHighlight.html", null ],
+            [ "DToolButton", "classDToolButton.html", null ]
+          ] ]
+        ] ],
+        [ "QAbstractSlider", "http://doc.qt.io/qt-5/qabstractslider.html", [
+          [ "QSlider", "http://doc.qt.io/qt-5/qslider.html", [
+            [ "ColorSlider", "classColorSlider.html", null ],
+            [ "SpecialSlider", "classSpecialSlider.html", null ]
+          ] ]
+        ] ],
+        [ "QAbstractSpinBox", "http://doc.qt.io/qt-5/qabstractspinbox.html", [
+          [ "QDoubleSpinBox", "http://doc.qt.io/qt-5/qdoublespinbox.html", [
+            [ "DDoubleSpinBox", "classDDoubleSpinBox.html", null ]
+          ] ],
+          [ "QSpinBox", "http://doc.qt.io/qt-5/qspinbox.html", [
+            [ "DSpinBox", "classDSpinBox.html", null ]
+          ] ]
+        ] ],
+        [ "QComboBox", "http://doc.qt.io/qt-5/qcombobox.html", [
+          [ "ComboBox", "classComboBox.html", null ],
+          [ "DComboBox", "classDComboBox.html", null ]
+        ] ],
+        [ "QDialog", "http://doc.qt.io/qt-5/qdialog.html", [
+          [ "DAbstractDialog", "classDAbstractDialog.html", null ],
+          [ "QFileDialog", "http://doc.qt.io/qt-5/qfiledialog.html", [
+            [ "DFileDialog", "classDFileDialog.html", null ]
+          ] ]
+        ] ],
+        [ "QFrame", "http://doc.qt.io/qt-5/qframe.html", [
+          [ "ButtonGroup", "classButtonGroup.html", null ],
+          [ "ContentLoader", "classContentLoader.html", null ],
+          [ "DBoxWidget", "classDBoxWidget.html", null ],
+          [ "DFrame", "classDFrame.html", null ],
+          [ "DHorizontalLine", "classDHorizontalLine.html", null ],
+          [ "DMPRISControl", "classDMPRISControl.html", null ],
+          [ "DTitlebar", "classDTitlebar.html", null ],
+          [ "DVerticalLine", "classDVerticalLine.html", null ],
+          [ "DropArea", "classDropArea.html", null ],
+          [ "Navigation", "classNavigation.html", null ],
+          [ "QAbstractScrollArea", "http://doc.qt.io/qt-5/qabstractscrollarea.html", [
+            [ "QAbstractItemView", "http://doc.qt.io/qt-5/qabstractitemview.html", [
+              [ "QListView", "http://doc.qt.io/qt-5/qlistview.html", [
+                [ "DListView", "classDListView.html", null ]
+              ] ]
+            ] ],
+            [ "QGraphicsView", "http://doc.qt.io/qt-5/qgraphicsview.html", [
+              [ "DImageViewer", "classDImageViewer.html", null ],
+              [ "DLoadingIndicator", "classDLoadingIndicator.html", null ],
+              [ "DPictureSequenceView", "classDPictureSequenceView.html", null ],
+              [ "GraphicsView", "classGraphicsView.html", null ]
+            ] ],
+            [ "QTextEdit", "http://doc.qt.io/qt-5/qtextedit.html", [
+              [ "DCrumbEdit", "classDCrumbEdit.html", null ],
+              [ "DTextEdit", "classDTextEdit.html", null ]
+            ] ]
+          ] ],
+          [ "QLabel", "http://doc.qt.io/qt-5/qlabel.html", [
+            [ "ArrowButtonIcon", "classArrowButtonIcon.html", null ],
+            [ "DArrowButton", "classDArrowButton.html", null ],
+            [ "DBaseLine", "classDBaseLine.html", [
+              [ "DHeaderLine", "classDHeaderLine.html", [
+                [ "ArrowHeaderLine", "classArrowHeaderLine.html", null ],
+                [ "DSwitchHeaderLine", "classDSwitchHeaderLine.html", null ]
+              ] ]
+            ] ],
+            [ "DLabel", "classDLabel.html", null ],
+            [ "DShortcutEditLabel", "classDShortcutEditLabel.html", null ],
+            [ "DraggableLabel", "classDraggableLabel.html", null ],
+            [ "MessageLabel", "classMessageLabel.html", null ],
+            [ "MessageLabel", "classMessageLabel.html", null ],
+            [ "MessageLabel", "classMessageLabel.html", null ]
+          ] ]
+        ] ],
+        [ "QLineEdit", "http://doc.qt.io/qt-5/qlineedit.html", [
+          [ "DIpv4LineEdit", "classDIpv4LineEdit.html", null ],
+          [ "DKeySequenceEdit", "classDKeySequenceEdit.html", null ]
+        ] ],
+        [ "QMainWindow", "http://doc.qt.io/qt-5/qmainwindow.html", [
+          [ "DMainWindow", "classDMainWindow.html", null ]
+        ] ],
+        [ "QProgressBar", "http://doc.qt.io/qt-5/qprogressbar.html", [
+          [ "DColoredProgressBar", "classDColoredProgressBar.html", null ],
+          [ "DProgressBar", "classDProgressBar.html", null ]
+        ] ],
+        [ "QStatusBar", "http://doc.qt.io/qt-5/qstatusbar.html", [
+          [ "ExampStatusBar", "classExampStatusBar.html", null ]
+        ] ],
+        [ "QTabBar", "http://doc.qt.io/qt-5/qtabbar.html", [
+          [ "DTabBarPrivate", "classDTabBarPrivate.html", null ]
+        ] ],
+        [ "ShortcutEdit", "classShortcutEdit.html", null ],
+        [ "SliderStrip", "classSliderStrip.html", null ],
+        [ "TestTaskbarWindow", "classTestTaskbarWindow.html", null ]
+      ] ],
+      [ "QWindow", "http://doc.qt.io/qt-5/qwindow.html", [
+        [ "DForeignWindow", "classDForeignWindow.html", null ],
+        [ "Window", "classWindow.html", null ]
+      ] ],
       [ "Singleton", "classSingleton.html", null ],
       [ "StartupNotificationMonitor", "classStartupNotificationMonitor.html", null ],
       [ "ThreadUtils", "classThreadUtils.html", null ]
     ] ],
-    [ "QPainter", null, [
+    [ "QPaintDevice", "http://doc.qt.io/qt-5/qpaintdevice.html", [
+      [ "QWidget", "http://doc.qt.io/qt-5/qwidget.html", null ]
+    ] ],
+    [ "QPainter", "http://doc.qt.io/qt-5/qpainter.html", [
       [ "DStylePainter", "classDStylePainter.html", null ]
     ] ],
-    [ "QPalette", null, [
+    [ "QPalette", "http://doc.qt.io/qt-5/qpalette.html", [
       [ "DPalette", "classDPalette.html", null ]
     ] ],
     [ "QPrinter", null, [
       [ "DPrinter", "classDPrinter.html", null ]
     ] ],
-    [ "QProgressBar", null, [
-      [ "DColoredProgressBar", "classDColoredProgressBar.html", null ],
-      [ "DProgressBar", "classDProgressBar.html", null ]
-    ] ],
-    [ "QProxyStyle", null, [
-      [ "PopupMenuStyle", "classPopupMenuStyle.html", null ]
-    ] ],
-    [ "QPushButton", null, [
-      [ "DSuggestButton", "classDSuggestButton.html", null ]
-    ] ],
-    [ "QQueue", null, [
+    [ "QQueue< T >", "http://doc.qt.io/qt-5/qqueue.html", [
       [ "Dtk::Core::DtkCorePrivate::DSafeQueue< T >", "classDtk_1_1Core_1_1DtkCorePrivate_1_1DSafeQueue.html", null ]
     ] ],
-    [ "QRect", null, [
+    [ "QRect", "http://doc.qt.io/qt-5/qrect.html", [
       [ "DAnchorsRect", "classDAnchorsRect.html", null ]
     ] ],
     [ "Dtk::Core::QSettingBackendPrivate", "classDtk_1_1Core_1_1QSettingBackendPrivate.html", null ],
-    [ "QSharedData", null, [
+    [ "QSharedData", "http://doc.qt.io/qt-5/qshareddata.html", [
       [ "ActionListData", "structActionListData.html", null ],
       [ "DAnchorsBasePrivate", "classDAnchorsBasePrivate.html", null ],
       [ "DDciIconPrivate", "classDDciIconPrivate.html", null ],
       [ "DPaletteData", "structDPaletteData.html", null ],
       [ "Dtk::Core::DCapDirPrivate", "classDtk_1_1Core_1_1DCapDirPrivate.html", null ]
     ] ],
-    [ "QSlider", null, [
-      [ "ColorSlider", "classColorSlider.html", null ],
-      [ "SpecialSlider", "classSpecialSlider.html", null ]
-    ] ],
-    [ "QSpinBox", null, [
-      [ "DSpinBox", "classDSpinBox.html", null ]
-    ] ],
-    [ "QStandardItem", null, [
+    [ "QStandardItem", "http://doc.qt.io/qt-5/qstandarditem.html", [
       [ "DStandardItem", "classDStandardItem.html", null ]
     ] ],
-    [ "QString", null, [
+    [ "QString", "http://doc.qt.io/qt-5/qstring.html", [
       [ "Dtk::Core::DSecureString", "classDtk_1_1Core_1_1DSecureString.html", null ]
     ] ],
-    [ "QStyledItemDelegate", null, [
-      [ "DStyledItemDelegate", "classDStyledItemDelegate.html", null ]
-    ] ],
-    [ "QStyleOption", null, [
+    [ "QStyleOption", "http://doc.qt.io/qt-5/qstyleoption.html", [
       [ "DStyleOptionBackgroundGroup", "classDStyleOptionBackgroundGroup.html", null ],
       [ "DStyleOptionFloatingWidget", "classDStyleOptionFloatingWidget.html", null ],
-      [ "DStyleOptionIcon", "classDStyleOptionIcon.html", null ]
+      [ "DStyleOptionIcon", "classDStyleOptionIcon.html", null ],
+      [ "QStyleOptionButton", "http://doc.qt.io/qt-5/qstyleoptionbutton.html", [
+        [ "DStyleOptionButton", "classDStyleOptionButton.html", null ]
+      ] ],
+      [ "QStyleOptionViewItem", "http://doc.qt.io/qt-5/qstyleoptionviewitem.html", [
+        [ "DStyleOptionViewItem", "classDStyleOptionViewItem.html", null ]
+      ] ]
     ] ],
-    [ "QStyleOptionButton", null, [
-      [ "DStyleOptionButton", "classDStyleOptionButton.html", null ]
+    [ "QSurface", "http://doc.qt.io/qt-5/qsurface.html", [
+      [ "QWindow", "http://doc.qt.io/qt-5/qwindow.html", null ]
     ] ],
-    [ "QStyleOptionViewItem", null, [
-      [ "DStyleOptionViewItem", "classDStyleOptionViewItem.html", null ]
+    [ "QTextFormat", "http://doc.qt.io/qt-5/qtextformat.html", [
+      [ "QTextCharFormat", "http://doc.qt.io/qt-5/qtextcharformat.html", [
+        [ "DCrumbTextFormat", "classDCrumbTextFormat.html", null ]
+      ] ]
     ] ],
-    [ "QTabBar", null, [
-      [ "DTabBarPrivate", "classDTabBarPrivate.html", null ]
-    ] ],
-    [ "QTextCharFormat", null, [
-      [ "DCrumbTextFormat", "classDCrumbTextFormat.html", null ]
-    ] ],
-    [ "QTextEdit", null, [
-      [ "DCrumbEdit", "classDCrumbEdit.html", null ],
-      [ "DTextEdit", "classDTextEdit.html", null ]
-    ] ],
-    [ "QTextObjectInterface", null, [
+    [ "QTextObjectInterface", "http://doc.qt.io/qt-5/qtextobjectinterface.html", [
       [ "CrumbObjectInterface", "classCrumbObjectInterface.html", null ]
-    ] ],
-    [ "QThread", null, [
-      [ "DKeyboardMonitor", "classDKeyboardMonitor.html", null ],
-      [ "DThumbnailProvider", "classDThumbnailProvider.html", null ],
-      [ "LoadManualServiceWorker", "classLoadManualServiceWorker.html", null ]
-    ] ],
-    [ "QToolButton", null, [
-      [ "DSegmentedHighlight", "classDSegmentedHighlight.html", null ],
-      [ "DToolButton", "classDToolButton.html", null ]
-    ] ],
-    [ "QVariantAnimation", null, [
-      [ "DTabBarPrivate::TabBarAnimation", "structDTabBarPrivate_1_1TabBarAnimation.html", null ]
-    ] ],
-    [ "QWidget", null, [
-      [ "Content", "classContent.html", null ],
-      [ "ContentBox", "classContentBox.html", null ],
-      [ "ContentTitle", "classContentTitle.html", null ],
-      [ "DArrowRectangle", "classDArrowRectangle.html", null ],
-      [ "DBackgroundGroup", "classDBackgroundGroup.html", null ],
-      [ "DBlurEffectWidget", "classDBlurEffectWidget.html", null ],
-      [ "DButtonBox", "classDButtonBox.html", null ],
-      [ "DCircleProgress", "classDCircleProgress.html", null ],
-      [ "DClipEffectWidget", "classDClipEffectWidget.html", null ],
-      [ "DCrumbEditPanelFrame", "classDCrumbEditPanelFrame.html", null ],
-      [ "DFloatingWidget", "classDFloatingWidget.html", null ],
-      [ "DKeyWidget", "classDKeyWidget.html", null ],
-      [ "DLineEdit", "classDLineEdit.html", null ],
-      [ "DMovableTabWidget", "classDMovableTabWidget.html", null ],
-      [ "DPageIndicator", "classDPageIndicator.html", null ],
-      [ "DShadowLine", "classDShadowLine.html", null ],
-      [ "DSimpleListView", "classDSimpleListView.html", null ],
-      [ "DSlider", "classDSlider.html", null ],
-      [ "DSpinner", "classDSpinner.html", null ],
-      [ "DStackWidget", "classDStackWidget.html", null ],
-      [ "DTabBar", "classDTabBar.html", null ],
-      [ "DTabBarPrivate::FullWidget", "classDTabBarPrivate_1_1FullWidget.html", null ],
-      [ "DWaterProgress", "classDWaterProgress.html", null ],
-      [ "ExampleWindowInterface", "classExampleWindowInterface.html", [
-        [ "DArrowRectangleExample", "classDArrowRectangleExample.html", null ],
-        [ "DBackgroundGroupExample", "classDBackgroundGroupExample.html", null ],
-        [ "DButtonBoxExample", "classDButtonBoxExample.html", null ],
-        [ "DCalendarWidgetExample", "classDCalendarWidgetExample.html", null ],
-        [ "DCheckButtonExample", "classDCheckButtonExample.html", null ],
-        [ "DColoredProgressBarExample", "classDColoredProgressBarExample.html", null ],
-        [ "DColumnViewExample", "classDColumnViewExample.html", null ],
-        [ "DComboBoxExample", "classDComboBoxExample.html", null ],
-        [ "DCrumbTextFormatExample", "classDCrumbTextFormatExample.html", null ],
-        [ "DDialogExample", "classDDialogExample.html", null ],
-        [ "DFileChooserEditExample", "classDFileChooserEditExample.html", null ],
-        [ "DFileDialogExample", "classDFileDialogExample.html", null ],
-        [ "DFloatingButtonExample", "classDFloatingButtonExample.html", null ],
-        [ "DFontComboBoxExample", "classDFontComboBoxExample.html", null ],
-        [ "DFrameExample", "classDFrameExample.html", null ],
-        [ "DGroupBoxExample", "classDGroupBoxExample.html", null ],
-        [ "DHeaderViewExample", "classDHeaderViewExample.html", null ],
-        [ "DHorizontalLineExample", "classDHorizontalLineExample.html", null ],
-        [ "DIconButtonExample", "classDIconButtonExample.html", null ],
-        [ "DIpv4LineEditExample", "classDIpv4LineEditExample.html", null ],
-        [ "DKeySequenceEditExample", "classDKeySequenceEditExample.html", null ],
-        [ "DLCDNumberExample", "classDLCDNumberExample.html", null ],
-        [ "DLineEditExample", "classDLineEditExample.html", null ],
-        [ "DListViewExample", "classDListViewExample.html", null ],
-        [ "DMainWindowExample", "classDMainWindowExample.html", null ],
-        [ "DMenuExample", "classDMenuExample.html", null ],
-        [ "DMessageManagerExample", "classDMessageManagerExample.html", null ],
-        [ "DPasswordEditExample", "classDPasswordEditExample.html", null ],
-        [ "DProgressBarExample", "classDProgressBarExample.html", null ],
-        [ "DPushButtonExample", "classDPushButtonExample.html", null ],
-        [ "DRadioButtonExample", "classDRadioButtonExample.html", null ],
-        [ "DRubberBandExample", "classDRubberBandExample.html", null ],
-        [ "DScrollBarExample", "classDScrollBarExample.html", null ],
-        [ "DSearchComboBoxExample", "classDSearchComboBoxExample.html", null ],
-        [ "DSearchEditExample", "classDSearchEditExample.html", null ],
-        [ "DSizegripExample", "classDSizegripExample.html", null ],
-        [ "DSliderExample", "classDSliderExample.html", null ],
-        [ "DSpinBoxExample", "classDSpinBoxExample.html", null ],
-        [ "DSpinnerExample", "classDSpinnerExample.html", null ],
-        [ "DSplitterExample", "classDSplitterExample.html", null ],
-        [ "DStatusBarExample", "classDStatusBarExample.html", null ],
-        [ "DSuggestButtonExample", "classDSuggestButtonExample.html", null ],
-        [ "DSwitchButtonExample", "classDSwitchButtonExample.html", null ],
-        [ "DTabBarExample", "classDTabBarExample.html", null ],
-        [ "DTableWidgetExample", "classDTableWidgetExample.html", null ],
-        [ "DTextEditExample", "classDTextEditExample.html", null ],
-        [ "DTitleBarExample", "classDTitleBarExample.html", null ],
-        [ "DToolButtonExample", "classDToolButtonExample.html", null ],
-        [ "DToolTipExample", "classDToolTipExample.html", null ],
-        [ "DTreeViewExample", "classDTreeViewExample.html", null ],
-        [ "DVerticalLineExample", "classDVerticalLineExample.html", null ],
-        [ "DWarningButtonExample", "classDWarningButtonExample.html", null ],
-        [ "DWaterProgressExample", "classDWaterProgressExample.html", null ],
-        [ "ImageViewerExample", "classImageViewerExample.html", null ]
-      ] ],
-      [ "PageWindowInterface", "classPageWindowInterface.html", [
-        [ "ButtonExampleWindow", "classButtonExampleWindow.html", null ],
-        [ "DialogExampleWindow", "classDialogExampleWindow.html", null ],
-        [ "EditExampleWindow", "classEditExampleWindow.html", null ],
-        [ "ImageViewerExampleWindow", "classImageViewerExampleWindow.html", null ],
-        [ "LCDNumberExampleWindow", "classLCDNumberExampleWindow.html", null ],
-        [ "LayoutExampleWindow", "classLayoutExampleWindow.html", null ],
-        [ "ListViewExampleWindow", "classListViewExampleWindow.html", null ],
-        [ "MenuExampleWindow", "classMenuExampleWindow.html", null ],
-        [ "ProgressBarExampleWindow", "classProgressBarExampleWindow.html", null ],
-        [ "RubberBandExampleWindow", "classRubberBandExampleWindow.html", null ],
-        [ "ScrollBarExampleWindow", "classScrollBarExampleWindow.html", null ],
-        [ "SliderExampleWindow", "classSliderExampleWindow.html", null ],
-        [ "SpinnerExampleWindow", "classSpinnerExampleWindow.html", null ],
-        [ "ToolTipExampleWindow", "classToolTipExampleWindow.html", null ],
-        [ "WidgetExampleWindow", "classWidgetExampleWindow.html", null ],
-        [ "WindowExampleWindow", "classWindowExampleWindow.html", null ]
-      ] ],
-      [ "ShortcutEdit", "classShortcutEdit.html", null ],
-      [ "SliderStrip", "classSliderStrip.html", null ],
-      [ "TestTaskbarWindow", "classTestTaskbarWindow.html", null ]
-    ] ],
-    [ "QWindow", null, [
-      [ "DForeignWindow", "classDForeignWindow.html", null ],
-      [ "Window", "classWindow.html", null ]
     ] ],
     [ "Dtk::Core::remove_cvref< Type >", "structDtk_1_1Core_1_1remove__cvref.html", null ],
     [ "RSvg", "classRSvg.html", null ],

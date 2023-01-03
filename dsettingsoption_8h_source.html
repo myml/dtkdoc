@@ -169,50 +169,59 @@ $(document).ready(function(){initNavTree('dsettingsoption_8h_source.html',''); i
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">class </span>DSettingsGroup;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">class </span>DSettingsOptionPrivate;</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classDtk_1_1Core_1_1DSettingsOption.html">   17</a></span>&#160;<span class="keyword">class </span>LIBDTKCORESHARED_EXPORT <a class="code" href="classDtk_1_1Core_1_1DSettingsOption.html">DSettingsOption</a> : <span class="keyword">public</span> QObject</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classDtk_1_1Core_1_1DSettingsOption.html">   17</a></span>&#160;<span class="keyword">class </span>LIBDTKCORESHARED_EXPORT <a class="code" href="classDtk_1_1Core_1_1DSettingsOption.html">DSettingsOption</a> : <span class="keyword">public</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    Q_PROPERTY(QVariant value READ value WRITE setValue NOTIFY valueChanged)</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qvariant.html">QVariant</a> value READ value WRITE setValue NOTIFY valueChanged)</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDtk_1_1Core_1_1DSettingsOption.html">DSettingsOption</a>(QObject *parent = Q_NULLPTR);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDtk_1_1Core_1_1DSettingsOption.html">DSettingsOption</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *parent = Q_NULLPTR);</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    ~<a class="code" href="classDtk_1_1Core_1_1DSettingsOption.html">DSettingsOption</a>();</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    QPointer&lt;DSettingsGroup&gt; parentGroup() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> setParentGroup(QPointer&lt;DSettingsGroup&gt; parentGroup);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qpointer.html">QPointer&lt;DSettingsGroup&gt;</a> parentGroup() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> setParentGroup(<a class="codeRef" href="http://doc.qt.io/qt-5/qpointer.html">QPointer&lt;DSettingsGroup&gt;</a> parentGroup);</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    QString key() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    QString name() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> key() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> name() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">bool</span> canReset() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    QVariant defaultValue() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    QVariant value() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    QVariant data(<span class="keyword">const</span> QString &amp;dataType) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qvariant.html">QVariant</a> defaultValue() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qvariant.html">QVariant</a> value() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qvariant.html">QVariant</a> data(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;dataType) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    QString viewType() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> viewType() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">bool</span> isHidden() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">static</span> QPointer&lt;DSettingsOption&gt; fromJson(<span class="keyword">const</span> QString &amp;prefixKey, <span class="keyword">const</span> QJsonObject &amp;json);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;Q_SIGNALS:</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classDtk_1_1Core_1_1DSettingsOption.html#aa33a8ae87df405b8fd06c873bd026712">   41</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDtk_1_1Core_1_1DSettingsOption.html#aa33a8ae87df405b8fd06c873bd026712">valueChanged</a>(QVariant value);</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classDtk_1_1Core_1_1DSettingsOption.html#abbbdf2b47eec35df9e37909e184612fb">   42</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDtk_1_1Core_1_1DSettingsOption.html#abbbdf2b47eec35df9e37909e184612fb">dataChanged</a>(<span class="keyword">const</span> QString &amp;dataType, QVariant value);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">static</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qpointer.html">QPointer&lt;DSettingsOption&gt;</a> fromJson(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;prefixKey, <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qjsonobject.html">QJsonObject</a> &amp;json);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SIGNALS">Q_SIGNALS</a>:</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classDtk_1_1Core_1_1DSettingsOption.html#aa33a8ae87df405b8fd06c873bd026712">   41</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDtk_1_1Core_1_1DSettingsOption.html#aa33a8ae87df405b8fd06c873bd026712">valueChanged</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qvariant.html">QVariant</a> value);</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classDtk_1_1Core_1_1DSettingsOption.html#abbbdf2b47eec35df9e37909e184612fb">   42</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDtk_1_1Core_1_1DSettingsOption.html#abbbdf2b47eec35df9e37909e184612fb">dataChanged</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;dataType, <a class="codeRef" href="http://doc.qt.io/qt-5/qvariant.html">QVariant</a> value);</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> setValue(QVariant value);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> setData(<span class="keyword">const</span> QString &amp;dataType, QVariant value);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">public</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SLOTS">Q_SLOTS</a>:</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> setValue(<a class="codeRef" href="http://doc.qt.io/qt-5/qvariant.html">QVariant</a> value);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> setData(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;dataType, <a class="codeRef" href="http://doc.qt.io/qt-5/qvariant.html">QVariant</a> value);</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> parseJson(<span class="keyword">const</span> QString &amp;prefixKey, <span class="keyword">const</span> QJsonObject &amp;option);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> parseJson(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;prefixKey, <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qjsonobject.html">QJsonObject</a> &amp;option);</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    QScopedPointer&lt;DSettingsOptionPrivate&gt; dd_ptr;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qscopedpointer.html">QScopedPointer&lt;DSettingsOptionPrivate&gt;</a> dd_ptr;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    Q_DECLARE_PRIVATE_D(qGetPtrHelper(dd_ptr), <a class="code" href="classDtk_1_1Core_1_1DSettingsOption.html">DSettingsOption</a>)</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;};</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">typedef</span> QPointer&lt;DSettingsOption&gt; OptionPtr;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">typedef</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qpointer.html">QPointer&lt;DSettingsOption&gt;</a> <a class="codeRef" href="http://doc.qt.io/qt-5/qpointer.html">OptionPtr</a>;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;DCORE_END_NAMESPACE</div>
 <div class="ttc" id="aclassDtk_1_1Core_1_1DSettingsOption_html"><div class="ttname"><a href="classDtk_1_1Core_1_1DSettingsOption.html">Dtk::Core::DSettingsOption</a></div><div class="ttdoc">DSettingsOption是DSettings的基本单元,用于存放一对键-值数据。</div><div class="ttdef"><b>Definition:</b> dsettingsoption.h:18</div></div>
 <div class="ttc" id="aclassDtk_1_1Core_1_1DSettingsOption_html_aa33a8ae87df405b8fd06c873bd026712"><div class="ttname"><a href="classDtk_1_1Core_1_1DSettingsOption.html#aa33a8ae87df405b8fd06c873bd026712">Dtk::Core::DSettingsOption::valueChanged</a></div><div class="ttdeci">void valueChanged(QVariant value)</div><div class="ttdoc">选项的数据变化时发出改信息</div></div>
 <div class="ttc" id="aclassDtk_1_1Core_1_1DSettingsOption_html_abbbdf2b47eec35df9e37909e184612fb"><div class="ttname"><a href="classDtk_1_1Core_1_1DSettingsOption.html#abbbdf2b47eec35df9e37909e184612fb">Dtk::Core::DSettingsOption::dataChanged</a></div><div class="ttdeci">void dataChanged(const QString &amp;dataType, QVariant value)</div><div class="ttdoc">选项的附件的额外数据变化时发出改信息，可以看作这个值的属性发生变化。</div></div>
+<div class="ttc" id="aqjsonobject_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qjsonobject.html">QJsonObject</a></div></div>
+<div class="ttc" id="aqobject_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html">QObject</a></div></div>
+<div class="ttc" id="aqobject_html_Q_PROPERTY"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">QObject::Q_PROPERTY</a></div><div class="ttdeci">Q_PROPERTY(...)</div></div>
+<div class="ttc" id="aqobject_html_Q_SIGNALS"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_SIGNALS">QObject::Q_SIGNALS</a></div><div class="ttdeci">Q_SIGNALSQ_SIGNALS</div></div>
+<div class="ttc" id="aqobject_html_Q_SLOTS"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_SLOTS">QObject::Q_SLOTS</a></div><div class="ttdeci">Q_SLOTSQ_SLOTS</div></div>
+<div class="ttc" id="aqpointer_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qpointer.html">QPointer</a></div></div>
+<div class="ttc" id="aqscopedpointer_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qscopedpointer.html">QScopedPointer</a></div></div>
+<div class="ttc" id="aqstring_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstring.html">QString</a></div></div>
+<div class="ttc" id="aqvariant_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qvariant.html">QVariant</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.4-->
@@ -220,7 +229,7 @@ $(document).ready(function(){initNavTree('dsettingsoption_8h_source.html',''); i
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_6c3d837d12de6918ecc70ece2c9d5940.html">dtkcore</a></li><li class="navelem"><a class="el" href="dir_858a6aace3374df34beb3a5d036e09e4.html">include</a></li><li class="navelem"><a class="el" href="dir_a7af04de4ef3a9591b7ef5abb808d195.html">settings</a></li><li class="navelem"><a class="el" href="dsettingsoption_8h.html">dsettingsoption.h</a></li>
-    <li class="footer">文档生成时间:2023-01-03-09:26  +00</li>
+    <li class="footer">文档生成时间:2023-01-03-09:52  +00</li>
     <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
     <li class="footer">制作者:deepin doc doc go SIG</li>
     <li class="footer">文档使用CC-BY-4.0共享 </a>

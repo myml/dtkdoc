@@ -170,21 +170,21 @@ $(document).ready(function(){initNavTree('dprintpreviewdialog_8h_source.html',''
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">class </span><a class="code" href="classDPrintPreviewDialogPrivate.html">DPrintPreviewDialogPrivate</a>;</div>
 <div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classDPrintPreviewDialog.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDPrintPreviewDialog.html">DPrintPreviewDialog</a> : <span class="keyword">public</span> <a class="code" href="classDDialog.html">DDialog</a></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">Q_OBJECT</a></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDPrintPreviewDialog.html">DPrintPreviewDialog</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDPrintPreviewDialog.html">DPrintPreviewDialog</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a> *<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a> = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    ~<a class="code" href="classDPrintPreviewDialog.html">DPrintPreviewDialog</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> setPluginMimeData(<span class="keyword">const</span> QVariant &amp;mimeData);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">static</span> QVariant pluginMimeData();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> setPluginMimeData(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qvariant.html">QVariant</a> &amp;mimeData);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">static</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qvariant.html">QVariant</a> pluginMimeData();</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> setCurrentPlugin(<span class="keyword">const</span> QString &amp;pluginName);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">static</span> QString currentPlugin();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> setCurrentPlugin(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;pluginName);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">static</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> currentPlugin();</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">static</span> QStringList availablePlugins();</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;Q_SIGNALS:</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">static</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> availablePlugins();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SIGNALS">Q_SIGNALS</a>:</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">void</span> paintRequested(<a class="code" href="classDPrinter.html">DPrinter</a> *printer);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">void</span> paintRequested(<a class="code" href="classDPrinter.html">DPrinter</a> *printer, <span class="keyword">const</span> QVector&lt;int&gt; &amp;pageRange);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">void</span> paintRequested(<a class="code" href="classDPrinter.html">DPrinter</a> *printer, <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qvector.html">QVector&lt;int&gt;</a> &amp;pageRange);</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    D_DECLARE_PRIVATE(<a class="code" href="classDPrintPreviewDialog.html">DPrintPreviewDialog</a>)</div>
@@ -202,26 +202,26 @@ $(document).ready(function(){initNavTree('dprintpreviewdialog_8h_source.html',''
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    D_PRIVATE_SLOT(<span class="keywordtype">void</span> _q_textWaterMarkModeChanged(<span class="keywordtype">int</span>))</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    D_PRIVATE_SLOT(<span class="keywordtype">void</span> _q_customTextWatermarkFinished())</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    D_PRIVATE_SLOT(<span class="keywordtype">void</span> _q_colorButtonCliked(<span class="keywordtype">bool</span>))</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    D_PRIVATE_SLOT(<span class="keywordtype">void</span> _q_selectColorButton(QColor))</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    D_PRIVATE_SLOT(<span class="keywordtype">void</span> _q_selectColorButton(<a class="codeRef" href="http://doc.qt.io/qt-5/qcolor.html">QColor</a>))</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    D_PRIVATE_SLOT(<span class="keywordtype">void</span> _q_pagePersheetComboIndexChanged(<span class="keywordtype">int</span>))</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    D_PRIVATE_SLOT(<span class="keywordtype">void</span> _q_printOrderComboIndexChanged(<span class="keywordtype">int</span>))</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    D_PRIVATE_SLOT(<span class="keywordtype">void</span> _q_spinboxValueEmptyChecked(<span class="keyword">const</span> QString &amp;))</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    D_PRIVATE_SLOT(<span class="keywordtype">void</span> _q_spinboxValueEmptyChecked(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;))</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> event(QEvent *event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">bool</span> eventFilter(QObject *watched, QEvent *event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDPrintPreviewDialog.html#a56b79cb43f7c88d3bfe8b98568916881">setDocName</a>(<span class="keyword">const</span> QString &amp;);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    QString <a class="code" href="classDPrintPreviewDialog.html#ad6d240ee580cfdb4d55b60c2799a568f">docName</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> event(<a class="codeRef" href="http://doc.qt.io/qt-5/qevent.html">QEvent</a> *event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">bool</span> eventFilter(<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *watched, <a class="codeRef" href="http://doc.qt.io/qt-5/qevent.html">QEvent</a> *event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDPrintPreviewDialog.html#a56b79cb43f7c88d3bfe8b98568916881">setDocName</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> <a class="code" href="classDPrintPreviewDialog.html#ad6d240ee580cfdb4d55b60c2799a568f">docName</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classDPrintPreviewDialog.html#a5ebe66a2f5ae6848b203a0abfaf29649">setPrintFromPath</a>(<span class="keyword">const</span> QString &amp;path = QString());</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    QString <a class="code" href="classDPrintPreviewDialog.html#a70c4399f381a24133c590a40d156529e">printFromPath</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classDPrintPreviewDialog.html#a5ebe66a2f5ae6848b203a0abfaf29649">setPrintFromPath</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;path = <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>());</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> <a class="code" href="classDPrintPreviewDialog.html#a70c4399f381a24133c590a40d156529e">printFromPath</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">bool</span> setAsynPreview(<span class="keywordtype">int</span> totalPage);</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">bool</span> isAsynPreview() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">// QWidget interface</span></div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> resizeEvent(QResizeEvent *event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">void</span> timerEvent(QTimerEvent *event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classDPrintPreviewDialog.html#ab52fb6ffad897736ae465fb0638cf547">resizeEvent</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qresizeevent.html">QResizeEvent</a> *event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">void</span> timerEvent(<a class="codeRef" href="http://doc.qt.io/qt-5/qtimerevent.html">QTimerEvent</a> *event) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;};</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;DWIDGET_END_NAMESPACE</div>
@@ -233,8 +233,22 @@ $(document).ready(function(){initNavTree('dprintpreviewdialog_8h_source.html',''
 <div class="ttc" id="aclassDPrintPreviewDialog_html_a56b79cb43f7c88d3bfe8b98568916881"><div class="ttname"><a href="classDPrintPreviewDialog.html#a56b79cb43f7c88d3bfe8b98568916881">DPrintPreviewDialog::setDocName</a></div><div class="ttdeci">void setDocName(const QString &amp;)</div><div class="ttdoc">DPrintPreviewDialog::setDocName 设置保存PDF的文件名称 str 文件名称</div><div class="ttdef"><b>Definition:</b> dprintpreviewdialog.cpp:2585</div></div>
 <div class="ttc" id="aclassDPrintPreviewDialog_html_a5ebe66a2f5ae6848b203a0abfaf29649"><div class="ttname"><a href="classDPrintPreviewDialog.html#a5ebe66a2f5ae6848b203a0abfaf29649">DPrintPreviewDialog::setPrintFromPath</a></div><div class="ttdeci">bool setPrintFromPath(const QString &amp;path=QString())</div><div class="ttdoc">DPrintPreviewDialog::setPrintFromPath 根据路径的文件进行打印. path 文件路径</div><div class="ttdef"><b>Definition:</b> dprintpreviewdialog.cpp:2606</div></div>
 <div class="ttc" id="aclassDPrintPreviewDialog_html_a70c4399f381a24133c590a40d156529e"><div class="ttname"><a href="classDPrintPreviewDialog.html#a70c4399f381a24133c590a40d156529e">DPrintPreviewDialog::printFromPath</a></div><div class="ttdeci">QString printFromPath() const</div><div class="ttdoc">DPrintPreviewDialog::docName 路径文件的路径名</div><div class="ttdef"><b>Definition:</b> dprintpreviewdialog.cpp:2623</div></div>
+<div class="ttc" id="aclassDPrintPreviewDialog_html_ab52fb6ffad897736ae465fb0638cf547"><div class="ttname"><a href="classDPrintPreviewDialog.html#ab52fb6ffad897736ae465fb0638cf547">DPrintPreviewDialog::resizeEvent</a></div><div class="ttdeci">virtual void resizeEvent(QResizeEvent *event) override</div><div class="ttdoc">窗口大小改变事件</div><div class="ttdef"><b>Definition:</b> dprintpreviewdialog.cpp:2648</div></div>
 <div class="ttc" id="aclassDPrintPreviewDialog_html_ad6d240ee580cfdb4d55b60c2799a568f"><div class="ttname"><a href="classDPrintPreviewDialog.html#ad6d240ee580cfdb4d55b60c2799a568f">DPrintPreviewDialog::docName</a></div><div class="ttdeci">QString docName() const</div><div class="ttdoc">DPrintPreviewDialog::docName 保存PDF的文件名称</div><div class="ttdef"><b>Definition:</b> dprintpreviewdialog.cpp:2595</div></div>
 <div class="ttc" id="aclassDPrinter_html"><div class="ttname"><a href="classDPrinter.html">DPrinter</a></div><div class="ttdef"><b>Definition:</b> dprintpreviewwidget.h:28</div></div>
+<div class="ttc" id="aqcolor_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qcolor.html">QColor</a></div></div>
+<div class="ttc" id="aqevent_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qevent.html">QEvent</a></div></div>
+<div class="ttc" id="aqobject_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html">QObject</a></div></div>
+<div class="ttc" id="aqobject_html_Q_OBJECT"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">QObject::Q_OBJECT</a></div><div class="ttdeci">Q_OBJECTQ_OBJECT</div></div>
+<div class="ttc" id="aqobject_html_Q_SIGNALS"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_SIGNALS">QObject::Q_SIGNALS</a></div><div class="ttdeci">Q_SIGNALSQ_SIGNALS</div></div>
+<div class="ttc" id="aqobject_html_parent"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#parent">QObject::parent</a></div><div class="ttdeci">QObject * parent() const const</div></div>
+<div class="ttc" id="aqresizeevent_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qresizeevent.html">QResizeEvent</a></div></div>
+<div class="ttc" id="aqstring_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstring.html">QString</a></div></div>
+<div class="ttc" id="aqstringlist_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a></div></div>
+<div class="ttc" id="aqtimerevent_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qtimerevent.html">QTimerEvent</a></div></div>
+<div class="ttc" id="aqvariant_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qvariant.html">QVariant</a></div></div>
+<div class="ttc" id="aqvector_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qvector.html">QVector&lt; int &gt;</a></div></div>
+<div class="ttc" id="aqwidget_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.4-->
@@ -242,7 +256,7 @@ $(document).ready(function(){initNavTree('dprintpreviewdialog_8h_source.html',''
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_cc1fdbae730d0dba18db2b924667b662.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_6819db61f31aacd6e31b437a606a4041.html">include</a></li><li class="navelem"><a class="el" href="dir_6719ee6af2149ba01bce2af57814b9e8.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_4faf4521db2f3764f9e00575717749e8.html">widgets</a></li><li class="navelem"><b>dprintpreviewdialog.h</b></li>
-    <li class="footer">文档生成时间:2023-01-03-09:26  +00</li>
+    <li class="footer">文档生成时间:2023-01-03-09:52  +00</li>
     <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
     <li class="footer">制作者:deepin doc doc go SIG</li>
     <li class="footer">文档使用CC-BY-4.0共享 </a>

@@ -7,9 +7,9 @@ var classDPlatformWindowHandle =
     [ "setWindowBlurAreaByWM", "classDPlatformWindowHandle.html#a9cd159ce97aba6625f8c0bba202a5030", null ],
     [ "setWindowBlurAreaByWM", "classDPlatformWindowHandle.html#a363a1c10ff4cf65a99ab2ad2190d7aa1", null ],
     [ "setWindowBlurAreaByWM", "classDPlatformWindowHandle.html#a1282227032ddaf195b27bf3e974de9e7", null ],
-    [ "setWindowBlurAreaByWM", "classDPlatformWindowHandle.html#ad8309acf43dbe28c6cc1172c120e3f2a", null ],
+    [ "setWindowBlurAreaByWM", "classDPlatformWindowHandle.html#a012ce27978d089f2ab821355dde12777", null ],
     [ "setWindowBlurAreaByWM", "classDPlatformWindowHandle.html#a583f28cc2ab7f9054c158b66ea4dec0c", null ],
-    [ "setWindowBlurAreaByWM", "classDPlatformWindowHandle.html#aea270acbf118a76910848715d9c3b501", null ],
+    [ "setWindowBlurAreaByWM", "classDPlatformWindowHandle.html#a12799d43fdde33892ed039d56bb0cd9e", null ],
     [ "setWindowWallpaperParaByWM", "classDPlatformWindowHandle.html#add1f8ab398fe66c7313551612ef0c78b", null ],
     [ "setWindowWallpaperParaByWM", "classDPlatformWindowHandle.html#a75bdab76f6827c87997e1adce95eaafc", null ]
 ];

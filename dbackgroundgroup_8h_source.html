@@ -168,40 +168,40 @@ $(document).ready(function(){initNavTree('dbackgroundgroup_8h_source.html',''); 
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;DWIDGET_BEGIN_NAMESPACE</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">class </span><a class="code" href="classDBackgroundGroupPrivate.html">DBackgroundGroupPrivate</a>;</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classDBackgroundGroup.html">   16</a></span>&#160;<span class="keyword">class </span>LIBDTKWIDGETSHARED_EXPORT <a class="code" href="classDBackgroundGroup.html">DBackgroundGroup</a> : <span class="keyword">public</span> QWidget, <span class="keyword">public</span> DTK_CORE_NAMESPACE::DObject</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classDBackgroundGroup.html">   16</a></span>&#160;<span class="keyword">class </span>LIBDTKWIDGETSHARED_EXPORT <a class="code" href="classDBackgroundGroup.html">DBackgroundGroup</a> : <span class="keyword">public</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a>, <span class="keyword">public</span> DTK_CORE_NAMESPACE::DObject</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    Q_OBJECT</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    D_DECLARE_PRIVATE(<a class="code" href="classDBackgroundGroup.html">DBackgroundGroup</a>)</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    Q_PROPERTY(QMargins itemMargins READ itemMargins WRITE setItemMargins)</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    Q_PROPERTY(<span class="keywordtype">bool</span> useWidgetBackground READ useWidgetBackground WRITE setUseWidgetBackground NOTIFY useWidgetBackgroundChanged)</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qmargins.html">QMargins</a> itemMargins READ itemMargins WRITE setItemMargins)</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(<span class="keywordtype">bool</span> useWidgetBackground READ useWidgetBackground WRITE setUseWidgetBackground NOTIFY useWidgetBackgroundChanged)</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDBackgroundGroup.html">DBackgroundGroup</a>(QLayout *layout = <span class="keyword">nullptr</span>, QWidget *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDBackgroundGroup.html">DBackgroundGroup</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qlayout.html">QLayout</a> *layout = <span class="keyword">nullptr</span>, <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a> *parent = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    QMargins itemMargins() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qmargins.html">QMargins</a> itemMargins() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">bool</span> useWidgetBackground() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> setLayout(QLayout *layout);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html#setLayout">setLayout</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qlayout.html">QLayout</a> *layout);</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">void</span> setBackgroundRole(QPalette::ColorRole role);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    QPalette::ColorRole backgroundRole() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">void</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html#setBackgroundRole">setBackgroundRole</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qpalette.html#ColorRole-enum">QPalette::ColorRole</a> role);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qpalette.html#ColorRole-enum">QPalette::ColorRole</a> <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html#backgroundRole">backgroundRole</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> setItemMargins(QMargins itemMargins);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">public</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SLOTS">Q_SLOTS</a>:</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> setItemMargins(<a class="codeRef" href="http://doc.qt.io/qt-5/qmargins.html">QMargins</a> itemMargins);</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> setItemSpacing(<span class="keywordtype">int</span> spacing);</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> setUseWidgetBackground(<span class="keywordtype">bool</span> useWidgetBackground);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;Q_SIGNALS:</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SIGNALS">Q_SIGNALS</a>:</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> useWidgetBackgroundChanged(<span class="keywordtype">bool</span> useWidgetBackground);</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> paintEvent(QPaintEvent *event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">bool</span> event(QEvent *event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html#paintEvent">paintEvent</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qpaintevent.html">QPaintEvent</a> *event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">bool</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html#event">event</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qevent.html">QEvent</a> *event) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">using</span> QWidget::setLayout;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">using</span> QWidget::setAutoFillBackground;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">using</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html#setLayout">QWidget::setLayout</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">using</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html#autoFillBackground-prop">QWidget::setAutoFillBackground</a>;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;};</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;DWIDGET_END_NAMESPACE</div>
@@ -209,6 +209,21 @@ $(document).ready(function(){initNavTree('dbackgroundgroup_8h_source.html',''); 
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// DBACKGROUNDGROUP_H</span></div>
 <div class="ttc" id="aclassDBackgroundGroupPrivate_html"><div class="ttname"><a href="classDBackgroundGroupPrivate.html">DBackgroundGroupPrivate</a></div><div class="ttdef"><b>Definition:</b> dbackgroundgroup.cpp:17</div></div>
 <div class="ttc" id="aclassDBackgroundGroup_html"><div class="ttname"><a href="classDBackgroundGroup.html">DBackgroundGroup</a></div><div class="ttdef"><b>Definition:</b> dbackgroundgroup.h:17</div></div>
+<div class="ttc" id="aqevent_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qevent.html">QEvent</a></div></div>
+<div class="ttc" id="aqlayout_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qlayout.html">QLayout</a></div></div>
+<div class="ttc" id="aqmargins_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qmargins.html">QMargins</a></div></div>
+<div class="ttc" id="aqobject_html_Q_PROPERTY"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">QObject::Q_PROPERTY</a></div><div class="ttdeci">Q_PROPERTY(...)</div></div>
+<div class="ttc" id="aqobject_html_Q_SIGNALS"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_SIGNALS">QObject::Q_SIGNALS</a></div><div class="ttdeci">Q_SIGNALSQ_SIGNALS</div></div>
+<div class="ttc" id="aqobject_html_Q_SLOTS"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_SLOTS">QObject::Q_SLOTS</a></div><div class="ttdeci">Q_SLOTSQ_SLOTS</div></div>
+<div class="ttc" id="aqpaintevent_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qpaintevent.html">QPaintEvent</a></div></div>
+<div class="ttc" id="aqpalette_html_ColorRole-enum"><div class="ttname"><a href="http://doc.qt.io/qt-5/qpalette.html#ColorRole-enum">QPalette::ColorRole</a></div><div class="ttdeci">ColorRole</div></div>
+<div class="ttc" id="aqwidget_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a></div></div>
+<div class="ttc" id="aqwidget_html_autoFillBackground-prop"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html#autoFillBackground-prop">QWidget::setAutoFillBackground</a></div><div class="ttdeci">void setAutoFillBackground(bool enabled)</div></div>
+<div class="ttc" id="aqwidget_html_backgroundRole"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html#backgroundRole">QWidget::backgroundRole</a></div><div class="ttdeci">QPalette::ColorRole backgroundRole() const const</div></div>
+<div class="ttc" id="aqwidget_html_event"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html#event">QWidget::event</a></div><div class="ttdeci">virtual bool event(QEvent *event) override</div></div>
+<div class="ttc" id="aqwidget_html_paintEvent"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html#paintEvent">QWidget::paintEvent</a></div><div class="ttdeci">virtual void paintEvent(QPaintEvent *event)</div></div>
+<div class="ttc" id="aqwidget_html_setBackgroundRole"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html#setBackgroundRole">QWidget::setBackgroundRole</a></div><div class="ttdeci">void setBackgroundRole(QPalette::ColorRole role)</div></div>
+<div class="ttc" id="aqwidget_html_setLayout"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html#setLayout">QWidget::setLayout</a></div><div class="ttdeci">void setLayout(QLayout *layout)</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.4-->
@@ -216,7 +231,7 @@ $(document).ready(function(){initNavTree('dbackgroundgroup_8h_source.html',''); 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_cc1fdbae730d0dba18db2b924667b662.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_6819db61f31aacd6e31b437a606a4041.html">include</a></li><li class="navelem"><a class="el" href="dir_6719ee6af2149ba01bce2af57814b9e8.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_4faf4521db2f3764f9e00575717749e8.html">widgets</a></li><li class="navelem"><b>dbackgroundgroup.h</b></li>
-    <li class="footer">文档生成时间:2023-01-03-09:26  +00</li>
+    <li class="footer">文档生成时间:2023-01-03-09:52  +00</li>
     <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
     <li class="footer">制作者:deepin doc doc go SIG</li>
     <li class="footer">文档使用CC-BY-4.0共享 </a>

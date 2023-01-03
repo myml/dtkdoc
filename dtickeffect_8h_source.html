@@ -168,11 +168,11 @@ $(document).ready(function(){initNavTree('dtickeffect_8h_source.html',''); initR
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;DWIDGET_BEGIN_NAMESPACE</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">class </span><a class="code" href="classDTickEffectPrivate.html">DTickEffectPrivate</a>;</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classDTickEffect.html">   16</a></span>&#160;<span class="keyword">class </span>LIBDTKWIDGETSHARED_EXPORT <a class="code" href="classDTickEffect.html">DTickEffect</a> : <span class="keyword">public</span> QGraphicsEffect, <span class="keyword">public</span> DTK_CORE_NAMESPACE::DObject</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classDTickEffect.html">   16</a></span>&#160;<span class="keyword">class </span>LIBDTKWIDGETSHARED_EXPORT <a class="code" href="classDTickEffect.html">DTickEffect</a> : <span class="keyword">public</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qgraphicseffect.html">QGraphicsEffect</a>, <span class="keyword">public</span> DTK_CORE_NAMESPACE::DObject</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    Q_OBJECT</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDTickEffect.html">DTickEffect</a>(QWidget *widget, QWidget *parent = 0);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDTickEffect.html">DTickEffect</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a> *widget, <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a> *parent = 0);</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">enum</span> Direction{</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        LeftToRight,</div>
@@ -189,13 +189,13 @@ $(document).ready(function(){initNavTree('dtickeffect_8h_source.html',''); initR
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> setDirection(Direction direction);</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">void</span> setFixedPixelMove(<span class="keyword">const</span> <span class="keywordtype">int</span> pixel);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;Q_SIGNALS:</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SIGNALS">Q_SIGNALS</a>:</div>
 <div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classDTickEffect.html#aee6bd933e885b4aafff8722419ce1c8b">   38</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDTickEffect.html#aee6bd933e885b4aafff8722419ce1c8b">finished</a>();</div>
 <div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classDTickEffect.html#aac9cbf82b5a6c7248c92832f40a2787e">   39</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDTickEffect.html#aac9cbf82b5a6c7248c92832f40a2787e">stateChanged</a>();</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> draw(QPainter *painter) Q_DECL_OVERRIDE;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">bool</span> eventFilter(QObject *watched, QEvent *event) Q_DECL_OVERRIDE;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qgraphicseffect.html#draw">draw</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qpainter.html">QPainter</a> *painter) Q_DECL_OVERRIDE;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">bool</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#eventFilter">eventFilter</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *watched, <a class="codeRef" href="http://doc.qt.io/qt-5/qevent.html">QEvent</a> *event) Q_DECL_OVERRIDE;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    D_DECLARE_PRIVATE(<a class="code" href="classDTickEffect.html">DTickEffect</a>)</div>
@@ -208,6 +208,14 @@ $(document).ready(function(){initNavTree('dtickeffect_8h_source.html',''); initR
 <div class="ttc" id="aclassDTickEffect_html"><div class="ttname"><a href="classDTickEffect.html">DTickEffect</a></div><div class="ttdef"><b>Definition:</b> dtickeffect.h:17</div></div>
 <div class="ttc" id="aclassDTickEffect_html_aac9cbf82b5a6c7248c92832f40a2787e"><div class="ttname"><a href="classDTickEffect.html#aac9cbf82b5a6c7248c92832f40a2787e">DTickEffect::stateChanged</a></div><div class="ttdeci">void stateChanged()</div></div>
 <div class="ttc" id="aclassDTickEffect_html_aee6bd933e885b4aafff8722419ce1c8b"><div class="ttname"><a href="classDTickEffect.html#aee6bd933e885b4aafff8722419ce1c8b">DTickEffect::finished</a></div><div class="ttdeci">void finished()</div></div>
+<div class="ttc" id="aqevent_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qevent.html">QEvent</a></div></div>
+<div class="ttc" id="aqgraphicseffect_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qgraphicseffect.html">QGraphicsEffect</a></div></div>
+<div class="ttc" id="aqgraphicseffect_html_draw"><div class="ttname"><a href="http://doc.qt.io/qt-5/qgraphicseffect.html#draw">QGraphicsEffect::draw</a></div><div class="ttdeci">virtual void draw(QPainter *painter)=0</div></div>
+<div class="ttc" id="aqobject_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html">QObject</a></div></div>
+<div class="ttc" id="aqobject_html_Q_SIGNALS"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_SIGNALS">QObject::Q_SIGNALS</a></div><div class="ttdeci">Q_SIGNALSQ_SIGNALS</div></div>
+<div class="ttc" id="aqobject_html_eventFilter"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#eventFilter">QObject::eventFilter</a></div><div class="ttdeci">virtual bool eventFilter(QObject *watched, QEvent *event)</div></div>
+<div class="ttc" id="aqpainter_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qpainter.html">QPainter</a></div></div>
+<div class="ttc" id="aqwidget_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.4-->
@@ -215,7 +223,7 @@ $(document).ready(function(){initNavTree('dtickeffect_8h_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_cc1fdbae730d0dba18db2b924667b662.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_6819db61f31aacd6e31b437a606a4041.html">include</a></li><li class="navelem"><a class="el" href="dir_6719ee6af2149ba01bce2af57814b9e8.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_4faf4521db2f3764f9e00575717749e8.html">widgets</a></li><li class="navelem"><b>dtickeffect.h</b></li>
-    <li class="footer">文档生成时间:2023-01-03-09:26  +00</li>
+    <li class="footer">文档生成时间:2023-01-03-09:52  +00</li>
     <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
     <li class="footer">制作者:deepin doc doc go SIG</li>
     <li class="footer">文档使用CC-BY-4.0共享 </a>

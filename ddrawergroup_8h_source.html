@@ -167,15 +167,15 @@ $(document).ready(function(){initNavTree('ddrawergroup_8h_source.html',''); init
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">class </span><a class="code" href="classDDrawer.html">DDrawer</a>;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">class </span><a class="code" href="classDDrawerGroupPrivate.html">DDrawerGroupPrivate</a>;</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classDDrawerGroup.html">   15</a></span>&#160;<span class="keyword">class </span>LIBDTKWIDGETSHARED_EXPORT <a class="code" href="classDDrawerGroup.html">DDrawerGroup</a> : <span class="keyword">public</span> QObject, <span class="keyword">public</span> DCORE_NAMESPACE::DObject</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classDDrawerGroup.html">   15</a></span>&#160;<span class="keyword">class </span>LIBDTKWIDGETSHARED_EXPORT <a class="code" href="classDDrawerGroup.html">DDrawerGroup</a> : <span class="keyword">public</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a>, <span class="keyword">public</span> DCORE_NAMESPACE::DObject</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    Q_OBJECT</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    D_DECLARE_PRIVATE(<a class="code" href="classDDrawerGroup.html">DDrawerGroup</a>)</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDDrawerGroup.html">DDrawerGroup</a>(QObject *parent = 0);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDDrawerGroup.html">DDrawerGroup</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *parent = 0);</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    QList&lt;DDrawer *&gt; expands() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qlist.html">QList&lt;DDrawer *&gt;</a> expands() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="classDDrawer.html">DDrawer</a> * checkedExpand() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="classDDrawer.html">DDrawer</a> * expand(<span class="keywordtype">int</span> <span class="keywordtype">id</span>) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> addExpand(<a class="code" href="classDDrawer.html">DDrawer</a> *expand, <span class="keywordtype">int</span> <span class="keywordtype">id</span> = -1);</div>
@@ -194,6 +194,8 @@ $(document).ready(function(){initNavTree('ddrawergroup_8h_source.html',''); init
 <div class="ttc" id="aclassDDrawerGroupPrivate_html"><div class="ttname"><a href="classDDrawerGroupPrivate.html">DDrawerGroupPrivate</a></div><div class="ttdef"><b>Definition:</b> ddrawergroup.cpp:13</div></div>
 <div class="ttc" id="aclassDDrawerGroup_html"><div class="ttname"><a href="classDDrawerGroup.html">DDrawerGroup</a></div><div class="ttdef"><b>Definition:</b> ddrawergroup.h:16</div></div>
 <div class="ttc" id="aclassDDrawer_html"><div class="ttname"><a href="classDDrawer.html">DDrawer</a></div><div class="ttdef"><b>Definition:</b> ddrawer.h:13</div></div>
+<div class="ttc" id="aqlist_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qlist.html">QList</a></div></div>
+<div class="ttc" id="aqobject_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html">QObject</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.4-->
@@ -201,7 +203,7 @@ $(document).ready(function(){initNavTree('ddrawergroup_8h_source.html',''); init
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_cc1fdbae730d0dba18db2b924667b662.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_6819db61f31aacd6e31b437a606a4041.html">include</a></li><li class="navelem"><a class="el" href="dir_6719ee6af2149ba01bce2af57814b9e8.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_4faf4521db2f3764f9e00575717749e8.html">widgets</a></li><li class="navelem"><b>ddrawergroup.h</b></li>
-    <li class="footer">文档生成时间:2023-01-03-09:26  +00</li>
+    <li class="footer">文档生成时间:2023-01-03-09:52  +00</li>
     <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
     <li class="footer">制作者:deepin doc doc go SIG</li>
     <li class="footer">文档使用CC-BY-4.0共享 </a>

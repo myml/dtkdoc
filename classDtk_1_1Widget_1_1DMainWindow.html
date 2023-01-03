@@ -214,14 +214,16 @@ main.cpp</h2>
 <div class="line">    Q_UNUSED(as) <span class="comment">//设置记住应用主题</span></div>
 <div class="line">    </div>
 <div class="line">    <a class="code" href="classDMainWindow.html">DMainWindow</a> dwm;    <span class="comment">//使用DMainWindow类实例化一个窗口</span></div>
-<div class="line">    dwm.resize(400,250); <span class="comment">//可使用resize()对窗口大小进行调整</span></div>
-<div class="line">    dwm.show(); <span class="comment">//显示这个窗口</span></div>
+<div class="line">    dwm.<a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html#resize-1">resize</a>(400,250); <span class="comment">//可使用resize()对窗口大小进行调整</span></div>
+<div class="line">    dwm.<a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html#show">show</a>(); <span class="comment">//显示这个窗口</span></div>
 <div class="line">        </div>
 <div class="line">    <span class="keywordflow">return</span> app.exec(); <span class="comment">//运行应用</span></div>
 <div class="line">}</div>
 <div class="ttc" id="aclassDApplicationSettings_html"><div class="ttname"><a href="classDApplicationSettings.html">DApplicationSettings</a></div><div class="ttdef"><b>Definition:</b> dapplicationsettings.h:15</div></div>
 <div class="ttc" id="aclassDApplication_html"><div class="ttname"><a href="classDApplication.html">DApplication</a></div><div class="ttdef"><b>Definition:</b> dapplication.h:31</div></div>
 <div class="ttc" id="aclassDMainWindow_html"><div class="ttname"><a href="classDMainWindow.html">DMainWindow</a></div><div class="ttdef"><b>Definition:</b> dmainwindow.h:20</div></div>
+<div class="ttc" id="aqwidget_html_resize-1"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html#resize-1">QWidget::resize</a></div><div class="ttdeci">void resize(int w, int h)</div></div>
+<div class="ttc" id="aqwidget_html_show"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html#show">QWidget::show</a></div><div class="ttdeci">void show()</div></div>
 </div><!-- fragment --><p>以上例子运行结果如下：<br  />
 </p>
 <p><img src="/docs/images/dmainwindow_example.png" alt="example" class="inline"/></p>
@@ -229,7 +231,7 @@ main.cpp</h2>
 </p>
 <p><img src="/docs/images/dmainwindow_example2.png" alt="example2" class="inline"/></p>
 <p>\inmodule dtkwidget</p>
-<p>A main window provides a framework for building an application's user interface. <a class="el" href="classDtk_1_1Widget_1_1DMainWindow.html" title="DMainWindow类提供了一个主应用程序窗口,主窗口为构建应用程序的用户提供了一个框架 界面。与Qmainwindow相比，DmainWindow具有自己的布局它只有标题栏和内容区域，更简单。 开发...">DMainWindow</a> has its own layout compared to QMainWindow, it has only title bar and content area, simpler and cleaner.</p>
+<p>A main window provides a framework for building an application's user interface. <a class="el" href="classDtk_1_1Widget_1_1DMainWindow.html" title="DMainWindow类提供了一个主应用程序窗口,主窗口为构建应用程序的用户提供了一个框架 界面。与Qmainwindow相比，DmainWindow具有自己的布局它只有标题栏和内容区域，更简单。 开发...">DMainWindow</a> has its own layout compared to <a class="elRef" href="http://doc.qt.io/qt-5/qmainwindow.html">QMainWindow</a>, it has only title bar and content area, simpler and cleaner.</p>
 <p>Developers can provide customized title bar and content to make the application rich functional. </p>
 </div><hr/>该类的文档由以下文件生成:<ul>
 <li>dtkwidget/docs/widgets/dmainwindow.zh_CN.dox</li>
@@ -241,7 +243,7 @@ main.cpp</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classDtk_1_1Widget_1_1DMainWindow.html">DMainWindow</a></li>
-    <li class="footer">文档生成时间:2023-01-03-09:26  +00</li>
+    <li class="footer">文档生成时间:2023-01-03-09:52  +00</li>
     <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
     <li class="footer">制作者:deepin doc doc go SIG</li>
     <li class="footer">文档使用CC-BY-4.0共享 </a>

@@ -170,31 +170,31 @@ $(document).ready(function(){initNavTree('dboxwidget_8h_source.html',''); initRe
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;DWIDGET_BEGIN_NAMESPACE</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">class </span><a class="code" href="classDBoxWidgetPrivate.html">DBoxWidgetPrivate</a>;</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classDBoxWidget.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDBoxWidget.html">DBoxWidget</a> : <span class="keyword">public</span> QFrame, <span class="keyword">public</span> DTK_CORE_NAMESPACE::DObject</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classDBoxWidget.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDBoxWidget.html">DBoxWidget</a> : <span class="keyword">public</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qframe.html">QFrame</a>, <span class="keyword">public</span> DTK_CORE_NAMESPACE::DObject</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">Q_OBJECT</a></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    Q_PROPERTY(QBoxLayout::Direction <a class="code" href="classDBoxWidget.html#a122870e3eb817bd436682f0c3223f44b">direction</a> READ <a class="code" href="classDBoxWidget.html#a122870e3eb817bd436682f0c3223f44b">direction</a> WRITE <a class="code" href="classDBoxWidget.html#a4ea54ed728dbe1de2d154c9cbc954fc7">setDirection</a> NOTIFY directionChanged)</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qboxlayout.html#Direction-enum">QBoxLayout::Direction</a> <a class="code" href="classDBoxWidget.html#a122870e3eb817bd436682f0c3223f44b">direction</a> READ <a class="code" href="classDBoxWidget.html#a122870e3eb817bd436682f0c3223f44b">direction</a> WRITE <a class="code" href="classDBoxWidget.html#a4ea54ed728dbe1de2d154c9cbc954fc7">setDirection</a> NOTIFY directionChanged)</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDBoxWidget.html#a06808410e0d74af703589294cac4e3a7">DBoxWidget</a>(QBoxLayout::Direction <a class="code" href="classDBoxWidget.html#a122870e3eb817bd436682f0c3223f44b">direction</a>, QWidget *parent = 0);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDBoxWidget.html#a06808410e0d74af703589294cac4e3a7">DBoxWidget</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qboxlayout.html#Direction-enum">QBoxLayout::Direction</a> <a class="code" href="classDBoxWidget.html#a122870e3eb817bd436682f0c3223f44b">direction</a>, <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a> *<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a> = 0);</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    QBoxLayout::Direction <a class="code" href="classDBoxWidget.html#a122870e3eb817bd436682f0c3223f44b">direction</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    QBoxLayout *<a class="code" href="classDBoxWidget.html#a5333af54ecf805a764f6294458a5b365">layout</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qboxlayout.html#Direction-enum">QBoxLayout::Direction</a> <a class="code" href="classDBoxWidget.html#a122870e3eb817bd436682f0c3223f44b">direction</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qboxlayout.html">QBoxLayout</a> *<a class="code" href="classDBoxWidget.html#a5333af54ecf805a764f6294458a5b365">layout</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDBoxWidget.html#a1471b589e5b8c7c06e3acf5bcb4e811e">addWidget</a>(QWidget *widget);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    QSize <a class="code" href="classDBoxWidget.html#aec9742fcba6686cb15bee45f7f814898">sizeHint</a>() <span class="keyword">const</span> Q_DECL_OVERRIDE;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDBoxWidget.html#a1471b589e5b8c7c06e3acf5bcb4e811e">addWidget</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a> *widget);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qsize.html">QSize</a> <a class="code" href="classDBoxWidget.html#aec9742fcba6686cb15bee45f7f814898">sizeHint</a>() <span class="keyword">const</span> Q_DECL_OVERRIDE;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDBoxWidget.html#a4ea54ed728dbe1de2d154c9cbc954fc7">setDirection</a>(QBoxLayout::Direction <a class="code" href="classDBoxWidget.html#a122870e3eb817bd436682f0c3223f44b">direction</a>);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">public</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SLOTS">Q_SLOTS</a>:</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDBoxWidget.html#a4ea54ed728dbe1de2d154c9cbc954fc7">setDirection</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qboxlayout.html#Direction-enum">QBoxLayout::Direction</a> <a class="code" href="classDBoxWidget.html#a122870e3eb817bd436682f0c3223f44b">direction</a>);</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;Q_SIGNALS:</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> sizeChanged(QSize size);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> directionChanged(QBoxLayout::Direction <a class="code" href="classDBoxWidget.html#a122870e3eb817bd436682f0c3223f44b">direction</a>);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SIGNALS">Q_SIGNALS</a>:</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> sizeChanged(<a class="codeRef" href="http://doc.qt.io/qt-5/qsize.html">QSize</a> <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html#size-prop">size</a>);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> directionChanged(<a class="codeRef" href="http://doc.qt.io/qt-5/qboxlayout.html#Direction-enum">QBoxLayout::Direction</a> <a class="code" href="classDBoxWidget.html#a122870e3eb817bd436682f0c3223f44b">direction</a>);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classDBoxWidget.html#ab53cc9838a42469a2521f228a3f7afdf">updateSize</a>(<span class="keyword">const</span> QSize &amp;size);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classDBoxWidget.html#a3d62f6a37ecb00225ddd8423a3dd3e15">event</a>(QEvent *ee) Q_DECL_OVERRIDE;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classDBoxWidget.html#ab53cc9838a42469a2521f228a3f7afdf">updateSize</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qsize.html">QSize</a> &amp;<a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html#size-prop">size</a>);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classDBoxWidget.html#a3d62f6a37ecb00225ddd8423a3dd3e15">event</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qevent.html">QEvent</a> *ee) Q_DECL_OVERRIDE;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    D_DECLARE_PRIVATE(<a class="code" href="classDBoxWidget.html">DBoxWidget</a>)</div>
@@ -202,16 +202,16 @@ $(document).ready(function(){initNavTree('dboxwidget_8h_source.html',''); initRe
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
 <div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classDHBoxWidget.html">   48</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDHBoxWidget.html">DHBoxWidget</a> : <span class="keyword">public</span> <a class="code" href="classDBoxWidget.html">DBoxWidget</a></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">Q_OBJECT</a></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDHBoxWidget.html#a0ac4da3eabc56d580e11d256d05c0113">DHBoxWidget</a>(QWidget *parent = 0);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDHBoxWidget.html#a0ac4da3eabc56d580e11d256d05c0113">DHBoxWidget</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a> *<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a> = 0);</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;};</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
 <div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classDVBoxWidget.html">   55</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDVBoxWidget.html">DVBoxWidget</a> : <span class="keyword">public</span> <a class="code" href="classDBoxWidget.html">DBoxWidget</a></div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">Q_OBJECT</a></div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDVBoxWidget.html#a415e93c982ea2f7535261db5f8e1e522">DVBoxWidget</a>(QWidget *parent = 0);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDVBoxWidget.html#a415e93c982ea2f7535261db5f8e1e522">DVBoxWidget</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a> *<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a> = 0);</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;};</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
 <div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classDBoxWidget.html#a122870e3eb817bd436682f0c3223f44b">   62</a></span>&#160;DWIDGET_END_NAMESPACE</div>
@@ -231,6 +231,18 @@ $(document).ready(function(){initNavTree('dboxwidget_8h_source.html',''); initRe
 <div class="ttc" id="aclassDHBoxWidget_html_a0ac4da3eabc56d580e11d256d05c0113"><div class="ttname"><a href="classDHBoxWidget.html#a0ac4da3eabc56d580e11d256d05c0113">DHBoxWidget::DHBoxWidget</a></div><div class="ttdeci">DHBoxWidget(QWidget *parent=0)</div><div class="ttdoc">DHBoxWidget的构造函数</div><div class="ttdef"><b>Definition:</b> dboxwidget.cpp:201</div></div>
 <div class="ttc" id="aclassDVBoxWidget_html"><div class="ttname"><a href="classDVBoxWidget.html">DVBoxWidget</a></div><div class="ttdef"><b>Definition:</b> dboxwidget.h:56</div></div>
 <div class="ttc" id="aclassDVBoxWidget_html_a415e93c982ea2f7535261db5f8e1e522"><div class="ttname"><a href="classDVBoxWidget.html#a415e93c982ea2f7535261db5f8e1e522">DVBoxWidget::DVBoxWidget</a></div><div class="ttdeci">DVBoxWidget(QWidget *parent=0)</div><div class="ttdoc">DVBoxWidget的构造函数</div><div class="ttdef"><b>Definition:</b> dboxwidget.cpp:222</div></div>
+<div class="ttc" id="aqboxlayout_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qboxlayout.html">QBoxLayout</a></div></div>
+<div class="ttc" id="aqboxlayout_html_Direction-enum"><div class="ttname"><a href="http://doc.qt.io/qt-5/qboxlayout.html#Direction-enum">QBoxLayout::Direction</a></div><div class="ttdeci">Direction</div></div>
+<div class="ttc" id="aqevent_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qevent.html">QEvent</a></div></div>
+<div class="ttc" id="aqframe_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qframe.html">QFrame</a></div></div>
+<div class="ttc" id="aqobject_html_Q_OBJECT"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">QObject::Q_OBJECT</a></div><div class="ttdeci">Q_OBJECTQ_OBJECT</div></div>
+<div class="ttc" id="aqobject_html_Q_PROPERTY"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">QObject::Q_PROPERTY</a></div><div class="ttdeci">Q_PROPERTY(...)</div></div>
+<div class="ttc" id="aqobject_html_Q_SIGNALS"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_SIGNALS">QObject::Q_SIGNALS</a></div><div class="ttdeci">Q_SIGNALSQ_SIGNALS</div></div>
+<div class="ttc" id="aqobject_html_Q_SLOTS"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_SLOTS">QObject::Q_SLOTS</a></div><div class="ttdeci">Q_SLOTSQ_SLOTS</div></div>
+<div class="ttc" id="aqobject_html_parent"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#parent">QObject::parent</a></div><div class="ttdeci">QObject * parent() const const</div></div>
+<div class="ttc" id="aqsize_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qsize.html">QSize</a></div></div>
+<div class="ttc" id="aqwidget_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a></div></div>
+<div class="ttc" id="aqwidget_html_size-prop"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html#size-prop">QWidget::size</a></div><div class="ttdeci">size</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.4-->
@@ -238,7 +250,7 @@ $(document).ready(function(){initNavTree('dboxwidget_8h_source.html',''); initRe
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_cc1fdbae730d0dba18db2b924667b662.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_6819db61f31aacd6e31b437a606a4041.html">include</a></li><li class="navelem"><a class="el" href="dir_6719ee6af2149ba01bce2af57814b9e8.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_4faf4521db2f3764f9e00575717749e8.html">widgets</a></li><li class="navelem"><b>dboxwidget.h</b></li>
-    <li class="footer">文档生成时间:2023-01-03-09:26  +00</li>
+    <li class="footer">文档生成时间:2023-01-03-09:52  +00</li>
     <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
     <li class="footer">制作者:deepin doc doc go SIG</li>
     <li class="footer">文档使用CC-BY-4.0共享 </a>

@@ -164,9 +164,9 @@ $(document).ready(function(){initNavTree('ddrawer__p_8h_source.html',''); initRe
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;dframe_p.h&quot;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;QT_BEGIN_NAMESPACE</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">class </span>QBoxLayout;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">class </span>QVBoxLayout;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">class </span>QPropertyAnimation;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">class </span><a class="codeRef" href="http://doc.qt.io/qt-5/qboxlayout.html">QBoxLayout</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">class </span><a class="codeRef" href="http://doc.qt.io/qt-5/qvboxlayout.html">QVBoxLayout</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">class </span><a class="codeRef" href="http://doc.qt.io/qt-5/qpropertyanimation.html">QPropertyAnimation</a>;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;QT_END_NAMESPACE</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;DWIDGET_BEGIN_NAMESPACE</div>
@@ -181,15 +181,15 @@ $(document).ready(function(){initNavTree('ddrawer__p_8h_source.html',''); initRe
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> init();</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    QWidget *m_header = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    QWidget *m_content = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a> *m_header = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a> *m_content = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="classDBoxWidget.html">DBoxWidget</a> *m_boxWidget = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    QVBoxLayout *m_headerLayout = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    QBoxLayout *m_contentLayout = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qvboxlayout.html">QVBoxLayout</a> *m_headerLayout = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qboxlayout.html">QBoxLayout</a> *m_contentLayout = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="classContentBox.html">ContentBox</a> *m_contentLoader = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="classDHorizontalLine.html">DHorizontalLine</a> * m_hSeparator = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="classDHorizontalLine.html">DHorizontalLine</a> *m_bottom_separator = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    QPropertyAnimation *m_animation = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qpropertyanimation.html">QPropertyAnimation</a> *m_animation = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">bool</span> m_expand = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">bool</span> m_reservedPadding[7];</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
@@ -205,6 +205,10 @@ $(document).ready(function(){initNavTree('ddrawer__p_8h_source.html',''); initRe
 <div class="ttc" id="aclassDDrawer_html"><div class="ttname"><a href="classDDrawer.html">DDrawer</a></div><div class="ttdef"><b>Definition:</b> ddrawer.h:13</div></div>
 <div class="ttc" id="aclassDFramePrivate_html"><div class="ttname"><a href="classDFramePrivate.html">DFramePrivate</a></div><div class="ttdef"><b>Definition:</b> dframe_p.h:17</div></div>
 <div class="ttc" id="aclassDHorizontalLine_html"><div class="ttname"><a href="classDHorizontalLine.html">DHorizontalLine</a></div><div class="ttdef"><b>Definition:</b> dframe.h:36</div></div>
+<div class="ttc" id="aqboxlayout_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qboxlayout.html">QBoxLayout</a></div></div>
+<div class="ttc" id="aqpropertyanimation_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qpropertyanimation.html">QPropertyAnimation</a></div></div>
+<div class="ttc" id="aqvboxlayout_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qvboxlayout.html">QVBoxLayout</a></div></div>
+<div class="ttc" id="aqwidget_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.4-->
@@ -212,7 +216,7 @@ $(document).ready(function(){initNavTree('ddrawer__p_8h_source.html',''); initRe
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_cc1fdbae730d0dba18db2b924667b662.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_7e9cf0e2371012f8aca5a790419dfe62.html">src</a></li><li class="navelem"><a class="el" href="dir_0f0f1158b2ab9c2e2656097b145c93da.html">widgets</a></li><li class="navelem"><a class="el" href="dir_c2ef0fafcc327cb5e8231a54477e2847.html">private</a></li><li class="navelem"><b>ddrawer_p.h</b></li>
-    <li class="footer">文档生成时间:2023-01-03-09:26  +00</li>
+    <li class="footer">文档生成时间:2023-01-03-09:52  +00</li>
     <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
     <li class="footer">制作者:deepin doc doc go SIG</li>
     <li class="footer">文档使用CC-BY-4.0共享 </a>

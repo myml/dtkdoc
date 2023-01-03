@@ -285,51 +285,51 @@ $(document).ready(function(){initNavTree('dsysinfo_8h_source.html',''); initResi
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> isDeepin();</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> isDDE();</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keyword">static</span> DeepinType deepinType();</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keyword">static</span> QString deepinTypeDisplayName(<span class="keyword">const</span> QLocale &amp;locale = QLocale::system());</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keyword">static</span> QString deepinVersion();</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keyword">static</span> QString deepinEdition();</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keyword">static</span> QString deepinCopyright();</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keyword">static</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> deepinTypeDisplayName(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qlocale.html">QLocale</a> &amp;locale = <a class="codeRef" href="http://doc.qt.io/qt-5/qlocale.html#system">QLocale::system</a>());</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keyword">static</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> deepinVersion();</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keyword">static</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> deepinEdition();</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keyword">static</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> deepinCopyright();</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160; </div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="comment">// uos version interface</span></div>
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <span class="keyword">static</span> UosType uosType();</div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keyword">static</span> UosEdition uosEditionType();</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    Q_DECL_DEPRECATED_X(<span class="stringliteral">&quot;Use arch() instead&quot;</span>) static UosArch uosArch();</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    static QString uosProductTypeName(const QLocale &amp;locale = QLocale::system());</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    static QString uosSystemName(const QLocale &amp;locale = QLocale::system());</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    static QString uosEditionName(const QLocale &amp;locale = QLocale::system());</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    static <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> uosProductTypeName(const <a class="codeRef" href="http://doc.qt.io/qt-5/qlocale.html">QLocale</a> &amp;locale = <a class="codeRef" href="http://doc.qt.io/qt-5/qlocale.html">QLocale</a>::system());</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    static <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> uosSystemName(const <a class="codeRef" href="http://doc.qt.io/qt-5/qlocale.html">QLocale</a> &amp;locale = <a class="codeRef" href="http://doc.qt.io/qt-5/qlocale.html">QLocale</a>::system());</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    static <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> uosEditionName(const <a class="codeRef" href="http://doc.qt.io/qt-5/qlocale.html">QLocale</a> &amp;locale = <a class="codeRef" href="http://doc.qt.io/qt-5/qlocale.html">QLocale</a>::system());</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; </div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    static QString spVersion(); <span class="comment">// SP1...SP99</span></div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    static QString udpateVersion(); <span class="comment">// update1...update9</span></div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    static QString majorVersion();</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    static QString minorVersion();</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    static QString buildVersion(); <span class="comment">// xyzs</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    static <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> spVersion(); <span class="comment">// SP1...SP99</span></div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    static <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> udpateVersion(); <span class="comment">// update1...update9</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    static <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> majorVersion();</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    static <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> minorVersion();</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    static <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> buildVersion(); <span class="comment">// xyzs</span></div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160; </div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    Q_DECL_DEPRECATED_X(<span class="stringliteral">&quot;Use distributionInfoPath() instead&quot;</span>) static QString deepinDistributionInfoPath();</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    static QString distributionInfoPath();</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    static QString distributionInfoSectionName(OrgType type);</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    Q_DECL_DEPRECATED_X(<span class="stringliteral">&quot;Use distributionInfoPath() instead&quot;</span>) static <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> deepinDistributionInfoPath();</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    static <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> distributionInfoPath();</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    static <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> distributionInfoSectionName(OrgType type);</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    static QString distributionOrgName(OrgType type = Distribution, const QLocale &amp;locale = QLocale::system());</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    Q_DECL_DEPRECATED_X(&quot;Use deepinDistributionOrgName() instead&quot;) static QString deepinDistributorName();</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    static QPair&lt;QString, QString&gt; distributionOrgWebsite(OrgType type = Distribution);</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    Q_DECL_DEPRECATED_X(&quot;Use deepinDistributionOrgWebsite() instead&quot;) static QPair&lt;QString, QString&gt; deepinDistributorWebsite();</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    static QString distributionOrgLogo(OrgType orgType = Distribution, LogoType type = Normal, const QString &amp; fallback = QString());</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    Q_DECL_DEPRECATED_X(&quot;Use deepinDistributionOrgLogo() instead&quot;) static QString deepinDistributorLogo(LogoType type = Normal, const QString &amp; fallback = QString());</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    static <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> distributionOrgName(OrgType type = Distribution, const <a class="codeRef" href="http://doc.qt.io/qt-5/qlocale.html">QLocale</a> &amp;locale = <a class="codeRef" href="http://doc.qt.io/qt-5/qlocale.html">QLocale</a>::system());</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    Q_DECL_DEPRECATED_X(&quot;Use deepinDistributionOrgName() instead&quot;) static <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> deepinDistributorName();</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    static <a class="codeRef" href="http://doc.qt.io/qt-5/qpair.html">QPair</a>&lt;<a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>, <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&gt; distributionOrgWebsite(OrgType type = Distribution);</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    Q_DECL_DEPRECATED_X(&quot;Use deepinDistributionOrgWebsite() instead&quot;) static <a class="codeRef" href="http://doc.qt.io/qt-5/qpair.html">QPair</a>&lt;<a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>, <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&gt; deepinDistributorWebsite();</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    static <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> distributionOrgLogo(OrgType orgType = Distribution, LogoType type = Normal, const <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp; fallback = <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>());</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    Q_DECL_DEPRECATED_X(&quot;Use deepinDistributionOrgLogo() instead&quot;) static <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> deepinDistributorLogo(LogoType type = Normal, const <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp; fallback = <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>());</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160; </div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    static QString operatingSystemName();</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    static <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> operatingSystemName();</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    static ProductType productType();</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    static QString productTypeString();</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    static QString productVersion();</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    static <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> productTypeString();</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    static <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> productVersion();</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    static <span class="keywordtype">bool</span> isCommunityEdition();</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160; </div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    static QString computerName();</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    static QString cpuModelName();</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    static <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> computerName();</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    static <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> cpuModelName();</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    static qint64 memoryInstalledSize();</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    static qint64 memoryTotalSize();</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    static qint64 systemDiskSize();</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160; </div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    static QDateTime bootTime();</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    static QDateTime shutdownTime();</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    static <a class="codeRef" href="http://doc.qt.io/qt-5/qdatetime.html">QDateTime</a> bootTime();</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    static <a class="codeRef" href="http://doc.qt.io/qt-5/qdatetime.html">QDateTime</a> shutdownTime();</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    static qint64 uptime();</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    static Arch arch();</div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;};</div>
@@ -345,6 +345,11 @@ $(document).ready(function(){initNavTree('dsysinfo_8h_source.html',''); initResi
 <div class="ttc" id="aclassDtk_1_1Core_1_1DSysInfo_html_a95c282f42eda222e5b9925122fe2a434"><div class="ttname"><a href="classDtk_1_1Core_1_1DSysInfo.html#a95c282f42eda222e5b9925122fe2a434">Dtk::Core::DSysInfo::UosEdition</a></div><div class="ttdeci">UosEdition</div><div class="ttdoc">详细uos版本</div><div class="ttdef"><b>Definition:</b> dsysinfo.h:66</div></div>
 <div class="ttc" id="aclassDtk_1_1Core_1_1DSysInfo_html_a9f811bf21c840fafa7809ee01865cb93"><div class="ttname"><a href="classDtk_1_1Core_1_1DSysInfo.html#a9f811bf21c840fafa7809ee01865cb93">Dtk::Core::DSysInfo::UosType</a></div><div class="ttdeci">UosType</div><div class="ttdoc">UOS版本类型</div><div class="ttdef"><b>Definition:</b> dsysinfo.h:57</div></div>
 <div class="ttc" id="aclassDtk_1_1Core_1_1DSysInfo_html_abce779af6b5c5e03e2a7f3b55e78ae32"><div class="ttname"><a href="classDtk_1_1Core_1_1DSysInfo.html#abce779af6b5c5e03e2a7f3b55e78ae32">Dtk::Core::DSysInfo::DeepinType</a></div><div class="ttdeci">DeepinType</div><div class="ttdoc">深度操作系统版本</div><div class="ttdef"><b>Definition:</b> dsysinfo.h:36</div></div>
+<div class="ttc" id="aqdatetime_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qdatetime.html">QDateTime</a></div></div>
+<div class="ttc" id="aqlocale_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qlocale.html">QLocale</a></div></div>
+<div class="ttc" id="aqlocale_html_system"><div class="ttname"><a href="http://doc.qt.io/qt-5/qlocale.html#system">QLocale::system</a></div><div class="ttdeci">QLocale system()</div></div>
+<div class="ttc" id="aqpair_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qpair.html">QPair</a></div></div>
+<div class="ttc" id="aqstring_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstring.html">QString</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.4-->
@@ -352,7 +357,7 @@ $(document).ready(function(){initNavTree('dsysinfo_8h_source.html',''); initResi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_6c3d837d12de6918ecc70ece2c9d5940.html">dtkcore</a></li><li class="navelem"><a class="el" href="dir_858a6aace3374df34beb3a5d036e09e4.html">include</a></li><li class="navelem"><a class="el" href="dir_3920df834564b4d0dab14eb9597abf9f.html">global</a></li><li class="navelem"><a class="el" href="dsysinfo_8h.html">dsysinfo.h</a></li>
-    <li class="footer">文档生成时间:2023-01-03-09:26  +00</li>
+    <li class="footer">文档生成时间:2023-01-03-09:52  +00</li>
     <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
     <li class="footer">制作者:deepin doc doc go SIG</li>
     <li class="footer">文档使用CC-BY-4.0共享 </a>

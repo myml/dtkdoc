@@ -162,61 +162,79 @@ $(document).ready(function(){initNavTree('popupmenustyle_8h_source.html',''); in
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;QProxyStyle&gt;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">const</span> QString SHORTCUT_SPLIT_FLAG = <span class="stringliteral">&quot;@-_-@&quot;</span>;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> SHORTCUT_SPLIT_FLAG = <span class="stringliteral">&quot;@-_-@&quot;</span>;</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">class </span>QStyleOptionMenuItem;</div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classPopupMenuStyle.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="classPopupMenuStyle.html">PopupMenuStyle</a> : <span class="keyword">public</span> QProxyStyle {</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">class </span><a class="codeRef" href="http://doc.qt.io/qt-5/qstyleoptionmenuitem.html">QStyleOptionMenuItem</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classPopupMenuStyle.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="classPopupMenuStyle.html">PopupMenuStyle</a> : <span class="keyword">public</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qproxystyle.html">QProxyStyle</a> {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">Q_OBJECT</a></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="classPopupMenuStyle.html">PopupMenuStyle</a>();</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">int</span> styleHint(StyleHint hint,</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                  <span class="keyword">const</span> QStyleOption* option = 0,</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                  <span class="keyword">const</span> QWidget* widget = 0,</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                  QStyleHintReturn* returnData = 0) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">int</span> pixelMetric(PixelMetric metric,</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                    <span class="keyword">const</span> QStyleOption* option = 0,</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                    <span class="keyword">const</span> QWidget* widget = 0) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> drawControl(ControlElement control,</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                     <span class="keyword">const</span> QStyleOption* option,</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                     QPainter* painter,</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                     <span class="keyword">const</span> QWidget* widget) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> drawPrimitive(PrimitiveElement element,</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                       <span class="keyword">const</span> QStyleOption *option,</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                       QPainter *painter,</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                       <span class="keyword">const</span> QWidget *widget = Q_NULLPTR) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    QSize sizeFromContents(ContentsType type,</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                           <span class="keyword">const</span> QStyleOption* option,</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                           <span class="keyword">const</span> QSize&amp; contentsSize,</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                           <span class="keyword">const</span> QWidget* widget = 0) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">int</span> styleHint(<a class="codeRef" href="http://doc.qt.io/qt-5/qstyle.html#StyleHint-enum">StyleHint</a> hint,</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                  <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstyleoption.html">QStyleOption</a>* option = 0,</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                  <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a>* widget = 0,</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                  <a class="codeRef" href="http://doc.qt.io/qt-5/qstylehintreturn.html">QStyleHintReturn</a>* returnData = 0) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">int</span> pixelMetric(<a class="codeRef" href="http://doc.qt.io/qt-5/qstyle.html#PixelMetric-enum">PixelMetric</a> metric,</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                    <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstyleoption.html">QStyleOption</a>* option = 0,</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                    <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a>* widget = 0) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> drawControl(<a class="codeRef" href="http://doc.qt.io/qt-5/qstyle.html#ControlElement-enum">ControlElement</a> control,</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                     <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstyleoption.html">QStyleOption</a>* option,</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                     <a class="codeRef" href="http://doc.qt.io/qt-5/qpainter.html">QPainter</a>* painter,</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                     <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a>* widget) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> drawPrimitive(<a class="codeRef" href="http://doc.qt.io/qt-5/qstyle.html#PrimitiveElement-enum">PrimitiveElement</a> element,</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                       <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstyleoption.html">QStyleOption</a> *option,</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                       <a class="codeRef" href="http://doc.qt.io/qt-5/qpainter.html">QPainter</a> *painter,</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                       <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a> *widget = Q_NULLPTR) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qsize.html">QSize</a> sizeFromContents(<a class="codeRef" href="http://doc.qt.io/qt-5/qstyle.html#ContentsType-enum">ContentsType</a> type,</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                           <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstyleoption.html">QStyleOption</a>* option,</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                           <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qsize.html">QSize</a>&amp; contentsSize,</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                           <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a>* widget = 0) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">void</span> drawScroller(<span class="keyword">const</span> QStyleOption* option,</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                      QPainter* painter) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> drawMenuItem(<span class="keyword">const</span> QStyleOption* option,</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                      QPainter* painter) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> drawSeparator(<span class="keyword">const</span> QStyleOptionMenuItem* menuItem,</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                       QPainter* painter) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> drawMenuItemIcon(<span class="keyword">const</span> QStyleOptionMenuItem* menuItem,</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                          QPainter* painter) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> drawMenuItemText(<span class="keyword">const</span> QStyleOptionMenuItem* menuItem,</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                          QPainter* painter) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> drawMenuItemSubIcon(<span class="keyword">const</span> QStyleOptionMenuItem* menuItem,</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                             QPainter* painter) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">void</span> drawMenuItemCheckedIcon(<span class="keyword">const</span> QStyleOptionMenuItem* menuItem,</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                                 QPainter* painter) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">void</span> drawScroller(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstyleoption.html">QStyleOption</a>* option,</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                      <a class="codeRef" href="http://doc.qt.io/qt-5/qpainter.html">QPainter</a>* painter) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> drawMenuItem(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstyleoption.html">QStyleOption</a>* option,</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                      <a class="codeRef" href="http://doc.qt.io/qt-5/qpainter.html">QPainter</a>* painter) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> drawSeparator(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstyleoptionmenuitem.html">QStyleOptionMenuItem</a>* menuItem,</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                       <a class="codeRef" href="http://doc.qt.io/qt-5/qpainter.html">QPainter</a>* painter) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> drawMenuItemIcon(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstyleoptionmenuitem.html">QStyleOptionMenuItem</a>* menuItem,</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                          <a class="codeRef" href="http://doc.qt.io/qt-5/qpainter.html">QPainter</a>* painter) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> drawMenuItemText(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstyleoptionmenuitem.html">QStyleOptionMenuItem</a>* menuItem,</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                          <a class="codeRef" href="http://doc.qt.io/qt-5/qpainter.html">QPainter</a>* painter) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> drawMenuItemSubIcon(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstyleoptionmenuitem.html">QStyleOptionMenuItem</a>* menuItem,</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                             <a class="codeRef" href="http://doc.qt.io/qt-5/qpainter.html">QPainter</a>* painter) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">void</span> drawMenuItemCheckedIcon(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstyleoptionmenuitem.html">QStyleOptionMenuItem</a>* menuItem,</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                                 <a class="codeRef" href="http://doc.qt.io/qt-5/qpainter.html">QPainter</a>* painter) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    QSize getItemSize(<span class="keyword">const</span> QStyleOption* option, <span class="keyword">const</span> QSize&amp; size) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qsize.html">QSize</a> getItemSize(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstyleoption.html">QStyleOption</a>* option, <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qsize.html">QSize</a>&amp; size) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    QColor getItemBGColor(<span class="keyword">const</span> QStyle::State state) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    QPixmap getSubMenuPixmap(<span class="keyword">const</span> QStyle::State state) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    QPixmap getIconPixmap(<span class="keyword">const</span> QStyle::State state,</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                          <span class="keyword">const</span> QIcon&amp; icon,</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                          <span class="keyword">const</span> QSize&amp; size) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qcolor.html">QColor</a> getItemBGColor(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstyle.html#StateFlag-enum">QStyle::State</a> state) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qpixmap.html">QPixmap</a> getSubMenuPixmap(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstyle.html#StateFlag-enum">QStyle::State</a> state) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qpixmap.html">QPixmap</a> getIconPixmap(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstyle.html#StateFlag-enum">QStyle::State</a> state,</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                          <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qicon.html">QIcon</a>&amp; icon,</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                          <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qsize.html">QSize</a>&amp; size) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;};</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// POPUPMENUSTYLEH</span></div>
 <div class="ttc" id="aclassPopupMenuStyle_html"><div class="ttname"><a href="classPopupMenuStyle.html">PopupMenuStyle</a></div><div class="ttdef"><b>Definition:</b> popupmenustyle.h:13</div></div>
+<div class="ttc" id="aqcolor_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qcolor.html">QColor</a></div></div>
+<div class="ttc" id="aqicon_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qicon.html">QIcon</a></div></div>
+<div class="ttc" id="aqobject_html_Q_OBJECT"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">QObject::Q_OBJECT</a></div><div class="ttdeci">Q_OBJECTQ_OBJECT</div></div>
+<div class="ttc" id="aqpainter_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qpainter.html">QPainter</a></div></div>
+<div class="ttc" id="aqpixmap_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qpixmap.html">QPixmap</a></div></div>
+<div class="ttc" id="aqproxystyle_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qproxystyle.html">QProxyStyle</a></div></div>
+<div class="ttc" id="aqsize_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qsize.html">QSize</a></div></div>
+<div class="ttc" id="aqstring_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstring.html">QString</a></div></div>
+<div class="ttc" id="aqstyle_html_ContentsType-enum"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstyle.html#ContentsType-enum">QStyle::ContentsType</a></div><div class="ttdeci">ContentsType</div></div>
+<div class="ttc" id="aqstyle_html_ControlElement-enum"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstyle.html#ControlElement-enum">QStyle::ControlElement</a></div><div class="ttdeci">ControlElement</div></div>
+<div class="ttc" id="aqstyle_html_PixelMetric-enum"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstyle.html#PixelMetric-enum">QStyle::PixelMetric</a></div><div class="ttdeci">PixelMetric</div></div>
+<div class="ttc" id="aqstyle_html_PrimitiveElement-enum"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstyle.html#PrimitiveElement-enum">QStyle::PrimitiveElement</a></div><div class="ttdeci">PrimitiveElement</div></div>
+<div class="ttc" id="aqstyle_html_StateFlag-enum"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstyle.html#StateFlag-enum">QStyle::State</a></div><div class="ttdeci">typedef State</div></div>
+<div class="ttc" id="aqstyle_html_StyleHint-enum"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstyle.html#StyleHint-enum">QStyle::StyleHint</a></div><div class="ttdeci">StyleHint</div></div>
+<div class="ttc" id="aqstylehintreturn_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstylehintreturn.html">QStyleHintReturn</a></div></div>
+<div class="ttc" id="aqstyleoption_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstyleoption.html">QStyleOption</a></div></div>
+<div class="ttc" id="aqstyleoptionmenuitem_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstyleoptionmenuitem.html">QStyleOptionMenuItem</a></div></div>
+<div class="ttc" id="aqwidget_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.4-->
@@ -224,7 +242,7 @@ $(document).ready(function(){initNavTree('popupmenustyle_8h_source.html',''); in
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_cc1fdbae730d0dba18db2b924667b662.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_7e9cf0e2371012f8aca5a790419dfe62.html">src</a></li><li class="navelem"><a class="el" href="dir_77474abd41b8801861bc7c803b01b5b3.html">platforms</a></li><li class="navelem"><a class="el" href="dir_b87fef839dba3b172c02955ae9c2cc64.html">windows</a></li><li class="navelem"><b>popupmenustyle.h</b></li>
-    <li class="footer">文档生成时间:2023-01-03-09:26  +00</li>
+    <li class="footer">文档生成时间:2023-01-03-09:52  +00</li>
     <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
     <li class="footer">制作者:deepin doc doc go SIG</li>
     <li class="footer">文档使用CC-BY-4.0共享 </a>

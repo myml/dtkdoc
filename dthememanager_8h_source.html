@@ -170,37 +170,37 @@ $(document).ready(function(){initNavTree('dthememanager_8h_source.html',''); ini
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;DWIDGET_BEGIN_NAMESPACE</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">class </span><a class="code" href="classDThemeManagerPrivate.html">DThemeManagerPrivate</a>;</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classDThemeManager.html">   18</a></span>&#160;<span class="keyword">class </span>LIBDTKWIDGETSHARED_EXPORT D_DECL_DEPRECATED <a class="code" href="classDThemeManager.html">DThemeManager</a> : <span class="keyword">public</span> QObject, <span class="keyword">public</span> DTK_CORE_NAMESPACE::DObject</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classDThemeManager.html">   18</a></span>&#160;<span class="keyword">class </span>LIBDTKWIDGETSHARED_EXPORT D_DECL_DEPRECATED <a class="code" href="classDThemeManager.html">DThemeManager</a> : <span class="keyword">public</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a>, <span class="keyword">public</span> DTK_CORE_NAMESPACE::DObject</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    Q_OBJECT</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">static</span> <a class="code" href="classDThemeManager.html">DThemeManager</a> *instance();</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    QString theme() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    QString theme(<span class="keyword">const</span> QWidget *widget, QWidget **baseWidget = <span class="keyword">nullptr</span>) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> setTheme(<span class="keyword">const</span> QString theme);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">void</span> setTheme(QWidget *widget, <span class="keyword">const</span> QString theme);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> theme() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> theme(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a> *widget, <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a> **baseWidget = <span class="keyword">nullptr</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> setTheme(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> theme);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">void</span> setTheme(<a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a> *widget, <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> theme);</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    QString getQssForWidget(<span class="keyword">const</span> QString className, <span class="keyword">const</span> QString &amp;theme = QString()) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    QString getQssForWidget(<span class="keyword">const</span> QWidget *widget) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> getQssForWidget(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> className, <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;theme = <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>()) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> getQssForWidget(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a> *widget) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> registerWidget(QWidget *widget, QStringList properties = QStringList());</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> registerWidget(<a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a> *widget, <a class="codeRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> properties = <a class="codeRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a>());</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="comment">// TODO: use blow instead, the only thing should do is rebuilding</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">// static void registerWidget(QWidget *widget, const QStringList &amp;properties = QStringList());</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> registerWidget(QWidget *widget, <span class="keyword">const</span> QString &amp;filename, <span class="keyword">const</span> QStringList &amp;properties = QStringList());</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> registerWidget(<a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a> *widget, <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;filename, <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> &amp;properties = <a class="codeRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a>());</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">public</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SLOTS">Q_SLOTS</a>:</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">void</span> updateQss();</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> updateThemeOnParentChanged(QWidget *widget);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> updateThemeOnParentChanged(<a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a> *widget);</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;Q_SIGNALS:</div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classDThemeManager.html#a6b56394eb917d65eb34411ad5b18b6ba">   43</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDThemeManager.html#a6b56394eb917d65eb34411ad5b18b6ba">themeChanged</a>(QString theme);</div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classDThemeManager.html#a935500d53724a48ecf339facc2588b35">   44</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDThemeManager.html#a935500d53724a48ecf339facc2588b35">widgetThemeChanged</a>(QWidget *widget, QString theme);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SIGNALS">Q_SIGNALS</a>:</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classDThemeManager.html#a6b56394eb917d65eb34411ad5b18b6ba">   43</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDThemeManager.html#a6b56394eb917d65eb34411ad5b18b6ba">themeChanged</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> theme);</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classDThemeManager.html#a935500d53724a48ecf339facc2588b35">   44</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDThemeManager.html#a935500d53724a48ecf339facc2588b35">widgetThemeChanged</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a> *widget, <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> theme);</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="classDThemeManager.html">DThemeManager</a>();</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">bool</span> eventFilter(QObject *watched, QEvent *event) Q_DECL_OVERRIDE;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">bool</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#eventFilter">eventFilter</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *watched, <a class="codeRef" href="http://doc.qt.io/qt-5/qevent.html">QEvent</a> *event) Q_DECL_OVERRIDE;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classDApplication.html">DApplication</a>;</div>
@@ -215,6 +215,14 @@ $(document).ready(function(){initNavTree('dthememanager_8h_source.html',''); ini
 <div class="ttc" id="aclassDThemeManager_html"><div class="ttname"><a href="classDThemeManager.html">DThemeManager</a></div><div class="ttdef"><b>Definition:</b> dthememanager.h:19</div></div>
 <div class="ttc" id="aclassDThemeManager_html_a6b56394eb917d65eb34411ad5b18b6ba"><div class="ttname"><a href="classDThemeManager.html#a6b56394eb917d65eb34411ad5b18b6ba">DThemeManager::themeChanged</a></div><div class="ttdeci">void themeChanged(QString theme)</div><div class="ttdoc">themeTypeChanged 信号在应用程序主题发生变化时触发.</div></div>
 <div class="ttc" id="aclassDThemeManager_html_a935500d53724a48ecf339facc2588b35"><div class="ttname"><a href="classDThemeManager.html#a935500d53724a48ecf339facc2588b35">DThemeManager::widgetThemeChanged</a></div><div class="ttdeci">void widgetThemeChanged(QWidget *widget, QString theme)</div><div class="ttdoc">widgetThemeChanged 信号在特定控件主题发生改变时触发.</div></div>
+<div class="ttc" id="aqevent_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qevent.html">QEvent</a></div></div>
+<div class="ttc" id="aqobject_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html">QObject</a></div></div>
+<div class="ttc" id="aqobject_html_Q_SIGNALS"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_SIGNALS">QObject::Q_SIGNALS</a></div><div class="ttdeci">Q_SIGNALSQ_SIGNALS</div></div>
+<div class="ttc" id="aqobject_html_Q_SLOTS"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_SLOTS">QObject::Q_SLOTS</a></div><div class="ttdeci">Q_SLOTSQ_SLOTS</div></div>
+<div class="ttc" id="aqobject_html_eventFilter"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#eventFilter">QObject::eventFilter</a></div><div class="ttdeci">virtual bool eventFilter(QObject *watched, QEvent *event)</div></div>
+<div class="ttc" id="aqstring_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstring.html">QString</a></div></div>
+<div class="ttc" id="aqstringlist_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a></div></div>
+<div class="ttc" id="aqwidget_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.4-->
@@ -222,7 +230,7 @@ $(document).ready(function(){initNavTree('dthememanager_8h_source.html',''); ini
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_cc1fdbae730d0dba18db2b924667b662.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_6819db61f31aacd6e31b437a606a4041.html">include</a></li><li class="navelem"><a class="el" href="dir_6719ee6af2149ba01bce2af57814b9e8.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_4faf4521db2f3764f9e00575717749e8.html">widgets</a></li><li class="navelem"><b>dthememanager.h</b></li>
-    <li class="footer">文档生成时间:2023-01-03-09:26  +00</li>
+    <li class="footer">文档生成时间:2023-01-03-09:52  +00</li>
     <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
     <li class="footer">制作者:deepin doc doc go SIG</li>
     <li class="footer">文档使用CC-BY-4.0共享 </a>

@@ -158,12 +158,12 @@ $(document).ready(function(){initNavTree('classDtk_1_1Widget_1_1DAbstractDialog.
  <a href="classDtk_1_1Widget_1_1DAbstractDialog.html#details">更多...</a></p>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>可以使用 <a class="el" href="classDtk_1_1Widget_1_1DAbstractDialog.html" title="可以使用 DAbstractDialog 类创建符合 DDE 风格的对话框窗口.">DAbstractDialog</a> 类创建符合 DDE 风格的对话框窗口. </p>
-<p>对话框是一个用于供用户进行短暂周期的任务交互的顶层窗体。 DDialogs 对话框可以是模态的或非模态的。 对话框可以提供一个 return "返回值", 并且对话框可以拥有 default "默认按钮"。 </p><dl class="section note"><dt>注解</dt><dd>请注意 <a class="el" href="classDtk_1_1Widget_1_1DAbstractDialog.html" title="可以使用 DAbstractDialog 类创建符合 DDE 风格的对话框窗口.">DAbstractDialog</a> (以及其他继承自 QDialog 的对话框)对构造时传入的 parent 父组件的行为和其他 Qt 组件或 DTK 组件不同。一个对话框总是一个顶层控件(top-level widget),但如果它有一个父组件 则对话框的默认位置将会位于其父组件的正中央,并共用其父控件的任务栏入口。 </dd></dl>
+<p>对话框是一个用于供用户进行短暂周期的任务交互的顶层窗体。 DDialogs 对话框可以是模态的或非模态的。 对话框可以提供一个 return "返回值", 并且对话框可以拥有 default "默认按钮"。 </p><dl class="section note"><dt>注解</dt><dd>请注意 <a class="el" href="classDtk_1_1Widget_1_1DAbstractDialog.html" title="可以使用 DAbstractDialog 类创建符合 DDE 风格的对话框窗口.">DAbstractDialog</a> (以及其他继承自 <a class="elRef" href="http://doc.qt.io/qt-5/qdialog.html">QDialog</a> 的对话框)对构造时传入的 parent 父组件的行为和其他 <a class="elRef" href="http://doc.qt.io/qt-5/qt.html">Qt</a> 组件或 DTK 组件不同。一个对话框总是一个顶层控件(top-level widget),但如果它有一个父组件 则对话框的默认位置将会位于其父组件的正中央,并共用其父控件的任务栏入口。 </dd></dl>
 <h1><a class="anchor" id="模态与非模态相关介绍"></a>
 模态与非模态相关介绍</h1>
 <h2><a class="anchor" id="modal"></a>
 模态对话框</h2>
-<p>一个 {模态} (modal)对话框可以阻止对模态对话框之外的原可见窗体的操作,如请求用户输入文件名的对话框或是对应用程序本身进行设置的对话框就常是模态对话框。 模态对话框可以是<code>Qt::ApplicationModal</code> "应用模态" 的（默认）,也可以是 <code>Qt::WindowModal</code> "窗体模态" 的。 当应用模态对话框出现后,用户必须完成与对话框的交互并关闭对话框才能继续与应用的其他窗体进行交互。<br  />
+<p>一个 {模态} (modal)对话框可以阻止对模态对话框之外的原可见窗体的操作,如请求用户输入文件名的对话框或是对应用程序本身进行设置的对话框就常是模态对话框。 模态对话框可以是<code><a class="elRef" href="http://doc.qt.io/qt-5/qt.html#WindowModality-enum">Qt::ApplicationModal</a></code> "应用模态" 的（默认）,也可以是 <code><a class="elRef" href="http://doc.qt.io/qt-5/qt.html#WindowModality-enum">Qt::WindowModal</a></code> "窗体模态" 的。 当应用模态对话框出现后,用户必须完成与对话框的交互并关闭对话框才能继续与应用的其他窗体进行交互。<br  />
  窗体模态对话框则仅仅阻止用户与这个对话框的父窗体进行交互而不影响这个父窗体之外的其他窗体。<br  />
  显示模态对话框的常见做法是调用<code>exec()</code> 。当对话框被用户关闭时,<code>exec()</code> 会提供一个有用的return "返回值" 。 通常,需要关闭一个对话框并使其返回期望的值时,我们可以把默认按钮,如 <code>OK</code> 确认按钮连接到 <code>accept()</code> 槽,并把 <code>Cancel</code> 取消按钮连接到<code>reject()</code> 槽。当然,也可以调用 <code>done()</code> 槽并传递 <code>Accepted</code> 或是 <code>Rejected</code>达到相同目的。<br  />
  另一个可行方案是调用<code>setModal(true)</code>或 <code>setWindowModality()</code>, 然后调用 <code>show()</code>。而区别于<code>exec()</code>的是, <code>show()</code> 将立即交回控制权给调用者。 对于类似显示进度条的应用场景,如需限定用户只能与对话框交互(比如,允许取消一个执行时间过长的操作),此时 setModal(true) 就很有用处。<br  />
@@ -171,17 +171,17 @@ $(document).ready(function(){initNavTree('classDtk_1_1Widget_1_1DAbstractDialog.
 <h2><a class="anchor" id="modeless"></a>
 非模态对话框</h2>
 <p>一个 {非模态}(modeless)对话框表示其对话框本身的操作和该应用的其他窗口互相独立互不影响。 例如文字处理程序中的“查找文字”功能通常是非模态的,以便用户同时操作对话框和应用程序窗口 非模态对话框通过调用 show() 使其显示, 其会将控制权立即返回给调用者<br  />
- 如果在隐藏对话框后调用 <code>QWidget::show()</code> <code>show()</code> ,对话框将显示在其原本所在的位置。若要记住用户调整对话框位置后的位置, 需要在<code>QWidget::closeEvent()</code> <code>closeEvent()</code>中保存窗体位置并在显示对话框前移动对话框到所保存的位置。 </p>
+ 如果在隐藏对话框后调用 <code><a class="elRef" href="http://doc.qt.io/qt-5/qwidget.html#show">QWidget::show()</a></code> <code>show()</code> ,对话框将显示在其原本所在的位置。若要记住用户调整对话框位置后的位置, 需要在<code><a class="elRef" href="http://doc.qt.io/qt-5/qwidget.html#closeEvent">QWidget::closeEvent()</a></code> <code>closeEvent()</code>中保存窗体位置并在显示对话框前移动对话框到所保存的位置。 </p>
 <h2><a class="anchor" id="default"></a>
 默认按钮</h2>
-<p>对话框的 <b>默认</b> 按钮是指当用户直接按下回车(Enter / Return)键时所会被按下的按钮。用以表明用户接受了对话框的某些操作并想要关闭对话框。对于 QDialog 可以使用<code>QPushButton::setDefault()</code>, <code>QPushButton::isDefault()</code>和 <code>QPushButton::autoDefault()</code> 来设置或调整一个对话框的默认按钮。 </p>
+<p>对话框的 <b>默认</b> 按钮是指当用户直接按下回车(Enter / Return)键时所会被按下的按钮。用以表明用户接受了对话框的某些操作并想要关闭对话框。对于 <a class="elRef" href="http://doc.qt.io/qt-5/qdialog.html">QDialog</a> 可以使用<code><a class="elRef" href="http://doc.qt.io/qt-5/qpushbutton.html#default-prop">QPushButton::setDefault()</a></code>, <code><a class="elRef" href="http://doc.qt.io/qt-5/qpushbutton.html#default-prop">QPushButton::isDefault()</a></code>和 <code><a class="elRef" href="http://doc.qt.io/qt-5/qpushbutton.html#autoDefault-prop">QPushButton::autoDefault()</a></code> 来设置或调整一个对话框的默认按钮。 </p>
 <h2><a class="anchor" id="escapekey"></a>
 退出(Escape)键</h2>
-<p>如果用户在对话框出现后按下了 Esc 键, 将会触发 <code>QDialog::reject()</code>并导致窗体被关闭。 QCloseEvent "关闭事件" 不可以是<code>QEvent::ignore()</code>"忽略事件" . </p>
+<p>如果用户在对话框出现后按下了 Esc 键, 将会触发 <code><a class="elRef" href="http://doc.qt.io/qt-5/qdialog.html#reject">QDialog::reject()</a></code>并导致窗体被关闭。 <a class="elRef" href="http://doc.qt.io/qt-5/qcloseevent.html">QCloseEvent</a> "关闭事件" 不可以是<code><a class="elRef" href="http://doc.qt.io/qt-5/qevent.html#ignore">QEvent::ignore()</a></code>"忽略事件" . </p>
 <h2><a class="anchor" id="return"></a>
 返回值 (模态对话框)</h2>
 <p>模态对话框通常伴随返回值一同使用。例如用来标识判断用户是按下了 OK 确认按钮 还是 Cancel 取消按钮。 对话框可以通过调用<code>accept()</code>或 <code>reject()</code> 槽来关闭, <code>exec()</code> 则会根据实际情况返回 <code>Accepted</code> 或 <code>Rejected</code> 。 如果对话框没有被销毁,也可以通过<code>result()</code>得到对话框的返回值。</p>
-<p>若要修改对话框的关闭行为,你可以重新实现<code>accept()</code>, <code>reject()</code> 或 <code>done()</code> 。而<code>QWidget::closeEvent()</code><code>closeEvent()</code>仅当你需要记住对话框位置或是重载标准的关闭行为时才应使用 </p><dl class="section see"><dt>参见</dt><dd><a class="el" href="classDtk_1_1Widget_1_1DDialog.html" title="可以使用 DDialog 类快速创建符合 DDE 风格的简要对话框窗口.">DDialog</a>, QDialog </dd></dl>
+<p>若要修改对话框的关闭行为,你可以重新实现<code>accept()</code>, <code>reject()</code> 或 <code>done()</code> 。而<code><a class="elRef" href="http://doc.qt.io/qt-5/qwidget.html#closeEvent">QWidget::closeEvent()</a></code><code>closeEvent()</code>仅当你需要记住对话框位置或是重载标准的关闭行为时才应使用 </p><dl class="section see"><dt>参见</dt><dd><a class="el" href="classDtk_1_1Widget_1_1DDialog.html" title="可以使用 DDialog 类快速创建符合 DDE 风格的简要对话框窗口.">DDialog</a>, <a class="elRef" href="http://doc.qt.io/qt-5/qdialog.html">QDialog</a> </dd></dl>
 </div><hr/>该类的文档由以下文件生成:<ul>
 <li>dtkwidget/docs/widgets/dabstractdialog.zh_CN.dox</li>
 </ul>
@@ -192,7 +192,7 @@ $(document).ready(function(){initNavTree('classDtk_1_1Widget_1_1DAbstractDialog.
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classDtk_1_1Widget_1_1DAbstractDialog.html">DAbstractDialog</a></li>
-    <li class="footer">文档生成时间:2023-01-03-09:26  +00</li>
+    <li class="footer">文档生成时间:2023-01-03-09:52  +00</li>
     <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
     <li class="footer">制作者:deepin doc doc go SIG</li>
     <li class="footer">文档使用CC-BY-4.0共享 </a>

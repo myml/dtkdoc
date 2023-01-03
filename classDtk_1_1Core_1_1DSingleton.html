@@ -187,15 +187,16 @@ class Dtk::Core::DSingleton&lt; T &gt;</h3>
 
 <p>a simple singleton template for std c++ 11 or later.</p>
 <p>example:</p>
-<div class="fragment"><div class="line"><span class="keyword">class </span>ExampleSingleton : <span class="keyword">public</span> QObject, <span class="keyword">public</span> Dtk::DSingleton&lt;ExampleSingleton&gt;</div>
+<div class="fragment"><div class="line"><span class="keyword">class </span>ExampleSingleton : <span class="keyword">public</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a>, <span class="keyword">public</span> Dtk::DSingleton&lt;ExampleSingleton&gt;</div>
 <div class="line">{</div>
 <div class="line">    Q_OBJECT</div>
 <div class="line">    <span class="keyword">friend</span> <span class="keyword">class </span>DSingleton&lt;ExampleSingleton&gt;;</div>
 <div class="line">};</div>
-</div><!-- fragment --><dl class="section note"><dt>注解</dt><dd>: for Qt, "public DSingleton&lt;ExampleSingleton&gt;" must be after QObject.</dd></dl>
+<div class="ttc" id="aqobject_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html">QObject</a></div></div>
+</div><!-- fragment --><dl class="section note"><dt>注解</dt><dd>: for <a class="elRef" href="http://doc.qt.io/qt-5/qt.html">Qt</a>, "public DSingleton&lt;ExampleSingleton&gt;" must be after <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a>.</dd></dl>
 <p>通过c++11的特性实现的单例模板</p>
 <p>使用示例:</p>
-<div class="fragment"><div class="line"><span class="keyword">class </span>ExampleSingleton : <span class="keyword">public</span> QObject, <span class="keyword">public</span> Dtk::DSingleton&lt;ExampleSingleton&gt;</div>
+<div class="fragment"><div class="line"><span class="keyword">class </span>ExampleSingleton : <span class="keyword">public</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a>, <span class="keyword">public</span> Dtk::DSingleton&lt;ExampleSingleton&gt;</div>
 <div class="line">{</div>
 <div class="line">    Q_OBJECT</div>
 <div class="line">    <span class="keyword">friend</span> <span class="keyword">class </span>DSingleton&lt;ExampleSingleton&gt;;</div>
@@ -211,7 +212,7 @@ class Dtk::Core::DSingleton&lt; T &gt;</h3>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>Dtk</b></li><li class="navelem"><b>Core</b></li><li class="navelem"><a class="el" href="classDtk_1_1Core_1_1DSingleton.html">DSingleton</a></li>
-    <li class="footer">文档生成时间:2023-01-03-09:26  +00</li>
+    <li class="footer">文档生成时间:2023-01-03-09:52  +00</li>
     <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
     <li class="footer">制作者:deepin doc doc go SIG</li>
     <li class="footer">文档使用CC-BY-4.0共享 </a>

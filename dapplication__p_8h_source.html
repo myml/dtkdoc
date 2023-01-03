@@ -168,8 +168,8 @@ $(document).ready(function(){initNavTree('dapplication__p_8h_source.html',''); i
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;QIcon&gt;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;QPointer&gt;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">class </span>QLocalServer;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">class </span>QTranslator;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">class </span><a class="codeRef" href="http://doc.qt.io/qt-5/qlocalserver.html">QLocalServer</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">class </span><a class="codeRef" href="http://doc.qt.io/qt-5/qtranslator.html">QTranslator</a>;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;DCORE_USE_NAMESPACE</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;DWIDGET_BEGIN_NAMESPACE</div>
@@ -184,19 +184,19 @@ $(document).ready(function(){initNavTree('dapplication__p_8h_source.html',''); i
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDApplicationPrivate.html">DApplicationPrivate</a>(<a class="code" href="classDtk_1_1Widget_1_1DApplication.html">DApplication</a> *q);</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    ~<a class="code" href="classDApplicationPrivate.html">DApplicationPrivate</a>();</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    D_DECL_DEPRECATED QString theme() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    D_DECL_DEPRECATED <span class="keywordtype">void</span> setTheme(<span class="keyword">const</span> QString &amp;theme);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    D_DECL_DEPRECATED <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> theme() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    D_DECL_DEPRECATED <span class="keywordtype">void</span> setTheme(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;theme);</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">bool</span> setSingleInstanceBySemaphore(<span class="keyword">const</span> QString &amp;key);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">bool</span> setSingleInstanceBySemaphore(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;key);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#ifdef Q_OS_UNIX</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">bool</span> setSingleInstanceByDbus(<span class="keyword">const</span> QString &amp;key);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">bool</span> setSingleInstanceByDbus(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;key);</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">bool</span> loadDtkTranslator(QList&lt;QLocale&gt; localeFallback);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">bool</span> loadDtkTranslator(<a class="codeRef" href="http://doc.qt.io/qt-5/qlist.html">QList&lt;QLocale&gt;</a> localeFallback);</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> _q_onNewInstanceStarted();</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="comment">// 为控件适应当前虚拟键盘的位置</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> doAcclimatizeVirtualKeyboard(QWidget *window, QWidget *widget, <span class="keywordtype">bool</span> allowResizeContentsMargins);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> doAcclimatizeVirtualKeyboard(<a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a> *window, <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a> *widget, <span class="keywordtype">bool</span> allowResizeContentsMargins);</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> acclimatizeVirtualKeyboardForFocusWidget(<span class="keywordtype">bool</span> allowResizeContentsMargins);</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> _q_panWindowContentsForVirtualKeyboard();</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> _q_resizeWindowContentsForVirtualKeyboard();</div>
@@ -204,17 +204,17 @@ $(document).ready(function(){initNavTree('dapplication__p_8h_source.html',''); i
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> isUserManualExists();</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">// int m_pidLockFD = 0;</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    QLocalServer *m_localServer = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qlocalserver.html">QLocalServer</a> *m_localServer = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#ifdef Q_OS_UNIX</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    QStringList m_monitoredStartupApps;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> m_monitoredStartupApps;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    QString productName;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    QIcon   productIcon;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    QString appLicense;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    QString appDescription;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    QString homePage;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    QString acknowledgementPage;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> productName;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qicon.html">QIcon</a>   productIcon;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> appLicense;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> appDescription;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> homePage;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> acknowledgementPage;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">bool</span> acknowledgementPageVisible = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">bool</span> visibleMenuShortcutText   = <span class="keyword">false</span>;</div>
@@ -226,11 +226,11 @@ $(document).ready(function(){initNavTree('dapplication__p_8h_source.html',''); i
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <a class="code" href="classDtk_1_1Widget_1_1DAboutDialog.html">DAboutDialog</a> *aboutDialog = Q_NULLPTR;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="comment">// 需要自适应虚拟键盘环境的窗口</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    QPointer&lt;QWidget&gt; activeInputWindow;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qpointer.html">QPointer&lt;QWidget&gt;</a> activeInputWindow;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">// 上一次为适配虚拟键盘所设置的值</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    QPair&lt;int, int&gt; lastContentsMargins;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    QMargins activeInputWindowContentsMargins;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    QList&lt;QWidget*&gt; acclimatizeVirtualKeyboardWindows;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qpair.html">QPair&lt;int, int&gt;</a> lastContentsMargins;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qmargins.html">QMargins</a> activeInputWindowContentsMargins;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qlist.html">QList&lt;QWidget*&gt;</a> acclimatizeVirtualKeyboardWindows;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;};</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;DWIDGET_END_NAMESPACE</div>
@@ -241,6 +241,16 @@ $(document).ready(function(){initNavTree('dapplication__p_8h_source.html',''); i
 <div class="ttc" id="aclassDtk_1_1Core_1_1DObjectPrivate_html"><div class="ttname"><a href="classDtk_1_1Core_1_1DObjectPrivate.html">Dtk::Core::DObjectPrivate</a></div><div class="ttdef"><b>Definition:</b> dobject_p.h:14</div></div>
 <div class="ttc" id="aclassDtk_1_1Widget_1_1DAboutDialog_html"><div class="ttname"><a href="classDtk_1_1Widget_1_1DAboutDialog.html">DAboutDialog</a></div><div class="ttdoc">DAboutDialog 类提供了应用程序的关于对话框, 规范所有 deepin 应用关于窗口设计规范, 符合 deepin 风格</div></div>
 <div class="ttc" id="aclassDtk_1_1Widget_1_1DApplication_html"><div class="ttname"><a href="classDtk_1_1Widget_1_1DApplication.html">DApplication</a></div><div class="ttdoc">DApplication 是 DTK 中用于替换 QCoreApplication 相关功能实现的类.</div></div>
+<div class="ttc" id="aqicon_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qicon.html">QIcon</a></div></div>
+<div class="ttc" id="aqlist_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qlist.html">QList</a></div></div>
+<div class="ttc" id="aqlocalserver_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qlocalserver.html">QLocalServer</a></div></div>
+<div class="ttc" id="aqmargins_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qmargins.html">QMargins</a></div></div>
+<div class="ttc" id="aqpair_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qpair.html">QPair&lt; int, int &gt;</a></div></div>
+<div class="ttc" id="aqpointer_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qpointer.html">QPointer&lt; QWidget &gt;</a></div></div>
+<div class="ttc" id="aqstring_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstring.html">QString</a></div></div>
+<div class="ttc" id="aqstringlist_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a></div></div>
+<div class="ttc" id="aqtranslator_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qtranslator.html">QTranslator</a></div></div>
+<div class="ttc" id="aqwidget_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.4-->
@@ -248,7 +258,7 @@ $(document).ready(function(){initNavTree('dapplication__p_8h_source.html',''); i
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_cc1fdbae730d0dba18db2b924667b662.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_7e9cf0e2371012f8aca5a790419dfe62.html">src</a></li><li class="navelem"><a class="el" href="dir_0f0f1158b2ab9c2e2656097b145c93da.html">widgets</a></li><li class="navelem"><a class="el" href="dir_c2ef0fafcc327cb5e8231a54477e2847.html">private</a></li><li class="navelem"><b>dapplication_p.h</b></li>
-    <li class="footer">文档生成时间:2023-01-03-09:26  +00</li>
+    <li class="footer">文档生成时间:2023-01-03-09:52  +00</li>
     <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
     <li class="footer">制作者:deepin doc doc go SIG</li>
     <li class="footer">文档使用CC-BY-4.0共享 </a>

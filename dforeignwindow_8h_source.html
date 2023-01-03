@@ -168,26 +168,26 @@ $(document).ready(function(){initNavTree('dforeignwindow_8h_source.html',''); in
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;DGUI_BEGIN_NAMESPACE</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">class </span><a class="code" href="classDForeignWindowPrivate.html">DForeignWindowPrivate</a>;</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classDForeignWindow.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDForeignWindow.html">DForeignWindow</a> : <span class="keyword">public</span> QWindow, <span class="keyword">public</span> DTK_CORE_NAMESPACE::DObject</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classDForeignWindow.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDForeignWindow.html">DForeignWindow</a> : <span class="keyword">public</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qwindow.html">QWindow</a>, <span class="keyword">public</span> DTK_CORE_NAMESPACE::DObject</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    Q_PROPERTY(QString <a class="code" href="classDForeignWindow.html#a4a44fdbbd12323932f2f52af9b4487bb">wmClass</a> READ <a class="code" href="classDForeignWindow.html#a4a44fdbbd12323932f2f52af9b4487bb">wmClass</a> NOTIFY <a class="code" href="classDForeignWindow.html#aaad3cc1043a896236756fe0371183c5c">wmClassChanged</a>)</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    Q_PROPERTY(quint32 <a class="code" href="classDForeignWindow.html#adf06aa24cb3c3875185c46c33ed7b01d">pid</a> READ <a class="code" href="classDForeignWindow.html#adf06aa24cb3c3875185c46c33ed7b01d">pid</a> NOTIFY <a class="code" href="classDForeignWindow.html#a424eadf0537e565295498eda505e0ff7">pidChanged</a>)</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">Q_OBJECT</a></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> <a class="code" href="classDForeignWindow.html#a4a44fdbbd12323932f2f52af9b4487bb">wmClass</a> READ <a class="code" href="classDForeignWindow.html#a4a44fdbbd12323932f2f52af9b4487bb">wmClass</a> NOTIFY <a class="code" href="classDForeignWindow.html#aaad3cc1043a896236756fe0371183c5c">wmClassChanged</a>)</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(quint32 <a class="code" href="classDForeignWindow.html#adf06aa24cb3c3875185c46c33ed7b01d">pid</a> READ <a class="code" href="classDForeignWindow.html#adf06aa24cb3c3875185c46c33ed7b01d">pid</a> NOTIFY <a class="code" href="classDForeignWindow.html#a424eadf0537e565295498eda505e0ff7">pidChanged</a>)</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDForeignWindow.html#abe67965134550275b0cfc445872c4024">DForeignWindow</a>(QWindow *parent = 0);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDForeignWindow.html#abe67965134550275b0cfc445872c4024">DForeignWindow</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qwindow.html">QWindow</a> *<a class="codeRef" href="http://doc.qt.io/qt-5/qwindow.html#parent-1">parent</a> = 0);</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">static</span> <a class="code" href="classDForeignWindow.html">DForeignWindow</a> *<a class="code" href="classDForeignWindow.html#ab5416d7037a8dc71654db6c4386958d0">fromWinId</a>(WId <span class="keywordtype">id</span>);</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    QString <a class="code" href="classDForeignWindow.html#a4a44fdbbd12323932f2f52af9b4487bb">wmClass</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> <a class="code" href="classDForeignWindow.html#a4a44fdbbd12323932f2f52af9b4487bb">wmClass</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    quint32 <a class="code" href="classDForeignWindow.html#adf06aa24cb3c3875185c46c33ed7b01d">pid</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;Q_SIGNALS:</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SIGNALS">Q_SIGNALS</a>:</div>
 <div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classDForeignWindow.html#aaad3cc1043a896236756fe0371183c5c">   31</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDForeignWindow.html#aaad3cc1043a896236756fe0371183c5c">wmClassChanged</a>();</div>
 <div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classDForeignWindow.html#a424eadf0537e565295498eda505e0ff7">   32</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDForeignWindow.html#a424eadf0537e565295498eda505e0ff7">pidChanged</a>();</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">bool</span> event(QEvent *) Q_DECL_OVERRIDE;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">bool</span> event(<a class="codeRef" href="http://doc.qt.io/qt-5/qevent.html">QEvent</a> *) Q_DECL_OVERRIDE;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    D_DECLARE_PRIVATE(<a class="code" href="classDForeignWindow.html">DForeignWindow</a>)</div>
@@ -204,6 +204,13 @@ $(document).ready(function(){initNavTree('dforeignwindow_8h_source.html',''); in
 <div class="ttc" id="aclassDForeignWindow_html_ab5416d7037a8dc71654db6c4386958d0"><div class="ttname"><a href="classDForeignWindow.html#ab5416d7037a8dc71654db6c4386958d0">DForeignWindow::fromWinId</a></div><div class="ttdeci">static DForeignWindow * fromWinId(WId id)</div><div class="ttdoc">DForeignWindow::fromWinId. 使用这个窗口id创建一个 DForeignWindow 对象，此对象不会被加到 QGuiApplication::allWindows 中。一般应用...</div><div class="ttdef"><b>Definition:</b> dforeignwindow.cpp:149</div></div>
 <div class="ttc" id="aclassDForeignWindow_html_abe67965134550275b0cfc445872c4024"><div class="ttname"><a href="classDForeignWindow.html#abe67965134550275b0cfc445872c4024">DForeignWindow::DForeignWindow</a></div><div class="ttdeci">DForeignWindow(QWindow *parent=0)</div><div class="ttdoc">直接构造一个 DForeignWindow 对象和使用 QWindow 对象没有区别.</div><div class="ttdef"><b>Definition:</b> dforeignwindow.cpp:80</div></div>
 <div class="ttc" id="aclassDForeignWindow_html_adf06aa24cb3c3875185c46c33ed7b01d"><div class="ttname"><a href="classDForeignWindow.html#adf06aa24cb3c3875185c46c33ed7b01d">DForeignWindow::pid</a></div><div class="ttdeci">quint32 pid</div><div class="ttdoc">窗口所属进程的 pid</div><div class="ttdef"><b>Definition:</b> dforeignwindow.h:20</div></div>
+<div class="ttc" id="aqevent_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qevent.html">QEvent</a></div></div>
+<div class="ttc" id="aqobject_html_Q_OBJECT"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">QObject::Q_OBJECT</a></div><div class="ttdeci">Q_OBJECTQ_OBJECT</div></div>
+<div class="ttc" id="aqobject_html_Q_PROPERTY"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">QObject::Q_PROPERTY</a></div><div class="ttdeci">Q_PROPERTY(...)</div></div>
+<div class="ttc" id="aqobject_html_Q_SIGNALS"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_SIGNALS">QObject::Q_SIGNALS</a></div><div class="ttdeci">Q_SIGNALSQ_SIGNALS</div></div>
+<div class="ttc" id="aqstring_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstring.html">QString</a></div></div>
+<div class="ttc" id="aqwindow_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwindow.html">QWindow</a></div></div>
+<div class="ttc" id="aqwindow_html_parent-1"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwindow.html#parent-1">QWindow::parent</a></div><div class="ttdeci">QWindow * parent() const const</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.4-->
@@ -211,7 +218,7 @@ $(document).ready(function(){initNavTree('dforeignwindow_8h_source.html',''); in
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01e26ae7551668ca493319620c16a3ae.html">dtkgui</a></li><li class="navelem"><a class="el" href="dir_7005495310172da407eaf058f379ec62.html">include</a></li><li class="navelem"><a class="el" href="dir_c0b58ac1b5c2363168a89d290850b4aa.html">kernel</a></li><li class="navelem"><b>dforeignwindow.h</b></li>
-    <li class="footer">文档生成时间:2023-01-03-09:26  +00</li>
+    <li class="footer">文档生成时间:2023-01-03-09:52  +00</li>
     <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
     <li class="footer">制作者:deepin doc doc go SIG</li>
     <li class="footer">文档使用CC-BY-4.0共享 </a>

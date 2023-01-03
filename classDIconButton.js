@@ -21,6 +21,9 @@ var classDIconButton =
     [ "setIcon", "classDIconButton.html#a41c563306065adafeb63ded24c80e44f", null ],
     [ "setIcon", "classDIconButton.html#a8aea02b46bf40a044f8ce1cc3e778626", null ],
     [ "setNewNotification", "classDIconButton.html#aa29eb954631d8d0c88fa312fcd7560c0", null ],
+    [ "setText", "classDIconButton.html#ad62458f7efb4956bd6e5c99b73c8cd37", null ],
     [ "sizeHint", "classDIconButton.html#a47c195795a82f1b22e62d97488113d8b", null ],
-    [ "flat", "classDIconButton.html#a39c6c854a572f3afdaac1a6d555467e5", null ]
+    [ "text", "classDIconButton.html#a98ac55887ff34ae2a9cbbc94d512d2af", null ],
+    [ "flat", "classDIconButton.html#a39c6c854a572f3afdaac1a6d555467e5", null ],
+    [ "text", "classDIconButton.html#afb458dc6c00935605ce75eb38195d1c0", null ]
 ];

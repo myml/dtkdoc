@@ -172,34 +172,34 @@ $(document).ready(function(){initNavTree('dfontcombobox_8h_source.html',''); ini
 <div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classDFontComboBox.html">   17</a></span>&#160;<span class="keyword">class </span>LIBDTKWIDGETSHARED_EXPORT <a class="code" href="classDFontComboBox.html">DFontComboBox</a> : <span class="keyword">public</span> <a class="code" href="classDComboBox.html">DComboBox</a></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    Q_PROPERTY(QFontDatabase::WritingSystem writingSystem READ writingSystem WRITE setWritingSystem)</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    Q_PROPERTY(QFontComboBox::FontFilters fontFilters READ fontFilters WRITE setFontFilters)</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    Q_PROPERTY(QFont currentFont READ currentFont WRITE setCurrentFont NOTIFY currentFontChanged)</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qfontdatabase.html#WritingSystem-enum">QFontDatabase::WritingSystem</a> writingSystem READ writingSystem WRITE setWritingSystem)</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qfontcombobox.html#FontFilter-enum">QFontComboBox::FontFilters</a> fontFilters READ fontFilters WRITE setFontFilters)</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qfont.html">QFont</a> currentFont READ currentFont WRITE setCurrentFont NOTIFY currentFontChanged)</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDFontComboBox.html">DFontComboBox</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDFontComboBox.html">DFontComboBox</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a> *parent = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classDFontComboBox.html">DFontComboBox</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">void</span> setWritingSystem(QFontDatabase::WritingSystem);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    QFontDatabase::WritingSystem writingSystem() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">void</span> setWritingSystem(<a class="codeRef" href="http://doc.qt.io/qt-5/qfontdatabase.html#WritingSystem-enum">QFontDatabase::WritingSystem</a>);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qfontdatabase.html#WritingSystem-enum">QFontDatabase::WritingSystem</a> writingSystem() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">void</span> setFontFilters(QFontComboBox::FontFilters filters);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    QFontComboBox::FontFilters fontFilters() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">void</span> setFontFilters(<a class="codeRef" href="http://doc.qt.io/qt-5/qfontcombobox.html#FontFilter-enum">QFontComboBox::FontFilters</a> filters);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qfontcombobox.html#FontFilter-enum">QFontComboBox::FontFilters</a> fontFilters() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    QFont currentFont() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">virtual</span> QSize sizeHint() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qfont.html">QFont</a> currentFont() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">virtual</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qsize.html">QSize</a> <a class="codeRef" href="http://doc.qt.io/qt-5/qcombobox.html#sizeHint">sizeHint</a>() <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> setCurrentFont(<span class="keyword">const</span> QFont &amp;f);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">public</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SLOTS">Q_SLOTS</a>:</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> setCurrentFont(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qfont.html">QFont</a> &amp;f);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;Q_SIGNALS:</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> currentFontChanged(<span class="keyword">const</span> QFont &amp;f);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SIGNALS">Q_SIGNALS</a>:</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> currentFontChanged(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qfont.html">QFont</a> &amp;f);</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> event(QEvent *e) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qcombobox.html#event">event</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qevent.html">QEvent</a> *e) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    Q_DISABLE_COPY(<a class="code" href="classDFontComboBox.html">DFontComboBox</a>)</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_DISABLE_COPY">Q_DISABLE_COPY</a>(<a class="code" href="classDFontComboBox.html">DFontComboBox</a>)</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    D_DECLARE_PRIVATE(<a class="code" href="classDFontComboBox.html">DFontComboBox</a>)</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;};</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
@@ -209,6 +209,18 @@ $(document).ready(function(){initNavTree('dfontcombobox_8h_source.html',''); ini
 <div class="ttc" id="aclassDComboBox_html"><div class="ttname"><a href="classDComboBox.html">DComboBox</a></div><div class="ttdoc">DComboBox 重写QComboBox, 提供一个下拉列表供用户选择</div><div class="ttdef"><b>Definition:</b> dcombobox.h:16</div></div>
 <div class="ttc" id="aclassDFontComboBoxPrivate_html"><div class="ttname"><a href="classDFontComboBoxPrivate.html">DFontComboBoxPrivate</a></div><div class="ttdef"><b>Definition:</b> dfontcombobox.cpp:19</div></div>
 <div class="ttc" id="aclassDFontComboBox_html"><div class="ttname"><a href="classDFontComboBox.html">DFontComboBox</a></div><div class="ttdoc">DFontComboBox 字体选择下拉列表</div><div class="ttdef"><b>Definition:</b> dfontcombobox.h:18</div></div>
+<div class="ttc" id="aqcombobox_html_event"><div class="ttname"><a href="http://doc.qt.io/qt-5/qcombobox.html#event">QComboBox::event</a></div><div class="ttdeci">virtual bool event(QEvent *event) override</div></div>
+<div class="ttc" id="aqcombobox_html_sizeHint"><div class="ttname"><a href="http://doc.qt.io/qt-5/qcombobox.html#sizeHint">QComboBox::sizeHint</a></div><div class="ttdeci">virtual QSize sizeHint() const const override</div></div>
+<div class="ttc" id="aqevent_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qevent.html">QEvent</a></div></div>
+<div class="ttc" id="aqfont_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qfont.html">QFont</a></div></div>
+<div class="ttc" id="aqfontcombobox_html_FontFilter-enum"><div class="ttname"><a href="http://doc.qt.io/qt-5/qfontcombobox.html#FontFilter-enum">QFontComboBox::FontFilters</a></div><div class="ttdeci">typedef FontFilters</div></div>
+<div class="ttc" id="aqfontdatabase_html_WritingSystem-enum"><div class="ttname"><a href="http://doc.qt.io/qt-5/qfontdatabase.html#WritingSystem-enum">QFontDatabase::WritingSystem</a></div><div class="ttdeci">WritingSystem</div></div>
+<div class="ttc" id="aqobject_html_Q_DISABLE_COPY"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_DISABLE_COPY">QObject::Q_DISABLE_COPY</a></div><div class="ttdeci">Q_DISABLE_COPY(Class)</div></div>
+<div class="ttc" id="aqobject_html_Q_PROPERTY"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">QObject::Q_PROPERTY</a></div><div class="ttdeci">Q_PROPERTY(...)</div></div>
+<div class="ttc" id="aqobject_html_Q_SIGNALS"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_SIGNALS">QObject::Q_SIGNALS</a></div><div class="ttdeci">Q_SIGNALSQ_SIGNALS</div></div>
+<div class="ttc" id="aqobject_html_Q_SLOTS"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_SLOTS">QObject::Q_SLOTS</a></div><div class="ttdeci">Q_SLOTSQ_SLOTS</div></div>
+<div class="ttc" id="aqsize_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qsize.html">QSize</a></div></div>
+<div class="ttc" id="aqwidget_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.4-->
@@ -216,7 +228,7 @@ $(document).ready(function(){initNavTree('dfontcombobox_8h_source.html',''); ini
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_cc1fdbae730d0dba18db2b924667b662.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_6819db61f31aacd6e31b437a606a4041.html">include</a></li><li class="navelem"><a class="el" href="dir_6719ee6af2149ba01bce2af57814b9e8.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_4faf4521db2f3764f9e00575717749e8.html">widgets</a></li><li class="navelem"><a class="el" href="dfontcombobox_8h.html">dfontcombobox.h</a></li>
-    <li class="footer">文档生成时间:2023-01-03-09:26  +00</li>
+    <li class="footer">文档生成时间:2023-01-03-09:52  +00</li>
     <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
     <li class="footer">制作者:deepin doc doc go SIG</li>
     <li class="footer">文档使用CC-BY-4.0共享 </a>

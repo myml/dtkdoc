@@ -8,6 +8,8 @@ var classDStyleOptionBackgroundGroup =
       [ "OnlyOne", "classDStyleOptionBackgroundGroup.html#a0fbefc2f2235c032c95e399e73acf556a1498a977678df8556772f151eb45a6bb", null ]
     ] ],
     [ "init", "classDStyleOptionBackgroundGroup.html#a024b1b2d6a028d78a1f677d4e69735cd", null ],
+    [ "QStyleOption", "classDStyleOptionBackgroundGroup.html#abe3499fea2680bf5ca4ab84b348312d8", null ],
+    [ "QStyleOption", "classDStyleOptionBackgroundGroup.html#a45101d05c9cca67282a11116dd45ff36", null ],
     [ "directions", "classDStyleOptionBackgroundGroup.html#a456b661939d74836d103bc235e44c7cb", null ],
     [ "position", "classDStyleOptionBackgroundGroup.html#a914f8c4a8dc66216372645d1cc6ce146", null ]
 ];

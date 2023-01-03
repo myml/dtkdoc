@@ -167,23 +167,25 @@ $(document).ready(function(){initNavTree('drecentmanager_8h_source.html',''); in
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
 <div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="structDtk_1_1Core_1_1DRecentData.html">   13</a></span>&#160;<span class="keyword">struct </span>LIBDTKCORESHARED_EXPORT <a class="code" href="structDtk_1_1Core_1_1DRecentData.html">DRecentData</a></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    QString appName;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    QString appExec;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    QString mimeType;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> appName;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> appExec;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> mimeType;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;};</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
 <div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classDtk_1_1Core_1_1DRecentManager.html">   20</a></span>&#160;<span class="keyword">class </span>LIBDTKCORESHARED_EXPORT <a class="code" href="classDtk_1_1Core_1_1DRecentManager.html">DRecentManager</a></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> addItem(<span class="keyword">const</span> QString &amp;uri, <a class="code" href="structDtk_1_1Core_1_1DRecentData.html">DRecentData</a> &amp;data);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> removeItem(<span class="keyword">const</span> QString &amp;target);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> removeItems(<span class="keyword">const</span> QStringList &amp;list);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> addItem(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;uri, <a class="code" href="structDtk_1_1Core_1_1DRecentData.html">DRecentData</a> &amp;data);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> removeItem(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;target);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> removeItems(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> &amp;list);</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;};</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;DCORE_END_NAMESPACE</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// DRECENTMANAGER_H</span></div>
 <div class="ttc" id="aclassDtk_1_1Core_1_1DRecentManager_html"><div class="ttname"><a href="classDtk_1_1Core_1_1DRecentManager.html">Dtk::Core::DRecentManager</a></div><div class="ttdoc">DRecentManager 是用来管理最近文件列表的类，提供了添加与删除文件项.</div><div class="ttdef"><b>Definition:</b> drecentmanager.h:21</div></div>
+<div class="ttc" id="aqstring_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstring.html">QString</a></div></div>
+<div class="ttc" id="aqstringlist_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a></div></div>
 <div class="ttc" id="astructDtk_1_1Core_1_1DRecentData_html"><div class="ttname"><a href="structDtk_1_1Core_1_1DRecentData.html">Dtk::Core::DRecentData</a></div><div class="ttdoc">文件信息结构体.</div><div class="ttdef"><b>Definition:</b> drecentmanager.h:14</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -192,7 +194,7 @@ $(document).ready(function(){initNavTree('drecentmanager_8h_source.html',''); in
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_6c3d837d12de6918ecc70ece2c9d5940.html">dtkcore</a></li><li class="navelem"><a class="el" href="dir_858a6aace3374df34beb3a5d036e09e4.html">include</a></li><li class="navelem"><a class="el" href="dir_24450d5b37828d2338747fbf63b34a61.html">util</a></li><li class="navelem"><b>drecentmanager.h</b></li>
-    <li class="footer">文档生成时间:2023-01-03-09:26  +00</li>
+    <li class="footer">文档生成时间:2023-01-03-09:52  +00</li>
     <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
     <li class="footer">制作者:deepin doc doc go SIG</li>
     <li class="footer">文档使用CC-BY-4.0共享 </a>

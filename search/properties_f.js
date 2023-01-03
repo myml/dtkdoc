@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['usecache_4140',['useCache',['../classDtk_1_1Core_1_1DDBusExtendedAbstractInterface.html#a5df6f802bbdadb55c2cdea8734e79d9a',1,'Dtk::Core::DDBusExtendedAbstractInterface']]]
+  ['quitlockenabled_35873',['quitLockEnabled',['http://doc.qt.io/qt-5/qcoreapplication.html#quitLockEnabled-prop',1,'QCoreApplication']]],
+  ['quitonlastwindowclosed_35874',['quitOnLastWindowClosed',['http://doc.qt.io/qt-5/qguiapplication.html#quitOnLastWindowClosed-prop',1,'QGuiApplication']]]
 ];

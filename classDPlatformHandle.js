@@ -55,7 +55,7 @@ var classDPlatformHandle =
     [ "setWindowBlurAreaByWM", "classDPlatformHandle.html#a9cd159ce97aba6625f8c0bba202a5030", null ],
     [ "setWindowBlurAreaByWM", "classDPlatformHandle.html#a363a1c10ff4cf65a99ab2ad2190d7aa1", null ],
     [ "setWindowBlurAreaByWM", "classDPlatformHandle.html#a583f28cc2ab7f9054c158b66ea4dec0c", null ],
-    [ "setWindowBlurAreaByWM", "classDPlatformHandle.html#aea270acbf118a76910848715d9c3b501", null ],
+    [ "setWindowBlurAreaByWM", "classDPlatformHandle.html#a12799d43fdde33892ed039d56bb0cd9e", null ],
     [ "setWindowRadius", "classDPlatformHandle.html#a0520910a7b88853954e13197789ff3b1", null ],
     [ "setWindowWallpaperParaByWM", "classDPlatformHandle.html#a75bdab76f6827c87997e1adce95eaafc", null ],
     [ "shadowColor", "classDPlatformHandle.html#a137db648125bc3ec96830579dbc73aef", null ],

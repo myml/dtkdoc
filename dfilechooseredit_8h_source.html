@@ -170,7 +170,7 @@ $(document).ready(function(){initNavTree('dfilechooseredit_8h_source.html',''); 
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    Q_OBJECT</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    Q_ENUMS(DialogDisplayPosition)</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject-obsolete.html#Q_ENUMS">Q_ENUMS</a>(DialogDisplayPosition)</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">enum</span> DialogDisplayPosition {</div>
@@ -178,32 +178,32 @@ $(document).ready(function(){initNavTree('dfilechooseredit_8h_source.html',''); 
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        CurrentMonitorCenter</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    };</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="classDFileChooserEdit.html">DFileChooserEdit</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="classDFileChooserEdit.html">DFileChooserEdit</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a> *parent = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">void</span> setFileMode(QFileDialog::FileMode mode);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    QFileDialog::FileMode fileMode() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">void</span> setFileMode(<a class="codeRef" href="http://doc.qt.io/qt-5/qfiledialog.html#FileMode-enum">QFileDialog::FileMode</a> mode);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qfiledialog.html#FileMode-enum">QFileDialog::FileMode</a> fileMode() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">void</span> setNameFilters(<span class="keyword">const</span> QStringList &amp;filters);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    QStringList nameFilters() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">void</span> setNameFilters(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> &amp;filters);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> nameFilters() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> setDirectoryUrl(<span class="keyword">const</span> QUrl &amp;directory);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    QUrl directoryUrl();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> setDirectoryUrl(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qurl.html">QUrl</a> &amp;directory);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qurl.html">QUrl</a> directoryUrl();</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> setDialogDisplayPosition(DialogDisplayPosition dialogDisplayPosition);</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    DFileChooserEdit::DialogDisplayPosition dialogDisplayPosition() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> setFileDialog(QFileDialog *fileDialog);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    QFileDialog *fileDialog() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> setFileDialog(<a class="codeRef" href="http://doc.qt.io/qt-5/qfiledialog.html">QFileDialog</a> *fileDialog);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qfiledialog.html">QFileDialog</a> *fileDialog() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> initDialog();</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;Q_SIGNALS:</div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classDFileChooserEdit.html#aa4d84f1436535e870a71709b1bcd776e">   46</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDFileChooserEdit.html#aa4d84f1436535e870a71709b1bcd776e">fileChoosed</a>(<span class="keyword">const</span> QString &amp;fileName);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SIGNALS">Q_SIGNALS</a>:</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classDFileChooserEdit.html#aa4d84f1436535e870a71709b1bcd776e">   46</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDFileChooserEdit.html#aa4d84f1436535e870a71709b1bcd776e">fileChoosed</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;fileName);</div>
 <div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classDFileChooserEdit.html#a61a5fc9d9aeec5d16e53de481c727590">   47</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDFileChooserEdit.html#a61a5fc9d9aeec5d16e53de481c727590">dialogOpened</a>();</div>
 <div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classDFileChooserEdit.html#a7cfc4513ccb814ab5204abd66719a4ba">   48</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDFileChooserEdit.html#a7cfc4513ccb814ab5204abd66719a4ba">dialogClosed</a>(<span class="keywordtype">int</span> code);</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    Q_DISABLE_COPY(<a class="code" href="classDFileChooserEdit.html">DFileChooserEdit</a>)</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_DISABLE_COPY">Q_DISABLE_COPY</a>(<a class="code" href="classDFileChooserEdit.html">DFileChooserEdit</a>)</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    D_DECLARE_PRIVATE(<a class="code" href="classDFileChooserEdit.html">DFileChooserEdit</a>)</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    Q_PRIVATE_SLOT(d_func(), <span class="keywordtype">void</span> _q_showFileChooserDialog())</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;};</div>
@@ -217,6 +217,15 @@ $(document).ready(function(){initNavTree('dfilechooseredit_8h_source.html',''); 
 <div class="ttc" id="aclassDFileChooserEdit_html_a7cfc4513ccb814ab5204abd66719a4ba"><div class="ttname"><a href="classDFileChooserEdit.html#a7cfc4513ccb814ab5204abd66719a4ba">DFileChooserEdit::dialogClosed</a></div><div class="ttdeci">void dialogClosed(int code)</div><div class="ttdoc">这信号在对话框关闭时被调用，无论对话框是被点击了确认还是取消，都会调用本信号 code 对话框的返回码，返回码表示了对话框是因为点击了取消还是确认而关闭的</div></div>
 <div class="ttc" id="aclassDFileChooserEdit_html_aa4d84f1436535e870a71709b1bcd776e"><div class="ttname"><a href="classDFileChooserEdit.html#aa4d84f1436535e870a71709b1bcd776e">DFileChooserEdit::fileChoosed</a></div><div class="ttdeci">void fileChoosed(const QString &amp;fileName)</div><div class="ttdoc">这个信号在文件被选择且点击了对话框的确认按钮之后被调用 fileName 被选中的文件名，包含其绝对路径</div></div>
 <div class="ttc" id="aclassDLineEdit_html"><div class="ttname"><a href="classDLineEdit.html">DLineEdit</a></div><div class="ttdef"><b>Definition:</b> dlineedit.h:20</div></div>
+<div class="ttc" id="aqfiledialog_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qfiledialog.html">QFileDialog</a></div></div>
+<div class="ttc" id="aqfiledialog_html_FileMode-enum"><div class="ttname"><a href="http://doc.qt.io/qt-5/qfiledialog.html#FileMode-enum">QFileDialog::FileMode</a></div><div class="ttdeci">FileMode</div></div>
+<div class="ttc" id="aqobject-obsolete_html_Q_ENUMS"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject-obsolete.html#Q_ENUMS">QObject::Q_ENUMS</a></div><div class="ttdeci">Q_ENUMS(...)</div></div>
+<div class="ttc" id="aqobject_html_Q_DISABLE_COPY"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_DISABLE_COPY">QObject::Q_DISABLE_COPY</a></div><div class="ttdeci">Q_DISABLE_COPY(Class)</div></div>
+<div class="ttc" id="aqobject_html_Q_SIGNALS"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_SIGNALS">QObject::Q_SIGNALS</a></div><div class="ttdeci">Q_SIGNALSQ_SIGNALS</div></div>
+<div class="ttc" id="aqstring_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstring.html">QString</a></div></div>
+<div class="ttc" id="aqstringlist_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a></div></div>
+<div class="ttc" id="aqurl_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qurl.html">QUrl</a></div></div>
+<div class="ttc" id="aqwidget_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.4-->
@@ -224,7 +233,7 @@ $(document).ready(function(){initNavTree('dfilechooseredit_8h_source.html',''); 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_cc1fdbae730d0dba18db2b924667b662.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_6819db61f31aacd6e31b437a606a4041.html">include</a></li><li class="navelem"><a class="el" href="dir_6719ee6af2149ba01bce2af57814b9e8.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_4faf4521db2f3764f9e00575717749e8.html">widgets</a></li><li class="navelem"><a class="el" href="dfilechooseredit_8h.html">dfilechooseredit.h</a></li>
-    <li class="footer">文档生成时间:2023-01-03-09:26  +00</li>
+    <li class="footer">文档生成时间:2023-01-03-09:52  +00</li>
     <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
     <li class="footer">制作者:deepin doc doc go SIG</li>
     <li class="footer">文档使用CC-BY-4.0共享 </a>

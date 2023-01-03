@@ -184,7 +184,7 @@ Public 成员函数</h2></td></tr>
 <tr class="memitem:a8bf632cb87800101031e5c19773cca38"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1Logger.html#a8bf632cb87800101031e5c19773cca38">Logger</a> ()</td></tr>
 <tr class="memdesc:a8bf632cb87800101031e5c19773cca38"><td class="mdescLeft">&#160;</td><td class="mdescRight">构建Logger的实例。  <a href="classDtk_1_1Core_1_1Logger.html#a8bf632cb87800101031e5c19773cca38">更多...</a><br /></td></tr>
 <tr class="separator:a8bf632cb87800101031e5c19773cca38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2f834f683f7379d92de6e413c5acb8b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1Logger.html#ae2f834f683f7379d92de6e413c5acb8b">Logger</a> (const QString &amp;<a class="el" href="classDtk_1_1Core_1_1Logger.html#a4a372bad2146536722eafc6a8c086c9c">defaultCategory</a>)</td></tr>
+<tr class="memitem:ae2f834f683f7379d92de6e413c5acb8b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1Logger.html#ae2f834f683f7379d92de6e413c5acb8b">Logger</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;<a class="el" href="classDtk_1_1Core_1_1Logger.html#a4a372bad2146536722eafc6a8c086c9c">defaultCategory</a>)</td></tr>
 <tr class="memdesc:ae2f834f683f7379d92de6e413c5acb8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">构建Logger的实例并设置Logger的默认类别  <a href="classDtk_1_1Core_1_1Logger.html#ae2f834f683f7379d92de6e413c5acb8b">更多...</a><br /></td></tr>
 <tr class="separator:ae2f834f683f7379d92de6e413c5acb8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4eea40e26ce45df1c18058f97d1b11e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1Logger.html#ab4eea40e26ce45df1c18058f97d1b11e">~Logger</a> ()</td></tr>
@@ -194,27 +194,27 @@ Public 成员函数</h2></td></tr>
 <tr class="memdesc:a2bcdf12779fa8567bb2079edf027662d"><td class="mdescLeft">&#160;</td><td class="mdescRight">注册appender来写入日志记录<br  />
  在写入日志的调用中(使用其中一个宏或<code><a class="el" href="classDtk_1_1Core_1_1Logger.html#a7c89067d5a040ea79c481038dbdd565f" title="写入日志记录。 将带有所提供参数的日志记录写给所有注册的应用">write()</a></code>函数),Logger遍历appender列表,并向每个appender写入日志记录。请查阅AbstractAppender文档以了解appenders的概念。 如果没有appender被添加到Logger中,它就会退回到记录到<code>std::cerr</code>STL流中。 appender 要在Logger中注册的Appender  <a href="classDtk_1_1Core_1_1Logger.html#a2bcdf12779fa8567bb2079edf027662d">更多...</a><br /></td></tr>
 <tr class="separator:a2bcdf12779fa8567bb2079edf027662d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95ef2b960342e8153edd908b2f05029c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1Logger.html#a95ef2b960342e8153edd908b2f05029c">registerCategoryAppender</a> (const QString &amp;category, <a class="el" href="classDtk_1_1Core_1_1AbstractAppender.html">AbstractAppender</a> *appender)</td></tr>
+<tr class="memitem:a95ef2b960342e8153edd908b2f05029c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1Logger.html#a95ef2b960342e8153edd908b2f05029c">registerCategoryAppender</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;category, <a class="el" href="classDtk_1_1Core_1_1AbstractAppender.html">AbstractAppender</a> *appender)</td></tr>
 <tr class="memdesc:a95ef2b960342e8153edd908b2f05029c"><td class="mdescLeft">&#160;</td><td class="mdescRight">注册appender,将日志记录写到特定的类别中<br  />
   <a href="classDtk_1_1Core_1_1Logger.html#a95ef2b960342e8153edd908b2f05029c">更多...</a><br /></td></tr>
 <tr class="separator:a95ef2b960342e8153edd908b2f05029c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87f67b2b6ed4ffec4096ffd5e118beca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1Logger.html#a87f67b2b6ed4ffec4096ffd5e118beca">logToGlobalInstance</a> (const QString &amp;category, bool logToGlobal=false)</td></tr>
+<tr class="memitem:a87f67b2b6ed4ffec4096ffd5e118beca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1Logger.html#a87f67b2b6ed4ffec4096ffd5e118beca">logToGlobalInstance</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;category, bool logToGlobal=false)</td></tr>
 <tr class="memdesc:a87f67b2b6ed4ffec4096ffd5e118beca"><td class="mdescLeft">&#160;</td><td class="mdescRight">将一些日志类别与全局日志实例应用者联系起来。 如果logToGlobal设置为 "true",所有到指定类别的Logger的日志消息也将被写入全局日志实例appenders(使用<code><a class="el" href="classDtk_1_1Core_1_1Logger.html#a2bcdf12779fa8567bb2079edf027662d" title="注册appender来写入日志记录  在写入日志的调用中(使用其中一个宏或write()函数),Logger遍历appender列表,并向每个appender写入日志记录。请查阅AbstractAppe...">registerAppender()</a></code>注册)<br  />
  默认情况下，所有到特定类别的消息都只写到特定的类别应用者 (使用 <code><a class="el" href="classDtk_1_1Core_1_1Logger.html#a95ef2b960342e8153edd908b2f05029c" title="注册appender,将日志记录写到特定的类别中">registerCategoryAppender()</a></code> 注册)  <a href="classDtk_1_1Core_1_1Logger.html#a87f67b2b6ed4ffec4096ffd5e118beca">更多...</a><br /></td></tr>
 <tr class="separator:a87f67b2b6ed4ffec4096ffd5e118beca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a88302ec9c667bc47529d234da516d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1Logger.html#a4a88302ec9c667bc47529d234da516d4">setDefaultCategory</a> (const QString &amp;category)</td></tr>
+<tr class="memitem:a4a88302ec9c667bc47529d234da516d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1Logger.html#a4a88302ec9c667bc47529d234da516d4">setDefaultCategory</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;category)</td></tr>
 <tr class="memdesc:a4a88302ec9c667bc47529d234da516d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置默认的日志类别 所有到这个类别应用的日志信息也将被写入一般的日志实例应用(使用<a class="el" href="classDtk_1_1Core_1_1Logger.html#a2bcdf12779fa8567bb2079edf027662d">registerAppender</a>方法注册),反之亦然 特别是,任何对dDebug()宏的调用都将被视为类别日志 所以你不需要用dCDebug()宏来指定类别名称 要取消默认的类别，传递一个空字符串作为参数  <a href="classDtk_1_1Core_1_1Logger.html#a4a88302ec9c667bc47529d234da516d4">更多...</a><br /></td></tr>
 <tr class="separator:a4a88302ec9c667bc47529d234da516d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a372bad2146536722eafc6a8c086c9c"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1Logger.html#a4a372bad2146536722eafc6a8c086c9c">defaultCategory</a> () const</td></tr>
+<tr class="memitem:a4a372bad2146536722eafc6a8c086c9c"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1Logger.html#a4a372bad2146536722eafc6a8c086c9c">defaultCategory</a> () const</td></tr>
 <tr class="memdesc:a4a372bad2146536722eafc6a8c086c9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回默认的日志类别名称  <a href="classDtk_1_1Core_1_1Logger.html#a4a372bad2146536722eafc6a8c086c9c">更多...</a><br /></td></tr>
 <tr class="separator:a4a372bad2146536722eafc6a8c086c9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c89067d5a040ea79c481038dbdd565f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1Logger.html#a7c89067d5a040ea79c481038dbdd565f">write</a> (const QDateTime &amp;time, <a class="el" href="classDtk_1_1Core_1_1Logger.html#a4a76b1db357f61044ed67411d1c378b4">LogLevel</a> level, const char *file, int line, const char *func, const char *category, const QString &amp;msg)</td></tr>
+<tr class="memitem:a7c89067d5a040ea79c481038dbdd565f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1Logger.html#a7c89067d5a040ea79c481038dbdd565f">write</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qdatetime.html">QDateTime</a> &amp;time, <a class="el" href="classDtk_1_1Core_1_1Logger.html#a4a76b1db357f61044ed67411d1c378b4">LogLevel</a> level, const char *file, int line, const char *func, const char *category, const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;msg)</td></tr>
 <tr class="memdesc:a7c89067d5a040ea79c481038dbdd565f"><td class="mdescLeft">&#160;</td><td class="mdescRight">写入日志记录。 将带有所提供参数的日志记录写给所有注册的应用  <a href="classDtk_1_1Core_1_1Logger.html#a7c89067d5a040ea79c481038dbdd565f">更多...</a><br /></td></tr>
 <tr class="separator:a7c89067d5a040ea79c481038dbdd565f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc14a059bda2bdb2b22b71e4d6c71ef4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1Logger.html#abc14a059bda2bdb2b22b71e4d6c71ef4">write</a> (<a class="el" href="classDtk_1_1Core_1_1Logger.html#a4a76b1db357f61044ed67411d1c378b4">LogLevel</a> level, const char *file, int line, const char *func, const char *category, const QString &amp;msg)</td></tr>
+<tr class="memitem:abc14a059bda2bdb2b22b71e4d6c71ef4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1Logger.html#abc14a059bda2bdb2b22b71e4d6c71ef4">write</a> (<a class="el" href="classDtk_1_1Core_1_1Logger.html#a4a76b1db357f61044ed67411d1c378b4">LogLevel</a> level, const char *file, int line, const char *func, const char *category, const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;msg)</td></tr>
 <tr class="memdesc:abc14a059bda2bdb2b22b71e4d6c71ef4"><td class="mdescLeft">&#160;</td><td class="mdescRight">这是为方便而提供的重载函数。它的行为与同名函数类似,此函数无需传入time参数  <a href="classDtk_1_1Core_1_1Logger.html#abc14a059bda2bdb2b22b71e4d6c71ef4">更多...</a><br /></td></tr>
 <tr class="separator:abc14a059bda2bdb2b22b71e4d6c71ef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7859e553c3fbb0b78802cd78c78389da"><td class="memItemLeft" align="right" valign="top">QDebug&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1Logger.html#a7859e553c3fbb0b78802cd78c78389da">write</a> (<a class="el" href="classDtk_1_1Core_1_1Logger.html#a4a76b1db357f61044ed67411d1c378b4">LogLevel</a> level, const char *file, int line, const char *func, const char *category)</td></tr>
+<tr class="memitem:a7859e553c3fbb0b78802cd78c78389da"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="http://doc.qt.io/qt-5/qdebug.html">QDebug</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1Logger.html#a7859e553c3fbb0b78802cd78c78389da">write</a> (<a class="el" href="classDtk_1_1Core_1_1Logger.html#a4a76b1db357f61044ed67411d1c378b4">LogLevel</a> level, const char *file, int line, const char *func, const char *category)</td></tr>
 <tr class="memdesc:a7859e553c3fbb0b78802cd78c78389da"><td class="mdescLeft">&#160;</td><td class="mdescRight">这是为方便而提供的重载函数。它的行为与同名函数类似,此函数无需传入message参数  <a href="classDtk_1_1Core_1_1Logger.html#a7859e553c3fbb0b78802cd78c78389da">更多...</a><br /></td></tr>
 <tr class="separator:a7859e553c3fbb0b78802cd78c78389da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e743f432d95b256c86e6ee5575270ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1Logger.html#a2e743f432d95b256c86e6ee5575270ba">writeAssert</a> (const char *file, int line, const char *func, const char *condition)</td></tr>
@@ -226,10 +226,10 @@ Public 成员函数</h2></td></tr>
 <tr class="memitem:af7aa5612396574e4274660fe3c4e307a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classDtk_1_1Core_1_1Logger.html">Logger</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1Logger.html#af7aa5612396574e4274660fe3c4e307a">globalInstance</a> ()</td></tr>
 <tr class="memdesc:af7aa5612396574e4274660fe3c4e307a"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回Logger的全局对象  <a href="classDtk_1_1Core_1_1Logger.html#af7aa5612396574e4274660fe3c4e307a">更多...</a><br /></td></tr>
 <tr class="separator:af7aa5612396574e4274660fe3c4e307a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9cb3cfe90fe951388a00ec2a2a76369d"><td class="memItemLeft" align="right" valign="top">static QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1Logger.html#a9cb3cfe90fe951388a00ec2a2a76369d">levelToString</a> (<a class="el" href="classDtk_1_1Core_1_1Logger.html#a4a76b1db357f61044ed67411d1c378b4">LogLevel</a> level)</td></tr>
+<tr class="memitem:a9cb3cfe90fe951388a00ec2a2a76369d"><td class="memItemLeft" align="right" valign="top">static <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1Logger.html#a9cb3cfe90fe951388a00ec2a2a76369d">levelToString</a> (<a class="el" href="classDtk_1_1Core_1_1Logger.html#a4a76b1db357f61044ed67411d1c378b4">LogLevel</a> level)</td></tr>
 <tr class="memdesc:a9cb3cfe90fe951388a00ec2a2a76369d"><td class="mdescLeft">&#160;</td><td class="mdescRight">将LogLevel枚举值转换为其字符串表示  <a href="classDtk_1_1Core_1_1Logger.html#a9cb3cfe90fe951388a00ec2a2a76369d">更多...</a><br /></td></tr>
 <tr class="separator:a9cb3cfe90fe951388a00ec2a2a76369d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a477f08222e3c87f3acf4b9a5da95bc85"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classDtk_1_1Core_1_1Logger.html#a4a76b1db357f61044ed67411d1c378b4">LogLevel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1Logger.html#a477f08222e3c87f3acf4b9a5da95bc85">levelFromString</a> (const QString &amp;str)</td></tr>
+<tr class="memitem:a477f08222e3c87f3acf4b9a5da95bc85"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classDtk_1_1Core_1_1Logger.html#a4a76b1db357f61044ed67411d1c378b4">LogLevel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1Logger.html#a477f08222e3c87f3acf4b9a5da95bc85">levelFromString</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;str)</td></tr>
 <tr class="memdesc:a477f08222e3c87f3acf4b9a5da95bc85"><td class="mdescLeft">&#160;</td><td class="mdescRight">将LogLevel字符串表示转换为枚举值  <a href="classDtk_1_1Core_1_1Logger.html#a477f08222e3c87f3acf4b9a5da95bc85">更多...</a><br /></td></tr>
 <tr class="separator:a477f08222e3c87f3acf4b9a5da95bc85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -298,7 +298,7 @@ Public 成员函数</h2></td></tr>
         <tr>
           <td class="memname">Dtk::Core::Logger::Logger </td>
           <td>(</td>
-          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramtype">const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
           <td class="paramname"><em>defaultCategory</em></td><td>)</td>
           <td></td>
         </tr>
@@ -341,7 +341,7 @@ Public 成员函数</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">QString Dtk::Core::Logger::defaultCategory </td>
+          <td class="memname"><a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> Dtk::Core::Logger::defaultCategory </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -395,7 +395,7 @@ Public 成员函数</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="classDtk_1_1Core_1_1Logger.html#a4a76b1db357f61044ed67411d1c378b4">Logger::LogLevel</a> Dtk::Core::Logger::levelFromString </td>
           <td>(</td>
-          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramtype">const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
           <td class="paramname"><em>str</em></td><td>)</td>
           <td></td>
         </tr>
@@ -425,7 +425,7 @@ Public 成员函数</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">QString Dtk::Core::Logger::levelToString </td>
+          <td class="memname"><a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> Dtk::Core::Logger::levelToString </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classDtk_1_1Core_1_1Logger.html#a4a76b1db357f61044ed67411d1c378b4">Logger::LogLevel</a>&#160;</td>
           <td class="paramname"><em>level</em></td><td>)</td>
@@ -453,7 +453,7 @@ Public 成员函数</h2></td></tr>
         <tr>
           <td class="memname">void Dtk::Core::Logger::logToGlobalInstance </td>
           <td>(</td>
-          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramtype">const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
           <td class="paramname"><em>category</em>, </td>
         </tr>
         <tr>
@@ -521,7 +521,7 @@ Public 成员函数</h2></td></tr>
         <tr>
           <td class="memname">void Dtk::Core::Logger::registerCategoryAppender </td>
           <td>(</td>
-          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramtype">const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
           <td class="paramname"><em>category</em>, </td>
         </tr>
         <tr>
@@ -566,7 +566,7 @@ Public 成员函数</h2></td></tr>
         <tr>
           <td class="memname">void Dtk::Core::Logger::setDefaultCategory </td>
           <td>(</td>
-          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramtype">const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
           <td class="paramname"><em>category</em></td><td>)</td>
           <td></td>
         </tr>
@@ -574,7 +574,7 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 
 <p>设置默认的日志类别 所有到这个类别应用的日志信息也将被写入一般的日志实例应用(使用<a class="el" href="classDtk_1_1Core_1_1Logger.html#a2bcdf12779fa8567bb2079edf027662d">registerAppender</a>方法注册),反之亦然 特别是,任何对dDebug()宏的调用都将被视为类别日志 所以你不需要用dCDebug()宏来指定类别名称 要取消默认的类别，传递一个空字符串作为参数 </p>
-<p>QString <a class="el" href="classDtk_1_1Core_1_1Logger.html#a4a372bad2146536722eafc6a8c086c9c" title="返回默认的日志类别名称">defaultCategory()</a> </p><dl class="params"><dt>参数</dt><dd>
+<p><a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> <a class="el" href="classDtk_1_1Core_1_1Logger.html#a4a372bad2146536722eafc6a8c086c9c" title="返回默认的日志类别名称">defaultCategory()</a> </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">category</td><td>类别名称 </td></tr>
   </table>
@@ -600,7 +600,7 @@ Public 成员函数</h2></td></tr>
         <tr>
           <td class="memname">void Dtk::Core::Logger::write </td>
           <td>(</td>
-          <td class="paramtype">const QDateTime &amp;&#160;</td>
+          <td class="paramtype">const <a class="elRef" href="http://doc.qt.io/qt-5/qdatetime.html">QDateTime</a> &amp;&#160;</td>
           <td class="paramname"><em>time</em>, </td>
         </tr>
         <tr>
@@ -636,7 +636,7 @@ Public 成员函数</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramtype">const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
           <td class="paramname"><em>msg</em>&#160;</td>
         </tr>
         <tr>
@@ -674,7 +674,7 @@ Public 成员函数</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">QDebug Dtk::Core::Logger::write </td>
+          <td class="memname"><a class="elRef" href="http://doc.qt.io/qt-5/qdebug.html">QDebug</a> Dtk::Core::Logger::write </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classDtk_1_1Core_1_1Logger.html#a4a76b1db357f61044ed67411d1c378b4">Logger::LogLevel</a>&#160;</td>
           <td class="paramname"><em>level</em>, </td>
@@ -712,12 +712,15 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 
 <p>这是为方便而提供的重载函数。它的行为与同名函数类似,此函数无需传入message参数 </p>
-<p>这个函数不接受任何日志信息作为参数。它返回的是可以使用流函数写入的<code>QDebug</code>对象<br  />
+<p>这个函数不接受任何日志信息作为参数。它返回的是可以使用流函数写入的<code><a class="elRef" href="http://doc.qt.io/qt-5/qdebug.html">QDebug</a></code>对象<br  />
  例如，你可能想写： </p><div class="fragment"><div class="line">dDebug() &lt;&lt; <span class="stringliteral">&quot;This is the size&quot;</span> &lt;&lt; size &lt;&lt; <span class="stringliteral">&quot;of the element&quot;</span> &lt;&lt; elementName;</div>
-</div><!-- fragment --><p> 而不是写为： </p><div class="fragment"><div class="line">dDebug(QString(QLatin1String(<span class="stringliteral">&quot;This is the size %1x%2 of the element %3&quot;</span>)).arg(size.x()).arg(size.y()).arg(elementName));</div>
+</div><!-- fragment --><p> 而不是写为： </p><div class="fragment"><div class="line">dDebug(<a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qlatin1string.html">QLatin1String</a>(<span class="stringliteral">&quot;This is the size %1x%2 of the element %3&quot;</span>)).arg(size.x()).<a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html#arg-1">arg</a>(size.y()).<a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html#arg-1">arg</a>(elementName));</div>
+<div class="ttc" id="aqlatin1string_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qlatin1string.html">QLatin1String</a></div></div>
+<div class="ttc" id="aqstring_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstring.html">QString</a></div></div>
+<div class="ttc" id="aqstring_html_arg-1"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstring.html#arg-1">QString::arg</a></div><div class="ttdeci">QString arg(qlonglong a, int fieldWidth, int base, QChar fillChar) const const</div></div>
 </div><!-- fragment --><p> 这样会更优雅一些<br  />
  请考虑阅读Qt参考文档,了解QDebug类的使用语法 </p><dl class="section note"><dt>注解</dt><dd>这个重载肯定是最好用的一个重载,但是代价是它会比其他的重载更为慢 </dd></dl>
-<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDtk_1_1Core_1_1Logger.html#a7c89067d5a040ea79c481038dbdd565f" title="写入日志记录。 将带有所提供参数的日志记录写给所有注册的应用">Logger::write</a>(const QDateTime &amp;time, <a class="el" href="classDtk_1_1Core_1_1Logger.html#a4a76b1db357f61044ed67411d1c378b4" title="日志等级">LogLevel</a> level, const char *file, int line,const char *func, const char *category, const QString &amp;msg) </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDtk_1_1Core_1_1Logger.html#a7c89067d5a040ea79c481038dbdd565f" title="写入日志记录。 将带有所提供参数的日志记录写给所有注册的应用">Logger::write</a>(const <a class="elRef" href="http://doc.qt.io/qt-5/qdatetime.html">QDateTime</a> &amp;time, <a class="el" href="classDtk_1_1Core_1_1Logger.html#a4a76b1db357f61044ed67411d1c378b4" title="日志等级">LogLevel</a> level, const char *file, int line,const char *func, const char *category, const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;msg) </dd></dl>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">logLevel</td><td>日志记录等级 </td></tr>
@@ -770,7 +773,7 @@ Public 成员函数</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramtype">const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
           <td class="paramname"><em>msg</em>&#160;</td>
         </tr>
         <tr>
@@ -782,8 +785,8 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 
 <p>这是为方便而提供的重载函数。它的行为与同名函数类似,此函数无需传入time参数 </p>
-<dl class="section note"><dt>注解</dt><dd>这个函数使用了<code>QDateTime::currentDateTime()</code>用获得的当前时间戳 </dd></dl>
-<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDtk_1_1Core_1_1Logger.html#a7c89067d5a040ea79c481038dbdd565f" title="写入日志记录。 将带有所提供参数的日志记录写给所有注册的应用">Logger::write</a>(const QDateTime &amp;time, <a class="el" href="classDtk_1_1Core_1_1Logger.html#a4a76b1db357f61044ed67411d1c378b4" title="日志等级">LogLevel</a> level, const char *file, int line,const char *func, const char *category, const QString &amp;msg) </dd></dl>
+<dl class="section note"><dt>注解</dt><dd>这个函数使用了<code><a class="elRef" href="http://doc.qt.io/qt-5/qdatetime.html#currentDateTime">QDateTime::currentDateTime()</a></code>用获得的当前时间戳 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDtk_1_1Core_1_1Logger.html#a7c89067d5a040ea79c481038dbdd565f" title="写入日志记录。 将带有所提供参数的日志记录写给所有注册的应用">Logger::write</a>(const <a class="elRef" href="http://doc.qt.io/qt-5/qdatetime.html">QDateTime</a> &amp;time, <a class="el" href="classDtk_1_1Core_1_1Logger.html#a4a76b1db357f61044ed67411d1c378b4" title="日志等级">LogLevel</a> level, const char *file, int line,const char *func, const char *category, const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;msg) </dd></dl>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">logLevel</td><td>日志记录等级 </td></tr>
@@ -847,7 +850,7 @@ Public 成员函数</h2></td></tr>
   </dd>
 </dl>
 <dl class="section note"><dt>注解</dt><dd>不建议直接调用这个函数,你可以直接调用<code>LOG_ASSERT</code>宏,它将为这个函数提供所有需要的信息 </dd></dl>
-<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDtk_1_1Core_1_1Logger.html#a7c89067d5a040ea79c481038dbdd565f" title="写入日志记录。 将带有所提供参数的日志记录写给所有注册的应用">Logger::write</a>(const QDateTime &amp;time, <a class="el" href="classDtk_1_1Core_1_1Logger.html#a4a76b1db357f61044ed67411d1c378b4" title="日志等级">LogLevel</a> level, const char *file, int line,const char *func, const char *category, const QString &amp;msg) </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDtk_1_1Core_1_1Logger.html#a7c89067d5a040ea79c481038dbdd565f" title="写入日志记录。 将带有所提供参数的日志记录写给所有注册的应用">Logger::write</a>(const <a class="elRef" href="http://doc.qt.io/qt-5/qdatetime.html">QDateTime</a> &amp;time, <a class="el" href="classDtk_1_1Core_1_1Logger.html#a4a76b1db357f61044ed67411d1c378b4" title="日志等级">LogLevel</a> level, const char *file, int line,const char *func, const char *category, const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;msg) </dd></dl>
 
 </div>
 </div>
@@ -863,7 +866,7 @@ Public 成员函数</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>Dtk</b></li><li class="navelem"><b>Core</b></li><li class="navelem"><a class="el" href="classDtk_1_1Core_1_1Logger.html">Logger</a></li>
-    <li class="footer">文档生成时间:2023-01-03-09:26  +00</li>
+    <li class="footer">文档生成时间:2023-01-03-09:52  +00</li>
     <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
     <li class="footer">制作者:deepin doc doc go SIG</li>
     <li class="footer">文档使用CC-BY-4.0共享 </a>

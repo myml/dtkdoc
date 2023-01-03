@@ -50,6 +50,7 @@ var classDCrumbEdit =
     [ "splitter", "classDCrumbEdit.html#a00830ddaa1387d1d8284b54c00407d09", null ],
     [ "crumbRadius", "classDCrumbEdit.html#a68c2cb2699847d97835333cb9268ae94", null ],
     [ "crumbReadOnly", "classDCrumbEdit.html#af9c7a8add3006b06095de28f62504f16", null ],
+    [ "document", "classDCrumbEdit.html#af45b15cabac406a6bd6809af8b721756", null ],
     [ "dualClickMakeCrumb", "classDCrumbEdit.html#a2233fb38946b5b5709b9ddc817a73236", null ],
     [ "splitter", "classDCrumbEdit.html#a30ff04d8ec6b4ba9ff3fec6c4d7e7044", null ]
 ];

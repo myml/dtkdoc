@@ -154,19 +154,19 @@ $(document).ready(function(){initNavTree('classDtk_1_1Widget_1_1DApplication.htm
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="classDtk_1_1Widget_1_1DApplication.html" title="DApplication 是 DTK 中用于替换 QCoreApplication 相关功能实现的类.">DApplication</a> 是 DTK 中用于替换 QCoreApplication 相关功能实现的类.  
+<p><a class="el" href="classDtk_1_1Widget_1_1DApplication.html" title="DApplication 是 DTK 中用于替换 QCoreApplication 相关功能实现的类.">DApplication</a> 是 DTK 中用于替换 <a class="elRef" href="http://doc.qt.io/qt-5/qcoreapplication.html">QCoreApplication</a> 相关功能实现的类.  
  <a href="classDtk_1_1Widget_1_1DApplication.html#details">更多...</a></p>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
-<div class="textblock"><p><a class="el" href="classDtk_1_1Widget_1_1DApplication.html" title="DApplication 是 DTK 中用于替换 QCoreApplication 相关功能实现的类.">DApplication</a> 是 DTK 中用于替换 QCoreApplication 相关功能实现的类. </p>
+<div class="textblock"><p><a class="el" href="classDtk_1_1Widget_1_1DApplication.html" title="DApplication 是 DTK 中用于替换 QCoreApplication 相关功能实现的类.">DApplication</a> 是 DTK 中用于替换 <a class="elRef" href="http://doc.qt.io/qt-5/qcoreapplication.html">QCoreApplication</a> 相关功能实现的类. </p>
 <p>\inmodule dtkwidget</p>
-<p>继承自 QApplication ，并在此之上添加了一些特殊的设定，如：</p><ul>
-<li>在 FORCE_RASTER_WIDGETS 宏生效的情况下，默认设置 Qt::AA_ForceRasterWidgets 以减少 glx 相关库的加载，减少程序启动时间；</li>
+<p>继承自 <a class="elRef" href="http://doc.qt.io/qt-5/qapplication.html">QApplication</a> ，并在此之上添加了一些特殊的设定，如：</p><ul>
+<li>在 FORCE_RASTER_WIDGETS 宏生效的情况下，默认设置 <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#ApplicationAttribute-enum">Qt::AA_ForceRasterWidgets</a> 以减少 glx 相关库的加载，减少程序启动时间；</li>
 <li>自动根据 applicationName 和 系统 locale 加载对应的翻译文件；</li>
-<li>会根据系统gsettings中 com.deepin.dde.dapplication 的 qpixmapCacheLimit 值来设置 QPixmapCache::cacheLimit ；</li>
-<li>会根据系统gsettings中 com.deepin.dde.touchscreen longpress-duration 的值来设置 QTapAndHoldGesture::timeout ；</li>
+<li>会根据系统gsettings中 com.deepin.dde.dapplication 的 qpixmapCacheLimit 值来设置 <a class="elRef" href="http://doc.qt.io/qt-5/qpixmapcache.html#cacheLimit">QPixmapCache::cacheLimit</a> ；</li>
+<li>会根据系统gsettings中 com.deepin.dde.touchscreen longpress-duration 的值来设置 <a class="elRef" href="http://doc.qt.io/qt-5/qtapandholdgesture.html#timeout">QTapAndHoldGesture::timeout</a> ；</li>
 <li>方便地通过 setSingleInstance 来实现程序的单实例。</li>
 </ul>
-<dl class="section note"><dt>注解</dt><dd><a class="el" href="classDtk_1_1Widget_1_1DApplication.html" title="DApplication 是 DTK 中用于替换 QCoreApplication 相关功能实现的类.">DApplication</a> 设置的 QTapAndHoldGesture::timeout 会比 gsettings 中的值小 100，用来绕过 Dock 长按松开容易导致应用启动的问题，详细解释见 见代码注释或者 \l {<a href="https://github.com/linuxdeepin/internal-discussion/issues/430">https://github.com/linuxdeepin/internal-discussion/issues/430</a>}</dd></dl>
+<dl class="section note"><dt>注解</dt><dd><a class="el" href="classDtk_1_1Widget_1_1DApplication.html" title="DApplication 是 DTK 中用于替换 QCoreApplication 相关功能实现的类.">DApplication</a> 设置的 <a class="elRef" href="http://doc.qt.io/qt-5/qtapandholdgesture.html#timeout">QTapAndHoldGesture::timeout</a> 会比 gsettings 中的值小 100，用来绕过 Dock 长按松开容易导致应用启动的问题，详细解释见 见代码注释或者 \l {<a href="https://github.com/linuxdeepin/internal-discussion/issues/430">https://github.com/linuxdeepin/internal-discussion/issues/430</a>}</dd></dl>
 <dl class="section see"><dt>参见</dt><dd>loadTranslator() setSingleInstance() </dd></dl>
 </div><hr/>该类的文档由以下文件生成:<ul>
 <li>dtkwidget/src/widgets/dapplication.cpp</li>
@@ -178,7 +178,7 @@ $(document).ready(function(){initNavTree('classDtk_1_1Widget_1_1DApplication.htm
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classDtk_1_1Widget_1_1DApplication.html">DApplication</a></li>
-    <li class="footer">文档生成时间:2023-01-03-09:26  +00</li>
+    <li class="footer">文档生成时间:2023-01-03-09:52  +00</li>
     <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
     <li class="footer">制作者:deepin doc doc go SIG</li>
     <li class="footer">文档使用CC-BY-4.0共享 </a>

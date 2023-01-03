@@ -1,13 +1,19 @@
 var searchData=
 [
-  ['secondarypointcolor_4121',['secondaryPointColor',['../classDPageIndicator.html#ab9448c5dadf2b830045631a71841fb68',1,'DPageIndicator']]],
-  ['secondarypointradius_4122',['secondaryPointRadius',['../classDPageIndicator.html#ae57a83a0537deaeed5627dbdc2658ad7',1,'DPageIndicator']]],
-  ['selectedtext_4123',['selectedText',['../classDIpv4LineEdit.html#a4d6a519104fa65a478b743d13756e419',1,'DIpv4LineEdit']]],
-  ['shadowcolor_4124',['shadowColor',['../classDPlatformHandle.html#a2798b07e7b02a25e311f0e679227ee29',1,'DPlatformHandle::shadowColor()'],['../classDMainWindow.html#a2f044b842bed98b1ba5179a8cb764c9c',1,'DMainWindow::shadowColor()']]],
-  ['shadowoffset_4125',['shadowOffset',['../classDPlatformHandle.html#aab3f6cbcc69fe9a3046918384a33fa63',1,'DPlatformHandle::shadowOffset()'],['../classDMainWindow.html#ace2018c032f2b80610afdb4dd3278ec0',1,'DMainWindow::shadowOffset()']]],
-  ['shadowradius_4126',['shadowRadius',['../classDPlatformHandle.html#afeea74766ff390d26d6a6f3ff44c9170',1,'DPlatformHandle::shadowRadius()'],['../classDMainWindow.html#af5a6202786a7c85e4d1990f08e75e014',1,'DMainWindow::shadowRadius()']]],
-  ['singleshot_4127',['singleShot',['../classDPictureSequenceView.html#a12799ee97717f19179a82a8eb10d7aa7',1,'DPictureSequenceView']]],
-  ['smooth_4128',['smooth',['../classDLoadingIndicator.html#a12d514bc6d4dc260a2149211f2cb3493',1,'DLoadingIndicator']]],
-  ['speed_4129',['speed',['../classDPictureSequenceView.html#afd120fee5eafa1956d792656c0c539d0',1,'DPictureSequenceView']]],
-  ['sync_4130',['sync',['../classDtk_1_1Core_1_1DDBusExtendedAbstractInterface.html#a26a9a8971b797769f63238ab79c2b9bc',1,'Dtk::Core::DDBusExtendedAbstractInterface']]]
+  ['objectname_35826',['objectName',['http://doc.qt.io/qt-5/qobject.html#objectName-prop',1,'QObject']]],
+  ['offset_35827',['offset',['http://doc.qt.io/qt-5/qgraphicsdropshadoweffect.html#offset-prop',1,'QGraphicsDropShadowEffect::offset()'],['http://doc.qt.io/qt-5/qpangesture.html#offset-prop',1,'QPanGesture::offset()']]],
+  ['okbuttontext_35828',['okButtonText',['http://doc.qt.io/qt-5/qinputdialog.html#okButtonText-prop',1,'QInputDialog::okButtonText()'],['../classDInputDialog.html#a5d1e14f85c53590a13e7cdf8af2e411b',1,'DInputDialog::okButtonText()']]],
+  ['opacity_35829',['opacity',['http://doc.qt.io/qt-5/qgraphicsobject.html#opacity-prop',1,'QGraphicsObject::opacity()'],['http://doc.qt.io/qt-5/qgraphicsopacityeffect.html#opacity-prop',1,'QGraphicsOpacityEffect::opacity()'],['http://doc.qt.io/qt-5/qwindow.html#opacity-prop',1,'QWindow::opacity()']]],
+  ['opacitymask_35830',['opacityMask',['http://doc.qt.io/qt-5/qgraphicsopacityeffect.html#opacityMask-prop',1,'QGraphicsOpacityEffect']]],
+  ['opaqueresize_35831',['opaqueResize',['http://doc.qt.io/qt-5/qsplitter.html#opaqueResize-prop',1,'QSplitter']]],
+  ['openexternallinks_35832',['openExternalLinks',['http://doc.qt.io/qt-5/qgraphicstextitem.html#openExternalLinks-prop',1,'QGraphicsTextItem::openExternalLinks()'],['http://doc.qt.io/qt-5/qlabel.html#openExternalLinks-prop',1,'QLabel::openExternalLinks()'],['http://doc.qt.io/qt-5/qtextbrowser.html#openExternalLinks-prop',1,'QTextBrowser::openExternalLinks()']]],
+  ['openlinks_35833',['openLinks',['http://doc.qt.io/qt-5/qtextbrowser.html#openLinks-prop',1,'QTextBrowser']]],
+  ['optimizationflags_35834',['optimizationFlags',['http://doc.qt.io/qt-5/qgraphicsview.html#optimizationFlags-prop',1,'QGraphicsView']]],
+  ['options_35835',['options',['http://doc.qt.io/qt-5/qwizard.html#options-prop',1,'QWizard::options()'],['http://doc.qt.io/qt-5/qinputdialog.html#options-prop',1,'QInputDialog::options()'],['http://doc.qt.io/qt-5/qfontdialog.html#options-prop',1,'QFontDialog::options()'],['http://doc.qt.io/qt-5/qfiledialog.html#options-prop',1,'QFileDialog::options()'],['http://doc.qt.io/qt-5/qcolordialog.html#options-prop',1,'QColorDialog::options()'],['http://doc.qt.io/qt-5/qfilesystemmodel.html#options-prop',1,'QFileSystemModel::options()']]],
+  ['organizationdomain_35836',['organizationDomain',['http://doc.qt.io/qt-5/qcoreapplication.html#organizationDomain-prop',1,'QCoreApplication']]],
+  ['organizationname_35837',['organizationName',['http://doc.qt.io/qt-5/qcoreapplication.html#organizationName-prop',1,'QCoreApplication']]],
+  ['orientation_35838',['orientation',['http://doc.qt.io/qt-5/qsplitter.html#orientation-prop',1,'QSplitter::orientation()'],['../classDListView.html#a45891f6bd9e2512afca43083240891b1',1,'DListView::orientation()'],['http://doc.qt.io/qt-5/qscreen.html#orientation-prop',1,'QScreen::orientation()'],['http://doc.qt.io/qt-5/qtoolbar.html#orientation-prop',1,'QToolBar::orientation()'],['http://doc.qt.io/qt-5/qprogressbar.html#orientation-prop',1,'QProgressBar::orientation()'],['http://doc.qt.io/qt-5/qdialogbuttonbox.html#orientation-prop',1,'QDialogButtonBox::orientation()'],['http://doc.qt.io/qt-5/qdatawidgetmapper.html#orientation-prop',1,'QDataWidgetMapper::orientation()'],['http://doc.qt.io/qt-5/qabstractslider.html#orientation-prop',1,'QAbstractSlider::orientation()']]],
+  ['origin_35839',['origin',['http://doc.qt.io/qt-5/qgraphicsrotation.html#origin-prop',1,'QGraphicsRotation::origin()'],['http://doc.qt.io/qt-5/qgraphicsscale.html#origin-prop',1,'QGraphicsScale::origin()']]],
+  ['outputformat_35840',['outputFormat',['../classDAccessibilityChecker.html#a93bcc52f85ef89f1acb603b38e973d2f',1,'DAccessibilityChecker']]],
+  ['overwritemode_35841',['overwriteMode',['http://doc.qt.io/qt-5/qplaintextedit.html#overwriteMode-prop',1,'QPlainTextEdit::overwriteMode()'],['http://doc.qt.io/qt-5/qtextedit.html#overwriteMode-prop',1,'QTextEdit::overwriteMode()']]]
 ];

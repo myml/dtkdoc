@@ -169,12 +169,12 @@ $(document).ready(function(){initNavTree('ConsoleAppender_8h_source.html',''); i
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="classDtk_1_1Core_1_1ConsoleAppender.html">ConsoleAppender</a>();</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">virtual</span> QString <a class="code" href="classDtk_1_1Core_1_1AbstractStringAppender.html#aa173a47c3b89a7022ff83628d1ebe770">format</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">virtual</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> <a class="code" href="classDtk_1_1Core_1_1AbstractStringAppender.html#aa173a47c3b89a7022ff83628d1ebe770">format</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">void</span> ignoreEnvironmentPattern(<span class="keywordtype">bool</span> ignore);</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> append(<span class="keyword">const</span> QDateTime &amp;time, <a class="code" href="classDtk_1_1Core_1_1Logger.html#a4a76b1db357f61044ed67411d1c378b4">Logger::LogLevel</a> level, <span class="keyword">const</span> <span class="keywordtype">char</span> *file, <span class="keywordtype">int</span> line,</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                      <span class="keyword">const</span> <span class="keywordtype">char</span> *func, <span class="keyword">const</span> QString &amp;category, <span class="keyword">const</span> QString &amp;msg);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> append(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qdatetime.html">QDateTime</a> &amp;time, <a class="code" href="classDtk_1_1Core_1_1Logger.html#a4a76b1db357f61044ed67411d1c378b4">Logger::LogLevel</a> level, <span class="keyword">const</span> <span class="keywordtype">char</span> *file, <span class="keywordtype">int</span> line,</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                      <span class="keyword">const</span> <span class="keywordtype">char</span> *func, <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;category, <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;msg);</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">bool</span> m_ignoreEnvPattern;</div>
@@ -188,6 +188,8 @@ $(document).ready(function(){initNavTree('ConsoleAppender_8h_source.html',''); i
 <div class="ttc" id="aclassDtk_1_1Core_1_1AbstractStringAppender_html_aa173a47c3b89a7022ff83628d1ebe770"><div class="ttname"><a href="classDtk_1_1Core_1_1AbstractStringAppender.html#aa173a47c3b89a7022ff83628d1ebe770">Dtk::Core::AbstractStringAppender::format</a></div><div class="ttdeci">virtual QString format() const</div><div class="ttdoc">返回当前使用的format字符串</div><div class="ttdef"><b>Definition:</b> AbstractStringAppender.cpp:54</div></div>
 <div class="ttc" id="aclassDtk_1_1Core_1_1ConsoleAppender_html"><div class="ttname"><a href="classDtk_1_1Core_1_1ConsoleAppender.html">Dtk::Core::ConsoleAppender</a></div><div class="ttdoc">ConsoleAppender是简单的appender,将日志记录写入std::cerr输出流</div><div class="ttdef"><b>Definition:</b> ConsoleAppender.h:14</div></div>
 <div class="ttc" id="aclassDtk_1_1Core_1_1Logger_html_a4a76b1db357f61044ed67411d1c378b4"><div class="ttname"><a href="classDtk_1_1Core_1_1Logger.html#a4a76b1db357f61044ed67411d1c378b4">Dtk::Core::Logger::LogLevel</a></div><div class="ttdeci">LogLevel</div><div class="ttdoc">日志等级</div><div class="ttdef"><b>Definition:</b> Logger.h:22</div></div>
+<div class="ttc" id="aqdatetime_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qdatetime.html">QDateTime</a></div></div>
+<div class="ttc" id="aqstring_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstring.html">QString</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.4-->
@@ -195,7 +197,7 @@ $(document).ready(function(){initNavTree('ConsoleAppender_8h_source.html',''); i
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_6c3d837d12de6918ecc70ece2c9d5940.html">dtkcore</a></li><li class="navelem"><a class="el" href="dir_858a6aace3374df34beb3a5d036e09e4.html">include</a></li><li class="navelem"><a class="el" href="dir_6d5588bc29b9d454f88f8b6696938b3b.html">log</a></li><li class="navelem"><a class="el" href="ConsoleAppender_8h.html">ConsoleAppender.h</a></li>
-    <li class="footer">文档生成时间:2023-01-03-09:26  +00</li>
+    <li class="footer">文档生成时间:2023-01-03-09:52  +00</li>
     <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
     <li class="footer">制作者:deepin doc doc go SIG</li>
     <li class="footer">文档使用CC-BY-4.0共享 </a>

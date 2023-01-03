@@ -170,74 +170,74 @@ $(document).ready(function(){initNavTree('dimagebutton_8h_source.html',''); init
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;DWIDGET_BEGIN_NAMESPACE</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">class </span><a class="code" href="classDImageButtonPrivate.html">DImageButtonPrivate</a>;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">class </span>LIBDTKWIDGETSHARED_EXPORT D_DECL_DEPRECATED_X(&quot;Use <a class="code" href="classDIconButton.html">DIconButton</a>&quot;) <a class="code" href="classDtk_1_1Widget_1_1DImageButton.html">DImageButton</a> : <span class="keyword">public</span> QLabel, <span class="keyword">public</span> DTK_CORE_NAMESPACE::DObject</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">class </span>LIBDTKWIDGETSHARED_EXPORT D_DECL_DEPRECATED_X(&quot;Use <a class="code" href="classDIconButton.html">DIconButton</a>&quot;) <a class="code" href="classDtk_1_1Widget_1_1DImageButton.html">DImageButton</a> : <span class="keyword">public</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qlabel.html">QLabel</a>, <span class="keyword">public</span> DTK_CORE_NAMESPACE::DObject</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    Q_PROPERTY(QString normalPic READ getNormalPic WRITE setNormalPic DESIGNABLE <span class="keyword">true</span>)</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    Q_PROPERTY(QString hoverPic READ getHoverPic WRITE setHoverPic DESIGNABLE <span class="keyword">true</span>)</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    Q_PROPERTY(QString pressPic READ getPressPic WRITE setPressPic DESIGNABLE <span class="keyword">true</span>)</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    Q_PROPERTY(QString checkedPic READ getCheckedPic WRITE setCheckedPic DESIGNABLE <span class="keyword">true</span>)</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    Q_PROPERTY(QString disabledPic READ getDisabledPic WRITE setDisabledPic DESIGNABLE <span class="keyword">true</span>)</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    Q_PROPERTY(<span class="keywordtype">bool</span> checked READ isChecked WRITE setChecked NOTIFY checkedChanged)</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    Q_PROPERTY(<span class="keywordtype">bool</span> checkable READ isCheckable WRITE setCheckable)</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> normalPic READ getNormalPic WRITE setNormalPic DESIGNABLE <span class="keyword">true</span>)</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> hoverPic READ getHoverPic WRITE setHoverPic DESIGNABLE <span class="keyword">true</span>)</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> pressPic READ getPressPic WRITE setPressPic DESIGNABLE <span class="keyword">true</span>)</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> checkedPic READ getCheckedPic WRITE setCheckedPic DESIGNABLE <span class="keyword">true</span>)</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> disabledPic READ getDisabledPic WRITE setDisabledPic DESIGNABLE <span class="keyword">true</span>)</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(<span class="keywordtype">bool</span> checked READ isChecked WRITE setChecked NOTIFY checkedChanged)</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(<span class="keywordtype">bool</span> checkable READ isCheckable WRITE setCheckable)</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="classDtk_1_1Widget_1_1DImageButton.html">DImageButton</a>(QWidget *parent = 0);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="classDtk_1_1Widget_1_1DImageButton.html">DImageButton</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a> *parent = 0);</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="classDtk_1_1Widget_1_1DImageButton.html">DImageButton</a>(<span class="keyword">const</span> QString &amp;normalPic, <span class="keyword">const</span> QString &amp;hoverPic,</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                 <span class="keyword">const</span> QString &amp;pressPic, QWidget *parent = 0);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="classDtk_1_1Widget_1_1DImageButton.html">DImageButton</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;normalPic, <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;hoverPic,</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                 <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;pressPic, <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a> *parent = 0);</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="classDtk_1_1Widget_1_1DImageButton.html">DImageButton</a>(<span class="keyword">const</span> QString &amp;normalPic, <span class="keyword">const</span> QString &amp;hoverPic,</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                 <span class="keyword">const</span> QString &amp;pressPic, <span class="keyword">const</span> QString &amp;checkedPic, QWidget *parent = 0);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="classDtk_1_1Widget_1_1DImageButton.html">DImageButton</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;normalPic, <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;hoverPic,</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                 <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;pressPic, <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;checkedPic, <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a> *parent = 0);</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    ~<a class="code" href="classDtk_1_1Widget_1_1DImageButton.html">DImageButton</a>();</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> setEnabled(<span class="keywordtype">bool</span> enabled);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> setDisabled(<span class="keywordtype">bool</span> disabled);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html#enabled-prop">setEnabled</a>(<span class="keywordtype">bool</span> enabled);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html#setDisabled">setDisabled</a>(<span class="keywordtype">bool</span> disabled);</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> setChecked(<span class="keywordtype">bool</span> flag);</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> setCheckable(<span class="keywordtype">bool</span> flag);</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">bool</span> isChecked() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">bool</span> isCheckable() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> setNormalPic(<span class="keyword">const</span> QString &amp;normalPic);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> setHoverPic(<span class="keyword">const</span> QString &amp;hoverPic);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> setPressPic(<span class="keyword">const</span> QString &amp;pressPic);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">void</span> setCheckedPic(<span class="keyword">const</span> QString &amp;checkedPic);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span> setDisabledPic(<span class="keyword">const</span> QString &amp;disabledPic);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> setNormalPic(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;normalPic);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> setHoverPic(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;hoverPic);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> setPressPic(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;pressPic);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">void</span> setCheckedPic(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;checkedPic);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span> setDisabledPic(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;disabledPic);</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">const</span> QString getNormalPic() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">const</span> QString getHoverPic() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">const</span> QString getPressPic() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">const</span> QString getCheckedPic() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">const</span> QString getDisabledPic() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> getNormalPic() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> getHoverPic() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> getPressPic() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> getCheckedPic() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> getDisabledPic() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">enum</span> State {</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        Normal,</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        Hover,</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        Press,</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        Checked,</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <a class="codeRef" href="http://doc.qt.io/qt-5/qt.html#CheckState-enum">Checked</a>,</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        Disabled</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    };</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">void</span> setState(State state);</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    State getState() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;Q_SIGNALS:</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SIGNALS">Q_SIGNALS</a>:</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> clicked();</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">void</span> checkedChanged(<span class="keywordtype">bool</span> checked);</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">void</span> stateChanged();</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="classDtk_1_1Widget_1_1DImageButton.html">DImageButton</a>(<a class="code" href="classDImageButtonPrivate.html">DImageButtonPrivate</a> &amp;q, QWidget *parent);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">void</span> enterEvent(QEvent *event) Q_DECL_OVERRIDE;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> leaveEvent(QEvent *event) Q_DECL_OVERRIDE;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">void</span> mousePressEvent(QMouseEvent *event) Q_DECL_OVERRIDE;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">void</span> mouseReleaseEvent(QMouseEvent *event) Q_DECL_OVERRIDE;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">void</span> mouseMoveEvent(QMouseEvent *event) Q_DECL_OVERRIDE;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="classDtk_1_1Widget_1_1DImageButton.html">DImageButton</a>(<a class="code" href="classDImageButtonPrivate.html">DImageButtonPrivate</a> &amp;q, <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a> *parent);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">void</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html#enterEvent">enterEvent</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qevent.html">QEvent</a> *event) Q_DECL_OVERRIDE;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html#leaveEvent">leaveEvent</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qevent.html">QEvent</a> *event) Q_DECL_OVERRIDE;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">void</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qlabel.html#mousePressEvent">mousePressEvent</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qmouseevent.html">QMouseEvent</a> *event) Q_DECL_OVERRIDE;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">void</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qlabel.html#mouseReleaseEvent">mouseReleaseEvent</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qmouseevent.html">QMouseEvent</a> *event) Q_DECL_OVERRIDE;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">void</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qlabel.html#mouseMoveEvent">mouseMoveEvent</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qmouseevent.html">QMouseEvent</a> *event) Q_DECL_OVERRIDE;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    Q_DISABLE_COPY(<a class="code" href="classDtk_1_1Widget_1_1DImageButton.html">DImageButton</a>)</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_DISABLE_COPY">Q_DISABLE_COPY</a>(<a class="code" href="classDtk_1_1Widget_1_1DImageButton.html">DImageButton</a>)</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    D_DECLARE_PRIVATE(<a class="code" href="classDtk_1_1Widget_1_1DImageButton.html">DImageButton</a>)</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;};</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
@@ -247,6 +247,22 @@ $(document).ready(function(){initNavTree('dimagebutton_8h_source.html',''); init
 <div class="ttc" id="aclassDIconButton_html"><div class="ttname"><a href="classDIconButton.html">DIconButton</a></div><div class="ttdef"><b>Definition:</b> diconbutton.h:24</div></div>
 <div class="ttc" id="aclassDImageButtonPrivate_html"><div class="ttname"><a href="classDImageButtonPrivate.html">DImageButtonPrivate</a></div><div class="ttdef"><b>Definition:</b> dimagebutton_p.h:15</div></div>
 <div class="ttc" id="aclassDtk_1_1Widget_1_1DImageButton_html"><div class="ttname"><a href="classDtk_1_1Widget_1_1DImageButton.html">DImageButton</a></div><div class="ttdoc">The DImageButton class provides an easy way to create image based buttons.</div></div>
+<div class="ttc" id="aqevent_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qevent.html">QEvent</a></div></div>
+<div class="ttc" id="aqlabel_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qlabel.html">QLabel</a></div></div>
+<div class="ttc" id="aqlabel_html_mouseMoveEvent"><div class="ttname"><a href="http://doc.qt.io/qt-5/qlabel.html#mouseMoveEvent">QLabel::mouseMoveEvent</a></div><div class="ttdeci">virtual void mouseMoveEvent(QMouseEvent *ev) override</div></div>
+<div class="ttc" id="aqlabel_html_mousePressEvent"><div class="ttname"><a href="http://doc.qt.io/qt-5/qlabel.html#mousePressEvent">QLabel::mousePressEvent</a></div><div class="ttdeci">virtual void mousePressEvent(QMouseEvent *ev) override</div></div>
+<div class="ttc" id="aqlabel_html_mouseReleaseEvent"><div class="ttname"><a href="http://doc.qt.io/qt-5/qlabel.html#mouseReleaseEvent">QLabel::mouseReleaseEvent</a></div><div class="ttdeci">virtual void mouseReleaseEvent(QMouseEvent *ev) override</div></div>
+<div class="ttc" id="aqmouseevent_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qmouseevent.html">QMouseEvent</a></div></div>
+<div class="ttc" id="aqobject_html_Q_DISABLE_COPY"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_DISABLE_COPY">QObject::Q_DISABLE_COPY</a></div><div class="ttdeci">Q_DISABLE_COPY(Class)</div></div>
+<div class="ttc" id="aqobject_html_Q_PROPERTY"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">QObject::Q_PROPERTY</a></div><div class="ttdeci">Q_PROPERTY(...)</div></div>
+<div class="ttc" id="aqobject_html_Q_SIGNALS"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_SIGNALS">QObject::Q_SIGNALS</a></div><div class="ttdeci">Q_SIGNALSQ_SIGNALS</div></div>
+<div class="ttc" id="aqstring_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstring.html">QString</a></div></div>
+<div class="ttc" id="aqt_html_CheckState-enum"><div class="ttname"><a href="http://doc.qt.io/qt-5/qt.html#CheckState-enum">Qt::Checked</a></div><div class="ttdeci">Checked</div></div>
+<div class="ttc" id="aqwidget_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a></div></div>
+<div class="ttc" id="aqwidget_html_enabled-prop"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html#enabled-prop">QWidget::setEnabled</a></div><div class="ttdeci">void setEnabled(bool)</div></div>
+<div class="ttc" id="aqwidget_html_enterEvent"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html#enterEvent">QWidget::enterEvent</a></div><div class="ttdeci">virtual void enterEvent(QEvent *event)</div></div>
+<div class="ttc" id="aqwidget_html_leaveEvent"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html#leaveEvent">QWidget::leaveEvent</a></div><div class="ttdeci">virtual void leaveEvent(QEvent *event)</div></div>
+<div class="ttc" id="aqwidget_html_setDisabled"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html#setDisabled">QWidget::setDisabled</a></div><div class="ttdeci">void setDisabled(bool disable)</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.4-->
@@ -254,7 +270,7 @@ $(document).ready(function(){initNavTree('dimagebutton_8h_source.html',''); init
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_cc1fdbae730d0dba18db2b924667b662.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_6819db61f31aacd6e31b437a606a4041.html">include</a></li><li class="navelem"><a class="el" href="dir_6719ee6af2149ba01bce2af57814b9e8.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_4faf4521db2f3764f9e00575717749e8.html">widgets</a></li><li class="navelem"><b>dimagebutton.h</b></li>
-    <li class="footer">文档生成时间:2023-01-03-09:26  +00</li>
+    <li class="footer">文档生成时间:2023-01-03-09:52  +00</li>
     <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
     <li class="footer">制作者:deepin doc doc go SIG</li>
     <li class="footer">文档使用CC-BY-4.0共享 </a>

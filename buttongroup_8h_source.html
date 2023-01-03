@@ -163,27 +163,35 @@ $(document).ready(function(){initNavTree('buttongroup_8h_source.html',''); initR
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;QFrame&gt;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">class </span><a class="code" href="classButtonGroupPrivate.html">ButtonGroupPrivate</a>;</div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="classButtonGroup.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="classButtonGroup.html">ButtonGroup</a> : <span class="keyword">public</span> QFrame</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="classButtonGroup.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="classButtonGroup.html">ButtonGroup</a> : <span class="keyword">public</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qframe.html">QFrame</a></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">Q_OBJECT</a></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classButtonGroup.html">ButtonGroup</a>(QWidget *parent = 0);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classButtonGroup.html">ButtonGroup</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a> *<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a> = 0);</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    ~<a class="code" href="classButtonGroup.html">ButtonGroup</a>();</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;Q_SIGNALS:</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SIGNALS">Q_SIGNALS</a>:</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">void</span> buttonChecked(<span class="keywordtype">int</span> <span class="keywordtype">id</span>);</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">public</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SLOTS">Q_SLOTS</a>:</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">void</span> setCheckedButton(<span class="keywordtype">int</span> <span class="keywordtype">id</span>);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> setButtons(<span class="keyword">const</span> QStringList &amp;texts);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> setButtons(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> &amp;texts);</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    QScopedPointer&lt;ButtonGroupPrivate&gt; d_ptr;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qscopedpointer.html">QScopedPointer&lt;ButtonGroupPrivate&gt;</a> d_ptr;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    Q_DECLARE_PRIVATE_D(qGetPtrHelper(d_ptr), <a class="code" href="classButtonGroup.html">ButtonGroup</a>)</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;};</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
 <div class="ttc" id="aclassButtonGroupPrivate_html"><div class="ttname"><a href="classButtonGroupPrivate.html">ButtonGroupPrivate</a></div><div class="ttdef"><b>Definition:</b> buttongroup.cpp:12</div></div>
 <div class="ttc" id="aclassButtonGroup_html"><div class="ttname"><a href="classButtonGroup.html">ButtonGroup</a></div><div class="ttdef"><b>Definition:</b> buttongroup.h:12</div></div>
+<div class="ttc" id="aqframe_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qframe.html">QFrame</a></div></div>
+<div class="ttc" id="aqobject_html_Q_OBJECT"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">QObject::Q_OBJECT</a></div><div class="ttdeci">Q_OBJECTQ_OBJECT</div></div>
+<div class="ttc" id="aqobject_html_Q_SIGNALS"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_SIGNALS">QObject::Q_SIGNALS</a></div><div class="ttdeci">Q_SIGNALSQ_SIGNALS</div></div>
+<div class="ttc" id="aqobject_html_Q_SLOTS"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_SLOTS">QObject::Q_SLOTS</a></div><div class="ttdeci">Q_SLOTSQ_SLOTS</div></div>
+<div class="ttc" id="aqobject_html_parent"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#parent">QObject::parent</a></div><div class="ttdeci">QObject * parent() const const</div></div>
+<div class="ttc" id="aqscopedpointer_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qscopedpointer.html">QScopedPointer&lt; ButtonGroupPrivate &gt;</a></div></div>
+<div class="ttc" id="aqstringlist_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a></div></div>
+<div class="ttc" id="aqwidget_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.4-->
@@ -191,7 +199,7 @@ $(document).ready(function(){initNavTree('buttongroup_8h_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_cc1fdbae730d0dba18db2b924667b662.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_7e9cf0e2371012f8aca5a790419dfe62.html">src</a></li><li class="navelem"><a class="el" href="dir_0f0f1158b2ab9c2e2656097b145c93da.html">widgets</a></li><li class="navelem"><a class="el" href="dir_c2ef0fafcc327cb5e8231a54477e2847.html">private</a></li><li class="navelem"><a class="el" href="dir_351d0e23647d964d7f5dd350fff62a3d.html">settings</a></li><li class="navelem"><b>buttongroup.h</b></li>
-    <li class="footer">文档生成时间:2023-01-03-09:26  +00</li>
+    <li class="footer">文档生成时间:2023-01-03-09:52  +00</li>
     <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
     <li class="footer">制作者:deepin doc doc go SIG</li>
     <li class="footer">文档使用CC-BY-4.0共享 </a>

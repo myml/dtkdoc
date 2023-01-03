@@ -168,11 +168,11 @@ $(document).ready(function(){initNavTree('dtimedloop_8h_source.html',''); initRe
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">class </span>DObject;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">class </span>DTimedLoopPrivate;</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classDtk_1_1Core_1_1DTimedLoop.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDtk_1_1Core_1_1DTimedLoop.html">DTimedLoop</a> : <span class="keyword">public</span> QEventLoop,  <span class="keyword">public</span> <a class="code" href="classDtk_1_1Core_1_1DObject.html">DObject</a> {</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classDtk_1_1Core_1_1DTimedLoop.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDtk_1_1Core_1_1DTimedLoop.html">DTimedLoop</a> : <span class="keyword">public</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qeventloop.html">QEventLoop</a>,  <span class="keyword">public</span> <a class="code" href="classDtk_1_1Core_1_1DObject.html">DObject</a> {</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    Q_OBJECT</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDtk_1_1Core_1_1DTimedLoop.html">DTimedLoop</a>() noexcept;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDtk_1_1Core_1_1DTimedLoop.html">DTimedLoop</a>(QObject *parent) noexcept;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDtk_1_1Core_1_1DTimedLoop.html">DTimedLoop</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *parent) noexcept;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    ~<a class="code" href="classDtk_1_1Core_1_1DTimedLoop.html">DTimedLoop</a>();</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
@@ -186,10 +186,10 @@ $(document).ready(function(){initNavTree('dtimedloop_8h_source.html',''); initRe
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="comment">// 方式2：传入durationMs 参数的是定时执行的，也能调用 exit 提前退出</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="comment">// 如果传入了 executionName 就会为本次执行设置一个名字，会输出到 log</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="comment">// 在执行结束将会打印 exec 的执行时间，可以用 setTimeDump 控制其是否打印</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">int</span> exec(QEventLoop::ProcessEventsFlags flags = QEventLoop::AllEvents);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">int</span> exec(<span class="keywordtype">int</span> durationMs, QEventLoop::ProcessEventsFlags flags = QEventLoop::AllEvents);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">int</span> exec(<span class="keyword">const</span> QString &amp;executionName, QEventLoop::ProcessEventsFlags flags = QEventLoop::AllEvents);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">int</span> exec(<span class="keywordtype">int</span> durationMs, <span class="keyword">const</span> QString &amp;executionName, QEventLoop::ProcessEventsFlags flags = QEventLoop::AllEvents);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">int</span> exec(<a class="codeRef" href="http://doc.qt.io/qt-5/qeventloop.html#ProcessEventsFlag-enum">QEventLoop::ProcessEventsFlags</a> flags = <a class="codeRef" href="http://doc.qt.io/qt-5/qeventloop.html#ProcessEventsFlag-enum">QEventLoop::AllEvents</a>);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">int</span> exec(<span class="keywordtype">int</span> durationMs, <a class="codeRef" href="http://doc.qt.io/qt-5/qeventloop.html#ProcessEventsFlag-enum">QEventLoop::ProcessEventsFlags</a> flags = <a class="codeRef" href="http://doc.qt.io/qt-5/qeventloop.html#ProcessEventsFlag-enum">QEventLoop::AllEvents</a>);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">int</span> exec(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;executionName, <a class="codeRef" href="http://doc.qt.io/qt-5/qeventloop.html#ProcessEventsFlag-enum">QEventLoop::ProcessEventsFlags</a> flags = <a class="codeRef" href="http://doc.qt.io/qt-5/qeventloop.html#ProcessEventsFlag-enum">QEventLoop::AllEvents</a>);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">int</span> exec(<span class="keywordtype">int</span> durationMs, <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;executionName, <a class="codeRef" href="http://doc.qt.io/qt-5/qeventloop.html#ProcessEventsFlag-enum">QEventLoop::ProcessEventsFlags</a> flags = <a class="codeRef" href="http://doc.qt.io/qt-5/qeventloop.html#ProcessEventsFlag-enum">QEventLoop::AllEvents</a>);</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    Q_DISABLE_COPY(<a class="code" href="classDtk_1_1Core_1_1DTimedLoop.html">DTimedLoop</a>)</div>
@@ -201,6 +201,10 @@ $(document).ready(function(){initNavTree('dtimedloop_8h_source.html',''); initRe
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// DTIMEDLOOP_H</span></div>
 <div class="ttc" id="aclassDtk_1_1Core_1_1DObject_html"><div class="ttname"><a href="classDtk_1_1Core_1_1DObject.html">Dtk::Core::DObject</a></div><div class="ttdoc">一些宏的定义.</div><div class="ttdef"><b>Definition:</b> dobject.h:25</div></div>
 <div class="ttc" id="aclassDtk_1_1Core_1_1DTimedLoop_html"><div class="ttname"><a href="classDtk_1_1Core_1_1DTimedLoop.html">Dtk::Core::DTimedLoop</a></div><div class="ttdef"><b>Definition:</b> dtimedloop.h:16</div></div>
+<div class="ttc" id="aqeventloop_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qeventloop.html">QEventLoop</a></div></div>
+<div class="ttc" id="aqeventloop_html_ProcessEventsFlag-enum"><div class="ttname"><a href="http://doc.qt.io/qt-5/qeventloop.html#ProcessEventsFlag-enum">QEventLoop::ProcessEventsFlags</a></div><div class="ttdeci">typedef ProcessEventsFlags</div></div>
+<div class="ttc" id="aqobject_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html">QObject</a></div></div>
+<div class="ttc" id="aqstring_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstring.html">QString</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.4-->
@@ -208,7 +212,7 @@ $(document).ready(function(){initNavTree('dtimedloop_8h_source.html',''); initRe
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_6c3d837d12de6918ecc70ece2c9d5940.html">dtkcore</a></li><li class="navelem"><a class="el" href="dir_858a6aace3374df34beb3a5d036e09e4.html">include</a></li><li class="navelem"><a class="el" href="dir_24450d5b37828d2338747fbf63b34a61.html">util</a></li><li class="navelem"><b>dtimedloop.h</b></li>
-    <li class="footer">文档生成时间:2023-01-03-09:26  +00</li>
+    <li class="footer">文档生成时间:2023-01-03-09:52  +00</li>
     <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
     <li class="footer">制作者:deepin doc doc go SIG</li>
     <li class="footer">文档使用CC-BY-4.0共享 </a>

@@ -1,6 +1,27 @@
 var searchData=
 [
-  ['datepattern_3993',['DatePattern',['../classDtk_1_1Core_1_1RollingFileAppender.html#a993d4921afa93843ed79e7ea89722c84',1,'Dtk::Core::RollingFileAppender']]],
-  ['deepintype_3994',['DeepinType',['../classDtk_1_1Core_1_1DSysInfo.html#abce779af6b5c5e03e2a7f3b55e78ae32',1,'Dtk::Core::DSysInfo']]],
-  ['diskunits_3995',['DiskUnits',['../classDtk_1_1Core_1_1DDiskSizeFormatter.html#a73488f9c69a8fb812006eb1e74df9ccb',1,'Dtk::Core::DDiskSizeFormatter']]]
+  ['datasizeformat_34956',['DataSizeFormat',['http://doc.qt.io/qt-5/qlocale.html#DataSizeFormat-enum',1,'QLocale']]],
+  ['datavalidation_34957',['DataValidation',['http://doc.qt.io/qt-5/qjsondocument.html#DataValidation-enum',1,'QJsonDocument']]],
+  ['dateformat_34958',['DateFormat',['http://doc.qt.io/qt-5/qt.html#DateFormat-enum',1,'Qt']]],
+  ['datepattern_34959',['DatePattern',['../classDtk_1_1Core_1_1RollingFileAppender.html#a993d4921afa93843ed79e7ea89722c84',1,'Dtk::Core::RollingFileAppender']]],
+  ['dayofweek_34960',['DayOfWeek',['http://doc.qt.io/qt-5/qt.html#DayOfWeek-enum',1,'Qt']]],
+  ['decomposition_34961',['Decomposition',['http://doc.qt.io/qt-5/qchar.html#Decomposition-enum',1,'QChar']]],
+  ['deepintype_34962',['DeepinType',['../classDtk_1_1Core_1_1DSysInfo.html#abce779af6b5c5e03e2a7f3b55e78ae32',1,'Dtk::Core::DSysInfo']]],
+  ['deletionpolicy_34963',['DeletionPolicy',['http://doc.qt.io/qt-5/qabstractanimation.html#DeletionPolicy-enum',1,'QAbstractAnimation']]],
+  ['depthstencilmode_34964',['DepthStencilMode',['http://doc.qt.io/qt-5/qopengltexture.html#DepthStencilMode-enum',1,'QOpenGLTexture']]],
+  ['devicetype_34965',['DeviceType',['http://doc.qt.io/qt-5/qtouchdevice.html#DeviceType-enum',1,'QTouchDevice']]],
+  ['diagnosticnotationoption_34966',['DiagnosticNotationOption',['http://doc.qt.io/qt-5/qcborvalue.html#DiagnosticNotationOption-enum',1,'QCborValue']]],
+  ['dialogcode_34967',['DialogCode',['http://doc.qt.io/qt-5/qdialog.html#DialogCode-enum',1,'QDialog']]],
+  ['dialoglabel_34968',['DialogLabel',['http://doc.qt.io/qt-5/qfiledialog.html#DialogLabel-enum',1,'QFileDialog']]],
+  ['direction_34969',['Direction',['http://doc.qt.io/qt-5/qboxlayout.html#Direction-enum',1,'QBoxLayout::Direction()'],['http://doc.qt.io/qt-5/qprogressbar.html#Direction-enum',1,'QProgressBar::Direction()'],['http://doc.qt.io/qt-5/qtimeline.html#Direction-enum',1,'QTimeLine::Direction()'],['http://doc.qt.io/qt-5/qchar.html#Direction-enum',1,'QChar::Direction()'],['http://doc.qt.io/qt-5/qabstractanimation.html#Direction-enum',1,'QAbstractAnimation::Direction()']]],
+  ['dirtyflag_34970',['DirtyFlag',['http://doc.qt.io/qt-5/qpaintengine.html#DirtyFlag-enum',1,'QPaintEngine']]],
+  ['diskunits_34971',['DiskUnits',['../classDtk_1_1Core_1_1DDiskSizeFormatter.html#a73488f9c69a8fb812006eb1e74df9ccb',1,'Dtk::Core::DDiskSizeFormatter']]],
+  ['dnseligibilitystatus_34972',['DnsEligibilityStatus',['http://doc.qt.io/qt-5/qnetworkaddressentry.html#DnsEligibilityStatus-enum',1,'QNetworkAddressEntry']]],
+  ['dockoption_34973',['DockOption',['http://doc.qt.io/qt-5/qmainwindow.html#DockOption-enum',1,'QMainWindow']]],
+  ['dockwidgetarea_34974',['DockWidgetArea',['http://doc.qt.io/qt-5/qt.html#DockWidgetArea-enum',1,'Qt']]],
+  ['dockwidgetfeature_34975',['DockWidgetFeature',['http://doc.qt.io/qt-5/qdockwidget.html#DockWidgetFeature-enum',1,'QDockWidget']]],
+  ['dragdropmode_34976',['DragDropMode',['http://doc.qt.io/qt-5/qabstractitemview.html#DragDropMode-enum',1,'QAbstractItemView']]],
+  ['dragmode_34977',['DragMode',['http://doc.qt.io/qt-5/qgraphicsview.html#DragMode-enum',1,'QGraphicsView']]],
+  ['dropaction_34978',['DropAction',['http://doc.qt.io/qt-5/qt.html#DropAction-enum',1,'Qt']]],
+  ['dropindicatorposition_34979',['DropIndicatorPosition',['http://doc.qt.io/qt-5/qabstractitemview.html#DropIndicatorPosition-enum',1,'QAbstractItemView']]]
 ];

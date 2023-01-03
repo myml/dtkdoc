@@ -171,7 +171,7 @@ $(document).ready(function(){initNavTree('ddcifileengine__p_8h_source.html','');
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;QDateTime&gt;</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;QT_BEGIN_NAMESPACE</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">class </span>QBuffer;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">class </span><a class="codeRef" href="http://doc.qt.io/qt-5/qbuffer.html">QBuffer</a>;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;QT_END_NAMESPACE</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;DCORE_BEGIN_NAMESPACE</div>
@@ -179,25 +179,25 @@ $(document).ready(function(){initNavTree('ddcifileengine__p_8h_source.html','');
 <div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classDtk_1_1Core_1_1DDciFileEngineHandler.html">   24</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDtk_1_1Core_1_1DDciFileEngineHandler.html">DDciFileEngineHandler</a> : <span class="keyword">public</span> QAbstractFileEngineHandler</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    QAbstractFileEngine *create(<span class="keyword">const</span> QString &amp;fileName) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    QAbstractFileEngine *create(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;fileName) <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;};</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">class </span><a class="code" href="classDtk_1_1Core_1_1DDciFile.html">DDciFile</a>;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">using</span> DDciFileShared = QSharedPointer&lt;DDciFile&gt;;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">using</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qsharedpointer.html">DDciFileShared</a> = <a class="codeRef" href="http://doc.qt.io/qt-5/qsharedpointer.html">QSharedPointer&lt;DDciFile&gt;</a>;</div>
 <div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classDtk_1_1Core_1_1DDciFileEngineIterator.html">   32</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDtk_1_1Core_1_1DDciFileEngineIterator.html">DDciFileEngineIterator</a> : <span class="keyword">public</span> QAbstractFileEngineIterator</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classDtk_1_1Core_1_1DDciFileEngine.html">DDciFileEngine</a>;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="classDtk_1_1Core_1_1DDciFileEngineIterator.html">DDciFileEngineIterator</a>(QDir::Filters filters, <span class="keyword">const</span> QStringList &amp;nameFilters);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="classDtk_1_1Core_1_1DDciFileEngineIterator.html">DDciFileEngineIterator</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qdir.html#Filter-enum">QDir::Filters</a> filters, <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> &amp;nameFilters);</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    QString next() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> next() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">bool</span> hasNext() <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    QString currentFileName() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> currentFileName() <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">mutable</span> DDciFileShared file;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">mutable</span> QStringList list;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">mutable</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qsharedpointer.html">DDciFileShared</a> file;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">mutable</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> list;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">mutable</span> <span class="keywordtype">int</span> nextValid = -1;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">int</span> current = -1;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div>
@@ -206,13 +206,13 @@ $(document).ready(function(){initNavTree('ddcifileengine__p_8h_source.html','');
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classDtk_1_1Core_1_1DDciFileEngineIterator.html">DDciFileEngineIterator</a>;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDtk_1_1Core_1_1DDciFileEngine.html">DDciFileEngine</a>(<span class="keyword">const</span> QString &amp;fullPath);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDtk_1_1Core_1_1DDciFileEngine.html">DDciFileEngine</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;fullPath);</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    ~<a class="code" href="classDtk_1_1Core_1_1DDciFileEngine.html">DDciFileEngine</a>();</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">bool</span> isValid() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">bool</span> open(QIODevice::OpenMode openMode) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">bool</span> open(<a class="codeRef" href="http://doc.qt.io/qt-5/qiodevice.html#OpenModeFlag-enum">QIODevice::OpenMode</a> openMode) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">bool</span> close() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">bool</span> flushToFile(QFile *target, <span class="keywordtype">bool</span> writeFile) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">bool</span> flushToFile(<a class="codeRef" href="http://doc.qt.io/qt-5/qfile.html">QFile</a> *target, <span class="keywordtype">bool</span> writeFile) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">bool</span> flush() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">bool</span> syncToDisk() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
@@ -221,29 +221,29 @@ $(document).ready(function(){initNavTree('ddcifileengine__p_8h_source.html','');
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">bool</span> seek(qint64 pos) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">bool</span> isSequential() <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">bool</span> remove() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">bool</span> copy(<span class="keyword">const</span> QString &amp;newName) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">bool</span> rename(<span class="keyword">const</span> QString &amp;newName) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">bool</span> renameOverwrite(<span class="keyword">const</span> QString &amp;newName) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">bool</span> link(<span class="keyword">const</span> QString &amp;newName) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">bool</span> mkdir(<span class="keyword">const</span> QString &amp;dirName, <span class="keywordtype">bool</span> createParentDirectories) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">bool</span> rmdir(<span class="keyword">const</span> QString &amp;dirName, <span class="keywordtype">bool</span> recurseParentDirectories) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">bool</span> copy(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;newName) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">bool</span> rename(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;newName) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">bool</span> renameOverwrite(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;newName) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">bool</span> link(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;newName) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">bool</span> mkdir(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;dirName, <span class="keywordtype">bool</span> createParentDirectories) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">bool</span> rmdir(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;dirName, <span class="keywordtype">bool</span> recurseParentDirectories) <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">bool</span> setSize(qint64 size) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">bool</span> caseSensitive() <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">bool</span> isRelativePath() <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    QByteArray id() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a> id() <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    uint ownerId(FileOwner owner) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    QString owner(FileOwner owner) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> owner(FileOwner owner) <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    FileFlags fileFlags(FileFlags type = FileInfoAll) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    QString fileName(FileName file = DefaultName) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> fileName(FileName file = DefaultName) <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">void</span> setFileName(<span class="keyword">const</span> QString &amp;fullPath) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">void</span> setFileName(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;fullPath) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    QDateTime fileTime(FileTime time) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qdatetime.html">QDateTime</a> fileTime(FileTime time) <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keyword">typedef</span> <a class="code" href="classDtk_1_1Core_1_1DDciFileEngineIterator.html">DDciFileEngineIterator</a> <a class="code" href="classDtk_1_1Core_1_1DDciFileEngineIterator.html">Iterator</a>;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <a class="code" href="classDtk_1_1Core_1_1DDciFileEngineIterator.html">Iterator</a> *beginEntryList(QDir::Filters filters, <span class="keyword">const</span> QStringList &amp;filterNames) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <a class="code" href="classDtk_1_1Core_1_1DDciFileEngineIterator.html">Iterator</a> *beginEntryList(<a class="codeRef" href="http://doc.qt.io/qt-5/qdir.html#Filter-enum">QDir::Filters</a> filters, <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> &amp;filterNames) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <a class="code" href="classDtk_1_1Core_1_1DDciFileEngineIterator.html">Iterator</a> *endEntryList() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    qint64 read(<span class="keywordtype">char</span> *data, qint64 maxlen) <span class="keyword">override</span>;</div>
@@ -265,17 +265,17 @@ $(document).ready(function(){initNavTree('ddcifileengine__p_8h_source.html','');
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment">     * 是 DCI 文件的内部路径。</span></div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment">     * 函数返回的第一个数据是&quot;真实文件路径&quot;。</span></div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keyword">static</span> QPair&lt;QString, QString&gt; resolvePath(<span class="keyword">const</span> QString &amp;fullPath,</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                                               <span class="keyword">const</span> QString &amp;realFilePath = QString(),</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keyword">static</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qpair.html">QPair&lt;QString, QString&gt;</a> resolvePath(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;fullPath,</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                                               <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;realFilePath = <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>(),</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                                               <span class="keywordtype">bool</span> needRealFileExists = <span class="keyword">true</span>);</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    DDciFileShared file;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    QString dciFilePath;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    QFile realDciFile;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    QString subfilePath;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qsharedpointer.html">DDciFileShared</a> file;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> dciFilePath;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qfile.html">QFile</a> realDciFile;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> subfilePath;</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    QByteArray fileData;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    QBuffer *fileBuffer = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a> fileData;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qbuffer.html">QBuffer</a> *fileBuffer = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;};</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
@@ -284,6 +284,16 @@ $(document).ready(function(){initNavTree('ddcifileengine__p_8h_source.html','');
 <div class="ttc" id="aclassDtk_1_1Core_1_1DDciFileEngineIterator_html"><div class="ttname"><a href="classDtk_1_1Core_1_1DDciFileEngineIterator.html">Dtk::Core::DDciFileEngineIterator</a></div><div class="ttdef"><b>Definition:</b> ddcifileengine_p.h:33</div></div>
 <div class="ttc" id="aclassDtk_1_1Core_1_1DDciFileEngine_html"><div class="ttname"><a href="classDtk_1_1Core_1_1DDciFileEngine.html">Dtk::Core::DDciFileEngine</a></div><div class="ttdef"><b>Definition:</b> ddcifileengine_p.h:51</div></div>
 <div class="ttc" id="aclassDtk_1_1Core_1_1DDciFile_html"><div class="ttname"><a href="classDtk_1_1Core_1_1DDciFile.html">Dtk::Core::DDciFile</a></div><div class="ttdoc">ddcifile.h 是关于dci文件相关操作的一个类,实现了 DCI 文件的逻辑。其只是对数据的打包 dci文件的结构路径如下:</div><div class="ttdef"><b>Definition:</b> ddcifile.h:30</div></div>
+<div class="ttc" id="aqbuffer_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qbuffer.html">QBuffer</a></div></div>
+<div class="ttc" id="aqbytearray_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a></div></div>
+<div class="ttc" id="aqdatetime_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qdatetime.html">QDateTime</a></div></div>
+<div class="ttc" id="aqdir_html_Filter-enum"><div class="ttname"><a href="http://doc.qt.io/qt-5/qdir.html#Filter-enum">QDir::Filters</a></div><div class="ttdeci">typedef Filters</div></div>
+<div class="ttc" id="aqfile_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qfile.html">QFile</a></div></div>
+<div class="ttc" id="aqiodevice_html_OpenModeFlag-enum"><div class="ttname"><a href="http://doc.qt.io/qt-5/qiodevice.html#OpenModeFlag-enum">QIODevice::OpenMode</a></div><div class="ttdeci">typedef OpenMode</div></div>
+<div class="ttc" id="aqpair_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qpair.html">QPair</a></div></div>
+<div class="ttc" id="aqsharedpointer_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qsharedpointer.html">QSharedPointer</a></div></div>
+<div class="ttc" id="aqstring_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstring.html">QString</a></div></div>
+<div class="ttc" id="aqstringlist_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.4-->
@@ -291,7 +301,7 @@ $(document).ready(function(){initNavTree('ddcifileengine__p_8h_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_6c3d837d12de6918ecc70ece2c9d5940.html">dtkcore</a></li><li class="navelem"><a class="el" href="dir_119aa013467e95cb00c6469cad12208b.html">src</a></li><li class="navelem"><a class="el" href="dir_373c1ea1f6604d5920279b9afcd9ad8e.html">dci</a></li><li class="navelem"><a class="el" href="dir_3a04631acb7f776f669b8b06232f561f.html">private</a></li><li class="navelem"><b>ddcifileengine_p.h</b></li>
-    <li class="footer">文档生成时间:2023-01-03-09:26  +00</li>
+    <li class="footer">文档生成时间:2023-01-03-09:52  +00</li>
     <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
     <li class="footer">制作者:deepin doc doc go SIG</li>
     <li class="footer">文档使用CC-BY-4.0共享 </a>

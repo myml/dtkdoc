@@ -176,12 +176,12 @@ $(document).ready(function(){initNavTree('dstandardpaths_8h_source.html',''); in
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        Test,</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    };</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">static</span> QString writableLocation(QStandardPaths::StandardLocation type);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">static</span> QStringList standardLocations(QStandardPaths::StandardLocation type);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">static</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> writableLocation(<a class="codeRef" href="http://doc.qt.io/qt-5/qstandardpaths.html#StandardLocation-enum">QStandardPaths::StandardLocation</a> type);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">static</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> standardLocations(<a class="codeRef" href="http://doc.qt.io/qt-5/qstandardpaths.html#StandardLocation-enum">QStandardPaths::StandardLocation</a> type);</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">static</span> QString locate(QStandardPaths::StandardLocation type, <span class="keyword">const</span> QString &amp;fileName, QStandardPaths::LocateOptions options = QStandardPaths::LocateFile);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">static</span> QStringList locateAll(QStandardPaths::StandardLocation type, <span class="keyword">const</span> QString &amp;fileName, QStandardPaths::LocateOptions options = QStandardPaths::LocateFile);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">static</span> QString findExecutable(<span class="keyword">const</span> QString &amp;executableName, <span class="keyword">const</span> QStringList &amp;paths = QStringList());</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">static</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> locate(<a class="codeRef" href="http://doc.qt.io/qt-5/qstandardpaths.html#StandardLocation-enum">QStandardPaths::StandardLocation</a> type, <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;fileName, <a class="codeRef" href="http://doc.qt.io/qt-5/qstandardpaths.html#LocateOption-enum">QStandardPaths::LocateOptions</a> options = <a class="codeRef" href="http://doc.qt.io/qt-5/qstandardpaths.html#LocateOption-enum">QStandardPaths::LocateFile</a>);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">static</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> locateAll(<a class="codeRef" href="http://doc.qt.io/qt-5/qstandardpaths.html#StandardLocation-enum">QStandardPaths::StandardLocation</a> type, <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;fileName, <a class="codeRef" href="http://doc.qt.io/qt-5/qstandardpaths.html#LocateOption-enum">QStandardPaths::LocateOptions</a> options = <a class="codeRef" href="http://doc.qt.io/qt-5/qstandardpaths.html#LocateOption-enum">QStandardPaths::LocateFile</a>);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">static</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> findExecutable(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;executableName, <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> &amp;paths = <a class="codeRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a>());</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> setMode(Mode mode);</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">enum class</span> XDG {</div>
@@ -196,13 +196,13 @@ $(document).ready(function(){initNavTree('dstandardpaths_8h_source.html',''); in
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        DataDir</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    };</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">static</span> QString homePath();</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">static</span> QString homePath(<span class="keyword">const</span> uint uid);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">static</span> QString path(XDG type);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">static</span> QString path(DSG type);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">static</span> QStringList paths(DSG type);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">static</span> QString filePath(XDG type, QString fileName);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">static</span> QString filePath(DSG type, QString fileName);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">static</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> homePath();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">static</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> homePath(<span class="keyword">const</span> uint uid);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">static</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> path(XDG type);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">static</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> path(DSG type);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">static</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> paths(DSG type);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">static</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> filePath(XDG type, <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> fileName);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">static</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> filePath(DSG type, <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> fileName);</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="classDtk_1_1Core_1_1DStandardPaths.html">DStandardPaths</a>();</div>
@@ -214,6 +214,10 @@ $(document).ready(function(){initNavTree('dstandardpaths_8h_source.html',''); in
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// DTK_CORE_FILESYSTEM_DSTANDARDPATHS_H</span></div>
 <div class="ttc" id="aclassDtk_1_1Core_1_1DStandardPaths_html"><div class="ttname"><a href="classDtk_1_1Core_1_1DStandardPaths.html">Dtk::Core::DStandardPaths</a></div><div class="ttdoc">DStandardPaths提供兼容Snap/Dtk标准的路径模式。DStandardPaths实现了Qt的QStandardPaths主要接口.</div><div class="ttdef"><b>Definition:</b> dstandardpaths.h:16</div></div>
+<div class="ttc" id="aqstandardpaths_html_LocateOption-enum"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstandardpaths.html#LocateOption-enum">QStandardPaths::LocateOptions</a></div><div class="ttdeci">typedef LocateOptions</div></div>
+<div class="ttc" id="aqstandardpaths_html_StandardLocation-enum"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstandardpaths.html#StandardLocation-enum">QStandardPaths::StandardLocation</a></div><div class="ttdeci">StandardLocation</div></div>
+<div class="ttc" id="aqstring_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstring.html">QString</a></div></div>
+<div class="ttc" id="aqstringlist_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.4-->
@@ -221,7 +225,7 @@ $(document).ready(function(){initNavTree('dstandardpaths_8h_source.html',''); in
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_6c3d837d12de6918ecc70ece2c9d5940.html">dtkcore</a></li><li class="navelem"><a class="el" href="dir_858a6aace3374df34beb3a5d036e09e4.html">include</a></li><li class="navelem"><a class="el" href="dir_76ba404386394005bf4c32719c8795bc.html">filesystem</a></li><li class="navelem"><b>dstandardpaths.h</b></li>
-    <li class="footer">文档生成时间:2023-01-03-09:26  +00</li>
+    <li class="footer">文档生成时间:2023-01-03-09:52  +00</li>
     <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
     <li class="footer">制作者:deepin doc doc go SIG</li>
     <li class="footer">文档使用CC-BY-4.0共享 </a>

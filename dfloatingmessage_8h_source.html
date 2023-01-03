@@ -171,7 +171,7 @@ $(document).ready(function(){initNavTree('dfloatingmessage_8h_source.html',''); 
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">class </span><a class="code" href="classDFloatingMessagePrivate.html">DFloatingMessagePrivate</a>;</div>
 <div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classDFloatingMessage.html">   17</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDFloatingMessage.html">DFloatingMessage</a> : <span class="keyword">public</span> <a class="code" href="classDFloatingWidget.html">DFloatingWidget</a></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">Q_OBJECT</a></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    D_DECLARE_PRIVATE(<a class="code" href="classDFloatingMessage.html">DFloatingMessage</a>)</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div>
@@ -180,25 +180,25 @@ $(document).ready(function(){initNavTree('dfloatingmessage_8h_source.html',''); 
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        ResidentType    <span class="comment">//常驻的消息</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    };</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDFloatingMessage.html">DFloatingMessage</a>(MessageType notifyType = MessageType::TransientType, QWidget *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDFloatingMessage.html">DFloatingMessage</a>(MessageType notifyType = MessageType::TransientType, <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a> *<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a> = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    MessageType messageType() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDFloatingMessage.html#a356135eaa6a210e267fcec78319bc593">setIcon</a>(<span class="keyword">const</span> QIcon &amp;ico);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDFloatingMessage.html#a356135eaa6a210e267fcec78319bc593">setIcon</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qicon.html">QIcon</a> &amp;ico);</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDFloatingMessage.html#a356135eaa6a210e267fcec78319bc593">setIcon</a>(<span class="keyword">const</span> <a class="code" href="classDDciIcon.html">DDciIcon</a> &amp;icon);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDFloatingMessage.html#ae398619560a825b287553b3d84c71141">setMessage</a>(<span class="keyword">const</span> QString &amp;str);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDFloatingMessage.html#a923f8ab92157d958dfbef208a7937212">setWidget</a>(QWidget *w);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDFloatingMessage.html#ae398619560a825b287553b3d84c71141">setMessage</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;str);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDFloatingMessage.html#a923f8ab92157d958dfbef208a7937212">setWidget</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a> *w);</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDFloatingMessage.html#a2a5cfea17af78221a467eadeef161687">setDuration</a>(<span class="keywordtype">int</span> msec);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">virtual</span> QSize sizeHint() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">virtual</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qsize.html">QSize</a> sizeHint() <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;Q_SIGNALS:</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SIGNALS">Q_SIGNALS</a>:</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> closeButtonClicked();</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">using</span> <a class="code" href="classDFloatingWidget.html#a923f8ab92157d958dfbef208a7937212">DFloatingWidget::setWidget</a>;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> showEvent(QShowEvent *<a class="code" href="classDFloatingWidget.html#adc149c56fd7c4c627d6de403a56425c8">event</a>) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> showEvent(<a class="codeRef" href="http://doc.qt.io/qt-5/qshowevent.html">QShowEvent</a> *<a class="code" href="classDFloatingWidget.html#adc149c56fd7c4c627d6de403a56425c8">event</a>) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;};</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;DWIDGET_END_NAMESPACE</div>
@@ -214,6 +214,14 @@ $(document).ready(function(){initNavTree('dfloatingmessage_8h_source.html',''); 
 <div class="ttc" id="aclassDFloatingWidget_html"><div class="ttname"><a href="classDFloatingWidget.html">DFloatingWidget</a></div><div class="ttdef"><b>Definition:</b> dfloatingwidget.h:19</div></div>
 <div class="ttc" id="aclassDFloatingWidget_html_a923f8ab92157d958dfbef208a7937212"><div class="ttname"><a href="classDFloatingWidget.html#a923f8ab92157d958dfbef208a7937212">DFloatingWidget::setWidget</a></div><div class="ttdeci">void setWidget(QWidget *widget)</div><div class="ttdoc">设置 widget 对象, 若是之前此处已经有对象, 会先清理旧的对象, 再将此处的新对象放到此处</div><div class="ttdef"><b>Definition:</b> dfloatingwidget.cpp:56</div></div>
 <div class="ttc" id="aclassDFloatingWidget_html_adc149c56fd7c4c627d6de403a56425c8"><div class="ttname"><a href="classDFloatingWidget.html#adc149c56fd7c4c627d6de403a56425c8">DFloatingWidget::event</a></div><div class="ttdeci">bool event(QEvent *event) override</div><div class="ttdoc">主事件处理程序, 用来处理感兴趣的事件</div><div class="ttdef"><b>Definition:</b> dfloatingwidget.cpp:145</div></div>
+<div class="ttc" id="aqicon_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qicon.html">QIcon</a></div></div>
+<div class="ttc" id="aqobject_html_Q_OBJECT"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">QObject::Q_OBJECT</a></div><div class="ttdeci">Q_OBJECTQ_OBJECT</div></div>
+<div class="ttc" id="aqobject_html_Q_SIGNALS"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_SIGNALS">QObject::Q_SIGNALS</a></div><div class="ttdeci">Q_SIGNALSQ_SIGNALS</div></div>
+<div class="ttc" id="aqobject_html_parent"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#parent">QObject::parent</a></div><div class="ttdeci">QObject * parent() const const</div></div>
+<div class="ttc" id="aqshowevent_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qshowevent.html">QShowEvent</a></div></div>
+<div class="ttc" id="aqsize_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qsize.html">QSize</a></div></div>
+<div class="ttc" id="aqstring_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstring.html">QString</a></div></div>
+<div class="ttc" id="aqwidget_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.4-->
@@ -221,7 +229,7 @@ $(document).ready(function(){initNavTree('dfloatingmessage_8h_source.html',''); 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_cc1fdbae730d0dba18db2b924667b662.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_6819db61f31aacd6e31b437a606a4041.html">include</a></li><li class="navelem"><a class="el" href="dir_6719ee6af2149ba01bce2af57814b9e8.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_4faf4521db2f3764f9e00575717749e8.html">widgets</a></li><li class="navelem"><b>dfloatingmessage.h</b></li>
-    <li class="footer">文档生成时间:2023-01-03-09:26  +00</li>
+    <li class="footer">文档生成时间:2023-01-03-09:52  +00</li>
     <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
     <li class="footer">制作者:deepin doc doc go SIG</li>
     <li class="footer">文档使用CC-BY-4.0共享 </a>

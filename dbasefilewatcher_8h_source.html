@@ -168,39 +168,39 @@ $(document).ready(function(){initNavTree('dbasefilewatcher_8h_source.html',''); 
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;DCORE_BEGIN_NAMESPACE</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">class </span>DBaseFileWatcherPrivate;</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classDtk_1_1Core_1_1DBaseFileWatcher.html">   16</a></span>&#160;<span class="keyword">class </span>LIBDTKCORESHARED_EXPORT <a class="code" href="classDtk_1_1Core_1_1DBaseFileWatcher.html">DBaseFileWatcher</a> : <span class="keyword">public</span> QObject, <span class="keyword">public</span> <a class="code" href="classDtk_1_1Core_1_1DObject.html">DObject</a></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classDtk_1_1Core_1_1DBaseFileWatcher.html">   16</a></span>&#160;<span class="keyword">class </span>LIBDTKCORESHARED_EXPORT <a class="code" href="classDtk_1_1Core_1_1DBaseFileWatcher.html">DBaseFileWatcher</a> : <span class="keyword">public</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a>, <span class="keyword">public</span> <a class="code" href="classDtk_1_1Core_1_1DObject.html">DObject</a></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    Q_OBJECT</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    ~<a class="code" href="classDtk_1_1Core_1_1DBaseFileWatcher.html">DBaseFileWatcher</a>();</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    QUrl fileUrl() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qurl.html">QUrl</a> fileUrl() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">bool</span> startWatcher();</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">bool</span> stopWatcher();</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">bool</span> restartWatcher();</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> setEnabledSubfileWatcher(<span class="keyword">const</span> QUrl &amp;subfileUrl, <span class="keywordtype">bool</span> enabled = <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> setEnabledSubfileWatcher(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qurl.html">QUrl</a> &amp;subfileUrl, <span class="keywordtype">bool</span> enabled = <span class="keyword">true</span>);</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">using</span> SignalType1 = void(<a class="code" href="classDtk_1_1Core_1_1DBaseFileWatcher.html">DBaseFileWatcher</a>::*)(<span class="keyword">const</span> QUrl &amp;);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">using</span> SignalType2 = void(<a class="code" href="classDtk_1_1Core_1_1DBaseFileWatcher.html">DBaseFileWatcher</a>::*)(<span class="keyword">const</span> QUrl &amp;, <span class="keyword">const</span> QUrl &amp;);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> ghostSignal(<span class="keyword">const</span> QUrl &amp;targetUrl, SignalType1 signal, <span class="keyword">const</span> QUrl &amp;arg1);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> ghostSignal(<span class="keyword">const</span> QUrl &amp;targetUrl, SignalType2 signal, <span class="keyword">const</span> QUrl &amp;arg1, <span class="keyword">const</span> QUrl &amp;arg2);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">using</span> SignalType1 = void(<a class="code" href="classDtk_1_1Core_1_1DBaseFileWatcher.html">DBaseFileWatcher</a>::*)(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qurl.html">QUrl</a> &amp;);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">using</span> SignalType2 = void(<a class="code" href="classDtk_1_1Core_1_1DBaseFileWatcher.html">DBaseFileWatcher</a>::*)(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qurl.html">QUrl</a> &amp;, <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qurl.html">QUrl</a> &amp;);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> ghostSignal(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qurl.html">QUrl</a> &amp;targetUrl, SignalType1 signal, <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qurl.html">QUrl</a> &amp;arg1);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> ghostSignal(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qurl.html">QUrl</a> &amp;targetUrl, SignalType2 signal, <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qurl.html">QUrl</a> &amp;arg1, <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qurl.html">QUrl</a> &amp;arg2);</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;Q_SIGNALS:</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> fileDeleted(<span class="keyword">const</span> QUrl &amp;url);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> fileAttributeChanged(<span class="keyword">const</span> QUrl &amp;url);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">void</span> fileMoved(<span class="keyword">const</span> QUrl &amp;fromUrl, <span class="keyword">const</span> QUrl &amp;toUrl);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> subfileCreated(<span class="keyword">const</span> QUrl &amp;url);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> fileModified(<span class="keyword">const</span> QUrl &amp;url);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> fileClosed(<span class="keyword">const</span> QUrl &amp;url);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SIGNALS">Q_SIGNALS</a>:</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> fileDeleted(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qurl.html">QUrl</a> &amp;url);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> fileAttributeChanged(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qurl.html">QUrl</a> &amp;url);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">void</span> fileMoved(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qurl.html">QUrl</a> &amp;fromUrl, <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qurl.html">QUrl</a> &amp;toUrl);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> subfileCreated(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qurl.html">QUrl</a> &amp;url);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> fileModified(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qurl.html">QUrl</a> &amp;url);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> fileClosed(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qurl.html">QUrl</a> &amp;url);</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDtk_1_1Core_1_1DBaseFileWatcher.html">DBaseFileWatcher</a>(<a class="code" href="classDtk_1_1Core_1_1DBaseFileWatcherPrivate.html">DBaseFileWatcherPrivate</a> &amp;dd, <span class="keyword">const</span> QUrl &amp;url, QObject *parent = 0);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDtk_1_1Core_1_1DBaseFileWatcher.html">DBaseFileWatcher</a>(<a class="code" href="classDtk_1_1Core_1_1DBaseFileWatcherPrivate.html">DBaseFileWatcherPrivate</a> &amp;dd, <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qurl.html">QUrl</a> &amp;url, <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *parent = 0);</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    Q_DISABLE_COPY(<a class="code" href="classDtk_1_1Core_1_1DBaseFileWatcher.html">DBaseFileWatcher</a>)</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_DISABLE_COPY">Q_DISABLE_COPY</a>(<a class="code" href="classDtk_1_1Core_1_1DBaseFileWatcher.html">DBaseFileWatcher</a>)</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    D_DECLARE_PRIVATE(<a class="code" href="classDtk_1_1Core_1_1DBaseFileWatcher.html">DBaseFileWatcher</a>)</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;};</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
@@ -210,6 +210,10 @@ $(document).ready(function(){initNavTree('dbasefilewatcher_8h_source.html',''); 
 <div class="ttc" id="aclassDtk_1_1Core_1_1DBaseFileWatcherPrivate_html"><div class="ttname"><a href="classDtk_1_1Core_1_1DBaseFileWatcherPrivate.html">Dtk::Core::DBaseFileWatcherPrivate</a></div><div class="ttdef"><b>Definition:</b> dbasefilewatcher_p.h:16</div></div>
 <div class="ttc" id="aclassDtk_1_1Core_1_1DBaseFileWatcher_html"><div class="ttname"><a href="classDtk_1_1Core_1_1DBaseFileWatcher.html">Dtk::Core::DBaseFileWatcher</a></div><div class="ttdoc">DBaseFileWatcher 类提供了一系列接口可供监视文件和目录的变动。</div><div class="ttdef"><b>Definition:</b> dbasefilewatcher.h:17</div></div>
 <div class="ttc" id="aclassDtk_1_1Core_1_1DObject_html"><div class="ttname"><a href="classDtk_1_1Core_1_1DObject.html">Dtk::Core::DObject</a></div><div class="ttdoc">一些宏的定义.</div><div class="ttdef"><b>Definition:</b> dobject.h:25</div></div>
+<div class="ttc" id="aqobject_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html">QObject</a></div></div>
+<div class="ttc" id="aqobject_html_Q_DISABLE_COPY"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_DISABLE_COPY">QObject::Q_DISABLE_COPY</a></div><div class="ttdeci">Q_DISABLE_COPY(Class)</div></div>
+<div class="ttc" id="aqobject_html_Q_SIGNALS"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_SIGNALS">QObject::Q_SIGNALS</a></div><div class="ttdeci">Q_SIGNALSQ_SIGNALS</div></div>
+<div class="ttc" id="aqurl_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qurl.html">QUrl</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.4-->
@@ -217,7 +221,7 @@ $(document).ready(function(){initNavTree('dbasefilewatcher_8h_source.html',''); 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_6c3d837d12de6918ecc70ece2c9d5940.html">dtkcore</a></li><li class="navelem"><a class="el" href="dir_858a6aace3374df34beb3a5d036e09e4.html">include</a></li><li class="navelem"><a class="el" href="dir_76ba404386394005bf4c32719c8795bc.html">filesystem</a></li><li class="navelem"><a class="el" href="dbasefilewatcher_8h.html">dbasefilewatcher.h</a></li>
-    <li class="footer">文档生成时间:2023-01-03-09:26  +00</li>
+    <li class="footer">文档生成时间:2023-01-03-09:52  +00</li>
     <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
     <li class="footer">制作者:deepin doc doc go SIG</li>
     <li class="footer">文档使用CC-BY-4.0共享 </a>

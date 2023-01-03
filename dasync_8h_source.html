@@ -179,41 +179,41 @@ $(document).ready(function(){initNavTree('dasync_8h_source.html',''); initResiza
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">namespace </span>DtkCorePrivate {</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">// 本类是继承实现的，只有子类方法是安全的，暂不对外提供接口</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classDtk_1_1Core_1_1DtkCorePrivate_1_1DSafeQueue.html">   27</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDtk_1_1Core_1_1DtkCorePrivate_1_1DSafeQueue.html">DSafeQueue</a> : <span class="keyword">public</span> QQueue&lt;T&gt;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classDtk_1_1Core_1_1DtkCorePrivate_1_1DSafeQueue.html">   27</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDtk_1_1Core_1_1DtkCorePrivate_1_1DSafeQueue.html">DSafeQueue</a> : <span class="keyword">public</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qqueue.html">QQueue</a>&lt;T&gt;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> enqueue(<span class="keyword">const</span> T &amp;t)</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        QMutexLocker lkc(&amp;m_mtx);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        QQueue&lt;T&gt;::enqueue(t);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <a class="codeRef" href="http://doc.qt.io/qt-5/qmutexlocker.html">QMutexLocker</a> lkc(&amp;m_mtx);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <a class="codeRef" href="http://doc.qt.io/qt-5/qqueue.html#enqueue">QQueue&lt;T&gt;::enqueue</a>(t);</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    }</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">inline</span> T dequeue()</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    {</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        QMutexLocker lkc(&amp;m_mtx);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordflow">return</span> QQueue&lt;T&gt;::dequeue();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="codeRef" href="http://doc.qt.io/qt-5/qmutexlocker.html">QMutexLocker</a> lkc(&amp;m_mtx);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordflow">return</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qqueue.html#dequeue">QQueue&lt;T&gt;::dequeue</a>();</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">int</span> size()</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        QMutexLocker lkc(&amp;m_mtx);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">return</span> QQueue&lt;T&gt;::size();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <a class="codeRef" href="http://doc.qt.io/qt-5/qmutexlocker.html">QMutexLocker</a> lkc(&amp;m_mtx);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">return</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qlist.html#size">QQueue&lt;T&gt;::size</a>();</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    }</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">inline</span> T &amp;head()</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        QMutexLocker lkc(&amp;m_mtx);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordflow">return</span> QQueue&lt;T&gt;::head();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <a class="codeRef" href="http://doc.qt.io/qt-5/qmutexlocker.html">QMutexLocker</a> lkc(&amp;m_mtx);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordflow">return</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qqueue.html#head">QQueue&lt;T&gt;::head</a>();</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">inline</span> <span class="keyword">const</span> T &amp;head()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        QMutexLocker lkc(&amp;m_mtx);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordflow">return</span> QQueue&lt;T&gt;::head();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <a class="codeRef" href="http://doc.qt.io/qt-5/qmutexlocker.html">QMutexLocker</a> lkc(&amp;m_mtx);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordflow">return</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qqueue.html#head">QQueue&lt;T&gt;::head</a>();</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    }</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">mutable</span> QMutex m_mtx;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">mutable</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qmutex.html">QMutex</a> m_mtx;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;};</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">// 内部使用，不对外提供接口</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classDtk_1_1Core_1_1DtkCorePrivate_1_1MainWorker.html">   61</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDtk_1_1Core_1_1DtkCorePrivate_1_1MainWorker.html">MainWorker</a> : <span class="keyword">public</span> QObject</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classDtk_1_1Core_1_1DtkCorePrivate_1_1MainWorker.html">   61</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDtk_1_1Core_1_1DtkCorePrivate_1_1MainWorker.html">MainWorker</a> : <span class="keyword">public</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a></div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;{</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    Q_OBJECT</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    std::function&lt;void(<span class="keywordtype">void</span> *)&gt; m_handle;</div>
@@ -230,8 +230,8 @@ $(document).ready(function(){initNavTree('dasync_8h_source.html',''); initResiza
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">bool</span> dasyncDestroyed() { <span class="keywordflow">return</span> m_dasyncDestroyed; }</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <a class="code" href="classDtk_1_1Core_1_1DtkCorePrivate_1_1MainWorker.html">MainWorker</a>(QObject *parent = <span class="keyword">nullptr</span>)</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        : QObject(parent)</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <a class="code" href="classDtk_1_1Core_1_1DtkCorePrivate_1_1MainWorker.html">MainWorker</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *parent = <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        : <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a>(parent)</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    {</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="comment">// Ensure that QApplication is initialized</span></div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        Q_ASSERT(qApp-&gt;instance() &amp;&amp; qApp-&gt;instance()-&gt;thread());</div>
@@ -239,17 +239,17 @@ $(document).ready(function(){initNavTree('dasync_8h_source.html',''); initResiza
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordtype">bool</span> isStartInMain = D_THREAD_IN_MAIN();</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        QObject::connect(<span class="keyword">this</span>,</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#connect">QObject::connect</a>(<span class="keyword">this</span>,</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                         &amp;MainWorker::sigRunInMain,</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                         <span class="keyword">this</span>,</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                         &amp;MainWorker::slotRunInMain,</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                         isStartInMain ? Qt::AutoConnection : Qt::BlockingQueuedConnection);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                         isStartInMain ? <a class="codeRef" href="http://doc.qt.io/qt-5/qt.html#ConnectionType-enum">Qt::AutoConnection</a> : <a class="codeRef" href="http://doc.qt.io/qt-5/qt.html#ConnectionType-enum">Qt::BlockingQueuedConnection</a>);</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        QObject::connect(<span class="keyword">this</span>,</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#connect">QObject::connect</a>(<span class="keyword">this</span>,</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                         &amp;MainWorker::sigRunInMainVoid,</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                         <span class="keyword">this</span>,</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                         &amp;MainWorker::slotRunInMainVoid,</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                         isStartInMain ? Qt::AutoConnection : Qt::BlockingQueuedConnection);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                         isStartInMain ? <a class="codeRef" href="http://doc.qt.io/qt-5/qt.html#ConnectionType-enum">Qt::AutoConnection</a> : <a class="codeRef" href="http://doc.qt.io/qt-5/qt.html#ConnectionType-enum">Qt::BlockingQueuedConnection</a>);</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    }</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="comment">// 1. handle arg is non void</span></div>
@@ -307,12 +307,12 @@ $(document).ready(function(){initNavTree('dasync_8h_source.html',''); initResiza
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;};</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;}  <span class="comment">// namespace DtkCorePrivate</span></div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160; </div>
-<div class="line"><a name="l00155"></a><span class="lineno"><a class="line" href="classDtk_1_1Core_1_1DAsyncState.html">  155</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDtk_1_1Core_1_1DAsyncState.html">DAsyncState</a> : <span class="keyword">public</span> QObject</div>
+<div class="line"><a name="l00155"></a><span class="lineno"><a class="line" href="classDtk_1_1Core_1_1DAsyncState.html">  155</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDtk_1_1Core_1_1DAsyncState.html">DAsyncState</a> : <span class="keyword">public</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a></div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;{</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    Q_OBJECT</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDtk_1_1Core_1_1DAsyncState.html">DAsyncState</a>(QObject *parent = <span class="keyword">nullptr</span>) noexcept</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        : QObject(parent)</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDtk_1_1Core_1_1DAsyncState.html">DAsyncState</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *parent = <span class="keyword">nullptr</span>) noexcept</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        : <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a>(parent)</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    {</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    }</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keyword">enum</span> AsyncTaskState {</div>
@@ -330,7 +330,7 @@ $(document).ready(function(){initNavTree('dasync_8h_source.html',''); initResiza
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="comment">// Template classes not supported by Q_OBJECT, so class MainWorker is independent</span></div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> DataTypeIn, <span class="keyword">typename</span> DataTypeOut&gt;</div>
-<div class="line"><a name="l00178"></a><span class="lineno"><a class="line" href="classDtk_1_1Core_1_1DAsync.html">  178</a></span>&#160;<span class="keyword">class </span>D_DECL_DEPRECATED <a class="code" href="classDtk_1_1Core_1_1DAsync.html">DAsync</a> : <span class="keyword">public</span> QObject</div>
+<div class="line"><a name="l00178"></a><span class="lineno"><a class="line" href="classDtk_1_1Core_1_1DAsync.html">  178</a></span>&#160;<span class="keyword">class </span>D_DECL_DEPRECATED <a class="code" href="classDtk_1_1Core_1_1DAsync.html">DAsync</a> : <span class="keyword">public</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a></div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;{</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <span class="keyword">class </span>Helper;</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160; </div>
@@ -444,8 +444,8 @@ $(document).ready(function(){initNavTree('dasync_8h_source.html',''); initResiza
 <div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    DAsyncState::AsyncTaskStatus m_status;</div>
 <div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160; </div>
 <div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDtk_1_1Core_1_1DAsync.html">DAsync</a>(QObject *parent = <span class="keyword">nullptr</span>) noexcept</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        : QObject(parent)</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDtk_1_1Core_1_1DAsync.html">DAsync</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *parent = <span class="keyword">nullptr</span>) noexcept</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        : <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#QObject">QObject</a>(parent)</div>
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        , m_func({<span class="keyword">nullptr</span>})</div>
 <div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        , m_status(DAsyncState::NotReady)</div>
 <div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    {</div>
@@ -549,7 +549,7 @@ $(document).ready(function(){initNavTree('dasync_8h_source.html',''); initResiza
 <div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;            <span class="keywordflow">return</span> m_helper;</div>
 <div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;        }</div>
 <div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;        m_postProxy = [<span class="keyword">this</span>]() {</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;            std::thread thread([<span class="keyword">this</span>] {</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;            std::thread <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#thread">thread</a>([<span class="keyword">this</span>] {</div>
 <div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;                <span class="keywordflow">if</span> (m_status.testFlag(DAsyncState::Cancel)) {</div>
 <div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;                    return;</div>
 <div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;                }</div>
@@ -590,7 +590,7 @@ $(document).ready(function(){initNavTree('dasync_8h_source.html',''); initResiza
 <div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;            <span class="keywordflow">return</span> m_helper;</div>
 <div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;        }</div>
 <div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;        m_postProxy = [<span class="keyword">this</span>]() {</div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;            std::thread thread([<span class="keyword">this</span>] {</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;            std::thread <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#thread">thread</a>([<span class="keyword">this</span>] {</div>
 <div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;                <span class="keywordflow">if</span> (m_status.testFlag(DAsyncState::Cancel)) {</div>
 <div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;                    return;</div>
 <div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;                }</div>
@@ -636,13 +636,13 @@ $(document).ready(function(){initNavTree('dasync_8h_source.html',''); initResiza
 <div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160; </div>
 <div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;    std::function&lt;void()&gt; m_postProxy;</div>
-<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;    <span class="keyword">class </span>Helper : <span class="keyword">public</span> QObject</div>
+<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;    <span class="keyword">class </span>Helper : <span class="keyword">public</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a></div>
 <div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;    {</div>
 <div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;        <a class="code" href="classDtk_1_1Core_1_1DAsync.html">DAsync</a> *m_async;</div>
 <div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160; </div>
 <div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;        <span class="keyword">explicit</span> Helper(<a class="code" href="classDtk_1_1Core_1_1DAsync.html">DAsync</a> *async, QObject *parent = <span class="keyword">nullptr</span>) noexcept</div>
-<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;            : QObject(parent)</div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;        <span class="keyword">explicit</span> Helper(<a class="code" href="classDtk_1_1Core_1_1DAsync.html">DAsync</a> *async, <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *parent = <span class="keyword">nullptr</span>) noexcept</div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;            : <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a>(parent)</div>
 <div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;            , m_async(async)</div>
 <div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;        {</div>
 <div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;        }</div>
@@ -680,6 +680,18 @@ $(document).ready(function(){initNavTree('dasync_8h_source.html',''); initResiza
 <div class="ttc" id="aclassDtk_1_1Core_1_1DAsync_html"><div class="ttname"><a href="classDtk_1_1Core_1_1DAsync.html">Dtk::Core::DAsync</a></div><div class="ttdef"><b>Definition:</b> dasync.h:179</div></div>
 <div class="ttc" id="aclassDtk_1_1Core_1_1DtkCorePrivate_1_1DSafeQueue_html"><div class="ttname"><a href="classDtk_1_1Core_1_1DtkCorePrivate_1_1DSafeQueue.html">Dtk::Core::DtkCorePrivate::DSafeQueue</a></div><div class="ttdef"><b>Definition:</b> dasync.h:28</div></div>
 <div class="ttc" id="aclassDtk_1_1Core_1_1DtkCorePrivate_1_1MainWorker_html"><div class="ttname"><a href="classDtk_1_1Core_1_1DtkCorePrivate_1_1MainWorker.html">Dtk::Core::DtkCorePrivate::MainWorker</a></div><div class="ttdef"><b>Definition:</b> dasync.h:62</div></div>
+<div class="ttc" id="aqlist_html_size"><div class="ttname"><a href="http://doc.qt.io/qt-5/qlist.html#size">QList::size</a></div><div class="ttdeci">int size() const const</div></div>
+<div class="ttc" id="aqmutex_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qmutex.html">QMutex</a></div></div>
+<div class="ttc" id="aqmutexlocker_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qmutexlocker.html">QMutexLocker</a></div></div>
+<div class="ttc" id="aqobject_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html">QObject</a></div></div>
+<div class="ttc" id="aqobject_html_QObject"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#QObject">QObject::QObject</a></div><div class="ttdeci">QObject(QObject *parent)</div></div>
+<div class="ttc" id="aqobject_html_connect"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#connect">QObject::connect</a></div><div class="ttdeci">QMetaObject::Connection connect(const QObject *sender, const char *signal, const QObject *receiver, const char *method, Qt::ConnectionType type)</div></div>
+<div class="ttc" id="aqobject_html_thread"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#thread">QObject::thread</a></div><div class="ttdeci">QThread * thread() const const</div></div>
+<div class="ttc" id="aqqueue_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qqueue.html">QQueue</a></div></div>
+<div class="ttc" id="aqqueue_html_dequeue"><div class="ttname"><a href="http://doc.qt.io/qt-5/qqueue.html#dequeue">QQueue::dequeue</a></div><div class="ttdeci">T dequeue()</div></div>
+<div class="ttc" id="aqqueue_html_enqueue"><div class="ttname"><a href="http://doc.qt.io/qt-5/qqueue.html#enqueue">QQueue::enqueue</a></div><div class="ttdeci">void enqueue(const T &amp;t)</div></div>
+<div class="ttc" id="aqqueue_html_head"><div class="ttname"><a href="http://doc.qt.io/qt-5/qqueue.html#head">QQueue::head</a></div><div class="ttdeci">T &amp; head()</div></div>
+<div class="ttc" id="aqt_html_ConnectionType-enum"><div class="ttname"><a href="http://doc.qt.io/qt-5/qt.html#ConnectionType-enum">Qt::AutoConnection</a></div><div class="ttdeci">AutoConnection</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.4-->
@@ -687,7 +699,7 @@ $(document).ready(function(){initNavTree('dasync_8h_source.html',''); initResiza
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_6c3d837d12de6918ecc70ece2c9d5940.html">dtkcore</a></li><li class="navelem"><a class="el" href="dir_858a6aace3374df34beb3a5d036e09e4.html">include</a></li><li class="navelem"><a class="el" href="dir_24450d5b37828d2338747fbf63b34a61.html">util</a></li><li class="navelem"><b>dasync.h</b></li>
-    <li class="footer">文档生成时间:2023-01-03-09:26  +00</li>
+    <li class="footer">文档生成时间:2023-01-03-09:52  +00</li>
     <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
     <li class="footer">制作者:deepin doc doc go SIG</li>
     <li class="footer">文档使用CC-BY-4.0共享 </a>

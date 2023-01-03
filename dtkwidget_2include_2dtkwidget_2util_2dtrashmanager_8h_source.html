@@ -169,14 +169,14 @@ $(document).ready(function(){initNavTree('dtkwidget_2include_2dtkwidget_2util_2d
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;DWIDGET_BEGIN_NAMESPACE</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">class </span><a class="code" href="classDTrashManagerPrivate.html">DTrashManagerPrivate</a>;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">class </span>D_DECL_DEPRECATED_X(&quot;Use libdtkcore&quot;) DTrashManager : <span class="keyword">public</span> QObject, <span class="keyword">public</span> DTK_CORE_NAMESPACE::DObject</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">class </span>D_DECL_DEPRECATED_X(&quot;Use libdtkcore&quot;) DTrashManager : <span class="keyword">public</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a>, <span class="keyword">public</span> DTK_CORE_NAMESPACE::DObject</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">static</span> DTrashManager *instance();</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">bool</span> trashIsEmpty() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">bool</span> cleanTrash();</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">bool</span> moveToTrash(<span class="keyword">const</span> QString &amp;filePath, <span class="keywordtype">bool</span> followSymlink = <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">bool</span> moveToTrash(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;filePath, <span class="keywordtype">bool</span> followSymlink = <span class="keyword">false</span>);</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    DTrashManager();</div>
@@ -189,6 +189,8 @@ $(document).ready(function(){initNavTree('dtkwidget_2include_2dtkwidget_2util_2d
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// DTKWIDGET_DTRASHMANAGER_H</span></div>
 <div class="ttc" id="aclassDTrashManagerPrivate_html"><div class="ttname"><a href="classDTrashManagerPrivate.html">DTrashManagerPrivate</a></div><div class="ttdef"><b>Definition:</b> dtrashmanager_linux.cpp:140</div></div>
+<div class="ttc" id="aqobject_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html">QObject</a></div></div>
+<div class="ttc" id="aqstring_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstring.html">QString</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.4-->
@@ -196,7 +198,7 @@ $(document).ready(function(){initNavTree('dtkwidget_2include_2dtkwidget_2util_2d
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_cc1fdbae730d0dba18db2b924667b662.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_6819db61f31aacd6e31b437a606a4041.html">include</a></li><li class="navelem"><a class="el" href="dir_6719ee6af2149ba01bce2af57814b9e8.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_80ea2a56a55dd237addcb3ad9ec9ab52.html">util</a></li><li class="navelem"><b>dtrashmanager.h</b></li>
-    <li class="footer">文档生成时间:2023-01-03-09:26  +00</li>
+    <li class="footer">文档生成时间:2023-01-03-09:52  +00</li>
     <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
     <li class="footer">制作者:deepin doc doc go SIG</li>
     <li class="footer">文档使用CC-BY-4.0共享 </a>

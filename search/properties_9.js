@@ -1,7 +1,11 @@
 var searchData=
 [
-  ['margins_4100',['margins',['../classDAnchorsBase.html#a799e0ba24f1525070d39282ad7b4f421',1,'DAnchorsBase::margins()'],['../classDClipEffectWidget.html#a278bd703ef7f428b5ed2f960a296e390',1,'DClipEffectWidget::margins()'],['../classDGraphicsClipEffect.html#a889a0275a4c6c1d19de2082d7f16d2b7',1,'DGraphicsClipEffect::margins()']]],
-  ['maskalpha_4101',['maskAlpha',['../classDBlurEffectWidget.html#adc07ddda93428f01a234dca983731b1d',1,'DBlurEffectWidget']]],
-  ['maskcolor_4102',['maskColor',['../classDBlurEffectWidget.html#a1719acaf60c3e21837850546966ddf8c',1,'DBlurEffectWidget']]],
-  ['mode_4103',['mode',['../classDBlurEffectWidget.html#ae0edc0fb4d640b202334355bca2a949e',1,'DBlurEffectWidget']]]
+  ['key_35729',['key',['http://doc.qt.io/qt-5/qkeyeventtransition.html#key-prop',1,'QKeyEventTransition::key()'],['http://doc.qt.io/qt-5/qshortcut.html#key-prop',1,'QShortcut::key()']]],
+  ['keyboardautorepeatrate_35730',['keyboardAutoRepeatRate',['http://doc.qt.io/qt-5/qstylehints.html#keyboardAutoRepeatRate-prop',1,'QStyleHints']]],
+  ['keyboardinputinterval_35731',['keyboardInputInterval',['http://doc.qt.io/qt-5/qapplication.html#keyboardInputInterval-prop',1,'QApplication::keyboardInputInterval()'],['http://doc.qt.io/qt-5/qstylehints.html#keyboardInputInterval-prop',1,'QStyleHints::keyboardInputInterval()']]],
+  ['keyboardpagestep_35732',['keyboardPageStep',['http://doc.qt.io/qt-5/qmdisubwindow.html#keyboardPageStep-prop',1,'QMdiSubWindow']]],
+  ['keyboardrectangle_35733',['keyboardRectangle',['http://doc.qt.io/qt-5/qinputmethod.html#keyboardRectangle-prop',1,'QInputMethod']]],
+  ['keyboardsinglestep_35734',['keyboardSingleStep',['http://doc.qt.io/qt-5/qmdisubwindow.html#keyboardSingleStep-prop',1,'QMdiSubWindow']]],
+  ['keyboardtracking_35735',['keyboardTracking',['http://doc.qt.io/qt-5/qabstractspinbox.html#keyboardTracking-prop',1,'QAbstractSpinBox']]],
+  ['keysequence_35736',['keySequence',['http://doc.qt.io/qt-5/qkeysequenceedit.html#keySequence-prop',1,'QKeySequenceEdit']]]
 ];

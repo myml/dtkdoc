@@ -182,12 +182,12 @@ Public 类型</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
 <tr class="memitem:acdb3d8016a3b881d1274f6836dbeec02"><td class="memItemLeft" align="right" valign="top"><a id="acdb3d8016a3b881d1274f6836dbeec02"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>bind</b> (QWidget *widget, SizeType type)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>bind</b> (<a class="elRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a> *widget, SizeType type)</td></tr>
 <tr class="separator:acdb3d8016a3b881d1274f6836dbeec02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1882fe37243ec33dca65b7e549420296"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDFontSizeManager.html#a1882fe37243ec33dca65b7e549420296">bind</a> (QWidget *widget, SizeType type, int weight)</td></tr>
+<tr class="memitem:a1882fe37243ec33dca65b7e549420296"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDFontSizeManager.html#a1882fe37243ec33dca65b7e549420296">bind</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a> *widget, SizeType type, int weight)</td></tr>
 <tr class="memdesc:a1882fe37243ec33dca65b7e549420296"><td class="mdescLeft">&#160;</td><td class="mdescRight">将字体的大小枚举 SizeType 和控件 widget 进行绑定, 其控件的字体大小(随绑定的枚举的)对应值的改变而改变; 系统自定义的绑定枚举值 T6, 若 T6 = 14px, 则其他枚举 T1 - T10 的数值,依次为:40, 30, 24, 20, 17, 14(T6), 13, 12, 11, 10; 系统自定义的绑定枚举值 T6 改为 T6 = 20px, 则其他枚举 T1 - T10 的数值,依次为:46, 36, 30, 26, 23, 20(T6), 19, 18, 17, 16; 即: 其对应的无论 T6 为何值, 其两个相邻的 T 值的差是定值: T(n) - T(n-1) == 定值 而系统是只设置 T6 这以枚举, 作为基准.  <a href="classDFontSizeManager.html#a1882fe37243ec33dca65b7e549420296">更多...</a><br /></td></tr>
 <tr class="separator:a1882fe37243ec33dca65b7e549420296"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21d1a132e973d1be037e4a9066baa5f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDFontSizeManager.html#a21d1a132e973d1be037e4a9066baa5f4">unbind</a> (QWidget *widget)</td></tr>
+<tr class="memitem:a21d1a132e973d1be037e4a9066baa5f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDFontSizeManager.html#a21d1a132e973d1be037e4a9066baa5f4">unbind</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a> *widget)</td></tr>
 <tr class="memdesc:a21d1a132e973d1be037e4a9066baa5f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">将字体大小枚举值和 widget 的绑定解除, 不跟随 "枚举对应的像素值" 而改变本控件的字体大小.  <a href="classDFontSizeManager.html#a21d1a132e973d1be037e4a9066baa5f4">更多...</a><br /></td></tr>
 <tr class="separator:a21d1a132e973d1be037e4a9066baa5f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1668e295e236a3cd79d35bb7d199ee4"><td class="memItemLeft" align="right" valign="top">quint16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDFontSizeManager.html#ad1668e295e236a3cd79d35bb7d199ee4">fontPixelSize</a> (SizeType type) const</td></tr>
@@ -200,40 +200,40 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>bind</b> (QWidget *wi
 <tr class="memdesc:ae51e5a4367f947716d256cf1ed3e3564"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置字体的通用像素大小.  <a href="classDFontSizeManager.html#ae51e5a4367f947716d256cf1ed3e3564">更多...</a><br /></td></tr>
 <tr class="separator:ae51e5a4367f947716d256cf1ed3e3564"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2daac5892873839fceaf25cde57ccd38"><td class="memItemLeft" align="right" valign="top"><a id="a2daac5892873839fceaf25cde57ccd38"></a>
-const QFont&#160;</td><td class="memItemRight" valign="bottom"><b>get</b> (SizeType type, const QFont &amp;base=QFont()) const</td></tr>
+const <a class="elRef" href="http://doc.qt.io/qt-5/qfont.html">QFont</a>&#160;</td><td class="memItemRight" valign="bottom"><b>get</b> (SizeType type, const <a class="elRef" href="http://doc.qt.io/qt-5/qfont.html">QFont</a> &amp;base=<a class="elRef" href="http://doc.qt.io/qt-5/qfont.html">QFont</a>()) const</td></tr>
 <tr class="separator:a2daac5892873839fceaf25cde57ccd38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88655d29842b22bc027a4c882c29813c"><td class="memItemLeft" align="right" valign="top">const QFont&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDFontSizeManager.html#a88655d29842b22bc027a4c882c29813c">get</a> (SizeType type, int weight, const QFont &amp;base=QFont()) const</td></tr>
+<tr class="memitem:a88655d29842b22bc027a4c882c29813c"><td class="memItemLeft" align="right" valign="top">const <a class="elRef" href="http://doc.qt.io/qt-5/qfont.html">QFont</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDFontSizeManager.html#a88655d29842b22bc027a4c882c29813c">get</a> (SizeType type, int weight, const <a class="elRef" href="http://doc.qt.io/qt-5/qfont.html">QFont</a> &amp;base=<a class="elRef" href="http://doc.qt.io/qt-5/qfont.html">QFont</a>()) const</td></tr>
 <tr class="memdesc:a88655d29842b22bc027a4c882c29813c"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取字体.  <a href="classDFontSizeManager.html#a88655d29842b22bc027a4c882c29813c">更多...</a><br /></td></tr>
 <tr class="separator:a88655d29842b22bc027a4c882c29813c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33efbe9c8f9e370e3053dec391ca3ef5"><td class="memItemLeft" align="right" valign="top"><a id="a33efbe9c8f9e370e3053dec391ca3ef5"></a>
-const QFont&#160;</td><td class="memItemRight" valign="bottom"><b>t1</b> (const QFont &amp;base=QFont()) const</td></tr>
+const <a class="elRef" href="http://doc.qt.io/qt-5/qfont.html">QFont</a>&#160;</td><td class="memItemRight" valign="bottom"><b>t1</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qfont.html">QFont</a> &amp;base=<a class="elRef" href="http://doc.qt.io/qt-5/qfont.html">QFont</a>()) const</td></tr>
 <tr class="separator:a33efbe9c8f9e370e3053dec391ca3ef5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad18d9af720c6a4fb642b8999cfbaf004"><td class="memItemLeft" align="right" valign="top"><a id="ad18d9af720c6a4fb642b8999cfbaf004"></a>
-const QFont&#160;</td><td class="memItemRight" valign="bottom"><b>t2</b> (const QFont &amp;base=QFont()) const</td></tr>
+const <a class="elRef" href="http://doc.qt.io/qt-5/qfont.html">QFont</a>&#160;</td><td class="memItemRight" valign="bottom"><b>t2</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qfont.html">QFont</a> &amp;base=<a class="elRef" href="http://doc.qt.io/qt-5/qfont.html">QFont</a>()) const</td></tr>
 <tr class="separator:ad18d9af720c6a4fb642b8999cfbaf004"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a943b7e6d3fde01a81bf9e94bd4771926"><td class="memItemLeft" align="right" valign="top"><a id="a943b7e6d3fde01a81bf9e94bd4771926"></a>
-const QFont&#160;</td><td class="memItemRight" valign="bottom"><b>t3</b> (const QFont &amp;base=QFont()) const</td></tr>
+const <a class="elRef" href="http://doc.qt.io/qt-5/qfont.html">QFont</a>&#160;</td><td class="memItemRight" valign="bottom"><b>t3</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qfont.html">QFont</a> &amp;base=<a class="elRef" href="http://doc.qt.io/qt-5/qfont.html">QFont</a>()) const</td></tr>
 <tr class="separator:a943b7e6d3fde01a81bf9e94bd4771926"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4e3d05f71b08f2ed57dfe65259088a3"><td class="memItemLeft" align="right" valign="top"><a id="ae4e3d05f71b08f2ed57dfe65259088a3"></a>
-const QFont&#160;</td><td class="memItemRight" valign="bottom"><b>t4</b> (const QFont &amp;base=QFont()) const</td></tr>
+const <a class="elRef" href="http://doc.qt.io/qt-5/qfont.html">QFont</a>&#160;</td><td class="memItemRight" valign="bottom"><b>t4</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qfont.html">QFont</a> &amp;base=<a class="elRef" href="http://doc.qt.io/qt-5/qfont.html">QFont</a>()) const</td></tr>
 <tr class="separator:ae4e3d05f71b08f2ed57dfe65259088a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a519628f16234ba06d4d1e243879bf3fe"><td class="memItemLeft" align="right" valign="top"><a id="a519628f16234ba06d4d1e243879bf3fe"></a>
-const QFont&#160;</td><td class="memItemRight" valign="bottom"><b>t5</b> (const QFont &amp;base=QFont()) const</td></tr>
+const <a class="elRef" href="http://doc.qt.io/qt-5/qfont.html">QFont</a>&#160;</td><td class="memItemRight" valign="bottom"><b>t5</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qfont.html">QFont</a> &amp;base=<a class="elRef" href="http://doc.qt.io/qt-5/qfont.html">QFont</a>()) const</td></tr>
 <tr class="separator:a519628f16234ba06d4d1e243879bf3fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b28daffaa7cc1840466d534cfa8b474"><td class="memItemLeft" align="right" valign="top"><a id="a2b28daffaa7cc1840466d534cfa8b474"></a>
-const QFont&#160;</td><td class="memItemRight" valign="bottom"><b>t6</b> (const QFont &amp;base=QFont()) const</td></tr>
+const <a class="elRef" href="http://doc.qt.io/qt-5/qfont.html">QFont</a>&#160;</td><td class="memItemRight" valign="bottom"><b>t6</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qfont.html">QFont</a> &amp;base=<a class="elRef" href="http://doc.qt.io/qt-5/qfont.html">QFont</a>()) const</td></tr>
 <tr class="separator:a2b28daffaa7cc1840466d534cfa8b474"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1ac75f79ff43568d30c802e0746b640"><td class="memItemLeft" align="right" valign="top"><a id="ab1ac75f79ff43568d30c802e0746b640"></a>
-const QFont&#160;</td><td class="memItemRight" valign="bottom"><b>t7</b> (const QFont &amp;base=QFont()) const</td></tr>
+const <a class="elRef" href="http://doc.qt.io/qt-5/qfont.html">QFont</a>&#160;</td><td class="memItemRight" valign="bottom"><b>t7</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qfont.html">QFont</a> &amp;base=<a class="elRef" href="http://doc.qt.io/qt-5/qfont.html">QFont</a>()) const</td></tr>
 <tr class="separator:ab1ac75f79ff43568d30c802e0746b640"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3c6cc50c520679bc6f8f464dbf6819e"><td class="memItemLeft" align="right" valign="top"><a id="ab3c6cc50c520679bc6f8f464dbf6819e"></a>
-const QFont&#160;</td><td class="memItemRight" valign="bottom"><b>t8</b> (const QFont &amp;base=QFont()) const</td></tr>
+const <a class="elRef" href="http://doc.qt.io/qt-5/qfont.html">QFont</a>&#160;</td><td class="memItemRight" valign="bottom"><b>t8</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qfont.html">QFont</a> &amp;base=<a class="elRef" href="http://doc.qt.io/qt-5/qfont.html">QFont</a>()) const</td></tr>
 <tr class="separator:ab3c6cc50c520679bc6f8f464dbf6819e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21318fdaefb60138435f933a62d4ffb2"><td class="memItemLeft" align="right" valign="top"><a id="a21318fdaefb60138435f933a62d4ffb2"></a>
-const QFont&#160;</td><td class="memItemRight" valign="bottom"><b>t9</b> (const QFont &amp;base=QFont()) const</td></tr>
+const <a class="elRef" href="http://doc.qt.io/qt-5/qfont.html">QFont</a>&#160;</td><td class="memItemRight" valign="bottom"><b>t9</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qfont.html">QFont</a> &amp;base=<a class="elRef" href="http://doc.qt.io/qt-5/qfont.html">QFont</a>()) const</td></tr>
 <tr class="separator:a21318fdaefb60138435f933a62d4ffb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9abaa4bca350ee00335cf24c6ea6fbf"><td class="memItemLeft" align="right" valign="top"><a id="ae9abaa4bca350ee00335cf24c6ea6fbf"></a>
-const QFont&#160;</td><td class="memItemRight" valign="bottom"><b>t10</b> (const QFont &amp;base=QFont()) const</td></tr>
+const <a class="elRef" href="http://doc.qt.io/qt-5/qfont.html">QFont</a>&#160;</td><td class="memItemRight" valign="bottom"><b>t10</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qfont.html">QFont</a> &amp;base=<a class="elRef" href="http://doc.qt.io/qt-5/qfont.html">QFont</a>()) const</td></tr>
 <tr class="separator:ae9abaa4bca350ee00335cf24c6ea6fbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
@@ -242,7 +242,7 @@ const QFont&#160;</td><td class="memItemRight" valign="bottom"><b>t10</b> (const
 <tr class="memdesc:a4d38b4d13ee70801eb8f9f53851469b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建一个字体管理的实例.  <a href="classDFontSizeManager.html#a4d38b4d13ee70801eb8f9f53851469b4">更多...</a><br /></td></tr>
 <tr class="separator:a4d38b4d13ee70801eb8f9f53851469b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1390d4c5aa962a08d182b0c882eadc92"><td class="memItemLeft" align="right" valign="top"><a id="a1390d4c5aa962a08d182b0c882eadc92"></a>
-static int&#160;</td><td class="memItemRight" valign="bottom"><b>fontPixelSize</b> (const QFont &amp;font)</td></tr>
+static int&#160;</td><td class="memItemRight" valign="bottom"><b>fontPixelSize</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qfont.html">QFont</a> &amp;font)</td></tr>
 <tr class="separator:a1390d4c5aa962a08d182b0c882eadc92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">成员函数说明</h2>
@@ -255,7 +255,7 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>fontPixelSize</
         <tr>
           <td class="memname">void DFontSizeManager::bind </td>
           <td>(</td>
-          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramtype"><a class="elRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a> *&#160;</td>
           <td class="paramname"><em>widget</em>, </td>
         </tr>
         <tr>
@@ -311,7 +311,7 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>fontPixelSize</
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const QFont DFontSizeManager::get </td>
+          <td class="memname">const <a class="elRef" href="http://doc.qt.io/qt-5/qfont.html">QFont</a> DFontSizeManager::get </td>
           <td>(</td>
           <td class="paramtype">DFontSizeManager::SizeType&#160;</td>
           <td class="paramname"><em>type</em>, </td>
@@ -325,8 +325,8 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>fontPixelSize</
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const QFont &amp;&#160;</td>
-          <td class="paramname"><em>base</em> = <code>QFont()</code>&#160;</td>
+          <td class="paramtype">const <a class="elRef" href="http://doc.qt.io/qt-5/qfont.html">QFont</a> &amp;&#160;</td>
+          <td class="paramname"><em>base</em> = <code><a class="elRef" href="http://doc.qt.io/qt-5/qfont.html">QFont</a>()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -430,7 +430,7 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>fontPixelSize</
         <tr>
           <td class="memname">void DFontSizeManager::unbind </td>
           <td>(</td>
-          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramtype"><a class="elRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a> *&#160;</td>
           <td class="paramname"><em>widget</em></td><td>)</td>
           <td></td>
         </tr>
@@ -453,7 +453,7 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>fontPixelSize</
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classDFontSizeManager.html">DFontSizeManager</a></li>
-    <li class="footer">文档生成时间:2023-01-03-09:26  +00</li>
+    <li class="footer">文档生成时间:2023-01-03-09:52  +00</li>
     <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
     <li class="footer">制作者:deepin doc doc go SIG</li>
     <li class="footer">文档使用CC-BY-4.0共享 </a>

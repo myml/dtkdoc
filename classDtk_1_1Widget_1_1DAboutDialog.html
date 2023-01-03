@@ -210,13 +210,13 @@ main.cpp</h2>
 <div class="line">    app.setOrganizationName(<span class="stringliteral">&quot;deepin&quot;</span>);</div>
 <div class="line">    <a class="code" href="classDAboutDialog.html">DAboutDialog</a> about;        <span class="comment">// 创建DAboutDialog对象</span></div>
 <div class="line">    about.<a class="code" href="classDAboutDialog.html#a13a86cb9afe89a7b093f8dacad80abe6">setWindowTitle</a>(<span class="stringliteral">&quot;这是一个最简单的例子&quot;</span>); <span class="comment">// 设置窗口标题</span></div>
-<div class="line">    about.show();              <span class="comment">// 显示DAboutDialog</span></div>
-<div class="line">    <span class="keywordflow">return</span> app.<a class="code" href="classDDialog.html#acc0499eec8cf37dabe79c3307f510881">exec</a>();          <span class="comment">// 运行程序</span></div>
+<div class="line">    about.<a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html#show">show</a>();              <span class="comment">// 显示DAboutDialog</span></div>
+<div class="line">    <span class="keywordflow">return</span> app.exec();          <span class="comment">// 运行程序</span></div>
 <div class="line">}</div>
 <div class="ttc" id="aclassDAboutDialog_html"><div class="ttname"><a href="classDAboutDialog.html">DAboutDialog</a></div><div class="ttdef"><b>Definition:</b> daboutdialog.h:14</div></div>
 <div class="ttc" id="aclassDAboutDialog_html_a13a86cb9afe89a7b093f8dacad80abe6"><div class="ttname"><a href="classDAboutDialog.html#a13a86cb9afe89a7b093f8dacad80abe6">DAboutDialog::setWindowTitle</a></div><div class="ttdeci">void setWindowTitle(const QString &amp;windowTitle)</div><div class="ttdoc">设置对话标题栏内容</div><div class="ttdef"><b>Definition:</b> daboutdialog.cpp:322</div></div>
 <div class="ttc" id="aclassDApplication_html"><div class="ttname"><a href="classDApplication.html">DApplication</a></div><div class="ttdef"><b>Definition:</b> dapplication.h:31</div></div>
-<div class="ttc" id="aclassDDialog_html_acc0499eec8cf37dabe79c3307f510881"><div class="ttname"><a href="classDDialog.html#acc0499eec8cf37dabe79c3307f510881">DDialog::exec</a></div><div class="ttdeci">int exec() Q_DECL_OVERRIDE</div><div class="ttdoc">以模态框形式显示当前对话框.</div><div class="ttdef"><b>Definition:</b> ddialog.cpp:1055</div></div>
+<div class="ttc" id="aqwidget_html_show"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html#show">QWidget::show</a></div><div class="ttdeci">void show()</div></div>
 </div><!-- fragment --><p>这是一个最简单的例子，运行结果如下</p>
 <p><img src="/docs/images/daboutdialog_example.png" alt="example" class="inline"/></p>
 <p>但是这个例子并不是我们实际上使用的样子，在我们实际上的使用过程中，我们需要添加一些信息，比如我们的logo，我们的版本号，我们的版权信息等等，这些信息都应该在app中设置，如下</p>
@@ -275,6 +275,7 @@ main.cpp</h3>
 <div class="line">    <a class="code" href="classDAboutDialog.html">DAboutDialog</a> dialog;</div>
 <div class="line">    <span class="keywordflow">return</span> a.<a class="code" href="classDDialog.html#acc0499eec8cf37dabe79c3307f510881">exec</a>();</div>
 <div class="line">}</div>
+<div class="ttc" id="aclassDDialog_html_acc0499eec8cf37dabe79c3307f510881"><div class="ttname"><a href="classDDialog.html#acc0499eec8cf37dabe79c3307f510881">DDialog::exec</a></div><div class="ttdeci">int exec() Q_DECL_OVERRIDE</div><div class="ttdoc">以模态框形式显示当前对话框.</div><div class="ttdef"><b>Definition:</b> ddialog.cpp:1055</div></div>
 </div><!-- fragment --><h3><a class="anchor" id="autotoc_md50"></a>
 widget.hpp</h3>
 <div class="fragment"><div class="line"><span class="preprocessor">#ifndef EXAMPLE_H</span></div>
@@ -292,10 +293,10 @@ widget.hpp</h3>
 <div class="line"> example();</div>
 <div class="line"> ~example();</div>
 <div class="line"><span class="keyword">private</span>:</div>
-<div class="line">    QVBoxLayout *mainlayout;</div>
+<div class="line">    <a class="codeRef" href="http://doc.qt.io/qt-5/qvboxlayout.html">QVBoxLayout</a> *mainlayout;</div>
 <div class="line">    <a class="code" href="classDLabel.html">DLabel</a> *label;</div>
 <div class="line">    <a class="code" href="classDLineEdit.html">DLineEdit</a> *text;</div>
-<div class="line">    DPushButton *button;</div>
+<div class="line">    <a class="codeRef" href="http://doc.qt.io/qt-5/qpushbutton.html">DPushButton</a> *button;</div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">private</span> slots:</div>
 <div class="line"><span class="keywordtype">void</span>  printlog();</div>
@@ -304,6 +305,8 @@ widget.hpp</h3>
 <div class="ttc" id="aclassDLabel_html"><div class="ttname"><a href="classDLabel.html">DLabel</a></div><div class="ttdef"><b>Definition:</b> dlabel.h:18</div></div>
 <div class="ttc" id="aclassDLineEdit_html"><div class="ttname"><a href="classDLineEdit.html">DLineEdit</a></div><div class="ttdef"><b>Definition:</b> dlineedit.h:20</div></div>
 <div class="ttc" id="aclassDMainWindow_html"><div class="ttname"><a href="classDMainWindow.html">DMainWindow</a></div><div class="ttdef"><b>Definition:</b> dmainwindow.h:20</div></div>
+<div class="ttc" id="aqpushbutton_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qpushbutton.html">QPushButton</a></div></div>
+<div class="ttc" id="aqvboxlayout_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qvboxlayout.html">QVBoxLayout</a></div></div>
 </div><!-- fragment --><h3><a class="anchor" id="autotoc_md51"></a>
 widget.cpp</h3>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &quot;widget.hpp&quot;</span></div>
@@ -311,8 +314,8 @@ widget.cpp</h3>
 <div class="line"><span class="preprocessor">#include &lt;QDebug&gt;</span></div>
 <div class="line">example::example()</div>
 <div class="line">{</div>
-<div class="line">    mainlayout= <span class="keyword">new</span> QVBoxLayout;</div>
-<div class="line">    button = <span class="keyword">new</span> DPushButton;</div>
+<div class="line">    mainlayout= <span class="keyword">new</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qvboxlayout.html">QVBoxLayout</a>;</div>
+<div class="line">    button = <span class="keyword">new</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qpushbutton.html">DPushButton</a>;</div>
 <div class="line">    label = <span class="keyword">new</span> <a class="code" href="classDLabel.html">DLabel</a>(<span class="stringliteral">&quot;test&quot;</span>);</div>
 <div class="line">    text = <span class="keyword">new</span> <a class="code" href="classDLineEdit.html">DLineEdit</a>();</div>
 <div class="line">    mainlayout-&gt;addWidget(label);</div>
@@ -340,7 +343,7 @@ widget.cpp</h3>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classDtk_1_1Widget_1_1DAboutDialog.html">DAboutDialog</a></li>
-    <li class="footer">文档生成时间:2023-01-03-09:26  +00</li>
+    <li class="footer">文档生成时间:2023-01-03-09:52  +00</li>
     <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
     <li class="footer">制作者:deepin doc doc go SIG</li>
     <li class="footer">文档使用CC-BY-4.0共享 </a>

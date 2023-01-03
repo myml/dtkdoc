@@ -166,42 +166,42 @@ $(document).ready(function(){initNavTree('menuexample_8h_source.html',''); initR
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;examplewindowinterface.h&quot;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;pagewindowinterface.h&quot;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">class </span>QPropertyAnimation;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">class </span>QMenu;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">class </span><a class="codeRef" href="http://doc.qt.io/qt-5/qpropertyanimation.html">QPropertyAnimation</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">class </span><a class="codeRef" href="http://doc.qt.io/qt-5/qmenu.html">QMenu</a>;</div>
 <div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classMenuExampleWindow.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="classMenuExampleWindow.html">MenuExampleWindow</a> : <span class="keyword">public</span> <a class="code" href="classPageWindowInterface.html">PageWindowInterface</a></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">Q_OBJECT</a></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classMenuExampleWindow.html">MenuExampleWindow</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classMenuExampleWindow.html">MenuExampleWindow</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a> *<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a> = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;};</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classDMenuExample.html">   24</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDMenuExample.html">DMenuExample</a> : <span class="keyword">public</span> <a class="code" href="classExampleWindowInterface.html">ExampleWindowInterface</a></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    Q_PROPERTY(QColor aColor READ getAColor WRITE setAColor)</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">Q_OBJECT</a></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qcolor.html">QColor</a> aColor READ getAColor WRITE setAColor)</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="comment">// ExampleWindowInterface interface</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDMenuExample.html">DMenuExample</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDMenuExample.html">DMenuExample</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a> *<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a> = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    QString getTitleName() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    QString getDescriptionInfo() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> getTitleName() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> getDescriptionInfo() <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">int</span> getFixedHeight() <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    QColor getAColor();</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> setAColor(<span class="keyword">const</span> QColor &amp;color);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qcolor.html">QColor</a> getAColor();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> setAColor(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qcolor.html">QColor</a> &amp;color);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">bool</span> eventFilter(QObject *watched, QEvent *event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">bool</span> eventFilter(<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *watched, <a class="codeRef" href="http://doc.qt.io/qt-5/qevent.html">QEvent</a> *<a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html#event">event</a>) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> paintRegion();</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> restoreAnimation();</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    QPropertyAnimation *animation;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    QColor acolor;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    QPixmap pixmap;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    QMenu *leftMenu;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qpropertyanimation.html">QPropertyAnimation</a> *animation;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qcolor.html">QColor</a> acolor;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qpixmap.html">QPixmap</a> pixmap;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qmenu.html">QMenu</a> *leftMenu;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;};</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// MENUEXAMPLE_H</span></div>
@@ -209,6 +209,18 @@ $(document).ready(function(){initNavTree('menuexample_8h_source.html',''); initR
 <div class="ttc" id="aclassExampleWindowInterface_html"><div class="ttname"><a href="classExampleWindowInterface.html">ExampleWindowInterface</a></div><div class="ttdef"><b>Definition:</b> examplewindowinterface.h:10</div></div>
 <div class="ttc" id="aclassMenuExampleWindow_html"><div class="ttname"><a href="classMenuExampleWindow.html">MenuExampleWindow</a></div><div class="ttdef"><b>Definition:</b> menuexample.h:17</div></div>
 <div class="ttc" id="aclassPageWindowInterface_html"><div class="ttname"><a href="classPageWindowInterface.html">PageWindowInterface</a></div><div class="ttdef"><b>Definition:</b> pagewindowinterface.h:14</div></div>
+<div class="ttc" id="aqcolor_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qcolor.html">QColor</a></div></div>
+<div class="ttc" id="aqevent_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qevent.html">QEvent</a></div></div>
+<div class="ttc" id="aqmenu_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qmenu.html">QMenu</a></div></div>
+<div class="ttc" id="aqobject_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html">QObject</a></div></div>
+<div class="ttc" id="aqobject_html_Q_OBJECT"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">QObject::Q_OBJECT</a></div><div class="ttdeci">Q_OBJECTQ_OBJECT</div></div>
+<div class="ttc" id="aqobject_html_Q_PROPERTY"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">QObject::Q_PROPERTY</a></div><div class="ttdeci">Q_PROPERTY(...)</div></div>
+<div class="ttc" id="aqobject_html_parent"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#parent">QObject::parent</a></div><div class="ttdeci">QObject * parent() const const</div></div>
+<div class="ttc" id="aqpixmap_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qpixmap.html">QPixmap</a></div></div>
+<div class="ttc" id="aqpropertyanimation_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qpropertyanimation.html">QPropertyAnimation</a></div></div>
+<div class="ttc" id="aqstring_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstring.html">QString</a></div></div>
+<div class="ttc" id="aqwidget_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a></div></div>
+<div class="ttc" id="aqwidget_html_event"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html#event">QWidget::event</a></div><div class="ttdeci">virtual bool event(QEvent *event) override</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.4-->
@@ -216,7 +228,7 @@ $(document).ready(function(){initNavTree('menuexample_8h_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_cc1fdbae730d0dba18db2b924667b662.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_b0c772beb3dee74990676c9ac13d9215.html">examples</a></li><li class="navelem"><a class="el" href="dir_af26c93bbf396103bf600b727ccddeb4.html">dwidget-examples</a></li><li class="navelem"><a class="el" href="dir_b67047e2e65acb2a6dc102261b2b7c8e.html">collections</a></li><li class="navelem"><b>menuexample.h</b></li>
-    <li class="footer">文档生成时间:2023-01-03-09:26  +00</li>
+    <li class="footer">文档生成时间:2023-01-03-09:52  +00</li>
     <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
     <li class="footer">制作者:deepin doc doc go SIG</li>
     <li class="footer">文档使用CC-BY-4.0共享 </a>

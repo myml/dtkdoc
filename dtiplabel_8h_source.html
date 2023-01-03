@@ -168,19 +168,19 @@ $(document).ready(function(){initNavTree('dtiplabel_8h_source.html',''); initRes
 <div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classDTipLabel.html">   13</a></span>&#160;<span class="keyword">class </span>LIBDTKWIDGETSHARED_EXPORT <a class="code" href="classDTipLabel.html">DTipLabel</a> : <span class="keyword">public</span> <a class="code" href="classDLabel.html">DLabel</a></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    Q_DISABLE_COPY(<a class="code" href="classDTipLabel.html">DTipLabel</a>)</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_DISABLE_COPY">Q_DISABLE_COPY</a>(<a class="code" href="classDTipLabel.html">DTipLabel</a>)</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    D_DECLARE_PRIVATE(<a class="code" href="classDTipLabel.html">DTipLabel</a>)</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="classDTipLabel.html">DTipLabel</a>(<span class="keyword">const</span> QString &amp;text = QString(), QWidget *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="classDTipLabel.html">DTipLabel</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;text = <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>(), <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a> *parent = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    ~<a class="code" href="classDTipLabel.html">DTipLabel</a>();</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">using</span> QLabel::show;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> show(<span class="keyword">const</span> QPoint &amp;pos);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">using</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html#show">QLabel::show</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html#show">show</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qpoint.html">QPoint</a> &amp;pos);</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDLabel.html#ae346ec7bc4497e67570a1d781767d739">setForegroundRole</a>(DPalette::ColorType color);</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDLabel.html#aeed6953db9b354e79079d1e7ee7b2b62">initPainter</a>(QPainter *painter) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDLabel.html#a5060bb4ddf413f9fb9b43f14663883c0">paintEvent</a>(QPaintEvent *event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDLabel.html#aeed6953db9b354e79079d1e7ee7b2b62">initPainter</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qpainter.html">QPainter</a> *painter) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDLabel.html#a5060bb4ddf413f9fb9b43f14663883c0">paintEvent</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qpaintevent.html">QPaintEvent</a> *event) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;};</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;DWIDGET_END_NAMESPACE</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
@@ -191,6 +191,13 @@ $(document).ready(function(){initNavTree('dtiplabel_8h_source.html',''); initRes
 <div class="ttc" id="aclassDLabel_html_aeed6953db9b354e79079d1e7ee7b2b62"><div class="ttname"><a href="classDLabel.html#aeed6953db9b354e79079d1e7ee7b2b62">DLabel::initPainter</a></div><div class="ttdeci">void initPainter(QPainter *painter) const override</div><div class="ttdoc">初始化 painter</div><div class="ttdef"><b>Definition:</b> dlabel.cpp:124</div></div>
 <div class="ttc" id="aclassDTipLabelPrivate_html"><div class="ttname"><a href="classDTipLabelPrivate.html">DTipLabelPrivate</a></div><div class="ttdef"><b>Definition:</b> dtiplabel_p.h:15</div></div>
 <div class="ttc" id="aclassDTipLabel_html"><div class="ttname"><a href="classDTipLabel.html">DTipLabel</a></div><div class="ttdef"><b>Definition:</b> dtiplabel.h:14</div></div>
+<div class="ttc" id="aqobject_html_Q_DISABLE_COPY"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_DISABLE_COPY">QObject::Q_DISABLE_COPY</a></div><div class="ttdeci">Q_DISABLE_COPY(Class)</div></div>
+<div class="ttc" id="aqpainter_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qpainter.html">QPainter</a></div></div>
+<div class="ttc" id="aqpaintevent_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qpaintevent.html">QPaintEvent</a></div></div>
+<div class="ttc" id="aqpoint_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qpoint.html">QPoint</a></div></div>
+<div class="ttc" id="aqstring_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstring.html">QString</a></div></div>
+<div class="ttc" id="aqwidget_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a></div></div>
+<div class="ttc" id="aqwidget_html_show"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html#show">QWidget::show</a></div><div class="ttdeci">void show()</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.4-->
@@ -198,7 +205,7 @@ $(document).ready(function(){initNavTree('dtiplabel_8h_source.html',''); initRes
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_cc1fdbae730d0dba18db2b924667b662.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_6819db61f31aacd6e31b437a606a4041.html">include</a></li><li class="navelem"><a class="el" href="dir_6719ee6af2149ba01bce2af57814b9e8.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_4faf4521db2f3764f9e00575717749e8.html">widgets</a></li><li class="navelem"><b>dtiplabel.h</b></li>
-    <li class="footer">文档生成时间:2023-01-03-09:26  +00</li>
+    <li class="footer">文档生成时间:2023-01-03-09:52  +00</li>
     <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
     <li class="footer">制作者:deepin doc doc go SIG</li>
     <li class="footer">文档使用CC-BY-4.0共享 </a>

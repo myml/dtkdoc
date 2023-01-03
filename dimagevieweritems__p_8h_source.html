@@ -165,56 +165,56 @@ $(document).ready(function(){initNavTree('dimagevieweritems__p_8h_source.html','
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;QGraphicsItem&gt;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">class </span>QMovie;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">class </span>QGraphicsView;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">class </span><a class="codeRef" href="http://doc.qt.io/qt-5/qmovie.html">QMovie</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">class </span><a class="codeRef" href="http://doc.qt.io/qt-5/qgraphicsview.html">QGraphicsView</a>;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;DWIDGET_BEGIN_NAMESPACE</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classDGraphicsPixmapItem.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDGraphicsPixmapItem.html">DGraphicsPixmapItem</a> : <span class="keyword">public</span> QGraphicsPixmapItem</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classDGraphicsPixmapItem.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDGraphicsPixmapItem.html">DGraphicsPixmapItem</a> : <span class="keyword">public</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qgraphicspixmapitem.html">QGraphicsPixmapItem</a></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDGraphicsPixmapItem.html">DGraphicsPixmapItem</a>(QGraphicsItem *parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDGraphicsPixmapItem.html">DGraphicsPixmapItem</a>(<span class="keyword">const</span> QPixmap &amp;pixmap, QGraphicsItem *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDGraphicsPixmapItem.html">DGraphicsPixmapItem</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qgraphicsitem.html">QGraphicsItem</a> *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDGraphicsPixmapItem.html">DGraphicsPixmapItem</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qpixmap.html">QPixmap</a> &amp;<a class="codeRef" href="http://doc.qt.io/qt-5/qgraphicspixmapitem.html#pixmap">pixmap</a>, <a class="codeRef" href="http://doc.qt.io/qt-5/qgraphicsitem.html">QGraphicsItem</a> *parent = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    ~<a class="code" href="classDGraphicsPixmapItem.html">DGraphicsPixmapItem</a>() Q_DECL_OVERRIDE;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">void</span> setPixmap(<span class="keyword">const</span> QPixmap &amp;pixmap);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">void</span> setPixmap(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qpixmap.html">QPixmap</a> &amp;<a class="codeRef" href="http://doc.qt.io/qt-5/qgraphicspixmapitem.html#pixmap">pixmap</a>);</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">void</span> paint(QPainter *painter, <span class="keyword">const</span> QStyleOptionGraphicsItem *option, QWidget *widget) Q_DECL_OVERRIDE;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">void</span> paint(<a class="codeRef" href="http://doc.qt.io/qt-5/qpainter.html">QPainter</a> *painter, <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstyleoptiongraphicsitem.html">QStyleOptionGraphicsItem</a> *option, <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a> *widget) Q_DECL_OVERRIDE;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    QPair&lt;qreal, QPixmap&gt; cachePixmap;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qpair.html">QPair&lt;qreal, QPixmap&gt;</a> cachePixmap;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;};</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classDGraphicsMovieItem.html">   34</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDGraphicsMovieItem.html">DGraphicsMovieItem</a> : <span class="keyword">public</span> QObject, <span class="keyword">public</span> QGraphicsPixmapItem</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classDGraphicsMovieItem.html">   34</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDGraphicsMovieItem.html">DGraphicsMovieItem</a> : <span class="keyword">public</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a>, <span class="keyword">public</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qgraphicspixmapitem.html">QGraphicsPixmapItem</a></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">Q_OBJECT</a></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDGraphicsMovieItem.html">DGraphicsMovieItem</a>(QGraphicsItem *parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDGraphicsMovieItem.html">DGraphicsMovieItem</a>(<span class="keyword">const</span> QString &amp;fileName, QGraphicsItem *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDGraphicsMovieItem.html">DGraphicsMovieItem</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qgraphicsitem.html">QGraphicsItem</a> *<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a> = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDGraphicsMovieItem.html">DGraphicsMovieItem</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;fileName, <a class="codeRef" href="http://doc.qt.io/qt-5/qgraphicsitem.html">QGraphicsItem</a> *<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a> = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    ~<a class="code" href="classDGraphicsMovieItem.html">DGraphicsMovieItem</a>() Q_DECL_OVERRIDE;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> setFileName(<span class="keyword">const</span> QString &amp;fileName);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> setFileName(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;fileName);</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    Q_SLOT <span class="keywordtype">void</span> onMovieFrameChanged();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SLOT">Q_SLOT</a> <span class="keywordtype">void</span> onMovieFrameChanged();</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    QMovie *movie;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qmovie.html">QMovie</a> *movie;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;};</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classDGraphicsSVGItem.html">   51</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDGraphicsSVGItem.html">DGraphicsSVGItem</a> : <span class="keyword">public</span> QGraphicsObject</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classDGraphicsSVGItem.html">   51</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDGraphicsSVGItem.html">DGraphicsSVGItem</a> : <span class="keyword">public</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qgraphicsobject.html">QGraphicsObject</a></div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDGraphicsSVGItem.html">DGraphicsSVGItem</a>(QGraphicsItem *parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDGraphicsSVGItem.html">DGraphicsSVGItem</a>(<span class="keyword">const</span> QString &amp;fileName, QGraphicsItem *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDGraphicsSVGItem.html">DGraphicsSVGItem</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qgraphicsitem.html">QGraphicsItem</a> *<a class="codeRef" href="http://doc.qt.io/qt-5/qgraphicsobject.html#parent-prop">parent</a> = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDGraphicsSVGItem.html">DGraphicsSVGItem</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;fileName, <a class="codeRef" href="http://doc.qt.io/qt-5/qgraphicsitem.html">QGraphicsItem</a> *<a class="codeRef" href="http://doc.qt.io/qt-5/qgraphicsobject.html#parent-prop">parent</a> = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> setFileName(<span class="keyword">const</span> QString &amp;fileName);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> setFileName(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;fileName);</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    QRectF boundingRect() <span class="keyword">const</span> Q_DECL_OVERRIDE;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> paint(QPainter *painter, <span class="keyword">const</span> QStyleOptionGraphicsItem *option, QWidget *widget = <span class="keyword">nullptr</span>) Q_DECL_OVERRIDE;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qrectf.html">QRectF</a> boundingRect() <span class="keyword">const</span> Q_DECL_OVERRIDE;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> paint(<a class="codeRef" href="http://doc.qt.io/qt-5/qpainter.html">QPainter</a> *painter, <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstyleoptiongraphicsitem.html">QStyleOptionGraphicsItem</a> *option, <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a> *widget = <span class="keyword">nullptr</span>) Q_DECL_OVERRIDE;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">enum</span> { Type = QGraphicsItem::UserType + 1 };</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">enum</span> { Type = <a class="codeRef" href="http://doc.qt.io/qt-5/qgraphicsitem.html#anonymous-enum">QGraphicsItem::UserType</a> + 1 };</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">int</span> type() <span class="keyword">const</span> Q_DECL_OVERRIDE;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">private</span>:</div>
@@ -222,14 +222,14 @@ $(document).ready(function(){initNavTree('dimagevieweritems__p_8h_source.html','
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    DGUI_NAMESPACE::DSvgRenderer *renderer = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    QRectF imageRect;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qrectf.html">QRectF</a> imageRect;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;};</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="classDGraphicsCropItem.html">   73</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDGraphicsCropItem.html">DGraphicsCropItem</a> : <span class="keyword">public</span> QGraphicsItem</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="classDGraphicsCropItem.html">   73</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDGraphicsCropItem.html">DGraphicsCropItem</a> : <span class="keyword">public</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qgraphicsitem.html">QGraphicsItem</a></div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;{</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDGraphicsCropItem.html">DGraphicsCropItem</a>(QGraphicsItem *parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">void</span> updateContentItem(QGraphicsItem *parentItem);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDGraphicsCropItem.html">DGraphicsCropItem</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qgraphicsitem.html">QGraphicsItem</a> *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">void</span> updateContentItem(<a class="codeRef" href="http://doc.qt.io/qt-5/qgraphicsitem.html">QGraphicsItem</a> *<a class="codeRef" href="http://doc.qt.io/qt-5/qgraphicsitem.html#parentItem">parentItem</a>);</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keyword">enum</span> CropMode {</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        CropOriginal,</div>
@@ -246,32 +246,32 @@ $(document).ready(function(){initNavTree('dimagevieweritems__p_8h_source.html','
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    CropMode cropMode() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">void</span> setAspectRatio(qreal w, qreal h);</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">void</span> setRect(<span class="keyword">const</span> QRectF &amp;rect);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">void</span> setRect(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qrectf.html">QRectF</a> &amp;rect);</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">void</span> setSize(qreal width, qreal height);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">void</span> move(qreal x, qreal y);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">void</span> move(qreal <a class="codeRef" href="http://doc.qt.io/qt-5/qgraphicsitem.html#x">x</a>, qreal <a class="codeRef" href="http://doc.qt.io/qt-5/qgraphicsitem.html#y">y</a>);</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    QRect cropRect() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qrect.html">QRect</a> cropRect() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">void</span> paint(QPainter *painter, <span class="keyword">const</span> QStyleOptionGraphicsItem *option, QWidget *widget) Q_DECL_OVERRIDE;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    QRectF boundingRect() <span class="keyword">const</span> Q_DECL_OVERRIDE;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">void</span> mousePressEvent(QGraphicsSceneMouseEvent *event) Q_DECL_OVERRIDE;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordtype">void</span> mouseMoveEvent(QGraphicsSceneMouseEvent *event) Q_DECL_OVERRIDE;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordtype">void</span> mouseReleaseEvent(QGraphicsSceneMouseEvent *event) Q_DECL_OVERRIDE;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">void</span> paint(<a class="codeRef" href="http://doc.qt.io/qt-5/qpainter.html">QPainter</a> *painter, <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstyleoptiongraphicsitem.html">QStyleOptionGraphicsItem</a> *option, <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a> *widget) Q_DECL_OVERRIDE;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qrectf.html">QRectF</a> boundingRect() <span class="keyword">const</span> Q_DECL_OVERRIDE;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">void</span> mousePressEvent(<a class="codeRef" href="http://doc.qt.io/qt-5/qgraphicsscenemouseevent.html">QGraphicsSceneMouseEvent</a> *event) Q_DECL_OVERRIDE;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordtype">void</span> mouseMoveEvent(<a class="codeRef" href="http://doc.qt.io/qt-5/qgraphicsscenemouseevent.html">QGraphicsSceneMouseEvent</a> *event) Q_DECL_OVERRIDE;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordtype">void</span> mouseReleaseEvent(<a class="codeRef" href="http://doc.qt.io/qt-5/qgraphicsscenemouseevent.html">QGraphicsSceneMouseEvent</a> *event) Q_DECL_OVERRIDE;</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">void</span> drawTrisectorRect(QPainter *painter);</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">void</span> drawCornerHandle(QPainter *painter);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">void</span> drawTrisectorRect(<a class="codeRef" href="http://doc.qt.io/qt-5/qpainter.html">QPainter</a> *painter);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">void</span> drawCornerHandle(<a class="codeRef" href="http://doc.qt.io/qt-5/qpainter.html">QPainter</a> *painter);</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keyword">enum</span> MoveHandleType { TopLeft, TopRight, BottomRight, BottomLeft, Move };</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    MoveHandleType detectHandleType(<span class="keyword">const</span> QPointF &amp;mousePoint) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordtype">void</span> updateRect(QRectF &amp;rect, <span class="keyword">const</span> QPointF &amp;offset, MoveHandleType type);</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    QRectF validRect(<span class="keyword">const</span> QRectF &amp;rect) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    QGraphicsView *contentView() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    MoveHandleType detectHandleType(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qpointf.html">QPointF</a> &amp;mousePoint) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordtype">void</span> updateRect(<a class="codeRef" href="http://doc.qt.io/qt-5/qrectf.html">QRectF</a> &amp;rect, <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qpointf.html">QPointF</a> &amp;offset, MoveHandleType <a class="codeRef" href="http://doc.qt.io/qt-5/qgraphicsitem.html#type">type</a>);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qrectf.html">QRectF</a> validRect(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qrectf.html">QRectF</a> &amp;rect) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qgraphicsview.html">QGraphicsView</a> *contentView() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    QRectF itemRect;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    QRectF originalParentRect;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qrectf.html">QRectF</a> itemRect;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qrectf.html">QRectF</a> originalParentRect;</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    CropMode internalCropMode = CropFree;</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keyword">enum</span> StaticProperty { HandleSize = 20, MinimalSize = 40 };</div>
@@ -286,6 +286,32 @@ $(document).ready(function(){initNavTree('dimagevieweritems__p_8h_source.html','
 <div class="ttc" id="aclassDGraphicsMovieItem_html"><div class="ttname"><a href="classDGraphicsMovieItem.html">DGraphicsMovieItem</a></div><div class="ttdef"><b>Definition:</b> dimagevieweritems_p.h:35</div></div>
 <div class="ttc" id="aclassDGraphicsPixmapItem_html"><div class="ttname"><a href="classDGraphicsPixmapItem.html">DGraphicsPixmapItem</a></div><div class="ttdef"><b>Definition:</b> dimagevieweritems_p.h:19</div></div>
 <div class="ttc" id="aclassDGraphicsSVGItem_html"><div class="ttname"><a href="classDGraphicsSVGItem.html">DGraphicsSVGItem</a></div><div class="ttdef"><b>Definition:</b> dimagevieweritems_p.h:52</div></div>
+<div class="ttc" id="aqgraphicsitem_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qgraphicsitem.html">QGraphicsItem</a></div></div>
+<div class="ttc" id="aqgraphicsitem_html_anonymous-enum"><div class="ttname"><a href="http://doc.qt.io/qt-5/qgraphicsitem.html#anonymous-enum">QGraphicsItem::UserType</a></div><div class="ttdeci">UserType</div></div>
+<div class="ttc" id="aqgraphicsitem_html_parentItem"><div class="ttname"><a href="http://doc.qt.io/qt-5/qgraphicsitem.html#parentItem">QGraphicsItem::parentItem</a></div><div class="ttdeci">QGraphicsItem * parentItem() const const</div></div>
+<div class="ttc" id="aqgraphicsitem_html_type"><div class="ttname"><a href="http://doc.qt.io/qt-5/qgraphicsitem.html#type">QGraphicsItem::type</a></div><div class="ttdeci">virtual int type() const const</div></div>
+<div class="ttc" id="aqgraphicsitem_html_x"><div class="ttname"><a href="http://doc.qt.io/qt-5/qgraphicsitem.html#x">QGraphicsItem::x</a></div><div class="ttdeci">qreal x() const const</div></div>
+<div class="ttc" id="aqgraphicsitem_html_y"><div class="ttname"><a href="http://doc.qt.io/qt-5/qgraphicsitem.html#y">QGraphicsItem::y</a></div><div class="ttdeci">qreal y() const const</div></div>
+<div class="ttc" id="aqgraphicsobject_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qgraphicsobject.html">QGraphicsObject</a></div></div>
+<div class="ttc" id="aqgraphicsobject_html_parent-prop"><div class="ttname"><a href="http://doc.qt.io/qt-5/qgraphicsobject.html#parent-prop">QGraphicsObject::parent</a></div><div class="ttdeci">parent</div></div>
+<div class="ttc" id="aqgraphicspixmapitem_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qgraphicspixmapitem.html">QGraphicsPixmapItem</a></div></div>
+<div class="ttc" id="aqgraphicspixmapitem_html_pixmap"><div class="ttname"><a href="http://doc.qt.io/qt-5/qgraphicspixmapitem.html#pixmap">QGraphicsPixmapItem::pixmap</a></div><div class="ttdeci">QPixmap pixmap() const const</div></div>
+<div class="ttc" id="aqgraphicsscenemouseevent_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qgraphicsscenemouseevent.html">QGraphicsSceneMouseEvent</a></div></div>
+<div class="ttc" id="aqgraphicsview_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qgraphicsview.html">QGraphicsView</a></div></div>
+<div class="ttc" id="aqmovie_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qmovie.html">QMovie</a></div></div>
+<div class="ttc" id="aqobject_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html">QObject</a></div></div>
+<div class="ttc" id="aqobject_html_Q_OBJECT"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">QObject::Q_OBJECT</a></div><div class="ttdeci">Q_OBJECTQ_OBJECT</div></div>
+<div class="ttc" id="aqobject_html_Q_SLOT"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_SLOT">QObject::Q_SLOT</a></div><div class="ttdeci">Q_SLOTQ_SLOT</div></div>
+<div class="ttc" id="aqobject_html_parent"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#parent">QObject::parent</a></div><div class="ttdeci">QObject * parent() const const</div></div>
+<div class="ttc" id="aqpainter_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qpainter.html">QPainter</a></div></div>
+<div class="ttc" id="aqpair_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qpair.html">QPair&lt; qreal, QPixmap &gt;</a></div></div>
+<div class="ttc" id="aqpixmap_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qpixmap.html">QPixmap</a></div></div>
+<div class="ttc" id="aqpointf_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qpointf.html">QPointF</a></div></div>
+<div class="ttc" id="aqrect_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qrect.html">QRect</a></div></div>
+<div class="ttc" id="aqrectf_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qrectf.html">QRectF</a></div></div>
+<div class="ttc" id="aqstring_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstring.html">QString</a></div></div>
+<div class="ttc" id="aqstyleoptiongraphicsitem_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstyleoptiongraphicsitem.html">QStyleOptionGraphicsItem</a></div></div>
+<div class="ttc" id="aqwidget_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.4-->
@@ -293,7 +319,7 @@ $(document).ready(function(){initNavTree('dimagevieweritems__p_8h_source.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_cc1fdbae730d0dba18db2b924667b662.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_7e9cf0e2371012f8aca5a790419dfe62.html">src</a></li><li class="navelem"><a class="el" href="dir_0f0f1158b2ab9c2e2656097b145c93da.html">widgets</a></li><li class="navelem"><a class="el" href="dir_c2ef0fafcc327cb5e8231a54477e2847.html">private</a></li><li class="navelem"><b>dimagevieweritems_p.h</b></li>
-    <li class="footer">文档生成时间:2023-01-03-09:26  +00</li>
+    <li class="footer">文档生成时间:2023-01-03-09:52  +00</li>
     <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
     <li class="footer">制作者:deepin doc doc go SIG</li>
     <li class="footer">文档使用CC-BY-4.0共享 </a>

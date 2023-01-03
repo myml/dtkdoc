@@ -166,7 +166,7 @@ $(document).ready(function(){initNavTree('dguiapplicationhelper__p_8h_source.htm
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;DObjectPrivate&gt;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;QT_BEGIN_NAMESPACE</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">class </span>QLocalServer;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">class </span><a class="codeRef" href="http://doc.qt.io/qt-5/qlocalserver.html">QLocalServer</a>;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;QT_END_NAMESPACE</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;DGUI_BEGIN_NAMESPACE</div>
@@ -178,10 +178,10 @@ $(document).ready(function(){initNavTree('dguiapplicationhelper__p_8h_source.htm
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    DGuiApplicationHelperPrivate(<a class="code" href="classDGuiApplicationHelper.html">DGuiApplicationHelper</a> *qq);</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">void</span> init();</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">void</span> initApplication(QGuiApplication *app);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">void</span> initApplication(<a class="codeRef" href="http://doc.qt.io/qt-5/qguiapplication.html">QGuiApplication</a> *app);</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> staticInitApplication();</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> staticCleanApplication();</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="classDPlatformTheme.html">DPlatformTheme</a> *initWindow(QWindow *window) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="classDPlatformTheme.html">DPlatformTheme</a> *initWindow(<a class="codeRef" href="http://doc.qt.io/qt-5/qwindow.html">QWindow</a> *window) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> _q_initApplicationTheme(<span class="keywordtype">bool</span> notifyChange = <span class="keyword">false</span>);</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> notifyAppThemeChanged();</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">// 返回程序是否自定义了调色板</span></div>
@@ -190,7 +190,7 @@ $(document).ready(function(){initNavTree('dguiapplicationhelper__p_8h_source.htm
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92">DGuiApplicationHelper::ColorType</a> paletteType = <a class="code" href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92a95bb3c2345b862eb18aebb372351099d">DGuiApplicationHelper::UnknownType</a>;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">// 系统级别的主题设置</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="classDPlatformTheme.html">DPlatformTheme</a> *systemTheme = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    QScopedPointer&lt;DPalette&gt; appPalette;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qscopedpointer.html">QScopedPointer&lt;DPalette&gt;</a> appPalette;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="comment">// 获取QLocalSever消息的等待时间</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> waitTime;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">static</span> DGuiApplicationHelper::Attributes attributes;</div>
@@ -209,6 +209,10 @@ $(document).ready(function(){initNavTree('dguiapplicationhelper__p_8h_source.htm
 <div class="ttc" id="aclassDGuiApplicationHelper_html_aded1affde49f3af542f861eedbd32d92"><div class="ttname"><a href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92">DGuiApplicationHelper::ColorType</a></div><div class="ttdeci">ColorType</div><div class="ttdef"><b>Definition:</b> dguiapplicationhelper.h:30</div></div>
 <div class="ttc" id="aclassDGuiApplicationHelper_html_aded1affde49f3af542f861eedbd32d92a95bb3c2345b862eb18aebb372351099d"><div class="ttname"><a href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92a95bb3c2345b862eb18aebb372351099d">DGuiApplicationHelper::UnknownType</a></div><div class="ttdeci">@ UnknownType</div><div class="ttdef"><b>Definition:</b> dguiapplicationhelper.h:31</div></div>
 <div class="ttc" id="aclassDPlatformTheme_html"><div class="ttname"><a href="classDPlatformTheme.html">DPlatformTheme</a></div><div class="ttdef"><b>Definition:</b> dplatformtheme.h:17</div></div>
+<div class="ttc" id="aqguiapplication_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qguiapplication.html">QGuiApplication</a></div></div>
+<div class="ttc" id="aqlocalserver_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qlocalserver.html">QLocalServer</a></div></div>
+<div class="ttc" id="aqscopedpointer_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qscopedpointer.html">QScopedPointer&lt; DPalette &gt;</a></div></div>
+<div class="ttc" id="aqwindow_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwindow.html">QWindow</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.4-->
@@ -216,7 +220,7 @@ $(document).ready(function(){initNavTree('dguiapplicationhelper__p_8h_source.htm
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01e26ae7551668ca493319620c16a3ae.html">dtkgui</a></li><li class="navelem"><a class="el" href="dir_f1a11d12171d66e86c8e928f2778dd27.html">src</a></li><li class="navelem"><a class="el" href="dir_a509d977e8d1d333b9dd2c9a77f5374d.html">private</a></li><li class="navelem"><b>dguiapplicationhelper_p.h</b></li>
-    <li class="footer">文档生成时间:2023-01-03-09:26  +00</li>
+    <li class="footer">文档生成时间:2023-01-03-09:52  +00</li>
     <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
     <li class="footer">制作者:deepin doc doc go SIG</li>
     <li class="footer">文档使用CC-BY-4.0共享 </a>

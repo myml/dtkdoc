@@ -165,24 +165,33 @@ $(document).ready(function(){initNavTree('dtoolbutton_8h_source.html',''); initR
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;DWIDGET_BEGIN_NAMESPACE</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classDToolButton.html">   13</a></span>&#160;<span class="keyword">class </span>LIBDTKWIDGETSHARED_EXPORT <a class="code" href="classDToolButton.html">DToolButton</a> : <span class="keyword">public</span> QToolButton</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classDToolButton.html">   13</a></span>&#160;<span class="keyword">class </span>LIBDTKWIDGETSHARED_EXPORT <a class="code" href="classDToolButton.html">DToolButton</a> : <span class="keyword">public</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qtoolbutton.html">QToolButton</a></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    Q_OBJECT</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="classDToolButton.html">DToolButton</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">void</span> setAlignment(Qt::Alignment flag);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    Qt::Alignment alignment() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="classDToolButton.html">DToolButton</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a> *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">void</span> setAlignment(<a class="codeRef" href="http://doc.qt.io/qt-5/qt.html#AlignmentFlag-enum">Qt::Alignment</a> flag);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qt.html#AlignmentFlag-enum">Qt::Alignment</a> alignment() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">void</span> paintEvent(QPaintEvent *event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> initStyleOption(QStyleOptionToolButton *option) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    QSize sizeHint() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">void</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qtoolbutton.html#paintEvent">paintEvent</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qpaintevent.html">QPaintEvent</a> *event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qtoolbutton.html#initStyleOption">initStyleOption</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qstyleoptiontoolbutton.html">QStyleOptionToolButton</a> *option) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qsize.html">QSize</a> <a class="codeRef" href="http://doc.qt.io/qt-5/qtoolbutton.html#sizeHint">sizeHint</a>() <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;};</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;DWIDGET_END_NAMESPACE</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// DTOOLBUTTON_H</span></div>
 <div class="ttc" id="aclassDToolButton_html"><div class="ttname"><a href="classDToolButton.html">DToolButton</a></div><div class="ttdef"><b>Definition:</b> dtoolbutton.h:14</div></div>
+<div class="ttc" id="aqpaintevent_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qpaintevent.html">QPaintEvent</a></div></div>
+<div class="ttc" id="aqsize_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qsize.html">QSize</a></div></div>
+<div class="ttc" id="aqstyleoptiontoolbutton_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstyleoptiontoolbutton.html">QStyleOptionToolButton</a></div></div>
+<div class="ttc" id="aqt_html_AlignmentFlag-enum"><div class="ttname"><a href="http://doc.qt.io/qt-5/qt.html#AlignmentFlag-enum">Qt::Alignment</a></div><div class="ttdeci">typedef Alignment</div></div>
+<div class="ttc" id="aqtoolbutton_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qtoolbutton.html">QToolButton</a></div></div>
+<div class="ttc" id="aqtoolbutton_html_initStyleOption"><div class="ttname"><a href="http://doc.qt.io/qt-5/qtoolbutton.html#initStyleOption">QToolButton::initStyleOption</a></div><div class="ttdeci">void initStyleOption(QStyleOptionToolButton *option) const const</div></div>
+<div class="ttc" id="aqtoolbutton_html_paintEvent"><div class="ttname"><a href="http://doc.qt.io/qt-5/qtoolbutton.html#paintEvent">QToolButton::paintEvent</a></div><div class="ttdeci">virtual void paintEvent(QPaintEvent *event) override</div></div>
+<div class="ttc" id="aqtoolbutton_html_sizeHint"><div class="ttname"><a href="http://doc.qt.io/qt-5/qtoolbutton.html#sizeHint">QToolButton::sizeHint</a></div><div class="ttdeci">virtual QSize sizeHint() const const override</div></div>
+<div class="ttc" id="aqwidget_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.4-->
@@ -190,7 +199,7 @@ $(document).ready(function(){initNavTree('dtoolbutton_8h_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_cc1fdbae730d0dba18db2b924667b662.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_6819db61f31aacd6e31b437a606a4041.html">include</a></li><li class="navelem"><a class="el" href="dir_6719ee6af2149ba01bce2af57814b9e8.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_4faf4521db2f3764f9e00575717749e8.html">widgets</a></li><li class="navelem"><a class="el" href="dtoolbutton_8h.html">dtoolbutton.h</a></li>
-    <li class="footer">文档生成时间:2023-01-03-09:26  +00</li>
+    <li class="footer">文档生成时间:2023-01-03-09:52  +00</li>
     <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
     <li class="footer">制作者:deepin doc doc go SIG</li>
     <li class="footer">文档使用CC-BY-4.0共享 </a>

@@ -171,30 +171,30 @@ $(document).ready(function(){initNavTree('dlineedit_8h_source.html',''); initRes
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">class </span><a class="code" href="classDLineEditPrivate.html">DLineEditPrivate</a>;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">class </span><a class="code" href="classDStyleOptionLineEdit.html">DStyleOptionLineEdit</a>;</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classDLineEdit.html">   19</a></span>&#160;<span class="keyword">class </span>LIBDTKWIDGETSHARED_EXPORT <a class="code" href="classDLineEdit.html">DLineEdit</a> : <span class="keyword">public</span> QWidget, <span class="keyword">public</span> DTK_CORE_NAMESPACE::DObject</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classDLineEdit.html">   19</a></span>&#160;<span class="keyword">class </span>LIBDTKWIDGETSHARED_EXPORT <a class="code" href="classDLineEdit.html">DLineEdit</a> : <span class="keyword">public</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a>, <span class="keyword">public</span> DTK_CORE_NAMESPACE::DObject</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    Q_DISABLE_COPY(<a class="code" href="classDLineEdit.html">DLineEdit</a>)</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_DISABLE_COPY">Q_DISABLE_COPY</a>(<a class="code" href="classDLineEdit.html">DLineEdit</a>)</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    D_DECLARE_PRIVATE(<a class="code" href="classDLineEdit.html">DLineEdit</a>)</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    Q_PROPERTY(<span class="keywordtype">bool</span> alert READ isAlert WRITE setAlert NOTIFY alertChanged)</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(<span class="keywordtype">bool</span> alert READ isAlert WRITE setAlert NOTIFY alertChanged)</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="classDLineEdit.html">DLineEdit</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="classDLineEdit.html">DLineEdit</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a> *parent = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classDLineEdit.html">DLineEdit</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    QLineEdit *lineEdit() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">void</span> setPlaceholderText(<span class="keyword">const</span> QString &amp;);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qlineedit.html">QLineEdit</a> *lineEdit() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">void</span> setPlaceholderText(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;);</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> setAlert(<span class="keywordtype">bool</span> isAlert);</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">bool</span> isAlert() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">void</span> showAlertMessage(<span class="keyword">const</span> QString &amp;text, <span class="keywordtype">int</span> duration = 3000);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> showAlertMessage(<span class="keyword">const</span> QString &amp;text, QWidget *follower, <span class="keywordtype">int</span> duration = 3000);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> setAlertMessageAlignment(Qt::Alignment alignment);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    Qt::Alignment alertMessageAlignment() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">void</span> showAlertMessage(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;text, <span class="keywordtype">int</span> duration = 3000);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> showAlertMessage(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;text, <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a> *follower, <span class="keywordtype">int</span> duration = 3000);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> setAlertMessageAlignment(<a class="codeRef" href="http://doc.qt.io/qt-5/qt.html#AlignmentFlag-enum">Qt::Alignment</a> alignment);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qt.html#AlignmentFlag-enum">Qt::Alignment</a> alertMessageAlignment() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">void</span> hideAlertMessage();</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> setLeftWidgets(<span class="keyword">const</span> QList&lt;QWidget *&gt; &amp;list);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> setRightWidgets(<span class="keyword">const</span> QList&lt;QWidget *&gt; &amp;list);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> setLeftWidgets(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qlist.html">QList&lt;QWidget *&gt;</a> &amp;list);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> setRightWidgets(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qlist.html">QList&lt;QWidget *&gt;</a> &amp;list);</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> setLeftWidgetsVisible(<span class="keywordtype">bool</span> visible);</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> setRightWidgetsVisible(<span class="keywordtype">bool</span> visible);</div>
@@ -202,15 +202,15 @@ $(document).ready(function(){initNavTree('dlineedit_8h_source.html',''); initRes
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> setClearButtonEnabled(<span class="keywordtype">bool</span> enable);</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">bool</span> isClearButtonEnabled() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> setText(<span class="keyword">const</span> QString &amp;text);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    QString text();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> setText(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;text);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> text();</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">void</span> clear();</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    QLineEdit::EchoMode echoMode() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> setEchoMode(QLineEdit::EchoMode mode);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qlineedit.html#EchoMode-enum">QLineEdit::EchoMode</a> echoMode() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> setEchoMode(<a class="codeRef" href="http://doc.qt.io/qt-5/qlineedit.html#EchoMode-enum">QLineEdit::EchoMode</a> mode);</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> setContextMenuPolicy(Qt::ContextMenuPolicy policy);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html#contextMenuPolicy-prop">setContextMenuPolicy</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qt.html#ContextMenuPolicy-enum">Qt::ContextMenuPolicy</a> policy);</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">bool</span> speechToTextIsEnabled() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> setSpeechToTextEnabled(<span class="keywordtype">bool</span> enable);</div>
@@ -227,21 +227,21 @@ $(document).ready(function(){initNavTree('dlineedit_8h_source.html',''); initRes
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">bool</span> cutEnabled() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">void</span> setCutEnabled(<span class="keywordtype">bool</span> enable);</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;Q_SIGNALS:</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SIGNALS">Q_SIGNALS</a>:</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">void</span> alertChanged(<span class="keywordtype">bool</span> alert) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">void</span> focusChanged(<span class="keywordtype">bool</span> onFocus) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> textChanged(<span class="keyword">const</span> QString &amp;);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">void</span> textEdited(<span class="keyword">const</span> QString &amp;);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> textChanged(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">void</span> textEdited(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;);</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">void</span> cursorPositionChanged(<span class="keywordtype">int</span>, <span class="keywordtype">int</span>);</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">void</span> returnPressed();</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">void</span> editingFinished();</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">void</span> selectionChanged();</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <a class="code" href="classDLineEdit.html">DLineEdit</a>(<a class="code" href="classDLineEditPrivate.html">DLineEditPrivate</a> &amp;q, QWidget *parent);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">bool</span> eventFilter(QObject *watched, QEvent *event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">bool</span> event(QEvent *event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <a class="code" href="classDLineEdit.html">DLineEdit</a>(<a class="code" href="classDLineEditPrivate.html">DLineEditPrivate</a> &amp;q, <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a> *parent);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">bool</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#eventFilter">eventFilter</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *watched, <a class="codeRef" href="http://doc.qt.io/qt-5/qevent.html">QEvent</a> *event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">bool</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html#event">event</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qevent.html">QEvent</a> *event) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classDStyleOptionLineEdit.html">DStyleOptionLineEdit</a>;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;};</div>
@@ -252,6 +252,21 @@ $(document).ready(function(){initNavTree('dlineedit_8h_source.html',''); initRes
 <div class="ttc" id="aclassDLineEditPrivate_html"><div class="ttname"><a href="classDLineEditPrivate.html">DLineEditPrivate</a></div><div class="ttdef"><b>Definition:</b> dlineedit_p.h:19</div></div>
 <div class="ttc" id="aclassDLineEdit_html"><div class="ttname"><a href="classDLineEdit.html">DLineEdit</a></div><div class="ttdef"><b>Definition:</b> dlineedit.h:20</div></div>
 <div class="ttc" id="aclassDStyleOptionLineEdit_html"><div class="ttname"><a href="classDStyleOptionLineEdit.html">DStyleOptionLineEdit</a></div><div class="ttdef"><b>Definition:</b> dstyleoption.h:86</div></div>
+<div class="ttc" id="aqevent_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qevent.html">QEvent</a></div></div>
+<div class="ttc" id="aqlineedit_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qlineedit.html">QLineEdit</a></div></div>
+<div class="ttc" id="aqlineedit_html_EchoMode-enum"><div class="ttname"><a href="http://doc.qt.io/qt-5/qlineedit.html#EchoMode-enum">QLineEdit::EchoMode</a></div><div class="ttdeci">EchoMode</div></div>
+<div class="ttc" id="aqlist_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qlist.html">QList&lt; QWidget * &gt;</a></div></div>
+<div class="ttc" id="aqobject_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html">QObject</a></div></div>
+<div class="ttc" id="aqobject_html_Q_DISABLE_COPY"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_DISABLE_COPY">QObject::Q_DISABLE_COPY</a></div><div class="ttdeci">Q_DISABLE_COPY(Class)</div></div>
+<div class="ttc" id="aqobject_html_Q_PROPERTY"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">QObject::Q_PROPERTY</a></div><div class="ttdeci">Q_PROPERTY(...)</div></div>
+<div class="ttc" id="aqobject_html_Q_SIGNALS"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_SIGNALS">QObject::Q_SIGNALS</a></div><div class="ttdeci">Q_SIGNALSQ_SIGNALS</div></div>
+<div class="ttc" id="aqobject_html_eventFilter"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#eventFilter">QObject::eventFilter</a></div><div class="ttdeci">virtual bool eventFilter(QObject *watched, QEvent *event)</div></div>
+<div class="ttc" id="aqstring_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstring.html">QString</a></div></div>
+<div class="ttc" id="aqt_html_AlignmentFlag-enum"><div class="ttname"><a href="http://doc.qt.io/qt-5/qt.html#AlignmentFlag-enum">Qt::Alignment</a></div><div class="ttdeci">typedef Alignment</div></div>
+<div class="ttc" id="aqt_html_ContextMenuPolicy-enum"><div class="ttname"><a href="http://doc.qt.io/qt-5/qt.html#ContextMenuPolicy-enum">Qt::ContextMenuPolicy</a></div><div class="ttdeci">ContextMenuPolicy</div></div>
+<div class="ttc" id="aqwidget_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a></div></div>
+<div class="ttc" id="aqwidget_html_contextMenuPolicy-prop"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html#contextMenuPolicy-prop">QWidget::setContextMenuPolicy</a></div><div class="ttdeci">void setContextMenuPolicy(Qt::ContextMenuPolicy policy)</div></div>
+<div class="ttc" id="aqwidget_html_event"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html#event">QWidget::event</a></div><div class="ttdeci">virtual bool event(QEvent *event) override</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.4-->
@@ -259,7 +274,7 @@ $(document).ready(function(){initNavTree('dlineedit_8h_source.html',''); initRes
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_cc1fdbae730d0dba18db2b924667b662.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_6819db61f31aacd6e31b437a606a4041.html">include</a></li><li class="navelem"><a class="el" href="dir_6719ee6af2149ba01bce2af57814b9e8.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_4faf4521db2f3764f9e00575717749e8.html">widgets</a></li><li class="navelem"><a class="el" href="dlineedit_8h.html">dlineedit.h</a></li>
-    <li class="footer">文档生成时间:2023-01-03-09:26  +00</li>
+    <li class="footer">文档生成时间:2023-01-03-09:52  +00</li>
     <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
     <li class="footer">制作者:deepin doc doc go SIG</li>
     <li class="footer">文档使用CC-BY-4.0共享 </a>

@@ -194,10 +194,10 @@ $(document).ready(function(){initNavTree('dvtablehook_8h_source.html',''); initR
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">static</span> quintptr *getVtableOfClass()</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        QByteArray vtable_symbol(<span class="keyword">typeid</span>(T).name());</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        vtable_symbol.prepend(<span class="stringliteral">&quot;_ZTV&quot;</span>);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <a class="codeRef" href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a> vtable_symbol(<span class="keyword">typeid</span>(T).name());</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        vtable_symbol.<a class="codeRef" href="http://doc.qt.io/qt-5/qbytearray.html#prepend-1">prepend</a>(<span class="stringliteral">&quot;_ZTV&quot;</span>);</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        quintptr *vfptr_t1 = <span class="keyword">reinterpret_cast&lt;</span>quintptr*<span class="keyword">&gt;</span>(resolve(vtable_symbol.constData()));</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        quintptr *vfptr_t1 = <span class="keyword">reinterpret_cast&lt;</span>quintptr*<span class="keyword">&gt;</span>(resolve(vtable_symbol.<a class="codeRef" href="http://doc.qt.io/qt-5/qbytearray.html#constData">constData</a>()));</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordflow">if</span> (!vfptr_t1)</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
@@ -207,8 +207,8 @@ $(document).ready(function(){initNavTree('dvtablehook_8h_source.html',''); initR
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> getDestructFunIndex(quintptr **obj, std::function&lt;<span class="keywordtype">void</span>(<span class="keywordtype">void</span>)&gt; destoryObjFun);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">static</span> constexpr <span class="keyword">const</span> QObject *getQObject(...) { <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;}</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">static</span> constexpr <span class="keyword">const</span> QObject *getQObject(<span class="keyword">const</span> QObject *obj) { <span class="keywordflow">return</span> obj;}</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">static</span> constexpr <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *getQObject(...) { <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;}</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">static</span> constexpr <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *getQObject(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *obj) { <span class="keywordflow">return</span> obj;}</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> autoCleanVtable(<span class="keyword">const</span> <span class="keywordtype">void</span> *obj);</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> ensureVtable(<span class="keyword">const</span> <span class="keywordtype">void</span> *obj, std::function&lt;<span class="keywordtype">void</span>(<span class="keywordtype">void</span>)&gt; destoryObjFun);</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> hasVtable(<span class="keyword">const</span> <span class="keywordtype">void</span> *obj);</div>
@@ -474,9 +474,9 @@ $(document).ready(function(){initNavTree('dvtablehook_8h_source.html',''); initR
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        <span class="keyword">delete</span> obj;</div>
 <div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    }</div>
 <div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160; </div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    <span class="keyword">static</span> QMap&lt;quintptr**, quintptr*&gt; objToOriginalVfptr;</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    <span class="keyword">static</span> QMap&lt;const void*, quintptr*&gt; objToGhostVfptr;</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    <span class="keyword">static</span> QMap&lt;const void*, quintptr&gt; objDestructFun;</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    <span class="keyword">static</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qmap.html">QMap&lt;quintptr**, quintptr*&gt;</a> objToOriginalVfptr;</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    <span class="keyword">static</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qmap.html">QMap&lt;const void*, quintptr*&gt;</a> objToGhostVfptr;</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    <span class="keyword">static</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qmap.html">QMap&lt;const void*, quintptr&gt;</a> objDestructFun;</div>
 <div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;};</div>
 <div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160; </div>
 <div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;DCORE_END_NAMESPACE</div>
@@ -487,6 +487,11 @@ $(document).ready(function(){initNavTree('dvtablehook_8h_source.html',''); initR
 <div class="ttc" id="aclassDtk_1_1Core_1_1DVtableHook_html_a026daf635fcf4ed8f947326a53f5476f"><div class="ttname"><a href="classDtk_1_1Core_1_1DVtableHook.html#a026daf635fcf4ed8f947326a53f5476f">Dtk::Core::DVtableHook::overrideVfptrFun</a></div><div class="ttdeci">static bool ::type overrideVfptrFun(quintptr *vfptr_t1, Fun1 fun1, Fun2 fun2, bool forceWrite)</div><div class="ttdef"><b>Definition:</b> dvtablehook.h:161</div></div>
 <div class="ttc" id="aclassDtk_1_1Core_1_1DVtableHook_html_a1c6ee5e0b50f1dc4d0bebd7c483960d8"><div class="ttname"><a href="classDtk_1_1Core_1_1DVtableHook.html#a1c6ee5e0b50f1dc4d0bebd7c483960d8">Dtk::Core::DVtableHook::overrideVfptrFun</a></div><div class="ttdeci">static bool overrideVfptrFun(const typename QtPrivate::FunctionPointer&lt; Fun1 &gt;::Object *t1, Fun1 fun1, Fun2 fun2)</div><div class="ttdef"><b>Definition:</b> dvtablehook.h:237</div></div>
 <div class="ttc" id="aclassDtk_1_1Core_1_1DVtableHook_html_a5aa6702895e7b1ff42973e66936749b0"><div class="ttname"><a href="classDtk_1_1Core_1_1DVtableHook.html#a5aa6702895e7b1ff42973e66936749b0">Dtk::Core::DVtableHook::overrideVfptrFun</a></div><div class="ttdeci">static bool overrideVfptrFun(quintptr *vfptr_t1, Fun1 fun1, quintptr *vfptr_t2, Fun2 fun2, bool forceWrite)</div><div class="ttdef"><b>Definition:</b> dvtablehook.h:71</div></div>
+<div class="ttc" id="aqbytearray_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a></div></div>
+<div class="ttc" id="aqbytearray_html_constData"><div class="ttname"><a href="http://doc.qt.io/qt-5/qbytearray.html#constData">QByteArray::constData</a></div><div class="ttdeci">const char * constData() const const</div></div>
+<div class="ttc" id="aqbytearray_html_prepend-1"><div class="ttname"><a href="http://doc.qt.io/qt-5/qbytearray.html#prepend-1">QByteArray::prepend</a></div><div class="ttdeci">QByteArray &amp; prepend(char ch)</div></div>
+<div class="ttc" id="aqmap_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qmap.html">QMap&lt; quintptr **, quintptr * &gt;</a></div></div>
+<div class="ttc" id="aqobject_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html">QObject</a></div></div>
 <div class="ttc" id="astructDtk_1_1Core_1_1DVtableHook_1_1CheckCompatibleArguments_html"><div class="ttname"><a href="structDtk_1_1Core_1_1DVtableHook_1_1CheckCompatibleArguments.html">Dtk::Core::DVtableHook::CheckCompatibleArguments</a></div><div class="ttdef"><b>Definition:</b> dvtablehook.h:67</div></div>
 <div class="ttc" id="astructDtk_1_1Core_1_1DVtableHook_1_1FunctionPointer_html"><div class="ttname"><a href="structDtk_1_1Core_1_1DVtableHook_1_1FunctionPointer.html">Dtk::Core::DVtableHook::FunctionPointer</a></div><div class="ttdef"><b>Definition:</b> dvtablehook.h:150</div></div>
 <div class="ttc" id="astructDtk_1_1Core_1_1DVtableHook_1_1StdFunWrap_html"><div class="ttname"><a href="structDtk_1_1Core_1_1DVtableHook_1_1StdFunWrap.html">Dtk::Core::DVtableHook::StdFunWrap</a></div><div class="ttdef"><b>Definition:</b> dvtablehook.h:190</div></div>
@@ -497,7 +502,7 @@ $(document).ready(function(){initNavTree('dvtablehook_8h_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_6c3d837d12de6918ecc70ece2c9d5940.html">dtkcore</a></li><li class="navelem"><a class="el" href="dir_858a6aace3374df34beb3a5d036e09e4.html">include</a></li><li class="navelem"><a class="el" href="dir_24450d5b37828d2338747fbf63b34a61.html">util</a></li><li class="navelem"><b>dvtablehook.h</b></li>
-    <li class="footer">文档生成时间:2023-01-03-09:26  +00</li>
+    <li class="footer">文档生成时间:2023-01-03-09:52  +00</li>
     <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
     <li class="footer">制作者:deepin doc doc go SIG</li>
     <li class="footer">文档使用CC-BY-4.0共享 </a>

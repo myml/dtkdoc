@@ -167,26 +167,26 @@ $(document).ready(function(){initNavTree('dfiledragserver_8h_source.html',''); i
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;QObject&gt;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">class </span>QMimeData;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">class </span><a class="codeRef" href="http://doc.qt.io/qt-5/qmimedata.html">QMimeData</a>;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;DGUI_BEGIN_NAMESPACE</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">class </span>DFileDragServerPrivate;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classDFileDragServer.html">   21</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDFileDragServer.html">DFileDragServer</a> : <span class="keyword">public</span> QObject, <span class="keyword">public</span> DCORE_NAMESPACE::DObject</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classDFileDragServer.html">   21</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDFileDragServer.html">DFileDragServer</a> : <span class="keyword">public</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a>, <span class="keyword">public</span> DCORE_NAMESPACE::DObject</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">Q_OBJECT</a></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDFileDragServer.html">DFileDragServer</a>(QObject *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDFileDragServer.html">DFileDragServer</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a> = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    ~<a class="code" href="classDFileDragServer.html">DFileDragServer</a>();</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    QVariant <a class="code" href="classDFileDragServer.html#a0170ec299c1dc773e1905c73f68afe19">targetData</a>(<span class="keyword">const</span> QString &amp;key) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qvariant.html">QVariant</a> <a class="code" href="classDFileDragServer.html#a0170ec299c1dc773e1905c73f68afe19">targetData</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;key) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">public</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SLOTS">Q_SLOTS</a>:</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDFileDragServer.html#af3d5c150495d2eda9ba0995af8f5c269">setProgress</a>(<span class="keywordtype">int</span> progress);</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDFileDragServer.html#aa84e47e5951fed9906062245744955c4">setState</a>(DFileDragState state);</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;Q_SIGNALS:</div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classDFileDragServer.html#a9752d1aac5ddcabffd9e47e6d1a29dd0">   34</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDFileDragServer.html#a9752d1aac5ddcabffd9e47e6d1a29dd0">targetDataChanged</a>(<span class="keyword">const</span> QString &amp;key);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SIGNALS">Q_SIGNALS</a>:</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classDFileDragServer.html#a9752d1aac5ddcabffd9e47e6d1a29dd0">   34</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDFileDragServer.html#a9752d1aac5ddcabffd9e47e6d1a29dd0">targetDataChanged</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;key);</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    D_DECLARE_PRIVATE(<a class="code" href="classDFileDragServer.html">DFileDragServer</a>)</div>
@@ -204,6 +204,14 @@ $(document).ready(function(){initNavTree('dfiledragserver_8h_source.html',''); i
 <div class="ttc" id="aclassDFileDragServer_html_aa84e47e5951fed9906062245744955c4"><div class="ttname"><a href="classDFileDragServer.html#aa84e47e5951fed9906062245744955c4">DFileDragServer::setState</a></div><div class="ttdeci">void setState(DFileDragState state)</div><div class="ttdoc">DFileDragServer::setState. state</div><div class="ttdef"><b>Definition:</b> dfiledragserver.cpp:140</div></div>
 <div class="ttc" id="aclassDFileDragServer_html_af3d5c150495d2eda9ba0995af8f5c269"><div class="ttname"><a href="classDFileDragServer.html#af3d5c150495d2eda9ba0995af8f5c269">DFileDragServer::setProgress</a></div><div class="ttdeci">void setProgress(int progress)</div><div class="ttdoc">DFileDragServer::setProgress. progress 当前进度</div><div class="ttdef"><b>Definition:</b> dfiledragserver.cpp:125</div></div>
 <div class="ttc" id="aclassDFileDrag_html"><div class="ttname"><a href="classDFileDrag.html">DFileDrag</a></div><div class="ttdef"><b>Definition:</b> dfiledrag.h:21</div></div>
+<div class="ttc" id="aqmimedata_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qmimedata.html">QMimeData</a></div></div>
+<div class="ttc" id="aqobject_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html">QObject</a></div></div>
+<div class="ttc" id="aqobject_html_Q_OBJECT"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">QObject::Q_OBJECT</a></div><div class="ttdeci">Q_OBJECTQ_OBJECT</div></div>
+<div class="ttc" id="aqobject_html_Q_SIGNALS"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_SIGNALS">QObject::Q_SIGNALS</a></div><div class="ttdeci">Q_SIGNALSQ_SIGNALS</div></div>
+<div class="ttc" id="aqobject_html_Q_SLOTS"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_SLOTS">QObject::Q_SLOTS</a></div><div class="ttdeci">Q_SLOTSQ_SLOTS</div></div>
+<div class="ttc" id="aqobject_html_parent"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#parent">QObject::parent</a></div><div class="ttdeci">QObject * parent() const const</div></div>
+<div class="ttc" id="aqstring_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstring.html">QString</a></div></div>
+<div class="ttc" id="aqvariant_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qvariant.html">QVariant</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.4-->
@@ -211,7 +219,7 @@ $(document).ready(function(){initNavTree('dfiledragserver_8h_source.html',''); i
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01e26ae7551668ca493319620c16a3ae.html">dtkgui</a></li><li class="navelem"><a class="el" href="dir_7005495310172da407eaf058f379ec62.html">include</a></li><li class="navelem"><a class="el" href="dir_5ca401e7109f31ae50996dc473e46279.html">filedrag</a></li><li class="navelem"><b>dfiledragserver.h</b></li>
-    <li class="footer">文档生成时间:2023-01-03-09:26  +00</li>
+    <li class="footer">文档生成时间:2023-01-03-09:52  +00</li>
     <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
     <li class="footer">制作者:deepin doc doc go SIG</li>
     <li class="footer">文档使用CC-BY-4.0共享 </a>

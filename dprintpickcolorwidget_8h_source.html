@@ -166,102 +166,102 @@ $(document).ready(function(){initNavTree('dprintpickcolorwidget_8h_source.html',
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;DWidget&gt;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;DPushButton&gt;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">class </span>QVBoxLayout;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">class </span><a class="codeRef" href="http://doc.qt.io/qt-5/qvboxlayout.html">QVBoxLayout</a>;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;DWIDGET_BEGIN_NAMESPACE</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">class </span><a class="code" href="classDIconButton.html">DIconButton</a>;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">class </span><a class="code" href="classDLineEdit.html">DLineEdit</a>;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">class </span><a class="code" href="classDLabel.html">DLabel</a>;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">class </span><a class="code" href="classDSlider.html">DSlider</a>;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classColorButton.html">   21</a></span>&#160;<span class="keyword">class </span><a class="code" href="classColorButton.html">ColorButton</a> : <span class="keyword">public</span> DPushButton</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classColorButton.html">   21</a></span>&#160;<span class="keyword">class </span><a class="code" href="classColorButton.html">ColorButton</a> : <span class="keyword">public</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qpushbutton.html">DPushButton</a></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">Q_OBJECT</a></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="classColorButton.html#a5133e58d694260f42b39c8d3c454f5cb">ColorButton</a>(QColor color, QWidget *parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;Q_SIGNALS:</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> selectColorButton(QColor color);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">void</span> btnIsChecked(<span class="keywordtype">bool</span> checked);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="classColorButton.html#a5133e58d694260f42b39c8d3c454f5cb">ColorButton</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qcolor.html">QColor</a> color, <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a> *<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a> = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SIGNALS">Q_SIGNALS</a>:</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> selectColorButton(<a class="codeRef" href="http://doc.qt.io/qt-5/qcolor.html">QColor</a> color);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">void</span> btnIsChecked(<span class="keywordtype">bool</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qabstractbutton.html#checked-prop">checked</a>);</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">void</span> paintEvent(QPaintEvent *) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">void</span> paintEvent(<a class="codeRef" href="http://doc.qt.io/qt-5/qpaintevent.html">QPaintEvent</a> *) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    QColor m_color;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qcolor.html">QColor</a> m_color;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">bool</span> m_flag = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">bool</span> m_checked = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;};</div>
 <div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classColorLabel.html">   38</a></span>&#160;<span class="keyword">class </span><a class="code" href="classColorLabel.html">ColorLabel</a> : <span class="keyword">public</span> <a class="code" href="classDLabel.html">DLabel</a></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">Q_OBJECT</a></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="classColorLabel.html#a0a76e57427c1a9640a907633f7412f8b">ColorLabel</a>(DWidget *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="classColorLabel.html#a0a76e57427c1a9640a907633f7412f8b">ColorLabel</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">DWidget</a> *<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a> = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    ~<a class="code" href="classColorLabel.html">ColorLabel</a>();</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="comment">//h∈(0, 360), s∈(0, 1), v∈(0, 1)</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    QColor <a class="code" href="classColorLabel.html#a9d8b57b422aa221b8e0b8e732ae1143d">getColor</a>(qreal h, qreal s, qreal v);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qcolor.html">QColor</a> <a class="code" href="classColorLabel.html#a9d8b57b422aa221b8e0b8e732ae1143d">getColor</a>(qreal h, qreal s, qreal v);</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classColorLabel.html#ad75e4a367312dbb8aaff0ae523de5436">setHue</a>(<span class="keywordtype">int</span> hue);</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classColorLabel.html#ac1c6a7feb8fd27b9a5ee14b2660e8fdc">pickColor</a>(QPoint pos);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    QCursor <a class="code" href="classColorLabel.html#a8507320bf0466513f3158437e38fa27d">pickColorCursor</a>();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classColorLabel.html#ac1c6a7feb8fd27b9a5ee14b2660e8fdc">pickColor</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qpoint.html">QPoint</a> <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html#pos-prop">pos</a>);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qcursor.html">QCursor</a> <a class="code" href="classColorLabel.html#a8507320bf0466513f3158437e38fa27d">pickColorCursor</a>();</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;Q_SIGNALS:</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SIGNALS">Q_SIGNALS</a>:</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">void</span> clicked();</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> pickedColor(QColor color);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> pickedColor(<a class="codeRef" href="http://doc.qt.io/qt-5/qcolor.html">QColor</a> color);</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> paintEvent(QPaintEvent *);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> enterEvent(QEvent *e);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> leaveEvent(QEvent *e);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> mousePressEvent(QMouseEvent *e);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> mouseMoveEvent(QMouseEvent *e);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> mouseReleaseEvent(QMouseEvent *e);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classColorLabel.html#a102259d5a34e6036b2aadbc4646ff889">paintEvent</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qpaintevent.html">QPaintEvent</a> *);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> enterEvent(<a class="codeRef" href="http://doc.qt.io/qt-5/qevent.html">QEvent</a> *e);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> leaveEvent(<a class="codeRef" href="http://doc.qt.io/qt-5/qevent.html">QEvent</a> *e);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> mousePressEvent(<a class="codeRef" href="http://doc.qt.io/qt-5/qmouseevent.html">QMouseEvent</a> *e);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> mouseMoveEvent(<a class="codeRef" href="http://doc.qt.io/qt-5/qmouseevent.html">QMouseEvent</a> *e);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> mouseReleaseEvent(<a class="codeRef" href="http://doc.qt.io/qt-5/qmouseevent.html">QMouseEvent</a> *e);</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    QCursor m_lastCursor;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qcursor.html">QCursor</a> m_lastCursor;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">int</span> m_hue = 0;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">bool</span> m_pressed;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    QColor m_pickedColor;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    QPoint m_clickedPos;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    QPoint m_tipPoint;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qcolor.html">QColor</a> m_pickedColor;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qpoint.html">QPoint</a> m_clickedPos;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qpoint.html">QPoint</a> m_tipPoint;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;};</div>
-<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classColorSlider.html">   72</a></span>&#160;<span class="keyword">class </span><a class="code" href="classColorSlider.html">ColorSlider</a> : <span class="keyword">public</span> QSlider</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classColorSlider.html">   72</a></span>&#160;<span class="keyword">class </span><a class="code" href="classColorSlider.html">ColorSlider</a> : <span class="keyword">public</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qslider.html">QSlider</a></div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;{</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">Q_OBJECT</a></div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <a class="code" href="classColorSlider.html#a80aa83a09c511bd74de814727ee6b31c">ColorSlider</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <a class="code" href="classColorSlider.html#a80aa83a09c511bd74de814727ee6b31c">ColorSlider</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a> *<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a> = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    ~<a class="code" href="classColorSlider.html">ColorSlider</a>();</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="comment">//h∈(0, 360), s∈(0, 1), v∈(0, 1)</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    QColor <a class="code" href="classColorSlider.html#a0f53811bd67235bafd23c9a9a0119afa">getColor</a>(qreal h, qreal s, qreal v);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qcolor.html">QColor</a> <a class="code" href="classColorSlider.html#a0f53811bd67235bafd23c9a9a0119afa">getColor</a>(qreal h, qreal s, qreal v);</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">void</span> paintEvent(QPaintEvent *ev);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">void</span> paintEvent(<a class="codeRef" href="http://doc.qt.io/qt-5/qpaintevent.html">QPaintEvent</a> *ev);</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">int</span> m_value;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    QImage m_backgroundImage;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qimage.html">QImage</a> m_backgroundImage;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;};</div>
-<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="classDPrintPickColorWidget.html">   89</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDPrintPickColorWidget.html">DPrintPickColorWidget</a> : <span class="keyword">public</span> DWidget</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="classDPrintPickColorWidget.html">   89</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDPrintPickColorWidget.html">DPrintPickColorWidget</a> : <span class="keyword">public</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">DWidget</a></div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;{</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">Q_OBJECT</a></div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <a class="code" href="classDPrintPickColorWidget.html">DPrintPickColorWidget</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <a class="code" href="classDPrintPickColorWidget.html">DPrintPickColorWidget</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a> *<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a> = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    ~<a class="code" href="classDPrintPickColorWidget.html">DPrintPickColorWidget</a>();</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">void</span> initUI();</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">void</span> initConnection();</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDPrintPickColorWidget.html#a4b06f128f82fa3b03ee56b0e3e2830d1">setRgbEdit</a>(QColor color, <span class="keywordtype">bool</span> btnColor = <span class="keyword">false</span>);</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDPrintPickColorWidget.html#a5e3f35c853dd24d1412c990d365f1b4f">convertColor</a>(QColor color, <span class="keywordtype">bool</span> btnColor = <span class="keyword">false</span>);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;Q_SIGNALS:</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">void</span> selectColorButton(QColor color);</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">void</span> signalColorChanged(QColor color);</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDPrintPickColorWidget.html#abe1b67ceb7f4bc594b2bc47f9fcd679f">slotColorPick</a>(QString uuid, QString colorName);</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDPrintPickColorWidget.html#a4009fd852aa097c8e6f193351818b9aa">slotEditColor</a>(QString str);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDPrintPickColorWidget.html#a4b06f128f82fa3b03ee56b0e3e2830d1">setRgbEdit</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qcolor.html">QColor</a> color, <span class="keywordtype">bool</span> btnColor = <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDPrintPickColorWidget.html#a5e3f35c853dd24d1412c990d365f1b4f">convertColor</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qcolor.html">QColor</a> color, <span class="keywordtype">bool</span> btnColor = <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SIGNALS">Q_SIGNALS</a>:</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">void</span> selectColorButton(<a class="codeRef" href="http://doc.qt.io/qt-5/qcolor.html">QColor</a> color);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">void</span> signalColorChanged(<a class="codeRef" href="http://doc.qt.io/qt-5/qcolor.html">QColor</a> color);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="keyword">public</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SLOTS">Q_SLOTS</a>:</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDPrintPickColorWidget.html#abe1b67ceb7f4bc594b2bc47f9fcd679f">slotColorPick</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> uuid, <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> colorName);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDPrintPickColorWidget.html#a4009fd852aa097c8e6f193351818b9aa">slotEditColor</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> str);</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    QList&lt;ColorButton *&gt; btnlist;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    QList&lt;QColor&gt; colorList;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    QButtonGroup *btnGroup;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qlist.html">QList&lt;ColorButton *&gt;</a> btnlist;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qlist.html">QList&lt;QColor&gt;</a> colorList;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qbuttongroup.html">QButtonGroup</a> *btnGroup;</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <a class="code" href="classDLineEdit.html">DLineEdit</a> *valueLineEdit;</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <a class="code" href="classDIconButton.html">DIconButton</a> *pickColorBtn;</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    QDBusInterface *pinterface;</div>
@@ -277,6 +277,7 @@ $(document).ready(function(){initNavTree('dprintpickcolorwidget_8h_source.html',
 <div class="ttc" id="aclassColorButton_html_a5133e58d694260f42b39c8d3c454f5cb"><div class="ttname"><a href="classColorButton.html#a5133e58d694260f42b39c8d3c454f5cb">ColorButton::ColorButton</a></div><div class="ttdeci">ColorButton(QColor color, QWidget *parent=nullptr)</div><div class="ttdoc">ColorButton::ColorButton 取色框颜色选择按钮</div><div class="ttdef"><b>Definition:</b> dprintpickcolorwidget.cpp:32</div></div>
 <div class="ttc" id="aclassColorLabel_html"><div class="ttname"><a href="classColorLabel.html">ColorLabel</a></div><div class="ttdef"><b>Definition:</b> dprintpickcolorwidget.h:39</div></div>
 <div class="ttc" id="aclassColorLabel_html_a0a76e57427c1a9640a907633f7412f8b"><div class="ttname"><a href="classColorLabel.html#a0a76e57427c1a9640a907633f7412f8b">ColorLabel::ColorLabel</a></div><div class="ttdeci">ColorLabel(DWidget *parent=nullptr)</div><div class="ttdoc">ColorLabel::ColorLabel 提供取色的Label</div><div class="ttdef"><b>Definition:</b> dprintpickcolorwidget.cpp:254</div></div>
+<div class="ttc" id="aclassColorLabel_html_a102259d5a34e6036b2aadbc4646ff889"><div class="ttname"><a href="classColorLabel.html#a102259d5a34e6036b2aadbc4646ff889">ColorLabel::paintEvent</a></div><div class="ttdeci">void paintEvent(QPaintEvent *)</div><div class="ttdoc">DLabel::paintEvent</div><div class="ttdef"><b>Definition:</b> dprintpickcolorwidget.cpp:358</div></div>
 <div class="ttc" id="aclassColorLabel_html_a8507320bf0466513f3158437e38fa27d"><div class="ttname"><a href="classColorLabel.html#a8507320bf0466513f3158437e38fa27d">ColorLabel::pickColorCursor</a></div><div class="ttdeci">QCursor pickColorCursor()</div><div class="ttdoc">ColorLabel::pickColorCursor 绘制点击时的鼠标光标样式</div><div class="ttdef"><b>Definition:</b> dprintpickcolorwidget.cpp:329</div></div>
 <div class="ttc" id="aclassColorLabel_html_a9d8b57b422aa221b8e0b8e732ae1143d"><div class="ttname"><a href="classColorLabel.html#a9d8b57b422aa221b8e0b8e732ae1143d">ColorLabel::getColor</a></div><div class="ttdeci">QColor getColor(qreal h, qreal s, qreal v)</div><div class="ttdoc">ColorLabel::getColor 获取Label上取到的颜色 qreal h, qreal s, qreal v 位置</div><div class="ttdef"><b>Definition:</b> dprintpickcolorwidget.cpp:270</div></div>
 <div class="ttc" id="aclassColorLabel_html_ac1c6a7feb8fd27b9a5ee14b2660e8fdc"><div class="ttname"><a href="classColorLabel.html#ac1c6a7feb8fd27b9a5ee14b2660e8fdc">ColorLabel::pickColor</a></div><div class="ttdeci">void pickColor(QPoint pos)</div><div class="ttdoc">ColorLabel::pickColor 选择要水印的颜色 pos 选取颜色的位置</div><div class="ttdef"><b>Definition:</b> dprintpickcolorwidget.cpp:307</div></div>
@@ -293,6 +294,26 @@ $(document).ready(function(){initNavTree('dprintpickcolorwidget_8h_source.html',
 <div class="ttc" id="aclassDPrintPickColorWidget_html_a5e3f35c853dd24d1412c990d365f1b4f"><div class="ttname"><a href="classDPrintPickColorWidget.html#a5e3f35c853dd24d1412c990d365f1b4f">DPrintPickColorWidget::convertColor</a></div><div class="ttdeci">void convertColor(QColor color, bool btnColor=false)</div><div class="ttdoc">PickColorWidget::convertColor 将QColor转化为详细颜色 color 颜色 btnColor 判断是否为按钮的颜色</div><div class="ttdef"><b>Definition:</b> dprintpickcolorwidget.cpp:184</div></div>
 <div class="ttc" id="aclassDPrintPickColorWidget_html_abe1b67ceb7f4bc594b2bc47f9fcd679f"><div class="ttname"><a href="classDPrintPickColorWidget.html#abe1b67ceb7f4bc594b2bc47f9fcd679f">DPrintPickColorWidget::slotColorPick</a></div><div class="ttdeci">void slotColorPick(QString uuid, QString colorName)</div><div class="ttdoc">PickColorWidget::slotColorPick 调起deepin-picer取色窗口 uuid 当前进程号 colorName 颜色名称</div><div class="ttdef"><b>Definition:</b> dprintpickcolorwidget.cpp:213</div></div>
 <div class="ttc" id="aclassDSlider_html"><div class="ttname"><a href="classDSlider.html">DSlider</a></div><div class="ttdef"><b>Definition:</b> dslider.h:20</div></div>
+<div class="ttc" id="aqabstractbutton_html_checked-prop"><div class="ttname"><a href="http://doc.qt.io/qt-5/qabstractbutton.html#checked-prop">QAbstractButton::checked</a></div><div class="ttdeci">checked</div></div>
+<div class="ttc" id="aqbuttongroup_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qbuttongroup.html">QButtonGroup</a></div></div>
+<div class="ttc" id="aqcolor_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qcolor.html">QColor</a></div></div>
+<div class="ttc" id="aqcursor_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qcursor.html">QCursor</a></div></div>
+<div class="ttc" id="aqevent_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qevent.html">QEvent</a></div></div>
+<div class="ttc" id="aqimage_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qimage.html">QImage</a></div></div>
+<div class="ttc" id="aqlist_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qlist.html">QList&lt; ColorButton * &gt;</a></div></div>
+<div class="ttc" id="aqmouseevent_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qmouseevent.html">QMouseEvent</a></div></div>
+<div class="ttc" id="aqobject_html_Q_OBJECT"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">QObject::Q_OBJECT</a></div><div class="ttdeci">Q_OBJECTQ_OBJECT</div></div>
+<div class="ttc" id="aqobject_html_Q_SIGNALS"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_SIGNALS">QObject::Q_SIGNALS</a></div><div class="ttdeci">Q_SIGNALSQ_SIGNALS</div></div>
+<div class="ttc" id="aqobject_html_Q_SLOTS"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_SLOTS">QObject::Q_SLOTS</a></div><div class="ttdeci">Q_SLOTSQ_SLOTS</div></div>
+<div class="ttc" id="aqobject_html_parent"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#parent">QObject::parent</a></div><div class="ttdeci">QObject * parent() const const</div></div>
+<div class="ttc" id="aqpaintevent_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qpaintevent.html">QPaintEvent</a></div></div>
+<div class="ttc" id="aqpoint_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qpoint.html">QPoint</a></div></div>
+<div class="ttc" id="aqpushbutton_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qpushbutton.html">QPushButton</a></div></div>
+<div class="ttc" id="aqslider_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qslider.html">QSlider</a></div></div>
+<div class="ttc" id="aqstring_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstring.html">QString</a></div></div>
+<div class="ttc" id="aqvboxlayout_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qvboxlayout.html">QVBoxLayout</a></div></div>
+<div class="ttc" id="aqwidget_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a></div></div>
+<div class="ttc" id="aqwidget_html_pos-prop"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html#pos-prop">QWidget::pos</a></div><div class="ttdeci">pos</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.4-->
@@ -300,7 +321,7 @@ $(document).ready(function(){initNavTree('dprintpickcolorwidget_8h_source.html',
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_cc1fdbae730d0dba18db2b924667b662.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_6819db61f31aacd6e31b437a606a4041.html">include</a></li><li class="navelem"><a class="el" href="dir_6719ee6af2149ba01bce2af57814b9e8.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_4faf4521db2f3764f9e00575717749e8.html">widgets</a></li><li class="navelem"><b>dprintpickcolorwidget.h</b></li>
-    <li class="footer">文档生成时间:2023-01-03-09:26  +00</li>
+    <li class="footer">文档生成时间:2023-01-03-09:52  +00</li>
     <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
     <li class="footer">制作者:deepin doc doc go SIG</li>
     <li class="footer">文档使用CC-BY-4.0共享 </a>

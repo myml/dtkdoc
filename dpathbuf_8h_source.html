@@ -169,42 +169,42 @@ $(document).ready(function(){initNavTree('dpathbuf_8h_source.html',''); initResi
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="classDtk_1_1Core_1_1DPathBuf.html">DPathBuf</a>();</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="classDtk_1_1Core_1_1DPathBuf.html">DPathBuf</a>(<span class="keyword">const</span> QString &amp;path);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="classDtk_1_1Core_1_1DPathBuf.html">DPathBuf</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;path);</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classDtk_1_1Core_1_1DPathBuf.html#a90c38df84bf0462a68fd457343715b06">   19</a></span>&#160;    <a class="code" href="classDtk_1_1Core_1_1DPathBuf.html">DPathBuf</a> <a class="code" href="classDtk_1_1Core_1_1DPathBuf.html#a90c38df84bf0462a68fd457343715b06">operator/</a>(<span class="keyword">const</span> QString &amp;p)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classDtk_1_1Core_1_1DPathBuf.html#a90c38df84bf0462a68fd457343715b06">   19</a></span>&#160;    <a class="code" href="classDtk_1_1Core_1_1DPathBuf.html">DPathBuf</a> <a class="code" href="classDtk_1_1Core_1_1DPathBuf.html#a90c38df84bf0462a68fd457343715b06">operator/</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;p)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classDtk_1_1Core_1_1DPathBuf.html">DPathBuf</a>(m_path + <span class="stringliteral">&quot;/&quot;</span> + p);</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    }</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classDtk_1_1Core_1_1DPathBuf.html#a7253a93ab4d85fdffb093ef21b4d4905">   24</a></span>&#160;    <a class="code" href="classDtk_1_1Core_1_1DPathBuf.html">DPathBuf</a> &amp;<a class="code" href="classDtk_1_1Core_1_1DPathBuf.html#a7253a93ab4d85fdffb093ef21b4d4905">operator/=</a>(<span class="keyword">const</span> QString &amp;p)</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classDtk_1_1Core_1_1DPathBuf.html#a7253a93ab4d85fdffb093ef21b4d4905">   24</a></span>&#160;    <a class="code" href="classDtk_1_1Core_1_1DPathBuf.html">DPathBuf</a> &amp;<a class="code" href="classDtk_1_1Core_1_1DPathBuf.html#a7253a93ab4d85fdffb093ef21b4d4905">operator/=</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;p)</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    {</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keywordflow">return</span> join(p);</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    }</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
 <div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classDtk_1_1Core_1_1DPathBuf.html#a04d2fba12191b534d1ca64f127997ca8">   29</a></span>&#160;    <a class="code" href="classDtk_1_1Core_1_1DPathBuf.html">DPathBuf</a> <a class="code" href="classDtk_1_1Core_1_1DPathBuf.html#a04d2fba12191b534d1ca64f127997ca8">operator/</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *p)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keywordflow">return</span> operator /(QString(p));</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keywordflow">return</span> operator /(<a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>(p));</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    }</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
 <div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classDtk_1_1Core_1_1DPathBuf.html#a0de456a569c07afe3279f1f94901e548">   34</a></span>&#160;    <a class="code" href="classDtk_1_1Core_1_1DPathBuf.html">DPathBuf</a> &amp;<a class="code" href="classDtk_1_1Core_1_1DPathBuf.html#a0de456a569c07afe3279f1f94901e548">operator/=</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *p)</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordflow">return</span> operator /=(QString(p));</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordflow">return</span> operator /=(<a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>(p));</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    }</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classDtk_1_1Core_1_1DPathBuf.html#afc3fa93c57c3facf6a95cdc9a105482b">   39</a></span>&#160;    <a class="code" href="classDtk_1_1Core_1_1DPathBuf.html">DPathBuf</a> &amp;<a class="code" href="classDtk_1_1Core_1_1DPathBuf.html#afc3fa93c57c3facf6a95cdc9a105482b">join</a>(<span class="keyword">const</span> QString &amp;p)</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classDtk_1_1Core_1_1DPathBuf.html#afc3fa93c57c3facf6a95cdc9a105482b">   39</a></span>&#160;    <a class="code" href="classDtk_1_1Core_1_1DPathBuf.html">DPathBuf</a> &amp;<a class="code" href="classDtk_1_1Core_1_1DPathBuf.html#afc3fa93c57c3facf6a95cdc9a105482b">join</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;p)</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    {</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        m_path += <span class="stringliteral">&quot;/&quot;</span> + p;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        m_path = QDir(m_path).absolutePath();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        m_path = <a class="codeRef" href="http://doc.qt.io/qt-5/qdir.html">QDir</a>(m_path).<a class="codeRef" href="http://doc.qt.io/qt-5/qdir.html#absolutePath">absolutePath</a>();</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    }</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classDtk_1_1Core_1_1DPathBuf.html#a8d6940c803d60d057cb19c96b394d3c8">   46</a></span>&#160;    QString <a class="code" href="classDtk_1_1Core_1_1DPathBuf.html#a8d6940c803d60d057cb19c96b394d3c8">toString</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classDtk_1_1Core_1_1DPathBuf.html#a8d6940c803d60d057cb19c96b394d3c8">   46</a></span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> <a class="code" href="classDtk_1_1Core_1_1DPathBuf.html#a8d6940c803d60d057cb19c96b394d3c8">toString</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordflow">return</span> QDir::toNativeSeparators(m_path);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordflow">return</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qdir.html#toNativeSeparators">QDir::toNativeSeparators</a>(m_path);</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    QString m_path;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> m_path;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;};</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;DCORE_END_NAMESPACE</div>
@@ -215,6 +215,10 @@ $(document).ready(function(){initNavTree('dpathbuf_8h_source.html',''); initResi
 <div class="ttc" id="aclassDtk_1_1Core_1_1DPathBuf_html_a8d6940c803d60d057cb19c96b394d3c8"><div class="ttname"><a href="classDtk_1_1Core_1_1DPathBuf.html#a8d6940c803d60d057cb19c96b394d3c8">Dtk::Core::DPathBuf::toString</a></div><div class="ttdeci">QString toString() const</div><div class="ttdoc">toString export native separators format string.</div><div class="ttdef"><b>Definition:</b> dpathbuf.h:46</div></div>
 <div class="ttc" id="aclassDtk_1_1Core_1_1DPathBuf_html_a90c38df84bf0462a68fd457343715b06"><div class="ttname"><a href="classDtk_1_1Core_1_1DPathBuf.html#a90c38df84bf0462a68fd457343715b06">Dtk::Core::DPathBuf::operator/</a></div><div class="ttdeci">DPathBuf operator/(const QString &amp;p) const</div><div class="ttdoc">join path with operator / p is subpath</div><div class="ttdef"><b>Definition:</b> dpathbuf.h:19</div></div>
 <div class="ttc" id="aclassDtk_1_1Core_1_1DPathBuf_html_afc3fa93c57c3facf6a95cdc9a105482b"><div class="ttname"><a href="classDtk_1_1Core_1_1DPathBuf.html#afc3fa93c57c3facf6a95cdc9a105482b">Dtk::Core::DPathBuf::join</a></div><div class="ttdeci">DPathBuf &amp; join(const QString &amp;p)</div><div class="ttdoc">join add subpath p to self p is subpath to join</div><div class="ttdef"><b>Definition:</b> dpathbuf.h:39</div></div>
+<div class="ttc" id="aqdir_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qdir.html">QDir</a></div></div>
+<div class="ttc" id="aqdir_html_absolutePath"><div class="ttname"><a href="http://doc.qt.io/qt-5/qdir.html#absolutePath">QDir::absolutePath</a></div><div class="ttdeci">QString absolutePath() const const</div></div>
+<div class="ttc" id="aqdir_html_toNativeSeparators"><div class="ttname"><a href="http://doc.qt.io/qt-5/qdir.html#toNativeSeparators">QDir::toNativeSeparators</a></div><div class="ttdeci">QString toNativeSeparators(const QString &amp;pathName)</div></div>
+<div class="ttc" id="aqstring_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstring.html">QString</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.4-->
@@ -222,7 +226,7 @@ $(document).ready(function(){initNavTree('dpathbuf_8h_source.html',''); initResi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_6c3d837d12de6918ecc70ece2c9d5940.html">dtkcore</a></li><li class="navelem"><a class="el" href="dir_858a6aace3374df34beb3a5d036e09e4.html">include</a></li><li class="navelem"><a class="el" href="dir_76ba404386394005bf4c32719c8795bc.html">filesystem</a></li><li class="navelem"><b>dpathbuf.h</b></li>
-    <li class="footer">文档生成时间:2023-01-03-09:26  +00</li>
+    <li class="footer">文档生成时间:2023-01-03-09:52  +00</li>
     <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
     <li class="footer">制作者:deepin doc doc go SIG</li>
     <li class="footer">文档使用CC-BY-4.0共享 </a>

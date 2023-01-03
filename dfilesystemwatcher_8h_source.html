@@ -168,32 +168,32 @@ $(document).ready(function(){initNavTree('dfilesystemwatcher_8h_source.html','')
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;DCORE_BEGIN_NAMESPACE</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">class </span>DFileSystemWatcherPrivate;</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classDtk_1_1Core_1_1DFileSystemWatcher.html">   16</a></span>&#160;<span class="keyword">class </span>LIBDTKCORESHARED_EXPORT <a class="code" href="classDtk_1_1Core_1_1DFileSystemWatcher.html">DFileSystemWatcher</a> : <span class="keyword">public</span> QObject, <span class="keyword">public</span> <a class="code" href="classDtk_1_1Core_1_1DObject.html">DObject</a></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classDtk_1_1Core_1_1DFileSystemWatcher.html">   16</a></span>&#160;<span class="keyword">class </span>LIBDTKCORESHARED_EXPORT <a class="code" href="classDtk_1_1Core_1_1DFileSystemWatcher.html">DFileSystemWatcher</a> : <span class="keyword">public</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a>, <span class="keyword">public</span> <a class="code" href="classDtk_1_1Core_1_1DObject.html">DObject</a></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    Q_OBJECT</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    D_DECLARE_PRIVATE(<a class="code" href="classDtk_1_1Core_1_1DFileSystemWatcher.html">DFileSystemWatcher</a>)</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="classDtk_1_1Core_1_1DFileSystemWatcher.html">DFileSystemWatcher</a>(QObject *parent = Q_NULLPTR);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="classDtk_1_1Core_1_1DFileSystemWatcher.html">DFileSystemWatcher</a>(<span class="keyword">const</span> QStringList &amp;paths, QObject *parent = Q_NULLPTR);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="classDtk_1_1Core_1_1DFileSystemWatcher.html">DFileSystemWatcher</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *parent = Q_NULLPTR);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="classDtk_1_1Core_1_1DFileSystemWatcher.html">DFileSystemWatcher</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> &amp;paths, <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *parent = Q_NULLPTR);</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    ~<a class="code" href="classDtk_1_1Core_1_1DFileSystemWatcher.html">DFileSystemWatcher</a>();</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">bool</span> addPath(<span class="keyword">const</span> QString &amp;file);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    QStringList addPaths(<span class="keyword">const</span> QStringList &amp;files);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">bool</span> removePath(<span class="keyword">const</span> QString &amp;file);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    QStringList removePaths(<span class="keyword">const</span> QStringList &amp;files);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">bool</span> addPath(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;file);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> addPaths(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> &amp;files);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">bool</span> removePath(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;file);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> removePaths(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> &amp;files);</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    QStringList files() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    QStringList directories() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> files() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> directories() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;Q_SIGNALS:</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">void</span> fileDeleted(<span class="keyword">const</span> QString &amp;path, <span class="keyword">const</span> QString &amp;name, QPrivateSignal);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> fileAttributeChanged(<span class="keyword">const</span> QString &amp;path, <span class="keyword">const</span> QString &amp;name, QPrivateSignal);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> fileClosed(<span class="keyword">const</span> QString &amp;path, <span class="keyword">const</span> QString &amp;name, QPrivateSignal);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> fileMoved(<span class="keyword">const</span> QString &amp;fromPath, <span class="keyword">const</span> QString &amp;fromName,</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                   <span class="keyword">const</span> QString &amp;toPath, <span class="keyword">const</span> QString &amp;toName, QPrivateSignal);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> fileCreated(<span class="keyword">const</span> QString &amp;path, <span class="keyword">const</span> QString &amp;name, QPrivateSignal);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> fileModified(<span class="keyword">const</span> QString &amp;path, <span class="keyword">const</span> QString &amp;name, QPrivateSignal);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SIGNALS">Q_SIGNALS</a>:</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">void</span> fileDeleted(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;path, <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;name, QPrivateSignal);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> fileAttributeChanged(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;path, <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;name, QPrivateSignal);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> fileClosed(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;path, <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;name, QPrivateSignal);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> fileMoved(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;fromPath, <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;fromName,</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                   <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;toPath, <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;toName, QPrivateSignal);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> fileCreated(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;path, <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;name, QPrivateSignal);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> fileModified(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;path, <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;name, QPrivateSignal);</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    Q_PRIVATE_SLOT(d_func(), <span class="keywordtype">void</span> _q_readFromInotify())</div>
@@ -204,6 +204,10 @@ $(document).ready(function(){initNavTree('dfilesystemwatcher_8h_source.html','')
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// DFILESYSTEMWATCHER_H</span></div>
 <div class="ttc" id="aclassDtk_1_1Core_1_1DFileSystemWatcher_html"><div class="ttname"><a href="classDtk_1_1Core_1_1DFileSystemWatcher.html">Dtk::Core::DFileSystemWatcher</a></div><div class="ttdoc">The DFileSystemWatcher class provides an interface for monitoring files and directories for modificat...</div><div class="ttdef"><b>Definition:</b> dfilesystemwatcher.h:17</div></div>
 <div class="ttc" id="aclassDtk_1_1Core_1_1DObject_html"><div class="ttname"><a href="classDtk_1_1Core_1_1DObject.html">Dtk::Core::DObject</a></div><div class="ttdoc">一些宏的定义.</div><div class="ttdef"><b>Definition:</b> dobject.h:25</div></div>
+<div class="ttc" id="aqobject_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html">QObject</a></div></div>
+<div class="ttc" id="aqobject_html_Q_SIGNALS"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_SIGNALS">QObject::Q_SIGNALS</a></div><div class="ttdeci">Q_SIGNALSQ_SIGNALS</div></div>
+<div class="ttc" id="aqstring_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstring.html">QString</a></div></div>
+<div class="ttc" id="aqstringlist_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.4-->
@@ -211,7 +215,7 @@ $(document).ready(function(){initNavTree('dfilesystemwatcher_8h_source.html','')
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_6c3d837d12de6918ecc70ece2c9d5940.html">dtkcore</a></li><li class="navelem"><a class="el" href="dir_858a6aace3374df34beb3a5d036e09e4.html">include</a></li><li class="navelem"><a class="el" href="dir_76ba404386394005bf4c32719c8795bc.html">filesystem</a></li><li class="navelem"><b>dfilesystemwatcher.h</b></li>
-    <li class="footer">文档生成时间:2023-01-03-09:26  +00</li>
+    <li class="footer">文档生成时间:2023-01-03-09:52  +00</li>
     <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
     <li class="footer">制作者:deepin doc doc go SIG</li>
     <li class="footer">文档使用CC-BY-4.0共享 </a>

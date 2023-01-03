@@ -166,48 +166,63 @@ $(document).ready(function(){initNavTree('classDtk_1_1Widget_1_1DViewItemAction.
 <li>AlignVCenter </li>
 <li>AlignBottom \endlist</li>
 </ul>
-<p>此处举一个小例子, 可以自行修改相关参数, 查看结果, 理解参数: </p><div class="fragment"><div class="line">QMainWindow *wid = <span class="keyword">new</span> QMainWindow();</div>
-<div class="line">wid-&gt;resize(800, 600);</div>
+<p>此处举一个小例子, 可以自行修改相关参数, 查看结果, 理解参数: </p><div class="fragment"><div class="line"><a class="codeRef" href="http://doc.qt.io/qt-5/qmainwindow.html">QMainWindow</a> *wid = <span class="keyword">new</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qmainwindow.html">QMainWindow</a>();</div>
+<div class="line">wid-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html#resize-1">resize</a>(800, 600);</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">//视图和模型</span></div>
 <div class="line"><a class="code" href="classDListView.html">DListView</a> *view = <span class="keyword">new</span> <a class="code" href="classDListView.html">DListView</a>(wid);</div>
-<div class="line">QStandardItemModel *model = <span class="keyword">new</span> QStandardItemModel(view);</div>
+<div class="line"><a class="codeRef" href="http://doc.qt.io/qt-5/qstandarditemmodel.html">QStandardItemModel</a> *model = <span class="keyword">new</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstandarditemmodel.html">QStandardItemModel</a>(view);</div>
 <div class="line">view-&gt;setModel(model);</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">//标准DStandardItem item</span></div>
 <div class="line"><a class="code" href="classDStandardItem.html">DStandardItem</a> *item = <span class="keyword">new</span> <a class="code" href="classDStandardItem.html">DStandardItem</a>();</div>
-<div class="line">item-&gt;setText(<span class="stringliteral">&quot;@1:这是同一个item 的text\n@2:这是同一个item 的text\n@3:这是同一个item 的text\n@4:这是同一个item 的text\n@5:这是同一个item 的text\n@6:这是同一个item 的text&quot;</span>);</div>
+<div class="line">item-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qstandarditem.html#setText">setText</a>(<span class="stringliteral">&quot;@1:这是同一个item 的text\n@2:这是同一个item 的text\n@3:这是同一个item 的text\n@4:这是同一个item 的text\n@5:这是同一个item 的text\n@6:这是同一个item 的text&quot;</span>);</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">//DViewItemAction() 的形参: 其参数 alignment = AlignLeft 或 AlignHCenter 或  AlignRight; 设置为 AlignTop, AlignVCenter, AlignBottom 也是无效的</span></div>
-<div class="line"><a class="code" href="classDViewItemAction.html">DViewItemAction</a> *act1 = <span class="keyword">new</span> <a class="code" href="classDViewItemAction.html">DViewItemAction</a>(Qt::AlignBottom, QSize(15, 15), QSize(50, 50));</div>
-<div class="line">act1-&gt;setText(<span class="stringliteral">&quot;act1&quot;</span>);</div>
-<div class="line">act1-&gt;setIcon(QIcon(<span class="stringliteral">&quot;/home/yuanyi/Desktop/dog.jpg&quot;</span>));</div>
-<div class="line"><a class="code" href="classDViewItemAction.html">DViewItemAction</a> *act2 = <span class="keyword">new</span> <a class="code" href="classDViewItemAction.html">DViewItemAction</a>(Qt::AlignVCenter, QSize(15, 15), QSize());</div>
-<div class="line">act2-&gt;setText(<span class="stringliteral">&quot;act2&quot;</span>);</div>
-<div class="line">act2-&gt;setIcon(QIcon(<span class="stringliteral">&quot;/home/yuanyi/Desktop/dog.jpg&quot;</span>));</div>
-<div class="line"><a class="code" href="classDViewItemAction.html">DViewItemAction</a> *act3 = <span class="keyword">new</span> <a class="code" href="classDViewItemAction.html">DViewItemAction</a>(Qt::AlignTop, QSize(15, 15), QSize(100, 50));</div>
-<div class="line">act3-&gt;setText(<span class="stringliteral">&quot;act3&quot;</span>);</div>
-<div class="line">act3-&gt;setIcon(QIcon(<span class="stringliteral">&quot;/home/yuanyi/Desktop/dog.jpg&quot;</span>));</div>
-<div class="line"><a class="code" href="classDViewItemAction.html">DViewItemAction</a> *act4 = <span class="keyword">new</span> <a class="code" href="classDViewItemAction.html">DViewItemAction</a>(Qt::AlignBottom, QSize(15, 15), QSize(100, 50));</div>
-<div class="line">act4-&gt;setText(<span class="stringliteral">&quot;act4&quot;</span>);</div>
-<div class="line">act4-&gt;setIcon(QIcon(<span class="stringliteral">&quot;/home/yuanyi/Desktop/dog.jpg&quot;</span>));</div>
+<div class="line"><a class="code" href="classDViewItemAction.html">DViewItemAction</a> *act1 = <span class="keyword">new</span> <a class="code" href="classDViewItemAction.html">DViewItemAction</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qt.html#AlignmentFlag-enum">Qt::AlignBottom</a>, <a class="codeRef" href="http://doc.qt.io/qt-5/qsize.html">QSize</a>(15, 15), <a class="codeRef" href="http://doc.qt.io/qt-5/qsize.html">QSize</a>(50, 50));</div>
+<div class="line">act1-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qaction.html#text-prop">setText</a>(<span class="stringliteral">&quot;act1&quot;</span>);</div>
+<div class="line">act1-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qaction.html#icon-prop">setIcon</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qicon.html">QIcon</a>(<span class="stringliteral">&quot;/home/yuanyi/Desktop/dog.jpg&quot;</span>));</div>
+<div class="line"><a class="code" href="classDViewItemAction.html">DViewItemAction</a> *act2 = <span class="keyword">new</span> <a class="code" href="classDViewItemAction.html">DViewItemAction</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qt.html#AlignmentFlag-enum">Qt::AlignVCenter</a>, <a class="codeRef" href="http://doc.qt.io/qt-5/qsize.html">QSize</a>(15, 15), <a class="codeRef" href="http://doc.qt.io/qt-5/qsize.html">QSize</a>());</div>
+<div class="line">act2-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qaction.html#text-prop">setText</a>(<span class="stringliteral">&quot;act2&quot;</span>);</div>
+<div class="line">act2-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qaction.html#icon-prop">setIcon</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qicon.html">QIcon</a>(<span class="stringliteral">&quot;/home/yuanyi/Desktop/dog.jpg&quot;</span>));</div>
+<div class="line"><a class="code" href="classDViewItemAction.html">DViewItemAction</a> *act3 = <span class="keyword">new</span> <a class="code" href="classDViewItemAction.html">DViewItemAction</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qt.html#AlignmentFlag-enum">Qt::AlignTop</a>, <a class="codeRef" href="http://doc.qt.io/qt-5/qsize.html">QSize</a>(15, 15), <a class="codeRef" href="http://doc.qt.io/qt-5/qsize.html">QSize</a>(100, 50));</div>
+<div class="line">act3-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qaction.html#text-prop">setText</a>(<span class="stringliteral">&quot;act3&quot;</span>);</div>
+<div class="line">act3-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qaction.html#icon-prop">setIcon</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qicon.html">QIcon</a>(<span class="stringliteral">&quot;/home/yuanyi/Desktop/dog.jpg&quot;</span>));</div>
+<div class="line"><a class="code" href="classDViewItemAction.html">DViewItemAction</a> *act4 = <span class="keyword">new</span> <a class="code" href="classDViewItemAction.html">DViewItemAction</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qt.html#AlignmentFlag-enum">Qt::AlignBottom</a>, <a class="codeRef" href="http://doc.qt.io/qt-5/qsize.html">QSize</a>(15, 15), <a class="codeRef" href="http://doc.qt.io/qt-5/qsize.html">QSize</a>(100, 50));</div>
+<div class="line">act4-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qaction.html#text-prop">setText</a>(<span class="stringliteral">&quot;act4&quot;</span>);</div>
+<div class="line">act4-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qaction.html#icon-prop">setIcon</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qicon.html">QIcon</a>(<span class="stringliteral">&quot;/home/yuanyi/Desktop/dog.jpg&quot;</span>));</div>
 <div class="line"> </div>
-<div class="line">DViewItemActionList *list = <span class="keyword">new</span> DViewItemActionList();</div>
-<div class="line">list-&gt;append(act1);</div>
-<div class="line">list-&gt;append(act2);</div>
-<div class="line">list-&gt;append(act3);</div>
-<div class="line">list-&gt;append(act4);</div>
+<div class="line"><a class="codeRef" href="http://doc.qt.io/qt-5/qlist.html">DViewItemActionList</a> *list = <span class="keyword">new</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qlist.html">DViewItemActionList</a>();</div>
+<div class="line">list-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qlist.html#append">append</a>(act1);</div>
+<div class="line">list-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qlist.html#append">append</a>(act2);</div>
+<div class="line">list-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qlist.html#append">append</a>(act3);</div>
+<div class="line">list-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qlist.html#append">append</a>(act4);</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">//edge实参: TopEdg, BottomEdge (主要设置前面两个参数), LeftEdge, RightEdge</span></div>
-<div class="line">item-&gt;<a class="code" href="classDStandardItem.html#ad5ae056693628b762f745882d44215f3">setActionList</a>(Qt::LeftEdge, *list);</div>
-<div class="line">model-&gt;appendRow(item);</div>
+<div class="line">item-&gt;<a class="code" href="classDStandardItem.html#ad5ae056693628b762f745882d44215f3">setActionList</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qt.html#Edge-enum">Qt::LeftEdge</a>, *list);</div>
+<div class="line">model-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qstandarditemmodel.html#appendRow">appendRow</a>(item);</div>
 <div class="line"> </div>
-<div class="line">wid-&gt;setCentralWidget(view);</div>
-<div class="line">wid-&gt;show();</div>
+<div class="line">wid-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qmainwindow.html#setCentralWidget">setCentralWidget</a>(view);</div>
+<div class="line">wid-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html#show">show</a>();</div>
 <div class="ttc" id="aclassDListView_html"><div class="ttname"><a href="classDListView.html">DListView</a></div><div class="ttdef"><b>Definition:</b> dlistview.h:35</div></div>
 <div class="ttc" id="aclassDStandardItem_html"><div class="ttname"><a href="classDStandardItem.html">DStandardItem</a></div><div class="ttdef"><b>Definition:</b> dstyleditemdelegate.h:106</div></div>
 <div class="ttc" id="aclassDStandardItem_html_ad5ae056693628b762f745882d44215f3"><div class="ttname"><a href="classDStandardItem.html#ad5ae056693628b762f745882d44215f3">DStandardItem::setActionList</a></div><div class="ttdeci">void setActionList(Qt::Edge edge, const DViewItemActionList &amp;list)</div><div class="ttdoc">设置 actionList edge 选用数值方向的枚举值, 表示设置 list 是在本对象 DStandardItem 的哪一个区域； edge是相对于 item 的内容区域的，内容区域指的是 ite...</div><div class="ttdef"><b>Definition:</b> dstyleditemdelegate.cpp:1458</div></div>
 <div class="ttc" id="aclassDViewItemAction_html"><div class="ttname"><a href="classDViewItemAction.html">DViewItemAction</a></div><div class="ttdef"><b>Definition:</b> dstyleditemdelegate.h:26</div></div>
+<div class="ttc" id="aqaction_html_icon-prop"><div class="ttname"><a href="http://doc.qt.io/qt-5/qaction.html#icon-prop">QAction::setIcon</a></div><div class="ttdeci">void setIcon(const QIcon &amp;icon)</div></div>
+<div class="ttc" id="aqaction_html_text-prop"><div class="ttname"><a href="http://doc.qt.io/qt-5/qaction.html#text-prop">QAction::setText</a></div><div class="ttdeci">void setText(const QString &amp;text)</div></div>
+<div class="ttc" id="aqicon_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qicon.html">QIcon</a></div></div>
+<div class="ttc" id="aqlist_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qlist.html">QList</a></div></div>
+<div class="ttc" id="aqlist_html_append"><div class="ttname"><a href="http://doc.qt.io/qt-5/qlist.html#append">QList::append</a></div><div class="ttdeci">void append(const T &amp;value)</div></div>
+<div class="ttc" id="aqmainwindow_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qmainwindow.html">QMainWindow</a></div></div>
+<div class="ttc" id="aqmainwindow_html_setCentralWidget"><div class="ttname"><a href="http://doc.qt.io/qt-5/qmainwindow.html#setCentralWidget">QMainWindow::setCentralWidget</a></div><div class="ttdeci">void setCentralWidget(QWidget *widget)</div></div>
+<div class="ttc" id="aqsize_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qsize.html">QSize</a></div></div>
+<div class="ttc" id="aqstandarditem_html_setText"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstandarditem.html#setText">QStandardItem::setText</a></div><div class="ttdeci">void setText(const QString &amp;text)</div></div>
+<div class="ttc" id="aqstandarditemmodel_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstandarditemmodel.html">QStandardItemModel</a></div></div>
+<div class="ttc" id="aqstandarditemmodel_html_appendRow"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstandarditemmodel.html#appendRow">QStandardItemModel::appendRow</a></div><div class="ttdeci">void appendRow(const QList&lt; QStandardItem * &gt; &amp;items)</div></div>
+<div class="ttc" id="aqt_html_AlignmentFlag-enum"><div class="ttname"><a href="http://doc.qt.io/qt-5/qt.html#AlignmentFlag-enum">Qt::AlignBottom</a></div><div class="ttdeci">AlignBottom</div></div>
+<div class="ttc" id="aqt_html_Edge-enum"><div class="ttname"><a href="http://doc.qt.io/qt-5/qt.html#Edge-enum">Qt::LeftEdge</a></div><div class="ttdeci">LeftEdge</div></div>
+<div class="ttc" id="aqwidget_html_resize-1"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html#resize-1">QWidget::resize</a></div><div class="ttdeci">void resize(int w, int h)</div></div>
+<div class="ttc" id="aqwidget_html_show"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html#show">QWidget::show</a></div><div class="ttdeci">void show()</div></div>
 </div><!-- fragment --><p>++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++</p>
 <p>setActionList(Qt::BottomEdge, *list)　的　BottomEdge　为竖直方向的枚举值时候: TopEdge, BottomEdge,　其对应　alignment　枚举数值只有如下的有效：</p>
 <p>其参数 alignment 为如下值时候(才有效): \list </p><ul>
@@ -215,44 +230,44 @@ $(document).ready(function(){initNavTree('classDtk_1_1Widget_1_1DViewItemAction.
 <li>AlignHCenter </li>
 <li>AlignRight \endlist</li>
 </ul>
-<p>此处举一个小例子, 可以自行修改相关参数, 查看结果, 理解参数: </p><div class="fragment"><div class="line">QMainWindow *wid = <span class="keyword">new</span> QMainWindow();</div>
-<div class="line">wid-&gt;resize(800, 600);</div>
+<p>此处举一个小例子, 可以自行修改相关参数, 查看结果, 理解参数: </p><div class="fragment"><div class="line"><a class="codeRef" href="http://doc.qt.io/qt-5/qmainwindow.html">QMainWindow</a> *wid = <span class="keyword">new</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qmainwindow.html">QMainWindow</a>();</div>
+<div class="line">wid-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html#resize-1">resize</a>(800, 600);</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">//视图和模型</span></div>
 <div class="line"><a class="code" href="classDListView.html">DListView</a> *view = <span class="keyword">new</span> <a class="code" href="classDListView.html">DListView</a>(wid);</div>
-<div class="line">QStandardItemModel *model = <span class="keyword">new</span> QStandardItemModel(view);</div>
+<div class="line"><a class="codeRef" href="http://doc.qt.io/qt-5/qstandarditemmodel.html">QStandardItemModel</a> *model = <span class="keyword">new</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstandarditemmodel.html">QStandardItemModel</a>(view);</div>
 <div class="line">view-&gt;setModel(model);</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">//标准DStandardItem item</span></div>
 <div class="line"><a class="code" href="classDStandardItem.html">DStandardItem</a> *item = <span class="keyword">new</span> <a class="code" href="classDStandardItem.html">DStandardItem</a>();</div>
-<div class="line">item-&gt;setText(<span class="stringliteral">&quot;这是一个item 的text&quot;</span>);</div>
+<div class="line">item-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qstandarditem.html#setText">setText</a>(<span class="stringliteral">&quot;这是一个item 的text&quot;</span>);</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">//DViewItemAction() 的形参: 其参数 alignment = AlignLeft 或 AlignHCenter 或  AlignRight; 设置为 AlignTop, AlignVCenter, AlignBottom 也是无效的</span></div>
-<div class="line"><a class="code" href="classDViewItemAction.html">DViewItemAction</a> *act1 = <span class="keyword">new</span> <a class="code" href="classDViewItemAction.html">DViewItemAction</a>(Qt::AlignLeft, QSize(15, 15), QSize(50, 50));</div>
-<div class="line">act1-&gt;setText(<span class="stringliteral">&quot;act1&quot;</span>);</div>
-<div class="line">act1-&gt;setIcon(QIcon(<span class="stringliteral">&quot;/home/yuanyi/Desktop/dog.jpg&quot;</span>));</div>
-<div class="line"><a class="code" href="classDViewItemAction.html">DViewItemAction</a> *act2 = <span class="keyword">new</span> <a class="code" href="classDViewItemAction.html">DViewItemAction</a>(Qt::AlignRight, QSize(15, 15), QSize());</div>
-<div class="line">act2-&gt;setText(<span class="stringliteral">&quot;act2&quot;</span>);</div>
-<div class="line">act2-&gt;setIcon(QIcon(<span class="stringliteral">&quot;/home/yuanyi/Desktop/dog.jpg&quot;</span>));</div>
-<div class="line"><a class="code" href="classDViewItemAction.html">DViewItemAction</a> *act3 = <span class="keyword">new</span> <a class="code" href="classDViewItemAction.html">DViewItemAction</a>(Qt::AlignHCenter, QSize(15, 15), QSize(100, 50));</div>
-<div class="line">act3-&gt;setText(<span class="stringliteral">&quot;act3&quot;</span>);</div>
-<div class="line">act3-&gt;setIcon(QIcon(<span class="stringliteral">&quot;/home/yuanyi/Desktop/dog.jpg&quot;</span>));</div>
-<div class="line"><a class="code" href="classDViewItemAction.html">DViewItemAction</a> *act4 = <span class="keyword">new</span> <a class="code" href="classDViewItemAction.html">DViewItemAction</a>(Qt::AlignLeft, QSize(15, 15), QSize(100, 50));</div>
-<div class="line">act4-&gt;setText(<span class="stringliteral">&quot;act4&quot;</span>);</div>
-<div class="line">act4-&gt;setIcon(QIcon(<span class="stringliteral">&quot;/home/yuanyi/Desktop/dog.jpg&quot;</span>));</div>
+<div class="line"><a class="code" href="classDViewItemAction.html">DViewItemAction</a> *act1 = <span class="keyword">new</span> <a class="code" href="classDViewItemAction.html">DViewItemAction</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qt.html#AlignmentFlag-enum">Qt::AlignLeft</a>, <a class="codeRef" href="http://doc.qt.io/qt-5/qsize.html">QSize</a>(15, 15), <a class="codeRef" href="http://doc.qt.io/qt-5/qsize.html">QSize</a>(50, 50));</div>
+<div class="line">act1-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qaction.html#text-prop">setText</a>(<span class="stringliteral">&quot;act1&quot;</span>);</div>
+<div class="line">act1-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qaction.html#icon-prop">setIcon</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qicon.html">QIcon</a>(<span class="stringliteral">&quot;/home/yuanyi/Desktop/dog.jpg&quot;</span>));</div>
+<div class="line"><a class="code" href="classDViewItemAction.html">DViewItemAction</a> *act2 = <span class="keyword">new</span> <a class="code" href="classDViewItemAction.html">DViewItemAction</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qt.html#AlignmentFlag-enum">Qt::AlignRight</a>, <a class="codeRef" href="http://doc.qt.io/qt-5/qsize.html">QSize</a>(15, 15), <a class="codeRef" href="http://doc.qt.io/qt-5/qsize.html">QSize</a>());</div>
+<div class="line">act2-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qaction.html#text-prop">setText</a>(<span class="stringliteral">&quot;act2&quot;</span>);</div>
+<div class="line">act2-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qaction.html#icon-prop">setIcon</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qicon.html">QIcon</a>(<span class="stringliteral">&quot;/home/yuanyi/Desktop/dog.jpg&quot;</span>));</div>
+<div class="line"><a class="code" href="classDViewItemAction.html">DViewItemAction</a> *act3 = <span class="keyword">new</span> <a class="code" href="classDViewItemAction.html">DViewItemAction</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qt.html#AlignmentFlag-enum">Qt::AlignHCenter</a>, <a class="codeRef" href="http://doc.qt.io/qt-5/qsize.html">QSize</a>(15, 15), <a class="codeRef" href="http://doc.qt.io/qt-5/qsize.html">QSize</a>(100, 50));</div>
+<div class="line">act3-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qaction.html#text-prop">setText</a>(<span class="stringliteral">&quot;act3&quot;</span>);</div>
+<div class="line">act3-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qaction.html#icon-prop">setIcon</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qicon.html">QIcon</a>(<span class="stringliteral">&quot;/home/yuanyi/Desktop/dog.jpg&quot;</span>));</div>
+<div class="line"><a class="code" href="classDViewItemAction.html">DViewItemAction</a> *act4 = <span class="keyword">new</span> <a class="code" href="classDViewItemAction.html">DViewItemAction</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qt.html#AlignmentFlag-enum">Qt::AlignLeft</a>, <a class="codeRef" href="http://doc.qt.io/qt-5/qsize.html">QSize</a>(15, 15), <a class="codeRef" href="http://doc.qt.io/qt-5/qsize.html">QSize</a>(100, 50));</div>
+<div class="line">act4-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qaction.html#text-prop">setText</a>(<span class="stringliteral">&quot;act4&quot;</span>);</div>
+<div class="line">act4-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qaction.html#icon-prop">setIcon</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qicon.html">QIcon</a>(<span class="stringliteral">&quot;/home/yuanyi/Desktop/dog.jpg&quot;</span>));</div>
 <div class="line"> </div>
-<div class="line">DViewItemActionList *list = <span class="keyword">new</span> DViewItemActionList();</div>
-<div class="line">list-&gt;append(act1);</div>
-<div class="line">list-&gt;append(act2);</div>
-<div class="line">list-&gt;append(act3);</div>
-<div class="line">list-&gt;append(act4);</div>
+<div class="line"><a class="codeRef" href="http://doc.qt.io/qt-5/qlist.html">DViewItemActionList</a> *list = <span class="keyword">new</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qlist.html">DViewItemActionList</a>();</div>
+<div class="line">list-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qlist.html#append">append</a>(act1);</div>
+<div class="line">list-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qlist.html#append">append</a>(act2);</div>
+<div class="line">list-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qlist.html#append">append</a>(act3);</div>
+<div class="line">list-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qlist.html#append">append</a>(act4);</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">//edge实参: TopEdg, BottomEdge (主要设置前面两个参数), LeftEdge, RightEdge</span></div>
-<div class="line">item-&gt;<a class="code" href="classDStandardItem.html#ad5ae056693628b762f745882d44215f3">setActionList</a>(Qt::BottomEdge, *list);</div>
-<div class="line">model-&gt;appendRow(item);</div>
+<div class="line">item-&gt;<a class="code" href="classDStandardItem.html#ad5ae056693628b762f745882d44215f3">setActionList</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qt.html#Edge-enum">Qt::BottomEdge</a>, *list);</div>
+<div class="line">model-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qstandarditemmodel.html#appendRow">appendRow</a>(item);</div>
 <div class="line"> </div>
-<div class="line">wid-&gt;setCentralWidget(view);</div>
-<div class="line">wid-&gt;show();</div>
+<div class="line">wid-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qmainwindow.html#setCentralWidget">setCentralWidget</a>(view);</div>
+<div class="line">wid-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html#show">show</a>();</div>
 </div><!-- fragment --><p> <em>alignment</em> 设置本控件对象(在父控件的)方向位置: 居左, 居中, 居右 (其他枚举值此处无效) <em>iconSize</em> 本控件的图标 icon 的大小 </p>
 </div><hr/>该类的文档由以下文件生成:<ul>
 <li>dtkwidget/src/widgets/dstyleditemdelegate.cpp</li>
@@ -264,7 +279,7 @@ $(document).ready(function(){initNavTree('classDtk_1_1Widget_1_1DViewItemAction.
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classDtk_1_1Widget_1_1DViewItemAction.html">DViewItemAction</a></li>
-    <li class="footer">文档生成时间:2023-01-03-09:26  +00</li>
+    <li class="footer">文档生成时间:2023-01-03-09:52  +00</li>
     <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
     <li class="footer">制作者:deepin doc doc go SIG</li>
     <li class="footer">文档使用CC-BY-4.0共享 </a>

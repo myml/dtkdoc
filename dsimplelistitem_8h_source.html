@@ -166,7 +166,7 @@ $(document).ready(function(){initNavTree('dsimplelistitem_8h_source.html',''); i
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;DWIDGET_BEGIN_NAMESPACE</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classDSimpleListItem.html">   14</a></span>&#160;<span class="keyword">class </span>LIBDTKWIDGETSHARED_EXPORT <a class="code" href="classDSimpleListItem.html">DSimpleListItem</a> : <span class="keyword">public</span> QObject</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classDSimpleListItem.html">   14</a></span>&#160;<span class="keyword">class </span>LIBDTKWIDGETSHARED_EXPORT <a class="code" href="classDSimpleListItem.html">DSimpleListItem</a> : <span class="keyword">public</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    Q_OBJECT</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
@@ -194,7 +194,7 @@ $(document).ready(function(){initNavTree('dsimplelistitem_8h_source.html',''); i
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">     * \isHover current item is hovered, you can draw hover effect under content when isHover is true</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">     */</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classDSimpleListItem.html#aeb57f8291ed21f59e93389d3c6303e35">   42</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classDSimpleListItem.html#aeb57f8291ed21f59e93389d3c6303e35">drawBackground</a>(QRect rect, QPainter *painter, <span class="keywordtype">int</span> index, <span class="keywordtype">bool</span> isSelect, <span class="keywordtype">bool</span> isHover)=0;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classDSimpleListItem.html#aeb57f8291ed21f59e93389d3c6303e35">   42</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classDSimpleListItem.html#aeb57f8291ed21f59e93389d3c6303e35">drawBackground</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qrect.html">QRect</a> rect, <a class="codeRef" href="http://doc.qt.io/qt-5/qpainter.html">QPainter</a> *painter, <span class="keywordtype">int</span> index, <span class="keywordtype">bool</span> isSelect, <span class="keywordtype">bool</span> isHover)=0;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">/*</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">     * The interface function that used to draw foreground of DSimpleListItem.</span></div>
@@ -207,7 +207,7 @@ $(document).ready(function(){initNavTree('dsimplelistitem_8h_source.html',''); i
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">     * \isHover current item is hovered, you can draw hover effect under content when isHover is true</span></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">     */</span></div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classDSimpleListItem.html#abb17ddcebef5fd622099753afe606adf">   55</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classDSimpleListItem.html#abb17ddcebef5fd622099753afe606adf">drawForeground</a>(QRect rect, QPainter *painter, <span class="keywordtype">int</span> column, <span class="keywordtype">int</span> index, <span class="keywordtype">bool</span> isSelect, <span class="keywordtype">bool</span> isHover)=0;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classDSimpleListItem.html#abb17ddcebef5fd622099753afe606adf">   55</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classDSimpleListItem.html#abb17ddcebef5fd622099753afe606adf">drawForeground</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qrect.html">QRect</a> rect, <a class="codeRef" href="http://doc.qt.io/qt-5/qpainter.html">QPainter</a> *painter, <span class="keywordtype">int</span> column, <span class="keywordtype">int</span> index, <span class="keywordtype">bool</span> isSelect, <span class="keywordtype">bool</span> isHover)=0;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;};</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;DWIDGET_END_NAMESPACE</div>
@@ -217,6 +217,9 @@ $(document).ready(function(){initNavTree('dsimplelistitem_8h_source.html',''); i
 <div class="ttc" id="aclassDSimpleListItem_html_abb17ddcebef5fd622099753afe606adf"><div class="ttname"><a href="classDSimpleListItem.html#abb17ddcebef5fd622099753afe606adf">DSimpleListItem::drawForeground</a></div><div class="ttdeci">virtual void drawForeground(QRect rect, QPainter *painter, int column, int index, bool isSelect, bool isHover)=0</div><div class="ttdoc">drawForeground 用于绘制内容的接口函数.</div></div>
 <div class="ttc" id="aclassDSimpleListItem_html_ac39af04ed2ae370f25b0e876af8ab28d"><div class="ttname"><a href="classDSimpleListItem.html#ac39af04ed2ae370f25b0e876af8ab28d">DSimpleListItem::sameAs</a></div><div class="ttdeci">virtual bool sameAs(DSimpleListItem *item)=0</div><div class="ttdoc">此接口是用来比较两个 item 的函数.</div></div>
 <div class="ttc" id="aclassDSimpleListItem_html_aeb57f8291ed21f59e93389d3c6303e35"><div class="ttname"><a href="classDSimpleListItem.html#aeb57f8291ed21f59e93389d3c6303e35">DSimpleListItem::drawBackground</a></div><div class="ttdeci">virtual void drawBackground(QRect rect, QPainter *painter, int index, bool isSelect, bool isHover)=0</div><div class="ttdoc">drawBackground 用于绘制背景的接口函数.</div></div>
+<div class="ttc" id="aqobject_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html">QObject</a></div></div>
+<div class="ttc" id="aqpainter_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qpainter.html">QPainter</a></div></div>
+<div class="ttc" id="aqrect_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qrect.html">QRect</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.4-->
@@ -224,7 +227,7 @@ $(document).ready(function(){initNavTree('dsimplelistitem_8h_source.html',''); i
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_cc1fdbae730d0dba18db2b924667b662.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_6819db61f31aacd6e31b437a606a4041.html">include</a></li><li class="navelem"><a class="el" href="dir_6719ee6af2149ba01bce2af57814b9e8.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_4faf4521db2f3764f9e00575717749e8.html">widgets</a></li><li class="navelem"><b>dsimplelistitem.h</b></li>
-    <li class="footer">文档生成时间:2023-01-03-09:26  +00</li>
+    <li class="footer">文档生成时间:2023-01-03-09:52  +00</li>
     <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
     <li class="footer">制作者:deepin doc doc go SIG</li>
     <li class="footer">文档使用CC-BY-4.0共享 </a>

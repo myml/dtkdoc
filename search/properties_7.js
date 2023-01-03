@@ -1,11 +1,23 @@
 var searchData=
 [
-  ['imagesource_4088',['imageSource',['../classDLoadingIndicator.html#ae117367f775533a5c6be22ebd0ec7dba',1,'DLoadingIndicator']]],
-  ['inputmode_4089',['inputMode',['../classDInputDialog.html#a979b3976777ba1ecc121e6dd67a1ca8f',1,'DInputDialog']]],
-  ['intmaximum_4090',['intMaximum',['../classDInputDialog.html#ade7da6e4faebe51bdea4b8f4db5cb020',1,'DInputDialog']]],
-  ['intminimum_4091',['intMinimum',['../classDInputDialog.html#a41156a2fefb1790727dc93895a8cf6a0',1,'DInputDialog']]],
-  ['intstep_4092',['intStep',['../classDInputDialog.html#a61f80f8e07deeb51cb809318dff840aa',1,'DInputDialog']]],
-  ['intvalue_4093',['intValue',['../classDInputDialog.html#a884c8f1b31c1ba76dd45c9231e2a7284',1,'DInputDialog']]],
-  ['isechomode_4094',['isEchoMode',['../classDPasswordEdit.html#a71cb87707ffbb69109000c0ada23bb82',1,'DPasswordEdit']]],
-  ['ismaximized_4095',['isMaximized',['../classDWindowMaxButton.html#a644b336a9441697e5074a45c26dfde60',1,'DWindowMaxButton']]]
+  ['handlewidth_35674',['handleWidth',['http://doc.qt.io/qt-5/qsplitter.html#handleWidth-prop',1,'QSplitter']]],
+  ['hasblurwindow_35675',['hasBlurWindow',['../classDWindowManagerHelper.html#a578fb91ce8d8e2e8da4a5fab2289588f',1,'DWindowManagerHelper']]],
+  ['hascomposite_35676',['hasComposite',['../classDWindowManagerHelper.html#a077754f2223ef12dc66d46dc10386ac8',1,'DWindowManagerHelper']]],
+  ['hashotspot_35677',['hasHotSpot',['http://doc.qt.io/qt-5/qgesture.html#hasHotSpot-prop',1,'QGesture']]],
+  ['hasnotitlebar_35678',['hasNoTitlebar',['../classDWindowManagerHelper.html#abeae2e698f8eed570c5ad5fc79fb41ae',1,'DWindowManagerHelper']]],
+  ['hasselectedtext_35679',['hasSelectedText',['http://doc.qt.io/qt-5/qlabel.html#hasSelectedText-prop',1,'QLabel::hasSelectedText()'],['http://doc.qt.io/qt-5/qlineedit.html#hasSelectedText-prop',1,'QLineEdit::hasSelectedText()']]],
+  ['haswallpapereffect_35680',['hasWallpaperEffect',['../classDWindowManagerHelper.html#a6d058b14a94b10f269ce7ebeea9c1afd',1,'DWindowManagerHelper']]],
+  ['headerhidden_35681',['headerHidden',['http://doc.qt.io/qt-5/qtreeview.html#headerHidden-prop',1,'QTreeView']]],
+  ['height_35682',['height',['http://doc.qt.io/qt-5/qwidget.html#height-prop',1,'QWidget::height()'],['http://doc.qt.io/qt-5/qwindow.html#height-prop',1,'QWindow::height()']]],
+  ['highlightsections_35683',['highlightSections',['http://doc.qt.io/qt-5/qheaderview.html#highlightSections-prop',1,'QHeaderView']]],
+  ['historytype_35684',['historyType',['http://doc.qt.io/qt-5/qhistorystate.html#historyType-prop',1,'QHistoryState']]],
+  ['horizontalcenter_35685',['horizontalCenter',['../classDAnchorsBase.html#a312b8194aa10f880a1b4d96557234405',1,'DAnchorsBase']]],
+  ['horizontalcenteroffset_35686',['horizontalCenterOffset',['../classDAnchorsBase.html#aa9e852bbe6c864772dad969ee1bec1d2',1,'DAnchorsBase']]],
+  ['horizontaldirection_35687',['horizontalDirection',['http://doc.qt.io/qt-5/qswipegesture.html#horizontalDirection-prop',1,'QSwipeGesture']]],
+  ['horizontalheaderformat_35688',['horizontalHeaderFormat',['http://doc.qt.io/qt-5/qcalendarwidget.html#horizontalHeaderFormat-prop',1,'QCalendarWidget']]],
+  ['horizontalscrollbarpolicy_35689',['horizontalScrollBarPolicy',['http://doc.qt.io/qt-5/qabstractscrollarea.html#horizontalScrollBarPolicy-prop',1,'QAbstractScrollArea']]],
+  ['horizontalscrollmode_35690',['horizontalScrollMode',['http://doc.qt.io/qt-5/qabstractitemview.html#horizontalScrollMode-prop',1,'QAbstractItemView']]],
+  ['horizontalspacing_35691',['horizontalSpacing',['http://doc.qt.io/qt-5/qformlayout.html#horizontalSpacing-prop',1,'QFormLayout::horizontalSpacing()'],['http://doc.qt.io/qt-5/qgridlayout.html#horizontalSpacing-prop',1,'QGridLayout::horizontalSpacing()']]],
+  ['hotspot_35692',['hotSpot',['http://doc.qt.io/qt-5/qgesture.html#hotSpot-prop',1,'QGesture']]],
+  ['html_35693',['html',['http://doc.qt.io/qt-5/qtextedit.html#html-prop',1,'QTextEdit']]]
 ];

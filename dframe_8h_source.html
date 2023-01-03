@@ -169,43 +169,43 @@ $(document).ready(function(){initNavTree('dframe_8h_source.html',''); initResiza
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;DWIDGET_BEGIN_NAMESPACE</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">class </span><a class="code" href="classDFramePrivate.html">DFramePrivate</a>;</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classDFrame.html">   17</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDFrame.html">DFrame</a> : <span class="keyword">public</span> QFrame, <span class="keyword">public</span> DCORE_NAMESPACE::DObject</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classDFrame.html">   17</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDFrame.html">DFrame</a> : <span class="keyword">public</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qframe.html">QFrame</a>, <span class="keyword">public</span> DCORE_NAMESPACE::DObject</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">Q_OBJECT</a></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    D_DECLARE_PRIVATE(<a class="code" href="classDFrame.html">DFrame</a>)</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDFrame.html#ab8aea70683e87356f13b12c3232b11fd">DFrame</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDFrame.html#ab8aea70683e87356f13b12c3232b11fd">DFrame</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a> *<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a> = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDFrame.html#ab70885116a3f88b39f6b746850b3b93d">setFrameRounded</a>(<span class="keywordtype">bool</span> on);</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDFrame.html#aa7e121179b92692772c6eeb971948e0f">setBackgroundRole</a>(DGUI_NAMESPACE::DPalette::ColorType type);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">using</span> QFrame::setBackgroundRole;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">using</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html#setBackgroundRole">QFrame::setBackgroundRole</a>;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="classDFrame.html#ab8aea70683e87356f13b12c3232b11fd">DFrame</a>(<a class="code" href="classDFramePrivate.html">DFramePrivate</a> &amp;dd, QWidget *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="classDFrame.html#ab8aea70683e87356f13b12c3232b11fd">DFrame</a>(<a class="code" href="classDFramePrivate.html">DFramePrivate</a> &amp;dd, <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a> *<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a> = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">void</span> paintEvent(QPaintEvent *event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">void</span> paintEvent(<a class="codeRef" href="http://doc.qt.io/qt-5/qpaintevent.html">QPaintEvent</a> *<a class="codeRef" href="http://doc.qt.io/qt-5/qframe.html#event">event</a>) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;};</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classDHorizontalLine.html">   35</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDHorizontalLine.html">DHorizontalLine</a> : <span class="keyword">public</span> QFrame</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classDHorizontalLine.html">   35</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDHorizontalLine.html">DHorizontalLine</a> : <span class="keyword">public</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qframe.html">QFrame</a></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">Q_OBJECT</a></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDHorizontalLine.html">DHorizontalLine</a>(QWidget* parent = <span class="keyword">nullptr</span>, Qt::WindowFlags f = Qt::WindowFlags())</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        : QFrame(parent, f)</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDHorizontalLine.html">DHorizontalLine</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a>* <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a> = <span class="keyword">nullptr</span>, <a class="codeRef" href="http://doc.qt.io/qt-5/qt.html#WindowType-enum">Qt::WindowFlags</a> f = <a class="codeRef" href="http://doc.qt.io/qt-5/qt.html#WindowType-enum">Qt::WindowFlags</a>())</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        : <a class="codeRef" href="http://doc.qt.io/qt-5/qframe.html#QFrame">QFrame</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a>, f)</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        setFrameShape(HLine);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <a class="codeRef" href="http://doc.qt.io/qt-5/qframe.html#frameShape-prop">setFrameShape</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qframe.html#Shape-enum">HLine</a>);</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;};</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classDVerticalLine.html">   46</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDVerticalLine.html">DVerticalLine</a> : <span class="keyword">public</span> QFrame</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classDVerticalLine.html">   46</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDVerticalLine.html">DVerticalLine</a> : <span class="keyword">public</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qframe.html">QFrame</a></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">Q_OBJECT</a></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDVerticalLine.html">DVerticalLine</a>(QWidget* parent = <span class="keyword">nullptr</span>, Qt::WindowFlags f = Qt::WindowFlags())</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        : QFrame(parent, f)</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDVerticalLine.html">DVerticalLine</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a>* <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a> = <span class="keyword">nullptr</span>, <a class="codeRef" href="http://doc.qt.io/qt-5/qt.html#WindowType-enum">Qt::WindowFlags</a> f = <a class="codeRef" href="http://doc.qt.io/qt-5/qt.html#WindowType-enum">Qt::WindowFlags</a>())</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        : <a class="codeRef" href="http://doc.qt.io/qt-5/qframe.html#QFrame">QFrame</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a>, f)</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        setFrameShape(VLine);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <a class="codeRef" href="http://doc.qt.io/qt-5/qframe.html#frameShape-prop">setFrameShape</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qframe.html#Shape-enum">VLine</a>);</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    }</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;};</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
@@ -219,6 +219,17 @@ $(document).ready(function(){initNavTree('dframe_8h_source.html',''); initResiza
 <div class="ttc" id="aclassDFrame_html_ab8aea70683e87356f13b12c3232b11fd"><div class="ttname"><a href="classDFrame.html#ab8aea70683e87356f13b12c3232b11fd">DFrame::DFrame</a></div><div class="ttdeci">DFrame(QWidget *parent=nullptr)</div><div class="ttdoc">DFrame::DFrame 用于其他需要边框的widget的基类 parent</div><div class="ttdef"><b>Definition:</b> dframe.cpp:29</div></div>
 <div class="ttc" id="aclassDHorizontalLine_html"><div class="ttname"><a href="classDHorizontalLine.html">DHorizontalLine</a></div><div class="ttdef"><b>Definition:</b> dframe.h:36</div></div>
 <div class="ttc" id="aclassDVerticalLine_html"><div class="ttname"><a href="classDVerticalLine.html">DVerticalLine</a></div><div class="ttdef"><b>Definition:</b> dframe.h:47</div></div>
+<div class="ttc" id="aqframe_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qframe.html">QFrame</a></div></div>
+<div class="ttc" id="aqframe_html_QFrame"><div class="ttname"><a href="http://doc.qt.io/qt-5/qframe.html#QFrame">QFrame::QFrame</a></div><div class="ttdeci">QFrame(QWidget *parent, Qt::WindowFlags f)</div></div>
+<div class="ttc" id="aqframe_html_Shape-enum"><div class="ttname"><a href="http://doc.qt.io/qt-5/qframe.html#Shape-enum">QFrame::HLine</a></div><div class="ttdeci">HLine</div></div>
+<div class="ttc" id="aqframe_html_event"><div class="ttname"><a href="http://doc.qt.io/qt-5/qframe.html#event">QFrame::event</a></div><div class="ttdeci">virtual bool event(QEvent *e) override</div></div>
+<div class="ttc" id="aqframe_html_frameShape-prop"><div class="ttname"><a href="http://doc.qt.io/qt-5/qframe.html#frameShape-prop">QFrame::setFrameShape</a></div><div class="ttdeci">void setFrameShape(QFrame::Shape)</div></div>
+<div class="ttc" id="aqobject_html_Q_OBJECT"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">QObject::Q_OBJECT</a></div><div class="ttdeci">Q_OBJECTQ_OBJECT</div></div>
+<div class="ttc" id="aqobject_html_parent"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#parent">QObject::parent</a></div><div class="ttdeci">QObject * parent() const const</div></div>
+<div class="ttc" id="aqpaintevent_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qpaintevent.html">QPaintEvent</a></div></div>
+<div class="ttc" id="aqt_html_WindowType-enum"><div class="ttname"><a href="http://doc.qt.io/qt-5/qt.html#WindowType-enum">Qt::WindowFlags</a></div><div class="ttdeci">typedef WindowFlags</div></div>
+<div class="ttc" id="aqwidget_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a></div></div>
+<div class="ttc" id="aqwidget_html_setBackgroundRole"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html#setBackgroundRole">QWidget::setBackgroundRole</a></div><div class="ttdeci">void setBackgroundRole(QPalette::ColorRole role)</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.4-->
@@ -226,7 +237,7 @@ $(document).ready(function(){initNavTree('dframe_8h_source.html',''); initResiza
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_cc1fdbae730d0dba18db2b924667b662.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_6819db61f31aacd6e31b437a606a4041.html">include</a></li><li class="navelem"><a class="el" href="dir_6719ee6af2149ba01bce2af57814b9e8.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_4faf4521db2f3764f9e00575717749e8.html">widgets</a></li><li class="navelem"><a class="el" href="dframe_8h.html">dframe.h</a></li>
-    <li class="footer">文档生成时间:2023-01-03-09:26  +00</li>
+    <li class="footer">文档生成时间:2023-01-03-09:52  +00</li>
     <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
     <li class="footer">制作者:deepin doc doc go SIG</li>
     <li class="footer">文档使用CC-BY-4.0共享 </a>

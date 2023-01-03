@@ -161,7 +161,7 @@ $(document).ready(function(){initNavTree('classDtk_1_1Widget_1_1DStyle.html','')
 <p><a class="el" href="classDtk_1_1Widget_1_1DStyle.html" title="DStyle 提供了一个 Dtk 控件的基础类">DStyle</a> 提供了一个 Dtk 控件的基础类.</p>
 <h2><a class="anchor" id="autotoc_md58"></a>
 概述</h2>
-<p>类似于 QCommonStyle 中的实现， <a class="el" href="classDtk_1_1Widget_1_1DStyle.html" title="DStyle 提供了一个 Dtk 控件的基础类">DStyle</a> 中只实现了 一些基础控件的绘制和一个通用接口的实现，如果想要实现 一个自定义的风格主题， 可以通过尝试继承该类以实现自己的 功能。不过，仅使用 <a class="el" href="classDtk_1_1Widget_1_1DStyle.html" title="DStyle 提供了一个 Dtk 控件的基础类">DStyle</a> 并不会将控件的风格保持和 Dtk 控件一致，这是由于 Dtk 的实际控件风格 在 Chameleon 风格 插件中实现。因此如果需要在 Dtk 中继承 Chameleon 风格，并 添加自定义风格的绘制，可以尝试使用 QProxyStyle 类。</p>
+<p>类似于 <a class="elRef" href="http://doc.qt.io/qt-5/qcommonstyle.html">QCommonStyle</a> 中的实现， <a class="el" href="classDtk_1_1Widget_1_1DStyle.html" title="DStyle 提供了一个 Dtk 控件的基础类">DStyle</a> 中只实现了 一些基础控件的绘制和一个通用接口的实现，如果想要实现 一个自定义的风格主题， 可以通过尝试继承该类以实现自己的 功能。不过，仅使用 <a class="el" href="classDtk_1_1Widget_1_1DStyle.html" title="DStyle 提供了一个 Dtk 控件的基础类">DStyle</a> 并不会将控件的风格保持和 Dtk 控件一致，这是由于 Dtk 的实际控件风格 在 Chameleon 风格 插件中实现。因此如果需要在 Dtk 中继承 Chameleon 风格，并 添加自定义风格的绘制，可以尝试使用 <a class="elRef" href="http://doc.qt.io/qt-5/qproxystyle.html">QProxyStyle</a> 类。</p>
 <p>下面通过一个例子认识所有的 <a class="el" href="classDtk_1_1Widget_1_1DStyle.html" title="DStyle 提供了一个 Dtk 控件的基础类">DStyle</a> 图标。 项目目录结构在同一目录下</p>
 <h2><a class="anchor" id="autotoc_md59"></a>
 CMakeLists.txt</h2>
@@ -213,35 +213,35 @@ main.cpp</h2>
 <div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> *argv[]){</div>
 <div class="line"> </div>
 <div class="line">    <a class="code" href="classDApplication.html">DApplication</a> app(argc, argv); <span class="comment">//设置应用</span></div>
-<div class="line">    DWidget *widget = <span class="keyword">new</span> DWidget; <span class="comment">//新建一个widget窗口</span></div>
-<div class="line">    widget-&gt;setWindowTitle(<span class="stringliteral">&quot;标准图标&quot;</span>); <span class="comment">//设置窗口名称</span></div>
-<div class="line">    widget-&gt;resize(800,600);</div>
+<div class="line">    <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">DWidget</a> *widget = <span class="keyword">new</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">DWidget</a>; <span class="comment">//新建一个widget窗口</span></div>
+<div class="line">    widget-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html#windowTitle-prop">setWindowTitle</a>(<span class="stringliteral">&quot;标准图标&quot;</span>); <span class="comment">//设置窗口名称</span></div>
+<div class="line">    widget-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html#resize-1">resize</a>(800,600);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">//新建一个标准item模型</span></div>
-<div class="line">    QStandardItemModel *model = <span class="keyword">new</span> QStandardItemModel(widget);</div>
+<div class="line">    <a class="codeRef" href="http://doc.qt.io/qt-5/qstandarditemmodel.html">QStandardItemModel</a> *model = <span class="keyword">new</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstandarditemmodel.html">QStandardItemModel</a>(widget);</div>
 <div class="line">    <span class="comment">//新建一个DListView</span></div>
 <div class="line">    <a class="code" href="classDListView.html">DListView</a> *listview = <span class="keyword">new</span> <a class="code" href="classDListView.html">DListView</a>;</div>
 <div class="line">    <span class="comment">//新建一个风格</span></div>
 <div class="line">    <a class="code" href="classDStyle.html">DStyle</a> *style = <span class="keyword">new</span> <a class="code" href="classDStyle.html">DStyle</a>();</div>
 <div class="line">    <span class="comment">//写一个插入新item的函数，函数可以设置每一个item的图标、名称、高度、不可被编辑</span></div>
-<div class="line">    <span class="keyword">auto</span> insertItem = [&amp;](<span class="keyword">const</span> QString &amp;name, <span class="keyword">const</span> QIcon &amp;icon)</div>
+<div class="line">    <span class="keyword">auto</span> insertItem = [&amp;](<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;name, <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qicon.html">QIcon</a> &amp;icon)</div>
 <div class="line">        -&gt; <a class="code" href="classDStandardItem.html">DStandardItem</a> * {</div>
 <div class="line">        <a class="code" href="classDStandardItem.html">DStandardItem</a> *item = <span class="keyword">new</span> <a class="code" href="classDStandardItem.html">DStandardItem</a>(icon, name); <span class="comment">//新建一个item并设置图标、item名称</span></div>
-<div class="line">        item-&gt;setSizeHint(QSize(item-&gt;sizeHint().width(), 50)); <span class="comment">//设置item的图标</span></div>
-<div class="line">        item-&gt;setEditable(<span class="keyword">false</span>); <span class="comment">//设置item不可被编辑</span></div>
-<div class="line">        model-&gt;appendRow(item); <span class="comment">//将新建item添加到模型中</span></div>
+<div class="line">        item-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qstandarditem.html#setSizeHint">setSizeHint</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qsize.html">QSize</a>(item-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qstandarditem.html#sizeHint">sizeHint</a>().<a class="codeRef" href="http://doc.qt.io/qt-5/qsize.html#width">width</a>(), 50)); <span class="comment">//设置item的图标</span></div>
+<div class="line">        item-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qstandarditem.html#setEditable">setEditable</a>(<span class="keyword">false</span>); <span class="comment">//设置item不可被编辑</span></div>
+<div class="line">        model-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qstandarditemmodel.html#appendRow">appendRow</a>(item); <span class="comment">//将新建item添加到模型中</span></div>
 <div class="line">        <span class="keywordflow">return</span> item;</div>
 <div class="line">    };</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">//通过 QMetaEnum::fromType 实现枚举值和字符串的转化</span></div>
-<div class="line">    QMetaEnum meta = QMetaEnum::fromType&lt;QStyle::StandardPixmap&gt;();</div>
+<div class="line">    <a class="codeRef" href="http://doc.qt.io/qt-5/qmetaenum.html">QMetaEnum</a> meta = QMetaEnum::fromType&lt;QStyle::StandardPixmap&gt;();</div>
 <div class="line">    <span class="comment">//循环写入listview的名称和图标，此处为DTK重绘QT图标</span></div>
-<div class="line">    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = DStyle::SP_TitleBarMenuButton; i &lt;= DStyle::SP_RestoreDefaultsButton; i++) {</div>
-<div class="line">        insertItem(meta.valueToKey(i), style-&gt;<a class="code" href="classDStyle.html#aabdcfb503a9e858839fd106d498aa98b">standardIcon</a>(DStyle::StandardPixmap(i)));</div>
+<div class="line">    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = <a class="codeRef" href="http://doc.qt.io/qt-5/qstyle.html#StandardPixmap-enum">DStyle::SP_TitleBarMenuButton</a>; i &lt;= <a class="codeRef" href="http://doc.qt.io/qt-5/qstyle.html#StandardPixmap-enum">DStyle::SP_RestoreDefaultsButton</a>; i++) {</div>
+<div class="line">        insertItem(meta.<a class="codeRef" href="http://doc.qt.io/qt-5/qmetaenum.html#valueToKey">valueToKey</a>(i), style-&gt;standardIcon(DStyle::StandardPixmap(i)));</div>
 <div class="line">    }</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">//此处添加DTK自设计和定义的图标，先用数组记录图标名称</span></div>
-<div class="line">    QStringList IconNameList ({</div>
+<div class="line">    <a class="codeRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> IconNameList ({</div>
 <div class="line">        <span class="stringliteral">&quot;SP_ForkElement&quot;</span>,                             <span class="comment">//关闭</span></div>
 <div class="line">        <span class="stringliteral">&quot;SP_DecreaseElement&quot;</span>,                         <span class="comment">//减少（-）</span></div>
 <div class="line">        <span class="stringliteral">&quot;SP_IncreaseElement&quot;</span>,                         <span class="comment">//增加（+）</span></div>
@@ -279,14 +279,14 @@ main.cpp</h2>
 <div class="line">    });</div>
 <div class="line">    <span class="comment">//通过循环遍历上述名称数组同时添加图标</span></div>
 <div class="line">    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = DStyle::SP_ForkElement; i &lt;= DStyle::SP_Title_SS_ShowNormalButton; i++){</div>
-<div class="line">        insertItem(IconNameList[i - DStyle::SP_ForkElement], style-&gt;<a class="code" href="classDStyle.html#aabdcfb503a9e858839fd106d498aa98b">standardIcon</a>(DStyle::StandardPixmap(i)));</div>
+<div class="line">        insertItem(IconNameList[i - DStyle::SP_ForkElement], style-&gt;standardIcon(DStyle::StandardPixmap(i)));</div>
 <div class="line">    }</div>
 <div class="line"> </div>
 <div class="line">    listview-&gt;setModel(model); <span class="comment">//将模型加载到listview</span></div>
-<div class="line">    QVBoxLayout *layout = <span class="keyword">new</span> QVBoxLayout(widget); <span class="comment">//新建一个垂直布局</span></div>
-<div class="line">    layout-&gt;addWidget(listview); <span class="comment">//将listview所在widget添加到布局</span></div>
+<div class="line">    <a class="codeRef" href="http://doc.qt.io/qt-5/qvboxlayout.html">QVBoxLayout</a> *layout = <span class="keyword">new</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qvboxlayout.html">QVBoxLayout</a>(widget); <span class="comment">//新建一个垂直布局</span></div>
+<div class="line">    layout-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qboxlayout.html#addWidget">addWidget</a>(listview); <span class="comment">//将listview所在widget添加到布局</span></div>
 <div class="line"> </div>
-<div class="line">    widget-&gt;show(); <span class="comment">//展示主窗口</span></div>
+<div class="line">    widget-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html#show">show</a>(); <span class="comment">//展示主窗口</span></div>
 <div class="line">    <span class="keywordflow">return</span> app.exec(); <span class="comment">//运行程序并等待关闭</span></div>
 <div class="line"> </div>
 <div class="line">}</div>
@@ -294,13 +294,31 @@ main.cpp</h2>
 <div class="ttc" id="aclassDListView_html"><div class="ttname"><a href="classDListView.html">DListView</a></div><div class="ttdef"><b>Definition:</b> dlistview.h:35</div></div>
 <div class="ttc" id="aclassDStandardItem_html"><div class="ttname"><a href="classDStandardItem.html">DStandardItem</a></div><div class="ttdef"><b>Definition:</b> dstyleditemdelegate.h:106</div></div>
 <div class="ttc" id="aclassDStyle_html"><div class="ttname"><a href="classDStyle.html">DStyle</a></div><div class="ttdef"><b>Definition:</b> dstyle.h:93</div></div>
-<div class="ttc" id="aclassDStyle_html_aabdcfb503a9e858839fd106d498aa98b"><div class="ttname"><a href="classDStyle.html#aabdcfb503a9e858839fd106d498aa98b">DStyle::standardIcon</a></div><div class="ttdeci">static QIcon standardIcon(const QStyle *style, StandardPixmap st, const QStyleOption *opt=nullptr, const QWidget *widget=0)</div><div class="ttdoc">DStyle::standardIcon</div><div class="ttdef"><b>Definition:</b> dstyle.cpp:1806</div></div>
+<div class="ttc" id="aqboxlayout_html_addWidget"><div class="ttname"><a href="http://doc.qt.io/qt-5/qboxlayout.html#addWidget">QBoxLayout::addWidget</a></div><div class="ttdeci">void addWidget(QWidget *widget, int stretch, Qt::Alignment alignment)</div></div>
+<div class="ttc" id="aqicon_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qicon.html">QIcon</a></div></div>
+<div class="ttc" id="aqmetaenum_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qmetaenum.html">QMetaEnum</a></div></div>
+<div class="ttc" id="aqmetaenum_html_valueToKey"><div class="ttname"><a href="http://doc.qt.io/qt-5/qmetaenum.html#valueToKey">QMetaEnum::valueToKey</a></div><div class="ttdeci">const char * valueToKey(int value) const const</div></div>
+<div class="ttc" id="aqsize_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qsize.html">QSize</a></div></div>
+<div class="ttc" id="aqsize_html_width"><div class="ttname"><a href="http://doc.qt.io/qt-5/qsize.html#width">QSize::width</a></div><div class="ttdeci">int width() const const</div></div>
+<div class="ttc" id="aqstandarditem_html_setEditable"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstandarditem.html#setEditable">QStandardItem::setEditable</a></div><div class="ttdeci">void setEditable(bool editable)</div></div>
+<div class="ttc" id="aqstandarditem_html_setSizeHint"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstandarditem.html#setSizeHint">QStandardItem::setSizeHint</a></div><div class="ttdeci">void setSizeHint(const QSize &amp;size)</div></div>
+<div class="ttc" id="aqstandarditem_html_sizeHint"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstandarditem.html#sizeHint">QStandardItem::sizeHint</a></div><div class="ttdeci">QSize sizeHint() const const</div></div>
+<div class="ttc" id="aqstandarditemmodel_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstandarditemmodel.html">QStandardItemModel</a></div></div>
+<div class="ttc" id="aqstandarditemmodel_html_appendRow"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstandarditemmodel.html#appendRow">QStandardItemModel::appendRow</a></div><div class="ttdeci">void appendRow(const QList&lt; QStandardItem * &gt; &amp;items)</div></div>
+<div class="ttc" id="aqstring_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstring.html">QString</a></div></div>
+<div class="ttc" id="aqstringlist_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a></div></div>
+<div class="ttc" id="aqstyle_html_StandardPixmap-enum"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstyle.html#StandardPixmap-enum">QStyle::SP_TitleBarMenuButton</a></div><div class="ttdeci">SP_TitleBarMenuButton</div></div>
+<div class="ttc" id="aqvboxlayout_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qvboxlayout.html">QVBoxLayout</a></div></div>
+<div class="ttc" id="aqwidget_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a></div></div>
+<div class="ttc" id="aqwidget_html_resize-1"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html#resize-1">QWidget::resize</a></div><div class="ttdeci">void resize(int w, int h)</div></div>
+<div class="ttc" id="aqwidget_html_show"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html#show">QWidget::show</a></div><div class="ttdeci">void show()</div></div>
+<div class="ttc" id="aqwidget_html_windowTitle-prop"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html#windowTitle-prop">QWidget::setWindowTitle</a></div><div class="ttdeci">void setWindowTitle(const QString &amp;)</div></div>
 </div><!-- fragment --><p>运行程序效果如下图所示：</p>
 <p><img src="/docs/images/dstyle_example1.png" alt="dstyle_example1" class="inline"/></p>
 <p><img src="/docs/images/dstyle_example2.png" alt="dstyle_example2" class="inline"/></p>
 <p>\inmodule dtkwidget</p>
-<p>类似于 QCommonStyle 中的实现， <a class="el" href="classDtk_1_1Widget_1_1DStyle.html" title="DStyle 提供了一个 Dtk 控件的基础类">DStyle</a> 中只实现了 一些基础控件的绘制和一个通用接口的实现，如果想要实现 一个自定义的风格主题，可以通过尝试继承该类以实现自己的 功能。不过，仅使用 <a class="el" href="classDtk_1_1Widget_1_1DStyle.html" title="DStyle 提供了一个 Dtk 控件的基础类">DStyle</a> 并不会将控件的风格保持和 Dtk 控件一致，这是由于 Dtk 的实际控件风格在 Chameleon 风格 插件中实现。因此如果需要在 Dtk 中继承 Chameleon 风格，并 添加自定义风格的绘制，可以尝试使用 QProxyStyle 类。</p>
-<dl class="section see"><dt>参见</dt><dd>QCommonStyle QProxyStyle </dd></dl>
+<p>类似于 <a class="elRef" href="http://doc.qt.io/qt-5/qcommonstyle.html">QCommonStyle</a> 中的实现， <a class="el" href="classDtk_1_1Widget_1_1DStyle.html" title="DStyle 提供了一个 Dtk 控件的基础类">DStyle</a> 中只实现了 一些基础控件的绘制和一个通用接口的实现，如果想要实现 一个自定义的风格主题，可以通过尝试继承该类以实现自己的 功能。不过，仅使用 <a class="el" href="classDtk_1_1Widget_1_1DStyle.html" title="DStyle 提供了一个 Dtk 控件的基础类">DStyle</a> 并不会将控件的风格保持和 Dtk 控件一致，这是由于 Dtk 的实际控件风格在 Chameleon 风格 插件中实现。因此如果需要在 Dtk 中继承 Chameleon 风格，并 添加自定义风格的绘制，可以尝试使用 <a class="elRef" href="http://doc.qt.io/qt-5/qproxystyle.html">QProxyStyle</a> 类。</p>
+<dl class="section see"><dt>参见</dt><dd><a class="elRef" href="http://doc.qt.io/qt-5/qcommonstyle.html">QCommonStyle</a> <a class="elRef" href="http://doc.qt.io/qt-5/qproxystyle.html">QProxyStyle</a> </dd></dl>
 </div><hr/>该类的文档由以下文件生成:<ul>
 <li>dtkwidget/docs/widgets/dstyle.zh_CN.dox</li>
 </ul>
@@ -311,7 +329,7 @@ main.cpp</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classDtk_1_1Widget_1_1DStyle.html">DStyle</a></li>
-    <li class="footer">文档生成时间:2023-01-03-09:26  +00</li>
+    <li class="footer">文档生成时间:2023-01-03-09:52  +00</li>
     <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
     <li class="footer">制作者:deepin doc doc go SIG</li>
     <li class="footer">文档使用CC-BY-4.0共享 </a>

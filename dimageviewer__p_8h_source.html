@@ -163,10 +163,10 @@ $(document).ready(function(){initNavTree('dimageviewer__p_8h_source.html',''); i
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="dimageviewer_8h.html">dimageviewer.h</a>&quot;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;DObjectPrivate&gt;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">class </span>QGestureEvent;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">class </span>QPinchGesture;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">class </span>QImageReader;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">class </span>QGraphicsRectItem;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">class </span><a class="codeRef" href="http://doc.qt.io/qt-5/qgestureevent.html">QGestureEvent</a>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">class </span><a class="codeRef" href="http://doc.qt.io/qt-5/qpinchgesture.html">QPinchGesture</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">class </span><a class="codeRef" href="http://doc.qt.io/qt-5/qimagereader.html">QImageReader</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">class </span><a class="codeRef" href="http://doc.qt.io/qt-5/qgraphicsrectitem.html">QGraphicsRectItem</a>;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;DWIDGET_BEGIN_NAMESPACE</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">class </span><a class="code" href="classDGraphicsCropItem.html">DGraphicsCropItem</a>;</div>
@@ -187,9 +187,9 @@ $(document).ready(function(){initNavTree('dimageviewer__p_8h_source.html',''); i
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    ~<a class="code" href="classDImageViewerPrivate.html">DImageViewerPrivate</a>() Q_DECL_OVERRIDE;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">void</span> init();</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    ImageType detectImageType(<span class="keyword">const</span> QString &amp;fileName) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    ImageType detectImageType(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;fileName) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> resetItem(ImageType type);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    QImage loadImage(<span class="keyword">const</span> QString &amp;fileName, ImageType type) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qimage.html">QImage</a> loadImage(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;fileName, ImageType type) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> updateItemAndSceneRect();</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">bool</span> rotatable() <span class="keyword">const</span>;</div>
@@ -201,24 +201,24 @@ $(document).ready(function(){initNavTree('dimageviewer__p_8h_source.html',''); i
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    qreal widgetRelativeScale() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> checkPinchData();</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> handleGestureEvent(QGestureEvent *gesture);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">void</span> pinchTriggered(QPinchGesture *gesture);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> handleGestureEvent(<a class="codeRef" href="http://doc.qt.io/qt-5/qgestureevent.html">QGestureEvent</a> *gesture);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">void</span> pinchTriggered(<a class="codeRef" href="http://doc.qt.io/qt-5/qpinchgesture.html">QPinchGesture</a> *gesture);</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span> playRotationAnimation();</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">void</span> _q_pinchAnimeFinished();</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> checkCropData();</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> resetCropData();</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> handleMousePressEvent(QMouseEvent *event);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> handleMouseReleaseEvent(QMouseEvent *event);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> handleResizeEvent(QResizeEvent *event);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> handleMousePressEvent(<a class="codeRef" href="http://doc.qt.io/qt-5/qmouseevent.html">QMouseEvent</a> *event);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> handleMouseReleaseEvent(<a class="codeRef" href="http://doc.qt.io/qt-5/qmouseevent.html">QMouseEvent</a> *event);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> handleResizeEvent(<a class="codeRef" href="http://doc.qt.io/qt-5/qresizeevent.html">QResizeEvent</a> *event);</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    QGraphicsRectItem *proxyItem = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    QGraphicsItem *contentItem = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qgraphicsrectitem.html">QGraphicsRectItem</a> *proxyItem = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qgraphicsitem.html">QGraphicsItem</a> *contentItem = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    ImageType imageType = ImageType::ImageTypeBlank;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    QImage contentImage;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    QString fileName;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qimage.html">QImage</a> contentImage;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> fileName;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">enum</span> FitFlag { Unfit, FitWidget, FitNotmalSize };</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    FitFlag fitFlag = Unfit;</div>
@@ -234,14 +234,14 @@ $(document).ready(function(){initNavTree('dimageviewer__p_8h_source.html',''); i
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        qreal rotationTouchAngle = 0;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordtype">int</span> storeItemAngle = 0;</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordtype">int</span> rotationEndValue = 0;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        QPointF centerPoint;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <a class="codeRef" href="http://doc.qt.io/qt-5/qpointf.html">QPointF</a> centerPoint;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    };</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    PinchData *pinchData = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keyword">struct </span>CropData</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    {</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <a class="code" href="classDGraphicsCropItem.html">DGraphicsCropItem</a> *cropItem = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        QRect cropRect;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <a class="codeRef" href="http://doc.qt.io/qt-5/qrect.html">QRect</a> cropRect;</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keywordtype">bool</span> cropping = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    };</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    CropData *cropData = <span class="keyword">nullptr</span>;</div>
@@ -254,6 +254,17 @@ $(document).ready(function(){initNavTree('dimageviewer__p_8h_source.html',''); i
 <div class="ttc" id="aclassDImageViewerPrivate_html"><div class="ttname"><a href="classDImageViewerPrivate.html">DImageViewerPrivate</a></div><div class="ttdef"><b>Definition:</b> dimageviewer_p.h:28</div></div>
 <div class="ttc" id="aclassDImageViewer_html"><div class="ttname"><a href="classDImageViewer.html">DImageViewer</a></div><div class="ttdef"><b>Definition:</b> dimageviewer.h:16</div></div>
 <div class="ttc" id="adimageviewer_8h_html"><div class="ttname"><a href="dimageviewer_8h.html">dimageviewer.h</a></div><div class="ttdoc">dimageviewer.h 提供基础的图片浏览控件 DImageViewer</div></div>
+<div class="ttc" id="aqgestureevent_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qgestureevent.html">QGestureEvent</a></div></div>
+<div class="ttc" id="aqgraphicsitem_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qgraphicsitem.html">QGraphicsItem</a></div></div>
+<div class="ttc" id="aqgraphicsrectitem_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qgraphicsrectitem.html">QGraphicsRectItem</a></div></div>
+<div class="ttc" id="aqimage_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qimage.html">QImage</a></div></div>
+<div class="ttc" id="aqimagereader_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qimagereader.html">QImageReader</a></div></div>
+<div class="ttc" id="aqmouseevent_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qmouseevent.html">QMouseEvent</a></div></div>
+<div class="ttc" id="aqpinchgesture_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qpinchgesture.html">QPinchGesture</a></div></div>
+<div class="ttc" id="aqpointf_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qpointf.html">QPointF</a></div></div>
+<div class="ttc" id="aqrect_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qrect.html">QRect</a></div></div>
+<div class="ttc" id="aqresizeevent_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qresizeevent.html">QResizeEvent</a></div></div>
+<div class="ttc" id="aqstring_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstring.html">QString</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.4-->
@@ -261,7 +272,7 @@ $(document).ready(function(){initNavTree('dimageviewer__p_8h_source.html',''); i
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_cc1fdbae730d0dba18db2b924667b662.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_7e9cf0e2371012f8aca5a790419dfe62.html">src</a></li><li class="navelem"><a class="el" href="dir_0f0f1158b2ab9c2e2656097b145c93da.html">widgets</a></li><li class="navelem"><a class="el" href="dir_c2ef0fafcc327cb5e8231a54477e2847.html">private</a></li><li class="navelem"><b>dimageviewer_p.h</b></li>
-    <li class="footer">文档生成时间:2023-01-03-09:26  +00</li>
+    <li class="footer">文档生成时间:2023-01-03-09:52  +00</li>
     <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
     <li class="footer">制作者:deepin doc doc go SIG</li>
     <li class="footer">文档使用CC-BY-4.0共享 </a>

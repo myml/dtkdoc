@@ -166,16 +166,16 @@ $(document).ready(function(){initNavTree('dtextedit_8h_source.html',''); initRes
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;DObject&gt;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;QT_BEGIN_NAMESPACE</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">class </span>QContextMenuEvent;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">class </span><a class="codeRef" href="http://doc.qt.io/qt-5/qcontextmenuevent.html">QContextMenuEvent</a>;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;QT_END_NAMESPACE</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;DWIDGET_BEGIN_NAMESPACE</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">class </span><a class="code" href="classDTextEditPrivate.html">DTextEditPrivate</a>;</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classDTextEdit.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDTextEdit.html">DTextEdit</a> : <span class="keyword">public</span> QTextEdit, <span class="keyword">public</span> DCORE_NAMESPACE::DObject</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classDTextEdit.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDTextEdit.html">DTextEdit</a> : <span class="keyword">public</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qtextedit.html">QTextEdit</a>, <span class="keyword">public</span> DCORE_NAMESPACE::DObject</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDTextEdit.html#ace46cfb2f7276ed31b0efd570c3fc09b">DTextEdit</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDTextEdit.html#ace46cfb2f7276ed31b0efd570c3fc09b">DTextEdit</a>(<span class="keyword">const</span> QString&amp; text, QWidget* parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDTextEdit.html#ace46cfb2f7276ed31b0efd570c3fc09b">DTextEdit</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a> *<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a> = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDTextEdit.html#ace46cfb2f7276ed31b0efd570c3fc09b">DTextEdit</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&amp; text, <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a>* <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a> = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classDTextEdit.html#ab70ab1701aa03aaa79986d24b5d888f4">speechToTextIsEnabled</a>() <span class="keyword">const</span>;</div>
@@ -188,9 +188,9 @@ $(document).ready(function(){initNavTree('dtextedit_8h_source.html',''); initRes
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDTextEdit.html#a2430c646234338ed37a5539cc3222d3a">setTextToTranslateEnabled</a>(<span class="keywordtype">bool</span> enable);</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">bool</span> event(QEvent *e) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> contextMenuEvent(QContextMenuEvent *e) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> keyPressEvent(QKeyEvent *e) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">bool</span> event(<a class="codeRef" href="http://doc.qt.io/qt-5/qevent.html">QEvent</a> *e) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> contextMenuEvent(<a class="codeRef" href="http://doc.qt.io/qt-5/qcontextmenuevent.html">QContextMenuEvent</a> *e) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> keyPressEvent(<a class="codeRef" href="http://doc.qt.io/qt-5/qkeyevent.html">QKeyEvent</a> *e) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    D_DECLARE_PRIVATE(<a class="code" href="classDTextEdit.html">DTextEdit</a>)</div>
@@ -208,6 +208,13 @@ $(document).ready(function(){initNavTree('dtextedit_8h_source.html',''); initRes
 <div class="ttc" id="aclassDTextEdit_html_a6fee3fdcdc1c13868b0689951b70cc59"><div class="ttname"><a href="classDTextEdit.html#a6fee3fdcdc1c13868b0689951b70cc59">DTextEdit::textToSpeechIsEnabled</a></div><div class="ttdeci">bool textToSpeechIsEnabled() const</div><div class="ttdoc">DTextEdit::textToSpeechIsEnabled</div><div class="ttdef"><b>Definition:</b> dtextedit.cpp:302</div></div>
 <div class="ttc" id="aclassDTextEdit_html_ab70ab1701aa03aaa79986d24b5d888f4"><div class="ttname"><a href="classDTextEdit.html#ab70ab1701aa03aaa79986d24b5d888f4">DTextEdit::speechToTextIsEnabled</a></div><div class="ttdeci">bool speechToTextIsEnabled() const</div><div class="ttdoc">DLineEdit::speechToTextIsEnabled</div><div class="ttdef"><b>Definition:</b> dtextedit.cpp:282</div></div>
 <div class="ttc" id="aclassDTextEdit_html_ace46cfb2f7276ed31b0efd570c3fc09b"><div class="ttname"><a href="classDTextEdit.html#ace46cfb2f7276ed31b0efd570c3fc09b">DTextEdit::DTextEdit</a></div><div class="ttdeci">DTextEdit(QWidget *parent=nullptr)</div><div class="ttdoc">DTextEdit::DTextEdit 实现一个用于编辑和显示纯文本和富文本的控件 parent</div><div class="ttdef"><b>Definition:</b> dtextedit.cpp:50</div></div>
+<div class="ttc" id="aqcontextmenuevent_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qcontextmenuevent.html">QContextMenuEvent</a></div></div>
+<div class="ttc" id="aqevent_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qevent.html">QEvent</a></div></div>
+<div class="ttc" id="aqkeyevent_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qkeyevent.html">QKeyEvent</a></div></div>
+<div class="ttc" id="aqobject_html_parent"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#parent">QObject::parent</a></div><div class="ttdeci">QObject * parent() const const</div></div>
+<div class="ttc" id="aqstring_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstring.html">QString</a></div></div>
+<div class="ttc" id="aqtextedit_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qtextedit.html">QTextEdit</a></div></div>
+<div class="ttc" id="aqwidget_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.4-->
@@ -215,7 +222,7 @@ $(document).ready(function(){initNavTree('dtextedit_8h_source.html',''); initRes
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_cc1fdbae730d0dba18db2b924667b662.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_6819db61f31aacd6e31b437a606a4041.html">include</a></li><li class="navelem"><a class="el" href="dir_6719ee6af2149ba01bce2af57814b9e8.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_4faf4521db2f3764f9e00575717749e8.html">widgets</a></li><li class="navelem"><a class="el" href="dtextedit_8h.html">dtextedit.h</a></li>
-    <li class="footer">文档生成时间:2023-01-03-09:26  +00</li>
+    <li class="footer">文档生成时间:2023-01-03-09:52  +00</li>
     <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
     <li class="footer">制作者:deepin doc doc go SIG</li>
     <li class="footer">文档使用CC-BY-4.0共享 </a>

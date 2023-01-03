@@ -167,18 +167,18 @@ $(document).ready(function(){initNavTree('dabstractdialog_8h_source.html',''); i
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;dtkwidget_global.h&gt;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">class </span>QMouseEvent;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">class </span>QPushButton;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">class </span>QResizeEvent;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">class </span><a class="codeRef" href="http://doc.qt.io/qt-5/qmouseevent.html">QMouseEvent</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">class </span><a class="codeRef" href="http://doc.qt.io/qt-5/qpushbutton.html">QPushButton</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">class </span><a class="codeRef" href="http://doc.qt.io/qt-5/qresizeevent.html">QResizeEvent</a>;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;DWIDGET_BEGIN_NAMESPACE</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">class </span><a class="code" href="classDAbstractDialogPrivate.html">DAbstractDialogPrivate</a>;</div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classDAbstractDialog.html">   22</a></span>&#160;<span class="keyword">class </span>LIBDTKWIDGETSHARED_EXPORT <a class="code" href="classDAbstractDialog.html">DAbstractDialog</a> : <span class="keyword">public</span> QDialog, <span class="keyword">public</span> DTK_CORE_NAMESPACE::DObject</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classDAbstractDialog.html">   22</a></span>&#160;<span class="keyword">class </span>LIBDTKWIDGETSHARED_EXPORT <a class="code" href="classDAbstractDialog.html">DAbstractDialog</a> : <span class="keyword">public</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qdialog.html">QDialog</a>, <span class="keyword">public</span> DTK_CORE_NAMESPACE::DObject</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    Q_OBJECT</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    Q_PROPERTY(DisplayPosition displayPosition READ displayPosition WRITE setDisplayPosition)</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(DisplayPosition displayPosition READ displayPosition WRITE setDisplayPosition)</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">enum</span> DisplayPosition {</div>
@@ -190,42 +190,42 @@ $(document).ready(function(){initNavTree('dabstractdialog_8h_source.html',''); i
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        DisplayTopRight = TopRight</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    };</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    Q_ENUMS(DisplayPosition)</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    Q_ENUMS(DisplayPostion)</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject-obsolete.html#Q_ENUMS">Q_ENUMS</a>(DisplayPosition)</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject-obsolete.html#Q_ENUMS">Q_ENUMS</a>(DisplayPostion)</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="classDAbstractDialog.html">DAbstractDialog</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="classDAbstractDialog.html">DAbstractDialog</a>(<span class="keywordtype">bool</span> blurIfPossible, QWidget *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="classDAbstractDialog.html">DAbstractDialog</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a> *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="classDAbstractDialog.html">DAbstractDialog</a>(<span class="keywordtype">bool</span> blurIfPossible, <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a> *parent = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    DisplayPosition displayPosition() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> move(<span class="keyword">const</span> QPoint &amp;pos);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html#move-1">move</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qpoint.html">QPoint</a> &amp;pos);</div>
 <div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classDAbstractDialog.html#ab0c623aea93b44f2a90a75abfb5213e3">   47</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classDAbstractDialog.html#ab0c623aea93b44f2a90a75abfb5213e3">move</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y)</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    { move(QPoint(x, y));}</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    { <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html#move-1">move</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qpoint.html">QPoint</a>(x, y));}</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> setGeometry(<span class="keyword">const</span> QRect &amp;rect);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> setGeometry(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height)</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    { setGeometry(QRect(x, y, width, height));}</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html#setGeometry-1">setGeometry</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qrect.html">QRect</a> &amp;rect);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html#setGeometry-1">setGeometry</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height)</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    { <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html#setGeometry-1">setGeometry</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qrect.html">QRect</a>(x, y, width, height));}</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">public</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SLOTS">Q_SLOTS</a>:</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> moveToCenter();</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> moveToTopRight();</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> moveToCenterByRect(<span class="keyword">const</span> QRect &amp;rect);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> moveToTopRightByRect(<span class="keyword">const</span> QRect &amp;rect);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> moveToCenterByRect(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qrect.html">QRect</a> &amp;rect);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> moveToTopRightByRect(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qrect.html">QRect</a> &amp;rect);</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> setDisplayPosition(DisplayPosition displayPosition);</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;Q_SIGNALS:</div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classDAbstractDialog.html#a5562f9908619a183265ee3ce22ae4fcc">   68</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDAbstractDialog.html#a5562f9908619a183265ee3ce22ae4fcc">sizeChanged</a>(QSize size);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SIGNALS">Q_SIGNALS</a>:</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classDAbstractDialog.html#a5562f9908619a183265ee3ce22ae4fcc">   68</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDAbstractDialog.html#a5562f9908619a183265ee3ce22ae4fcc">sizeChanged</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qsize.html">QSize</a> size);</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">void</span> mouseMoveEvent(QMouseEvent *event) Q_DECL_OVERRIDE;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> mousePressEvent(QMouseEvent *event) Q_DECL_OVERRIDE;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">void</span> mouseReleaseEvent(QMouseEvent *event) Q_DECL_OVERRIDE;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">void</span> resizeEvent(QResizeEvent *event) Q_DECL_OVERRIDE;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span> showEvent(QShowEvent *event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">void</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html#mouseMoveEvent">mouseMoveEvent</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qmouseevent.html">QMouseEvent</a> *event) Q_DECL_OVERRIDE;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html#mousePressEvent">mousePressEvent</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qmouseevent.html">QMouseEvent</a> *event) Q_DECL_OVERRIDE;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">void</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html#mouseReleaseEvent">mouseReleaseEvent</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qmouseevent.html">QMouseEvent</a> *event) Q_DECL_OVERRIDE;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">void</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qdialog.html#resizeEvent">resizeEvent</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qresizeevent.html">QResizeEvent</a> *event) Q_DECL_OVERRIDE;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qdialog.html#showEvent">showEvent</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qshowevent.html">QShowEvent</a> *event) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <a class="code" href="classDAbstractDialog.html">DAbstractDialog</a>(<a class="code" href="classDAbstractDialogPrivate.html">DAbstractDialogPrivate</a> &amp;dd, QWidget *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <a class="code" href="classDAbstractDialog.html">DAbstractDialog</a>(<a class="code" href="classDAbstractDialogPrivate.html">DAbstractDialogPrivate</a> &amp;dd, <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a> *parent = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    D_DECLARE_PRIVATE(<a class="code" href="classDAbstractDialog.html">DAbstractDialog</a>)</div>
@@ -238,6 +238,26 @@ $(document).ready(function(){initNavTree('dabstractdialog_8h_source.html',''); i
 <div class="ttc" id="aclassDAbstractDialog_html"><div class="ttname"><a href="classDAbstractDialog.html">DAbstractDialog</a></div><div class="ttdef"><b>Definition:</b> dabstractdialog.h:23</div></div>
 <div class="ttc" id="aclassDAbstractDialog_html_a5562f9908619a183265ee3ce22ae4fcc"><div class="ttname"><a href="classDAbstractDialog.html#a5562f9908619a183265ee3ce22ae4fcc">DAbstractDialog::sizeChanged</a></div><div class="ttdeci">void sizeChanged(QSize size)</div><div class="ttdoc">窗口大小发生改变</div></div>
 <div class="ttc" id="aclassDAbstractDialog_html_ab0c623aea93b44f2a90a75abfb5213e3"><div class="ttname"><a href="classDAbstractDialog.html#ab0c623aea93b44f2a90a75abfb5213e3">DAbstractDialog::move</a></div><div class="ttdeci">void move(int x, int y)</div><div class="ttdoc">将窗口移动到指定坐标</div><div class="ttdef"><b>Definition:</b> dabstractdialog.h:47</div></div>
+<div class="ttc" id="aqdialog_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qdialog.html">QDialog</a></div></div>
+<div class="ttc" id="aqdialog_html_resizeEvent"><div class="ttname"><a href="http://doc.qt.io/qt-5/qdialog.html#resizeEvent">QDialog::resizeEvent</a></div><div class="ttdeci">virtual void resizeEvent(QResizeEvent *) override</div></div>
+<div class="ttc" id="aqdialog_html_showEvent"><div class="ttname"><a href="http://doc.qt.io/qt-5/qdialog.html#showEvent">QDialog::showEvent</a></div><div class="ttdeci">virtual void showEvent(QShowEvent *event) override</div></div>
+<div class="ttc" id="aqmouseevent_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qmouseevent.html">QMouseEvent</a></div></div>
+<div class="ttc" id="aqobject-obsolete_html_Q_ENUMS"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject-obsolete.html#Q_ENUMS">QObject::Q_ENUMS</a></div><div class="ttdeci">Q_ENUMS(...)</div></div>
+<div class="ttc" id="aqobject_html_Q_PROPERTY"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">QObject::Q_PROPERTY</a></div><div class="ttdeci">Q_PROPERTY(...)</div></div>
+<div class="ttc" id="aqobject_html_Q_SIGNALS"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_SIGNALS">QObject::Q_SIGNALS</a></div><div class="ttdeci">Q_SIGNALSQ_SIGNALS</div></div>
+<div class="ttc" id="aqobject_html_Q_SLOTS"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_SLOTS">QObject::Q_SLOTS</a></div><div class="ttdeci">Q_SLOTSQ_SLOTS</div></div>
+<div class="ttc" id="aqpoint_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qpoint.html">QPoint</a></div></div>
+<div class="ttc" id="aqpushbutton_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qpushbutton.html">QPushButton</a></div></div>
+<div class="ttc" id="aqrect_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qrect.html">QRect</a></div></div>
+<div class="ttc" id="aqresizeevent_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qresizeevent.html">QResizeEvent</a></div></div>
+<div class="ttc" id="aqshowevent_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qshowevent.html">QShowEvent</a></div></div>
+<div class="ttc" id="aqsize_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qsize.html">QSize</a></div></div>
+<div class="ttc" id="aqwidget_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a></div></div>
+<div class="ttc" id="aqwidget_html_mouseMoveEvent"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html#mouseMoveEvent">QWidget::mouseMoveEvent</a></div><div class="ttdeci">virtual void mouseMoveEvent(QMouseEvent *event)</div></div>
+<div class="ttc" id="aqwidget_html_mousePressEvent"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html#mousePressEvent">QWidget::mousePressEvent</a></div><div class="ttdeci">virtual void mousePressEvent(QMouseEvent *event)</div></div>
+<div class="ttc" id="aqwidget_html_mouseReleaseEvent"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html#mouseReleaseEvent">QWidget::mouseReleaseEvent</a></div><div class="ttdeci">virtual void mouseReleaseEvent(QMouseEvent *event)</div></div>
+<div class="ttc" id="aqwidget_html_move-1"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html#move-1">QWidget::move</a></div><div class="ttdeci">void move(int x, int y)</div></div>
+<div class="ttc" id="aqwidget_html_setGeometry-1"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html#setGeometry-1">QWidget::setGeometry</a></div><div class="ttdeci">void setGeometry(int x, int y, int w, int h)</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.4-->
@@ -245,7 +265,7 @@ $(document).ready(function(){initNavTree('dabstractdialog_8h_source.html',''); i
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_cc1fdbae730d0dba18db2b924667b662.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_6819db61f31aacd6e31b437a606a4041.html">include</a></li><li class="navelem"><a class="el" href="dir_6719ee6af2149ba01bce2af57814b9e8.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_4faf4521db2f3764f9e00575717749e8.html">widgets</a></li><li class="navelem"><a class="el" href="dabstractdialog_8h.html">dabstractdialog.h</a></li>
-    <li class="footer">文档生成时间:2023-01-03-09:26  +00</li>
+    <li class="footer">文档生成时间:2023-01-03-09:52  +00</li>
     <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
     <li class="footer">制作者:deepin doc doc go SIG</li>
     <li class="footer">文档使用CC-BY-4.0共享 </a>

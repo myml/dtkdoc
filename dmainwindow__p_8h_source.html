@@ -166,33 +166,33 @@ $(document).ready(function(){initNavTree('dmainwindow__p_8h_source.html',''); in
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;DObjectPrivate&gt;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">class </span>QShortcut;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">class </span><a class="codeRef" href="http://doc.qt.io/qt-5/qshortcut.html">QShortcut</a>;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;DWIDGET_BEGIN_NAMESPACE</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classDSidebarHelper.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDSidebarHelper.html">DSidebarHelper</a> : <span class="keyword">public</span> QObject</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classDSidebarHelper.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDSidebarHelper.html">DSidebarHelper</a> : <span class="keyword">public</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    Q_PROPERTY(<span class="keywordtype">bool</span> visible READ visble WRITE setVisible NOTIFY visibleChanged)</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    Q_PROPERTY(<span class="keywordtype">bool</span> expanded READ expanded WRITE setExpanded NOTIFY expandChanged)</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    Q_PROPERTY(<span class="keywordtype">int</span> width READ width WRITE setWidth NOTIFY widthChanged)</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    Q_PROPERTY(QColor backgroundColor READ backgroundColor WRITE setBackgroundColor NOTIFY backgroundColorChanged)</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">Q_OBJECT</a></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(<span class="keywordtype">bool</span> visible READ visble WRITE setVisible NOTIFY visibleChanged)</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(<span class="keywordtype">bool</span> expanded READ expanded WRITE setExpanded NOTIFY expandChanged)</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(<span class="keywordtype">int</span> width READ width WRITE setWidth NOTIFY widthChanged)</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qcolor.html">QColor</a> backgroundColor READ backgroundColor WRITE setBackgroundColor NOTIFY backgroundColorChanged)</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="classDSidebarHelper.html">DSidebarHelper</a>(QObject *parent = <span class="keyword">nullptr</span>) : QObject (parent){ }</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="classDSidebarHelper.html">DSidebarHelper</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a> = <span class="keyword">nullptr</span>) : <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#QObject">QObject</a> (<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a>){ }</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">virtual</span>~<a class="code" href="classDSidebarHelper.html">DSidebarHelper</a>(){}</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    QColor backgroundColor()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qcolor.html">QColor</a> backgroundColor()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordflow">return</span> m_backgroundColor;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    }</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> setBackgroundColor(QColor backgroundColor)</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> setBackgroundColor(<a class="codeRef" href="http://doc.qt.io/qt-5/qcolor.html">QColor</a> backgroundColor)</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    {</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordflow">if</span> (m_backgroundColor == backgroundColor)</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        m_backgroundColor = backgroundColor;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        Q_EMIT backgroundColorChanged(m_backgroundColor);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_EMIT">Q_EMIT</a> backgroundColorChanged(m_backgroundColor);</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    }</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">bool</span> visble()<span class="keyword"> const</span></div>
@@ -206,7 +206,7 @@ $(document).ready(function(){initNavTree('dmainwindow__p_8h_source.html',''); in
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        m_visible = visible;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        Q_EMIT visibleChanged(m_visible);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_EMIT">Q_EMIT</a> visibleChanged(m_visible);</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">bool</span> expanded()<span class="keyword"> const</span></div>
@@ -220,7 +220,7 @@ $(document).ready(function(){initNavTree('dmainwindow__p_8h_source.html',''); in
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        m_expanded = expanded;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        Q_EMIT expandChanged(m_expanded);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_EMIT">Q_EMIT</a> expandChanged(m_expanded);</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">int</span> width()<span class="keyword"> const</span></div>
@@ -234,11 +234,11 @@ $(document).ready(function(){initNavTree('dmainwindow__p_8h_source.html',''); in
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        m_width = width;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        Q_EMIT widthChanged(m_width);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_EMIT">Q_EMIT</a> widthChanged(m_width);</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;Q_SIGNALS:</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">void</span> backgroundColorChanged(QColor backgroundColor);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SIGNALS">Q_SIGNALS</a>:</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">void</span> backgroundColorChanged(<a class="codeRef" href="http://doc.qt.io/qt-5/qcolor.html">QColor</a> backgroundColor);</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">void</span> visibleChanged(<span class="keywordtype">bool</span> visible);</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">void</span> expandChanged(<span class="keywordtype">bool</span> expanded);</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">void</span> widthChanged(<span class="keywordtype">int</span> width);</div>
@@ -247,7 +247,7 @@ $(document).ready(function(){initNavTree('dmainwindow__p_8h_source.html',''); in
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">bool</span> m_visible = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordtype">bool</span> m_expanded = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">int</span> m_width = -1;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    QColor m_backgroundColor;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qcolor.html">QColor</a> m_backgroundColor;</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;};</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
@@ -264,10 +264,10 @@ $(document).ready(function(){initNavTree('dmainwindow__p_8h_source.html',''); in
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <a class="code" href="classDPlatformWindowHandle.html">DPlatformWindowHandle</a>   *handle     = Q_NULLPTR;</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <a class="code" href="classDTitlebar.html">DTitlebar</a>               *titlebar   = Q_NULLPTR;</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <a class="code" href="classDShadowLine.html">DShadowLine</a>             *titleShadow = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    QShortcut               *help       = Q_NULLPTR;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qshortcut.html">QShortcut</a>               *help       = Q_NULLPTR;</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <a class="code" href="classDSidebarHelper.html">DSidebarHelper</a>          *sidebarHelper = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    QWidget                 *sidebarWidget = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    QToolBar                *tb = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a>                 *sidebarWidget = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qtoolbar.html">QToolBar</a>                *tb = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    D_DECLARE_PUBLIC(<a class="code" href="classDMainWindow.html">DMainWindow</a>)</div>
@@ -282,6 +282,17 @@ $(document).ready(function(){initNavTree('dmainwindow__p_8h_source.html',''); in
 <div class="ttc" id="aclassDShadowLine_html"><div class="ttname"><a href="classDShadowLine.html">DShadowLine</a></div><div class="ttdef"><b>Definition:</b> dshadowline.h:17</div></div>
 <div class="ttc" id="aclassDSidebarHelper_html"><div class="ttname"><a href="classDSidebarHelper.html">DSidebarHelper</a></div><div class="ttdef"><b>Definition:</b> dmainwindow_p.h:19</div></div>
 <div class="ttc" id="aclassDTitlebar_html"><div class="ttname"><a href="classDTitlebar.html">DTitlebar</a></div><div class="ttdef"><b>Definition:</b> dtitlebar.h:20</div></div>
+<div class="ttc" id="aqcolor_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qcolor.html">QColor</a></div></div>
+<div class="ttc" id="aqobject_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html">QObject</a></div></div>
+<div class="ttc" id="aqobject_html_QObject"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#QObject">QObject::QObject</a></div><div class="ttdeci">QObject(QObject *parent)</div></div>
+<div class="ttc" id="aqobject_html_Q_EMIT"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_EMIT">QObject::Q_EMIT</a></div><div class="ttdeci">Q_EMITQ_EMIT</div></div>
+<div class="ttc" id="aqobject_html_Q_OBJECT"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">QObject::Q_OBJECT</a></div><div class="ttdeci">Q_OBJECTQ_OBJECT</div></div>
+<div class="ttc" id="aqobject_html_Q_PROPERTY"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">QObject::Q_PROPERTY</a></div><div class="ttdeci">Q_PROPERTY(...)</div></div>
+<div class="ttc" id="aqobject_html_Q_SIGNALS"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_SIGNALS">QObject::Q_SIGNALS</a></div><div class="ttdeci">Q_SIGNALSQ_SIGNALS</div></div>
+<div class="ttc" id="aqobject_html_parent"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#parent">QObject::parent</a></div><div class="ttdeci">QObject * parent() const const</div></div>
+<div class="ttc" id="aqshortcut_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qshortcut.html">QShortcut</a></div></div>
+<div class="ttc" id="aqtoolbar_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qtoolbar.html">QToolBar</a></div></div>
+<div class="ttc" id="aqwidget_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.4-->
@@ -289,7 +300,7 @@ $(document).ready(function(){initNavTree('dmainwindow__p_8h_source.html',''); in
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_cc1fdbae730d0dba18db2b924667b662.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_7e9cf0e2371012f8aca5a790419dfe62.html">src</a></li><li class="navelem"><a class="el" href="dir_0f0f1158b2ab9c2e2656097b145c93da.html">widgets</a></li><li class="navelem"><a class="el" href="dir_c2ef0fafcc327cb5e8231a54477e2847.html">private</a></li><li class="navelem"><b>dmainwindow_p.h</b></li>
-    <li class="footer">文档生成时间:2023-01-03-09:26  +00</li>
+    <li class="footer">文档生成时间:2023-01-03-09:52  +00</li>
     <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
     <li class="footer">制作者:deepin doc doc go SIG</li>
     <li class="footer">文档使用CC-BY-4.0共享 </a>

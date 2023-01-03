@@ -168,13 +168,13 @@ $(document).ready(function(){initNavTree('dtooltip_8h_source.html',''); initResi
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
 <div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classDToolTip.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDToolTip.html">DToolTip</a> : <span class="keyword">public</span> <a class="code" href="classDTipLabel.html">DTipLabel</a></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">Q_OBJECT</a></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDToolTip.html#abbafc3ad0b2a8fe2eaa7168f51725a40">DToolTip</a>(<span class="keyword">const</span> QString &amp;text, <span class="keywordtype">bool</span> completionClose = <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDToolTip.html#abbafc3ad0b2a8fe2eaa7168f51725a40">DToolTip</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;<a class="codeRef" href="http://doc.qt.io/qt-5/qlabel.html#text-prop">text</a>, <span class="keywordtype">bool</span> completionClose = <span class="keyword">true</span>);</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    QSize <a class="code" href="classDToolTip.html#a00178f3f5be4bde5bf33dd765f5634cc">sizeHint</a>() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDToolTip.html#aa9aa5f8f9f66ddbd50f4440032764a5b">show</a>(<span class="keyword">const</span> QPoint &amp;pos, <span class="keywordtype">int</span> duration);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qsize.html">QSize</a> <a class="code" href="classDToolTip.html#a00178f3f5be4bde5bf33dd765f5634cc">sizeHint</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">void</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html#show">show</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qpoint.html">QPoint</a> &amp;<a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html#pos-prop">pos</a>, <span class="keywordtype">int</span> duration);</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;};</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;DWIDGET_END_NAMESPACE</div>
@@ -183,8 +183,14 @@ $(document).ready(function(){initNavTree('dtooltip_8h_source.html',''); initResi
 <div class="ttc" id="aclassDTipLabel_html"><div class="ttname"><a href="classDTipLabel.html">DTipLabel</a></div><div class="ttdef"><b>Definition:</b> dtiplabel.h:14</div></div>
 <div class="ttc" id="aclassDToolTip_html"><div class="ttname"><a href="classDToolTip.html">DToolTip</a></div><div class="ttdef"><b>Definition:</b> dtooltip.h:15</div></div>
 <div class="ttc" id="aclassDToolTip_html_a00178f3f5be4bde5bf33dd765f5634cc"><div class="ttname"><a href="classDToolTip.html#a00178f3f5be4bde5bf33dd765f5634cc">DToolTip::sizeHint</a></div><div class="ttdeci">QSize sizeHint() const override</div><div class="ttdoc">DToolTip::sizeHint.</div><div class="ttdef"><b>Definition:</b> dtooltip.cpp:43</div></div>
-<div class="ttc" id="aclassDToolTip_html_aa9aa5f8f9f66ddbd50f4440032764a5b"><div class="ttname"><a href="classDToolTip.html#aa9aa5f8f9f66ddbd50f4440032764a5b">DToolTip::show</a></div><div class="ttdeci">void show(const QPoint &amp;pos, int duration)</div><div class="ttdoc">DToolTip::show设置提示消息出现的位置.</div><div class="ttdef"><b>Definition:</b> dtooltip.cpp:59</div></div>
 <div class="ttc" id="aclassDToolTip_html_abbafc3ad0b2a8fe2eaa7168f51725a40"><div class="ttname"><a href="classDToolTip.html#abbafc3ad0b2a8fe2eaa7168f51725a40">DToolTip::DToolTip</a></div><div class="ttdeci">DToolTip(const QString &amp;text, bool completionClose=true)</div><div class="ttdoc">DToolTip的构造函数.</div><div class="ttdef"><b>Definition:</b> dtooltip.cpp:30</div></div>
+<div class="ttc" id="aqlabel_html_text-prop"><div class="ttname"><a href="http://doc.qt.io/qt-5/qlabel.html#text-prop">QLabel::text</a></div><div class="ttdeci">text</div></div>
+<div class="ttc" id="aqobject_html_Q_OBJECT"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">QObject::Q_OBJECT</a></div><div class="ttdeci">Q_OBJECTQ_OBJECT</div></div>
+<div class="ttc" id="aqpoint_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qpoint.html">QPoint</a></div></div>
+<div class="ttc" id="aqsize_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qsize.html">QSize</a></div></div>
+<div class="ttc" id="aqstring_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstring.html">QString</a></div></div>
+<div class="ttc" id="aqwidget_html_pos-prop"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html#pos-prop">QWidget::pos</a></div><div class="ttdeci">pos</div></div>
+<div class="ttc" id="aqwidget_html_show"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html#show">QWidget::show</a></div><div class="ttdeci">void show()</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.4-->
@@ -192,7 +198,7 @@ $(document).ready(function(){initNavTree('dtooltip_8h_source.html',''); initResi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_cc1fdbae730d0dba18db2b924667b662.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_6819db61f31aacd6e31b437a606a4041.html">include</a></li><li class="navelem"><a class="el" href="dir_6719ee6af2149ba01bce2af57814b9e8.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_4faf4521db2f3764f9e00575717749e8.html">widgets</a></li><li class="navelem"><a class="el" href="dtooltip_8h.html">dtooltip.h</a></li>
-    <li class="footer">文档生成时间:2023-01-03-09:26  +00</li>
+    <li class="footer">文档生成时间:2023-01-03-09:52  +00</li>
     <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
     <li class="footer">制作者:deepin doc doc go SIG</li>
     <li class="footer">文档使用CC-BY-4.0共享 </a>

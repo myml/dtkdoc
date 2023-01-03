@@ -180,10 +180,10 @@ $(document).ready(function(){initNavTree('darrowrectangle_8h_source.html',''); i
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">class </span><a class="code" href="classDPlatformWindowHandle.html">DPlatformWindowHandle</a>;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">class </span><a class="code" href="classDArrowRectanglePrivate.html">DArrowRectanglePrivate</a>;</div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classDArrowRectangle.html">   28</a></span>&#160;<span class="keyword">class </span>LIBDTKWIDGETSHARED_EXPORT <a class="code" href="classDArrowRectangle.html">DArrowRectangle</a> : <span class="keyword">public</span> QWidget, <span class="keyword">public</span> DTK_CORE_NAMESPACE::DObject</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classDArrowRectangle.html">   28</a></span>&#160;<span class="keyword">class </span>LIBDTKWIDGETSHARED_EXPORT <a class="code" href="classDArrowRectangle.html">DArrowRectangle</a> : <span class="keyword">public</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a>, <span class="keyword">public</span> DTK_CORE_NAMESPACE::DObject</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    Q_DISABLE_COPY(<a class="code" href="classDArrowRectangle.html">DArrowRectangle</a>)</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_DISABLE_COPY">Q_DISABLE_COPY</a>(<a class="code" href="classDArrowRectangle.html">DArrowRectangle</a>)</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    D_DECLARE_PRIVATE(<a class="code" href="classDArrowRectangle.html">DArrowRectangle</a>)</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">public</span>:</div>
@@ -200,23 +200,23 @@ $(document).ready(function(){initNavTree('darrowrectangle_8h_source.html',''); i
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        FloatWidget,</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    };</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDArrowRectangle.html">DArrowRectangle</a>(ArrowDirection direction, QWidget *parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDArrowRectangle.html">DArrowRectangle</a>(ArrowDirection direction, FloatMode floatMode, QWidget *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDArrowRectangle.html">DArrowRectangle</a>(ArrowDirection direction, <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a> *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDArrowRectangle.html">DArrowRectangle</a>(ArrowDirection direction, FloatMode floatMode, <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a> *parent = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    ~<a class="code" href="classDArrowRectangle.html">DArrowRectangle</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    Q_PROPERTY(QColor backgroundColor READ backgroundColor WRITE setBackgroundColor)</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    Q_PROPERTY(QColor borderColor READ borderColor WRITE setBorderColor)</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    Q_PROPERTY(<span class="keywordtype">int</span> borderWidth READ borderWidth WRITE setBorderWidth)</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    Q_PROPERTY(<span class="keywordtype">int</span> radius READ radius WRITE setRadius)</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    Q_PROPERTY(<span class="keywordtype">int</span> arrowWidth READ arrowWidth WRITE setArrowWidth)</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    Q_PROPERTY(<span class="keywordtype">int</span> arrowHeight READ arrowHeight WRITE setArrowHeight)</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    Q_PROPERTY(<span class="keywordtype">int</span> arrowX READ arrowX WRITE setArrowX)</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    Q_PROPERTY(<span class="keywordtype">int</span> arrowY READ arrowY WRITE setArrowY)</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    Q_PROPERTY(<span class="keywordtype">int</span> margin READ margin WRITE setMargin)</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    Q_PROPERTY(ArrowDirection arrowDirection READ arrowDirection WRITE setArrowDirection)</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    Q_PROPERTY(qreal shadowXOffset READ shadowXOffset WRITE setShadowXOffset)</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    Q_PROPERTY(qreal shadowYOffset READ shadowYOffset WRITE setShadowYOffset)</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    Q_PROPERTY(qreal shadowBlurRadius READ shadowBlurRadius WRITE setShadowBlurRadius)</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qcolor.html">QColor</a> backgroundColor READ backgroundColor WRITE setBackgroundColor)</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qcolor.html">QColor</a> borderColor READ borderColor WRITE setBorderColor)</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(<span class="keywordtype">int</span> borderWidth READ borderWidth WRITE setBorderWidth)</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(<span class="keywordtype">int</span> radius READ radius WRITE setRadius)</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(<span class="keywordtype">int</span> arrowWidth READ arrowWidth WRITE setArrowWidth)</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(<span class="keywordtype">int</span> arrowHeight READ arrowHeight WRITE setArrowHeight)</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(<span class="keywordtype">int</span> arrowX READ arrowX WRITE setArrowX)</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(<span class="keywordtype">int</span> arrowY READ arrowY WRITE setArrowY)</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(<span class="keywordtype">int</span> margin READ margin WRITE setMargin)</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(ArrowDirection arrowDirection READ arrowDirection WRITE setArrowDirection)</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(qreal shadowXOffset READ shadowXOffset WRITE setShadowXOffset)</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(qreal shadowYOffset READ shadowYOffset WRITE setShadowYOffset)</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(qreal shadowBlurRadius READ shadowBlurRadius WRITE setShadowBlurRadius)</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">int</span> radius() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">bool</span> radiusForceEnabled() <span class="keyword">const</span>;</div>
@@ -226,8 +226,8 @@ $(document).ready(function(){initNavTree('darrowrectangle_8h_source.html',''); i
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">int</span> arrowY() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">int</span> margin() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">int</span> borderWidth() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    QColor borderColor() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    QColor backgroundColor() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qcolor.html">QColor</a> borderColor() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qcolor.html">QColor</a> backgroundColor() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    ArrowDirection arrowDirection() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">void</span> setRadius(<span class="keywordtype">int</span> value);</div>
@@ -238,20 +238,20 @@ $(document).ready(function(){initNavTree('darrowrectangle_8h_source.html',''); i
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">void</span> setArrowY(<span class="keywordtype">int</span> value);</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">void</span> setMargin(<span class="keywordtype">int</span> value);</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">void</span> setBorderWidth(<span class="keywordtype">int</span> borderWidth);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">void</span> setBorderColor(<span class="keyword">const</span> QColor &amp;borderColor);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">void</span> setBackgroundColor(<span class="keyword">const</span> QColor &amp;backgroundColor);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">void</span> setBorderColor(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qcolor.html">QColor</a> &amp;borderColor);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">void</span> setBackgroundColor(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qcolor.html">QColor</a> &amp;backgroundColor);</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">void</span> setBackgroundColor(DBlurEffectWidget::MaskColorType type);</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">void</span> setArrowDirection(ArrowDirection value);</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">void</span> setWidth(<span class="keywordtype">int</span> value);</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">void</span> setHeight(<span class="keywordtype">int</span> value);</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> show(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html#show">show</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">void</span> setContent(QWidget *content);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    QWidget *getContent() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">void</span> setContent(<a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a> *content);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a> *getContent() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordtype">void</span> resizeWithContent();</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">void</span> move(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    QSize getFixedSize();</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">void</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html#move-1">move</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qsize.html">QSize</a> getFixedSize();</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    qreal shadowXOffset() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    qreal shadowYOffset() <span class="keyword">const</span>;</div>
@@ -264,13 +264,13 @@ $(document).ready(function(){initNavTree('darrowrectangle_8h_source.html',''); i
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">void</span> setLeftRightRadius(<span class="keywordtype">bool</span> enable);</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordtype">void</span> setRadiusArrowStyleEnable(<span class="keywordtype">bool</span> enable);</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;Q_SIGNALS:</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SIGNALS">Q_SIGNALS</a>:</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordtype">void</span> windowDeactivate() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordtype">void</span> paintEvent(QPaintEvent *) Q_DECL_OVERRIDE;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordtype">void</span> resizeEvent(QResizeEvent *e) Q_DECL_OVERRIDE;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordtype">bool</span> event(QEvent *e) Q_DECL_OVERRIDE;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordtype">void</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html#paintEvent">paintEvent</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qpaintevent.html">QPaintEvent</a> *) Q_DECL_OVERRIDE;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordtype">void</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html#resizeEvent">resizeEvent</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qresizeevent.html">QResizeEvent</a> *e) Q_DECL_OVERRIDE;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordtype">bool</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html#event">event</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qevent.html">QEvent</a> *e) Q_DECL_OVERRIDE;</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;};</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;DWIDGET_END_NAMESPACE</div>
@@ -280,6 +280,20 @@ $(document).ready(function(){initNavTree('darrowrectangle_8h_source.html',''); i
 <div class="ttc" id="aclassDArrowRectanglePrivate_html"><div class="ttname"><a href="classDArrowRectanglePrivate.html">DArrowRectanglePrivate</a></div><div class="ttdef"><b>Definition:</b> darrowrectangle_p.h:19</div></div>
 <div class="ttc" id="aclassDArrowRectangle_html"><div class="ttname"><a href="classDArrowRectangle.html">DArrowRectangle</a></div><div class="ttdef"><b>Definition:</b> darrowrectangle.h:29</div></div>
 <div class="ttc" id="aclassDPlatformWindowHandle_html"><div class="ttname"><a href="classDPlatformWindowHandle.html">DPlatformWindowHandle</a></div><div class="ttdef"><b>Definition:</b> dplatformwindowhandle.h:19</div></div>
+<div class="ttc" id="aqcolor_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qcolor.html">QColor</a></div></div>
+<div class="ttc" id="aqevent_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qevent.html">QEvent</a></div></div>
+<div class="ttc" id="aqobject_html_Q_DISABLE_COPY"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_DISABLE_COPY">QObject::Q_DISABLE_COPY</a></div><div class="ttdeci">Q_DISABLE_COPY(Class)</div></div>
+<div class="ttc" id="aqobject_html_Q_PROPERTY"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">QObject::Q_PROPERTY</a></div><div class="ttdeci">Q_PROPERTY(...)</div></div>
+<div class="ttc" id="aqobject_html_Q_SIGNALS"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_SIGNALS">QObject::Q_SIGNALS</a></div><div class="ttdeci">Q_SIGNALSQ_SIGNALS</div></div>
+<div class="ttc" id="aqpaintevent_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qpaintevent.html">QPaintEvent</a></div></div>
+<div class="ttc" id="aqresizeevent_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qresizeevent.html">QResizeEvent</a></div></div>
+<div class="ttc" id="aqsize_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qsize.html">QSize</a></div></div>
+<div class="ttc" id="aqwidget_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a></div></div>
+<div class="ttc" id="aqwidget_html_event"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html#event">QWidget::event</a></div><div class="ttdeci">virtual bool event(QEvent *event) override</div></div>
+<div class="ttc" id="aqwidget_html_move-1"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html#move-1">QWidget::move</a></div><div class="ttdeci">void move(int x, int y)</div></div>
+<div class="ttc" id="aqwidget_html_paintEvent"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html#paintEvent">QWidget::paintEvent</a></div><div class="ttdeci">virtual void paintEvent(QPaintEvent *event)</div></div>
+<div class="ttc" id="aqwidget_html_resizeEvent"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html#resizeEvent">QWidget::resizeEvent</a></div><div class="ttdeci">virtual void resizeEvent(QResizeEvent *event)</div></div>
+<div class="ttc" id="aqwidget_html_show"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html#show">QWidget::show</a></div><div class="ttdeci">void show()</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.4-->
@@ -287,7 +301,7 @@ $(document).ready(function(){initNavTree('darrowrectangle_8h_source.html',''); i
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_cc1fdbae730d0dba18db2b924667b662.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_6819db61f31aacd6e31b437a606a4041.html">include</a></li><li class="navelem"><a class="el" href="dir_6719ee6af2149ba01bce2af57814b9e8.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_4faf4521db2f3764f9e00575717749e8.html">widgets</a></li><li class="navelem"><b>darrowrectangle.h</b></li>
-    <li class="footer">文档生成时间:2023-01-03-09:26  +00</li>
+    <li class="footer">文档生成时间:2023-01-03-09:52  +00</li>
     <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
     <li class="footer">制作者:deepin doc doc go SIG</li>
     <li class="footer">文档使用CC-BY-4.0共享 </a>

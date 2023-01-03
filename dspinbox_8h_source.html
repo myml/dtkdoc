@@ -168,30 +168,30 @@ $(document).ready(function(){initNavTree('dspinbox_8h_source.html',''); initResi
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;DWIDGET_BEGIN_NAMESPACE</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">class </span><a class="code" href="classDSpinBoxPrivate.html">DSpinBoxPrivate</a>;</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classDSpinBox.html">   16</a></span>&#160;<span class="keyword">class </span>LIBDTKWIDGETSHARED_EXPORT <a class="code" href="classDSpinBox.html">DSpinBox</a> : <span class="keyword">public</span> QSpinBox, <span class="keyword">public</span> DTK_CORE_NAMESPACE::DObject</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classDSpinBox.html">   16</a></span>&#160;<span class="keyword">class </span>LIBDTKWIDGETSHARED_EXPORT <a class="code" href="classDSpinBox.html">DSpinBox</a> : <span class="keyword">public</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qspinbox.html">QSpinBox</a>, <span class="keyword">public</span> DTK_CORE_NAMESPACE::DObject</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    Q_OBJECT</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    Q_PROPERTY(<span class="keywordtype">bool</span> alert READ isAlert WRITE setAlert NOTIFY alertChanged)</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    Q_PROPERTY(<span class="keywordtype">int</span> defaultValue READ defaultValue WRITE setDefaultValue NOTIFY defaultValueChanged)</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(<span class="keywordtype">bool</span> alert READ isAlert WRITE setAlert NOTIFY alertChanged)</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(<span class="keywordtype">int</span> defaultValue READ defaultValue WRITE setDefaultValue NOTIFY defaultValueChanged)</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDSpinBox.html">DSpinBox</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDSpinBox.html">DSpinBox</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a> *parent = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    QLineEdit *lineEdit() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qlineedit.html">QLineEdit</a> *<a class="codeRef" href="http://doc.qt.io/qt-5/qabstractspinbox.html#lineEdit">lineEdit</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">bool</span> isAlert() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">void</span> showAlertMessage(<span class="keyword">const</span> QString &amp;text, <span class="keywordtype">int</span> duration = 3000);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> showAlertMessage(<span class="keyword">const</span> QString &amp;text, QWidget *follower, <span class="keywordtype">int</span> duration = 3000);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">void</span> showAlertMessage(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;text, <span class="keywordtype">int</span> duration = 3000);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> showAlertMessage(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;text, <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a> *follower, <span class="keywordtype">int</span> duration = 3000);</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    D_DECL_DEPRECATED <span class="keywordtype">int</span> defaultValue() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> setEnabledEmbedStyle(<span class="keywordtype">bool</span> enabled);</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">public</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SLOTS">Q_SLOTS</a>:</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> setAlert(<span class="keywordtype">bool</span> alert);</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    D_DECL_DEPRECATED <span class="keywordtype">void</span> setDefaultValue(<span class="keywordtype">int</span> defaultValue);</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;Q_SIGNALS:</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SIGNALS">Q_SIGNALS</a>:</div>
 <div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classDSpinBox.html#adc73dad572b700a621f3f2255c89a67d">   40</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDSpinBox.html#adc73dad572b700a621f3f2255c89a67d">alertChanged</a>(<span class="keywordtype">bool</span> alert);</div>
 <div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classDSpinBox.html#ac84ad79c09aa966ab4b963111766fc04">   41</a></span>&#160;    D_DECL_DEPRECATED <span class="keywordtype">void</span> <a class="code" href="classDSpinBox.html#ac84ad79c09aa966ab4b963111766fc04">defaultValueChanged</a>(<span class="keywordtype">int</span> defaultValue);</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
@@ -200,29 +200,29 @@ $(document).ready(function(){initNavTree('dspinbox_8h_source.html',''); initResi
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;};</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">class </span><a class="code" href="classDDoubleSpinBoxPrivate.html">DDoubleSpinBoxPrivate</a>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classDDoubleSpinBox.html">   48</a></span>&#160;<span class="keyword">class </span>LIBDTKWIDGETSHARED_EXPORT <a class="code" href="classDDoubleSpinBox.html">DDoubleSpinBox</a> : <span class="keyword">public</span> QDoubleSpinBox, <span class="keyword">public</span> DTK_CORE_NAMESPACE::DObject</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classDDoubleSpinBox.html">   48</a></span>&#160;<span class="keyword">class </span>LIBDTKWIDGETSHARED_EXPORT <a class="code" href="classDDoubleSpinBox.html">DDoubleSpinBox</a> : <span class="keyword">public</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qdoublespinbox.html">QDoubleSpinBox</a>, <span class="keyword">public</span> DTK_CORE_NAMESPACE::DObject</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    Q_OBJECT</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    Q_PROPERTY(<span class="keywordtype">bool</span> alert READ isAlert WRITE setAlert NOTIFY alertChanged)</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    Q_PROPERTY(<span class="keywordtype">double</span> defaultValue READ defaultValue WRITE setDefaultValue NOTIFY defaultValueChanged)</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(<span class="keywordtype">bool</span> alert READ isAlert WRITE setAlert NOTIFY alertChanged)</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(<span class="keywordtype">double</span> defaultValue READ defaultValue WRITE setDefaultValue NOTIFY defaultValueChanged)</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDDoubleSpinBox.html">DDoubleSpinBox</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDDoubleSpinBox.html">DDoubleSpinBox</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a> *parent = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">bool</span> isAlert() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> showAlertMessage(<span class="keyword">const</span> QString &amp;text, <span class="keywordtype">int</span> duration = 3000);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> showAlertMessage(<span class="keyword">const</span> QString &amp;text, QWidget *follower, <span class="keywordtype">int</span> duration = 3000);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> showAlertMessage(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;text, <span class="keywordtype">int</span> duration = 3000);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> showAlertMessage(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;text, <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a> *follower, <span class="keywordtype">int</span> duration = 3000);</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    D_DECL_DEPRECATED <span class="keywordtype">double</span> defaultValue() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    QLineEdit *lineEdit() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qlineedit.html">QLineEdit</a> *<a class="codeRef" href="http://doc.qt.io/qt-5/qabstractspinbox.html#lineEdit">lineEdit</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> setEnabledEmbedStyle(<span class="keywordtype">bool</span> enabled);</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">public</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SLOTS">Q_SLOTS</a>:</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">void</span> setAlert(<span class="keywordtype">bool</span> alert);</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    D_DECL_DEPRECATED <span class="keywordtype">void</span> setDefaultValue(<span class="keywordtype">double</span> defaultValue);</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;Q_SIGNALS:</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SIGNALS">Q_SIGNALS</a>:</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">void</span> alertChanged(<span class="keywordtype">bool</span> alert);</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    D_DECL_DEPRECATED <span class="keywordtype">void</span> defaultValueChanged(<span class="keywordtype">double</span> defaultValue);</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
@@ -239,6 +239,15 @@ $(document).ready(function(){initNavTree('dspinbox_8h_source.html',''); initResi
 <div class="ttc" id="aclassDSpinBox_html"><div class="ttname"><a href="classDSpinBox.html">DSpinBox</a></div><div class="ttdef"><b>Definition:</b> dspinbox.h:17</div></div>
 <div class="ttc" id="aclassDSpinBox_html_ac84ad79c09aa966ab4b963111766fc04"><div class="ttname"><a href="classDSpinBox.html#ac84ad79c09aa966ab4b963111766fc04">DSpinBox::defaultValueChanged</a></div><div class="ttdeci">D_DECL_DEPRECATED void defaultValueChanged(int defaultValue)</div><div class="ttdoc">默认值发生了变化.</div></div>
 <div class="ttc" id="aclassDSpinBox_html_adc73dad572b700a621f3f2255c89a67d"><div class="ttname"><a href="classDSpinBox.html#adc73dad572b700a621f3f2255c89a67d">DSpinBox::alertChanged</a></div><div class="ttdeci">void alertChanged(bool alert)</div><div class="ttdoc">警告状态发生了变化.</div></div>
+<div class="ttc" id="aqabstractspinbox_html_lineEdit"><div class="ttname"><a href="http://doc.qt.io/qt-5/qabstractspinbox.html#lineEdit">QAbstractSpinBox::lineEdit</a></div><div class="ttdeci">QLineEdit * lineEdit() const const</div></div>
+<div class="ttc" id="aqdoublespinbox_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qdoublespinbox.html">QDoubleSpinBox</a></div></div>
+<div class="ttc" id="aqlineedit_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qlineedit.html">QLineEdit</a></div></div>
+<div class="ttc" id="aqobject_html_Q_PROPERTY"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">QObject::Q_PROPERTY</a></div><div class="ttdeci">Q_PROPERTY(...)</div></div>
+<div class="ttc" id="aqobject_html_Q_SIGNALS"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_SIGNALS">QObject::Q_SIGNALS</a></div><div class="ttdeci">Q_SIGNALSQ_SIGNALS</div></div>
+<div class="ttc" id="aqobject_html_Q_SLOTS"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_SLOTS">QObject::Q_SLOTS</a></div><div class="ttdeci">Q_SLOTSQ_SLOTS</div></div>
+<div class="ttc" id="aqspinbox_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qspinbox.html">QSpinBox</a></div></div>
+<div class="ttc" id="aqstring_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstring.html">QString</a></div></div>
+<div class="ttc" id="aqwidget_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.4-->
@@ -246,7 +255,7 @@ $(document).ready(function(){initNavTree('dspinbox_8h_source.html',''); initResi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_cc1fdbae730d0dba18db2b924667b662.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_6819db61f31aacd6e31b437a606a4041.html">include</a></li><li class="navelem"><a class="el" href="dir_6719ee6af2149ba01bce2af57814b9e8.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_4faf4521db2f3764f9e00575717749e8.html">widgets</a></li><li class="navelem"><a class="el" href="dspinbox_8h.html">dspinbox.h</a></li>
-    <li class="footer">文档生成时间:2023-01-03-09:26  +00</li>
+    <li class="footer">文档生成时间:2023-01-03-09:52  +00</li>
     <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
     <li class="footer">制作者:deepin doc doc go SIG</li>
     <li class="footer">文档使用CC-BY-4.0共享 </a>

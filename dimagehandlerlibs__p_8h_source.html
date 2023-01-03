@@ -166,7 +166,7 @@ $(document).ready(function(){initNavTree('dimagehandlerlibs__p_8h_source.html','
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;FreeImage.h&gt;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">class </span>QLibrary;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">class </span><a class="codeRef" href="http://doc.qt.io/qt-5/qlibrary.html">QLibrary</a>;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">enum</span> ExifImageOrientation {</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    Undefined,</div>
@@ -188,14 +188,14 @@ $(document).ready(function(){initNavTree('dimagehandlerlibs__p_8h_source.html','
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">bool</span> isValid();</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    QHash&lt;QString, QString&gt; findMetaData(FREE_IMAGE_MDMODEL model, FIBITMAP *dib);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    QHash&lt;QString, QString&gt; findAllMetaData(<span class="keyword">const</span> QString &amp;fileName);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    FIBITMAP *readFileToFIBITMAP(<span class="keyword">const</span> QString &amp;fileName, <span class="keywordtype">int</span> flags = 0, FREE_IMAGE_FORMAT fif = FIF_UNKNOWN);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">bool</span> writeFIBITMAPToFile(FIBITMAP *dib, <span class="keyword">const</span> QString &amp;fileName, <span class="keywordtype">int</span> flags = 0);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    QImage FIBITMAPToQImage(FIBITMAP *dib) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qhash.html">QHash&lt;QString, QString&gt;</a> findMetaData(FREE_IMAGE_MDMODEL model, FIBITMAP *dib);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qhash.html">QHash&lt;QString, QString&gt;</a> findAllMetaData(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;fileName);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    FIBITMAP *readFileToFIBITMAP(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;fileName, <span class="keywordtype">int</span> flags = 0, FREE_IMAGE_FORMAT fif = FIF_UNKNOWN);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">bool</span> writeFIBITMAPToFile(FIBITMAP *dib, <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;fileName, <span class="keywordtype">int</span> flags = 0);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qimage.html">QImage</a> FIBITMAPToQImage(FIBITMAP *dib) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    ExifImageOrientation imageOrientation(<span class="keyword">const</span> QString &amp;fileName);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">bool</span> rotateImageFile(<span class="keyword">const</span> QString &amp;fileName, <span class="keywordtype">int</span> angle, QString &amp;errorString);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    ExifImageOrientation imageOrientation(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;fileName);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">bool</span> rotateImageFile(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;fileName, <span class="keywordtype">int</span> angle, <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;errorString);</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    FIBITMAP *(*FreeImage_Load)(FREE_IMAGE_FORMAT fif, <span class="keyword">const</span> <span class="keywordtype">char</span> *filename, <span class="keywordtype">int</span> flags);</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    void (*FreeImage_Unload)(FIBITMAP *dib);</div>
@@ -235,14 +235,19 @@ $(document).ready(function(){initNavTree('dimagehandlerlibs__p_8h_source.html','
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    FIBITMAP *(*FreeImage_Rotate)(FIBITMAP *dib, <span class="keywordtype">double</span> angle, <span class="keyword">const</span> <span class="keywordtype">void</span> *bkcolor);</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    QLibrary *freeImage = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    QMutex apiMutex;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qlibrary.html">QLibrary</a> *freeImage = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qmutex.html">QMutex</a> apiMutex;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    Q_DISABLE_COPY(<a class="code" href="classDLibFreeImage.html">DLibFreeImage</a>)</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;};</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// DIMAGEHANDLERLIBS_P_H</span></div>
 <div class="ttc" id="aclassDLibFreeImage_html"><div class="ttname"><a href="classDLibFreeImage.html">DLibFreeImage</a></div><div class="ttdef"><b>Definition:</b> dimagehandlerlibs_p.h:29</div></div>
+<div class="ttc" id="aqhash_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qhash.html">QHash</a></div></div>
+<div class="ttc" id="aqimage_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qimage.html">QImage</a></div></div>
+<div class="ttc" id="aqlibrary_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qlibrary.html">QLibrary</a></div></div>
+<div class="ttc" id="aqmutex_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qmutex.html">QMutex</a></div></div>
+<div class="ttc" id="aqstring_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstring.html">QString</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.4-->
@@ -250,7 +255,7 @@ $(document).ready(function(){initNavTree('dimagehandlerlibs__p_8h_source.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01e26ae7551668ca493319620c16a3ae.html">dtkgui</a></li><li class="navelem"><a class="el" href="dir_f1a11d12171d66e86c8e928f2778dd27.html">src</a></li><li class="navelem"><a class="el" href="dir_e143a758d77ce8d70780ce82afba0129.html">util</a></li><li class="navelem"><a class="el" href="dir_356a1189285e5f1e1eb34f1f5c3fdc37.html">private</a></li><li class="navelem"><b>dimagehandlerlibs_p.h</b></li>
-    <li class="footer">文档生成时间:2023-01-03-09:26  +00</li>
+    <li class="footer">文档生成时间:2023-01-03-09:52  +00</li>
     <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
     <li class="footer">制作者:deepin doc doc go SIG</li>
     <li class="footer">文档使用CC-BY-4.0共享 </a>

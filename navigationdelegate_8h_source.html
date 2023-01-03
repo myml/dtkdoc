@@ -169,9 +169,9 @@ $(document).ready(function(){initNavTree('navigationdelegate_8h_source.html','')
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">class </span>NavigationDelegatePrivate;</div>
 <div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classNavigationDelegate.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="classNavigationDelegate.html">NavigationDelegate</a>: <span class="keyword">public</span> <a class="code" href="classDStyledItemDelegate.html">DStyledItemDelegate</a></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">Q_OBJECT</a></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="classNavigationDelegate.html">NavigationDelegate</a>(QAbstractItemView *parent);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="classNavigationDelegate.html">NavigationDelegate</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qabstractitemview.html">QAbstractItemView</a> *<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a>);</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    ~<a class="code" href="classNavigationDelegate.html">NavigationDelegate</a>();</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
@@ -188,14 +188,20 @@ $(document).ready(function(){initNavTree('navigationdelegate_8h_source.html','')
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    };</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> paint(QPainter *painter, <span class="keyword">const</span> QStyleOptionViewItem &amp;option,</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;               <span class="keyword">const</span> QModelIndex &amp;index) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> initStyleOption(QStyleOptionViewItem *option, <span class="keyword">const</span> QModelIndex &amp;index) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> paint(<a class="codeRef" href="http://doc.qt.io/qt-5/qpainter.html">QPainter</a> *painter, <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstyleoptionviewitem.html">QStyleOptionViewItem</a> &amp;option,</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;               <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qmodelindex.html">QModelIndex</a> &amp;index) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> initStyleOption(<a class="codeRef" href="http://doc.qt.io/qt-5/qstyleoptionviewitem.html">QStyleOptionViewItem</a> *option, <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qmodelindex.html">QModelIndex</a> &amp;index) <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;};</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;DWIDGET_END_NAMESPACE</div>
 <div class="ttc" id="aclassDStyledItemDelegate_html"><div class="ttname"><a href="classDStyledItemDelegate.html">DStyledItemDelegate</a></div><div class="ttdef"><b>Definition:</b> dstyleditemdelegate.h:63</div></div>
 <div class="ttc" id="aclassNavigationDelegate_html"><div class="ttname"><a href="classNavigationDelegate.html">NavigationDelegate</a></div><div class="ttdef"><b>Definition:</b> navigationdelegate.h:16</div></div>
+<div class="ttc" id="aqabstractitemview_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qabstractitemview.html">QAbstractItemView</a></div></div>
+<div class="ttc" id="aqmodelindex_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qmodelindex.html">QModelIndex</a></div></div>
+<div class="ttc" id="aqobject_html_Q_OBJECT"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">QObject::Q_OBJECT</a></div><div class="ttdeci">Q_OBJECTQ_OBJECT</div></div>
+<div class="ttc" id="aqobject_html_parent"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#parent">QObject::parent</a></div><div class="ttdeci">QObject * parent() const const</div></div>
+<div class="ttc" id="aqpainter_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qpainter.html">QPainter</a></div></div>
+<div class="ttc" id="aqstyleoptionviewitem_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstyleoptionviewitem.html">QStyleOptionViewItem</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.4-->
@@ -203,7 +209,7 @@ $(document).ready(function(){initNavTree('navigationdelegate_8h_source.html','')
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_cc1fdbae730d0dba18db2b924667b662.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_7e9cf0e2371012f8aca5a790419dfe62.html">src</a></li><li class="navelem"><a class="el" href="dir_0f0f1158b2ab9c2e2656097b145c93da.html">widgets</a></li><li class="navelem"><a class="el" href="dir_c2ef0fafcc327cb5e8231a54477e2847.html">private</a></li><li class="navelem"><a class="el" href="dir_351d0e23647d964d7f5dd350fff62a3d.html">settings</a></li><li class="navelem"><b>navigationdelegate.h</b></li>
-    <li class="footer">文档生成时间:2023-01-03-09:26  +00</li>
+    <li class="footer">文档生成时间:2023-01-03-09:52  +00</li>
     <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
     <li class="footer">制作者:deepin doc doc go SIG</li>
     <li class="footer">文档使用CC-BY-4.0共享 </a>

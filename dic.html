@@ -160,7 +160,7 @@ DTk dci：dci工具类</h1>
 <h2><a class="anchor" id="autotoc_md1"></a>
 关于dci图标简介</h2>
 <p><code>DCI</code> 图标是一种整合性图标格式，应用可以使用该图标完成多种状态的自动变化。例如， <code>ListView</code> 控件中高亮的 <code>Item</code> 图标自动反白，<code>Menu</code> 中图标跟随当前 <code>Item</code> 变化等等。</p>
-<p><code>dtkcore</code> 中提供了一个 <code>DDciFile</code> 的类，实现 <code>DCI</code> 文件的逻辑。其只是对数据的打包，不限于图片数据，可以是任何文本和二进制数据。 <code>dtkcore</code> 中还提供了用于在文管中解析文件的文件引擎，专门用于通过 <code>QFile</code> 和 <code>QDir</code> 处理 <code>dci</code> 文件。</p>
+<p><code>dtkcore</code> 中提供了一个 <code>DDciFile</code> 的类，实现 <code>DCI</code> 文件的逻辑。其只是对数据的打包，不限于图片数据，可以是任何文本和二进制数据。 <code>dtkcore</code> 中还提供了用于在文管中解析文件的文件引擎，专门用于通过 <code><a class="elRef" href="http://doc.qt.io/qt-5/qfile.html">QFile</a></code> 和 <code><a class="elRef" href="http://doc.qt.io/qt-5/qdir.html">QDir</a></code> 处理 <code>dci</code> 文件。</p>
 <p>dtkgui 中提供了一个 <code><a class="el" href="classDDciIcon.html">DDciIcon</a></code> 类，实现了对 <code>DCI</code> 图标的逻辑。区别于 <code>DDciFile</code> ，它是 <code>DDciFile</code> 的上层封装，即使用 DDciFile 可以将文件进行打包归档的功能，封装了一种图标格式。 <code><a class="el" href="classDDciIcon.html">DDciIcon</a></code> 中提供的接口，都是针对图标的，并无 <code>DDciFile</code> 的数据处理操作，多个 <code><a class="el" href="classDDciIcon.html">DDciIcon</a></code> 进行数据拷贝和交换时，可以进行数据共享。 <code><a class="el" href="classDDciIcon.html">DDciIcon</a></code> 可以通过调用 pixmap 函数返回需要显示的图片数据，也可以通过调用 paint 函数直接将内容绘制到目标内部。解析 Dci 图标的过程，这里讲解一下，详细过程可以查看代码理解： 首先需要创建一个 DDciFile 来解析 (*.dci) 文件，无论是本地文本还是二进制数据，都可以通过 <code>DDciFile</code> 来解析内部内容。 根据 <code><a class="el" href="classDDciIcon.html">DDciIcon</a></code> 中规定好的路径格式，来解析出图标中拟定的各种信息，一般情况下的 <code><a class="el" href="classDDciIcon.html">DDciIcon</a></code> 的路径格式是这样的：</p>
 <p><img src="dciicon-tree.png" alt="" class="inline" title="DCI图标结构路径"/></p>
 <p>最上层时 <code>/</code> 作为根目录（ <code>DCI</code> 文件都必须使用 <code>/</code> 作为根目录）。 第一层子目录（ 16、32、512 ）作为图标的大小。一般情况下是图标在 @1（1倍缩放比） 时的大小（在目前的使用设计师使用的 dci 图标插件的）。例如上述图标，传入的大小在 0-16时选择 16，传入大小在 16-32 时选择 32，... 以此类推。</p>
@@ -220,7 +220,7 @@ DTk dci：dci工具类</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">文档生成时间:2023-01-03-09:26  +00</li>
+    <li class="footer">文档生成时间:2023-01-03-09:52  +00</li>
     <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
     <li class="footer">制作者:deepin doc doc go SIG</li>
     <li class="footer">文档使用CC-BY-4.0共享 </a>
