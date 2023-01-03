@@ -1,0 +1,28 @@
+name: Publish Docs
+
+on:
+  push:
+    branches: ["master"]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: true
+      - name: Prepare
+        run: |
+          git submodule update --remote
+          sudo apt-get install -y cmake doxygen
+          sed -i "s|change address|https://github.com/linuxdeepin/$(basename `pwd`)|" doxygen-theme/doxygen-awesome-css/header.html
+          sed -i "s|doxtime|$(date +"%Y-%m-%d-%R  %:::z")|" doxygen-theme/doxygen-awesome-css/footer.html
+      - name: Build
+        run: .github/workflows/build.sh
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build/docs/html/
