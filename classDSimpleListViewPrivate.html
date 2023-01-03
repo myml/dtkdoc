@@ -1,0 +1,325 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: DSimpleListViewPrivate类 参考</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="change address" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classDSimpleListViewPrivate.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="classDSimpleListViewPrivate-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">DSimpleListViewPrivate类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 DSimpleListViewPrivate 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classDSimpleListViewPrivate.png" alt=""/>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a12e84a4939812445861fdcddb0d61644"><td class="memItemLeft" align="right" valign="top"><a id="a12e84a4939812445861fdcddb0d61644"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DSimpleListViewPrivate</b> (<a class="el" href="classDtk_1_1Widget_1_1DSimpleListView.html">DSimpleListView</a> *parent)</td></tr>
+<tr class="separator:a12e84a4939812445861fdcddb0d61644"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41b8bd74219f814cc28b09a5be2394c8"><td class="memItemLeft" align="right" valign="top"><a id="a41b8bd74219f814cc28b09a5be2394c8"></a>
+QList&lt; <a class="el" href="classDtk_1_1Widget_1_1DSimpleListItem.html">DSimpleListItem</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getSearchItems</b> (QList&lt; <a class="el" href="classDtk_1_1Widget_1_1DSimpleListItem.html">DSimpleListItem</a> * &gt; items)</td></tr>
+<tr class="separator:a41b8bd74219f814cc28b09a5be2394c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4c0a3eea1872462d56dfdcebd66463f"><td class="memItemLeft" align="right" valign="top"><a id="ad4c0a3eea1872462d56dfdcebd66463f"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getItemsTotalHeight</b> ()</td></tr>
+<tr class="separator:ad4c0a3eea1872462d56dfdcebd66463f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a525c70affdb27f2353a89a34c3a537f2"><td class="memItemLeft" align="right" valign="top"><a id="a525c70affdb27f2353a89a34c3a537f2"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getTopRenderOffset</b> ()</td></tr>
+<tr class="separator:a525c70affdb27f2353a89a34c3a537f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c5edcfea5d0b51f4a0cc0dbf4be6760"><td class="memItemLeft" align="right" valign="top"><a id="a7c5edcfea5d0b51f4a0cc0dbf4be6760"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>sortItemsByColumn</b> (int column, bool descendingSort)</td></tr>
+<tr class="separator:a7c5edcfea5d0b51f4a0cc0dbf4be6760"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a525968acdb8fc5eda51c27644cbf5a56"><td class="memItemLeft" align="right" valign="top"><a id="a525968acdb8fc5eda51c27644cbf5a56"></a>
+QPointer&lt; <a class="el" href="classDtk_1_1Widget_1_1DSimpleListItem.html">DSimpleListItem</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>lastHoverItem</b> = nullptr</td></tr>
+<tr class="separator:a525968acdb8fc5eda51c27644cbf5a56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa99a14259dc13c6a1529b036276267b7"><td class="memItemLeft" align="right" valign="top"><a id="aa99a14259dc13c6a1529b036276267b7"></a>
+QPointer&lt; <a class="el" href="classDtk_1_1Widget_1_1DSimpleListItem.html">DSimpleListItem</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>lastSelectItem</b> = nullptr</td></tr>
+<tr class="separator:aa99a14259dc13c6a1529b036276267b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85e4569ff077cb8bc7c7e0a43986620b"><td class="memItemLeft" align="right" valign="top"><a id="a85e4569ff077cb8bc7c7e0a43986620b"></a>
+QPointer&lt; <a class="el" href="classDtk_1_1Widget_1_1DSimpleListItem.html">DSimpleListItem</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>drawHoverItem</b> = nullptr</td></tr>
+<tr class="separator:a85e4569ff077cb8bc7c7e0a43986620b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00aa9ecf17aca6d86613455b33d4761f"><td class="memItemLeft" align="right" valign="top"><a id="a00aa9ecf17aca6d86613455b33d4761f"></a>
+QPointer&lt; <a class="el" href="classDtk_1_1Widget_1_1DSimpleListItem.html">DSimpleListItem</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>mouseHoverItem</b> = nullptr</td></tr>
+<tr class="separator:a00aa9ecf17aca6d86613455b33d4761f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15bc8b795ddb30e190886592f1a2a281"><td class="memItemLeft" align="right" valign="top"><a id="a15bc8b795ddb30e190886592f1a2a281"></a>
+QList&lt; <a class="el" href="classDtk_1_1Widget_1_1DSimpleListItem.html">DSimpleListItem</a> * &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>listItems</b> = nullptr</td></tr>
+<tr class="separator:a15bc8b795ddb30e190886592f1a2a281"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d917af88c60e5a8cf68f2307e6ed78e"><td class="memItemLeft" align="right" valign="top"><a id="a5d917af88c60e5a8cf68f2307e6ed78e"></a>
+QList&lt; <a class="el" href="classDtk_1_1Widget_1_1DSimpleListItem.html">DSimpleListItem</a> * &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>renderItems</b> = nullptr</td></tr>
+<tr class="separator:a5d917af88c60e5a8cf68f2307e6ed78e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3974af65b42dd32dea882221fc9ecf98"><td class="memItemLeft" align="right" valign="top"><a id="a3974af65b42dd32dea882221fc9ecf98"></a>
+QList&lt; <a class="el" href="classDtk_1_1Widget_1_1DSimpleListItem.html">DSimpleListItem</a> * &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>selectionItems</b> = nullptr</td></tr>
+<tr class="separator:a3974af65b42dd32dea882221fc9ecf98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c100acb2fec8b267bcb87ea44ca0d76"><td class="memItemLeft" align="right" valign="top"><a id="a4c100acb2fec8b267bcb87ea44ca0d76"></a>
+QList&lt; QString &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>columnTitles</b> = {}</td></tr>
+<tr class="separator:a4c100acb2fec8b267bcb87ea44ca0d76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58ba21222e6d9c52151c29d6e7409746"><td class="memItemLeft" align="right" valign="top"><a id="a58ba21222e6d9c52151c29d6e7409746"></a>
+QList&lt; SortAlgorithm &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>sortingAlgorithms</b> = nullptr</td></tr>
+<tr class="separator:a58ba21222e6d9c52151c29d6e7409746"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a047e118f7608174a9f9425687756e3d6"><td class="memItemLeft" align="right" valign="top"><a id="a047e118f7608174a9f9425687756e3d6"></a>
+QList&lt; bool &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>sortingOrderes</b> = nullptr</td></tr>
+<tr class="separator:a047e118f7608174a9f9425687756e3d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18e0bc77f8b3aadf369328c9e7734547"><td class="memItemLeft" align="right" valign="top"><a id="a18e0bc77f8b3aadf369328c9e7734547"></a>
+QList&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>columnWidths</b> = {}</td></tr>
+<tr class="separator:a18e0bc77f8b3aadf369328c9e7734547"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af98fc96fe9af46e94addbb98ecef8a08"><td class="memItemLeft" align="right" valign="top"><a id="af98fc96fe9af46e94addbb98ecef8a08"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>searchContent</b> = &quot;&quot;</td></tr>
+<tr class="separator:af98fc96fe9af46e94addbb98ecef8a08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2eb58c6a5cbdb5a5164c52ef8fe967fa"><td class="memItemLeft" align="right" valign="top"><a id="a2eb58c6a5cbdb5a5164c52ef8fe967fa"></a>
+QTimer *&#160;</td><td class="memItemRight" valign="bottom"><b>hideScrollbarTimer</b> = nullptr</td></tr>
+<tr class="separator:a2eb58c6a5cbdb5a5164c52ef8fe967fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a176ca073c19ea2fecc722a1852e5eee5"><td class="memItemLeft" align="right" valign="top"><a id="a176ca073c19ea2fecc722a1852e5eee5"></a>
+SearchAlgorithm&#160;</td><td class="memItemRight" valign="bottom"><b>searchAlgorithm</b> = nullptr</td></tr>
+<tr class="separator:a176ca073c19ea2fecc722a1852e5eee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00e1575f2daf5dac1c36698b19c488e3"><td class="memItemLeft" align="right" valign="top"><a id="a00e1575f2daf5dac1c36698b19c488e3"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>defaultSortingOrder</b> = false</td></tr>
+<tr class="separator:a00e1575f2daf5dac1c36698b19c488e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb88c078187e1b440ae3812b0d75f14d"><td class="memItemLeft" align="right" valign="top"><a id="adb88c078187e1b440ae3812b0d75f14d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>mouseAtScrollArea</b> = false</td></tr>
+<tr class="separator:adb88c078187e1b440ae3812b0d75f14d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1198c6eb757c9bff5cc9bdeeab66f41"><td class="memItemLeft" align="right" valign="top"><a id="ae1198c6eb757c9bff5cc9bdeeab66f41"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>mouseDragScrollbar</b> =false</td></tr>
+<tr class="separator:ae1198c6eb757c9bff5cc9bdeeab66f41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52710dd815062f620588111b8d8e71ca"><td class="memItemLeft" align="right" valign="top"><a id="a52710dd815062f620588111b8d8e71ca"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>drawFrame</b> = false</td></tr>
+<tr class="separator:a52710dd815062f620588111b8d8e71ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adee054edbd7292a61ae6512b194dd350"><td class="memItemLeft" align="right" valign="top"><a id="adee054edbd7292a61ae6512b194dd350"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isKeepSelectWhenClickBlank</b></td></tr>
+<tr class="separator:adee054edbd7292a61ae6512b194dd350"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad747528781ebc576f45bbd9b45b62e96"><td class="memItemLeft" align="right" valign="top"><a id="ad747528781ebc576f45bbd9b45b62e96"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isSingleSelect</b> = false</td></tr>
+<tr class="separator:ad747528781ebc576f45bbd9b45b62e96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a764894b626f0361317b1f5ac6e3e9415"><td class="memItemLeft" align="right" valign="top"><a id="a764894b626f0361317b1f5ac6e3e9415"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>alwaysVisibleColumn</b> = 0</td></tr>
+<tr class="separator:a764894b626f0361317b1f5ac6e3e9415"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0955bcedfcfb33480d2a5585f760869c"><td class="memItemLeft" align="right" valign="top"><a id="a0955bcedfcfb33480d2a5585f760869c"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>clipRadius</b> = 0</td></tr>
+<tr class="separator:a0955bcedfcfb33480d2a5585f760869c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb21eec867efc9aeab185980d862ee3e"><td class="memItemLeft" align="right" valign="top"><a id="aeb21eec867efc9aeab185980d862ee3e"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>defaultSortingColumn</b> = 0</td></tr>
+<tr class="separator:aeb21eec867efc9aeab185980d862ee3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6ed8d91f859a5c6f23c5796ee998f1a"><td class="memItemLeft" align="right" valign="top"><a id="ad6ed8d91f859a5c6f23c5796ee998f1a"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>hideScrollbarDuration</b> = 0</td></tr>
+<tr class="separator:ad6ed8d91f859a5c6f23c5796ee998f1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73598012804bb17966a57513d2ad5b87"><td class="memItemLeft" align="right" valign="top"><a id="a73598012804bb17966a57513d2ad5b87"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>lastHoverColumnIndex</b> = 0</td></tr>
+<tr class="separator:a73598012804bb17966a57513d2ad5b87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a444606e5337f2110505b5a20d19d39f1"><td class="memItemLeft" align="right" valign="top"><a id="a444606e5337f2110505b5a20d19d39f1"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>oldRenderOffset</b> = 0</td></tr>
+<tr class="separator:a444606e5337f2110505b5a20d19d39f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf732c4126863405b0faeb4e26d21a53"><td class="memItemLeft" align="right" valign="top"><a id="abf732c4126863405b0faeb4e26d21a53"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>renderOffset</b> = 0</td></tr>
+<tr class="separator:abf732c4126863405b0faeb4e26d21a53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a736f196434933ecd4d1198798b522d4e"><td class="memItemLeft" align="right" valign="top"><a id="a736f196434933ecd4d1198798b522d4e"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>rowHeight</b> = 0</td></tr>
+<tr class="separator:a736f196434933ecd4d1198798b522d4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f56df48e058d2bae33c423a892ad4bd"><td class="memItemLeft" align="right" valign="top"><a id="a1f56df48e058d2bae33c423a892ad4bd"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>scrollDistance</b> = 0</td></tr>
+<tr class="separator:a1f56df48e058d2bae33c423a892ad4bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ec3f56fcf659f8c98ffd64fd9795657"><td class="memItemLeft" align="right" valign="top"><a id="a0ec3f56fcf659f8c98ffd64fd9795657"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>scrollStartY</b> = 0</td></tr>
+<tr class="separator:a0ec3f56fcf659f8c98ffd64fd9795657"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad441628484562ab8680f3cc5fa5008ad"><td class="memItemLeft" align="right" valign="top"><a id="ad441628484562ab8680f3cc5fa5008ad"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>scrollUnit</b> = 0</td></tr>
+<tr class="separator:ad441628484562ab8680f3cc5fa5008ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf7568d00d400778b2fafa0915dead36"><td class="memItemLeft" align="right" valign="top"><a id="aaf7568d00d400778b2fafa0915dead36"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>scrollbarDefaultWidth</b> = 0</td></tr>
+<tr class="separator:aaf7568d00d400778b2fafa0915dead36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace0318207837391296c6c8ff2f5750ca"><td class="memItemLeft" align="right" valign="top"><a id="ace0318207837391296c6c8ff2f5750ca"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>scrollbarDragWidth</b> = 0</td></tr>
+<tr class="separator:ace0318207837391296c6c8ff2f5750ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a35c950fc7fc4c0b39e7eb71a70263f"><td class="memItemLeft" align="right" valign="top"><a id="a0a35c950fc7fc4c0b39e7eb71a70263f"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>scrollbarMinHeight</b> = 0</td></tr>
+<tr class="separator:a0a35c950fc7fc4c0b39e7eb71a70263f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7a027c50dde4d7c20ede4f4d91b06c1"><td class="memItemLeft" align="right" valign="top"><a id="ae7a027c50dde4d7c20ede4f4d91b06c1"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>scrollbarPadding</b> = 0</td></tr>
+<tr class="separator:ae7a027c50dde4d7c20ede4f4d91b06c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a256c9c621dd5c2302467280aba6140a5"><td class="memItemLeft" align="right" valign="top"><a id="a256c9c621dd5c2302467280aba6140a5"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>titleArrowPadding</b> = 0</td></tr>
+<tr class="separator:a256c9c621dd5c2302467280aba6140a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21bffdd56fcf05007c99e89ca9ac9f3d"><td class="memItemLeft" align="right" valign="top"><a id="a21bffdd56fcf05007c99e89ca9ac9f3d"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>titleHeight</b> = 0</td></tr>
+<tr class="separator:a21bffdd56fcf05007c99e89ca9ac9f3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bb5031c3d15c77e562f8f27ad343670"><td class="memItemLeft" align="right" valign="top"><a id="a2bb5031c3d15c77e562f8f27ad343670"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>titleHoverColumn</b> = 0</td></tr>
+<tr class="separator:a2bb5031c3d15c77e562f8f27ad343670"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45a77ab68e97f5a9816be4073390da81"><td class="memItemLeft" align="right" valign="top"><a id="a45a77ab68e97f5a9816be4073390da81"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>titlePadding</b> = 0</td></tr>
+<tr class="separator:a45a77ab68e97f5a9816be4073390da81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d0afdb230655a1ab04b595680b6aef2"><td class="memItemLeft" align="right" valign="top"><a id="a0d0afdb230655a1ab04b595680b6aef2"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>titlePressColumn</b> = 0</td></tr>
+<tr class="separator:a0d0afdb230655a1ab04b595680b6aef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dtkwidget/src/widgets/dsimplelistview.cpp</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classDSimpleListViewPrivate.html">DSimpleListViewPrivate</a></li>
+    <li class="footer">文档生成时间:doxtime</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

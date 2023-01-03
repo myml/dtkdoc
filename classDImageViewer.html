@@ -1,0 +1,1019 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: DImageViewer类 参考</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="change address" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classDImageViewer.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#signals">信号</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#properties">属性</a> &#124;
+<a href="classDImageViewer-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">DImageViewer类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 DImageViewer 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classDImageViewer.png" alt=""/>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+信号</h2></td></tr>
+<tr class="memitem:ac5adf77bc60e4fa05e0dfe0528c48b75"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDImageViewer.html#ac5adf77bc60e4fa05e0dfe0528c48b75">imageChanged</a> (const QImage &amp;image)</td></tr>
+<tr class="memdesc:ac5adf77bc60e4fa05e0dfe0528c48b75"><td class="mdescLeft">&#160;</td><td class="mdescRight">图片变更信号，展示图片实例变更后触发  <a href="classDImageViewer.html#ac5adf77bc60e4fa05e0dfe0528c48b75">更多...</a><br /></td></tr>
+<tr class="separator:ac5adf77bc60e4fa05e0dfe0528c48b75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9f427a7f4a3f8ea2eed2cc066bb1c6e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDImageViewer.html#ae9f427a7f4a3f8ea2eed2cc066bb1c6e">fileNameChanged</a> (const QString &amp;fileName)</td></tr>
+<tr class="memdesc:ae9f427a7f4a3f8ea2eed2cc066bb1c6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">图片文件路径变更信号，通过 setFileName 设置文件路径后触发  <a href="classDImageViewer.html#ae9f427a7f4a3f8ea2eed2cc066bb1c6e">更多...</a><br /></td></tr>
+<tr class="separator:ae9f427a7f4a3f8ea2eed2cc066bb1c6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a852767d919704c91452113be4f12efd1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDImageViewer.html#a852767d919704c91452113be4f12efd1">scaleFactorChanged</a> (qreal scaleFactor)</td></tr>
+<tr class="memdesc:a852767d919704c91452113be4f12efd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">图片缩放比例系数变更信号，通过界面交互或 setScaleFactor 设置缩放比例系数后触发  <a href="classDImageViewer.html#a852767d919704c91452113be4f12efd1">更多...</a><br /></td></tr>
+<tr class="separator:a852767d919704c91452113be4f12efd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e16d6faaeb51162ca02c8aacc28df7a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDImageViewer.html#a9e16d6faaeb51162ca02c8aacc28df7a">rotateAngleChanged</a> (int angle)</td></tr>
+<tr class="memdesc:a9e16d6faaeb51162ca02c8aacc28df7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">当展示图片旋转时触发，旋转角度为90°的倍数，范围在 -360° ~ 360°  <a href="classDImageViewer.html#a9e16d6faaeb51162ca02c8aacc28df7a">更多...</a><br /></td></tr>
+<tr class="separator:a9e16d6faaeb51162ca02c8aacc28df7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9adcd16430cf68d357543df3b37b1c7e"><td class="memItemLeft" align="right" valign="top"><a id="a9adcd16430cf68d357543df3b37b1c7e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDImageViewer.html#a9adcd16430cf68d357543df3b37b1c7e">transformChanged</a> ()</td></tr>
+<tr class="memdesc:a9adcd16430cf68d357543df3b37b1c7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">坐标变换信号，当图片通过界面交互或属性变更导致图片显示坐标、大小等变更时触发 <br /></td></tr>
+<tr class="separator:a9adcd16430cf68d357543df3b37b1c7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae92f05ec00f3fd159d0f53f6b2e79433"><td class="memItemLeft" align="right" valign="top"><a id="ae92f05ec00f3fd159d0f53f6b2e79433"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDImageViewer.html#ae92f05ec00f3fd159d0f53f6b2e79433">requestPreviousImage</a> ()</td></tr>
+<tr class="memdesc:ae92f05ec00f3fd159d0f53f6b2e79433"><td class="mdescLeft">&#160;</td><td class="mdescRight">请求切换上一张图片，触摸屏滑动切换时触发 <br /></td></tr>
+<tr class="separator:ae92f05ec00f3fd159d0f53f6b2e79433"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47bd7ea7e2225f19350b774b15fb1194"><td class="memItemLeft" align="right" valign="top"><a id="a47bd7ea7e2225f19350b774b15fb1194"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDImageViewer.html#a47bd7ea7e2225f19350b774b15fb1194">requestNextImage</a> ()</td></tr>
+<tr class="memdesc:a47bd7ea7e2225f19350b774b15fb1194"><td class="mdescLeft">&#160;</td><td class="mdescRight">请求切换下一张图片，触摸屏滑动切换时触发 <br /></td></tr>
+<tr class="separator:a47bd7ea7e2225f19350b774b15fb1194"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d31ad7447de85145bae738938d9fb9e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDImageViewer.html#a0d31ad7447de85145bae738938d9fb9e">cropImageChanged</a> (const QRect &amp;rect)</td></tr>
+<tr class="memdesc:a0d31ad7447de85145bae738938d9fb9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">图片裁剪矩形变更信号，图片裁剪完成后触发  <a href="classDImageViewer.html#a0d31ad7447de85145bae738938d9fb9e">更多...</a><br /></td></tr>
+<tr class="separator:a0d31ad7447de85145bae738938d9fb9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:adbc9948a15ea14d084ffb8ef9e1c0cf5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDImageViewer.html#adbc9948a15ea14d084ffb8ef9e1c0cf5">DImageViewer</a> (QWidget *parent=nullptr)</td></tr>
+<tr class="memdesc:adbc9948a15ea14d084ffb8ef9e1c0cf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造 <a class="el" href="classDImageViewer.html">DImageViewer</a> 实例，并指定父控件  <a href="classDImageViewer.html#adbc9948a15ea14d084ffb8ef9e1c0cf5">更多...</a><br /></td></tr>
+<tr class="separator:adbc9948a15ea14d084ffb8ef9e1c0cf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3203939333926e7705f7fb90139d224"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDImageViewer.html#aa3203939333926e7705f7fb90139d224">DImageViewer</a> (const QImage &amp;image, QWidget *parent=nullptr)</td></tr>
+<tr class="memdesc:aa3203939333926e7705f7fb90139d224"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造 <a class="el" href="classDImageViewer.html">DImageViewer</a> 实例，并指定默认展示图片及父控件  <a href="classDImageViewer.html#aa3203939333926e7705f7fb90139d224">更多...</a><br /></td></tr>
+<tr class="separator:aa3203939333926e7705f7fb90139d224"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e8aedfca1e7d39ffd29dd4a96e232d3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDImageViewer.html#a9e8aedfca1e7d39ffd29dd4a96e232d3">DImageViewer</a> (const QString &amp;fileName, QWidget *parent=nullptr)</td></tr>
+<tr class="memdesc:a9e8aedfca1e7d39ffd29dd4a96e232d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造 <a class="el" href="classDImageViewer.html">DImageViewer</a> 实例，并指定默认展示图片文件及父控件  <a href="classDImageViewer.html#a9e8aedfca1e7d39ffd29dd4a96e232d3">更多...</a><br /></td></tr>
+<tr class="separator:a9e8aedfca1e7d39ffd29dd4a96e232d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f69d0ec70e9ffe922de9b710bed1bc9"><td class="memItemLeft" align="right" valign="top"><a id="a7f69d0ec70e9ffe922de9b710bed1bc9"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDImageViewer.html#a7f69d0ec70e9ffe922de9b710bed1bc9">~DImageViewer</a> () Q_DECL_OVERRIDE</td></tr>
+<tr class="memdesc:a7f69d0ec70e9ffe922de9b710bed1bc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">析构 <a class="el" href="classDImageViewer.html">DImageViewer</a> 实例 <br /></td></tr>
+<tr class="separator:a7f69d0ec70e9ffe922de9b710bed1bc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae504ac1cbe5ca720cb540f4da4b2c159"><td class="memItemLeft" align="right" valign="top">QImage&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDImageViewer.html#ae504ac1cbe5ca720cb540f4da4b2c159">image</a> () const</td></tr>
+<tr class="memdesc:ae504ac1cbe5ca720cb540f4da4b2c159"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回当前展示图片实例，当未设置图片时，返回空值  <a href="classDImageViewer.html#ae504ac1cbe5ca720cb540f4da4b2c159">更多...</a><br /></td></tr>
+<tr class="separator:ae504ac1cbe5ca720cb540f4da4b2c159"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d167a1a2cc7a1cb6f625da26ae72529"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDImageViewer.html#a6d167a1a2cc7a1cb6f625da26ae72529">setImage</a> (const QImage &amp;image)</td></tr>
+<tr class="memdesc:a6d167a1a2cc7a1cb6f625da26ae72529"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置当前展示图片实例，若为有效图片，将在内部调用 <a class="el" href="classDImageViewer.html#acaa14ce4c5e206b91c7710352c739892" title="自动切换图片缩放比例，当图片大小小于控件大小时，保持原始大小；当前图片大于控件大小时，使图片适配控件大小展示">autoFitImage()</a>  <a href="classDImageViewer.html#a6d167a1a2cc7a1cb6f625da26ae72529">更多...</a><br /></td></tr>
+<tr class="separator:a6d167a1a2cc7a1cb6f625da26ae72529"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4514160d5b6e71bfebfd067b87fe7ab9"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDImageViewer.html#a4514160d5b6e71bfebfd067b87fe7ab9">fileName</a> () const</td></tr>
+<tr class="memdesc:a4514160d5b6e71bfebfd067b87fe7ab9"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取当前展示的图片文件路径，若图片并未通过文件路径加载时，返回空值  <a href="classDImageViewer.html#a4514160d5b6e71bfebfd067b87fe7ab9">更多...</a><br /></td></tr>
+<tr class="separator:a4514160d5b6e71bfebfd067b87fe7ab9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5fcaca1acd5650274d3f571c12840bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDImageViewer.html#aa5fcaca1acd5650274d3f571c12840bd">setFileName</a> (const QString &amp;fileName)</td></tr>
+<tr class="memdesc:aa5fcaca1acd5650274d3f571c12840bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置当前展示的图片文件路径，若为有效图片，将在内部调用 <a class="el" href="classDImageViewer.html#acaa14ce4c5e206b91c7710352c739892" title="自动切换图片缩放比例，当图片大小小于控件大小时，保持原始大小；当前图片大于控件大小时，使图片适配控件大小展示">autoFitImage()</a>  <a href="classDImageViewer.html#aa5fcaca1acd5650274d3f571c12840bd">更多...</a><br /></td></tr>
+<tr class="separator:aa5fcaca1acd5650274d3f571c12840bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acecfbd6208cd75f626392a6f495a9742"><td class="memItemLeft" align="right" valign="top">qreal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDImageViewer.html#acecfbd6208cd75f626392a6f495a9742">scaleFactor</a> () const</td></tr>
+<tr class="memdesc:acecfbd6208cd75f626392a6f495a9742"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取当前图片缩放比例系数  <a href="classDImageViewer.html#acecfbd6208cd75f626392a6f495a9742">更多...</a><br /></td></tr>
+<tr class="separator:acecfbd6208cd75f626392a6f495a9742"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4893b464ce2e23a612fc28881a2b6c7a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDImageViewer.html#a4893b464ce2e23a612fc28881a2b6c7a">setScaleFactor</a> (qreal factor)</td></tr>
+<tr class="memdesc:a4893b464ce2e23a612fc28881a2b6c7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置当前图片缩放比例系数  <a href="classDImageViewer.html#a4893b464ce2e23a612fc28881a2b6c7a">更多...</a><br /></td></tr>
+<tr class="separator:a4893b464ce2e23a612fc28881a2b6c7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7137e46d7f4e0c69b28ec09d64110be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDImageViewer.html#af7137e46d7f4e0c69b28ec09d64110be">scaleImage</a> (qreal factor)</td></tr>
+<tr class="memdesc:af7137e46d7f4e0c69b28ec09d64110be"><td class="mdescLeft">&#160;</td><td class="mdescRight">按缩放比例系数缩放当前图片，在已有缩放比例上累加  <a href="classDImageViewer.html#af7137e46d7f4e0c69b28ec09d64110be">更多...</a><br /></td></tr>
+<tr class="separator:af7137e46d7f4e0c69b28ec09d64110be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaa14ce4c5e206b91c7710352c739892"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDImageViewer.html#acaa14ce4c5e206b91c7710352c739892">autoFitImage</a> ()</td></tr>
+<tr class="memdesc:acaa14ce4c5e206b91c7710352c739892"><td class="mdescLeft">&#160;</td><td class="mdescRight">自动切换图片缩放比例，当图片大小小于控件大小时，保持原始大小；当前图片大于控件大小时，使图片适配控件大小展示  <a href="classDImageViewer.html#acaa14ce4c5e206b91c7710352c739892">更多...</a><br /></td></tr>
+<tr class="separator:acaa14ce4c5e206b91c7710352c739892"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a896a3a26375b304ce29d64bd00900ffc"><td class="memItemLeft" align="right" valign="top"><a id="a896a3a26375b304ce29d64bd00900ffc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDImageViewer.html#a896a3a26375b304ce29d64bd00900ffc">fitToWidget</a> ()</td></tr>
+<tr class="memdesc:a896a3a26375b304ce29d64bd00900ffc"><td class="mdescLeft">&#160;</td><td class="mdescRight">使图片调整缩放比例，适配控件大小展示 <br /></td></tr>
+<tr class="separator:a896a3a26375b304ce29d64bd00900ffc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62bca7f91922d48987d199c9eca8c7dc"><td class="memItemLeft" align="right" valign="top"><a id="a62bca7f91922d48987d199c9eca8c7dc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDImageViewer.html#a62bca7f91922d48987d199c9eca8c7dc">fitNormalSize</a> ()</td></tr>
+<tr class="memdesc:a62bca7f91922d48987d199c9eca8c7dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">使图片保持原始大小展示，图片超过控件大小的区域将不会被绘制 <br /></td></tr>
+<tr class="separator:a62bca7f91922d48987d199c9eca8c7dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a108f9247ca10e0ae82445039de16d807"><td class="memItemLeft" align="right" valign="top"><a id="a108f9247ca10e0ae82445039de16d807"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDImageViewer.html#a108f9247ca10e0ae82445039de16d807">rotateClockwise</a> ()</td></tr>
+<tr class="memdesc:a108f9247ca10e0ae82445039de16d807"><td class="mdescLeft">&#160;</td><td class="mdescRight">顺时针旋转图片90° <br /></td></tr>
+<tr class="separator:a108f9247ca10e0ae82445039de16d807"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77cfe6d6278dc4b6ec0b173ec2f72be9"><td class="memItemLeft" align="right" valign="top"><a id="a77cfe6d6278dc4b6ec0b173ec2f72be9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDImageViewer.html#a77cfe6d6278dc4b6ec0b173ec2f72be9">rotateCounterclockwise</a> ()</td></tr>
+<tr class="memdesc:a77cfe6d6278dc4b6ec0b173ec2f72be9"><td class="mdescLeft">&#160;</td><td class="mdescRight">逆时针旋转图片90° <br /></td></tr>
+<tr class="separator:a77cfe6d6278dc4b6ec0b173ec2f72be9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1db4d3b714713570151cf585f403cc49"><td class="memItemLeft" align="right" valign="top"><a id="a1db4d3b714713570151cf585f403cc49"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDImageViewer.html#a1db4d3b714713570151cf585f403cc49">rotateAngle</a> () const</td></tr>
+<tr class="memdesc:a1db4d3b714713570151cf585f403cc49"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回当前图片的旋转角度，旋转角度为90°的倍数，范围在 -360° ~ 360° <br /></td></tr>
+<tr class="separator:a1db4d3b714713570151cf585f403cc49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6225fb828157ffcd9ba72a92c2296eff"><td class="memItemLeft" align="right" valign="top"><a id="a6225fb828157ffcd9ba72a92c2296eff"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDImageViewer.html#a6225fb828157ffcd9ba72a92c2296eff">resetRotateAngle</a> ()</td></tr>
+<tr class="memdesc:a6225fb828157ffcd9ba72a92c2296eff"><td class="mdescLeft">&#160;</td><td class="mdescRight">重置当前图片的旋转角度，图片恢复为初始角度展示 <br /></td></tr>
+<tr class="separator:a6225fb828157ffcd9ba72a92c2296eff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9467f063385e675c8d51e2ce32c0bf1"><td class="memItemLeft" align="right" valign="top"><a id="ad9467f063385e675c8d51e2ce32c0bf1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDImageViewer.html#ad9467f063385e675c8d51e2ce32c0bf1">clear</a> ()</td></tr>
+<tr class="memdesc:ad9467f063385e675c8d51e2ce32c0bf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">清除当前展示的图片，包括存储的图片实例及文件路径 <br /></td></tr>
+<tr class="separator:ad9467f063385e675c8d51e2ce32c0bf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5562e20850a10a9fa5cbd27aa1468193"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDImageViewer.html#a5562e20850a10a9fa5cbd27aa1468193">centerOn</a> (qreal x, qreal y)</td></tr>
+<tr class="memdesc:a5562e20850a10a9fa5cbd27aa1468193"><td class="mdescLeft">&#160;</td><td class="mdescRight">以传入坐标为中心展示图片  <a href="classDImageViewer.html#a5562e20850a10a9fa5cbd27aa1468193">更多...</a><br /></td></tr>
+<tr class="separator:a5562e20850a10a9fa5cbd27aa1468193"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b5f5f1e5762ff894c735195349aa113"><td class="memItemLeft" align="right" valign="top">QRect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDImageViewer.html#a4b5f5f1e5762ff894c735195349aa113">visibleImageRect</a> () const</td></tr>
+<tr class="memdesc:a4b5f5f1e5762ff894c735195349aa113"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回当前展示图片的几何信息，包含在图片上的坐标，显示大小，可用于图片裁剪、定位等  <a href="classDImageViewer.html#a4b5f5f1e5762ff894c735195349aa113">更多...</a><br /></td></tr>
+<tr class="separator:a4b5f5f1e5762ff894c735195349aa113"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56d0e89d9c4e3329499450ba11a625b5"><td class="memItemLeft" align="right" valign="top">Q_SLOT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDImageViewer.html#a56d0e89d9c4e3329499450ba11a625b5">scaleAtPoint</a> (QPoint pos, qreal factor)</td></tr>
+<tr class="memdesc:a56d0e89d9c4e3329499450ba11a625b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">在设置坐标位置缩放图片，将在当前缩放比例基础上持续缩放  <a href="classDImageViewer.html#a56d0e89d9c4e3329499450ba11a625b5">更多...</a><br /></td></tr>
+<tr class="separator:a56d0e89d9c4e3329499450ba11a625b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8adeb14830f706c5f2a2a6236ecb6fd6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDImageViewer.html#a8adeb14830f706c5f2a2a6236ecb6fd6">beginCropImage</a> ()</td></tr>
+<tr class="memdesc:a8adeb14830f706c5f2a2a6236ecb6fd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置开始裁剪图片，在界面显示裁剪工具，允许拖拽锚点调整裁剪区域  <a href="classDImageViewer.html#a8adeb14830f706c5f2a2a6236ecb6fd6">更多...</a><br /></td></tr>
+<tr class="separator:a8adeb14830f706c5f2a2a6236ecb6fd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a663b36c3b49e8480bbdca4180f6e2659"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDImageViewer.html#a663b36c3b49e8480bbdca4180f6e2659">endCropImage</a> ()</td></tr>
+<tr class="memdesc:a663b36c3b49e8480bbdca4180f6e2659"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置结束裁剪图片，隐藏裁剪工具，根据裁剪区域调整显示图片  <a href="classDImageViewer.html#a663b36c3b49e8480bbdca4180f6e2659">更多...</a><br /></td></tr>
+<tr class="separator:a663b36c3b49e8480bbdca4180f6e2659"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b4d6a4b3415a5233e20006bd1eafedf"><td class="memItemLeft" align="right" valign="top"><a id="a8b4d6a4b3415a5233e20006bd1eafedf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDImageViewer.html#a8b4d6a4b3415a5233e20006bd1eafedf">resetCropImage</a> ()</td></tr>
+<tr class="memdesc:a8b4d6a4b3415a5233e20006bd1eafedf"><td class="mdescLeft">&#160;</td><td class="mdescRight">复位裁剪图片，恢复图片大小 <br /></td></tr>
+<tr class="separator:a8b4d6a4b3415a5233e20006bd1eafedf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ea61df176b60bc48e4ecdecc9b595c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDImageViewer.html#a7ea61df176b60bc48e4ecdecc9b595c8">setCropAspectRatio</a> (qreal w, qreal h)</td></tr>
+<tr class="memdesc:a7ea61df176b60bc48e4ecdecc9b595c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置裁剪工具宽高比，例如16:9/4:3等，设置后，裁剪工具会按比例调整大小，尽可能包含当前展示图片内容  <a href="classDImageViewer.html#a7ea61df176b60bc48e4ecdecc9b595c8">更多...</a><br /></td></tr>
+<tr class="separator:a7ea61df176b60bc48e4ecdecc9b595c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a761323a5e0197ee0459d41ef9aa7a5b1"><td class="memItemLeft" align="right" valign="top">QRect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDImageViewer.html#a761323a5e0197ee0459d41ef9aa7a5b1">cropImageRect</a> () const</td></tr>
+<tr class="memdesc:a761323a5e0197ee0459d41ef9aa7a5b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取当前图片裁剪矩形，此矩形对应图片的像素坐标  <a href="classDImageViewer.html#a761323a5e0197ee0459d41ef9aa7a5b1">更多...</a><br /></td></tr>
+<tr class="separator:a761323a5e0197ee0459d41ef9aa7a5b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:aacdcdfc7d4b735abfb340c13c90aa8c6"><td class="memItemLeft" align="right" valign="top"><a id="aacdcdfc7d4b735abfb340c13c90aa8c6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>mouseMoveEvent</b> (QMouseEvent *event) Q_DECL_OVERRIDE</td></tr>
+<tr class="separator:aacdcdfc7d4b735abfb340c13c90aa8c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d22a542f38a09b4d1a3da0dd5e0ab91"><td class="memItemLeft" align="right" valign="top"><a id="a2d22a542f38a09b4d1a3da0dd5e0ab91"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>wheelEvent</b> (QWheelEvent *event) Q_DECL_OVERRIDE</td></tr>
+<tr class="separator:a2d22a542f38a09b4d1a3da0dd5e0ab91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24a66aa1b5b8c0a09c1c78e17f6fb27d"><td class="memItemLeft" align="right" valign="top"><a id="a24a66aa1b5b8c0a09c1c78e17f6fb27d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>event</b> (QEvent *event) Q_DECL_OVERRIDE</td></tr>
+<tr class="separator:a24a66aa1b5b8c0a09c1c78e17f6fb27d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:a1bd1e221fb80c61942dcf3460fdec621"><td class="memItemLeft" align="right" valign="top"><a id="a1bd1e221fb80c61942dcf3460fdec621"></a>
+QImage&#160;</td><td class="memItemRight" valign="bottom"><b>image</b></td></tr>
+<tr class="separator:a1bd1e221fb80c61942dcf3460fdec621"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9c85252eef7fa1296d698838fd0877b"><td class="memItemLeft" align="right" valign="top"><a id="ad9c85252eef7fa1296d698838fd0877b"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>fileName</b></td></tr>
+<tr class="separator:ad9c85252eef7fa1296d698838fd0877b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25dba4801a875a6812fd4b5641be2764"><td class="memItemLeft" align="right" valign="top"><a id="a25dba4801a875a6812fd4b5641be2764"></a>
+qreal&#160;</td><td class="memItemRight" valign="bottom"><b>scaleFactor</b></td></tr>
+<tr class="separator:a25dba4801a875a6812fd4b5641be2764"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51c4181bbd214a17810ea7058d9c3779"><td class="memItemLeft" align="right" valign="top"><a id="a51c4181bbd214a17810ea7058d9c3779"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>rotateAngle</b></td></tr>
+<tr class="separator:a51c4181bbd214a17810ea7058d9c3779"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a id="adbc9948a15ea14d084ffb8ef9e1c0cf5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbc9948a15ea14d084ffb8ef9e1c0cf5">&#9670;&nbsp;</a></span>DImageViewer() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DImageViewer::DImageViewer </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>构造 <a class="el" href="classDImageViewer.html">DImageViewer</a> 实例，并指定父控件 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">parent</td><td>作为实例的父控件 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa3203939333926e7705f7fb90139d224"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3203939333926e7705f7fb90139d224">&#9670;&nbsp;</a></span>DImageViewer() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DImageViewer::DImageViewer </td>
+          <td>(</td>
+          <td class="paramtype">const QImage &amp;&#160;</td>
+          <td class="paramname"><em>image</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>构造 <a class="el" href="classDImageViewer.html">DImageViewer</a> 实例，并指定默认展示图片及父控件 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">image</td><td>展示的图片 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">parent</td><td>作为实例的父控件 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9e8aedfca1e7d39ffd29dd4a96e232d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e8aedfca1e7d39ffd29dd4a96e232d3">&#9670;&nbsp;</a></span>DImageViewer() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DImageViewer::DImageViewer </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>fileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>构造 <a class="el" href="classDImageViewer.html">DImageViewer</a> 实例，并指定默认展示图片文件及父控件 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fileName</td><td>展示的图片文件路径 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">parent</td><td>作为实例的父控件 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="acaa14ce4c5e206b91c7710352c739892"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acaa14ce4c5e206b91c7710352c739892">&#9670;&nbsp;</a></span>autoFitImage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DImageViewer::autoFitImage </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>自动切换图片缩放比例，当图片大小小于控件大小时，保持原始大小；当前图片大于控件大小时，使图片适配控件大小展示 </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDImageViewer.html#a896a3a26375b304ce29d64bd00900ffc" title="使图片调整缩放比例，适配控件大小展示">DImageViewer::fitToWidget</a> </dd>
+<dd>
+DImageViewer::fitOriginalImageSize </dd></dl>
+
+</div>
+</div>
+<a id="a8adeb14830f706c5f2a2a6236ecb6fd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8adeb14830f706c5f2a2a6236ecb6fd6">&#9670;&nbsp;</a></span>beginCropImage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DImageViewer::beginCropImage </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置开始裁剪图片，在界面显示裁剪工具，允许拖拽锚点调整裁剪区域 </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDImageViewer.html#a663b36c3b49e8480bbdca4180f6e2659" title="设置结束裁剪图片，隐藏裁剪工具，根据裁剪区域调整显示图片">DImageViewer::endCropImage</a> </dd></dl>
+
+</div>
+</div>
+<a id="a5562e20850a10a9fa5cbd27aa1468193"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5562e20850a10a9fa5cbd27aa1468193">&#9670;&nbsp;</a></span>centerOn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DImageViewer::centerOn </td>
+          <td>(</td>
+          <td class="paramtype">qreal&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">qreal&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>以传入坐标为中心展示图片 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>x轴坐标 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td>y轴坐标 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0d31ad7447de85145bae738938d9fb9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d31ad7447de85145bae738938d9fb9e">&#9670;&nbsp;</a></span>cropImageChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DImageViewer::cropImageChanged </td>
+          <td>(</td>
+          <td class="paramtype">const QRect &amp;&#160;</td>
+          <td class="paramname"><em>rect</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>图片裁剪矩形变更信号，图片裁剪完成后触发 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rect</td><td>图片裁剪矩形 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a761323a5e0197ee0459d41ef9aa7a5b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a761323a5e0197ee0459d41ef9aa7a5b1">&#9670;&nbsp;</a></span>cropImageRect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QRect DImageViewer::cropImageRect </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取当前图片裁剪矩形，此矩形对应图片的像素坐标 </p>
+<dl class="section return"><dt>返回</dt><dd>图片裁剪矩形 </dd></dl>
+
+</div>
+</div>
+<a id="a663b36c3b49e8480bbdca4180f6e2659"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a663b36c3b49e8480bbdca4180f6e2659">&#9670;&nbsp;</a></span>endCropImage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DImageViewer::endCropImage </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置结束裁剪图片，隐藏裁剪工具，根据裁剪区域调整显示图片 </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDImageViewer.html#a8adeb14830f706c5f2a2a6236ecb6fd6" title="设置开始裁剪图片，在界面显示裁剪工具，允许拖拽锚点调整裁剪区域">DImageViewer::beginCropImage</a> </dd></dl>
+
+</div>
+</div>
+<a id="a4514160d5b6e71bfebfd067b87fe7ab9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4514160d5b6e71bfebfd067b87fe7ab9">&#9670;&nbsp;</a></span>fileName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString DImageViewer::fileName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取当前展示的图片文件路径，若图片并未通过文件路径加载时，返回空值 </p>
+<dl class="section return"><dt>返回</dt><dd>图片文件路径 </dd></dl>
+
+</div>
+</div>
+<a id="ae9f427a7f4a3f8ea2eed2cc066bb1c6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9f427a7f4a3f8ea2eed2cc066bb1c6e">&#9670;&nbsp;</a></span>fileNameChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DImageViewer::fileNameChanged </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>fileName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>图片文件路径变更信号，通过 setFileName 设置文件路径后触发 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fileName</td><td>图片文件路径 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae504ac1cbe5ca720cb540f4da4b2c159"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae504ac1cbe5ca720cb540f4da4b2c159">&#9670;&nbsp;</a></span>image()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QImage DImageViewer::image </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>返回当前展示图片实例，当未设置图片时，返回空值 </p>
+<p>通过 <a class="el" href="classDImageViewer.html#aa5fcaca1acd5650274d3f571c12840bd" title="设置当前展示的图片文件路径，若为有效图片，将在内部调用 autoFitImage()">setFileName()</a> 加载时，根据不同图片类型，返回的图片实例不同。动态图返回首帧图片实例，SVG图片根据默认大小构造图片实例返回。 </p><dl class="section return"><dt>返回</dt><dd>图片实例 </dd></dl>
+
+</div>
+</div>
+<a id="ac5adf77bc60e4fa05e0dfe0528c48b75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5adf77bc60e4fa05e0dfe0528c48b75">&#9670;&nbsp;</a></span>imageChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DImageViewer::imageChanged </td>
+          <td>(</td>
+          <td class="paramtype">const QImage &amp;&#160;</td>
+          <td class="paramname"><em>image</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>图片变更信号，展示图片实例变更后触发 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">image</td><td>图片实例 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9e16d6faaeb51162ca02c8aacc28df7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e16d6faaeb51162ca02c8aacc28df7a">&#9670;&nbsp;</a></span>rotateAngleChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DImageViewer::rotateAngleChanged </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>angle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>当展示图片旋转时触发，旋转角度为90°的倍数，范围在 -360° ~ 360° </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">angle</td><td>图片旋转角度 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDImageViewer.html#a108f9247ca10e0ae82445039de16d807" title="顺时针旋转图片90°">DImageViewer::rotateClockwise</a> </dd>
+<dd>
+<a class="el" href="classDImageViewer.html#a77cfe6d6278dc4b6ec0b173ec2f72be9" title="逆时针旋转图片90°">DImageViewer::rotateCounterclockwise</a> </dd>
+<dd>
+<a class="el" href="classDImageViewer.html#a6225fb828157ffcd9ba72a92c2296eff" title="重置当前图片的旋转角度，图片恢复为初始角度展示">DImageViewer::resetRotateAngle</a> </dd></dl>
+
+</div>
+</div>
+<a id="a56d0e89d9c4e3329499450ba11a625b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56d0e89d9c4e3329499450ba11a625b5">&#9670;&nbsp;</a></span>scaleAtPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DImageViewer::scaleAtPoint </td>
+          <td>(</td>
+          <td class="paramtype">QPoint&#160;</td>
+          <td class="paramname"><em>pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">qreal&#160;</td>
+          <td class="paramname"><em>factor</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在设置坐标位置缩放图片，将在当前缩放比例基础上持续缩放 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pos</td><td>坐标 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">factor</td><td>图片缩放比例 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDImageViewer.html#af7137e46d7f4e0c69b28ec09d64110be" title="按缩放比例系数缩放当前图片，在已有缩放比例上累加">DImageViewer::scaleImage</a> </dd></dl>
+
+</div>
+</div>
+<a id="acecfbd6208cd75f626392a6f495a9742"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acecfbd6208cd75f626392a6f495a9742">&#9670;&nbsp;</a></span>scaleFactor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">qreal DImageViewer::scaleFactor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取当前图片缩放比例系数 </p>
+<dl class="section return"><dt>返回</dt><dd>图片缩放比例系数 </dd></dl>
+
+</div>
+</div>
+<a id="a852767d919704c91452113be4f12efd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a852767d919704c91452113be4f12efd1">&#9670;&nbsp;</a></span>scaleFactorChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DImageViewer::scaleFactorChanged </td>
+          <td>(</td>
+          <td class="paramtype">qreal&#160;</td>
+          <td class="paramname"><em>scaleFactor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>图片缩放比例系数变更信号，通过界面交互或 setScaleFactor 设置缩放比例系数后触发 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">scaleFactor</td><td>图片缩放比例系数 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af7137e46d7f4e0c69b28ec09d64110be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7137e46d7f4e0c69b28ec09d64110be">&#9670;&nbsp;</a></span>scaleImage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DImageViewer::scaleImage </td>
+          <td>(</td>
+          <td class="paramtype">qreal&#160;</td>
+          <td class="paramname"><em>factor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>按缩放比例系数缩放当前图片，在已有缩放比例上累加 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">factor</td><td>图片缩放比例系数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>根据此系数调整图片展示效果，使用键鼠操作时，缩放比例系数范围为 0.02 ~ 20 </dd></dl>
+
+</div>
+</div>
+<a id="a7ea61df176b60bc48e4ecdecc9b595c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ea61df176b60bc48e4ecdecc9b595c8">&#9670;&nbsp;</a></span>setCropAspectRatio()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DImageViewer::setCropAspectRatio </td>
+          <td>(</td>
+          <td class="paramtype">qreal&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">qreal&#160;</td>
+          <td class="paramname"><em>h</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置裁剪工具宽高比，例如16:9/4:3等，设置后，裁剪工具会按比例调整大小，尽可能包含当前展示图片内容 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">w</td><td>相对宽度比例 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>相对高度比例 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa5fcaca1acd5650274d3f571c12840bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5fcaca1acd5650274d3f571c12840bd">&#9670;&nbsp;</a></span>setFileName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DImageViewer::setFileName </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>fileName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置当前展示的图片文件路径，若为有效图片，将在内部调用 <a class="el" href="classDImageViewer.html#acaa14ce4c5e206b91c7710352c739892" title="自动切换图片缩放比例，当图片大小小于控件大小时，保持原始大小；当前图片大于控件大小时，使图片适配控件大小展示">autoFitImage()</a> </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fileName</td><td>图片文件路径 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6d167a1a2cc7a1cb6f625da26ae72529"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d167a1a2cc7a1cb6f625da26ae72529">&#9670;&nbsp;</a></span>setImage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DImageViewer::setImage </td>
+          <td>(</td>
+          <td class="paramtype">const QImage &amp;&#160;</td>
+          <td class="paramname"><em>image</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置当前展示图片实例，若为有效图片，将在内部调用 <a class="el" href="classDImageViewer.html#acaa14ce4c5e206b91c7710352c739892" title="自动切换图片缩放比例，当图片大小小于控件大小时，保持原始大小；当前图片大于控件大小时，使图片适配控件大小展示">autoFitImage()</a> </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">image</td><td>图片实例 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4893b464ce2e23a612fc28881a2b6c7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4893b464ce2e23a612fc28881a2b6c7a">&#9670;&nbsp;</a></span>setScaleFactor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DImageViewer::setScaleFactor </td>
+          <td>(</td>
+          <td class="paramtype">qreal&#160;</td>
+          <td class="paramname"><em>factor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置当前图片缩放比例系数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">factor</td><td>图片缩放比例系数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>根据此系数调整图片展示效果，使用键鼠操作时，缩放比例系数范围为 0.02 ~ 20 </dd></dl>
+
+</div>
+</div>
+<a id="a4b5f5f1e5762ff894c735195349aa113"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b5f5f1e5762ff894c735195349aa113">&#9670;&nbsp;</a></span>visibleImageRect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QRect DImageViewer::visibleImageRect </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>返回当前展示图片的几何信息，包含在图片上的坐标，显示大小，可用于图片裁剪、定位等 </p>
+<dl class="section return"><dt>返回</dt><dd>展示图片的集合信息 </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dtkwidget/include/dtkwidget/widgets/<a class="el" href="dimageviewer_8h_source.html">dimageviewer.h</a></li>
+<li>dtkwidget/docs/widgets/dimageviewer.zh_CN.dox</li>
+<li>dtkwidget/src/widgets/dimageviewer.cpp</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classDImageViewer.html">DImageViewer</a></li>
+    <li class="footer">文档生成时间:doxtime</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

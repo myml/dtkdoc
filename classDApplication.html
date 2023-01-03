@@ -1,0 +1,1398 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: DApplication类 参考</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="change address" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classDApplication.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#signals">信号</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#properties">属性</a> &#124;
+<a href="#friends">友元</a> &#124;
+<a href="classDApplication-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">DApplication类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 DApplication 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classDApplication.png" alt=""/>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a6411440742f592976a5b7584b6205ceb"><td class="memItemLeft" align="right" valign="top"><a id="a6411440742f592976a5b7584b6205ceb"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>SingleScope</b> { <b>UserScope</b>
+, <b>SystemScope</b>
+ }</td></tr>
+<tr class="separator:a6411440742f592976a5b7584b6205ceb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+信号</h2></td></tr>
+<tr class="memitem:a38b7fcfb3df292d96a5c927ae20d03e5"><td class="memItemLeft" align="right" valign="top"><a id="a38b7fcfb3df292d96a5c927ae20d03e5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDApplication.html#a38b7fcfb3df292d96a5c927ae20d03e5">newInstanceStarted</a> ()</td></tr>
+<tr class="memdesc:a38b7fcfb3df292d96a5c927ae20d03e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">该信号会在程序的一个新实例启动的时候被触发. <br /></td></tr>
+<tr class="separator:a38b7fcfb3df292d96a5c927ae20d03e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa04243a273bd99fe3ce7e12f3124c648"><td class="memItemLeft" align="right" valign="top"><a id="aa04243a273bd99fe3ce7e12f3124c648"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDApplication.html#aa04243a273bd99fe3ce7e12f3124c648">iconThemeChanged</a> ()</td></tr>
+<tr class="memdesc:aa04243a273bd99fe3ce7e12f3124c648"><td class="mdescLeft">&#160;</td><td class="mdescRight">该信号在系统图标主题发生改变的时候被触发. <br /></td></tr>
+<tr class="separator:aa04243a273bd99fe3ce7e12f3124c648"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af89fd945103e479ac554571ede8f6807"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDApplication.html#af89fd945103e479ac554571ede8f6807">screenDevicePixelRatioChanged</a> (QScreen *screen)</td></tr>
+<tr class="memdesc:af89fd945103e479ac554571ede8f6807"><td class="mdescLeft">&#160;</td><td class="mdescRight">该信号在对应屏幕 <em>screen</em> 的缩放比可能发现变化时触发.  <a href="classDApplication.html#af89fd945103e479ac554571ede8f6807">更多...</a><br /></td></tr>
+<tr class="separator:af89fd945103e479ac554571ede8f6807"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a73028a170a4a6a7fa3df21b5d75214d6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDApplication.html#a73028a170a4a6a7fa3df21b5d75214d6">DApplication</a> (int &amp;argc, char **argv)</td></tr>
+<tr class="memdesc:a73028a170a4a6a7fa3df21b5d75214d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructs an instance of <a class="el" href="classDApplication.html">DApplication</a>.  <a href="classDApplication.html#a73028a170a4a6a7fa3df21b5d75214d6">更多...</a><br /></td></tr>
+<tr class="separator:a73028a170a4a6a7fa3df21b5d75214d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70e06597e1c69246e31bcac42ddd5a00"><td class="memItemLeft" align="right" valign="top">D_DECL_DEPRECATED QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDApplication.html#a70e06597e1c69246e31bcac42ddd5a00">theme</a> () const</td></tr>
+<tr class="memdesc:a70e06597e1c69246e31bcac42ddd5a00"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns name of the theme that the application is currently using.  <a href="classDApplication.html#a70e06597e1c69246e31bcac42ddd5a00">更多...</a><br /></td></tr>
+<tr class="separator:a70e06597e1c69246e31bcac42ddd5a00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa85ceb071691c244f3be2f42c3c62e9"><td class="memItemLeft" align="right" valign="top">D_DECL_DEPRECATED void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDApplication.html#afa85ceb071691c244f3be2f42c3c62e9">setTheme</a> (const QString &amp;<a class="el" href="classDApplication.html#a70e06597e1c69246e31bcac42ddd5a00">theme</a>)</td></tr>
+<tr class="memdesc:afa85ceb071691c244f3be2f42c3c62e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">set theme for the application to use the theme we provide.  <a href="classDApplication.html#afa85ceb071691c244f3be2f42c3c62e9">更多...</a><br /></td></tr>
+<tr class="separator:afa85ceb071691c244f3be2f42c3c62e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af62b01f4556177881b25ccfe2049bddd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDApplication.html#af62b01f4556177881b25ccfe2049bddd">setSingleInstance</a> (const QString &amp;key)</td></tr>
+<tr class="memdesc:af62b01f4556177881b25ccfe2049bddd"><td class="mdescLeft">&#160;</td><td class="mdescRight">用于将程序设置成单实例.  <a href="classDApplication.html#af62b01f4556177881b25ccfe2049bddd">更多...</a><br /></td></tr>
+<tr class="separator:af62b01f4556177881b25ccfe2049bddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a2bdc3f1428ba1b62f8bf8a8744ef7f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDApplication.html#a8a2bdc3f1428ba1b62f8bf8a8744ef7f">setSingleInstance</a> (const QString &amp;key, SingleScope singleScope)</td></tr>
+<tr class="memdesc:a8a2bdc3f1428ba1b62f8bf8a8744ef7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">一个重写函数，增加了控制单实例范围的 <em>singleScope</em> 参数。  <a href="classDApplication.html#a8a2bdc3f1428ba1b62f8bf8a8744ef7f">更多...</a><br /></td></tr>
+<tr class="separator:a8a2bdc3f1428ba1b62f8bf8a8744ef7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40f12cb2734cd767311354f0d61f63f8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDApplication.html#a40f12cb2734cd767311354f0d61f63f8">loadTranslator</a> (QList&lt; QLocale &gt; localeFallback=QList&lt; QLocale &gt;()&lt;&lt; QLocale::system())</td></tr>
+<tr class="memdesc:a40f12cb2734cd767311354f0d61f63f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">loads translate file from system or application data path.  <a href="classDApplication.html#a40f12cb2734cd767311354f0d61f63f8">更多...</a><br /></td></tr>
+<tr class="separator:a40f12cb2734cd767311354f0d61f63f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62e530cabd9fb6683c93da1ab3c38252"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDApplication.html#a62e530cabd9fb6683c93da1ab3c38252">productName</a> () const</td></tr>
+<tr class="memdesc:a62e530cabd9fb6683c93da1ab3c38252"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the product name of this application.  <a href="classDApplication.html#a62e530cabd9fb6683c93da1ab3c38252">更多...</a><br /></td></tr>
+<tr class="separator:a62e530cabd9fb6683c93da1ab3c38252"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41c882a5a02da7821ba62c2e84fe9aa9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDApplication.html#a41c882a5a02da7821ba62c2e84fe9aa9">setProductName</a> (const QString &amp;<a class="el" href="classDApplication.html#a62e530cabd9fb6683c93da1ab3c38252">productName</a>)</td></tr>
+<tr class="memdesc:a41c882a5a02da7821ba62c2e84fe9aa9"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the product name of this application.  <a href="classDApplication.html#a41c882a5a02da7821ba62c2e84fe9aa9">更多...</a><br /></td></tr>
+<tr class="separator:a41c882a5a02da7821ba62c2e84fe9aa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ec689594630ab6119dde4eee650dcc7"><td class="memItemLeft" align="right" valign="top">const QIcon &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDApplication.html#a9ec689594630ab6119dde4eee650dcc7">productIcon</a> () const</td></tr>
+<tr class="memdesc:a9ec689594630ab6119dde4eee650dcc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the product icon of this application.  <a href="classDApplication.html#a9ec689594630ab6119dde4eee650dcc7">更多...</a><br /></td></tr>
+<tr class="separator:a9ec689594630ab6119dde4eee650dcc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd0323ad307928229bbd0139f8f99518"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDApplication.html#abd0323ad307928229bbd0139f8f99518">setProductIcon</a> (const QIcon &amp;<a class="el" href="classDApplication.html#a9ec689594630ab6119dde4eee650dcc7">productIcon</a>)</td></tr>
+<tr class="memdesc:abd0323ad307928229bbd0139f8f99518"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the product icon of this application.  <a href="classDApplication.html#abd0323ad307928229bbd0139f8f99518">更多...</a><br /></td></tr>
+<tr class="separator:abd0323ad307928229bbd0139f8f99518"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9097286ddc1b6a578d9085dd5acaae19"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDApplication.html#a9097286ddc1b6a578d9085dd5acaae19">applicationLicense</a> () const</td></tr>
+<tr class="memdesc:a9097286ddc1b6a578d9085dd5acaae19"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the license used by this application.  <a href="classDApplication.html#a9097286ddc1b6a578d9085dd5acaae19">更多...</a><br /></td></tr>
+<tr class="separator:a9097286ddc1b6a578d9085dd5acaae19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cf9e0ae96f0df1026896c43cbedbbd5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDApplication.html#a3cf9e0ae96f0df1026896c43cbedbbd5">setApplicationLicense</a> (const QString &amp;license)</td></tr>
+<tr class="memdesc:a3cf9e0ae96f0df1026896c43cbedbbd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the license of this application.  <a href="classDApplication.html#a3cf9e0ae96f0df1026896c43cbedbbd5">更多...</a><br /></td></tr>
+<tr class="separator:a3cf9e0ae96f0df1026896c43cbedbbd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7783e06276a52038de9f243c686fa54"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDApplication.html#ae7783e06276a52038de9f243c686fa54">applicationDescription</a> () const</td></tr>
+<tr class="memdesc:ae7783e06276a52038de9f243c686fa54"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the long description of the application.  <a href="classDApplication.html#ae7783e06276a52038de9f243c686fa54">更多...</a><br /></td></tr>
+<tr class="separator:ae7783e06276a52038de9f243c686fa54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add5ac906ce3f4ed28d3e019c7507de06"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDApplication.html#add5ac906ce3f4ed28d3e019c7507de06">setApplicationDescription</a> (const QString &amp;description)</td></tr>
+<tr class="memdesc:add5ac906ce3f4ed28d3e019c7507de06"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the description of the application.  <a href="classDApplication.html#add5ac906ce3f4ed28d3e019c7507de06">更多...</a><br /></td></tr>
+<tr class="separator:add5ac906ce3f4ed28d3e019c7507de06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace80c14cfca6c4c91351cbc8823cd970"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDApplication.html#ace80c14cfca6c4c91351cbc8823cd970">applicationHomePage</a> () const</td></tr>
+<tr class="memdesc:ace80c14cfca6c4c91351cbc8823cd970"><td class="mdescLeft">&#160;</td><td class="mdescRight">程序的主页地址.  <a href="classDApplication.html#ace80c14cfca6c4c91351cbc8823cd970">更多...</a><br /></td></tr>
+<tr class="separator:ace80c14cfca6c4c91351cbc8823cd970"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98a5ace9d0a13da557607504b6784783"><td class="memItemLeft" align="right" valign="top"><a id="a98a5ace9d0a13da557607504b6784783"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setApplicationHomePage</b> (const QString &amp;link)</td></tr>
+<tr class="separator:a98a5ace9d0a13da557607504b6784783"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae90033079d15c6a3b51741d0bd45edbc"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDApplication.html#ae90033079d15c6a3b51741d0bd45edbc">applicationAcknowledgementPage</a> () const</td></tr>
+<tr class="memdesc:ae90033079d15c6a3b51741d0bd45edbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the acknowlegement page of the application.  <a href="classDApplication.html#ae90033079d15c6a3b51741d0bd45edbc">更多...</a><br /></td></tr>
+<tr class="separator:ae90033079d15c6a3b51741d0bd45edbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcfc5b5a45ad93b119124757b3d39180"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDApplication.html#adcfc5b5a45ad93b119124757b3d39180">setApplicationAcknowledgementPage</a> (const QString &amp;link)</td></tr>
+<tr class="memdesc:adcfc5b5a45ad93b119124757b3d39180"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the acknowlegement page of the application.  <a href="classDApplication.html#adcfc5b5a45ad93b119124757b3d39180">更多...</a><br /></td></tr>
+<tr class="separator:adcfc5b5a45ad93b119124757b3d39180"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0f0406868f4ab7c4f5ab1e1e0674d71"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDApplication.html#ab0f0406868f4ab7c4f5ab1e1e0674d71">applicationAcknowledgementVisible</a> () const</td></tr>
+<tr class="memdesc:ab0f0406868f4ab7c4f5ab1e1e0674d71"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否显示关于对话框中的鸣谢地址显示.  <a href="classDApplication.html#ab0f0406868f4ab7c4f5ab1e1e0674d71">更多...</a><br /></td></tr>
+<tr class="separator:ab0f0406868f4ab7c4f5ab1e1e0674d71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a618edb0773504ff4b0198a4a4d4de6a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDApplication.html#a618edb0773504ff4b0198a4a4d4de6a6">setApplicationAcknowledgementVisible</a> (bool visible)</td></tr>
+<tr class="memdesc:a618edb0773504ff4b0198a4a4d4de6a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置是否显示关于对话框中的鸣谢地址显示.  <a href="classDApplication.html#a618edb0773504ff4b0198a4a4d4de6a6">更多...</a><br /></td></tr>
+<tr class="separator:a618edb0773504ff4b0198a4a4d4de6a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaea7455504c6aa5b65b77ecf78096872"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDtk_1_1Widget_1_1DAboutDialog.html">DAboutDialog</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDApplication.html#aaea7455504c6aa5b65b77ecf78096872">aboutDialog</a> ()</td></tr>
+<tr class="memdesc:aaea7455504c6aa5b65b77ecf78096872"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the about dialog of this application.  <a href="classDApplication.html#aaea7455504c6aa5b65b77ecf78096872">更多...</a><br /></td></tr>
+<tr class="separator:aaea7455504c6aa5b65b77ecf78096872"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a754d95fd863bbdf4a4a35dceffe22458"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDApplication.html#a754d95fd863bbdf4a4a35dceffe22458">setAboutDialog</a> (<a class="el" href="classDtk_1_1Widget_1_1DAboutDialog.html">DAboutDialog</a> *<a class="el" href="classDApplication.html#aaea7455504c6aa5b65b77ecf78096872">aboutDialog</a>)</td></tr>
+<tr class="memdesc:a754d95fd863bbdf4a4a35dceffe22458"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the <em>aboutDialog</em> of this application.  <a href="classDApplication.html#a754d95fd863bbdf4a4a35dceffe22458">更多...</a><br /></td></tr>
+<tr class="separator:a754d95fd863bbdf4a4a35dceffe22458"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4312a2520de81f1fdb43844b92e89250"><td class="memItemLeft" align="right" valign="top"><a id="a4312a2520de81f1fdb43844b92e89250"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>visibleMenuShortcutText</b> () const</td></tr>
+<tr class="separator:a4312a2520de81f1fdb43844b92e89250"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ba35e20820b5bd0c8e781c441156871"><td class="memItemLeft" align="right" valign="top"><a id="a8ba35e20820b5bd0c8e781c441156871"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setVisibleMenuShortcutText</b> (bool value)</td></tr>
+<tr class="separator:a8ba35e20820b5bd0c8e781c441156871"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9255a216f539d7843eee7f314501c09d"><td class="memItemLeft" align="right" valign="top"><a id="a9255a216f539d7843eee7f314501c09d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>visibleMenuCheckboxWidget</b> () const</td></tr>
+<tr class="separator:a9255a216f539d7843eee7f314501c09d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4731a2c29b996f884444c194b5194a6e"><td class="memItemLeft" align="right" valign="top"><a id="a4731a2c29b996f884444c194b5194a6e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setVisibleMenuCheckboxWidget</b> (bool value)</td></tr>
+<tr class="separator:a4731a2c29b996f884444c194b5194a6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84e1095c7e5d6f2f8e58770b8abbbd53"><td class="memItemLeft" align="right" valign="top"><a id="a84e1095c7e5d6f2f8e58770b8abbbd53"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>visibleMenuIcon</b> () const</td></tr>
+<tr class="separator:a84e1095c7e5d6f2f8e58770b8abbbd53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16fa14fdbfcc148b9a887cf2047519f0"><td class="memItemLeft" align="right" valign="top"><a id="a16fa14fdbfcc148b9a887cf2047519f0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setVisibleMenuIcon</b> (bool value)</td></tr>
+<tr class="separator:a16fa14fdbfcc148b9a887cf2047519f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c89766e7421348447a814a57cf57fa6"><td class="memItemLeft" align="right" valign="top"><a id="a9c89766e7421348447a814a57cf57fa6"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>autoActivateWindows</b> () const</td></tr>
+<tr class="separator:a9c89766e7421348447a814a57cf57fa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8882822e356373c36dd2c11838ae0562"><td class="memItemLeft" align="right" valign="top"><a id="a8882822e356373c36dd2c11838ae0562"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setAutoActivateWindows</b> (bool autoActivateWindows)</td></tr>
+<tr class="separator:a8882822e356373c36dd2c11838ae0562"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaea7cd34c18033a5231ec47cb53c6e03"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDApplication.html#aaea7cd34c18033a5231ec47cb53c6e03">acclimatizeVirtualKeyboard</a> (QWidget *window)</td></tr>
+<tr class="memdesc:aaea7cd34c18033a5231ec47cb53c6e03"><td class="mdescLeft">&#160;</td><td class="mdescRight">用于窗口中可输入控件自适应虚拟键盘.  <a href="classDApplication.html#aaea7cd34c18033a5231ec47cb53c6e03">更多...</a><br /></td></tr>
+<tr class="separator:aaea7cd34c18033a5231ec47cb53c6e03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca3455f1163aa9cc674dfe76cb734887"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDApplication.html#aca3455f1163aa9cc674dfe76cb734887">ignoreVirtualKeyboard</a> (QWidget *window)</td></tr>
+<tr class="memdesc:aca3455f1163aa9cc674dfe76cb734887"><td class="mdescLeft">&#160;</td><td class="mdescRight">恢复虚拟键盘的自适应操作.  <a href="classDApplication.html#aca3455f1163aa9cc674dfe76cb734887">更多...</a><br /></td></tr>
+<tr class="separator:aca3455f1163aa9cc674dfe76cb734887"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22635d115c609cef195c83c77ce6db8b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDApplication.html#a22635d115c609cef195c83c77ce6db8b">isAcclimatizedVirtualKeyboard</a> (QWidget *window) const</td></tr>
+<tr class="memdesc:a22635d115c609cef195c83c77ce6db8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否自适应虚拟键盘  <a href="classDApplication.html#a22635d115c609cef195c83c77ce6db8b">更多...</a><br /></td></tr>
+<tr class="separator:a22635d115c609cef195c83c77ce6db8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f6ba1d148fd82f2a2eea962ca96b030"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDApplication.html#a5f6ba1d148fd82f2a2eea962ca96b030">setCustomHandler</a> (<a class="el" href="classDAppHandler.html">DAppHandler</a> *handler)</td></tr>
+<tr class="memdesc:a5f6ba1d148fd82f2a2eea962ca96b030"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置 app 的处理程序.  <a href="classDApplication.html#a5f6ba1d148fd82f2a2eea962ca96b030">更多...</a><br /></td></tr>
+<tr class="separator:a5f6ba1d148fd82f2a2eea962ca96b030"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44fc3e9f9bcc317aefeb03bfa48cd51b"><td class="memItemLeft" align="right" valign="top"><a id="a44fc3e9f9bcc317aefeb03bfa48cd51b"></a>
+<a class="el" href="classDAppHandler.html">DAppHandler</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDApplication.html#a44fc3e9f9bcc317aefeb03bfa48cd51b">customHandler</a> ()</td></tr>
+<tr class="memdesc:a44fc3e9f9bcc317aefeb03bfa48cd51b"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取设置的 app 定制化处理程序 <br /></td></tr>
+<tr class="separator:a44fc3e9f9bcc317aefeb03bfa48cd51b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62c69ecb312efd6b9768706c083a64ba"><td class="memItemLeft" align="right" valign="top"><a id="a62c69ecb312efd6b9768706c083a64ba"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>notify</b> (QObject *obj, QEvent *event) Q_DECL_OVERRIDE</td></tr>
+<tr class="separator:a62c69ecb312efd6b9768706c083a64ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:abe322de4c7db559feb907af9ba05a93c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classDtk_1_1Widget_1_1DApplication.html">DApplication</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDApplication.html#abe322de4c7db559feb907af9ba05a93c">globalApplication</a> (int &amp;argc, char **argv)</td></tr>
+<tr class="memdesc:abe322de4c7db559feb907af9ba05a93c"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回一个DApplicatioin实例.  <a href="classDApplication.html#abe322de4c7db559feb907af9ba05a93c">更多...</a><br /></td></tr>
+<tr class="separator:abe322de4c7db559feb907af9ba05a93c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d7632dd40ccfadf421c405d9632d52b"><td class="memItemLeft" align="right" valign="top">static D_DECL_DEPRECATED bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDApplication.html#a6d7632dd40ccfadf421c405d9632d52b">loadDXcbPlugin</a> ()</td></tr>
+<tr class="memdesc:a6d7632dd40ccfadf421c405d9632d52b"><td class="mdescLeft">&#160;</td><td class="mdescRight">warning: Must call before QGuiApplication defined object  <a href="classDApplication.html#a6d7632dd40ccfadf421c405d9632d52b">更多...</a><br /></td></tr>
+<tr class="separator:a6d7632dd40ccfadf421c405d9632d52b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c4e9f8aeb5225354370cb223504c6ec"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDApplication.html#a2c4e9f8aeb5225354370cb223504c6ec">isDXcbPlatform</a> ()</td></tr>
+<tr class="memdesc:a2c4e9f8aeb5225354370cb223504c6ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">检查当前程序是否使用了dxcb平台插件.  <a href="classDApplication.html#a2c4e9f8aeb5225354370cb223504c6ec">更多...</a><br /></td></tr>
+<tr class="separator:a2c4e9f8aeb5225354370cb223504c6ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cbf7738ecad11bb789c3205c61fba7e"><td class="memItemLeft" align="right" valign="top"><a id="a4cbf7738ecad11bb789c3205c61fba7e"></a>
+static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDApplication.html#a4cbf7738ecad11bb789c3205c61fba7e">buildDtkVersion</a> ()</td></tr>
+<tr class="memdesc:a4cbf7738ecad11bb789c3205c61fba7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回编译时的dtk版本. <br /></td></tr>
+<tr class="separator:a4cbf7738ecad11bb789c3205c61fba7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2479fd46b37eecfecbd24f49a4dbd3c"><td class="memItemLeft" align="right" valign="top"><a id="aa2479fd46b37eecfecbd24f49a4dbd3c"></a>
+static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDApplication.html#aa2479fd46b37eecfecbd24f49a4dbd3c">runtimeDtkVersion</a> ()</td></tr>
+<tr class="memdesc:aa2479fd46b37eecfecbd24f49a4dbd3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回运行时的dtk版本. <br /></td></tr>
+<tr class="separator:aa2479fd46b37eecfecbd24f49a4dbd3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac74e147250ed6298bbd0b3bd2ef0f5b3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDApplication.html#ac74e147250ed6298bbd0b3bd2ef0f5b3">registerDDESession</a> ()</td></tr>
+<tr class="memdesc:ac74e147250ed6298bbd0b3bd2ef0f5b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">用于跟 startdde 进行通信，告知 startdde 进程已经启动成功.  <a href="classDApplication.html#ac74e147250ed6298bbd0b3bd2ef0f5b3">更多...</a><br /></td></tr>
+<tr class="separator:ac74e147250ed6298bbd0b3bd2ef0f5b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b32ce2e08dc3e498fae3a20eac26c12"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDApplication.html#a1b32ce2e08dc3e498fae3a20eac26c12">customQtThemeConfigPathByUserHome</a> (const QString &amp;home)</td></tr>
+<tr class="memdesc:a1b32ce2e08dc3e498fae3a20eac26c12"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据用户家目录设置Qt主题配置文件的目录.  <a href="classDApplication.html#a1b32ce2e08dc3e498fae3a20eac26c12">更多...</a><br /></td></tr>
+<tr class="separator:a1b32ce2e08dc3e498fae3a20eac26c12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21c6c54db70b9818a9e1b1a4467ee02c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDApplication.html#a21c6c54db70b9818a9e1b1a4467ee02c">customQtThemeConfigPath</a> (const QString &amp;path)</td></tr>
+<tr class="memdesc:a21c6c54db70b9818a9e1b1a4467ee02c"><td class="mdescLeft">&#160;</td><td class="mdescRight">自定义 Qt 主题配置文件的路径。  <a href="classDApplication.html#a21c6c54db70b9818a9e1b1a4467ee02c">更多...</a><br /></td></tr>
+<tr class="separator:a21c6c54db70b9818a9e1b1a4467ee02c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a743686e65409f08066a3de8ad35cb136"><td class="memItemLeft" align="right" valign="top">static QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDApplication.html#a743686e65409f08066a3de8ad35cb136">customizedQtThemeConfigPath</a> ()</td></tr>
+<tr class="memdesc:a743686e65409f08066a3de8ad35cb136"><td class="mdescLeft">&#160;</td><td class="mdescRight">自定义 Qt 主题配置文件路径.  <a href="classDApplication.html#a743686e65409f08066a3de8ad35cb136">更多...</a><br /></td></tr>
+<tr class="separator:a743686e65409f08066a3de8ad35cb136"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39e6b524a389c28c31d23e75a5a54a89"><td class="memItemLeft" align="right" valign="top"><a id="a39e6b524a389c28c31d23e75a5a54a89"></a>
+static QString&#160;</td><td class="memItemRight" valign="bottom"><b>buildVersion</b> (const QString &amp;fallbackVersion)</td></tr>
+<tr class="separator:a39e6b524a389c28c31d23e75a5a54a89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:aaa6c2336fb6a8390401138ec78ec3213"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDApplication.html#aaa6c2336fb6a8390401138ec78ec3213">handleHelpAction</a> ()</td></tr>
+<tr class="memdesc:aaa6c2336fb6a8390401138ec78ec3213"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDApplication.html#aaa6c2336fb6a8390401138ec78ec3213" title="DApplication::handleHelpAction">DApplication::handleHelpAction</a>  <a href="classDApplication.html#aaa6c2336fb6a8390401138ec78ec3213">更多...</a><br /></td></tr>
+<tr class="separator:aaa6c2336fb6a8390401138ec78ec3213"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63f27be2428e713385764a46ccf36dc9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDApplication.html#a63f27be2428e713385764a46ccf36dc9">handleAboutAction</a> ()</td></tr>
+<tr class="memdesc:a63f27be2428e713385764a46ccf36dc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">用于处理菜单中关于按钮的点击  <a href="classDApplication.html#a63f27be2428e713385764a46ccf36dc9">更多...</a><br /></td></tr>
+<tr class="separator:a63f27be2428e713385764a46ccf36dc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b0c87ca4b25c7b5c6b7ac7dde7a5c40"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDApplication.html#a2b0c87ca4b25c7b5c6b7ac7dde7a5c40">handleQuitAction</a> ()</td></tr>
+<tr class="memdesc:a2b0c87ca4b25c7b5c6b7ac7dde7a5c40"><td class="mdescLeft">&#160;</td><td class="mdescRight">用于处理菜单中退出按钮的点击  <a href="classDApplication.html#a2b0c87ca4b25c7b5c6b7ac7dde7a5c40">更多...</a><br /></td></tr>
+<tr class="separator:a2b0c87ca4b25c7b5c6b7ac7dde7a5c40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:a4ce0fec3e460602f631de35803972cd5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDApplication.html#a4ce0fec3e460602f631de35803972cd5">visibleMenuShortcutText</a></td></tr>
+<tr class="memdesc:a4ce0fec3e460602f631de35803972cd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">菜单项快捷键文本的可视化属性  <a href="classDApplication.html#a4ce0fec3e460602f631de35803972cd5">更多...</a><br /></td></tr>
+<tr class="separator:a4ce0fec3e460602f631de35803972cd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8740c958a21ed47cd25bc116c249f7c6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDApplication.html#a8740c958a21ed47cd25bc116c249f7c6">visibleMenuCheckboxWidget</a></td></tr>
+<tr class="memdesc:a8740c958a21ed47cd25bc116c249f7c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">菜单项内 CheckBox 控件的可视化属性  <a href="classDApplication.html#a8740c958a21ed47cd25bc116c249f7c6">更多...</a><br /></td></tr>
+<tr class="separator:a8740c958a21ed47cd25bc116c249f7c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33de68dab5d8008468dd8e4dfb93da59"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDApplication.html#a33de68dab5d8008468dd8e4dfb93da59">visibleMenuIcon</a></td></tr>
+<tr class="memdesc:a33de68dab5d8008468dd8e4dfb93da59"><td class="mdescLeft">&#160;</td><td class="mdescRight">菜单按钮的可视化属性.  <a href="classDApplication.html#a33de68dab5d8008468dd8e4dfb93da59">更多...</a><br /></td></tr>
+<tr class="separator:a33de68dab5d8008468dd8e4dfb93da59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99b769bcc076c599929e4453fbe7e4f3"><td class="memItemLeft" align="right" valign="top"><a id="a99b769bcc076c599929e4453fbe7e4f3"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>autoActivateWindows</b></td></tr>
+<tr class="separator:a99b769bcc076c599929e4453fbe7e4f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+友元</h2></td></tr>
+<tr class="memitem:aac7deffd87b76cead987c90ff8eb2908"><td class="memItemLeft" align="right" valign="top"><a id="aac7deffd87b76cead987c90ff8eb2908"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>DTitlebarPrivate</b></td></tr>
+<tr class="separator:aac7deffd87b76cead987c90ff8eb2908"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c27babe9a2a59767280c67b1ddb2084"><td class="memItemLeft" align="right" valign="top"><a id="a0c27babe9a2a59767280c67b1ddb2084"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>DMainWindowPrivate</b></td></tr>
+<tr class="separator:a0c27babe9a2a59767280c67b1ddb2084"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a73028a170a4a6a7fa3df21b5d75214d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73028a170a4a6a7fa3df21b5d75214d6">&#9670;&nbsp;</a></span>DApplication()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DApplication::DApplication </td>
+          <td>(</td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>argc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>argv</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>constructs an instance of <a class="el" href="classDApplication.html">DApplication</a>. </p>
+<p>用于构建 <a class="el" href="classDApplication.html">DApplication</a> 实例的构造函数</p>
+<p><em>argc</em> is the same as in the main function. <em>argc</em> 作用同 QApplication::QApplication 参数 argc。 <em>argv</em> is the same as in the main function. <em>argv</em> 作用同 QApplication::QApplication 参数 argv。</p>
+<p>对象构造时会判断环境变量 DTK_FORCE_RASTER_WIDGETS 的值，如果为 TRUE 则开启 Qt::AA_ForceRasterWidgets，为 FALSE 则不开启，当没有设置此环境变量时，如果 编译时使用了宏 FORCE_RASTER_WIDGETS（龙芯和申威平台默认使用），则开启 Qt::AA_ForceRasterWidgets，否则不开启。 </p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="aaea7455504c6aa5b65b77ecf78096872"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaea7455504c6aa5b65b77ecf78096872">&#9670;&nbsp;</a></span>aboutDialog()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDtk_1_1Widget_1_1DAboutDialog.html">DAboutDialog</a> * DApplication::aboutDialog </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>returns the about dialog of this application. </p>
+<p>返回一个基于当前程序信息的关于对话框.</p>
+<p>If the about dialog is not set, it will automatically construct one. 此对话框可以通过 <a class="el" href="classDApplication.html#a754d95fd863bbdf4a4a35dceffe22458" title="sets the aboutDialog of this application.">DApplication::setAboutDialog</a> 进行设置，如果没有设置就使用此函数进行获取， 系统会创建一个新的关于对话框。</p>
+<dl class="section return"><dt>返回</dt><dd>the about dialog instance. </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDApplication.html#a754d95fd863bbdf4a4a35dceffe22458" title="sets the aboutDialog of this application.">DApplication::setAboutDialog</a> </dd></dl>
+
+</div>
+</div>
+<a id="aaea7cd34c18033a5231ec47cb53c6e03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaea7cd34c18033a5231ec47cb53c6e03">&#9670;&nbsp;</a></span>acclimatizeVirtualKeyboard()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DApplication::acclimatizeVirtualKeyboard </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>window</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>用于窗口中可输入控件自适应虚拟键盘. </p>
+<p>为窗口的可输入控件添加自动适应虚拟键盘输入法的功能。开启此功能后，当 监听到 QInputMethod::keyboardRectangleChanged 后，会判断当 前的可输入（不仅仅是处于焦点状态）控件是否为此 <em>window</em> 的子控件， 如果是，则将通过 QWidget::setContentsMargins 更新 <em>window</em> 的布局区域，以此确保可输入控件处于可见区域。如果可输入控件处于一个 QAbstractScrollArea 中，将会压缩 <em>window</em> 的布局空间，促使 可滚动区域缩小，再使用 QAbstraceScrollArea::scrollContentsBy 将可输入控件滚动到合适的区域，否则将直接把 <em>window</em> 的内容向上移动为虚拟键盘 腾出空间。</p>
+<dl class="section note"><dt>注解</dt><dd>在使用之前要确保窗口的 Qt::WA_LayoutOnEntireRect 和 Qt::WA_ContentsMarginsRespectsSafeArea 都为 false</dd></dl>
+<p><em>window</em> 必须是一个顶层窗口 </p><dl class="section see"><dt>参见</dt><dd>QWidget::isTopLevel QWidget::setContentsMargins </dd>
+<dd>
+QInputMethod::cursorRectangle QInputMethod::inputItemClipRectangle QInputMethod::keyboardRectangle </dd>
+<dd>
+QAbstractScrollArea </dd></dl>
+
+</div>
+</div>
+<a id="ae90033079d15c6a3b51741d0bd45edbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae90033079d15c6a3b51741d0bd45edbc">&#9670;&nbsp;</a></span>applicationAcknowledgementPage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString DApplication::applicationAcknowledgementPage </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>returns the acknowlegement page of the application. </p>
+<p>记录程序的鸣谢信息网址，主要用于在关于对话框中进行展示.</p>
+<p>It's mainly used to construct an about dialog of the application. <br  />
+</p>
+<dl class="section return"><dt>返回</dt><dd>the acknowlegement page of the application if set, otherwise empty. </dd></dl>
+
+</div>
+</div>
+<a id="ab0f0406868f4ab7c4f5ab1e1e0674d71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0f0406868f4ab7c4f5ab1e1e0674d71">&#9670;&nbsp;</a></span>applicationAcknowledgementVisible()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DApplication::applicationAcknowledgementVisible </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>是否显示关于对话框中的鸣谢地址显示. </p>
+<dl class="section return"><dt>返回</dt><dd>显示鸣谢地址返回 true，否则返回 false。 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDApplication.html#a618edb0773504ff4b0198a4a4d4de6a6" title="设置是否显示关于对话框中的鸣谢地址显示.">DApplication::setApplicationAcknowledgementVisible</a> </dd></dl>
+
+</div>
+</div>
+<a id="ae7783e06276a52038de9f243c686fa54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7783e06276a52038de9f243c686fa54">&#9670;&nbsp;</a></span>applicationDescription()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString DApplication::applicationDescription </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>returns the long description of the application. </p>
+<p>属性记录了程序的描述信息，主要用于关于对话框中的信息展示.</p>
+<p>It's mainly used to construct an about dialog of the application.</p>
+<dl class="section return"><dt>返回</dt><dd>the description of the application if set, otherwise empty. </dd></dl>
+
+</div>
+</div>
+<a id="ace80c14cfca6c4c91351cbc8823cd970"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace80c14cfca6c4c91351cbc8823cd970">&#9670;&nbsp;</a></span>applicationHomePage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString DApplication::applicationHomePage </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>程序的主页地址. </p>
+<p>该属性记录程序的主页网址，主要用于在关于对话框中进行展示。 默认情况下，该地址为 Uos 或者 Deepin 官方网站地址。 </p>
+
+</div>
+</div>
+<a id="a9097286ddc1b6a578d9085dd5acaae19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9097286ddc1b6a578d9085dd5acaae19">&#9670;&nbsp;</a></span>applicationLicense()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString DApplication::applicationLicense </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>returns the license used by this application. </p>
+<p>It's mainly used to construct an about dialog of the application.</p>
+<p>applicationLicense 属性是程序所使用的授权协议； 主要用于在关于对话框中进行展示，默认值为 GPLv3。</p>
+<dl class="section return"><dt>返回</dt><dd>the license used by this application. </dd></dl>
+
+</div>
+</div>
+<a id="a743686e65409f08066a3de8ad35cb136"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a743686e65409f08066a3de8ad35cb136">&#9670;&nbsp;</a></span>customizedQtThemeConfigPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString DApplication::customizedQtThemeConfigPath </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>自定义 Qt 主题配置文件路径. </p>
+<dl class="section return"><dt>返回</dt><dd>返回自定义的 Qt 主题配置文件路径，未设置过此路径时返回为空。 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDApplication.html#a21c6c54db70b9818a9e1b1a4467ee02c" title="自定义 Qt 主题配置文件的路径。">DApplication::customQtThemeConfigPath</a> </dd></dl>
+
+</div>
+</div>
+<a id="a21c6c54db70b9818a9e1b1a4467ee02c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21c6c54db70b9818a9e1b1a4467ee02c">&#9670;&nbsp;</a></span>customQtThemeConfigPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DApplication::customQtThemeConfigPath </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>自定义 Qt 主题配置文件的路径。 </p>
+<p>默认文件通常为 "~/.config/deepin/qt-theme.ini" 其中包含应用的图标主题、字体、、屏幕缩放等相关的配置项。可应用于以root用户启动的 应用，需要跟随某个一般用户的主题设置项。 <em>path</em> 中不包含 "/deepin/qt-theme.ini" 部分，如：path = "/tmp"， 则配置文件路径为："/tmp/deepin/qt-theme.ini"。 <em>path</em> 不要以 "/" 结尾 </p><dl class="section warning"><dt>警告</dt><dd>必须在构造 <a class="el" href="classDApplication.html">DApplication</a> 对象之前调用</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDApplication.html#a743686e65409f08066a3de8ad35cb136" title="自定义 Qt 主题配置文件路径.">DApplication::customizedQtThemeConfigPath</a> </dd></dl>
+
+</div>
+</div>
+<a id="a1b32ce2e08dc3e498fae3a20eac26c12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b32ce2e08dc3e498fae3a20eac26c12">&#9670;&nbsp;</a></span>customQtThemeConfigPathByUserHome()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DApplication::customQtThemeConfigPathByUserHome </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>home</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>根据用户家目录设置Qt主题配置文件的目录. </p>
+<p><em>home</em> 家目录，不要以 "/" 结尾 </p><dl class="section warning"><dt>警告</dt><dd>必须在构造 <a class="el" href="classDApplication.html">DApplication</a> 对象之前调用 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDApplication.html#a21c6c54db70b9818a9e1b1a4467ee02c" title="自定义 Qt 主题配置文件的路径。">DApplication::customQtThemeConfigPath</a> </dd></dl>
+
+</div>
+</div>
+<a id="abe322de4c7db559feb907af9ba05a93c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe322de4c7db559feb907af9ba05a93c">&#9670;&nbsp;</a></span>globalApplication()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDtk_1_1Widget_1_1DApplication.html">DApplication</a> * DApplication::globalApplication </td>
+          <td>(</td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>argc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>argv</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>返回一个DApplicatioin实例. </p>
+<p>如果在执行此函数之前DApplication已经被创建则返回已存在的实例，否则直接创建一个 新的DApplication实例并返回。主要用于与deepin-trubo服务相配合，用于共享 deepin-turbo dtkwidget booster中已经创建的DApplication对象，以此节省初始化时间。</p>
+<p><em>argc</em> 传递给DApplication的构造函数 <em>argv</em> 传递给DApplication的构造函数</p>
+<dl class="section return"><dt>返回</dt><dd>返回一个DApplication对象 </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>不保证获取的DApplication对象一定有效，如果实例已存在，则直接使 用static_case将其转换为DApplication对象 </dd></dl>
+
+</div>
+</div>
+<a id="a63f27be2428e713385764a46ccf36dc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63f27be2428e713385764a46ccf36dc9">&#9670;&nbsp;</a></span>handleAboutAction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DApplication::handleAboutAction </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>用于处理菜单中关于按钮的点击 </p>
+<p>Triggered when user clicked the about menu item of this window's titlebar, default action is to show the about dialog of this window(if there is one), override this method if you want to change the default action.</p>
+<p>该函数在用户点击窗口标题栏的关于按钮时触发，默认实现为打开程序关于对话框， 子类可以重现实现此函数以覆盖其默认行为。 </p>
+
+</div>
+</div>
+<a id="aaa6c2336fb6a8390401138ec78ec3213"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa6c2336fb6a8390401138ec78ec3213">&#9670;&nbsp;</a></span>handleHelpAction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DApplication::handleHelpAction </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classDApplication.html#aaa6c2336fb6a8390401138ec78ec3213" title="DApplication::handleHelpAction">DApplication::handleHelpAction</a> </p>
+<p>Triggered when user clicked the help menu item of this window's titlebar, default action is to open the user manual of this program, override this method if you want to change the default action.</p>
+<p>用于处理菜单中帮助按钮的点击.</p>
+<p>该函数在用户点击窗口标题栏的帮助按钮时触发。 默认实现为打开当前程序的帮助手册，子类可以重现实现此函数以覆盖其默认行为。 </p>
+
+</div>
+</div>
+<a id="a2b0c87ca4b25c7b5c6b7ac7dde7a5c40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b0c87ca4b25c7b5c6b7ac7dde7a5c40">&#9670;&nbsp;</a></span>handleQuitAction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DApplication::handleQuitAction </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>用于处理菜单中退出按钮的点击 </p>
+<p>Triggered when user clicked the exit menu item of this window's titlebar, default action is to quit this program, you can try to save your data before the program quitting by connecting to the aboutToQuit signal of this application. override this method if you want to change the default action.</p>
+<p>该函数在用户点击窗口标题栏的关闭按钮时触发，默认行为是退出整个程序， 子类可以重写此函数以覆盖其行为。 </p>
+
+</div>
+</div>
+<a id="aca3455f1163aa9cc674dfe76cb734887"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca3455f1163aa9cc674dfe76cb734887">&#9670;&nbsp;</a></span>ignoreVirtualKeyboard()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DApplication::ignoreVirtualKeyboard </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>window</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>恢复虚拟键盘的自适应操作. </p>
+<p>该函数用于恢复虚拟键盘到默认状态，将不会为虚拟键盘的环境做任何自适应操作。</p>
+<dl class="section note"><dt>注解</dt><dd>此操作不会恢复对 QWidget::contentsMargins 的修改 <em>window</em> 需是一个调用过 acclimatizeVirtualKeyboard 的窗口 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDApplication.html#a22635d115c609cef195c83c77ce6db8b" title="是否自适应虚拟键盘">DApplication::isAcclimatizedVirtualKeyboard</a> <a class="el" href="classDApplication.html#aaea7cd34c18033a5231ec47cb53c6e03" title="用于窗口中可输入控件自适应虚拟键盘.">DApplication::acclimatizeVirtualKeyboard</a> </dd></dl>
+
+</div>
+</div>
+<a id="a22635d115c609cef195c83c77ce6db8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22635d115c609cef195c83c77ce6db8b">&#9670;&nbsp;</a></span>isAcclimatizedVirtualKeyboard()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DApplication::isAcclimatizedVirtualKeyboard </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>window</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>是否自适应虚拟键盘 </p>
+<dl class="section return"><dt>返回</dt><dd>如果 <em>window</em> 会自适应虚拟键盘返回 true,否则返回 false </dd></dl>
+
+</div>
+</div>
+<a id="a2c4e9f8aeb5225354370cb223504c6ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c4e9f8aeb5225354370cb223504c6ec">&#9670;&nbsp;</a></span>isDXcbPlatform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DApplication::isDXcbPlatform </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>检查当前程序是否使用了dxcb平台插件. </p>
+<dl class="section return"><dt>返回</dt><dd>正在使用返回 true，否则返回 false。 </dd></dl>
+
+</div>
+</div>
+<a id="a6d7632dd40ccfadf421c405d9632d52b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d7632dd40ccfadf421c405d9632d52b">&#9670;&nbsp;</a></span>loadDXcbPlugin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DApplication::loadDXcbPlugin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>warning: Must call before QGuiApplication defined object </p>
+<p>强制程序使用的平台插件到dxcb.</p>
+<p>这个函数的工作原理是通过设置 QT_QPA_PLATFORM 来影响平台插件的加载，所以此函数 必须在 <a class="el" href="classDApplication.html">DApplication</a> 实例创建前进行调用。</p>
+<dl class="section return"><dt>返回</dt><dd>设置成功返回 true，否则返回 false。 </dd></dl>
+
+</div>
+</div>
+<a id="a40f12cb2734cd767311354f0d61f63f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40f12cb2734cd767311354f0d61f63f8">&#9670;&nbsp;</a></span>loadTranslator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DApplication::loadTranslator </td>
+          <td>(</td>
+          <td class="paramtype">QList&lt; QLocale &gt;&#160;</td>
+          <td class="paramname"><em>localeFallback</em> = <code>QList&lt;QLocale&gt;()&#160;&lt;&lt;&#160;QLocale::system()</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>loads translate file from system or application data path. </p>
+<p>加载程序的翻译文件.</p>
+<p>You must name the file correctly; if the program is dde-dock， then the qm file for English locale would be dde-dock_en.qm. Translation files must be placed in correct directories as well. The lookup order is as follows:</p>
+<p>\list </p><ul>
+<li>~/.local/share/APPNAME/translations; </li>
+<li>/usr/local/share/APPNAME/translations; </li>
+<li>/usr/share/APPNAME/translations; \endlist</li>
+</ul>
+<p>APPNAME is the name of program executable. <em>localeFallback</em>, a list of fallback locale you want load. </p><dl class="section return"><dt>返回</dt><dd>load success return true, otherwise, return false.</dd></dl>
+<p>使用这个函数需要保证翻译文件必须正确命名: 例如程序名叫 dde-dock， 那么翻译文件在中文locale下的名称必须是 dde-dock_zh_CN.qm；翻译文件还需要放置 在特定的位置，此函数会按照优先级顺序在以下目录中查找翻译文件：</p>
+<p>\list </p><ul>
+<li>~/.local/share/APPNAME/translations; </li>
+<li>/usr/local/share/APPNAME/translations; </li>
+<li>/usr/share/APPNAME/translations; \endlist</li>
+</ul>
+<p>APPNAME 即可执行文件的名称。</p>
+<p><em>localeFallback</em> 指定了回退的locale列表，默认只有系统locale。 </p><dl class="section return"><dt>返回</dt><dd>加载成功返回 true，否则返回 false。 </dd></dl>
+
+</div>
+</div>
+<a id="a9ec689594630ab6119dde4eee650dcc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ec689594630ab6119dde4eee650dcc7">&#9670;&nbsp;</a></span>productIcon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const QIcon &amp; DApplication::productIcon </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>returns the product icon of this application. </p>
+<p>It's mainly used to construct an about dialog of the application.</p>
+<p>productIcon 属性是程序的产品图标， 主要用于在关于对话框中进行展示。</p>
+<dl class="section return"><dt>返回</dt><dd>the product icon of this application if set, otherwise empty. </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDApplication.html#a62e530cabd9fb6683c93da1ab3c38252" title="returns the product name of this application.">productName</a>, <a class="el" href="classDApplication.html#aaea7455504c6aa5b65b77ecf78096872" title="returns the about dialog of this application.">aboutDialog</a> </dd></dl>
+
+</div>
+</div>
+<a id="a62e530cabd9fb6683c93da1ab3c38252"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62e530cabd9fb6683c93da1ab3c38252">&#9670;&nbsp;</a></span>productName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString DApplication::productName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>returns the product name of this application. </p>
+<p>程序的产品名称.</p>
+<p>It's mainly used to construct an about dialog of the application.</p>
+<p>产品名称不同与 applicationName ，应该是类似如“深度终端”，而不是 deepin-terminal， 这个名称主要用于在程序的关于对话框中进行展示。 如果没有手动通过 setProductName 来设置，会尝试使用 QApplication::applicationDisplayName 来充当产品名称。</p>
+<dl class="section return"><dt>返回</dt><dd>the product name of this application if set, otherwise the applicationDisplayName. </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDApplication.html#a9ec689594630ab6119dde4eee650dcc7" title="returns the product icon of this application.">productIcon</a>, <a class="el" href="classDApplication.html#aaea7455504c6aa5b65b77ecf78096872" title="returns the about dialog of this application.">aboutDialog</a> </dd></dl>
+
+</div>
+</div>
+<a id="ac74e147250ed6298bbd0b3bd2ef0f5b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac74e147250ed6298bbd0b3bd2ef0f5b3">&#9670;&nbsp;</a></span>registerDDESession()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DApplication::registerDDESession </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>用于跟 startdde 进行通信，告知 startdde 进程已经启动成功. </p>
+<dl class="section note"><dt>注解</dt><dd>只有DDE系统组件需要使用此函数，普通应用无需使用。 </dd></dl>
+
+</div>
+</div>
+<a id="af89fd945103e479ac554571ede8f6807"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af89fd945103e479ac554571ede8f6807">&#9670;&nbsp;</a></span>screenDevicePixelRatioChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DApplication::screenDevicePixelRatioChanged </td>
+          <td>(</td>
+          <td class="paramtype">QScreen *&#160;</td>
+          <td class="paramname"><em>screen</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>该信号在对应屏幕 <em>screen</em> 的缩放比可能发现变化时触发. </p>
+<p>依赖于 deepin 平台主题插件（dde-qt5integration 包中提供），实时更改 屏幕缩放比是通过更改配置文件 ~/.config/deepin/qt-theme.ini 实现，与此相关的 配置项有三个： \list </p><ul>
+<li>ScreenScaleFactors：多屏幕设置不同缩放比，值格式和环境变量QT_SCREEN_SCALE_FACTORS一致 </li>
+<li>ScaleFactor: 设置所有屏幕缩放比，值格式和环境变量QT_SCALE_FACTOR一致 </li>
+<li>ScaleLogcailDpi：指定屏幕逻辑dpi，可影响仅设置了 point size 的 QFont 的绘制大小。 \endlist</li>
+</ul>
+<p>未设置此值时，默认会在 ScreenScaleFactors 值改变后将屏幕逻辑dpi更改为主屏默认值，一般情况下，不需要设置此值。 ScreenScaleFactors 和 ScaleFactor 的值改变后，会触发所有屏幕的 QScreen::geometryChanged, 且会根据当前缩放 更新所有QWindow的geometry（更新时保持窗口的真实大小不变，新窗口大小=窗口真实大小/新的缩放比）。另外，可在构造 <a class="el" href="classDApplication.html">DApplication</a> 对象之前设置 Qt::AA_DisableHighDpiScaling 为 true，或添加环境变量 D_DISABLE_RT_SCREEN_SCALE 禁用实时缩放的支持。</p>
+<dl class="section see"><dt>参见</dt><dd>QScreen::devicePixelRatio() </dd></dl>
+
+</div>
+</div>
+<a id="a754d95fd863bbdf4a4a35dceffe22458"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a754d95fd863bbdf4a4a35dceffe22458">&#9670;&nbsp;</a></span>setAboutDialog()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DApplication::setAboutDialog </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classDtk_1_1Widget_1_1DAboutDialog.html">DAboutDialog</a> *&#160;</td>
+          <td class="paramname"><em>aboutDialog</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>sets the <em>aboutDialog</em> of this application. </p>
+<p>为当前程序设置一个关于对话框.</p>
+<p>It's mainly used to override the auto-constructed about dialog which is not a common case, so please do double check before using this method.</p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDApplication.html#aaea7455504c6aa5b65b77ecf78096872" title="returns the about dialog of this application.">DApplication::aboutDialog</a> </dd></dl>
+
+</div>
+</div>
+<a id="adcfc5b5a45ad93b119124757b3d39180"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcfc5b5a45ad93b119124757b3d39180">&#9670;&nbsp;</a></span>setApplicationAcknowledgementPage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DApplication::setApplicationAcknowledgementPage </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>link</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>sets the acknowlegement page of the application. </p>
+<p><em>link</em> is the acknowlegement page link to be shown in the about dialog. </p>
+
+</div>
+</div>
+<a id="a618edb0773504ff4b0198a4a4d4de6a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a618edb0773504ff4b0198a4a4d4de6a6">&#9670;&nbsp;</a></span>setApplicationAcknowledgementVisible()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DApplication::setApplicationAcknowledgementVisible </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>visible</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置是否显示关于对话框中的鸣谢地址显示. </p>
+<p><em>visible</em> 为 true 显示鸣谢地址，为 false 隐藏鸣谢地址。 </p><dl class="section see"><dt>参见</dt><dd><a class="el" href="classDApplication.html#ab0f0406868f4ab7c4f5ab1e1e0674d71" title="是否显示关于对话框中的鸣谢地址显示.">DApplication::applicationAcknowledgementVisible</a> </dd></dl>
+
+</div>
+</div>
+<a id="add5ac906ce3f4ed28d3e019c7507de06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add5ac906ce3f4ed28d3e019c7507de06">&#9670;&nbsp;</a></span>setApplicationDescription()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DApplication::setApplicationDescription </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>description</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>sets the description of the application. </p>
+<p><em>description</em> is description to be set. </p>
+
+</div>
+</div>
+<a id="a3cf9e0ae96f0df1026896c43cbedbbd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cf9e0ae96f0df1026896c43cbedbbd5">&#9670;&nbsp;</a></span>setApplicationLicense()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DApplication::setApplicationLicense </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>license</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>sets the license of this application. </p>
+<p><em>license</em> is the license to be set. </p>
+
+</div>
+</div>
+<a id="a5f6ba1d148fd82f2a2eea962ca96b030"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f6ba1d148fd82f2a2eea962ca96b030">&#9670;&nbsp;</a></span>setCustomHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DApplication::setCustomHandler </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classDAppHandler.html">DAppHandler</a> *&#160;</td>
+          <td class="paramname"><em>handler</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置 app 的处理程序. </p>
+<p>如果要设置，必须对 help、about、quit 都进行处理。 <em>handler</em> 用于特定 App 中的自定义处理逻辑，需要继承实现。</p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDApplication.html#a44fc3e9f9bcc317aefeb03bfa48cd51b" title="获取设置的 app 定制化处理程序">DApplication::customHandler</a> </dd></dl>
+
+</div>
+</div>
+<a id="abd0323ad307928229bbd0139f8f99518"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd0323ad307928229bbd0139f8f99518">&#9670;&nbsp;</a></span>setProductIcon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DApplication::setProductIcon </td>
+          <td>(</td>
+          <td class="paramtype">const QIcon &amp;&#160;</td>
+          <td class="paramname"><em>productIcon</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>sets the product icon of this application. </p>
+<p><em>productIcon</em> is the product icon to be set. </p>
+
+</div>
+</div>
+<a id="a41c882a5a02da7821ba62c2e84fe9aa9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41c882a5a02da7821ba62c2e84fe9aa9">&#9670;&nbsp;</a></span>setProductName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DApplication::setProductName </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>productName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>sets the product name of this application. </p>
+<p><em>productName</em> is the product name to be set. </p>
+
+</div>
+</div>
+<a id="af62b01f4556177881b25ccfe2049bddd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af62b01f4556177881b25ccfe2049bddd">&#9670;&nbsp;</a></span>setSingleInstance() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DApplication::setSingleInstance </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>用于将程序设置成单实例. </p>
+<p><em>key</em> 是确定程序唯一性的ID，一般使用程序的二进制名称即可。</p>
+<dl class="section note"><dt>注解</dt><dd>一般情况下单实例的实现使用 QSystemSemaphore，如果你的程序需要在沙箱 环境如 flatpak 中运行，可选的一套方案是通过 DTK_DBUS_SINGLEINSTANCE 这个 编译宏来控制单实例使用 DBus 方案。</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>设置成功返回 true，否则返回 false。 </dd></dl>
+
+</div>
+</div>
+<a id="a8a2bdc3f1428ba1b62f8bf8a8744ef7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a2bdc3f1428ba1b62f8bf8a8744ef7f">&#9670;&nbsp;</a></span>setSingleInstance() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DApplication::setSingleInstance </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SingleScope&#160;</td>
+          <td class="paramname"><em>singleScope</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>一个重写函数，增加了控制单实例范围的 <em>singleScope</em> 参数。 </p>
+<p>在Linux环境下默认使用DBus的方式实现单例判断，在其它环境或者设置了环境变量 DTK_USE_SEMAPHORE_SINGLEINSTANCE 时使用系统信号量的方式实现单例判断。</p>
+<p><em>key</em> 是确定程序唯一性的ID，一般使用程序的二进制名称即可。 <em>singleScope</em> 用于指定单实例的影响范围，具体见 DApplication::SingleScope 。 </p><dl class="section return"><dt>返回</dt><dd>设置成功返回 true，否则返回 false。 </dd></dl>
+
+</div>
+</div>
+<a id="afa85ceb071691c244f3be2f42c3c62e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa85ceb071691c244f3be2f42c3c62e9">&#9670;&nbsp;</a></span>setTheme()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DApplication::setTheme </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>theme</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>set theme for the application to use the theme we provide. </p>
+<p><em>theme</em> is the name of the theme we want to set. </p>
+
+</div>
+</div>
+<a id="a70e06597e1c69246e31bcac42ddd5a00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70e06597e1c69246e31bcac42ddd5a00">&#9670;&nbsp;</a></span>theme()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString DApplication::theme </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>returns name of the theme that the application is currently using. </p>
+<p>theme name can be one of light, dark, semidark or semilight. theme 属性表示当前程序使用的主题名称，目前可选的主题名称有 light、dark、semidark 和 semilight。</p>
+<dl class="section return"><dt>返回</dt><dd>the theme name. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">属性说明</h2>
+<a id="a8740c958a21ed47cd25bc116c249f7c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8740c958a21ed47cd25bc116c249f7c6">&#9670;&nbsp;</a></span>visibleMenuCheckboxWidget</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DApplication::visibleMenuCheckboxWidget</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>菜单项内 CheckBox 控件的可视化属性 </p>
+<p>该属性代表了程序中菜单项是否显示Checkbox控件。 默认地，该属性为 false. </p>
+
+</div>
+</div>
+<a id="a33de68dab5d8008468dd8e4dfb93da59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33de68dab5d8008468dd8e4dfb93da59">&#9670;&nbsp;</a></span>visibleMenuIcon</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DApplication::visibleMenuIcon</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>菜单按钮的可视化属性. </p>
+<p>visibleMenuIcon 属性代表了程序中菜单项是否显示图标。 默认地，该属性为 false. </p>
+
+</div>
+</div>
+<a id="a4ce0fec3e460602f631de35803972cd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ce0fec3e460602f631de35803972cd5">&#9670;&nbsp;</a></span>visibleMenuShortcutText</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DApplication::visibleMenuShortcutText</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>菜单项快捷键文本的可视化属性 </p>
+<p>该属性代表了程序中菜单项是否显示对应的快捷键。 默认地，该属性为 false. </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dtkwidget/include/dtkwidget/widgets/<a class="el" href="dapplication_8h_source.html">dapplication.h</a></li>
+<li>dtkwidget/src/widgets/dapplication.cpp</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classDApplication.html">DApplication</a></li>
+    <li class="footer">文档生成时间:doxtime</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+var classDPrintPreviewSettingInterface =
+[
+    [ "SettingStatus", "classDPrintPreviewSettingInterface.html#abf33251216743e5895a3b66662407585", [
+      [ "Default", "classDPrintPreviewSettingInterface.html#abf33251216743e5895a3b66662407585ace4243c3a8341a6d15da0342afc566f4", null ],
+      [ "Disabled", "classDPrintPreviewSettingInterface.html#abf33251216743e5895a3b66662407585a97cd68b132f575124ff8bfe7fba2e51e", null ],
+      [ "Hidden", "classDPrintPreviewSettingInterface.html#abf33251216743e5895a3b66662407585ae921d51027c5b7f4964bf779ce180601", null ]
+    ] ],
+    [ "SettingSubControl", "classDPrintPreviewSettingInterface.html#aafa87d4b4d955789a8e71839775ced14", [
+      [ "SC_PrinterWidget", "classDPrintPreviewSettingInterface.html#aafa87d4b4d955789a8e71839775ced14a5204e79114e6bce461189454440e4064", null ],
+      [ "SC_CopiesWidget", "classDPrintPreviewSettingInterface.html#aafa87d4b4d955789a8e71839775ced14ad0e20d6f38a8273d2ba18edfde578d8c", null ],
+      [ "SC_PageRangeWidget", "classDPrintPreviewSettingInterface.html#aafa87d4b4d955789a8e71839775ced14aa198bb22a4c2ca2a9e6ba96cb7f93308", null ],
+      [ "SC_PageRange_TypeControl", "classDPrintPreviewSettingInterface.html#aafa87d4b4d955789a8e71839775ced14ab2b6190224ee13b3a2bc7a32438300ad", null ],
+      [ "SC_PageRange_SelectEdit", "classDPrintPreviewSettingInterface.html#aafa87d4b4d955789a8e71839775ced14ae68962567d5697e073fedc87a7466d59", null ],
+      [ "SC_OrientationWidget", "classDPrintPreviewSettingInterface.html#aafa87d4b4d955789a8e71839775ced14a71f035992b66d91beabd7ba82e21763a", null ],
+      [ "SC_PaperSizeWidget", "classDPrintPreviewSettingInterface.html#aafa87d4b4d955789a8e71839775ced14a0ecc4ed694e9fb6b4ec867dcd668e021", null ],
+      [ "SC_DuplexWidget", "classDPrintPreviewSettingInterface.html#aafa87d4b4d955789a8e71839775ced14abaadb23427e831df02e6a0b7c8f71148", null ],
+      [ "SC_Duplex_TypeControl", "classDPrintPreviewSettingInterface.html#aafa87d4b4d955789a8e71839775ced14a35416ce1bcf6b684d6593a361203fba4", null ],
+      [ "SC_NPrintWidget", "classDPrintPreviewSettingInterface.html#aafa87d4b4d955789a8e71839775ced14ae7671f71ce1aab13b445f92fa74894bf", null ],
+      [ "SC_NPrint_Numbers", "classDPrintPreviewSettingInterface.html#aafa87d4b4d955789a8e71839775ced14a373ee2b70b9b3f572e3ab51d3a99a7bc", null ],
+      [ "SC_NPrint_Layout", "classDPrintPreviewSettingInterface.html#aafa87d4b4d955789a8e71839775ced14a00acfb79b8283e9fc9abfd932d8b4d45", null ],
+      [ "SC_PageOrderWidget", "classDPrintPreviewSettingInterface.html#aafa87d4b4d955789a8e71839775ced14a57d1f3bf4295f4e6ea69f166c7fcfe10", null ],
+      [ "SC_PageOrder_SequentialPrint", "classDPrintPreviewSettingInterface.html#aafa87d4b4d955789a8e71839775ced14af1e52da8f38a1fbd596d3c030cca653d", null ],
+      [ "SC_PageOrder_TypeControl", "classDPrintPreviewSettingInterface.html#aafa87d4b4d955789a8e71839775ced14a449453499095da281021fded6af1c515", null ],
+      [ "SC_ColorModeWidget", "classDPrintPreviewSettingInterface.html#aafa87d4b4d955789a8e71839775ced14a47f35e1ba03e22416be510b7891cb569", null ],
+      [ "SC_MarginWidget", "classDPrintPreviewSettingInterface.html#aafa87d4b4d955789a8e71839775ced14a1f4587d4204a54a22795b54c7f8179eb", null ],
+      [ "SC_Margin_TypeControl", "classDPrintPreviewSettingInterface.html#aafa87d4b4d955789a8e71839775ced14af9c6148d3811d134b5be1b74d1252680", null ],
+      [ "SC_Margin_AdjustContol", "classDPrintPreviewSettingInterface.html#aafa87d4b4d955789a8e71839775ced14acf9c56aca0cdd10ab0a4dbeab2493d89", null ],
+      [ "SC_ScalingWidget", "classDPrintPreviewSettingInterface.html#aafa87d4b4d955789a8e71839775ced14a7feb0acb210be3d576d1136cfe1a10b3", null ],
+      [ "SC_WatermarkWidget", "classDPrintPreviewSettingInterface.html#aafa87d4b4d955789a8e71839775ced14a65b8436ae6c53814c5fffd7f1cad75d6", null ],
+      [ "SC_WatermarkContentWidget", "classDPrintPreviewSettingInterface.html#aafa87d4b4d955789a8e71839775ced14a5dc2b2fc7178b0604b0ba290e0b847fc", null ],
+      [ "SC_Watermark_TypeGroup", "classDPrintPreviewSettingInterface.html#aafa87d4b4d955789a8e71839775ced14aa7d68912e39b147c130cc97178d03bcd", null ],
+      [ "SC_Watermark_TextType", "classDPrintPreviewSettingInterface.html#aafa87d4b4d955789a8e71839775ced14a4f833ce0f89b0c63a2e4ad26e2d0f504", null ],
+      [ "SC_Watermark_CustomText", "classDPrintPreviewSettingInterface.html#aafa87d4b4d955789a8e71839775ced14a677ec7c11e198aebcb385afc88b4c1ca", null ],
+      [ "SC_Watermark_TextFont", "classDPrintPreviewSettingInterface.html#aafa87d4b4d955789a8e71839775ced14a72b1304dbf0c859224df958bed204c48", null ],
+      [ "SC_Watermark_TextColor", "classDPrintPreviewSettingInterface.html#aafa87d4b4d955789a8e71839775ced14a10d948305110c41bf40f1ab57c3014ed", null ],
+      [ "SC_Watermark_ImageEdit", "classDPrintPreviewSettingInterface.html#aafa87d4b4d955789a8e71839775ced14a9a870238bd1a58d37092c372f709aaa9", null ],
+      [ "SC_Watermark_Layout", "classDPrintPreviewSettingInterface.html#aafa87d4b4d955789a8e71839775ced14ac3b272d586b075e1c80cd8ffdf347b8e", null ],
+      [ "SC_Watermark_Angle", "classDPrintPreviewSettingInterface.html#aafa87d4b4d955789a8e71839775ced14ab27810a52ff5224fa7d6dd81248b3df8", null ],
+      [ "SC_Watermark_Size", "classDPrintPreviewSettingInterface.html#aafa87d4b4d955789a8e71839775ced14ae30277bffd799845922f4140f8a24b5b", null ],
+      [ "SC_Watermark_Transparency", "classDPrintPreviewSettingInterface.html#aafa87d4b4d955789a8e71839775ced14a4fbb43663b8150d46c0099c7b0606ae6", null ],
+      [ "SC_ControlCount", "classDPrintPreviewSettingInterface.html#aafa87d4b4d955789a8e71839775ced14a2be7f178d8f73100d1ae0ea669d21572", null ]
+    ] ],
+    [ "~DPrintPreviewSettingInterface", "classDPrintPreviewSettingInterface.html#a1bad205321494314200003e7dc5c7a52", null ],
+    [ "name", "classDPrintPreviewSettingInterface.html#a87a2968dcdf309b3750c01c962d8da12", null ],
+    [ "settingFilter", "classDPrintPreviewSettingInterface.html#a310fc895bd4522ebbc9c892dc2caf0bf", null ],
+    [ "settingStatus", "classDPrintPreviewSettingInterface.html#a50d536f73b40d1c821ae3e4c06e08658", null ]
+];

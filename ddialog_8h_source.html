@@ -1,0 +1,338 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: dtkwidget/include/dtkwidget/widgets/ddialog.h 源文件</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="change address" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('ddialog_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">ddialog.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-FileCopyrightText: 2015 - 2022 UnionTech Software Technology Co., Ltd.</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// SPDX-License-Identifier: LGPL-3.0-or-later</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef DDIALOG_H</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define DDIALOG_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;QIcon&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;DAbstractDialog&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">class </span>QAbstractButton;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">class </span>QButtonGroup;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">class </span>QLabel;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">class </span>QCloseEvent;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">class </span>QVBoxLayout;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;DWIDGET_BEGIN_NAMESPACE</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">class </span><a class="code" href="classDDialogPrivate.html">DDialogPrivate</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classDDialog.html">   21</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDDialog.html">DDialog</a> : <span class="keyword">public</span> <a class="code" href="classDAbstractDialog.html">DAbstractDialog</a></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    Q_PROPERTY(QString title READ title WRITE <a class="code" href="classDDialog.html#a937b72977084f1b2414d704a957d76e6">setTitle</a> NOTIFY titleChanged)</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    Q_PROPERTY(QString message READ message WRITE <a class="code" href="classDDialog.html#a0431a7d2397963c2cec76983b1095985">setMessage</a> NOTIFY messageChanged)</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    Q_PROPERTY(QIcon icon READ icon WRITE <a class="code" href="classDDialog.html#ac14ca8c14499a865c32f344f3b792365">setIcon</a>)</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    Q_PROPERTY(Qt::TextFormat textFormat READ textFormat WRITE <a class="code" href="classDDialog.html#af795ea5beef81d50e991b88b025e5f82">setTextFormat</a> NOTIFY textFormatChanged)</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    Q_PROPERTY(<span class="keywordtype">bool</span> onButtonClickedClose READ onButtonClickedClose WRITE <a class="code" href="classDDialog.html#a68b0b45360b02ffb51f9ccaf69b80e4a">setOnButtonClickedClose</a>)</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    Q_PROPERTY(<span class="keywordtype">bool</span> closeButtonVisible READ closeButtonVisible WRITE setCloseButtonVisible)</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">enum</span> ButtonType {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        ButtonNormal,</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        ButtonWarning,</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        ButtonRecommend</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    };</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDDialog.html#a97a2242020d7a491e91cf20652490e8a">DDialog</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDDialog.html#a97a2242020d7a491e91cf20652490e8a">DDialog</a>(<span class="keyword">const</span> QString &amp;title, <span class="keyword">const</span> QString&amp; message, QWidget *parent = 0);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classDDialog.html#a8068d72c9a3cae47126fd0833089c562">getButtonIndexByText</a>(<span class="keyword">const</span> QString &amp;text) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classDDialog.html#a6e366a5f298ca425157e1d39a99d3294">buttonCount</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classDDialog.html#a984b658383a1cc0b9f509c360772ffb0">contentCount</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    QList&lt;QAbstractButton*&gt; <a class="code" href="classDDialog.html#aa350a57e5319c95bde8b746ba3289501">getButtons</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    QList&lt;QWidget*&gt; <a class="code" href="classDDialog.html#a8b97e47a5ccbc20ab98bbaed80fed7db">getContents</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    QAbstractButton* <a class="code" href="classDDialog.html#a6dc1be0d023f57ea8740be7f912e7bc6">getButton</a>(<span class="keywordtype">int</span> index) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    QWidget* <a class="code" href="classDDialog.html#ad6b93f0db7cb4b561d398344033622eb">getContent</a>(<span class="keywordtype">int</span> index) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    QString title() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    QString message() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    QIcon icon() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    D_DECL_DEPRECATED QPixmap <a class="code" href="classDDialog.html#a011f9e5b368375402d9c482c3af4bd83">iconPixmap</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    Qt::TextFormat textFormat() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">bool</span> onButtonClickedClose() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDDialog.html#a450824bcd416895d8c0aa88eb38f088d">setContentLayoutContentsMargins</a>(<span class="keyword">const</span> QMargins &amp;margins);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    QMargins <a class="code" href="classDDialog.html#a650ec848ac70bb6f8c84d63e60a02ebe">contentLayoutContentsMargins</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">bool</span> closeButtonVisible() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;Q_SIGNALS:</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> aboutToClose();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> closed();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> buttonClicked(<span class="keywordtype">int</span> index, <span class="keyword">const</span> QString &amp;text);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> titleChanged(QString title);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">void</span> messageChanged(QString massage);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">void</span> textFormatChanged(Qt::TextFormat textFormat);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">void</span> sizeChanged(QSize size);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">void</span> visibleChanged(<span class="keywordtype">bool</span> visible);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classDDialog.html#a03999a489354652657f187572affe1a2">addButton</a>(<span class="keyword">const</span> QString &amp;text, <span class="keywordtype">bool</span> isDefault = <span class="keyword">false</span>, ButtonType type = ButtonNormal);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classDDialog.html#ad2c35e90142226ba3f4c9e7ba5576560">addButtons</a>(<span class="keyword">const</span> QStringList &amp;text);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDDialog.html#af4b20c40095b4d718f5bb25791a62d13">insertButton</a>(<span class="keywordtype">int</span> index, <span class="keyword">const</span> QString &amp;text, <span class="keywordtype">bool</span> isDefault = <span class="keyword">false</span>, ButtonType type = ButtonNormal);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDDialog.html#af4b20c40095b4d718f5bb25791a62d13">insertButton</a>(<span class="keywordtype">int</span> index, QAbstractButton* button, <span class="keywordtype">bool</span> isDefault = <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDDialog.html#accf07670403737a1b3b7341e0a406f15">insertButtons</a>(<span class="keywordtype">int</span> index, <span class="keyword">const</span> QStringList &amp;text);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDDialog.html#acffdb4ea6133dc62f02fb7e8123ee8c6">removeButton</a>(<span class="keywordtype">int</span> index);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDDialog.html#acffdb4ea6133dc62f02fb7e8123ee8c6">removeButton</a>(QAbstractButton *button);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDDialog.html#acac8323f394800285dfb5d1540c50adb">removeButtonByText</a>(<span class="keyword">const</span> QString &amp;text);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDDialog.html#ad77d71530df35bacfaba552843e3b2f7">clearButtons</a>();</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classDDialog.html#ac0ee4bb4733dd05d0a09189579d08c2e">setDefaultButton</a>(<span class="keywordtype">int</span> index);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classDDialog.html#ac0ee4bb4733dd05d0a09189579d08c2e">setDefaultButton</a>(<span class="keyword">const</span> QString &amp;str);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDDialog.html#ac0ee4bb4733dd05d0a09189579d08c2e">setDefaultButton</a>(QAbstractButton *button);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDDialog.html#a5ed96f3cb2520150bffdaea3b4e1ef38">addContent</a>(QWidget *widget, Qt::Alignment alignment = {});</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDDialog.html#a069f29ef0379a82d810201bed983bcac">insertContent</a>(<span class="keywordtype">int</span> index, QWidget *widget, Qt::Alignment alignment = {});</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDDialog.html#a4524eeb046f2b5f350271ef41729eb7b">removeContent</a>(QWidget *widget, <span class="keywordtype">bool</span> isDelete = <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDDialog.html#aaa91361d0d011ced341664c0643cf9be">clearContents</a>(<span class="keywordtype">bool</span> isDelete = <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDDialog.html#a5ad28f058c6d7aa60cbf3159160753f3">setSpacing</a>(<span class="keywordtype">int</span> spacing);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDDialog.html#af4547072e8d8de47342d239d4b1e7eab">addSpacing</a>(<span class="keywordtype">int</span> spacing);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDDialog.html#a9b614d1933c9ad3be8fa56014c023677">insertSpacing</a>(<span class="keywordtype">int</span> index, <span class="keywordtype">int</span> spacing);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDDialog.html#af90eb8313f1246fe02921a2bdad28db6">clearSpacing</a>();</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDDialog.html#ab26c020109df58fe0a97c5efabe9762d">setButtonText</a>(<span class="keywordtype">int</span> index, <span class="keyword">const</span> QString &amp;text);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDDialog.html#aec564ca9d7998739e64bc718b989344f">setButtonIcon</a>(<span class="keywordtype">int</span> index, <span class="keyword">const</span> QIcon &amp;icon);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDDialog.html#a937b72977084f1b2414d704a957d76e6">setTitle</a>(<span class="keyword">const</span> QString &amp;title);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDDialog.html#a6822ec1bab946be3edb71978fe04d6ca">setWordWrapTitle</a>(<span class="keywordtype">bool</span> wordWrap);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDDialog.html#a0431a7d2397963c2cec76983b1095985">setMessage</a>(<span class="keyword">const</span> QString&amp; message);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordtype">void</span> setWordWrapMessage(<span class="keywordtype">bool</span> wordWrap);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDDialog.html#ac14ca8c14499a865c32f344f3b792365">setIcon</a>(<span class="keyword">const</span> QIcon &amp;icon);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    D_DECL_DEPRECATED <span class="keywordtype">void</span> <a class="code" href="classDDialog.html#ac14ca8c14499a865c32f344f3b792365">setIcon</a>(<span class="keyword">const</span> QIcon &amp;icon, <span class="keyword">const</span> QSize &amp;expectedSize);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    D_DECL_DEPRECATED <span class="keywordtype">void</span> <a class="code" href="classDDialog.html#a4d0c25342a48f1d77d458c727cfc731b">setIconPixmap</a>(<span class="keyword">const</span> QPixmap &amp;<a class="code" href="classDDialog.html#a011f9e5b368375402d9c482c3af4bd83">iconPixmap</a>);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDDialog.html#af795ea5beef81d50e991b88b025e5f82">setTextFormat</a>(Qt::TextFormat textFormat);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDDialog.html#a68b0b45360b02ffb51f9ccaf69b80e4a">setOnButtonClickedClose</a>(<span class="keywordtype">bool</span> onButtonClickedClose);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">void</span> setCloseButtonVisible(<span class="keywordtype">bool</span> closeButtonVisible);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classDDialog.html#acc0499eec8cf37dabe79c3307f510881">exec</a>() Q_DECL_OVERRIDE;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDDialog.html#a97a2242020d7a491e91cf20652490e8a">DDialog</a>(<a class="code" href="classDDialogPrivate.html">DDialogPrivate</a> &amp;dd, QWidget *parent = 0);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDDialog.html#a6adba921a288613b241dcb1d230b913d">showEvent</a>(QShowEvent *event) Q_DECL_OVERRIDE;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDDialog.html#a613af173ed5c279067d76792e3b646e9">hideEvent</a>(QHideEvent *event) Q_DECL_OVERRIDE;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordtype">void</span> closeEvent(QCloseEvent *event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordtype">void</span> childEvent(QChildEvent *event) Q_DECL_OVERRIDE;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordtype">void</span> resizeEvent(QResizeEvent *event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordtype">void</span> keyPressEvent(QKeyEvent *event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordtype">bool</span> eventFilter(QObject *watched, QEvent *event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    D_DECLARE_PRIVATE(<a class="code" href="classDDialog.html">DDialog</a>)</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    Q_PRIVATE_SLOT(d_func(), <span class="keywordtype">void</span> _q_onButtonClicked())</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;};</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;DWIDGET_END_NAMESPACE</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// DDIALOG_H</span></div>
+<div class="ttc" id="aclassDAbstractDialog_html"><div class="ttname"><a href="classDAbstractDialog.html">DAbstractDialog</a></div><div class="ttdef"><b>Definition:</b> dabstractdialog.h:23</div></div>
+<div class="ttc" id="aclassDDialogPrivate_html"><div class="ttname"><a href="classDDialogPrivate.html">DDialogPrivate</a></div><div class="ttdef"><b>Definition:</b> ddialog_p.h:26</div></div>
+<div class="ttc" id="aclassDDialog_html"><div class="ttname"><a href="classDDialog.html">DDialog</a></div><div class="ttdef"><b>Definition:</b> ddialog.h:22</div></div>
+<div class="ttc" id="aclassDDialog_html_a011f9e5b368375402d9c482c3af4bd83"><div class="ttname"><a href="classDDialog.html#a011f9e5b368375402d9c482c3af4bd83">DDialog::iconPixmap</a></div><div class="ttdeci">D_DECL_DEPRECATED QPixmap iconPixmap() const</div><div class="ttdoc">返回对话框图标的 QPixmap 对象.</div><div class="ttdef"><b>Definition:</b> ddialog.cpp:444</div></div>
+<div class="ttc" id="aclassDDialog_html_a03999a489354652657f187572affe1a2"><div class="ttname"><a href="classDDialog.html#a03999a489354652657f187572affe1a2">DDialog::addButton</a></div><div class="ttdeci">int addButton(const QString &amp;text, bool isDefault=false, ButtonType type=ButtonNormal)</div><div class="ttdoc">向对话框添加按钮.</div><div class="ttdef"><b>Definition:</b> ddialog.cpp:521</div></div>
+<div class="ttc" id="aclassDDialog_html_a0431a7d2397963c2cec76983b1095985"><div class="ttname"><a href="classDDialog.html#a0431a7d2397963c2cec76983b1095985">DDialog::setMessage</a></div><div class="ttdeci">void setMessage(const QString &amp;message)</div><div class="ttdoc">设置对话框消息内容.</div><div class="ttdef"><b>Definition:</b> ddialog.cpp:947</div></div>
+<div class="ttc" id="aclassDDialog_html_a069f29ef0379a82d810201bed983bcac"><div class="ttname"><a href="classDDialog.html#a069f29ef0379a82d810201bed983bcac">DDialog::insertContent</a></div><div class="ttdeci">void insertContent(int index, QWidget *widget, Qt::Alignment alignment={})</div><div class="ttdoc">在对话框内容布局指定位置插入控件.</div><div class="ttdef"><b>Definition:</b> ddialog.cpp:780</div></div>
+<div class="ttc" id="aclassDDialog_html_a450824bcd416895d8c0aa88eb38f088d"><div class="ttname"><a href="classDDialog.html#a450824bcd416895d8c0aa88eb38f088d">DDialog::setContentLayoutContentsMargins</a></div><div class="ttdeci">void setContentLayoutContentsMargins(const QMargins &amp;margins)</div><div class="ttdoc">设定内容布局的内容 margin . margins 具体的 margins</div><div class="ttdef"><b>Definition:</b> ddialog.cpp:483</div></div>
+<div class="ttc" id="aclassDDialog_html_a4524eeb046f2b5f350271ef41729eb7b"><div class="ttname"><a href="classDDialog.html#a4524eeb046f2b5f350271ef41729eb7b">DDialog::removeContent</a></div><div class="ttdeci">void removeContent(QWidget *widget, bool isDelete=true)</div><div class="ttdoc">从对话框内容布局中移除指定控件.</div><div class="ttdef"><b>Definition:</b> ddialog.cpp:795</div></div>
+<div class="ttc" id="aclassDDialog_html_a4d0c25342a48f1d77d458c727cfc731b"><div class="ttname"><a href="classDDialog.html#a4d0c25342a48f1d77d458c727cfc731b">DDialog::setIconPixmap</a></div><div class="ttdeci">D_DECL_DEPRECATED void setIconPixmap(const QPixmap &amp;iconPixmap)</div><div class="ttdoc">设置对话框位图图标.</div><div class="ttdef"><b>Definition:</b> ddialog.cpp:1010</div></div>
+<div class="ttc" id="aclassDDialog_html_a5ad28f058c6d7aa60cbf3159160753f3"><div class="ttname"><a href="classDDialog.html#a5ad28f058c6d7aa60cbf3159160753f3">DDialog::setSpacing</a></div><div class="ttdeci">void setSpacing(int spacing)</div><div class="ttdoc">设置对话框内容间隔.</div><div class="ttdef"><b>Definition:</b> ddialog.cpp:833</div></div>
+<div class="ttc" id="aclassDDialog_html_a5ed96f3cb2520150bffdaea3b4e1ef38"><div class="ttname"><a href="classDDialog.html#a5ed96f3cb2520150bffdaea3b4e1ef38">DDialog::addContent</a></div><div class="ttdeci">void addContent(QWidget *widget, Qt::Alignment alignment={})</div><div class="ttdoc">添加控件到对话框内容布局.</div><div class="ttdef"><b>Definition:</b> ddialog.cpp:764</div></div>
+<div class="ttc" id="aclassDDialog_html_a613af173ed5c279067d76792e3b646e9"><div class="ttname"><a href="classDDialog.html#a613af173ed5c279067d76792e3b646e9">DDialog::hideEvent</a></div><div class="ttdeci">void hideEvent(QHideEvent *event) Q_DECL_OVERRIDE</div><div class="ttdef"><b>Definition:</b> ddialog.cpp:1104</div></div>
+<div class="ttc" id="aclassDDialog_html_a650ec848ac70bb6f8c84d63e60a02ebe"><div class="ttname"><a href="classDDialog.html#a650ec848ac70bb6f8c84d63e60a02ebe">DDialog::contentLayoutContentsMargins</a></div><div class="ttdeci">QMargins contentLayoutContentsMargins() const</div><div class="ttdoc">返回内容布局的边距.</div><div class="ttdef"><b>Definition:</b> ddialog.cpp:495</div></div>
+<div class="ttc" id="aclassDDialog_html_a6822ec1bab946be3edb71978fe04d6ca"><div class="ttname"><a href="classDDialog.html#a6822ec1bab946be3edb71978fe04d6ca">DDialog::setWordWrapTitle</a></div><div class="ttdeci">void setWordWrapTitle(bool wordWrap)</div><div class="ttdoc">设定标题Label内容是否可截断换行.</div><div class="ttdef"><b>Definition:</b> ddialog.cpp:936</div></div>
+<div class="ttc" id="aclassDDialog_html_a68b0b45360b02ffb51f9ccaf69b80e4a"><div class="ttname"><a href="classDDialog.html#a68b0b45360b02ffb51f9ccaf69b80e4a">DDialog::setOnButtonClickedClose</a></div><div class="ttdeci">void setOnButtonClickedClose(bool onButtonClickedClose)</div><div class="ttdoc">设置是否在点击按钮后关闭对话框.</div><div class="ttdef"><b>Definition:</b> ddialog.cpp:1038</div></div>
+<div class="ttc" id="aclassDDialog_html_a6adba921a288613b241dcb1d230b913d"><div class="ttname"><a href="classDDialog.html#a6adba921a288613b241dcb1d230b913d">DDialog::showEvent</a></div><div class="ttdeci">void showEvent(QShowEvent *event) Q_DECL_OVERRIDE</div><div class="ttdef"><b>Definition:</b> ddialog.cpp:1091</div></div>
+<div class="ttc" id="aclassDDialog_html_a6dc1be0d023f57ea8740be7f912e7bc6"><div class="ttname"><a href="classDDialog.html#a6dc1be0d023f57ea8740be7f912e7bc6">DDialog::getButton</a></div><div class="ttdeci">QAbstractButton * getButton(int index) const</div><div class="ttdoc">获得指定下标所对应的按钮.</div><div class="ttdef"><b>Definition:</b> ddialog.cpp:385</div></div>
+<div class="ttc" id="aclassDDialog_html_a6e366a5f298ca425157e1d39a99d3294"><div class="ttname"><a href="classDDialog.html#a6e366a5f298ca425157e1d39a99d3294">DDialog::buttonCount</a></div><div class="ttdeci">int buttonCount() const</div><div class="ttdoc">获得对话框包含的按钮数量.</div><div class="ttdef"><b>Definition:</b> ddialog.cpp:342</div></div>
+<div class="ttc" id="aclassDDialog_html_a8068d72c9a3cae47126fd0833089c562"><div class="ttname"><a href="classDDialog.html#a8068d72c9a3cae47126fd0833089c562">DDialog::getButtonIndexByText</a></div><div class="ttdeci">int getButtonIndexByText(const QString &amp;text) const</div><div class="ttdoc">通过按钮文字获取按钮下标.</div><div class="ttdef"><b>Definition:</b> ddialog.cpp:325</div></div>
+<div class="ttc" id="aclassDDialog_html_a8b97e47a5ccbc20ab98bbaed80fed7db"><div class="ttname"><a href="classDDialog.html#a8b97e47a5ccbc20ab98bbaed80fed7db">DDialog::getContents</a></div><div class="ttdeci">QList&lt; QWidget * &gt; getContents() const</div><div class="ttdoc">获得对话框所含的所有内容控件列表</div><div class="ttdef"><b>Definition:</b> ddialog.cpp:372</div></div>
+<div class="ttc" id="aclassDDialog_html_a937b72977084f1b2414d704a957d76e6"><div class="ttname"><a href="classDDialog.html#a937b72977084f1b2414d704a957d76e6">DDialog::setTitle</a></div><div class="ttdeci">void setTitle(const QString &amp;title)</div><div class="ttdoc">设置对话框标题.</div><div class="ttdef"><b>Definition:</b> ddialog.cpp:917</div></div>
+<div class="ttc" id="aclassDDialog_html_a97a2242020d7a491e91cf20652490e8a"><div class="ttname"><a href="classDDialog.html#a97a2242020d7a491e91cf20652490e8a">DDialog::DDialog</a></div><div class="ttdeci">DDialog(QWidget *parent=nullptr)</div><div class="ttdoc">构造一个 DDialog 对话框.</div><div class="ttdef"><b>Definition:</b> ddialog.cpp:296</div></div>
+<div class="ttc" id="aclassDDialog_html_a984b658383a1cc0b9f509c360772ffb0"><div class="ttname"><a href="classDDialog.html#a984b658383a1cc0b9f509c360772ffb0">DDialog::contentCount</a></div><div class="ttdeci">int contentCount() const</div><div class="ttdoc">获得对话框所含的所有内容控件的数量.</div><div class="ttdef"><b>Definition:</b> ddialog.cpp:352</div></div>
+<div class="ttc" id="aclassDDialog_html_a9b614d1933c9ad3be8fa56014c023677"><div class="ttname"><a href="classDDialog.html#a9b614d1933c9ad3be8fa56014c023677">DDialog::insertSpacing</a></div><div class="ttdeci">void insertSpacing(int index, int spacing)</div><div class="ttdoc">插入对话框内容间隔.</div><div class="ttdef"><b>Definition:</b> ddialog.cpp:862</div></div>
+<div class="ttc" id="aclassDDialog_html_aa350a57e5319c95bde8b746ba3289501"><div class="ttname"><a href="classDDialog.html#aa350a57e5319c95bde8b746ba3289501">DDialog::getButtons</a></div><div class="ttdeci">QList&lt; QAbstractButton * &gt; getButtons() const</div><div class="ttdoc">获得对话框的按钮列表</div><div class="ttdef"><b>Definition:</b> ddialog.cpp:362</div></div>
+<div class="ttc" id="aclassDDialog_html_aaa91361d0d011ced341664c0643cf9be"><div class="ttname"><a href="classDDialog.html#aaa91361d0d011ced341664c0643cf9be">DDialog::clearContents</a></div><div class="ttdeci">void clearContents(bool isDelete=true)</div><div class="ttdoc">清空对话框内容布局中的所有内容.</div><div class="ttdef"><b>Definition:</b> ddialog.cpp:812</div></div>
+<div class="ttc" id="aclassDDialog_html_ab26c020109df58fe0a97c5efabe9762d"><div class="ttname"><a href="classDDialog.html#ab26c020109df58fe0a97c5efabe9762d">DDialog::setButtonText</a></div><div class="ttdeci">void setButtonText(int index, const QString &amp;text)</div><div class="ttdoc">设置按钮文字.</div><div class="ttdef"><b>Definition:</b> ddialog.cpp:893</div></div>
+<div class="ttc" id="aclassDDialog_html_ac0ee4bb4733dd05d0a09189579d08c2e"><div class="ttname"><a href="classDDialog.html#ac0ee4bb4733dd05d0a09189579d08c2e">DDialog::setDefaultButton</a></div><div class="ttdeci">bool setDefaultButton(int index)</div><div class="ttdoc">设置默认按钮.</div><div class="ttdef"><b>Definition:</b> ddialog.cpp:724</div></div>
+<div class="ttc" id="aclassDDialog_html_ac14ca8c14499a865c32f344f3b792365"><div class="ttname"><a href="classDDialog.html#ac14ca8c14499a865c32f344f3b792365">DDialog::setIcon</a></div><div class="ttdeci">void setIcon(const QIcon &amp;icon)</div><div class="ttdoc">设置对话框图标. icon 对话框图标.</div><div class="ttdef"><b>Definition:</b> ddialog.cpp:971</div></div>
+<div class="ttc" id="aclassDDialog_html_acac8323f394800285dfb5d1540c50adb"><div class="ttname"><a href="classDDialog.html#acac8323f394800285dfb5d1540c50adb">DDialog::removeButtonByText</a></div><div class="ttdeci">void removeButtonByText(const QString &amp;text)</div><div class="ttdoc">从对话框移除按钮.</div><div class="ttdef"><b>Definition:</b> ddialog.cpp:692</div></div>
+<div class="ttc" id="aclassDDialog_html_acc0499eec8cf37dabe79c3307f510881"><div class="ttname"><a href="classDDialog.html#acc0499eec8cf37dabe79c3307f510881">DDialog::exec</a></div><div class="ttdeci">int exec() Q_DECL_OVERRIDE</div><div class="ttdoc">以模态框形式显示当前对话框.</div><div class="ttdef"><b>Definition:</b> ddialog.cpp:1055</div></div>
+<div class="ttc" id="aclassDDialog_html_accf07670403737a1b3b7341e0a406f15"><div class="ttname"><a href="classDDialog.html#accf07670403737a1b3b7341e0a406f15">DDialog::insertButtons</a></div><div class="ttdeci">void insertButtons(int index, const QStringList &amp;text)</div><div class="ttdoc">向对话框插入按钮.</div><div class="ttdef"><b>Definition:</b> ddialog.cpp:634</div></div>
+<div class="ttc" id="aclassDDialog_html_acffdb4ea6133dc62f02fb7e8123ee8c6"><div class="ttname"><a href="classDDialog.html#acffdb4ea6133dc62f02fb7e8123ee8c6">DDialog::removeButton</a></div><div class="ttdeci">void removeButton(int index)</div><div class="ttdoc">从对话框移除按钮.</div><div class="ttdef"><b>Definition:</b> ddialog.cpp:646</div></div>
+<div class="ttc" id="aclassDDialog_html_ad2c35e90142226ba3f4c9e7ba5576560"><div class="ttname"><a href="classDDialog.html#ad2c35e90142226ba3f4c9e7ba5576560">DDialog::addButtons</a></div><div class="ttdeci">int addButtons(const QStringList &amp;text)</div><div class="ttdoc">向对话框添加按钮.</div><div class="ttdef"><b>Definition:</b> ddialog.cpp:537</div></div>
+<div class="ttc" id="aclassDDialog_html_ad6b93f0db7cb4b561d398344033622eb"><div class="ttname"><a href="classDDialog.html#ad6b93f0db7cb4b561d398344033622eb">DDialog::getContent</a></div><div class="ttdeci">QWidget * getContent(int index) const</div><div class="ttdoc">获取指定下标对应的内容控件. index　控件下标</div><div class="ttdef"><b>Definition:</b> ddialog.cpp:397</div></div>
+<div class="ttc" id="aclassDDialog_html_ad77d71530df35bacfaba552843e3b2f7"><div class="ttname"><a href="classDDialog.html#ad77d71530df35bacfaba552843e3b2f7">DDialog::clearButtons</a></div><div class="ttdeci">void clearButtons()</div><div class="ttdoc">清除所有按钮.</div><div class="ttdef"><b>Definition:</b> ddialog.cpp:703</div></div>
+<div class="ttc" id="aclassDDialog_html_aec564ca9d7998739e64bc718b989344f"><div class="ttname"><a href="classDDialog.html#aec564ca9d7998739e64bc718b989344f">DDialog::setButtonIcon</a></div><div class="ttdeci">void setButtonIcon(int index, const QIcon &amp;icon)</div><div class="ttdoc">设置按钮图标. index 需要设置图标的按钮的下标 icon 所需要设置的图标</div><div class="ttdef"><b>Definition:</b> ddialog.cpp:905</div></div>
+<div class="ttc" id="aclassDDialog_html_af4547072e8d8de47342d239d4b1e7eab"><div class="ttname"><a href="classDDialog.html#af4547072e8d8de47342d239d4b1e7eab">DDialog::addSpacing</a></div><div class="ttdeci">void addSpacing(int spacing)</div><div class="ttdoc">追加对话框内容间隔.</div><div class="ttdef"><b>Definition:</b> ddialog.cpp:847</div></div>
+<div class="ttc" id="aclassDDialog_html_af4b20c40095b4d718f5bb25791a62d13"><div class="ttname"><a href="classDDialog.html#af4b20c40095b4d718f5bb25791a62d13">DDialog::insertButton</a></div><div class="ttdeci">void insertButton(int index, const QString &amp;text, bool isDefault=false, ButtonType type=ButtonNormal)</div><div class="ttdoc">向对话框插入按钮.</div><div class="ttdef"><b>Definition:</b> ddialog.cpp:554</div></div>
+<div class="ttc" id="aclassDDialog_html_af795ea5beef81d50e991b88b025e5f82"><div class="ttname"><a href="classDDialog.html#af795ea5beef81d50e991b88b025e5f82">DDialog::setTextFormat</a></div><div class="ttdeci">void setTextFormat(Qt::TextFormat textFormat)</div><div class="ttdoc">设置文字格式. textFormat 文字格式.</div><div class="ttdef"><b>Definition:</b> ddialog.cpp:1019</div></div>
+<div class="ttc" id="aclassDDialog_html_af90eb8313f1246fe02921a2bdad28db6"><div class="ttname"><a href="classDDialog.html#af90eb8313f1246fe02921a2bdad28db6">DDialog::clearSpacing</a></div><div class="ttdeci">void clearSpacing()</div><div class="ttdoc">清除内容间隔.</div><div class="ttdef"><b>Definition:</b> ddialog.cpp:874</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_cc1fdbae730d0dba18db2b924667b662.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_6819db61f31aacd6e31b437a606a4041.html">include</a></li><li class="navelem"><a class="el" href="dir_6719ee6af2149ba01bce2af57814b9e8.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_4faf4521db2f3764f9e00575717749e8.html">widgets</a></li><li class="navelem"><b>ddialog.h</b></li>
+    <li class="footer">文档生成时间:doxtime</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

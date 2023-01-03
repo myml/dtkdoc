@@ -1,0 +1,255 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: ExampleWindowInterface类 参考</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="change address" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classExampleWindowInterface.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="classExampleWindowInterface-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">ExampleWindowInterface类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 ExampleWindowInterface 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classExampleWindowInterface.png" usemap="#ExampleWindowInterface_map" alt=""/>
+  <map id="ExampleWindowInterface_map" name="ExampleWindowInterface_map">
+<area href="classDArrowRectangleExample.html" alt="DArrowRectangleExample" shape="rect" coords="194,112,378,136"/>
+<area href="classDBackgroundGroupExample.html" alt="DBackgroundGroupExample" shape="rect" coords="194,168,378,192"/>
+<area href="classDButtonBoxExample.html" alt="DButtonBoxExample" shape="rect" coords="194,224,378,248"/>
+<area href="classDCalendarWidgetExample.html" alt="DCalendarWidgetExample" shape="rect" coords="194,280,378,304"/>
+<area href="classDCheckButtonExample.html" alt="DCheckButtonExample" shape="rect" coords="194,336,378,360"/>
+<area href="classDColoredProgressBarExample.html" alt="DColoredProgressBarExample" shape="rect" coords="194,392,378,416"/>
+<area href="classDColumnViewExample.html" alt="DColumnViewExample" shape="rect" coords="194,448,378,472"/>
+<area href="classDComboBoxExample.html" alt="DComboBoxExample" shape="rect" coords="194,504,378,528"/>
+<area href="classDCrumbTextFormatExample.html" alt="DCrumbTextFormatExample" shape="rect" coords="194,560,378,584"/>
+<area href="classDDialogExample.html" alt="DDialogExample" shape="rect" coords="194,616,378,640"/>
+<area href="classDFileChooserEditExample.html" alt="DFileChooserEditExample" shape="rect" coords="194,672,378,696"/>
+<area href="classDFileDialogExample.html" alt="DFileDialogExample" shape="rect" coords="194,728,378,752"/>
+<area href="classDFloatingButtonExample.html" alt="DFloatingButtonExample" shape="rect" coords="194,784,378,808"/>
+<area href="classDFontComboBoxExample.html" alt="DFontComboBoxExample" shape="rect" coords="194,840,378,864"/>
+<area href="classDFrameExample.html" alt="DFrameExample" shape="rect" coords="194,896,378,920"/>
+<area href="classDGroupBoxExample.html" alt="DGroupBoxExample" shape="rect" coords="194,952,378,976"/>
+<area href="classDHeaderViewExample.html" alt="DHeaderViewExample" shape="rect" coords="194,1008,378,1032"/>
+<area href="classDHorizontalLineExample.html" alt="DHorizontalLineExample" shape="rect" coords="194,1064,378,1088"/>
+<area href="classDIconButtonExample.html" alt="DIconButtonExample" shape="rect" coords="194,1120,378,1144"/>
+<area href="classDIpv4LineEditExample.html" alt="DIpv4LineEditExample" shape="rect" coords="194,1176,378,1200"/>
+<area href="classDKeySequenceEditExample.html" alt="DKeySequenceEditExample" shape="rect" coords="194,1232,378,1256"/>
+<area href="classDLCDNumberExample.html" alt="DLCDNumberExample" shape="rect" coords="194,1288,378,1312"/>
+<area href="classDLineEditExample.html" alt="DLineEditExample" shape="rect" coords="194,1344,378,1368"/>
+<area href="classDListViewExample.html" alt="DListViewExample" shape="rect" coords="194,1400,378,1424"/>
+<area href="classDMainWindowExample.html" alt="DMainWindowExample" shape="rect" coords="194,1456,378,1480"/>
+<area href="classDMenuExample.html" alt="DMenuExample" shape="rect" coords="194,1512,378,1536"/>
+<area href="classDMessageManagerExample.html" alt="DMessageManagerExample" shape="rect" coords="194,1568,378,1592"/>
+<area href="classDPasswordEditExample.html" alt="DPasswordEditExample" shape="rect" coords="194,1624,378,1648"/>
+<area href="classDProgressBarExample.html" alt="DProgressBarExample" shape="rect" coords="194,1680,378,1704"/>
+<area href="classDPushButtonExample.html" alt="DPushButtonExample" shape="rect" coords="194,1736,378,1760"/>
+<area href="classDRadioButtonExample.html" alt="DRadioButtonExample" shape="rect" coords="194,1792,378,1816"/>
+<area href="classDRubberBandExample.html" alt="DRubberBandExample" shape="rect" coords="194,1848,378,1872"/>
+<area href="classDScrollBarExample.html" alt="DScrollBarExample" shape="rect" coords="194,1904,378,1928"/>
+<area href="classDSearchComboBoxExample.html" alt="DSearchComboBoxExample" shape="rect" coords="194,1960,378,1984"/>
+<area href="classDSearchEditExample.html" alt="DSearchEditExample" shape="rect" coords="194,2016,378,2040"/>
+<area href="classDSizegripExample.html" alt="DSizegripExample" shape="rect" coords="194,2072,378,2096"/>
+<area href="classDSliderExample.html" alt="DSliderExample" shape="rect" coords="194,2128,378,2152"/>
+<area href="classDSpinBoxExample.html" alt="DSpinBoxExample" shape="rect" coords="194,2184,378,2208"/>
+<area href="classDSpinnerExample.html" alt="DSpinnerExample" shape="rect" coords="194,2240,378,2264"/>
+<area href="classDSplitterExample.html" alt="DSplitterExample" shape="rect" coords="194,2296,378,2320"/>
+<area href="classDStatusBarExample.html" alt="DStatusBarExample" shape="rect" coords="194,2352,378,2376"/>
+<area href="classDSuggestButtonExample.html" alt="DSuggestButtonExample" shape="rect" coords="194,2408,378,2432"/>
+<area href="classDSwitchButtonExample.html" alt="DSwitchButtonExample" shape="rect" coords="194,2464,378,2488"/>
+<area href="classDTabBarExample.html" alt="DTabBarExample" shape="rect" coords="194,2520,378,2544"/>
+<area href="classDTableWidgetExample.html" alt="DTableWidgetExample" shape="rect" coords="194,2576,378,2600"/>
+<area href="classDTextEditExample.html" alt="DTextEditExample" shape="rect" coords="194,2632,378,2656"/>
+<area href="classDTitleBarExample.html" alt="DTitleBarExample" shape="rect" coords="194,2688,378,2712"/>
+<area href="classDToolButtonExample.html" alt="DToolButtonExample" shape="rect" coords="194,2744,378,2768"/>
+<area href="classDToolTipExample.html" alt="DToolTipExample" shape="rect" coords="194,2800,378,2824"/>
+<area href="classDTreeViewExample.html" alt="DTreeViewExample" shape="rect" coords="194,2856,378,2880"/>
+<area href="classDVerticalLineExample.html" alt="DVerticalLineExample" shape="rect" coords="194,2912,378,2936"/>
+<area href="classDWarningButtonExample.html" alt="DWarningButtonExample" shape="rect" coords="194,2968,378,2992"/>
+<area href="classDWaterProgressExample.html" alt="DWaterProgressExample" shape="rect" coords="194,3024,378,3048"/>
+<area href="classImageViewerExample.html" alt="ImageViewerExample" shape="rect" coords="194,3080,378,3104"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a5015b8eea1d3e757bf4c10fda825f9a1"><td class="memItemLeft" align="right" valign="top"><a id="a5015b8eea1d3e757bf4c10fda825f9a1"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ExampleWindowInterface</b> (QWidget *parent)</td></tr>
+<tr class="separator:a5015b8eea1d3e757bf4c10fda825f9a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c65493c3d2e7da077048cc97b815a70"><td class="memItemLeft" align="right" valign="top"><a id="a2c65493c3d2e7da077048cc97b815a70"></a>
+virtual QString&#160;</td><td class="memItemRight" valign="bottom"><b>getTitleName</b> () const =0</td></tr>
+<tr class="separator:a2c65493c3d2e7da077048cc97b815a70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ad6f9d0a936c803a2525f32636f1c4e"><td class="memItemLeft" align="right" valign="top"><a id="a6ad6f9d0a936c803a2525f32636f1c4e"></a>
+virtual QString&#160;</td><td class="memItemRight" valign="bottom"><b>getDescriptionInfo</b> () const =0</td></tr>
+<tr class="separator:a6ad6f9d0a936c803a2525f32636f1c4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adeb585c056329373b1acbb2f28aa9a0d"><td class="memItemLeft" align="right" valign="top"><a id="adeb585c056329373b1acbb2f28aa9a0d"></a>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>getFixedHeight</b> () const =0</td></tr>
+<tr class="separator:adeb585c056329373b1acbb2f28aa9a0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dtkwidget/examples/dwidget-examples/collections/<a class="el" href="examplewindowinterface_8h_source.html">examplewindowinterface.h</a></li>
+<li>dtkwidget/examples/dwidget-examples/collections/examplewindowinterface.cpp</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classExampleWindowInterface.html">ExampleWindowInterface</a></li>
+    <li class="footer">文档生成时间:doxtime</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

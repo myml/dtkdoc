@@ -1,0 +1,286 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: DBlurEffectWidgetPrivate类 参考</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="change address" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classDBlurEffectWidgetPrivate.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="#pub-static-attribs">静态 Public 属性</a> &#124;
+<a href="classDBlurEffectWidgetPrivate-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">DBlurEffectWidgetPrivate类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 DBlurEffectWidgetPrivate 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classDBlurEffectWidgetPrivate.png" alt=""/>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a8da422d0e4f3bca57a3ef8a76c7a803d"><td class="memItemLeft" align="right" valign="top"><a id="a8da422d0e4f3bca57a3ef8a76c7a803d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DBlurEffectWidgetPrivate</b> (<a class="el" href="classDBlurEffectWidget.html">DBlurEffectWidget</a> *qq)</td></tr>
+<tr class="separator:a8da422d0e4f3bca57a3ef8a76c7a803d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e43e5e389053d9d4a0eb4c0b8ea99f2"><td class="memItemLeft" align="right" valign="top"><a id="a8e43e5e389053d9d4a0eb4c0b8ea99f2"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isBehindWindowBlendMode</b> () const</td></tr>
+<tr class="separator:a8e43e5e389053d9d4a0eb4c0b8ea99f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8efaf2115a82c34d4c809724337c879"><td class="memItemLeft" align="right" valign="top"><a id="af8efaf2115a82c34d4c809724337c879"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isFull</b> () const</td></tr>
+<tr class="separator:af8efaf2115a82c34d4c809724337c879"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c778b1e2b5e5fdcea0975198f742002"><td class="memItemLeft" align="right" valign="top"><a id="a2c778b1e2b5e5fdcea0975198f742002"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>addToBlurEffectWidgetHash</b> ()</td></tr>
+<tr class="separator:a2c778b1e2b5e5fdcea0975198f742002"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33eb6afe023eb6611f37b6a056d01d8c"><td class="memItemLeft" align="right" valign="top"><a id="a33eb6afe023eb6611f37b6a056d01d8c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>removeFromBlurEffectWidgetHash</b> ()</td></tr>
+<tr class="separator:a33eb6afe023eb6611f37b6a056d01d8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96166565f30aa49b90b9ef174c40dc71"><td class="memItemLeft" align="right" valign="top"><a id="a96166565f30aa49b90b9ef174c40dc71"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>updateWindowBlurArea</b> ()</td></tr>
+<tr class="separator:a96166565f30aa49b90b9ef174c40dc71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85f7c892aea6bfb1080ca4207448a34b"><td class="memItemLeft" align="right" valign="top"><a id="a85f7c892aea6bfb1080ca4207448a34b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setMaskColor</b> (const QColor &amp;color)</td></tr>
+<tr class="separator:a85f7c892aea6bfb1080ca4207448a34b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb49624afdb6791b3990c357843ea959"><td class="memItemLeft" align="right" valign="top"><a id="aeb49624afdb6791b3990c357843ea959"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setMaskAlpha</b> (const quint8 alpha)</td></tr>
+<tr class="separator:aeb49624afdb6791b3990c357843ea959"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a455404d8951a734dc03a1e4d75a7b9ca"><td class="memItemLeft" align="right" valign="top"><a id="a455404d8951a734dc03a1e4d75a7b9ca"></a>
+quint8&#160;</td><td class="memItemRight" valign="bottom"><b>getMaskColorAlpha</b> () const</td></tr>
+<tr class="separator:a455404d8951a734dc03a1e4d75a7b9ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f8b3f371e7f2bd025dd0354e304ee92"><td class="memItemLeft" align="right" valign="top"><a id="a6f8b3f371e7f2bd025dd0354e304ee92"></a>
+QColor&#160;</td><td class="memItemRight" valign="bottom"><b>getMaskColor</b> (const QColor &amp;baseColor) const</td></tr>
+<tr class="separator:a6f8b3f371e7f2bd025dd0354e304ee92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97820c305d63887a088f1d466ee48713"><td class="memItemLeft" align="right" valign="top"><a id="a97820c305d63887a088f1d466ee48713"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>resetSourceImage</b> ()</td></tr>
+<tr class="separator:a97820c305d63887a088f1d466ee48713"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:aaa562c92df3dfcda06e4bcfeca7618a5"><td class="memItemLeft" align="right" valign="top"><a id="aaa562c92df3dfcda06e4bcfeca7618a5"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>updateWindowBlurArea</b> (QWidget *topLevelWidget)</td></tr>
+<tr class="separator:aaa562c92df3dfcda06e4bcfeca7618a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:abeb709aaa992af74d8b36678173e1a6d"><td class="memItemLeft" align="right" valign="top"><a id="abeb709aaa992af74d8b36678173e1a6d"></a>
+<a class="el" href="classDBlurEffectWidget.html#abb491650f59b66f7da7a831361e11697">DBlurEffectWidget::BlurMode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>mode</b> = DBlurEffectWidget::GaussianBlur</td></tr>
+<tr class="separator:abeb709aaa992af74d8b36678173e1a6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac84e3a2a3aa85132654c5822ec155868"><td class="memItemLeft" align="right" valign="top"><a id="ac84e3a2a3aa85132654c5822ec155868"></a>
+QImage&#160;</td><td class="memItemRight" valign="bottom"><b>sourceImage</b></td></tr>
+<tr class="separator:ac84e3a2a3aa85132654c5822ec155868"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e97e7458bb75ee549a6c9ae6ade218e"><td class="memItemLeft" align="right" valign="top"><a id="a9e97e7458bb75ee549a6c9ae6ade218e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>customSourceImage</b> = false</td></tr>
+<tr class="separator:a9e97e7458bb75ee549a6c9ae6ade218e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73dda2faca0694ed469b70832010c022"><td class="memItemLeft" align="right" valign="top"><a id="a73dda2faca0694ed469b70832010c022"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>autoScaleSourceImage</b> = false</td></tr>
+<tr class="separator:a73dda2faca0694ed469b70832010c022"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53cd402c1ed0d968480d4d21dd36530e"><td class="memItemLeft" align="right" valign="top"><a id="a53cd402c1ed0d968480d4d21dd36530e"></a>
+<a class="el" href="classDBlurEffectWidget.html#ab4a45494e2b797a5f1cf5899bb737e27">DBlurEffectWidget::BlendMode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>blendMode</b> = <a class="el" href="classDBlurEffectWidget.html#ab4a45494e2b797a5f1cf5899bb737e27a6c26cbeb53ad47fd5d5ad8cde32ece9c">DBlurEffectWidget::InWindowBlend</a></td></tr>
+<tr class="separator:a53cd402c1ed0d968480d4d21dd36530e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3105525bc71b553e677f7ad11339051d"><td class="memItemLeft" align="right" valign="top"><a id="a3105525bc71b553e677f7ad11339051d"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>radius</b> = 35</td></tr>
+<tr class="separator:a3105525bc71b553e677f7ad11339051d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e69d282e6011d9525790bc1b4b06b01"><td class="memItemLeft" align="right" valign="top"><a id="a1e69d282e6011d9525790bc1b4b06b01"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>blurRectXRadius</b> = 0</td></tr>
+<tr class="separator:a1e69d282e6011d9525790bc1b4b06b01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f388db225cba5fbd66c20ca8ad40253"><td class="memItemLeft" align="right" valign="top"><a id="a0f388db225cba5fbd66c20ca8ad40253"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>blurRectYRadius</b> = 0</td></tr>
+<tr class="separator:a0f388db225cba5fbd66c20ca8ad40253"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bb3e17c20b51f125aac8443eeaf85d4"><td class="memItemLeft" align="right" valign="top"><a id="a4bb3e17c20b51f125aac8443eeaf85d4"></a>
+qint16&#160;</td><td class="memItemRight" valign="bottom"><b>maskAlpha</b> = -1</td></tr>
+<tr class="separator:a4bb3e17c20b51f125aac8443eeaf85d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a2b7bd948d4c8c9d2dfe5d6d7a0fe34"><td class="memItemLeft" align="right" valign="top"><a id="a1a2b7bd948d4c8c9d2dfe5d6d7a0fe34"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>full</b> = false</td></tr>
+<tr class="separator:a1a2b7bd948d4c8c9d2dfe5d6d7a0fe34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea3e9a231f4c2c77dd0ea061c9cbcdc1"><td class="memItemLeft" align="right" valign="top"><a id="aea3e9a231f4c2c77dd0ea061c9cbcdc1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>blurEnabled</b> = true</td></tr>
+<tr class="separator:aea3e9a231f4c2c77dd0ea061c9cbcdc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74c0725538b421d9e2da9d698e15d263"><td class="memItemLeft" align="right" valign="top"><a id="a74c0725538b421d9e2da9d698e15d263"></a>
+QColor&#160;</td><td class="memItemRight" valign="bottom"><b>maskColor</b> = Qt::transparent</td></tr>
+<tr class="separator:a74c0725538b421d9e2da9d698e15d263"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93c3f1b9d5c488ed013312732663c632"><td class="memItemLeft" align="right" valign="top"><a id="a93c3f1b9d5c488ed013312732663c632"></a>
+DBlurEffectWidget::MaskColorType&#160;</td><td class="memItemRight" valign="bottom"><b>maskColorType</b> = DBlurEffectWidget::AutoColor</td></tr>
+<tr class="separator:a93c3f1b9d5c488ed013312732663c632"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafe834b678e4fe3d1c140e04dc0dcc71"><td class="memItemLeft" align="right" valign="top"><a id="aafe834b678e4fe3d1c140e04dc0dcc71"></a>
+QPainterPath&#160;</td><td class="memItemRight" valign="bottom"><b>maskPath</b></td></tr>
+<tr class="separator:aafe834b678e4fe3d1c140e04dc0dcc71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b4b9229d600aedb2dc8c06c6b30b354"><td class="memItemLeft" align="right" valign="top"><a id="a2b4b9229d600aedb2dc8c06c6b30b354"></a>
+<a class="el" href="classDBlurEffectGroup.html">DBlurEffectGroup</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>group</b> = nullptr</td></tr>
+<tr class="separator:a2b4b9229d600aedb2dc8c06c6b30b354"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+静态 Public 属性</h2></td></tr>
+<tr class="memitem:a9359a26eaa3349fddb7b64c9decd2650"><td class="memItemLeft" align="right" valign="top"><a id="a9359a26eaa3349fddb7b64c9decd2650"></a>
+static QMultiHash&lt; QWidget *, const <a class="el" href="classDBlurEffectWidget.html">DBlurEffectWidget</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>blurEffectWidgetHash</b></td></tr>
+<tr class="separator:a9359a26eaa3349fddb7b64c9decd2650"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9ef9b6af9a67532bc6bdb669c189f92"><td class="memItemLeft" align="right" valign="top"><a id="ad9ef9b6af9a67532bc6bdb669c189f92"></a>
+static QHash&lt; const <a class="el" href="classDBlurEffectWidget.html">DBlurEffectWidget</a> *, QWidget * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>windowOfBlurEffectHash</b></td></tr>
+<tr class="separator:ad9ef9b6af9a67532bc6bdb669c189f92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dtkwidget/src/widgets/private/<a class="el" href="dblureffectwidget__p_8h_source.html">dblureffectwidget_p.h</a></li>
+<li>dtkwidget/src/widgets/dblureffectwidget.cpp</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classDBlurEffectWidgetPrivate.html">DBlurEffectWidgetPrivate</a></li>
+    <li class="footer">文档生成时间:doxtime</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

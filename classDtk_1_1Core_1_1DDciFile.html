@@ -1,0 +1,809 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: Dtk::Core::DDciFile类 参考</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="change address" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classDtk_1_1Core_1_1DDciFile.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="classDtk_1_1Core_1_1DDciFile-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">Dtk::Core::DDciFile类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><a class="el" href="ddcifile_8h.html">ddcifile.h</a> 是关于dci文件相关操作的一个类,实现了 DCI 文件的逻辑。其只是对数据的打包 dci文件的结构路径如下:  
+ <a href="classDtk_1_1Core_1_1DDciFile.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="ddcifile_8h_source.html">ddcifile.h</a>&gt;</code></p>
+<div class="dynheader">
+类 Dtk::Core::DDciFile 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classDtk_1_1Core_1_1DDciFile.png" usemap="#Dtk::Core::DDciFile_map" alt=""/>
+  <map id="Dtk::Core::DDciFile_map" name="Dtk::Core::DDciFile_map">
+<area href="classDtk_1_1Core_1_1DObject.html" title="一些宏的定义." alt="Dtk::Core::DObject" shape="rect" coords="0,0,119,24"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a4ca74a65e62766b5517f2f69a9d96eb7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DDciFile.html#a4ca74a65e62766b5517f2f69a9d96eb7">FileType</a> { <b>UnknowFile</b>
+, <b>File</b> = 1
+, <b>Directory</b> = 2
+, <b>Symlink</b> = 3
+ }</td></tr>
+<tr class="memdesc:a4ca74a65e62766b5517f2f69a9d96eb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">dci文件类型  <a href="classDtk_1_1Core_1_1DDciFile.html#a4ca74a65e62766b5517f2f69a9d96eb7">更多...</a><br /></td></tr>
+<tr class="separator:a4ca74a65e62766b5517f2f69a9d96eb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ae52040dc4589bfc87ca7e97eb74fcfef"><td class="memItemLeft" align="right" valign="top"><a id="ae52040dc4589bfc87ca7e97eb74fcfef"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DDciFile</b> (const QString &amp;fileName)</td></tr>
+<tr class="separator:ae52040dc4589bfc87ca7e97eb74fcfef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acca056e3e35f0dac7c6489a7e6c24530"><td class="memItemLeft" align="right" valign="top"><a id="acca056e3e35f0dac7c6489a7e6c24530"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DDciFile</b> (const QByteArray &amp;data)</td></tr>
+<tr class="separator:acca056e3e35f0dac7c6489a7e6c24530"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad2a429bd9f3f7cc360c647c73349f53"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DDciFile.html#aad2a429bd9f3f7cc360c647c73349f53">isValid</a> () const</td></tr>
+<tr class="memdesc:aad2a429bd9f3f7cc360c647c73349f53"><td class="mdescLeft">&#160;</td><td class="mdescRight">判断读取的dci文件是否有效  <a href="classDtk_1_1Core_1_1DDciFile.html#aad2a429bd9f3f7cc360c647c73349f53">更多...</a><br /></td></tr>
+<tr class="separator:aad2a429bd9f3f7cc360c647c73349f53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25b28569afbef07a7bca746ee26dd335"><td class="memItemLeft" align="right" valign="top"><a id="a25b28569afbef07a7bca746ee26dd335"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DDciFile.html#a25b28569afbef07a7bca746ee26dd335">lastErrorString</a> () const</td></tr>
+<tr class="memdesc:a25b28569afbef07a7bca746ee26dd335"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取上一个报错信息,为人类可读字符串,可以通过此报错信息来获取错误内容,一般情况下是因为文件不存在或者文件名过长(&gt;62个字符)导致。 <br /></td></tr>
+<tr class="separator:a25b28569afbef07a7bca746ee26dd335"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfea543b6537ed867d22fe4b7c844a04"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DDciFile.html#abfea543b6537ed867d22fe4b7c844a04">writeToFile</a> (const QString &amp;fileName) const</td></tr>
+<tr class="memdesc:abfea543b6537ed867d22fe4b7c844a04"><td class="mdescLeft">&#160;</td><td class="mdescRight">写入文件,在做完对于dci文件的操作之后调用此接口,为保存的作用  <a href="classDtk_1_1Core_1_1DDciFile.html#abfea543b6537ed867d22fe4b7c844a04">更多...</a><br /></td></tr>
+<tr class="separator:abfea543b6537ed867d22fe4b7c844a04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab53eebe0e429de9a7c31703bcf197c77"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DDciFile.html#ab53eebe0e429de9a7c31703bcf197c77">writeToDevice</a> (QIODevice *device) const</td></tr>
+<tr class="memdesc:ab53eebe0e429de9a7c31703bcf197c77"><td class="mdescLeft">&#160;</td><td class="mdescRight">写入到设备,设备指的是qt中的io设备,可以在qt文档中找到相关信息  <a href="classDtk_1_1Core_1_1DDciFile.html#ab53eebe0e429de9a7c31703bcf197c77">更多...</a><br /></td></tr>
+<tr class="separator:ab53eebe0e429de9a7c31703bcf197c77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec9adf992851c7fd12fce29734714354"><td class="memItemLeft" align="right" valign="top">QByteArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DDciFile.html#aec9adf992851c7fd12fce29734714354">toData</a> () const</td></tr>
+<tr class="memdesc:aec9adf992851c7fd12fce29734714354"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回dci文件的原始数据,以QByteArray形式返回  <a href="classDtk_1_1Core_1_1DDciFile.html#aec9adf992851c7fd12fce29734714354">更多...</a><br /></td></tr>
+<tr class="separator:aec9adf992851c7fd12fce29734714354"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1678e4485e62e479ffadd5f39dea647"><td class="memItemLeft" align="right" valign="top">QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DDciFile.html#ac1678e4485e62e479ffadd5f39dea647">list</a> (const QString &amp;dir, bool onlyFileName=false) const</td></tr>
+<tr class="memdesc:ac1678e4485e62e479ffadd5f39dea647"><td class="mdescLeft">&#160;</td><td class="mdescRight">列出文件列表  <a href="classDtk_1_1Core_1_1DDciFile.html#ac1678e4485e62e479ffadd5f39dea647">更多...</a><br /></td></tr>
+<tr class="separator:ac1678e4485e62e479ffadd5f39dea647"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70adb3c6baf1de845ddf9d42e9d19dfc"><td class="memItemLeft" align="right" valign="top"><a id="a70adb3c6baf1de845ddf9d42e9d19dfc"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DDciFile.html#a70adb3c6baf1de845ddf9d42e9d19dfc">childrenCount</a> (const QString &amp;dir) const</td></tr>
+<tr class="memdesc:a70adb3c6baf1de845ddf9d42e9d19dfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">子文件计数 <br /></td></tr>
+<tr class="separator:a70adb3c6baf1de845ddf9d42e9d19dfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa148decad420f1b8b193c53b1f89d301"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DDciFile.html#aa148decad420f1b8b193c53b1f89d301">exists</a> (const QString &amp;filePath) const</td></tr>
+<tr class="memdesc:aa148decad420f1b8b193c53b1f89d301"><td class="mdescLeft">&#160;</td><td class="mdescRight">判断文件是否存在  <a href="classDtk_1_1Core_1_1DDciFile.html#aa148decad420f1b8b193c53b1f89d301">更多...</a><br /></td></tr>
+<tr class="separator:aa148decad420f1b8b193c53b1f89d301"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad80390324f3d872bb6b68b9143c85449"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDtk_1_1Core_1_1DDciFile.html#a4ca74a65e62766b5517f2f69a9d96eb7">FileType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DDciFile.html#ad80390324f3d872bb6b68b9143c85449">type</a> (const QString &amp;filePath) const</td></tr>
+<tr class="memdesc:ad80390324f3d872bb6b68b9143c85449"><td class="mdescLeft">&#160;</td><td class="mdescRight">判断文件类型  <a href="classDtk_1_1Core_1_1DDciFile.html#ad80390324f3d872bb6b68b9143c85449">更多...</a><br /></td></tr>
+<tr class="separator:ad80390324f3d872bb6b68b9143c85449"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23f6f1ef5719eb4958dcad77014fdf78"><td class="memItemLeft" align="right" valign="top">QByteArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DDciFile.html#a23f6f1ef5719eb4958dcad77014fdf78">dataRef</a> (const QString &amp;filePath) const</td></tr>
+<tr class="memdesc:a23f6f1ef5719eb4958dcad77014fdf78"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取dci内部文件的数据,以一种引用(软连接)的方式获取,不会产生数据的的复制  <a href="classDtk_1_1Core_1_1DDciFile.html#a23f6f1ef5719eb4958dcad77014fdf78">更多...</a><br /></td></tr>
+<tr class="separator:a23f6f1ef5719eb4958dcad77014fdf78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0023a70e2e2508776111e8a79c68264e"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DDciFile.html#a0023a70e2e2508776111e8a79c68264e">name</a> (const QString &amp;filePath) const</td></tr>
+<tr class="memdesc:a0023a70e2e2508776111e8a79c68264e"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取dci内文件的文件名  <a href="classDtk_1_1Core_1_1DDciFile.html#a0023a70e2e2508776111e8a79c68264e">更多...</a><br /></td></tr>
+<tr class="separator:a0023a70e2e2508776111e8a79c68264e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af26f5caf4874d554f60ba665aa7154be"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DDciFile.html#af26f5caf4874d554f60ba665aa7154be">symlinkTarget</a> (const QString &amp;filePath, bool originData=false) const</td></tr>
+<tr class="memdesc:af26f5caf4874d554f60ba665aa7154be"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取软链目标  <a href="classDtk_1_1Core_1_1DDciFile.html#af26f5caf4874d554f60ba665aa7154be">更多...</a><br /></td></tr>
+<tr class="separator:af26f5caf4874d554f60ba665aa7154be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4d976d769cc58983cd71c649b2153a6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DDciFile.html#aa4d976d769cc58983cd71c649b2153a6">mkdir</a> (const QString &amp;filePath)</td></tr>
+<tr class="memdesc:aa4d976d769cc58983cd71c649b2153a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建目录(注意：此目录指的是在dci文件内部的目录，而不是指的是传统目录)  <a href="classDtk_1_1Core_1_1DDciFile.html#aa4d976d769cc58983cd71c649b2153a6">更多...</a><br /></td></tr>
+<tr class="separator:aa4d976d769cc58983cd71c649b2153a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42d40c25307a2442f1e3f2500d998266"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DDciFile.html#a42d40c25307a2442f1e3f2500d998266">writeFile</a> (const QString &amp;filePath, const QByteArray &amp;data, bool override=false)</td></tr>
+<tr class="memdesc:a42d40c25307a2442f1e3f2500d998266"><td class="mdescLeft">&#160;</td><td class="mdescRight">写入文件  <a href="classDtk_1_1Core_1_1DDciFile.html#a42d40c25307a2442f1e3f2500d998266">更多...</a><br /></td></tr>
+<tr class="separator:a42d40c25307a2442f1e3f2500d998266"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf030bfaa15e25a023af68b997d7ccb7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DDciFile.html#acf030bfaa15e25a023af68b997d7ccb7">remove</a> (const QString &amp;filePath)</td></tr>
+<tr class="memdesc:acf030bfaa15e25a023af68b997d7ccb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">移除文件  <a href="classDtk_1_1Core_1_1DDciFile.html#acf030bfaa15e25a023af68b997d7ccb7">更多...</a><br /></td></tr>
+<tr class="separator:acf030bfaa15e25a023af68b997d7ccb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0355e819d6be4e3082b2019b0be158d3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DDciFile.html#a0355e819d6be4e3082b2019b0be158d3">rename</a> (const QString &amp;filePath, const QString &amp;newFilePath, bool override=false)</td></tr>
+<tr class="memdesc:a0355e819d6be4e3082b2019b0be158d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">重命名文件  <a href="classDtk_1_1Core_1_1DDciFile.html#a0355e819d6be4e3082b2019b0be158d3">更多...</a><br /></td></tr>
+<tr class="separator:a0355e819d6be4e3082b2019b0be158d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a381eb9ecdb21a571c481b1b751b3f20e"><td class="memItemLeft" align="right" valign="top"><a id="a381eb9ecdb21a571c481b1b751b3f20e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>copy</b> (const QString &amp;from, const QString &amp;to)</td></tr>
+<tr class="separator:a381eb9ecdb21a571c481b1b751b3f20e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae27cc589ce2aac5a517c2a43ae7705d8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DDciFile.html#ae27cc589ce2aac5a517c2a43ae7705d8">link</a> (const QString &amp;source, const QString &amp;to)</td></tr>
+<tr class="memdesc:ae27cc589ce2aac5a517c2a43ae7705d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">链接文件  <a href="classDtk_1_1Core_1_1DDciFile.html#ae27cc589ce2aac5a517c2a43ae7705d8">更多...</a><br /></td></tr>
+<tr class="separator:ae27cc589ce2aac5a517c2a43ae7705d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a61b807d6d6ce356e5a01d652aab63521"><td class="memItemLeft" align="right" valign="top"><a id="a61b807d6d6ce356e5a01d652aab63521"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>registerFileEngine</b> ()</td></tr>
+<tr class="separator:a61b807d6d6ce356e5a01d652aab63521"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9566824a8626cb7ea73d01e8d3e5756c"><td class="memItemLeft" align="right" valign="top"><a id="a9566824a8626cb7ea73d01e8d3e5756c"></a>
+static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DDciFile.html#a9566824a8626cb7ea73d01e8d3e5756c">metadataSizeV1</a> ()</td></tr>
+<tr class="memdesc:a9566824a8626cb7ea73d01e8d3e5756c"><td class="mdescLeft">&#160;</td><td class="mdescRight">MAGIC_SIZE + VERSION_SIZE + FILE_COUNT_SIZE: 4+1+3 = 8 <br /></td></tr>
+<tr class="separator:a9566824a8626cb7ea73d01e8d3e5756c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pro_methods_classDtk_1_1Core_1_1DObject"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classDtk_1_1Core_1_1DObject')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="classDtk_1_1Core_1_1DObject.html">Dtk::Core::DObject</a></td></tr>
+<tr class="memitem:adbed6e66a1393a6045fb24e50300db7f inherit pro_methods_classDtk_1_1Core_1_1DObject"><td class="memItemLeft" align="right" valign="top"><a id="adbed6e66a1393a6045fb24e50300db7f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DObject.html#adbed6e66a1393a6045fb24e50300db7f">DObject</a> (<a class="el" href="classDtk_1_1Core_1_1DObject.html">DObject</a> *parent=nullptr)</td></tr>
+<tr class="memdesc:adbed6e66a1393a6045fb24e50300db7f inherit pro_methods_classDtk_1_1Core_1_1DObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">只有在不需要数据成员的派生类中才会使用 <em>parent</em> 父类指针 <br /></td></tr>
+<tr class="separator:adbed6e66a1393a6045fb24e50300db7f inherit pro_methods_classDtk_1_1Core_1_1DObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64d70b82c64f7d7e71d4775854b25206 inherit pro_methods_classDtk_1_1Core_1_1DObject"><td class="memItemLeft" align="right" valign="top"><a id="a64d70b82c64f7d7e71d4775854b25206"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DObject.html#a64d70b82c64f7d7e71d4775854b25206">DObject</a> (<a class="el" href="classDtk_1_1Core_1_1DObjectPrivate.html">DObjectPrivate</a> &amp;dd, <a class="el" href="classDtk_1_1Core_1_1DObject.html">DObject</a> *parent=nullptr)</td></tr>
+<tr class="memdesc:a64d70b82c64f7d7e71d4775854b25206 inherit pro_methods_classDtk_1_1Core_1_1DObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">在派生类中比较常用的构造函数 <em>dd</em> 私有类对象 <br /></td></tr>
+<tr class="separator:a64d70b82c64f7d7e71d4775854b25206 inherit pro_methods_classDtk_1_1Core_1_1DObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classDtk_1_1Core_1_1DObject"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classDtk_1_1Core_1_1DObject')"><img src="closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="classDtk_1_1Core_1_1DObject.html">Dtk::Core::DObject</a></td></tr>
+<tr class="memitem:a1a49828e8ece06afef896e26135f23c0 inherit pro_attribs_classDtk_1_1Core_1_1DObject"><td class="memItemLeft" align="right" valign="top"><a id="a1a49828e8ece06afef896e26135f23c0"></a>
+QScopedPointer&lt; <a class="el" href="classDtk_1_1Core_1_1DObjectPrivate.html">DObjectPrivate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>d_d_ptr</b></td></tr>
+<tr class="separator:a1a49828e8ece06afef896e26135f23c0 inherit pro_attribs_classDtk_1_1Core_1_1DObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p><a class="el" href="ddcifile_8h.html">ddcifile.h</a> 是关于dci文件相关操作的一个类,实现了 DCI 文件的逻辑。其只是对数据的打包 dci文件的结构路径如下: </p>
+<p><img src="dciicon-tree.png" alt="" class="inline" title="DCI图标结构路径"/> </p>
+</div><h2 class="groupheader">成员枚举类型说明</h2>
+<a id="a4ca74a65e62766b5517f2f69a9d96eb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ca74a65e62766b5517f2f69a9d96eb7">&#9670;&nbsp;</a></span>FileType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classDtk_1_1Core_1_1DDciFile.html#a4ca74a65e62766b5517f2f69a9d96eb7">Dtk::Core::DDciFile::FileType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>dci文件类型 </p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">值   </th><th class="markdownTableHeadNone">序号   </th><th class="markdownTableHeadNone">含义    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">UnknowFile   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">未知文件    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">File   </td><td class="markdownTableBodyNone">1   </td><td class="markdownTableBodyNone">文件    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Directory   </td><td class="markdownTableBodyNone">2   </td><td class="markdownTableBodyNone">目录    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Symlink   </td><td class="markdownTableBodyNone">3   </td><td class="markdownTableBodyNone">软连接   </td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a23f6f1ef5719eb4958dcad77014fdf78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23f6f1ef5719eb4958dcad77014fdf78">&#9670;&nbsp;</a></span>dataRef()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QByteArray Dtk::Core::DDciFile::dataRef </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>filePath</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取dci内部文件的数据,以一种引用(软连接)的方式获取,不会产生数据的的复制 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filePath</td><td>DCI图标结构路径 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">如果返回为空字符串,则说明此文件不存在或者无效</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa148decad420f1b8b193c53b1f89d301"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa148decad420f1b8b193c53b1f89d301">&#9670;&nbsp;</a></span>exists()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Dtk::Core::DDciFile::exists </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>filePath</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>判断文件是否存在 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filePath</td><td>DCI图标结构路径 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aad2a429bd9f3f7cc360c647c73349f53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad2a429bd9f3f7cc360c647c73349f53">&#9670;&nbsp;</a></span>isValid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Dtk::Core::DDciFile::isValid </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>判断读取的dci文件是否有效 </p>
+<p>当指定的dci文件未成功加载时,此函数会返回false,一般会出现在文件格式错误(不是一个dci格式的文件),或者是dci文件数据被篡改而无法识别的情况 </p><dl class="section note"><dt>注解</dt><dd>本类中所有涉及文件操作的函数均会首先执行此方法,故如无必要,无需手动确保文件是否有效 </dd></dl>
+
+</div>
+</div>
+<a id="ae27cc589ce2aac5a517c2a43ae7705d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae27cc589ce2aac5a517c2a43ae7705d8">&#9670;&nbsp;</a></span>link()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Dtk::Core::DDciFile::link </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>to</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>链接文件 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">source</td><td>文件源 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">to</td><td>链接目标 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>操作是否成功 </dd></dl>
+
+</div>
+</div>
+<a id="ac1678e4485e62e479ffadd5f39dea647"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1678e4485e62e479ffadd5f39dea647">&#9670;&nbsp;</a></span>list()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QStringList Dtk::Core::DDciFile::list </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>dir</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>onlyFileName</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>列出文件列表 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dir</td><td>文件夹地址 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">onlyFileName</td><td>是否只显示文件名 默认为false </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa4d976d769cc58983cd71c649b2153a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4d976d769cc58983cd71c649b2153a6">&#9670;&nbsp;</a></span>mkdir()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Dtk::Core::DDciFile::mkdir </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>filePath</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>创建目录(注意：此目录指的是在dci文件内部的目录，而不是指的是传统目录) </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filePath</td><td>DCI图标结构路径 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>操作是否成功 </dd></dl>
+
+</div>
+</div>
+<a id="a0023a70e2e2508776111e8a79c68264e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0023a70e2e2508776111e8a79c68264e">&#9670;&nbsp;</a></span>name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString Dtk::Core::DDciFile::name </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>filePath</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取dci内文件的文件名 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filePath</td><td>DCI图标结构路径 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">如果返回为空字符串,则说明此文件不存在或者无效</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="acf030bfaa15e25a023af68b997d7ccb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf030bfaa15e25a023af68b997d7ccb7">&#9670;&nbsp;</a></span>remove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Dtk::Core::DDciFile::remove </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>filePath</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>移除文件 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filePath</td><td>DCI图标结构路径 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>操作是否成功 </dd></dl>
+
+</div>
+</div>
+<a id="a0355e819d6be4e3082b2019b0be158d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0355e819d6be4e3082b2019b0be158d3">&#9670;&nbsp;</a></span>rename()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Dtk::Core::DDciFile::rename </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>filePath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>newFilePath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>override</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>重命名文件 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filePath</td><td>DCI图标结构路径 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">newFilePath</td><td>新文件的路径 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">override</td><td>当文件已经存在时,是否覆盖此文件,默认状态下不执行覆盖,会在lasterror中记录"The target file is existed"错误信息。 如果传入为true,则会执行覆盖操作,** 此操作不可逆 **。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>操作是否成功 </dd></dl>
+
+</div>
+</div>
+<a id="af26f5caf4874d554f60ba665aa7154be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af26f5caf4874d554f60ba665aa7154be">&#9670;&nbsp;</a></span>symlinkTarget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString Dtk::Core::DDciFile::symlinkTarget </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>filePath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>originData</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取软链目标 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filePath</td><td>DCI图标结构路径 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">originData</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">如果返回为空字符串,则说明此文件不存在或者无效</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>链接的目标只能是“不存在的路径”、“文件”、“链接”,不可是目录 </dd></dl>
+
+</div>
+</div>
+<a id="aec9adf992851c7fd12fce29734714354"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec9adf992851c7fd12fce29734714354">&#9670;&nbsp;</a></span>toData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QByteArray Dtk::Core::DDciFile::toData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>返回dci文件的原始数据,以QByteArray形式返回 </p>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">如果返回为空字符串则说明读取失败</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDtk_1_1Core_1_1DDciFile.html#a42d40c25307a2442f1e3f2500d998266" title="写入文件">DDciFile::writeFile</a> </dd></dl>
+
+</div>
+</div>
+<a id="ad80390324f3d872bb6b68b9143c85449"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad80390324f3d872bb6b68b9143c85449">&#9670;&nbsp;</a></span>type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDtk_1_1Core_1_1DDciFile.html#a4ca74a65e62766b5517f2f69a9d96eb7">DDciFile::FileType</a> Dtk::Core::DDciFile::type </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>filePath</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>判断文件类型 </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDtk_1_1Core_1_1DDciFile.html#a4ca74a65e62766b5517f2f69a9d96eb7" title="dci文件类型">DDciFile::FileType</a> </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filePath</td><td>DCI图标结构路径 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a42d40c25307a2442f1e3f2500d998266"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42d40c25307a2442f1e3f2500d998266">&#9670;&nbsp;</a></span>writeFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Dtk::Core::DDciFile::writeFile </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>filePath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QByteArray &amp;&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>override</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>写入文件 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filePath</td><td>DCI图标结构路径 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>数据内容 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">override</td><td>当文件已经存在时,是否覆盖此文件,默认状态下不执行覆盖,会在lasterror中记录"The target file is existed"错误信息。 如果传入为true,则会执行覆盖操作,** 此操作不可逆 **。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>操作是否成功 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>QByteArray <a class="el" href="classDtk_1_1Core_1_1DDciFile.html#aec9adf992851c7fd12fce29734714354" title="返回dci文件的原始数据,以QByteArray形式返回">DDciFile::toData()</a> </dd></dl>
+
+</div>
+</div>
+<a id="ab53eebe0e429de9a7c31703bcf197c77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab53eebe0e429de9a7c31703bcf197c77">&#9670;&nbsp;</a></span>writeToDevice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Dtk::Core::DDciFile::writeToDevice </td>
+          <td>(</td>
+          <td class="paramtype">QIODevice *&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>写入到设备,设备指的是qt中的io设备,可以在qt文档中找到相关信息 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>IO设备 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a href="https://doc.qt.io/qt-6/qiodevice.html">QIODevice</a> </dd></dl>
+
+</div>
+</div>
+<a id="abfea543b6537ed867d22fe4b7c844a04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfea543b6537ed867d22fe4b7c844a04">&#9670;&nbsp;</a></span>writeToFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Dtk::Core::DDciFile::writeToFile </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>fileName</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>写入文件,在做完对于dci文件的操作之后调用此接口,为保存的作用 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fileName</td><td>文件名 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dtkcore/include/dci/<a class="el" href="ddcifile_8h_source.html">ddcifile.h</a></li>
+<li>dtkcore/docs/dci/ddcifile.zh_CN.dox</li>
+<li>dtkcore/src/dci/ddcifile.cpp</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>Dtk</b></li><li class="navelem"><b>Core</b></li><li class="navelem"><a class="el" href="classDtk_1_1Core_1_1DDciFile.html">DDciFile</a></li>
+    <li class="footer">文档生成时间:doxtime</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,411 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: 类成员</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="change address" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('functions_i.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="contents">
+<div class="textblock">这里列出了所有文档化的类成员，并附带类所属的文件:</div>
+
+<h3><a id="index_i"></a>- i -</h3><ul>
+<li>icon()
+: <a class="el" href="classDDialog.html#ad86a15911eebdc43f7809a4fa759ce9d">DDialog</a>
+</li>
+<li>iconClicked()
+: <a class="el" href="classDSlider.html#a5c31c68ec5cf3224802091d2cfe0f7d1">DSlider</a>
+</li>
+<li>iconPixmap()
+: <a class="el" href="classDDialog.html#a011f9e5b368375402d9c482c3af4bd83">DDialog</a>
+</li>
+<li>iconSize()
+: <a class="el" href="classDButtonBoxButton.html#a6aa9de996d63db2f140fd793bd2f7681">DButtonBoxButton</a>
+, <a class="el" href="classDIconButton.html#ab7f787e8752b8d0f88c02f8aec2fc3ce">DIconButton</a>
+, <a class="el" href="classDTabBar.html#acc784f59ca02accd5523233f0ee2776f">DTabBar</a>
+, <a class="el" href="classDViewItemAction.html#a071bfd942854c2815bbdf6052dc81415">DViewItemAction</a>
+</li>
+<li>iconThemeChanged()
+: <a class="el" href="classDApplication.html#aa04243a273bd99fe3ce7e12f3124c648">DApplication</a>
+</li>
+<li>id()
+: <a class="el" href="classDButtonBox.html#abee8987391a8a391f2282dab56036886">DButtonBox</a>
+, <a class="el" href="classDDrawerGroup.html#a1f6a9a3ed0330ae41c813bede3aacfa5">DDrawerGroup</a>
+</li>
+<li>ignoreEnvironmentPattern()
+: <a class="el" href="classDtk_1_1Core_1_1ConsoleAppender.html#ab8debafc2516e8c92108a1f5054cfbd9">Dtk::Core::ConsoleAppender</a>
+</li>
+<li>ignoreVirtualKeyboard()
+: <a class="el" href="classDApplication.html#aca3455f1163aa9cc674dfe76cb734887">DApplication</a>
+</li>
+<li>image()
+: <a class="el" href="classDImageViewer.html#ae504ac1cbe5ca720cb540f4da4b2c159">DImageViewer</a>
+</li>
+<li>imageChanged()
+: <a class="el" href="classDImageViewer.html#ac5adf77bc60e4fa05e0dfe0528c48b75">DImageViewer</a>
+</li>
+<li>imageSource
+: <a class="el" href="classDLoadingIndicator.html#ae117367f775533a5c6be22ebd0ec7dba">DLoadingIndicator</a>
+</li>
+<li>indexOf()
+: <a class="el" href="classDStackWidget.html#ad2e6adcd1d8bb1cef87ac41ba2e4bc96">DStackWidget</a>
+</li>
+<li>init()
+: <a class="el" href="classDStyleOption.html#af663e511395279eda9bc9a2e7360498f">DStyleOption</a>
+, <a class="el" href="classDStyleOptionButton.html#af561d3cec57b2e58e8a43489e77a7075">DStyleOptionButton</a>
+, <a class="el" href="classDStyleOptionFloatingWidget.html#af663e511395279eda9bc9a2e7360498f">DStyleOptionFloatingWidget</a>
+, <a class="el" href="classDStyleOptionLineEdit.html#a5a26da9c610eeb8b8f77738813ad326a">DStyleOptionLineEdit</a>
+</li>
+<li>initPainter()
+: <a class="el" href="classDLabel.html#aeed6953db9b354e79079d1e7ee7b2b62">DLabel</a>
+</li>
+<li>initStyleOption()
+: <a class="el" href="classDCommandLinkButton.html#a7f84c293340be9fc0bb756142be6977b">DCommandLinkButton</a>
+, <a class="el" href="classDFloatingWidget.html#a8373bb2e19368f95e48bebe2ae291fec">DFloatingWidget</a>
+, <a class="el" href="classDSwitchButton.html#ae23952997e5ed6c52b09471db57914c4">DSwitchButton</a>
+, <a class="el" href="classDWarningButton.html#a5843d414bfc9720109d17ee02296f9b8">DWarningButton</a>
+</li>
+<li>initUI()
+: <a class="el" href="classDWaterProgressPrivate.html#a9479aa32dece5137a6f6751faed7b89f">DWaterProgressPrivate</a>
+</li>
+<li>initWaterSettings()
+: <a class="el" href="classDPrintPreviewDialogPrivate.html#a7b3dd8b06f40cc3aed37893dbd4a1270">DPrintPreviewDialogPrivate</a>
+</li>
+<li>inputMode
+: <a class="el" href="classDInputDialog.html#a979b3976777ba1ecc121e6dd67a1ca8f">DInputDialog</a>
+</li>
+<li>insertButton()
+: <a class="el" href="classDDialog.html#af4b20c40095b4d718f5bb25791a62d13">DDialog</a>
+</li>
+<li>insertButtons()
+: <a class="el" href="classDDialog.html#accf07670403737a1b3b7341e0a406f15">DDialog</a>
+</li>
+<li>insertContent()
+: <a class="el" href="classDDialog.html#a069f29ef0379a82d810201bed983bcac">DDialog</a>
+</li>
+<li>insertCrumb()
+: <a class="el" href="classDCrumbEdit.html#ac67b2be4e92d2868a2cfeb7f72eab65b">DCrumbEdit</a>
+</li>
+<li>insertFromMimeData()
+: <a class="el" href="classDCrumbEdit.html#ad3abd6afca3e0b64b6e0eaecb3f15a86">DCrumbEdit</a>
+</li>
+<li>insertItem()
+: <a class="el" href="classDFlowLayout.html#add3c8bdc620b58797847010257b3043d">DFlowLayout</a>
+</li>
+<li>insertLayout()
+: <a class="el" href="classDFlowLayout.html#abd3290649ff9fead5422b0c7009663f7">DFlowLayout</a>
+</li>
+<li>insertSpacerItem()
+: <a class="el" href="classDFlowLayout.html#af001b54375f07343857f7d0f19affc57">DFlowLayout</a>
+</li>
+<li>insertSpacing()
+: <a class="el" href="classDDialog.html#a9b614d1933c9ad3be8fa56014c023677">DDialog</a>
+, <a class="el" href="classDFlowLayout.html#af38f734c02e01cc90085b8453b18712a">DFlowLayout</a>
+</li>
+<li>insertStretch()
+: <a class="el" href="classDFlowLayout.html#a41f5302b0afb2693e935d45d69a86174">DFlowLayout</a>
+</li>
+<li>insertTab()
+: <a class="el" href="classDTabBar.html#af9023d2dde0b662e4b1bca198cc37cc1">DTabBar</a>
+</li>
+<li>insertWidget()
+: <a class="el" href="classDFlowLayout.html#a4606788589276afac1f53faa5bd75007">DFlowLayout</a>
+, <a class="el" href="classDStackWidget.html#aa937c1b7849aaf0cd00e176ab8b1ae67">DStackWidget</a>
+</li>
+<li>instance()
+: <a class="el" href="classDFontSizeManager.html#a4d38b4d13ee70801eb8f9f53851469b4">DFontSizeManager</a>
+, <a class="el" href="classDGuiApplicationHelper.html#a4a9d84ced740d42bf39666aaa4d3c089">DGuiApplicationHelper</a>
+, <a class="el" href="classDMessageManager.html#a73e4a26ac05586b5b46c7c92e4c69c18">DMessageManager</a>
+, <a class="el" href="classDThemeManager.html#a6740a7b80d374761330d8ce9731c8bbd">DThemeManager</a>
+, <a class="el" href="classDWindowManagerHelper.html#ac7c478902c61d28b137ff2198164d737">DWindowManagerHelper</a>
+</li>
+<li>interface
+: <a class="el" href="classDDBusData.html#a868b8b2a0a1d3a3b627508145ccedd02">DDBusData</a>
+, <a class="el" href="classDDBusSender.html#a1e85af9e9660215b62a5f9009bae9edd">DDBusSender</a>
+</li>
+<li>internalPropGet()
+: <a class="el" href="classDtk_1_1Core_1_1DDBusExtendedAbstractInterface.html#a8dd3468e0914aa60432f32ee7223edb6">Dtk::Core::DDBusExtendedAbstractInterface</a>
+</li>
+<li>internalPropSet()
+: <a class="el" href="classDtk_1_1Core_1_1DDBusExtendedAbstractInterface.html#a8649689cac0520206aba73f09e65b0d2">Dtk::Core::DDBusExtendedAbstractInterface</a>
+</li>
+<li>intMaximum
+: <a class="el" href="classDInputDialog.html#ade7da6e4faebe51bdea4b8f4db5cb020">DInputDialog</a>
+</li>
+<li>intMinimum
+: <a class="el" href="classDInputDialog.html#a41156a2fefb1790727dc93895a8cf6a0">DInputDialog</a>
+</li>
+<li>intStep
+: <a class="el" href="classDInputDialog.html#a61f80f8e07deeb51cb809318dff840aa">DInputDialog</a>
+</li>
+<li>intValue
+: <a class="el" href="classDInputDialog.html#a884c8f1b31c1ba76dd45c9231e2a7284">DInputDialog</a>
+</li>
+<li>intValueChanged()
+: <a class="el" href="classDInputDialog.html#a7dcb01a2055a92f73f28bd52ded9c8eb">DInputDialog</a>
+</li>
+<li>intValueSelected()
+: <a class="el" href="classDInputDialog.html#a2f8d95bd17d84bce18ebfd21da60554c">DInputDialog</a>
+</li>
+<li>InWidgetBlend
+: <a class="el" href="classDBlurEffectWidget.html#ab4a45494e2b797a5f1cf5899bb737e27a8d102c67159e2097f8429b48d38e3bb1">DBlurEffectWidget</a>
+</li>
+<li>InWindowBlend
+: <a class="el" href="classDBlurEffectWidget.html#ab4a45494e2b797a5f1cf5899bb737e27a6c26cbeb53ad47fd5d5ad8cde32ece9c">DBlurEffectWidget</a>
+</li>
+<li>isAcclimatizedVirtualKeyboard()
+: <a class="el" href="classDApplication.html#a22635d115c609cef195c83c77ce6db8b">DApplication</a>
+</li>
+<li>isActiveRect()
+: <a class="el" href="classDListView.html#ac7562ca28b793119dc60d3195c533fbb">DListView</a>
+</li>
+<li>isAlert()
+: <a class="el" href="classDAlertControl.html#a1a96daefaecc254f0562029e0d205ff8">DAlertControl</a>
+, <a class="el" href="classDSpinBox.html#a922d0ab1a23a0d1b23253319cfd1c591">DSpinBox</a>
+</li>
+<li>isBinding()
+: <a class="el" href="classDAnchorsBase.html#aca960f4d639cf1afe41772e06b7def03">DAnchorsBase</a>
+</li>
+<li>isClearButtonEnabled()
+: <a class="el" href="classDLineEdit.html#a0d800b8ca598dbdb14864ee3e4b08f4a">DLineEdit</a>
+</li>
+<li>isClickable()
+: <a class="el" href="classDViewItemAction.html#aaccc8e3eb655336b24e5f7cbcfa0668b">DViewItemAction</a>
+</li>
+<li>isComboBoxEditable()
+: <a class="el" href="classDInputDialog.html#a5a0e80801fed5df8855518f0c06323e7">DInputDialog</a>
+</li>
+<li>isCommunityEdition()
+: <a class="el" href="classDtk_1_1Core_1_1DSysInfo.html#a2e72c98f4270e26918dc20a94f652590">Dtk::Core::DSysInfo</a>
+</li>
+<li>isDDE()
+: <a class="el" href="classDtk_1_1Core_1_1DSysInfo.html#a398f5ab3b2041dcb561a8894b33c8e26">Dtk::Core::DSysInfo</a>
+</li>
+<li>IsDeepinEnvironment
+: <a class="el" href="classDGuiApplicationHelper.html#af2609d4dc9b44f180e93c23f2bc1155cad7394061402858d07d1c3a012130460b">DGuiApplicationHelper</a>
+</li>
+<li>IsDeepinPlatformTheme
+: <a class="el" href="classDGuiApplicationHelper.html#af2609d4dc9b44f180e93c23f2bc1155cae9fd7d42031f1ae533fb8bac7f22ecf5">DGuiApplicationHelper</a>
+</li>
+<li>isDXcbPlatform()
+: <a class="el" href="classDApplication.html#a2c4e9f8aeb5225354370cb223504c6ec">DApplication</a>
+</li>
+<li>IsDXcbPlatform
+: <a class="el" href="classDGuiApplicationHelper.html#af2609d4dc9b44f180e93c23f2bc1155caebd2551a8fbf187ef3c77fea39afc8f4">DGuiApplicationHelper</a>
+</li>
+<li>isDXcbPlatform()
+: <a class="el" href="classDPlatformHandle.html#a35f657dbe43e39173d3273c606a90e1a">DPlatformHandle</a>
+</li>
+<li>isDXcbWindow()
+: <a class="el" href="classDMainWindow.html#a00418b7294d1df29fe69e16abea8308f">DMainWindow</a>
+</li>
+<li>isEchoMode
+: <a class="el" href="classDPasswordEdit.html#a71cb87707ffbb69109000c0ada23bb82">DPasswordEdit</a>
+</li>
+<li>isEnabledDXcb()
+: <a class="el" href="classDPlatformHandle.html#adf6e1f96fe6c171bff4df8b8122bacca">DPlatformHandle</a>
+, <a class="el" href="classDPlatformWindowHandle.html#a39dc22cf756d9158512151c974891d7d">DPlatformWindowHandle</a>
+</li>
+<li>isEnabledNoTitlebar()
+: <a class="el" href="classDPlatformHandle.html#ac9a2fc45da432972e4c484c285701f68">DPlatformHandle</a>
+</li>
+<li>isFlat()
+: <a class="el" href="classDIconButton.html#aa2662ada83b270302e3cf18c4dca70ed">DIconButton</a>
+</li>
+<li>isFull()
+: <a class="el" href="classDBlurEffectWidget.html#a833eba01afb8853b8199fcb8179022a0">DBlurEffectWidget</a>
+</li>
+<li>isHidden()
+: <a class="el" href="classDtk_1_1Core_1_1DSettingsGroup.html#a113fe4d2556d340e5fa3bc867a182225">Dtk::Core::DSettingsGroup</a>
+, <a class="el" href="classDtk_1_1Core_1_1DSettingsOption.html#a2732dbf68d81b850dd4b76fe1f7a74ec">Dtk::Core::DSettingsOption</a>
+</li>
+<li>isMaximized
+: <a class="el" href="classDWindowMaxButton.html#a644b336a9441697e5074a45c26dfde60">DWindowMaxButton</a>
+</li>
+<li>isPlaying()
+: <a class="el" href="classDSpinner.html#a13337e836802c26c840173add40839d8">DSpinner</a>
+</li>
+<li>isReadOnly()
+: <a class="el" href="classDIpv4LineEdit.html#a926d3b426497e94173ee669f9280b118">DIpv4LineEdit</a>
+</li>
+<li>isSpecialEffectsEnvironment()
+: <a class="el" href="classDGuiApplicationHelper.html#a52569ac7a7e3a57f2d7e2466791e57b1">DGuiApplicationHelper</a>
+</li>
+<li>isTabEnabled()
+: <a class="el" href="classDTabBar.html#a78eb45ac610258bd7db7bfcacec1917a">DTabBar</a>
+</li>
+<li>IsTableEnvironment
+: <a class="el" href="classDGuiApplicationHelper.html#af2609d4dc9b44f180e93c23f2bc1155caa2f8de4bba85fadf6df1e46fa09ae6a9">DGuiApplicationHelper</a>
+</li>
+<li>isTabletEnvironment()
+: <a class="el" href="classDGuiApplicationHelper.html#a80c3706fe396568897da92d9db1e882c">DGuiApplicationHelper</a>
+</li>
+<li>isTextAlert()
+: <a class="el" href="classDInputDialog.html#a02457f7495e17b481a549a6e23b3f7d4">DInputDialog</a>
+</li>
+<li>isValid()
+: <a class="el" href="classDtk_1_1Core_1_1DDciFile.html#aad2a429bd9f3f7cc360c647c73349f53">Dtk::Core::DDciFile</a>
+</li>
+<li>isWorking()
+: <a class="el" href="classDMPRISControl.html#ae5ee6e6372a85deb563a96f19c564fb2">DMPRISControl</a>
+</li>
+<li>IsXWindowPlatform
+: <a class="el" href="classDGuiApplicationHelper.html#af2609d4dc9b44f180e93c23f2bc1155ca0477d73aad74e1f0f28ef39745a85fec">DGuiApplicationHelper</a>
+</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">文档生成时间:doxtime</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

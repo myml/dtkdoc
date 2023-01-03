@@ -1,0 +1,416 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: DStyledIconEngine类 参考</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="change address" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classDStyledIconEngine.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="classDStyledIconEngine-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">DStyledIconEngine类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 DStyledIconEngine 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classDStyledIconEngine.png" alt=""/>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:ac0e357938067ee372aaab9b0bfe470d1"><td class="memItemLeft" align="right" valign="top"><a id="ac0e357938067ee372aaab9b0bfe470d1"></a>
+typedef std::function&lt; void(QPainter *, const QRectF &amp;rect)&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>DrawFun</b></td></tr>
+<tr class="separator:ac0e357938067ee372aaab9b0bfe470d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ae16e51825700dd586bf4c40c1c015c2c"><td class="memItemLeft" align="right" valign="top"><a id="ae16e51825700dd586bf4c40c1c015c2c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDStyledIconEngine.html#ae16e51825700dd586bf4c40c1c015c2c">DStyledIconEngine</a> (DrawFun drawFun, const QString &amp;iconName=QString())</td></tr>
+<tr class="memdesc:ae16e51825700dd586bf4c40c1c015c2c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDStyledIconEngine.html#ae16e51825700dd586bf4c40c1c015c2c" title="DStyledIconEngine::DStyledIconEngine drawFun iconName">DStyledIconEngine::DStyledIconEngine</a> <em>drawFun</em> <em>iconName</em> <br /></td></tr>
+<tr class="separator:ae16e51825700dd586bf4c40c1c015c2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13987fdfd95ec89a27276432a31b8650"><td class="memItemLeft" align="right" valign="top"><a id="a13987fdfd95ec89a27276432a31b8650"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDStyledIconEngine.html#a13987fdfd95ec89a27276432a31b8650">bindDrawFun</a> (DrawFun drawFun)</td></tr>
+<tr class="memdesc:a13987fdfd95ec89a27276432a31b8650"><td class="mdescLeft">&#160;</td><td class="mdescRight">DStyledIconEngine::bindDrawFun活页夹 <em>drawFun</em> <br /></td></tr>
+<tr class="separator:a13987fdfd95ec89a27276432a31b8650"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacb0fa3184b53db72ac9453a3e0673df"><td class="memItemLeft" align="right" valign="top"><a id="aacb0fa3184b53db72ac9453a3e0673df"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDStyledIconEngine.html#aacb0fa3184b53db72ac9453a3e0673df">setIconName</a> (const QString &amp;name)</td></tr>
+<tr class="memdesc:aacb0fa3184b53db72ac9453a3e0673df"><td class="mdescLeft">&#160;</td><td class="mdescRight">DStyledIconEngine::setIconName设置icon名称 <em>name</em> 名称 <br /></td></tr>
+<tr class="separator:aacb0fa3184b53db72ac9453a3e0673df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04be99e1f71c28aeed5dcd01523c93cc"><td class="memItemLeft" align="right" valign="top">QPixmap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDStyledIconEngine.html#a04be99e1f71c28aeed5dcd01523c93cc">pixmap</a> (const QSize &amp;size, QIcon::Mode mode, QIcon::State state) override</td></tr>
+<tr class="memdesc:a04be99e1f71c28aeed5dcd01523c93cc"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDStyledIconEngine.html#a04be99e1f71c28aeed5dcd01523c93cc" title="DStyledIconEngine::pixmap">DStyledIconEngine::pixmap</a>  <a href="classDStyledIconEngine.html#a04be99e1f71c28aeed5dcd01523c93cc">更多...</a><br /></td></tr>
+<tr class="separator:a04be99e1f71c28aeed5dcd01523c93cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa444e38048795a8483eac482f6b96ec3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDStyledIconEngine.html#aa444e38048795a8483eac482f6b96ec3">paint</a> (QPainter *painter, const QPalette &amp;palette, const QRectF &amp;rect)</td></tr>
+<tr class="memdesc:aa444e38048795a8483eac482f6b96ec3"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDStyledIconEngine.html#aa444e38048795a8483eac482f6b96ec3" title="DStyledIconEngine::paint 重载paint painter 画家 palette 调色板 rect 绘制的矩形大小.">DStyledIconEngine::paint</a> 重载paint <em>painter</em> 画家 <em>palette</em> 调色板 <em>rect</em> 绘制的矩形大小.  <a href="classDStyledIconEngine.html#aa444e38048795a8483eac482f6b96ec3">更多...</a><br /></td></tr>
+<tr class="separator:aa444e38048795a8483eac482f6b96ec3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f616fe3ee488b71e33ccbe7eb8b56d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDStyledIconEngine.html#a0f616fe3ee488b71e33ccbe7eb8b56d9">paint</a> (QPainter *painter, const QRect &amp;rect, QIcon::Mode mode, QIcon::State state) override</td></tr>
+<tr class="memdesc:a0f616fe3ee488b71e33ccbe7eb8b56d9"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDStyledIconEngine.html#aa444e38048795a8483eac482f6b96ec3" title="DStyledIconEngine::paint 重载paint painter 画家 palette 调色板 rect 绘制的矩形大小.">DStyledIconEngine::paint</a>  <a href="classDStyledIconEngine.html#a0f616fe3ee488b71e33ccbe7eb8b56d9">更多...</a><br /></td></tr>
+<tr class="separator:a0f616fe3ee488b71e33ccbe7eb8b56d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a694e493ef7ad843477d86851e741c772"><td class="memItemLeft" align="right" valign="top">QIconEngine *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDStyledIconEngine.html#a694e493ef7ad843477d86851e741c772">clone</a> () const override</td></tr>
+<tr class="memdesc:a694e493ef7ad843477d86851e741c772"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDStyledIconEngine.html#a694e493ef7ad843477d86851e741c772" title="DStyledIconEngine::clone">DStyledIconEngine::clone</a>  <a href="classDStyledIconEngine.html#a694e493ef7ad843477d86851e741c772">更多...</a><br /></td></tr>
+<tr class="separator:a694e493ef7ad843477d86851e741c772"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39c9a649f844a6613d5a0b300c5c278e"><td class="memItemLeft" align="right" valign="top"><a id="a39c9a649f844a6613d5a0b300c5c278e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setFrontRole</b> (const QWidget *widget, QPalette::ColorRole role)</td></tr>
+<tr class="separator:a39c9a649f844a6613d5a0b300c5c278e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a048c2cd50efd6c6585c1c2280a08f517"><td class="memItemLeft" align="right" valign="top"><a id="a048c2cd50efd6c6585c1c2280a08f517"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>drawIcon</b> (const QIcon &amp;icon, QPainter *pa, const QRectF &amp;rect)</td></tr>
+<tr class="separator:a048c2cd50efd6c6585c1c2280a08f517"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:ac1e21d56a1fdd1beb49e8cc87e019e82"><td class="memItemLeft" align="right" valign="top"><a id="ac1e21d56a1fdd1beb49e8cc87e019e82"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>virtual_hook</b> (int id, void *data) override</td></tr>
+<tr class="separator:ac1e21d56a1fdd1beb49e8cc87e019e82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:a609ec892fef708142175ae8a9b3dc7f8"><td class="memItemLeft" align="right" valign="top"><a id="a609ec892fef708142175ae8a9b3dc7f8"></a>
+DrawFun&#160;</td><td class="memItemRight" valign="bottom"><b>m_drawFun</b> = nullptr</td></tr>
+<tr class="separator:a609ec892fef708142175ae8a9b3dc7f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7d3b991ca65068f1b6a9f9535c867f2"><td class="memItemLeft" align="right" valign="top"><a id="aa7d3b991ca65068f1b6a9f9535c867f2"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>m_iconName</b></td></tr>
+<tr class="separator:aa7d3b991ca65068f1b6a9f9535c867f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac695cfb7b4216519da6f1190900f38b2"><td class="memItemLeft" align="right" valign="top"><a id="ac695cfb7b4216519da6f1190900f38b2"></a>
+QPalette::ColorRole&#160;</td><td class="memItemRight" valign="bottom"><b>m_painterRole</b></td></tr>
+<tr class="separator:ac695cfb7b4216519da6f1190900f38b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a697b65d4ba41f9293ca67d59eeacab22"><td class="memItemLeft" align="right" valign="top"><a id="a697b65d4ba41f9293ca67d59eeacab22"></a>
+const QWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>m_widget</b></td></tr>
+<tr class="separator:a697b65d4ba41f9293ca67d59eeacab22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a694e493ef7ad843477d86851e741c772"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a694e493ef7ad843477d86851e741c772">&#9670;&nbsp;</a></span>clone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QIconEngine * DStyledIconEngine::clone </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classDStyledIconEngine.html#a694e493ef7ad843477d86851e741c772" title="DStyledIconEngine::clone">DStyledIconEngine::clone</a> </p>
+<dl class="section return"><dt>返回</dt><dd>返回一个该引擎的克隆.</dd></dl>
+<dl class="section see"><dt>参见</dt><dd>QIconEngine::clone() </dd></dl>
+
+</div>
+</div>
+<a id="aa444e38048795a8483eac482f6b96ec3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa444e38048795a8483eac482f6b96ec3">&#9670;&nbsp;</a></span>paint() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DStyledIconEngine::paint </td>
+          <td>(</td>
+          <td class="paramtype">QPainter *&#160;</td>
+          <td class="paramname"><em>painter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QPalette &amp;&#160;</td>
+          <td class="paramname"><em>palette</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QRectF &amp;&#160;</td>
+          <td class="paramname"><em>rect</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classDStyledIconEngine.html#aa444e38048795a8483eac482f6b96ec3" title="DStyledIconEngine::paint 重载paint painter 画家 palette 调色板 rect 绘制的矩形大小.">DStyledIconEngine::paint</a> 重载paint <em>painter</em> 画家 <em>palette</em> 调色板 <em>rect</em> 绘制的矩形大小. </p>
+<dl class="section see"><dt>参见</dt><dd>QIconEngine::paint() </dd></dl>
+
+</div>
+</div>
+<a id="a0f616fe3ee488b71e33ccbe7eb8b56d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f616fe3ee488b71e33ccbe7eb8b56d9">&#9670;&nbsp;</a></span>paint() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DStyledIconEngine::paint </td>
+          <td>(</td>
+          <td class="paramtype">QPainter *&#160;</td>
+          <td class="paramname"><em>painter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QRect &amp;&#160;</td>
+          <td class="paramname"><em>rect</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QIcon::Mode&#160;</td>
+          <td class="paramname"><em>mode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QIcon::State&#160;</td>
+          <td class="paramname"><em>state</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classDStyledIconEngine.html#aa444e38048795a8483eac482f6b96ec3" title="DStyledIconEngine::paint 重载paint painter 画家 palette 调色板 rect 绘制的矩形大小.">DStyledIconEngine::paint</a> </p>
+<p><em>painter</em> 画笔实例， <em>rect</em> 绘制的位置矩形，<em>mode</em> 图标模式，<em>state</em> 图标状态.</p>
+<dl class="section see"><dt>参见</dt><dd>QIconEngine::paint() </dd></dl>
+
+</div>
+</div>
+<a id="a04be99e1f71c28aeed5dcd01523c93cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04be99e1f71c28aeed5dcd01523c93cc">&#9670;&nbsp;</a></span>pixmap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QPixmap DStyledIconEngine::pixmap </td>
+          <td>(</td>
+          <td class="paramtype">const QSize &amp;&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QIcon::Mode&#160;</td>
+          <td class="paramname"><em>mode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QIcon::State&#160;</td>
+          <td class="paramname"><em>state</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classDStyledIconEngine.html#a04be99e1f71c28aeed5dcd01523c93cc" title="DStyledIconEngine::pixmap">DStyledIconEngine::pixmap</a> </p>
+<p><em>size</em> pixmap的大小， <em>mode</em> 图标模式的类型， <em>state</em> 图标的状态.</p>
+<dl class="section see"><dt>参见</dt><dd>QIconEngine::pixmap() </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dtkwidget/include/dtkwidget/widgets/<a class="el" href="dstyle_8h_source.html">dstyle.h</a></li>
+<li>dtkwidget/src/widgets/dstyle.cpp</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classDStyledIconEngine.html">DStyledIconEngine</a></li>
+    <li class="footer">文档生成时间:doxtime</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

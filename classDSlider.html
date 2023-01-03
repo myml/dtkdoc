@@ -1,0 +1,1121 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: DSlider类 参考</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="change address" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classDSlider.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#signals">信号</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="classDSlider-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">DSlider类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 DSlider 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classDSlider.png" alt=""/>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a6cbcd07c5c77f08a0650c869307c3aef"><td class="memItemLeft" align="right" valign="top"><a id="a6cbcd07c5c77f08a0650c869307c3aef"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>SliderIcons</b> { <b>LeftIcon</b>
+, <b>RightIcon</b>
+ }</td></tr>
+<tr class="separator:a6cbcd07c5c77f08a0650c869307c3aef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+信号</h2></td></tr>
+<tr class="memitem:a59dfaf1bf476a1288ac324c4a2c3a315"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSlider.html#a59dfaf1bf476a1288ac324c4a2c3a315">valueChanged</a> (int <a class="el" href="classDSlider.html#adcd55c60d7155ac1d955fffcb4789aa6">value</a>)</td></tr>
+<tr class="memdesc:a59dfaf1bf476a1288ac324c4a2c3a315"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号会在 slider 的 value 值改变时被发送  <a href="classDSlider.html#a59dfaf1bf476a1288ac324c4a2c3a315">更多...</a><br /></td></tr>
+<tr class="separator:a59dfaf1bf476a1288ac324c4a2c3a315"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a245fe580e35d20888d706eec8e6cfe9a"><td class="memItemLeft" align="right" valign="top"><a id="a245fe580e35d20888d706eec8e6cfe9a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>sliderPressed</b> ()</td></tr>
+<tr class="separator:a245fe580e35d20888d706eec8e6cfe9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ebc63d3e128907af409b9b4f2721a70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSlider.html#a2ebc63d3e128907af409b9b4f2721a70">sliderMoved</a> (int position)</td></tr>
+<tr class="memdesc:a2ebc63d3e128907af409b9b4f2721a70"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号会在 slider 拖动时被发送  <a href="classDSlider.html#a2ebc63d3e128907af409b9b4f2721a70">更多...</a><br /></td></tr>
+<tr class="separator:a2ebc63d3e128907af409b9b4f2721a70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbd859f4128be4990b05a5c7788bbeee"><td class="memItemLeft" align="right" valign="top"><a id="acbd859f4128be4990b05a5c7788bbeee"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSlider.html#acbd859f4128be4990b05a5c7788bbeee">sliderReleased</a> ()</td></tr>
+<tr class="memdesc:acbd859f4128be4990b05a5c7788bbeee"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号会在 slider 被松开时被发送 <br /></td></tr>
+<tr class="separator:acbd859f4128be4990b05a5c7788bbeee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afeb1ce8cf77b5f7669e4ef09a79565aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSlider.html#afeb1ce8cf77b5f7669e4ef09a79565aa">rangeChanged</a> (int min, int max)</td></tr>
+<tr class="memdesc:afeb1ce8cf77b5f7669e4ef09a79565aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号会在 range 属性的值改变时被发送  <a href="classDSlider.html#afeb1ce8cf77b5f7669e4ef09a79565aa">更多...</a><br /></td></tr>
+<tr class="separator:afeb1ce8cf77b5f7669e4ef09a79565aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8eb1bd0babafbcee8d4c6e262a9188e"><td class="memItemLeft" align="right" valign="top"><a id="aa8eb1bd0babafbcee8d4c6e262a9188e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSlider.html#aa8eb1bd0babafbcee8d4c6e262a9188e">actionTriggered</a> (int action)</td></tr>
+<tr class="memdesc:aa8eb1bd0babafbcee8d4c6e262a9188e"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号会在 action 被触发时被发送 <br /></td></tr>
+<tr class="separator:aa8eb1bd0babafbcee8d4c6e262a9188e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c31c68ec5cf3224802091d2cfe0f7d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSlider.html#a5c31c68ec5cf3224802091d2cfe0f7d1">iconClicked</a> (SliderIcons icon, bool checked)</td></tr>
+<tr class="memdesc:a5c31c68ec5cf3224802091d2cfe0f7d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号会在左右 iconbutton 被点击时被发送  <a href="classDSlider.html#a5c31c68ec5cf3224802091d2cfe0f7d1">更多...</a><br /></td></tr>
+<tr class="separator:a5c31c68ec5cf3224802091d2cfe0f7d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:acb25ab5208c74260119d7278ef0f0946"><td class="memItemLeft" align="right" valign="top"><a id="acb25ab5208c74260119d7278ef0f0946"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DSlider</b> (Qt::Orientation <a class="el" href="classDSlider.html#aebb5363ab2b1240ba08e63855135a24f">orientation</a>=Qt::Horizontal, QWidget *parent=nullptr)</td></tr>
+<tr class="separator:acb25ab5208c74260119d7278ef0f0946"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebb5363ab2b1240ba08e63855135a24f"><td class="memItemLeft" align="right" valign="top">Qt::Orientation&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSlider.html#aebb5363ab2b1240ba08e63855135a24f">orientation</a> () const</td></tr>
+<tr class="memdesc:aebb5363ab2b1240ba08e63855135a24f"><td class="mdescLeft">&#160;</td><td class="mdescRight">滑块方向  <a href="classDSlider.html#aebb5363ab2b1240ba08e63855135a24f">更多...</a><br /></td></tr>
+<tr class="separator:aebb5363ab2b1240ba08e63855135a24f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ec22309009e3cf61bc820e56f9fff45"><td class="memItemLeft" align="right" valign="top">QSlider *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSlider.html#a0ec22309009e3cf61bc820e56f9fff45">slider</a> ()</td></tr>
+<tr class="memdesc:a0ec22309009e3cf61bc820e56f9fff45"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回 QSlider 对象,若 <a class="el" href="classDSlider.html">DSlider</a> 不满足输入框的使用需求，请用此函数抛出的对象。  <a href="classDSlider.html#a0ec22309009e3cf61bc820e56f9fff45">更多...</a><br /></td></tr>
+<tr class="separator:a0ec22309009e3cf61bc820e56f9fff45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b643c186ffd8d01bc021de01007678f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSlider.html#a6b643c186ffd8d01bc021de01007678f">setLeftIcon</a> (const QIcon &amp;left)</td></tr>
+<tr class="memdesc:a6b643c186ffd8d01bc021de01007678f"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置滑块左侧图标.  <a href="classDSlider.html#a6b643c186ffd8d01bc021de01007678f">更多...</a><br /></td></tr>
+<tr class="separator:a6b643c186ffd8d01bc021de01007678f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af29fc03cebda04d6a645f16292d3bcbf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSlider.html#af29fc03cebda04d6a645f16292d3bcbf">setRightIcon</a> (const QIcon &amp;right)</td></tr>
+<tr class="memdesc:af29fc03cebda04d6a645f16292d3bcbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置滑块右图标.  <a href="classDSlider.html#af29fc03cebda04d6a645f16292d3bcbf">更多...</a><br /></td></tr>
+<tr class="separator:af29fc03cebda04d6a645f16292d3bcbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03e0f7256b165d203689bec3b0dcfb29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSlider.html#a03e0f7256b165d203689bec3b0dcfb29">setIconSize</a> (const QSize &amp;size)</td></tr>
+<tr class="memdesc:a03e0f7256b165d203689bec3b0dcfb29"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置滑块图标大小.  <a href="classDSlider.html#a03e0f7256b165d203689bec3b0dcfb29">更多...</a><br /></td></tr>
+<tr class="separator:a03e0f7256b165d203689bec3b0dcfb29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29c8805c3065b94ef9f27b7911d36980"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSlider.html#a29c8805c3065b94ef9f27b7911d36980">setMinimum</a> (int min)</td></tr>
+<tr class="memdesc:a29c8805c3065b94ef9f27b7911d36980"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置滑动范围的最小值.  <a href="classDSlider.html#a29c8805c3065b94ef9f27b7911d36980">更多...</a><br /></td></tr>
+<tr class="separator:a29c8805c3065b94ef9f27b7911d36980"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab007f56c39efa3b3327e533a73eecb7a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSlider.html#ab007f56c39efa3b3327e533a73eecb7a">minimum</a> () const</td></tr>
+<tr class="memdesc:ab007f56c39efa3b3327e533a73eecb7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">滑动范围的最小值.  <a href="classDSlider.html#ab007f56c39efa3b3327e533a73eecb7a">更多...</a><br /></td></tr>
+<tr class="separator:ab007f56c39efa3b3327e533a73eecb7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a324d798989ae80d6b4860a28e5327ea1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSlider.html#a324d798989ae80d6b4860a28e5327ea1">setValue</a> (int <a class="el" href="classDSlider.html#adcd55c60d7155ac1d955fffcb4789aa6">value</a>)</td></tr>
+<tr class="memdesc:a324d798989ae80d6b4860a28e5327ea1"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置滑块当前值  <a href="classDSlider.html#a324d798989ae80d6b4860a28e5327ea1">更多...</a><br /></td></tr>
+<tr class="separator:a324d798989ae80d6b4860a28e5327ea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcd55c60d7155ac1d955fffcb4789aa6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSlider.html#adcd55c60d7155ac1d955fffcb4789aa6">value</a> () const</td></tr>
+<tr class="memdesc:adcd55c60d7155ac1d955fffcb4789aa6"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDSlider.html#adcd55c60d7155ac1d955fffcb4789aa6" title="DSlider::value">DSlider::value</a>  <a href="classDSlider.html#adcd55c60d7155ac1d955fffcb4789aa6">更多...</a><br /></td></tr>
+<tr class="separator:adcd55c60d7155ac1d955fffcb4789aa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9149d20239cbd0d300aabe180e5049ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSlider.html#a9149d20239cbd0d300aabe180e5049ac">setPageStep</a> (int <a class="el" href="classDSlider.html#a3795e272ec5995d4a7a70e01fdfcb24a">pageStep</a>)</td></tr>
+<tr class="memdesc:a9149d20239cbd0d300aabe180e5049ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置页面单步的大小, 使用按键 PageUp 或者 PageDown 时，滑块滑动的单步大小。  <a href="classDSlider.html#a9149d20239cbd0d300aabe180e5049ac">更多...</a><br /></td></tr>
+<tr class="separator:a9149d20239cbd0d300aabe180e5049ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3795e272ec5995d4a7a70e01fdfcb24a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSlider.html#a3795e272ec5995d4a7a70e01fdfcb24a">pageStep</a> () const</td></tr>
+<tr class="memdesc:a3795e272ec5995d4a7a70e01fdfcb24a"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回页面单步大小  <a href="classDSlider.html#a3795e272ec5995d4a7a70e01fdfcb24a">更多...</a><br /></td></tr>
+<tr class="separator:a3795e272ec5995d4a7a70e01fdfcb24a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9447a699a58735a138069be3b297a59b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSlider.html#a9447a699a58735a138069be3b297a59b">setMaximum</a> (int max)</td></tr>
+<tr class="memdesc:a9447a699a58735a138069be3b297a59b"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置滑动范围的最大值  <a href="classDSlider.html#a9447a699a58735a138069be3b297a59b">更多...</a><br /></td></tr>
+<tr class="separator:a9447a699a58735a138069be3b297a59b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01c94ca7f06a6725ad17a3039f1157b0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSlider.html#a01c94ca7f06a6725ad17a3039f1157b0">maximum</a> () const</td></tr>
+<tr class="memdesc:a01c94ca7f06a6725ad17a3039f1157b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回滑动范围的最大值  <a href="classDSlider.html#a01c94ca7f06a6725ad17a3039f1157b0">更多...</a><br /></td></tr>
+<tr class="separator:a01c94ca7f06a6725ad17a3039f1157b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57207d01a1effc99f774f0abd0c47031"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSlider.html#a57207d01a1effc99f774f0abd0c47031">setLeftTicks</a> (const QStringList &amp;info)</td></tr>
+<tr class="memdesc:a57207d01a1effc99f774f0abd0c47031"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置滑块左侧的刻度值.  <a href="classDSlider.html#a57207d01a1effc99f774f0abd0c47031">更多...</a><br /></td></tr>
+<tr class="separator:a57207d01a1effc99f774f0abd0c47031"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a769432a34948a84c1ed99916109438fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSlider.html#a769432a34948a84c1ed99916109438fb">setRightTicks</a> (const QStringList &amp;info)</td></tr>
+<tr class="memdesc:a769432a34948a84c1ed99916109438fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置滑块右侧的刻度值.  <a href="classDSlider.html#a769432a34948a84c1ed99916109438fb">更多...</a><br /></td></tr>
+<tr class="separator:a769432a34948a84c1ed99916109438fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4a7c6a1e2dae56dd1e23a28a17571d1"><td class="memItemLeft" align="right" valign="top"><a id="aa4a7c6a1e2dae56dd1e23a28a17571d1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setAboveTicks</b> (const QStringList &amp;info)</td></tr>
+<tr class="separator:aa4a7c6a1e2dae56dd1e23a28a17571d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ad5a3142552ba8617f86b07e3e1b1d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSlider.html#a7ad5a3142552ba8617f86b07e3e1b1d3">setBelowTicks</a> (const QStringList &amp;info)</td></tr>
+<tr class="memdesc:a7ad5a3142552ba8617f86b07e3e1b1d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置滑块下方的刻度值  <a href="classDSlider.html#a7ad5a3142552ba8617f86b07e3e1b1d3">更多...</a><br /></td></tr>
+<tr class="separator:a7ad5a3142552ba8617f86b07e3e1b1d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a411252c2a7d9bb8275cf4ad4129506b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSlider.html#a411252c2a7d9bb8275cf4ad4129506b5">setMarkPositions</a> (QList&lt; int &gt; list)</td></tr>
+<tr class="memdesc:a411252c2a7d9bb8275cf4ad4129506b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置显示双边的刻度线（不显示刻度值）.  <a href="classDSlider.html#a411252c2a7d9bb8275cf4ad4129506b5">更多...</a><br /></td></tr>
+<tr class="separator:a411252c2a7d9bb8275cf4ad4129506b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06c733a81c32815dc85d9d1bf7127464"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSlider.html#a06c733a81c32815dc85d9d1bf7127464">setMouseWheelEnabled</a> (bool enabled)</td></tr>
+<tr class="memdesc:a06c733a81c32815dc85d9d1bf7127464"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置鼠标滚轮是否开启.  <a href="classDSlider.html#a06c733a81c32815dc85d9d1bf7127464">更多...</a><br /></td></tr>
+<tr class="separator:a06c733a81c32815dc85d9d1bf7127464"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae35d73a59dd82004d7e65dd4b16b3405"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSlider.html#ae35d73a59dd82004d7e65dd4b16b3405">setTipValue</a> (const QString &amp;<a class="el" href="classDSlider.html#adcd55c60d7155ac1d955fffcb4789aa6">value</a>)</td></tr>
+<tr class="memdesc:ae35d73a59dd82004d7e65dd4b16b3405"><td class="mdescLeft">&#160;</td><td class="mdescRight">用于创建气泡，气泡将跟随滑块移动.  <a href="classDSlider.html#ae35d73a59dd82004d7e65dd4b16b3405">更多...</a><br /></td></tr>
+<tr class="separator:ae35d73a59dd82004d7e65dd4b16b3405"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86a23f1cff92d76ddfb36a313aef9ef7"><td class="memItemLeft" align="right" valign="top">QSlider::TickPosition&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSlider.html#a86a23f1cff92d76ddfb36a313aef9ef7">tickPosition</a> () const</td></tr>
+<tr class="memdesc:a86a23f1cff92d76ddfb36a313aef9ef7"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回滑块的记号位置. 获取滑块刻度当前朝向。  <a href="classDSlider.html#a86a23f1cff92d76ddfb36a313aef9ef7">更多...</a><br /></td></tr>
+<tr class="separator:a86a23f1cff92d76ddfb36a313aef9ef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83784dd0605fccac46482926632ffd37"><td class="memItemLeft" align="right" valign="top">QSize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSlider.html#a83784dd0605fccac46482926632ffd37">sizeHint</a> () const override</td></tr>
+<tr class="memdesc:a83784dd0605fccac46482926632ffd37"><td class="mdescLeft">&#160;</td><td class="mdescRight">滑动条的大小策略.  <a href="classDSlider.html#a83784dd0605fccac46482926632ffd37">更多...</a><br /></td></tr>
+<tr class="separator:a83784dd0605fccac46482926632ffd37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7031e237b5f314225bcce9455d78c243"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSlider.html#a7031e237b5f314225bcce9455d78c243">setHandleVisible</a> (bool b)</td></tr>
+<tr class="memdesc:a7031e237b5f314225bcce9455d78c243"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置滑块是否显示.  <a href="classDSlider.html#a7031e237b5f314225bcce9455d78c243">更多...</a><br /></td></tr>
+<tr class="separator:a7031e237b5f314225bcce9455d78c243"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf4ae9c0593fc2d873338e94f067a63a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSlider.html#adf4ae9c0593fc2d873338e94f067a63a">handleVisible</a> () const</td></tr>
+<tr class="memdesc:adf4ae9c0593fc2d873338e94f067a63a"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取滑块是否显示的状态.  <a href="classDSlider.html#adf4ae9c0593fc2d873338e94f067a63a">更多...</a><br /></td></tr>
+<tr class="separator:adf4ae9c0593fc2d873338e94f067a63a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4193c3612a252539e29730b5ffa80c8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSlider.html#a4193c3612a252539e29730b5ffa80c8f">setEnabledAcrossStyle</a> (bool enabled)</td></tr>
+<tr class="memdesc:a4193c3612a252539e29730b5ffa80c8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">该函数用于设置滑槽是否禁用活动色填充已经滑过的滑槽.  <a href="classDSlider.html#a4193c3612a252539e29730b5ffa80c8f">更多...</a><br /></td></tr>
+<tr class="separator:a4193c3612a252539e29730b5ffa80c8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a07fea050e506bae534db4fbc59d95ce3"><td class="memItemLeft" align="right" valign="top"><a id="a07fea050e506bae534db4fbc59d95ce3"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DSlider</b> (<a class="el" href="classDSliderPrivate.html">DSliderPrivate</a> &amp;q, QWidget *parent)</td></tr>
+<tr class="separator:a07fea050e506bae534db4fbc59d95ce3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a383313ab5fb558562941efb87525a41b"><td class="memItemLeft" align="right" valign="top"><a id="a383313ab5fb558562941efb87525a41b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>event</b> (QEvent *event) override</td></tr>
+<tr class="separator:a383313ab5fb558562941efb87525a41b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a522b48a49a1847797d36cbc54029b7c7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSlider.html#a522b48a49a1847797d36cbc54029b7c7">eventFilter</a> (QObject *watched, QEvent *event) override</td></tr>
+<tr class="memdesc:a522b48a49a1847797d36cbc54029b7c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">事件过滤器函数 @reimp 此函数目前仅处理了鼠标滚轮事件  <a href="classDSlider.html#a522b48a49a1847797d36cbc54029b7c7">更多...</a><br /></td></tr>
+<tr class="separator:a522b48a49a1847797d36cbc54029b7c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a522b48a49a1847797d36cbc54029b7c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a522b48a49a1847797d36cbc54029b7c7">&#9670;&nbsp;</a></span>eventFilter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DSlider::eventFilter </td>
+          <td>(</td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>watched</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QEvent *&#160;</td>
+          <td class="paramname"><em>e</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>事件过滤器函数 @reimp 此函数目前仅处理了鼠标滚轮事件 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">watched</td><td>被监听的子控件 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">e</td><td>对应的事件指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="adf4ae9c0593fc2d873338e94f067a63a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf4ae9c0593fc2d873338e94f067a63a">&#9670;&nbsp;</a></span>handleVisible()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DSlider::handleVisible </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取滑块是否显示的状态. </p>
+<dl class="section return"><dt>返回</dt><dd>返回滑块是否显示的状态 </dd></dl>
+
+</div>
+</div>
+<a id="a5c31c68ec5cf3224802091d2cfe0f7d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c31c68ec5cf3224802091d2cfe0f7d1">&#9670;&nbsp;</a></span>iconClicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DSlider::iconClicked </td>
+          <td>(</td>
+          <td class="paramtype">SliderIcons&#160;</td>
+          <td class="paramname"><em>icon</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>checked</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>信号会在左右 iconbutton 被点击时被发送 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">icon</td><td>表示按钮被点击的位置 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">checked</td><td>表示按钮是否被选中</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>DSlider的构造函数 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">orientation</td><td>滑块方向 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">parent</td><td>参数被发送到 QWidget 构造函数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd>Qt::Orientation </dd></dl>
+
+</div>
+</div>
+<a id="a01c94ca7f06a6725ad17a3039f1157b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01c94ca7f06a6725ad17a3039f1157b0">&#9670;&nbsp;</a></span>maximum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DSlider::maximum </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>返回滑动范围的最大值 </p>
+<dl class="section return"><dt>返回</dt><dd>滑动范围的最大值 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>QSlider::maximum </dd></dl>
+
+</div>
+</div>
+<a id="ab007f56c39efa3b3327e533a73eecb7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab007f56c39efa3b3327e533a73eecb7a">&#9670;&nbsp;</a></span>minimum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DSlider::minimum </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>滑动范围的最小值. </p>
+<dl class="section return"><dt>返回</dt><dd>返回滑动范围的最小值。 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>QSlider::minimum() <a class="el" href="classDSlider.html#a29c8805c3065b94ef9f27b7911d36980" title="设置滑动范围的最小值.">DSlider::setMinimum()</a> </dd></dl>
+
+</div>
+</div>
+<a id="aebb5363ab2b1240ba08e63855135a24f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebb5363ab2b1240ba08e63855135a24f">&#9670;&nbsp;</a></span>orientation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Qt::Orientation DSlider::orientation </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>滑块方向 </p>
+<dl class="section return"><dt>返回</dt><dd>返回当前滑块的方向。 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>QSlider::orientation() </dd></dl>
+
+</div>
+</div>
+<a id="a3795e272ec5995d4a7a70e01fdfcb24a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3795e272ec5995d4a7a70e01fdfcb24a">&#9670;&nbsp;</a></span>pageStep()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DSlider::pageStep </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>返回页面单步大小 </p>
+<dl class="section return"><dt>返回</dt><dd>页面单步大小的值。 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>QSlider::pageStep() <a class="el" href="classDSlider.html#a9149d20239cbd0d300aabe180e5049ac" title="设置页面单步的大小, 使用按键 PageUp 或者 PageDown 时，滑块滑动的单步大小。">DSlider::setPageStep()</a> </dd></dl>
+
+</div>
+</div>
+<a id="afeb1ce8cf77b5f7669e4ef09a79565aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afeb1ce8cf77b5f7669e4ef09a79565aa">&#9670;&nbsp;</a></span>rangeChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DSlider::rangeChanged </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>min</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>max</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>信号会在 range 属性的值改变时被发送 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">min</td><td>为 range 的最小值 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">max</td><td>为 range 的最大值 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7ad5a3142552ba8617f86b07e3e1b1d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ad5a3142552ba8617f86b07e3e1b1d3">&#9670;&nbsp;</a></span>setBelowTicks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DSlider::setBelowTicks </td>
+          <td>(</td>
+          <td class="paramtype">const QStringList &amp;&#160;</td>
+          <td class="paramname"><em>info</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置滑块下方的刻度值 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">info</td><td>刻度标识. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDSlider.html#a769432a34948a84c1ed99916109438fb" title="设置滑块右侧的刻度值.">DSlider::setRightTicks()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a4193c3612a252539e29730b5ffa80c8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4193c3612a252539e29730b5ffa80c8f">&#9670;&nbsp;</a></span>setEnabledAcrossStyle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DSlider::setEnabledAcrossStyle </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enabled</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>该函数用于设置滑槽是否禁用活动色填充已经滑过的滑槽. </p>
+<p>默认普通 <a class="el" href="classDSlider.html">DSlider</a> 滑过的滑槽是活动色填充， 调用过 setXXXTicks 的 <a class="el" href="classDSlider.html">DSlider</a> 则默认禁用活动色填充 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">enabled</td><td>true 无活动色，可用于音量平衡等不需要显示滑过的，false 滑过的位置(如左侧) 是高亮色显示，如调节亮度等(默认)默认地，改属性为 false 。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7031e237b5f314225bcce9455d78c243"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7031e237b5f314225bcce9455d78c243">&#9670;&nbsp;</a></span>setHandleVisible()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DSlider::setHandleVisible </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>b</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置滑块是否显示. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td>为 true 时滑块显示，否则滑块隐藏, 默认地, 滑块为显示状态 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a03e0f7256b165d203689bec3b0dcfb29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03e0f7256b165d203689bec3b0dcfb29">&#9670;&nbsp;</a></span>setIconSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DSlider::setIconSize </td>
+          <td>(</td>
+          <td class="paramtype">const QSize &amp;&#160;</td>
+          <td class="paramname"><em>size</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置滑块图标大小. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>图标大小 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6b643c186ffd8d01bc021de01007678f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b643c186ffd8d01bc021de01007678f">&#9670;&nbsp;</a></span>setLeftIcon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DSlider::setLeftIcon </td>
+          <td>(</td>
+          <td class="paramtype">const QIcon &amp;&#160;</td>
+          <td class="paramname"><em>left</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置滑块左侧图标. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">left</td><td>左图标 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a57207d01a1effc99f774f0abd0c47031"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57207d01a1effc99f774f0abd0c47031">&#9670;&nbsp;</a></span>setLeftTicks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DSlider::setLeftTicks </td>
+          <td>(</td>
+          <td class="paramtype">const QStringList &amp;&#160;</td>
+          <td class="paramname"><em>info</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置滑块左侧的刻度值. </p>
+<p>根据 QStringList 数量，绘制刻度的个数，绘制刻度标识：滑块为水平,刻度在滑块上方；滑块为垂直,刻度在滑块左侧。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">info</td><td>刻度标识 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a411252c2a7d9bb8275cf4ad4129506b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a411252c2a7d9bb8275cf4ad4129506b5">&#9670;&nbsp;</a></span>setMarkPositions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DSlider::setMarkPositions </td>
+          <td>(</td>
+          <td class="paramtype">QList&lt; int &gt;&#160;</td>
+          <td class="paramname"><em>list</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置显示双边的刻度线（不显示刻度值）. </p>
+<p>举例用途：比如调节音量的 <a class="el" href="classDSlider.html">DSlider</a> ，需要在 value = 100 的地方标记一个刻度，而不需要显示其他的刻度值（并且实际音量值是可以超过 100 的） 其他：设置指定数值的刻度线(setMarkPositions)和设置刻度线+刻度值(setBelowTicks)是两个相互独立的，且互不干扰，若是同时使用，也会同时绘画各自的线； 另外两个的先后顺序也并没有关系. </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">list</td><td>双边刻度线的值. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9447a699a58735a138069be3b297a59b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9447a699a58735a138069be3b297a59b">&#9670;&nbsp;</a></span>setMaximum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DSlider::setMaximum </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>max</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置滑动范围的最大值 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">max</td><td>滑动范围的最大值。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd>QSlider::setMaximum() <a class="el" href="classDSlider.html#a01c94ca7f06a6725ad17a3039f1157b0" title="返回滑动范围的最大值">DSlider::maximum()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a29c8805c3065b94ef9f27b7911d36980"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29c8805c3065b94ef9f27b7911d36980">&#9670;&nbsp;</a></span>setMinimum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DSlider::setMinimum </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>min</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置滑动范围的最小值. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">min</td><td>滑动最小值。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd>QSlider::setMinimum() <a class="el" href="classDSlider.html#ab007f56c39efa3b3327e533a73eecb7a" title="滑动范围的最小值.">DSlider::minimum()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a06c733a81c32815dc85d9d1bf7127464"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06c733a81c32815dc85d9d1bf7127464">&#9670;&nbsp;</a></span>setMouseWheelEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DSlider::setMouseWheelEnabled </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enabled</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置鼠标滚轮是否开启. </p>
+<p>开启鼠标滚轮后，用户可以通过鼠标滚轮来控制滑块的滑动。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">enabled</td><td>是否开启鼠标滚轮 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9149d20239cbd0d300aabe180e5049ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9149d20239cbd0d300aabe180e5049ac">&#9670;&nbsp;</a></span>setPageStep()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DSlider::setPageStep </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pageStep</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置页面单步的大小, 使用按键 PageUp 或者 PageDown 时，滑块滑动的单步大小。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pageStep</td><td>单步大小. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd>QSlider::setPageStep() </dd></dl>
+
+</div>
+</div>
+<a id="af29fc03cebda04d6a645f16292d3bcbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af29fc03cebda04d6a645f16292d3bcbf">&#9670;&nbsp;</a></span>setRightIcon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DSlider::setRightIcon </td>
+          <td>(</td>
+          <td class="paramtype">const QIcon &amp;&#160;</td>
+          <td class="paramname"><em>right</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置滑块右图标. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">right</td><td>右图标 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a769432a34948a84c1ed99916109438fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a769432a34948a84c1ed99916109438fb">&#9670;&nbsp;</a></span>setRightTicks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DSlider::setRightTicks </td>
+          <td>(</td>
+          <td class="paramtype">const QStringList &amp;&#160;</td>
+          <td class="paramname"><em>info</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置滑块右侧的刻度值. </p>
+<p>根据 QStringList 数量，绘制刻度的个数，绘制刻度标识：滑块为水平,刻度在滑块下方；滑块为垂直,刻度在滑块右侧。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">info</td><td>刻度标识</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>设置滑块上方的刻度值 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">info</td><td>刻度标识. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDSlider.html#a57207d01a1effc99f774f0abd0c47031" title="设置滑块左侧的刻度值.">DSlider::setLeftTicks()</a> </dd></dl>
+
+</div>
+</div>
+<a id="ae35d73a59dd82004d7e65dd4b16b3405"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae35d73a59dd82004d7e65dd4b16b3405">&#9670;&nbsp;</a></span>setTipValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DSlider::setTipValue </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>用于创建气泡，气泡将跟随滑块移动. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>非空开启气泡，空关闭气泡(销毁) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a324d798989ae80d6b4860a28e5327ea1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a324d798989ae80d6b4860a28e5327ea1">&#9670;&nbsp;</a></span>setValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DSlider::setValue </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置滑块当前值 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>滑块的当前值。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd>QSlider::setValue() </dd></dl>
+
+</div>
+</div>
+<a id="a83784dd0605fccac46482926632ffd37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83784dd0605fccac46482926632ffd37">&#9670;&nbsp;</a></span>sizeHint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QSize DSlider::sizeHint </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>滑动条的大小策略. </p>
+<p>这个函数会返回该滑动条推荐的大小，如果滑动条没有布局，这个大小将会是一个无效值，如果存在布局，将返回该布局下的推荐大小。 </p><dl class="section see"><dt>参见</dt><dd>QSlider::sizeHint </dd></dl>
+
+</div>
+</div>
+<a id="a0ec22309009e3cf61bc820e56f9fff45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ec22309009e3cf61bc820e56f9fff45">&#9670;&nbsp;</a></span>slider()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QSlider * DSlider::slider </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>返回 QSlider 对象,若 <a class="el" href="classDSlider.html">DSlider</a> 不满足输入框的使用需求，请用此函数抛出的对象。 </p>
+<dl class="section return"><dt>返回</dt><dd>QSlider 对象。 </dd></dl>
+
+</div>
+</div>
+<a id="a2ebc63d3e128907af409b9b4f2721a70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ebc63d3e128907af409b9b4f2721a70">&#9670;&nbsp;</a></span>sliderMoved</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DSlider::sliderMoved </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>position</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>信号会在 slider 拖动时被发送 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">position</td><td>为 slider 被拖动的指针的位置 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a86a23f1cff92d76ddfb36a313aef9ef7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86a23f1cff92d76ddfb36a313aef9ef7">&#9670;&nbsp;</a></span>tickPosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QSlider::TickPosition DSlider::tickPosition </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>返回滑块的记号位置. 获取滑块刻度当前朝向。 </p>
+<dl class="section return"><dt>返回</dt><dd>滑块刻度的朝向 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>QSlider::TickPosition </dd></dl>
+
+</div>
+</div>
+<a id="adcd55c60d7155ac1d955fffcb4789aa6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcd55c60d7155ac1d955fffcb4789aa6">&#9670;&nbsp;</a></span>value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DSlider::value </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classDSlider.html#adcd55c60d7155ac1d955fffcb4789aa6" title="DSlider::value">DSlider::value</a> </p>
+<dl class="section see"><dt>参见</dt><dd>QSlider::value() </dd></dl>
+
+</div>
+</div>
+<a id="a59dfaf1bf476a1288ac324c4a2c3a315"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59dfaf1bf476a1288ac324c4a2c3a315">&#9670;&nbsp;</a></span>valueChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DSlider::valueChanged </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>信号会在 slider 的 value 值改变时被发送 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>slider 的当前值 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dtkwidget/include/dtkwidget/widgets/<a class="el" href="dslider_8h_source.html">dslider.h</a></li>
+<li>dtkwidget/docs/widgets/dslider.zh_CN.dox</li>
+<li>dtkwidget/src/widgets/dslider.cpp</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classDSlider.html">DSlider</a></li>
+    <li class="footer">文档生成时间:doxtime</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

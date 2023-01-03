@@ -1,0 +1,674 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: DIpv4LineEdit类 参考</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="change address" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classDIpv4LineEdit.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-slots">Public 槽</a> &#124;
+<a href="#signals">信号</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#properties">属性</a> &#124;
+<a href="classDIpv4LineEdit-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">DIpv4LineEdit类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 DIpv4LineEdit 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classDIpv4LineEdit.png" alt=""/>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Public 槽</h2></td></tr>
+<tr class="memitem:a977b42eb0f5262513c64ee3528143f80"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDIpv4LineEdit.html#a977b42eb0f5262513c64ee3528143f80">setCursorPosition</a> (int <a class="el" href="classDIpv4LineEdit.html#aca3e0bd1d36a4bb00d3bd0415c2f2892">cursorPosition</a>)</td></tr>
+<tr class="separator:a977b42eb0f5262513c64ee3528143f80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af61f77ac0b905ebc9da40a2f12690ec9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDIpv4LineEdit.html#af61f77ac0b905ebc9da40a2f12690ec9">setReadOnly</a> (bool <a class="el" href="classDIpv4LineEdit.html#a09d29b84134d86df5129313799d34a2e">readOnly</a>)</td></tr>
+<tr class="separator:af61f77ac0b905ebc9da40a2f12690ec9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93fcc16a0cdc96902f6165068ce8c5e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDIpv4LineEdit.html#a93fcc16a0cdc96902f6165068ce8c5e2">setSelection</a> (int start, int length)</td></tr>
+<tr class="memdesc:a93fcc16a0cdc96902f6165068ce8c5e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用此方法选中文本时会把四个输入框当做一个看待 <em>start</em> <em>length</em>  <a href="classDIpv4LineEdit.html#a93fcc16a0cdc96902f6165068ce8c5e2">更多...</a><br /></td></tr>
+<tr class="separator:a93fcc16a0cdc96902f6165068ce8c5e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa87f02ed688d7bd9d902fc94ef93257a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDIpv4LineEdit.html#aa87f02ed688d7bd9d902fc94ef93257a">selectAll</a> ()</td></tr>
+<tr class="memdesc:aa87f02ed688d7bd9d902fc94ef93257a"><td class="mdescLeft">&#160;</td><td class="mdescRight">选中所有输入框的全部内容  <a href="classDIpv4LineEdit.html#aa87f02ed688d7bd9d902fc94ef93257a">更多...</a><br /></td></tr>
+<tr class="separator:aa87f02ed688d7bd9d902fc94ef93257a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+信号</h2></td></tr>
+<tr class="memitem:a21a160190e3470049670d76d3d974e96"><td class="memItemLeft" align="right" valign="top"><a id="a21a160190e3470049670d76d3d974e96"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>focusChanged</b> (bool focus)</td></tr>
+<tr class="separator:a21a160190e3470049670d76d3d974e96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:aa1bdce3f2644c91dad7c73b99ae28b03"><td class="memItemLeft" align="right" valign="top"><a id="aa1bdce3f2644c91dad7c73b99ae28b03"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDIpv4LineEdit.html#aa1bdce3f2644c91dad7c73b99ae28b03">DIpv4LineEdit</a> (QWidget *parent=0)</td></tr>
+<tr class="memdesc:aa1bdce3f2644c91dad7c73b99ae28b03"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造DIpv4LineEdit类，和普通 \l QWidget 一样，可以传入一个QWidget指 针对象作为其父对象 管理的控件 <em>parent</em> <br /></td></tr>
+<tr class="separator:aa1bdce3f2644c91dad7c73b99ae28b03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae23488ff0476599eb96e28094a8da934"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDIpv4LineEdit.html#ae23488ff0476599eb96e28094a8da934">displayText</a> () const</td></tr>
+<tr class="separator:ae23488ff0476599eb96e28094a8da934"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2a9cbf81b3853a37fd63c77a982ccd0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDIpv4LineEdit.html#ae2a9cbf81b3853a37fd63c77a982ccd0">cursorPosition</a> () const</td></tr>
+<tr class="separator:ae2a9cbf81b3853a37fd63c77a982ccd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3acc4c9cba0200625e7335485c6884a"><td class="memItemLeft" align="right" valign="top">Qt::Alignment&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDIpv4LineEdit.html#ac3acc4c9cba0200625e7335485c6884a">alignment</a> () const</td></tr>
+<tr class="separator:ac3acc4c9cba0200625e7335485c6884a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaeeb40433fd41c82153a7399e495ad61"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDIpv4LineEdit.html#aaeeb40433fd41c82153a7399e495ad61">hasAcceptableInput</a> () const</td></tr>
+<tr class="separator:aaeeb40433fd41c82153a7399e495ad61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a926d3b426497e94173ee669f9280b118"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDIpv4LineEdit.html#a926d3b426497e94173ee669f9280b118">isReadOnly</a> () const</td></tr>
+<tr class="separator:a926d3b426497e94173ee669f9280b118"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:ac336e953a328d049414967b497e4a5a3"><td class="memItemLeft" align="right" valign="top"><a id="ac336e953a328d049414967b497e4a5a3"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>eventFilter</b> (QObject *obj, QEvent *e) Q_DECL_OVERRIDE</td></tr>
+<tr class="separator:ac336e953a328d049414967b497e4a5a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:a5015c45f7e71257304aae6c86c13ca16"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDIpv4LineEdit.html#a5015c45f7e71257304aae6c86c13ca16">displayText</a></td></tr>
+<tr class="memdesc:a5015c45f7e71257304aae6c86c13ca16"><td class="mdescLeft">&#160;</td><td class="mdescRight">输入框显示的文本内容  <a href="classDIpv4LineEdit.html#a5015c45f7e71257304aae6c86c13ca16">更多...</a><br /></td></tr>
+<tr class="separator:a5015c45f7e71257304aae6c86c13ca16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca3e0bd1d36a4bb00d3bd0415c2f2892"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDIpv4LineEdit.html#aca3e0bd1d36a4bb00d3bd0415c2f2892">cursorPosition</a></td></tr>
+<tr class="memdesc:aca3e0bd1d36a4bb00d3bd0415c2f2892"><td class="mdescLeft">&#160;</td><td class="mdescRight">当前光标所在位置  <a href="classDIpv4LineEdit.html#aca3e0bd1d36a4bb00d3bd0415c2f2892">更多...</a><br /></td></tr>
+<tr class="separator:aca3e0bd1d36a4bb00d3bd0415c2f2892"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44a76cc4c8e721d83f771fa11bbb48cc"><td class="memItemLeft" align="right" valign="top">Qt::Alignment&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDIpv4LineEdit.html#a44a76cc4c8e721d83f771fa11bbb48cc">alignment</a></td></tr>
+<tr class="memdesc:a44a76cc4c8e721d83f771fa11bbb48cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">文本内容对齐方式  <a href="classDIpv4LineEdit.html#a44a76cc4c8e721d83f771fa11bbb48cc">更多...</a><br /></td></tr>
+<tr class="separator:a44a76cc4c8e721d83f771fa11bbb48cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d6a519104fa65a478b743d13756e419"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDIpv4LineEdit.html#a4d6a519104fa65a478b743d13756e419">selectedText</a></td></tr>
+<tr class="memdesc:a4d6a519104fa65a478b743d13756e419"><td class="mdescLeft">&#160;</td><td class="mdescRight">选中的文本内容  <a href="classDIpv4LineEdit.html#a4d6a519104fa65a478b743d13756e419">更多...</a><br /></td></tr>
+<tr class="separator:a4d6a519104fa65a478b743d13756e419"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac12fdfec17b40e055adf1b8ca9ee9f0f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDIpv4LineEdit.html#ac12fdfec17b40e055adf1b8ca9ee9f0f">acceptableInput</a></td></tr>
+<tr class="separator:ac12fdfec17b40e055adf1b8ca9ee9f0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09d29b84134d86df5129313799d34a2e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDIpv4LineEdit.html#a09d29b84134d86df5129313799d34a2e">readOnly</a></td></tr>
+<tr class="separator:a09d29b84134d86df5129313799d34a2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e4f79f8c948aa84fdb5d962bb9f5462"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDIpv4LineEdit.html#a7e4f79f8c948aa84fdb5d962bb9f5462">placeholderText</a></td></tr>
+<tr class="memdesc:a7e4f79f8c948aa84fdb5d962bb9f5462"><td class="mdescLeft">&#160;</td><td class="mdescRight">输入框未输入内容时的占位文本，通常显示为灰色，当输入任意字符后就会被隐藏  <a href="classDIpv4LineEdit.html#a7e4f79f8c948aa84fdb5d962bb9f5462">更多...</a><br /></td></tr>
+<tr class="separator:a7e4f79f8c948aa84fdb5d962bb9f5462"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a696c521b66ed4b8f163605e685f4de88"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDIpv4LineEdit.html#a696c521b66ed4b8f163605e685f4de88">clearButtonEnabled</a></td></tr>
+<tr class="memdesc:a696c521b66ed4b8f163605e685f4de88"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否在输入框上显示清理按钮  <a href="classDIpv4LineEdit.html#a696c521b66ed4b8f163605e685f4de88">更多...</a><br /></td></tr>
+<tr class="separator:a696c521b66ed4b8f163605e685f4de88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="ac3acc4c9cba0200625e7335485c6884a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3acc4c9cba0200625e7335485c6884a">&#9670;&nbsp;</a></span>alignment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Qt::Alignment DIpv4LineEdit::alignment </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="ae2a9cbf81b3853a37fd63c77a982ccd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2a9cbf81b3853a37fd63c77a982ccd0">&#9670;&nbsp;</a></span>cursorPosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DIpv4LineEdit::cursorPosition </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="ae23488ff0476599eb96e28094a8da934"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae23488ff0476599eb96e28094a8da934">&#9670;&nbsp;</a></span>displayText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString DIpv4LineEdit::displayText </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="aaeeb40433fd41c82153a7399e495ad61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaeeb40433fd41c82153a7399e495ad61">&#9670;&nbsp;</a></span>hasAcceptableInput()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DIpv4LineEdit::hasAcceptableInput </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a926d3b426497e94173ee669f9280b118"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a926d3b426497e94173ee669f9280b118">&#9670;&nbsp;</a></span>isReadOnly()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DIpv4LineEdit::isReadOnly </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="aa87f02ed688d7bd9d902fc94ef93257a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa87f02ed688d7bd9d902fc94ef93257a">&#9670;&nbsp;</a></span>selectAll</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DIpv4LineEdit::selectAll </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>选中所有输入框的全部内容 </p>
+<dl class="section see"><dt>参见</dt><dd>QLineEdit::selectAll </dd></dl>
+
+</div>
+</div>
+<a id="a977b42eb0f5262513c64ee3528143f80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a977b42eb0f5262513c64ee3528143f80">&#9670;&nbsp;</a></span>setCursorPosition</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DIpv4LineEdit::setCursorPosition </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>cursorPosition</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p><em>cursorPosition</em> </p><dl class="section see"><dt>参见</dt><dd><a class="el" href="classDIpv4LineEdit.html#aca3e0bd1d36a4bb00d3bd0415c2f2892" title="当前光标所在位置">cursorPosition</a> </dd></dl>
+
+</div>
+</div>
+<a id="af61f77ac0b905ebc9da40a2f12690ec9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af61f77ac0b905ebc9da40a2f12690ec9">&#9670;&nbsp;</a></span>setReadOnly</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DIpv4LineEdit::setReadOnly </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>readOnly</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p><em>readOnly</em> </p><dl class="section see"><dt>参见</dt><dd><a class="el" href="classDIpv4LineEdit.html#a09d29b84134d86df5129313799d34a2e">readOnly</a> </dd></dl>
+
+</div>
+</div>
+<a id="a93fcc16a0cdc96902f6165068ce8c5e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93fcc16a0cdc96902f6165068ce8c5e2">&#9670;&nbsp;</a></span>setSelection</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DIpv4LineEdit::setSelection </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>使用此方法选中文本时会把四个输入框当做一个看待 <em>start</em> <em>length</em> </p>
+<dl class="section see"><dt>参见</dt><dd>QLineEdit::setSelection </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">属性说明</h2>
+<a id="ac12fdfec17b40e055adf1b8ca9ee9f0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac12fdfec17b40e055adf1b8ca9ee9f0f">&#9670;&nbsp;</a></span>acceptableInput</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DIpv4LineEdit::acceptableInput</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section note"><dt>注解</dt><dd>只读 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>QLineEdit::acceptableInput </dd></dl>
+
+</div>
+</div>
+<a id="a44a76cc4c8e721d83f771fa11bbb48cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44a76cc4c8e721d83f771fa11bbb48cc">&#9670;&nbsp;</a></span>alignment</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DIpv4LineEdit::alignment</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>文本内容对齐方式 </p>
+<p>固定为 \l Qt::AlignHCenter</p>
+<dl class="section note"><dt>注解</dt><dd>只读 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>QLineEdit::alignment </dd></dl>
+
+</div>
+</div>
+<a id="a696c521b66ed4b8f163605e685f4de88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a696c521b66ed4b8f163605e685f4de88">&#9670;&nbsp;</a></span>clearButtonEnabled</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DIpv4LineEdit::clearButtonEnabled</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>是否在输入框上显示清理按钮 </p>
+<dl class="section note"><dt>注解</dt><dd>只读。默认为 false </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>QLineEdit::clearButtonEnabled </dd></dl>
+
+</div>
+</div>
+<a id="aca3e0bd1d36a4bb00d3bd0415c2f2892"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca3e0bd1d36a4bb00d3bd0415c2f2892">&#9670;&nbsp;</a></span>cursorPosition</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DIpv4LineEdit::cursorPosition</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>当前光标所在位置 </p>
+<dl class="section note"><dt>注解</dt><dd>可读可写 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>QLineEdit::cursorPosition </dd></dl>
+
+</div>
+</div>
+<a id="a5015c45f7e71257304aae6c86c13ca16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5015c45f7e71257304aae6c86c13ca16">&#9670;&nbsp;</a></span>displayText</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DIpv4LineEdit::displayText</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>输入框显示的文本内容 </p>
+<p>和 QLineEdit::displayText 不同，无论 \l echoMode 值为多少，都返回和 \l text 同样的内容</p>
+<dl class="section note"><dt>注解</dt><dd>可读可写 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>QLineEdit::echoMode QLineEdit::text </dd></dl>
+
+</div>
+</div>
+<a id="a7e4f79f8c948aa84fdb5d962bb9f5462"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e4f79f8c948aa84fdb5d962bb9f5462">&#9670;&nbsp;</a></span>placeholderText</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DIpv4LineEdit::placeholderText</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>输入框未输入内容时的占位文本，通常显示为灰色，当输入任意字符后就会被隐藏 </p>
+<dl class="section note"><dt>注解</dt><dd>只读。默认为空字符串 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>QLineEdit::placeholderText </dd></dl>
+
+</div>
+</div>
+<a id="a09d29b84134d86df5129313799d34a2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09d29b84134d86df5129313799d34a2e">&#9670;&nbsp;</a></span>readOnly</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DIpv4LineEdit::readOnly</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section note"><dt>注解</dt><dd>可读可写 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>QLineEdit::readOnly </dd></dl>
+
+</div>
+</div>
+<a id="a4d6a519104fa65a478b743d13756e419"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d6a519104fa65a478b743d13756e419">&#9670;&nbsp;</a></span>selectedText</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DIpv4LineEdit::selectedText</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>选中的文本内容 </p>
+<dl class="section note"><dt>注解</dt><dd>只读 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>QLineEdit::selectedText </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dtkwidget/include/dtkwidget/widgets/<a class="el" href="dipv4lineedit_8h_source.html">dipv4lineedit.h</a></li>
+<li>dtkwidget/src/widgets/dipv4lineedit.cpp</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classDIpv4LineEdit.html">DIpv4LineEdit</a></li>
+    <li class="footer">文档生成时间:doxtime</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

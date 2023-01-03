@@ -1,0 +1,1289 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: Dtk::Core::DSysInfo类 参考</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="change address" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classDtk_1_1Core_1_1DSysInfo.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="classDtk_1_1Core_1_1DSysInfo-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">Dtk::Core::DSysInfo类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>dsysinfo 是一组用于查询系统信息的静态类  
+ <a href="classDtk_1_1Core_1_1DSysInfo.html#details">更多...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a83e0d06dcacf2abf19fdd231497a9b57"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DSysInfo.html#a83e0d06dcacf2abf19fdd231497a9b57">ProductType</a> { <br />
+&#160;&#160;<b>UnknownType</b> = 0
+, <b>Deepin</b>
+, <b>ArchLinux</b>
+, <b>CentOS</b>
+, <br />
+&#160;&#160;<b>Debian</b>
+, <b>Fedora</b>
+, <b>LinuxMint</b>
+, <b>Manjaro</b>
+, <br />
+&#160;&#160;<b>openSUSE</b>
+, <b>SailfishOS</b>
+, <b>Ubuntu</b>
+, <b>Uos</b>
+, <br />
+&#160;&#160;<b>Gentoo</b>
+, <b>NixOS</b>
+<br />
+ }</td></tr>
+<tr class="memdesc:a83e0d06dcacf2abf19fdd231497a9b57"><td class="mdescLeft">&#160;</td><td class="mdescRight">产品信息  <a href="classDtk_1_1Core_1_1DSysInfo.html#a83e0d06dcacf2abf19fdd231497a9b57">更多...</a><br /></td></tr>
+<tr class="separator:a83e0d06dcacf2abf19fdd231497a9b57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abce779af6b5c5e03e2a7f3b55e78ae32"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DSysInfo.html#abce779af6b5c5e03e2a7f3b55e78ae32">DeepinType</a> { <br />
+&#160;&#160;<b>UnknownDeepin</b> = 0
+, <b>DeepinDesktop</b>
+, <b>DeepinProfessional</b>
+, <b>DeepinServer</b>
+, <br />
+&#160;&#160;<b>DeepinPersonal</b>
+<br />
+ }</td></tr>
+<tr class="memdesc:abce779af6b5c5e03e2a7f3b55e78ae32"><td class="mdescLeft">&#160;</td><td class="mdescRight">深度操作系统版本  <a href="classDtk_1_1Core_1_1DSysInfo.html#abce779af6b5c5e03e2a7f3b55e78ae32">更多...</a><br /></td></tr>
+<tr class="separator:abce779af6b5c5e03e2a7f3b55e78ae32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c98faa519cd1ee5301171d8df6c86c7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DSysInfo.html#a8c98faa519cd1ee5301171d8df6c86c7">LogoType</a> { <b>Normal</b> = 0
+, <b>Light</b>
+, <b>Symbolic</b>
+, <b>Transparent</b>
+ }</td></tr>
+<tr class="memdesc:a8c98faa519cd1ee5301171d8df6c86c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">系统的logo类型  <a href="classDtk_1_1Core_1_1DSysInfo.html#a8c98faa519cd1ee5301171d8df6c86c7">更多...</a><br /></td></tr>
+<tr class="separator:a8c98faa519cd1ee5301171d8df6c86c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a210c7bb23430c7eae5b16fa46d5176f3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DSysInfo.html#a210c7bb23430c7eae5b16fa46d5176f3">OrgType</a> { <b>Distribution</b>
+, <b>Distributor</b>
+, <b>Manufacturer</b>
+ }</td></tr>
+<tr class="separator:a210c7bb23430c7eae5b16fa46d5176f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f811bf21c840fafa7809ee01865cb93"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DSysInfo.html#a9f811bf21c840fafa7809ee01865cb93">UosType</a> { <br />
+&#160;&#160;<b>UosTypeUnknown</b>
+, <b>UosDesktop</b>
+, <b>UosServer</b>
+, <b>UosDevice</b>
+, <br />
+&#160;&#160;<b>UosTypeCount</b>
+<br />
+ }</td></tr>
+<tr class="memdesc:a9f811bf21c840fafa7809ee01865cb93"><td class="mdescLeft">&#160;</td><td class="mdescRight">UOS版本类型  <a href="classDtk_1_1Core_1_1DSysInfo.html#a9f811bf21c840fafa7809ee01865cb93">更多...</a><br /></td></tr>
+<tr class="separator:a9f811bf21c840fafa7809ee01865cb93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95c282f42eda222e5b9925122fe2a434"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DSysInfo.html#a95c282f42eda222e5b9925122fe2a434">UosEdition</a> { <br />
+&#160;&#160;<b>UosEditionUnknown</b>
+, <b>UosProfessional</b>
+, <b>UosHome</b>
+, <b>UosCommunity</b>
+, <br />
+&#160;&#160;<b>UosMilitary</b>
+, <b>UosEnterprise</b>
+, <b>UosEnterpriseC</b>
+, <b>UosEuler</b>
+, <br />
+&#160;&#160;<b>UosMilitaryS</b>
+, <b>UosDeviceEdition</b>
+, <b>UosEducation</b>
+, <b>UosEditionCount</b>
+<br />
+ }</td></tr>
+<tr class="memdesc:a95c282f42eda222e5b9925122fe2a434"><td class="mdescLeft">&#160;</td><td class="mdescRight">详细uos版本  <a href="classDtk_1_1Core_1_1DSysInfo.html#a95c282f42eda222e5b9925122fe2a434">更多...</a><br /></td></tr>
+<tr class="separator:a95c282f42eda222e5b9925122fe2a434"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10e74d156a2a34e26b14fcfc22dffc30"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DSysInfo.html#a10e74d156a2a34e26b14fcfc22dffc30">UosArch</a> { <br />
+&#160;&#160;<b>UosArchUnknown</b>
+, <b>UosAMD64</b> = 1 &lt;&lt; 0
+, <b>UosARM64</b> = 1 &lt;&lt; 1
+, <b>UosMIPS64</b> = 1 &lt;&lt; 2
+, <br />
+&#160;&#160;<b>UosSW64</b> = 1 &lt;&lt; 3
+<br />
+ }</td></tr>
+<tr class="memdesc:a10e74d156a2a34e26b14fcfc22dffc30"><td class="mdescLeft">&#160;</td><td class="mdescRight">UOS使用的架构  <a href="classDtk_1_1Core_1_1DSysInfo.html#a10e74d156a2a34e26b14fcfc22dffc30">更多...</a><br /></td></tr>
+<tr class="separator:a10e74d156a2a34e26b14fcfc22dffc30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b70d9d2c23ebf2a745a47c4a02fa953"><td class="memItemLeft" align="right" valign="top"><a id="a8b70d9d2c23ebf2a745a47c4a02fa953"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Arch</b> { <br />
+&#160;&#160;<b>ARM64</b>
+, <b>ARM64_BE</b>
+, <b>ARM</b>
+, <b>ARM_BE</b>
+, <br />
+&#160;&#160;<b>ALPHA</b>
+, <b>SW_64</b>
+, <b>ARC</b>
+, <b>ARC_BE</b>
+, <br />
+&#160;&#160;<b>CRIS</b>
+, <b>X86_64</b>
+, <b>X86</b>
+, <b>IA64</b>
+, <br />
+&#160;&#160;<b>LOONGARCH64</b>
+, <b>M68K</b>
+, <b>MIPS64_LE</b>
+, <b>MIPS64</b>
+, <br />
+&#160;&#160;<b>MIPS_LE</b>
+, <b>MIPS</b>
+, <b>NIOS2</b>
+, <b>PARISC64</b>
+, <br />
+&#160;&#160;<b>PARISC</b>
+, <b>PPC64_LE</b>
+, <b>PPC64</b>
+, <b>PPC</b>
+, <br />
+&#160;&#160;<b>PPC_LE</b>
+, <b>RISCV32</b>
+, <b>RISCV64</b>
+, <b>S390X</b>
+, <br />
+&#160;&#160;<b>S390</b>
+, <b>SH64</b>
+, <b>SH</b>
+, <b>SPARC64</b>
+, <br />
+&#160;&#160;<b>SPARC</b>
+, <b>TILEGX</b>
+, <b>NUM_ARCHES</b>
+<br />
+ }</td></tr>
+<tr class="separator:a8b70d9d2c23ebf2a745a47c4a02fa953"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a1e0a666a0f78a424041e3af0cbd86bd2"><td class="memItemLeft" align="right" valign="top"><a id="a1e0a666a0f78a424041e3af0cbd86bd2"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Q_ENUM</b> (Arch) static bool isDeepin()</td></tr>
+<tr class="separator:a1e0a666a0f78a424041e3af0cbd86bd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2770a643324c3278c7a68b73ddb29c17"><td class="memItemLeft" align="right" valign="top"><a id="a2770a643324c3278c7a68b73ddb29c17"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Q_DECL_DEPRECATED_X</b> (&quot;Use <a class="el" href="classDtk_1_1Core_1_1DSysInfo.html#af48c66bfe8dcceea5ed7f309fa921ad1">arch</a>() instead&quot;) static <a class="el" href="classDtk_1_1Core_1_1DSysInfo.html#a10e74d156a2a34e26b14fcfc22dffc30">UosArch</a> uosArch()</td></tr>
+<tr class="separator:a2770a643324c3278c7a68b73ddb29c17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a253caba0a7b5f86ea3a5de7299554b38"><td class="memItemLeft" align="right" valign="top"><a id="a253caba0a7b5f86ea3a5de7299554b38"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Q_DECL_DEPRECATED_X</b> (&quot;Use <a class="el" href="classDtk_1_1Core_1_1DSysInfo.html#ad363e68110ed064bc0702262246de067">distributionInfoPath</a>() instead&quot;) static QString deepinDistributionInfoPath()</td></tr>
+<tr class="separator:a253caba0a7b5f86ea3a5de7299554b38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7c6ecbcb42d071139426a58d8574926"><td class="memItemLeft" align="right" valign="top"><a id="ad7c6ecbcb42d071139426a58d8574926"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Q_DECL_DEPRECATED_X</b> (&quot;Use deepinDistributionOrgName() instead&quot;) static QString deepinDistributorName()</td></tr>
+<tr class="separator:ad7c6ecbcb42d071139426a58d8574926"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03d2be8d06cf4f854f971492ff8af549"><td class="memItemLeft" align="right" valign="top"><a id="a03d2be8d06cf4f854f971492ff8af549"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Q_DECL_DEPRECATED_X</b> (&quot;Use deepinDistributionOrgWebsite() instead&quot;) static QPair&lt; QString</td></tr>
+<tr class="separator:a03d2be8d06cf4f854f971492ff8af549"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3804afb4e39d7102d139ff9d49ecc755"><td class="memItemLeft" align="right" valign="top"><a id="a3804afb4e39d7102d139ff9d49ecc755"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>deepinDistributorWebsite</b> ()</td></tr>
+<tr class="separator:a3804afb4e39d7102d139ff9d49ecc755"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a641dfc86c7adc7c5929594800ceadab0"><td class="memItemLeft" align="right" valign="top"><a id="a641dfc86c7adc7c5929594800ceadab0"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Q_DECL_DEPRECATED_X</b> (&quot;Use deepinDistributionOrgLogo() instead&quot;) static QString deepinDistributorLogo(<a class="el" href="classDtk_1_1Core_1_1DSysInfo.html#a8c98faa519cd1ee5301171d8df6c86c7">LogoType</a> type</td></tr>
+<tr class="separator:a641dfc86c7adc7c5929594800ceadab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a398f5ab3b2041dcb561a8894b33c8e26"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DSysInfo.html#a398f5ab3b2041dcb561a8894b33c8e26">isDDE</a> ()</td></tr>
+<tr class="memdesc:a398f5ab3b2041dcb561a8894b33c8e26"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否使用 dde 桌面环境  <a href="classDtk_1_1Core_1_1DSysInfo.html#a398f5ab3b2041dcb561a8894b33c8e26">更多...</a><br /></td></tr>
+<tr class="separator:a398f5ab3b2041dcb561a8894b33c8e26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab33b06301e17e7656b6fad41f0243fcf"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classDtk_1_1Core_1_1DSysInfo.html#abce779af6b5c5e03e2a7f3b55e78ae32">DeepinType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DSysInfo.html#ab33b06301e17e7656b6fad41f0243fcf">deepinType</a> ()</td></tr>
+<tr class="memdesc:ab33b06301e17e7656b6fad41f0243fcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">deepin 系统类型  <a href="classDtk_1_1Core_1_1DSysInfo.html#ab33b06301e17e7656b6fad41f0243fcf">更多...</a><br /></td></tr>
+<tr class="separator:ab33b06301e17e7656b6fad41f0243fcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97accb5c769bc26d817a2976f1004941"><td class="memItemLeft" align="right" valign="top">static QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DSysInfo.html#a97accb5c769bc26d817a2976f1004941">deepinTypeDisplayName</a> (const QLocale &amp;locale=QLocale::system())</td></tr>
+<tr class="memdesc:a97accb5c769bc26d817a2976f1004941"><td class="mdescLeft">&#160;</td><td class="mdescRight">显示的 deepin 发行版类型名称  <a href="classDtk_1_1Core_1_1DSysInfo.html#a97accb5c769bc26d817a2976f1004941">更多...</a><br /></td></tr>
+<tr class="separator:a97accb5c769bc26d817a2976f1004941"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4ec150bd572ae1236f7724af2598174"><td class="memItemLeft" align="right" valign="top">static QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DSysInfo.html#af4ec150bd572ae1236f7724af2598174">deepinVersion</a> ()</td></tr>
+<tr class="memdesc:af4ec150bd572ae1236f7724af2598174"><td class="mdescLeft">&#160;</td><td class="mdescRight">deepin 版本  <a href="classDtk_1_1Core_1_1DSysInfo.html#af4ec150bd572ae1236f7724af2598174">更多...</a><br /></td></tr>
+<tr class="separator:af4ec150bd572ae1236f7724af2598174"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3288aed13da3a6398c9425e99f54c74"><td class="memItemLeft" align="right" valign="top"><a id="ab3288aed13da3a6398c9425e99f54c74"></a>
+static QString&#160;</td><td class="memItemRight" valign="bottom"><b>deepinEdition</b> ()</td></tr>
+<tr class="separator:ab3288aed13da3a6398c9425e99f54c74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adebc9bbf6aa29e1ee2d13067d7ce9c71"><td class="memItemLeft" align="right" valign="top">static QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DSysInfo.html#adebc9bbf6aa29e1ee2d13067d7ce9c71">deepinCopyright</a> ()</td></tr>
+<tr class="memdesc:adebc9bbf6aa29e1ee2d13067d7ce9c71"><td class="mdescLeft">&#160;</td><td class="mdescRight">deepin 开源许可协议  <a href="classDtk_1_1Core_1_1DSysInfo.html#adebc9bbf6aa29e1ee2d13067d7ce9c71">更多...</a><br /></td></tr>
+<tr class="separator:adebc9bbf6aa29e1ee2d13067d7ce9c71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad68bac0db80674acba4da7afd21b6bae"><td class="memItemLeft" align="right" valign="top"><a id="ad68bac0db80674acba4da7afd21b6bae"></a>
+static <a class="el" href="classDtk_1_1Core_1_1DSysInfo.html#a9f811bf21c840fafa7809ee01865cb93">UosType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>uosType</b> ()</td></tr>
+<tr class="separator:ad68bac0db80674acba4da7afd21b6bae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab382f97a6730d92ba67bf2bc7aa65b49"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classDtk_1_1Core_1_1DSysInfo.html#a95c282f42eda222e5b9925122fe2a434">UosEdition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DSysInfo.html#ab382f97a6730d92ba67bf2bc7aa65b49">uosEditionType</a> ()</td></tr>
+<tr class="memdesc:ab382f97a6730d92ba67bf2bc7aa65b49"><td class="mdescLeft">&#160;</td><td class="mdescRight">DSysInfo::osEditionType 版本类型 显示版本类型 专业版/个人版/社区版..  <a href="classDtk_1_1Core_1_1DSysInfo.html#ab382f97a6730d92ba67bf2bc7aa65b49">更多...</a><br /></td></tr>
+<tr class="separator:ab382f97a6730d92ba67bf2bc7aa65b49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cbb39c9e530358ddf9979d53c55b99d"><td class="memItemLeft" align="right" valign="top"><a id="a2cbb39c9e530358ddf9979d53c55b99d"></a>
+static QString&#160;</td><td class="memItemRight" valign="bottom"><b>uosProductTypeName</b> (const QLocale &amp;locale=QLocale::system())</td></tr>
+<tr class="separator:a2cbb39c9e530358ddf9979d53c55b99d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22734a9f4e9bf3c9abccf162516effd9"><td class="memItemLeft" align="right" valign="top">static QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DSysInfo.html#a22734a9f4e9bf3c9abccf162516effd9">uosSystemName</a> (const QLocale &amp;locale=QLocale::system())</td></tr>
+<tr class="memdesc:a22734a9f4e9bf3c9abccf162516effd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">SystemName[xx] 项对应的值  <a href="classDtk_1_1Core_1_1DSysInfo.html#a22734a9f4e9bf3c9abccf162516effd9">更多...</a><br /></td></tr>
+<tr class="separator:a22734a9f4e9bf3c9abccf162516effd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfd0e640e6dd7ef3dcddfa9a0049e190"><td class="memItemLeft" align="right" valign="top"><a id="abfd0e640e6dd7ef3dcddfa9a0049e190"></a>
+static QString&#160;</td><td class="memItemRight" valign="bottom"><b>uosEditionName</b> (const QLocale &amp;locale=QLocale::system())</td></tr>
+<tr class="separator:abfd0e640e6dd7ef3dcddfa9a0049e190"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78ecfd5631fbdab6b215d57cb98857f7"><td class="memItemLeft" align="right" valign="top">static QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DSysInfo.html#a78ecfd5631fbdab6b215d57cb98857f7">spVersion</a> ()</td></tr>
+<tr class="memdesc:a78ecfd5631fbdab6b215d57cb98857f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">阶段版本名称  <a href="classDtk_1_1Core_1_1DSysInfo.html#a78ecfd5631fbdab6b215d57cb98857f7">更多...</a><br /></td></tr>
+<tr class="separator:a78ecfd5631fbdab6b215d57cb98857f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac5ecc8cb37eafac81f102e7ec1017e3"><td class="memItemLeft" align="right" valign="top">static QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DSysInfo.html#aac5ecc8cb37eafac81f102e7ec1017e3">udpateVersion</a> ()</td></tr>
+<tr class="memdesc:aac5ecc8cb37eafac81f102e7ec1017e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新版本名称 小版本号 A-BC-D 中 D、A.B.C 模式中的 C 返回 update1… update9, 如果正式版返回空 X.Y.Z 模式下暂不支持返回此版本号  <a href="classDtk_1_1Core_1_1DSysInfo.html#aac5ecc8cb37eafac81f102e7ec1017e3">更多...</a><br /></td></tr>
+<tr class="separator:aac5ecc8cb37eafac81f102e7ec1017e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaedb6ace0392bd73a788773e7306686b"><td class="memItemLeft" align="right" valign="top">static QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DSysInfo.html#aaedb6ace0392bd73a788773e7306686b">majorVersion</a> ()</td></tr>
+<tr class="memdesc:aaedb6ace0392bd73a788773e7306686b"><td class="mdescLeft">&#160;</td><td class="mdescRight">主版本号 主版本号 【20】【23】【25】【26】【29】【30】  <a href="classDtk_1_1Core_1_1DSysInfo.html#aaedb6ace0392bd73a788773e7306686b">更多...</a><br /></td></tr>
+<tr class="separator:aaedb6ace0392bd73a788773e7306686b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab83ca93abf90445d2867c8f733bd2795"><td class="memItemLeft" align="right" valign="top">static QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DSysInfo.html#ab83ca93abf90445d2867c8f733bd2795">minorVersion</a> ()</td></tr>
+<tr class="memdesc:ab83ca93abf90445d2867c8f733bd2795"><td class="mdescLeft">&#160;</td><td class="mdescRight">小版本号 【ABCD】 ·[0-9]{4} 【A.B.C】 或者【X.Y.Z】  <a href="classDtk_1_1Core_1_1DSysInfo.html#ab83ca93abf90445d2867c8f733bd2795">更多...</a><br /></td></tr>
+<tr class="separator:ab83ca93abf90445d2867c8f733bd2795"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a097282526af96a2b4e28bff943415688"><td class="memItemLeft" align="right" valign="top">static QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DSysInfo.html#a097282526af96a2b4e28bff943415688">buildVersion</a> ()</td></tr>
+<tr class="memdesc:a097282526af96a2b4e28bff943415688"><td class="mdescLeft">&#160;</td><td class="mdescRight">小版本号 系统镜像批次号, 按时间顺序(不可回退)从100-999递增  <a href="classDtk_1_1Core_1_1DSysInfo.html#a097282526af96a2b4e28bff943415688">更多...</a><br /></td></tr>
+<tr class="separator:a097282526af96a2b4e28bff943415688"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad363e68110ed064bc0702262246de067"><td class="memItemLeft" align="right" valign="top">static QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DSysInfo.html#ad363e68110ed064bc0702262246de067">distributionInfoPath</a> ()</td></tr>
+<tr class="separator:ad363e68110ed064bc0702262246de067"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac74b182295bbf18482ced1d706a66303"><td class="memItemLeft" align="right" valign="top"><a id="ac74b182295bbf18482ced1d706a66303"></a>
+static QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DSysInfo.html#ac74b182295bbf18482ced1d706a66303">distributionInfoSectionName</a> (<a class="el" href="classDtk_1_1Core_1_1DSysInfo.html#a210c7bb23430c7eae5b16fa46d5176f3">OrgType</a> type)</td></tr>
+<tr class="memdesc:ac74b182295bbf18482ced1d706a66303"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回 distribution.info 文件中 SectionName 字段的值 <br /></td></tr>
+<tr class="separator:ac74b182295bbf18482ced1d706a66303"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06e3fec6a0dcec38462971f2a34d1526"><td class="memItemLeft" align="right" valign="top">static QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DSysInfo.html#a06e3fec6a0dcec38462971f2a34d1526">distributionOrgName</a> (<a class="el" href="classDtk_1_1Core_1_1DSysInfo.html#a210c7bb23430c7eae5b16fa46d5176f3">OrgType</a> type=Distribution, const QLocale &amp;locale=QLocale::system())</td></tr>
+<tr class="memdesc:a06e3fec6a0dcec38462971f2a34d1526"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回组织名称  <a href="classDtk_1_1Core_1_1DSysInfo.html#a06e3fec6a0dcec38462971f2a34d1526">更多...</a><br /></td></tr>
+<tr class="separator:a06e3fec6a0dcec38462971f2a34d1526"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a509a66b7f6d55544645bebdc7c9e5c49"><td class="memItemLeft" align="right" valign="top"><a id="a509a66b7f6d55544645bebdc7c9e5c49"></a>
+static QPair&lt; QString, QString &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DSysInfo.html#a509a66b7f6d55544645bebdc7c9e5c49">distributionOrgWebsite</a> (<a class="el" href="classDtk_1_1Core_1_1DSysInfo.html#a210c7bb23430c7eae5b16fa46d5176f3">OrgType</a> type=Distribution)</td></tr>
+<tr class="memdesc:a509a66b7f6d55544645bebdc7c9e5c49"><td class="mdescLeft">&#160;</td><td class="mdescRight">发行版组织的网站名称和网址。使用 type 作为 Distribution 获取当前 deepin 发行版本身的名称。 <br /></td></tr>
+<tr class="separator:a509a66b7f6d55544645bebdc7c9e5c49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1386f1e92ad98d98df5bb857f221e60"><td class="memItemLeft" align="right" valign="top">static QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DSysInfo.html#ab1386f1e92ad98d98df5bb857f221e60">distributionOrgLogo</a> (<a class="el" href="classDtk_1_1Core_1_1DSysInfo.html#a210c7bb23430c7eae5b16fa46d5176f3">OrgType</a> orgType=Distribution, <a class="el" href="classDtk_1_1Core_1_1DSysInfo.html#a8c98faa519cd1ee5301171d8df6c86c7">LogoType</a> type=Normal, const QString &amp;fallback=QString())</td></tr>
+<tr class="memdesc:ab1386f1e92ad98d98df5bb857f221e60"><td class="mdescLeft">&#160;</td><td class="mdescRight">获得的组织logo路径, 如果不存在, 则返回给定的其他路径  <a href="classDtk_1_1Core_1_1DSysInfo.html#ab1386f1e92ad98d98df5bb857f221e60">更多...</a><br /></td></tr>
+<tr class="separator:ab1386f1e92ad98d98df5bb857f221e60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeea96b6200c111ea74064a808d28416c"><td class="memItemLeft" align="right" valign="top"><a id="aeea96b6200c111ea74064a808d28416c"></a>
+static QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DSysInfo.html#aeea96b6200c111ea74064a808d28416c">operatingSystemName</a> ()</td></tr>
+<tr class="memdesc:aeea96b6200c111ea74064a808d28416c"><td class="mdescLeft">&#160;</td><td class="mdescRight">操作系统名 <br /></td></tr>
+<tr class="separator:aeea96b6200c111ea74064a808d28416c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a7892cfb99400c4bc386427b5471487"><td class="memItemLeft" align="right" valign="top"><a id="a5a7892cfb99400c4bc386427b5471487"></a>
+static <a class="el" href="classDtk_1_1Core_1_1DSysInfo.html#a83e0d06dcacf2abf19fdd231497a9b57">ProductType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DSysInfo.html#a5a7892cfb99400c4bc386427b5471487">productType</a> ()</td></tr>
+<tr class="memdesc:a5a7892cfb99400c4bc386427b5471487"><td class="mdescLeft">&#160;</td><td class="mdescRight">产品类型 <br /></td></tr>
+<tr class="separator:a5a7892cfb99400c4bc386427b5471487"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a200fbc6b72523fd4db482f26df2c9e14"><td class="memItemLeft" align="right" valign="top"><a id="a200fbc6b72523fd4db482f26df2c9e14"></a>
+static QString&#160;</td><td class="memItemRight" valign="bottom"><b>productTypeString</b> ()</td></tr>
+<tr class="separator:a200fbc6b72523fd4db482f26df2c9e14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01b5c8976e2c27aa63ad9db4f866ef61"><td class="memItemLeft" align="right" valign="top"><a id="a01b5c8976e2c27aa63ad9db4f866ef61"></a>
+static QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DSysInfo.html#a01b5c8976e2c27aa63ad9db4f866ef61">productVersion</a> ()</td></tr>
+<tr class="memdesc:a01b5c8976e2c27aa63ad9db4f866ef61"><td class="mdescLeft">&#160;</td><td class="mdescRight">产品版本 <br /></td></tr>
+<tr class="separator:a01b5c8976e2c27aa63ad9db4f866ef61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e72c98f4270e26918dc20a94f652590"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DSysInfo.html#a2e72c98f4270e26918dc20a94f652590">isCommunityEdition</a> ()</td></tr>
+<tr class="memdesc:a2e72c98f4270e26918dc20a94f652590"><td class="mdescLeft">&#160;</td><td class="mdescRight">检查当前版本是否是社区版 开发者可以使用这种方式来检查我们是否需要启用或禁用社区版或企业版的功能。  <a href="classDtk_1_1Core_1_1DSysInfo.html#a2e72c98f4270e26918dc20a94f652590">更多...</a><br /></td></tr>
+<tr class="separator:a2e72c98f4270e26918dc20a94f652590"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0827e0ae34797f46b077a6b351308084"><td class="memItemLeft" align="right" valign="top"><a id="a0827e0ae34797f46b077a6b351308084"></a>
+static QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DSysInfo.html#a0827e0ae34797f46b077a6b351308084">computerName</a> ()</td></tr>
+<tr class="memdesc:a0827e0ae34797f46b077a6b351308084"><td class="mdescLeft">&#160;</td><td class="mdescRight">电脑名 <br /></td></tr>
+<tr class="separator:a0827e0ae34797f46b077a6b351308084"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae783ea28b31750c34a1979927b3ee9ed"><td class="memItemLeft" align="right" valign="top"><a id="ae783ea28b31750c34a1979927b3ee9ed"></a>
+static QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DSysInfo.html#ae783ea28b31750c34a1979927b3ee9ed">cpuModelName</a> ()</td></tr>
+<tr class="memdesc:ae783ea28b31750c34a1979927b3ee9ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">cpu模式名 <br /></td></tr>
+<tr class="separator:ae783ea28b31750c34a1979927b3ee9ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6c4314dbd0de7b0d4b63273295d1f75"><td class="memItemLeft" align="right" valign="top"><a id="ab6c4314dbd0de7b0d4b63273295d1f75"></a>
+static qint64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DSysInfo.html#ab6c4314dbd0de7b0d4b63273295d1f75">memoryInstalledSize</a> ()</td></tr>
+<tr class="memdesc:ab6c4314dbd0de7b0d4b63273295d1f75"><td class="mdescLeft">&#160;</td><td class="mdescRight">内存安装大小 <br /></td></tr>
+<tr class="separator:ab6c4314dbd0de7b0d4b63273295d1f75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a213c1587f714ef50b1d78121a6f083"><td class="memItemLeft" align="right" valign="top"><a id="a7a213c1587f714ef50b1d78121a6f083"></a>
+static qint64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DSysInfo.html#a7a213c1587f714ef50b1d78121a6f083">memoryTotalSize</a> ()</td></tr>
+<tr class="memdesc:a7a213c1587f714ef50b1d78121a6f083"><td class="mdescLeft">&#160;</td><td class="mdescRight">实际内存大小 <br /></td></tr>
+<tr class="separator:a7a213c1587f714ef50b1d78121a6f083"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e0a8d596d68f72d3c1fbc42d24a5ff4"><td class="memItemLeft" align="right" valign="top"><a id="a8e0a8d596d68f72d3c1fbc42d24a5ff4"></a>
+static qint64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DSysInfo.html#a8e0a8d596d68f72d3c1fbc42d24a5ff4">systemDiskSize</a> ()</td></tr>
+<tr class="memdesc:a8e0a8d596d68f72d3c1fbc42d24a5ff4"><td class="mdescLeft">&#160;</td><td class="mdescRight">系统磁盘大小 <br /></td></tr>
+<tr class="separator:a8e0a8d596d68f72d3c1fbc42d24a5ff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a719502ceb4f003b9076687dacf9d83da"><td class="memItemLeft" align="right" valign="top"><a id="a719502ceb4f003b9076687dacf9d83da"></a>
+static QDateTime&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DSysInfo.html#a719502ceb4f003b9076687dacf9d83da">bootTime</a> ()</td></tr>
+<tr class="memdesc:a719502ceb4f003b9076687dacf9d83da"><td class="mdescLeft">&#160;</td><td class="mdescRight">系统启动时间点 <br /></td></tr>
+<tr class="separator:a719502ceb4f003b9076687dacf9d83da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7905fa996833dd4856a67cdc8838d4e"><td class="memItemLeft" align="right" valign="top"><a id="ae7905fa996833dd4856a67cdc8838d4e"></a>
+static QDateTime&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DSysInfo.html#ae7905fa996833dd4856a67cdc8838d4e">shutdownTime</a> ()</td></tr>
+<tr class="memdesc:ae7905fa996833dd4856a67cdc8838d4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">上一次正常关机时间点(重启也会被记录在内) <br /></td></tr>
+<tr class="separator:ae7905fa996833dd4856a67cdc8838d4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a789d9a9aa676c99cf509f568a39a9f6f"><td class="memItemLeft" align="right" valign="top">static qint64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DSysInfo.html#a789d9a9aa676c99cf509f568a39a9f6f">uptime</a> ()</td></tr>
+<tr class="memdesc:a789d9a9aa676c99cf509f568a39a9f6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">系统启动到现在时长  <a href="classDtk_1_1Core_1_1DSysInfo.html#a789d9a9aa676c99cf509f568a39a9f6f">更多...</a><br /></td></tr>
+<tr class="separator:a789d9a9aa676c99cf509f568a39a9f6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af48c66bfe8dcceea5ed7f309fa921ad1"><td class="memItemLeft" align="right" valign="top">static Arch&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DSysInfo.html#af48c66bfe8dcceea5ed7f309fa921ad1">arch</a> ()</td></tr>
+<tr class="memdesc:af48c66bfe8dcceea5ed7f309fa921ad1"><td class="mdescLeft">&#160;</td><td class="mdescRight">cpu架构信息  <a href="classDtk_1_1Core_1_1DSysInfo.html#af48c66bfe8dcceea5ed7f309fa921ad1">更多...</a><br /></td></tr>
+<tr class="separator:af48c66bfe8dcceea5ed7f309fa921ad1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:aca33898c297ce0b58ca86fd62e542af1"><td class="memItemLeft" align="right" valign="top"><a id="aca33898c297ce0b58ca86fd62e542af1"></a>
+const QString &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>fallback</b> = QString())</td></tr>
+<tr class="separator:aca33898c297ce0b58ca86fd62e542af1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>dsysinfo 是一组用于查询系统信息的静态类 </p>
+<h2><a class="anchor" id="autotoc_md9"></a>
+概述</h2>
+<p>dsysinfo是一组用于查询系统信息的静态类</p>
+<p>项目目录结构如下：</p>
+<div class="fragment"><div class="line">├── CMakeLists.txt</div>
+<div class="line">└── main.cpp</div>
+<div class="line"> </div>
+<div class="line">## CMakeLists.txt</div>
+<div class="line"> </div>
+<div class="line">```cmake</div>
+<div class="line">cmake_minimum_required(VERSION 3.13) # cmake版本要求</div>
+<div class="line">set (VERSION &quot;1.0.0&quot; CACHE STRING &quot;define project version&quot;) # 定义项目版本</div>
+<div class="line">set(BIN_NAME test) # 定义项目名称</div>
+<div class="line">project(test) # 定义项目名称</div>
+<div class="line">file(GLOB_RECURSE SRCS &quot;*.h&quot; &quot;*.cpp&quot;)  # 定义项目源文件</div>
+<div class="line">find_package(Qt5 REQUIRED COMPONENTS Core) # 寻找Qt5</div>
+<div class="line">find_package(DtkCore REQUIRED) # 寻找DtkCore</div>
+<div class="line"> </div>
+<div class="line">add_executable(test</div>
+<div class="line">    main.cpp # 源文件</div>
+<div class="line">)</div>
+<div class="line"> </div>
+<div class="line">target_link_libraries(test PRIVATE</div>
+<div class="line">    ${DtkCore_LIBRARIES} # 链接DtkCore</div>
+<div class="line">    Qt5::Core # 链接Qt5</div>
+<div class="line">)</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md10"></a>
+main.cpp</h2>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;DSysInfo&gt;</span> <span class="comment">// 引入DSysInfo</span></div>
+<div class="line"><span class="preprocessor">#include &lt;qdebug.h&gt;</span> <span class="comment">// 引入qdebug.h</span></div>
+<div class="line">DCORE_USE_NAMESPACE <span class="comment">// 使用dtkcore命名空间</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> **argv) {</div>
+<div class="line"> </div>
+<div class="line">  qDebug() &lt;&lt; <a class="code" href="classDtk_1_1Core_1_1DSysInfo.html#ab33b06301e17e7656b6fad41f0243fcf">DSysInfo::deepinType</a>(); <span class="comment">// 打印deepin类型</span></div>
+<div class="line">  qDebug() &lt;&lt; <a class="code" href="classDtk_1_1Core_1_1DSysInfo.html#a83e0d06dcacf2abf19fdd231497a9b57">DSysInfo::ProductType</a>(); <span class="comment">// 打印产品类型</span></div>
+<div class="line">  <span class="keywordflow">return</span> 0;</div>
+<div class="line">}</div>
+<div class="ttc" id="aclassDtk_1_1Core_1_1DSysInfo_html_a83e0d06dcacf2abf19fdd231497a9b57"><div class="ttname"><a href="classDtk_1_1Core_1_1DSysInfo.html#a83e0d06dcacf2abf19fdd231497a9b57">Dtk::Core::DSysInfo::ProductType</a></div><div class="ttdeci">ProductType</div><div class="ttdoc">产品信息</div><div class="ttdef"><b>Definition:</b> dsysinfo.h:19</div></div>
+<div class="ttc" id="aclassDtk_1_1Core_1_1DSysInfo_html_ab33b06301e17e7656b6fad41f0243fcf"><div class="ttname"><a href="classDtk_1_1Core_1_1DSysInfo.html#ab33b06301e17e7656b6fad41f0243fcf">Dtk::Core::DSysInfo::deepinType</a></div><div class="ttdeci">static DeepinType deepinType()</div><div class="ttdoc">deepin 系统类型</div><div class="ttdef"><b>Definition:</b> dsysinfo.cpp:561</div></div>
+</div><!-- fragment --> </div><h2 class="groupheader">成员枚举类型说明</h2>
+<a id="abce779af6b5c5e03e2a7f3b55e78ae32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abce779af6b5c5e03e2a7f3b55e78ae32">&#9670;&nbsp;</a></span>DeepinType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classDtk_1_1Core_1_1DSysInfo.html#abce779af6b5c5e03e2a7f3b55e78ae32">Dtk::Core::DSysInfo::DeepinType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>深度操作系统版本 </p>
+<p><a class="el" href="dsysinfo_8h.html">dsysinfo.h</a></p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">值   </th><th class="markdownTableHeadNone">序号   </th><th class="markdownTableHeadNone">含义    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">UnknownDeepin   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">未知版本    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">DeepinDesktop   </td><td class="markdownTableBodyNone">1   </td><td class="markdownTableBodyNone">deepin桌面发行版    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">DeepinProfessional   </td><td class="markdownTableBodyNone">2   </td><td class="markdownTableBodyNone">deepin专业版, 现为uos专业版    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">DeepinServer   </td><td class="markdownTableBodyNone">3   </td><td class="markdownTableBodyNone">deepin服务器版本, 现为uos服务器版    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">DeepinPersonal   </td><td class="markdownTableBodyNone">4   </td><td class="markdownTableBodyNone">deepin个人版, 现为uos家庭版   </td></tr>
+</table>
+
+</div>
+</div>
+<a id="a8c98faa519cd1ee5301171d8df6c86c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c98faa519cd1ee5301171d8df6c86c7">&#9670;&nbsp;</a></span>LogoType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classDtk_1_1Core_1_1DSysInfo.html#a8c98faa519cd1ee5301171d8df6c86c7">Dtk::Core::DSysInfo::LogoType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>系统的logo类型 </p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">值   </th><th class="markdownTableHeadNone">序号   </th><th class="markdownTableHeadNone">含义    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Normal   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">正常    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Light   </td><td class="markdownTableBodyNone">1   </td><td class="markdownTableBodyNone">亮色    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Symbolic   </td><td class="markdownTableBodyNone">2   </td><td class="markdownTableBodyNone">符号    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Transparent   </td><td class="markdownTableBodyNone">3   </td><td class="markdownTableBodyNone">水印   </td></tr>
+</table>
+
+</div>
+</div>
+<a id="a210c7bb23430c7eae5b16fa46d5176f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a210c7bb23430c7eae5b16fa46d5176f3">&#9670;&nbsp;</a></span>OrgType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classDtk_1_1Core_1_1DSysInfo.html#a210c7bb23430c7eae5b16fa46d5176f3">Dtk::Core::DSysInfo::OrgType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">值   </th><th class="markdownTableHeadNone">序号   </th><th class="markdownTableHeadNone">含义    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Distribution   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">当前版本    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Distributor   </td><td class="markdownTableBodyNone">1   </td><td class="markdownTableBodyNone">当前发行版    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Manufacturer   </td><td class="markdownTableBodyNone">2   </td><td class="markdownTableBodyNone">当前发行版或设备的制造商   </td></tr>
+</table>
+
+</div>
+</div>
+<a id="a83e0d06dcacf2abf19fdd231497a9b57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83e0d06dcacf2abf19fdd231497a9b57">&#9670;&nbsp;</a></span>ProductType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classDtk_1_1Core_1_1DSysInfo.html#a83e0d06dcacf2abf19fdd231497a9b57">Dtk::Core::DSysInfo::ProductType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>产品信息 </p>
+<p><a class="el" href="dsysinfo_8h.html">dsysinfo.h</a></p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">值   </th><th class="markdownTableHeadNone">序号   </th><th class="markdownTableHeadNone">含义    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">UnknownType   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">未知类型    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">deepin   </td><td class="markdownTableBodyNone">1   </td><td class="markdownTableBodyNone">深度社区版    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">ArchLinux   </td><td class="markdownTableBodyNone">2   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">CentOS   </td><td class="markdownTableBodyNone">3   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Debian   </td><td class="markdownTableBodyNone">4   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Fedora   </td><td class="markdownTableBodyNone">5   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">LinuxMint   </td><td class="markdownTableBodyNone">6   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Manjaro   </td><td class="markdownTableBodyNone">7   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">openSUSE   </td><td class="markdownTableBodyNone">8   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">SailfishOS   </td><td class="markdownTableBodyNone">9   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Ubuntu   </td><td class="markdownTableBodyNone">10   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Uos   </td><td class="markdownTableBodyNone">11   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Gentoo   </td><td class="markdownTableBodyNone">12   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">NixOS   </td><td class="markdownTableBodyNone">13   </td><td class="markdownTableBodyNone"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a10e74d156a2a34e26b14fcfc22dffc30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10e74d156a2a34e26b14fcfc22dffc30">&#9670;&nbsp;</a></span>UosArch</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classDtk_1_1Core_1_1DSysInfo.html#a10e74d156a2a34e26b14fcfc22dffc30">Dtk::Core::DSysInfo::UosArch</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>UOS使用的架构 </p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">值   </th><th class="markdownTableHeadNone">序号   </th><th class="markdownTableHeadNone">含义    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">UosArchUnknown   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">未知架构    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">UosAMD64   </td><td class="markdownTableBodyNone">1   </td><td class="markdownTableBodyNone">x86_64    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">UosARM64   </td><td class="markdownTableBodyNone">2   </td><td class="markdownTableBodyNone">arm64    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">UosMIPS64   </td><td class="markdownTableBodyNone">4   </td><td class="markdownTableBodyNone">mips64    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">UosSW64   </td><td class="markdownTableBodyNone">8   </td><td class="markdownTableBodyNone">sw_64   </td></tr>
+</table>
+
+</div>
+</div>
+<a id="a95c282f42eda222e5b9925122fe2a434"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95c282f42eda222e5b9925122fe2a434">&#9670;&nbsp;</a></span>UosEdition</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classDtk_1_1Core_1_1DSysInfo.html#a95c282f42eda222e5b9925122fe2a434">Dtk::Core::DSysInfo::UosEdition</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>详细uos版本 </p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">值   </th><th class="markdownTableHeadNone">序号   </th><th class="markdownTableHeadNone">含义    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">UosEditionUnknown   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">未知发行版    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">UosProfessional   </td><td class="markdownTableBodyNone">1   </td><td class="markdownTableBodyNone">UOS专业版    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">UosHome   </td><td class="markdownTableBodyNone">2   </td><td class="markdownTableBodyNone">UOS家庭版    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">UosCommunity   </td><td class="markdownTableBodyNone">3   </td><td class="markdownTableBodyNone">社区版    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">UosMilitary   </td><td class="markdownTableBodyNone">4   </td><td class="markdownTableBodyNone">*    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">UosEnterprise   </td><td class="markdownTableBodyNone">5   </td><td class="markdownTableBodyNone">UOS企业版    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">UosEnterpriseC   </td><td class="markdownTableBodyNone">6   </td><td class="markdownTableBodyNone">UOS行业版    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">UosEuler   </td><td class="markdownTableBodyNone">7   </td><td class="markdownTableBodyNone">UOS服务器欧拉版    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">UosMilitaryS   </td><td class="markdownTableBodyNone">8   </td><td class="markdownTableBodyNone">*    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">UosDeviceEdition   </td><td class="markdownTableBodyNone">9   </td><td class="markdownTableBodyNone">UOS专用设备版    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">UosEducation   </td><td class="markdownTableBodyNone">10   </td><td class="markdownTableBodyNone">UOS教育版    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">UosEditionCount   </td><td class="markdownTableBodyNone">11   </td><td class="markdownTableBodyNone">记录枚举数量   </td></tr>
+</table>
+
+</div>
+</div>
+<a id="a9f811bf21c840fafa7809ee01865cb93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f811bf21c840fafa7809ee01865cb93">&#9670;&nbsp;</a></span>UosType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classDtk_1_1Core_1_1DSysInfo.html#a9f811bf21c840fafa7809ee01865cb93">Dtk::Core::DSysInfo::UosType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>UOS版本类型 </p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">值   </th><th class="markdownTableHeadNone">序号   </th><th class="markdownTableHeadNone">含义    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">UosTypeUnknown   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">未知版本    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">UosDesktop   </td><td class="markdownTableBodyNone">1   </td><td class="markdownTableBodyNone">UOS桌面版    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">UosServer   </td><td class="markdownTableBodyNone">2   </td><td class="markdownTableBodyNone">UOS服务器版    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">UosDevice   </td><td class="markdownTableBodyNone">3   </td><td class="markdownTableBodyNone">UOS设备版    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">UosTypeCount   </td><td class="markdownTableBodyNone">4   </td><td class="markdownTableBodyNone">记录枚举数量   </td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="af48c66bfe8dcceea5ed7f309fa921ad1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af48c66bfe8dcceea5ed7f309fa921ad1">&#9670;&nbsp;</a></span>arch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DSysInfo::Arch Dtk::Core::DSysInfo::arch </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>cpu架构信息 </p>
+<dl class="section note"><dt>注解</dt><dd>此处架构是从gcc编译器获取的 </dd></dl>
+
+</div>
+</div>
+<a id="a097282526af96a2b4e28bff943415688"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a097282526af96a2b4e28bff943415688">&#9670;&nbsp;</a></span>buildVersion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString Dtk::Core::DSysInfo::buildVersion </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>小版本号 系统镜像批次号, 按时间顺序(不可回退)从100-999递增 </p>
+<dl class="section note"><dt>注解</dt><dd>此方法仅在 linux 平台下可用 </dd></dl>
+
+</div>
+</div>
+<a id="adebc9bbf6aa29e1ee2d13067d7ce9c71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adebc9bbf6aa29e1ee2d13067d7ce9c71">&#9670;&nbsp;</a></span>deepinCopyright()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString Dtk::Core::DSysInfo::deepinCopyright </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>deepin 开源许可协议 </p>
+<dl class="section note"><dt>注解</dt><dd>此方法仅在 linux 平台下可用 </dd></dl>
+
+</div>
+</div>
+<a id="ab33b06301e17e7656b6fad41f0243fcf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab33b06301e17e7656b6fad41f0243fcf">&#9670;&nbsp;</a></span>deepinType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDtk_1_1Core_1_1DSysInfo.html#abce779af6b5c5e03e2a7f3b55e78ae32">DSysInfo::DeepinType</a> Dtk::Core::DSysInfo::deepinType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>deepin 系统类型 </p>
+<dl class="section note"><dt>注解</dt><dd>此方法仅在 linux 平台下可用 </dd></dl>
+
+</div>
+</div>
+<a id="a97accb5c769bc26d817a2976f1004941"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97accb5c769bc26d817a2976f1004941">&#9670;&nbsp;</a></span>deepinTypeDisplayName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString Dtk::Core::DSysInfo::deepinTypeDisplayName </td>
+          <td>(</td>
+          <td class="paramtype">const QLocale &amp;&#160;</td>
+          <td class="paramname"><em>locale</em> = <code>QLocale::system()</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>显示的 deepin 发行版类型名称 </p>
+<dl class="section note"><dt>注解</dt><dd>此方法仅在 linux 平台下可用 </dd></dl>
+
+</div>
+</div>
+<a id="af4ec150bd572ae1236f7724af2598174"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4ec150bd572ae1236f7724af2598174">&#9670;&nbsp;</a></span>deepinVersion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString Dtk::Core::DSysInfo::deepinVersion </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>deepin 版本 </p>
+<dl class="section note"><dt>注解</dt><dd>此方法仅在 linux 平台下可用 </dd></dl>
+
+</div>
+</div>
+<a id="ad363e68110ed064bc0702262246de067"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad363e68110ed064bc0702262246de067">&#9670;&nbsp;</a></span>distributionInfoPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString Dtk::Core::DSysInfo::distributionInfoPath </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>@brie 返回 distribution 文件地址 一般在<code>/usr/share/deepin/</code>目录下 </p>
+
+</div>
+</div>
+<a id="ab1386f1e92ad98d98df5bb857f221e60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1386f1e92ad98d98df5bb857f221e60">&#9670;&nbsp;</a></span>distributionOrgLogo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString Dtk::Core::DSysInfo::distributionOrgLogo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classDtk_1_1Core_1_1DSysInfo.html#a210c7bb23430c7eae5b16fa46d5176f3">DSysInfo::OrgType</a>&#160;</td>
+          <td class="paramname"><em>orgType</em> = <code>Distribution</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classDtk_1_1Core_1_1DSysInfo.html#a8c98faa519cd1ee5301171d8df6c86c7">DSysInfo::LogoType</a>&#160;</td>
+          <td class="paramname"><em>type</em> = <code>Normal</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>fallback</em> = <code>QString()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获得的组织logo路径, 如果不存在, 则返回给定的其他路径 </p>
+<p>使用 type 作为 Distribution 获取当前 deepin 发行版本身的logo。 </p>
+
+</div>
+</div>
+<a id="a06e3fec6a0dcec38462971f2a34d1526"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06e3fec6a0dcec38462971f2a34d1526">&#9670;&nbsp;</a></span>distributionOrgName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString Dtk::Core::DSysInfo::distributionOrgName </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classDtk_1_1Core_1_1DSysInfo.html#a210c7bb23430c7eae5b16fa46d5176f3">DSysInfo::OrgType</a>&#160;</td>
+          <td class="paramname"><em>type</em> = <code>Distribution</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QLocale &amp;&#160;</td>
+          <td class="paramname"><em>locale</em> = <code>QLocale::system()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>返回组织名称 </p>
+<p>使用类型为Distribution来获取当前deepin distribution本身的名称 </p>
+
+</div>
+</div>
+<a id="a2e72c98f4270e26918dc20a94f652590"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e72c98f4270e26918dc20a94f652590">&#9670;&nbsp;</a></span>isCommunityEdition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Dtk::Core::DSysInfo::isCommunityEdition </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>检查当前版本是否是社区版 开发者可以使用这种方式来检查我们是否需要启用或禁用社区版或企业版的功能。 </p>
+<p>目前的规则: 专业版、服务器版、个人版(DeepinType)将被视为企业版。<br  />
+ Uos(ProductType)将被视为企业版。 </p>
+
+</div>
+</div>
+<a id="a398f5ab3b2041dcb561a8894b33c8e26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a398f5ab3b2041dcb561a8894b33c8e26">&#9670;&nbsp;</a></span>isDDE()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Dtk::Core::DSysInfo::isDDE </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>是否使用 dde 桌面环境 </p>
+<dl class="section note"><dt>注解</dt><dd>此方法仅在 linux 平台下可用 </dd></dl>
+
+</div>
+</div>
+<a id="aaedb6ace0392bd73a788773e7306686b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaedb6ace0392bd73a788773e7306686b">&#9670;&nbsp;</a></span>majorVersion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString Dtk::Core::DSysInfo::majorVersion </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>主版本号 主版本号 【20】【23】【25】【26】【29】【30】 </p>
+<dl class="section note"><dt>注解</dt><dd>此方法仅在 linux 平台下可用 </dd></dl>
+
+</div>
+</div>
+<a id="ab83ca93abf90445d2867c8f733bd2795"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab83ca93abf90445d2867c8f733bd2795">&#9670;&nbsp;</a></span>minorVersion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString Dtk::Core::DSysInfo::minorVersion </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>小版本号 【ABCD】 ·[0-9]{4} 【A.B.C】 或者【X.Y.Z】 </p>
+<dl class="section note"><dt>注解</dt><dd>此方法仅在 linux 平台下可用 </dd></dl>
+
+</div>
+</div>
+<a id="a78ecfd5631fbdab6b215d57cb98857f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78ecfd5631fbdab6b215d57cb98857f7">&#9670;&nbsp;</a></span>spVersion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString Dtk::Core::DSysInfo::spVersion </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>阶段版本名称 </p>
+<p>小版本号 A-BC-D 中 BC、 A.B.C 中的 B 返回 SP1-SPxx, 如果正式版返回空 X.Y.Z模式下暂不支持返回此版本号 </p><dl class="section note"><dt>注解</dt><dd>minVersion.BC == 00 正式版本, minVersion.BC | minVersion.B == 01-99 SP1….SP99 </dd>
+<dd>
+此方法仅在 linux 平台下可用 </dd></dl>
+
+</div>
+</div>
+<a id="aac5ecc8cb37eafac81f102e7ec1017e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac5ecc8cb37eafac81f102e7ec1017e3">&#9670;&nbsp;</a></span>udpateVersion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString Dtk::Core::DSysInfo::udpateVersion </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>更新版本名称 小版本号 A-BC-D 中 D、A.B.C 模式中的 C 返回 update1… update9, 如果正式版返回空 X.Y.Z 模式下暂不支持返回此版本号 </p>
+<dl class="section note"><dt>注解</dt><dd>minVersion.D == 0;正式版本 minVersion.D | minVersion.C == 1-9;update1… update9, updateA...updateZ </dd>
+<dd>
+此方法仅在 linux 平台下可用 </dd></dl>
+
+</div>
+</div>
+<a id="ab382f97a6730d92ba67bf2bc7aa65b49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab382f97a6730d92ba67bf2bc7aa65b49">&#9670;&nbsp;</a></span>uosEditionType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDtk_1_1Core_1_1DSysInfo.html#a95c282f42eda222e5b9925122fe2a434">DSysInfo::UosEdition</a> Dtk::Core::DSysInfo::uosEditionType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>DSysInfo::osEditionType 版本类型 显示版本类型 专业版/个人版/社区版.. </p>
+<dl class="section note"><dt>注解</dt><dd>根据 osBuild.B &amp;&amp; osBuild.D </dd>
+<dd>
+此方法仅在 linux 平台下可用 </dd></dl>
+
+</div>
+</div>
+<a id="a22734a9f4e9bf3c9abccf162516effd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22734a9f4e9bf3c9abccf162516effd9">&#9670;&nbsp;</a></span>uosSystemName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString Dtk::Core::DSysInfo::uosSystemName </td>
+          <td>(</td>
+          <td class="paramtype">const QLocale &amp;&#160;</td>
+          <td class="paramname"><em>locale</em> = <code>QLocale::system()</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>SystemName[xx] 项对应的值 </p>
+<p>如果找不到对应语言的默认使用 SystemName 的值 Uniontech OS locale 当前系统语言 </p><dl class="section note"><dt>注解</dt><dd>此方法仅在 linux 平台下可用 </dd></dl>
+
+</div>
+</div>
+<a id="a789d9a9aa676c99cf509f568a39a9f6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a789d9a9aa676c99cf509f568a39a9f6f">&#9670;&nbsp;</a></span>uptime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">qint64 Dtk::Core::DSysInfo::uptime </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>系统启动到现在时长 </p>
+<dl class="section note"><dt>注解</dt><dd>参见<code>cat /proc/uptime</code>命令 </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dtkcore/include/global/<a class="el" href="dsysinfo_8h_source.html">dsysinfo.h</a></li>
+<li>dtkcore/docs/global/dsysinfo.zh_CN.dox</li>
+<li>dtkcore/src/dsysinfo.cpp</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>Dtk</b></li><li class="navelem"><b>Core</b></li><li class="navelem"><a class="el" href="classDtk_1_1Core_1_1DSysInfo.html">DSysInfo</a></li>
+    <li class="footer">文档生成时间:doxtime</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

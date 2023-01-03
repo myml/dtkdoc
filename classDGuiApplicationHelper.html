@@ -1,0 +1,1557 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: DGuiApplicationHelper类 参考</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="change address" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classDGuiApplicationHelper.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-slots">Public 槽</a> &#124;
+<a href="#signals">信号</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#properties">属性</a> &#124;
+<a href="#friends">友元</a> &#124;
+<a href="classDGuiApplicationHelper-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">DGuiApplicationHelper类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 DGuiApplicationHelper 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classDGuiApplicationHelper.png" alt=""/>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:aded1affde49f3af542f861eedbd32d92"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92">ColorType</a> { <a class="el" href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92a95bb3c2345b862eb18aebb372351099d">UnknownType</a>
+, <a class="el" href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92a2baabc46b6bf60f6b430da872d7ba386">LightType</a>
+, <a class="el" href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92a6882189c1f3cd4aae73d4ec9a505655d">DarkType</a>
+ }</td></tr>
+<tr class="separator:aded1affde49f3af542f861eedbd32d92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cbf8f991616c3f8e1b85a8a4fb113e5"><td class="memItemLeft" align="right" valign="top"><a id="a4cbf8f991616c3f8e1b85a8a4fb113e5"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>SingleScope</b> { <b>UserScope</b>
+, <b>GroupScope</b>
+, <b>WorldScope</b>
+ }</td></tr>
+<tr class="separator:a4cbf8f991616c3f8e1b85a8a4fb113e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2609d4dc9b44f180e93c23f2bc1155c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGuiApplicationHelper.html#af2609d4dc9b44f180e93c23f2bc1155c">Attribute</a> { <br />
+&#160;&#160;<a class="el" href="classDGuiApplicationHelper.html#af2609d4dc9b44f180e93c23f2bc1155caeff4d0f8dd5d66a2cccb9ae9d35bdab9">UseInactiveColorGroup</a> = 1 &lt;&lt; 0
+, <a class="el" href="classDGuiApplicationHelper.html#af2609d4dc9b44f180e93c23f2bc1155ca4b2fd01fb675d8834a977785369b1488">ColorCompositing</a> = 1 &lt;&lt; 1
+, <a class="el" href="classDGuiApplicationHelper.html#af2609d4dc9b44f180e93c23f2bc1155ca9b429f61321b3c1623f2f3d3a24963f7">ReadOnlyLimit</a> = 1 &lt;&lt; 22
+, <a class="el" href="classDGuiApplicationHelper.html#af2609d4dc9b44f180e93c23f2bc1155cae9fd7d42031f1ae533fb8bac7f22ecf5">IsDeepinPlatformTheme</a> = ReadOnlyLimit &lt;&lt; 0
+, <br />
+&#160;&#160;<a class="el" href="classDGuiApplicationHelper.html#af2609d4dc9b44f180e93c23f2bc1155caebd2551a8fbf187ef3c77fea39afc8f4">IsDXcbPlatform</a> = ReadOnlyLimit &lt;&lt; 1
+, <a class="el" href="classDGuiApplicationHelper.html#af2609d4dc9b44f180e93c23f2bc1155ca0477d73aad74e1f0f28ef39745a85fec">IsXWindowPlatform</a> = ReadOnlyLimit &lt;&lt; 2
+, <a class="el" href="classDGuiApplicationHelper.html#af2609d4dc9b44f180e93c23f2bc1155caa2f8de4bba85fadf6df1e46fa09ae6a9">IsTableEnvironment</a> = ReadOnlyLimit &lt;&lt; 3
+, <a class="el" href="classDGuiApplicationHelper.html#af2609d4dc9b44f180e93c23f2bc1155cad7394061402858d07d1c3a012130460b">IsDeepinEnvironment</a> = ReadOnlyLimit &lt;&lt; 4
+, <br />
+&#160;&#160;<b>IsSpecialEffectsEnvironment</b> = ReadOnlyLimit &lt;&lt; 5
+<br />
+ }</td></tr>
+<tr class="separator:af2609d4dc9b44f180e93c23f2bc1155c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34295c664d3777c5db32da78230b8633"><td class="memItemLeft" align="right" valign="top"><a id="a34295c664d3777c5db32da78230b8633"></a>
+typedef <a class="el" href="classDGuiApplicationHelper.html">DGuiApplicationHelper</a> *(*&#160;</td><td class="memItemRight" valign="bottom"><b>HelperCreator</b>) ()</td></tr>
+<tr class="separator:a34295c664d3777c5db32da78230b8633"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Public 槽</h2></td></tr>
+<tr class="memitem:a2095ed9f26696dc056c01df239061f5f"><td class="memItemLeft" align="right" valign="top"><a id="a2095ed9f26696dc056c01df239061f5f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>D_DECL_DEPRECATED_X</b> (&quot;Plase use <a class="el" href="classDGuiApplicationHelper.html#a9a100f0f248307b7cc2df722a8aff68e">setPaletteType</a>&quot;) void setThemeType(<a class="el" href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92">ColorType</a> themeType)</td></tr>
+<tr class="separator:a2095ed9f26696dc056c01df239061f5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a100f0f248307b7cc2df722a8aff68e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGuiApplicationHelper.html#a9a100f0f248307b7cc2df722a8aff68e">setPaletteType</a> (<a class="el" href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92">ColorType</a> paletteType)</td></tr>
+<tr class="memdesc:a9a100f0f248307b7cc2df722a8aff68e"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置程序所应用的调色板类型.  <a href="classDGuiApplicationHelper.html#a9a100f0f248307b7cc2df722a8aff68e">更多...</a><br /></td></tr>
+<tr class="separator:a9a100f0f248307b7cc2df722a8aff68e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23eec3eb5148c6b235229354a12bbcf0"><td class="memItemLeft" align="right" valign="top"><a id="a23eec3eb5148c6b235229354a12bbcf0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGuiApplicationHelper.html#a23eec3eb5148c6b235229354a12bbcf0">handleHelpAction</a> ()</td></tr>
+<tr class="memdesc:a23eec3eb5148c6b235229354a12bbcf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open manual for this application. <br /></td></tr>
+<tr class="separator:a23eec3eb5148c6b235229354a12bbcf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cc3b2b55f588b1b39d403420c4083a5"><td class="memItemLeft" align="right" valign="top"><a id="a8cc3b2b55f588b1b39d403420c4083a5"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>openUrl</b> (const QString &amp;url)</td></tr>
+<tr class="separator:a8cc3b2b55f588b1b39d403420c4083a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+信号</h2></td></tr>
+<tr class="memitem:ad558f870501608f774bcf1f52e5ced04"><td class="memItemLeft" align="right" valign="top"><a id="ad558f870501608f774bcf1f52e5ced04"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>themeTypeChanged</b> (<a class="el" href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92">ColorType</a> themeType)</td></tr>
+<tr class="separator:ad558f870501608f774bcf1f52e5ced04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61a5461116062dda13aeab58a38c06f6"><td class="memItemLeft" align="right" valign="top"><a id="a61a5461116062dda13aeab58a38c06f6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>paletteTypeChanged</b> (<a class="el" href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92">ColorType</a> paletteType)</td></tr>
+<tr class="separator:a61a5461116062dda13aeab58a38c06f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab94fab6c42b86328baffcbb7bb3de0ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGuiApplicationHelper.html#ab94fab6c42b86328baffcbb7bb3de0ad">newProcessInstance</a> (qint64 pid, const QStringList &amp;arguments)</td></tr>
+<tr class="memdesc:ab94fab6c42b86328baffcbb7bb3de0ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">通知新进程的信息。  <a href="classDGuiApplicationHelper.html#ab94fab6c42b86328baffcbb7bb3de0ad">更多...</a><br /></td></tr>
+<tr class="separator:ab94fab6c42b86328baffcbb7bb3de0ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae92557847cc314f12a60f52f569229b2"><td class="memItemLeft" align="right" valign="top"><a id="ae92557847cc314f12a60f52f569229b2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>fontChanged</b> (const QFont &amp;font)</td></tr>
+<tr class="separator:ae92557847cc314f12a60f52f569229b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5001b4c491748c4b04bf45b97e2bb003"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGuiApplicationHelper.html#a5001b4c491748c4b04bf45b97e2bb003">applicationPaletteChanged</a> ()</td></tr>
+<tr class="memdesc:a5001b4c491748c4b04bf45b97e2bb003"><td class="mdescLeft">&#160;</td><td class="mdescRight">通知调色板对象的改变。  <a href="classDGuiApplicationHelper.html#a5001b4c491748c4b04bf45b97e2bb003">更多...</a><br /></td></tr>
+<tr class="separator:a5001b4c491748c4b04bf45b97e2bb003"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a90eac54fb52415171b1ebb1a2ca6277b"><td class="memItemLeft" align="right" valign="top"><a id="a90eac54fb52415171b1ebb1a2ca6277b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Q_DECL_DEPRECATED_X</b> (&quot;Use <a class="el" href="classDGuiApplicationHelper.html#af2609d4dc9b44f180e93c23f2bc1155caeff4d0f8dd5d66a2cccb9ae9d35bdab9">UseInactiveColorGroup</a> enum with setAttribute.&quot;) static void setUseInactiveColorGroup(bool on)</td></tr>
+<tr class="separator:a90eac54fb52415171b1ebb1a2ca6277b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f338b12ac5bd57753d3087424038364"><td class="memItemLeft" align="right" valign="top"><a id="a3f338b12ac5bd57753d3087424038364"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Q_DECL_DEPRECATED_X</b> (&quot;Use <a class="el" href="classDGuiApplicationHelper.html#af2609d4dc9b44f180e93c23f2bc1155ca4b2fd01fb675d8834a977785369b1488">ColorCompositing</a> enum with setAttribute.&quot;) static void setColorCompositingEnabled(bool on)</td></tr>
+<tr class="separator:a3f338b12ac5bd57753d3087424038364"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54696b5f532a5deaad028efdf4069fa1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDPlatformTheme.html">DPlatformTheme</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGuiApplicationHelper.html#a54696b5f532a5deaad028efdf4069fa1">systemTheme</a> () const</td></tr>
+<tr class="memdesc:a54696b5f532a5deaad028efdf4069fa1"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDGuiApplicationHelper.html#a54696b5f532a5deaad028efdf4069fa1" title="DGuiApplicationHelper::systemTheme.">DGuiApplicationHelper::systemTheme</a>.  <a href="classDGuiApplicationHelper.html#a54696b5f532a5deaad028efdf4069fa1">更多...</a><br /></td></tr>
+<tr class="separator:a54696b5f532a5deaad028efdf4069fa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68b559d15c50f259ff5a88bee40eb372"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDPlatformTheme.html">DPlatformTheme</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGuiApplicationHelper.html#a68b559d15c50f259ff5a88bee40eb372">applicationTheme</a> () const</td></tr>
+<tr class="memdesc:a68b559d15c50f259ff5a88bee40eb372"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDGuiApplicationHelper.html#a68b559d15c50f259ff5a88bee40eb372" title="DGuiApplicationHelper::applicationTheme.">DGuiApplicationHelper::applicationTheme</a>.  <a href="classDGuiApplicationHelper.html#a68b559d15c50f259ff5a88bee40eb372">更多...</a><br /></td></tr>
+<tr class="separator:a68b559d15c50f259ff5a88bee40eb372"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad47af29164477016275cafc944c28783"><td class="memItemLeft" align="right" valign="top">D_DECL_DEPRECATED <a class="el" href="classDPlatformTheme.html">DPlatformTheme</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGuiApplicationHelper.html#ad47af29164477016275cafc944c28783">windowTheme</a> (QWindow *window) const</td></tr>
+<tr class="memdesc:ad47af29164477016275cafc944c28783"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回窗口级别的主题, 优先级高于 windowTheme 和 systemTheme.  <a href="classDGuiApplicationHelper.html#ad47af29164477016275cafc944c28783">更多...</a><br /></td></tr>
+<tr class="separator:ad47af29164477016275cafc944c28783"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affc1f7774ce419a1ca73eab31f13cac4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDPalette.html">DPalette</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGuiApplicationHelper.html#affc1f7774ce419a1ca73eab31f13cac4">applicationPalette</a> () const</td></tr>
+<tr class="memdesc:affc1f7774ce419a1ca73eab31f13cac4"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回应用程序调色板.  <a href="classDGuiApplicationHelper.html#affc1f7774ce419a1ca73eab31f13cac4">更多...</a><br /></td></tr>
+<tr class="separator:affc1f7774ce419a1ca73eab31f13cac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88d71049a24d357f21a3fcf01575c48c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGuiApplicationHelper.html#a88d71049a24d357f21a3fcf01575c48c">setApplicationPalette</a> (const <a class="el" href="classDPalette.html">DPalette</a> &amp;palette)</td></tr>
+<tr class="memdesc:a88d71049a24d357f21a3fcf01575c48c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDGuiApplicationHelper.html#a88d71049a24d357f21a3fcf01575c48c" title="DGuiApplicationHelper::setApplicationPalette.">DGuiApplicationHelper::setApplicationPalette</a>.  <a href="classDGuiApplicationHelper.html#a88d71049a24d357f21a3fcf01575c48c">更多...</a><br /></td></tr>
+<tr class="separator:a88d71049a24d357f21a3fcf01575c48c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36bc2b0660c97a4bdb2ba559151e4ccf"><td class="memItemLeft" align="right" valign="top">D_DECL_DEPRECATED <a class="el" href="classDPalette.html">DPalette</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGuiApplicationHelper.html#a36bc2b0660c97a4bdb2ba559151e4ccf">windowPalette</a> (QWindow *window) const</td></tr>
+<tr class="memdesc:a36bc2b0660c97a4bdb2ba559151e4ccf"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDGuiApplicationHelper.html#a36bc2b0660c97a4bdb2ba559151e4ccf" title="DGuiApplicationHelper::windowPalette.">DGuiApplicationHelper::windowPalette</a>.  <a href="classDGuiApplicationHelper.html#a36bc2b0660c97a4bdb2ba559151e4ccf">更多...</a><br /></td></tr>
+<tr class="separator:a36bc2b0660c97a4bdb2ba559151e4ccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a577e7dd7a88636632917bd1b88e1c98b"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classDFontManager.html">DFontManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGuiApplicationHelper.html#a577e7dd7a88636632917bd1b88e1c98b">fontManager</a> () const</td></tr>
+<tr class="memdesc:a577e7dd7a88636632917bd1b88e1c98b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDGuiApplicationHelper.html#a577e7dd7a88636632917bd1b88e1c98b" title="DGuiApplicationHelper::fontManager.">DGuiApplicationHelper::fontManager</a>.  <a href="classDGuiApplicationHelper.html#a577e7dd7a88636632917bd1b88e1c98b">更多...</a><br /></td></tr>
+<tr class="separator:a577e7dd7a88636632917bd1b88e1c98b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae52eaafd5dac53d984f343818dc14621"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92">ColorType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGuiApplicationHelper.html#ae52eaafd5dac53d984f343818dc14621">themeType</a> () const</td></tr>
+<tr class="memdesc:ae52eaafd5dac53d984f343818dc14621"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回程序的主题类型.  <a href="classDGuiApplicationHelper.html#ae52eaafd5dac53d984f343818dc14621">更多...</a><br /></td></tr>
+<tr class="separator:ae52eaafd5dac53d984f343818dc14621"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3c12b8c91f93ef04a9f212842113aa7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92">ColorType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGuiApplicationHelper.html#ad3c12b8c91f93ef04a9f212842113aa7">paletteType</a> () const</td></tr>
+<tr class="memdesc:ad3c12b8c91f93ef04a9f212842113aa7"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回当前已设置的调色板类型.  <a href="classDGuiApplicationHelper.html#ad3c12b8c91f93ef04a9f212842113aa7">更多...</a><br /></td></tr>
+<tr class="separator:ad3c12b8c91f93ef04a9f212842113aa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a348f427c0f2e68b390a16a6b8ad5be09"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGuiApplicationHelper.html#a348f427c0f2e68b390a16a6b8ad5be09">hasUserManual</a> () const</td></tr>
+<tr class="memdesc:a348f427c0f2e68b390a16a6b8ad5be09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether it's a user manual for this application.  <a href="classDGuiApplicationHelper.html#a348f427c0f2e68b390a16a6b8ad5be09">更多...</a><br /></td></tr>
+<tr class="separator:a348f427c0f2e68b390a16a6b8ad5be09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a168bc69f3dd3a98b978f6441b110e8f0"><td class="memItemLeft" align="right" valign="top">static D_DECL_DEPRECATED void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGuiApplicationHelper.html#a168bc69f3dd3a98b978f6441b110e8f0">registerInstanceCreator</a> (HelperCreator creator)</td></tr>
+<tr class="memdesc:a168bc69f3dd3a98b978f6441b110e8f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建 <a class="el" href="classDGuiApplicationHelper.html">DGuiApplicationHelper</a> 对象.  <a href="classDGuiApplicationHelper.html#a168bc69f3dd3a98b978f6441b110e8f0">更多...</a><br /></td></tr>
+<tr class="separator:a168bc69f3dd3a98b978f6441b110e8f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a9d84ced740d42bf39666aaa4d3c089"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classDGuiApplicationHelper.html">DGuiApplicationHelper</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGuiApplicationHelper.html#a4a9d84ced740d42bf39666aaa4d3c089">instance</a> ()</td></tr>
+<tr class="memdesc:a4a9d84ced740d42bf39666aaa4d3c089"><td class="mdescLeft">&#160;</td><td class="mdescRight">DGuiApplicationHelper::instance返回 <a class="el" href="classDGuiApplicationHelper.html">DGuiApplicationHelper</a> 对象  <a href="classDGuiApplicationHelper.html#a4a9d84ced740d42bf39666aaa4d3c089">更多...</a><br /></td></tr>
+<tr class="separator:a4a9d84ced740d42bf39666aaa4d3c089"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cde0c1e68ad96a4f51983dcd2e74cea"><td class="memItemLeft" align="right" valign="top">static QColor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGuiApplicationHelper.html#a9cde0c1e68ad96a4f51983dcd2e74cea">adjustColor</a> (const QColor &amp;base, qint8 hueFloat, qint8 saturationFloat, qint8 lightnessFloat, qint8 redFloat, qint8 greenFloat, qint8 blueFloat, qint8 alphaFloat)</td></tr>
+<tr class="memdesc:a9cde0c1e68ad96a4f51983dcd2e74cea"><td class="mdescLeft">&#160;</td><td class="mdescRight">调整颜色.  <a href="classDGuiApplicationHelper.html#a9cde0c1e68ad96a4f51983dcd2e74cea">更多...</a><br /></td></tr>
+<tr class="separator:a9cde0c1e68ad96a4f51983dcd2e74cea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30a0a5a3123d5e71415210cfbb5b8e7f"><td class="memItemLeft" align="right" valign="top">static QImage&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGuiApplicationHelper.html#a30a0a5a3123d5e71415210cfbb5b8e7f">adjustColor</a> (const QImage &amp;base, qint8 hueFloat, qint8 saturationFloat, qint8 lightnessFloat, qint8 redFloat, qint8 greenFloat, qint8 blueFloat, qint8 alphaFloat)</td></tr>
+<tr class="memdesc:a30a0a5a3123d5e71415210cfbb5b8e7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">调整图片整体像素颜色.  <a href="classDGuiApplicationHelper.html#a30a0a5a3123d5e71415210cfbb5b8e7f">更多...</a><br /></td></tr>
+<tr class="separator:a30a0a5a3123d5e71415210cfbb5b8e7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc1784e93e1b0acaa2120832245087c5"><td class="memItemLeft" align="right" valign="top">static QColor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGuiApplicationHelper.html#abc1784e93e1b0acaa2120832245087c5">blendColor</a> (const QColor &amp;substrate, const QColor &amp;superstratum)</td></tr>
+<tr class="memdesc:abc1784e93e1b0acaa2120832245087c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">将两种颜色混合，合成新的颜色.  <a href="classDGuiApplicationHelper.html#abc1784e93e1b0acaa2120832245087c5">更多...</a><br /></td></tr>
+<tr class="separator:abc1784e93e1b0acaa2120832245087c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa88a702eaaada0055b51d9b8617ab648"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classDPalette.html">DPalette</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGuiApplicationHelper.html#aa88a702eaaada0055b51d9b8617ab648">standardPalette</a> (<a class="el" href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92">ColorType</a> type)</td></tr>
+<tr class="memdesc:aa88a702eaaada0055b51d9b8617ab648"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据主题获取标准调色板.  <a href="classDGuiApplicationHelper.html#aa88a702eaaada0055b51d9b8617ab648">更多...</a><br /></td></tr>
+<tr class="separator:aa88a702eaaada0055b51d9b8617ab648"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a148d4077f71412e3f71fdf3f62b21ca6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGuiApplicationHelper.html#a148d4077f71412e3f71fdf3f62b21ca6">generatePaletteColor</a> (<a class="el" href="classDPalette.html">DPalette</a> &amp;base, QPalette::ColorRole role, <a class="el" href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92">ColorType</a> type)</td></tr>
+<tr class="memdesc:a148d4077f71412e3f71fdf3f62b21ca6"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取调色板颜色.  <a href="classDGuiApplicationHelper.html#a148d4077f71412e3f71fdf3f62b21ca6">更多...</a><br /></td></tr>
+<tr class="separator:a148d4077f71412e3f71fdf3f62b21ca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1c178b05f397b57c042e7ca564af836"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGuiApplicationHelper.html#ab1c178b05f397b57c042e7ca564af836">generatePaletteColor</a> (<a class="el" href="classDPalette.html">DPalette</a> &amp;base, DPalette::ColorType role, <a class="el" href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92">ColorType</a> type)</td></tr>
+<tr class="memdesc:ab1c178b05f397b57c042e7ca564af836"><td class="mdescLeft">&#160;</td><td class="mdescRight">加工调色板的颜色. 这是为便于使用而提供的一个重载成员函数.与上面的函数相比，它接受不同类型的参数.一般我们只会为调色板的 QPalette::Normal 组设置颜色值, 但是 控件中也需要使用其他组的颜色, 此函数使用一些固定规则为 <em>base</em> 填充 QPalette::Disabled 和 QPalette::Inactive 分组的颜色. 不同的颜色类型会使用不同的加工规则, 如果为 LightType 类型, 则将颜色的alpha通道调整为 0.6 后作为 QPalette::Disabled 类的颜色使用, 调整为 0.4 后 作为 QPalette::Inactive 类的颜色使用. 如果为 DarkType 类型, 则将颜色的alpha通道调整为 0.7 后作为 QPalette::Disabled 类的颜色使用, 调整为 0.6 后作为 QPalette::Inactive 类的颜色使用.  <a href="classDGuiApplicationHelper.html#ab1c178b05f397b57c042e7ca564af836">更多...</a><br /></td></tr>
+<tr class="separator:ab1c178b05f397b57c042e7ca564af836"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab881c07f42d47c801ceb75c92937fc0a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGuiApplicationHelper.html#ab881c07f42d47c801ceb75c92937fc0a">generatePalette</a> (<a class="el" href="classDPalette.html">DPalette</a> &amp;base, <a class="el" href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92">ColorType</a> type=<a class="el" href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92a95bb3c2345b862eb18aebb372351099d">UnknownType</a>)</td></tr>
+<tr class="memdesc:ab881c07f42d47c801ceb75c92937fc0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">加工调色板的颜色. 这是为便于使用而提供的一个重载成员函数.与上面的函数相比，它接受不同类型的参数.同 generatePaletteColor, 将直接调用 generatePaletteColor 加工 所有类型的调色板颜色.  <a href="classDGuiApplicationHelper.html#ab881c07f42d47c801ceb75c92937fc0a">更多...</a><br /></td></tr>
+<tr class="separator:ab881c07f42d47c801ceb75c92937fc0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80dbc8f823db2a49230e24734d4e5723"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classDPalette.html">DPalette</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGuiApplicationHelper.html#a80dbc8f823db2a49230e24734d4e5723">fetchPalette</a> (const <a class="el" href="classDPlatformTheme.html">DPlatformTheme</a> *theme)</td></tr>
+<tr class="memdesc:a80dbc8f823db2a49230e24734d4e5723"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取调色板数据.  <a href="classDGuiApplicationHelper.html#a80dbc8f823db2a49230e24734d4e5723">更多...</a><br /></td></tr>
+<tr class="separator:a80dbc8f823db2a49230e24734d4e5723"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bf37fe38aa7392fed988dff6bf44618"><td class="memItemLeft" align="right" valign="top"><a id="a6bf37fe38aa7392fed988dff6bf44618"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>isXWindowPlatform</b> ()</td></tr>
+<tr class="separator:a6bf37fe38aa7392fed988dff6bf44618"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80c3706fe396568897da92d9db1e882c"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGuiApplicationHelper.html#a80c3706fe396568897da92d9db1e882c">isTabletEnvironment</a> ()</td></tr>
+<tr class="memdesc:a80c3706fe396568897da92d9db1e882c"><td class="mdescLeft">&#160;</td><td class="mdescRight">用于判断当前桌面环境是否是平板电脑环境.  <a href="classDGuiApplicationHelper.html#a80c3706fe396568897da92d9db1e882c">更多...</a><br /></td></tr>
+<tr class="separator:a80c3706fe396568897da92d9db1e882c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52569ac7a7e3a57f2d7e2466791e57b1"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGuiApplicationHelper.html#a52569ac7a7e3a57f2d7e2466791e57b1">isSpecialEffectsEnvironment</a> ()</td></tr>
+<tr class="memdesc:a52569ac7a7e3a57f2d7e2466791e57b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">isAnimationEnvironment 用于判断当前桌面环境是否是开启了动画等特效的环境  <a href="classDGuiApplicationHelper.html#a52569ac7a7e3a57f2d7e2466791e57b1">更多...</a><br /></td></tr>
+<tr class="separator:a52569ac7a7e3a57f2d7e2466791e57b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a608ba95d3b3ff31988c75c16fcdacec1"><td class="memItemLeft" align="right" valign="top"><a id="a608ba95d3b3ff31988c75c16fcdacec1"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>setAttribute</b> (<a class="el" href="classDGuiApplicationHelper.html#af2609d4dc9b44f180e93c23f2bc1155c">Attribute</a> attribute, bool enable)</td></tr>
+<tr class="separator:a608ba95d3b3ff31988c75c16fcdacec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdb2e51aa32c0070ab690a48a355ec4b"><td class="memItemLeft" align="right" valign="top"><a id="afdb2e51aa32c0070ab690a48a355ec4b"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>testAttribute</b> (<a class="el" href="classDGuiApplicationHelper.html#af2609d4dc9b44f180e93c23f2bc1155c">Attribute</a> attribute)</td></tr>
+<tr class="separator:afdb2e51aa32c0070ab690a48a355ec4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3667e460316b989a6f54463b7afcaa0"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92">ColorType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGuiApplicationHelper.html#ac3667e460316b989a6f54463b7afcaa0">toColorType</a> (const QColor &amp;color)</td></tr>
+<tr class="memdesc:ac3667e460316b989a6f54463b7afcaa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取颜色的明亮度，将其转换为主题类型的枚举值.  <a href="classDGuiApplicationHelper.html#ac3667e460316b989a6f54463b7afcaa0">更多...</a><br /></td></tr>
+<tr class="separator:ac3667e460316b989a6f54463b7afcaa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25d6cc357e5f856da4c1e7765eabe420"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92">ColorType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGuiApplicationHelper.html#a25d6cc357e5f856da4c1e7765eabe420">toColorType</a> (const QPalette &amp;palette)</td></tr>
+<tr class="memdesc:a25d6cc357e5f856da4c1e7765eabe420"><td class="mdescLeft">&#160;</td><td class="mdescRight">将调色板 <em>palette</em> 转换为主题类型的枚举. 这是为便于使用而提供的一个重载成员函数.与上面的函数相比，它接受不同类型的参数.使用 QPalette::background 获取颜色的明亮度，将其转换为主题类型的枚举值。 返回调色板的颜色类型  <a href="classDGuiApplicationHelper.html#a25d6cc357e5f856da4c1e7765eabe420">更多...</a><br /></td></tr>
+<tr class="separator:a25d6cc357e5f856da4c1e7765eabe420"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3172ba90dcda102e3a3ac3b68ffebe3"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGuiApplicationHelper.html#ac3172ba90dcda102e3a3ac3b68ffebe3">setSingleInstance</a> (const QString &amp;key, SingleScope singleScope=UserScope)</td></tr>
+<tr class="memdesc:ac3172ba90dcda102e3a3ac3b68ffebe3"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置DGuiApplicationHelper实例.  <a href="classDGuiApplicationHelper.html#ac3172ba90dcda102e3a3ac3b68ffebe3">更多...</a><br /></td></tr>
+<tr class="separator:ac3172ba90dcda102e3a3ac3b68ffebe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a299390a91b1c3a5aebdccba40d424c92"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGuiApplicationHelper.html#a299390a91b1c3a5aebdccba40d424c92">setSingleInstanceInterval</a> (int interval=3000)</td></tr>
+<tr class="memdesc:a299390a91b1c3a5aebdccba40d424c92"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置从QLocalServer获取消息的等待时间.  <a href="classDGuiApplicationHelper.html#a299390a91b1c3a5aebdccba40d424c92">更多...</a><br /></td></tr>
+<tr class="separator:a299390a91b1c3a5aebdccba40d424c92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf91b183ef7e5566a9770b558db42451"><td class="memItemLeft" align="right" valign="top">static D_DECL_DEPRECATED void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGuiApplicationHelper.html#acf91b183ef7e5566a9770b558db42451">setSingelInstanceInterval</a> (int interval=3000)</td></tr>
+<tr class="memdesc:acf91b183ef7e5566a9770b558db42451"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置从QLocalServer获取消息的等待时间.  <a href="classDGuiApplicationHelper.html#acf91b183ef7e5566a9770b558db42451">更多...</a><br /></td></tr>
+<tr class="separator:acf91b183ef7e5566a9770b558db42451"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91b6fece799deb54597beab2456f91c1"><td class="memItemLeft" align="right" valign="top"><a id="a91b6fece799deb54597beab2456f91c1"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>loadTranslator</b> (const QString &amp;fileName, const QList&lt; QString &gt; &amp;translateDirs, const QList&lt; QLocale &gt; &amp;localeFallback)</td></tr>
+<tr class="separator:a91b6fece799deb54597beab2456f91c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a64f515bd7a38e92b0dddd5459ae2990f"><td class="memItemLeft" align="right" valign="top"><a id="a64f515bd7a38e92b0dddd5459ae2990f"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>initialize</b> ()</td></tr>
+<tr class="separator:a64f515bd7a38e92b0dddd5459ae2990f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:a9fe3f3fb39fceee9ad100aebd7402401"><td class="memItemLeft" align="right" valign="top"><a id="a9fe3f3fb39fceee9ad100aebd7402401"></a>
+<a class="el" href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92">ColorType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>themeType</b></td></tr>
+<tr class="separator:a9fe3f3fb39fceee9ad100aebd7402401"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9c72995428134e5c1bf5c27f584b2e4"><td class="memItemLeft" align="right" valign="top"><a id="ab9c72995428134e5c1bf5c27f584b2e4"></a>
+<a class="el" href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92">ColorType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>paletteType</b></td></tr>
+<tr class="separator:ab9c72995428134e5c1bf5c27f584b2e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b4a8bda7c5f2bd3b0ea919fae2c93fa"><td class="memItemLeft" align="right" valign="top"><a id="a3b4a8bda7c5f2bd3b0ea919fae2c93fa"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasUserManual</b></td></tr>
+<tr class="separator:a3b4a8bda7c5f2bd3b0ea919fae2c93fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+友元</h2></td></tr>
+<tr class="memitem:ae9c067f93061fcdf3ee263045223e538"><td class="memItemLeft" align="right" valign="top"><a id="ae9c067f93061fcdf3ee263045223e538"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>_DGuiApplicationHelper</b></td></tr>
+<tr class="separator:ae9c067f93061fcdf3ee263045223e538"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">成员枚举类型说明</h2>
+<a id="af2609d4dc9b44f180e93c23f2bc1155c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2609d4dc9b44f180e93c23f2bc1155c">&#9670;&nbsp;</a></span>Attribute</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classDGuiApplicationHelper.html#af2609d4dc9b44f180e93c23f2bc1155c">DGuiApplicationHelper::Attribute</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p><a class="el" href="classDGuiApplicationHelper.html#af2609d4dc9b44f180e93c23f2bc1155c">DGuiApplicationHelper::Attribute</a> 定义了功能属性 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="af2609d4dc9b44f180e93c23f2bc1155caeff4d0f8dd5d66a2cccb9ae9d35bdab9"></a>UseInactiveColorGroup&#160;</td><td class="fielddoc"><p>如果开启，当窗口处于Inactive状态时就会使用QPalette::Inactive的颜色，否则窗口将没有任何颜色变化。 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af2609d4dc9b44f180e93c23f2bc1155ca4b2fd01fb675d8834a977785369b1488"></a>ColorCompositing&#160;</td><td class="fielddoc"><p>是否采用半透明样式的调色板。 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af2609d4dc9b44f180e93c23f2bc1155ca9b429f61321b3c1623f2f3d3a24963f7"></a>ReadOnlyLimit&#160;</td><td class="fielddoc"><p>区分只读枚举。 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af2609d4dc9b44f180e93c23f2bc1155cae9fd7d42031f1ae533fb8bac7f22ecf5"></a>IsDeepinPlatformTheme&#160;</td><td class="fielddoc"><p>获取当前是否使用deepin的platformtheme插件，platformtheme插件可以为Qt程序提供特定的控件样式，默认使用chameleon主题。 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af2609d4dc9b44f180e93c23f2bc1155caebd2551a8fbf187ef3c77fea39afc8f4"></a>IsDXcbPlatform&#160;</td><td class="fielddoc"><p>获取当前使用的是不是dtk的xcb窗口插件，dxcb插件提供了窗口圆角和阴影功能。 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af2609d4dc9b44f180e93c23f2bc1155ca0477d73aad74e1f0f28ef39745a85fec"></a>IsXWindowPlatform&#160;</td><td class="fielddoc"><p>获取当前是否运行在X11环境中。 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af2609d4dc9b44f180e93c23f2bc1155caa2f8de4bba85fadf6df1e46fa09ae6a9"></a>IsTableEnvironment&#160;</td><td class="fielddoc"><p>获取当前是否运行在deepin平板环境中，检测XDG_CURRENT_DESKTOP环境变量是不是tablet结尾。 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af2609d4dc9b44f180e93c23f2bc1155cad7394061402858d07d1c3a012130460b"></a>IsDeepinEnvironment&#160;</td><td class="fielddoc"><p>获取当前是否运行在deepin桌面环境中，检测XDG_CURRENT_DESKTOP环境变量是不是deepin。 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="aded1affde49f3af542f861eedbd32d92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aded1affde49f3af542f861eedbd32d92">&#9670;&nbsp;</a></span>ColorType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92">DGuiApplicationHelper::ColorType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p><a class="el" href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92">DGuiApplicationHelper::ColorType</a> 定义了主题类型. </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="aded1affde49f3af542f861eedbd32d92a95bb3c2345b862eb18aebb372351099d"></a>UnknownType&#160;</td><td class="fielddoc"><p>未知主题(浅色主题或深色主题) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aded1affde49f3af542f861eedbd32d92a2baabc46b6bf60f6b430da872d7ba386"></a>LightType&#160;</td><td class="fielddoc"><p>浅色主题 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aded1affde49f3af542f861eedbd32d92a6882189c1f3cd4aae73d4ec9a505655d"></a>DarkType&#160;</td><td class="fielddoc"><p>深色主题 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a9cde0c1e68ad96a4f51983dcd2e74cea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cde0c1e68ad96a4f51983dcd2e74cea">&#9670;&nbsp;</a></span>adjustColor() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QColor DGuiApplicationHelper::adjustColor </td>
+          <td>(</td>
+          <td class="paramtype">const QColor &amp;&#160;</td>
+          <td class="paramname"><em>base</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">qint8&#160;</td>
+          <td class="paramname"><em>hueFloat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">qint8&#160;</td>
+          <td class="paramname"><em>saturationFloat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">qint8&#160;</td>
+          <td class="paramname"><em>lightnessFloat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">qint8&#160;</td>
+          <td class="paramname"><em>redFloat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">qint8&#160;</td>
+          <td class="paramname"><em>greenFloat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">qint8&#160;</td>
+          <td class="paramname"><em>blueFloat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">qint8&#160;</td>
+          <td class="paramname"><em>alphaFloat</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>调整颜色. </p>
+<dl class="section note"><dt>注解</dt><dd>取值范围均为 -100 ~ 100 ,当三原色参数为-100时，颜色为黑色，参数为100时，颜色为白色. 以透明度( alphaFloat )为例,当参数为负数时基础色的 alphaFloat 值减少，现象偏向透明, 参数为正数alphaFloat 值增加，现象偏不透明 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">base</td><td>基础色 </td></tr>
+    <tr><td class="paramname">hueFloat</td><td>色调 </td></tr>
+    <tr><td class="paramname">saturationFloat</td><td>饱和度 </td></tr>
+    <tr><td class="paramname">lightnessFloat</td><td>亮度 </td></tr>
+    <tr><td class="paramname">redFloat</td><td>红色 </td></tr>
+    <tr><td class="paramname">greenFloat</td><td>绿色 </td></tr>
+    <tr><td class="paramname">blueFloat</td><td>蓝色 </td></tr>
+    <tr><td class="paramname">alphaFloat</td><td>Alpha通道(透明度) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>经过调整的颜色 </dd></dl>
+
+</div>
+</div>
+<a id="a30a0a5a3123d5e71415210cfbb5b8e7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30a0a5a3123d5e71415210cfbb5b8e7f">&#9670;&nbsp;</a></span>adjustColor() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QImage DGuiApplicationHelper::adjustColor </td>
+          <td>(</td>
+          <td class="paramtype">const QImage &amp;&#160;</td>
+          <td class="paramname"><em>base</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">qint8&#160;</td>
+          <td class="paramname"><em>hueFloat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">qint8&#160;</td>
+          <td class="paramname"><em>saturationFloat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">qint8&#160;</td>
+          <td class="paramname"><em>lightnessFloat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">qint8&#160;</td>
+          <td class="paramname"><em>redFloat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">qint8&#160;</td>
+          <td class="paramname"><em>greenFloat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">qint8&#160;</td>
+          <td class="paramname"><em>blueFloat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">qint8&#160;</td>
+          <td class="paramname"><em>alphaFloat</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>调整图片整体像素颜色. </p>
+<dl class="section note"><dt>注解</dt><dd>取值范围均为 -100 ~ 100 ,当三原色参数为-100时，颜色为黑色，参数为100时，颜色为白色. 以透明度( alphaFloat )为例,当参数为负数时基础色的 alphaFloat 值减少，现象偏向透明, 参数为正数alphaFloat 值增加，现象偏不透明 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">base</td><td>基础色 </td></tr>
+    <tr><td class="paramname">hueFloat</td><td>色调 </td></tr>
+    <tr><td class="paramname">saturationFloat</td><td>饱和度 </td></tr>
+    <tr><td class="paramname">lightnessFloat</td><td>亮度 </td></tr>
+    <tr><td class="paramname">redFloat</td><td>红色 </td></tr>
+    <tr><td class="paramname">greenFloat</td><td>绿色 </td></tr>
+    <tr><td class="paramname">blueFloat</td><td>蓝色 </td></tr>
+    <tr><td class="paramname">alphaFloat</td><td>Alpha通道(透明度) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>经过调整的图片 </dd></dl>
+
+</div>
+</div>
+<a id="affc1f7774ce419a1ca73eab31f13cac4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affc1f7774ce419a1ca73eab31f13cac4">&#9670;&nbsp;</a></span>applicationPalette()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDPalette.html">DPalette</a> DGuiApplicationHelper::applicationPalette </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>返回应用程序调色板. </p>
+<p>如果使用 setApplicationPalette 设置过一个有效的调色板, 将直接返回保存的调色板. 否则 先计算调色板的ColorType, 再使用这个颜色类型通过 standardPalette 获取标准调色板. 计算 ColorType的数据来源按优先级从高到低排列有以下几种方式:</p><ol type="1">
+<li>如果使用 setThemeType 设置过一个有效的颜色类型, 将直接使用 themeType 的值.</li>
+<li>如果为QGuiApplication设置过调色板(表现为 QGuiApplication::testAttribute(Qt::AA_SetPalette) 为true), 则将使用 QGuiApplication::palette 通过 toColorType 获取颜色类型.</li>
+<li>将根据 applicationTheme 的 DPlatformTheme::themeName 计算颜色类型. 如果ColorType来源自第2种方式, 则会直接使用 QGuiApplication::palette 覆盖标准调色板中的 QPalette 部分, 且程序不会再跟随系统的活动色自动更新调色板. <dl class="section warning"><dt>警告</dt><dd>不应该在DTK程序中使用QGuiApplication/QApplication::setPalette </dd></dl>
+<dl class="section return"><dt>返回</dt><dd>应用程序调色板 </dd></dl>
+</li>
+</ol>
+
+</div>
+</div>
+<a id="a5001b4c491748c4b04bf45b97e2bb003"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5001b4c491748c4b04bf45b97e2bb003">&#9670;&nbsp;</a></span>applicationPaletteChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DGuiApplicationHelper::applicationPaletteChanged </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>通知调色板对象的改变。 </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDGuiApplicationHelper.html#a36bc2b0660c97a4bdb2ba559151e4ccf" title="DGuiApplicationHelper::windowPalette.">windowPalette()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a68b559d15c50f259ff5a88bee40eb372"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68b559d15c50f259ff5a88bee40eb372">&#9670;&nbsp;</a></span>applicationTheme()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDPlatformTheme.html">DPlatformTheme</a> * DGuiApplicationHelper::applicationTheme </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classDGuiApplicationHelper.html#a68b559d15c50f259ff5a88bee40eb372" title="DGuiApplicationHelper::applicationTheme.">DGuiApplicationHelper::applicationTheme</a>. </p>
+<p>同 systemTheme </p><dl class="section return"><dt>返回</dt><dd>平台主题对象 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDGuiApplicationHelper.html#a54696b5f532a5deaad028efdf4069fa1" title="DGuiApplicationHelper::systemTheme.">systemTheme</a> </dd>
+<dd>
+<a class="el" href="classDGuiApplicationHelper.html#ad47af29164477016275cafc944c28783" title="返回窗口级别的主题, 优先级高于 windowTheme 和 systemTheme.">windowTheme</a> </dd></dl>
+
+</div>
+</div>
+<a id="abc1784e93e1b0acaa2120832245087c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc1784e93e1b0acaa2120832245087c5">&#9670;&nbsp;</a></span>blendColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QColor DGuiApplicationHelper::blendColor </td>
+          <td>(</td>
+          <td class="paramtype">const QColor &amp;&#160;</td>
+          <td class="paramname"><em>substrate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QColor &amp;&#160;</td>
+          <td class="paramname"><em>superstratum</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>将两种颜色混合，合成新的颜色. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">substrate</td><td>底层颜色 </td></tr>
+    <tr><td class="paramname">superstratum</td><td>上层颜色 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>混合颜色 </dd></dl>
+
+</div>
+</div>
+<a id="a80dbc8f823db2a49230e24734d4e5723"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80dbc8f823db2a49230e24734d4e5723">&#9670;&nbsp;</a></span>fetchPalette()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDPalette.html">DPalette</a> DGuiApplicationHelper::fetchPalette </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classDPlatformTheme.html">DPlatformTheme</a> *&#160;</td>
+          <td class="paramname"><em>theme</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取调色板数据. </p>
+<p>首先根据 DPlatformTheme::themeName 获取主题的颜色类型, 如果名称以 "dark" 结尾则认为其颜色类型为 DarkType, 否则为 LightType. 如果主题名称为空, 将使用其父主题的名称( DPlatformTheme::fallbackProperty ). 根据颜色类型将使用 standardPalette 获取基础调色板数据, 在此基础上 从 DPlatformTheme::fetchPalette 获取最终的调色板.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">theme</td><td>平台主题对象 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>调色板数据 </dd></dl>
+
+</div>
+</div>
+<a id="a577e7dd7a88636632917bd1b88e1c98b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a577e7dd7a88636632917bd1b88e1c98b">&#9670;&nbsp;</a></span>fontManager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classDFontManager.html">DFontManager</a> * DGuiApplicationHelper::fontManager </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classDGuiApplicationHelper.html#a577e7dd7a88636632917bd1b88e1c98b" title="DGuiApplicationHelper::fontManager.">DGuiApplicationHelper::fontManager</a>. </p>
+<p>程序中唯一的DFontManager对象, 会根据程序的fontChanged信号 更新 DFontManager::baseFontPixelSize </p><dl class="section warning"><dt>警告</dt><dd>请不要尝试更改它的 baseFontPixelSize 属性 </dd></dl>
+
+</div>
+</div>
+<a id="ab881c07f42d47c801ceb75c92937fc0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab881c07f42d47c801ceb75c92937fc0a">&#9670;&nbsp;</a></span>generatePalette()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DGuiApplicationHelper::generatePalette </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classDPalette.html">DPalette</a> &amp;&#160;</td>
+          <td class="paramname"><em>base</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92">ColorType</a>&#160;</td>
+          <td class="paramname"><em>type</em> = <code><a class="el" href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92a95bb3c2345b862eb18aebb372351099d">UnknownType</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>加工调色板的颜色. 这是为便于使用而提供的一个重载成员函数.与上面的函数相比，它接受不同类型的参数.同 generatePaletteColor, 将直接调用 generatePaletteColor 加工 所有类型的调色板颜色. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">base</td><td>被加工的调色板 </td></tr>
+    <tr><td class="paramname">type</td><td>加工时所使用的颜色类型, 如果值为 UnknownType 将使用 toColorType 获取颜色类型 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab1c178b05f397b57c042e7ca564af836"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1c178b05f397b57c042e7ca564af836">&#9670;&nbsp;</a></span>generatePaletteColor() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DGuiApplicationHelper::generatePaletteColor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classDPalette.html">DPalette</a> &amp;&#160;</td>
+          <td class="paramname"><em>base</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DPalette::ColorType&#160;</td>
+          <td class="paramname"><em>role</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92">DGuiApplicationHelper::ColorType</a>&#160;</td>
+          <td class="paramname"><em>type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>加工调色板的颜色. 这是为便于使用而提供的一个重载成员函数.与上面的函数相比，它接受不同类型的参数.一般我们只会为调色板的 QPalette::Normal 组设置颜色值, 但是 控件中也需要使用其他组的颜色, 此函数使用一些固定规则为 <em>base</em> 填充 QPalette::Disabled 和 QPalette::Inactive 分组的颜色. 不同的颜色类型会使用不同的加工规则, 如果为 LightType 类型, 则将颜色的alpha通道调整为 0.6 后作为 QPalette::Disabled 类的颜色使用, 调整为 0.4 后 作为 QPalette::Inactive 类的颜色使用. 如果为 DarkType 类型, 则将颜色的alpha通道调整为 0.7 后作为 QPalette::Disabled 类的颜色使用, 调整为 0.6 后作为 QPalette::Inactive 类的颜色使用. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">base</td><td>被加工的调色板 </td></tr>
+    <tr><td class="paramname">role</td><td>加工的项 </td></tr>
+    <tr><td class="paramname">type</td><td>加工时所使用的颜色类型, 如果值为 UnknownType 将使用 toColorType 获取颜色类型 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a148d4077f71412e3f71fdf3f62b21ca6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a148d4077f71412e3f71fdf3f62b21ca6">&#9670;&nbsp;</a></span>generatePaletteColor() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DGuiApplicationHelper::generatePaletteColor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classDPalette.html">DPalette</a> &amp;&#160;</td>
+          <td class="paramname"><em>base</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QPalette::ColorRole&#160;</td>
+          <td class="paramname"><em>role</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92">DGuiApplicationHelper::ColorType</a>&#160;</td>
+          <td class="paramname"><em>type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取调色板颜色. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">base</td><td>调色板 </td></tr>
+    <tr><td class="paramname">role</td><td>色码 </td></tr>
+    <tr><td class="paramname">type</td><td>主题枚举值 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd>QPalette::ColorRole </dd></dl>
+
+</div>
+</div>
+<a id="a348f427c0f2e68b390a16a6b8ad5be09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a348f427c0f2e68b390a16a6b8ad5be09">&#9670;&nbsp;</a></span>hasUserManual()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DGuiApplicationHelper::hasUserManual </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Determine whether it's a user manual for this application. </p>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a4a9d84ced740d42bf39666aaa4d3c089"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a9d84ced740d42bf39666aaa4d3c089">&#9670;&nbsp;</a></span>instance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDGuiApplicationHelper.html">DGuiApplicationHelper</a> * DGuiApplicationHelper::instance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>DGuiApplicationHelper::instance返回 <a class="el" href="classDGuiApplicationHelper.html">DGuiApplicationHelper</a> 对象 </p>
+<dl class="section return"><dt>返回</dt><dd>DGuiApplicationHelper对象 </dd></dl>
+
+</div>
+</div>
+<a id="a52569ac7a7e3a57f2d7e2466791e57b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52569ac7a7e3a57f2d7e2466791e57b1">&#9670;&nbsp;</a></span>isSpecialEffectsEnvironment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DGuiApplicationHelper::isSpecialEffectsEnvironment </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>isAnimationEnvironment 用于判断当前桌面环境是否是开启了动画等特效的环境 </p>
+<dl class="section return"><dt>返回</dt><dd>true开启了 false没有开启 </dd></dl>
+
+</div>
+</div>
+<a id="a80c3706fe396568897da92d9db1e882c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80c3706fe396568897da92d9db1e882c">&#9670;&nbsp;</a></span>isTabletEnvironment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DGuiApplicationHelper::isTabletEnvironment </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>用于判断当前桌面环境是否是平板电脑环境. </p>
+<dl class="section return"><dt>返回</dt><dd>true 是平板电脑环境 false不是平板电脑环境 </dd></dl>
+
+</div>
+</div>
+<a id="ab94fab6c42b86328baffcbb7bb3de0ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab94fab6c42b86328baffcbb7bb3de0ad">&#9670;&nbsp;</a></span>newProcessInstance</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DGuiApplicationHelper::newProcessInstance </td>
+          <td>(</td>
+          <td class="paramtype">qint64&#160;</td>
+          <td class="paramname"><em>pid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QStringList &amp;&#160;</td>
+          <td class="paramname"><em>arguments</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>通知新进程的信息。 </p>
+<p>单例程序情况下，尝试启动新的程序实例将触发此信号，以便获取所传入的参数列表等信息，来进行进一步处理。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pid</td><td>进程 ID. </td></tr>
+    <tr><td class="paramname">arguments</td><td>启动进程时所传入的参数列表. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad3c12b8c91f93ef04a9f212842113aa7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3c12b8c91f93ef04a9f212842113aa7">&#9670;&nbsp;</a></span>paletteType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92">DGuiApplicationHelper::ColorType</a> DGuiApplicationHelper::paletteType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>返回当前已设置的调色板类型. </p>
+<p>如果未调用过 setPaletteType, 默认为 UnknownType.</p>
+<dl class="section return"><dt>返回</dt><dd>返回当前已设置的调色板类型. </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>与 themetype 不同，此值与程序当前的 QPalette 没有关系。 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>DGuiApplicationHelper::themeType </dd></dl>
+
+</div>
+</div>
+<a id="a168bc69f3dd3a98b978f6441b110e8f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a168bc69f3dd3a98b978f6441b110e8f0">&#9670;&nbsp;</a></span>registerInstanceCreator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DGuiApplicationHelper::registerInstanceCreator </td>
+          <td>(</td>
+          <td class="paramtype">DGuiApplicationHelper::HelperCreator&#160;</td>
+          <td class="paramname"><em>creator</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>创建 <a class="el" href="classDGuiApplicationHelper.html">DGuiApplicationHelper</a> 对象. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">creator</td><td>函数指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>一定要先调用此函数,再使用 <a class="el" href="classDGuiApplicationHelper.html#a4a9d84ced740d42bf39666aaa4d3c089" title="DGuiApplicationHelper::instance返回 DGuiApplicationHelper 对象">DGuiApplicationHelper::instance()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a88d71049a24d357f21a3fcf01575c48c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88d71049a24d357f21a3fcf01575c48c">&#9670;&nbsp;</a></span>setApplicationPalette()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DGuiApplicationHelper::setApplicationPalette </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classDPalette.html">DPalette</a> &amp;&#160;</td>
+          <td class="paramname"><em>palette</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classDGuiApplicationHelper.html#a88d71049a24d357f21a3fcf01575c48c" title="DGuiApplicationHelper::setApplicationPalette.">DGuiApplicationHelper::setApplicationPalette</a>. </p>
+<p>自定义应用程序调色板, 如果没有为 QGuiApplication 设置过 QPalette, 则 将触发 QGuiApplication::palette 的更新. 如果仅需要控制程序使用亮色还是暗色的 调色板, 请使用 setThemeType. </p><dl class="section note"><dt>注解</dt><dd>主动设置调色板的操作会导致程序不再使用 <a class="el" href="classDPlatformTheme.html">DPlatformTheme</a> 中调色板相关的数据, 也 包括窗口级别的 windowTheme 所对应的 <a class="el" href="classDPlatformTheme.html">DPlatformTheme</a>, 届时设置 <a class="el" href="classDPlatformTheme.html">DPlatformTheme</a> 的 themeName 和所有与 <em>palette</em> 相关的属性都不再生效. </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>使用此方式设置的调色板将不会自动跟随活动色的变化 </dd>
+<dd>
+如果使用过QGuiApplication::setPalette, 此方式可能不会生效 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">palette</td><td>要设置的调色板 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9a100f0f248307b7cc2df722a8aff68e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a100f0f248307b7cc2df722a8aff68e">&#9670;&nbsp;</a></span>setPaletteType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DGuiApplicationHelper::setPaletteType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92">DGuiApplicationHelper::ColorType</a>&#160;</td>
+          <td class="paramname"><em>paletteType</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置程序所应用的调色板类型. </p>
+<p>将固定程序的调色板类型, 此行为可能导致 applicationPalette 变化, 前提是未使用 setApplicationPalette 固定过程序的调色板, 此方法不影响程序的调色板跟随 活动色改变, 可用于控制程序使用亮色还是暗色调色板. </p><dl class="section note"><dt>注解</dt><dd>主动设置调色板颜色类型的操作会导致程序不再使用 <a class="el" href="classDPlatformTheme.html">DPlatformTheme</a> 中调色板相关的数据, 也 包括窗口级别的 windowTheme 所对应的 <a class="el" href="classDPlatformTheme.html">DPlatformTheme</a>, 届时设置 <a class="el" href="classDPlatformTheme.html">DPlatformTheme</a> 的 themeName 和所有与 palette 相关的属性都不再生效. </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">paletteType</td><td>主题类型的枚举值 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="acf91b183ef7e5566a9770b558db42451"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf91b183ef7e5566a9770b558db42451">&#9670;&nbsp;</a></span>setSingelInstanceInterval()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DGuiApplicationHelper::setSingelInstanceInterval </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>interval</em> = <code>3000</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置从QLocalServer获取消息的等待时间. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">interval</td><td>等待时间，typo 请使用 <a class="el" href="classDGuiApplicationHelper.html#a299390a91b1c3a5aebdccba40d424c92" title="设置从QLocalServer获取消息的等待时间.">DGuiApplicationHelper::setSingleInstanceInterval</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac3172ba90dcda102e3a3ac3b68ffebe3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3172ba90dcda102e3a3ac3b68ffebe3">&#9670;&nbsp;</a></span>setSingleInstance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DGuiApplicationHelper::setSingleInstance </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DGuiApplicationHelper::SingleScope&#160;</td>
+          <td class="paramname"><em>singleScope</em> = <code>UserScope</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置DGuiApplicationHelper实例. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>实例关键字 </td></tr>
+    <tr><td class="paramname">singleScope</td><td>实例使用范围 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>设置是否成功 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd>此处所用到DGuiApplicationHelperPrivate::waitTime默认值为3000ms，可通过 </dd>
+<dd>
+DGuiApplicationHelper::setSingleInstanceInterval设置 </dd></dl>
+
+</div>
+</div>
+<a id="a299390a91b1c3a5aebdccba40d424c92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a299390a91b1c3a5aebdccba40d424c92">&#9670;&nbsp;</a></span>setSingleInstanceInterval()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DGuiApplicationHelper::setSingleInstanceInterval </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>interval</em> = <code>3000</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置从QLocalServer获取消息的等待时间. </p>
+<p>用于在重新创建DGuiApplicationHelper单例时，检测DGuiApplicationHelper单例是否存在且有响应 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">interval</td><td>等待时间，如 <em>interval</em> 为 -1 则没有超时一直等待，默认和 QLocalSocket 一致 3000ms </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>需要在 <a class="el" href="classDGuiApplicationHelper.html#ac3172ba90dcda102e3a3ac3b68ffebe3" title="设置DGuiApplicationHelper实例.">DGuiApplicationHelper::setSingleInstance</a> 之前调用否则无效。 </dd></dl>
+
+</div>
+</div>
+<a id="aa88a702eaaada0055b51d9b8617ab648"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa88a702eaaada0055b51d9b8617ab648">&#9670;&nbsp;</a></span>standardPalette()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDPalette.html">DPalette</a> DGuiApplicationHelper::standardPalette </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92">DGuiApplicationHelper::ColorType</a>&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>根据主题获取标准调色板. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>主题枚举值 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>调色板 </dd></dl>
+
+</div>
+</div>
+<a id="a54696b5f532a5deaad028efdf4069fa1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54696b5f532a5deaad028efdf4069fa1">&#9670;&nbsp;</a></span>systemTheme()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDPlatformTheme.html">DPlatformTheme</a> * DGuiApplicationHelper::systemTheme </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classDGuiApplicationHelper.html#a54696b5f532a5deaad028efdf4069fa1" title="DGuiApplicationHelper::systemTheme.">DGuiApplicationHelper::systemTheme</a>. </p>
+<p>返回系统级别的主题, 优先级低于 applicationTheme </p><dl class="section return"><dt>返回</dt><dd>平台主题对象 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDGuiApplicationHelper.html#a68b559d15c50f259ff5a88bee40eb372" title="DGuiApplicationHelper::applicationTheme.">applicationTheme</a> </dd>
+<dd>
+<a class="el" href="classDGuiApplicationHelper.html#ad47af29164477016275cafc944c28783" title="返回窗口级别的主题, 优先级高于 windowTheme 和 systemTheme.">windowTheme</a> </dd></dl>
+
+</div>
+</div>
+<a id="ae52eaafd5dac53d984f343818dc14621"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae52eaafd5dac53d984f343818dc14621">&#9670;&nbsp;</a></span>themeType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92">DGuiApplicationHelper::ColorType</a> DGuiApplicationHelper::themeType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>返回程序的主题类型. </p>
+<p>当themeType为UnknownType时, 将自动根据 GuiApplication::palette的QPalette::background颜色计算主题 类型, 否则与 paletteType 的值一致. 程序中应当使用此值作为 暗色/亮色主题类型的判断.</p>
+<dl class="section return"><dt>返回</dt><dd>主题的颜色类型. </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDGuiApplicationHelper.html#ac3667e460316b989a6f54463b7afcaa0" title="获取颜色的明亮度，将其转换为主题类型的枚举值.">toColorType</a> </dd></dl>
+
+</div>
+</div>
+<a id="ac3667e460316b989a6f54463b7afcaa0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3667e460316b989a6f54463b7afcaa0">&#9670;&nbsp;</a></span>toColorType() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92">DGuiApplicationHelper::ColorType</a> DGuiApplicationHelper::toColorType </td>
+          <td>(</td>
+          <td class="paramtype">const QColor &amp;&#160;</td>
+          <td class="paramname"><em>color</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取颜色的明亮度，将其转换为主题类型的枚举值. </p>
+<p>转换的策略为：先将颜色转换为rgb格式，再根据 Y = 0.299R + 0.587G + 0.114B 的公式 计算出颜色的亮度，亮度大于 191 时认为其为浅色，否则认为其为深色。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">color</td><td>需要转换为主题的类型的颜色 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>颜色类型的枚举值 </dd></dl>
+
+</div>
+</div>
+<a id="a25d6cc357e5f856da4c1e7765eabe420"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25d6cc357e5f856da4c1e7765eabe420">&#9670;&nbsp;</a></span>toColorType() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92">DGuiApplicationHelper::ColorType</a> DGuiApplicationHelper::toColorType </td>
+          <td>(</td>
+          <td class="paramtype">const QPalette &amp;&#160;</td>
+          <td class="paramname"><em>palette</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>将调色板 <em>palette</em> 转换为主题类型的枚举. 这是为便于使用而提供的一个重载成员函数.与上面的函数相比，它接受不同类型的参数.使用 QPalette::background 获取颜色的明亮度，将其转换为主题类型的枚举值。 返回调色板的颜色类型 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">palette</td><td>调色板 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>颜色类型的枚举值 </dd></dl>
+
+</div>
+</div>
+<a id="a36bc2b0660c97a4bdb2ba559151e4ccf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36bc2b0660c97a4bdb2ba559151e4ccf">&#9670;&nbsp;</a></span>windowPalette()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDPalette.html">DPalette</a> DGuiApplicationHelper::windowPalette </td>
+          <td>(</td>
+          <td class="paramtype">QWindow *&#160;</td>
+          <td class="paramname"><em>window</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classDGuiApplicationHelper.html#a36bc2b0660c97a4bdb2ba559151e4ccf" title="DGuiApplicationHelper::windowPalette.">DGuiApplicationHelper::windowPalette</a>. </p>
+<p>返回窗口所对应的调色板数据, 同 applicationPalette, 如果程序中自定义了 调色板, 则直接使用 applicationPalette. 自定义调色板的三种方式如下:</p><ol type="1">
+<li>通过 setApplicationPalette 固定调色板</li>
+<li>通过 setThemeType 固定调色板的类型</li>
+<li>通过 QGuiApplication::setPalette 固定调色板, 需要注意此方法不可逆. 否则将基于窗口所对应的 <a class="el" href="classDPlatformTheme.html">DPlatformTheme</a> 获取调色板( fetchPalette). <dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>调色板 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDGuiApplicationHelper.html#ad47af29164477016275cafc944c28783" title="返回窗口级别的主题, 优先级高于 windowTheme 和 systemTheme.">windowTheme()</a>, <a class="el" href="classDGuiApplicationHelper.html#a80dbc8f823db2a49230e24734d4e5723" title="获取调色板数据.">fetchPalette()</a>, <a class="el" href="classDGuiApplicationHelper.html#aa88a702eaaada0055b51d9b8617ab648" title="根据主题获取标准调色板.">standardPalette()</a>, <a class="el" href="classDGuiApplicationHelper.html#ab881c07f42d47c801ceb75c92937fc0a" title="加工调色板的颜色. 这是为便于使用而提供的一个重载成员函数.与上面的函数相比，它接受不同类型的参数.同 generatePaletteColor, 将直接调用 generatePaletteColor ...">generatePalette()</a>, <a class="el" href="classDGuiApplicationHelper.html#affc1f7774ce419a1ca73eab31f13cac4" title="返回应用程序调色板.">applicationPalette()</a> </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>使用时要同时关注 <a class="el" href="classDGuiApplicationHelper.html#a5001b4c491748c4b04bf45b97e2bb003" title="通知调色板对象的改变。">applicationPaletteChanged()</a> , 收到此信号后可能需要重新获取窗口的调色板 </dd>
+<dd>
+已废弃, 不再对外暴露控制窗口级别调色板的接口 </dd></dl>
+</li>
+</ol>
+
+</div>
+</div>
+<a id="ad47af29164477016275cafc944c28783"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad47af29164477016275cafc944c28783">&#9670;&nbsp;</a></span>windowTheme()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDPlatformTheme.html">DPlatformTheme</a> * DGuiApplicationHelper::windowTheme </td>
+          <td>(</td>
+          <td class="paramtype">QWindow *&#160;</td>
+          <td class="paramname"><em>window</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>返回窗口级别的主题, 优先级高于 windowTheme 和 systemTheme. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>主题对象对应的窗口 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>平台主题对象 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDGuiApplicationHelper.html#a68b559d15c50f259ff5a88bee40eb372" title="DGuiApplicationHelper::applicationTheme.">applicationTheme()</a> </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>已废弃, 不再对外暴露为特定窗口设置主题的接口 </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dtkgui/include/kernel/<a class="el" href="dguiapplicationhelper_8h_source.html">dguiapplicationhelper.h</a></li>
+<li>dtkgui/docs/src/dguiapplicationhelper.zh_CN.dox</li>
+<li>dtkgui/src/kernel/dguiapplicationhelper.cpp</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classDGuiApplicationHelper.html">DGuiApplicationHelper</a></li>
+    <li class="footer">文档生成时间:doxtime</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

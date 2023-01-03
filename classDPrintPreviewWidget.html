@@ -1,0 +1,1093 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: DPrintPreviewWidget类 参考</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="change address" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classDPrintPreviewWidget.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-slots">Public 槽</a> &#124;
+<a href="#signals">信号</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#friends">友元</a> &#124;
+<a href="classDPrintPreviewWidget-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">DPrintPreviewWidget类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 DPrintPreviewWidget 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classDPrintPreviewWidget.png" usemap="#DPrintPreviewWidget_map" alt=""/>
+  <map id="DPrintPreviewWidget_map" name="DPrintPreviewWidget_map">
+<area href="classDFrame.html" alt="DFrame" shape="rect" coords="102,56,296,80"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:af33a5342b961f2f67623a466ab71511f"><td class="memItemLeft" align="right" valign="top"><a id="af33a5342b961f2f67623a466ab71511f"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Imposition</b> { <br />
+&#160;&#160;<b>One</b>
+, <b>OneRowTwoCol</b>
+, <b>TwoRowTwoCol</b>
+, <b>TwoRowThreeCol</b>
+, <br />
+&#160;&#160;<b>ThreeRowThreeCol</b>
+, <b>FourRowFourCol</b>
+<br />
+ }</td></tr>
+<tr class="separator:af33a5342b961f2f67623a466ab71511f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d3fa4b2718867d87d9e7735325a51f6"><td class="memItemLeft" align="right" valign="top"><a id="a4d3fa4b2718867d87d9e7735325a51f6"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>PageRange</b> { <b>AllPage</b>
+, <b>CurrentPage</b>
+, <b>SelectPage</b>
+ }</td></tr>
+<tr class="separator:a4d3fa4b2718867d87d9e7735325a51f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca3726f992970185214972a1d9d04b78"><td class="memItemLeft" align="right" valign="top"><a id="aca3726f992970185214972a1d9d04b78"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Order</b> { <br />
+&#160;&#160;<b>L2R_T2B</b>
+, <b>R2L_T2B</b>
+, <b>T2B_L2R</b>
+, <b>T2B_R2L</b>
+, <br />
+&#160;&#160;<b>Copy</b>
+<br />
+ }</td></tr>
+<tr class="separator:aca3726f992970185214972a1d9d04b78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21a32f92573bb0ffbb607bb17c3c2a81"><td class="memItemLeft" align="right" valign="top"><a id="a21a32f92573bb0ffbb607bb17c3c2a81"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>PrintMode</b> { <b>PrintToPrinter</b>
+, <b>PrintToPdf</b>
+, <b>PrintToImage</b>
+ }</td></tr>
+<tr class="separator:a21a32f92573bb0ffbb607bb17c3c2a81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Public 槽</h2></td></tr>
+<tr class="memitem:a5e26e80ae7c54589a06fbb55bbc132f6"><td class="memItemLeft" align="right" valign="top"><a id="a5e26e80ae7c54589a06fbb55bbc132f6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewWidget.html#a5e26e80ae7c54589a06fbb55bbc132f6">updatePreview</a> ()</td></tr>
+<tr class="memdesc:a5e26e80ae7c54589a06fbb55bbc132f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">刷新预览。 <br /></td></tr>
+<tr class="separator:a5e26e80ae7c54589a06fbb55bbc132f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a858a1d70ef3974c2a4cb0ebb36f75992"><td class="memItemLeft" align="right" valign="top"><a id="a858a1d70ef3974c2a4cb0ebb36f75992"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewWidget.html#a858a1d70ef3974c2a4cb0ebb36f75992">turnFront</a> ()</td></tr>
+<tr class="memdesc:a858a1d70ef3974c2a4cb0ebb36f75992"><td class="mdescLeft">&#160;</td><td class="mdescRight">前翻一页。 <br /></td></tr>
+<tr class="separator:a858a1d70ef3974c2a4cb0ebb36f75992"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a421b7e008d9b328298747ce9ff46e5f6"><td class="memItemLeft" align="right" valign="top"><a id="a421b7e008d9b328298747ce9ff46e5f6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewWidget.html#a421b7e008d9b328298747ce9ff46e5f6">turnBack</a> ()</td></tr>
+<tr class="memdesc:a421b7e008d9b328298747ce9ff46e5f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">后翻一页。 <br /></td></tr>
+<tr class="separator:a421b7e008d9b328298747ce9ff46e5f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d61a6fdec4d29a5105c0d2bb5e53d07"><td class="memItemLeft" align="right" valign="top"><a id="a7d61a6fdec4d29a5105c0d2bb5e53d07"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewWidget.html#a7d61a6fdec4d29a5105c0d2bb5e53d07">turnBegin</a> ()</td></tr>
+<tr class="memdesc:a7d61a6fdec4d29a5105c0d2bb5e53d07"><td class="mdescLeft">&#160;</td><td class="mdescRight">第一页。 <br /></td></tr>
+<tr class="separator:a7d61a6fdec4d29a5105c0d2bb5e53d07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82337fe3c174ef97b059972ebf261bba"><td class="memItemLeft" align="right" valign="top"><a id="a82337fe3c174ef97b059972ebf261bba"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewWidget.html#a82337fe3c174ef97b059972ebf261bba">turnEnd</a> ()</td></tr>
+<tr class="memdesc:a82337fe3c174ef97b059972ebf261bba"><td class="mdescLeft">&#160;</td><td class="mdescRight">最后一页。 <br /></td></tr>
+<tr class="separator:a82337fe3c174ef97b059972ebf261bba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2202b074481ebb1c2eaaab42c5fd827"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewWidget.html#ae2202b074481ebb1c2eaaab42c5fd827">setCurrentPage</a> (int page)</td></tr>
+<tr class="memdesc:ae2202b074481ebb1c2eaaab42c5fd827"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置当前页。  <a href="classDPrintPreviewWidget.html#ae2202b074481ebb1c2eaaab42c5fd827">更多...</a><br /></td></tr>
+<tr class="separator:ae2202b074481ebb1c2eaaab42c5fd827"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3354667fc507d7fbebc6fb3dcb19559c"><td class="memItemLeft" align="right" valign="top"><a id="a3354667fc507d7fbebc6fb3dcb19559c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>print</b> (bool isSavedPicture=false)</td></tr>
+<tr class="separator:a3354667fc507d7fbebc6fb3dcb19559c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ff7ad790735db70983245bfe9bb395b"><td class="memItemLeft" align="right" valign="top"><a id="a2ff7ad790735db70983245bfe9bb395b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>themeTypeChanged</b> (<a class="el" href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92">DGuiApplicationHelper::ColorType</a> themeType)</td></tr>
+<tr class="separator:a2ff7ad790735db70983245bfe9bb395b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+信号</h2></td></tr>
+<tr class="memitem:aab1be5501d233dc1a266169afa5ab23f"><td class="memItemLeft" align="right" valign="top"><a id="aab1be5501d233dc1a266169afa5ab23f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>paintRequested</b> (<a class="el" href="classDPrinter.html">DPrinter</a> *printer)</td></tr>
+<tr class="separator:aab1be5501d233dc1a266169afa5ab23f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9121360a0b21c1c3c8782cee1944e57"><td class="memItemLeft" align="right" valign="top"><a id="ac9121360a0b21c1c3c8782cee1944e57"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>paintRequested</b> (<a class="el" href="classDPrinter.html">DPrinter</a> *printer, const QVector&lt; int &gt; &amp;pageRange)</td></tr>
+<tr class="separator:ac9121360a0b21c1c3c8782cee1944e57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5be30eb32175a93032881ff144e4fc34"><td class="memItemLeft" align="right" valign="top"><a id="a5be30eb32175a93032881ff144e4fc34"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>previewChanged</b> ()</td></tr>
+<tr class="separator:a5be30eb32175a93032881ff144e4fc34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a937de6d245ca1f5ef16377e8e1edb6f5"><td class="memItemLeft" align="right" valign="top"><a id="a937de6d245ca1f5ef16377e8e1edb6f5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>currentPageChanged</b> (int page)</td></tr>
+<tr class="separator:a937de6d245ca1f5ef16377e8e1edb6f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68bd43c0f70b1de253905da0a7842a4f"><td class="memItemLeft" align="right" valign="top"><a id="a68bd43c0f70b1de253905da0a7842a4f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>totalPages</b> (int)</td></tr>
+<tr class="separator:a68bd43c0f70b1de253905da0a7842a4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95b62f012b22f146f91b48aea35d3093"><td class="memItemLeft" align="right" valign="top"><a id="a95b62f012b22f146f91b48aea35d3093"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>pagesCountChanged</b> (int pages)</td></tr>
+<tr class="separator:a95b62f012b22f146f91b48aea35d3093"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a1aeff62f6660758f781bb05a829a9f12"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewWidget.html#a1aeff62f6660758f781bb05a829a9f12">DPrintPreviewWidget</a> (<a class="el" href="classDPrinter.html">DPrinter</a> *printer, QWidget *parent=nullptr)</td></tr>
+<tr class="memdesc:a1aeff62f6660758f781bb05a829a9f12"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造一个 DPrintPreviewWidget。  <a href="classDPrintPreviewWidget.html#a1aeff62f6660758f781bb05a829a9f12">更多...</a><br /></td></tr>
+<tr class="separator:a1aeff62f6660758f781bb05a829a9f12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada0f65fd4d07738d0a7f6f37df73f001"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewWidget.html#ada0f65fd4d07738d0a7f6f37df73f001">setVisible</a> (bool visible) override</td></tr>
+<tr class="memdesc:ada0f65fd4d07738d0a7f6f37df73f001"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置打印预览widget是否可见. \reimp  <a href="classDPrintPreviewWidget.html#ada0f65fd4d07738d0a7f6f37df73f001">更多...</a><br /></td></tr>
+<tr class="separator:ada0f65fd4d07738d0a7f6f37df73f001"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70ffe4ae7f77b6bc1cce1e0098d48776"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewWidget.html#a70ffe4ae7f77b6bc1cce1e0098d48776">setPageRange</a> (const QVector&lt; int &gt; &amp;rangePages)</td></tr>
+<tr class="memdesc:a70ffe4ae7f77b6bc1cce1e0098d48776"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置预览页面范围。  <a href="classDPrintPreviewWidget.html#a70ffe4ae7f77b6bc1cce1e0098d48776">更多...</a><br /></td></tr>
+<tr class="separator:a70ffe4ae7f77b6bc1cce1e0098d48776"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcc85972a71a1d15f4d90d208f8e78f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewWidget.html#adcc85972a71a1d15f4d90d208f8e78f0">setPageRange</a> (int from, int to)</td></tr>
+<tr class="memdesc:adcc85972a71a1d15f4d90d208f8e78f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置预览页面范围。  <a href="classDPrintPreviewWidget.html#adcc85972a71a1d15f4d90d208f8e78f0">更多...</a><br /></td></tr>
+<tr class="separator:adcc85972a71a1d15f4d90d208f8e78f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad23f9700f7049e90ea3942ef483b6207"><td class="memItemLeft" align="right" valign="top"><a id="ad23f9700f7049e90ea3942ef483b6207"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewWidget.html#ad23f9700f7049e90ea3942ef483b6207">setPageRangeALL</a> ()</td></tr>
+<tr class="memdesc:ad23f9700f7049e90ea3942ef483b6207"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置打印预览页面范围为所有页. <br /></td></tr>
+<tr class="separator:ad23f9700f7049e90ea3942ef483b6207"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af00e2aa0c2da81660aa610cbd6f2c2f8"><td class="memItemLeft" align="right" valign="top">D_DECL_DEPRECATED void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewWidget.html#af00e2aa0c2da81660aa610cbd6f2c2f8">setReGenerate</a> (bool generate)</td></tr>
+<tr class="memdesc:af00e2aa0c2da81660aa610cbd6f2c2f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置是否需要重新生成页面内容.  <a href="classDPrintPreviewWidget.html#af00e2aa0c2da81660aa610cbd6f2c2f8">更多...</a><br /></td></tr>
+<tr class="separator:af00e2aa0c2da81660aa610cbd6f2c2f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a711b9921c9fa3d5367da02c3a2d373d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewWidget.html#a711b9921c9fa3d5367da02c3a2d373d9">setPageRangeMode</a> (PageRange mode)</td></tr>
+<tr class="memdesc:a711b9921c9fa3d5367da02c3a2d373d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置页面选择范围模式。  <a href="classDPrintPreviewWidget.html#a711b9921c9fa3d5367da02c3a2d373d9">更多...</a><br /></td></tr>
+<tr class="separator:a711b9921c9fa3d5367da02c3a2d373d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a437049d8af98767c31a91015576a8161"><td class="memItemLeft" align="right" valign="top">PageRange&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewWidget.html#a437049d8af98767c31a91015576a8161">pageRangeMode</a> ()</td></tr>
+<tr class="memdesc:a437049d8af98767c31a91015576a8161"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取页面选择范围模式.  <a href="classDPrintPreviewWidget.html#a437049d8af98767c31a91015576a8161">更多...</a><br /></td></tr>
+<tr class="separator:a437049d8af98767c31a91015576a8161"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8f22dc98c1de5d92045862437d9bfd7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewWidget.html#af8f22dc98c1de5d92045862437d9bfd7">reviewChange</a> (bool generate)</td></tr>
+<tr class="memdesc:af8f22dc98c1de5d92045862437d9bfd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">预览是否改变，当预览改变时需要调用.  <a href="classDPrintPreviewWidget.html#af8f22dc98c1de5d92045862437d9bfd7">更多...</a><br /></td></tr>
+<tr class="separator:af8f22dc98c1de5d92045862437d9bfd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca8dfb2b9c4f7728e7ea4b0754bfca41"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewWidget.html#aca8dfb2b9c4f7728e7ea4b0754bfca41">pagesCount</a> ()</td></tr>
+<tr class="memdesc:aca8dfb2b9c4f7728e7ea4b0754bfca41"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取预览总页数.  <a href="classDPrintPreviewWidget.html#aca8dfb2b9c4f7728e7ea4b0754bfca41">更多...</a><br /></td></tr>
+<tr class="separator:aca8dfb2b9c4f7728e7ea4b0754bfca41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa267dddaf5b75d52b29299a82e3a1e23"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewWidget.html#aa267dddaf5b75d52b29299a82e3a1e23">currentPage</a> ()</td></tr>
+<tr class="memdesc:aa267dddaf5b75d52b29299a82e3a1e23"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取当前页的页码.  <a href="classDPrintPreviewWidget.html#aa267dddaf5b75d52b29299a82e3a1e23">更多...</a><br /></td></tr>
+<tr class="separator:aa267dddaf5b75d52b29299a82e3a1e23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4cf4f66641ab39bd50da2c2a387ceee"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewWidget.html#ae4cf4f66641ab39bd50da2c2a387ceee">turnPageAble</a> ()</td></tr>
+<tr class="memdesc:ae4cf4f66641ab39bd50da2c2a387ceee"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取是否可翻页.  <a href="classDPrintPreviewWidget.html#ae4cf4f66641ab39bd50da2c2a387ceee">更多...</a><br /></td></tr>
+<tr class="separator:ae4cf4f66641ab39bd50da2c2a387ceee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e3c6efe061e82c9aa3f120f813566e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewWidget.html#a3e3c6efe061e82c9aa3f120f813566e4">setColorMode</a> (const DPrinter::ColorMode &amp;colorMode)</td></tr>
+<tr class="memdesc:a3e3c6efe061e82c9aa3f120f813566e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置色彩模式。  <a href="classDPrintPreviewWidget.html#a3e3c6efe061e82c9aa3f120f813566e4">更多...</a><br /></td></tr>
+<tr class="separator:a3e3c6efe061e82c9aa3f120f813566e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae99f61c5fef5230aee8e11076874f4ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewWidget.html#ae99f61c5fef5230aee8e11076874f4ac">setOrientation</a> (const DPrinter::Orientation &amp;pageOrientation)</td></tr>
+<tr class="memdesc:ae99f61c5fef5230aee8e11076874f4ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置页面方向。  <a href="classDPrintPreviewWidget.html#ae99f61c5fef5230aee8e11076874f4ac">更多...</a><br /></td></tr>
+<tr class="separator:ae99f61c5fef5230aee8e11076874f4ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a635b3c1cf5df7ac60cc55683e9c0f573"><td class="memItemLeft" align="right" valign="top"><a id="a635b3c1cf5df7ac60cc55683e9c0f573"></a>
+DPrinter::ColorMode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewWidget.html#a635b3c1cf5df7ac60cc55683e9c0f573">getColorMode</a> ()</td></tr>
+<tr class="memdesc:a635b3c1cf5df7ac60cc55683e9c0f573"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取色彩模式。 <br /></td></tr>
+<tr class="separator:a635b3c1cf5df7ac60cc55683e9c0f573"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d65c3c75a67d2fa30d31b62710bd1c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewWidget.html#a5d65c3c75a67d2fa30d31b62710bd1c0">setScale</a> (qreal scale)</td></tr>
+<tr class="memdesc:a5d65c3c75a67d2fa30d31b62710bd1c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置页面缩放。  <a href="classDPrintPreviewWidget.html#a5d65c3c75a67d2fa30d31b62710bd1c0">更多...</a><br /></td></tr>
+<tr class="separator:a5d65c3c75a67d2fa30d31b62710bd1c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a410b8d852d0ddb7b18174e652e40a0cc"><td class="memItemLeft" align="right" valign="top"><a id="a410b8d852d0ddb7b18174e652e40a0cc"></a>
+qreal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewWidget.html#a410b8d852d0ddb7b18174e652e40a0cc">getScale</a> () const</td></tr>
+<tr class="memdesc:a410b8d852d0ddb7b18174e652e40a0cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取缩放大小。 <br /></td></tr>
+<tr class="separator:a410b8d852d0ddb7b18174e652e40a0cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a500ddb803d83a98247abdf7036c1efa6"><td class="memItemLeft" align="right" valign="top"><a id="a500ddb803d83a98247abdf7036c1efa6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewWidget.html#a500ddb803d83a98247abdf7036c1efa6">updateView</a> ()</td></tr>
+<tr class="memdesc:a500ddb803d83a98247abdf7036c1efa6"><td class="mdescLeft">&#160;</td><td class="mdescRight">刷新预览页面。 <br /></td></tr>
+<tr class="separator:a500ddb803d83a98247abdf7036c1efa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5fb27954ee0aedb42db47c2c636043b"><td class="memItemLeft" align="right" valign="top"><a id="ab5fb27954ee0aedb42db47c2c636043b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewWidget.html#ab5fb27954ee0aedb42db47c2c636043b">updateWaterMark</a> ()</td></tr>
+<tr class="memdesc:ab5fb27954ee0aedb42db47c2c636043b"><td class="mdescLeft">&#160;</td><td class="mdescRight">强制刷新水印效果 <br /></td></tr>
+<tr class="separator:ab5fb27954ee0aedb42db47c2c636043b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06e065126db8aae0e23cb4259902f51f"><td class="memItemLeft" align="right" valign="top"><a id="a06e065126db8aae0e23cb4259902f51f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewWidget.html#a06e065126db8aae0e23cb4259902f51f">refreshBegin</a> ()</td></tr>
+<tr class="memdesc:a06e065126db8aae0e23cb4259902f51f"><td class="mdescLeft">&#160;</td><td class="mdescRight">水印刷新开始，主要用于同时多次调用水印属性改变的接口时，只刷新一次 <br /></td></tr>
+<tr class="separator:a06e065126db8aae0e23cb4259902f51f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8e2fc3273eaf228e0df4d67d1a0a854"><td class="memItemLeft" align="right" valign="top"><a id="aa8e2fc3273eaf228e0df4d67d1a0a854"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewWidget.html#aa8e2fc3273eaf228e0df4d67d1a0a854">refreshEnd</a> ()</td></tr>
+<tr class="memdesc:aa8e2fc3273eaf228e0df4d67d1a0a854"><td class="mdescLeft">&#160;</td><td class="mdescRight">水印刷新结束，刷新水印效果 <br /></td></tr>
+<tr class="separator:aa8e2fc3273eaf228e0df4d67d1a0a854"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c3f51275eadf67e739e1c8931c7dfc7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewWidget.html#a9c3f51275eadf67e739e1c8931c7dfc7">setWaterMarkType</a> (int type)</td></tr>
+<tr class="memdesc:a9c3f51275eadf67e739e1c8931c7dfc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置水印类型。  <a href="classDPrintPreviewWidget.html#a9c3f51275eadf67e739e1c8931c7dfc7">更多...</a><br /></td></tr>
+<tr class="separator:a9c3f51275eadf67e739e1c8931c7dfc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a290520210ea29ac56babe235ffb392cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewWidget.html#a290520210ea29ac56babe235ffb392cb">setWaterMargImage</a> (const QImage &amp;image)</td></tr>
+<tr class="memdesc:a290520210ea29ac56babe235ffb392cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置水印图片。  <a href="classDPrintPreviewWidget.html#a290520210ea29ac56babe235ffb392cb">更多...</a><br /></td></tr>
+<tr class="separator:a290520210ea29ac56babe235ffb392cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e3977e4c9a6f876bc1e392fcbd98e3d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewWidget.html#a8e3977e4c9a6f876bc1e392fcbd98e3d">setWaterMarkRotate</a> (qreal rotate)</td></tr>
+<tr class="memdesc:a8e3977e4c9a6f876bc1e392fcbd98e3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置水印旋转角度。  <a href="classDPrintPreviewWidget.html#a8e3977e4c9a6f876bc1e392fcbd98e3d">更多...</a><br /></td></tr>
+<tr class="separator:a8e3977e4c9a6f876bc1e392fcbd98e3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa0fc9b8f8d7deb30e98a9f08e1fd46b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewWidget.html#afa0fc9b8f8d7deb30e98a9f08e1fd46b">setWaterMarkScale</a> (qreal scale)</td></tr>
+<tr class="memdesc:afa0fc9b8f8d7deb30e98a9f08e1fd46b"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置水印缩放大小。  <a href="classDPrintPreviewWidget.html#afa0fc9b8f8d7deb30e98a9f08e1fd46b">更多...</a><br /></td></tr>
+<tr class="separator:afa0fc9b8f8d7deb30e98a9f08e1fd46b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44b8641937f6e34db5e7d159e5750e63"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewWidget.html#a44b8641937f6e34db5e7d159e5750e63">setWaterMarkOpacity</a> (qreal opacity)</td></tr>
+<tr class="memdesc:a44b8641937f6e34db5e7d159e5750e63"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置水印透明度。  <a href="classDPrintPreviewWidget.html#a44b8641937f6e34db5e7d159e5750e63">更多...</a><br /></td></tr>
+<tr class="separator:a44b8641937f6e34db5e7d159e5750e63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae78e798085db4ff1f7241387395ddfaf"><td class="memItemLeft" align="right" valign="top"><a id="ae78e798085db4ff1f7241387395ddfaf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewWidget.html#ae78e798085db4ff1f7241387395ddfaf">setConfidentialWaterMark</a> ()</td></tr>
+<tr class="memdesc:ae78e798085db4ff1f7241387395ddfaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置“绝密”文字水印。 <br /></td></tr>
+<tr class="separator:ae78e798085db4ff1f7241387395ddfaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adaded194b56ec7f14890b394457fcbd8"><td class="memItemLeft" align="right" valign="top"><a id="adaded194b56ec7f14890b394457fcbd8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewWidget.html#adaded194b56ec7f14890b394457fcbd8">setDraftWaterMark</a> ()</td></tr>
+<tr class="memdesc:adaded194b56ec7f14890b394457fcbd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置“草稿”文字水印。 <br /></td></tr>
+<tr class="separator:adaded194b56ec7f14890b394457fcbd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f90236a3c62a5b6b6b0da98bfd8dcbc"><td class="memItemLeft" align="right" valign="top"><a id="a5f90236a3c62a5b6b6b0da98bfd8dcbc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewWidget.html#a5f90236a3c62a5b6b6b0da98bfd8dcbc">setSampleWaterMark</a> ()</td></tr>
+<tr class="memdesc:a5f90236a3c62a5b6b6b0da98bfd8dcbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置“样本”文字水印。 <br /></td></tr>
+<tr class="separator:a5f90236a3c62a5b6b6b0da98bfd8dcbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf90138f101289b558a89606eb4e1e44"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewWidget.html#abf90138f101289b558a89606eb4e1e44">setCustomWaterMark</a> (const QString &amp;text)</td></tr>
+<tr class="memdesc:abf90138f101289b558a89606eb4e1e44"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置自定义文字水印。  <a href="classDPrintPreviewWidget.html#abf90138f101289b558a89606eb4e1e44">更多...</a><br /></td></tr>
+<tr class="separator:abf90138f101289b558a89606eb4e1e44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a023417244ae609b825d12ca8b756d83b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewWidget.html#a023417244ae609b825d12ca8b756d83b">setTextWaterMark</a> (const QString &amp;text)</td></tr>
+<tr class="memdesc:a023417244ae609b825d12ca8b756d83b"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置文字水印的文字内容。  <a href="classDPrintPreviewWidget.html#a023417244ae609b825d12ca8b756d83b">更多...</a><br /></td></tr>
+<tr class="separator:a023417244ae609b825d12ca8b756d83b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc9ac7e7f128001be2b07d8de6555c96"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewWidget.html#adc9ac7e7f128001be2b07d8de6555c96">setWaterMarkFont</a> (const QFont &amp;font)</td></tr>
+<tr class="memdesc:adc9ac7e7f128001be2b07d8de6555c96"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置文字水印的字体。  <a href="classDPrintPreviewWidget.html#adc9ac7e7f128001be2b07d8de6555c96">更多...</a><br /></td></tr>
+<tr class="separator:adc9ac7e7f128001be2b07d8de6555c96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bc603d14afe12685fcbc21a6e73065d"><td class="memItemLeft" align="right" valign="top">QColor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewWidget.html#a3bc603d14afe12685fcbc21a6e73065d">waterMarkColor</a> () const</td></tr>
+<tr class="memdesc:a3bc603d14afe12685fcbc21a6e73065d"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取文字水印的颜色。  <a href="classDPrintPreviewWidget.html#a3bc603d14afe12685fcbc21a6e73065d">更多...</a><br /></td></tr>
+<tr class="separator:a3bc603d14afe12685fcbc21a6e73065d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af49e10a29ccaad26a923ebdc00745185"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewWidget.html#af49e10a29ccaad26a923ebdc00745185">setWaterMarkColor</a> (const QColor &amp;color)</td></tr>
+<tr class="memdesc:af49e10a29ccaad26a923ebdc00745185"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置文字水印的颜色。  <a href="classDPrintPreviewWidget.html#af49e10a29ccaad26a923ebdc00745185">更多...</a><br /></td></tr>
+<tr class="separator:af49e10a29ccaad26a923ebdc00745185"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af15081ad88275ab16352ea72e671eb38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewWidget.html#af15081ad88275ab16352ea72e671eb38">setWaterMarkLayout</a> (int layout)</td></tr>
+<tr class="memdesc:af15081ad88275ab16352ea72e671eb38"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置水印的布局。  <a href="classDPrintPreviewWidget.html#af15081ad88275ab16352ea72e671eb38">更多...</a><br /></td></tr>
+<tr class="separator:af15081ad88275ab16352ea72e671eb38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46d8e09c7e088913e68eb9cefae75762"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewWidget.html#a46d8e09c7e088913e68eb9cefae75762">setImposition</a> (Imposition im)</td></tr>
+<tr class="memdesc:a46d8e09c7e088913e68eb9cefae75762"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置并打的模式。  <a href="classDPrintPreviewWidget.html#a46d8e09c7e088913e68eb9cefae75762">更多...</a><br /></td></tr>
+<tr class="separator:a46d8e09c7e088913e68eb9cefae75762"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4791e466f4a7238bac6fc8edf6adc394"><td class="memItemLeft" align="right" valign="top"><a id="a4791e466f4a7238bac6fc8edf6adc394"></a>
+Imposition&#160;</td><td class="memItemRight" valign="bottom"><b>imposition</b> () const</td></tr>
+<tr class="separator:a4791e466f4a7238bac6fc8edf6adc394"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45f92d42bf68a57fd67213cfe535d3e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewWidget.html#a45f92d42bf68a57fd67213cfe535d3e3">setOrder</a> (Order order)</td></tr>
+<tr class="memdesc:a45f92d42bf68a57fd67213cfe535d3e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置页面内并打的顺序。  <a href="classDPrintPreviewWidget.html#a45f92d42bf68a57fd67213cfe535d3e3">更多...</a><br /></td></tr>
+<tr class="separator:a45f92d42bf68a57fd67213cfe535d3e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7c024138f213a70eb9a6c439b9fead5"><td class="memItemLeft" align="right" valign="top"><a id="ad7c024138f213a70eb9a6c439b9fead5"></a>
+DPrintPreviewWidget::Order&#160;</td><td class="memItemRight" valign="bottom"><b>order</b> () const</td></tr>
+<tr class="separator:ad7c024138f213a70eb9a6c439b9fead5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1fe442ca73045c94373efc58973ebbc"><td class="memItemLeft" align="right" valign="top"><a id="aa1fe442ca73045c94373efc58973ebbc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setPrintFromPath</b> (const QString &amp;path)</td></tr>
+<tr class="separator:aa1fe442ca73045c94373efc58973ebbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacffc8b806ed07ee3119961b7c1f0ab4"><td class="memItemLeft" align="right" valign="top"><a id="aacffc8b806ed07ee3119961b7c1f0ab4"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>printFromPath</b> () const</td></tr>
+<tr class="separator:aacffc8b806ed07ee3119961b7c1f0ab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63db6d2c0bef063f44f088f4e9e11a05"><td class="memItemLeft" align="right" valign="top"><a id="a63db6d2c0bef063f44f088f4e9e11a05"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setPrintMode</b> (PrintMode pt)</td></tr>
+<tr class="separator:a63db6d2c0bef063f44f088f4e9e11a05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cedfe3260b6a238c2d2461740a1255d"><td class="memItemLeft" align="right" valign="top"><a id="a5cedfe3260b6a238c2d2461740a1255d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setAsynPreview</b> (int totalPage)</td></tr>
+<tr class="separator:a5cedfe3260b6a238c2d2461740a1255d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a876db5b30868bf8b2c52aa912d2d597f"><td class="memItemLeft" align="right" valign="top"><a id="a876db5b30868bf8b2c52aa912d2d597f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isAsynPreview</b> () const</td></tr>
+<tr class="separator:a876db5b30868bf8b2c52aa912d2d597f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace1bfb50ce7d44bdef84c4d9d65ff3c2"><td class="memItemLeft" align="right" valign="top"><a id="ace1bfb50ce7d44bdef84c4d9d65ff3c2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>isPageByPage</b> (int pageCopy, bool isFirst)</td></tr>
+<tr class="separator:ace1bfb50ce7d44bdef84c4d9d65ff3c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57399552ae7551d8c9729f961f5e897f"><td class="memItemLeft" align="right" valign="top"><a id="a57399552ae7551d8c9729f961f5e897f"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>targetPageCount</b> (int pageCount)</td></tr>
+<tr class="separator:a57399552ae7551d8c9729f961f5e897f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82df763334e7d63961ff4a7a559c057b"><td class="memItemLeft" align="right" valign="top"><a id="a82df763334e7d63961ff4a7a559c057b"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>originPageCount</b> ()</td></tr>
+<tr class="separator:a82df763334e7d63961ff4a7a559c057b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad139303707adfcab7ae8f9deb6815360"><td class="memItemLeft" align="right" valign="top"><a id="ad139303707adfcab7ae8f9deb6815360"></a>
+QByteArray&#160;</td><td class="memItemRight" valign="bottom"><b>printerColorModel</b> () const</td></tr>
+<tr class="separator:ad139303707adfcab7ae8f9deb6815360"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classDFrame"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classDFrame')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="classDFrame.html">DFrame</a></td></tr>
+<tr class="memitem:ab8aea70683e87356f13b12c3232b11fd inherit pub_methods_classDFrame"><td class="memItemLeft" align="right" valign="top"><a id="ab8aea70683e87356f13b12c3232b11fd"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDFrame.html#ab8aea70683e87356f13b12c3232b11fd">DFrame</a> (QWidget *parent=nullptr)</td></tr>
+<tr class="memdesc:ab8aea70683e87356f13b12c3232b11fd inherit pub_methods_classDFrame"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDFrame.html#ab8aea70683e87356f13b12c3232b11fd" title="DFrame::DFrame 用于其他需要边框的widget的基类 parent">DFrame::DFrame</a> 用于其他需要边框的widget的基类 <em>parent</em> <br /></td></tr>
+<tr class="separator:ab8aea70683e87356f13b12c3232b11fd inherit pub_methods_classDFrame"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab70885116a3f88b39f6b746850b3b93d inherit pub_methods_classDFrame"><td class="memItemLeft" align="right" valign="top"><a id="ab70885116a3f88b39f6b746850b3b93d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDFrame.html#ab70885116a3f88b39f6b746850b3b93d">setFrameRounded</a> (bool on)</td></tr>
+<tr class="memdesc:ab70885116a3f88b39f6b746850b3b93d inherit pub_methods_classDFrame"><td class="mdescLeft">&#160;</td><td class="mdescRight">DFrame::setFrameRounded设置边框圆角是否开启 <em>on</em> true开启　false关闭 <br /></td></tr>
+<tr class="separator:ab70885116a3f88b39f6b746850b3b93d inherit pub_methods_classDFrame"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7e121179b92692772c6eeb971948e0f inherit pub_methods_classDFrame"><td class="memItemLeft" align="right" valign="top"><a id="aa7e121179b92692772c6eeb971948e0f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDFrame.html#aa7e121179b92692772c6eeb971948e0f">setBackgroundRole</a> (DGUI_NAMESPACE::DPalette::ColorType type)</td></tr>
+<tr class="memdesc:aa7e121179b92692772c6eeb971948e0f inherit pub_methods_classDFrame"><td class="mdescLeft">&#160;</td><td class="mdescRight">DFrame::setBackgroundRole　设置边框背景画刷的角色类型 <em>type</em> 背景画刷的角色类型 <br /></td></tr>
+<tr class="separator:aa7e121179b92692772c6eeb971948e0f inherit pub_methods_classDFrame"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+友元</h2></td></tr>
+<tr class="memitem:a17bfb4c142b1079b2123dc725cf63f7a"><td class="memItemLeft" align="right" valign="top"><a id="a17bfb4c142b1079b2123dc725cf63f7a"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>ContentItem</b></td></tr>
+<tr class="separator:a17bfb4c142b1079b2123dc725cf63f7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pro_methods_classDFrame"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classDFrame')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="classDFrame.html">DFrame</a></td></tr>
+<tr class="memitem:a4d5a008c50045e860f553d51f38f9dd3 inherit pro_methods_classDFrame"><td class="memItemLeft" align="right" valign="top"><a id="a4d5a008c50045e860f553d51f38f9dd3"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DFrame</b> (<a class="el" href="classDFramePrivate.html">DFramePrivate</a> &amp;dd, QWidget *parent=nullptr)</td></tr>
+<tr class="separator:a4d5a008c50045e860f553d51f38f9dd3 inherit pro_methods_classDFrame"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae914c235d49f3f0d2acacf5669802da9 inherit pro_methods_classDFrame"><td class="memItemLeft" align="right" valign="top"><a id="ae914c235d49f3f0d2acacf5669802da9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>paintEvent</b> (QPaintEvent *event) override</td></tr>
+<tr class="separator:ae914c235d49f3f0d2acacf5669802da9 inherit pro_methods_classDFrame"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a1aeff62f6660758f781bb05a829a9f12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1aeff62f6660758f781bb05a829a9f12">&#9670;&nbsp;</a></span>DPrintPreviewWidget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DPrintPreviewWidget::DPrintPreviewWidget </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classDPrinter.html">DPrinter</a> *&#160;</td>
+          <td class="paramname"><em>printer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>构造一个 DPrintPreviewWidget。 </p>
+<p><em>printer</em> 打印机 <em>parent</em> 父控件 </p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="aa267dddaf5b75d52b29299a82e3a1e23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa267dddaf5b75d52b29299a82e3a1e23">&#9670;&nbsp;</a></span>currentPage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DPrintPreviewWidget::currentPage </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取当前页的页码. </p>
+<dl class="section return"><dt>返回</dt><dd>返回当前页的页码. </dd></dl>
+
+</div>
+</div>
+<a id="a437049d8af98767c31a91015576a8161"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a437049d8af98767c31a91015576a8161">&#9670;&nbsp;</a></span>pageRangeMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DPrintPreviewWidget::PageRange DPrintPreviewWidget::pageRangeMode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取页面选择范围模式. </p>
+<dl class="section return"><dt>返回</dt><dd>返回页码返回的模式. </dd></dl>
+
+</div>
+</div>
+<a id="aca8dfb2b9c4f7728e7ea4b0754bfca41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca8dfb2b9c4f7728e7ea4b0754bfca41">&#9670;&nbsp;</a></span>pagesCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DPrintPreviewWidget::pagesCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取预览总页数. </p>
+<dl class="section return"><dt>返回</dt><dd>返回预览总页数. </dd></dl>
+
+</div>
+</div>
+<a id="af8f22dc98c1de5d92045862437d9bfd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8f22dc98c1de5d92045862437d9bfd7">&#9670;&nbsp;</a></span>reviewChange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DPrintPreviewWidget::reviewChange </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>generate</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>预览是否改变，当预览改变时需要调用. </p>
+<p><em>generate</em> 预览是否发生改变. </p>
+
+</div>
+</div>
+<a id="a3e3c6efe061e82c9aa3f120f813566e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e3c6efe061e82c9aa3f120f813566e4">&#9670;&nbsp;</a></span>setColorMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DPrintPreviewWidget::setColorMode </td>
+          <td>(</td>
+          <td class="paramtype">const DPrinter::ColorMode &amp;&#160;</td>
+          <td class="paramname"><em>colorMode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置色彩模式。 </p>
+<p><em>colorMode</em> 色彩模式 </p>
+
+</div>
+</div>
+<a id="ae2202b074481ebb1c2eaaab42c5fd827"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2202b074481ebb1c2eaaab42c5fd827">&#9670;&nbsp;</a></span>setCurrentPage</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DPrintPreviewWidget::setCurrentPage </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>page</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置当前页。 </p>
+<p><em>page</em> 当前页 </p>
+
+</div>
+</div>
+<a id="abf90138f101289b558a89606eb4e1e44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf90138f101289b558a89606eb4e1e44">&#9670;&nbsp;</a></span>setCustomWaterMark()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DPrintPreviewWidget::setCustomWaterMark </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>text</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置自定义文字水印。 </p>
+<p><em>text</em> 自定义文字 </p>
+
+</div>
+</div>
+<a id="a46d8e09c7e088913e68eb9cefae75762"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46d8e09c7e088913e68eb9cefae75762">&#9670;&nbsp;</a></span>setImposition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DPrintPreviewWidget::setImposition </td>
+          <td>(</td>
+          <td class="paramtype">Imposition&#160;</td>
+          <td class="paramname"><em>im</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置并打的模式。 </p>
+<p><em>im</em> 并打的模式 </p>
+
+</div>
+</div>
+<a id="a45f92d42bf68a57fd67213cfe535d3e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45f92d42bf68a57fd67213cfe535d3e3">&#9670;&nbsp;</a></span>setOrder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DPrintPreviewWidget::setOrder </td>
+          <td>(</td>
+          <td class="paramtype">Order&#160;</td>
+          <td class="paramname"><em>order</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置页面内并打的顺序。 </p>
+<p><em>order</em> 页面内并打的顺序 </p>
+
+</div>
+</div>
+<a id="ae99f61c5fef5230aee8e11076874f4ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae99f61c5fef5230aee8e11076874f4ac">&#9670;&nbsp;</a></span>setOrientation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DPrintPreviewWidget::setOrientation </td>
+          <td>(</td>
+          <td class="paramtype">const DPrinter::Orientation &amp;&#160;</td>
+          <td class="paramname"><em>pageOrientation</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置页面方向。 </p>
+<p><em>pageOrientation</em> 页面方向 </p>
+
+</div>
+</div>
+<a id="a70ffe4ae7f77b6bc1cce1e0098d48776"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70ffe4ae7f77b6bc1cce1e0098d48776">&#9670;&nbsp;</a></span>setPageRange() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DPrintPreviewWidget::setPageRange </td>
+          <td>(</td>
+          <td class="paramtype">const QVector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>rangePages</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置预览页面范围。 </p>
+<p><em>rangePages</em> 页码Vector </p>
+
+</div>
+</div>
+<a id="adcc85972a71a1d15f4d90d208f8e78f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcc85972a71a1d15f4d90d208f8e78f0">&#9670;&nbsp;</a></span>setPageRange() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DPrintPreviewWidget::setPageRange </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>to</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置预览页面范围。 </p>
+<p><em>from</em> 起始页码 <em>to</em> 终止页码 </p>
+
+</div>
+</div>
+<a id="a711b9921c9fa3d5367da02c3a2d373d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a711b9921c9fa3d5367da02c3a2d373d9">&#9670;&nbsp;</a></span>setPageRangeMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DPrintPreviewWidget::setPageRangeMode </td>
+          <td>(</td>
+          <td class="paramtype">PageRange&#160;</td>
+          <td class="paramname"><em>mode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置页面选择范围模式。 </p>
+<p><em>mode</em> 页面选择范围模式，AllPage所有页，CurrentPage当前页，SelectPage选择页 </p>
+
+</div>
+</div>
+<a id="af00e2aa0c2da81660aa610cbd6f2c2f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af00e2aa0c2da81660aa610cbd6f2c2f8">&#9670;&nbsp;</a></span>setReGenerate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DPrintPreviewWidget::setReGenerate </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>generate</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置是否需要重新生成页面内容. </p>
+<p><em>generate</em> 是否需要重新生成页面内容 </p>
+
+</div>
+</div>
+<a id="a5d65c3c75a67d2fa30d31b62710bd1c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d65c3c75a67d2fa30d31b62710bd1c0">&#9670;&nbsp;</a></span>setScale()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DPrintPreviewWidget::setScale </td>
+          <td>(</td>
+          <td class="paramtype">qreal&#160;</td>
+          <td class="paramname"><em>scale</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置页面缩放。 </p>
+<p><em>scale</em> 缩放大小 </p>
+
+</div>
+</div>
+<a id="a023417244ae609b825d12ca8b756d83b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a023417244ae609b825d12ca8b756d83b">&#9670;&nbsp;</a></span>setTextWaterMark()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DPrintPreviewWidget::setTextWaterMark </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>text</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置文字水印的文字内容。 </p>
+<p><em>text</em> 文字水印的文字内容 </p>
+
+</div>
+</div>
+<a id="ada0f65fd4d07738d0a7f6f37df73f001"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada0f65fd4d07738d0a7f6f37df73f001">&#9670;&nbsp;</a></span>setVisible()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DPrintPreviewWidget::setVisible </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>visible</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置打印预览widget是否可见. \reimp </p>
+<p><em>visible</em> 是否可见 </p>
+
+</div>
+</div>
+<a id="a290520210ea29ac56babe235ffb392cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a290520210ea29ac56babe235ffb392cb">&#9670;&nbsp;</a></span>setWaterMargImage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DPrintPreviewWidget::setWaterMargImage </td>
+          <td>(</td>
+          <td class="paramtype">const QImage &amp;&#160;</td>
+          <td class="paramname"><em>image</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置水印图片。 </p>
+<p><em>image</em> 水印图片 </p>
+
+</div>
+</div>
+<a id="af49e10a29ccaad26a923ebdc00745185"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af49e10a29ccaad26a923ebdc00745185">&#9670;&nbsp;</a></span>setWaterMarkColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DPrintPreviewWidget::setWaterMarkColor </td>
+          <td>(</td>
+          <td class="paramtype">const QColor &amp;&#160;</td>
+          <td class="paramname"><em>color</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置文字水印的颜色。 </p>
+<p><em>color</em> 文字水印的颜色 </p>
+
+</div>
+</div>
+<a id="adc9ac7e7f128001be2b07d8de6555c96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc9ac7e7f128001be2b07d8de6555c96">&#9670;&nbsp;</a></span>setWaterMarkFont()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DPrintPreviewWidget::setWaterMarkFont </td>
+          <td>(</td>
+          <td class="paramtype">const QFont &amp;&#160;</td>
+          <td class="paramname"><em>font</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置文字水印的字体。 </p>
+<p><em>font</em> 文字水印的字体 </p>
+
+</div>
+</div>
+<a id="af15081ad88275ab16352ea72e671eb38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af15081ad88275ab16352ea72e671eb38">&#9670;&nbsp;</a></span>setWaterMarkLayout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DPrintPreviewWidget::setWaterMarkLayout </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>layout</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置水印的布局。 </p>
+<p><em>layout</em> 水印的布局，Center居中，Tiled平铺 </p>
+
+</div>
+</div>
+<a id="a44b8641937f6e34db5e7d159e5750e63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44b8641937f6e34db5e7d159e5750e63">&#9670;&nbsp;</a></span>setWaterMarkOpacity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DPrintPreviewWidget::setWaterMarkOpacity </td>
+          <td>(</td>
+          <td class="paramtype">qreal&#160;</td>
+          <td class="paramname"><em>opacity</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置水印透明度。 </p>
+<p><em>opacity</em> 水印透明度 </p>
+
+</div>
+</div>
+<a id="a8e3977e4c9a6f876bc1e392fcbd98e3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e3977e4c9a6f876bc1e392fcbd98e3d">&#9670;&nbsp;</a></span>setWaterMarkRotate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DPrintPreviewWidget::setWaterMarkRotate </td>
+          <td>(</td>
+          <td class="paramtype">qreal&#160;</td>
+          <td class="paramname"><em>rotate</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置水印旋转角度。 </p>
+<p><em>rotate</em> 水印旋转角度 </p>
+
+</div>
+</div>
+<a id="afa0fc9b8f8d7deb30e98a9f08e1fd46b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa0fc9b8f8d7deb30e98a9f08e1fd46b">&#9670;&nbsp;</a></span>setWaterMarkScale()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DPrintPreviewWidget::setWaterMarkScale </td>
+          <td>(</td>
+          <td class="paramtype">qreal&#160;</td>
+          <td class="paramname"><em>scale</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置水印缩放大小。 </p>
+<p><em>scale</em> 水印缩放大小 </p>
+
+</div>
+</div>
+<a id="a9c3f51275eadf67e739e1c8931c7dfc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c3f51275eadf67e739e1c8931c7dfc7">&#9670;&nbsp;</a></span>setWaterMarkType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DPrintPreviewWidget::setWaterMarkType </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置水印类型。 </p>
+<p><em>type</em> 水印类型 </p>
+
+</div>
+</div>
+<a id="ae4cf4f66641ab39bd50da2c2a387ceee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4cf4f66641ab39bd50da2c2a387ceee">&#9670;&nbsp;</a></span>turnPageAble()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DPrintPreviewWidget::turnPageAble </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取是否可翻页. </p>
+<dl class="section return"><dt>返回</dt><dd>可翻页返回true,不可翻页返回false. </dd></dl>
+
+</div>
+</div>
+<a id="a3bc603d14afe12685fcbc21a6e73065d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bc603d14afe12685fcbc21a6e73065d">&#9670;&nbsp;</a></span>waterMarkColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QColor DPrintPreviewWidget::waterMarkColor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取文字水印的颜色。 </p>
+<dl class="section return"><dt>返回</dt><dd>文字水印的颜色 </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dtkwidget/include/dtkwidget/widgets/<a class="el" href="dprintpreviewwidget_8h_source.html">dprintpreviewwidget.h</a></li>
+<li>dtkwidget/src/widgets/dprintpreviewwidget.cpp</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classDPrintPreviewWidget.html">DPrintPreviewWidget</a></li>
+    <li class="footer">文档生成时间:doxtime</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

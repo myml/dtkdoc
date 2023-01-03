@@ -1,0 +1,1852 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: DTabBar类 参考</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="change address" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classDTabBar.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-slots">Public 槽</a> &#124;
+<a href="#signals">信号</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#properties">属性</a> &#124;
+<a href="#friends">友元</a> &#124;
+<a href="classDTabBar-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">DTabBar类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 DTabBar 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classDTabBar.png" usemap="#DTabBar_map" alt=""/>
+  <map id="DTabBar_map" name="DTabBar_map">
+<area href="classDtk_1_1Core_1_1DObject.html" title="一些宏的定义." alt="Dtk::Core::DObject" shape="rect" coords="126,0,242,24"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Public 槽</h2></td></tr>
+<tr class="memitem:a4bef51815a38b75b9c4419fc14c6d5cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDTabBar.html#a4bef51815a38b75b9c4419fc14c6d5cf">setCurrentIndex</a> (int index)</td></tr>
+<tr class="memdesc:a4bef51815a38b75b9c4419fc14c6d5cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置当前标签索引位置.  <a href="classDTabBar.html#a4bef51815a38b75b9c4419fc14c6d5cf">更多...</a><br /></td></tr>
+<tr class="separator:a4bef51815a38b75b9c4419fc14c6d5cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae65f579393d1a2112179620bc3cd4a70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDTabBar.html#ae65f579393d1a2112179620bc3cd4a70">setVisibleAddButton</a> (bool visibleAddButton)</td></tr>
+<tr class="memdesc:ae65f579393d1a2112179620bc3cd4a70"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置新建标签按钮是否显示.  <a href="classDTabBar.html#ae65f579393d1a2112179620bc3cd4a70">更多...</a><br /></td></tr>
+<tr class="separator:ae65f579393d1a2112179620bc3cd4a70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa534b951f8bab9641d88bd0e2bc494f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDTabBar.html#afa534b951f8bab9641d88bd0e2bc494f">setStartDragDistance</a> (int startDragDistance)</td></tr>
+<tr class="memdesc:afa534b951f8bab9641d88bd0e2bc494f"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置开始拖动距离.  <a href="classDTabBar.html#afa534b951f8bab9641d88bd0e2bc494f">更多...</a><br /></td></tr>
+<tr class="separator:afa534b951f8bab9641d88bd0e2bc494f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2812da3b9924e1339bf8f549e836ceb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDTabBar.html#ab2812da3b9924e1339bf8f549e836ceb">setMaskColor</a> (QColor maskColor)</td></tr>
+<tr class="memdesc:ab2812da3b9924e1339bf8f549e836ceb"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置颜色.  <a href="classDTabBar.html#ab2812da3b9924e1339bf8f549e836ceb">更多...</a><br /></td></tr>
+<tr class="separator:ab2812da3b9924e1339bf8f549e836ceb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac830947a61c1ba009c17dab840c2608"><td class="memItemLeft" align="right" valign="top"><a id="aac830947a61c1ba009c17dab840c2608"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setFlashColor</b> (QColor flashColor)</td></tr>
+<tr class="separator:aac830947a61c1ba009c17dab840c2608"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e5dffedfbd58acc3a83ee6fbbe7965a"><td class="memItemLeft" align="right" valign="top"><a id="a4e5dffedfbd58acc3a83ee6fbbe7965a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>startDrag</b> (int index)</td></tr>
+<tr class="separator:a4e5dffedfbd58acc3a83ee6fbbe7965a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3403464aedf1c6d3774180e6bf4dc47d"><td class="memItemLeft" align="right" valign="top"><a id="a3403464aedf1c6d3774180e6bf4dc47d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>stopDrag</b> (Qt::DropAction action)</td></tr>
+<tr class="separator:a3403464aedf1c6d3774180e6bf4dc47d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+信号</h2></td></tr>
+<tr class="memitem:a314b26fbc471512c0b3eaa61758cb9cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDTabBar.html#a314b26fbc471512c0b3eaa61758cb9cd">currentChanged</a> (int index)</td></tr>
+<tr class="memdesc:a314b26fbc471512c0b3eaa61758cb9cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">当前索引位置改变.  <a href="classDTabBar.html#a314b26fbc471512c0b3eaa61758cb9cd">更多...</a><br /></td></tr>
+<tr class="separator:a314b26fbc471512c0b3eaa61758cb9cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a402be1cba59eae93fcc8fb7db15ce49b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDTabBar.html#a402be1cba59eae93fcc8fb7db15ce49b">tabCloseRequested</a> (int index)</td></tr>
+<tr class="memdesc:a402be1cba59eae93fcc8fb7db15ce49b"><td class="mdescLeft">&#160;</td><td class="mdescRight">点击关闭后发出.  <a href="classDTabBar.html#a402be1cba59eae93fcc8fb7db15ce49b">更多...</a><br /></td></tr>
+<tr class="separator:a402be1cba59eae93fcc8fb7db15ce49b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e5f587d6eeb166fbfaca0b6a769f757"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDTabBar.html#a8e5f587d6eeb166fbfaca0b6a769f757">tabMoved</a> (int from, int to)</td></tr>
+<tr class="memdesc:a8e5f587d6eeb166fbfaca0b6a769f757"><td class="mdescLeft">&#160;</td><td class="mdescRight">索引位置发生变化  <a href="classDTabBar.html#a8e5f587d6eeb166fbfaca0b6a769f757">更多...</a><br /></td></tr>
+<tr class="separator:a8e5f587d6eeb166fbfaca0b6a769f757"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a125ae6d14c271d2e64b757d464958c85"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDTabBar.html#a125ae6d14c271d2e64b757d464958c85">tabIsInserted</a> (int index)</td></tr>
+<tr class="memdesc:a125ae6d14c271d2e64b757d464958c85"><td class="mdescLeft">&#160;</td><td class="mdescRight">新标签已插入.  <a href="classDTabBar.html#a125ae6d14c271d2e64b757d464958c85">更多...</a><br /></td></tr>
+<tr class="separator:a125ae6d14c271d2e64b757d464958c85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3657a3184fe6022fe1469076385f9a17"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDTabBar.html#a3657a3184fe6022fe1469076385f9a17">tabIsRemoved</a> (int index)</td></tr>
+<tr class="memdesc:a3657a3184fe6022fe1469076385f9a17"><td class="mdescLeft">&#160;</td><td class="mdescRight">标签已删除.  <a href="classDTabBar.html#a3657a3184fe6022fe1469076385f9a17">更多...</a><br /></td></tr>
+<tr class="separator:a3657a3184fe6022fe1469076385f9a17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2c9f81a7eac819e9c2821cb8acfe5d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDTabBar.html#aa2c9f81a7eac819e9c2821cb8acfe5d5">tabBarClicked</a> (int index)</td></tr>
+<tr class="memdesc:aa2c9f81a7eac819e9c2821cb8acfe5d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">点击索引标签.  <a href="classDTabBar.html#aa2c9f81a7eac819e9c2821cb8acfe5d5">更多...</a><br /></td></tr>
+<tr class="separator:aa2c9f81a7eac819e9c2821cb8acfe5d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac78db95e52a5d1c0a976f60508c7c523"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDTabBar.html#ac78db95e52a5d1c0a976f60508c7c523">tabBarDoubleClicked</a> (int index)</td></tr>
+<tr class="memdesc:ac78db95e52a5d1c0a976f60508c7c523"><td class="mdescLeft">&#160;</td><td class="mdescRight">双击索引标签.  <a href="classDTabBar.html#ac78db95e52a5d1c0a976f60508c7c523">更多...</a><br /></td></tr>
+<tr class="separator:ac78db95e52a5d1c0a976f60508c7c523"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1da67d5b2242738edb8fa00b2695c479"><td class="memItemLeft" align="right" valign="top"><a id="a1da67d5b2242738edb8fa00b2695c479"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDTabBar.html#a1da67d5b2242738edb8fa00b2695c479">tabAddRequested</a> ()</td></tr>
+<tr class="memdesc:a1da67d5b2242738edb8fa00b2695c479"><td class="mdescLeft">&#160;</td><td class="mdescRight">新标签加入. <br /></td></tr>
+<tr class="separator:a1da67d5b2242738edb8fa00b2695c479"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e776e7cfe17ba87dd296e110978fdef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDTabBar.html#a7e776e7cfe17ba87dd296e110978fdef">tabReleaseRequested</a> (int index)</td></tr>
+<tr class="memdesc:a7e776e7cfe17ba87dd296e110978fdef"><td class="mdescLeft">&#160;</td><td class="mdescRight">索引标签鼠标释放.  <a href="classDTabBar.html#a7e776e7cfe17ba87dd296e110978fdef">更多...</a><br /></td></tr>
+<tr class="separator:a7e776e7cfe17ba87dd296e110978fdef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a633d5f98ac360a0b29ac07a29e8aa5f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDTabBar.html#a633d5f98ac360a0b29ac07a29e8aa5f1">tabDroped</a> (int index, Qt::DropAction action, QObject *target)</td></tr>
+<tr class="memdesc:a633d5f98ac360a0b29ac07a29e8aa5f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">标签拖放.  <a href="classDTabBar.html#a633d5f98ac360a0b29ac07a29e8aa5f1">更多...</a><br /></td></tr>
+<tr class="separator:a633d5f98ac360a0b29ac07a29e8aa5f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41bd7eaea127b9eb2349752127192270"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDTabBar.html#a41bd7eaea127b9eb2349752127192270">dragActionChanged</a> (Qt::DropAction action)</td></tr>
+<tr class="memdesc:a41bd7eaea127b9eb2349752127192270"><td class="mdescLeft">&#160;</td><td class="mdescRight">鼠标形状发生变化.  <a href="classDTabBar.html#a41bd7eaea127b9eb2349752127192270">更多...</a><br /></td></tr>
+<tr class="separator:a41bd7eaea127b9eb2349752127192270"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f201dc142f91da8ab6515a54835a801"><td class="memItemLeft" align="right" valign="top"><a id="a8f201dc142f91da8ab6515a54835a801"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDTabBar.html#a8f201dc142f91da8ab6515a54835a801">dragStarted</a> ()</td></tr>
+<tr class="memdesc:a8f201dc142f91da8ab6515a54835a801"><td class="mdescLeft">&#160;</td><td class="mdescRight">开始拖起. <br /></td></tr>
+<tr class="separator:a8f201dc142f91da8ab6515a54835a801"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebd48e15e7db708ee0e0d22d8cd529d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDTabBar.html#aebd48e15e7db708ee0e0d22d8cd529d2">dragEnd</a> (Qt::DropAction action)</td></tr>
+<tr class="memdesc:aebd48e15e7db708ee0e0d22d8cd529d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">拖放结束.  <a href="classDTabBar.html#aebd48e15e7db708ee0e0d22d8cd529d2">更多...</a><br /></td></tr>
+<tr class="separator:aebd48e15e7db708ee0e0d22d8cd529d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a696f10f3824f8527471580c0b7ebe7fe"><td class="memItemLeft" align="right" valign="top"><a id="a696f10f3824f8527471580c0b7ebe7fe"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DTabBar</b> (QWidget *parent=0)</td></tr>
+<tr class="separator:a696f10f3824f8527471580c0b7ebe7fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fca71906348b00d9244b4186ae30795"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDTabBar.html#a7fca71906348b00d9244b4186ae30795">setTabMinimumSize</a> (int index, const QSize &amp;size)</td></tr>
+<tr class="memdesc:a7fca71906348b00d9244b4186ae30795"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置索引标签的最小尺寸.  <a href="classDTabBar.html#a7fca71906348b00d9244b4186ae30795">更多...</a><br /></td></tr>
+<tr class="separator:a7fca71906348b00d9244b4186ae30795"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a560c90472f82aa7f958f0b57ae6c0cd4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDTabBar.html#a560c90472f82aa7f958f0b57ae6c0cd4">setTabMaximumSize</a> (int index, const QSize &amp;size)</td></tr>
+<tr class="memdesc:a560c90472f82aa7f958f0b57ae6c0cd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置索引标签的最大尺寸.  <a href="classDTabBar.html#a560c90472f82aa7f958f0b57ae6c0cd4">更多...</a><br /></td></tr>
+<tr class="separator:a560c90472f82aa7f958f0b57ae6c0cd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a462b155e022fa8f9f6d94024b27e898d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDTabBar.html#a462b155e022fa8f9f6d94024b27e898d">visibleAddButton</a> () const</td></tr>
+<tr class="memdesc:a462b155e022fa8f9f6d94024b27e898d"><td class="mdescLeft">&#160;</td><td class="mdescRight">新建标签栏按钮是否可见.  <a href="classDTabBar.html#a462b155e022fa8f9f6d94024b27e898d">更多...</a><br /></td></tr>
+<tr class="separator:a462b155e022fa8f9f6d94024b27e898d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac621d4cbdad3830d2ec9ecc94504bd71"><td class="memItemLeft" align="right" valign="top">QTabBar::Shape&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDTabBar.html#ac621d4cbdad3830d2ec9ecc94504bd71">shape</a> () const</td></tr>
+<tr class="memdesc:ac621d4cbdad3830d2ec9ecc94504bd71"><td class="mdescLeft">&#160;</td><td class="mdescRight">标签栏形状.  <a href="classDTabBar.html#ac621d4cbdad3830d2ec9ecc94504bd71">更多...</a><br /></td></tr>
+<tr class="separator:ac621d4cbdad3830d2ec9ecc94504bd71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd172ccd6cc21adafa0db7b9a968f26b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDTabBar.html#afd172ccd6cc21adafa0db7b9a968f26b">setShape</a> (QTabBar::Shape shape)</td></tr>
+<tr class="memdesc:afd172ccd6cc21adafa0db7b9a968f26b"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置标签栏形状.  <a href="classDTabBar.html#afd172ccd6cc21adafa0db7b9a968f26b">更多...</a><br /></td></tr>
+<tr class="separator:afd172ccd6cc21adafa0db7b9a968f26b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fb6badbc0c592254524d3e78e20967f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDTabBar.html#a0fb6badbc0c592254524d3e78e20967f">addTab</a> (const QString &amp;text)</td></tr>
+<tr class="memdesc:a0fb6badbc0c592254524d3e78e20967f"><td class="mdescLeft">&#160;</td><td class="mdescRight">添加一个新的标签，返回新标签的索引.  <a href="classDTabBar.html#a0fb6badbc0c592254524d3e78e20967f">更多...</a><br /></td></tr>
+<tr class="separator:a0fb6badbc0c592254524d3e78e20967f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe18d64cfe3e2aecdc14abe58be78bbd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDTabBar.html#afe18d64cfe3e2aecdc14abe58be78bbd">addTab</a> (const QIcon &amp;icon, const QString &amp;text)</td></tr>
+<tr class="memdesc:afe18d64cfe3e2aecdc14abe58be78bbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">添加一个新的标签，包含图标、文本.  <a href="classDTabBar.html#afe18d64cfe3e2aecdc14abe58be78bbd">更多...</a><br /></td></tr>
+<tr class="separator:afe18d64cfe3e2aecdc14abe58be78bbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9023d2dde0b662e4b1bca198cc37cc1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDTabBar.html#af9023d2dde0b662e4b1bca198cc37cc1">insertTab</a> (int index, const QString &amp;text)</td></tr>
+<tr class="memdesc:af9023d2dde0b662e4b1bca198cc37cc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">插入一个文本标签.  <a href="classDTabBar.html#af9023d2dde0b662e4b1bca198cc37cc1">更多...</a><br /></td></tr>
+<tr class="separator:af9023d2dde0b662e4b1bca198cc37cc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c7459237922ebbfedf02e41290d244d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDTabBar.html#a7c7459237922ebbfedf02e41290d244d">insertTab</a> (int index, const QIcon &amp;icon, const QString &amp;text)</td></tr>
+<tr class="memdesc:a7c7459237922ebbfedf02e41290d244d"><td class="mdescLeft">&#160;</td><td class="mdescRight">插入一个图标文本标签.  <a href="classDTabBar.html#a7c7459237922ebbfedf02e41290d244d">更多...</a><br /></td></tr>
+<tr class="separator:a7c7459237922ebbfedf02e41290d244d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3773339d5abb64f6efaa07712dac1562"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDTabBar.html#a3773339d5abb64f6efaa07712dac1562">removeTab</a> (int index)</td></tr>
+<tr class="memdesc:a3773339d5abb64f6efaa07712dac1562"><td class="mdescLeft">&#160;</td><td class="mdescRight">移除标签索引位置  <a href="classDTabBar.html#a3773339d5abb64f6efaa07712dac1562">更多...</a><br /></td></tr>
+<tr class="separator:a3773339d5abb64f6efaa07712dac1562"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56d3c5f52e0ff95ae4ee9de453edf163"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDTabBar.html#a56d3c5f52e0ff95ae4ee9de453edf163">moveTab</a> (int from, int to)</td></tr>
+<tr class="memdesc:a56d3c5f52e0ff95ae4ee9de453edf163"><td class="mdescLeft">&#160;</td><td class="mdescRight">移动标签索引位置  <a href="classDTabBar.html#a56d3c5f52e0ff95ae4ee9de453edf163">更多...</a><br /></td></tr>
+<tr class="separator:a56d3c5f52e0ff95ae4ee9de453edf163"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78eb45ac610258bd7db7bfcacec1917a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDTabBar.html#a78eb45ac610258bd7db7bfcacec1917a">isTabEnabled</a> (int index) const</td></tr>
+<tr class="memdesc:a78eb45ac610258bd7db7bfcacec1917a"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否启用标签索引位置  <a href="classDTabBar.html#a78eb45ac610258bd7db7bfcacec1917a">更多...</a><br /></td></tr>
+<tr class="separator:a78eb45ac610258bd7db7bfcacec1917a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a757229790fbfd401f631a4090618b9d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDTabBar.html#a757229790fbfd401f631a4090618b9d0">setTabEnabled</a> (int index, bool)</td></tr>
+<tr class="memdesc:a757229790fbfd401f631a4090618b9d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置标签索引位置启用状态  <a href="classDTabBar.html#a757229790fbfd401f631a4090618b9d0">更多...</a><br /></td></tr>
+<tr class="separator:a757229790fbfd401f631a4090618b9d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7f333c44c407f8001e759da4c003c87"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDTabBar.html#ab7f333c44c407f8001e759da4c003c87">tabText</a> (int index) const</td></tr>
+<tr class="memdesc:ab7f333c44c407f8001e759da4c003c87"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回标签索引位置文本.  <a href="classDTabBar.html#ab7f333c44c407f8001e759da4c003c87">更多...</a><br /></td></tr>
+<tr class="separator:ab7f333c44c407f8001e759da4c003c87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04dce705a35a6eaf7e0fdeb5e9f6765d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDTabBar.html#a04dce705a35a6eaf7e0fdeb5e9f6765d">setTabText</a> (int index, const QString &amp;text)</td></tr>
+<tr class="memdesc:a04dce705a35a6eaf7e0fdeb5e9f6765d"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置标签索引位置文本.  <a href="classDTabBar.html#a04dce705a35a6eaf7e0fdeb5e9f6765d">更多...</a><br /></td></tr>
+<tr class="separator:a04dce705a35a6eaf7e0fdeb5e9f6765d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8159b4b786c3ad14cd17504dde81ec9"><td class="memItemLeft" align="right" valign="top">QIcon&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDTabBar.html#af8159b4b786c3ad14cd17504dde81ec9">tabIcon</a> (int index) const</td></tr>
+<tr class="memdesc:af8159b4b786c3ad14cd17504dde81ec9"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回标签索引位置图标.  <a href="classDTabBar.html#af8159b4b786c3ad14cd17504dde81ec9">更多...</a><br /></td></tr>
+<tr class="separator:af8159b4b786c3ad14cd17504dde81ec9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5946c18cc2da45037997ed04afd70a2a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDTabBar.html#a5946c18cc2da45037997ed04afd70a2a">setTabIcon</a> (int index, const QIcon &amp;icon)</td></tr>
+<tr class="memdesc:a5946c18cc2da45037997ed04afd70a2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置标签索引位置图标.  <a href="classDTabBar.html#a5946c18cc2da45037997ed04afd70a2a">更多...</a><br /></td></tr>
+<tr class="separator:a5946c18cc2da45037997ed04afd70a2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa08827a177aa22f4470dc4f2df0c4630"><td class="memItemLeft" align="right" valign="top">Qt::TextElideMode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDTabBar.html#aa08827a177aa22f4470dc4f2df0c4630">elideMode</a> () const</td></tr>
+<tr class="memdesc:aa08827a177aa22f4470dc4f2df0c4630"><td class="mdescLeft">&#160;</td><td class="mdescRight">缩略模式.  <a href="classDTabBar.html#aa08827a177aa22f4470dc4f2df0c4630">更多...</a><br /></td></tr>
+<tr class="separator:aa08827a177aa22f4470dc4f2df0c4630"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a663cf6e2089c494901d6a96be318e165"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDTabBar.html#a663cf6e2089c494901d6a96be318e165">setElideMode</a> (Qt::TextElideMode mode)</td></tr>
+<tr class="memdesc:a663cf6e2089c494901d6a96be318e165"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置缩略模式  <a href="classDTabBar.html#a663cf6e2089c494901d6a96be318e165">更多...</a><br /></td></tr>
+<tr class="separator:a663cf6e2089c494901d6a96be318e165"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bf0382a5116e5491299f085b96f0911"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDTabBar.html#a4bf0382a5116e5491299f085b96f0911">setTabToolTip</a> (int index, const QString &amp;tip)</td></tr>
+<tr class="memdesc:a4bf0382a5116e5491299f085b96f0911"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置标签索引位置提示文本.  <a href="classDTabBar.html#a4bf0382a5116e5491299f085b96f0911">更多...</a><br /></td></tr>
+<tr class="separator:a4bf0382a5116e5491299f085b96f0911"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22c0b08a112cad309f02ace94bfd1496"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDTabBar.html#a22c0b08a112cad309f02ace94bfd1496">tabToolTip</a> (int index) const</td></tr>
+<tr class="memdesc:a22c0b08a112cad309f02ace94bfd1496"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回标签索引位置提示文本.  <a href="classDTabBar.html#a22c0b08a112cad309f02ace94bfd1496">更多...</a><br /></td></tr>
+<tr class="separator:a22c0b08a112cad309f02ace94bfd1496"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae51d72a8de631e13b9a2a30d06b0069b"><td class="memItemLeft" align="right" valign="top"><a id="ae51d72a8de631e13b9a2a30d06b0069b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setTabWhatsThis</b> (int index, const QString &amp;text)</td></tr>
+<tr class="separator:ae51d72a8de631e13b9a2a30d06b0069b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1f728dfb75e0340ff125a2ed03c8745"><td class="memItemLeft" align="right" valign="top"><a id="ac1f728dfb75e0340ff125a2ed03c8745"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>tabWhatsThis</b> (int index) const</td></tr>
+<tr class="separator:ac1f728dfb75e0340ff125a2ed03c8745"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a106ce3aec8a6837692dfd47a06a68778"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDTabBar.html#a106ce3aec8a6837692dfd47a06a68778">setTabData</a> (int index, const QVariant &amp;data)</td></tr>
+<tr class="memdesc:a106ce3aec8a6837692dfd47a06a68778"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置标签索引位置数据.  <a href="classDTabBar.html#a106ce3aec8a6837692dfd47a06a68778">更多...</a><br /></td></tr>
+<tr class="separator:a106ce3aec8a6837692dfd47a06a68778"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa44f0fe546cc5ac12131a9ec438388c8"><td class="memItemLeft" align="right" valign="top">QVariant&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDTabBar.html#aa44f0fe546cc5ac12131a9ec438388c8">tabData</a> (int index) const</td></tr>
+<tr class="memdesc:aa44f0fe546cc5ac12131a9ec438388c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回标签索引位置数据.  <a href="classDTabBar.html#aa44f0fe546cc5ac12131a9ec438388c8">更多...</a><br /></td></tr>
+<tr class="separator:aa44f0fe546cc5ac12131a9ec438388c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f9765258a09409f34f0762c0a65ffd3"><td class="memItemLeft" align="right" valign="top">QRect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDTabBar.html#a6f9765258a09409f34f0762c0a65ffd3">tabRect</a> (int index) const</td></tr>
+<tr class="memdesc:a6f9765258a09409f34f0762c0a65ffd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回标签索引位置矩形.  <a href="classDTabBar.html#a6f9765258a09409f34f0762c0a65ffd3">更多...</a><br /></td></tr>
+<tr class="separator:a6f9765258a09409f34f0762c0a65ffd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af848181cdbcfed3b1b27c8db014b3560"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDTabBar.html#af848181cdbcfed3b1b27c8db014b3560">tabAt</a> (const QPoint &amp;pos) const</td></tr>
+<tr class="memdesc:af848181cdbcfed3b1b27c8db014b3560"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据位置返回标签索引位置.  <a href="classDTabBar.html#af848181cdbcfed3b1b27c8db014b3560">更多...</a><br /></td></tr>
+<tr class="separator:af848181cdbcfed3b1b27c8db014b3560"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adafbedcddd5f512d62499c2628dbed86"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDTabBar.html#adafbedcddd5f512d62499c2628dbed86">currentIndex</a> () const</td></tr>
+<tr class="memdesc:adafbedcddd5f512d62499c2628dbed86"><td class="mdescLeft">&#160;</td><td class="mdescRight">当前的标签索引位置.  <a href="classDTabBar.html#adafbedcddd5f512d62499c2628dbed86">更多...</a><br /></td></tr>
+<tr class="separator:adafbedcddd5f512d62499c2628dbed86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10ed5f9dedc4c04cd6d22bcd9cce725e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDTabBar.html#a10ed5f9dedc4c04cd6d22bcd9cce725e">count</a> () const</td></tr>
+<tr class="memdesc:a10ed5f9dedc4c04cd6d22bcd9cce725e"><td class="mdescLeft">&#160;</td><td class="mdescRight">标签总数.  <a href="classDTabBar.html#a10ed5f9dedc4c04cd6d22bcd9cce725e">更多...</a><br /></td></tr>
+<tr class="separator:a10ed5f9dedc4c04cd6d22bcd9cce725e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0718049ef9e07b5b2ecff663c83ea72d"><td class="memItemLeft" align="right" valign="top"><a id="a0718049ef9e07b5b2ecff663c83ea72d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setDrawBase</b> (bool drawTheBase)</td></tr>
+<tr class="separator:a0718049ef9e07b5b2ecff663c83ea72d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbebbb56aee06421d1901848aa51e030"><td class="memItemLeft" align="right" valign="top"><a id="afbebbb56aee06421d1901848aa51e030"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>drawBase</b> () const</td></tr>
+<tr class="separator:afbebbb56aee06421d1901848aa51e030"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc784f59ca02accd5523233f0ee2776f"><td class="memItemLeft" align="right" valign="top">QSize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDTabBar.html#acc784f59ca02accd5523233f0ee2776f">iconSize</a> () const</td></tr>
+<tr class="memdesc:acc784f59ca02accd5523233f0ee2776f"><td class="mdescLeft">&#160;</td><td class="mdescRight">图标大小.  <a href="classDTabBar.html#acc784f59ca02accd5523233f0ee2776f">更多...</a><br /></td></tr>
+<tr class="separator:acc784f59ca02accd5523233f0ee2776f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad45e1b62e095a75a58ec7ebe9f1e8ce5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDTabBar.html#ad45e1b62e095a75a58ec7ebe9f1e8ce5">setIconSize</a> (const QSize &amp;size)</td></tr>
+<tr class="memdesc:ad45e1b62e095a75a58ec7ebe9f1e8ce5"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置图标大小.  <a href="classDTabBar.html#ad45e1b62e095a75a58ec7ebe9f1e8ce5">更多...</a><br /></td></tr>
+<tr class="separator:ad45e1b62e095a75a58ec7ebe9f1e8ce5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd2fc7969f889ac749685bda57a2d23f"><td class="memItemLeft" align="right" valign="top"><a id="acd2fc7969f889ac749685bda57a2d23f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>usesScrollButtons</b> () const</td></tr>
+<tr class="separator:acd2fc7969f889ac749685bda57a2d23f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44c37db7f05ed5f160c146fab471ea8e"><td class="memItemLeft" align="right" valign="top"><a id="a44c37db7f05ed5f160c146fab471ea8e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setUsesScrollButtons</b> (bool useButtons)</td></tr>
+<tr class="separator:a44c37db7f05ed5f160c146fab471ea8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b2ca94bbb5b9d917b020da6184a4840"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDTabBar.html#a0b2ca94bbb5b9d917b020da6184a4840">tabsClosable</a> () const</td></tr>
+<tr class="memdesc:a0b2ca94bbb5b9d917b020da6184a4840"><td class="mdescLeft">&#160;</td><td class="mdescRight">标签栏是否可关闭.  <a href="classDTabBar.html#a0b2ca94bbb5b9d917b020da6184a4840">更多...</a><br /></td></tr>
+<tr class="separator:a0b2ca94bbb5b9d917b020da6184a4840"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d855b03765044e865a4d01904c6a9f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDTabBar.html#a9d855b03765044e865a4d01904c6a9f2">setTabsClosable</a> (bool closable)</td></tr>
+<tr class="memdesc:a9d855b03765044e865a4d01904c6a9f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置标签栏是否可关闭.  <a href="classDTabBar.html#a9d855b03765044e865a4d01904c6a9f2">更多...</a><br /></td></tr>
+<tr class="separator:a9d855b03765044e865a4d01904c6a9f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec4246b9471557e96609b7e06436ce11"><td class="memItemLeft" align="right" valign="top"><a id="aec4246b9471557e96609b7e06436ce11"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setTabButton</b> (int index, QTabBar::ButtonPosition position, QWidget *widget)</td></tr>
+<tr class="separator:aec4246b9471557e96609b7e06436ce11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad77091820170969057187e423da60c0b"><td class="memItemLeft" align="right" valign="top"><a id="ad77091820170969057187e423da60c0b"></a>
+QWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>tabButton</b> (int index, QTabBar::ButtonPosition position) const</td></tr>
+<tr class="separator:ad77091820170969057187e423da60c0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e40d74be6dbc3724fba6a2b0b25d0e6"><td class="memItemLeft" align="right" valign="top"><a id="a7e40d74be6dbc3724fba6a2b0b25d0e6"></a>
+QTabBar::SelectionBehavior&#160;</td><td class="memItemRight" valign="bottom"><b>selectionBehaviorOnRemove</b> () const</td></tr>
+<tr class="separator:a7e40d74be6dbc3724fba6a2b0b25d0e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafd42e5fee5f24901e8df795ca88fe04"><td class="memItemLeft" align="right" valign="top"><a id="aafd42e5fee5f24901e8df795ca88fe04"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setSelectionBehaviorOnRemove</b> (QTabBar::SelectionBehavior behavior)</td></tr>
+<tr class="separator:aafd42e5fee5f24901e8df795ca88fe04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30c84e5df7c25f4145ebdcaef2a296cc"><td class="memItemLeft" align="right" valign="top"><a id="a30c84e5df7c25f4145ebdcaef2a296cc"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>expanding</b> () const</td></tr>
+<tr class="separator:a30c84e5df7c25f4145ebdcaef2a296cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fc0e4e5daaba7c9fa723168d317d323"><td class="memItemLeft" align="right" valign="top"><a id="a2fc0e4e5daaba7c9fa723168d317d323"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setExpanding</b> (bool enabled)</td></tr>
+<tr class="separator:a2fc0e4e5daaba7c9fa723168d317d323"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac507d835a70149a32f562a8f8aeadf80"><td class="memItemLeft" align="right" valign="top"><a id="ac507d835a70149a32f562a8f8aeadf80"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isMovable</b> () const</td></tr>
+<tr class="separator:ac507d835a70149a32f562a8f8aeadf80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0dfec5c9a78bf2efd6adcaf43fcdb5c"><td class="memItemLeft" align="right" valign="top"><a id="ad0dfec5c9a78bf2efd6adcaf43fcdb5c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setMovable</b> (bool movable)</td></tr>
+<tr class="separator:ad0dfec5c9a78bf2efd6adcaf43fcdb5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e774a57aedcd0d1a20fa8f12ce4ab4f"><td class="memItemLeft" align="right" valign="top"><a id="a2e774a57aedcd0d1a20fa8f12ce4ab4f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isDragable</b> () const</td></tr>
+<tr class="separator:a2e774a57aedcd0d1a20fa8f12ce4ab4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43709254af3e8348fa0ad1a943a599a0"><td class="memItemLeft" align="right" valign="top"><a id="a43709254af3e8348fa0ad1a943a599a0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setDragable</b> (bool dragable)</td></tr>
+<tr class="separator:a43709254af3e8348fa0ad1a943a599a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c3164cc07a35b6e853ae86f88520a8e"><td class="memItemLeft" align="right" valign="top"><a id="a3c3164cc07a35b6e853ae86f88520a8e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>documentMode</b> () const</td></tr>
+<tr class="separator:a3c3164cc07a35b6e853ae86f88520a8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab325cb51401167fab3c2a8ace96b4d0a"><td class="memItemLeft" align="right" valign="top"><a id="ab325cb51401167fab3c2a8ace96b4d0a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setDocumentMode</b> (bool set)</td></tr>
+<tr class="separator:ab325cb51401167fab3c2a8ace96b4d0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b75cb01bbf7fbd048ce9a525c367ffb"><td class="memItemLeft" align="right" valign="top"><a id="a9b75cb01bbf7fbd048ce9a525c367ffb"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>autoHide</b> () const</td></tr>
+<tr class="separator:a9b75cb01bbf7fbd048ce9a525c367ffb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a95c06e42cce18b2c8e9069c741cc4c"><td class="memItemLeft" align="right" valign="top"><a id="a3a95c06e42cce18b2c8e9069c741cc4c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setAutoHide</b> (bool hide)</td></tr>
+<tr class="separator:a3a95c06e42cce18b2c8e9069c741cc4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea28c002097d4ab25ebac6fe10cad70d"><td class="memItemLeft" align="right" valign="top"><a id="aea28c002097d4ab25ebac6fe10cad70d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>changeCurrentOnDrag</b> () const</td></tr>
+<tr class="separator:aea28c002097d4ab25ebac6fe10cad70d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9087ff8c8baa9b9ca75eac54c70cd00"><td class="memItemLeft" align="right" valign="top"><a id="ab9087ff8c8baa9b9ca75eac54c70cd00"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setChangeCurrentOnDrag</b> (bool change)</td></tr>
+<tr class="separator:ab9087ff8c8baa9b9ca75eac54c70cd00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9313044a6a9c3f9ce62919fd588815e"><td class="memItemLeft" align="right" valign="top"><a id="ae9313044a6a9c3f9ce62919fd588815e"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>startDragDistance</b> () const</td></tr>
+<tr class="separator:ae9313044a6a9c3f9ce62919fd588815e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92dd7dfbeb576547dcfcea1c6f085aba"><td class="memItemLeft" align="right" valign="top"><a id="a92dd7dfbeb576547dcfcea1c6f085aba"></a>
+QColor&#160;</td><td class="memItemRight" valign="bottom"><b>maskColor</b> () const</td></tr>
+<tr class="separator:a92dd7dfbeb576547dcfcea1c6f085aba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9621043d8817196aba4d17b625176bf5"><td class="memItemLeft" align="right" valign="top"><a id="a9621043d8817196aba4d17b625176bf5"></a>
+QColor&#160;</td><td class="memItemRight" valign="bottom"><b>flashColor</b> () const</td></tr>
+<tr class="separator:a9621043d8817196aba4d17b625176bf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b74dc267dd6023d3e53f2e72230598b"><td class="memItemLeft" align="right" valign="top"><a id="a6b74dc267dd6023d3e53f2e72230598b"></a>
+QWindow *&#160;</td><td class="memItemRight" valign="bottom"><b>dragIconWindow</b> () const</td></tr>
+<tr class="separator:a6b74dc267dd6023d3e53f2e72230598b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61caa5f95a108c31642583ba16bfa543"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDTabBar.html#a61caa5f95a108c31642583ba16bfa543">setEnabledEmbedStyle</a> (bool enable)</td></tr>
+<tr class="memdesc:a61caa5f95a108c31642583ba16bfa543"><td class="mdescLeft">&#160;</td><td class="mdescRight">启用直角样式的 Tabbar.  <a href="classDTabBar.html#a61caa5f95a108c31642583ba16bfa543">更多...</a><br /></td></tr>
+<tr class="separator:a61caa5f95a108c31642583ba16bfa543"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3796303a3ef45813443710225a2644cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDTabBar.html#a3796303a3ef45813443710225a2644cd">setTabLabelAlignment</a> (Qt::Alignment alignment)</td></tr>
+<tr class="memdesc:a3796303a3ef45813443710225a2644cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置 tab 标签文字对齐方式.  <a href="classDTabBar.html#a3796303a3ef45813443710225a2644cd">更多...</a><br /></td></tr>
+<tr class="separator:a3796303a3ef45813443710225a2644cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a604b6d12dab86dcba0f069e4438314fc"><td class="memItemLeft" align="right" valign="top"><a id="a604b6d12dab86dcba0f069e4438314fc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>dragEnterEvent</b> (QDragEnterEvent *e) override</td></tr>
+<tr class="separator:a604b6d12dab86dcba0f069e4438314fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafe78269bc7db2a79deea532c5aea22b"><td class="memItemLeft" align="right" valign="top"><a id="aafe78269bc7db2a79deea532c5aea22b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>dragLeaveEvent</b> (QDragLeaveEvent *e) override</td></tr>
+<tr class="separator:aafe78269bc7db2a79deea532c5aea22b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addf54df98b4679931c672d2a46f13346"><td class="memItemLeft" align="right" valign="top"><a id="addf54df98b4679931c672d2a46f13346"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>dragMoveEvent</b> (QDragMoveEvent *e) override</td></tr>
+<tr class="separator:addf54df98b4679931c672d2a46f13346"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac481536c94bcd1bc3e81b1521c02f436"><td class="memItemLeft" align="right" valign="top"><a id="ac481536c94bcd1bc3e81b1521c02f436"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>dropEvent</b> (QDropEvent *e) override</td></tr>
+<tr class="separator:ac481536c94bcd1bc3e81b1521c02f436"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accf916152184539015f917524a99e1af"><td class="memItemLeft" align="right" valign="top"><a id="accf916152184539015f917524a99e1af"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>resizeEvent</b> (QResizeEvent *e) override</td></tr>
+<tr class="separator:accf916152184539015f917524a99e1af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7d826d6869db431e69d8aafa2c9fad2"><td class="memItemLeft" align="right" valign="top"><a id="af7d826d6869db431e69d8aafa2c9fad2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>startTabFlash</b> (int index)</td></tr>
+<tr class="separator:af7d826d6869db431e69d8aafa2c9fad2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b6902f30a4a063b1d9109e1aeae9e38"><td class="memItemLeft" align="right" valign="top"><a id="a7b6902f30a4a063b1d9109e1aeae9e38"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>paintTab</b> (QPainter *painter, int index, const QStyleOptionTab &amp;option) const</td></tr>
+<tr class="separator:a7b6902f30a4a063b1d9109e1aeae9e38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9964300846994516d8905c35e7364a9d"><td class="memItemLeft" align="right" valign="top"><a id="a9964300846994516d8905c35e7364a9d"></a>
+virtual QPixmap&#160;</td><td class="memItemRight" valign="bottom"><b>createDragPixmapFromTab</b> (int index, const QStyleOptionTab &amp;option, QPoint *hotspot) const</td></tr>
+<tr class="separator:a9964300846994516d8905c35e7364a9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25b11d2acbda059d55dc484a5f8cc555"><td class="memItemLeft" align="right" valign="top"><a id="a25b11d2acbda059d55dc484a5f8cc555"></a>
+virtual QMimeData *&#160;</td><td class="memItemRight" valign="bottom"><b>createMimeDataFromTab</b> (int index, const QStyleOptionTab &amp;option) const</td></tr>
+<tr class="separator:a25b11d2acbda059d55dc484a5f8cc555"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8192e43a1dc9e924ed3c3fb7cd9f4019"><td class="memItemLeft" align="right" valign="top"><a id="a8192e43a1dc9e924ed3c3fb7cd9f4019"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>canInsertFromMimeData</b> (int index, const QMimeData *source) const</td></tr>
+<tr class="separator:a8192e43a1dc9e924ed3c3fb7cd9f4019"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad047ecf1d9e7dcc4ef99f9e1c9089747"><td class="memItemLeft" align="right" valign="top"><a id="ad047ecf1d9e7dcc4ef99f9e1c9089747"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>insertFromMimeData</b> (int index, const QMimeData *source)</td></tr>
+<tr class="separator:ad047ecf1d9e7dcc4ef99f9e1c9089747"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a247d055f4a8057a741a82d8a90850cf1"><td class="memItemLeft" align="right" valign="top"><a id="a247d055f4a8057a741a82d8a90850cf1"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>insertFromMimeDataOnDragEnter</b> (int index, const QMimeData *source)</td></tr>
+<tr class="separator:a247d055f4a8057a741a82d8a90850cf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec27da1fade4f4bde3226d15ef7b1fdb"><td class="memItemLeft" align="right" valign="top"><a id="aec27da1fade4f4bde3226d15ef7b1fdb"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>tabInserted</b> (int index)</td></tr>
+<tr class="separator:aec27da1fade4f4bde3226d15ef7b1fdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3046fb356a4444811beef57544e40dae"><td class="memItemLeft" align="right" valign="top"><a id="a3046fb356a4444811beef57544e40dae"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>tabLayoutChange</b> ()</td></tr>
+<tr class="separator:a3046fb356a4444811beef57544e40dae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33ee20227f60f3383bd3ca80244d95fc"><td class="memItemLeft" align="right" valign="top"><a id="a33ee20227f60f3383bd3ca80244d95fc"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>tabRemoved</b> (int index)</td></tr>
+<tr class="separator:a33ee20227f60f3383bd3ca80244d95fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a418ebde8eaaaa7916fbdcf53d69a4d44"><td class="memItemLeft" align="right" valign="top"><a id="a418ebde8eaaaa7916fbdcf53d69a4d44"></a>
+virtual QSize&#160;</td><td class="memItemRight" valign="bottom"><b>tabSizeHint</b> (int index) const</td></tr>
+<tr class="separator:a418ebde8eaaaa7916fbdcf53d69a4d44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1db59d92c1a90ab7d347e9ae03cffcc8"><td class="memItemLeft" align="right" valign="top"><a id="a1db59d92c1a90ab7d347e9ae03cffcc8"></a>
+virtual QSize&#160;</td><td class="memItemRight" valign="bottom"><b>minimumTabSizeHint</b> (int index) const</td></tr>
+<tr class="separator:a1db59d92c1a90ab7d347e9ae03cffcc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39d3e9018f41cfa7483906d0a783a3a7"><td class="memItemLeft" align="right" valign="top"><a id="a39d3e9018f41cfa7483906d0a783a3a7"></a>
+virtual QSize&#160;</td><td class="memItemRight" valign="bottom"><b>maximumTabSizeHint</b> (int index) const</td></tr>
+<tr class="separator:a39d3e9018f41cfa7483906d0a783a3a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classDtk_1_1Core_1_1DObject"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classDtk_1_1Core_1_1DObject')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="classDtk_1_1Core_1_1DObject.html">Dtk::Core::DObject</a></td></tr>
+<tr class="memitem:adbed6e66a1393a6045fb24e50300db7f inherit pro_methods_classDtk_1_1Core_1_1DObject"><td class="memItemLeft" align="right" valign="top"><a id="adbed6e66a1393a6045fb24e50300db7f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DObject.html#adbed6e66a1393a6045fb24e50300db7f">DObject</a> (<a class="el" href="classDtk_1_1Core_1_1DObject.html">DObject</a> *parent=nullptr)</td></tr>
+<tr class="memdesc:adbed6e66a1393a6045fb24e50300db7f inherit pro_methods_classDtk_1_1Core_1_1DObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">只有在不需要数据成员的派生类中才会使用 <em>parent</em> 父类指针 <br /></td></tr>
+<tr class="separator:adbed6e66a1393a6045fb24e50300db7f inherit pro_methods_classDtk_1_1Core_1_1DObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64d70b82c64f7d7e71d4775854b25206 inherit pro_methods_classDtk_1_1Core_1_1DObject"><td class="memItemLeft" align="right" valign="top"><a id="a64d70b82c64f7d7e71d4775854b25206"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DObject.html#a64d70b82c64f7d7e71d4775854b25206">DObject</a> (<a class="el" href="classDtk_1_1Core_1_1DObjectPrivate.html">DObjectPrivate</a> &amp;dd, <a class="el" href="classDtk_1_1Core_1_1DObject.html">DObject</a> *parent=nullptr)</td></tr>
+<tr class="memdesc:a64d70b82c64f7d7e71d4775854b25206 inherit pro_methods_classDtk_1_1Core_1_1DObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">在派生类中比较常用的构造函数 <em>dd</em> 私有类对象 <br /></td></tr>
+<tr class="separator:a64d70b82c64f7d7e71d4775854b25206 inherit pro_methods_classDtk_1_1Core_1_1DObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:a5fa23f4f94c91e1f7e59f078fefa5548"><td class="memItemLeft" align="right" valign="top"><a id="a5fa23f4f94c91e1f7e59f078fefa5548"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>visibleAddButton</b></td></tr>
+<tr class="separator:a5fa23f4f94c91e1f7e59f078fefa5548"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ad1e294a929ab9a72899132ac9a312c"><td class="memItemLeft" align="right" valign="top"><a id="a6ad1e294a929ab9a72899132ac9a312c"></a>
+QTabBar::Shape&#160;</td><td class="memItemRight" valign="bottom"><b>shape</b></td></tr>
+<tr class="separator:a6ad1e294a929ab9a72899132ac9a312c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06e00ea2617b7bed85f9e8c6f3d12dd1"><td class="memItemLeft" align="right" valign="top"><a id="a06e00ea2617b7bed85f9e8c6f3d12dd1"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>currentIndex</b></td></tr>
+<tr class="separator:a06e00ea2617b7bed85f9e8c6f3d12dd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c5ab537e32f77d5e47279479f2ca7c5"><td class="memItemLeft" align="right" valign="top"><a id="a9c5ab537e32f77d5e47279479f2ca7c5"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>count</b></td></tr>
+<tr class="separator:a9c5ab537e32f77d5e47279479f2ca7c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc77d13cfc5d06345d3011e2be313007"><td class="memItemLeft" align="right" valign="top"><a id="afc77d13cfc5d06345d3011e2be313007"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>drawBase</b></td></tr>
+<tr class="separator:afc77d13cfc5d06345d3011e2be313007"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe6d7b6b694f850de7b6af635d24eaff"><td class="memItemLeft" align="right" valign="top"><a id="afe6d7b6b694f850de7b6af635d24eaff"></a>
+QSize&#160;</td><td class="memItemRight" valign="bottom"><b>iconSize</b></td></tr>
+<tr class="separator:afe6d7b6b694f850de7b6af635d24eaff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5e9898062e686aa7da3896149c06348"><td class="memItemLeft" align="right" valign="top"><a id="ad5e9898062e686aa7da3896149c06348"></a>
+Qt::TextElideMode&#160;</td><td class="memItemRight" valign="bottom"><b>elideMode</b></td></tr>
+<tr class="separator:ad5e9898062e686aa7da3896149c06348"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af52d68e3f13dcb1d6c855e122a001f23"><td class="memItemLeft" align="right" valign="top"><a id="af52d68e3f13dcb1d6c855e122a001f23"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>usesScrollButtons</b></td></tr>
+<tr class="separator:af52d68e3f13dcb1d6c855e122a001f23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a399567dffdce9521f43953a3f3122cc3"><td class="memItemLeft" align="right" valign="top"><a id="a399567dffdce9521f43953a3f3122cc3"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>tabsClosable</b></td></tr>
+<tr class="separator:a399567dffdce9521f43953a3f3122cc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95357dc1cbacba4007811ddf2e1a8bd2"><td class="memItemLeft" align="right" valign="top"><a id="a95357dc1cbacba4007811ddf2e1a8bd2"></a>
+QTabBar::SelectionBehavior&#160;</td><td class="memItemRight" valign="bottom"><b>selectionBehaviorOnRemove</b></td></tr>
+<tr class="separator:a95357dc1cbacba4007811ddf2e1a8bd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa68d8ec1924618b06bd5f952142d6ab"><td class="memItemLeft" align="right" valign="top"><a id="afa68d8ec1924618b06bd5f952142d6ab"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>expanding</b></td></tr>
+<tr class="separator:afa68d8ec1924618b06bd5f952142d6ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a543d0074ee91c4f982837e8c8ab4569b"><td class="memItemLeft" align="right" valign="top"><a id="a543d0074ee91c4f982837e8c8ab4569b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>movable</b></td></tr>
+<tr class="separator:a543d0074ee91c4f982837e8c8ab4569b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcba499c8127d373ee4f4ad3f686ee79"><td class="memItemLeft" align="right" valign="top"><a id="abcba499c8127d373ee4f4ad3f686ee79"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>dragable</b></td></tr>
+<tr class="separator:abcba499c8127d373ee4f4ad3f686ee79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4e1df870b038da86941d03d86bd1133"><td class="memItemLeft" align="right" valign="top"><a id="ab4e1df870b038da86941d03d86bd1133"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>documentMode</b></td></tr>
+<tr class="separator:ab4e1df870b038da86941d03d86bd1133"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d93cbecff750a33f4ed9fdba7e38676"><td class="memItemLeft" align="right" valign="top"><a id="a2d93cbecff750a33f4ed9fdba7e38676"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>autoHide</b></td></tr>
+<tr class="separator:a2d93cbecff750a33f4ed9fdba7e38676"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8de9b5f209c770cae662ab3dba1b54cd"><td class="memItemLeft" align="right" valign="top"><a id="a8de9b5f209c770cae662ab3dba1b54cd"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>changeCurrentOnDrag</b></td></tr>
+<tr class="separator:a8de9b5f209c770cae662ab3dba1b54cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99f703c92037981502b949701c896647"><td class="memItemLeft" align="right" valign="top"><a id="a99f703c92037981502b949701c896647"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>startDragDistance</b></td></tr>
+<tr class="separator:a99f703c92037981502b949701c896647"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a648eb581a412356da676189022f0371c"><td class="memItemLeft" align="right" valign="top"><a id="a648eb581a412356da676189022f0371c"></a>
+QColor&#160;</td><td class="memItemRight" valign="bottom"><b>maskColor</b></td></tr>
+<tr class="separator:a648eb581a412356da676189022f0371c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c9813999221bbb63380a9e66460ebfe"><td class="memItemLeft" align="right" valign="top"><a id="a7c9813999221bbb63380a9e66460ebfe"></a>
+QColor&#160;</td><td class="memItemRight" valign="bottom"><b>flashColor</b></td></tr>
+<tr class="separator:a7c9813999221bbb63380a9e66460ebfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+友元</h2></td></tr>
+<tr class="memitem:abab1078756b1a37f049eebde6de61e01"><td class="memItemLeft" align="right" valign="top"><a id="abab1078756b1a37f049eebde6de61e01"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>DTabBarPrivate</b></td></tr>
+<tr class="separator:abab1078756b1a37f049eebde6de61e01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pro_attribs_classDtk_1_1Core_1_1DObject"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classDtk_1_1Core_1_1DObject')"><img src="closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="classDtk_1_1Core_1_1DObject.html">Dtk::Core::DObject</a></td></tr>
+<tr class="memitem:a1a49828e8ece06afef896e26135f23c0 inherit pro_attribs_classDtk_1_1Core_1_1DObject"><td class="memItemLeft" align="right" valign="top"><a id="a1a49828e8ece06afef896e26135f23c0"></a>
+QScopedPointer&lt; <a class="el" href="classDtk_1_1Core_1_1DObjectPrivate.html">DObjectPrivate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>d_d_ptr</b></td></tr>
+<tr class="separator:a1a49828e8ece06afef896e26135f23c0 inherit pro_attribs_classDtk_1_1Core_1_1DObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="afe18d64cfe3e2aecdc14abe58be78bbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe18d64cfe3e2aecdc14abe58be78bbd">&#9670;&nbsp;</a></span>addTab() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DTabBar::addTab </td>
+          <td>(</td>
+          <td class="paramtype">const QIcon &amp;&#160;</td>
+          <td class="paramname"><em>icon</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>text</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>添加一个新的标签，包含图标、文本. </p>
+<p><em>icon</em> 新标签的标题图标， <em>text</em> 新标签的标题文本. </p><dl class="section return"><dt>返回</dt><dd>返回新标签的索引. </dd></dl>
+
+</div>
+</div>
+<a id="a0fb6badbc0c592254524d3e78e20967f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fb6badbc0c592254524d3e78e20967f">&#9670;&nbsp;</a></span>addTab() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DTabBar::addTab </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>text</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>添加一个新的标签，返回新标签的索引. </p>
+<p><em>text</em> 新标签的标题文本. </p><dl class="section return"><dt>返回</dt><dd>返回新标签的索引. </dd></dl>
+
+</div>
+</div>
+<a id="a10ed5f9dedc4c04cd6d22bcd9cce725e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10ed5f9dedc4c04cd6d22bcd9cce725e">&#9670;&nbsp;</a></span>count()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DTabBar::count </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>标签总数. </p>
+<dl class="section return"><dt>返回</dt><dd>返回标签总数. </dd></dl>
+
+</div>
+</div>
+<a id="a314b26fbc471512c0b3eaa61758cb9cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a314b26fbc471512c0b3eaa61758cb9cd">&#9670;&nbsp;</a></span>currentChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DTabBar::currentChanged </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>当前索引位置改变. </p>
+<p><em>index</em> 改变的索引值. </p>
+
+</div>
+</div>
+<a id="adafbedcddd5f512d62499c2628dbed86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adafbedcddd5f512d62499c2628dbed86">&#9670;&nbsp;</a></span>currentIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DTabBar::currentIndex </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>当前的标签索引位置. </p>
+<dl class="section return"><dt>返回</dt><dd>当前标签索引. </dd></dl>
+
+</div>
+</div>
+<a id="a41bd7eaea127b9eb2349752127192270"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41bd7eaea127b9eb2349752127192270">&#9670;&nbsp;</a></span>dragActionChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DTabBar::dragActionChanged </td>
+          <td>(</td>
+          <td class="paramtype">Qt::DropAction&#160;</td>
+          <td class="paramname"><em>action</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>鼠标形状发生变化. </p>
+<p><em>action</em> 改变的拖拽动作. </p>
+
+</div>
+</div>
+<a id="aebd48e15e7db708ee0e0d22d8cd529d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebd48e15e7db708ee0e0d22d8cd529d2">&#9670;&nbsp;</a></span>dragEnd</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DTabBar::dragEnd </td>
+          <td>(</td>
+          <td class="paramtype">Qt::DropAction&#160;</td>
+          <td class="paramname"><em>action</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>拖放结束. </p>
+<p><em>action</em> 拖放动作. </p>
+
+</div>
+</div>
+<a id="aa08827a177aa22f4470dc4f2df0c4630"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa08827a177aa22f4470dc4f2df0c4630">&#9670;&nbsp;</a></span>elideMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Qt::TextElideMode DTabBar::elideMode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>缩略模式. </p>
+<dl class="section return"><dt>返回</dt><dd>返回标签的文本缩略模式. </dd></dl>
+
+</div>
+</div>
+<a id="acc784f59ca02accd5523233f0ee2776f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc784f59ca02accd5523233f0ee2776f">&#9670;&nbsp;</a></span>iconSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QSize DTabBar::iconSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>图标大小. </p>
+<dl class="section return"><dt>返回</dt><dd>返回图标大小. </dd></dl>
+
+</div>
+</div>
+<a id="a7c7459237922ebbfedf02e41290d244d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c7459237922ebbfedf02e41290d244d">&#9670;&nbsp;</a></span>insertTab() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DTabBar::insertTab </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QIcon &amp;&#160;</td>
+          <td class="paramname"><em>icon</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>text</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>插入一个图标文本标签. </p>
+<p><em>index</em> 被插入的标签索引值，<em>icon</em> 新标签的图标，<em>text</em> 新标签文本</p>
+<dl class="section return"><dt>返回</dt><dd>返回插入后的新标签索引. </dd></dl>
+
+</div>
+</div>
+<a id="af9023d2dde0b662e4b1bca198cc37cc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9023d2dde0b662e4b1bca198cc37cc1">&#9670;&nbsp;</a></span>insertTab() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DTabBar::insertTab </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>text</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>插入一个文本标签. </p>
+<p><em>index</em> 被插入的标签索引值， <em>text</em> 新标签的标题文本.</p>
+<dl class="section warning"><dt>警告</dt><dd>如果参数 <em>index</em> 超过了当前索引，将会在最后添加 一个新标签.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>返回插入后的新标签索引. </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>QTabBar::insertTab() </dd></dl>
+
+</div>
+</div>
+<a id="a78eb45ac610258bd7db7bfcacec1917a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78eb45ac610258bd7db7bfcacec1917a">&#9670;&nbsp;</a></span>isTabEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DTabBar::isTabEnabled </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>是否启用标签索引位置 </p>
+<p><em>index</em> 标签索引值.</p>
+<dl class="section return"><dt>返回</dt><dd>启用标签索引返回 true，否则返回 false. </dd></dl>
+
+</div>
+</div>
+<a id="a56d3c5f52e0ff95ae4ee9de453edf163"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56d3c5f52e0ff95ae4ee9de453edf163">&#9670;&nbsp;</a></span>moveTab()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DTabBar::moveTab </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>to</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>移动标签索引位置 </p>
+<p><em>from</em> 被移动前的标签索引，<em>to</em> 被移动后的标签索引. </p>
+
+</div>
+</div>
+<a id="a3773339d5abb64f6efaa07712dac1562"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3773339d5abb64f6efaa07712dac1562">&#9670;&nbsp;</a></span>removeTab()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DTabBar::removeTab </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>移除标签索引位置 </p>
+<p><em>index</em> 被移除的标签索引值. </p>
+
+</div>
+</div>
+<a id="a4bef51815a38b75b9c4419fc14c6d5cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bef51815a38b75b9c4419fc14c6d5cf">&#9670;&nbsp;</a></span>setCurrentIndex</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DTabBar::setCurrentIndex </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置当前标签索引位置. </p>
+<p><em>index</em> 标签索引. </p>
+
+</div>
+</div>
+<a id="a663cf6e2089c494901d6a96be318e165"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a663cf6e2089c494901d6a96be318e165">&#9670;&nbsp;</a></span>setElideMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DTabBar::setElideMode </td>
+          <td>(</td>
+          <td class="paramtype">Qt::TextElideMode&#160;</td>
+          <td class="paramname"><em>mode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置缩略模式 </p>
+<p><em>mode</em> 文本缩略模式. </p>
+
+</div>
+</div>
+<a id="a61caa5f95a108c31642583ba16bfa543"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61caa5f95a108c31642583ba16bfa543">&#9670;&nbsp;</a></span>setEnabledEmbedStyle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DTabBar::setEnabledEmbedStyle </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>启用直角样式的 Tabbar. </p>
+<p>此风格适用于切换窗口的操作,多用于支持多开的应用.</p>
+<p><em>enable</em> true 启用，false 恢复 </p>
+
+</div>
+</div>
+<a id="ad45e1b62e095a75a58ec7ebe9f1e8ce5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad45e1b62e095a75a58ec7ebe9f1e8ce5">&#9670;&nbsp;</a></span>setIconSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DTabBar::setIconSize </td>
+          <td>(</td>
+          <td class="paramtype">const QSize &amp;&#160;</td>
+          <td class="paramname"><em>size</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置图标大小. </p>
+<p><em>size</em> 图标大小. </p>
+
+</div>
+</div>
+<a id="ab2812da3b9924e1339bf8f549e836ceb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2812da3b9924e1339bf8f549e836ceb">&#9670;&nbsp;</a></span>setMaskColor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DTabBar::setMaskColor </td>
+          <td>(</td>
+          <td class="paramtype">QColor&#160;</td>
+          <td class="paramname"><em>maskColor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置颜色. </p>
+<p><em>maskColor</em> 遮罩颜色. </p>
+
+</div>
+</div>
+<a id="afd172ccd6cc21adafa0db7b9a968f26b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd172ccd6cc21adafa0db7b9a968f26b">&#9670;&nbsp;</a></span>setShape()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DTabBar::setShape </td>
+          <td>(</td>
+          <td class="paramtype">QTabBar::Shape&#160;</td>
+          <td class="paramname"><em>shape</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置标签栏形状. </p>
+<p><em>shape</em> 标签栏形状. </p>
+
+</div>
+</div>
+<a id="afa534b951f8bab9641d88bd0e2bc494f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa534b951f8bab9641d88bd0e2bc494f">&#9670;&nbsp;</a></span>setStartDragDistance</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DTabBar::setStartDragDistance </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>startDragDistance</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置开始拖动距离. </p>
+<p><em>startDragDistance</em> 开始拖动的距离. </p>
+
+</div>
+</div>
+<a id="a106ce3aec8a6837692dfd47a06a68778"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a106ce3aec8a6837692dfd47a06a68778">&#9670;&nbsp;</a></span>setTabData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DTabBar::setTabData </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QVariant &amp;&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置标签索引位置数据. </p>
+<p><em>index</em> 标签索引, <em>data</em> 标签数据. </p>
+
+</div>
+</div>
+<a id="a757229790fbfd401f631a4090618b9d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a757229790fbfd401f631a4090618b9d0">&#9670;&nbsp;</a></span>setTabEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DTabBar::setTabEnabled </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enable</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置标签索引位置启用状态 </p>
+<p><em>index</em> 标签索引，<em>enable</em> 是否启用. </p>
+
+</div>
+</div>
+<a id="a5946c18cc2da45037997ed04afd70a2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5946c18cc2da45037997ed04afd70a2a">&#9670;&nbsp;</a></span>setTabIcon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DTabBar::setTabIcon </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QIcon &amp;&#160;</td>
+          <td class="paramname"><em>icon</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置标签索引位置图标. </p>
+<p><em>index</em> 标签索引， <em>icon</em> 对应的标签图标. </p>
+
+</div>
+</div>
+<a id="a3796303a3ef45813443710225a2644cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3796303a3ef45813443710225a2644cd">&#9670;&nbsp;</a></span>setTabLabelAlignment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DTabBar::setTabLabelAlignment </td>
+          <td>(</td>
+          <td class="paramtype">Qt::Alignment&#160;</td>
+          <td class="paramname"><em>alignment</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置 tab 标签文字对齐方式. </p>
+<p><em>alignment</em> 对齐方式. </p>
+
+</div>
+</div>
+<a id="a560c90472f82aa7f958f0b57ae6c0cd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a560c90472f82aa7f958f0b57ae6c0cd4">&#9670;&nbsp;</a></span>setTabMaximumSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DTabBar::setTabMaximumSize </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QSize &amp;&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置索引标签的最大尺寸. </p>
+<p><em>index</em> 被设置标签的索引值，size ，<em>size</em> 最大大小. </p>
+
+</div>
+</div>
+<a id="a7fca71906348b00d9244b4186ae30795"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fca71906348b00d9244b4186ae30795">&#9670;&nbsp;</a></span>setTabMinimumSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DTabBar::setTabMinimumSize </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QSize &amp;&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置索引标签的最小尺寸. </p>
+<p><em>index</em> 被设置标签的索引值，size ，<em>size</em> 最小大小. </p>
+
+</div>
+</div>
+<a id="a9d855b03765044e865a4d01904c6a9f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d855b03765044e865a4d01904c6a9f2">&#9670;&nbsp;</a></span>setTabsClosable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DTabBar::setTabsClosable </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>closable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置标签栏是否可关闭. </p>
+<p><em>closable</em> 标签是否可关闭. </p>
+
+</div>
+</div>
+<a id="a04dce705a35a6eaf7e0fdeb5e9f6765d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04dce705a35a6eaf7e0fdeb5e9f6765d">&#9670;&nbsp;</a></span>setTabText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DTabBar::setTabText </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>text</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置标签索引位置文本. </p>
+<p><em>index</em> 标签索引， <em>text</em> 标签文本. </p>
+
+</div>
+</div>
+<a id="a4bf0382a5116e5491299f085b96f0911"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bf0382a5116e5491299f085b96f0911">&#9670;&nbsp;</a></span>setTabToolTip()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DTabBar::setTabToolTip </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>tip</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置标签索引位置提示文本. </p>
+<p><em>index</em> 标签索引, <em>tip</em> 提示文本. </p>
+
+</div>
+</div>
+<a id="ae65f579393d1a2112179620bc3cd4a70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae65f579393d1a2112179620bc3cd4a70">&#9670;&nbsp;</a></span>setVisibleAddButton</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DTabBar::setVisibleAddButton </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>visibleAddButton</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置新建标签按钮是否显示. </p>
+<p><em>visibleAddButton</em> 新建按钮是否可视. </p>
+
+</div>
+</div>
+<a id="ac621d4cbdad3830d2ec9ecc94504bd71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac621d4cbdad3830d2ec9ecc94504bd71">&#9670;&nbsp;</a></span>shape()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QTabBar::Shape DTabBar::shape </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>标签栏形状. </p>
+<dl class="section return"><dt>返回</dt><dd>返回当前 <a class="el" href="classDTabBar.html">DTabBar</a> 实例的标签栏形状. </dd></dl>
+
+</div>
+</div>
+<a id="af848181cdbcfed3b1b27c8db014b3560"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af848181cdbcfed3b1b27c8db014b3560">&#9670;&nbsp;</a></span>tabAt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DTabBar::tabAt </td>
+          <td>(</td>
+          <td class="paramtype">const QPoint &amp;&#160;</td>
+          <td class="paramname"><em>pos</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>根据位置返回标签索引位置. </p>
+<p><em>pos</em> 对应标签坐标，可以时标签内的任意坐标. </p><dl class="section return"><dt>返回</dt><dd>返回对应标签的索引值. </dd></dl>
+
+</div>
+</div>
+<a id="aa2c9f81a7eac819e9c2821cb8acfe5d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2c9f81a7eac819e9c2821cb8acfe5d5">&#9670;&nbsp;</a></span>tabBarClicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DTabBar::tabBarClicked </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>点击索引标签. </p>
+<p><em>index</em> 点击标签的索引值. </p>
+
+</div>
+</div>
+<a id="ac78db95e52a5d1c0a976f60508c7c523"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac78db95e52a5d1c0a976f60508c7c523">&#9670;&nbsp;</a></span>tabBarDoubleClicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DTabBar::tabBarDoubleClicked </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>双击索引标签. </p>
+<p><em>index</em> 双击标记的索引值. </p>
+
+</div>
+</div>
+<a id="a402be1cba59eae93fcc8fb7db15ce49b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a402be1cba59eae93fcc8fb7db15ce49b">&#9670;&nbsp;</a></span>tabCloseRequested</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DTabBar::tabCloseRequested </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>点击关闭后发出. </p>
+<p><em>index</em> 关闭的索引值. </p>
+
+</div>
+</div>
+<a id="aa44f0fe546cc5ac12131a9ec438388c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa44f0fe546cc5ac12131a9ec438388c8">&#9670;&nbsp;</a></span>tabData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QVariant DTabBar::tabData </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>返回标签索引位置数据. </p>
+<p><em>index</em> 标签索引. </p><dl class="section return"><dt>返回</dt><dd>标签数据. </dd></dl>
+
+</div>
+</div>
+<a id="a633d5f98ac360a0b29ac07a29e8aa5f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a633d5f98ac360a0b29ac07a29e8aa5f1">&#9670;&nbsp;</a></span>tabDroped</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DTabBar::tabDroped </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Qt::DropAction&#160;</td>
+          <td class="paramname"><em>action</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>target</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>标签拖放. </p>
+<p><em>index</em> 拖放的标签索引， <em>action</em> 拖放的动作, <em>target</em> 被拖放的标签 <a class="el" href="classDTabBar.html">DTabBar</a> 实例 </p>
+
+</div>
+</div>
+<a id="af8159b4b786c3ad14cd17504dde81ec9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8159b4b786c3ad14cd17504dde81ec9">&#9670;&nbsp;</a></span>tabIcon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QIcon DTabBar::tabIcon </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>返回标签索引位置图标. </p>
+<p><em>index</em> 标签索引. </p><dl class="section return"><dt>返回</dt><dd>对应标签的图标. </dd></dl>
+
+</div>
+</div>
+<a id="a125ae6d14c271d2e64b757d464958c85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a125ae6d14c271d2e64b757d464958c85">&#9670;&nbsp;</a></span>tabIsInserted</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DTabBar::tabIsInserted </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>新标签已插入. </p>
+<p><em>index</em> 被插入标签的索引值. </p>
+
+</div>
+</div>
+<a id="a3657a3184fe6022fe1469076385f9a17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3657a3184fe6022fe1469076385f9a17">&#9670;&nbsp;</a></span>tabIsRemoved</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DTabBar::tabIsRemoved </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>标签已删除. </p>
+<p><em>index</em> 被删除标签的索引值. </p>
+
+</div>
+</div>
+<a id="a8e5f587d6eeb166fbfaca0b6a769f757"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e5f587d6eeb166fbfaca0b6a769f757">&#9670;&nbsp;</a></span>tabMoved</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DTabBar::tabMoved </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>to</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>索引位置发生变化 </p>
+<p><em>from</em> 索引位置变化的初始值， <em>to</em> 位置变化后的索引值. </p>
+
+</div>
+</div>
+<a id="a6f9765258a09409f34f0762c0a65ffd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f9765258a09409f34f0762c0a65ffd3">&#9670;&nbsp;</a></span>tabRect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QRect DTabBar::tabRect </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>返回标签索引位置矩形. </p>
+<p><em>index</em> 标签索引. </p><dl class="section return"><dt>返回</dt><dd>标签矩形. </dd></dl>
+
+</div>
+</div>
+<a id="a7e776e7cfe17ba87dd296e110978fdef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e776e7cfe17ba87dd296e110978fdef">&#9670;&nbsp;</a></span>tabReleaseRequested</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DTabBar::tabReleaseRequested </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>索引标签鼠标释放. </p>
+<p><em>index</em> 标签释放的索引值. </p>
+
+</div>
+</div>
+<a id="a0b2ca94bbb5b9d917b020da6184a4840"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b2ca94bbb5b9d917b020da6184a4840">&#9670;&nbsp;</a></span>tabsClosable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DTabBar::tabsClosable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>标签栏是否可关闭. </p>
+<dl class="section return"><dt>返回</dt><dd>返回标签是否可关闭. </dd></dl>
+
+</div>
+</div>
+<a id="ab7f333c44c407f8001e759da4c003c87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7f333c44c407f8001e759da4c003c87">&#9670;&nbsp;</a></span>tabText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString DTabBar::tabText </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>返回标签索引位置文本. </p>
+<p><em>index</em> 标签索引. </p><dl class="section return"><dt>返回</dt><dd>返回对应索引的文本. </dd></dl>
+
+</div>
+</div>
+<a id="a22c0b08a112cad309f02ace94bfd1496"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22c0b08a112cad309f02ace94bfd1496">&#9670;&nbsp;</a></span>tabToolTip()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString DTabBar::tabToolTip </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>返回标签索引位置提示文本. </p>
+<p><em>index</em> 标签索引. </p>
+
+</div>
+</div>
+<a id="a462b155e022fa8f9f6d94024b27e898d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a462b155e022fa8f9f6d94024b27e898d">&#9670;&nbsp;</a></span>visibleAddButton()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DTabBar::visibleAddButton </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>新建标签栏按钮是否可见. </p>
+<dl class="section return"><dt>返回</dt><dd>新建按钮可见，返回 ture 否则，返回 false 。 </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dtkwidget/include/dtkwidget/widgets/<a class="el" href="dtabbar_8h_source.html">dtabbar.h</a></li>
+<li>dtkwidget/src/widgets/dtabbar.cpp</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classDTabBar.html">DTabBar</a></li>
+    <li class="footer">文档生成时间:doxtime</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

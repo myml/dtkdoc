@@ -1,0 +1,305 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: DSettingsDialog类 参考</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="change address" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classDSettingsDialog.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-slots">Public 槽</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="classDSettingsDialog-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">DSettingsDialog类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 DSettingsDialog 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classDSettingsDialog.png" usemap="#DSettingsDialog_map" alt=""/>
+  <map id="DSettingsDialog_map" name="DSettingsDialog_map">
+<area href="classDAbstractDialog.html" alt="DAbstractDialog" shape="rect" coords="113,56,329,80"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Public 槽</h2></td></tr>
+<tr class="memitem:a6d845cdecf110114fc91709aad02a4d8"><td class="memItemLeft" align="right" valign="top"><a id="a6d845cdecf110114fc91709aad02a4d8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>updateSettings</b> (DTK_CORE_NAMESPACE::DSettings *settings)</td></tr>
+<tr class="separator:a6d845cdecf110114fc91709aad02a4d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae56fe991067b0c3e4e5b82ffb9fbe74a"><td class="memItemLeft" align="right" valign="top"><a id="ae56fe991067b0c3e4e5b82ffb9fbe74a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>updateSettings</b> (const QByteArray &amp;translateContext, DTK_CORE_NAMESPACE::DSettings *settings)</td></tr>
+<tr class="separator:ae56fe991067b0c3e4e5b82ffb9fbe74a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dbf8a13236ba6fcb126f2e6d89ab39f"><td class="memItemLeft" align="right" valign="top"><a id="a7dbf8a13236ba6fcb126f2e6d89ab39f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setGroupVisible</b> (const QString &amp;groupKey, bool visible)</td></tr>
+<tr class="separator:a7dbf8a13236ba6fcb126f2e6d89ab39f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_slots_classDAbstractDialog"><td colspan="2" onclick="javascript:toggleInherit('pub_slots_classDAbstractDialog')"><img src="closed.png" alt="-"/>&#160;Public 槽 继承自 <a class="el" href="classDAbstractDialog.html">DAbstractDialog</a></td></tr>
+<tr class="memitem:aff3573c58f1761086c9baf1f93489d11 inherit pub_slots_classDAbstractDialog"><td class="memItemLeft" align="right" valign="top"><a id="aff3573c58f1761086c9baf1f93489d11"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAbstractDialog.html#aff3573c58f1761086c9baf1f93489d11">moveToCenter</a> ()</td></tr>
+<tr class="memdesc:aff3573c58f1761086c9baf1f93489d11 inherit pub_slots_classDAbstractDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">将对话框移动至屏幕中央或其父控件的中央 <br /></td></tr>
+<tr class="separator:aff3573c58f1761086c9baf1f93489d11 inherit pub_slots_classDAbstractDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a453ccc1cff05192a59c9386c99e668bf inherit pub_slots_classDAbstractDialog"><td class="memItemLeft" align="right" valign="top"><a id="a453ccc1cff05192a59c9386c99e668bf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAbstractDialog.html#a453ccc1cff05192a59c9386c99e668bf">moveToTopRight</a> ()</td></tr>
+<tr class="memdesc:a453ccc1cff05192a59c9386c99e668bf inherit pub_slots_classDAbstractDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">将对话框移动至屏幕右上角或其父控件的右上角 <br /></td></tr>
+<tr class="separator:a453ccc1cff05192a59c9386c99e668bf inherit pub_slots_classDAbstractDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94c810ea9af09c84a0098aef6a7f5082 inherit pub_slots_classDAbstractDialog"><td class="memItemLeft" align="right" valign="top"><a id="a94c810ea9af09c84a0098aef6a7f5082"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAbstractDialog.html#a94c810ea9af09c84a0098aef6a7f5082">moveToCenterByRect</a> (const QRect &amp;rect)</td></tr>
+<tr class="memdesc:a94c810ea9af09c84a0098aef6a7f5082 inherit pub_slots_classDAbstractDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">移动对话框到给定<code>rect</code>区域的中央。<code>rect</code>是移动对话框要参照的<code>QRect</code>区域 <br /></td></tr>
+<tr class="separator:a94c810ea9af09c84a0098aef6a7f5082 inherit pub_slots_classDAbstractDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad564247f172d91745ff1791e309f0fc2 inherit pub_slots_classDAbstractDialog"><td class="memItemLeft" align="right" valign="top"><a id="ad564247f172d91745ff1791e309f0fc2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAbstractDialog.html#ad564247f172d91745ff1791e309f0fc2">moveToTopRightByRect</a> (const QRect &amp;rect)</td></tr>
+<tr class="memdesc:ad564247f172d91745ff1791e309f0fc2 inherit pub_slots_classDAbstractDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">移动对话框到给定<code>rect</code>区域的右上角。<code>rect</code>是移动所需要参照的<code>QRect</code>位置。 <br /></td></tr>
+<tr class="separator:ad564247f172d91745ff1791e309f0fc2 inherit pub_slots_classDAbstractDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae99e66e0f9217abd7251227f24363119 inherit pub_slots_classDAbstractDialog"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAbstractDialog.html#ae99e66e0f9217abd7251227f24363119">setDisplayPosition</a> (DisplayPosition <a class="el" href="classDAbstractDialog.html#a0be5ba4eb664919bcf245e368a1c1bcc">displayPosition</a>)</td></tr>
+<tr class="memdesc:ae99e66e0f9217abd7251227f24363119 inherit pub_slots_classDAbstractDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置对话框显示位置  <a href="classDAbstractDialog.html#ae99e66e0f9217abd7251227f24363119">更多...</a><br /></td></tr>
+<tr class="separator:ae99e66e0f9217abd7251227f24363119 inherit pub_slots_classDAbstractDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ab28ded75fb1721c0f7f37e42ba10ae54"><td class="memItemLeft" align="right" valign="top"><a id="ab28ded75fb1721c0f7f37e42ba10ae54"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DSettingsDialog</b> (QWidget *parent=nullptr)</td></tr>
+<tr class="separator:ab28ded75fb1721c0f7f37e42ba10ae54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64e903805af0d153d25c0b4947d4fddf"><td class="memItemLeft" align="right" valign="top"><a id="a64e903805af0d153d25c0b4947d4fddf"></a>
+<a class="el" href="classDSettingsWidgetFactory.html">DSettingsWidgetFactory</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>widgetFactory</b> () const</td></tr>
+<tr class="separator:a64e903805af0d153d25c0b4947d4fddf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a805c42b4bd9d47a32bb771873211a8d6"><td class="memItemLeft" align="right" valign="top"><a id="a805c42b4bd9d47a32bb771873211a8d6"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>groupIsVisible</b> (const QString &amp;groupKey) const</td></tr>
+<tr class="separator:a805c42b4bd9d47a32bb771873211a8d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22dbcc7543d6ff127d39a13511bc0ae8"><td class="memItemLeft" align="right" valign="top"><a id="a22dbcc7543d6ff127d39a13511bc0ae8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setResetVisible</b> (bool visible)</td></tr>
+<tr class="separator:a22dbcc7543d6ff127d39a13511bc0ae8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb3b4e1f29b6fe13ea57aebcd0d9f7da"><td class="memItemLeft" align="right" valign="top"><a id="acb3b4e1f29b6fe13ea57aebcd0d9f7da"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>scrollToGroup</b> (const QString &amp;groupKey)</td></tr>
+<tr class="separator:acb3b4e1f29b6fe13ea57aebcd0d9f7da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d6cb1384446e5d2b2d9d46876aea453"><td class="memItemLeft" align="right" valign="top"><a id="a1d6cb1384446e5d2b2d9d46876aea453"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setIcon</b> (const QIcon &amp;icon)</td></tr>
+<tr class="separator:a1d6cb1384446e5d2b2d9d46876aea453"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classDAbstractDialog"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classDAbstractDialog')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="classDAbstractDialog.html">DAbstractDialog</a></td></tr>
+<tr class="memitem:a3b7d7fe7c749d9e4c25f3c1519036368 inherit pub_methods_classDAbstractDialog"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAbstractDialog.html#a3b7d7fe7c749d9e4c25f3c1519036368">DAbstractDialog</a> (QWidget *parent=nullptr)</td></tr>
+<tr class="memdesc:a3b7d7fe7c749d9e4c25f3c1519036368 inherit pub_methods_classDAbstractDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造一个DAbstractDialog实例  <a href="classDAbstractDialog.html#a3b7d7fe7c749d9e4c25f3c1519036368">更多...</a><br /></td></tr>
+<tr class="separator:a3b7d7fe7c749d9e4c25f3c1519036368 inherit pub_methods_classDAbstractDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5cf9508f3c6a5d3ea1870ed10a25380 inherit pub_methods_classDAbstractDialog"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAbstractDialog.html#aa5cf9508f3c6a5d3ea1870ed10a25380">DAbstractDialog</a> (bool blurIfPossible, QWidget *parent=nullptr)</td></tr>
+<tr class="memdesc:aa5cf9508f3c6a5d3ea1870ed10a25380 inherit pub_methods_classDAbstractDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造一个 <a class="el" href="classDAbstractDialog.html">DAbstractDialog</a> 实例  <a href="classDAbstractDialog.html#aa5cf9508f3c6a5d3ea1870ed10a25380">更多...</a><br /></td></tr>
+<tr class="separator:aa5cf9508f3c6a5d3ea1870ed10a25380 inherit pub_methods_classDAbstractDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbb4b7cd7dbdeaf5af834a4d39b82949 inherit pub_methods_classDAbstractDialog"><td class="memItemLeft" align="right" valign="top"><a id="afbb4b7cd7dbdeaf5af834a4d39b82949"></a>
+DisplayPosition&#160;</td><td class="memItemRight" valign="bottom"><b>displayPosition</b> () const</td></tr>
+<tr class="separator:afbb4b7cd7dbdeaf5af834a4d39b82949 inherit pub_methods_classDAbstractDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a452c9920e4e0542acaaef808c774429b inherit pub_methods_classDAbstractDialog"><td class="memItemLeft" align="right" valign="top"><a id="a452c9920e4e0542acaaef808c774429b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAbstractDialog.html#a452c9920e4e0542acaaef808c774429b">move</a> (const QPoint &amp;pos)</td></tr>
+<tr class="memdesc:a452c9920e4e0542acaaef808c774429b inherit pub_methods_classDAbstractDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">将窗口移动到指定坐标 <br /></td></tr>
+<tr class="separator:a452c9920e4e0542acaaef808c774429b inherit pub_methods_classDAbstractDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0c623aea93b44f2a90a75abfb5213e3 inherit pub_methods_classDAbstractDialog"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAbstractDialog.html#ab0c623aea93b44f2a90a75abfb5213e3">move</a> (int x, int y)</td></tr>
+<tr class="memdesc:ab0c623aea93b44f2a90a75abfb5213e3 inherit pub_methods_classDAbstractDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">将窗口移动到指定坐标  <a href="classDAbstractDialog.html#ab0c623aea93b44f2a90a75abfb5213e3">更多...</a><br /></td></tr>
+<tr class="separator:ab0c623aea93b44f2a90a75abfb5213e3 inherit pub_methods_classDAbstractDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a854c68301ed4eb3c85219a0c41a08055 inherit pub_methods_classDAbstractDialog"><td class="memItemLeft" align="right" valign="top"><a id="a854c68301ed4eb3c85219a0c41a08055"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAbstractDialog.html#a854c68301ed4eb3c85219a0c41a08055">setGeometry</a> (const QRect &amp;rect)</td></tr>
+<tr class="memdesc:a854c68301ed4eb3c85219a0c41a08055 inherit pub_methods_classDAbstractDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造一个矩形 <br /></td></tr>
+<tr class="separator:a854c68301ed4eb3c85219a0c41a08055 inherit pub_methods_classDAbstractDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb89083078a7294cdc2a5156b0d5cb8b inherit pub_methods_classDAbstractDialog"><td class="memItemLeft" align="right" valign="top"><a id="afb89083078a7294cdc2a5156b0d5cb8b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setGeometry</b> (int x, int y, int width, int height)</td></tr>
+<tr class="separator:afb89083078a7294cdc2a5156b0d5cb8b inherit pub_methods_classDAbstractDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pub_types_classDAbstractDialog"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classDAbstractDialog')"><img src="closed.png" alt="-"/>&#160;Public 类型 继承自 <a class="el" href="classDAbstractDialog.html">DAbstractDialog</a></td></tr>
+<tr class="memitem:a060bc23b8aaf6943f33ac8d370b7e6bb inherit pub_types_classDAbstractDialog"><td class="memItemLeft" align="right" valign="top"><a id="a060bc23b8aaf6943f33ac8d370b7e6bb"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>DisplayPosition</b> { <b>Center</b>
+, <b>TopRight</b>
+ }</td></tr>
+<tr class="separator:a060bc23b8aaf6943f33ac8d370b7e6bb inherit pub_types_classDAbstractDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade79bd62378cbfb48724772693698dd8 inherit pub_types_classDAbstractDialog"><td class="memItemLeft" align="right" valign="top"><a id="ade79bd62378cbfb48724772693698dd8"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>DisplayPostion</b> { <b>DisplayCenter</b> = Center
+, <b>DisplayTopRight</b> = TopRight
+ }</td></tr>
+<tr class="separator:ade79bd62378cbfb48724772693698dd8 inherit pub_types_classDAbstractDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header signals_classDAbstractDialog"><td colspan="2" onclick="javascript:toggleInherit('signals_classDAbstractDialog')"><img src="closed.png" alt="-"/>&#160;信号 继承自 <a class="el" href="classDAbstractDialog.html">DAbstractDialog</a></td></tr>
+<tr class="memitem:a5562f9908619a183265ee3ce22ae4fcc inherit signals_classDAbstractDialog"><td class="memItemLeft" align="right" valign="top"><a id="a5562f9908619a183265ee3ce22ae4fcc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAbstractDialog.html#a5562f9908619a183265ee3ce22ae4fcc">sizeChanged</a> (QSize size)</td></tr>
+<tr class="memdesc:a5562f9908619a183265ee3ce22ae4fcc inherit signals_classDAbstractDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">窗口大小发生改变 <br /></td></tr>
+<tr class="separator:a5562f9908619a183265ee3ce22ae4fcc inherit signals_classDAbstractDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classDAbstractDialog"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classDAbstractDialog')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="classDAbstractDialog.html">DAbstractDialog</a></td></tr>
+<tr class="memitem:acdbdd2d3b6fd58526d840455646fa79e inherit pro_methods_classDAbstractDialog"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAbstractDialog.html#acdbdd2d3b6fd58526d840455646fa79e">mouseMoveEvent</a> (QMouseEvent *event) Q_DECL_OVERRIDE</td></tr>
+<tr class="memdesc:acdbdd2d3b6fd58526d840455646fa79e inherit pro_methods_classDAbstractDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">对话框的鼠标移动事件  <a href="classDAbstractDialog.html#acdbdd2d3b6fd58526d840455646fa79e">更多...</a><br /></td></tr>
+<tr class="separator:acdbdd2d3b6fd58526d840455646fa79e inherit pro_methods_classDAbstractDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6b09526a7fa2d6047fdb14c5793deb3 inherit pro_methods_classDAbstractDialog"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAbstractDialog.html#ae6b09526a7fa2d6047fdb14c5793deb3">mousePressEvent</a> (QMouseEvent *event) Q_DECL_OVERRIDE</td></tr>
+<tr class="memdesc:ae6b09526a7fa2d6047fdb14c5793deb3 inherit pro_methods_classDAbstractDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">对话框的鼠标点击事件  <a href="classDAbstractDialog.html#ae6b09526a7fa2d6047fdb14c5793deb3">更多...</a><br /></td></tr>
+<tr class="separator:ae6b09526a7fa2d6047fdb14c5793deb3 inherit pro_methods_classDAbstractDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54fe9f009ae062e5fdda6eaaa7ba3f02 inherit pro_methods_classDAbstractDialog"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAbstractDialog.html#a54fe9f009ae062e5fdda6eaaa7ba3f02">mouseReleaseEvent</a> (QMouseEvent *event) Q_DECL_OVERRIDE</td></tr>
+<tr class="memdesc:a54fe9f009ae062e5fdda6eaaa7ba3f02 inherit pro_methods_classDAbstractDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">对话框的鼠标释放事件  <a href="classDAbstractDialog.html#a54fe9f009ae062e5fdda6eaaa7ba3f02">更多...</a><br /></td></tr>
+<tr class="separator:a54fe9f009ae062e5fdda6eaaa7ba3f02 inherit pro_methods_classDAbstractDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae571ec8f62cbfb9484eee57d524f5979 inherit pro_methods_classDAbstractDialog"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAbstractDialog.html#ae571ec8f62cbfb9484eee57d524f5979">resizeEvent</a> (QResizeEvent *event) Q_DECL_OVERRIDE</td></tr>
+<tr class="memdesc:ae571ec8f62cbfb9484eee57d524f5979 inherit pro_methods_classDAbstractDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">窗口大小改变事件  <a href="classDAbstractDialog.html#ae571ec8f62cbfb9484eee57d524f5979">更多...</a><br /></td></tr>
+<tr class="separator:ae571ec8f62cbfb9484eee57d524f5979 inherit pro_methods_classDAbstractDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc6badb93ebc965452ac391c546b6c72 inherit pro_methods_classDAbstractDialog"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAbstractDialog.html#adc6badb93ebc965452ac391c546b6c72">showEvent</a> (QShowEvent *event) override</td></tr>
+<tr class="memdesc:adc6badb93ebc965452ac391c546b6c72 inherit pro_methods_classDAbstractDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">窗口显示事件,如果收到过鼠标移动事件不再使用自动布局  <a href="classDAbstractDialog.html#adc6badb93ebc965452ac391c546b6c72">更多...</a><br /></td></tr>
+<tr class="separator:adc6badb93ebc965452ac391c546b6c72 inherit pro_methods_classDAbstractDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47a2a1e9af92e0cb4e61b55dfca71de1 inherit pro_methods_classDAbstractDialog"><td class="memItemLeft" align="right" valign="top"><a id="a47a2a1e9af92e0cb4e61b55dfca71de1"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DAbstractDialog</b> (<a class="el" href="classDAbstractDialogPrivate.html">DAbstractDialogPrivate</a> &amp;dd, QWidget *parent=nullptr)</td></tr>
+<tr class="separator:a47a2a1e9af92e0cb4e61b55dfca71de1 inherit pro_methods_classDAbstractDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header properties_classDAbstractDialog"><td colspan="2" onclick="javascript:toggleInherit('properties_classDAbstractDialog')"><img src="closed.png" alt="-"/>&#160;属性 继承自 <a class="el" href="classDAbstractDialog.html">DAbstractDialog</a></td></tr>
+<tr class="memitem:a0be5ba4eb664919bcf245e368a1c1bcc inherit properties_classDAbstractDialog"><td class="memItemLeft" align="right" valign="top">DisplayPosition&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAbstractDialog.html#a0be5ba4eb664919bcf245e368a1c1bcc">displayPosition</a></td></tr>
+<tr class="memdesc:a0be5ba4eb664919bcf245e368a1c1bcc inherit properties_classDAbstractDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取对话框显示位置  <a href="classDAbstractDialog.html#a0be5ba4eb664919bcf245e368a1c1bcc">更多...</a><br /></td></tr>
+<tr class="separator:a0be5ba4eb664919bcf245e368a1c1bcc inherit properties_classDAbstractDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dtkwidget/include/dtkwidget/widgets/<a class="el" href="dsettingsdialog_8h_source.html">dsettingsdialog.h</a></li>
+<li>dtkwidget/src/widgets/dsettingsdialog.cpp</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classDSettingsDialog.html">DSettingsDialog</a></li>
+    <li class="footer">文档生成时间:doxtime</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

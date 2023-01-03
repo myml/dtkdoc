@@ -1,0 +1,464 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: 类成员</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="change address" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('functions_c.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="contents">
+<div class="textblock">这里列出了所有文档化的类成员，并附带类所属的文件:</div>
+
+<h3><a id="index_c"></a>- c -</h3><ul>
+<li>call()
+: <a class="el" href="classDDBusCaller.html#a3159935276a522a6c9cfd517ded8a432">DDBusCaller</a>
+</li>
+<li>cancelButtonClicked()
+: <a class="el" href="classDInputDialog.html#a0257002ec6e733efdfc9976d37261170">DInputDialog</a>
+</li>
+<li>cancelButtonText
+: <a class="el" href="classDInputDialog.html#a86683a9254c4326adcea873d412bc8af">DInputDialog</a>
+</li>
+<li>canInsertFromMimeData()
+: <a class="el" href="classDCrumbEdit.html#a6b99ca3200235bf3a3150f3097a07af6">DCrumbEdit</a>
+</li>
+<li>canReset()
+: <a class="el" href="classDtk_1_1Core_1_1DSettingsOption.html#a430a4d2e652375bcd96c6ac7ea947e0d">Dtk::Core::DSettingsOption</a>
+</li>
+<li>cd()
+: <a class="el" href="classDtk_1_1Core_1_1DCapDir.html#a2a122ec0af363d5734ddf81fbe0f4252">Dtk::Core::DCapDir</a>
+</li>
+<li>centerIn
+: <a class="el" href="classDAnchorsBase.html#ad41e7fff4550e1db1fdd79bebdc3ac2c">DAnchorsBase</a>
+</li>
+<li>centerInChanged()
+: <a class="el" href="classDAnchorsBase.html#a835031f3c5c48cfd36cb834b710139c6">DAnchorsBase</a>
+</li>
+<li>centerOn()
+: <a class="el" href="classDImageViewer.html#a5562e20850a10a9fa5cbd27aa1468193">DImageViewer</a>
+</li>
+<li>check()
+: <a class="el" href="classDAccessibilityChecker.html#aafec037647fe69fc8e08c40d7bf1697f">DAccessibilityChecker</a>
+</li>
+<li>checkedButton()
+: <a class="el" href="classDButtonBox.html#abef92bfdeee48db3f275c69bbcfa58bb">DButtonBox</a>
+</li>
+<li>checkedChanged()
+: <a class="el" href="classDSwitchHeaderLine.html#a1ff874781484affd1bd198a15b402856">DSwitchHeaderLine</a>
+</li>
+<li>checkedExpand()
+: <a class="el" href="classDDrawerGroup.html#a4eac3fb9d931ed84ebed74441946c182">DDrawerGroup</a>
+</li>
+<li>checkedId()
+: <a class="el" href="classDButtonBox.html#a630447682360987db32f965eb7e1937b">DButtonBox</a>
+, <a class="el" href="classDDrawerGroup.html#ab1e0bf4b2ab2c0bdf36d49b51ab5c416">DDrawerGroup</a>
+</li>
+<li>checkMimeData()
+: <a class="el" href="classDFileDragClient.html#acbd4c7c7090d14e8472c13a4c107f043">DFileDragClient</a>
+</li>
+<li>childGroup()
+: <a class="el" href="classDtk_1_1Core_1_1DSettingsGroup.html#a708dc3bf8f7c7ef5495c11c1f02d13ca">Dtk::Core::DSettingsGroup</a>
+</li>
+<li>childGroups()
+: <a class="el" href="classDtk_1_1Core_1_1DSettingsGroup.html#ac38e0c6fbbd51922413f84e1cb1108d0">Dtk::Core::DSettingsGroup</a>
+</li>
+<li>childOptions()
+: <a class="el" href="classDtk_1_1Core_1_1DSettingsGroup.html#a85008ef304230b132bba47135c627fac">Dtk::Core::DSettingsGroup</a>
+</li>
+<li>childrenCount()
+: <a class="el" href="classDtk_1_1Core_1_1DDciFile.html#a70adb3c6baf1de845ddf9d42e9d19dfc">Dtk::Core::DDciFile</a>
+</li>
+<li>chunkColor()
+: <a class="el" href="classDCircleProgress.html#afdf7c97b22507f939d3152025a8d6190">DCircleProgress</a>
+</li>
+<li>clear()
+: <a class="el" href="classDImageViewer.html#ad9467f063385e675c8d51e2ce32c0bf1">DImageViewer</a>
+, <a class="el" href="classDKeySequenceEdit.html#ac5e9a193c460938590bd87eaec158b05">DKeySequenceEdit</a>
+, <a class="el" href="classDLineEdit.html#ae83af2a9df031205af1643ff94dfb033">DLineEdit</a>
+, <a class="el" href="classDStackWidget.html#ac0e698b6e63d57dc002e6fb25ab4177c">DStackWidget</a>
+</li>
+<li>clearAnchors()
+: <a class="el" href="classDAnchorsBase.html#a07caa92d2fbc8811131ee4d09a6da302">DAnchorsBase</a>
+</li>
+<li>clearButtonEnabled
+: <a class="el" href="classDIpv4LineEdit.html#a696c521b66ed4b8f163605e685f4de88">DIpv4LineEdit</a>
+</li>
+<li>clearButtons()
+: <a class="el" href="classDDialog.html#ad77d71530df35bacfaba552843e3b2f7">DDialog</a>
+</li>
+<li>clearContents()
+: <a class="el" href="classDDialog.html#aaa91361d0d011ced341664c0643cf9be">DDialog</a>
+</li>
+<li>clearEdit()
+: <a class="el" href="classDSearchEdit.html#a1e570c9b1cfd4d26aad8069dd4c60dcb">DSearchEdit</a>
+</li>
+<li>clearItems()
+: <a class="el" href="classDSimpleListView.html#a32d83aeec9ee1fca9e940993293d959a">DSimpleListView</a>
+</li>
+<li>clearSelections()
+: <a class="el" href="classDSimpleListView.html#a41437f1c968676cbd62e43df4322bba3">DSimpleListView</a>
+</li>
+<li>clearSpacing()
+: <a class="el" href="classDDialog.html#af90eb8313f1246fe02921a2bdad28db6">DDialog</a>
+</li>
+<li>clickAreaMargins()
+: <a class="el" href="classDViewItemAction.html#ab3493db9c0f3c20c21bbde34a37b6182">DViewItemAction</a>
+</li>
+<li>clicked()
+: <a class="el" href="classDCircleProgress.html#abe12d28e859b930181eb2c8b26968072">DCircleProgress</a>
+</li>
+<li>clientLeaderId()
+: <a class="el" href="classDWindowGroupLeader.html#a225094f84899f7339322173524dc9363">DWindowGroupLeader</a>
+</li>
+<li>clipPath
+: <a class="el" href="classDClipEffectWidget.html#a5edd7f09635bacaffcf9b3a26b228bef">DClipEffectWidget</a>
+, <a class="el" href="classDGraphicsClipEffect.html#a355c6d91153fb7bace3fd21eb9c7d201">DGraphicsClipEffect</a>
+, <a class="el" href="classDMainWindow.html#a487dd0c87b79b3b029f007287a513bbc">DMainWindow</a>
+, <a class="el" href="classDPlatformHandle.html#a1e93560464a6e1683dced96ba886cbdb">DPlatformHandle</a>
+</li>
+<li>clipPathChanged()
+: <a class="el" href="classDClipEffectWidget.html#a185cbdc4702685a90c03320d5592ac8f">DClipEffectWidget</a>
+, <a class="el" href="classDGraphicsClipEffect.html#af93423586a6ee14660ddde915da1f815">DGraphicsClipEffect</a>
+, <a class="el" href="classDPlatformHandle.html#a5235efca4c5c9c3a6ead078788d30d9a">DPlatformHandle</a>
+</li>
+<li>Clockwise
+: <a class="el" href="classDLoadingIndicator.html#a8df63c04b02fd31fbfb610ed9e0a43cbab7af88b64e8a3aac305924491b1d4e6a">DLoadingIndicator</a>
+</li>
+<li>clone()
+: <a class="el" href="classDStyledIconEngine.html#a694e493ef7ad843477d86851e741c772">DStyledIconEngine</a>
+</li>
+<li>closeButtonVisible()
+: <a class="el" href="classDDialog.html#a45224fa6de7555748f2752fab530384b">DDialog</a>
+</li>
+<li>ColorButton()
+: <a class="el" href="classColorButton.html#a5133e58d694260f42b39c8d3c454f5cb">ColorButton</a>
+</li>
+<li>ColorCompositing
+: <a class="el" href="classDGuiApplicationHelper.html#af2609d4dc9b44f180e93c23f2bc1155ca4b2fd01fb675d8834a977785369b1488">DGuiApplicationHelper</a>
+</li>
+<li>ColorLabel()
+: <a class="el" href="classColorLabel.html#a0a76e57427c1a9640a907633f7412f8b">ColorLabel</a>
+</li>
+<li>ColorSlider()
+: <a class="el" href="classColorSlider.html#a80aa83a09c511bd74de814727ee6b31c">ColorSlider</a>
+</li>
+<li>ColorType
+: <a class="el" href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92">DGuiApplicationHelper</a>
+</li>
+<li>comboBoxCurrentIndex
+: <a class="el" href="classDInputDialog.html#a61f33a14adf944bf5802403680e5bbc7">DInputDialog</a>
+</li>
+<li>comboBoxCurrentIndexChanged()
+: <a class="el" href="classDInputDialog.html#aa83836ad4531b505209c5fcfe0a75ead">DInputDialog</a>
+</li>
+<li>comboBoxEditable
+: <a class="el" href="classDInputDialog.html#aa62d805ddb6ca08cd2fe684b28e2c2b0">DInputDialog</a>
+</li>
+<li>comboBoxItems
+: <a class="el" href="classDInputDialog.html#a429b2389094f2ebba0ff3e8fc2c42e14">DInputDialog</a>
+</li>
+<li>comment()
+: <a class="el" href="classDtk_1_1Core_1_1DDesktopEntry.html#a2c22b3382ab71fb741739d9d2303c50f">Dtk::Core::DDesktopEntry</a>
+</li>
+<li>companyLogo()
+: <a class="el" href="classDAboutDialog.html#af8bec9f2af7a961b472c3b07aa06183d">DAboutDialog</a>
+</li>
+<li>computerName()
+: <a class="el" href="classDtk_1_1Core_1_1DSysInfo.html#a0827e0ae34797f46b077a6b351308084">Dtk::Core::DSysInfo</a>
+</li>
+<li>computeWidthHint()
+: <a class="el" href="classDComboBoxPrivate.html#a6cfe3d8b9ffb08dd575a2a36e2cbc077">DComboBoxPrivate</a>
+</li>
+<li>connectHasBlurWindowChanged()
+: <a class="el" href="classDPlatformHandle.html#a25b9adb9a27f49e5cbb90041cb69e518">DPlatformHandle</a>
+</li>
+<li>connection
+: <a class="el" href="classDDBusData.html#a4fa2b2cabaeae6085df2ad2af538be01">DDBusData</a>
+</li>
+<li>connectNotify()
+: <a class="el" href="classDtk_1_1Core_1_1DDBusExtendedAbstractInterface.html#a6fb75754cfc917d5cc1d6d9e9b4fdd8e">Dtk::Core::DDBusExtendedAbstractInterface</a>
+</li>
+<li>connectWindowManagerChangedSignal()
+: <a class="el" href="classDPlatformHandle.html#aa1109073d6261e00664235db0beda245">DPlatformHandle</a>
+</li>
+<li>ConsoleAppender()
+: <a class="el" href="classDtk_1_1Core_1_1ConsoleAppender.html#a044fa93658dbe1fbba76328efef6f066">Dtk::Core::ConsoleAppender</a>
+</li>
+<li>containCrumb()
+: <a class="el" href="classDCrumbEdit.html#ad026df7e8171bd098b212668715116fd">DCrumbEdit</a>
+</li>
+<li>contains()
+: <a class="el" href="classDtk_1_1Core_1_1DDesktopEntry.html#a9f10cd5616ce0e3fffbc3389c636f13f">Dtk::Core::DDesktopEntry</a>
+</li>
+<li>contentCount()
+: <a class="el" href="classDDialog.html#a984b658383a1cc0b9f509c360772ffb0">DDialog</a>
+</li>
+<li>contentLayoutContentsMargins()
+: <a class="el" href="classDDialog.html#a650ec848ac70bb6f8c84d63e60a02ebe">DDialog</a>
+</li>
+<li>convertColor()
+: <a class="el" href="classDPrintPickColorWidget.html#a5e3f35c853dd24d1412c990d365f1b4f">DPrintPickColorWidget</a>
+</li>
+<li>convertFileEncoding()
+: <a class="el" href="classDtk_1_1Core_1_1DTextEncoding.html#a4276cda37a02fc7d0f9a84617bc35dc9">Dtk::Core::DTextEncoding</a>
+</li>
+<li>convertFileEncodingTo()
+: <a class="el" href="classDtk_1_1Core_1_1DTextEncoding.html#a5dbba51d416ef0baae596843e84f94e3">Dtk::Core::DTextEncoding</a>
+</li>
+<li>convertTextEncoding()
+: <a class="el" href="classDtk_1_1Core_1_1DTextEncoding.html#a7ab11dbdce97d9c63fe3a583697633a5">Dtk::Core::DTextEncoding</a>
+</li>
+<li>copy()
+: <a class="el" href="classDtk_1_1Core_1_1DCapFile.html#a2dab4eb6c80e9f6825d83061aaeb19e6">Dtk::Core::DCapFile</a>
+</li>
+<li>copyEnabled()
+: <a class="el" href="classDLineEdit.html#a53299af75ae1429adb396277d09162ae">DLineEdit</a>
+</li>
+<li>count()
+: <a class="el" href="classDFlowLayout.html#a1dd33b25505bc6739d99575f5c71e5de">DFlowLayout</a>
+, <a class="el" href="classDListView.html#a0ce3f8f6a083ddbf6c3bd45d81f453e5">DListView</a>
+, <a class="el" href="classDTabBar.html#a10ed5f9dedc4c04cd6d22bcd9cce725e">DTabBar</a>
+</li>
+<li>counter()
+: <a class="el" href="classDTaskbarControl.html#a8db77215dda2cf0e0f106e3628467792">DTaskbarControl</a>
+</li>
+<li>Counterclockwise
+: <a class="el" href="classDLoadingIndicator.html#a8df63c04b02fd31fbfb610ed9e0a43cba655b8bc509d407f52e33b64bf20585e9">DLoadingIndicator</a>
+</li>
+<li>counterVisible()
+: <a class="el" href="classDTaskbarControl.html#a6ad5df4445d9419cd746bfaf172efe01">DTaskbarControl</a>
+</li>
+<li>cpuModelName()
+: <a class="el" href="classDtk_1_1Core_1_1DSysInfo.html#ae783ea28b31750c34a1979927b3ee9ed">Dtk::Core::DSysInfo</a>
+</li>
+<li>createMimeDataFromSelection()
+: <a class="el" href="classDCrumbEdit.html#a3322e2d87a354277ed7382889fe3d3c0">DCrumbEdit</a>
+</li>
+<li>createThumbnail()
+: <a class="el" href="classDThumbnailProvider.html#a3ed30f951ff09a168a4142fcaf51260f">DThumbnailProvider</a>
+</li>
+<li>createTwoColumWidget()
+: <a class="el" href="classDSettingsWidgetFactory.html#af537111ac38912930bc9ee1a9715a9e0">DSettingsWidgetFactory</a>
+</li>
+<li>createWidget()
+: <a class="el" href="classDSettingsWidgetFactory.html#aa19df5a40136e23d2e042a6775e1b544">DSettingsWidgetFactory</a>
+</li>
+<li>cropImageChanged()
+: <a class="el" href="classDImageViewer.html#a0d31ad7447de85145bae738938d9fb9e">DImageViewer</a>
+</li>
+<li>cropImageRect()
+: <a class="el" href="classDImageViewer.html#a761323a5e0197ee0459d41ef9aa7a5b1">DImageViewer</a>
+</li>
+<li>crumbList()
+: <a class="el" href="classDCrumbEdit.html#ab719fa214451a1b859bced185e816e0d">DCrumbEdit</a>
+</li>
+<li>crumbTextFormat()
+: <a class="el" href="classDCrumbEdit.html#af071df548002d18a87322eddb4e04083">DCrumbEdit</a>
+</li>
+<li>currentChanged()
+: <a class="el" href="classDTabBar.html#a314b26fbc471512c0b3eaa61758cb9cd">DTabBar</a>
+</li>
+<li>currentFont()
+: <a class="el" href="classDFontComboBox.html#a0a38f057e6eecb02656e303de83189cb">DFontComboBox</a>
+</li>
+<li>currentIndex
+: <a class="el" href="classDStackWidget.html#ae1284c77f6c92b6677bd94807e75bc71">DStackWidget</a>
+, <a class="el" href="classDTabBar.html#adafbedcddd5f512d62499c2628dbed86">DTabBar</a>
+</li>
+<li>currentIndexChanged()
+: <a class="el" href="classDStackWidget.html#abcaade2cbd958cf14fddc8647d1fccd8">DStackWidget</a>
+</li>
+<li>currentPage
+: <a class="el" href="classDPageIndicator.html#ae490c57259aef4492790710ececef20b">DPageIndicator</a>
+, <a class="el" href="classDPrintPreviewWidget.html#aa267dddaf5b75d52b29299a82e3a1e23">DPrintPreviewWidget</a>
+</li>
+<li>currentWidget
+: <a class="el" href="classDStackWidget.html#a24a9011e75fd17a65aeafb63376fa394">DStackWidget</a>
+</li>
+<li>currentWidgetChanged()
+: <a class="el" href="classDStackWidget.html#ae5ae21af0b824919a4a34b4b500dd5d1">DStackWidget</a>
+</li>
+<li>currentWorkspaceWindowIdList()
+: <a class="el" href="classDWindowManagerHelper.html#aceb9757b8e420dab428560c24b09b25a">DWindowManagerHelper</a>
+</li>
+<li>currentWorkspaceWindows()
+: <a class="el" href="classDWindowManagerHelper.html#a6225c7cc9df459f5af43fe770682a7cc">DWindowManagerHelper</a>
+</li>
+<li>cursorPosition
+: <a class="el" href="classDIpv4LineEdit.html#aca3e0bd1d36a4bb00d3bd0415c2f2892">DIpv4LineEdit</a>
+</li>
+<li>customHandler()
+: <a class="el" href="classDApplication.html#a44fc3e9f9bcc317aefeb03bfa48cd51b">DApplication</a>
+</li>
+<li>customizedQtThemeConfigPath()
+: <a class="el" href="classDApplication.html#a743686e65409f08066a3de8ad35cb136">DApplication</a>
+</li>
+<li>customPictureWatermarkChoosed()
+: <a class="el" href="classDPrintPreviewDialogPrivate.html#a4ce835450d27a5c42f16999efad8c712">DPrintPreviewDialogPrivate</a>
+</li>
+<li>customQtThemeConfigPath()
+: <a class="el" href="classDApplication.html#a21c6c54db70b9818a9e1b1a4467ee02c">DApplication</a>
+</li>
+<li>customQtThemeConfigPathByUserHome()
+: <a class="el" href="classDApplication.html#a1b32ce2e08dc3e498fae3a20eac26c12">DApplication</a>
+</li>
+<li>cutEnabled()
+: <a class="el" href="classDLineEdit.html#a63d415acd3fbe55919f20931675541eb">DLineEdit</a>
+</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">文档生成时间:doxtime</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

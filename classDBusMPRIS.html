@@ -1,0 +1,395 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: DBusMPRIS类 参考</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="change address" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classDBusMPRIS.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-slots">Public 槽</a> &#124;
+<a href="#signals">信号</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#properties">属性</a> &#124;
+<a href="classDBusMPRIS-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">DBusMPRIS类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 DBusMPRIS 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classDBusMPRIS.png" alt=""/>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Public 槽</h2></td></tr>
+<tr class="memitem:a3eb4c92ef03a6fe280d7097cfac5a637"><td class="memItemLeft" align="right" valign="top"><a id="a3eb4c92ef03a6fe280d7097cfac5a637"></a>
+QDBusPendingReply&#160;</td><td class="memItemRight" valign="bottom"><b>Next</b> ()</td></tr>
+<tr class="separator:a3eb4c92ef03a6fe280d7097cfac5a637"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af71defd2d15b75b095c8d123f27d28e8"><td class="memItemLeft" align="right" valign="top"><a id="af71defd2d15b75b095c8d123f27d28e8"></a>
+QDBusPendingReply&#160;</td><td class="memItemRight" valign="bottom"><b>OpenUri</b> (const QString &amp;Uri)</td></tr>
+<tr class="separator:af71defd2d15b75b095c8d123f27d28e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b7b164a2af7502023f3709ebd66376e"><td class="memItemLeft" align="right" valign="top"><a id="a5b7b164a2af7502023f3709ebd66376e"></a>
+QDBusPendingReply&#160;</td><td class="memItemRight" valign="bottom"><b>Pause</b> ()</td></tr>
+<tr class="separator:a5b7b164a2af7502023f3709ebd66376e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac599de0ddba48e8de32de28391be5973"><td class="memItemLeft" align="right" valign="top"><a id="ac599de0ddba48e8de32de28391be5973"></a>
+QDBusPendingReply&#160;</td><td class="memItemRight" valign="bottom"><b>Play</b> ()</td></tr>
+<tr class="separator:ac599de0ddba48e8de32de28391be5973"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c76995234c14494073bf95b64f0bc4c"><td class="memItemLeft" align="right" valign="top"><a id="a7c76995234c14494073bf95b64f0bc4c"></a>
+QDBusPendingReply&#160;</td><td class="memItemRight" valign="bottom"><b>PlayPause</b> ()</td></tr>
+<tr class="separator:a7c76995234c14494073bf95b64f0bc4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af728e85088fc444858ba0ad10313e9d7"><td class="memItemLeft" align="right" valign="top"><a id="af728e85088fc444858ba0ad10313e9d7"></a>
+QDBusPendingReply&#160;</td><td class="memItemRight" valign="bottom"><b>Previous</b> ()</td></tr>
+<tr class="separator:af728e85088fc444858ba0ad10313e9d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab56932f52d6f49cffa2d6bbd11b39862"><td class="memItemLeft" align="right" valign="top"><a id="ab56932f52d6f49cffa2d6bbd11b39862"></a>
+QDBusPendingReply&#160;</td><td class="memItemRight" valign="bottom"><b>Seek</b> (qlonglong Offset)</td></tr>
+<tr class="separator:ab56932f52d6f49cffa2d6bbd11b39862"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0274d314cd1e1d0a89a80f2c7190abb1"><td class="memItemLeft" align="right" valign="top"><a id="a0274d314cd1e1d0a89a80f2c7190abb1"></a>
+QDBusPendingReply&#160;</td><td class="memItemRight" valign="bottom"><b>SetPosition</b> (const QDBusObjectPath &amp;TrackId, qlonglong Position)</td></tr>
+<tr class="separator:a0274d314cd1e1d0a89a80f2c7190abb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafd11e7560735251514541e67464e9b4"><td class="memItemLeft" align="right" valign="top"><a id="aafd11e7560735251514541e67464e9b4"></a>
+QDBusPendingReply&#160;</td><td class="memItemRight" valign="bottom"><b>Stop</b> ()</td></tr>
+<tr class="separator:aafd11e7560735251514541e67464e9b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+信号</h2></td></tr>
+<tr class="memitem:a67707ef7d16aa2ecd2c5b8bfe87f1d0e"><td class="memItemLeft" align="right" valign="top"><a id="a67707ef7d16aa2ecd2c5b8bfe87f1d0e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Seeked</b> (qlonglong Position)</td></tr>
+<tr class="separator:a67707ef7d16aa2ecd2c5b8bfe87f1d0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abca696e76afe7b6dba7443c21f8c8e7f"><td class="memItemLeft" align="right" valign="top"><a id="abca696e76afe7b6dba7443c21f8c8e7f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CanControlChanged</b> (bool value)</td></tr>
+<tr class="separator:abca696e76afe7b6dba7443c21f8c8e7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3766060f5c050a9cdc09626387191149"><td class="memItemLeft" align="right" valign="top"><a id="a3766060f5c050a9cdc09626387191149"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CanShowInUIChanged</b> (bool value)</td></tr>
+<tr class="separator:a3766060f5c050a9cdc09626387191149"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af422f397fecd2ed84861c5f9c8899fc1"><td class="memItemLeft" align="right" valign="top"><a id="af422f397fecd2ed84861c5f9c8899fc1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CanGoNextChanged</b> (bool value)</td></tr>
+<tr class="separator:af422f397fecd2ed84861c5f9c8899fc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd58cb93e90d4bc44d06553d65777d47"><td class="memItemLeft" align="right" valign="top"><a id="acd58cb93e90d4bc44d06553d65777d47"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CanGoPreviousChanged</b> (bool value)</td></tr>
+<tr class="separator:acd58cb93e90d4bc44d06553d65777d47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36a6f6992af79793b202aa4998e36af1"><td class="memItemLeft" align="right" valign="top"><a id="a36a6f6992af79793b202aa4998e36af1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CanPauseChanged</b> (bool value)</td></tr>
+<tr class="separator:a36a6f6992af79793b202aa4998e36af1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23f65663afb1dfb3d67e3941fdcd99c0"><td class="memItemLeft" align="right" valign="top"><a id="a23f65663afb1dfb3d67e3941fdcd99c0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CanPlayChanged</b> (bool value)</td></tr>
+<tr class="separator:a23f65663afb1dfb3d67e3941fdcd99c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31f497bc9feb1fb1979c8c557f7e5759"><td class="memItemLeft" align="right" valign="top"><a id="a31f497bc9feb1fb1979c8c557f7e5759"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CanSeekChanged</b> (bool value)</td></tr>
+<tr class="separator:a31f497bc9feb1fb1979c8c557f7e5759"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae9749a5f01ef53452cb5cddf394f802"><td class="memItemLeft" align="right" valign="top"><a id="aae9749a5f01ef53452cb5cddf394f802"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>LoopStatusChanged</b> (const QString &amp;value)</td></tr>
+<tr class="separator:aae9749a5f01ef53452cb5cddf394f802"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affc339ba8e8f718085a20dc8fae2b8a6"><td class="memItemLeft" align="right" valign="top"><a id="affc339ba8e8f718085a20dc8fae2b8a6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>MaximumRateChanged</b> (double value)</td></tr>
+<tr class="separator:affc339ba8e8f718085a20dc8fae2b8a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad04a7b471bdfb24c65335b3689066088"><td class="memItemLeft" align="right" valign="top"><a id="ad04a7b471bdfb24c65335b3689066088"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>MetadataChanged</b> (const QVariantMap &amp;value)</td></tr>
+<tr class="separator:ad04a7b471bdfb24c65335b3689066088"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b75a7997ef0104c799f010bf7cf1ae4"><td class="memItemLeft" align="right" valign="top"><a id="a6b75a7997ef0104c799f010bf7cf1ae4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>MinimumRateChanged</b> (double value)</td></tr>
+<tr class="separator:a6b75a7997ef0104c799f010bf7cf1ae4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bdf9d2c92d3345fe1bbb86fb6ae89cd"><td class="memItemLeft" align="right" valign="top"><a id="a4bdf9d2c92d3345fe1bbb86fb6ae89cd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>PlaybackStatusChanged</b> (const QString &amp;value)</td></tr>
+<tr class="separator:a4bdf9d2c92d3345fe1bbb86fb6ae89cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5f2380e6fc767244e347882f7053355"><td class="memItemLeft" align="right" valign="top"><a id="af5f2380e6fc767244e347882f7053355"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>PositionChanged</b> (qlonglong value)</td></tr>
+<tr class="separator:af5f2380e6fc767244e347882f7053355"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07d3780d21ec4490bff57a42b68859ce"><td class="memItemLeft" align="right" valign="top"><a id="a07d3780d21ec4490bff57a42b68859ce"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RateChanged</b> (double value)</td></tr>
+<tr class="separator:a07d3780d21ec4490bff57a42b68859ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f0be287cb4c7f8a4b17548444d5fe8c"><td class="memItemLeft" align="right" valign="top"><a id="a5f0be287cb4c7f8a4b17548444d5fe8c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ShuffleChanged</b> (bool value)</td></tr>
+<tr class="separator:a5f0be287cb4c7f8a4b17548444d5fe8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a559e34a576943b1425f03ecfc2a2d0c9"><td class="memItemLeft" align="right" valign="top"><a id="a559e34a576943b1425f03ecfc2a2d0c9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>VolumeChanged</b> (double value)</td></tr>
+<tr class="separator:a559e34a576943b1425f03ecfc2a2d0c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a41629e62df96595bc4d99bd9df51840f"><td class="memItemLeft" align="right" valign="top"><a id="a41629e62df96595bc4d99bd9df51840f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DBusMPRIS</b> (const QString &amp;service, const QString &amp;path, const QDBusConnection &amp;connection, QObject *parent=0)</td></tr>
+<tr class="separator:a41629e62df96595bc4d99bd9df51840f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adca0dd4c73b2d290576c9a890c6dba6d"><td class="memItemLeft" align="right" valign="top"><a id="adca0dd4c73b2d290576c9a890c6dba6d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>canControl</b> () const</td></tr>
+<tr class="separator:adca0dd4c73b2d290576c9a890c6dba6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10efa663b46958dec09939d0b6906a29"><td class="memItemLeft" align="right" valign="top"><a id="a10efa663b46958dec09939d0b6906a29"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>canShowInUI</b> () const</td></tr>
+<tr class="separator:a10efa663b46958dec09939d0b6906a29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff037eb7b5e79b19be09ce4dba43606c"><td class="memItemLeft" align="right" valign="top"><a id="aff037eb7b5e79b19be09ce4dba43606c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>canGoNext</b> () const</td></tr>
+<tr class="separator:aff037eb7b5e79b19be09ce4dba43606c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68c513760bf2dd34f6616c5c0d1afa14"><td class="memItemLeft" align="right" valign="top"><a id="a68c513760bf2dd34f6616c5c0d1afa14"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>canGoPrevious</b> () const</td></tr>
+<tr class="separator:a68c513760bf2dd34f6616c5c0d1afa14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70667899bf6adddf52e89af9fba7e754"><td class="memItemLeft" align="right" valign="top"><a id="a70667899bf6adddf52e89af9fba7e754"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>canPause</b> () const</td></tr>
+<tr class="separator:a70667899bf6adddf52e89af9fba7e754"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeff033864a3f26026ab735a52c03a5bf"><td class="memItemLeft" align="right" valign="top"><a id="aeff033864a3f26026ab735a52c03a5bf"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>canPlay</b> () const</td></tr>
+<tr class="separator:aeff033864a3f26026ab735a52c03a5bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acca1839b6f79b535c537de7ee5bc25b7"><td class="memItemLeft" align="right" valign="top"><a id="acca1839b6f79b535c537de7ee5bc25b7"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>canSeek</b> () const</td></tr>
+<tr class="separator:acca1839b6f79b535c537de7ee5bc25b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80a2c4d5e0d567197fe1e89af46dfadf"><td class="memItemLeft" align="right" valign="top"><a id="a80a2c4d5e0d567197fe1e89af46dfadf"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>loopStatus</b> () const</td></tr>
+<tr class="separator:a80a2c4d5e0d567197fe1e89af46dfadf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b7653f49a708c89d4d9dc7ecba97953"><td class="memItemLeft" align="right" valign="top"><a id="a9b7653f49a708c89d4d9dc7ecba97953"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setLoopStatus</b> (const QString &amp;value)</td></tr>
+<tr class="separator:a9b7653f49a708c89d4d9dc7ecba97953"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a555ea9004eab1f4fb262dc315399c8ef"><td class="memItemLeft" align="right" valign="top"><a id="a555ea9004eab1f4fb262dc315399c8ef"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>maximumRate</b> () const</td></tr>
+<tr class="separator:a555ea9004eab1f4fb262dc315399c8ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab53f15a5072c787fc3a83efc9c5db8e"><td class="memItemLeft" align="right" valign="top"><a id="aab53f15a5072c787fc3a83efc9c5db8e"></a>
+QVariantMap&#160;</td><td class="memItemRight" valign="bottom"><b>metadata</b> () const</td></tr>
+<tr class="separator:aab53f15a5072c787fc3a83efc9c5db8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc9f33a95a9c5b42f46f74ea3e52deb4"><td class="memItemLeft" align="right" valign="top"><a id="acc9f33a95a9c5b42f46f74ea3e52deb4"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>minimumRate</b> () const</td></tr>
+<tr class="separator:acc9f33a95a9c5b42f46f74ea3e52deb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92e63a7c0be8199824d07067baf0e0f4"><td class="memItemLeft" align="right" valign="top"><a id="a92e63a7c0be8199824d07067baf0e0f4"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>playbackStatus</b> () const</td></tr>
+<tr class="separator:a92e63a7c0be8199824d07067baf0e0f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2b5787d0c2df1cda8d0a266d8ffdd1e"><td class="memItemLeft" align="right" valign="top"><a id="af2b5787d0c2df1cda8d0a266d8ffdd1e"></a>
+qlonglong&#160;</td><td class="memItemRight" valign="bottom"><b>position</b> () const</td></tr>
+<tr class="separator:af2b5787d0c2df1cda8d0a266d8ffdd1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e4d4475c2570af5ef3d79b7a1c23934"><td class="memItemLeft" align="right" valign="top"><a id="a3e4d4475c2570af5ef3d79b7a1c23934"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>rate</b> () const</td></tr>
+<tr class="separator:a3e4d4475c2570af5ef3d79b7a1c23934"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07b513f6c5d4416d294505b51c58f050"><td class="memItemLeft" align="right" valign="top"><a id="a07b513f6c5d4416d294505b51c58f050"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setRate</b> (double value)</td></tr>
+<tr class="separator:a07b513f6c5d4416d294505b51c58f050"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43ca6ae0bdb827136fdbb694fc88291f"><td class="memItemLeft" align="right" valign="top"><a id="a43ca6ae0bdb827136fdbb694fc88291f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>shuffle</b> () const</td></tr>
+<tr class="separator:a43ca6ae0bdb827136fdbb694fc88291f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a75b5fef7d822ef520fbd27ae6afba8"><td class="memItemLeft" align="right" valign="top"><a id="a4a75b5fef7d822ef520fbd27ae6afba8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setShuffle</b> (bool value)</td></tr>
+<tr class="separator:a4a75b5fef7d822ef520fbd27ae6afba8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97c23ee65bd3bc67966a52634a7a70f8"><td class="memItemLeft" align="right" valign="top"><a id="a97c23ee65bd3bc67966a52634a7a70f8"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>volume</b> () const</td></tr>
+<tr class="separator:a97c23ee65bd3bc67966a52634a7a70f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dc9b6f418906d6038ae946d408c11f2"><td class="memItemLeft" align="right" valign="top"><a id="a0dc9b6f418906d6038ae946d408c11f2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setVolume</b> (double value)</td></tr>
+<tr class="separator:a0dc9b6f418906d6038ae946d408c11f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a44e6502774de789eb6a958a7ee657304"><td class="memItemLeft" align="right" valign="top"><a id="a44e6502774de789eb6a958a7ee657304"></a>
+static const char *&#160;</td><td class="memItemRight" valign="bottom"><b>staticInterfaceName</b> ()</td></tr>
+<tr class="separator:a44e6502774de789eb6a958a7ee657304"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:afe594fd066fd8ab2143ecebfa341ece4"><td class="memItemLeft" align="right" valign="top"><a id="afe594fd066fd8ab2143ecebfa341ece4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>CanControl</b></td></tr>
+<tr class="separator:afe594fd066fd8ab2143ecebfa341ece4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9c1d8ee0e3d78023f0b4bf973c3cae5"><td class="memItemLeft" align="right" valign="top"><a id="aa9c1d8ee0e3d78023f0b4bf973c3cae5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>CanShowInUI</b></td></tr>
+<tr class="separator:aa9c1d8ee0e3d78023f0b4bf973c3cae5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfda6561a92f43b3a1a96597923ff483"><td class="memItemLeft" align="right" valign="top"><a id="abfda6561a92f43b3a1a96597923ff483"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>CanGoNext</b></td></tr>
+<tr class="separator:abfda6561a92f43b3a1a96597923ff483"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe40dd66a48ccd6a86e9721ef5dd37ec"><td class="memItemLeft" align="right" valign="top"><a id="abe40dd66a48ccd6a86e9721ef5dd37ec"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>CanGoPrevious</b></td></tr>
+<tr class="separator:abe40dd66a48ccd6a86e9721ef5dd37ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afeeef6079abe87aceaddd87eb65d5201"><td class="memItemLeft" align="right" valign="top"><a id="afeeef6079abe87aceaddd87eb65d5201"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>CanPause</b></td></tr>
+<tr class="separator:afeeef6079abe87aceaddd87eb65d5201"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb0756f2354365ef39a29b8b8c04a66d"><td class="memItemLeft" align="right" valign="top"><a id="afb0756f2354365ef39a29b8b8c04a66d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>CanPlay</b></td></tr>
+<tr class="separator:afb0756f2354365ef39a29b8b8c04a66d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e48f98e6b6185d39ee929ef5510a344"><td class="memItemLeft" align="right" valign="top"><a id="a1e48f98e6b6185d39ee929ef5510a344"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>CanSeek</b></td></tr>
+<tr class="separator:a1e48f98e6b6185d39ee929ef5510a344"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad56bac70879b90264036e0d1dd45dc65"><td class="memItemLeft" align="right" valign="top"><a id="ad56bac70879b90264036e0d1dd45dc65"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>LoopStatus</b></td></tr>
+<tr class="separator:ad56bac70879b90264036e0d1dd45dc65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bd34393bd31c9d70e74bc01c35d5112"><td class="memItemLeft" align="right" valign="top"><a id="a8bd34393bd31c9d70e74bc01c35d5112"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>MaximumRate</b></td></tr>
+<tr class="separator:a8bd34393bd31c9d70e74bc01c35d5112"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a3997af309d4a85bf141f84ebe45b33"><td class="memItemLeft" align="right" valign="top"><a id="a6a3997af309d4a85bf141f84ebe45b33"></a>
+QVariantMap&#160;</td><td class="memItemRight" valign="bottom"><b>Metadata</b></td></tr>
+<tr class="separator:a6a3997af309d4a85bf141f84ebe45b33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03d7bc3001725af9be8964d770b580dc"><td class="memItemLeft" align="right" valign="top"><a id="a03d7bc3001725af9be8964d770b580dc"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>MinimumRate</b></td></tr>
+<tr class="separator:a03d7bc3001725af9be8964d770b580dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f66d63b5a46c044b9867e1835c7d916"><td class="memItemLeft" align="right" valign="top"><a id="a2f66d63b5a46c044b9867e1835c7d916"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>PlaybackStatus</b></td></tr>
+<tr class="separator:a2f66d63b5a46c044b9867e1835c7d916"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf4c92903a57e2f11e126ea1a920f51d"><td class="memItemLeft" align="right" valign="top"><a id="aaf4c92903a57e2f11e126ea1a920f51d"></a>
+qlonglong&#160;</td><td class="memItemRight" valign="bottom"><b>Position</b></td></tr>
+<tr class="separator:aaf4c92903a57e2f11e126ea1a920f51d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2186ad463cece01733eb565892c35bc7"><td class="memItemLeft" align="right" valign="top"><a id="a2186ad463cece01733eb565892c35bc7"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>Rate</b></td></tr>
+<tr class="separator:a2186ad463cece01733eb565892c35bc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1335aff4706f64bb40cd04394de09e42"><td class="memItemLeft" align="right" valign="top"><a id="a1335aff4706f64bb40cd04394de09e42"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>Shuffle</b></td></tr>
+<tr class="separator:a1335aff4706f64bb40cd04394de09e42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45da8df4ddead34b2563d4027ddb9582"><td class="memItemLeft" align="right" valign="top"><a id="a45da8df4ddead34b2563d4027ddb9582"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>Volume</b></td></tr>
+<tr class="separator:a45da8df4ddead34b2563d4027ddb9582"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dtkwidget/src/widgets/private/mpris/<a class="el" href="dbusmpris_8h_source.html">dbusmpris.h</a></li>
+<li>dtkwidget/src/widgets/private/mpris/dbusmpris.cpp</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classDBusMPRIS.html">DBusMPRIS</a></li>
+    <li class="footer">文档生成时间:doxtime</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

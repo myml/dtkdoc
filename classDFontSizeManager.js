@@ -1,0 +1,36 @@
+var classDFontSizeManager =
+[
+    [ "SizeType", "classDFontSizeManager.html#add9f9b6f37800b08b3be3bf57c9600b4", [
+      [ "T1", "classDFontSizeManager.html#add9f9b6f37800b08b3be3bf57c9600b4a4be369552e78b0c35aabca7494aaf578", null ],
+      [ "T2", "classDFontSizeManager.html#add9f9b6f37800b08b3be3bf57c9600b4aa5b489955636aef70d2b0de20b2360f3", null ],
+      [ "T3", "classDFontSizeManager.html#add9f9b6f37800b08b3be3bf57c9600b4acdf6870154de588a474f249ebc308a13", null ],
+      [ "T4", "classDFontSizeManager.html#add9f9b6f37800b08b3be3bf57c9600b4a82ab9a13cac0c910417f8a77a45d3b23", null ],
+      [ "T5", "classDFontSizeManager.html#add9f9b6f37800b08b3be3bf57c9600b4a7f10f86b91bae99d2a5def36fccf940e", null ],
+      [ "T6", "classDFontSizeManager.html#add9f9b6f37800b08b3be3bf57c9600b4a3c0a78bfcf266d2e36231c7530485397", null ],
+      [ "T7", "classDFontSizeManager.html#add9f9b6f37800b08b3be3bf57c9600b4ad2427b5e909955123dcaef582438d205", null ],
+      [ "T8", "classDFontSizeManager.html#add9f9b6f37800b08b3be3bf57c9600b4a12417de5989e6b030c390d9848c0f0aa", null ],
+      [ "T9", "classDFontSizeManager.html#add9f9b6f37800b08b3be3bf57c9600b4a49c85edf1844ef5acf654fda68b60dd4", null ],
+      [ "T10", "classDFontSizeManager.html#add9f9b6f37800b08b3be3bf57c9600b4a0b6b422a0bffbbc9e9da4edb5eed78eb", null ],
+      [ "NSizeTypes", "classDFontSizeManager.html#add9f9b6f37800b08b3be3bf57c9600b4a50af1943c9f26ccdc644415f5ccb59d5", null ]
+    ] ],
+    [ "bind", "classDFontSizeManager.html#acdb3d8016a3b881d1274f6836dbeec02", null ],
+    [ "bind", "classDFontSizeManager.html#a1882fe37243ec33dca65b7e549420296", null ],
+    [ "fontPixelSize", "classDFontSizeManager.html#a1390d4c5aa962a08d182b0c882eadc92", null ],
+    [ "fontPixelSize", "classDFontSizeManager.html#ad1668e295e236a3cd79d35bb7d199ee4", null ],
+    [ "get", "classDFontSizeManager.html#a2daac5892873839fceaf25cde57ccd38", null ],
+    [ "get", "classDFontSizeManager.html#a88655d29842b22bc027a4c882c29813c", null ],
+    [ "instance", "classDFontSizeManager.html#a4d38b4d13ee70801eb8f9f53851469b4", null ],
+    [ "setFontGenericPixelSize", "classDFontSizeManager.html#ae51e5a4367f947716d256cf1ed3e3564", null ],
+    [ "setFontPixelSize", "classDFontSizeManager.html#a87e6d4fe0e47448080059cfd61d44fe5", null ],
+    [ "t1", "classDFontSizeManager.html#a33efbe9c8f9e370e3053dec391ca3ef5", null ],
+    [ "t10", "classDFontSizeManager.html#ae9abaa4bca350ee00335cf24c6ea6fbf", null ],
+    [ "t2", "classDFontSizeManager.html#ad18d9af720c6a4fb642b8999cfbaf004", null ],
+    [ "t3", "classDFontSizeManager.html#a943b7e6d3fde01a81bf9e94bd4771926", null ],
+    [ "t4", "classDFontSizeManager.html#ae4e3d05f71b08f2ed57dfe65259088a3", null ],
+    [ "t5", "classDFontSizeManager.html#a519628f16234ba06d4d1e243879bf3fe", null ],
+    [ "t6", "classDFontSizeManager.html#a2b28daffaa7cc1840466d534cfa8b474", null ],
+    [ "t7", "classDFontSizeManager.html#ab1ac75f79ff43568d30c802e0746b640", null ],
+    [ "t8", "classDFontSizeManager.html#ab3c6cc50c520679bc6f8f464dbf6819e", null ],
+    [ "t9", "classDFontSizeManager.html#a21318fdaefb60138435f933a62d4ffb2", null ],
+    [ "unbind", "classDFontSizeManager.html#a21d1a132e973d1be037e4a9066baa5f4", null ]
+];

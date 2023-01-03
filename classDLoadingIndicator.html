@@ -1,0 +1,704 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: DLoadingIndicator类 参考</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="change address" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classDLoadingIndicator.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-slots">Public 槽</a> &#124;
+<a href="#signals">信号</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#properties">属性</a> &#124;
+<a href="classDLoadingIndicator-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">DLoadingIndicator类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 DLoadingIndicator 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classDLoadingIndicator.png" alt=""/>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a8df63c04b02fd31fbfb610ed9e0a43cb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoadingIndicator.html#a8df63c04b02fd31fbfb610ed9e0a43cb">RotationDirection</a> { <a class="el" href="classDLoadingIndicator.html#a8df63c04b02fd31fbfb610ed9e0a43cbab7af88b64e8a3aac305924491b1d4e6a">Clockwise</a>
+, <a class="el" href="classDLoadingIndicator.html#a8df63c04b02fd31fbfb610ed9e0a43cba655b8bc509d407f52e33b64bf20585e9">Counterclockwise</a>
+ }</td></tr>
+<tr class="memdesc:a8df63c04b02fd31fbfb610ed9e0a43cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">The RotationDirection enum contains the possible rotation directions of the <a class="el" href="classDLoadingIndicator.html">DLoadingIndicator</a> widget.  <a href="classDLoadingIndicator.html#a8df63c04b02fd31fbfb610ed9e0a43cb">更多...</a><br /></td></tr>
+<tr class="separator:a8df63c04b02fd31fbfb610ed9e0a43cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Public 槽</h2></td></tr>
+<tr class="memitem:a3c3b86d9e0a09d35eb6eadb16bb5ac52"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoadingIndicator.html#a3c3b86d9e0a09d35eb6eadb16bb5ac52">start</a> ()</td></tr>
+<tr class="memdesc:a3c3b86d9e0a09d35eb6eadb16bb5ac52"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDLoadingIndicator.html#a3c3b86d9e0a09d35eb6eadb16bb5ac52" title="DLoadingIndicator::start starts the loading animation.">DLoadingIndicator::start</a> starts the loading animation.  <a href="classDLoadingIndicator.html#a3c3b86d9e0a09d35eb6eadb16bb5ac52">更多...</a><br /></td></tr>
+<tr class="separator:a3c3b86d9e0a09d35eb6eadb16bb5ac52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acce3d2bd2dd286b71e404408c94bcd5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoadingIndicator.html#acce3d2bd2dd286b71e404408c94bcd5e">stop</a> ()</td></tr>
+<tr class="memdesc:acce3d2bd2dd286b71e404408c94bcd5e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDLoadingIndicator.html#acce3d2bd2dd286b71e404408c94bcd5e" title="DLoadingIndicator::stop stops the loading animation.">DLoadingIndicator::stop</a> stops the loading animation.  <a href="classDLoadingIndicator.html#acce3d2bd2dd286b71e404408c94bcd5e">更多...</a><br /></td></tr>
+<tr class="separator:acce3d2bd2dd286b71e404408c94bcd5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e7ac95f35f19a54573fc9d5aaecb457"><td class="memItemLeft" align="right" valign="top"><a id="a0e7ac95f35f19a54573fc9d5aaecb457"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setLoading</b> (bool flag)</td></tr>
+<tr class="separator:a0e7ac95f35f19a54573fc9d5aaecb457"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a342d41ee7102282d236e5a80b9db81dd"><td class="memItemLeft" align="right" valign="top"><a id="a342d41ee7102282d236e5a80b9db81dd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setAniDuration</b> (int msecs)</td></tr>
+<tr class="separator:a342d41ee7102282d236e5a80b9db81dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dfeec7aed72bace6671b3812e65cb3d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoadingIndicator.html#a5dfeec7aed72bace6671b3812e65cb3d">setAniEasingCurve</a> (const QEasingCurve &amp;easing)</td></tr>
+<tr class="memdesc:a5dfeec7aed72bace6671b3812e65cb3d"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDLoadingIndicator.html#a5dfeec7aed72bace6671b3812e65cb3d" title="DLoadingIndicator::setAniEasingCurve sets an easing curve on the loading animation....">DLoadingIndicator::setAniEasingCurve</a> sets an easing curve on the loading animation. <em>easing</em>  <a href="classDLoadingIndicator.html#a5dfeec7aed72bace6671b3812e65cb3d">更多...</a><br /></td></tr>
+<tr class="separator:a5dfeec7aed72bace6671b3812e65cb3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a985c82d849aaef0b8e85e1e7c9347407"><td class="memItemLeft" align="right" valign="top"><a id="a985c82d849aaef0b8e85e1e7c9347407"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setBackgroundColor</b> (const QColor &amp;color)</td></tr>
+<tr class="separator:a985c82d849aaef0b8e85e1e7c9347407"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c3fbfe4ed1a0af2d155c6172d4b229c"><td class="memItemLeft" align="right" valign="top"><a id="a4c3fbfe4ed1a0af2d155c6172d4b229c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setRotate</b> (QVariant angle)</td></tr>
+<tr class="separator:a4c3fbfe4ed1a0af2d155c6172d4b229c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae33a1286f7c007c24c62e10ab51e55f2"><td class="memItemLeft" align="right" valign="top"><a id="ae33a1286f7c007c24c62e10ab51e55f2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setWidgetSource</b> (QWidget *<a class="el" href="classDLoadingIndicator.html#a37a3a4ad2f52924a1ca3897b7c31dc45">widgetSource</a>)</td></tr>
+<tr class="separator:ae33a1286f7c007c24c62e10ab51e55f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea3b0df9a7695d6db55f5d5cac373022"><td class="memItemLeft" align="right" valign="top"><a id="aea3b0df9a7695d6db55f5d5cac373022"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setImageSource</b> (const QPixmap &amp;<a class="el" href="classDLoadingIndicator.html#ae117367f775533a5c6be22ebd0ec7dba">imageSource</a>)</td></tr>
+<tr class="separator:aea3b0df9a7695d6db55f5d5cac373022"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a146f6c4256da548e1853d467fc2f49"><td class="memItemLeft" align="right" valign="top"><a id="a7a146f6c4256da548e1853d467fc2f49"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setAniEasingType</b> (QEasingCurve::Type <a class="el" href="classDLoadingIndicator.html#a593fda6f6627ea26b3d127733a7f65a8">aniEasingType</a>)</td></tr>
+<tr class="separator:a7a146f6c4256da548e1853d467fc2f49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d1b9745cde29d0f7f30f529cf40dc18"><td class="memItemLeft" align="right" valign="top"><a id="a1d1b9745cde29d0f7f30f529cf40dc18"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setSmooth</b> (bool <a class="el" href="classDLoadingIndicator.html#a12d514bc6d4dc260a2149211f2cb3493">smooth</a>)</td></tr>
+<tr class="separator:a1d1b9745cde29d0f7f30f529cf40dc18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecd2b574fd1a9103e927b5f1493ca07b"><td class="memItemLeft" align="right" valign="top"><a id="aecd2b574fd1a9103e927b5f1493ca07b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setDirection</b> (<a class="el" href="classDLoadingIndicator.html#a8df63c04b02fd31fbfb610ed9e0a43cb">RotationDirection</a> <a class="el" href="classDLoadingIndicator.html#a0d1164dbf393fb920ff49b49d4a0711d">direction</a>)</td></tr>
+<tr class="separator:aecd2b574fd1a9103e927b5f1493ca07b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+信号</h2></td></tr>
+<tr class="memitem:ae5d12de52c396ea990e7d5db5bf03746"><td class="memItemLeft" align="right" valign="top"><a id="ae5d12de52c396ea990e7d5db5bf03746"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>directionChanged</b> (<a class="el" href="classDLoadingIndicator.html#a8df63c04b02fd31fbfb610ed9e0a43cb">RotationDirection</a> <a class="el" href="classDLoadingIndicator.html#a0d1164dbf393fb920ff49b49d4a0711d">direction</a>)</td></tr>
+<tr class="separator:ae5d12de52c396ea990e7d5db5bf03746"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d7ec5e0ba930ca2783438f16f13a4e7"><td class="memItemLeft" align="right" valign="top"><a id="a8d7ec5e0ba930ca2783438f16f13a4e7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>rotateChanged</b> (qreal <a class="el" href="classDLoadingIndicator.html#aac9fdb1b3d1711d96e594d017b0fb81b">rotate</a>)</td></tr>
+<tr class="separator:a8d7ec5e0ba930ca2783438f16f13a4e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:adb5066aa85224301df325766c38dce0e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoadingIndicator.html#adb5066aa85224301df325766c38dce0e">DLoadingIndicator</a> (QWidget *parent=0)</td></tr>
+<tr class="memdesc:adb5066aa85224301df325766c38dce0e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDLoadingIndicator.html#adb5066aa85224301df325766c38dce0e" title="DLoadingIndicator::DLoadingIndicator constructs an instance of DLoadingIndicator. parent is passed to...">DLoadingIndicator::DLoadingIndicator</a> constructs an instance of <a class="el" href="classDLoadingIndicator.html">DLoadingIndicator</a>. <em>parent</em> is passed to QGraphicsView constructor.  <a href="classDLoadingIndicator.html#adb5066aa85224301df325766c38dce0e">更多...</a><br /></td></tr>
+<tr class="separator:adb5066aa85224301df325766c38dce0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82c49209de2f09d8271a54fdf138b3c5"><td class="memItemLeft" align="right" valign="top"><a id="a82c49209de2f09d8271a54fdf138b3c5"></a>
+QColor&#160;</td><td class="memItemRight" valign="bottom"><b>backgroundColor</b> () const</td></tr>
+<tr class="separator:a82c49209de2f09d8271a54fdf138b3c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7995df9bdcb74a9062c2149de15343e5"><td class="memItemLeft" align="right" valign="top"><a id="a7995df9bdcb74a9062c2149de15343e5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>loading</b> () const</td></tr>
+<tr class="separator:a7995df9bdcb74a9062c2149de15343e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad421e1c4cf9e5cfc7eb23af9c6b3475f"><td class="memItemLeft" align="right" valign="top"><a id="ad421e1c4cf9e5cfc7eb23af9c6b3475f"></a>
+QWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>widgetSource</b> () const</td></tr>
+<tr class="separator:ad421e1c4cf9e5cfc7eb23af9c6b3475f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae58b89069e74193363b8484e544d9115"><td class="memItemLeft" align="right" valign="top"><a id="ae58b89069e74193363b8484e544d9115"></a>
+QPixmap&#160;</td><td class="memItemRight" valign="bottom"><b>imageSource</b> () const</td></tr>
+<tr class="separator:ae58b89069e74193363b8484e544d9115"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0d90ee99d967aa95a4fda961ea97001"><td class="memItemLeft" align="right" valign="top"><a id="ad0d90ee99d967aa95a4fda961ea97001"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>aniDuration</b> () const</td></tr>
+<tr class="separator:ad0d90ee99d967aa95a4fda961ea97001"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac609d565652d53929c52a1f1912a328a"><td class="memItemLeft" align="right" valign="top"><a id="ac609d565652d53929c52a1f1912a328a"></a>
+QEasingCurve::Type&#160;</td><td class="memItemRight" valign="bottom"><b>aniEasingType</b> () const</td></tr>
+<tr class="separator:ac609d565652d53929c52a1f1912a328a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a99c2a74de9d5a25bb30686760bc2f5"><td class="memItemLeft" align="right" valign="top"><a id="a2a99c2a74de9d5a25bb30686760bc2f5"></a>
+QSize&#160;</td><td class="memItemRight" valign="bottom"><b>sizeHint</b> () const Q_DECL_OVERRIDE</td></tr>
+<tr class="separator:a2a99c2a74de9d5a25bb30686760bc2f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e04a59f932bb63247c041e4270c2c30"><td class="memItemLeft" align="right" valign="top"><a id="a9e04a59f932bb63247c041e4270c2c30"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>smooth</b> () const</td></tr>
+<tr class="separator:a9e04a59f932bb63247c041e4270c2c30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36ed27b12abf63e5d08bcd9f2a35b042"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDLoadingIndicator.html#a8df63c04b02fd31fbfb610ed9e0a43cb">RotationDirection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoadingIndicator.html#a36ed27b12abf63e5d08bcd9f2a35b042">direction</a> () const</td></tr>
+<tr class="separator:a36ed27b12abf63e5d08bcd9f2a35b042"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4636ce31be19b856a3fdd308be71d280"><td class="memItemLeft" align="right" valign="top"><a id="a4636ce31be19b856a3fdd308be71d280"></a>
+qreal&#160;</td><td class="memItemRight" valign="bottom"><b>rotate</b> () const</td></tr>
+<tr class="separator:a4636ce31be19b856a3fdd308be71d280"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a3f1d24a3778c3be0333b3cdc6464050d"><td class="memItemLeft" align="right" valign="top"><a id="a3f1d24a3778c3be0333b3cdc6464050d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>resizeEvent</b> (QResizeEvent *e) Q_DECL_OVERRIDE</td></tr>
+<tr class="separator:a3f1d24a3778c3be0333b3cdc6464050d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:af26a442d8aa04c44f9c8cca029f3d254"><td class="memItemLeft" align="right" valign="top">QColor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoadingIndicator.html#af26a442d8aa04c44f9c8cca029f3d254">backgroundColor</a></td></tr>
+<tr class="memdesc:af26a442d8aa04c44f9c8cca029f3d254"><td class="mdescLeft">&#160;</td><td class="mdescRight">This property holds the background color of this widget.  <a href="classDLoadingIndicator.html#af26a442d8aa04c44f9c8cca029f3d254">更多...</a><br /></td></tr>
+<tr class="separator:af26a442d8aa04c44f9c8cca029f3d254"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95e38e9633fed1a4c0a39587a3d77666"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoadingIndicator.html#a95e38e9633fed1a4c0a39587a3d77666">loading</a></td></tr>
+<tr class="memdesc:a95e38e9633fed1a4c0a39587a3d77666"><td class="mdescLeft">&#160;</td><td class="mdescRight">This property holds the animation state.  <a href="classDLoadingIndicator.html#a95e38e9633fed1a4c0a39587a3d77666">更多...</a><br /></td></tr>
+<tr class="separator:a95e38e9633fed1a4c0a39587a3d77666"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12d514bc6d4dc260a2149211f2cb3493"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoadingIndicator.html#a12d514bc6d4dc260a2149211f2cb3493">smooth</a></td></tr>
+<tr class="memdesc:a12d514bc6d4dc260a2149211f2cb3493"><td class="mdescLeft">&#160;</td><td class="mdescRight">This property holds whether the rendered content are antialiased or smoothly filtered.  <a href="classDLoadingIndicator.html#a12d514bc6d4dc260a2149211f2cb3493">更多...</a><br /></td></tr>
+<tr class="separator:a12d514bc6d4dc260a2149211f2cb3493"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae117367f775533a5c6be22ebd0ec7dba"><td class="memItemLeft" align="right" valign="top">QPixmap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoadingIndicator.html#ae117367f775533a5c6be22ebd0ec7dba">imageSource</a></td></tr>
+<tr class="memdesc:ae117367f775533a5c6be22ebd0ec7dba"><td class="mdescLeft">&#160;</td><td class="mdescRight">This property holds the image to be rendered as the content of the loading indicator.  <a href="classDLoadingIndicator.html#ae117367f775533a5c6be22ebd0ec7dba">更多...</a><br /></td></tr>
+<tr class="separator:ae117367f775533a5c6be22ebd0ec7dba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37a3a4ad2f52924a1ca3897b7c31dc45"><td class="memItemLeft" align="right" valign="top">QWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoadingIndicator.html#a37a3a4ad2f52924a1ca3897b7c31dc45">widgetSource</a></td></tr>
+<tr class="memdesc:a37a3a4ad2f52924a1ca3897b7c31dc45"><td class="mdescLeft">&#160;</td><td class="mdescRight">This property holds the widget to be rendered as the content of the loading indicator.  <a href="classDLoadingIndicator.html#a37a3a4ad2f52924a1ca3897b7c31dc45">更多...</a><br /></td></tr>
+<tr class="separator:a37a3a4ad2f52924a1ca3897b7c31dc45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a815545b1eb658674b6f8f6ce46f6aeaa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoadingIndicator.html#a815545b1eb658674b6f8f6ce46f6aeaa">aniDuration</a></td></tr>
+<tr class="memdesc:a815545b1eb658674b6f8f6ce46f6aeaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">This property holds the duration of the loading animation.  <a href="classDLoadingIndicator.html#a815545b1eb658674b6f8f6ce46f6aeaa">更多...</a><br /></td></tr>
+<tr class="separator:a815545b1eb658674b6f8f6ce46f6aeaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a593fda6f6627ea26b3d127733a7f65a8"><td class="memItemLeft" align="right" valign="top">QEasingCurve::Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoadingIndicator.html#a593fda6f6627ea26b3d127733a7f65a8">aniEasingType</a></td></tr>
+<tr class="memdesc:a593fda6f6627ea26b3d127733a7f65a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">This property holds the easing type of the easing curve used by the loading animation.  <a href="classDLoadingIndicator.html#a593fda6f6627ea26b3d127733a7f65a8">更多...</a><br /></td></tr>
+<tr class="separator:a593fda6f6627ea26b3d127733a7f65a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d1164dbf393fb920ff49b49d4a0711d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDLoadingIndicator.html#a8df63c04b02fd31fbfb610ed9e0a43cb">RotationDirection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoadingIndicator.html#a0d1164dbf393fb920ff49b49d4a0711d">direction</a></td></tr>
+<tr class="memdesc:a0d1164dbf393fb920ff49b49d4a0711d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This property holds the direction used while doing the rotation animation.  <a href="classDLoadingIndicator.html#a0d1164dbf393fb920ff49b49d4a0711d">更多...</a><br /></td></tr>
+<tr class="separator:a0d1164dbf393fb920ff49b49d4a0711d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac9fdb1b3d1711d96e594d017b0fb81b"><td class="memItemLeft" align="right" valign="top">qreal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoadingIndicator.html#aac9fdb1b3d1711d96e594d017b0fb81b">rotate</a></td></tr>
+<tr class="memdesc:aac9fdb1b3d1711d96e594d017b0fb81b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This property holds the current rotation of the content.  <a href="classDLoadingIndicator.html#aac9fdb1b3d1711d96e594d017b0fb81b">更多...</a><br /></td></tr>
+<tr class="separator:aac9fdb1b3d1711d96e594d017b0fb81b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">成员枚举类型说明</h2>
+<a id="a8df63c04b02fd31fbfb610ed9e0a43cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8df63c04b02fd31fbfb610ed9e0a43cb">&#9670;&nbsp;</a></span>RotationDirection</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classDLoadingIndicator.html#a8df63c04b02fd31fbfb610ed9e0a43cb">DLoadingIndicator::RotationDirection</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The RotationDirection enum contains the possible rotation directions of the <a class="el" href="classDLoadingIndicator.html">DLoadingIndicator</a> widget. </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a8df63c04b02fd31fbfb610ed9e0a43cbab7af88b64e8a3aac305924491b1d4e6a"></a>Clockwise&#160;</td><td class="fielddoc"><p>the rotation is clockwise </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8df63c04b02fd31fbfb610ed9e0a43cba655b8bc509d407f52e33b64bf20585e9"></a>Counterclockwise&#160;</td><td class="fielddoc"><p>the rotation is counterclockwise </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a id="adb5066aa85224301df325766c38dce0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb5066aa85224301df325766c38dce0e">&#9670;&nbsp;</a></span>DLoadingIndicator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DLoadingIndicator::DLoadingIndicator </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>0</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classDLoadingIndicator.html#adb5066aa85224301df325766c38dce0e" title="DLoadingIndicator::DLoadingIndicator constructs an instance of DLoadingIndicator. parent is passed to...">DLoadingIndicator::DLoadingIndicator</a> constructs an instance of <a class="el" href="classDLoadingIndicator.html">DLoadingIndicator</a>. <em>parent</em> is passed to QGraphicsView constructor. </p>
+<p><a class="el" href="classDLoadingIndicator.html#adb5066aa85224301df325766c38dce0e" title="DLoadingIndicator::DLoadingIndicator constructs an instance of DLoadingIndicator. parent is passed to...">DLoadingIndicator::DLoadingIndicator</a> 函数是 <a class="el" href="classDLoadingIndicator.html">DLoadingIndicator</a> 的构造函数。 <em>parent</em> 指定了控件的父控件。 </p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a36ed27b12abf63e5d08bcd9f2a35b042"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36ed27b12abf63e5d08bcd9f2a35b042">&#9670;&nbsp;</a></span>direction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDLoadingIndicator.html#a8df63c04b02fd31fbfb610ed9e0a43cb">DLoadingIndicator::RotationDirection</a> DLoadingIndicator::direction </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p><a class="el" href="classDLoadingIndicator.html#a0d1164dbf393fb920ff49b49d4a0711d" title="This property holds the direction used while doing the rotation animation.">DLoadingIndicator::direction</a> </p>
+
+</div>
+</div>
+<a id="a5dfeec7aed72bace6671b3812e65cb3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dfeec7aed72bace6671b3812e65cb3d">&#9670;&nbsp;</a></span>setAniEasingCurve</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DLoadingIndicator::setAniEasingCurve </td>
+          <td>(</td>
+          <td class="paramtype">const QEasingCurve &amp;&#160;</td>
+          <td class="paramname"><em>easing</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classDLoadingIndicator.html#a5dfeec7aed72bace6671b3812e65cb3d" title="DLoadingIndicator::setAniEasingCurve sets an easing curve on the loading animation....">DLoadingIndicator::setAniEasingCurve</a> sets an easing curve on the loading animation. <em>easing</em> </p>
+<p>This property defines the easing curve of the animation. By default, a linear easing curve is used, resulting in linear interpolation. Other curves are provided, for instance, QEasingCurve::InCirc, which provides a circular entry curve. Another example is QEasingCurve::InOutElastic, which provides an elastic effect on the values of the interpolated variant.</p>
+<p><a class="el" href="classDLoadingIndicator.html#a5dfeec7aed72bace6671b3812e65cb3d" title="DLoadingIndicator::setAniEasingCurve sets an easing curve on the loading animation....">DLoadingIndicator::setAniEasingCurve</a> 是对 DLoadingIndicator::setAniEasingType 的补充，使用者除了使用 QEasingCurve::Type 中提供的几种预设的动画曲线，可以自定义 QEasingCurve 来 实现更为灵巧的动画。 </p>
+
+</div>
+</div>
+<a id="a3c3b86d9e0a09d35eb6eadb16bb5ac52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c3b86d9e0a09d35eb6eadb16bb5ac52">&#9670;&nbsp;</a></span>start</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DLoadingIndicator::start </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classDLoadingIndicator.html#a3c3b86d9e0a09d35eb6eadb16bb5ac52" title="DLoadingIndicator::start starts the loading animation.">DLoadingIndicator::start</a> starts the loading animation. </p>
+<p><a class="el" href="classDLoadingIndicator.html#a3c3b86d9e0a09d35eb6eadb16bb5ac52" title="DLoadingIndicator::start starts the loading animation.">DLoadingIndicator::start</a> 启动旋转动画。 </p>
+
+</div>
+</div>
+<a id="acce3d2bd2dd286b71e404408c94bcd5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acce3d2bd2dd286b71e404408c94bcd5e">&#9670;&nbsp;</a></span>stop</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DLoadingIndicator::stop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classDLoadingIndicator.html#acce3d2bd2dd286b71e404408c94bcd5e" title="DLoadingIndicator::stop stops the loading animation.">DLoadingIndicator::stop</a> stops the loading animation. </p>
+<p><a class="el" href="classDLoadingIndicator.html#acce3d2bd2dd286b71e404408c94bcd5e" title="DLoadingIndicator::stop stops the loading animation.">DLoadingIndicator::stop</a> 停止旋转动画。 </p>
+
+</div>
+</div>
+<h2 class="groupheader">属性说明</h2>
+<a id="a815545b1eb658674b6f8f6ce46f6aeaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a815545b1eb658674b6f8f6ce46f6aeaa">&#9670;&nbsp;</a></span>aniDuration</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DLoadingIndicator::aniDuration</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This property holds the duration of the loading animation. </p>
+<p><a class="el" href="classDLoadingIndicator.html#a815545b1eb658674b6f8f6ce46f6aeaa" title="This property holds the duration of the loading animation.">DLoadingIndicator::aniDuration</a> 属性用来控制旋转动画的周期。 </p>
+
+</div>
+</div>
+<a id="a593fda6f6627ea26b3d127733a7f65a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a593fda6f6627ea26b3d127733a7f65a8">&#9670;&nbsp;</a></span>aniEasingType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DLoadingIndicator::aniEasingType</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This property holds the easing type of the easing curve used by the loading animation. </p>
+<p><a class="el" href="classDLoadingIndicator.html#a593fda6f6627ea26b3d127733a7f65a8" title="This property holds the easing type of the easing curve used by the loading animation.">DLoadingIndicator::aniEasingType</a> 属性用来控制旋转动画的动画曲线。</p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDLoadingIndicator.html#a5dfeec7aed72bace6671b3812e65cb3d" title="DLoadingIndicator::setAniEasingCurve sets an easing curve on the loading animation....">setAniEasingCurve</a> </dd></dl>
+
+</div>
+</div>
+<a id="af26a442d8aa04c44f9c8cca029f3d254"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af26a442d8aa04c44f9c8cca029f3d254">&#9670;&nbsp;</a></span>backgroundColor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DLoadingIndicator::backgroundColor</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This property holds the background color of this widget. </p>
+<p><a class="el" href="classDLoadingIndicator.html#af26a442d8aa04c44f9c8cca029f3d254" title="This property holds the background color of this widget.">DLoadingIndicator::backgroundColor</a> 属性用来控制 <a class="el" href="classDLoadingIndicator.html">DLoadingIndicator</a> 控件的背景色。 </p>
+
+</div>
+</div>
+<a id="a0d1164dbf393fb920ff49b49d4a0711d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d1164dbf393fb920ff49b49d4a0711d">&#9670;&nbsp;</a></span>direction</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DLoadingIndicator::direction</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This property holds the direction used while doing the rotation animation. </p>
+<p><a class="el" href="classDLoadingIndicator.html#a0d1164dbf393fb920ff49b49d4a0711d" title="This property holds the direction used while doing the rotation animation.">DLoadingIndicator::direction</a> 用来控制旋转动画的旋转方向。</p>
+<p>默认为顺时针方向。</p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDLoadingIndicator.html#a8df63c04b02fd31fbfb610ed9e0a43cb" title="The RotationDirection enum contains the possible rotation directions of the DLoadingIndicator widget.">DLoadingIndicator::RotationDirection</a> </dd></dl>
+
+</div>
+</div>
+<a id="ae117367f775533a5c6be22ebd0ec7dba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae117367f775533a5c6be22ebd0ec7dba">&#9670;&nbsp;</a></span>imageSource</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DLoadingIndicator::imageSource</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This property holds the image to be rendered as the content of the loading indicator. </p>
+<p><a class="el" href="classDLoadingIndicator.html#ae117367f775533a5c6be22ebd0ec7dba" title="This property holds the image to be rendered as the content of the loading indicator.">DLoadingIndicator::imageSource</a> 属性用来生成旋转动画中使用的图像。</p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDLoadingIndicator.html#a37a3a4ad2f52924a1ca3897b7c31dc45" title="This property holds the widget to be rendered as the content of the loading indicator.">widgetSource</a> </dd></dl>
+
+</div>
+</div>
+<a id="a95e38e9633fed1a4c0a39587a3d77666"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95e38e9633fed1a4c0a39587a3d77666">&#9670;&nbsp;</a></span>loading</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DLoadingIndicator::loading</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This property holds the animation state. </p>
+<p><a class="el" href="classDLoadingIndicator.html#a95e38e9633fed1a4c0a39587a3d77666" title="This property holds the animation state.">DLoadingIndicator::loading</a> 属性用来控制动画是否开启。</p>
+<p>It returns true if the animation is running, false otherwise, you can also set value on this property to run or stop the animation.</p>
+<p>设置为 true 开始动画， false 停止动画。</p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDLoadingIndicator.html#a3c3b86d9e0a09d35eb6eadb16bb5ac52" title="DLoadingIndicator::start starts the loading animation.">start()</a>, <a class="el" href="classDLoadingIndicator.html#acce3d2bd2dd286b71e404408c94bcd5e" title="DLoadingIndicator::stop stops the loading animation.">stop()</a> </dd></dl>
+
+</div>
+</div>
+<a id="aac9fdb1b3d1711d96e594d017b0fb81b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac9fdb1b3d1711d96e594d017b0fb81b">&#9670;&nbsp;</a></span>rotate</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DLoadingIndicator::rotate</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This property holds the current rotation of the content. </p>
+<p><a class="el" href="classDLoadingIndicator.html#aac9fdb1b3d1711d96e594d017b0fb81b" title="This property holds the current rotation of the content.">DLoadingIndicator::rotate</a> 属性用来控制当前控件内容旋转的角度。</p>
+<p>This property is usually used to correct the rotation of the content after calling <a class="el" href="classDLoadingIndicator.html#acce3d2bd2dd286b71e404408c94bcd5e" title="DLoadingIndicator::stop stops the loading animation.">DLoadingIndicator::stop</a> to stop the animation.</p>
+<dl class="section see"><dt>参见</dt><dd>QGraphicsItem::rotation </dd></dl>
+
+</div>
+</div>
+<a id="a12d514bc6d4dc260a2149211f2cb3493"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12d514bc6d4dc260a2149211f2cb3493">&#9670;&nbsp;</a></span>smooth</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DLoadingIndicator::smooth</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This property holds whether the rendered content are antialiased or smoothly filtered. </p>
+<p><a class="el" href="classDLoadingIndicator.html#a12d514bc6d4dc260a2149211f2cb3493" title="This property holds whether the rendered content are antialiased or smoothly filtered.">DLoadingIndicator::smooth</a> 属性代表是否要对控件启用平滑处理。</p>
+<p>Smooth filtering gives better visual quality, but it may be slower on some hardware.</p>
+<p>平滑处理后，控件会被进行反锯齿或者进行遮罩以达到更好的显示效果，但是在性能较差 的机器上会比较慢。 </p>
+
+</div>
+</div>
+<a id="a37a3a4ad2f52924a1ca3897b7c31dc45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37a3a4ad2f52924a1ca3897b7c31dc45">&#9670;&nbsp;</a></span>widgetSource</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DLoadingIndicator::widgetSource</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This property holds the widget to be rendered as the content of the loading indicator. </p>
+<p><a class="el" href="classDLoadingIndicator.html#a37a3a4ad2f52924a1ca3897b7c31dc45" title="This property holds the widget to be rendered as the content of the loading indicator.">DLoadingIndicator::widgetSource</a> 属性用来生成旋转动画中使用的图像。</p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDLoadingIndicator.html#ae117367f775533a5c6be22ebd0ec7dba" title="This property holds the image to be rendered as the content of the loading indicator.">imageSource</a> </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dtkwidget/include/dtkwidget/widgets/<a class="el" href="dloadingindicator_8h_source.html">dloadingindicator.h</a></li>
+<li>dtkwidget/src/widgets/dloadingindicator.cpp</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classDLoadingIndicator.html">DLoadingIndicator</a></li>
+    <li class="footer">文档生成时间:doxtime</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

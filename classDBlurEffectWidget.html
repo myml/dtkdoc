@@ -1,0 +1,940 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: DBlurEffectWidget类 参考</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="change address" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classDBlurEffectWidget.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-slots">Public 槽</a> &#124;
+<a href="#signals">信号</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#properties">属性</a> &#124;
+<a href="#friends">友元</a> &#124;
+<a href="classDBlurEffectWidget-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">DBlurEffectWidget类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 DBlurEffectWidget 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classDBlurEffectWidget.png" alt=""/>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:abb491650f59b66f7da7a831361e11697"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBlurEffectWidget.html#abb491650f59b66f7da7a831361e11697">BlurMode</a> { <b>GaussianBlur</b>
+ }</td></tr>
+<tr class="separator:abb491650f59b66f7da7a831361e11697"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4a45494e2b797a5f1cf5899bb737e27"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBlurEffectWidget.html#ab4a45494e2b797a5f1cf5899bb737e27">BlendMode</a> { <a class="el" href="classDBlurEffectWidget.html#ab4a45494e2b797a5f1cf5899bb737e27a6c26cbeb53ad47fd5d5ad8cde32ece9c">InWindowBlend</a>
+, <a class="el" href="classDBlurEffectWidget.html#ab4a45494e2b797a5f1cf5899bb737e27afec58b54b67a2b778711834736d2c34d">BehindWindowBlend</a>
+, <a class="el" href="classDBlurEffectWidget.html#ab4a45494e2b797a5f1cf5899bb737e27a8d102c67159e2097f8429b48d38e3bb1">InWidgetBlend</a>
+ }</td></tr>
+<tr class="separator:ab4a45494e2b797a5f1cf5899bb737e27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79d5ab2a7133101a513f9565296c098f"><td class="memItemLeft" align="right" valign="top"><a id="a79d5ab2a7133101a513f9565296c098f"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>MaskColorType</b> { <b>DarkColor</b>
+, <b>LightColor</b>
+, <b>AutoColor</b>
+, <b>CustomColor</b>
+ }</td></tr>
+<tr class="separator:a79d5ab2a7133101a513f9565296c098f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Public 槽</h2></td></tr>
+<tr class="memitem:a59accaf7deeeaedfe6db5b98963c12bb"><td class="memItemLeft" align="right" valign="top"><a id="a59accaf7deeeaedfe6db5b98963c12bb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBlurEffectWidget.html#a59accaf7deeeaedfe6db5b98963c12bb">setRadius</a> (int <a class="el" href="classDBlurEffectWidget.html#adbdaa823c0c6ce8733b78ab3832471af">radius</a>)</td></tr>
+<tr class="memdesc:a59accaf7deeeaedfe6db5b98963c12bb"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDBlurEffectWidget.html#a59accaf7deeeaedfe6db5b98963c12bb" title="DBlurEffectWidget::setRadius radius　模糊区域的圆角大小　如果设定值和原值不一致会发送信号radiusChanged">DBlurEffectWidget::setRadius</a> <em>radius　模糊区域的圆角大小　如果设定值和原值不一致会发送信号radiusChanged</em> <br /></td></tr>
+<tr class="separator:a59accaf7deeeaedfe6db5b98963c12bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f4545ac16b97285d191f0dca14dfdcb"><td class="memItemLeft" align="right" valign="top"><a id="a4f4545ac16b97285d191f0dca14dfdcb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBlurEffectWidget.html#a4f4545ac16b97285d191f0dca14dfdcb">setMode</a> (<a class="el" href="classDBlurEffectWidget.html#abb491650f59b66f7da7a831361e11697">BlurMode</a> <a class="el" href="classDBlurEffectWidget.html#ae0edc0fb4d640b202334355bca2a949e">mode</a>)</td></tr>
+<tr class="memdesc:a4f4545ac16b97285d191f0dca14dfdcb"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDBlurEffectWidget.html#a4f4545ac16b97285d191f0dca14dfdcb" title="DBlurEffectWidget::setMode mode 设定模糊算法,默认为高斯模糊算法GaussianBlur">DBlurEffectWidget::setMode</a> <em>mode</em> 设定模糊算法,默认为高斯模糊算法GaussianBlur <br /></td></tr>
+<tr class="separator:a4f4545ac16b97285d191f0dca14dfdcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab92e199673108cf30eff4ca23f86a38b"><td class="memItemLeft" align="right" valign="top"><a id="ab92e199673108cf30eff4ca23f86a38b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBlurEffectWidget.html#ab92e199673108cf30eff4ca23f86a38b">setBlendMode</a> (<a class="el" href="classDBlurEffectWidget.html#ab4a45494e2b797a5f1cf5899bb737e27">BlendMode</a> <a class="el" href="classDBlurEffectWidget.html#a6a7a90cded652beb360c0bf8f5505090">blendMode</a>)</td></tr>
+<tr class="memdesc:ab92e199673108cf30eff4ca23f86a38b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDBlurEffectWidget.html#ab92e199673108cf30eff4ca23f86a38b" title="DBlurEffectWidget::setBlendMode blendMode 窗口混合模式，模式设定变化发送blendModeChanged信号">DBlurEffectWidget::setBlendMode</a> <em>blendMode</em> 窗口混合模式，模式设定变化发送blendModeChanged信号 <br /></td></tr>
+<tr class="separator:ab92e199673108cf30eff4ca23f86a38b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3c76f52d564c9ef5d4c0a9414aaa1b6"><td class="memItemLeft" align="right" valign="top"><a id="ac3c76f52d564c9ef5d4c0a9414aaa1b6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBlurEffectWidget.html#ac3c76f52d564c9ef5d4c0a9414aaa1b6">setBlurRectXRadius</a> (int <a class="el" href="classDBlurEffectWidget.html#a6e9cdc1ae92413ed73f75acc97b2feac">blurRectXRadius</a>)</td></tr>
+<tr class="memdesc:ac3c76f52d564c9ef5d4c0a9414aaa1b6"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDBlurEffectWidget.html#ac3c76f52d564c9ef5d4c0a9414aaa1b6" title="DBlurEffectWidget::setBlurRectXRadius blurRectXRadius 模糊区域矩形的X圆角大小">DBlurEffectWidget::setBlurRectXRadius</a> <em>blurRectXRadius</em> 模糊区域矩形的X圆角大小 <br /></td></tr>
+<tr class="separator:ac3c76f52d564c9ef5d4c0a9414aaa1b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf0c2a2569bf3a30c1c70e865e94da32"><td class="memItemLeft" align="right" valign="top"><a id="adf0c2a2569bf3a30c1c70e865e94da32"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBlurEffectWidget.html#adf0c2a2569bf3a30c1c70e865e94da32">setBlurRectYRadius</a> (int <a class="el" href="classDBlurEffectWidget.html#a23fc23b3085ba61cee2614dfe2ba37aa">blurRectYRadius</a>)</td></tr>
+<tr class="memdesc:adf0c2a2569bf3a30c1c70e865e94da32"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDBlurEffectWidget.html#adf0c2a2569bf3a30c1c70e865e94da32" title="DBlurEffectWidget::setBlurRectYRadius blurRectYRadius 模糊区域矩形的Y圆角大小">DBlurEffectWidget::setBlurRectYRadius</a> <em>blurRectYRadius</em> 模糊区域矩形的Y圆角大小 <br /></td></tr>
+<tr class="separator:adf0c2a2569bf3a30c1c70e865e94da32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f30c78c1d300aa67618011b73da0193"><td class="memItemLeft" align="right" valign="top"><a id="a6f30c78c1d300aa67618011b73da0193"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBlurEffectWidget.html#a6f30c78c1d300aa67618011b73da0193">setMaskAlpha</a> (quint8 alpha)</td></tr>
+<tr class="memdesc:a6f30c78c1d300aa67618011b73da0193"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDBlurEffectWidget.html#a6f30c78c1d300aa67618011b73da0193" title="DBlurEffectWidget::setMaskAlpha alpha　设置Alpha通道,值变化发送maskAlphaChanged信号">DBlurEffectWidget::setMaskAlpha</a> <em>alpha　设置Alpha通道</em>,值变化发送maskAlphaChanged信号 <br /></td></tr>
+<tr class="separator:a6f30c78c1d300aa67618011b73da0193"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcf40e6717feb3bbdab76f225b424d91"><td class="memItemLeft" align="right" valign="top"><a id="adcf40e6717feb3bbdab76f225b424d91"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBlurEffectWidget.html#adcf40e6717feb3bbdab76f225b424d91">setMaskColor</a> (QColor <a class="el" href="classDBlurEffectWidget.html#a1719acaf60c3e21837850546966ddf8c">maskColor</a>)</td></tr>
+<tr class="memdesc:adcf40e6717feb3bbdab76f225b424d91"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDBlurEffectWidget.html#adcf40e6717feb3bbdab76f225b424d91" title="DBlurEffectWidget::setMaskColor maskColor 设定mask的颜色">DBlurEffectWidget::setMaskColor</a> <em>maskColor</em> 设定mask的颜色 <br /></td></tr>
+<tr class="separator:adcf40e6717feb3bbdab76f225b424d91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac86b942461c1859b46bbd06b30c6f36a"><td class="memItemLeft" align="right" valign="top"><a id="ac86b942461c1859b46bbd06b30c6f36a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBlurEffectWidget.html#ac86b942461c1859b46bbd06b30c6f36a">setMaskColor</a> (MaskColorType type)</td></tr>
+<tr class="memdesc:ac86b942461c1859b46bbd06b30c6f36a"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置控件的颜色模式，默认值为 MaskColorType::CustomColor <em>type</em> <br /></td></tr>
+<tr class="separator:ac86b942461c1859b46bbd06b30c6f36a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92d692a82aa274703cb769e51091c9c8"><td class="memItemLeft" align="right" valign="top"><a id="a92d692a82aa274703cb769e51091c9c8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBlurEffectWidget.html#a92d692a82aa274703cb769e51091c9c8">setFull</a> (bool <a class="el" href="classDBlurEffectWidget.html#afa658f00726c1330d8d0f1174e42cba8">full</a>)</td></tr>
+<tr class="memdesc:a92d692a82aa274703cb769e51091c9c8"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDBlurEffectWidget.html#a92d692a82aa274703cb769e51091c9c8" title="DBlurEffectWidget::setFull full 设置时候模糊区域占满整个窗口大小">DBlurEffectWidget::setFull</a> <em>full</em> 设置时候模糊区域占满整个窗口大小 <br /></td></tr>
+<tr class="separator:a92d692a82aa274703cb769e51091c9c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d800c13590f42fac94ab7538ffe09a0"><td class="memItemLeft" align="right" valign="top"><a id="a5d800c13590f42fac94ab7538ffe09a0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBlurEffectWidget.html#a5d800c13590f42fac94ab7538ffe09a0">setBlurEnabled</a> (bool <a class="el" href="classDBlurEffectWidget.html#a28556e99af2f78eeae8e3f2985f7197e">blurEnabled</a>)</td></tr>
+<tr class="memdesc:a5d800c13590f42fac94ab7538ffe09a0"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDBlurEffectWidget.html#a5d800c13590f42fac94ab7538ffe09a0" title="DBlurEffectWidget::setBlurEnabled blurEnabled 设定模糊区域是否可以伸缩">DBlurEffectWidget::setBlurEnabled</a> <em>blurEnabled</em> 设定模糊区域是否可以伸缩 <br /></td></tr>
+<tr class="separator:a5d800c13590f42fac94ab7538ffe09a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38276fe00ff77292deacb53df9c0fb03"><td class="memItemLeft" align="right" valign="top"><a id="a38276fe00ff77292deacb53df9c0fb03"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBlurEffectWidget.html#a38276fe00ff77292deacb53df9c0fb03">updateBlurSourceImage</a> (const QRegion &amp;ren)</td></tr>
+<tr class="memdesc:a38276fe00ff77292deacb53df9c0fb03"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDBlurEffectWidget.html#a38276fe00ff77292deacb53df9c0fb03" title="DBlurEffectWidget::updateBlurSourceImage ren 设定模糊区域的背景图片">DBlurEffectWidget::updateBlurSourceImage</a> <em>ren</em> 设定模糊区域的背景图片 <br /></td></tr>
+<tr class="separator:a38276fe00ff77292deacb53df9c0fb03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+信号</h2></td></tr>
+<tr class="memitem:ae6b0cb0ecc43cc3aeda28d7de545e31e"><td class="memItemLeft" align="right" valign="top"><a id="ae6b0cb0ecc43cc3aeda28d7de545e31e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBlurEffectWidget.html#ae6b0cb0ecc43cc3aeda28d7de545e31e">radiusChanged</a> (int <a class="el" href="classDBlurEffectWidget.html#adbdaa823c0c6ce8733b78ab3832471af">radius</a>)</td></tr>
+<tr class="memdesc:ae6b0cb0ecc43cc3aeda28d7de545e31e"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号会在 <em>radius</em> 属性的值改变时被发送 <br /></td></tr>
+<tr class="separator:ae6b0cb0ecc43cc3aeda28d7de545e31e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dda6da48a21ceecaa989db4775caac9"><td class="memItemLeft" align="right" valign="top"><a id="a3dda6da48a21ceecaa989db4775caac9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBlurEffectWidget.html#a3dda6da48a21ceecaa989db4775caac9">modeChanged</a> (<a class="el" href="classDBlurEffectWidget.html#abb491650f59b66f7da7a831361e11697">BlurMode</a> <a class="el" href="classDBlurEffectWidget.html#ae0edc0fb4d640b202334355bca2a949e">mode</a>)</td></tr>
+<tr class="memdesc:a3dda6da48a21ceecaa989db4775caac9"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号会在 <em>mode</em> 属性的值改变时被发送. <br /></td></tr>
+<tr class="separator:a3dda6da48a21ceecaa989db4775caac9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f2f8b146e5d22fa4e34d53bf54bf92c"><td class="memItemLeft" align="right" valign="top"><a id="a6f2f8b146e5d22fa4e34d53bf54bf92c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBlurEffectWidget.html#a6f2f8b146e5d22fa4e34d53bf54bf92c">blendModeChanged</a> (<a class="el" href="classDBlurEffectWidget.html#ab4a45494e2b797a5f1cf5899bb737e27">BlendMode</a> <a class="el" href="classDBlurEffectWidget.html#a6a7a90cded652beb360c0bf8f5505090">blendMode</a>)</td></tr>
+<tr class="memdesc:a6f2f8b146e5d22fa4e34d53bf54bf92c"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号会在 <em>blendMode</em> 属性的值改变时被发送 <br /></td></tr>
+<tr class="separator:a6f2f8b146e5d22fa4e34d53bf54bf92c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2ae5a7ebf4c8a4748dcbc2a6949da27"><td class="memItemLeft" align="right" valign="top"><a id="ab2ae5a7ebf4c8a4748dcbc2a6949da27"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBlurEffectWidget.html#ab2ae5a7ebf4c8a4748dcbc2a6949da27">blurRectXRadiusChanged</a> (int <a class="el" href="classDBlurEffectWidget.html#a6e9cdc1ae92413ed73f75acc97b2feac">blurRectXRadius</a>)</td></tr>
+<tr class="memdesc:ab2ae5a7ebf4c8a4748dcbc2a6949da27"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号会在 <em>blurRectXRadius</em> 属性的值改变时被发送 <br /></td></tr>
+<tr class="separator:ab2ae5a7ebf4c8a4748dcbc2a6949da27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7551308bfe9069c208aecc4cad1fc235"><td class="memItemLeft" align="right" valign="top"><a id="a7551308bfe9069c208aecc4cad1fc235"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBlurEffectWidget.html#a7551308bfe9069c208aecc4cad1fc235">blurRectYRadiusChanged</a> (int <a class="el" href="classDBlurEffectWidget.html#a23fc23b3085ba61cee2614dfe2ba37aa">blurRectYRadius</a>)</td></tr>
+<tr class="memdesc:a7551308bfe9069c208aecc4cad1fc235"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号会在 <em>blurRectYRadius</em> 属性的值改变时被发送 <br /></td></tr>
+<tr class="separator:a7551308bfe9069c208aecc4cad1fc235"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f3b6a39b02c4896ea0ccc5221e1c3fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBlurEffectWidget.html#a9f3b6a39b02c4896ea0ccc5221e1c3fb">maskAlphaChanged</a> (quint8 alpha)</td></tr>
+<tr class="memdesc:a9f3b6a39b02c4896ea0ccc5221e1c3fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号会在 <em>alpha</em> 属性的值改变时被发送  <a href="classDBlurEffectWidget.html#a9f3b6a39b02c4896ea0ccc5221e1c3fb">更多...</a><br /></td></tr>
+<tr class="separator:a9f3b6a39b02c4896ea0ccc5221e1c3fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabf36ba2fdee5b10e12ecd45e488cebf"><td class="memItemLeft" align="right" valign="top"><a id="aabf36ba2fdee5b10e12ecd45e488cebf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBlurEffectWidget.html#aabf36ba2fdee5b10e12ecd45e488cebf">maskColorChanged</a> (QColor <a class="el" href="classDBlurEffectWidget.html#a1719acaf60c3e21837850546966ddf8c">maskColor</a>)</td></tr>
+<tr class="memdesc:aabf36ba2fdee5b10e12ecd45e488cebf"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号会在 <em>maskColor</em> 属性的值改变时被发送 <br /></td></tr>
+<tr class="separator:aabf36ba2fdee5b10e12ecd45e488cebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4783a63aad5e325afdd797bce37a86c2"><td class="memItemLeft" align="right" valign="top"><a id="a4783a63aad5e325afdd797bce37a86c2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>fullChanged</b> (bool <a class="el" href="classDBlurEffectWidget.html#afa658f00726c1330d8d0f1174e42cba8">full</a>)</td></tr>
+<tr class="separator:a4783a63aad5e325afdd797bce37a86c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada34cf528de9bdd395b548db97d93d26"><td class="memItemLeft" align="right" valign="top"><a id="ada34cf528de9bdd395b548db97d93d26"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>blurEnabledChanged</b> (bool <a class="el" href="classDBlurEffectWidget.html#a28556e99af2f78eeae8e3f2985f7197e">blurEnabled</a>)</td></tr>
+<tr class="separator:ada34cf528de9bdd395b548db97d93d26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab033c877de00acbc4fb37cca658d5143"><td class="memItemLeft" align="right" valign="top"><a id="ab033c877de00acbc4fb37cca658d5143"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>blurSourceImageDirtied</b> ()</td></tr>
+<tr class="separator:ab033c877de00acbc4fb37cca658d5143"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:afcb874ed4e858c331ccc83c1f0c8ae85"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBlurEffectWidget.html#afcb874ed4e858c331ccc83c1f0c8ae85">DBlurEffectWidget</a> (QWidget *parent=0)</td></tr>
+<tr class="memdesc:afcb874ed4e858c331ccc83c1f0c8ae85"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDBlurEffectWidget.html#afcb874ed4e858c331ccc83c1f0c8ae85" title="DBlurEffectWidget::DBlurEffectWidget constructs an instance of DBlurEffectWidget.">DBlurEffectWidget::DBlurEffectWidget</a> constructs an instance of <a class="el" href="classDBlurEffectWidget.html">DBlurEffectWidget</a>.  <a href="classDBlurEffectWidget.html#afcb874ed4e858c331ccc83c1f0c8ae85">更多...</a><br /></td></tr>
+<tr class="separator:afcb874ed4e858c331ccc83c1f0c8ae85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2a55cda48d183febcc66f7c369296ca"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBlurEffectWidget.html#ad2a55cda48d183febcc66f7c369296ca">radius</a> () const</td></tr>
+<tr class="memdesc:ad2a55cda48d183febcc66f7c369296ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">This property holds the radius of the blur effect.  <a href="classDBlurEffectWidget.html#ad2a55cda48d183febcc66f7c369296ca">更多...</a><br /></td></tr>
+<tr class="separator:ad2a55cda48d183febcc66f7c369296ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0071a2d6abdcde0475572a6cd6e6168e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDBlurEffectWidget.html#abb491650f59b66f7da7a831361e11697">BlurMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBlurEffectWidget.html#a0071a2d6abdcde0475572a6cd6e6168e">mode</a> () const</td></tr>
+<tr class="memdesc:a0071a2d6abdcde0475572a6cd6e6168e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This property holds which blur algorithm to be used.  <a href="classDBlurEffectWidget.html#a0071a2d6abdcde0475572a6cd6e6168e">更多...</a><br /></td></tr>
+<tr class="separator:a0071a2d6abdcde0475572a6cd6e6168e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a539f21e29341285225bdc9cfc2191503"><td class="memItemLeft" align="right" valign="top"><a id="a539f21e29341285225bdc9cfc2191503"></a>
+<a class="el" href="classDBlurEffectWidget.html#ab4a45494e2b797a5f1cf5899bb737e27">BlendMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBlurEffectWidget.html#a539f21e29341285225bdc9cfc2191503">blendMode</a> () const</td></tr>
+<tr class="memdesc:a539f21e29341285225bdc9cfc2191503"><td class="mdescLeft">&#160;</td><td class="mdescRight">This property holds which mode is used to blend the widget and its background scene. <br /></td></tr>
+<tr class="separator:a539f21e29341285225bdc9cfc2191503"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2af0b53842b1dbaeb86280265e077f8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBlurEffectWidget.html#ac2af0b53842b1dbaeb86280265e077f8">blurRectXRadius</a> () const</td></tr>
+<tr class="memdesc:ac2af0b53842b1dbaeb86280265e077f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">This property holds the xRadius of the effective background.  <a href="classDBlurEffectWidget.html#ac2af0b53842b1dbaeb86280265e077f8">更多...</a><br /></td></tr>
+<tr class="separator:ac2af0b53842b1dbaeb86280265e077f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d732ca8b69ef478477adcb2eed64099"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBlurEffectWidget.html#a3d732ca8b69ef478477adcb2eed64099">blurRectYRadius</a> () const</td></tr>
+<tr class="memdesc:a3d732ca8b69ef478477adcb2eed64099"><td class="mdescLeft">&#160;</td><td class="mdescRight">This property holds the yRadius of the effective background.  <a href="classDBlurEffectWidget.html#a3d732ca8b69ef478477adcb2eed64099">更多...</a><br /></td></tr>
+<tr class="separator:a3d732ca8b69ef478477adcb2eed64099"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a833eba01afb8853b8199fcb8179022a0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBlurEffectWidget.html#a833eba01afb8853b8199fcb8179022a0">isFull</a> () const</td></tr>
+<tr class="memdesc:a833eba01afb8853b8199fcb8179022a0"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDBlurEffectWidget.html#a833eba01afb8853b8199fcb8179022a0" title="DBlurEffectWidget::isFull">DBlurEffectWidget::isFull</a>  <a href="classDBlurEffectWidget.html#a833eba01afb8853b8199fcb8179022a0">更多...</a><br /></td></tr>
+<tr class="separator:a833eba01afb8853b8199fcb8179022a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab592c0d07f336f03c62fd10868a5565c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBlurEffectWidget.html#ab592c0d07f336f03c62fd10868a5565c">blurEnabled</a> () const</td></tr>
+<tr class="memdesc:ab592c0d07f336f03c62fd10868a5565c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDBlurEffectWidget.html#a28556e99af2f78eeae8e3f2985f7197e" title="如果值为 true 则此控件的模糊设置生效，否则不生效">DBlurEffectWidget::blurEnabled</a>  <a href="classDBlurEffectWidget.html#ab592c0d07f336f03c62fd10868a5565c">更多...</a><br /></td></tr>
+<tr class="separator:ab592c0d07f336f03c62fd10868a5565c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72d60aad3b2b4d8ab8ee657952b202b0"><td class="memItemLeft" align="right" valign="top">QColor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBlurEffectWidget.html#a72d60aad3b2b4d8ab8ee657952b202b0">maskColor</a> () const</td></tr>
+<tr class="memdesc:a72d60aad3b2b4d8ab8ee657952b202b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">This property holds the background color of this widget.  <a href="classDBlurEffectWidget.html#a72d60aad3b2b4d8ab8ee657952b202b0">更多...</a><br /></td></tr>
+<tr class="separator:a72d60aad3b2b4d8ab8ee657952b202b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3bafa87333986b6cc996f31c0c5ca20"><td class="memItemLeft" align="right" valign="top"><a id="ac3bafa87333986b6cc996f31c0c5ca20"></a>
+quint8&#160;</td><td class="memItemRight" valign="bottom"><b>maskAlpha</b> () const</td></tr>
+<tr class="separator:ac3bafa87333986b6cc996f31c0c5ca20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bd4dea7dd5a5dd7cfe972633756fedc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBlurEffectWidget.html#a4bd4dea7dd5a5dd7cfe972633756fedc">setMaskPath</a> (const QPainterPath &amp;path)</td></tr>
+<tr class="memdesc:a4bd4dea7dd5a5dd7cfe972633756fedc"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDBlurEffectWidget.html#a4bd4dea7dd5a5dd7cfe972633756fedc" title="DBlurEffectWidget::setMaskPath set custom area as the effective background.">DBlurEffectWidget::setMaskPath</a> set custom area as the effective background.  <a href="classDBlurEffectWidget.html#a4bd4dea7dd5a5dd7cfe972633756fedc">更多...</a><br /></td></tr>
+<tr class="separator:a4bd4dea7dd5a5dd7cfe972633756fedc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a669449fe8e62a8bf9bf0385e208dd1cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBlurEffectWidget.html#a669449fe8e62a8bf9bf0385e208dd1cb">setSourceImage</a> (const QImage &amp;image, bool autoScale=true)</td></tr>
+<tr class="memdesc:a669449fe8e62a8bf9bf0385e208dd1cb"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDBlurEffectWidget.html#a669449fe8e62a8bf9bf0385e208dd1cb" title="DBlurEffectWidget::setSourceImage image autoScale">DBlurEffectWidget::setSourceImage</a> <em>image</em> <em>autoScale</em>  <a href="classDBlurEffectWidget.html#a669449fe8e62a8bf9bf0385e208dd1cb">更多...</a><br /></td></tr>
+<tr class="separator:a669449fe8e62a8bf9bf0385e208dd1cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a460d4a5f8cfb26615ef9d08050891b42"><td class="memItemLeft" align="right" valign="top"><a id="a460d4a5f8cfb26615ef9d08050891b42"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DBlurEffectWidget</b> (<a class="el" href="classDBlurEffectWidgetPrivate.html">DBlurEffectWidgetPrivate</a> &amp;dd, QWidget *parent=0)</td></tr>
+<tr class="separator:a460d4a5f8cfb26615ef9d08050891b42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad639ec995e695064f66bb560d6946b3e"><td class="memItemLeft" align="right" valign="top"><a id="ad639ec995e695064f66bb560d6946b3e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>paintEvent</b> (QPaintEvent *event) Q_DECL_OVERRIDE</td></tr>
+<tr class="separator:ad639ec995e695064f66bb560d6946b3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a118e72fd4050c30e8a1b9d0e0abe4bb3"><td class="memItemLeft" align="right" valign="top"><a id="a118e72fd4050c30e8a1b9d0e0abe4bb3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>moveEvent</b> (QMoveEvent *event) Q_DECL_OVERRIDE</td></tr>
+<tr class="separator:a118e72fd4050c30e8a1b9d0e0abe4bb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc8cf04bcb1704c11fb22220ceaea5bb"><td class="memItemLeft" align="right" valign="top"><a id="acc8cf04bcb1704c11fb22220ceaea5bb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>resizeEvent</b> (QResizeEvent *event) Q_DECL_OVERRIDE</td></tr>
+<tr class="separator:acc8cf04bcb1704c11fb22220ceaea5bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2d5274b834116628ca74d6c3cc80082"><td class="memItemLeft" align="right" valign="top"><a id="ad2d5274b834116628ca74d6c3cc80082"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>showEvent</b> (QShowEvent *event) Q_DECL_OVERRIDE</td></tr>
+<tr class="separator:ad2d5274b834116628ca74d6c3cc80082"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8810d987301048fc39e865344ec1cfd0"><td class="memItemLeft" align="right" valign="top"><a id="a8810d987301048fc39e865344ec1cfd0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>hideEvent</b> (QHideEvent *event) Q_DECL_OVERRIDE</td></tr>
+<tr class="separator:a8810d987301048fc39e865344ec1cfd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73484a9dd5aa673d5c0953d5bd002765"><td class="memItemLeft" align="right" valign="top"><a id="a73484a9dd5aa673d5c0953d5bd002765"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>changeEvent</b> (QEvent *event) Q_DECL_OVERRIDE</td></tr>
+<tr class="separator:a73484a9dd5aa673d5c0953d5bd002765"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ca31312e89c56d13b0790c207f65b44"><td class="memItemLeft" align="right" valign="top"><a id="a7ca31312e89c56d13b0790c207f65b44"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>eventFilter</b> (QObject *watched, QEvent *event) override</td></tr>
+<tr class="separator:a7ca31312e89c56d13b0790c207f65b44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:adbdaa823c0c6ce8733b78ab3832471af"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBlurEffectWidget.html#adbdaa823c0c6ce8733b78ab3832471af">radius</a></td></tr>
+<tr class="memdesc:adbdaa823c0c6ce8733b78ab3832471af"><td class="mdescLeft">&#160;</td><td class="mdescRight">模糊效果计算时的取样范围，模糊的原理为：将此像素点和周围像素点合成计算得到得到新的值， 此属性表示像素点周围 radius 距离的所有像素点参与计算  <a href="classDBlurEffectWidget.html#adbdaa823c0c6ce8733b78ab3832471af">更多...</a><br /></td></tr>
+<tr class="separator:adbdaa823c0c6ce8733b78ab3832471af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0edc0fb4d640b202334355bca2a949e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDBlurEffectWidget.html#abb491650f59b66f7da7a831361e11697">BlurMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBlurEffectWidget.html#ae0edc0fb4d640b202334355bca2a949e">mode</a></td></tr>
+<tr class="memdesc:ae0edc0fb4d640b202334355bca2a949e"><td class="mdescLeft">&#160;</td><td class="mdescRight">所采用的模糊算法，默认值为 <em>GaussianBlur</em>  <a href="classDBlurEffectWidget.html#ae0edc0fb4d640b202334355bca2a949e">更多...</a><br /></td></tr>
+<tr class="separator:ae0edc0fb4d640b202334355bca2a949e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a7a90cded652beb360c0bf8f5505090"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDBlurEffectWidget.html#ab4a45494e2b797a5f1cf5899bb737e27">BlendMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBlurEffectWidget.html#a6a7a90cded652beb360c0bf8f5505090">blendMode</a></td></tr>
+<tr class="memdesc:a6a7a90cded652beb360c0bf8f5505090"><td class="mdescLeft">&#160;</td><td class="mdescRight">模糊的应用场景，默认会根据有没有父控件自动判断使用哪种模式  <a href="classDBlurEffectWidget.html#a6a7a90cded652beb360c0bf8f5505090">更多...</a><br /></td></tr>
+<tr class="separator:a6a7a90cded652beb360c0bf8f5505090"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e9cdc1ae92413ed73f75acc97b2feac"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBlurEffectWidget.html#a6e9cdc1ae92413ed73f75acc97b2feac">blurRectXRadius</a></td></tr>
+<tr class="memdesc:a6e9cdc1ae92413ed73f75acc97b2feac"><td class="mdescLeft">&#160;</td><td class="mdescRight">模糊区域在x轴方向上的圆角半径，默认值为0  <a href="classDBlurEffectWidget.html#a6e9cdc1ae92413ed73f75acc97b2feac">更多...</a><br /></td></tr>
+<tr class="separator:a6e9cdc1ae92413ed73f75acc97b2feac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23fc23b3085ba61cee2614dfe2ba37aa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBlurEffectWidget.html#a23fc23b3085ba61cee2614dfe2ba37aa">blurRectYRadius</a></td></tr>
+<tr class="memdesc:a23fc23b3085ba61cee2614dfe2ba37aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">模糊区域在y轴方向上的圆角半径，默认值为0  <a href="classDBlurEffectWidget.html#a23fc23b3085ba61cee2614dfe2ba37aa">更多...</a><br /></td></tr>
+<tr class="separator:a23fc23b3085ba61cee2614dfe2ba37aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1719acaf60c3e21837850546966ddf8c"><td class="memItemLeft" align="right" valign="top">QColor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBlurEffectWidget.html#a1719acaf60c3e21837850546966ddf8c">maskColor</a></td></tr>
+<tr class="memdesc:a1719acaf60c3e21837850546966ddf8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">画在控件模糊背景之上的颜色，此颜色的alpha通道值会被 <em>maskAlpha</em> 属性影响 修改此属性会自动将颜色模式设置为 CustomColor，设置后将不能再自动根据窗口管理器是否 支持混成和模糊来自动使用最佳的颜色  <a href="classDBlurEffectWidget.html#a1719acaf60c3e21837850546966ddf8c">更多...</a><br /></td></tr>
+<tr class="separator:a1719acaf60c3e21837850546966ddf8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc07ddda93428f01a234dca983731b1d"><td class="memItemLeft" align="right" valign="top">quint8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBlurEffectWidget.html#adc07ddda93428f01a234dca983731b1d">maskAlpha</a></td></tr>
+<tr class="memdesc:adc07ddda93428f01a234dca983731b1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">maskColor 的alpha通道值。当前窗口管理器支持混成（窗口背景透明）时默认值为102，否则为204  <a href="classDBlurEffectWidget.html#adc07ddda93428f01a234dca983731b1d">更多...</a><br /></td></tr>
+<tr class="separator:adc07ddda93428f01a234dca983731b1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa658f00726c1330d8d0f1174e42cba8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBlurEffectWidget.html#afa658f00726c1330d8d0f1174e42cba8">full</a></td></tr>
+<tr class="memdesc:afa658f00726c1330d8d0f1174e42cba8"><td class="mdescLeft">&#160;</td><td class="mdescRight">如果值为true，将模糊此控件所在顶层窗口的整个背景，而无论控件的大小和位置，否则使用控件的位置和大小 设置顶层窗口的模糊区域。需要注意的时，当控件本身就是顶层窗口且未设置 blurRectXRadius 和 blurRectYRadius 属性的情况下，无论 full 属性的值为多少，都将和值为 true 时的行为保持一致。  <a href="classDBlurEffectWidget.html#afa658f00726c1330d8d0f1174e42cba8">更多...</a><br /></td></tr>
+<tr class="separator:afa658f00726c1330d8d0f1174e42cba8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28556e99af2f78eeae8e3f2985f7197e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBlurEffectWidget.html#a28556e99af2f78eeae8e3f2985f7197e">blurEnabled</a></td></tr>
+<tr class="memdesc:a28556e99af2f78eeae8e3f2985f7197e"><td class="mdescLeft">&#160;</td><td class="mdescRight">如果值为 true 则此控件的模糊设置生效，否则不生效  <a href="classDBlurEffectWidget.html#a28556e99af2f78eeae8e3f2985f7197e">更多...</a><br /></td></tr>
+<tr class="separator:a28556e99af2f78eeae8e3f2985f7197e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+友元</h2></td></tr>
+<tr class="memitem:a948a9d412854bc76134cebc6b6f84808"><td class="memItemLeft" align="right" valign="top"><a id="a948a9d412854bc76134cebc6b6f84808"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>DBlurEffectGroup</b></td></tr>
+<tr class="separator:a948a9d412854bc76134cebc6b6f84808"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">成员枚举类型说明</h2>
+<a id="ab4a45494e2b797a5f1cf5899bb737e27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4a45494e2b797a5f1cf5899bb737e27">&#9670;&nbsp;</a></span>BlendMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classDBlurEffectWidget.html#ab4a45494e2b797a5f1cf5899bb737e27">DBlurEffectWidget::BlendMode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p><a class="el" href="classDBlurEffectWidget.html#ab4a45494e2b797a5f1cf5899bb737e27">DBlurEffectWidget::BlendMode</a> 模糊模式 </p><div class="image">
+<img src="blur-effect.png" alt=""/>
+</div>
+ <table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="ab4a45494e2b797a5f1cf5899bb737e27a6c26cbeb53ad47fd5d5ad8cde32ece9c"></a>InWindowBlend&#160;</td><td class="fielddoc"><p>以窗口内部控件作为模糊背景 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ab4a45494e2b797a5f1cf5899bb737e27afec58b54b67a2b778711834736d2c34d"></a>BehindWindowBlend&#160;</td><td class="fielddoc"><p>以外部的其它窗口作为模糊背景 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ab4a45494e2b797a5f1cf5899bb737e27a8d102c67159e2097f8429b48d38e3bb1"></a>InWidgetBlend&#160;</td><td class="fielddoc"><p>同 DBlurEffectWidget::InWindowBlend，区别是不会自动更新用于模糊的源图片 可手动调用 <a class="el" href="classDBlurEffectWidget.html#a38276fe00ff77292deacb53df9c0fb03" title="DBlurEffectWidget::updateBlurSourceImage ren 设定模糊区域的背景图片">DBlurEffectWidget::updateBlurSourceImage</a> 更新，以此来实现自行控制模糊 源图片的更新时机 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="abb491650f59b66f7da7a831361e11697"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb491650f59b66f7da7a831361e11697">&#9670;&nbsp;</a></span>BlurMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classDBlurEffectWidget.html#abb491650f59b66f7da7a831361e11697">DBlurEffectWidget::BlurMode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p><a class="el" href="classDBlurEffectWidget.html#abb491650f59b66f7da7a831361e11697">DBlurEffectWidget::BlurMode</a> 模糊算法</p>
+<p>\value GaussianBlur \l {<a href="https://zh.wikipedia.org/wiki/高斯模糊">https://zh.wikipedia.org/wiki/高斯模糊</a>}{高斯模糊算法} </p>
+
+</div>
+</div>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a id="afcb874ed4e858c331ccc83c1f0c8ae85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcb874ed4e858c331ccc83c1f0c8ae85">&#9670;&nbsp;</a></span>DBlurEffectWidget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DBlurEffectWidget::DBlurEffectWidget </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>0</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classDBlurEffectWidget.html#afcb874ed4e858c331ccc83c1f0c8ae85" title="DBlurEffectWidget::DBlurEffectWidget constructs an instance of DBlurEffectWidget.">DBlurEffectWidget::DBlurEffectWidget</a> constructs an instance of <a class="el" href="classDBlurEffectWidget.html">DBlurEffectWidget</a>. </p>
+<p>和普通控件使用方式一样，可以作为任何控件的子控件。默认会开启 Qt::WA_TranslucentBackground， 必须设置控件为背景透明，否则控件所在区域的内容重绘时，在此控件下方的区域不会被下层控件重新绘制</p>
+<p><em>parent</em> is passed to QWidget constructor. <em>parent</em> 当父对象为空时，默认使用 <a class="el" href="classDBlurEffectWidget.html#ab4a45494e2b797a5f1cf5899bb737e27afec58b54b67a2b778711834736d2c34d">DBlurEffectWidget::BehindWindowBlend</a> 模式，否则使用 <a class="el" href="classDBlurEffectWidget.html#ab4a45494e2b797a5f1cf5899bb737e27a6c26cbeb53ad47fd5d5ad8cde32ece9c">DBlurEffectWidget::InWindowBlend</a> 模式 </p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="ab592c0d07f336f03c62fd10868a5565c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab592c0d07f336f03c62fd10868a5565c">&#9670;&nbsp;</a></span>blurEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DBlurEffectWidget::blurEnabled </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classDBlurEffectWidget.html#a28556e99af2f78eeae8e3f2985f7197e" title="如果值为 true 则此控件的模糊设置生效，否则不生效">DBlurEffectWidget::blurEnabled</a> </p>
+<dl class="section return"><dt>返回</dt><dd>true 模糊区域可伸缩调整 </dd></dl>
+
+</div>
+</div>
+<a id="ac2af0b53842b1dbaeb86280265e077f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2af0b53842b1dbaeb86280265e077f8">&#9670;&nbsp;</a></span>blurRectXRadius()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DBlurEffectWidget::blurRectXRadius </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This property holds the xRadius of the effective background. </p>
+<p>The xRadius and yRadius specify the radius of the ellipses defining the corners of the effective background.</p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDBlurEffectWidget.html#a23fc23b3085ba61cee2614dfe2ba37aa" title="模糊区域在y轴方向上的圆角半径，默认值为0">DBlurEffectWidget::blurRectYRadius</a> </dd></dl>
+
+</div>
+</div>
+<a id="a3d732ca8b69ef478477adcb2eed64099"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d732ca8b69ef478477adcb2eed64099">&#9670;&nbsp;</a></span>blurRectYRadius()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DBlurEffectWidget::blurRectYRadius </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This property holds the yRadius of the effective background. </p>
+<p>The xRadius and yRadius specify the radius of the ellipses defining the corners of the effective background.</p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDBlurEffectWidget.html#a6e9cdc1ae92413ed73f75acc97b2feac" title="模糊区域在x轴方向上的圆角半径，默认值为0">DBlurEffectWidget::blurRectXRadius</a> </dd></dl>
+
+</div>
+</div>
+<a id="a833eba01afb8853b8199fcb8179022a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a833eba01afb8853b8199fcb8179022a0">&#9670;&nbsp;</a></span>isFull()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DBlurEffectWidget::isFull </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classDBlurEffectWidget.html#a833eba01afb8853b8199fcb8179022a0" title="DBlurEffectWidget::isFull">DBlurEffectWidget::isFull</a> </p>
+<dl class="section return"><dt>返回</dt><dd>　true 窗口占据了整个模糊区域,反之为false </dd></dl>
+
+</div>
+</div>
+<a id="a9f3b6a39b02c4896ea0ccc5221e1c3fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f3b6a39b02c4896ea0ccc5221e1c3fb">&#9670;&nbsp;</a></span>maskAlphaChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DBlurEffectWidget::maskAlphaChanged </td>
+          <td>(</td>
+          <td class="paramtype">quint8&#160;</td>
+          <td class="paramname"><em>alpha</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>信号会在 <em>alpha</em> 属性的值改变时被发送 </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDBlurEffectWidget.html#adc07ddda93428f01a234dca983731b1d" title="maskColor 的alpha通道值。当前窗口管理器支持混成（窗口背景透明）时默认值为102，否则为204">DBlurEffectWidget::maskAlpha</a> </dd></dl>
+
+</div>
+</div>
+<a id="a72d60aad3b2b4d8ab8ee657952b202b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72d60aad3b2b4d8ab8ee657952b202b0">&#9670;&nbsp;</a></span>maskColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QColor DBlurEffectWidget::maskColor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This property holds the background color of this widget. </p>
+<p>It returns predefined colors if the DBlurEffectWidget::maskColorType is set to DBlurEffectWidget::DarkColor or BlurEffectWidget::LightColor, returns the color set by <a class="el" href="classDBlurEffectWidget.html#adcf40e6717feb3bbdab76f225b424d91" title="DBlurEffectWidget::setMaskColor maskColor 设定mask的颜色">DBlurEffectWidget::setMaskColor</a> if DBlurEffectWidget::maskColorType is set to BlurEffectWidget::CustomColor. </p>
+
+</div>
+</div>
+<a id="a0071a2d6abdcde0475572a6cd6e6168e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0071a2d6abdcde0475572a6cd6e6168e">&#9670;&nbsp;</a></span>mode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDBlurEffectWidget.html#abb491650f59b66f7da7a831361e11697">DBlurEffectWidget::BlurMode</a> DBlurEffectWidget::mode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This property holds which blur algorithm to be used. </p>
+<p>Currently it only supports DBlurEffectWidget::GaussianBlur. </p>
+
+</div>
+</div>
+<a id="ad2a55cda48d183febcc66f7c369296ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2a55cda48d183febcc66f7c369296ca">&#9670;&nbsp;</a></span>radius()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DBlurEffectWidget::radius </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This property holds the radius of the blur effect. </p>
+<dl class="section note"><dt>注解</dt><dd>This property has no effect with the <a class="el" href="classDBlurEffectWidget.html#a6a7a90cded652beb360c0bf8f5505090" title="模糊的应用场景，默认会根据有没有父控件自动判断使用哪种模式">DBlurEffectWidget::blendMode</a> set to <a class="el" href="classDBlurEffectWidget.html#ab4a45494e2b797a5f1cf5899bb737e27afec58b54b67a2b778711834736d2c34d">DBlurEffectWidget::BehindWindowBlend</a>. </dd></dl>
+
+</div>
+</div>
+<a id="a4bd4dea7dd5a5dd7cfe972633756fedc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bd4dea7dd5a5dd7cfe972633756fedc">&#9670;&nbsp;</a></span>setMaskPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DBlurEffectWidget::setMaskPath </td>
+          <td>(</td>
+          <td class="paramtype">const QPainterPath &amp;&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classDBlurEffectWidget.html#a4bd4dea7dd5a5dd7cfe972633756fedc" title="DBlurEffectWidget::setMaskPath set custom area as the effective background.">DBlurEffectWidget::setMaskPath</a> set custom area as the effective background. </p>
+<p>设置模糊区域的路径，当未调用过此接口时，模糊区域为整个控件所占据的空间，此路径坐标原点为控件左上角</p>
+<p><em>path</em> a QPainterPath to be used as the effectvie background. </p><dl class="section warning"><dt>警告</dt><dd>设置自定义路径之后，控件大小改变时不会再自动调整模糊区域大小 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDBlurEffectWidget.html#a6e9cdc1ae92413ed73f75acc97b2feac" title="模糊区域在x轴方向上的圆角半径，默认值为0">DBlurEffectWidget::blurRectXRadius</a> <a class="el" href="classDBlurEffectWidget.html#a23fc23b3085ba61cee2614dfe2ba37aa" title="模糊区域在y轴方向上的圆角半径，默认值为0">DBlurEffectWidget::blurRectYRadius</a> </dd></dl>
+
+</div>
+</div>
+<a id="a669449fe8e62a8bf9bf0385e208dd1cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a669449fe8e62a8bf9bf0385e208dd1cb">&#9670;&nbsp;</a></span>setSourceImage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DBlurEffectWidget::setSourceImage </td>
+          <td>(</td>
+          <td class="paramtype">const QImage &amp;&#160;</td>
+          <td class="paramname"><em>image</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>autoScale</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classDBlurEffectWidget.html#a669449fe8e62a8bf9bf0385e208dd1cb" title="DBlurEffectWidget::setSourceImage image autoScale">DBlurEffectWidget::setSourceImage</a> <em>image</em> <em>autoScale</em> </p>
+<dl class="section warning"><dt>警告</dt><dd></dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">属性说明</h2>
+<a id="a6a7a90cded652beb360c0bf8f5505090"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a7a90cded652beb360c0bf8f5505090">&#9670;&nbsp;</a></span>blendMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DBlurEffectWidget::blendMode</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>模糊的应用场景，默认会根据有没有父控件自动判断使用哪种模式 </p>
+<dl class="section note"><dt>注解</dt><dd>可读可写 </dd>
+<dd>
+父对象为空时设置模式为 <a class="el" href="classDBlurEffectWidget.html#ab4a45494e2b797a5f1cf5899bb737e27a6c26cbeb53ad47fd5d5ad8cde32ece9c">DBlurEffectWidget::InWindowBlend</a> 没有意义 </dd></dl>
+
+</div>
+</div>
+<a id="a28556e99af2f78eeae8e3f2985f7197e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28556e99af2f78eeae8e3f2985f7197e">&#9670;&nbsp;</a></span>blurEnabled</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DBlurEffectWidget::blurEnabled</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>如果值为 true 则此控件的模糊设置生效，否则不生效 </p>
+<dl class="section note"><dt>注解</dt><dd>可读可写 </dd></dl>
+
+</div>
+</div>
+<a id="a6e9cdc1ae92413ed73f75acc97b2feac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e9cdc1ae92413ed73f75acc97b2feac">&#9670;&nbsp;</a></span>blurRectXRadius</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DBlurEffectWidget::blurRectXRadius</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>模糊区域在x轴方向上的圆角半径，默认值为0 </p>
+<dl class="section note"><dt>注解</dt><dd>可读可写 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDBlurEffectWidget.html#a23fc23b3085ba61cee2614dfe2ba37aa" title="模糊区域在y轴方向上的圆角半径，默认值为0">DBlurEffectWidget::blurRectYRadius</a> <a class="el" href="classDBlurEffectWidget.html#a4bd4dea7dd5a5dd7cfe972633756fedc" title="DBlurEffectWidget::setMaskPath set custom area as the effective background.">DBlurEffectWidget::setMaskPath</a> QPainterPath::addRoundedRect </dd></dl>
+
+</div>
+</div>
+<a id="a23fc23b3085ba61cee2614dfe2ba37aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23fc23b3085ba61cee2614dfe2ba37aa">&#9670;&nbsp;</a></span>blurRectYRadius</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DBlurEffectWidget::blurRectYRadius</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>模糊区域在y轴方向上的圆角半径，默认值为0 </p>
+<dl class="section note"><dt>注解</dt><dd>可读可写 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDBlurEffectWidget.html#a6e9cdc1ae92413ed73f75acc97b2feac" title="模糊区域在x轴方向上的圆角半径，默认值为0">DBlurEffectWidget::blurRectXRadius</a> <a class="el" href="classDBlurEffectWidget.html#a4bd4dea7dd5a5dd7cfe972633756fedc" title="DBlurEffectWidget::setMaskPath set custom area as the effective background.">DBlurEffectWidget::setMaskPath</a> QPainterPath::addRoundedRect </dd></dl>
+
+</div>
+</div>
+<a id="afa658f00726c1330d8d0f1174e42cba8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa658f00726c1330d8d0f1174e42cba8">&#9670;&nbsp;</a></span>full</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DBlurEffectWidget::full</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>如果值为true，将模糊此控件所在顶层窗口的整个背景，而无论控件的大小和位置，否则使用控件的位置和大小 设置顶层窗口的模糊区域。需要注意的时，当控件本身就是顶层窗口且未设置 blurRectXRadius 和 blurRectYRadius 属性的情况下，无论 full 属性的值为多少，都将和值为 true 时的行为保持一致。 </p>
+<dl class="section note"><dt>注解</dt><dd>可读可写 </dd>
+<dd>
+此属性不影响蒙版的绘制区域 </dd>
+<dd>
+只在模糊的混合模式为 BehindWindowBlend 或 <a class="el" href="classDBlurEffectWidget.html#ab4a45494e2b797a5f1cf5899bb737e27a6c26cbeb53ad47fd5d5ad8cde32ece9c">DBlurEffectWidget::InWindowBlend</a> 时生效 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDBlurEffectWidget.html#a6e9cdc1ae92413ed73f75acc97b2feac" title="模糊区域在x轴方向上的圆角半径，默认值为0">DBlurEffectWidget::blurRectXRadius</a> <a class="el" href="classDBlurEffectWidget.html#a23fc23b3085ba61cee2614dfe2ba37aa" title="模糊区域在y轴方向上的圆角半径，默认值为0">DBlurEffectWidget::blurRectYRadius</a> </dd>
+<dd>
+<a class="el" href="classDBlurEffectWidget.html#a1719acaf60c3e21837850546966ddf8c" title="画在控件模糊背景之上的颜色，此颜色的alpha通道值会被 maskAlpha 属性影响 修改此属性会自动将颜色模式设置为 CustomColor，设置后将不能再自动根据窗口管理器是否 支持混成和模糊来自...">DBlurEffectWidget::maskColor</a> </dd>
+<dd>
+<a class="el" href="classDBlurEffectWidget.html#a6a7a90cded652beb360c0bf8f5505090" title="模糊的应用场景，默认会根据有没有父控件自动判断使用哪种模式">DBlurEffectWidget::blendMode</a> </dd></dl>
+
+</div>
+</div>
+<a id="adc07ddda93428f01a234dca983731b1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc07ddda93428f01a234dca983731b1d">&#9670;&nbsp;</a></span>maskAlpha</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DBlurEffectWidget::maskAlpha</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>maskColor 的alpha通道值。当前窗口管理器支持混成（窗口背景透明）时默认值为102，否则为204 </p>
+<dl class="section note"><dt>注解</dt><dd>可读可写 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDBlurEffectWidget.html#a1719acaf60c3e21837850546966ddf8c" title="画在控件模糊背景之上的颜色，此颜色的alpha通道值会被 maskAlpha 属性影响 修改此属性会自动将颜色模式设置为 CustomColor，设置后将不能再自动根据窗口管理器是否 支持混成和模糊来自...">DBlurEffectWidget::maskColor</a> </dd></dl>
+
+</div>
+</div>
+<a id="a1719acaf60c3e21837850546966ddf8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1719acaf60c3e21837850546966ddf8c">&#9670;&nbsp;</a></span>maskColor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DBlurEffectWidget::maskColor</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>画在控件模糊背景之上的颜色，此颜色的alpha通道值会被 <em>maskAlpha</em> 属性影响 修改此属性会自动将颜色模式设置为 CustomColor，设置后将不能再自动根据窗口管理器是否 支持混成和模糊来自动使用最佳的颜色 </p>
+<dl class="section note"><dt>注解</dt><dd>可读可写 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDBlurEffectWidget.html#a6e9cdc1ae92413ed73f75acc97b2feac" title="模糊区域在x轴方向上的圆角半径，默认值为0">DBlurEffectWidget::blurRectXRadius</a> <a class="el" href="classDBlurEffectWidget.html#adcf40e6717feb3bbdab76f225b424d91" title="DBlurEffectWidget::setMaskColor maskColor 设定mask的颜色">DBlurEffectWidget::setMaskColor()</a> </dd></dl>
+
+</div>
+</div>
+<a id="ae0edc0fb4d640b202334355bca2a949e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0edc0fb4d640b202334355bca2a949e">&#9670;&nbsp;</a></span>mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DBlurEffectWidget::mode</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>所采用的模糊算法，默认值为 <em>GaussianBlur</em> </p>
+<dl class="section note"><dt>注解</dt><dd>可读可写 </dd>
+<dd>
+只在模式为 <a class="el" href="classDBlurEffectWidget.html#ab4a45494e2b797a5f1cf5899bb737e27a6c26cbeb53ad47fd5d5ad8cde32ece9c">DBlurEffectWidget::InWindowBlend</a> 时有效 </dd></dl>
+
+</div>
+</div>
+<a id="adbdaa823c0c6ce8733b78ab3832471af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbdaa823c0c6ce8733b78ab3832471af">&#9670;&nbsp;</a></span>radius</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DBlurEffectWidget::radius</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>模糊效果计算时的取样范围，模糊的原理为：将此像素点和周围像素点合成计算得到得到新的值， 此属性表示像素点周围 radius 距离的所有像素点参与计算 </p>
+<dl class="section note"><dt>注解</dt><dd>可读可写 </dd>
+<dd>
+只在模式为 <a class="el" href="classDBlurEffectWidget.html#ab4a45494e2b797a5f1cf5899bb737e27a6c26cbeb53ad47fd5d5ad8cde32ece9c">DBlurEffectWidget::InWindowBlend</a> 时有效 </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dtkwidget/include/dtkwidget/widgets/<a class="el" href="dblureffectwidget_8h_source.html">dblureffectwidget.h</a></li>
+<li>dtkwidget/src/widgets/dblureffectwidget.cpp</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classDBlurEffectWidget.html">DBlurEffectWidget</a></li>
+    <li class="footer">文档生成时间:doxtime</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

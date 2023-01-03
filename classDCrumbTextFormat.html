@@ -1,0 +1,346 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: DCrumbTextFormat类 参考</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="change address" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classDCrumbTextFormat.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#friends">友元</a> &#124;
+<a href="classDCrumbTextFormat-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">DCrumbTextFormat类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 DCrumbTextFormat 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classDCrumbTextFormat.png" alt=""/>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a90664ba14d4f285a4ca0badf912bf687"><td class="memItemLeft" align="right" valign="top">QColor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDCrumbTextFormat.html#a90664ba14d4f285a4ca0badf912bf687">tagColor</a> () const</td></tr>
+<tr class="memdesc:a90664ba14d4f285a4ca0badf912bf687"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDCrumbTextFormat.html#a90664ba14d4f285a4ca0badf912bf687" title="DCrumbTextFormat::tagColor">DCrumbTextFormat::tagColor</a>  <a href="classDCrumbTextFormat.html#a90664ba14d4f285a4ca0badf912bf687">更多...</a><br /></td></tr>
+<tr class="separator:a90664ba14d4f285a4ca0badf912bf687"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b8b6613abfcc27aa94816412a00ef35"><td class="memItemLeft" align="right" valign="top"><a id="a0b8b6613abfcc27aa94816412a00ef35"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDCrumbTextFormat.html#a0b8b6613abfcc27aa94816412a00ef35">setTagColor</a> (const QColor &amp;color)</td></tr>
+<tr class="memdesc:a0b8b6613abfcc27aa94816412a00ef35"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDCrumbTextFormat.html#a0b8b6613abfcc27aa94816412a00ef35" title="DCrumbTextFormat::setTagColor 设置标签颜色 color 标签的颜色">DCrumbTextFormat::setTagColor</a> 设置标签颜色 <em>color</em> 标签的颜色 <br /></td></tr>
+<tr class="separator:a0b8b6613abfcc27aa94816412a00ef35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18bfd0ea244dac89fb545e4d6e8aaf9e"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDCrumbTextFormat.html#a18bfd0ea244dac89fb545e4d6e8aaf9e">text</a> () const</td></tr>
+<tr class="memdesc:a18bfd0ea244dac89fb545e4d6e8aaf9e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDCrumbTextFormat.html#a18bfd0ea244dac89fb545e4d6e8aaf9e" title="DCrumbTextFormat::text">DCrumbTextFormat::text</a>  <a href="classDCrumbTextFormat.html#a18bfd0ea244dac89fb545e4d6e8aaf9e">更多...</a><br /></td></tr>
+<tr class="separator:a18bfd0ea244dac89fb545e4d6e8aaf9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f0e3b487f8504353114bc070a98ae87"><td class="memItemLeft" align="right" valign="top"><a id="a9f0e3b487f8504353114bc070a98ae87"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDCrumbTextFormat.html#a9f0e3b487f8504353114bc070a98ae87">setText</a> (const QString &amp;<a class="el" href="classDCrumbTextFormat.html#a18bfd0ea244dac89fb545e4d6e8aaf9e">text</a>)</td></tr>
+<tr class="memdesc:a9f0e3b487f8504353114bc070a98ae87"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDCrumbTextFormat.html#a9f0e3b487f8504353114bc070a98ae87" title="DCrumbTextFormat::setText 设置文本内容（标签名称） text 文本内容">DCrumbTextFormat::setText</a> 设置文本内容（标签名称） <em>text</em> 文本内容 <br /></td></tr>
+<tr class="separator:a9f0e3b487f8504353114bc070a98ae87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b49d54481d562172550256eb51d804c"><td class="memItemLeft" align="right" valign="top">QColor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDCrumbTextFormat.html#a0b49d54481d562172550256eb51d804c">textColor</a> () const</td></tr>
+<tr class="memdesc:a0b49d54481d562172550256eb51d804c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDCrumbTextFormat.html#a0b49d54481d562172550256eb51d804c" title="DCrumbTextFormat::textColor">DCrumbTextFormat::textColor</a>  <a href="classDCrumbTextFormat.html#a0b49d54481d562172550256eb51d804c">更多...</a><br /></td></tr>
+<tr class="separator:a0b49d54481d562172550256eb51d804c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4942accdadef30f47fb041b2c639cde1"><td class="memItemLeft" align="right" valign="top"><a id="a4942accdadef30f47fb041b2c639cde1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDCrumbTextFormat.html#a4942accdadef30f47fb041b2c639cde1">setTextColor</a> (const QColor &amp;color)</td></tr>
+<tr class="memdesc:a4942accdadef30f47fb041b2c639cde1"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDCrumbTextFormat.html#a4942accdadef30f47fb041b2c639cde1" title="DCrumbTextFormat::setTextColor 设置文本颜色 color 文本的颜色">DCrumbTextFormat::setTextColor</a> 设置文本颜色 <em>color</em> 文本的颜色 <br /></td></tr>
+<tr class="separator:a4942accdadef30f47fb041b2c639cde1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3795773ba946d0c176cc4dede2b4339c"><td class="memItemLeft" align="right" valign="top">QBrush&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDCrumbTextFormat.html#a3795773ba946d0c176cc4dede2b4339c">background</a> () const</td></tr>
+<tr class="memdesc:a3795773ba946d0c176cc4dede2b4339c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDCrumbTextFormat.html#a3795773ba946d0c176cc4dede2b4339c" title="DCrumbTextFormat::background">DCrumbTextFormat::background</a>  <a href="classDCrumbTextFormat.html#a3795773ba946d0c176cc4dede2b4339c">更多...</a><br /></td></tr>
+<tr class="separator:a3795773ba946d0c176cc4dede2b4339c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a147489b392863a70ec85e7bb1e4f394f"><td class="memItemLeft" align="right" valign="top"><a id="a147489b392863a70ec85e7bb1e4f394f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDCrumbTextFormat.html#a147489b392863a70ec85e7bb1e4f394f">setBackground</a> (const QBrush &amp;<a class="el" href="classDCrumbTextFormat.html#a3795773ba946d0c176cc4dede2b4339c">background</a>)</td></tr>
+<tr class="memdesc:a147489b392863a70ec85e7bb1e4f394f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDCrumbTextFormat.html#a147489b392863a70ec85e7bb1e4f394f" title="DCrumbTextFormat::setBackground 设置背景 background 背景画刷">DCrumbTextFormat::setBackground</a> 设置背景 <em>background</em> 背景画刷 <br /></td></tr>
+<tr class="separator:a147489b392863a70ec85e7bb1e4f394f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2849f07410d5f174e5cd377182d7077"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDCrumbTextFormat.html#ae2849f07410d5f174e5cd377182d7077">backgroundRadius</a> () const</td></tr>
+<tr class="memdesc:ae2849f07410d5f174e5cd377182d7077"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDCrumbTextFormat.html#ae2849f07410d5f174e5cd377182d7077" title="DCrumbTextFormat::backgroundRadius">DCrumbTextFormat::backgroundRadius</a>  <a href="classDCrumbTextFormat.html#ae2849f07410d5f174e5cd377182d7077">更多...</a><br /></td></tr>
+<tr class="separator:ae2849f07410d5f174e5cd377182d7077"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff286c0457b65f509914952872649ec6"><td class="memItemLeft" align="right" valign="top"><a id="aff286c0457b65f509914952872649ec6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDCrumbTextFormat.html#aff286c0457b65f509914952872649ec6">setBackgroundRadius</a> (int radius)</td></tr>
+<tr class="memdesc:aff286c0457b65f509914952872649ec6"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDCrumbTextFormat.html#aff286c0457b65f509914952872649ec6" title="DCrumbTextFormat::setBackgroundRadius 设置背景圆角程度 radius 圆角的大小">DCrumbTextFormat::setBackgroundRadius</a> 设置背景圆角程度 <em>radius</em> 圆角的大小 <br /></td></tr>
+<tr class="separator:aff286c0457b65f509914952872649ec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:afbf835dcbc1ebbf9c81f7e93376c7c47"><td class="memItemLeft" align="right" valign="top"><a id="afbf835dcbc1ebbf9c81f7e93376c7c47"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DCrumbTextFormat</b> (int objectType)</td></tr>
+<tr class="separator:afbf835dcbc1ebbf9c81f7e93376c7c47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8ef6a8b3314e81b77009ee1fd63c063"><td class="memItemLeft" align="right" valign="top"><a id="ac8ef6a8b3314e81b77009ee1fd63c063"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DCrumbTextFormat</b> (const QTextFormat &amp;fmt)</td></tr>
+<tr class="separator:ac8ef6a8b3314e81b77009ee1fd63c063"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+友元</h2></td></tr>
+<tr class="memitem:a4c0a7c793c352fc47da917ac767db44c"><td class="memItemLeft" align="right" valign="top"><a id="a4c0a7c793c352fc47da917ac767db44c"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>CrumbObjectInterface</b></td></tr>
+<tr class="separator:a4c0a7c793c352fc47da917ac767db44c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9276da0e039d198dfd80dbc13c2eea25"><td class="memItemLeft" align="right" valign="top"><a id="a9276da0e039d198dfd80dbc13c2eea25"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>DCrumbEdit</b></td></tr>
+<tr class="separator:a9276da0e039d198dfd80dbc13c2eea25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac97fcfa205c07bf8b7e76685e4bba71e"><td class="memItemLeft" align="right" valign="top"><a id="ac97fcfa205c07bf8b7e76685e4bba71e"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>DCrumbEditPrivate</b></td></tr>
+<tr class="separator:ac97fcfa205c07bf8b7e76685e4bba71e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a3795773ba946d0c176cc4dede2b4339c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3795773ba946d0c176cc4dede2b4339c">&#9670;&nbsp;</a></span>background()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QBrush DCrumbTextFormat::background </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classDCrumbTextFormat.html#a3795773ba946d0c176cc4dede2b4339c" title="DCrumbTextFormat::background">DCrumbTextFormat::background</a> </p>
+<dl class="section return"><dt>返回</dt><dd>返回背景画刷 </dd></dl>
+
+</div>
+</div>
+<a id="ae2849f07410d5f174e5cd377182d7077"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2849f07410d5f174e5cd377182d7077">&#9670;&nbsp;</a></span>backgroundRadius()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DCrumbTextFormat::backgroundRadius </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classDCrumbTextFormat.html#ae2849f07410d5f174e5cd377182d7077" title="DCrumbTextFormat::backgroundRadius">DCrumbTextFormat::backgroundRadius</a> </p>
+<dl class="section return"><dt>返回</dt><dd>返回背景的圆角 </dd></dl>
+
+</div>
+</div>
+<a id="a90664ba14d4f285a4ca0badf912bf687"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90664ba14d4f285a4ca0badf912bf687">&#9670;&nbsp;</a></span>tagColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QColor DCrumbTextFormat::tagColor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classDCrumbTextFormat.html#a90664ba14d4f285a4ca0badf912bf687" title="DCrumbTextFormat::tagColor">DCrumbTextFormat::tagColor</a> </p>
+<dl class="section return"><dt>返回</dt><dd>返回标签的颜色 </dd></dl>
+
+</div>
+</div>
+<a id="a18bfd0ea244dac89fb545e4d6e8aaf9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18bfd0ea244dac89fb545e4d6e8aaf9e">&#9670;&nbsp;</a></span>text()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString DCrumbTextFormat::text </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classDCrumbTextFormat.html#a18bfd0ea244dac89fb545e4d6e8aaf9e" title="DCrumbTextFormat::text">DCrumbTextFormat::text</a> </p>
+<dl class="section return"><dt>返回</dt><dd>返回标签的文本内容 </dd></dl>
+
+</div>
+</div>
+<a id="a0b49d54481d562172550256eb51d804c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b49d54481d562172550256eb51d804c">&#9670;&nbsp;</a></span>textColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QColor DCrumbTextFormat::textColor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classDCrumbTextFormat.html#a0b49d54481d562172550256eb51d804c" title="DCrumbTextFormat::textColor">DCrumbTextFormat::textColor</a> </p>
+<dl class="section return"><dt>返回</dt><dd>返回文本的颜色 </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dtkwidget/include/dtkwidget/widgets/<a class="el" href="dcrumbedit_8h_source.html">dcrumbedit.h</a></li>
+<li>dtkwidget/src/widgets/dcrumbedit.cpp</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classDCrumbTextFormat.html">DCrumbTextFormat</a></li>
+    <li class="footer">文档生成时间:doxtime</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

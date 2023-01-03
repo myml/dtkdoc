@@ -1,0 +1,519 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: DPageIndicator类 参考</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="change address" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classDPageIndicator.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#properties">属性</a> &#124;
+<a href="classDPageIndicator-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">DPageIndicator类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 DPageIndicator 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classDPageIndicator.png" alt=""/>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ab7789c5054c56825e3ca03c8bc733986"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPageIndicator.html#ab7789c5054c56825e3ca03c8bc733986">DPageIndicator</a> (QWidget *parent=0)</td></tr>
+<tr class="memdesc:ab7789c5054c56825e3ca03c8bc733986"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDPageIndicator.html#ab7789c5054c56825e3ca03c8bc733986" title="DPageIndicator::DPageIndicator constructs an instance of DPageIndicator. parent is passed to QWidget ...">DPageIndicator::DPageIndicator</a> constructs an instance of <a class="el" href="classDPageIndicator.html">DPageIndicator</a>. <em>parent</em> is passed to QWidget constructor.  <a href="classDPageIndicator.html#ab7789c5054c56825e3ca03c8bc733986">更多...</a><br /></td></tr>
+<tr class="separator:ab7789c5054c56825e3ca03c8bc733986"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac637448c2cb581bd6c802cfcca9cd409"><td class="memItemLeft" align="right" valign="top"><a id="ac637448c2cb581bd6c802cfcca9cd409"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>pageCount</b> () const</td></tr>
+<tr class="separator:ac637448c2cb581bd6c802cfcca9cd409"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35bff7be6a6412a872913fa37d384203"><td class="memItemLeft" align="right" valign="top"><a id="a35bff7be6a6412a872913fa37d384203"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setPageCount</b> (const int count)</td></tr>
+<tr class="separator:a35bff7be6a6412a872913fa37d384203"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac27ef14a647f3ab4fd1391935e1c8fcf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPageIndicator.html#ac27ef14a647f3ab4fd1391935e1c8fcf">nextPage</a> ()</td></tr>
+<tr class="memdesc:ac27ef14a647f3ab4fd1391935e1c8fcf"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDPageIndicator.html#ac27ef14a647f3ab4fd1391935e1c8fcf" title="DPageIndicator::nextPage highlights the next dot.">DPageIndicator::nextPage</a> highlights the next dot.  <a href="classDPageIndicator.html#ac27ef14a647f3ab4fd1391935e1c8fcf">更多...</a><br /></td></tr>
+<tr class="separator:ac27ef14a647f3ab4fd1391935e1c8fcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c74435bd07d3f9c3e08bc539b68b91a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPageIndicator.html#a3c74435bd07d3f9c3e08bc539b68b91a">previousPage</a> ()</td></tr>
+<tr class="memdesc:a3c74435bd07d3f9c3e08bc539b68b91a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDPageIndicator.html#a3c74435bd07d3f9c3e08bc539b68b91a" title="DPageIndicator::previousPage hightlights the previous dot.">DPageIndicator::previousPage</a> hightlights the previous dot.  <a href="classDPageIndicator.html#a3c74435bd07d3f9c3e08bc539b68b91a">更多...</a><br /></td></tr>
+<tr class="separator:a3c74435bd07d3f9c3e08bc539b68b91a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac126277dc787f16d45779de1124a504a"><td class="memItemLeft" align="right" valign="top"><a id="ac126277dc787f16d45779de1124a504a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setCurrentPage</b> (const int index)</td></tr>
+<tr class="separator:ac126277dc787f16d45779de1124a504a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee012d3bccd6265a62ea84c4980530ae"><td class="memItemLeft" align="right" valign="top"><a id="aee012d3bccd6265a62ea84c4980530ae"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>currentPageIndex</b> () const</td></tr>
+<tr class="separator:aee012d3bccd6265a62ea84c4980530ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af46375b15fea82f759614028e43e35b0"><td class="memItemLeft" align="right" valign="top"><a id="af46375b15fea82f759614028e43e35b0"></a>
+QColor&#160;</td><td class="memItemRight" valign="bottom"><b>pointColor</b> () const</td></tr>
+<tr class="separator:af46375b15fea82f759614028e43e35b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a250fe5198c004a1468c29a8ddc3e76b3"><td class="memItemLeft" align="right" valign="top"><a id="a250fe5198c004a1468c29a8ddc3e76b3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setPointColor</b> (QColor color)</td></tr>
+<tr class="separator:a250fe5198c004a1468c29a8ddc3e76b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad462847675bcb95cb709ed2ee9780135"><td class="memItemLeft" align="right" valign="top"><a id="ad462847675bcb95cb709ed2ee9780135"></a>
+QColor&#160;</td><td class="memItemRight" valign="bottom"><b>secondaryPointColor</b> () const</td></tr>
+<tr class="separator:ad462847675bcb95cb709ed2ee9780135"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2be2a1bb2361e47f8063656b1a9b9cba"><td class="memItemLeft" align="right" valign="top"><a id="a2be2a1bb2361e47f8063656b1a9b9cba"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setSecondaryPointColor</b> (QColor color)</td></tr>
+<tr class="separator:a2be2a1bb2361e47f8063656b1a9b9cba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4705a2bf49a02abede1fd0386f567319"><td class="memItemLeft" align="right" valign="top"><a id="a4705a2bf49a02abede1fd0386f567319"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>pointRadius</b> () const</td></tr>
+<tr class="separator:a4705a2bf49a02abede1fd0386f567319"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37a80557454441f377e2fb44b3ad776e"><td class="memItemLeft" align="right" valign="top"><a id="a37a80557454441f377e2fb44b3ad776e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setPointRadius</b> (int size)</td></tr>
+<tr class="separator:a37a80557454441f377e2fb44b3ad776e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4d2fe4f1af3830c9946b2e1f4c3f1fb"><td class="memItemLeft" align="right" valign="top"><a id="ac4d2fe4f1af3830c9946b2e1f4c3f1fb"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>secondaryPointRadius</b> () const</td></tr>
+<tr class="separator:ac4d2fe4f1af3830c9946b2e1f4c3f1fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f50e356476a309707802b9b9709e7dc"><td class="memItemLeft" align="right" valign="top"><a id="a9f50e356476a309707802b9b9709e7dc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setSecondaryPointRadius</b> (int size)</td></tr>
+<tr class="separator:a9f50e356476a309707802b9b9709e7dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09a5b336d844b8b4384c67ff61eef459"><td class="memItemLeft" align="right" valign="top"><a id="a09a5b336d844b8b4384c67ff61eef459"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>pointDistance</b> () const</td></tr>
+<tr class="separator:a09a5b336d844b8b4384c67ff61eef459"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10f31716e0a1f64368662a98efb64fff"><td class="memItemLeft" align="right" valign="top"><a id="a10f31716e0a1f64368662a98efb64fff"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setPointDistance</b> (int distance)</td></tr>
+<tr class="separator:a10f31716e0a1f64368662a98efb64fff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a45a3fcdf3afa65b5b33a678b62f2b08f"><td class="memItemLeft" align="right" valign="top"><a id="a45a3fcdf3afa65b5b33a678b62f2b08f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>paintEvent</b> (QPaintEvent *e) override</td></tr>
+<tr class="separator:a45a3fcdf3afa65b5b33a678b62f2b08f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:aced54d81378553e6fc6aafebf12c5fd8"><td class="memItemLeft" align="right" valign="top">QColor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPageIndicator.html#aced54d81378553e6fc6aafebf12c5fd8">pointColor</a></td></tr>
+<tr class="memdesc:aced54d81378553e6fc6aafebf12c5fd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">This property holds the color used to draw the highlighted dot.  <a href="classDPageIndicator.html#aced54d81378553e6fc6aafebf12c5fd8">更多...</a><br /></td></tr>
+<tr class="separator:aced54d81378553e6fc6aafebf12c5fd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9448c5dadf2b830045631a71841fb68"><td class="memItemLeft" align="right" valign="top">QColor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPageIndicator.html#ab9448c5dadf2b830045631a71841fb68">secondaryPointColor</a></td></tr>
+<tr class="memdesc:ab9448c5dadf2b830045631a71841fb68"><td class="mdescLeft">&#160;</td><td class="mdescRight">This property holds the color used to draw the noraml dots.  <a href="classDPageIndicator.html#ab9448c5dadf2b830045631a71841fb68">更多...</a><br /></td></tr>
+<tr class="separator:ab9448c5dadf2b830045631a71841fb68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb95b8213a45fa8b12bdc3e77b5d7985"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPageIndicator.html#acb95b8213a45fa8b12bdc3e77b5d7985">pointRadius</a></td></tr>
+<tr class="memdesc:acb95b8213a45fa8b12bdc3e77b5d7985"><td class="mdescLeft">&#160;</td><td class="mdescRight">This property holds the radius of the highlighted dot.  <a href="classDPageIndicator.html#acb95b8213a45fa8b12bdc3e77b5d7985">更多...</a><br /></td></tr>
+<tr class="separator:acb95b8213a45fa8b12bdc3e77b5d7985"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae57a83a0537deaeed5627dbdc2658ad7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPageIndicator.html#ae57a83a0537deaeed5627dbdc2658ad7">secondaryPointRadius</a></td></tr>
+<tr class="memdesc:ae57a83a0537deaeed5627dbdc2658ad7"><td class="mdescLeft">&#160;</td><td class="mdescRight">This property holds the radius of the normal dot.  <a href="classDPageIndicator.html#ae57a83a0537deaeed5627dbdc2658ad7">更多...</a><br /></td></tr>
+<tr class="separator:ae57a83a0537deaeed5627dbdc2658ad7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a670e0e75b766fe9ee46d2788da8f0ded"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPageIndicator.html#a670e0e75b766fe9ee46d2788da8f0ded">pageCount</a></td></tr>
+<tr class="memdesc:a670e0e75b766fe9ee46d2788da8f0ded"><td class="mdescLeft">&#160;</td><td class="mdescRight">This property holds the number of pages that are represented by this widget.  <a href="classDPageIndicator.html#a670e0e75b766fe9ee46d2788da8f0ded">更多...</a><br /></td></tr>
+<tr class="separator:a670e0e75b766fe9ee46d2788da8f0ded"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae490c57259aef4492790710ececef20b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPageIndicator.html#ae490c57259aef4492790710ececef20b">currentPage</a></td></tr>
+<tr class="memdesc:ae490c57259aef4492790710ececef20b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This property holds the index of currently highlighted dot.  <a href="classDPageIndicator.html#ae490c57259aef4492790710ececef20b">更多...</a><br /></td></tr>
+<tr class="separator:ae490c57259aef4492790710ececef20b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71e362918ee4aa2bffcdd5cfe930fd0e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPageIndicator.html#a71e362918ee4aa2bffcdd5cfe930fd0e">pointDistance</a></td></tr>
+<tr class="memdesc:a71e362918ee4aa2bffcdd5cfe930fd0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This property holds the distance between two dots.  <a href="classDPageIndicator.html#a71e362918ee4aa2bffcdd5cfe930fd0e">更多...</a><br /></td></tr>
+<tr class="separator:a71e362918ee4aa2bffcdd5cfe930fd0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a id="ab7789c5054c56825e3ca03c8bc733986"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7789c5054c56825e3ca03c8bc733986">&#9670;&nbsp;</a></span>DPageIndicator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DPageIndicator::DPageIndicator </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>0</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classDPageIndicator.html#ab7789c5054c56825e3ca03c8bc733986" title="DPageIndicator::DPageIndicator constructs an instance of DPageIndicator. parent is passed to QWidget ...">DPageIndicator::DPageIndicator</a> constructs an instance of <a class="el" href="classDPageIndicator.html">DPageIndicator</a>. <em>parent</em> is passed to QWidget constructor. </p>
+<p><a class="el" href="classDPageIndicator.html#ab7789c5054c56825e3ca03c8bc733986" title="DPageIndicator::DPageIndicator constructs an instance of DPageIndicator. parent is passed to QWidget ...">DPageIndicator::DPageIndicator</a> 是 <a class="el" href="classDPageIndicator.html">DPageIndicator</a> 类的构造函数。 <em>parent</em> 指定了控件的父控件。 </p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="ac27ef14a647f3ab4fd1391935e1c8fcf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac27ef14a647f3ab4fd1391935e1c8fcf">&#9670;&nbsp;</a></span>nextPage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DPageIndicator::nextPage </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classDPageIndicator.html#ac27ef14a647f3ab4fd1391935e1c8fcf" title="DPageIndicator::nextPage highlights the next dot.">DPageIndicator::nextPage</a> highlights the next dot. </p>
+<p><a class="el" href="classDPageIndicator.html#ac27ef14a647f3ab4fd1391935e1c8fcf" title="DPageIndicator::nextPage highlights the next dot.">DPageIndicator::nextPage</a> 将高亮位置移至下一个点。</p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDPageIndicator.html#ae490c57259aef4492790710ececef20b" title="This property holds the index of currently highlighted dot.">currentPage</a>. </dd></dl>
+
+</div>
+</div>
+<a id="a3c74435bd07d3f9c3e08bc539b68b91a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c74435bd07d3f9c3e08bc539b68b91a">&#9670;&nbsp;</a></span>previousPage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DPageIndicator::previousPage </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classDPageIndicator.html#a3c74435bd07d3f9c3e08bc539b68b91a" title="DPageIndicator::previousPage hightlights the previous dot.">DPageIndicator::previousPage</a> hightlights the previous dot. </p>
+<p><a class="el" href="classDPageIndicator.html#a3c74435bd07d3f9c3e08bc539b68b91a" title="DPageIndicator::previousPage hightlights the previous dot.">DPageIndicator::previousPage</a> 将高亮位置移至前一个点。</p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDPageIndicator.html#ae490c57259aef4492790710ececef20b" title="This property holds the index of currently highlighted dot.">currentPage</a>. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">属性说明</h2>
+<a id="ae490c57259aef4492790710ececef20b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae490c57259aef4492790710ececef20b">&#9670;&nbsp;</a></span>currentPage</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DPageIndicator::currentPage</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This property holds the index of currently highlighted dot. </p>
+<p><a class="el" href="classDPageIndicator.html#ae490c57259aef4492790710ececef20b" title="This property holds the index of currently highlighted dot.">DPageIndicator::currentPage</a> 属性代表了当前高亮的点在所有点中的索引。 </p>
+
+</div>
+</div>
+<a id="a670e0e75b766fe9ee46d2788da8f0ded"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a670e0e75b766fe9ee46d2788da8f0ded">&#9670;&nbsp;</a></span>pageCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DPageIndicator::pageCount</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This property holds the number of pages that are represented by this widget. </p>
+<p><a class="el" href="classDPageIndicator.html#a670e0e75b766fe9ee46d2788da8f0ded" title="This property holds the number of pages that are represented by this widget.">DPageIndicator::pageCount</a> 属性代表了控件显示的点的数量。 </p>
+
+</div>
+</div>
+<a id="aced54d81378553e6fc6aafebf12c5fd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aced54d81378553e6fc6aafebf12c5fd8">&#9670;&nbsp;</a></span>pointColor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DPageIndicator::pointColor</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This property holds the color used to draw the highlighted dot. </p>
+<p><a class="el" href="classDPageIndicator.html#aced54d81378553e6fc6aafebf12c5fd8" title="This property holds the color used to draw the highlighted dot.">DPageIndicator::pointColor</a> 属性用来控制高亮点的颜色。 </p>
+
+</div>
+</div>
+<a id="a71e362918ee4aa2bffcdd5cfe930fd0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71e362918ee4aa2bffcdd5cfe930fd0e">&#9670;&nbsp;</a></span>pointDistance</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DPageIndicator::pointDistance</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This property holds the distance between two dots. </p>
+<p><a class="el" href="classDPageIndicator.html#a71e362918ee4aa2bffcdd5cfe930fd0e" title="This property holds the distance between two dots.">DPageIndicator::pointDistance</a> 属性用来控制两个点之间的距离。 </p>
+
+</div>
+</div>
+<a id="acb95b8213a45fa8b12bdc3e77b5d7985"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb95b8213a45fa8b12bdc3e77b5d7985">&#9670;&nbsp;</a></span>pointRadius</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DPageIndicator::pointRadius</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This property holds the radius of the highlighted dot. </p>
+<p><a class="el" href="classDPageIndicator.html#acb95b8213a45fa8b12bdc3e77b5d7985" title="This property holds the radius of the highlighted dot.">DPageIndicator::pointRadius</a> 属性用来控制高亮点的大小（半径）。 </p>
+
+</div>
+</div>
+<a id="ab9448c5dadf2b830045631a71841fb68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9448c5dadf2b830045631a71841fb68">&#9670;&nbsp;</a></span>secondaryPointColor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DPageIndicator::secondaryPointColor</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This property holds the color used to draw the noraml dots. </p>
+<p><a class="el" href="classDPageIndicator.html#ab9448c5dadf2b830045631a71841fb68" title="This property holds the color used to draw the noraml dots.">DPageIndicator::secondaryPointColor</a> 属性用来控制默认点的颜色。 </p>
+
+</div>
+</div>
+<a id="ae57a83a0537deaeed5627dbdc2658ad7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae57a83a0537deaeed5627dbdc2658ad7">&#9670;&nbsp;</a></span>secondaryPointRadius</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DPageIndicator::secondaryPointRadius</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This property holds the radius of the normal dot. </p>
+<p><a class="el" href="classDPageIndicator.html#ae57a83a0537deaeed5627dbdc2658ad7" title="This property holds the radius of the normal dot.">DPageIndicator::secondaryPointRadius</a> 属性用来控制普通点的大小（半径）。 </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dtkwidget/include/dtkwidget/widgets/<a class="el" href="dpageindicator_8h_source.html">dpageindicator.h</a></li>
+<li>dtkwidget/src/widgets/dpageindicator.cpp</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classDPageIndicator.html">DPageIndicator</a></li>
+    <li class="footer">文档生成时间:doxtime</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,873 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: Dtk::Core::Logger类 参考</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="change address" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classDtk_1_1Core_1_1Logger.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="classDtk_1_1Core_1_1Logger-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">Dtk::Core::Logger类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>非常简单但相当强大的组件，可用于记录你的应用程序活动。  
+ <a href="classDtk_1_1Core_1_1Logger.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Logger_8h_source.html">Logger.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a4a76b1db357f61044ed67411d1c378b4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1Logger.html#a4a76b1db357f61044ed67411d1c378b4">LogLevel</a> { <br />
+&#160;&#160;<b>Trace</b>
+, <b>Debug</b>
+, <b>Info</b>
+, <b>Warning</b>
+, <br />
+&#160;&#160;<b>Error</b>
+, <b>Fatal</b>
+<br />
+ }</td></tr>
+<tr class="memdesc:a4a76b1db357f61044ed67411d1c378b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">日志等级  <a href="classDtk_1_1Core_1_1Logger.html#a4a76b1db357f61044ed67411d1c378b4">更多...</a><br /></td></tr>
+<tr class="separator:a4a76b1db357f61044ed67411d1c378b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a8bf632cb87800101031e5c19773cca38"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1Logger.html#a8bf632cb87800101031e5c19773cca38">Logger</a> ()</td></tr>
+<tr class="memdesc:a8bf632cb87800101031e5c19773cca38"><td class="mdescLeft">&#160;</td><td class="mdescRight">构建Logger的实例。  <a href="classDtk_1_1Core_1_1Logger.html#a8bf632cb87800101031e5c19773cca38">更多...</a><br /></td></tr>
+<tr class="separator:a8bf632cb87800101031e5c19773cca38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2f834f683f7379d92de6e413c5acb8b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1Logger.html#ae2f834f683f7379d92de6e413c5acb8b">Logger</a> (const QString &amp;<a class="el" href="classDtk_1_1Core_1_1Logger.html#a4a372bad2146536722eafc6a8c086c9c">defaultCategory</a>)</td></tr>
+<tr class="memdesc:ae2f834f683f7379d92de6e413c5acb8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">构建Logger的实例并设置Logger的默认类别  <a href="classDtk_1_1Core_1_1Logger.html#ae2f834f683f7379d92de6e413c5acb8b">更多...</a><br /></td></tr>
+<tr class="separator:ae2f834f683f7379d92de6e413c5acb8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4eea40e26ce45df1c18058f97d1b11e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1Logger.html#ab4eea40e26ce45df1c18058f97d1b11e">~Logger</a> ()</td></tr>
+<tr class="memdesc:ab4eea40e26ce45df1c18058f97d1b11e"><td class="mdescLeft">&#160;</td><td class="mdescRight">析构函数  <a href="classDtk_1_1Core_1_1Logger.html#ab4eea40e26ce45df1c18058f97d1b11e">更多...</a><br /></td></tr>
+<tr class="separator:ab4eea40e26ce45df1c18058f97d1b11e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bcdf12779fa8567bb2079edf027662d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1Logger.html#a2bcdf12779fa8567bb2079edf027662d">registerAppender</a> (<a class="el" href="classDtk_1_1Core_1_1AbstractAppender.html">AbstractAppender</a> *appender)</td></tr>
+<tr class="memdesc:a2bcdf12779fa8567bb2079edf027662d"><td class="mdescLeft">&#160;</td><td class="mdescRight">注册appender来写入日志记录<br  />
+ 在写入日志的调用中(使用其中一个宏或<code><a class="el" href="classDtk_1_1Core_1_1Logger.html#a7c89067d5a040ea79c481038dbdd565f" title="写入日志记录。 将带有所提供参数的日志记录写给所有注册的应用">write()</a></code>函数),Logger遍历appender列表,并向每个appender写入日志记录。请查阅AbstractAppender文档以了解appenders的概念。 如果没有appender被添加到Logger中,它就会退回到记录到<code>std::cerr</code>STL流中。 appender 要在Logger中注册的Appender  <a href="classDtk_1_1Core_1_1Logger.html#a2bcdf12779fa8567bb2079edf027662d">更多...</a><br /></td></tr>
+<tr class="separator:a2bcdf12779fa8567bb2079edf027662d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95ef2b960342e8153edd908b2f05029c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1Logger.html#a95ef2b960342e8153edd908b2f05029c">registerCategoryAppender</a> (const QString &amp;category, <a class="el" href="classDtk_1_1Core_1_1AbstractAppender.html">AbstractAppender</a> *appender)</td></tr>
+<tr class="memdesc:a95ef2b960342e8153edd908b2f05029c"><td class="mdescLeft">&#160;</td><td class="mdescRight">注册appender,将日志记录写到特定的类别中<br  />
+  <a href="classDtk_1_1Core_1_1Logger.html#a95ef2b960342e8153edd908b2f05029c">更多...</a><br /></td></tr>
+<tr class="separator:a95ef2b960342e8153edd908b2f05029c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87f67b2b6ed4ffec4096ffd5e118beca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1Logger.html#a87f67b2b6ed4ffec4096ffd5e118beca">logToGlobalInstance</a> (const QString &amp;category, bool logToGlobal=false)</td></tr>
+<tr class="memdesc:a87f67b2b6ed4ffec4096ffd5e118beca"><td class="mdescLeft">&#160;</td><td class="mdescRight">将一些日志类别与全局日志实例应用者联系起来。 如果logToGlobal设置为 "true",所有到指定类别的Logger的日志消息也将被写入全局日志实例appenders(使用<code><a class="el" href="classDtk_1_1Core_1_1Logger.html#a2bcdf12779fa8567bb2079edf027662d" title="注册appender来写入日志记录  在写入日志的调用中(使用其中一个宏或write()函数),Logger遍历appender列表,并向每个appender写入日志记录。请查阅AbstractAppe...">registerAppender()</a></code>注册)<br  />
+ 默认情况下，所有到特定类别的消息都只写到特定的类别应用者 (使用 <code><a class="el" href="classDtk_1_1Core_1_1Logger.html#a95ef2b960342e8153edd908b2f05029c" title="注册appender,将日志记录写到特定的类别中">registerCategoryAppender()</a></code> 注册)  <a href="classDtk_1_1Core_1_1Logger.html#a87f67b2b6ed4ffec4096ffd5e118beca">更多...</a><br /></td></tr>
+<tr class="separator:a87f67b2b6ed4ffec4096ffd5e118beca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a88302ec9c667bc47529d234da516d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1Logger.html#a4a88302ec9c667bc47529d234da516d4">setDefaultCategory</a> (const QString &amp;category)</td></tr>
+<tr class="memdesc:a4a88302ec9c667bc47529d234da516d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置默认的日志类别 所有到这个类别应用的日志信息也将被写入一般的日志实例应用(使用<a class="el" href="classDtk_1_1Core_1_1Logger.html#a2bcdf12779fa8567bb2079edf027662d">registerAppender</a>方法注册),反之亦然 特别是,任何对dDebug()宏的调用都将被视为类别日志 所以你不需要用dCDebug()宏来指定类别名称 要取消默认的类别，传递一个空字符串作为参数  <a href="classDtk_1_1Core_1_1Logger.html#a4a88302ec9c667bc47529d234da516d4">更多...</a><br /></td></tr>
+<tr class="separator:a4a88302ec9c667bc47529d234da516d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a372bad2146536722eafc6a8c086c9c"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1Logger.html#a4a372bad2146536722eafc6a8c086c9c">defaultCategory</a> () const</td></tr>
+<tr class="memdesc:a4a372bad2146536722eafc6a8c086c9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回默认的日志类别名称  <a href="classDtk_1_1Core_1_1Logger.html#a4a372bad2146536722eafc6a8c086c9c">更多...</a><br /></td></tr>
+<tr class="separator:a4a372bad2146536722eafc6a8c086c9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c89067d5a040ea79c481038dbdd565f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1Logger.html#a7c89067d5a040ea79c481038dbdd565f">write</a> (const QDateTime &amp;time, <a class="el" href="classDtk_1_1Core_1_1Logger.html#a4a76b1db357f61044ed67411d1c378b4">LogLevel</a> level, const char *file, int line, const char *func, const char *category, const QString &amp;msg)</td></tr>
+<tr class="memdesc:a7c89067d5a040ea79c481038dbdd565f"><td class="mdescLeft">&#160;</td><td class="mdescRight">写入日志记录。 将带有所提供参数的日志记录写给所有注册的应用  <a href="classDtk_1_1Core_1_1Logger.html#a7c89067d5a040ea79c481038dbdd565f">更多...</a><br /></td></tr>
+<tr class="separator:a7c89067d5a040ea79c481038dbdd565f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc14a059bda2bdb2b22b71e4d6c71ef4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1Logger.html#abc14a059bda2bdb2b22b71e4d6c71ef4">write</a> (<a class="el" href="classDtk_1_1Core_1_1Logger.html#a4a76b1db357f61044ed67411d1c378b4">LogLevel</a> level, const char *file, int line, const char *func, const char *category, const QString &amp;msg)</td></tr>
+<tr class="memdesc:abc14a059bda2bdb2b22b71e4d6c71ef4"><td class="mdescLeft">&#160;</td><td class="mdescRight">这是为方便而提供的重载函数。它的行为与同名函数类似,此函数无需传入time参数  <a href="classDtk_1_1Core_1_1Logger.html#abc14a059bda2bdb2b22b71e4d6c71ef4">更多...</a><br /></td></tr>
+<tr class="separator:abc14a059bda2bdb2b22b71e4d6c71ef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7859e553c3fbb0b78802cd78c78389da"><td class="memItemLeft" align="right" valign="top">QDebug&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1Logger.html#a7859e553c3fbb0b78802cd78c78389da">write</a> (<a class="el" href="classDtk_1_1Core_1_1Logger.html#a4a76b1db357f61044ed67411d1c378b4">LogLevel</a> level, const char *file, int line, const char *func, const char *category)</td></tr>
+<tr class="memdesc:a7859e553c3fbb0b78802cd78c78389da"><td class="mdescLeft">&#160;</td><td class="mdescRight">这是为方便而提供的重载函数。它的行为与同名函数类似,此函数无需传入message参数  <a href="classDtk_1_1Core_1_1Logger.html#a7859e553c3fbb0b78802cd78c78389da">更多...</a><br /></td></tr>
+<tr class="separator:a7859e553c3fbb0b78802cd78c78389da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e743f432d95b256c86e6ee5575270ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1Logger.html#a2e743f432d95b256c86e6ee5575270ba">writeAssert</a> (const char *file, int line, const char *func, const char *condition)</td></tr>
+<tr class="memdesc:a2e743f432d95b256c86e6ee5575270ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">写入断言  <a href="classDtk_1_1Core_1_1Logger.html#a2e743f432d95b256c86e6ee5575270ba">更多...</a><br /></td></tr>
+<tr class="separator:a2e743f432d95b256c86e6ee5575270ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:af7aa5612396574e4274660fe3c4e307a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classDtk_1_1Core_1_1Logger.html">Logger</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1Logger.html#af7aa5612396574e4274660fe3c4e307a">globalInstance</a> ()</td></tr>
+<tr class="memdesc:af7aa5612396574e4274660fe3c4e307a"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回Logger的全局对象  <a href="classDtk_1_1Core_1_1Logger.html#af7aa5612396574e4274660fe3c4e307a">更多...</a><br /></td></tr>
+<tr class="separator:af7aa5612396574e4274660fe3c4e307a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cb3cfe90fe951388a00ec2a2a76369d"><td class="memItemLeft" align="right" valign="top">static QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1Logger.html#a9cb3cfe90fe951388a00ec2a2a76369d">levelToString</a> (<a class="el" href="classDtk_1_1Core_1_1Logger.html#a4a76b1db357f61044ed67411d1c378b4">LogLevel</a> level)</td></tr>
+<tr class="memdesc:a9cb3cfe90fe951388a00ec2a2a76369d"><td class="mdescLeft">&#160;</td><td class="mdescRight">将LogLevel枚举值转换为其字符串表示  <a href="classDtk_1_1Core_1_1Logger.html#a9cb3cfe90fe951388a00ec2a2a76369d">更多...</a><br /></td></tr>
+<tr class="separator:a9cb3cfe90fe951388a00ec2a2a76369d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a477f08222e3c87f3acf4b9a5da95bc85"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classDtk_1_1Core_1_1Logger.html#a4a76b1db357f61044ed67411d1c378b4">LogLevel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1Logger.html#a477f08222e3c87f3acf4b9a5da95bc85">levelFromString</a> (const QString &amp;str)</td></tr>
+<tr class="memdesc:a477f08222e3c87f3acf4b9a5da95bc85"><td class="mdescLeft">&#160;</td><td class="mdescRight">将LogLevel字符串表示转换为枚举值  <a href="classDtk_1_1Core_1_1Logger.html#a477f08222e3c87f3acf4b9a5da95bc85">更多...</a><br /></td></tr>
+<tr class="separator:a477f08222e3c87f3acf4b9a5da95bc85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>非常简单但相当强大的组件，可用于记录你的应用程序活动。 </p>
+</div><h2 class="groupheader">成员枚举类型说明</h2>
+<a id="a4a76b1db357f61044ed67411d1c378b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a76b1db357f61044ed67411d1c378b4">&#9670;&nbsp;</a></span>LogLevel</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classDtk_1_1Core_1_1Logger.html#a4a76b1db357f61044ed67411d1c378b4">Dtk::Core::Logger::LogLevel</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>日志等级 </p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadCenter"><b>值</b>   </th><th class="markdownTableHeadCenter"><b>序号</b>   </th><th class="markdownTableHeadCenter"><b>含义</b>    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">Trace   </td><td class="markdownTableBodyCenter">0   </td><td class="markdownTableBodyCenter">追踪级别,可用于大部分不需要的记录,用于内部代码追踪    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">Debug   </td><td class="markdownTableBodyCenter">1   </td><td class="markdownTableBodyCenter">调试级别,用于软件的调试。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">Info   </td><td class="markdownTableBodyCenter">2   </td><td class="markdownTableBodyCenter">信息级别,可用于信息记录,这可能不仅对开发者有意义    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">Warning   </td><td class="markdownTableBodyCenter">3   </td><td class="markdownTableBodyCenter">警告,可以用来记录你的应用程序检测到的一些非致命的警告    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">Error   </td><td class="markdownTableBodyCenter">4   </td><td class="markdownTableBodyCenter">错误,可能是一个较大问题,导致你的程序工作出错,但不至于崩溃    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">Fatal   </td><td class="markdownTableBodyCenter">5   </td><td class="markdownTableBodyCenter">致命错误，用于不可恢复的错误，在写入日志记录后立即崩溃应用程序(终止)   </td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a8bf632cb87800101031e5c19773cca38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bf632cb87800101031e5c19773cca38">&#9670;&nbsp;</a></span>Logger() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Dtk::Core::Logger::Logger </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>构建Logger的实例。 </p>
+<dl class="section note"><dt>注解</dt><dd>如果你只使用一个全局的logger实例,不需要手动使用这个构造函数,可以考虑使用logger宏来代替访问记录器实例 </dd></dl>
+
+</div>
+</div>
+<a id="ae2f834f683f7379d92de6e413c5acb8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2f834f683f7379d92de6e413c5acb8b">&#9670;&nbsp;</a></span>Logger() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Dtk::Core::Logger::Logger </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>defaultCategory</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>构建Logger的实例并设置Logger的默认类别 </p>
+<dl class="section note"><dt>注解</dt><dd>如果你只使用一个全局的logger实例,不需要手动使用这个构造函数, 可以考虑使用logger宏来访问logger实例并调用setDefaultCategory方法 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDtk_1_1Core_1_1Logger.html#a8bf632cb87800101031e5c19773cca38" title="构建Logger的实例。">Logger::Logger()</a> </dd>
+<dd>
+<a class="el" href="classDtk_1_1Core_1_1Logger.html#a4a88302ec9c667bc47529d234da516d4" title="设置默认的日志类别 所有到这个类别应用的日志信息也将被写入一般的日志实例应用(使用registerAppender方法注册),反之亦然 特别是,任何对dDebug()宏的调用都将被视为类别日志 所以你不...">Logger::setDefaultCategory()</a> </dd></dl>
+
+</div>
+</div>
+<a id="ab4eea40e26ce45df1c18058f97d1b11e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4eea40e26ce45df1c18058f97d1b11e">&#9670;&nbsp;</a></span>~Logger()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Dtk::Core::Logger::~Logger </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>析构函数 </p>
+<dl class="section note"><dt>注解</dt><dd>你可能不需要直接使用这个函数。记录器的全局实例将在你的QCoreApplication执行结束后自动销毁 </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a4a372bad2146536722eafc6a8c086c9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a372bad2146536722eafc6a8c086c9c">&#9670;&nbsp;</a></span>defaultCategory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString Dtk::Core::Logger::defaultCategory </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>返回默认的日志类别名称 </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDtk_1_1Core_1_1Logger.html#a4a88302ec9c667bc47529d234da516d4" title="设置默认的日志类别 所有到这个类别应用的日志信息也将被写入一般的日志实例应用(使用registerAppender方法注册),反之亦然 特别是,任何对dDebug()宏的调用都将被视为类别日志 所以你不...">Logger::setDefaultCategory()</a> </dd></dl>
+
+</div>
+</div>
+<a id="af7aa5612396574e4274660fe3c4e307a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7aa5612396574e4274660fe3c4e307a">&#9670;&nbsp;</a></span>globalInstance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDtk_1_1Core_1_1Logger.html">Logger</a> * Dtk::Core::Logger::globalInstance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>返回Logger的全局对象 </p>
+<dl class="section note"><dt>注解</dt><dd>在大多数情况下，你不应该直接使用这个函数。可以考虑使用 logger 宏来代替 </dd></dl>
+<dl class="section return"><dt>返回</dt><dd>Logger指针 </dd></dl>
+
+</div>
+</div>
+<a id="a477f08222e3c87f3acf4b9a5da95bc85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a477f08222e3c87f3acf4b9a5da95bc85">&#9670;&nbsp;</a></span>levelFromString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDtk_1_1Core_1_1Logger.html#a4a76b1db357f61044ed67411d1c378b4">Logger::LogLevel</a> Dtk::Core::Logger::levelFromString </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>将LogLevel字符串表示转换为枚举值 </p>
+<dl class="section note"><dt>注解</dt><dd>字符串的比较是不分大小写的。如果提供的日志级别字符串不合法,则返回<code>Logger::Debug</code>的枚举值 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDtk_1_1Core_1_1Logger.html#a4a76b1db357f61044ed67411d1c378b4" title="日志等级">Logger::LogLevel</a> </dd>
+<dd>
+<a class="el" href="classDtk_1_1Core_1_1Logger.html#a9cb3cfe90fe951388a00ec2a2a76369d" title="将LogLevel枚举值转换为其字符串表示">Logger::levelToString()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a9cb3cfe90fe951388a00ec2a2a76369d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cb3cfe90fe951388a00ec2a2a76369d">&#9670;&nbsp;</a></span>levelToString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString Dtk::Core::Logger::levelToString </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classDtk_1_1Core_1_1Logger.html#a4a76b1db357f61044ed67411d1c378b4">Logger::LogLevel</a>&#160;</td>
+          <td class="paramname"><em>level</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>将LogLevel枚举值转换为其字符串表示 </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDtk_1_1Core_1_1Logger.html#a4a76b1db357f61044ed67411d1c378b4" title="日志等级">Logger::LogLevel</a> </dd></dl>
+
+</div>
+</div>
+<a id="a87f67b2b6ed4ffec4096ffd5e118beca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87f67b2b6ed4ffec4096ffd5e118beca">&#9670;&nbsp;</a></span>logToGlobalInstance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dtk::Core::Logger::logToGlobalInstance </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>category</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>logToGlobal</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>将一些日志类别与全局日志实例应用者联系起来。 如果logToGlobal设置为 "true",所有到指定类别的Logger的日志消息也将被写入全局日志实例appenders(使用<code><a class="el" href="classDtk_1_1Core_1_1Logger.html#a2bcdf12779fa8567bb2079edf027662d" title="注册appender来写入日志记录  在写入日志的调用中(使用其中一个宏或write()函数),Logger遍历appender列表,并向每个appender写入日志记录。请查阅AbstractAppe...">registerAppender()</a></code>注册)<br  />
+ 默认情况下，所有到特定类别的消息都只写到特定的类别应用者 (使用 <code><a class="el" href="classDtk_1_1Core_1_1Logger.html#a95ef2b960342e8153edd908b2f05029c" title="注册appender,将日志记录写到特定的类别中">registerCategoryAppender()</a></code> 注册) </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">category</td><td>类别名称 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">logToGlobal</td><td>是否将日志写入全局日志appenders </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDtk_1_1Core_1_1Logger.html#a2bcdf12779fa8567bb2079edf027662d" title="注册appender来写入日志记录  在写入日志的调用中(使用其中一个宏或write()函数),Logger遍历appender列表,并向每个appender写入日志记录。请查阅AbstractAppe...">Logger::registerAppender()</a> </dd>
+<dd>
+<a class="el" href="classDtk_1_1Core_1_1Logger.html#af7aa5612396574e4274660fe3c4e307a" title="返回Logger的全局对象">Logger::globalInstance()</a> </dd>
+<dd>
+<a class="el" href="classDtk_1_1Core_1_1Logger.html#a95ef2b960342e8153edd908b2f05029c" title="注册appender,将日志记录写到特定的类别中">Logger::registerCategoryAppender()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a2bcdf12779fa8567bb2079edf027662d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bcdf12779fa8567bb2079edf027662d">&#9670;&nbsp;</a></span>registerAppender()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dtk::Core::Logger::registerAppender </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classDtk_1_1Core_1_1AbstractAppender.html">AbstractAppender</a> *&#160;</td>
+          <td class="paramname"><em>appender</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>注册appender来写入日志记录<br  />
+ 在写入日志的调用中(使用其中一个宏或<code><a class="el" href="classDtk_1_1Core_1_1Logger.html#a7c89067d5a040ea79c481038dbdd565f" title="写入日志记录。 将带有所提供参数的日志记录写给所有注册的应用">write()</a></code>函数),Logger遍历appender列表,并向每个appender写入日志记录。请查阅AbstractAppender文档以了解appenders的概念。 如果没有appender被添加到Logger中,它就会退回到记录到<code>std::cerr</code>STL流中。 appender 要在Logger中注册的Appender </p>
+<dl class="section note"><dt>注解</dt><dd>Logger对appender拥有所有权,它将在应用程序退出时删除它。根据这一点,appender必须在堆上创建,以防止appender被重复销毁。 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDtk_1_1Core_1_1Logger.html#a95ef2b960342e8153edd908b2f05029c" title="注册appender,将日志记录写到特定的类别中">Logger::registerCategoryAppender()</a> </dd>
+<dd>
+<a class="el" href="classDtk_1_1Core_1_1AbstractAppender.html" title="AbstractAppender为应用消息的线程安全、互斥保护的日志提供了一个通用的实现">Dtk::Core::AbstractAppender</a> </dd></dl>
+
+</div>
+</div>
+<a id="a95ef2b960342e8153edd908b2f05029c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95ef2b960342e8153edd908b2f05029c">&#9670;&nbsp;</a></span>registerCategoryAppender()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dtk::Core::Logger::registerCategoryAppender </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>category</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classDtk_1_1Core_1_1AbstractAppender.html">AbstractAppender</a> *&#160;</td>
+          <td class="paramname"><em>appender</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>注册appender,将日志记录写到特定的类别中<br  />
+ </p>
+<p>调用这个方法,你可以将一些appender与命名的类别联系起来。 在调用特定类别的日志写入时(直接调用带有类别参数的<code><a class="el" href="classDtk_1_1Core_1_1Logger.html#a7c89067d5a040ea79c481038dbdd565f" title="写入日志记录。 将带有所提供参数的日志记录写给所有注册的应用">write()</a></code>,写入默认类别,或使用特殊的<code>dCDebug()</code>、<code>dCWarning()</code>等宏), Logger只将日志信息写入注册的类别appender列表中。<br  />
+ 你可以调用<code><a class="el" href="classDtk_1_1Core_1_1Logger.html#a87f67b2b6ed4ffec4096ffd5e118beca" title="将一些日志类别与全局日志实例应用者联系起来。 如果logToGlobal设置为 &quot;true&quot;,所有到指定类别的Logger的日志消息也将被写入全局日志实例appenders(使用registerAppe...">logToGlobalInstance()</a></code>将所有类别的日志信息传递给全局的Logger实例Appender(使用<code><a class="el" href="classDtk_1_1Core_1_1Logger.html#a2bcdf12779fa8567bb2079edf027662d" title="注册appender来写入日志记录  在写入日志的调用中(使用其中一个宏或write()函数),Logger遍历appender列表,并向每个appender写入日志记录。请查阅AbstractAppe...">registerAppender()</a></code>注册)。 如果没有特定名称的类别应用程序被注册到记录器上，它就会退回到记录到<code>std::cerr</code> STL流中,这两种方法都有简单的警告信息。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">category</td><td>类别名称 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">appender</td><td>要在Logger中注册的Appender </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>Logger对appender拥有所有权,它将在应用程序退出时删除它。根据这一点,appender必须在堆上创建,以防止appender被重复销毁。 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDtk_1_1Core_1_1Logger.html#a2bcdf12779fa8567bb2079edf027662d" title="注册appender来写入日志记录  在写入日志的调用中(使用其中一个宏或write()函数),Logger遍历appender列表,并向每个appender写入日志记录。请查阅AbstractAppe...">Logger::registerAppender()</a> </dd>
+<dd>
+<a class="el" href="classDtk_1_1Core_1_1Logger.html#a87f67b2b6ed4ffec4096ffd5e118beca" title="将一些日志类别与全局日志实例应用者联系起来。 如果logToGlobal设置为 &quot;true&quot;,所有到指定类别的Logger的日志消息也将被写入全局日志实例appenders(使用registerAppe...">Logger::logToGlobalInstance()</a> </dd>
+<dd>
+<a class="el" href="classDtk_1_1Core_1_1Logger.html#a4a88302ec9c667bc47529d234da516d4" title="设置默认的日志类别 所有到这个类别应用的日志信息也将被写入一般的日志实例应用(使用registerAppender方法注册),反之亦然 特别是,任何对dDebug()宏的调用都将被视为类别日志 所以你不...">Logger::setDefaultCategory()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a4a88302ec9c667bc47529d234da516d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a88302ec9c667bc47529d234da516d4">&#9670;&nbsp;</a></span>setDefaultCategory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dtk::Core::Logger::setDefaultCategory </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>category</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置默认的日志类别 所有到这个类别应用的日志信息也将被写入一般的日志实例应用(使用<a class="el" href="classDtk_1_1Core_1_1Logger.html#a2bcdf12779fa8567bb2079edf027662d">registerAppender</a>方法注册),反之亦然 特别是,任何对dDebug()宏的调用都将被视为类别日志 所以你不需要用dCDebug()宏来指定类别名称 要取消默认的类别，传递一个空字符串作为参数 </p>
+<p>QString <a class="el" href="classDtk_1_1Core_1_1Logger.html#a4a372bad2146536722eafc6a8c086c9c" title="返回默认的日志类别名称">defaultCategory()</a> </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">category</td><td>类别名称 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>"category "格式标记将被设置为所有这些消息的类别名称 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDtk_1_1Core_1_1AbstractStringAppender.html#a961dd9232ddba5018a6777896e2a163d" title="设置日志格式, 以便用这个appender向日志目标写入字符串。">Dtk::Core::AbstractStringAppender::setFormat()</a> </dd>
+<dd>
+<a class="el" href="classDtk_1_1Core_1_1Logger.html#a4a372bad2146536722eafc6a8c086c9c" title="返回默认的日志类别名称">Logger::defaultCategory()</a> </dd>
+<dd>
+<a class="el" href="classDtk_1_1Core_1_1Logger.html#a95ef2b960342e8153edd908b2f05029c" title="注册appender,将日志记录写到特定的类别中">Logger::registerCategoryAppender()</a> </dd>
+<dd>
+<a class="el" href="classDtk_1_1Core_1_1Logger.html#a87f67b2b6ed4ffec4096ffd5e118beca" title="将一些日志类别与全局日志实例应用者联系起来。 如果logToGlobal设置为 &quot;true&quot;,所有到指定类别的Logger的日志消息也将被写入全局日志实例appenders(使用registerAppe...">Logger::logToGlobalInstance()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a7c89067d5a040ea79c481038dbdd565f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c89067d5a040ea79c481038dbdd565f">&#9670;&nbsp;</a></span>write() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dtk::Core::Logger::write </td>
+          <td>(</td>
+          <td class="paramtype">const QDateTime &amp;&#160;</td>
+          <td class="paramname"><em>time</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classDtk_1_1Core_1_1Logger.html#a4a76b1db357f61044ed67411d1c378b4">Logger::LogLevel</a>&#160;</td>
+          <td class="paramname"><em>level</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>line</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>func</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>category</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>msg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>写入日志记录。 将带有所提供参数的日志记录写给所有注册的应用 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">time</td><td>时间戳 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">logLevel</td><td>日志记录等级 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">file</td><td>目标文件名 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">line</td><td>要输出的行数 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">func</td><td>输出的函数名称 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">category</td><td>日志类别 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">message</td><td>输出信息 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>使用<code>Logger::Fatal</code>日志级别记录日志记录将导致调用STL <code>abort()</code>函数, 这将中断你的软件的运行并Core dump </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDtk_1_1Core_1_1Logger.html#a4a76b1db357f61044ed67411d1c378b4" title="日志等级">Logger::LogLevel</a> </dd>
+<dd>
+<a class="el" href="classDtk_1_1Core_1_1AbstractAppender.html" title="AbstractAppender为应用消息的线程安全、互斥保护的日志提供了一个通用的实现">Dtk::Core::AbstractAppender</a> </dd></dl>
+
+</div>
+</div>
+<a id="a7859e553c3fbb0b78802cd78c78389da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7859e553c3fbb0b78802cd78c78389da">&#9670;&nbsp;</a></span>write() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QDebug Dtk::Core::Logger::write </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classDtk_1_1Core_1_1Logger.html#a4a76b1db357f61044ed67411d1c378b4">Logger::LogLevel</a>&#160;</td>
+          <td class="paramname"><em>level</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>line</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>func</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>category</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>这是为方便而提供的重载函数。它的行为与同名函数类似,此函数无需传入message参数 </p>
+<p>这个函数不接受任何日志信息作为参数。它返回的是可以使用流函数写入的<code>QDebug</code>对象<br  />
+ 例如，你可能想写： </p><div class="fragment"><div class="line">dDebug() &lt;&lt; <span class="stringliteral">&quot;This is the size&quot;</span> &lt;&lt; size &lt;&lt; <span class="stringliteral">&quot;of the element&quot;</span> &lt;&lt; elementName;</div>
+</div><!-- fragment --><p> 而不是写为： </p><div class="fragment"><div class="line">dDebug(QString(QLatin1String(<span class="stringliteral">&quot;This is the size %1x%2 of the element %3&quot;</span>)).arg(size.x()).arg(size.y()).arg(elementName));</div>
+</div><!-- fragment --><p> 这样会更优雅一些<br  />
+ 请考虑阅读Qt参考文档,了解QDebug类的使用语法 </p><dl class="section note"><dt>注解</dt><dd>这个重载肯定是最好用的一个重载,但是代价是它会比其他的重载更为慢 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDtk_1_1Core_1_1Logger.html#a7c89067d5a040ea79c481038dbdd565f" title="写入日志记录。 将带有所提供参数的日志记录写给所有注册的应用">Logger::write</a>(const QDateTime &amp;time, <a class="el" href="classDtk_1_1Core_1_1Logger.html#a4a76b1db357f61044ed67411d1c378b4" title="日志等级">LogLevel</a> level, const char *file, int line,const char *func, const char *category, const QString &amp;msg) </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">logLevel</td><td>日志记录等级 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">file</td><td>目标文件名 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">line</td><td>要输出的行数 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">func</td><td>输出的函数名称 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">category</td><td>日志类别 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abc14a059bda2bdb2b22b71e4d6c71ef4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc14a059bda2bdb2b22b71e4d6c71ef4">&#9670;&nbsp;</a></span>write() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dtk::Core::Logger::write </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classDtk_1_1Core_1_1Logger.html#a4a76b1db357f61044ed67411d1c378b4">Logger::LogLevel</a>&#160;</td>
+          <td class="paramname"><em>level</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>line</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>func</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>category</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>msg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>这是为方便而提供的重载函数。它的行为与同名函数类似,此函数无需传入time参数 </p>
+<dl class="section note"><dt>注解</dt><dd>这个函数使用了<code>QDateTime::currentDateTime()</code>用获得的当前时间戳 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDtk_1_1Core_1_1Logger.html#a7c89067d5a040ea79c481038dbdd565f" title="写入日志记录。 将带有所提供参数的日志记录写给所有注册的应用">Logger::write</a>(const QDateTime &amp;time, <a class="el" href="classDtk_1_1Core_1_1Logger.html#a4a76b1db357f61044ed67411d1c378b4" title="日志等级">LogLevel</a> level, const char *file, int line,const char *func, const char *category, const QString &amp;msg) </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">logLevel</td><td>日志记录等级 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">file</td><td>目标文件名 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">line</td><td>要输出的行数 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">func</td><td>输出的函数名称 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">category</td><td>日志类别 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">message</td><td>输出信息 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2e743f432d95b256c86e6ee5575270ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e743f432d95b256c86e6ee5575270ba">&#9670;&nbsp;</a></span>writeAssert()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dtk::Core::Logger::writeAssert </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>line</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>func</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>condition</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>写入断言 </p>
+<p>这个函数使用write()函数来写断言记录<br  />
+ 断言记录总是使用<code>Logger::Fatal</code>日志级别来写,这将导致程序的中止和核心转储(core dump)的生成(如果支持) 写入appenders的信息与传入参数相同,前缀为 <code>ASSERT:</code> </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">file</td><td>目标文件名 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">line</td><td>要输出的行数 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">func</td><td>输出的函数名称 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>不建议直接调用这个函数,你可以直接调用<code>LOG_ASSERT</code>宏,它将为这个函数提供所有需要的信息 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDtk_1_1Core_1_1Logger.html#a7c89067d5a040ea79c481038dbdd565f" title="写入日志记录。 将带有所提供参数的日志记录写给所有注册的应用">Logger::write</a>(const QDateTime &amp;time, <a class="el" href="classDtk_1_1Core_1_1Logger.html#a4a76b1db357f61044ed67411d1c378b4" title="日志等级">LogLevel</a> level, const char *file, int line,const char *func, const char *category, const QString &amp;msg) </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dtkcore/include/log/<a class="el" href="Logger_8h_source.html">Logger.h</a></li>
+<li>dtkcore/docs/log/Logger.zh_CN.dox</li>
+<li>dtkcore/src/log/Logger.cpp</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>Dtk</b></li><li class="navelem"><b>Core</b></li><li class="navelem"><a class="el" href="classDtk_1_1Core_1_1Logger.html">Logger</a></li>
+    <li class="footer">文档生成时间:doxtime</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

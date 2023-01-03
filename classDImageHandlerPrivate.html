@@ -1,0 +1,250 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: DImageHandlerPrivate类 参考</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="change address" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classDImageHandlerPrivate.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="classDImageHandlerPrivate-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">DImageHandlerPrivate类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 DImageHandlerPrivate 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classDImageHandlerPrivate.png" usemap="#DImageHandlerPrivate_map" alt=""/>
+  <map id="DImageHandlerPrivate_map" name="DImageHandlerPrivate_map">
+<area href="classDtk_1_1Core_1_1DObjectPrivate.html" alt="Dtk::Core::DObjectPrivate" shape="rect" coords="0,0,156,24"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:aaaa5ae226e1a2211f99d3aa050ebab5e"><td class="memItemLeft" align="right" valign="top"><a id="aaaa5ae226e1a2211f99d3aa050ebab5e"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>ImageOption</b> { <b>Readable</b> = 0x1
+, <b>Wirteable</b> = 0x2
+, <b>Rotatable</b> = 0x4
+, <b>SupportFreeImage</b> = 0x8
+ }</td></tr>
+<tr class="separator:aaaa5ae226e1a2211f99d3aa050ebab5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a7636edda36d0cf1204b757182f0dfb95"><td class="memItemLeft" align="right" valign="top"><a id="a7636edda36d0cf1204b757182f0dfb95"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Q_DECLARE_FLAGS</b> (ImageOptions, ImageOption)</td></tr>
+<tr class="separator:a7636edda36d0cf1204b757182f0dfb95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7af83ec41572ebf75124cd8e6b2b829f"><td class="memItemLeft" align="right" valign="top"><a id="a7af83ec41572ebf75124cd8e6b2b829f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DImageHandlerPrivate</b> (<a class="el" href="classDtk_1_1Gui_1_1DImageHandler.html">DImageHandler</a> *qq)</td></tr>
+<tr class="separator:a7af83ec41572ebf75124cd8e6b2b829f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3099966b42eaba47561b799588e1d92f"><td class="memItemLeft" align="right" valign="top"><a id="a3099966b42eaba47561b799588e1d92f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>detectFileReadable</b> (const QString &amp;detectFileName) const</td></tr>
+<tr class="separator:a3099966b42eaba47561b799588e1d92f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4064360a59fe305281e2eaf96e039fee"><td class="memItemLeft" align="right" valign="top"><a id="a4064360a59fe305281e2eaf96e039fee"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>detectFileWriteable</b> (const QString &amp;detectFileName) const</td></tr>
+<tr class="separator:a4064360a59fe305281e2eaf96e039fee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1217aba45b572aa3da7d27574b0ae06a"><td class="memItemLeft" align="right" valign="top"><a id="a1217aba45b572aa3da7d27574b0ae06a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>loadStaticImageFromFile</b> (const QString &amp;fileName, QImage &amp;image)</td></tr>
+<tr class="separator:a1217aba45b572aa3da7d27574b0ae06a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace6f08035dd82f6bd798da4d40df23b9"><td class="memItemLeft" align="right" valign="top"><a id="ace6f08035dd82f6bd798da4d40df23b9"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>rotateImageFile</b> (const QString &amp;fileName, int angle)</td></tr>
+<tr class="separator:ace6f08035dd82f6bd798da4d40df23b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b88d616f69f3839ecbf79b95a4844ec"><td class="memItemLeft" align="right" valign="top"><a id="a9b88d616f69f3839ecbf79b95a4844ec"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>rotateImage</b> (QImage &amp;image, int angle)</td></tr>
+<tr class="separator:a9b88d616f69f3839ecbf79b95a4844ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0efdf9b5594a95f3d4d91a25257a3862"><td class="memItemLeft" align="right" valign="top"><a id="a0efdf9b5594a95f3d4d91a25257a3862"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>adjustImageToRealOrientation</b> (QImage &amp;image, ExifImageOrientation orientation)</td></tr>
+<tr class="separator:a0efdf9b5594a95f3d4d91a25257a3862"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a37f56f1ef91cb4834eb368fd6dfcc527"><td class="memItemLeft" align="right" valign="top"><a id="a37f56f1ef91cb4834eb368fd6dfcc527"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>fileName</b></td></tr>
+<tr class="separator:a37f56f1ef91cb4834eb368fd6dfcc527"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c0b6fe9e5e1d5175c3f287bc4abe29b"><td class="memItemLeft" align="right" valign="top"><a id="a8c0b6fe9e5e1d5175c3f287bc4abe29b"></a>
+ImageOptions&#160;</td><td class="memItemRight" valign="bottom"><b>options</b></td></tr>
+<tr class="separator:a8c0b6fe9e5e1d5175c3f287bc4abe29b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06469f94277ec675d7e8f1d93339de21"><td class="memItemLeft" align="right" valign="top"><a id="a06469f94277ec675d7e8f1d93339de21"></a>
+QImage&#160;</td><td class="memItemRight" valign="bottom"><b>cachedImage</b></td></tr>
+<tr class="separator:a06469f94277ec675d7e8f1d93339de21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d36c101b747fd89b7ab1094b455ec5d"><td class="memItemLeft" align="right" valign="top"><a id="a2d36c101b747fd89b7ab1094b455ec5d"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>lastError</b></td></tr>
+<tr class="separator:a2d36c101b747fd89b7ab1094b455ec5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pro_methods_classDtk_1_1Core_1_1DObjectPrivate"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classDtk_1_1Core_1_1DObjectPrivate')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="classDtk_1_1Core_1_1DObjectPrivate.html">Dtk::Core::DObjectPrivate</a></td></tr>
+<tr class="memitem:a0ddb56d9bf9f89fc1387ba1685908881 inherit pro_methods_classDtk_1_1Core_1_1DObjectPrivate"><td class="memItemLeft" align="right" valign="top"><a id="a0ddb56d9bf9f89fc1387ba1685908881"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DObjectPrivate</b> (<a class="el" href="classDtk_1_1Core_1_1DObject.html">DObject</a> *qq)</td></tr>
+<tr class="separator:a0ddb56d9bf9f89fc1387ba1685908881 inherit pro_methods_classDtk_1_1Core_1_1DObjectPrivate"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classDtk_1_1Core_1_1DObjectPrivate"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classDtk_1_1Core_1_1DObjectPrivate')"><img src="closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="classDtk_1_1Core_1_1DObjectPrivate.html">Dtk::Core::DObjectPrivate</a></td></tr>
+<tr class="memitem:a54e096a002d9c294ef3fc46acbb4c80b inherit pro_attribs_classDtk_1_1Core_1_1DObjectPrivate"><td class="memItemLeft" align="right" valign="top"><a id="a54e096a002d9c294ef3fc46acbb4c80b"></a>
+<a class="el" href="classDtk_1_1Core_1_1DObject.html">DObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>q_ptr</b></td></tr>
+<tr class="separator:a54e096a002d9c294ef3fc46acbb4c80b inherit pro_attribs_classDtk_1_1Core_1_1DObjectPrivate"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dtkgui/src/util/dimagehandler.cpp</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classDImageHandlerPrivate.html">DImageHandlerPrivate</a></li>
+    <li class="footer">文档生成时间:doxtime</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

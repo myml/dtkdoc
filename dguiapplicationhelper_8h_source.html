@@ -1,0 +1,342 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: dtkgui/include/kernel/dguiapplicationhelper.h 源文件</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="change address" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('dguiapplicationhelper_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">dguiapplicationhelper.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-FileCopyrightText: 2022 UnionTech Software Technology Co., Ltd.</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// SPDX-License-Identifier: LGPL-3.0-or-later</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef DGUIAPPLICATIONHELPER_H</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define DGUIAPPLICATIONHELPER_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;dtkgui_global.h&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;DPalette&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;DObject&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;QGuiApplication&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;QObject&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;DGUI_BEGIN_NAMESPACE</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">class </span><a class="code" href="classDPlatformTheme.html">DPlatformTheme</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">class </span><a class="code" href="classDFontManager.html">DFontManager</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">class </span>DGuiApplicationHelperPrivate;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classDGuiApplicationHelper.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDGuiApplicationHelper.html">DGuiApplicationHelper</a> : <span class="keyword">public</span> QObject, <span class="keyword">public</span> DCORE_NAMESPACE::DObject</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    D_DECLARE_PRIVATE(<a class="code" href="classDGuiApplicationHelper.html">DGuiApplicationHelper</a>)</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    Q_PROPERTY(<a class="code" href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92">ColorType</a> themeType READ themeType NOTIFY themeTypeChanged)</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    Q_PROPERTY(<a class="code" href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92">ColorType</a> paletteType READ paletteType WRITE <a class="code" href="classDGuiApplicationHelper.html#a9a100f0f248307b7cc2df722a8aff68e">setPaletteType</a> NOTIFY paletteTypeChanged)</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    Q_PROPERTY(<span class="keywordtype">bool</span> hasUserManual READ hasUserManual)</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92">   30</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92">ColorType</a> {</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92a95bb3c2345b862eb18aebb372351099d">   31</a></span>&#160;        <a class="code" href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92a95bb3c2345b862eb18aebb372351099d">UnknownType</a>,</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92a2baabc46b6bf60f6b430da872d7ba386">   32</a></span>&#160;        <a class="code" href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92a2baabc46b6bf60f6b430da872d7ba386">LightType</a>,</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <a class="code" href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92a6882189c1f3cd4aae73d4ec9a505655d">DarkType</a></div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92a6882189c1f3cd4aae73d4ec9a505655d">   34</a></span>&#160;    };</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    Q_ENUM(<a class="code" href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92">ColorType</a>)</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">enum</span> SingleScope {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        UserScope,</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        GroupScope,</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        WorldScope</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    };</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    Q_ENUM(SingleScope)</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classDGuiApplicationHelper.html#af2609d4dc9b44f180e93c23f2bc1155c">   44</a></span>&#160;    enum <a class="code" href="classDGuiApplicationHelper.html#af2609d4dc9b44f180e93c23f2bc1155c">Attribute</a> {</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classDGuiApplicationHelper.html#af2609d4dc9b44f180e93c23f2bc1155caeff4d0f8dd5d66a2cccb9ae9d35bdab9">   45</a></span>&#160;        <a class="code" href="classDGuiApplicationHelper.html#af2609d4dc9b44f180e93c23f2bc1155caeff4d0f8dd5d66a2cccb9ae9d35bdab9">UseInactiveColorGroup</a>    = 1 &lt;&lt; 0,</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classDGuiApplicationHelper.html#af2609d4dc9b44f180e93c23f2bc1155ca4b2fd01fb675d8834a977785369b1488">   46</a></span>&#160;        <a class="code" href="classDGuiApplicationHelper.html#af2609d4dc9b44f180e93c23f2bc1155ca4b2fd01fb675d8834a977785369b1488">ColorCompositing</a>         = 1 &lt;&lt; 1,</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="comment">/* readonly flag */</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classDGuiApplicationHelper.html#af2609d4dc9b44f180e93c23f2bc1155ca9b429f61321b3c1623f2f3d3a24963f7">   49</a></span>&#160;        <a class="code" href="classDGuiApplicationHelper.html#af2609d4dc9b44f180e93c23f2bc1155ca9b429f61321b3c1623f2f3d3a24963f7">ReadOnlyLimit</a>            = 1 &lt;&lt; 22,</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="classDGuiApplicationHelper.html#af2609d4dc9b44f180e93c23f2bc1155cae9fd7d42031f1ae533fb8bac7f22ecf5">   50</a></span>&#160;        <a class="code" href="classDGuiApplicationHelper.html#af2609d4dc9b44f180e93c23f2bc1155cae9fd7d42031f1ae533fb8bac7f22ecf5">IsDeepinPlatformTheme</a>    = <a class="code" href="classDGuiApplicationHelper.html#af2609d4dc9b44f180e93c23f2bc1155ca9b429f61321b3c1623f2f3d3a24963f7">ReadOnlyLimit</a> &lt;&lt; 0,</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classDGuiApplicationHelper.html#af2609d4dc9b44f180e93c23f2bc1155caebd2551a8fbf187ef3c77fea39afc8f4">   51</a></span>&#160;        <a class="code" href="classDGuiApplicationHelper.html#af2609d4dc9b44f180e93c23f2bc1155caebd2551a8fbf187ef3c77fea39afc8f4">IsDXcbPlatform</a>           = <a class="code" href="classDGuiApplicationHelper.html#af2609d4dc9b44f180e93c23f2bc1155ca9b429f61321b3c1623f2f3d3a24963f7">ReadOnlyLimit</a> &lt;&lt; 1,</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classDGuiApplicationHelper.html#af2609d4dc9b44f180e93c23f2bc1155ca0477d73aad74e1f0f28ef39745a85fec">   52</a></span>&#160;        <a class="code" href="classDGuiApplicationHelper.html#af2609d4dc9b44f180e93c23f2bc1155ca0477d73aad74e1f0f28ef39745a85fec">IsXWindowPlatform</a>        = <a class="code" href="classDGuiApplicationHelper.html#af2609d4dc9b44f180e93c23f2bc1155ca9b429f61321b3c1623f2f3d3a24963f7">ReadOnlyLimit</a> &lt;&lt; 2,</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classDGuiApplicationHelper.html#af2609d4dc9b44f180e93c23f2bc1155caa2f8de4bba85fadf6df1e46fa09ae6a9">   53</a></span>&#160;        <a class="code" href="classDGuiApplicationHelper.html#af2609d4dc9b44f180e93c23f2bc1155caa2f8de4bba85fadf6df1e46fa09ae6a9">IsTableEnvironment</a>       = <a class="code" href="classDGuiApplicationHelper.html#af2609d4dc9b44f180e93c23f2bc1155ca9b429f61321b3c1623f2f3d3a24963f7">ReadOnlyLimit</a> &lt;&lt; 3,</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classDGuiApplicationHelper.html#af2609d4dc9b44f180e93c23f2bc1155cad7394061402858d07d1c3a012130460b">   54</a></span>&#160;        <a class="code" href="classDGuiApplicationHelper.html#af2609d4dc9b44f180e93c23f2bc1155cad7394061402858d07d1c3a012130460b">IsDeepinEnvironment</a>      = <a class="code" href="classDGuiApplicationHelper.html#af2609d4dc9b44f180e93c23f2bc1155ca9b429f61321b3c1623f2f3d3a24963f7">ReadOnlyLimit</a> &lt;&lt; 4,</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        IsSpecialEffectsEnvironment = <a class="code" href="classDGuiApplicationHelper.html#af2609d4dc9b44f180e93c23f2bc1155ca9b429f61321b3c1623f2f3d3a24963f7">ReadOnlyLimit</a> &lt;&lt; 5</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    };</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    Q_ENUM(<a class="code" href="classDGuiApplicationHelper.html#af2609d4dc9b44f180e93c23f2bc1155c">Attribute</a>)</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    Q_DECLARE_FLAGS(Attributes, <a class="code" href="classDGuiApplicationHelper.html#af2609d4dc9b44f180e93c23f2bc1155c">Attribute</a>)</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">typedef</span> <a class="code" href="classDGuiApplicationHelper.html">DGuiApplicationHelper</a> *(*HelperCreator)();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    D_DECL_DEPRECATED <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classDGuiApplicationHelper.html#a168bc69f3dd3a98b978f6441b110e8f0">registerInstanceCreator</a>(HelperCreator creator);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">static</span> <a class="code" href="classDGuiApplicationHelper.html">DGuiApplicationHelper</a> *<a class="code" href="classDGuiApplicationHelper.html#a4a9d84ced740d42bf39666aaa4d3c089">instance</a>();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    ~<a class="code" href="classDGuiApplicationHelper.html">DGuiApplicationHelper</a>();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">static</span> QColor <a class="code" href="classDGuiApplicationHelper.html#a9cde0c1e68ad96a4f51983dcd2e74cea">adjustColor</a>(<span class="keyword">const</span> QColor &amp;base, qint8 hueFloat, qint8 saturationFloat, qint8 lightnessFloat,</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                              qint8 redFloat, qint8 greenFloat, qint8 blueFloat, qint8 alphaFloat);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">static</span> QImage <a class="code" href="classDGuiApplicationHelper.html#a9cde0c1e68ad96a4f51983dcd2e74cea">adjustColor</a>(<span class="keyword">const</span> QImage &amp;base, qint8 hueFloat, qint8 saturationFloat, qint8 lightnessFloat,</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                              qint8 redFloat, qint8 greenFloat, qint8 blueFloat, qint8 alphaFloat);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">static</span> QColor <a class="code" href="classDGuiApplicationHelper.html#abc1784e93e1b0acaa2120832245087c5">blendColor</a>(<span class="keyword">const</span> QColor &amp;substrate, <span class="keyword">const</span> QColor &amp;superstratum);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">static</span> <a class="code" href="classDPalette.html">DPalette</a> <a class="code" href="classDGuiApplicationHelper.html#aa88a702eaaada0055b51d9b8617ab648">standardPalette</a>(<a class="code" href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92">ColorType</a> type);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classDGuiApplicationHelper.html#a148d4077f71412e3f71fdf3f62b21ca6">generatePaletteColor</a>(<a class="code" href="classDPalette.html">DPalette</a> &amp;base, QPalette::ColorRole role, <a class="code" href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92">ColorType</a> type);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classDGuiApplicationHelper.html#a148d4077f71412e3f71fdf3f62b21ca6">generatePaletteColor</a>(<a class="code" href="classDPalette.html">DPalette</a> &amp;base, DPalette::ColorType role, <a class="code" href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92">ColorType</a> type);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classDGuiApplicationHelper.html#ab881c07f42d47c801ceb75c92937fc0a">generatePalette</a>(<a class="code" href="classDPalette.html">DPalette</a> &amp;base, <a class="code" href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92">ColorType</a> type = <a class="code" href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92a95bb3c2345b862eb18aebb372351099d">UnknownType</a>);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">static</span> <a class="code" href="classDPalette.html">DPalette</a> <a class="code" href="classDGuiApplicationHelper.html#a80dbc8f823db2a49230e24734d4e5723">fetchPalette</a>(<span class="keyword">const</span> <a class="code" href="classDPlatformTheme.html">DPlatformTheme</a> *theme);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    Q_DECL_DEPRECATED_X(<span class="stringliteral">&quot;Use UseInactiveColorGroup enum with setAttribute.&quot;</span>) static <span class="keywordtype">void</span> setUseInactiveColorGroup(<span class="keywordtype">bool</span> on);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    Q_DECL_DEPRECATED_X(&quot;Use <a class="code" href="classDGuiApplicationHelper.html#af2609d4dc9b44f180e93c23f2bc1155ca4b2fd01fb675d8834a977785369b1488">ColorCompositing</a> enum with setAttribute.&quot;) static <span class="keywordtype">void</span> setColorCompositingEnabled(<span class="keywordtype">bool</span> on);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    static <span class="keywordtype">bool</span> isXWindowPlatform();</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    static <span class="keywordtype">bool</span> <a class="code" href="classDGuiApplicationHelper.html#a80c3706fe396568897da92d9db1e882c">isTabletEnvironment</a>();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    static <span class="keywordtype">bool</span> <a class="code" href="classDGuiApplicationHelper.html#a52569ac7a7e3a57f2d7e2466791e57b1">isSpecialEffectsEnvironment</a>();</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    static <span class="keywordtype">void</span> setAttribute(<a class="code" href="classDGuiApplicationHelper.html#af2609d4dc9b44f180e93c23f2bc1155c">Attribute</a> attribute, <span class="keywordtype">bool</span> enable);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    static <span class="keywordtype">bool</span> testAttribute(<a class="code" href="classDGuiApplicationHelper.html#af2609d4dc9b44f180e93c23f2bc1155c">Attribute</a> attribute);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <a class="code" href="classDPlatformTheme.html">DPlatformTheme</a> *<a class="code" href="classDGuiApplicationHelper.html#a54696b5f532a5deaad028efdf4069fa1">systemTheme</a>() const;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <a class="code" href="classDPlatformTheme.html">DPlatformTheme</a> *<a class="code" href="classDGuiApplicationHelper.html#a68b559d15c50f259ff5a88bee40eb372">applicationTheme</a>() const;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    D_DECL_DEPRECATED <a class="code" href="classDPlatformTheme.html">DPlatformTheme</a> *<a class="code" href="classDGuiApplicationHelper.html#ad47af29164477016275cafc944c28783">windowTheme</a>(QWindow *window) const;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <a class="code" href="classDPalette.html">DPalette</a> <a class="code" href="classDGuiApplicationHelper.html#affc1f7774ce419a1ca73eab31f13cac4">applicationPalette</a>() const;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDGuiApplicationHelper.html#a88d71049a24d357f21a3fcf01575c48c">setApplicationPalette</a>(const <a class="code" href="classDPalette.html">DPalette</a> &amp;palette);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    D_DECL_DEPRECATED <a class="code" href="classDPalette.html">DPalette</a> <a class="code" href="classDGuiApplicationHelper.html#a36bc2b0660c97a4bdb2ba559151e4ccf">windowPalette</a>(QWindow *window) const;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    const <a class="code" href="classDFontManager.html">DFontManager</a> *<a class="code" href="classDGuiApplicationHelper.html#a577e7dd7a88636632917bd1b88e1c98b">fontManager</a>() const;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    static <a class="code" href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92">ColorType</a> <a class="code" href="classDGuiApplicationHelper.html#ac3667e460316b989a6f54463b7afcaa0">toColorType</a>(const QColor &amp;color);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    static <a class="code" href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92">ColorType</a> <a class="code" href="classDGuiApplicationHelper.html#ac3667e460316b989a6f54463b7afcaa0">toColorType</a>(const QPalette &amp;palette);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <a class="code" href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92">ColorType</a> themeType() const;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <a class="code" href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92">ColorType</a> paletteType() const;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    static <span class="keywordtype">bool</span> <a class="code" href="classDGuiApplicationHelper.html#ac3172ba90dcda102e3a3ac3b68ffebe3">setSingleInstance</a>(const QString &amp;key, SingleScope singleScope = UserScope);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    static <span class="keywordtype">void</span> <a class="code" href="classDGuiApplicationHelper.html#a299390a91b1c3a5aebdccba40d424c92">setSingleInstanceInterval</a>(<span class="keywordtype">int</span> interval = 3000);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    D_DECL_DEPRECATED static <span class="keywordtype">void</span> <a class="code" href="classDGuiApplicationHelper.html#acf91b183ef7e5566a9770b558db42451">setSingelInstanceInterval</a>(<span class="keywordtype">int</span> interval = 3000);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">bool</span> hasUserManual() const;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    static <span class="keywordtype">bool</span> loadTranslator(const QString &amp;fileName, const QList&lt;QString&gt; &amp;translateDirs, const QList&lt;QLocale&gt; &amp;localeFallback);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;public Q_SLOTS:</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    D_DECL_DEPRECATED_X(&quot;Plase use <a class="code" href="classDGuiApplicationHelper.html#a9a100f0f248307b7cc2df722a8aff68e">setPaletteType</a>&quot;) <span class="keywordtype">void</span> setThemeType(<a class="code" href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92">ColorType</a> themeType);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDGuiApplicationHelper.html#a9a100f0f248307b7cc2df722a8aff68e">setPaletteType</a>(<a class="code" href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92">ColorType</a> paletteType);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDGuiApplicationHelper.html#a23eec3eb5148c6b235229354a12bbcf0">handleHelpAction</a>();</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    static <span class="keywordtype">void</span> openUrl(const QString &amp;url);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;Q_SIGNALS:</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordtype">void</span> themeTypeChanged(<a class="code" href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92">ColorType</a> themeType);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordtype">void</span> paletteTypeChanged(<a class="code" href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92">ColorType</a> paletteType);</div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="classDGuiApplicationHelper.html#ab94fab6c42b86328baffcbb7bb3de0ad">  115</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDGuiApplicationHelper.html#ab94fab6c42b86328baffcbb7bb3de0ad">newProcessInstance</a>(qint64 pid, const QStringList &amp;arguments);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordtype">void</span> fontChanged(const QFont &amp;font);</div>
+<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="classDGuiApplicationHelper.html#a5001b4c491748c4b04bf45b97e2bb003">  117</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDGuiApplicationHelper.html#a5001b4c491748c4b04bf45b97e2bb003">applicationPaletteChanged</a>();</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;protected:</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    explicit <a class="code" href="classDGuiApplicationHelper.html">DGuiApplicationHelper</a>();</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    virtual <span class="keywordtype">void</span> initialize();</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;private:</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    D_PRIVATE_SLOT(<span class="keywordtype">void</span> _q_initApplicationTheme(<span class="keywordtype">bool</span>))</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    friend class _DGuiApplicationHelper;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;};</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;DGUI_END_NAMESPACE</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// DGUIAPPLICATIONHELPER_H</span></div>
+<div class="ttc" id="aclassDFontManager_html"><div class="ttname"><a href="classDFontManager.html">DFontManager</a></div><div class="ttdef"><b>Definition:</b> dfontmanager.h:18</div></div>
+<div class="ttc" id="aclassDGuiApplicationHelper_html"><div class="ttname"><a href="classDGuiApplicationHelper.html">DGuiApplicationHelper</a></div><div class="ttdef"><b>Definition:</b> dguiapplicationhelper.h:21</div></div>
+<div class="ttc" id="aclassDGuiApplicationHelper_html_a148d4077f71412e3f71fdf3f62b21ca6"><div class="ttname"><a href="classDGuiApplicationHelper.html#a148d4077f71412e3f71fdf3f62b21ca6">DGuiApplicationHelper::generatePaletteColor</a></div><div class="ttdeci">static void generatePaletteColor(DPalette &amp;base, QPalette::ColorRole role, ColorType type)</div><div class="ttdoc">获取调色板颜色.</div><div class="ttdef"><b>Definition:</b> dguiapplicationhelper.cpp:790</div></div>
+<div class="ttc" id="aclassDGuiApplicationHelper_html_a168bc69f3dd3a98b978f6441b110e8f0"><div class="ttname"><a href="classDGuiApplicationHelper.html#a168bc69f3dd3a98b978f6441b110e8f0">DGuiApplicationHelper::registerInstanceCreator</a></div><div class="ttdeci">static D_DECL_DEPRECATED void registerInstanceCreator(HelperCreator creator)</div><div class="ttdoc">创建 DGuiApplicationHelper 对象.</div><div class="ttdef"><b>Definition:</b> dguiapplicationhelper.cpp:400</div></div>
+<div class="ttc" id="aclassDGuiApplicationHelper_html_a23eec3eb5148c6b235229354a12bbcf0"><div class="ttname"><a href="classDGuiApplicationHelper.html#a23eec3eb5148c6b235229354a12bbcf0">DGuiApplicationHelper::handleHelpAction</a></div><div class="ttdeci">void handleHelpAction()</div><div class="ttdoc">Open manual for this application.</div><div class="ttdef"><b>Definition:</b> dguiapplicationhelper.cpp:1565</div></div>
+<div class="ttc" id="aclassDGuiApplicationHelper_html_a299390a91b1c3a5aebdccba40d424c92"><div class="ttname"><a href="classDGuiApplicationHelper.html#a299390a91b1c3a5aebdccba40d424c92">DGuiApplicationHelper::setSingleInstanceInterval</a></div><div class="ttdeci">static void setSingleInstanceInterval(int interval=3000)</div><div class="ttdoc">设置从QLocalServer获取消息的等待时间.</div><div class="ttdef"><b>Definition:</b> dguiapplicationhelper.cpp:1355</div></div>
+<div class="ttc" id="aclassDGuiApplicationHelper_html_a36bc2b0660c97a4bdb2ba559151e4ccf"><div class="ttname"><a href="classDGuiApplicationHelper.html#a36bc2b0660c97a4bdb2ba559151e4ccf">DGuiApplicationHelper::windowPalette</a></div><div class="ttdeci">D_DECL_DEPRECATED DPalette windowPalette(QWindow *window) const</div><div class="ttdoc">DGuiApplicationHelper::windowPalette.</div><div class="ttdef"><b>Definition:</b> dguiapplicationhelper.cpp:1114</div></div>
+<div class="ttc" id="aclassDGuiApplicationHelper_html_a4a9d84ced740d42bf39666aaa4d3c089"><div class="ttname"><a href="classDGuiApplicationHelper.html#a4a9d84ced740d42bf39666aaa4d3c089">DGuiApplicationHelper::instance</a></div><div class="ttdeci">static DGuiApplicationHelper * instance()</div><div class="ttdoc">DGuiApplicationHelper::instance返回 DGuiApplicationHelper 对象</div><div class="ttdef"><b>Definition:</b> dguiapplicationhelper.cpp:422</div></div>
+<div class="ttc" id="aclassDGuiApplicationHelper_html_a5001b4c491748c4b04bf45b97e2bb003"><div class="ttname"><a href="classDGuiApplicationHelper.html#a5001b4c491748c4b04bf45b97e2bb003">DGuiApplicationHelper::applicationPaletteChanged</a></div><div class="ttdeci">void applicationPaletteChanged()</div><div class="ttdoc">通知调色板对象的改变。</div></div>
+<div class="ttc" id="aclassDGuiApplicationHelper_html_a52569ac7a7e3a57f2d7e2466791e57b1"><div class="ttname"><a href="classDGuiApplicationHelper.html#a52569ac7a7e3a57f2d7e2466791e57b1">DGuiApplicationHelper::isSpecialEffectsEnvironment</a></div><div class="ttdeci">static bool isSpecialEffectsEnvironment()</div><div class="ttdoc">isAnimationEnvironment 用于判断当前桌面环境是否是开启了动画等特效的环境</div><div class="ttdef"><b>Definition:</b> dguiapplicationhelper.cpp:941</div></div>
+<div class="ttc" id="aclassDGuiApplicationHelper_html_a54696b5f532a5deaad028efdf4069fa1"><div class="ttname"><a href="classDGuiApplicationHelper.html#a54696b5f532a5deaad028efdf4069fa1">DGuiApplicationHelper::systemTheme</a></div><div class="ttdeci">DPlatformTheme * systemTheme() const</div><div class="ttdoc">DGuiApplicationHelper::systemTheme.</div><div class="ttdef"><b>Definition:</b> dguiapplicationhelper.cpp:954</div></div>
+<div class="ttc" id="aclassDGuiApplicationHelper_html_a577e7dd7a88636632917bd1b88e1c98b"><div class="ttname"><a href="classDGuiApplicationHelper.html#a577e7dd7a88636632917bd1b88e1c98b">DGuiApplicationHelper::fontManager</a></div><div class="ttdeci">const DFontManager * fontManager() const</div><div class="ttdoc">DGuiApplicationHelper::fontManager.</div><div class="ttdef"><b>Definition:</b> dguiapplicationhelper.cpp:1139</div></div>
+<div class="ttc" id="aclassDGuiApplicationHelper_html_a68b559d15c50f259ff5a88bee40eb372"><div class="ttname"><a href="classDGuiApplicationHelper.html#a68b559d15c50f259ff5a88bee40eb372">DGuiApplicationHelper::applicationTheme</a></div><div class="ttdeci">DPlatformTheme * applicationTheme() const</div><div class="ttdoc">DGuiApplicationHelper::applicationTheme.</div><div class="ttdef"><b>Definition:</b> dguiapplicationhelper.cpp:969</div></div>
+<div class="ttc" id="aclassDGuiApplicationHelper_html_a80c3706fe396568897da92d9db1e882c"><div class="ttname"><a href="classDGuiApplicationHelper.html#a80c3706fe396568897da92d9db1e882c">DGuiApplicationHelper::isTabletEnvironment</a></div><div class="ttdeci">static bool isTabletEnvironment()</div><div class="ttdoc">用于判断当前桌面环境是否是平板电脑环境.</div><div class="ttdef"><b>Definition:</b> dguiapplicationhelper.cpp:932</div></div>
+<div class="ttc" id="aclassDGuiApplicationHelper_html_a80dbc8f823db2a49230e24734d4e5723"><div class="ttname"><a href="classDGuiApplicationHelper.html#a80dbc8f823db2a49230e24734d4e5723">DGuiApplicationHelper::fetchPalette</a></div><div class="ttdeci">static DPalette fetchPalette(const DPlatformTheme *theme)</div><div class="ttdoc">获取调色板数据.</div><div class="ttdef"><b>Definition:</b> dguiapplicationhelper.cpp:870</div></div>
+<div class="ttc" id="aclassDGuiApplicationHelper_html_a88d71049a24d357f21a3fcf01575c48c"><div class="ttname"><a href="classDGuiApplicationHelper.html#a88d71049a24d357f21a3fcf01575c48c">DGuiApplicationHelper::setApplicationPalette</a></div><div class="ttdeci">void setApplicationPalette(const DPalette &amp;palette)</div><div class="ttdoc">DGuiApplicationHelper::setApplicationPalette.</div><div class="ttdef"><b>Definition:</b> dguiapplicationhelper.cpp:1075</div></div>
+<div class="ttc" id="aclassDGuiApplicationHelper_html_a9a100f0f248307b7cc2df722a8aff68e"><div class="ttname"><a href="classDGuiApplicationHelper.html#a9a100f0f248307b7cc2df722a8aff68e">DGuiApplicationHelper::setPaletteType</a></div><div class="ttdeci">void setPaletteType(ColorType paletteType)</div><div class="ttdoc">设置程序所应用的调色板类型.</div><div class="ttdef"><b>Definition:</b> dguiapplicationhelper.cpp:1543</div></div>
+<div class="ttc" id="aclassDGuiApplicationHelper_html_a9cde0c1e68ad96a4f51983dcd2e74cea"><div class="ttname"><a href="classDGuiApplicationHelper.html#a9cde0c1e68ad96a4f51983dcd2e74cea">DGuiApplicationHelper::adjustColor</a></div><div class="ttdeci">static QColor adjustColor(const QColor &amp;base, qint8 hueFloat, qint8 saturationFloat, qint8 lightnessFloat, qint8 redFloat, qint8 greenFloat, qint8 blueFloat, qint8 alphaFloat)</div><div class="ttdoc">调整颜色.</div><div class="ttdef"><b>Definition:</b> dguiapplicationhelper.cpp:447</div></div>
+<div class="ttc" id="aclassDGuiApplicationHelper_html_aa88a702eaaada0055b51d9b8617ab648"><div class="ttname"><a href="classDGuiApplicationHelper.html#aa88a702eaaada0055b51d9b8617ab648">DGuiApplicationHelper::standardPalette</a></div><div class="ttdeci">static DPalette standardPalette(ColorType type)</div><div class="ttdoc">根据主题获取标准调色板.</div><div class="ttdef"><b>Definition:</b> dguiapplicationhelper.cpp:620</div></div>
+<div class="ttc" id="aclassDGuiApplicationHelper_html_ab881c07f42d47c801ceb75c92937fc0a"><div class="ttname"><a href="classDGuiApplicationHelper.html#ab881c07f42d47c801ceb75c92937fc0a">DGuiApplicationHelper::generatePalette</a></div><div class="ttdeci">static void generatePalette(DPalette &amp;base, ColorType type=UnknownType)</div><div class="ttdoc">加工调色板的颜色. 这是为便于使用而提供的一个重载成员函数.与上面的函数相比，它接受不同类型的参数.同 generatePaletteColor, 将直接调用 generatePaletteColor ...</div><div class="ttdef"><b>Definition:</b> dguiapplicationhelper.cpp:840</div></div>
+<div class="ttc" id="aclassDGuiApplicationHelper_html_ab94fab6c42b86328baffcbb7bb3de0ad"><div class="ttname"><a href="classDGuiApplicationHelper.html#ab94fab6c42b86328baffcbb7bb3de0ad">DGuiApplicationHelper::newProcessInstance</a></div><div class="ttdeci">void newProcessInstance(qint64 pid, const QStringList &amp;arguments)</div><div class="ttdoc">通知新进程的信息。</div></div>
+<div class="ttc" id="aclassDGuiApplicationHelper_html_abc1784e93e1b0acaa2120832245087c5"><div class="ttname"><a href="classDGuiApplicationHelper.html#abc1784e93e1b0acaa2120832245087c5">DGuiApplicationHelper::blendColor</a></div><div class="ttdeci">static QColor blendColor(const QColor &amp;substrate, const QColor &amp;superstratum)</div><div class="ttdoc">将两种颜色混合，合成新的颜色.</div><div class="ttdef"><b>Definition:</b> dguiapplicationhelper.cpp:521</div></div>
+<div class="ttc" id="aclassDGuiApplicationHelper_html_ac3172ba90dcda102e3a3ac3b68ffebe3"><div class="ttname"><a href="classDGuiApplicationHelper.html#ac3172ba90dcda102e3a3ac3b68ffebe3">DGuiApplicationHelper::setSingleInstance</a></div><div class="ttdeci">static bool setSingleInstance(const QString &amp;key, SingleScope singleScope=UserScope)</div><div class="ttdoc">设置DGuiApplicationHelper实例.</div><div class="ttdef"><b>Definition:</b> dguiapplicationhelper.cpp:1234</div></div>
+<div class="ttc" id="aclassDGuiApplicationHelper_html_ac3667e460316b989a6f54463b7afcaa0"><div class="ttname"><a href="classDGuiApplicationHelper.html#ac3667e460316b989a6f54463b7afcaa0">DGuiApplicationHelper::toColorType</a></div><div class="ttdeci">static ColorType toColorType(const QColor &amp;color)</div><div class="ttdoc">获取颜色的明亮度，将其转换为主题类型的枚举值.</div><div class="ttdef"><b>Definition:</b> dguiapplicationhelper.cpp:1157</div></div>
+<div class="ttc" id="aclassDGuiApplicationHelper_html_acf91b183ef7e5566a9770b558db42451"><div class="ttname"><a href="classDGuiApplicationHelper.html#acf91b183ef7e5566a9770b558db42451">DGuiApplicationHelper::setSingelInstanceInterval</a></div><div class="ttdeci">static D_DECL_DEPRECATED void setSingelInstanceInterval(int interval=3000)</div><div class="ttdoc">设置从QLocalServer获取消息的等待时间.</div><div class="ttdef"><b>Definition:</b> dguiapplicationhelper.cpp:1366</div></div>
+<div class="ttc" id="aclassDGuiApplicationHelper_html_ad47af29164477016275cafc944c28783"><div class="ttname"><a href="classDGuiApplicationHelper.html#ad47af29164477016275cafc944c28783">DGuiApplicationHelper::windowTheme</a></div><div class="ttdeci">D_DECL_DEPRECATED DPlatformTheme * windowTheme(QWindow *window) const</div><div class="ttdoc">返回窗口级别的主题, 优先级高于 windowTheme 和 systemTheme.</div><div class="ttdef"><b>Definition:</b> dguiapplicationhelper.cpp:990</div></div>
+<div class="ttc" id="aclassDGuiApplicationHelper_html_aded1affde49f3af542f861eedbd32d92"><div class="ttname"><a href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92">DGuiApplicationHelper::ColorType</a></div><div class="ttdeci">ColorType</div><div class="ttdef"><b>Definition:</b> dguiapplicationhelper.h:30</div></div>
+<div class="ttc" id="aclassDGuiApplicationHelper_html_aded1affde49f3af542f861eedbd32d92a2baabc46b6bf60f6b430da872d7ba386"><div class="ttname"><a href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92a2baabc46b6bf60f6b430da872d7ba386">DGuiApplicationHelper::LightType</a></div><div class="ttdeci">@ LightType</div><div class="ttdef"><b>Definition:</b> dguiapplicationhelper.h:32</div></div>
+<div class="ttc" id="aclassDGuiApplicationHelper_html_aded1affde49f3af542f861eedbd32d92a6882189c1f3cd4aae73d4ec9a505655d"><div class="ttname"><a href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92a6882189c1f3cd4aae73d4ec9a505655d">DGuiApplicationHelper::DarkType</a></div><div class="ttdeci">@ DarkType</div><div class="ttdef"><b>Definition:</b> dguiapplicationhelper.h:33</div></div>
+<div class="ttc" id="aclassDGuiApplicationHelper_html_aded1affde49f3af542f861eedbd32d92a95bb3c2345b862eb18aebb372351099d"><div class="ttname"><a href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92a95bb3c2345b862eb18aebb372351099d">DGuiApplicationHelper::UnknownType</a></div><div class="ttdeci">@ UnknownType</div><div class="ttdef"><b>Definition:</b> dguiapplicationhelper.h:31</div></div>
+<div class="ttc" id="aclassDGuiApplicationHelper_html_af2609d4dc9b44f180e93c23f2bc1155c"><div class="ttname"><a href="classDGuiApplicationHelper.html#af2609d4dc9b44f180e93c23f2bc1155c">DGuiApplicationHelper::Attribute</a></div><div class="ttdeci">Attribute</div><div class="ttdef"><b>Definition:</b> dguiapplicationhelper.h:44</div></div>
+<div class="ttc" id="aclassDGuiApplicationHelper_html_af2609d4dc9b44f180e93c23f2bc1155ca0477d73aad74e1f0f28ef39745a85fec"><div class="ttname"><a href="classDGuiApplicationHelper.html#af2609d4dc9b44f180e93c23f2bc1155ca0477d73aad74e1f0f28ef39745a85fec">DGuiApplicationHelper::IsXWindowPlatform</a></div><div class="ttdeci">@ IsXWindowPlatform</div><div class="ttdef"><b>Definition:</b> dguiapplicationhelper.h:52</div></div>
+<div class="ttc" id="aclassDGuiApplicationHelper_html_af2609d4dc9b44f180e93c23f2bc1155ca4b2fd01fb675d8834a977785369b1488"><div class="ttname"><a href="classDGuiApplicationHelper.html#af2609d4dc9b44f180e93c23f2bc1155ca4b2fd01fb675d8834a977785369b1488">DGuiApplicationHelper::ColorCompositing</a></div><div class="ttdeci">@ ColorCompositing</div><div class="ttdef"><b>Definition:</b> dguiapplicationhelper.h:46</div></div>
+<div class="ttc" id="aclassDGuiApplicationHelper_html_af2609d4dc9b44f180e93c23f2bc1155ca9b429f61321b3c1623f2f3d3a24963f7"><div class="ttname"><a href="classDGuiApplicationHelper.html#af2609d4dc9b44f180e93c23f2bc1155ca9b429f61321b3c1623f2f3d3a24963f7">DGuiApplicationHelper::ReadOnlyLimit</a></div><div class="ttdeci">@ ReadOnlyLimit</div><div class="ttdef"><b>Definition:</b> dguiapplicationhelper.h:49</div></div>
+<div class="ttc" id="aclassDGuiApplicationHelper_html_af2609d4dc9b44f180e93c23f2bc1155caa2f8de4bba85fadf6df1e46fa09ae6a9"><div class="ttname"><a href="classDGuiApplicationHelper.html#af2609d4dc9b44f180e93c23f2bc1155caa2f8de4bba85fadf6df1e46fa09ae6a9">DGuiApplicationHelper::IsTableEnvironment</a></div><div class="ttdeci">@ IsTableEnvironment</div><div class="ttdef"><b>Definition:</b> dguiapplicationhelper.h:53</div></div>
+<div class="ttc" id="aclassDGuiApplicationHelper_html_af2609d4dc9b44f180e93c23f2bc1155cad7394061402858d07d1c3a012130460b"><div class="ttname"><a href="classDGuiApplicationHelper.html#af2609d4dc9b44f180e93c23f2bc1155cad7394061402858d07d1c3a012130460b">DGuiApplicationHelper::IsDeepinEnvironment</a></div><div class="ttdeci">@ IsDeepinEnvironment</div><div class="ttdef"><b>Definition:</b> dguiapplicationhelper.h:54</div></div>
+<div class="ttc" id="aclassDGuiApplicationHelper_html_af2609d4dc9b44f180e93c23f2bc1155cae9fd7d42031f1ae533fb8bac7f22ecf5"><div class="ttname"><a href="classDGuiApplicationHelper.html#af2609d4dc9b44f180e93c23f2bc1155cae9fd7d42031f1ae533fb8bac7f22ecf5">DGuiApplicationHelper::IsDeepinPlatformTheme</a></div><div class="ttdeci">@ IsDeepinPlatformTheme</div><div class="ttdef"><b>Definition:</b> dguiapplicationhelper.h:50</div></div>
+<div class="ttc" id="aclassDGuiApplicationHelper_html_af2609d4dc9b44f180e93c23f2bc1155caebd2551a8fbf187ef3c77fea39afc8f4"><div class="ttname"><a href="classDGuiApplicationHelper.html#af2609d4dc9b44f180e93c23f2bc1155caebd2551a8fbf187ef3c77fea39afc8f4">DGuiApplicationHelper::IsDXcbPlatform</a></div><div class="ttdeci">@ IsDXcbPlatform</div><div class="ttdef"><b>Definition:</b> dguiapplicationhelper.h:51</div></div>
+<div class="ttc" id="aclassDGuiApplicationHelper_html_af2609d4dc9b44f180e93c23f2bc1155caeff4d0f8dd5d66a2cccb9ae9d35bdab9"><div class="ttname"><a href="classDGuiApplicationHelper.html#af2609d4dc9b44f180e93c23f2bc1155caeff4d0f8dd5d66a2cccb9ae9d35bdab9">DGuiApplicationHelper::UseInactiveColorGroup</a></div><div class="ttdeci">@ UseInactiveColorGroup</div><div class="ttdef"><b>Definition:</b> dguiapplicationhelper.h:45</div></div>
+<div class="ttc" id="aclassDGuiApplicationHelper_html_affc1f7774ce419a1ca73eab31f13cac4"><div class="ttname"><a href="classDGuiApplicationHelper.html#affc1f7774ce419a1ca73eab31f13cac4">DGuiApplicationHelper::applicationPalette</a></div><div class="ttdeci">DPalette applicationPalette() const</div><div class="ttdoc">返回应用程序调色板.</div><div class="ttdef"><b>Definition:</b> dguiapplicationhelper.cpp:1019</div></div>
+<div class="ttc" id="aclassDPalette_html"><div class="ttname"><a href="classDPalette.html">DPalette</a></div><div class="ttdef"><b>Definition:</b> dpalette.h:17</div></div>
+<div class="ttc" id="aclassDPlatformTheme_html"><div class="ttname"><a href="classDPlatformTheme.html">DPlatformTheme</a></div><div class="ttdef"><b>Definition:</b> dplatformtheme.h:17</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_01e26ae7551668ca493319620c16a3ae.html">dtkgui</a></li><li class="navelem"><a class="el" href="dir_7005495310172da407eaf058f379ec62.html">include</a></li><li class="navelem"><a class="el" href="dir_c0b58ac1b5c2363168a89d290850b4aa.html">kernel</a></li><li class="navelem"><b>dguiapplicationhelper.h</b></li>
+    <li class="footer">文档生成时间:doxtime</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,471 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: dtkwidget/include/dtkwidget/widgets/danchors.h 源文件</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="change address" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('danchors_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">danchors.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-FileCopyrightText: 2017 - 2022 UnionTech Software Technology Co., Ltd.</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// SPDX-License-Identifier: LGPL-3.0-or-later</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef DANCHORS_H</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define DANCHORS_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;QObject&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;QPointer&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;QResizeEvent&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;QMoveEvent&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;QWidget&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;QDebug&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;dtkwidget_global.h&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;DWIDGET_BEGIN_NAMESPACE</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">class </span><a class="code" href="classDAnchorsBase.html">DAnchorsBase</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="structDAnchorInfo.html">   21</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structDAnchorInfo.html">DAnchorInfo</a> {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="structDAnchorInfo.html">DAnchorInfo</a>(<a class="code" href="classDAnchorsBase.html">DAnchorsBase</a> *b, <span class="keyword">const</span> Qt::AnchorPoint &amp;t):</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        base(b),</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        type(t)</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    }</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="classDAnchorsBase.html">DAnchorsBase</a> *base;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    Qt::AnchorPoint type;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">const</span> <a class="code" href="structDAnchorInfo.html">DAnchorInfo</a> *targetInfo = NULL;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">bool</span> operator==(<span class="keyword">const</span> <a class="code" href="structDAnchorInfo.html">DAnchorInfo</a> *info)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordflow">return</span> info == targetInfo;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    }</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">bool</span> operator==(<span class="keyword">const</span> <a class="code" href="structDAnchorInfo.html">DAnchorInfo</a> &amp;info)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordflow">return</span> &amp;info == targetInfo;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">bool</span> operator!=(<span class="keyword">const</span> <a class="code" href="structDAnchorInfo.html">DAnchorInfo</a> *info)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordflow">return</span> info != targetInfo;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">bool</span> operator!=(<span class="keyword">const</span> <a class="code" href="structDAnchorInfo.html">DAnchorInfo</a> &amp;info)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordflow">return</span> &amp;info != targetInfo;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classDAnchorsBase.html#a8ac5365f1b6fe36a37c93e609c95b4c0">   52</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="structDAnchorInfo.html">DAnchorInfo</a> &amp;operator=(<span class="keyword">const</span> <a class="code" href="structDAnchorInfo.html">DAnchorInfo</a> *info)</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        targetInfo = info;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;};</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">class </span><a class="code" href="classDAnchorsBasePrivate.html">DAnchorsBasePrivate</a>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">class </span><a class="code" href="classDEnhancedWidget.html">DEnhancedWidget</a>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classDAnchorsBase.html">   62</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDAnchorsBase.html">DAnchorsBase</a> : <span class="keyword">public</span> QObject</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;{</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    Q_PROPERTY(QWidget *<a class="code" href="classDAnchorsBase.html#a45220a39f990088e234fecbe1365618f">target</a> READ <a class="code" href="classDAnchorsBase.html#a45220a39f990088e234fecbe1365618f">target</a> CONSTANT)</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    Q_PROPERTY(<span class="keywordtype">bool</span> <a class="code" href="classDAnchorsBase.html#a826e09da24e328f0210ad8efa067946f">enabled</a> READ <a class="code" href="classDAnchorsBase.html#a826e09da24e328f0210ad8efa067946f">enabled</a> WRITE setEnabled NOTIFY <a class="code" href="classDAnchorsBase.html#a580423d9fbf2a0073edd190409d7f3a3">enabledChanged</a>)</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    Q_PROPERTY(<span class="keyword">const</span> <a class="code" href="classDAnchorsBase.html">DAnchorsBase</a> *<a class="code" href="classDAnchorsBase.html#a8ac5365f1b6fe36a37c93e609c95b4c0">anchors</a> READ <a class="code" href="classDAnchorsBase.html#a8ac5365f1b6fe36a37c93e609c95b4c0">anchors</a>)</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    Q_PROPERTY(<span class="keyword">const</span> <a class="code" href="structDAnchorInfo.html">DAnchorInfo</a> *<a class="code" href="classDAnchorsBase.html#aacbe1524bf770e24d1e28b4d68463f15">top</a> READ <a class="code" href="classDAnchorsBase.html#aacbe1524bf770e24d1e28b4d68463f15">top</a> WRITE setTop NOTIFY <a class="code" href="classDAnchorsBase.html#a9441c3e5b73ffea005625752446ee9a1">topChanged</a>)</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    Q_PROPERTY(<span class="keyword">const</span> <a class="code" href="structDAnchorInfo.html">DAnchorInfo</a> *<a class="code" href="classDAnchorsBase.html#a96aab06a235a501bb0916594c4ce7415">bottom</a> READ <a class="code" href="classDAnchorsBase.html#a96aab06a235a501bb0916594c4ce7415">bottom</a> WRITE setBottom NOTIFY <a class="code" href="classDAnchorsBase.html#a4f8bd08218d361f02b73650d03688646">bottomChanged</a>)</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    Q_PROPERTY(<span class="keyword">const</span> <a class="code" href="structDAnchorInfo.html">DAnchorInfo</a> *<a class="code" href="classDAnchorsBase.html#a56481b506ac3e8e6abea37ff300455e0">left</a> READ <a class="code" href="classDAnchorsBase.html#a56481b506ac3e8e6abea37ff300455e0">left</a> WRITE setLeft NOTIFY <a class="code" href="classDAnchorsBase.html#a0383f09d7ff793280d7e40b1d12456ab">leftChanged</a>)</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    Q_PROPERTY(<span class="keyword">const</span> <a class="code" href="structDAnchorInfo.html">DAnchorInfo</a> *<a class="code" href="classDAnchorsBase.html#a70a1e3acbc693739098c681f143621c0">right</a> READ <a class="code" href="classDAnchorsBase.html#a70a1e3acbc693739098c681f143621c0">right</a> WRITE setRight NOTIFY <a class="code" href="classDAnchorsBase.html#aedbcb19d5ac5c6a555cf5129a624e826">rightChanged</a>)</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    Q_PROPERTY(<span class="keyword">const</span> <a class="code" href="structDAnchorInfo.html">DAnchorInfo</a> *<a class="code" href="classDAnchorsBase.html#a312b8194aa10f880a1b4d96557234405">horizontalCenter</a> READ <a class="code" href="classDAnchorsBase.html#a312b8194aa10f880a1b4d96557234405">horizontalCenter</a> WRITE setHorizontalCenter NOTIFY <a class="code" href="classDAnchorsBase.html#a84b6892502bbc1f8838f06df748c4daa">horizontalCenterChanged</a>)</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    Q_PROPERTY(<span class="keyword">const</span> <a class="code" href="structDAnchorInfo.html">DAnchorInfo</a> *<a class="code" href="classDAnchorsBase.html#a44a33a87a7e13c559dce6fae6ca5c92e">verticalCenter</a> READ <a class="code" href="classDAnchorsBase.html#a44a33a87a7e13c559dce6fae6ca5c92e">verticalCenter</a> WRITE setVerticalCenter NOTIFY <a class="code" href="classDAnchorsBase.html#a6f0f93e58273cf619d2f61416808a971">verticalCenterChanged</a>)</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    Q_PROPERTY(QWidget *<a class="code" href="classDAnchorsBase.html#aee6b0024b467c0f82baf43345981972f">fill</a> READ <a class="code" href="classDAnchorsBase.html#aee6b0024b467c0f82baf43345981972f">fill</a> WRITE setFill NOTIFY <a class="code" href="classDAnchorsBase.html#a314be8ba3ce8dbbfeb8b96bbe7377c2a">fillChanged</a>)</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    Q_PROPERTY(QWidget *<a class="code" href="classDAnchorsBase.html#ad41e7fff4550e1db1fdd79bebdc3ac2c">centerIn</a> READ <a class="code" href="classDAnchorsBase.html#ad41e7fff4550e1db1fdd79bebdc3ac2c">centerIn</a> WRITE setCenterIn NOTIFY <a class="code" href="classDAnchorsBase.html#a835031f3c5c48cfd36cb834b710139c6">centerInChanged</a>)</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    Q_PROPERTY(<span class="keywordtype">int</span> <a class="code" href="classDAnchorsBase.html#a799e0ba24f1525070d39282ad7b4f421">margins</a> READ <a class="code" href="classDAnchorsBase.html#a799e0ba24f1525070d39282ad7b4f421">margins</a> WRITE setMargins NOTIFY <a class="code" href="classDAnchorsBase.html#aed52c71cc1425a2c32a701568968aba7">marginsChanged</a>)</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    Q_PROPERTY(<span class="keywordtype">int</span> <a class="code" href="classDAnchorsBase.html#acc36da853d40582a78bda969063c5eeb">topMargin</a> READ <a class="code" href="classDAnchorsBase.html#acc36da853d40582a78bda969063c5eeb">topMargin</a> WRITE setTopMargin NOTIFY <a class="code" href="classDAnchorsBase.html#aefb57f54b327adedc7b1d55717aebb2b">topMarginChanged</a>)</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    Q_PROPERTY(<span class="keywordtype">int</span> <a class="code" href="classDAnchorsBase.html#a928fe84da6e604a3c51e5272f54379c2">bottomMargin</a> READ <a class="code" href="classDAnchorsBase.html#a928fe84da6e604a3c51e5272f54379c2">bottomMargin</a> WRITE setBottomMargin NOTIFY <a class="code" href="classDAnchorsBase.html#a189869aed734dbf6d0c037e96030986a">bottomMarginChanged</a>)</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    Q_PROPERTY(<span class="keywordtype">int</span> <a class="code" href="classDAnchorsBase.html#afb0e0a71973dec73ae07d36e80296614">leftMargin</a> READ <a class="code" href="classDAnchorsBase.html#afb0e0a71973dec73ae07d36e80296614">leftMargin</a> WRITE setLeftMargin NOTIFY <a class="code" href="classDAnchorsBase.html#a10bdd8e627a7bd9721a556d9ccdbb568">leftMarginChanged</a>)</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    Q_PROPERTY(<span class="keywordtype">int</span> <a class="code" href="classDAnchorsBase.html#aaff8732012dd21a70dc767b174d727cd">rightMargin</a> READ <a class="code" href="classDAnchorsBase.html#aaff8732012dd21a70dc767b174d727cd">rightMargin</a> WRITE setRightMargin NOTIFY <a class="code" href="classDAnchorsBase.html#a64d30aa142892368e71437cea18016ea">rightMarginChanged</a>)</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    Q_PROPERTY(<span class="keywordtype">int</span> <a class="code" href="classDAnchorsBase.html#aa9e852bbe6c864772dad969ee1bec1d2">horizontalCenterOffset</a> READ <a class="code" href="classDAnchorsBase.html#aa9e852bbe6c864772dad969ee1bec1d2">horizontalCenterOffset</a> WRITE setHorizontalCenterOffset NOTIFY <a class="code" href="classDAnchorsBase.html#ac1a3584bf908941910a014201e7d3a4b">horizontalCenterOffsetChanged</a>)</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    Q_PROPERTY(<span class="keywordtype">int</span> <a class="code" href="classDAnchorsBase.html#ae12e57aa1784328e422f266162231065">verticalCenterOffset</a> READ <a class="code" href="classDAnchorsBase.html#ae12e57aa1784328e422f266162231065">verticalCenterOffset</a> WRITE setVerticalCenterOffset NOTIFY <a class="code" href="classDAnchorsBase.html#ab761897700a60941fb229121794f2fbb">verticalCenterOffsetChanged</a>)</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    Q_PROPERTY(<span class="keywordtype">bool</span> alignWhenCentered READ alignWhenCentered WRITE setAlignWhenCentered NOTIFY alignWhenCenteredChanged)</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDAnchorsBase.html#a9470bf1a76d70fbb087537281d59d219">DAnchorsBase</a>(QWidget *w);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <a class="code" href="classDAnchorsBase.html#a7a9431c4fcbb57ce2b3d931fbf445060">~DAnchorsBase</a>();</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keyword">enum</span> AnchorError {</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        NoError,</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        Conflict,</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        TargetInvalid,</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        PointInvalid,</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        LoopBind</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    };</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    QWidget *<a class="code" href="classDAnchorsBase.html#a45220a39f990088e234fecbe1365618f">target</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <a class="code" href="classDEnhancedWidget.html">DEnhancedWidget</a> *<a class="code" href="classDAnchorsBase.html#a35b77de9d7aa369a85543ad8e828d1f6">enhancedWidget</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classDAnchorsBase.html#a826e09da24e328f0210ad8efa067946f">enabled</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keyword">const</span> <a class="code" href="classDAnchorsBase.html">DAnchorsBase</a> *<a class="code" href="classDAnchorsBase.html#a8ac5365f1b6fe36a37c93e609c95b4c0">anchors</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keyword">const</span> <a class="code" href="structDAnchorInfo.html">DAnchorInfo</a> *<a class="code" href="classDAnchorsBase.html#aacbe1524bf770e24d1e28b4d68463f15">top</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keyword">const</span> <a class="code" href="structDAnchorInfo.html">DAnchorInfo</a> *<a class="code" href="classDAnchorsBase.html#a96aab06a235a501bb0916594c4ce7415">bottom</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keyword">const</span> <a class="code" href="structDAnchorInfo.html">DAnchorInfo</a> *<a class="code" href="classDAnchorsBase.html#a56481b506ac3e8e6abea37ff300455e0">left</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keyword">const</span> <a class="code" href="structDAnchorInfo.html">DAnchorInfo</a> *<a class="code" href="classDAnchorsBase.html#a70a1e3acbc693739098c681f143621c0">right</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keyword">const</span> <a class="code" href="structDAnchorInfo.html">DAnchorInfo</a> *<a class="code" href="classDAnchorsBase.html#a312b8194aa10f880a1b4d96557234405">horizontalCenter</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keyword">const</span> <a class="code" href="structDAnchorInfo.html">DAnchorInfo</a> *<a class="code" href="classDAnchorsBase.html#a44a33a87a7e13c559dce6fae6ca5c92e">verticalCenter</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    QWidget *<a class="code" href="classDAnchorsBase.html#aee6b0024b467c0f82baf43345981972f">fill</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    QWidget *<a class="code" href="classDAnchorsBase.html#ad41e7fff4550e1db1fdd79bebdc3ac2c">centerIn</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classDAnchorsBase.html#a799e0ba24f1525070d39282ad7b4f421">margins</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classDAnchorsBase.html#acc36da853d40582a78bda969063c5eeb">topMargin</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classDAnchorsBase.html#a928fe84da6e604a3c51e5272f54379c2">bottomMargin</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classDAnchorsBase.html#afb0e0a71973dec73ae07d36e80296614">leftMargin</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classDAnchorsBase.html#aaff8732012dd21a70dc767b174d727cd">rightMargin</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classDAnchorsBase.html#aa9e852bbe6c864772dad969ee1bec1d2">horizontalCenterOffset</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classDAnchorsBase.html#ae12e57aa1784328e422f266162231065">verticalCenterOffset</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordtype">int</span> alignWhenCentered() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    AnchorError <a class="code" href="classDAnchorsBase.html#a33dec521134882d65d38af4fd481d8ad">errorCode</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    QString <a class="code" href="classDAnchorsBase.html#a2061dbf36f9a8e545ba80af6cdf74cc7">errorString</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classDAnchorsBase.html#aca960f4d639cf1afe41772e06b7def03">isBinding</a>(<span class="keyword">const</span> <a class="code" href="structDAnchorInfo.html">DAnchorInfo</a> *info) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="classDAnchorsBase.html#a34f1ff02eb1b8cda41971e6d86dead47">setAnchor</a>(QWidget *w, <span class="keyword">const</span> Qt::AnchorPoint &amp;p, QWidget *<a class="code" href="classDAnchorsBase.html#a45220a39f990088e234fecbe1365618f">target</a>, <span class="keyword">const</span> Qt::AnchorPoint &amp;point);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classDAnchorsBase.html#a07caa92d2fbc8811131ee4d09a6da302">clearAnchors</a>(<span class="keyword">const</span> QWidget *w);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keyword">static</span> <a class="code" href="classDAnchorsBase.html">DAnchorsBase</a> *<a class="code" href="classDAnchorsBase.html#ae92c1775f4be8d3447c3b54b0d705dbb">getAnchorBaseByWidget</a>(<span class="keyword">const</span> QWidget *w);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordtype">void</span> setEnabled(<span class="keywordtype">bool</span> <a class="code" href="classDAnchorsBase.html#a826e09da24e328f0210ad8efa067946f">enabled</a>);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classDAnchorsBase.html#a34f1ff02eb1b8cda41971e6d86dead47">setAnchor</a>(<span class="keyword">const</span> Qt::AnchorPoint &amp;p, QWidget *<a class="code" href="classDAnchorsBase.html#a45220a39f990088e234fecbe1365618f">target</a>, <span class="keyword">const</span> Qt::AnchorPoint &amp;point);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordtype">bool</span> setTop(<span class="keyword">const</span> <a class="code" href="structDAnchorInfo.html">DAnchorInfo</a> *<a class="code" href="classDAnchorsBase.html#aacbe1524bf770e24d1e28b4d68463f15">top</a>);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keywordtype">bool</span> setBottom(<span class="keyword">const</span> <a class="code" href="structDAnchorInfo.html">DAnchorInfo</a> *<a class="code" href="classDAnchorsBase.html#a96aab06a235a501bb0916594c4ce7415">bottom</a>);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keywordtype">bool</span> setLeft(<span class="keyword">const</span> <a class="code" href="structDAnchorInfo.html">DAnchorInfo</a> *<a class="code" href="classDAnchorsBase.html#a56481b506ac3e8e6abea37ff300455e0">left</a>);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordtype">bool</span> setRight(<span class="keyword">const</span> <a class="code" href="structDAnchorInfo.html">DAnchorInfo</a> *<a class="code" href="classDAnchorsBase.html#a70a1e3acbc693739098c681f143621c0">right</a>);</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordtype">bool</span> setHorizontalCenter(<span class="keyword">const</span> <a class="code" href="structDAnchorInfo.html">DAnchorInfo</a> *<a class="code" href="classDAnchorsBase.html#a312b8194aa10f880a1b4d96557234405">horizontalCenter</a>);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordtype">bool</span> setVerticalCenter(<span class="keyword">const</span> <a class="code" href="structDAnchorInfo.html">DAnchorInfo</a> *<a class="code" href="classDAnchorsBase.html#a44a33a87a7e13c559dce6fae6ca5c92e">verticalCenter</a>);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keywordtype">bool</span> setFill(QWidget *<a class="code" href="classDAnchorsBase.html#aee6b0024b467c0f82baf43345981972f">fill</a>);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keywordtype">bool</span> setCenterIn(QWidget *<a class="code" href="classDAnchorsBase.html#ad41e7fff4550e1db1fdd79bebdc3ac2c">centerIn</a>);</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keywordtype">bool</span> setFill(<a class="code" href="classDAnchorsBase.html">DAnchorsBase</a> *<a class="code" href="classDAnchorsBase.html#aee6b0024b467c0f82baf43345981972f">fill</a>);</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keywordtype">bool</span> setCenterIn(<a class="code" href="classDAnchorsBase.html">DAnchorsBase</a> *<a class="code" href="classDAnchorsBase.html#ad41e7fff4550e1db1fdd79bebdc3ac2c">centerIn</a>);</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="keywordtype">void</span> setMargins(<span class="keywordtype">int</span> <a class="code" href="classDAnchorsBase.html#a799e0ba24f1525070d39282ad7b4f421">margins</a>);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="keywordtype">void</span> setTopMargin(<span class="keywordtype">int</span> <a class="code" href="classDAnchorsBase.html#acc36da853d40582a78bda969063c5eeb">topMargin</a>);</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <span class="keywordtype">void</span> setBottomMargin(<span class="keywordtype">int</span> <a class="code" href="classDAnchorsBase.html#a928fe84da6e604a3c51e5272f54379c2">bottomMargin</a>);</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keywordtype">void</span> setLeftMargin(<span class="keywordtype">int</span> <a class="code" href="classDAnchorsBase.html#afb0e0a71973dec73ae07d36e80296614">leftMargin</a>);</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="keywordtype">void</span> setRightMargin(<span class="keywordtype">int</span> <a class="code" href="classDAnchorsBase.html#aaff8732012dd21a70dc767b174d727cd">rightMargin</a>);</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="keywordtype">void</span> setHorizontalCenterOffset(<span class="keywordtype">int</span> <a class="code" href="classDAnchorsBase.html#aa9e852bbe6c864772dad969ee1bec1d2">horizontalCenterOffset</a>);</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="keywordtype">void</span> setVerticalCenterOffset(<span class="keywordtype">int</span> <a class="code" href="classDAnchorsBase.html#ae12e57aa1784328e422f266162231065">verticalCenterOffset</a>);</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="keywordtype">void</span> setAlignWhenCentered(<span class="keywordtype">bool</span> alignWhenCentered);</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; </div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <span class="keywordtype">void</span> setTop(<span class="keywordtype">int</span> arg, Qt::AnchorPoint point);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keywordtype">void</span> setBottom(<span class="keywordtype">int</span> arg, Qt::AnchorPoint point);</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="keywordtype">void</span> setLeft(<span class="keywordtype">int</span> arg, Qt::AnchorPoint point);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="keywordtype">void</span> setRight(<span class="keywordtype">int</span> arg, Qt::AnchorPoint point);</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keywordtype">void</span> setHorizontalCenter(<span class="keywordtype">int</span> arg, Qt::AnchorPoint point);</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keywordtype">void</span> setVerticalCenter(<span class="keywordtype">int</span> arg, Qt::AnchorPoint point);</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160; </div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDAnchorsBase.html#acafba8ba2307cbd37a01e2ba61d97414">moveTop</a>(<span class="keywordtype">int</span> arg);</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDAnchorsBase.html#ade9999ddef5d6f1eebd64536813051ad">moveBottom</a>(<span class="keywordtype">int</span> arg);</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDAnchorsBase.html#ad2b159c41ec3a83ab9ccc27b0e4f4f16">moveLeft</a>(<span class="keywordtype">int</span> arg);</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDAnchorsBase.html#a52c520e012f2a18ea4ea818556cdc372">moveRight</a>(<span class="keywordtype">int</span> arg);</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDAnchorsBase.html#abe8bb3b17f3ed241443a4bb30c04d9a0">moveHorizontalCenter</a>(<span class="keywordtype">int</span> arg);</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDAnchorsBase.html#afa4ae423ced45e154f24851defd7e4fa">moveVerticalCenter</a>(<span class="keywordtype">int</span> arg);</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDAnchorsBase.html#ad13d5db3a3d97b8d2274458ce2e8c30c">moveCenter</a>(<span class="keyword">const</span> QPoint &amp;arg);</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160; </div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="keyword">private</span> Q_SLOTS:</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keywordtype">void</span> updateVertical();</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="keywordtype">void</span> updateHorizontal();</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="keywordtype">void</span> updateFill();</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="keywordtype">void</span> updateCenterIn();</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160; </div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;Q_SIGNALS:</div>
+<div class="line"><a name="l00170"></a><span class="lineno"><a class="line" href="classDAnchorsBase.html#a580423d9fbf2a0073edd190409d7f3a3">  170</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDAnchorsBase.html#a580423d9fbf2a0073edd190409d7f3a3">enabledChanged</a>(<span class="keywordtype">bool</span> <a class="code" href="classDAnchorsBase.html#a826e09da24e328f0210ad8efa067946f">enabled</a>);</div>
+<div class="line"><a name="l00171"></a><span class="lineno"><a class="line" href="classDAnchorsBase.html#a9441c3e5b73ffea005625752446ee9a1">  171</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDAnchorsBase.html#a9441c3e5b73ffea005625752446ee9a1">topChanged</a>(<span class="keyword">const</span> <a class="code" href="structDAnchorInfo.html">DAnchorInfo</a> *<a class="code" href="classDAnchorsBase.html#aacbe1524bf770e24d1e28b4d68463f15">top</a>);</div>
+<div class="line"><a name="l00172"></a><span class="lineno"><a class="line" href="classDAnchorsBase.html#a4f8bd08218d361f02b73650d03688646">  172</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDAnchorsBase.html#a4f8bd08218d361f02b73650d03688646">bottomChanged</a>(<span class="keyword">const</span> <a class="code" href="structDAnchorInfo.html">DAnchorInfo</a> *<a class="code" href="classDAnchorsBase.html#a96aab06a235a501bb0916594c4ce7415">bottom</a>);</div>
+<div class="line"><a name="l00173"></a><span class="lineno"><a class="line" href="classDAnchorsBase.html#a0383f09d7ff793280d7e40b1d12456ab">  173</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDAnchorsBase.html#a0383f09d7ff793280d7e40b1d12456ab">leftChanged</a>(<span class="keyword">const</span> <a class="code" href="structDAnchorInfo.html">DAnchorInfo</a> *<a class="code" href="classDAnchorsBase.html#a56481b506ac3e8e6abea37ff300455e0">left</a>);</div>
+<div class="line"><a name="l00174"></a><span class="lineno"><a class="line" href="classDAnchorsBase.html#aedbcb19d5ac5c6a555cf5129a624e826">  174</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDAnchorsBase.html#aedbcb19d5ac5c6a555cf5129a624e826">rightChanged</a>(<span class="keyword">const</span> <a class="code" href="structDAnchorInfo.html">DAnchorInfo</a> *<a class="code" href="classDAnchorsBase.html#a70a1e3acbc693739098c681f143621c0">right</a>);</div>
+<div class="line"><a name="l00175"></a><span class="lineno"><a class="line" href="classDAnchorsBase.html#a84b6892502bbc1f8838f06df748c4daa">  175</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDAnchorsBase.html#a84b6892502bbc1f8838f06df748c4daa">horizontalCenterChanged</a>(<span class="keyword">const</span> <a class="code" href="structDAnchorInfo.html">DAnchorInfo</a> *<a class="code" href="classDAnchorsBase.html#a312b8194aa10f880a1b4d96557234405">horizontalCenter</a>);</div>
+<div class="line"><a name="l00176"></a><span class="lineno"><a class="line" href="classDAnchorsBase.html#a6f0f93e58273cf619d2f61416808a971">  176</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDAnchorsBase.html#a6f0f93e58273cf619d2f61416808a971">verticalCenterChanged</a>(<span class="keyword">const</span> <a class="code" href="structDAnchorInfo.html">DAnchorInfo</a> *<a class="code" href="classDAnchorsBase.html#a44a33a87a7e13c559dce6fae6ca5c92e">verticalCenter</a>);</div>
+<div class="line"><a name="l00177"></a><span class="lineno"><a class="line" href="classDAnchorsBase.html#a314be8ba3ce8dbbfeb8b96bbe7377c2a">  177</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDAnchorsBase.html#a314be8ba3ce8dbbfeb8b96bbe7377c2a">fillChanged</a>(QWidget *<a class="code" href="classDAnchorsBase.html#aee6b0024b467c0f82baf43345981972f">fill</a>);</div>
+<div class="line"><a name="l00178"></a><span class="lineno"><a class="line" href="classDAnchorsBase.html#a835031f3c5c48cfd36cb834b710139c6">  178</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDAnchorsBase.html#a835031f3c5c48cfd36cb834b710139c6">centerInChanged</a>(QWidget *<a class="code" href="classDAnchorsBase.html#ad41e7fff4550e1db1fdd79bebdc3ac2c">centerIn</a>);</div>
+<div class="line"><a name="l00179"></a><span class="lineno"><a class="line" href="classDAnchorsBase.html#aed52c71cc1425a2c32a701568968aba7">  179</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDAnchorsBase.html#aed52c71cc1425a2c32a701568968aba7">marginsChanged</a>(<span class="keywordtype">int</span> <a class="code" href="classDAnchorsBase.html#a799e0ba24f1525070d39282ad7b4f421">margins</a>);</div>
+<div class="line"><a name="l00180"></a><span class="lineno"><a class="line" href="classDAnchorsBase.html#aefb57f54b327adedc7b1d55717aebb2b">  180</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDAnchorsBase.html#aefb57f54b327adedc7b1d55717aebb2b">topMarginChanged</a>(<span class="keywordtype">int</span> <a class="code" href="classDAnchorsBase.html#acc36da853d40582a78bda969063c5eeb">topMargin</a>);</div>
+<div class="line"><a name="l00181"></a><span class="lineno"><a class="line" href="classDAnchorsBase.html#a189869aed734dbf6d0c037e96030986a">  181</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDAnchorsBase.html#a189869aed734dbf6d0c037e96030986a">bottomMarginChanged</a>(<span class="keywordtype">int</span> <a class="code" href="classDAnchorsBase.html#a928fe84da6e604a3c51e5272f54379c2">bottomMargin</a>);</div>
+<div class="line"><a name="l00182"></a><span class="lineno"><a class="line" href="classDAnchorsBase.html#a10bdd8e627a7bd9721a556d9ccdbb568">  182</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDAnchorsBase.html#a10bdd8e627a7bd9721a556d9ccdbb568">leftMarginChanged</a>(<span class="keywordtype">int</span> <a class="code" href="classDAnchorsBase.html#afb0e0a71973dec73ae07d36e80296614">leftMargin</a>);</div>
+<div class="line"><a name="l00183"></a><span class="lineno"><a class="line" href="classDAnchorsBase.html#a64d30aa142892368e71437cea18016ea">  183</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDAnchorsBase.html#a64d30aa142892368e71437cea18016ea">rightMarginChanged</a>(<span class="keywordtype">int</span> <a class="code" href="classDAnchorsBase.html#aaff8732012dd21a70dc767b174d727cd">rightMargin</a>);</div>
+<div class="line"><a name="l00184"></a><span class="lineno"><a class="line" href="classDAnchorsBase.html#ac1a3584bf908941910a014201e7d3a4b">  184</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDAnchorsBase.html#ac1a3584bf908941910a014201e7d3a4b">horizontalCenterOffsetChanged</a>(<span class="keywordtype">int</span> <a class="code" href="classDAnchorsBase.html#aa9e852bbe6c864772dad969ee1bec1d2">horizontalCenterOffset</a>);</div>
+<div class="line"><a name="l00185"></a><span class="lineno"><a class="line" href="classDAnchorsBase.html#ab761897700a60941fb229121794f2fbb">  185</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDAnchorsBase.html#ab761897700a60941fb229121794f2fbb">verticalCenterOffsetChanged</a>(<span class="keywordtype">int</span> <a class="code" href="classDAnchorsBase.html#ae12e57aa1784328e422f266162231065">verticalCenterOffset</a>);</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="keywordtype">void</span> alignWhenCenteredChanged(<span class="keywordtype">bool</span> alignWhenCentered);</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160; </div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <span class="keywordtype">void</span> init(QWidget *w);</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160; </div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <a class="code" href="classDAnchorsBase.html#a9470bf1a76d70fbb087537281d59d219">DAnchorsBase</a>(QWidget *w, <span class="keywordtype">bool</span>);</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160; </div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    QExplicitlySharedDataPointer&lt;QSharedData&gt; d_ptr;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160; </div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    Q_DECLARE_PRIVATE(<a class="code" href="classDAnchorsBase.html">DAnchorsBase</a>)</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;};</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160; </div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
+<div class="line"><a name="l00200"></a><span class="lineno"><a class="line" href="classDAnchors.html">  200</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDAnchors.html">DAnchors</a> : <span class="keyword">public</span> <a class="code" href="classDAnchorsBase.html">DAnchorsBase</a></div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;{</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <span class="keyword">inline</span> <a class="code" href="classDAnchors.html">DAnchors</a>(): <a class="code" href="classDAnchorsBase.html#a9470bf1a76d70fbb087537281d59d219">DAnchorsBase</a>((QWidget*)NULL), m_widget(NULL) {}</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <span class="keyword">inline</span> <a class="code" href="classDAnchors.html">DAnchors</a>(T *w): <a class="code" href="classDAnchorsBase.html#a9470bf1a76d70fbb087537281d59d219">DAnchorsBase</a>(w), m_widget(w) {}</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="keyword">inline</span> <a class="code" href="classDAnchors.html">DAnchors</a>(<span class="keyword">const</span> <a class="code" href="classDAnchors.html">DAnchors</a> &amp;me): <a class="code" href="classDAnchorsBase.html#a9470bf1a76d70fbb087537281d59d219">DAnchorsBase</a>(me.m_widget), m_widget(me.m_widget) {}</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160; </div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <span class="keyword">inline</span> T &amp;operator=(<span class="keyword">const</span> <a class="code" href="classDAnchors.html">DAnchors</a> &amp;me)</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    {</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        m_widget = me.m_widget;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        init(m_widget);</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        <span class="keywordflow">return</span> *m_widget;</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    }</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    <span class="keyword">inline</span> T &amp;operator=(T *w)</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    {</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        m_widget = w;</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        init(w);</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        <span class="keywordflow">return</span> *m_widget;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    }</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <span class="keyword">inline</span> T *widget()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        <span class="keywordflow">return</span> m_widget;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    }</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    <span class="keyword">inline</span> T *operator -&gt;()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        <span class="keywordflow">return</span> m_widget;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    }</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    <span class="keyword">inline</span> T &amp;operator *()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        <span class="keywordflow">return</span> *m_widget;</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    }</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    <span class="keyword">inline</span> <span class="keyword">operator</span> T *() <span class="keyword">const</span></div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    {</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        <span class="keywordflow">return</span> m_widget;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    }</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    <span class="keyword">inline</span> <span class="keyword">operator</span> T &amp;() <span class="keyword">const</span></div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    {</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        <span class="keywordflow">return</span> *m_widget;</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    }</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160; </div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    T *m_widget;</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;};</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160; </div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;DWIDGET_END_NAMESPACE</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160; </div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// DANCHORS_H</span></div>
+<div class="ttc" id="aclassDAnchorsBasePrivate_html"><div class="ttname"><a href="classDAnchorsBasePrivate.html">DAnchorsBasePrivate</a></div><div class="ttdef"><b>Definition:</b> danchors.cpp:341</div></div>
+<div class="ttc" id="aclassDAnchorsBase_html"><div class="ttname"><a href="classDAnchorsBase.html">DAnchorsBase</a></div><div class="ttdef"><b>Definition:</b> danchors.h:63</div></div>
+<div class="ttc" id="aclassDAnchorsBase_html_a0383f09d7ff793280d7e40b1d12456ab"><div class="ttname"><a href="classDAnchorsBase.html#a0383f09d7ff793280d7e40b1d12456ab">DAnchorsBase::leftChanged</a></div><div class="ttdeci">void leftChanged(const DAnchorInfo *left)</div><div class="ttdoc">信号会在 left 属性的值改变时被发送</div></div>
+<div class="ttc" id="aclassDAnchorsBase_html_a07caa92d2fbc8811131ee4d09a6da302"><div class="ttname"><a href="classDAnchorsBase.html#a07caa92d2fbc8811131ee4d09a6da302">DAnchorsBase::clearAnchors</a></div><div class="ttdeci">static void clearAnchors(const QWidget *w)</div><div class="ttdoc">清除和控件 w 相关的所有锚定关系，包括锚定w或者被w锚定的任何关联。会直接 销毁 w 对应的 DAnchorsBase 对象 w</div><div class="ttdef"><b>Definition:</b> danchors.cpp:888</div></div>
+<div class="ttc" id="aclassDAnchorsBase_html_a10bdd8e627a7bd9721a556d9ccdbb568"><div class="ttname"><a href="classDAnchorsBase.html#a10bdd8e627a7bd9721a556d9ccdbb568">DAnchorsBase::leftMarginChanged</a></div><div class="ttdeci">void leftMarginChanged(int leftMargin)</div><div class="ttdoc">信号会在 leftMargin 属性的值改变时被发送</div></div>
+<div class="ttc" id="aclassDAnchorsBase_html_a189869aed734dbf6d0c037e96030986a"><div class="ttname"><a href="classDAnchorsBase.html#a189869aed734dbf6d0c037e96030986a">DAnchorsBase::bottomMarginChanged</a></div><div class="ttdeci">void bottomMarginChanged(int bottomMargin)</div><div class="ttdoc">信号会在 bottomMargin 属性的值改变时被发送</div></div>
+<div class="ttc" id="aclassDAnchorsBase_html_a2061dbf36f9a8e545ba80af6cdf74cc7"><div class="ttname"><a href="classDAnchorsBase.html#a2061dbf36f9a8e545ba80af6cdf74cc7">DAnchorsBase::errorString</a></div><div class="ttdeci">QString errorString() const</div><div class="ttdoc">对 errorCode 的文本描述信息</div><div class="ttdef"><b>Definition:</b> danchors.cpp:834</div></div>
+<div class="ttc" id="aclassDAnchorsBase_html_a312b8194aa10f880a1b4d96557234405"><div class="ttname"><a href="classDAnchorsBase.html#a312b8194aa10f880a1b4d96557234405">DAnchorsBase::horizontalCenter</a></div><div class="ttdeci">const DAnchorInfo * horizontalCenter</div><div class="ttdoc">target 控件水平锚线的信息</div><div class="ttdef"><b>Definition:</b> danchors.h:73</div></div>
+<div class="ttc" id="aclassDAnchorsBase_html_a314be8ba3ce8dbbfeb8b96bbe7377c2a"><div class="ttname"><a href="classDAnchorsBase.html#a314be8ba3ce8dbbfeb8b96bbe7377c2a">DAnchorsBase::fillChanged</a></div><div class="ttdeci">void fillChanged(QWidget *fill)</div><div class="ttdoc">信号会在 fill 属性的值改变时被发送</div></div>
+<div class="ttc" id="aclassDAnchorsBase_html_a33dec521134882d65d38af4fd481d8ad"><div class="ttname"><a href="classDAnchorsBase.html#a33dec521134882d65d38af4fd481d8ad">DAnchorsBase::errorCode</a></div><div class="ttdeci">AnchorError errorCode() const</div><div class="ttdoc">锚定过程中产生的错误，在一个新的锚定函数被调用之前会清空此错误状态，每次 调用锚定函数后，可以通过此函数的返回值来判断锚定设置是否成功</div><div class="ttdef"><b>Definition:</b> danchors.cpp:822</div></div>
+<div class="ttc" id="aclassDAnchorsBase_html_a34f1ff02eb1b8cda41971e6d86dead47"><div class="ttname"><a href="classDAnchorsBase.html#a34f1ff02eb1b8cda41971e6d86dead47">DAnchorsBase::setAnchor</a></div><div class="ttdeci">static bool setAnchor(QWidget *w, const Qt::AnchorPoint &amp;p, QWidget *target, const Qt::AnchorPoint &amp;point)</div><div class="ttdoc">方便用户直接设置两个对象之间锚定关系的静态函数，调用此函数可能会隐式创建 DAnchorsBase 对象 w 要锚定的控件对象 p 要锚定的锚线/锚点 target 锚定的目标对象 point 锚定的目...</div><div class="ttdef"><b>Definition:</b> danchors.cpp:869</div></div>
+<div class="ttc" id="aclassDAnchorsBase_html_a35b77de9d7aa369a85543ad8e828d1f6"><div class="ttname"><a href="classDAnchorsBase.html#a35b77de9d7aa369a85543ad8e828d1f6">DAnchorsBase::enhancedWidget</a></div><div class="ttdeci">DEnhancedWidget * enhancedWidget() const</div><div class="ttdoc">返回 target 控件的扩展对象。此对象为 QWidget 对象额外提供了和控件大小、 位置相关的变化信号</div><div class="ttdef"><b>Definition:</b> danchors.cpp:674</div></div>
+<div class="ttc" id="aclassDAnchorsBase_html_a44a33a87a7e13c559dce6fae6ca5c92e"><div class="ttname"><a href="classDAnchorsBase.html#a44a33a87a7e13c559dce6fae6ca5c92e">DAnchorsBase::verticalCenter</a></div><div class="ttdeci">const DAnchorInfo * verticalCenter</div><div class="ttdoc">target 控件竖直锚线的信息</div><div class="ttdef"><b>Definition:</b> danchors.h:74</div></div>
+<div class="ttc" id="aclassDAnchorsBase_html_a45220a39f990088e234fecbe1365618f"><div class="ttname"><a href="classDAnchorsBase.html#a45220a39f990088e234fecbe1365618f">DAnchorsBase::target</a></div><div class="ttdeci">QWidget * target</div><div class="ttdoc">绑定了锚定功能的控件对象</div><div class="ttdef"><b>Definition:</b> danchors.h:66</div></div>
+<div class="ttc" id="aclassDAnchorsBase_html_a4f8bd08218d361f02b73650d03688646"><div class="ttname"><a href="classDAnchorsBase.html#a4f8bd08218d361f02b73650d03688646">DAnchorsBase::bottomChanged</a></div><div class="ttdeci">void bottomChanged(const DAnchorInfo *bottom)</div><div class="ttdoc">信号会在 bottom 属性的值改变时被发送</div></div>
+<div class="ttc" id="aclassDAnchorsBase_html_a52c520e012f2a18ea4ea818556cdc372"><div class="ttname"><a href="classDAnchorsBase.html#a52c520e012f2a18ea4ea818556cdc372">DAnchorsBase::moveRight</a></div><div class="ttdeci">void moveRight(int arg)</div><div class="ttdoc">移动 target 控件的右边界到 arg 这个位置 arg 要移动到的位置</div><div class="ttdef"><b>Definition:</b> danchors.cpp:1394</div></div>
+<div class="ttc" id="aclassDAnchorsBase_html_a56481b506ac3e8e6abea37ff300455e0"><div class="ttname"><a href="classDAnchorsBase.html#a56481b506ac3e8e6abea37ff300455e0">DAnchorsBase::left</a></div><div class="ttdeci">const DAnchorInfo * left</div><div class="ttdoc">target 控件左边界锚线的信息</div><div class="ttdef"><b>Definition:</b> danchors.h:71</div></div>
+<div class="ttc" id="aclassDAnchorsBase_html_a580423d9fbf2a0073edd190409d7f3a3"><div class="ttname"><a href="classDAnchorsBase.html#a580423d9fbf2a0073edd190409d7f3a3">DAnchorsBase::enabledChanged</a></div><div class="ttdeci">void enabledChanged(bool enabled)</div><div class="ttdoc">信号会在 enabled 属性的值改变时被发送</div></div>
+<div class="ttc" id="aclassDAnchorsBase_html_a64d30aa142892368e71437cea18016ea"><div class="ttname"><a href="classDAnchorsBase.html#a64d30aa142892368e71437cea18016ea">DAnchorsBase::rightMarginChanged</a></div><div class="ttdeci">void rightMarginChanged(int rightMargin)</div><div class="ttdoc">信号会在 rightMargin 属性的值改变时被发送</div></div>
+<div class="ttc" id="aclassDAnchorsBase_html_a6f0f93e58273cf619d2f61416808a971"><div class="ttname"><a href="classDAnchorsBase.html#a6f0f93e58273cf619d2f61416808a971">DAnchorsBase::verticalCenterChanged</a></div><div class="ttdeci">void verticalCenterChanged(const DAnchorInfo *verticalCenter)</div><div class="ttdoc">信号会在 verticalCenter 属性的值改变时被发送</div></div>
+<div class="ttc" id="aclassDAnchorsBase_html_a70a1e3acbc693739098c681f143621c0"><div class="ttname"><a href="classDAnchorsBase.html#a70a1e3acbc693739098c681f143621c0">DAnchorsBase::right</a></div><div class="ttdeci">const DAnchorInfo * right</div><div class="ttdoc">target 控件右边界锚线的信息</div><div class="ttdef"><b>Definition:</b> danchors.h:72</div></div>
+<div class="ttc" id="aclassDAnchorsBase_html_a799e0ba24f1525070d39282ad7b4f421"><div class="ttname"><a href="classDAnchorsBase.html#a799e0ba24f1525070d39282ad7b4f421">DAnchorsBase::margins</a></div><div class="ttdeci">int margins</div><div class="ttdoc">上下左右四条“锚线”的边距，此值的优先级低于每条“锚线”特定的 margin 值</div><div class="ttdef"><b>Definition:</b> danchors.h:77</div></div>
+<div class="ttc" id="aclassDAnchorsBase_html_a7a9431c4fcbb57ce2b3d931fbf445060"><div class="ttname"><a href="classDAnchorsBase.html#a7a9431c4fcbb57ce2b3d931fbf445060">DAnchorsBase::~DAnchorsBase</a></div><div class="ttdeci">~DAnchorsBase()</div><div class="ttdoc">在析构时会判断此 DAnchorsBase 对象是否和 target 存在绑定关系，如果是 则从映射表中移除绑定</div><div class="ttdef"><b>Definition:</b> danchors.cpp:644</div></div>
+<div class="ttc" id="aclassDAnchorsBase_html_a826e09da24e328f0210ad8efa067946f"><div class="ttname"><a href="classDAnchorsBase.html#a826e09da24e328f0210ad8efa067946f">DAnchorsBase::enabled</a></div><div class="ttdeci">bool enabled</div><div class="ttdoc">控制锚定功能是否开启，为 false 时仅仅表示不会根据控件各种属性的变化来 来更新它的位置，但锚定关系并没有被解除</div><div class="ttdef"><b>Definition:</b> danchors.h:67</div></div>
+<div class="ttc" id="aclassDAnchorsBase_html_a835031f3c5c48cfd36cb834b710139c6"><div class="ttname"><a href="classDAnchorsBase.html#a835031f3c5c48cfd36cb834b710139c6">DAnchorsBase::centerInChanged</a></div><div class="ttdeci">void centerInChanged(QWidget *centerIn)</div><div class="ttdoc">信号会在 centerIn 属性的值改变时被发送</div></div>
+<div class="ttc" id="aclassDAnchorsBase_html_a84b6892502bbc1f8838f06df748c4daa"><div class="ttname"><a href="classDAnchorsBase.html#a84b6892502bbc1f8838f06df748c4daa">DAnchorsBase::horizontalCenterChanged</a></div><div class="ttdeci">void horizontalCenterChanged(const DAnchorInfo *horizontalCenter)</div><div class="ttdoc">信号会在 horizontalCenter 属性的值改变时被发送</div></div>
+<div class="ttc" id="aclassDAnchorsBase_html_a8ac5365f1b6fe36a37c93e609c95b4c0"><div class="ttname"><a href="classDAnchorsBase.html#a8ac5365f1b6fe36a37c93e609c95b4c0">DAnchorsBase::anchors</a></div><div class="ttdeci">const DAnchorsBase * anchors</div><div class="ttdoc">一个指向自己的指针</div><div class="ttdef"><b>Definition:</b> danchors.h:68</div></div>
+<div class="ttc" id="aclassDAnchorsBase_html_a928fe84da6e604a3c51e5272f54379c2"><div class="ttname"><a href="classDAnchorsBase.html#a928fe84da6e604a3c51e5272f54379c2">DAnchorsBase::bottomMargin</a></div><div class="ttdeci">int bottomMargin</div><div class="ttdoc">下“锚线”的边距，优先级高于 margins</div><div class="ttdef"><b>Definition:</b> danchors.h:79</div></div>
+<div class="ttc" id="aclassDAnchorsBase_html_a9441c3e5b73ffea005625752446ee9a1"><div class="ttname"><a href="classDAnchorsBase.html#a9441c3e5b73ffea005625752446ee9a1">DAnchorsBase::topChanged</a></div><div class="ttdeci">void topChanged(const DAnchorInfo *top)</div><div class="ttdoc">信号会在 top 属性的值改变时被发送</div></div>
+<div class="ttc" id="aclassDAnchorsBase_html_a9470bf1a76d70fbb087537281d59d219"><div class="ttname"><a href="classDAnchorsBase.html#a9470bf1a76d70fbb087537281d59d219">DAnchorsBase::DAnchorsBase</a></div><div class="ttdeci">DAnchorsBase(QWidget *w)</div><div class="ttdoc">构造 DAnchorsBase 对象，传入的 w 对象会和一个新的 DAnchorsBase 对象 绑定到一起 w 需要使用锚定关系的控件</div><div class="ttdef"><b>Definition:</b> danchors.cpp:630</div></div>
+<div class="ttc" id="aclassDAnchorsBase_html_a96aab06a235a501bb0916594c4ce7415"><div class="ttname"><a href="classDAnchorsBase.html#a96aab06a235a501bb0916594c4ce7415">DAnchorsBase::bottom</a></div><div class="ttdeci">const DAnchorInfo * bottom</div><div class="ttdoc">target 控件下边界锚线的信息</div><div class="ttdef"><b>Definition:</b> danchors.h:70</div></div>
+<div class="ttc" id="aclassDAnchorsBase_html_aa9e852bbe6c864772dad969ee1bec1d2"><div class="ttname"><a href="classDAnchorsBase.html#aa9e852bbe6c864772dad969ee1bec1d2">DAnchorsBase::horizontalCenterOffset</a></div><div class="ttdeci">int horizontalCenterOffset</div><div class="ttdoc">水平“锚线”的偏移量</div><div class="ttdef"><b>Definition:</b> danchors.h:82</div></div>
+<div class="ttc" id="aclassDAnchorsBase_html_aacbe1524bf770e24d1e28b4d68463f15"><div class="ttname"><a href="classDAnchorsBase.html#aacbe1524bf770e24d1e28b4d68463f15">DAnchorsBase::top</a></div><div class="ttdeci">const DAnchorInfo * top</div><div class="ttdoc">target 控件上边界锚线的信息</div><div class="ttdef"><b>Definition:</b> danchors.h:69</div></div>
+<div class="ttc" id="aclassDAnchorsBase_html_aaff8732012dd21a70dc767b174d727cd"><div class="ttname"><a href="classDAnchorsBase.html#aaff8732012dd21a70dc767b174d727cd">DAnchorsBase::rightMargin</a></div><div class="ttdeci">int rightMargin</div><div class="ttdoc">右“锚线”的边距，优先级高于 margins</div><div class="ttdef"><b>Definition:</b> danchors.h:81</div></div>
+<div class="ttc" id="aclassDAnchorsBase_html_ab761897700a60941fb229121794f2fbb"><div class="ttname"><a href="classDAnchorsBase.html#ab761897700a60941fb229121794f2fbb">DAnchorsBase::verticalCenterOffsetChanged</a></div><div class="ttdeci">void verticalCenterOffsetChanged(int verticalCenterOffset)</div><div class="ttdoc">信号会在 verticalCenterOffset 属性的值改变时被发送</div></div>
+<div class="ttc" id="aclassDAnchorsBase_html_abe8bb3b17f3ed241443a4bb30c04d9a0"><div class="ttname"><a href="classDAnchorsBase.html#abe8bb3b17f3ed241443a4bb30c04d9a0">DAnchorsBase::moveHorizontalCenter</a></div><div class="ttdeci">void moveHorizontalCenter(int arg)</div><div class="ttdoc">移动 target 控件的水平中线到 arg 这个位置 arg 要移动到的位置</div><div class="ttdef"><b>Definition:</b> danchors.cpp:1403</div></div>
+<div class="ttc" id="aclassDAnchorsBase_html_ac1a3584bf908941910a014201e7d3a4b"><div class="ttname"><a href="classDAnchorsBase.html#ac1a3584bf908941910a014201e7d3a4b">DAnchorsBase::horizontalCenterOffsetChanged</a></div><div class="ttdeci">void horizontalCenterOffsetChanged(int horizontalCenterOffset)</div><div class="ttdoc">信号会在 horizontalCenterOffset 属性的值改变时被发送</div></div>
+<div class="ttc" id="aclassDAnchorsBase_html_aca960f4d639cf1afe41772e06b7def03"><div class="ttname"><a href="classDAnchorsBase.html#aca960f4d639cf1afe41772e06b7def03">DAnchorsBase::isBinding</a></div><div class="ttdeci">bool isBinding(const DAnchorInfo *info) const</div><div class="ttdoc">如果此 info 设置了锚定对象，则返回 true ，否则返回 false</div><div class="ttdef"><b>Definition:</b> danchors.cpp:855</div></div>
+<div class="ttc" id="aclassDAnchorsBase_html_acafba8ba2307cbd37a01e2ba61d97414"><div class="ttname"><a href="classDAnchorsBase.html#acafba8ba2307cbd37a01e2ba61d97414">DAnchorsBase::moveTop</a></div><div class="ttdeci">void moveTop(int arg)</div><div class="ttdoc">移动 target 控件的上边界到 arg 这个位置 arg 要移动到的位置</div><div class="ttdef"><b>Definition:</b> danchors.cpp:1367</div></div>
+<div class="ttc" id="aclassDAnchorsBase_html_acc36da853d40582a78bda969063c5eeb"><div class="ttname"><a href="classDAnchorsBase.html#acc36da853d40582a78bda969063c5eeb">DAnchorsBase::topMargin</a></div><div class="ttdeci">int topMargin</div><div class="ttdoc">上“锚线”的边距，优先级高于 margins</div><div class="ttdef"><b>Definition:</b> danchors.h:78</div></div>
+<div class="ttc" id="aclassDAnchorsBase_html_ad13d5db3a3d97b8d2274458ce2e8c30c"><div class="ttname"><a href="classDAnchorsBase.html#ad13d5db3a3d97b8d2274458ce2e8c30c">DAnchorsBase::moveCenter</a></div><div class="ttdeci">void moveCenter(const QPoint &amp;arg)</div><div class="ttdoc">移动 target 控件的上边界到 arg 这个位置 arg 要移动到的位置</div><div class="ttdef"><b>Definition:</b> danchors.cpp:1421</div></div>
+<div class="ttc" id="aclassDAnchorsBase_html_ad2b159c41ec3a83ab9ccc27b0e4f4f16"><div class="ttname"><a href="classDAnchorsBase.html#ad2b159c41ec3a83ab9ccc27b0e4f4f16">DAnchorsBase::moveLeft</a></div><div class="ttdeci">void moveLeft(int arg)</div><div class="ttdoc">移动 target 控件的左边界到 arg 这个位置 arg 要移动到的位置</div><div class="ttdef"><b>Definition:</b> danchors.cpp:1385</div></div>
+<div class="ttc" id="aclassDAnchorsBase_html_ad41e7fff4550e1db1fdd79bebdc3ac2c"><div class="ttname"><a href="classDAnchorsBase.html#ad41e7fff4550e1db1fdd79bebdc3ac2c">DAnchorsBase::centerIn</a></div><div class="ttdeci">QWidget * centerIn</div><div class="ttdoc">target 控件的居中目标对象</div><div class="ttdef"><b>Definition:</b> danchors.h:76</div></div>
+<div class="ttc" id="aclassDAnchorsBase_html_ade9999ddef5d6f1eebd64536813051ad"><div class="ttname"><a href="classDAnchorsBase.html#ade9999ddef5d6f1eebd64536813051ad">DAnchorsBase::moveBottom</a></div><div class="ttdeci">void moveBottom(int arg)</div><div class="ttdoc">移动 target 控件的下边界到 arg 这个位置 arg 要移动到的位置</div><div class="ttdef"><b>Definition:</b> danchors.cpp:1376</div></div>
+<div class="ttc" id="aclassDAnchorsBase_html_ae12e57aa1784328e422f266162231065"><div class="ttname"><a href="classDAnchorsBase.html#ae12e57aa1784328e422f266162231065">DAnchorsBase::verticalCenterOffset</a></div><div class="ttdeci">int verticalCenterOffset</div><div class="ttdoc">竖直“锚线”的偏移量</div><div class="ttdef"><b>Definition:</b> danchors.h:83</div></div>
+<div class="ttc" id="aclassDAnchorsBase_html_ae92c1775f4be8d3447c3b54b0d705dbb"><div class="ttname"><a href="classDAnchorsBase.html#ae92c1775f4be8d3447c3b54b0d705dbb">DAnchorsBase::getAnchorBaseByWidget</a></div><div class="ttdeci">static DAnchorsBase * getAnchorBaseByWidget(const QWidget *w)</div><div class="ttdoc">返回与 w 绑定的 DAnchorsBase 对象 w</div><div class="ttdef"><b>Definition:</b> danchors.cpp:901</div></div>
+<div class="ttc" id="aclassDAnchorsBase_html_aed52c71cc1425a2c32a701568968aba7"><div class="ttname"><a href="classDAnchorsBase.html#aed52c71cc1425a2c32a701568968aba7">DAnchorsBase::marginsChanged</a></div><div class="ttdeci">void marginsChanged(int margins)</div><div class="ttdoc">信号会在 margins 属性的值改变时被发送</div></div>
+<div class="ttc" id="aclassDAnchorsBase_html_aedbcb19d5ac5c6a555cf5129a624e826"><div class="ttname"><a href="classDAnchorsBase.html#aedbcb19d5ac5c6a555cf5129a624e826">DAnchorsBase::rightChanged</a></div><div class="ttdeci">void rightChanged(const DAnchorInfo *right)</div><div class="ttdoc">信号会在 right 属性的值改变时被发送</div></div>
+<div class="ttc" id="aclassDAnchorsBase_html_aee6b0024b467c0f82baf43345981972f"><div class="ttname"><a href="classDAnchorsBase.html#aee6b0024b467c0f82baf43345981972f">DAnchorsBase::fill</a></div><div class="ttdeci">QWidget * fill</div><div class="ttdoc">target 控件的填充目标对象</div><div class="ttdef"><b>Definition:</b> danchors.h:75</div></div>
+<div class="ttc" id="aclassDAnchorsBase_html_aefb57f54b327adedc7b1d55717aebb2b"><div class="ttname"><a href="classDAnchorsBase.html#aefb57f54b327adedc7b1d55717aebb2b">DAnchorsBase::topMarginChanged</a></div><div class="ttdeci">void topMarginChanged(int topMargin)</div><div class="ttdoc">信号会在 topMargin 属性的值改变时被发送</div></div>
+<div class="ttc" id="aclassDAnchorsBase_html_afa4ae423ced45e154f24851defd7e4fa"><div class="ttname"><a href="classDAnchorsBase.html#afa4ae423ced45e154f24851defd7e4fa">DAnchorsBase::moveVerticalCenter</a></div><div class="ttdeci">void moveVerticalCenter(int arg)</div><div class="ttdoc">移动 target 控件的竖直中线到 arg 这个位置 arg 要移动到的位置</div><div class="ttdef"><b>Definition:</b> danchors.cpp:1412</div></div>
+<div class="ttc" id="aclassDAnchorsBase_html_afb0e0a71973dec73ae07d36e80296614"><div class="ttname"><a href="classDAnchorsBase.html#afb0e0a71973dec73ae07d36e80296614">DAnchorsBase::leftMargin</a></div><div class="ttdeci">int leftMargin</div><div class="ttdoc">左“锚线”的边距，优先级高于 margins</div><div class="ttdef"><b>Definition:</b> danchors.h:80</div></div>
+<div class="ttc" id="aclassDAnchors_html"><div class="ttname"><a href="classDAnchors.html">DAnchors</a></div><div class="ttdef"><b>Definition:</b> danchors.h:201</div></div>
+<div class="ttc" id="aclassDEnhancedWidget_html"><div class="ttname"><a href="classDEnhancedWidget.html">DEnhancedWidget</a></div><div class="ttdef"><b>Definition:</b> denhancedwidget.h:16</div></div>
+<div class="ttc" id="astructDAnchorInfo_html"><div class="ttname"><a href="structDAnchorInfo.html">DAnchorInfo</a></div><div class="ttdef"><b>Definition:</b> danchors.h:21</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_cc1fdbae730d0dba18db2b924667b662.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_6819db61f31aacd6e31b437a606a4041.html">include</a></li><li class="navelem"><a class="el" href="dir_6719ee6af2149ba01bce2af57814b9e8.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_4faf4521db2f3764f9e00575717749e8.html">widgets</a></li><li class="navelem"><b>danchors.h</b></li>
+    <li class="footer">文档生成时间:doxtime</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

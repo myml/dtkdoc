@@ -1,0 +1,860 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: DSimpleListView类 参考</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="change address" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classDSimpleListView.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#signals">信号</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="classDSimpleListView-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">DSimpleListView类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 DSimpleListView 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classDSimpleListView.png" alt=""/>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+信号</h2></td></tr>
+<tr class="memitem:a330882ae55db4f73ffd47ebb4ae74b08"><td class="memItemLeft" align="right" valign="top"><a id="a330882ae55db4f73ffd47ebb4ae74b08"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>rightClickItems</b> (QPoint pos, QList&lt; <a class="el" href="classDSimpleListItem.html">DSimpleListItem</a> * &gt; items)</td></tr>
+<tr class="separator:a330882ae55db4f73ffd47ebb4ae74b08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa72e55ac68e1e5c81ba9fa0da85a9b5d"><td class="memItemLeft" align="right" valign="top"><a id="aa72e55ac68e1e5c81ba9fa0da85a9b5d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>changeColumnVisible</b> (int index, bool visible, QList&lt; bool &gt; columnVisibles)</td></tr>
+<tr class="separator:aa72e55ac68e1e5c81ba9fa0da85a9b5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d231f6399045c588b751ea71a9537ee"><td class="memItemLeft" align="right" valign="top"><a id="a7d231f6399045c588b751ea71a9537ee"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>changeSortingStatus</b> (int index, bool sortingOrder)</td></tr>
+<tr class="separator:a7d231f6399045c588b751ea71a9537ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3e0c0bf71c1146aeed2bdb118ad7e1c"><td class="memItemLeft" align="right" valign="top"><a id="af3e0c0bf71c1146aeed2bdb118ad7e1c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>changeHoverItem</b> (QPoint pos, <a class="el" href="classDSimpleListItem.html">DSimpleListItem</a> *item, int columnIndex)</td></tr>
+<tr class="separator:af3e0c0bf71c1146aeed2bdb118ad7e1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f656cae027fc604528d9baa83a0dbe9"><td class="memItemLeft" align="right" valign="top"><a id="a7f656cae027fc604528d9baa83a0dbe9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>mouseHoverChanged</b> (<a class="el" href="classDSimpleListItem.html">DSimpleListItem</a> *oldItem, <a class="el" href="classDSimpleListItem.html">DSimpleListItem</a> *newItem, int columnIndex, QPoint pos)</td></tr>
+<tr class="separator:a7f656cae027fc604528d9baa83a0dbe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abde51700e5c0b02f31c9ebf005f0db84"><td class="memItemLeft" align="right" valign="top"><a id="abde51700e5c0b02f31c9ebf005f0db84"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>mousePressChanged</b> (<a class="el" href="classDSimpleListItem.html">DSimpleListItem</a> *item, int columnIndex, QPoint pos)</td></tr>
+<tr class="separator:abde51700e5c0b02f31c9ebf005f0db84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaed16f51e1915634c98638f902812bc1"><td class="memItemLeft" align="right" valign="top"><a id="aaed16f51e1915634c98638f902812bc1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>mouseReleaseChanged</b> (<a class="el" href="classDSimpleListItem.html">DSimpleListItem</a> *item, int columnIndex, QPoint pos)</td></tr>
+<tr class="separator:aaed16f51e1915634c98638f902812bc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:aef54b11975ba1e7576d804919344d70e"><td class="memItemLeft" align="right" valign="top"><a id="aef54b11975ba1e7576d804919344d70e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DSimpleListView</b> (QWidget *parent=0)</td></tr>
+<tr class="separator:aef54b11975ba1e7576d804919344d70e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bda81ced35dad95a06d36ed1f5bcd71"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSimpleListView.html#a7bda81ced35dad95a06d36ed1f5bcd71">setRowHeight</a> (int height)</td></tr>
+<tr class="memdesc:a7bda81ced35dad95a06d36ed1f5bcd71"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置行高.  <a href="classDSimpleListView.html#a7bda81ced35dad95a06d36ed1f5bcd71">更多...</a><br /></td></tr>
+<tr class="separator:a7bda81ced35dad95a06d36ed1f5bcd71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab332523b3dc557cbe6a8181036e09c6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSimpleListView.html#ab332523b3dc557cbe6a8181036e09c6c">setColumnTitleInfo</a> (QList&lt; QString &gt; titles, QList&lt; int &gt; widths, int height)</td></tr>
+<tr class="memdesc:ab332523b3dc557cbe6a8181036e09c6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置列标题信息  <a href="classDSimpleListView.html#ab332523b3dc557cbe6a8181036e09c6c">更多...</a><br /></td></tr>
+<tr class="separator:ab332523b3dc557cbe6a8181036e09c6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1e82c693629f63022c830392ef6708f"><td class="memItemLeft" align="right" valign="top"><a id="ad1e82c693629f63022c830392ef6708f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSimpleListView.html#ad1e82c693629f63022c830392ef6708f">setColumnHideFlags</a> (QList&lt; bool &gt; toggleHideFlags, int alwaysVisibleColumn=-1)</td></tr>
+<tr class="memdesc:ad1e82c693629f63022c830392ef6708f"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置列隐藏标志 <em>toggleHideFlags</em> 用于控制列的隐藏标志，用于切换显示/隐藏。 <em>visibleColumnIndex</em> 列始终可见的列索引，默认值为 -1，表示列始终不可见。 <br /></td></tr>
+<tr class="separator:ad1e82c693629f63022c830392ef6708f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad58cc953fd47a3f20f4b045df5612b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSimpleListView.html#aad58cc953fd47a3f20f4b045df5612b9">setColumnSortingAlgorithms</a> (QList&lt; SortAlgorithm &gt; *algorithms, int sortColumn=-1, bool descendingSort=false)</td></tr>
+<tr class="memdesc:aad58cc953fd47a3f20f4b045df5612b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置列排序算法.  <a href="classDSimpleListView.html#aad58cc953fd47a3f20f4b045df5612b9">更多...</a><br /></td></tr>
+<tr class="separator:aad58cc953fd47a3f20f4b045df5612b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7350792bc21e88dcbed4cf925f5650e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSimpleListView.html#ab7350792bc21e88dcbed4cf925f5650e">setSearchAlgorithm</a> (SearchAlgorithm algorithm)</td></tr>
+<tr class="memdesc:ab7350792bc21e88dcbed4cf925f5650e"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置搜索算法.  <a href="classDSimpleListView.html#ab7350792bc21e88dcbed4cf925f5650e">更多...</a><br /></td></tr>
+<tr class="separator:ab7350792bc21e88dcbed4cf925f5650e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89c482f04201aa4cd1678ff206ae47ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSimpleListView.html#a89c482f04201aa4cd1678ff206ae47ca">setClipRadius</a> (int radius)</td></tr>
+<tr class="memdesc:a89c482f04201aa4cd1678ff206ae47ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置圆角半径.  <a href="classDSimpleListView.html#a89c482f04201aa4cd1678ff206ae47ca">更多...</a><br /></td></tr>
+<tr class="separator:a89c482f04201aa4cd1678ff206ae47ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc198ca190e6bcb63f476ca372010c11"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSimpleListView.html#acc198ca190e6bcb63f476ca372010c11">setFrame</a> (bool enableFrame, QColor color=QColor(&quot;#000000&quot;), double opacity=0.1)</td></tr>
+<tr class="memdesc:acc198ca190e6bcb63f476ca372010c11"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置边角细节.  <a href="classDSimpleListView.html#acc198ca190e6bcb63f476ca372010c11">更多...</a><br /></td></tr>
+<tr class="separator:acc198ca190e6bcb63f476ca372010c11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68050b0015fa84bd7576ebf530d45950"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSimpleListView.html#a68050b0015fa84bd7576ebf530d45950">addItems</a> (QList&lt; <a class="el" href="classDtk_1_1Widget_1_1DSimpleListItem.html">DSimpleListItem</a> * &gt; items)</td></tr>
+<tr class="memdesc:a68050b0015fa84bd7576ebf530d45950"><td class="mdescLeft">&#160;</td><td class="mdescRight">添加 <a class="el" href="classDSimpleListItem.html">DSimpleListItem</a> 列表到视图中.  <a href="classDSimpleListView.html#a68050b0015fa84bd7576ebf530d45950">更多...</a><br /></td></tr>
+<tr class="separator:a68050b0015fa84bd7576ebf530d45950"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6eea0c196d8b5decb346fc3bde155805"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSimpleListView.html#a6eea0c196d8b5decb346fc3bde155805">removeItem</a> (<a class="el" href="classDtk_1_1Widget_1_1DSimpleListItem.html">DSimpleListItem</a> *item)</td></tr>
+<tr class="memdesc:a6eea0c196d8b5decb346fc3bde155805"><td class="mdescLeft">&#160;</td><td class="mdescRight">删除一个列表项.  <a href="classDSimpleListView.html#a6eea0c196d8b5decb346fc3bde155805">更多...</a><br /></td></tr>
+<tr class="separator:a6eea0c196d8b5decb346fc3bde155805"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32d83aeec9ee1fca9e940993293d959a"><td class="memItemLeft" align="right" valign="top"><a id="a32d83aeec9ee1fca9e940993293d959a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSimpleListView.html#a32d83aeec9ee1fca9e940993293d959a">clearItems</a> ()</td></tr>
+<tr class="memdesc:a32d83aeec9ee1fca9e940993293d959a"><td class="mdescLeft">&#160;</td><td class="mdescRight">删除所有列表项 <br /></td></tr>
+<tr class="separator:a32d83aeec9ee1fca9e940993293d959a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5387d47283cdab9575914cc3cb9cb112"><td class="memItemLeft" align="right" valign="top"><a id="a5387d47283cdab9575914cc3cb9cb112"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSimpleListView.html#a5387d47283cdab9575914cc3cb9cb112">addSelections</a> (QList&lt; <a class="el" href="classDtk_1_1Widget_1_1DSimpleListItem.html">DSimpleListItem</a> * &gt; items, bool recordLastSelection=true)</td></tr>
+<tr class="memdesc:a5387d47283cdab9575914cc3cb9cb112"><td class="mdescLeft">&#160;</td><td class="mdescRight">添加 <a class="el" href="classDSimpleListItem.html">DSimpleListItem</a> 列表以在视图中选择效果 <em>recordLastSelection</em> 为 true 则清除最后一个选择项 <em>items</em> 列表项. <br /></td></tr>
+<tr class="separator:a5387d47283cdab9575914cc3cb9cb112"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41437f1c968676cbd62e43df4322bba3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSimpleListView.html#a41437f1c968676cbd62e43df4322bba3">clearSelections</a> (bool clearLastSelection=true)</td></tr>
+<tr class="memdesc:a41437f1c968676cbd62e43df4322bba3"><td class="mdescLeft">&#160;</td><td class="mdescRight">移除所有选择项.  <a href="classDSimpleListView.html#a41437f1c968676cbd62e43df4322bba3">更多...</a><br /></td></tr>
+<tr class="separator:a41437f1c968676cbd62e43df4322bba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4e1c867ebcf3088bd9d078b9b979354"><td class="memItemLeft" align="right" valign="top">QList&lt; <a class="el" href="classDtk_1_1Widget_1_1DSimpleListItem.html">DSimpleListItem</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSimpleListView.html#af4e1c867ebcf3088bd9d078b9b979354">getSelections</a> ()</td></tr>
+<tr class="memdesc:af4e1c867ebcf3088bd9d078b9b979354"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取所有选择项.  <a href="classDSimpleListView.html#af4e1c867ebcf3088bd9d078b9b979354">更多...</a><br /></td></tr>
+<tr class="separator:af4e1c867ebcf3088bd9d078b9b979354"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f0e8fd77346c0d977614de614995bc0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSimpleListView.html#a2f0e8fd77346c0d977614de614995bc0">refreshItems</a> (QList&lt; <a class="el" href="classDtk_1_1Widget_1_1DSimpleListItem.html">DSimpleListItem</a> * &gt; items)</td></tr>
+<tr class="memdesc:a2f0e8fd77346c0d977614de614995bc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">刷新所有项.  <a href="classDSimpleListView.html#a2f0e8fd77346c0d977614de614995bc0">更多...</a><br /></td></tr>
+<tr class="separator:a2f0e8fd77346c0d977614de614995bc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a527335b858d598b60ff06536f3e209f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSimpleListView.html#a527335b858d598b60ff06536f3e209f8">search</a> (QString searchContent)</td></tr>
+<tr class="memdesc:a527335b858d598b60ff06536f3e209f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">搜索.  <a href="classDSimpleListView.html#a527335b858d598b60ff06536f3e209f8">更多...</a><br /></td></tr>
+<tr class="separator:a527335b858d598b60ff06536f3e209f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae470772153e14775200d3f73c4ebd1af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSimpleListView.html#ae470772153e14775200d3f73c4ebd1af">setSingleSelect</a> (bool singleSelect)</td></tr>
+<tr class="memdesc:ae470772153e14775200d3f73c4ebd1af"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置单一选择.  <a href="classDSimpleListView.html#ae470772153e14775200d3f73c4ebd1af">更多...</a><br /></td></tr>
+<tr class="separator:ae470772153e14775200d3f73c4ebd1af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4e80fdc77954ea7a861561346677547"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSimpleListView.html#ab4e80fdc77954ea7a861561346677547">keepSelectWhenClickBlank</a> (bool keep)</td></tr>
+<tr class="memdesc:ab4e80fdc77954ea7a861561346677547"><td class="mdescLeft">&#160;</td><td class="mdescRight">单击空白区域时保持选择项.  <a href="classDSimpleListView.html#ab4e80fdc77954ea7a861561346677547">更多...</a><br /></td></tr>
+<tr class="separator:ab4e80fdc77954ea7a861561346677547"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade4c80d0ac7d4469919db72556d66235"><td class="memItemLeft" align="right" valign="top"><a id="ade4c80d0ac7d4469919db72556d66235"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSimpleListView.html#ade4c80d0ac7d4469919db72556d66235">selectAllItems</a> ()</td></tr>
+<tr class="memdesc:ade4c80d0ac7d4469919db72556d66235"><td class="mdescLeft">&#160;</td><td class="mdescRight">选择所有列表项. <br /></td></tr>
+<tr class="separator:ade4c80d0ac7d4469919db72556d66235"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6f121283a098a7b0a6dc58f818ae444"><td class="memItemLeft" align="right" valign="top"><a id="ab6f121283a098a7b0a6dc58f818ae444"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSimpleListView.html#ab6f121283a098a7b0a6dc58f818ae444">selectFirstItem</a> ()</td></tr>
+<tr class="memdesc:ab6f121283a098a7b0a6dc58f818ae444"><td class="mdescLeft">&#160;</td><td class="mdescRight">选择第一项. <br /></td></tr>
+<tr class="separator:ab6f121283a098a7b0a6dc58f818ae444"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab74dfca4437c778f0b389c70896aafdc"><td class="memItemLeft" align="right" valign="top"><a id="ab74dfca4437c778f0b389c70896aafdc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSimpleListView.html#ab74dfca4437c778f0b389c70896aafdc">selectLastItem</a> ()</td></tr>
+<tr class="memdesc:ab74dfca4437c778f0b389c70896aafdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">选择最后一项. <br /></td></tr>
+<tr class="separator:ab74dfca4437c778f0b389c70896aafdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91348efe3fffec9bd9701616d6a692b3"><td class="memItemLeft" align="right" valign="top"><a id="a91348efe3fffec9bd9701616d6a692b3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSimpleListView.html#a91348efe3fffec9bd9701616d6a692b3">selectNextItem</a> ()</td></tr>
+<tr class="memdesc:a91348efe3fffec9bd9701616d6a692b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">移动到下一项. <br /></td></tr>
+<tr class="separator:a91348efe3fffec9bd9701616d6a692b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba5bb6080d10120be94019243fe4d8f5"><td class="memItemLeft" align="right" valign="top"><a id="aba5bb6080d10120be94019243fe4d8f5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSimpleListView.html#aba5bb6080d10120be94019243fe4d8f5">selectPrevItem</a> ()</td></tr>
+<tr class="memdesc:aba5bb6080d10120be94019243fe4d8f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">移动到上一项. <br /></td></tr>
+<tr class="separator:aba5bb6080d10120be94019243fe4d8f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90363134827174b264bd1a6518e8bbe0"><td class="memItemLeft" align="right" valign="top"><a id="a90363134827174b264bd1a6518e8bbe0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSimpleListView.html#a90363134827174b264bd1a6518e8bbe0">shiftSelectPageDown</a> ()</td></tr>
+<tr class="memdesc:a90363134827174b264bd1a6518e8bbe0"><td class="mdescLeft">&#160;</td><td class="mdescRight">从当前项选择到下一页的项. <br /></td></tr>
+<tr class="separator:a90363134827174b264bd1a6518e8bbe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3c9d3f0896a99ecc3f9080245eef317"><td class="memItemLeft" align="right" valign="top"><a id="af3c9d3f0896a99ecc3f9080245eef317"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSimpleListView.html#af3c9d3f0896a99ecc3f9080245eef317">shiftSelectPageUp</a> ()</td></tr>
+<tr class="memdesc:af3c9d3f0896a99ecc3f9080245eef317"><td class="mdescLeft">&#160;</td><td class="mdescRight">从当前项选择到上一页的项. <br /></td></tr>
+<tr class="separator:af3c9d3f0896a99ecc3f9080245eef317"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1ed0e289b46bb2708fcbe2525bff290"><td class="memItemLeft" align="right" valign="top"><a id="ac1ed0e289b46bb2708fcbe2525bff290"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSimpleListView.html#ac1ed0e289b46bb2708fcbe2525bff290">shiftSelectToEnd</a> ()</td></tr>
+<tr class="memdesc:ac1ed0e289b46bb2708fcbe2525bff290"><td class="mdescLeft">&#160;</td><td class="mdescRight">从当前项选择到末尾项. <br /></td></tr>
+<tr class="separator:ac1ed0e289b46bb2708fcbe2525bff290"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51de339bbe10949fc4b5248595c3b2a5"><td class="memItemLeft" align="right" valign="top"><a id="a51de339bbe10949fc4b5248595c3b2a5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSimpleListView.html#a51de339bbe10949fc4b5248595c3b2a5">shiftSelectToHome</a> ()</td></tr>
+<tr class="memdesc:a51de339bbe10949fc4b5248595c3b2a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">从当前项选择到起始项. <br /></td></tr>
+<tr class="separator:a51de339bbe10949fc4b5248595c3b2a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15b29adecd217bd0b679334807b3a646"><td class="memItemLeft" align="right" valign="top"><a id="a15b29adecd217bd0b679334807b3a646"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSimpleListView.html#a15b29adecd217bd0b679334807b3a646">shiftSelectToNext</a> ()</td></tr>
+<tr class="memdesc:a15b29adecd217bd0b679334807b3a646"><td class="mdescLeft">&#160;</td><td class="mdescRight">从当前项选择到下一项. <br /></td></tr>
+<tr class="separator:a15b29adecd217bd0b679334807b3a646"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abad834de4970133dfeb2bda1c08c8b9a"><td class="memItemLeft" align="right" valign="top"><a id="abad834de4970133dfeb2bda1c08c8b9a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSimpleListView.html#abad834de4970133dfeb2bda1c08c8b9a">shiftSelectToPrev</a> ()</td></tr>
+<tr class="memdesc:abad834de4970133dfeb2bda1c08c8b9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">从当前项选择到上一项. <br /></td></tr>
+<tr class="separator:abad834de4970133dfeb2bda1c08c8b9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f1d935a37378080c2bc0b597a9e635c"><td class="memItemLeft" align="right" valign="top"><a id="a6f1d935a37378080c2bc0b597a9e635c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSimpleListView.html#a6f1d935a37378080c2bc0b597a9e635c">scrollPageDown</a> ()</td></tr>
+<tr class="memdesc:a6f1d935a37378080c2bc0b597a9e635c"><td class="mdescLeft">&#160;</td><td class="mdescRight">滚动到下一页. <br /></td></tr>
+<tr class="separator:a6f1d935a37378080c2bc0b597a9e635c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3dc25ed88ab487b941d78afa57d3cf9"><td class="memItemLeft" align="right" valign="top"><a id="af3dc25ed88ab487b941d78afa57d3cf9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSimpleListView.html#af3dc25ed88ab487b941d78afa57d3cf9">scrollPageUp</a> ()</td></tr>
+<tr class="memdesc:af3dc25ed88ab487b941d78afa57d3cf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">滚动到上一页. <br /></td></tr>
+<tr class="separator:af3dc25ed88ab487b941d78afa57d3cf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14ffb9ce4b4ef3763b5bda83aa033bbc"><td class="memItemLeft" align="right" valign="top"><a id="a14ffb9ce4b4ef3763b5bda83aa033bbc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ctrlScrollPageDown</b> ()</td></tr>
+<tr class="separator:a14ffb9ce4b4ef3763b5bda83aa033bbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65bdb52610e26a0e9502878f7aa3f527"><td class="memItemLeft" align="right" valign="top"><a id="a65bdb52610e26a0e9502878f7aa3f527"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ctrlScrollPageUp</b> ()</td></tr>
+<tr class="separator:a65bdb52610e26a0e9502878f7aa3f527"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90d2a435a3928d42b8f3d0f750620e98"><td class="memItemLeft" align="right" valign="top"><a id="a90d2a435a3928d42b8f3d0f750620e98"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ctrlScrollToEnd</b> ()</td></tr>
+<tr class="separator:a90d2a435a3928d42b8f3d0f750620e98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1cc1995b1d4e9b853079bcc543d4a00"><td class="memItemLeft" align="right" valign="top"><a id="ab1cc1995b1d4e9b853079bcc543d4a00"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ctrlScrollToHome</b> ()</td></tr>
+<tr class="separator:ab1cc1995b1d4e9b853079bcc543d4a00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a99b0b2a882201b6925430f3ad4db42bb"><td class="memItemLeft" align="right" valign="top"><a id="a99b0b2a882201b6925430f3ad4db42bb"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>leaveEvent</b> (QEvent *event)</td></tr>
+<tr class="separator:a99b0b2a882201b6925430f3ad4db42bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6af03f0398f7e3659b72383e167eec80"><td class="memItemLeft" align="right" valign="top"><a id="a6af03f0398f7e3659b72383e167eec80"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>eventFilter</b> (QObject *, QEvent *event)</td></tr>
+<tr class="separator:a6af03f0398f7e3659b72383e167eec80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeab4876f947128a9ed22f4031b53a6f4"><td class="memItemLeft" align="right" valign="top"><a id="aeab4876f947128a9ed22f4031b53a6f4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>keyPressEvent</b> (QKeyEvent *keyEvent)</td></tr>
+<tr class="separator:aeab4876f947128a9ed22f4031b53a6f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b0d7ecb39bb810497854f86d78fff26"><td class="memItemLeft" align="right" valign="top"><a id="a2b0d7ecb39bb810497854f86d78fff26"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>mouseMoveEvent</b> (QMouseEvent *mouseEvent)</td></tr>
+<tr class="separator:a2b0d7ecb39bb810497854f86d78fff26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60aeb8ed0b447e144c5e79cbbba6ab1d"><td class="memItemLeft" align="right" valign="top"><a id="a60aeb8ed0b447e144c5e79cbbba6ab1d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>mousePressEvent</b> (QMouseEvent *mouseEvent)</td></tr>
+<tr class="separator:a60aeb8ed0b447e144c5e79cbbba6ab1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae09defd8cf0b463f4fb81c8d4f12778e"><td class="memItemLeft" align="right" valign="top"><a id="ae09defd8cf0b463f4fb81c8d4f12778e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>mouseReleaseEvent</b> (QMouseEvent *mouseEvent)</td></tr>
+<tr class="separator:ae09defd8cf0b463f4fb81c8d4f12778e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac97ef01c77eb5f23bdd96a203c84da0d"><td class="memItemLeft" align="right" valign="top"><a id="ac97ef01c77eb5f23bdd96a203c84da0d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>paintEvent</b> (QPaintEvent *)</td></tr>
+<tr class="separator:ac97ef01c77eb5f23bdd96a203c84da0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95e1c665a47c5b1b087c041b88da0a43"><td class="memItemLeft" align="right" valign="top"><a id="a95e1c665a47c5b1b087c041b88da0a43"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>wheelEvent</b> (QWheelEvent *event)</td></tr>
+<tr class="separator:a95e1c665a47c5b1b087c041b88da0a43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc28ae39dc3c4afa3cee8e24f2d11cc4"><td class="memItemLeft" align="right" valign="top"><a id="acc28ae39dc3c4afa3cee8e24f2d11cc4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>paintScrollbar</b> (QPainter *painter)</td></tr>
+<tr class="separator:acc28ae39dc3c4afa3cee8e24f2d11cc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a073defbc822f80e0c3d2f8a1dc97ffe1"><td class="memItemLeft" align="right" valign="top"><a id="a073defbc822f80e0c3d2f8a1dc97ffe1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>selectPrevItemWithOffset</b> (int scrollOffset)</td></tr>
+<tr class="separator:a073defbc822f80e0c3d2f8a1dc97ffe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb37929501b248a175c42504540c9fb1"><td class="memItemLeft" align="right" valign="top"><a id="afb37929501b248a175c42504540c9fb1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>selectNextItemWithOffset</b> (int scrollOffset)</td></tr>
+<tr class="separator:afb37929501b248a175c42504540c9fb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2f81b205c5b0c7d836840185e2badb4"><td class="memItemLeft" align="right" valign="top"><a id="ab2f81b205c5b0c7d836840185e2badb4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>shiftSelectNextItemWithOffset</b> (int scrollOffset)</td></tr>
+<tr class="separator:ab2f81b205c5b0c7d836840185e2badb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e4b5851adff8a5da836e5d9d1515773"><td class="memItemLeft" align="right" valign="top"><a id="a1e4b5851adff8a5da836e5d9d1515773"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>shiftSelectPrevItemWithOffset</b> (int scrollOffset)</td></tr>
+<tr class="separator:a1e4b5851adff8a5da836e5d9d1515773"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa60d7ca50b8a9fd903ee964c620970fa"><td class="memItemLeft" align="right" valign="top"><a id="aa60d7ca50b8a9fd903ee964c620970fa"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getBottomRenderOffset</b> ()</td></tr>
+<tr class="separator:aa60d7ca50b8a9fd903ee964c620970fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb4e366db9b28110b868eaceaa31ca0a"><td class="memItemLeft" align="right" valign="top"><a id="adb4e366db9b28110b868eaceaa31ca0a"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getScrollbarY</b> ()</td></tr>
+<tr class="separator:adb4e366db9b28110b868eaceaa31ca0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39f68e2e374ccd3ae92b422897bcb19c"><td class="memItemLeft" align="right" valign="top"><a id="a39f68e2e374ccd3ae92b422897bcb19c"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getScrollAreaHeight</b> ()</td></tr>
+<tr class="separator:a39f68e2e374ccd3ae92b422897bcb19c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb85c4d7a925b9c024caedc4d06bd89d"><td class="memItemLeft" align="right" valign="top"><a id="adb85c4d7a925b9c024caedc4d06bd89d"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getScrollbarHeight</b> ()</td></tr>
+<tr class="separator:adb85c4d7a925b9c024caedc4d06bd89d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ec2acd7653c9242b785112d3e4d64cf"><td class="memItemLeft" align="right" valign="top"><a id="a4ec2acd7653c9242b785112d3e4d64cf"></a>
+QList&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getRenderWidths</b> ()</td></tr>
+<tr class="separator:a4ec2acd7653c9242b785112d3e4d64cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5e1bef1e4957b4446a746d23d673b21"><td class="memItemLeft" align="right" valign="top"><a id="af5e1bef1e4957b4446a746d23d673b21"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>shiftSelectItemsWithBound</b> (int selectionStartIndex, int selectionEndIndex)</td></tr>
+<tr class="separator:af5e1bef1e4957b4446a746d23d673b21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbed4d45ebed7259535c646ee6afe4ca"><td class="memItemLeft" align="right" valign="top"><a id="afbed4d45ebed7259535c646ee6afe4ca"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>adjustRenderOffset</b> (int offset)</td></tr>
+<tr class="separator:afbed4d45ebed7259535c646ee6afe4ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1df35ea12d2d547cdbbf8f136dc71c3"><td class="memItemLeft" align="right" valign="top"><a id="ae1df35ea12d2d547cdbbf8f136dc71c3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>startScrollbarHideTimer</b> ()</td></tr>
+<tr class="separator:ae1df35ea12d2d547cdbbf8f136dc71c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52acdbc3fd72488358b7ca698a97804e"><td class="memItemLeft" align="right" valign="top"><a id="a52acdbc3fd72488358b7ca698a97804e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isMouseAtScrollArea</b> (int x)</td></tr>
+<tr class="separator:a52acdbc3fd72488358b7ca698a97804e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68d412270377d9e0f5700ee131bae392"><td class="memItemLeft" align="right" valign="top"><a id="a68d412270377d9e0f5700ee131bae392"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isMouseAtTitleArea</b> (int y)</td></tr>
+<tr class="separator:a68d412270377d9e0f5700ee131bae392"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:a8a1854389b15c739b2a3b3df1522e24c"><td class="memItemLeft" align="right" valign="top"><a id="a8a1854389b15c739b2a3b3df1522e24c"></a>
+QPixmap&#160;</td><td class="memItemRight" valign="bottom"><b>arrowDownDarkHoverImage</b></td></tr>
+<tr class="separator:a8a1854389b15c739b2a3b3df1522e24c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e6fe7551cda0bb3ca30000102d573aa"><td class="memItemLeft" align="right" valign="top"><a id="a2e6fe7551cda0bb3ca30000102d573aa"></a>
+QPixmap&#160;</td><td class="memItemRight" valign="bottom"><b>arrowDownDarkNormalImage</b></td></tr>
+<tr class="separator:a2e6fe7551cda0bb3ca30000102d573aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1fbe06d5bc028a4570c3057a115c93a"><td class="memItemLeft" align="right" valign="top"><a id="aa1fbe06d5bc028a4570c3057a115c93a"></a>
+QPixmap&#160;</td><td class="memItemRight" valign="bottom"><b>arrowDownDarkPressImage</b></td></tr>
+<tr class="separator:aa1fbe06d5bc028a4570c3057a115c93a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0b97b5a4f2e21c8b5c8f7283545d1bc"><td class="memItemLeft" align="right" valign="top"><a id="ac0b97b5a4f2e21c8b5c8f7283545d1bc"></a>
+QPixmap&#160;</td><td class="memItemRight" valign="bottom"><b>arrowDownHoverImage</b></td></tr>
+<tr class="separator:ac0b97b5a4f2e21c8b5c8f7283545d1bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ce703e52f8c47a812a3d009d2bf8238"><td class="memItemLeft" align="right" valign="top"><a id="a6ce703e52f8c47a812a3d009d2bf8238"></a>
+QPixmap&#160;</td><td class="memItemRight" valign="bottom"><b>arrowDownLightHoverImage</b></td></tr>
+<tr class="separator:a6ce703e52f8c47a812a3d009d2bf8238"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6aabb0fc7a784f8355ad8ad9e2231ca8"><td class="memItemLeft" align="right" valign="top"><a id="a6aabb0fc7a784f8355ad8ad9e2231ca8"></a>
+QPixmap&#160;</td><td class="memItemRight" valign="bottom"><b>arrowDownLightNormalImage</b></td></tr>
+<tr class="separator:a6aabb0fc7a784f8355ad8ad9e2231ca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4268b6e724e069d273559e982797c48"><td class="memItemLeft" align="right" valign="top"><a id="ad4268b6e724e069d273559e982797c48"></a>
+QPixmap&#160;</td><td class="memItemRight" valign="bottom"><b>arrowDownLightPressImage</b></td></tr>
+<tr class="separator:ad4268b6e724e069d273559e982797c48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a790c6f372e740e37ae53f3588753c211"><td class="memItemLeft" align="right" valign="top"><a id="a790c6f372e740e37ae53f3588753c211"></a>
+QPixmap&#160;</td><td class="memItemRight" valign="bottom"><b>arrowDownNormalImage</b></td></tr>
+<tr class="separator:a790c6f372e740e37ae53f3588753c211"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f13ae98439d7acfa3a5e0d61d269e79"><td class="memItemLeft" align="right" valign="top"><a id="a5f13ae98439d7acfa3a5e0d61d269e79"></a>
+QPixmap&#160;</td><td class="memItemRight" valign="bottom"><b>arrowDownPressImage</b></td></tr>
+<tr class="separator:a5f13ae98439d7acfa3a5e0d61d269e79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae30346fbe4c1e5ac7951eb7037068d32"><td class="memItemLeft" align="right" valign="top"><a id="ae30346fbe4c1e5ac7951eb7037068d32"></a>
+QPixmap&#160;</td><td class="memItemRight" valign="bottom"><b>arrowUpDarkHoverImage</b></td></tr>
+<tr class="separator:ae30346fbe4c1e5ac7951eb7037068d32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad915f29d76c2b72ca518215225e2cf7f"><td class="memItemLeft" align="right" valign="top"><a id="ad915f29d76c2b72ca518215225e2cf7f"></a>
+QPixmap&#160;</td><td class="memItemRight" valign="bottom"><b>arrowUpDarkNormalImage</b></td></tr>
+<tr class="separator:ad915f29d76c2b72ca518215225e2cf7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70efe93b8a1bb07fc71f6cf757ec041d"><td class="memItemLeft" align="right" valign="top"><a id="a70efe93b8a1bb07fc71f6cf757ec041d"></a>
+QPixmap&#160;</td><td class="memItemRight" valign="bottom"><b>arrowUpDarkPressImage</b></td></tr>
+<tr class="separator:a70efe93b8a1bb07fc71f6cf757ec041d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4acb2caa32881691dca17ee4b6c393a"><td class="memItemLeft" align="right" valign="top"><a id="ac4acb2caa32881691dca17ee4b6c393a"></a>
+QPixmap&#160;</td><td class="memItemRight" valign="bottom"><b>arrowUpHoverImage</b></td></tr>
+<tr class="separator:ac4acb2caa32881691dca17ee4b6c393a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a993940bc9db9709c2b2bb269ff87211b"><td class="memItemLeft" align="right" valign="top"><a id="a993940bc9db9709c2b2bb269ff87211b"></a>
+QPixmap&#160;</td><td class="memItemRight" valign="bottom"><b>arrowUpLightHoverImage</b></td></tr>
+<tr class="separator:a993940bc9db9709c2b2bb269ff87211b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76c03efc7de4ad356b6dcf76629e3c32"><td class="memItemLeft" align="right" valign="top"><a id="a76c03efc7de4ad356b6dcf76629e3c32"></a>
+QPixmap&#160;</td><td class="memItemRight" valign="bottom"><b>arrowUpLightNormalImage</b></td></tr>
+<tr class="separator:a76c03efc7de4ad356b6dcf76629e3c32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35198333db8cb00f23fcbeb8d0a034f1"><td class="memItemLeft" align="right" valign="top"><a id="a35198333db8cb00f23fcbeb8d0a034f1"></a>
+QPixmap&#160;</td><td class="memItemRight" valign="bottom"><b>arrowUpLightPressImage</b></td></tr>
+<tr class="separator:a35198333db8cb00f23fcbeb8d0a034f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39ce554de742c0964cace12c6a914eb7"><td class="memItemLeft" align="right" valign="top"><a id="a39ce554de742c0964cace12c6a914eb7"></a>
+QPixmap&#160;</td><td class="memItemRight" valign="bottom"><b>arrowUpNormalImage</b></td></tr>
+<tr class="separator:a39ce554de742c0964cace12c6a914eb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71c8d28a813b8812159428ae6414a153"><td class="memItemLeft" align="right" valign="top"><a id="a71c8d28a813b8812159428ae6414a153"></a>
+QPixmap&#160;</td><td class="memItemRight" valign="bottom"><b>arrowUpPressImage</b></td></tr>
+<tr class="separator:a71c8d28a813b8812159428ae6414a153"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbfa968bdca6c7b701e6170399703d47"><td class="memItemLeft" align="right" valign="top"><a id="afbfa968bdca6c7b701e6170399703d47"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>backgroundColor</b> = &quot;#ffffff&quot;</td></tr>
+<tr class="separator:afbfa968bdca6c7b701e6170399703d47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7d95ea9aa2440f5c64e4721db2b7540"><td class="memItemLeft" align="right" valign="top"><a id="af7d95ea9aa2440f5c64e4721db2b7540"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>scrollbarColor</b> = &quot;#ffffff&quot;</td></tr>
+<tr class="separator:af7d95ea9aa2440f5c64e4721db2b7540"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add3fba3bbee8a1acc074e7ab8e35dba6"><td class="memItemLeft" align="right" valign="top"><a id="add3fba3bbee8a1acc074e7ab8e35dba6"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>searchColor</b> = &quot;#000000&quot;</td></tr>
+<tr class="separator:add3fba3bbee8a1acc074e7ab8e35dba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af47ea8ea924c615eb301e8f041cffaab"><td class="memItemLeft" align="right" valign="top"><a id="af47ea8ea924c615eb301e8f041cffaab"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>titleAreaColor</b> = &quot;#ffffff&quot;</td></tr>
+<tr class="separator:af47ea8ea924c615eb301e8f041cffaab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d3d9f50ce68998b1e08326189509ae0"><td class="memItemLeft" align="right" valign="top"><a id="a6d3d9f50ce68998b1e08326189509ae0"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>titleColor</b> = &quot;#000000&quot;</td></tr>
+<tr class="separator:a6d3d9f50ce68998b1e08326189509ae0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1af35fdbf924a90900d7efb7e8a0ece"><td class="memItemLeft" align="right" valign="top"><a id="af1af35fdbf924a90900d7efb7e8a0ece"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>titleLineColor</b> = &quot;#000000&quot;</td></tr>
+<tr class="separator:af1af35fdbf924a90900d7efb7e8a0ece"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a9f7e50b0b3eb30e33dadfffb40b8b2"><td class="memItemLeft" align="right" valign="top"><a id="a2a9f7e50b0b3eb30e33dadfffb40b8b2"></a>
+QColor&#160;</td><td class="memItemRight" valign="bottom"><b>frameColor</b> = QColor(&quot;#000000&quot;)</td></tr>
+<tr class="separator:a2a9f7e50b0b3eb30e33dadfffb40b8b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4173b141387a2a476711ce43edf92405"><td class="memItemLeft" align="right" valign="top"><a id="a4173b141387a2a476711ce43edf92405"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>backgroundOpacity</b> = 0.03</td></tr>
+<tr class="separator:a4173b141387a2a476711ce43edf92405"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a001e8d199f31758f5fbed3028572f732"><td class="memItemLeft" align="right" valign="top"><a id="a001e8d199f31758f5fbed3028572f732"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>frameOpacity</b> = 0.1</td></tr>
+<tr class="separator:a001e8d199f31758f5fbed3028572f732"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae02a59717d0c38df821dfd78b3c32485"><td class="memItemLeft" align="right" valign="top"><a id="ae02a59717d0c38df821dfd78b3c32485"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>titleAreaOpacity</b> = 0.02</td></tr>
+<tr class="separator:ae02a59717d0c38df821dfd78b3c32485"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4991705c6b37301338583078e7dcd68d"><td class="memItemLeft" align="right" valign="top"><a id="a4991705c6b37301338583078e7dcd68d"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>titleSize</b> = 10</td></tr>
+<tr class="separator:a4991705c6b37301338583078e7dcd68d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9b4e9c72e92daed95f0e360e91730ca"><td class="memItemLeft" align="right" valign="top"><a id="ae9b4e9c72e92daed95f0e360e91730ca"></a>
+qreal&#160;</td><td class="memItemRight" valign="bottom"><b>scrollbarFrameHoverOpacity</b> = 0</td></tr>
+<tr class="separator:ae9b4e9c72e92daed95f0e360e91730ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82818dfb154fbb100be1d89092073de1"><td class="memItemLeft" align="right" valign="top"><a id="a82818dfb154fbb100be1d89092073de1"></a>
+qreal&#160;</td><td class="memItemRight" valign="bottom"><b>scrollbarFrameNormalOpacity</b> = 0</td></tr>
+<tr class="separator:a82818dfb154fbb100be1d89092073de1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c1e7f0adc0a1325a1b807b515581241"><td class="memItemLeft" align="right" valign="top"><a id="a6c1e7f0adc0a1325a1b807b515581241"></a>
+qreal&#160;</td><td class="memItemRight" valign="bottom"><b>scrollbarFramePressOpacity</b> = 0</td></tr>
+<tr class="separator:a6c1e7f0adc0a1325a1b807b515581241"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf377cdf767a4e877a60bd740146308f"><td class="memItemLeft" align="right" valign="top"><a id="aaf377cdf767a4e877a60bd740146308f"></a>
+qreal&#160;</td><td class="memItemRight" valign="bottom"><b>scrollbarHoverOpacity</b> = 0.7</td></tr>
+<tr class="separator:aaf377cdf767a4e877a60bd740146308f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdfa143ffd2949bd6945c6cd3dcc6ca1"><td class="memItemLeft" align="right" valign="top"><a id="acdfa143ffd2949bd6945c6cd3dcc6ca1"></a>
+qreal&#160;</td><td class="memItemRight" valign="bottom"><b>scrollbarNormalOpacity</b> = 0.5</td></tr>
+<tr class="separator:acdfa143ffd2949bd6945c6cd3dcc6ca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af69aef7391656405bf090010c502b15a"><td class="memItemLeft" align="right" valign="top"><a id="af69aef7391656405bf090010c502b15a"></a>
+qreal&#160;</td><td class="memItemRight" valign="bottom"><b>scrollbarPressOpacity</b> = 0.8</td></tr>
+<tr class="separator:af69aef7391656405bf090010c502b15a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17b3c74e5c173d2ec9c643002a5511f7"><td class="memItemLeft" align="right" valign="top"><a id="a17b3c74e5c173d2ec9c643002a5511f7"></a>
+QList&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>columnVisibles</b></td></tr>
+<tr class="separator:a17b3c74e5c173d2ec9c643002a5511f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a68050b0015fa84bd7576ebf530d45950"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68050b0015fa84bd7576ebf530d45950">&#9670;&nbsp;</a></span>addItems()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DSimpleListView::addItems </td>
+          <td>(</td>
+          <td class="paramtype">QList&lt; <a class="el" href="classDtk_1_1Widget_1_1DSimpleListItem.html">DSimpleListItem</a> * &gt;&#160;</td>
+          <td class="paramname"><em>items</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>添加 <a class="el" href="classDSimpleListItem.html">DSimpleListItem</a> 列表到视图中. </p>
+<p><em>items</em> 视图项列表. </p>
+
+</div>
+</div>
+<a id="a41437f1c968676cbd62e43df4322bba3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41437f1c968676cbd62e43df4322bba3">&#9670;&nbsp;</a></span>clearSelections()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DSimpleListView::clearSelections </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>clearLastSelection</em> = <code>true</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>移除所有选择项. </p>
+<p><em>clearLastSelection</em> 是否清除最后选中的列表项. </p>
+
+</div>
+</div>
+<a id="af4e1c867ebcf3088bd9d078b9b979354"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4e1c867ebcf3088bd9d078b9b979354">&#9670;&nbsp;</a></span>getSelections()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QList&lt; <a class="el" href="classDtk_1_1Widget_1_1DSimpleListItem.html">DSimpleListItem</a> * &gt; DSimpleListView::getSelections </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取所有选择项. </p>
+<dl class="section return"><dt>返回</dt><dd>返回选中的列表项. </dd></dl>
+
+</div>
+</div>
+<a id="ab4e80fdc77954ea7a861561346677547"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4e80fdc77954ea7a861561346677547">&#9670;&nbsp;</a></span>keepSelectWhenClickBlank()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DSimpleListView::keepSelectWhenClickBlank </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>keep</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>单击空白区域时保持选择项. </p>
+<p><em>keep</em> 是否保持选中项. </p>
+
+</div>
+</div>
+<a id="a2f0e8fd77346c0d977614de614995bc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f0e8fd77346c0d977614de614995bc0">&#9670;&nbsp;</a></span>refreshItems()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DSimpleListView::refreshItems </td>
+          <td>(</td>
+          <td class="paramtype">QList&lt; <a class="el" href="classDtk_1_1Widget_1_1DSimpleListItem.html">DSimpleListItem</a> * &gt;&#160;</td>
+          <td class="paramname"><em>items</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>刷新所有项. </p>
+<p><em>items</em> 列表项. </p>
+
+</div>
+</div>
+<a id="a6eea0c196d8b5decb346fc3bde155805"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6eea0c196d8b5decb346fc3bde155805">&#9670;&nbsp;</a></span>removeItem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DSimpleListView::removeItem </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classDtk_1_1Widget_1_1DSimpleListItem.html">DSimpleListItem</a> *&#160;</td>
+          <td class="paramname"><em>item</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>删除一个列表项. </p>
+<p><em>item</em> 列表项指针. </p>
+
+</div>
+</div>
+<a id="a527335b858d598b60ff06536f3e209f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a527335b858d598b60ff06536f3e209f8">&#9670;&nbsp;</a></span>search()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DSimpleListView::search </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>content</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>搜索. </p>
+<p><em>content</em> 被搜索内容. </p>
+
+</div>
+</div>
+<a id="a89c482f04201aa4cd1678ff206ae47ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89c482f04201aa4cd1678ff206ae47ca">&#9670;&nbsp;</a></span>setClipRadius()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DSimpleListView::setClipRadius </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>radius</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置圆角半径. </p>
+<p><em>radius</em> 圆角大小. </p>
+
+</div>
+</div>
+<a id="aad58cc953fd47a3f20f4b045df5612b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad58cc953fd47a3f20f4b045df5612b9">&#9670;&nbsp;</a></span>setColumnSortingAlgorithms()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DSimpleListView::setColumnSortingAlgorithms </td>
+          <td>(</td>
+          <td class="paramtype">QList&lt; SortAlgorithm &gt; *&#160;</td>
+          <td class="paramname"><em>algorithms</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sortColumn</em> = <code>-1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>descendingSort</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置列排序算法. </p>
+<p><em>algorithms</em> 列排序算法 , <em>sortColumn</em> 排序的列项 , <em>descendingSort</em> 是否为降序排序. </p>
+
+</div>
+</div>
+<a id="ab332523b3dc557cbe6a8181036e09c6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab332523b3dc557cbe6a8181036e09c6c">&#9670;&nbsp;</a></span>setColumnTitleInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DSimpleListView::setColumnTitleInfo </td>
+          <td>(</td>
+          <td class="paramtype">QList&lt; QString &gt;&#160;</td>
+          <td class="paramname"><em>titles</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QList&lt; int &gt;&#160;</td>
+          <td class="paramname"><em>widths</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置列标题信息 </p>
+<p><em>titles</em> 标题列表， <em>widths</em> 宽度列表, <em>height</em> 高度. </p>
+
+</div>
+</div>
+<a id="acc198ca190e6bcb63f476ca372010c11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc198ca190e6bcb63f476ca372010c11">&#9670;&nbsp;</a></span>setFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DSimpleListView::setFrame </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enableFrame</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QColor&#160;</td>
+          <td class="paramname"><em>color</em> = <code>QColor(&quot;#000000&quot;)</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>opacity</em> = <code>0.1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置边角细节. </p>
+<p><em>enableFrame</em> 是否绘制边角 <em>color</em> 边角颜色 <em>opacity</em> 不透明度 </p>
+
+</div>
+</div>
+<a id="a7bda81ced35dad95a06d36ed1f5bcd71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bda81ced35dad95a06d36ed1f5bcd71">&#9670;&nbsp;</a></span>setRowHeight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DSimpleListView::setRowHeight </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置行高. </p>
+<p><em>height</em> 行高. </p>
+
+</div>
+</div>
+<a id="ab7350792bc21e88dcbed4cf925f5650e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7350792bc21e88dcbed4cf925f5650e">&#9670;&nbsp;</a></span>setSearchAlgorithm()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DSimpleListView::setSearchAlgorithm </td>
+          <td>(</td>
+          <td class="paramtype">SearchAlgorithm&#160;</td>
+          <td class="paramname"><em>algorithm</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置搜索算法. </p>
+<p><em>algorithm</em> 搜索算法. </p>
+
+</div>
+</div>
+<a id="ae470772153e14775200d3f73c4ebd1af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae470772153e14775200d3f73c4ebd1af">&#9670;&nbsp;</a></span>setSingleSelect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DSimpleListView::setSingleSelect </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>singleSelect</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置单一选择. </p>
+<p><em>singleSelect</em> 是否单一选择. </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dtkwidget/include/dtkwidget/widgets/<a class="el" href="dsimplelistview_8h_source.html">dsimplelistview.h</a></li>
+<li>dtkwidget/src/widgets/dsimplelistview.cpp</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classDSimpleListView.html">DSimpleListView</a></li>
+    <li class="footer">文档生成时间:doxtime</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

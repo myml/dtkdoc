@@ -1,0 +1,429 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: DBoxWidget类 参考</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="change address" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classDBoxWidget.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-slots">Public 槽</a> &#124;
+<a href="#signals">信号</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#properties">属性</a> &#124;
+<a href="classDBoxWidget-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">DBoxWidget类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 DBoxWidget 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classDBoxWidget.png" usemap="#DBoxWidget_map" alt=""/>
+  <map id="DBoxWidget_map" name="DBoxWidget_map">
+<area href="classDHBoxWidget.html" alt="DHBoxWidget" shape="rect" coords="0,112,216,136"/>
+<area href="classDVBoxWidget.html" alt="DVBoxWidget" shape="rect" coords="226,112,442,136"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Public 槽</h2></td></tr>
+<tr class="memitem:a4ea54ed728dbe1de2d154c9cbc954fc7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBoxWidget.html#a4ea54ed728dbe1de2d154c9cbc954fc7">setDirection</a> (QBoxLayout::Direction <a class="el" href="classDBoxWidget.html#a122870e3eb817bd436682f0c3223f44b">direction</a>)</td></tr>
+<tr class="memdesc:a4ea54ed728dbe1de2d154c9cbc954fc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置QBoxLayout当前的方向  <a href="classDBoxWidget.html#a4ea54ed728dbe1de2d154c9cbc954fc7">更多...</a><br /></td></tr>
+<tr class="separator:a4ea54ed728dbe1de2d154c9cbc954fc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+信号</h2></td></tr>
+<tr class="memitem:aea77f68b3e03b903e84345f203b9839f"><td class="memItemLeft" align="right" valign="top"><a id="aea77f68b3e03b903e84345f203b9839f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>sizeChanged</b> (QSize size)</td></tr>
+<tr class="separator:aea77f68b3e03b903e84345f203b9839f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade54ad74ef24a12a7462a318dea2fab9"><td class="memItemLeft" align="right" valign="top"><a id="ade54ad74ef24a12a7462a318dea2fab9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>directionChanged</b> (QBoxLayout::Direction <a class="el" href="classDBoxWidget.html#a122870e3eb817bd436682f0c3223f44b">direction</a>)</td></tr>
+<tr class="separator:ade54ad74ef24a12a7462a318dea2fab9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a06808410e0d74af703589294cac4e3a7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBoxWidget.html#a06808410e0d74af703589294cac4e3a7">DBoxWidget</a> (QBoxLayout::Direction <a class="el" href="classDBoxWidget.html#a122870e3eb817bd436682f0c3223f44b">direction</a>, QWidget *parent=0)</td></tr>
+<tr class="memdesc:a06808410e0d74af703589294cac4e3a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">DBoxWidget的构造函数.  <a href="classDBoxWidget.html#a06808410e0d74af703589294cac4e3a7">更多...</a><br /></td></tr>
+<tr class="separator:a06808410e0d74af703589294cac4e3a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4df85f366c4d2f8394feebd40354a04a"><td class="memItemLeft" align="right" valign="top"><a id="a4df85f366c4d2f8394feebd40354a04a"></a>
+QBoxLayout::Direction&#160;</td><td class="memItemRight" valign="bottom"><b>direction</b> () const</td></tr>
+<tr class="separator:a4df85f366c4d2f8394feebd40354a04a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5333af54ecf805a764f6294458a5b365"><td class="memItemLeft" align="right" valign="top">QBoxLayout *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBoxWidget.html#a5333af54ecf805a764f6294458a5b365">layout</a> () const</td></tr>
+<tr class="memdesc:a5333af54ecf805a764f6294458a5b365"><td class="mdescLeft">&#160;</td><td class="mdescRight">这个属性会返回当前使用的布局对象  <a href="classDBoxWidget.html#a5333af54ecf805a764f6294458a5b365">更多...</a><br /></td></tr>
+<tr class="separator:a5333af54ecf805a764f6294458a5b365"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1471b589e5b8c7c06e3acf5bcb4e811e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBoxWidget.html#a1471b589e5b8c7c06e3acf5bcb4e811e">addWidget</a> (QWidget *widget)</td></tr>
+<tr class="memdesc:a1471b589e5b8c7c06e3acf5bcb4e811e"><td class="mdescLeft">&#160;</td><td class="mdescRight">调用QBoxLayout的addWidget方法将QWidget添加到布局中  <a href="classDBoxWidget.html#a1471b589e5b8c7c06e3acf5bcb4e811e">更多...</a><br /></td></tr>
+<tr class="separator:a1471b589e5b8c7c06e3acf5bcb4e811e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec9742fcba6686cb15bee45f7f814898"><td class="memItemLeft" align="right" valign="top">QSize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBoxWidget.html#aec9742fcba6686cb15bee45f7f814898">sizeHint</a> () const Q_DECL_OVERRIDE</td></tr>
+<tr class="memdesc:aec9742fcba6686cb15bee45f7f814898"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDBoxWidget.html#aec9742fcba6686cb15bee45f7f814898" title="DBoxWidget::sizeHint reimplemented from QWidget::sizeHint().">DBoxWidget::sizeHint</a> reimplemented from QWidget::sizeHint().  <a href="classDBoxWidget.html#aec9742fcba6686cb15bee45f7f814898">更多...</a><br /></td></tr>
+<tr class="separator:aec9742fcba6686cb15bee45f7f814898"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:ab53cc9838a42469a2521f228a3f7afdf"><td class="memItemLeft" align="right" valign="top"><a id="ab53cc9838a42469a2521f228a3f7afdf"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBoxWidget.html#ab53cc9838a42469a2521f228a3f7afdf">updateSize</a> (const QSize &amp;size)</td></tr>
+<tr class="memdesc:ab53cc9838a42469a2521f228a3f7afdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">当方向是QBoxLayout::TopToBottom或者QBoxLayout::BottomToTop时， 固定高度将使用传入的高度，并设置最小宽度为传入的宽度。 否则将使用传入的宽度当做固定宽度，高度为最小高度。 <em>size</em> <br /></td></tr>
+<tr class="separator:ab53cc9838a42469a2521f228a3f7afdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d62f6a37ecb00225ddd8423a3dd3e15"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBoxWidget.html#a3d62f6a37ecb00225ddd8423a3dd3e15">event</a> (QEvent *ee) Q_DECL_OVERRIDE</td></tr>
+<tr class="separator:a3d62f6a37ecb00225ddd8423a3dd3e15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:a122870e3eb817bd436682f0c3223f44b"><td class="memItemLeft" align="right" valign="top">QBoxLayout::Direction&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBoxWidget.html#a122870e3eb817bd436682f0c3223f44b">direction</a></td></tr>
+<tr class="memdesc:a122870e3eb817bd436682f0c3223f44b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This property holds the direction of the internal QBoxLayout.  <a href="classDBoxWidget.html#a122870e3eb817bd436682f0c3223f44b">更多...</a><br /></td></tr>
+<tr class="separator:a122870e3eb817bd436682f0c3223f44b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a06808410e0d74af703589294cac4e3a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06808410e0d74af703589294cac4e3a7">&#9670;&nbsp;</a></span>DBoxWidget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DBoxWidget::DBoxWidget </td>
+          <td>(</td>
+          <td class="paramtype">QBoxLayout::Direction&#160;</td>
+          <td class="paramname"><em>direction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>DBoxWidget的构造函数. </p>
+<p><a class="el" href="classDBoxWidget.html#a06808410e0d74af703589294cac4e3a7" title="DBoxWidget的构造函数.">DBoxWidget::DBoxWidget</a> constructs an instance of <a class="el" href="classDBoxWidget.html">DBoxWidget</a>.</p>
+<p><em>direction</em> 是设置内部QBoxLayout使用的方向 <em>parent</em> 传递给QFrame的构造函数 <em>direction</em> is the direction used by the internal QBoxLayout. <em>parent</em> is passed to QFrame constructor. </p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a1471b589e5b8c7c06e3acf5bcb4e811e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1471b589e5b8c7c06e3acf5bcb4e811e">&#9670;&nbsp;</a></span>addWidget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DBoxWidget::addWidget </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>widget</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>调用QBoxLayout的addWidget方法将QWidget添加到布局中 </p>
+<p><a class="el" href="classDBoxWidget.html#a1471b589e5b8c7c06e3acf5bcb4e811e" title="调用QBoxLayout的addWidget方法将QWidget添加到布局中">DBoxWidget::addWidget</a> adds widget to the internal layout.</p>
+<p><em>widget</em> 要添加的QWidget对象 <em>widget</em> is the widget to be added. </p>
+
+</div>
+</div>
+<a id="a3d62f6a37ecb00225ddd8423a3dd3e15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d62f6a37ecb00225ddd8423a3dd3e15">&#9670;&nbsp;</a></span>event()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DBoxWidget::event </td>
+          <td>(</td>
+          <td class="paramtype">QEvent *&#160;</td>
+          <td class="paramname"><em>ee</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>\reimp </p>
+
+</div>
+</div>
+<a id="a5333af54ecf805a764f6294458a5b365"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5333af54ecf805a764f6294458a5b365">&#9670;&nbsp;</a></span>layout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QBoxLayout * DBoxWidget::layout </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>这个属性会返回当前使用的布局对象 </p>
+<p>This property holds the internal layout object.</p>
+<p>This property can be used to get the internal layout, so you can set some extra properties on the layout to match the custom needs.</p>
+<dl class="section return"><dt>返回</dt><dd>QBoxLayout* </dd></dl>
+
+</div>
+</div>
+<a id="a4ea54ed728dbe1de2d154c9cbc954fc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ea54ed728dbe1de2d154c9cbc954fc7">&#9670;&nbsp;</a></span>setDirection</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DBoxWidget::setDirection </td>
+          <td>(</td>
+          <td class="paramtype">QBoxLayout::Direction&#160;</td>
+          <td class="paramname"><em>direction</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置QBoxLayout当前的方向 </p>
+<p><em>direction</em> </p>
+
+</div>
+</div>
+<a id="aec9742fcba6686cb15bee45f7f814898"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec9742fcba6686cb15bee45f7f814898">&#9670;&nbsp;</a></span>sizeHint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QSize DBoxWidget::sizeHint </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classDBoxWidget.html#aec9742fcba6686cb15bee45f7f814898" title="DBoxWidget::sizeHint reimplemented from QWidget::sizeHint().">DBoxWidget::sizeHint</a> reimplemented from QWidget::sizeHint(). </p>
+<p>\reimp </p><dl class="section return"><dt>返回</dt><dd>the recommended size of this widget. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">属性说明</h2>
+<a id="a122870e3eb817bd436682f0c3223f44b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a122870e3eb817bd436682f0c3223f44b">&#9670;&nbsp;</a></span>direction</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DBoxWidget::direction</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This property holds the direction of the internal QBoxLayout. </p>
+<p>这个属性返回当前QBoxLayout使用的方向</p>
+<dl class="section return"><dt>返回</dt><dd>QBoxLayout::Direction 当前的方向 </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dtkwidget/include/dtkwidget/widgets/<a class="el" href="dboxwidget_8h_source.html">dboxwidget.h</a></li>
+<li>dtkwidget/src/widgets/dboxwidget.cpp</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classDBoxWidget.html">DBoxWidget</a></li>
+    <li class="footer">文档生成时间:doxtime</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

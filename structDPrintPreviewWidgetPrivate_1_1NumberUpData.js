@@ -1,0 +1,26 @@
+var structDPrintPreviewWidgetPrivate_1_1NumberUpData =
+[
+    [ "NumberItem", "classDPrintPreviewWidgetPrivate_1_1NumberUpData_1_1NumberItem.html", "classDPrintPreviewWidgetPrivate_1_1NumberUpData_1_1NumberItem" ],
+    [ "WaterMarkProperty", "structDPrintPreviewWidgetPrivate_1_1NumberUpData_1_1WaterMarkProperty.html", "structDPrintPreviewWidgetPrivate_1_1NumberUpData_1_1WaterMarkProperty" ],
+    [ "NumberUpData", "structDPrintPreviewWidgetPrivate_1_1NumberUpData.html#aec24a25ad9c4bd116286e50285253e64", null ],
+    [ "~NumberUpData", "structDPrintPreviewWidgetPrivate_1_1NumberUpData.html#a9cb80021737bc624417b658c0ef730be", null ],
+    [ "copyWaterMarkProperties", "structDPrintPreviewWidgetPrivate_1_1NumberUpData.html#a03bcdaf8a35da776b454207b55b45050", null ],
+    [ "resetData", "structDPrintPreviewWidgetPrivate_1_1NumberUpData.html#a2a84c195169d8de4cef65f76a5ec5dee", null ],
+    [ "setWaterMarkOriginProperties", "structDPrintPreviewWidgetPrivate_1_1NumberUpData.html#a7d58cf4c721631b02163786013e13046", null ],
+    [ "setWaterMarkProperty", "structDPrintPreviewWidgetPrivate_1_1NumberUpData.html#aed4ed64fd4af9c07ac7bc342028a9405", null ],
+    [ "setWaterMarksScale", "structDPrintPreviewWidgetPrivate_1_1NumberUpData.html#a2b62a1b946f6b38844ae39018e6498b2", null ],
+    [ "updatePositions", "structDPrintPreviewWidgetPrivate_1_1NumberUpData.html#ac8e4e55030d231a46b4b7e9610dcad25", null ],
+    [ "updateWaterMarks", "structDPrintPreviewWidgetPrivate_1_1NumberUpData.html#ad75f01c48771edfaf5558f4625c96926", null ],
+    [ "columnCount", "structDPrintPreviewWidgetPrivate_1_1NumberUpData.html#a8e2731f0c0464faf13c1bea087ab184b", null ],
+    [ "needRecreateWater", "structDPrintPreviewWidgetPrivate_1_1NumberUpData.html#ab904b38839a0b7396993a53799523123", null ],
+    [ "numberItem", "structDPrintPreviewWidgetPrivate_1_1NumberUpData.html#ac4bb6768dd34389f73f6cb42b0dc4f35", null ],
+    [ "pageStartPoint", "structDPrintPreviewWidgetPrivate_1_1NumberUpData.html#aa4b0b52b2980691342e775bb85d456bb", null ],
+    [ "paintPoints", "structDPrintPreviewWidgetPrivate_1_1NumberUpData.html#a99a7d0630458fccd2eb943a97e71c385", null ],
+    [ "parent", "structDPrintPreviewWidgetPrivate_1_1NumberUpData.html#a23fd2238f4195a15ecb5aeedcd85418c", null ],
+    [ "previewPictures", "structDPrintPreviewWidgetPrivate_1_1NumberUpData.html#ab4944c4cdf25d351dd43183951d65e31", null ],
+    [ "rowCount", "structDPrintPreviewWidgetPrivate_1_1NumberUpData.html#a43459578913617066472df3610d4a448", null ],
+    [ "scaleRatio", "structDPrintPreviewWidgetPrivate_1_1NumberUpData.html#a2574e558d821c4289fef178185503891", null ],
+    [ "waterList", "structDPrintPreviewWidgetPrivate_1_1NumberUpData.html#a2d094db58f884ab536dfdd0f4f7606da", null ],
+    [ "waterParentItem", "structDPrintPreviewWidgetPrivate_1_1NumberUpData.html#a711496cec730e60ef1a9ed1d8309c2f8", null ],
+    [ "waterProperty", "structDPrintPreviewWidgetPrivate_1_1NumberUpData.html#a3517ae9a784818c226a6b26c7cf41108", null ]
+];

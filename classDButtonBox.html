@@ -1,0 +1,480 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: DButtonBox类 参考</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="change address" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classDButtonBox.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#signals">信号</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#friends">友元</a> &#124;
+<a href="classDButtonBox-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">DButtonBox类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 DButtonBox 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classDButtonBox.png" alt=""/>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+信号</h2></td></tr>
+<tr class="memitem:ac17764f3362444cfe5f60f416dcd0b4e"><td class="memItemLeft" align="right" valign="top"><a id="ac17764f3362444cfe5f60f416dcd0b4e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>buttonClicked</b> (QAbstractButton *)</td></tr>
+<tr class="separator:ac17764f3362444cfe5f60f416dcd0b4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac366ce305c4948fc668cdc36ffda6b75"><td class="memItemLeft" align="right" valign="top"><a id="ac366ce305c4948fc668cdc36ffda6b75"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>buttonPressed</b> (QAbstractButton *)</td></tr>
+<tr class="separator:ac366ce305c4948fc668cdc36ffda6b75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a728113e5c75381b586d5edcdfed8401b"><td class="memItemLeft" align="right" valign="top"><a id="a728113e5c75381b586d5edcdfed8401b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>buttonReleased</b> (QAbstractButton *)</td></tr>
+<tr class="separator:a728113e5c75381b586d5edcdfed8401b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a7c2ad5218b80efd1da25cbbab3f0af"><td class="memItemLeft" align="right" valign="top"><a id="a4a7c2ad5218b80efd1da25cbbab3f0af"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>buttonToggled</b> (QAbstractButton *, bool)</td></tr>
+<tr class="separator:a4a7c2ad5218b80efd1da25cbbab3f0af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:af6cf7be3a656e516fe8af04aa8427bc7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDButtonBox.html#af6cf7be3a656e516fe8af04aa8427bc7">DButtonBox</a> (QWidget *parent=nullptr)</td></tr>
+<tr class="memdesc:af6cf7be3a656e516fe8af04aa8427bc7"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDButtonBox.html#af6cf7be3a656e516fe8af04aa8427bc7" title="DButtonBox::DButtonBox 构造函数.">DButtonBox::DButtonBox</a> 构造函数.  <a href="classDButtonBox.html#af6cf7be3a656e516fe8af04aa8427bc7">更多...</a><br /></td></tr>
+<tr class="separator:af6cf7be3a656e516fe8af04aa8427bc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9a1a8746a2c3d59b79ff6b8b0db3d54"><td class="memItemLeft" align="right" valign="top">Qt::Orientation&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDButtonBox.html#ac9a1a8746a2c3d59b79ff6b8b0db3d54">orientation</a> () const</td></tr>
+<tr class="memdesc:ac9a1a8746a2c3d59b79ff6b8b0db3d54"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDButtonBox.html#ac9a1a8746a2c3d59b79ff6b8b0db3d54" title="DButtonBox::orientation 返回布局方向.">DButtonBox::orientation</a> 返回布局方向.  <a href="classDButtonBox.html#ac9a1a8746a2c3d59b79ff6b8b0db3d54">更多...</a><br /></td></tr>
+<tr class="separator:ac9a1a8746a2c3d59b79ff6b8b0db3d54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0157febb4a17ebe05cfb81f00964ead"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDButtonBox.html#aa0157febb4a17ebe05cfb81f00964ead">setOrientation</a> (Qt::Orientation <a class="el" href="classDButtonBox.html#ac9a1a8746a2c3d59b79ff6b8b0db3d54">orientation</a>)</td></tr>
+<tr class="memdesc:aa0157febb4a17ebe05cfb81f00964ead"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDButtonBox.html#aa0157febb4a17ebe05cfb81f00964ead" title="DButtonBox::setOrientation 设置布局方向.">DButtonBox::setOrientation</a> 设置布局方向.  <a href="classDButtonBox.html#aa0157febb4a17ebe05cfb81f00964ead">更多...</a><br /></td></tr>
+<tr class="separator:aa0157febb4a17ebe05cfb81f00964ead"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65dbe6b119e229903164d23021dc3bd1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDButtonBox.html#a65dbe6b119e229903164d23021dc3bd1">setButtonList</a> (const QList&lt; <a class="el" href="classDButtonBoxButton.html">DButtonBoxButton</a> * &gt; &amp;list, bool checkable)</td></tr>
+<tr class="memdesc:a65dbe6b119e229903164d23021dc3bd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">DButtonBox::setButtonList将按钮进添加到组中.  <a href="classDButtonBox.html#a65dbe6b119e229903164d23021dc3bd1">更多...</a><br /></td></tr>
+<tr class="separator:a65dbe6b119e229903164d23021dc3bd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2285d275a65d4d908a74474fe7c8345"><td class="memItemLeft" align="right" valign="top">QList&lt; QAbstractButton * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDButtonBox.html#ad2285d275a65d4d908a74474fe7c8345">buttonList</a> () const</td></tr>
+<tr class="memdesc:ad2285d275a65d4d908a74474fe7c8345"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDButtonBox.html#ad2285d275a65d4d908a74474fe7c8345" title="DButtonBox::buttonList.">DButtonBox::buttonList</a>.  <a href="classDButtonBox.html#ad2285d275a65d4d908a74474fe7c8345">更多...</a><br /></td></tr>
+<tr class="separator:ad2285d275a65d4d908a74474fe7c8345"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abef92bfdeee48db3f275c69bbcfa58bb"><td class="memItemLeft" align="right" valign="top">QAbstractButton *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDButtonBox.html#abef92bfdeee48db3f275c69bbcfa58bb">checkedButton</a> () const</td></tr>
+<tr class="memdesc:abef92bfdeee48db3f275c69bbcfa58bb"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDButtonBox.html#abef92bfdeee48db3f275c69bbcfa58bb" title="DButtonBox::checkedButton.">DButtonBox::checkedButton</a>.  <a href="classDButtonBox.html#abef92bfdeee48db3f275c69bbcfa58bb">更多...</a><br /></td></tr>
+<tr class="separator:abef92bfdeee48db3f275c69bbcfa58bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b5619365631bc714822215312501a31"><td class="memItemLeft" align="right" valign="top">QAbstractButton *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDButtonBox.html#a1b5619365631bc714822215312501a31">button</a> (int <a class="el" href="classDButtonBox.html#abee8987391a8a391f2282dab56036886">id</a>) const</td></tr>
+<tr class="memdesc:a1b5619365631bc714822215312501a31"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDButtonBox.html#a1b5619365631bc714822215312501a31" title="DButtonBox::button">DButtonBox::button</a>  <a href="classDButtonBox.html#a1b5619365631bc714822215312501a31">更多...</a><br /></td></tr>
+<tr class="separator:a1b5619365631bc714822215312501a31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdfbf4360649f9b80812e22be041e106"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDButtonBox.html#acdfbf4360649f9b80812e22be041e106">setId</a> (QAbstractButton *<a class="el" href="classDButtonBox.html#a1b5619365631bc714822215312501a31">button</a>, int <a class="el" href="classDButtonBox.html#abee8987391a8a391f2282dab56036886">id</a>)</td></tr>
+<tr class="memdesc:acdfbf4360649f9b80812e22be041e106"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置按钮 id .  <a href="classDButtonBox.html#acdfbf4360649f9b80812e22be041e106">更多...</a><br /></td></tr>
+<tr class="separator:acdfbf4360649f9b80812e22be041e106"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abee8987391a8a391f2282dab56036886"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDButtonBox.html#abee8987391a8a391f2282dab56036886">id</a> (QAbstractButton *<a class="el" href="classDButtonBox.html#a1b5619365631bc714822215312501a31">button</a>) const</td></tr>
+<tr class="memdesc:abee8987391a8a391f2282dab56036886"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回按钮 id .  <a href="classDButtonBox.html#abee8987391a8a391f2282dab56036886">更多...</a><br /></td></tr>
+<tr class="separator:abee8987391a8a391f2282dab56036886"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a630447682360987db32f965eb7e1937b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDButtonBox.html#a630447682360987db32f965eb7e1937b">checkedId</a> () const</td></tr>
+<tr class="memdesc:a630447682360987db32f965eb7e1937b"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回已选中按钮 id .  <a href="classDButtonBox.html#a630447682360987db32f965eb7e1937b">更多...</a><br /></td></tr>
+<tr class="separator:a630447682360987db32f965eb7e1937b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+友元</h2></td></tr>
+<tr class="memitem:a15f51509f714ceb5640093f8326d1f52"><td class="memItemLeft" align="right" valign="top"><a id="a15f51509f714ceb5640093f8326d1f52"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>DButtonBoxButton</b></td></tr>
+<tr class="separator:a15f51509f714ceb5640093f8326d1f52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a id="af6cf7be3a656e516fe8af04aa8427bc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6cf7be3a656e516fe8af04aa8427bc7">&#9670;&nbsp;</a></span>DButtonBox()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DButtonBox::DButtonBox </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classDButtonBox.html#af6cf7be3a656e516fe8af04aa8427bc7" title="DButtonBox::DButtonBox 构造函数.">DButtonBox::DButtonBox</a> 构造函数. </p>
+<p><em>parent</em> 参数被发送到 QWidget 构造函数 </p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a1b5619365631bc714822215312501a31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b5619365631bc714822215312501a31">&#9670;&nbsp;</a></span>button()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QAbstractButton * DButtonBox::button </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classDButtonBox.html#a1b5619365631bc714822215312501a31" title="DButtonBox::button">DButtonBox::button</a> </p>
+<p><em>id</em> 按钮的ID，与 <a class="el" href="classDButtonBox.html#acdfbf4360649f9b80812e22be041e106" title="设置按钮 id .">DButtonBox::setId</a> 设置的参数一致. </p><dl class="section return"><dt>返回</dt><dd>返回对应<em>id</em> 的按钮，不存在返回 nullptr .</dd></dl>
+<dl class="section see"><dt>参见</dt><dd>QButtonGroup::button() </dd></dl>
+
+</div>
+</div>
+<a id="ad2285d275a65d4d908a74474fe7c8345"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2285d275a65d4d908a74474fe7c8345">&#9670;&nbsp;</a></span>buttonList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QList&lt; QAbstractButton * &gt; DButtonBox::buttonList </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classDButtonBox.html#ad2285d275a65d4d908a74474fe7c8345" title="DButtonBox::buttonList.">DButtonBox::buttonList</a>. </p>
+<dl class="section return"><dt>返回</dt><dd>返回按钮列表. </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>QButtonGroup::buttons() </dd></dl>
+
+</div>
+</div>
+<a id="abef92bfdeee48db3f275c69bbcfa58bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abef92bfdeee48db3f275c69bbcfa58bb">&#9670;&nbsp;</a></span>checkedButton()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QAbstractButton * DButtonBox::checkedButton </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classDButtonBox.html#abef92bfdeee48db3f275c69bbcfa58bb" title="DButtonBox::checkedButton.">DButtonBox::checkedButton</a>. </p>
+<dl class="section return"><dt>返回</dt><dd>返回 checked 状态的按钮. </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>QButtonGroup::checkedButton() </dd></dl>
+
+</div>
+</div>
+<a id="a630447682360987db32f965eb7e1937b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a630447682360987db32f965eb7e1937b">&#9670;&nbsp;</a></span>checkedId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DButtonBox::checkedId </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>返回已选中按钮 id . </p>
+<dl class="section return"><dt>返回</dt><dd>返回已选中按钮 id . </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>QButtonGroup </dd></dl>
+
+</div>
+</div>
+<a id="abee8987391a8a391f2282dab56036886"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abee8987391a8a391f2282dab56036886">&#9670;&nbsp;</a></span>id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DButtonBox::id </td>
+          <td>(</td>
+          <td class="paramtype">QAbstractButton *&#160;</td>
+          <td class="paramname"><em>button</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>返回按钮 id . </p>
+<p><em>button</em> 对应的按钮. </p><dl class="section see"><dt>参见</dt><dd>QButtonGroup::id() </dd></dl>
+
+</div>
+</div>
+<a id="ac9a1a8746a2c3d59b79ff6b8b0db3d54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9a1a8746a2c3d59b79ff6b8b0db3d54">&#9670;&nbsp;</a></span>orientation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Qt::Orientation DButtonBox::orientation </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classDButtonBox.html#ac9a1a8746a2c3d59b79ff6b8b0db3d54" title="DButtonBox::orientation 返回布局方向.">DButtonBox::orientation</a> 返回布局方向. </p>
+<dl class="section see"><dt>参见</dt><dd>Qt::Orientation </dd></dl>
+
+</div>
+</div>
+<a id="a65dbe6b119e229903164d23021dc3bd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65dbe6b119e229903164d23021dc3bd1">&#9670;&nbsp;</a></span>setButtonList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DButtonBox::setButtonList </td>
+          <td>(</td>
+          <td class="paramtype">const QList&lt; <a class="el" href="classDButtonBoxButton.html">DButtonBoxButton</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>checkable</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>DButtonBox::setButtonList将按钮进添加到组中. </p>
+<p><em>list</em> 存储按钮的 QList 列表 <em>checkable</em> 按钮是否可选中 </p>
+
+</div>
+</div>
+<a id="acdfbf4360649f9b80812e22be041e106"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdfbf4360649f9b80812e22be041e106">&#9670;&nbsp;</a></span>setId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DButtonBox::setId </td>
+          <td>(</td>
+          <td class="paramtype">QAbstractButton *&#160;</td>
+          <td class="paramname"><em>button</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置按钮 id . </p>
+<p><em>button</em> 用于设置 <em>id</em> 的按钮。 </p><dl class="section see"><dt>参见</dt><dd>QButtonGroup::setId() </dd></dl>
+
+</div>
+</div>
+<a id="aa0157febb4a17ebe05cfb81f00964ead"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0157febb4a17ebe05cfb81f00964ead">&#9670;&nbsp;</a></span>setOrientation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DButtonBox::setOrientation </td>
+          <td>(</td>
+          <td class="paramtype">Qt::Orientation&#160;</td>
+          <td class="paramname"><em>orientation</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classDButtonBox.html#aa0157febb4a17ebe05cfb81f00964ead" title="DButtonBox::setOrientation 设置布局方向.">DButtonBox::setOrientation</a> 设置布局方向. </p>
+<p><em>orientation</em> </p><dl class="section see"><dt>参见</dt><dd>Qt::Orientation </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dtkwidget/include/dtkwidget/widgets/<a class="el" href="dbuttonbox_8h_source.html">dbuttonbox.h</a></li>
+<li>dtkwidget/src/widgets/dbuttonbox.cpp</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classDButtonBox.html">DButtonBox</a></li>
+    <li class="footer">文档生成时间:doxtime</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

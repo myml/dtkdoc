@@ -1,0 +1,350 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: DAboutDialog类 参考</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="change address" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classDtk_1_1Widget_1_1DAboutDialog.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">DAboutDialog类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><a class="el" href="classDtk_1_1Widget_1_1DAboutDialog.html" title="DAboutDialog 类提供了应用程序的关于对话框, 规范所有 deepin 应用关于窗口设计规范, 符合 deepin 风格">DAboutDialog</a> 类提供了应用程序的关于对话框, 规范所有 deepin 应用关于窗口设计规范, 符合 deepin 风格  
+ <a href="classDtk_1_1Widget_1_1DAboutDialog.html#details">更多...</a></p>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p><a class="el" href="classDtk_1_1Widget_1_1DAboutDialog.html" title="DAboutDialog 类提供了应用程序的关于对话框, 规范所有 deepin 应用关于窗口设计规范, 符合 deepin 风格">DAboutDialog</a> 类提供了应用程序的关于对话框, 规范所有 deepin 应用关于窗口设计规范, 符合 deepin 风格 </p>
+<h2><a class="anchor" id="autotoc_md45"></a>
+概述</h2>
+<p><a class="el" href="classDtk_1_1Widget_1_1DAboutDialog.html" title="DAboutDialog 类提供了应用程序的关于对话框, 规范所有 deepin 应用关于窗口设计规范, 符合 deepin 风格">DAboutDialog</a> 类提供了应用程序的关于对话框</p>
+<p>项目目录结构在同一目录下</p>
+<h2><a class="anchor" id="autotoc_md46"></a>
+CMakeLists.txt</h2>
+<div class="fragment"><div class="line">cmake_minimum_required(VERSION 3.1.0) # 指定cmake最低版本</div>
+<div class="line"> </div>
+<div class="line">project(example1 VERSION 1.0.0 LANGUAGES CXX) # 指定项目名称, 版本, 语言 cxx就是c++</div>
+<div class="line"> </div>
+<div class="line">set(CMAKE_CXX_STANDARD 11) # 指定c++标准</div>
+<div class="line">set(CMAKE_CXX_STANDARD_REQUIRED ON) # 指定c++标准要求,至少为11以上</div>
+<div class="line">set(target example1) # 指定目标名称</div>
+<div class="line"> </div>
+<div class="line">set(CMAKE_AUTOMOC ON) # support qt moc # 支持qt moc</div>
+<div class="line">set(CMAKE_AUTORCC ON) # support qt resource file # 支持qt资源文件</div>
+<div class="line">set(CMAKE_AUTOUIC ON) # support qt ui file # 支持qt ui文件(非必须)</div>
+<div class="line"> </div>
+<div class="line">set(CMAKE_EXPORT_COMPILE_COMMANDS ON) # support clangd 支持 clangd</div>
+<div class="line"> </div>
+<div class="line">if (CMAKE_VERSION VERSION_LESS &quot;3.7.0&quot;) # 如果cmake版本小于3.7.0</div>
+<div class="line">    set(CMAKE_INCLUDE_CURRENT_DIR ON) # 设置包含当前目录</div>
+<div class="line">endif()</div>
+<div class="line"> </div>
+<div class="line">find_package(Qt5 COMPONENTS Widgets REQUIRED) # 寻找Qt5组件Widgets</div>
+<div class="line">find_package(Qt5 COMPONENTS Gui  REQUIRED) # 寻找Qt5组件Gui</div>
+<div class="line">find_package(Dtk COMPONENTS Widget REQUIRED) # 寻找Dtk组件Widget</div>
+<div class="line">find_package(Dtk COMPONENTS Core REQUIRED) # 寻找Dtk组件Core</div>
+<div class="line">find_package(Dtk COMPONENTS Gui) # 寻找Dtk组件Gui</div>
+<div class="line"> </div>
+<div class="line">add_executable(example1     # 添加可执行文件</div>
+<div class="line">        main.cpp</div>
+<div class="line">)</div>
+<div class="line"> </div>
+<div class="line">target_link_libraries(example1 PRIVATE</div>
+<div class="line">    Qt5::Widgets</div>
+<div class="line">    Qt5::Gui</div>
+<div class="line">    dtkgui</div>
+<div class="line">    dtkcore</div>
+<div class="line">    dtkwidget</div>
+<div class="line">) # 链接库</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md47"></a>
+main.cpp</h2>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;DAboutDialog&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;DApplication&gt;</span></div>
+<div class="line">DWIDGET_USE_NAMESPACE <span class="comment">// 使用Dtk widget命名空间</span></div>
+<div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> *argv[]) {</div>
+<div class="line">    <a class="code" href="classDApplication.html">DApplication</a> app(argc, argv);</div>
+<div class="line">    app.setProductName(<span class="stringliteral">&quot;Dtk example&quot;</span>); <span class="comment">// 设置产品名称</span></div>
+<div class="line">    app.setOrganizationName(<span class="stringliteral">&quot;deepin&quot;</span>);</div>
+<div class="line">    <a class="code" href="classDAboutDialog.html">DAboutDialog</a> about;        <span class="comment">// 创建DAboutDialog对象</span></div>
+<div class="line">    about.<a class="code" href="classDAboutDialog.html#a13a86cb9afe89a7b093f8dacad80abe6">setWindowTitle</a>(<span class="stringliteral">&quot;这是一个最简单的例子&quot;</span>); <span class="comment">// 设置窗口标题</span></div>
+<div class="line">    about.show();              <span class="comment">// 显示DAboutDialog</span></div>
+<div class="line">    <span class="keywordflow">return</span> app.<a class="code" href="classDDialog.html#acc0499eec8cf37dabe79c3307f510881">exec</a>();          <span class="comment">// 运行程序</span></div>
+<div class="line">}</div>
+<div class="ttc" id="aclassDAboutDialog_html"><div class="ttname"><a href="classDAboutDialog.html">DAboutDialog</a></div><div class="ttdef"><b>Definition:</b> daboutdialog.h:14</div></div>
+<div class="ttc" id="aclassDAboutDialog_html_a13a86cb9afe89a7b093f8dacad80abe6"><div class="ttname"><a href="classDAboutDialog.html#a13a86cb9afe89a7b093f8dacad80abe6">DAboutDialog::setWindowTitle</a></div><div class="ttdeci">void setWindowTitle(const QString &amp;windowTitle)</div><div class="ttdoc">设置对话标题栏内容</div><div class="ttdef"><b>Definition:</b> daboutdialog.cpp:322</div></div>
+<div class="ttc" id="aclassDApplication_html"><div class="ttname"><a href="classDApplication.html">DApplication</a></div><div class="ttdef"><b>Definition:</b> dapplication.h:31</div></div>
+<div class="ttc" id="aclassDDialog_html_acc0499eec8cf37dabe79c3307f510881"><div class="ttname"><a href="classDDialog.html#acc0499eec8cf37dabe79c3307f510881">DDialog::exec</a></div><div class="ttdeci">int exec() Q_DECL_OVERRIDE</div><div class="ttdoc">以模态框形式显示当前对话框.</div><div class="ttdef"><b>Definition:</b> ddialog.cpp:1055</div></div>
+</div><!-- fragment --><p>这是一个最简单的例子，运行结果如下</p>
+<p><img src="/docs/images/daboutdialog_example.png" alt="example" class="inline"/></p>
+<p>但是这个例子并不是我们实际上使用的样子，在我们实际上的使用过程中，我们需要添加一些信息，比如我们的logo，我们的版本号，我们的版权信息等等，这些信息都应该在app中设置，如下</p>
+<h3><a class="anchor" id="autotoc_md48"></a>
+CMakeLists.txt</h3>
+<div class="fragment"><div class="line">cmake_minimum_required(VERSION 3.1.0)</div>
+<div class="line"> </div>
+<div class="line">project(example VERSION 1.0.0 LANGUAGES CXX)</div>
+<div class="line"> </div>
+<div class="line">set(CMAKE_CXX_STANDARD 11)</div>
+<div class="line">set(CMAKE_CXX_STANDARD_REQUIRED ON)</div>
+<div class="line">set(target example)</div>
+<div class="line"> </div>
+<div class="line">set(CMAKE_AUTOMOC ON) # support qt moc</div>
+<div class="line">set(CMAKE_AUTORCC ON) # support qt resource file</div>
+<div class="line">set(CMAKE_AUTOUIC ON) # support qt ui file</div>
+<div class="line"> </div>
+<div class="line">set(CMAKE_EXPORT_COMPILE_COMMANDS ON) # suppot clangd</div>
+<div class="line"> </div>
+<div class="line">if (CMAKE_VERSION VERSION_LESS &quot;3.7.0&quot;)</div>
+<div class="line">    set(CMAKE_INCLUDE_CURRENT_DIR ON)</div>
+<div class="line">endif()</div>
+<div class="line"> </div>
+<div class="line">find_package(Qt5 COMPONENTS Widgets REQUIRED)</div>
+<div class="line">find_package(Qt5 COMPONENTS Gui  REQUIRED)</div>
+<div class="line">find_package(Dtk COMPONENTS Widget REQUIRED)</div>
+<div class="line">find_package(Dtk COMPONENTS Core REQUIRED)</div>
+<div class="line">find_package(Dtk COMPONENTS Gui)</div>
+<div class="line"> </div>
+<div class="line">add_executable(example</div>
+<div class="line">        widget.hpp</div>
+<div class="line">        widget.cpp</div>
+<div class="line">        main.cpp</div>
+<div class="line">)</div>
+<div class="line"> </div>
+<div class="line">target_link_libraries(example PRIVATE</div>
+<div class="line">    Qt5::Widgets</div>
+<div class="line">    Qt5::Gui</div>
+<div class="line">    dtkgui</div>
+<div class="line">    dtkcore</div>
+<div class="line">    dtkwidget</div>
+<div class="line">)</div>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md49"></a>
+main.cpp</h3>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;DAboutDialog&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;DApplication&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;widget.hpp&quot;</span></div>
+<div class="line"> </div>
+<div class="line">DWIDGET_USE_NAMESPACE</div>
+<div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> *argv[])</div>
+<div class="line">{</div>
+<div class="line">    <a class="code" href="classDApplication.html">DApplication</a> a(argc, argv);</div>
+<div class="line">    example example1;</div>
+<div class="line">    example1.show();</div>
+<div class="line">    a.setApplicationName(<span class="stringliteral">&quot;dtk example&quot;</span>); <span class="comment">//直接设置app的名称</span></div>
+<div class="line">    <a class="code" href="classDAboutDialog.html">DAboutDialog</a> dialog;</div>
+<div class="line">    <span class="keywordflow">return</span> a.<a class="code" href="classDDialog.html#acc0499eec8cf37dabe79c3307f510881">exec</a>();</div>
+<div class="line">}</div>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md50"></a>
+widget.hpp</h3>
+<div class="fragment"><div class="line"><span class="preprocessor">#ifndef EXAMPLE_H</span></div>
+<div class="line"><span class="preprocessor">#define EXAMPLE_H</span></div>
+<div class="line"><span class="preprocessor">#include &lt;DPushButton&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;DLineEdit&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;DLabel&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;QVBoxLayout&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;DMainWindow&gt;</span></div>
+<div class="line">DWIDGET_USE_NAMESPACE</div>
+<div class="line"><span class="keyword">class </span>example : <span class="keyword">public</span> <a class="code" href="classDMainWindow.html">DMainWindow</a></div>
+<div class="line">{</div>
+<div class="line">    Q_OBJECT</div>
+<div class="line"><span class="keyword">public</span>:</div>
+<div class="line"> example();</div>
+<div class="line"> ~example();</div>
+<div class="line"><span class="keyword">private</span>:</div>
+<div class="line">    QVBoxLayout *mainlayout;</div>
+<div class="line">    <a class="code" href="classDLabel.html">DLabel</a> *label;</div>
+<div class="line">    <a class="code" href="classDLineEdit.html">DLineEdit</a> *text;</div>
+<div class="line">    DPushButton *button;</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">private</span> slots:</div>
+<div class="line"><span class="keywordtype">void</span>  printlog();</div>
+<div class="line">};</div>
+<div class="line"><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassDLabel_html"><div class="ttname"><a href="classDLabel.html">DLabel</a></div><div class="ttdef"><b>Definition:</b> dlabel.h:18</div></div>
+<div class="ttc" id="aclassDLineEdit_html"><div class="ttname"><a href="classDLineEdit.html">DLineEdit</a></div><div class="ttdef"><b>Definition:</b> dlineedit.h:20</div></div>
+<div class="ttc" id="aclassDMainWindow_html"><div class="ttname"><a href="classDMainWindow.html">DMainWindow</a></div><div class="ttdef"><b>Definition:</b> dmainwindow.h:20</div></div>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md51"></a>
+widget.cpp</h3>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;widget.hpp&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;cstdio&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;QDebug&gt;</span></div>
+<div class="line">example::example()</div>
+<div class="line">{</div>
+<div class="line">    mainlayout= <span class="keyword">new</span> QVBoxLayout;</div>
+<div class="line">    button = <span class="keyword">new</span> DPushButton;</div>
+<div class="line">    label = <span class="keyword">new</span> <a class="code" href="classDLabel.html">DLabel</a>(<span class="stringliteral">&quot;test&quot;</span>);</div>
+<div class="line">    text = <span class="keyword">new</span> <a class="code" href="classDLineEdit.html">DLineEdit</a>();</div>
+<div class="line">    mainlayout-&gt;addWidget(label);</div>
+<div class="line">    mainlayout-&gt;addWidget(text);</div>
+<div class="line">    mainlayout-&gt;addWidget(button);</div>
+<div class="line">    setLayout(mainlayout);</div>
+<div class="line">    connect(button,SIGNAL(clicked()),<span class="keyword">this</span>,SLOT(printlog()));</div>
+<div class="line">}</div>
+<div class="line">example::~example(){}</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">void</span> example::printlog()</div>
+<div class="line">{</div>
+<div class="line">    printf(<span class="stringliteral">&quot;%s\n&quot;</span>,<span class="stringliteral">&quot;clicked&quot;</span>);</div>
+<div class="line">    qDebug() &lt;&lt; <span class="stringliteral">&quot;button clicked!&quot;</span>; <span class="comment">// 如果没设置相应环境变量则此Debug无法输出</span></div>
+<div class="line">}</div>
+</div><!-- fragment --><p>效果如下图</p>
+<p><img src="/docs/images/daboutdialog_example2.png" alt="example" class="inline"/> </p>
+</div><hr/>该类的文档由以下文件生成:<ul>
+<li>dtkwidget/docs/widgets/daboutdialog.zh_CN.dox</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classDtk_1_1Widget_1_1DAboutDialog.html">DAboutDialog</a></li>
+    <li class="footer">文档生成时间:doxtime</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

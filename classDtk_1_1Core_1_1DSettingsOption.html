@@ -1,0 +1,691 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: Dtk::Core::DSettingsOption类 参考</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="change address" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classDtk_1_1Core_1_1DSettingsOption.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-slots">Public 槽</a> &#124;
+<a href="#signals">信号</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#properties">属性</a> &#124;
+<a href="classDtk_1_1Core_1_1DSettingsOption-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">Dtk::Core::DSettingsOption类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>DSettingsOption是DSettings的基本单元,用于存放一对键-值数据。  
+ <a href="classDtk_1_1Core_1_1DSettingsOption.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="dsettingsoption_8h_source.html">dsettingsoption.h</a>&gt;</code></p>
+<div class="dynheader">
+类 Dtk::Core::DSettingsOption 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classDtk_1_1Core_1_1DSettingsOption.png" alt=""/>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Public 槽</h2></td></tr>
+<tr class="memitem:a557385cf362ad50e8576ca44f1345146"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DSettingsOption.html#a557385cf362ad50e8576ca44f1345146">setValue</a> (QVariant value)</td></tr>
+<tr class="memdesc:a557385cf362ad50e8576ca44f1345146"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置选项的当前值.  <a href="classDtk_1_1Core_1_1DSettingsOption.html#a557385cf362ad50e8576ca44f1345146">更多...</a><br /></td></tr>
+<tr class="separator:a557385cf362ad50e8576ca44f1345146"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dcb27716ea88b96f25efa9009a31e52"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DSettingsOption.html#a2dcb27716ea88b96f25efa9009a31e52">setData</a> (const QString &amp;dataType, QVariant value)</td></tr>
+<tr class="memdesc:a2dcb27716ea88b96f25efa9009a31e52"><td class="mdescLeft">&#160;</td><td class="mdescRight">为选项添加自定义属性  <a href="classDtk_1_1Core_1_1DSettingsOption.html#a2dcb27716ea88b96f25efa9009a31e52">更多...</a><br /></td></tr>
+<tr class="separator:a2dcb27716ea88b96f25efa9009a31e52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+信号</h2></td></tr>
+<tr class="memitem:aa33a8ae87df405b8fd06c873bd026712"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DSettingsOption.html#aa33a8ae87df405b8fd06c873bd026712">valueChanged</a> (QVariant value)</td></tr>
+<tr class="memdesc:aa33a8ae87df405b8fd06c873bd026712"><td class="mdescLeft">&#160;</td><td class="mdescRight">选项的数据变化时发出改信息  <a href="classDtk_1_1Core_1_1DSettingsOption.html#aa33a8ae87df405b8fd06c873bd026712">更多...</a><br /></td></tr>
+<tr class="separator:aa33a8ae87df405b8fd06c873bd026712"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbbdf2b47eec35df9e37909e184612fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DSettingsOption.html#abbbdf2b47eec35df9e37909e184612fb">dataChanged</a> (const QString &amp;dataType, QVariant value)</td></tr>
+<tr class="memdesc:abbbdf2b47eec35df9e37909e184612fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">选项的附件的额外数据变化时发出改信息，可以看作这个值的属性发生变化。  <a href="classDtk_1_1Core_1_1DSettingsOption.html#abbbdf2b47eec35df9e37909e184612fb">更多...</a><br /></td></tr>
+<tr class="separator:abbbdf2b47eec35df9e37909e184612fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:aaec0ceefdfe2f431327b31316d2750d1"><td class="memItemLeft" align="right" valign="top"><a id="aaec0ceefdfe2f431327b31316d2750d1"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DSettingsOption.html#aaec0ceefdfe2f431327b31316d2750d1">DSettingsOption</a> (QObject *parent=Q_NULLPTR)</td></tr>
+<tr class="memdesc:aaec0ceefdfe2f431327b31316d2750d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">DSettingsOption构造函数 <br /></td></tr>
+<tr class="separator:aaec0ceefdfe2f431327b31316d2750d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64dcb2445a78532c4e3ed5183e8337e9"><td class="memItemLeft" align="right" valign="top">QPointer&lt; <a class="el" href="classDtk_1_1Core_1_1DSettingsGroup.html">DSettingsGroup</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DSettingsOption.html#a64dcb2445a78532c4e3ed5183e8337e9">parentGroup</a> () const</td></tr>
+<tr class="memdesc:a64dcb2445a78532c4e3ed5183e8337e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">当前选项的直接上级组  <a href="classDtk_1_1Core_1_1DSettingsOption.html#a64dcb2445a78532c4e3ed5183e8337e9">更多...</a><br /></td></tr>
+<tr class="separator:a64dcb2445a78532c4e3ed5183e8337e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af97d96abf8a428f99361166d9ed8679a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DSettingsOption.html#af97d96abf8a428f99361166d9ed8679a">setParentGroup</a> (QPointer&lt; <a class="el" href="classDtk_1_1Core_1_1DSettingsGroup.html">DSettingsGroup</a> &gt; <a class="el" href="classDtk_1_1Core_1_1DSettingsOption.html#a64dcb2445a78532c4e3ed5183e8337e9">parentGroup</a>)</td></tr>
+<tr class="memdesc:af97d96abf8a428f99361166d9ed8679a"><td class="mdescLeft">&#160;</td><td class="mdescRight">修改当前选项的上级组  <a href="classDtk_1_1Core_1_1DSettingsOption.html#af97d96abf8a428f99361166d9ed8679a">更多...</a><br /></td></tr>
+<tr class="separator:af97d96abf8a428f99361166d9ed8679a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6652cb5ad18c5c45485a206f174a368f"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DSettingsOption.html#a6652cb5ad18c5c45485a206f174a368f">key</a> () const</td></tr>
+<tr class="memdesc:a6652cb5ad18c5c45485a206f174a368f"><td class="mdescLeft">&#160;</td><td class="mdescRight">当前选项的键值  <a href="classDtk_1_1Core_1_1DSettingsOption.html#a6652cb5ad18c5c45485a206f174a368f">更多...</a><br /></td></tr>
+<tr class="separator:a6652cb5ad18c5c45485a206f174a368f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93721333111f2bfceef63c8ba76885f6"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DSettingsOption.html#a93721333111f2bfceef63c8ba76885f6">name</a> () const</td></tr>
+<tr class="memdesc:a93721333111f2bfceef63c8ba76885f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">当前选项的名称  <a href="classDtk_1_1Core_1_1DSettingsOption.html#a93721333111f2bfceef63c8ba76885f6">更多...</a><br /></td></tr>
+<tr class="separator:a93721333111f2bfceef63c8ba76885f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a430a4d2e652375bcd96c6ac7ea947e0d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DSettingsOption.html#a430a4d2e652375bcd96c6ac7ea947e0d">canReset</a> () const</td></tr>
+<tr class="memdesc:a430a4d2e652375bcd96c6ac7ea947e0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">选项是否可以重置,如果可以重置,在调用reset方法后,选项的值会变成初始值。  <a href="classDtk_1_1Core_1_1DSettingsOption.html#a430a4d2e652375bcd96c6ac7ea947e0d">更多...</a><br /></td></tr>
+<tr class="separator:a430a4d2e652375bcd96c6ac7ea947e0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafc5ef7c58c42762ea67882552602e2a"><td class="memItemLeft" align="right" valign="top">QVariant&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DSettingsOption.html#aafc5ef7c58c42762ea67882552602e2a">defaultValue</a> () const</td></tr>
+<tr class="memdesc:aafc5ef7c58c42762ea67882552602e2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">选项的默认值  <a href="classDtk_1_1Core_1_1DSettingsOption.html#aafc5ef7c58c42762ea67882552602e2a">更多...</a><br /></td></tr>
+<tr class="separator:aafc5ef7c58c42762ea67882552602e2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92417b5c5cc11d3bbf86ff26d457641a"><td class="memItemLeft" align="right" valign="top">QVariant&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DSettingsOption.html#a92417b5c5cc11d3bbf86ff26d457641a">value</a> () const</td></tr>
+<tr class="memdesc:a92417b5c5cc11d3bbf86ff26d457641a"><td class="mdescLeft">&#160;</td><td class="mdescRight">选项的当前值  <a href="classDtk_1_1Core_1_1DSettingsOption.html#a92417b5c5cc11d3bbf86ff26d457641a">更多...</a><br /></td></tr>
+<tr class="separator:a92417b5c5cc11d3bbf86ff26d457641a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1138075be3899ae6b2e7d0c3d7f71c50"><td class="memItemLeft" align="right" valign="top">QVariant&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DSettingsOption.html#a1138075be3899ae6b2e7d0c3d7f71c50">data</a> (const QString &amp;dataType) const</td></tr>
+<tr class="memdesc:a1138075be3899ae6b2e7d0c3d7f71c50"><td class="mdescLeft">&#160;</td><td class="mdescRight">选项的附件data,用于未选项设置一些额外的辅助属性。  <a href="classDtk_1_1Core_1_1DSettingsOption.html#a1138075be3899ae6b2e7d0c3d7f71c50">更多...</a><br /></td></tr>
+<tr class="separator:a1138075be3899ae6b2e7d0c3d7f71c50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c78f69648c9f610914a73e28e76bffb"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DSettingsOption.html#a8c78f69648c9f610914a73e28e76bffb">viewType</a> () const</td></tr>
+<tr class="memdesc:a8c78f69648c9f610914a73e28e76bffb"><td class="mdescLeft">&#160;</td><td class="mdescRight">选项的控件类型  <a href="classDtk_1_1Core_1_1DSettingsOption.html#a8c78f69648c9f610914a73e28e76bffb">更多...</a><br /></td></tr>
+<tr class="separator:a8c78f69648c9f610914a73e28e76bffb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2732dbf68d81b850dd4b76fe1f7a74ec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DSettingsOption.html#a2732dbf68d81b850dd4b76fe1f7a74ec">isHidden</a> () const</td></tr>
+<tr class="memdesc:a2732dbf68d81b850dd4b76fe1f7a74ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">检查选项是否会在界面上显示  <a href="classDtk_1_1Core_1_1DSettingsOption.html#a2732dbf68d81b850dd4b76fe1f7a74ec">更多...</a><br /></td></tr>
+<tr class="separator:a2732dbf68d81b850dd4b76fe1f7a74ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a49099a1678fab0c1edc50b67e621a777"><td class="memItemLeft" align="right" valign="top">static QPointer&lt; <a class="el" href="classDtk_1_1Core_1_1DSettingsOption.html">DSettingsOption</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDtk_1_1Core_1_1DSettingsOption.html#a49099a1678fab0c1edc50b67e621a777">fromJson</a> (const QString &amp;prefixKey, const QJsonObject &amp;json)</td></tr>
+<tr class="memdesc:a49099a1678fab0c1edc50b67e621a777"><td class="mdescLeft">&#160;</td><td class="mdescRight">从json对象中反序列化出一个选项对象  <a href="classDtk_1_1Core_1_1DSettingsOption.html#a49099a1678fab0c1edc50b67e621a777">更多...</a><br /></td></tr>
+<tr class="separator:a49099a1678fab0c1edc50b67e621a777"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:ac68f04b7308b5cd7a597fb0411865c19"><td class="memItemLeft" align="right" valign="top"><a id="ac68f04b7308b5cd7a597fb0411865c19"></a>
+QVariant&#160;</td><td class="memItemRight" valign="bottom"><b>value</b></td></tr>
+<tr class="separator:ac68f04b7308b5cd7a597fb0411865c19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>DSettingsOption是DSettings的基本单元,用于存放一对键-值数据。 </p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="a430a4d2e652375bcd96c6ac7ea947e0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a430a4d2e652375bcd96c6ac7ea947e0d">&#9670;&nbsp;</a></span>canReset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Dtk::Core::DSettingsOption::canReset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>选项是否可以重置,如果可以重置,在调用reset方法后,选项的值会变成初始值。 </p>
+<dl class="section return"><dt>返回</dt><dd>如果可以重置则为true </dd></dl>
+
+</div>
+</div>
+<a id="a1138075be3899ae6b2e7d0c3d7f71c50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1138075be3899ae6b2e7d0c3d7f71c50">&#9670;&nbsp;</a></span>data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QVariant Dtk::Core::DSettingsOption::data </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>dataType</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>选项的附件data,用于未选项设置一些额外的辅助属性。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dataType</td><td>数据类型 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>数据类型对应的数据. </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>QObject::property </dd>
+<dd>
+<a class="el" href="classDtk_1_1Core_1_1DSettingsOption.html#a2dcb27716ea88b96f25efa9009a31e52" title="为选项添加自定义属性">Dtk::Core::DSettingsOption::setData</a> </dd></dl>
+
+</div>
+</div>
+<a id="abbbdf2b47eec35df9e37909e184612fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbbdf2b47eec35df9e37909e184612fb">&#9670;&nbsp;</a></span>dataChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dtk::Core::DSettingsOption::dataChanged </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>dataType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QVariant&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>选项的附件的额外数据变化时发出改信息，可以看作这个值的属性发生变化。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dataType</td><td>改变的数据类型 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>发生改变的数据 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aafc5ef7c58c42762ea67882552602e2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafc5ef7c58c42762ea67882552602e2a">&#9670;&nbsp;</a></span>defaultValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QVariant Dtk::Core::DSettingsOption::defaultValue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>选项的默认值 </p>
+<dl class="section return"><dt>返回</dt><dd>返回选项的默认值 </dd></dl>
+
+</div>
+</div>
+<a id="a49099a1678fab0c1edc50b67e621a777"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49099a1678fab0c1edc50b67e621a777">&#9670;&nbsp;</a></span>fromJson()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QPointer&lt; <a class="el" href="classDtk_1_1Core_1_1DSettingsOption.html">DSettingsOption</a> &gt; Dtk::Core::DSettingsOption::fromJson </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>prefixKey</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QJsonObject &amp;&#160;</td>
+          <td class="paramname"><em>json</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>从json对象中反序列化出一个选项对象 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">prefixKey</td><td>选项的前缀 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">json</td><td>待反序列化的json对象 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回解析完成后的 <code>option</code> 数据 </dd></dl>
+
+</div>
+</div>
+<a id="a2732dbf68d81b850dd4b76fe1f7a74ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2732dbf68d81b850dd4b76fe1f7a74ec">&#9670;&nbsp;</a></span>isHidden()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Dtk::Core::DSettingsOption::isHidden </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>检查选项是否会在界面上显示 </p>
+<dl class="section return"><dt>返回</dt><dd>如果显示则返回true,否则返回false。 </dd></dl>
+
+</div>
+</div>
+<a id="a6652cb5ad18c5c45485a206f174a368f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6652cb5ad18c5c45485a206f174a368f">&#9670;&nbsp;</a></span>key()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString Dtk::Core::DSettingsOption::key </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>当前选项的键值 </p>
+<dl class="section return"><dt>返回</dt><dd>返回当前选项的键值 </dd></dl>
+
+</div>
+</div>
+<a id="a93721333111f2bfceef63c8ba76885f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93721333111f2bfceef63c8ba76885f6">&#9670;&nbsp;</a></span>name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString Dtk::Core::DSettingsOption::name </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>当前选项的名称 </p>
+<dl class="section return"><dt>返回</dt><dd>返回当前选项的名称 </dd></dl>
+
+</div>
+</div>
+<a id="a64dcb2445a78532c4e3ed5183e8337e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64dcb2445a78532c4e3ed5183e8337e9">&#9670;&nbsp;</a></span>parentGroup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QPointer&lt; <a class="el" href="classDtk_1_1Core_1_1DSettingsGroup.html">DSettingsGroup</a> &gt; Dtk::Core::DSettingsOption::parentGroup </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>当前选项的直接上级组 </p>
+<dl class="section return"><dt>返回</dt><dd>返回当前选项的直接上级组 </dd></dl>
+
+</div>
+</div>
+<a id="a2dcb27716ea88b96f25efa9009a31e52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2dcb27716ea88b96f25efa9009a31e52">&#9670;&nbsp;</a></span>setData</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dtk::Core::DSettingsOption::setData </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>dataType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QVariant&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>为选项添加自定义属性 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dataType</td><td>选项的扎属性数据id,对每个选项必须唯一 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>选项id对应的值 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDtk_1_1Core_1_1DSettingsOption.html#a1138075be3899ae6b2e7d0c3d7f71c50" title="选项的附件data,用于未选项设置一些额外的辅助属性。">Dtk::Core::DSettingsOption::data</a></dd></dl>
+<pre class="fragment"> @brief Override default value of json
+ \a value
+&amp;zwj;/
+</pre><p> void DSettingsOption::setDefault(QVariant value) { Q_D(DSettingsOption); d-&gt;defalutValue = value; }</p>
+<p>/*! </p>
+
+</div>
+</div>
+<a id="af97d96abf8a428f99361166d9ed8679a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af97d96abf8a428f99361166d9ed8679a">&#9670;&nbsp;</a></span>setParentGroup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dtk::Core::DSettingsOption::setParentGroup </td>
+          <td>(</td>
+          <td class="paramtype">QPointer&lt; <a class="el" href="classDtk_1_1Core_1_1DSettingsGroup.html">DSettingsGroup</a> &gt;&#160;</td>
+          <td class="paramname"><em>parentGroup</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>修改当前选项的上级组 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">parentGroup</td><td>上级组 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a557385cf362ad50e8576ca44f1345146"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a557385cf362ad50e8576ca44f1345146">&#9670;&nbsp;</a></span>setValue</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dtk::Core::DSettingsOption::setValue </td>
+          <td>(</td>
+          <td class="paramtype">QVariant&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置选项的当前值. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>选项的当前值 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a92417b5c5cc11d3bbf86ff26d457641a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92417b5c5cc11d3bbf86ff26d457641a">&#9670;&nbsp;</a></span>value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QVariant Dtk::Core::DSettingsOption::value </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>选项的当前值 </p>
+<dl class="section return"><dt>返回</dt><dd>返回选项的当前值 </dd></dl>
+
+</div>
+</div>
+<a id="aa33a8ae87df405b8fd06c873bd026712"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa33a8ae87df405b8fd06c873bd026712">&#9670;&nbsp;</a></span>valueChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dtk::Core::DSettingsOption::valueChanged </td>
+          <td>(</td>
+          <td class="paramtype">QVariant&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>选项的数据变化时发出改信息 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>发生改变的数据 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8c78f69648c9f610914a73e28e76bffb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c78f69648c9f610914a73e28e76bffb">&#9670;&nbsp;</a></span>viewType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString Dtk::Core::DSettingsOption::viewType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>选项的控件类型 </p>
+<dl class="section return"><dt>返回</dt><dd>返回选项的控件类型 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDtk_1_1Widget_1_1DSettingsWidgetFactory.html" title="DSettingsWidgetFactory是一个用于构造Deepin风格的设置对话框的控件.">Dtk::Widget::DSettingsWidgetFactory</a> </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dtkcore/include/settings/<a class="el" href="dsettingsoption_8h_source.html">dsettingsoption.h</a></li>
+<li>dtkcore/docs/settings/dsettingsoption.zh_CN.dox</li>
+<li>dtkcore/src/settings/dsettingsoption.cpp</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>Dtk</b></li><li class="navelem"><b>Core</b></li><li class="navelem"><a class="el" href="classDtk_1_1Core_1_1DSettingsOption.html">DSettingsOption</a></li>
+    <li class="footer">文档生成时间:doxtime</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: WaterMark类 参考</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="change address" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classWaterMark.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#friends">友元</a> &#124;
+<a href="classWaterMark-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">WaterMark类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 WaterMark 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classWaterMark.png" alt=""/>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:ab804fcbd68ec97dae57de05c69c20acf"><td class="memItemLeft" align="right" valign="top"><a id="ab804fcbd68ec97dae57de05c69c20acf"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Type</b> { <b>None</b>
+, <b>Text</b>
+, <b>Image</b>
+ }</td></tr>
+<tr class="separator:ab804fcbd68ec97dae57de05c69c20acf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38059669100d33329b66245101813ce2"><td class="memItemLeft" align="right" valign="top"><a id="a38059669100d33329b66245101813ce2"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Layout</b> { <b>Center</b>
+, <b>Tiled</b>
+ }</td></tr>
+<tr class="separator:a38059669100d33329b66245101813ce2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a979f6c9aea1d2d75583cbcabfbac235f"><td class="memItemLeft" align="right" valign="top"><a id="a979f6c9aea1d2d75583cbcabfbac235f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>WaterMark</b> (QGraphicsItem *parent=nullptr)</td></tr>
+<tr class="separator:a979f6c9aea1d2d75583cbcabfbac235f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a378e716e849a91b3f397a32a0cb0b141"><td class="memItemLeft" align="right" valign="top"><a id="a378e716e849a91b3f397a32a0cb0b141"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setType</b> (Type t)</td></tr>
+<tr class="separator:a378e716e849a91b3f397a32a0cb0b141"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbcef87f6a27c95fec83d53789e954c1"><td class="memItemLeft" align="right" valign="top"><a id="abbcef87f6a27c95fec83d53789e954c1"></a>
+Type&#160;</td><td class="memItemRight" valign="bottom"><b>getType</b> () const</td></tr>
+<tr class="separator:abbcef87f6a27c95fec83d53789e954c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a603f5633ade50f8f22294747a120535a"><td class="memItemLeft" align="right" valign="top"><a id="a603f5633ade50f8f22294747a120535a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setLayoutType</b> (Layout l)</td></tr>
+<tr class="separator:a603f5633ade50f8f22294747a120535a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d8829a2af812192a9f59f437380d0e5"><td class="memItemLeft" align="right" valign="top"><a id="a8d8829a2af812192a9f59f437380d0e5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setScaleFactor</b> (qreal scale)</td></tr>
+<tr class="separator:a8d8829a2af812192a9f59f437380d0e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77e0ba355a9c50e253b6a8bd381d1cc3"><td class="memItemLeft" align="right" valign="top"><a id="a77e0ba355a9c50e253b6a8bd381d1cc3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setImage</b> (const QImage &amp;img)</td></tr>
+<tr class="separator:a77e0ba355a9c50e253b6a8bd381d1cc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3868da2c1efa06e55119c7079362791c"><td class="memItemLeft" align="right" valign="top"><a id="a3868da2c1efa06e55119c7079362791c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setText</b> (const QString str)</td></tr>
+<tr class="separator:a3868da2c1efa06e55119c7079362791c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d2c381a19841cabc00c741d7ae33c9c"><td class="memItemLeft" align="right" valign="top"><a id="a5d2c381a19841cabc00c741d7ae33c9c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setFont</b> (const QFont &amp;f)</td></tr>
+<tr class="separator:a5d2c381a19841cabc00c741d7ae33c9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7eabf3d86f3bf2214706e0e52b396aaa"><td class="memItemLeft" align="right" valign="top"><a id="a7eabf3d86f3bf2214706e0e52b396aaa"></a>
+QFont&#160;</td><td class="memItemRight" valign="bottom"><b>getFont</b> () const</td></tr>
+<tr class="separator:a7eabf3d86f3bf2214706e0e52b396aaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af82266737d11b1de01e260b23d616773"><td class="memItemLeft" align="right" valign="top"><a id="af82266737d11b1de01e260b23d616773"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setColor</b> (const QColor &amp;c)</td></tr>
+<tr class="separator:af82266737d11b1de01e260b23d616773"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d34dbfa7947e6fe5a1acb6afb46038b"><td class="memItemLeft" align="right" valign="top"><a id="a7d34dbfa7947e6fe5a1acb6afb46038b"></a>
+QColor&#160;</td><td class="memItemRight" valign="bottom"><b>getColor</b> () const</td></tr>
+<tr class="separator:a7d34dbfa7947e6fe5a1acb6afb46038b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f045ddb9e0941e329ebc19440765b3c"><td class="memItemLeft" align="right" valign="top"><a id="a1f045ddb9e0941e329ebc19440765b3c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setBoundingRect</b> (const QRectF &amp;rect)</td></tr>
+<tr class="separator:a1f045ddb9e0941e329ebc19440765b3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dce0416c2a73628231f8e0932f3d983"><td class="memItemLeft" align="right" valign="top"><a id="a9dce0416c2a73628231f8e0932f3d983"></a>
+QRectF&#160;</td><td class="memItemRight" valign="bottom"><b>boundingRect</b> () const override</td></tr>
+<tr class="separator:a9dce0416c2a73628231f8e0932f3d983"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63a1939c5b4b69a507785f07b3ea18b2"><td class="memItemLeft" align="right" valign="top"><a id="a63a1939c5b4b69a507785f07b3ea18b2"></a>
+QPolygonF&#160;</td><td class="memItemRight" valign="bottom"><b>itemMaxPolygon</b> () const</td></tr>
+<tr class="separator:a63a1939c5b4b69a507785f07b3ea18b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa158fce6028ca9918a5f34d2bea0d16a"><td class="memItemLeft" align="right" valign="top"><a id="aa158fce6028ca9918a5f34d2bea0d16a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>paint</b> (QPainter *painter, const QStyleOptionGraphicsItem *item, QWidget *widget) override</td></tr>
+<tr class="separator:aa158fce6028ca9918a5f34d2bea0d16a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fb55eeef7ee87f4b83b4e1d97f5676e"><td class="memItemLeft" align="right" valign="top"><a id="a3fb55eeef7ee87f4b83b4e1d97f5676e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>updatePicture</b> (QPainter *painter, bool isPreview)</td></tr>
+<tr class="separator:a3fb55eeef7ee87f4b83b4e1d97f5676e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade497423acc75420a5f44240e2f38140"><td class="memItemLeft" align="right" valign="top"><a id="ade497423acc75420a5f44240e2f38140"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setNumberUpScale</b> (const qreal &amp;value)</td></tr>
+<tr class="separator:ade497423acc75420a5f44240e2f38140"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:ad8df6f24ef08386686238cc253050ead"><td class="memItemLeft" align="right" valign="top"><a id="ad8df6f24ef08386686238cc253050ead"></a>
+QPainterPath&#160;</td><td class="memItemRight" valign="bottom"><b>itemClipPath</b> () const</td></tr>
+<tr class="separator:ad8df6f24ef08386686238cc253050ead"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+友元</h2></td></tr>
+<tr class="memitem:a49a3307e5f96cd45a9b8733bc9bb9eff"><td class="memItemLeft" align="right" valign="top"><a id="a49a3307e5f96cd45a9b8733bc9bb9eff"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>DPrintPreviewWidgetPrivate</b></td></tr>
+<tr class="separator:a49a3307e5f96cd45a9b8733bc9bb9eff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dtkwidget/src/widgets/private/<a class="el" href="dprintpreviewwidget__p_8h_source.html">dprintpreviewwidget_p.h</a></li>
+<li>dtkwidget/src/widgets/dprintpreviewwidget.cpp</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classWaterMark.html">WaterMark</a></li>
+    <li class="footer">文档生成时间:doxtime</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,310 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: dtkwidget/include/dtkwidget/widgets/dprintpickcolorwidget.h 源文件</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="change address" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('dprintpickcolorwidget_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">dprintpickcolorwidget.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-FileCopyrightText: 2019 - 2022 UnionTech Software Technology Co., Ltd.</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// SPDX-License-Identifier: LGPL-3.0-or-later</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef DPRINTPICKCOLORWIDGET_H</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define DPRINTPICKCOLORWIDGET_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;qdbusinterface.h&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;DFloatingWidget&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;DLabel&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;DWidget&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;DPushButton&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">class </span>QVBoxLayout;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;DWIDGET_BEGIN_NAMESPACE</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">class </span><a class="code" href="classDIconButton.html">DIconButton</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">class </span><a class="code" href="classDLineEdit.html">DLineEdit</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">class </span><a class="code" href="classDLabel.html">DLabel</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">class </span><a class="code" href="classDSlider.html">DSlider</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classColorButton.html">   21</a></span>&#160;<span class="keyword">class </span><a class="code" href="classColorButton.html">ColorButton</a> : <span class="keyword">public</span> DPushButton</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="classColorButton.html#a5133e58d694260f42b39c8d3c454f5cb">ColorButton</a>(QColor color, QWidget *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;Q_SIGNALS:</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> selectColorButton(QColor color);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">void</span> btnIsChecked(<span class="keywordtype">bool</span> checked);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">void</span> paintEvent(QPaintEvent *) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    QColor m_color;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">bool</span> m_flag = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">bool</span> m_checked = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;};</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classColorLabel.html">   38</a></span>&#160;<span class="keyword">class </span><a class="code" href="classColorLabel.html">ColorLabel</a> : <span class="keyword">public</span> <a class="code" href="classDLabel.html">DLabel</a></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="classColorLabel.html#a0a76e57427c1a9640a907633f7412f8b">ColorLabel</a>(DWidget *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    ~<a class="code" href="classColorLabel.html">ColorLabel</a>();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="comment">//h∈(0, 360), s∈(0, 1), v∈(0, 1)</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    QColor <a class="code" href="classColorLabel.html#a9d8b57b422aa221b8e0b8e732ae1143d">getColor</a>(qreal h, qreal s, qreal v);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classColorLabel.html#ad75e4a367312dbb8aaff0ae523de5436">setHue</a>(<span class="keywordtype">int</span> hue);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classColorLabel.html#ac1c6a7feb8fd27b9a5ee14b2660e8fdc">pickColor</a>(QPoint pos);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    QCursor <a class="code" href="classColorLabel.html#a8507320bf0466513f3158437e38fa27d">pickColorCursor</a>();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;Q_SIGNALS:</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">void</span> clicked();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> pickedColor(QColor color);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> paintEvent(QPaintEvent *);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> enterEvent(QEvent *e);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> leaveEvent(QEvent *e);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> mousePressEvent(QMouseEvent *e);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> mouseMoveEvent(QMouseEvent *e);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> mouseReleaseEvent(QMouseEvent *e);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    QCursor m_lastCursor;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">int</span> m_hue = 0;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">bool</span> m_pressed;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    QColor m_pickedColor;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    QPoint m_clickedPos;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    QPoint m_tipPoint;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;};</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classColorSlider.html">   72</a></span>&#160;<span class="keyword">class </span><a class="code" href="classColorSlider.html">ColorSlider</a> : <span class="keyword">public</span> QSlider</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;{</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <a class="code" href="classColorSlider.html#a80aa83a09c511bd74de814727ee6b31c">ColorSlider</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    ~<a class="code" href="classColorSlider.html">ColorSlider</a>();</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="comment">//h∈(0, 360), s∈(0, 1), v∈(0, 1)</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    QColor <a class="code" href="classColorSlider.html#a0f53811bd67235bafd23c9a9a0119afa">getColor</a>(qreal h, qreal s, qreal v);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">void</span> paintEvent(QPaintEvent *ev);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">int</span> m_value;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    QImage m_backgroundImage;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;};</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="classDPrintPickColorWidget.html">   89</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDPrintPickColorWidget.html">DPrintPickColorWidget</a> : <span class="keyword">public</span> DWidget</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;{</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <a class="code" href="classDPrintPickColorWidget.html">DPrintPickColorWidget</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    ~<a class="code" href="classDPrintPickColorWidget.html">DPrintPickColorWidget</a>();</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">void</span> initUI();</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">void</span> initConnection();</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDPrintPickColorWidget.html#a4b06f128f82fa3b03ee56b0e3e2830d1">setRgbEdit</a>(QColor color, <span class="keywordtype">bool</span> btnColor = <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDPrintPickColorWidget.html#a5e3f35c853dd24d1412c990d365f1b4f">convertColor</a>(QColor color, <span class="keywordtype">bool</span> btnColor = <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;Q_SIGNALS:</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">void</span> selectColorButton(QColor color);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">void</span> signalColorChanged(QColor color);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDPrintPickColorWidget.html#abe1b67ceb7f4bc594b2bc47f9fcd679f">slotColorPick</a>(QString uuid, QString colorName);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDPrintPickColorWidget.html#a4009fd852aa097c8e6f193351818b9aa">slotEditColor</a>(QString str);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    QList&lt;ColorButton *&gt; btnlist;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    QList&lt;QColor&gt; colorList;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    QButtonGroup *btnGroup;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <a class="code" href="classDLineEdit.html">DLineEdit</a> *valueLineEdit;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <a class="code" href="classDIconButton.html">DIconButton</a> *pickColorBtn;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    QDBusInterface *pinterface;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <a class="code" href="classDLineEdit.html">DLineEdit</a> *rEdit;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <a class="code" href="classDLineEdit.html">DLineEdit</a> *gEdit;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <a class="code" href="classDLineEdit.html">DLineEdit</a> *bEdit;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <a class="code" href="classColorLabel.html">ColorLabel</a> *colorLabel;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <a class="code" href="classColorSlider.html">ColorSlider</a> *colorSlider;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;};</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;DWIDGET_END_NAMESPACE</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// DPRINTPICKCOLORWIDGET_H</span></div>
+<div class="ttc" id="aclassColorButton_html"><div class="ttname"><a href="classColorButton.html">ColorButton</a></div><div class="ttdef"><b>Definition:</b> dprintpickcolorwidget.h:22</div></div>
+<div class="ttc" id="aclassColorButton_html_a5133e58d694260f42b39c8d3c454f5cb"><div class="ttname"><a href="classColorButton.html#a5133e58d694260f42b39c8d3c454f5cb">ColorButton::ColorButton</a></div><div class="ttdeci">ColorButton(QColor color, QWidget *parent=nullptr)</div><div class="ttdoc">ColorButton::ColorButton 取色框颜色选择按钮</div><div class="ttdef"><b>Definition:</b> dprintpickcolorwidget.cpp:32</div></div>
+<div class="ttc" id="aclassColorLabel_html"><div class="ttname"><a href="classColorLabel.html">ColorLabel</a></div><div class="ttdef"><b>Definition:</b> dprintpickcolorwidget.h:39</div></div>
+<div class="ttc" id="aclassColorLabel_html_a0a76e57427c1a9640a907633f7412f8b"><div class="ttname"><a href="classColorLabel.html#a0a76e57427c1a9640a907633f7412f8b">ColorLabel::ColorLabel</a></div><div class="ttdeci">ColorLabel(DWidget *parent=nullptr)</div><div class="ttdoc">ColorLabel::ColorLabel 提供取色的Label</div><div class="ttdef"><b>Definition:</b> dprintpickcolorwidget.cpp:254</div></div>
+<div class="ttc" id="aclassColorLabel_html_a8507320bf0466513f3158437e38fa27d"><div class="ttname"><a href="classColorLabel.html#a8507320bf0466513f3158437e38fa27d">ColorLabel::pickColorCursor</a></div><div class="ttdeci">QCursor pickColorCursor()</div><div class="ttdoc">ColorLabel::pickColorCursor 绘制点击时的鼠标光标样式</div><div class="ttdef"><b>Definition:</b> dprintpickcolorwidget.cpp:329</div></div>
+<div class="ttc" id="aclassColorLabel_html_a9d8b57b422aa221b8e0b8e732ae1143d"><div class="ttname"><a href="classColorLabel.html#a9d8b57b422aa221b8e0b8e732ae1143d">ColorLabel::getColor</a></div><div class="ttdeci">QColor getColor(qreal h, qreal s, qreal v)</div><div class="ttdoc">ColorLabel::getColor 获取Label上取到的颜色 qreal h, qreal s, qreal v 位置</div><div class="ttdef"><b>Definition:</b> dprintpickcolorwidget.cpp:270</div></div>
+<div class="ttc" id="aclassColorLabel_html_ac1c6a7feb8fd27b9a5ee14b2660e8fdc"><div class="ttname"><a href="classColorLabel.html#ac1c6a7feb8fd27b9a5ee14b2660e8fdc">ColorLabel::pickColor</a></div><div class="ttdeci">void pickColor(QPoint pos)</div><div class="ttdoc">ColorLabel::pickColor 选择要水印的颜色 pos 选取颜色的位置</div><div class="ttdef"><b>Definition:</b> dprintpickcolorwidget.cpp:307</div></div>
+<div class="ttc" id="aclassColorLabel_html_ad75e4a367312dbb8aaff0ae523de5436"><div class="ttname"><a href="classColorLabel.html#ad75e4a367312dbb8aaff0ae523de5436">ColorLabel::setHue</a></div><div class="ttdeci">void setHue(int hue)</div><div class="ttdoc">ColorLabel::setHue 设置取色Label的基础颜色</div><div class="ttdef"><b>Definition:</b> dprintpickcolorwidget.cpp:297</div></div>
+<div class="ttc" id="aclassColorSlider_html"><div class="ttname"><a href="classColorSlider.html">ColorSlider</a></div><div class="ttdef"><b>Definition:</b> dprintpickcolorwidget.h:73</div></div>
+<div class="ttc" id="aclassColorSlider_html_a0f53811bd67235bafd23c9a9a0119afa"><div class="ttname"><a href="classColorSlider.html#a0f53811bd67235bafd23c9a9a0119afa">ColorSlider::getColor</a></div><div class="ttdeci">QColor getColor(qreal h, qreal s, qreal v)</div><div class="ttdoc">ColorSlider::getColor 获取基础颜色</div><div class="ttdef"><b>Definition:</b> dprintpickcolorwidget.cpp:451</div></div>
+<div class="ttc" id="aclassColorSlider_html_a80aa83a09c511bd74de814727ee6b31c"><div class="ttname"><a href="classColorSlider.html#a80aa83a09c511bd74de814727ee6b31c">ColorSlider::ColorSlider</a></div><div class="ttdeci">ColorSlider(QWidget *parent=nullptr)</div><div class="ttdoc">ColorSlider::ColorSlider 选取取色Label的基础颜色</div><div class="ttdef"><b>Definition:</b> dprintpickcolorwidget.cpp:423</div></div>
+<div class="ttc" id="aclassDIconButton_html"><div class="ttname"><a href="classDIconButton.html">DIconButton</a></div><div class="ttdef"><b>Definition:</b> diconbutton.h:24</div></div>
+<div class="ttc" id="aclassDLabel_html"><div class="ttname"><a href="classDLabel.html">DLabel</a></div><div class="ttdef"><b>Definition:</b> dlabel.h:18</div></div>
+<div class="ttc" id="aclassDLineEdit_html"><div class="ttname"><a href="classDLineEdit.html">DLineEdit</a></div><div class="ttdef"><b>Definition:</b> dlineedit.h:20</div></div>
+<div class="ttc" id="aclassDPrintPickColorWidget_html"><div class="ttname"><a href="classDPrintPickColorWidget.html">DPrintPickColorWidget</a></div><div class="ttdef"><b>Definition:</b> dprintpickcolorwidget.h:90</div></div>
+<div class="ttc" id="aclassDPrintPickColorWidget_html_a4009fd852aa097c8e6f193351818b9aa"><div class="ttname"><a href="classDPrintPickColorWidget.html#a4009fd852aa097c8e6f193351818b9aa">DPrintPickColorWidget::slotEditColor</a></div><div class="ttdeci">void slotEditColor(QString str)</div><div class="ttdoc">PickColorWidget::slotEditColor 颜色输入框变化判断是否是按钮的颜色 str 颜色色号</div><div class="ttdef"><b>Definition:</b> dprintpickcolorwidget.cpp:224</div></div>
+<div class="ttc" id="aclassDPrintPickColorWidget_html_a4b06f128f82fa3b03ee56b0e3e2830d1"><div class="ttname"><a href="classDPrintPickColorWidget.html#a4b06f128f82fa3b03ee56b0e3e2830d1">DPrintPickColorWidget::setRgbEdit</a></div><div class="ttdeci">void setRgbEdit(QColor color, bool btnColor=false)</div><div class="ttdoc">PickColorWidget::setRgbEdit 将QColor转化为RGB形式显示 color 颜色 btnColor 判断是否为按钮的颜色</div><div class="ttdef"><b>Definition:</b> dprintpickcolorwidget.cpp:172</div></div>
+<div class="ttc" id="aclassDPrintPickColorWidget_html_a5e3f35c853dd24d1412c990d365f1b4f"><div class="ttname"><a href="classDPrintPickColorWidget.html#a5e3f35c853dd24d1412c990d365f1b4f">DPrintPickColorWidget::convertColor</a></div><div class="ttdeci">void convertColor(QColor color, bool btnColor=false)</div><div class="ttdoc">PickColorWidget::convertColor 将QColor转化为详细颜色 color 颜色 btnColor 判断是否为按钮的颜色</div><div class="ttdef"><b>Definition:</b> dprintpickcolorwidget.cpp:184</div></div>
+<div class="ttc" id="aclassDPrintPickColorWidget_html_abe1b67ceb7f4bc594b2bc47f9fcd679f"><div class="ttname"><a href="classDPrintPickColorWidget.html#abe1b67ceb7f4bc594b2bc47f9fcd679f">DPrintPickColorWidget::slotColorPick</a></div><div class="ttdeci">void slotColorPick(QString uuid, QString colorName)</div><div class="ttdoc">PickColorWidget::slotColorPick 调起deepin-picer取色窗口 uuid 当前进程号 colorName 颜色名称</div><div class="ttdef"><b>Definition:</b> dprintpickcolorwidget.cpp:213</div></div>
+<div class="ttc" id="aclassDSlider_html"><div class="ttname"><a href="classDSlider.html">DSlider</a></div><div class="ttdef"><b>Definition:</b> dslider.h:20</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_cc1fdbae730d0dba18db2b924667b662.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_6819db61f31aacd6e31b437a606a4041.html">include</a></li><li class="navelem"><a class="el" href="dir_6719ee6af2149ba01bce2af57814b9e8.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_4faf4521db2f3764f9e00575717749e8.html">widgets</a></li><li class="navelem"><b>dprintpickcolorwidget.h</b></li>
+    <li class="footer">文档生成时间:doxtime</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

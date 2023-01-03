@@ -1,0 +1,1516 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: DStyle类 参考</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="change address" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classDStyle.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="classDStyle-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">DStyle类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 DStyle 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classDStyle.png" alt=""/>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a091d6ed0460172cb797a4d87137f6e86"><td class="memItemLeft" align="right" valign="top"><a id="a091d6ed0460172cb797a4d87137f6e86"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>PrimitiveElement</b> { <br />
+&#160;&#160;<b>PE_ItemBackground</b> = QStyle::PE_CustomBase + 1
+, <b>PE_IconButtonPanel</b>
+, <b>PE_IconButtonIcon</b>
+, <b>PE_Icon</b>
+, <br />
+&#160;&#160;<b>PE_SwitchButtonGroove</b>
+, <b>PE_SwitchButtonHandle</b>
+, <b>PE_FloatingWidget</b>
+, <b>PE_CustomBase</b> = QStyle::PE_CustomBase + 0xf00000
+<br />
+ }</td></tr>
+<tr class="separator:a091d6ed0460172cb797a4d87137f6e86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dae4f1fcf16f3981e5462ad945fdf25"><td class="memItemLeft" align="right" valign="top"><a id="a5dae4f1fcf16f3981e5462ad945fdf25"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>ControlElement</b> { <br />
+&#160;&#160;<b>CE_IconButton</b> = QStyle::CE_CustomBase + 1
+, <b>CE_SwitchButton</b>
+, <b>CE_FloatingWidget</b>
+, <b>CE_ButtonBoxButton</b>
+, <br />
+&#160;&#160;<b>CE_ButtonBoxButtonBevel</b>
+, <b>CE_ButtonBoxButtonLabel</b>
+, <b>CE_TextButton</b>
+, <b>CE_CustomBase</b> = QStyle::CE_CustomBase + 0xf00000
+<br />
+ }</td></tr>
+<tr class="separator:a5dae4f1fcf16f3981e5462ad945fdf25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0225bfb86e0b777f87808820264dd9f"><td class="memItemLeft" align="right" valign="top"><a id="ad0225bfb86e0b777f87808820264dd9f"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>PixelMetric</b> { <br />
+&#160;&#160;<b>PM_FocusBorderWidth</b> = QStyle::PM_CustomBase + 1
+, <b>PM_FocusBorderSpacing</b>
+, <b>PM_FrameRadius</b>
+, <b>PM_ShadowRadius</b>
+, <br />
+&#160;&#160;<b>PM_ShadowHOffset</b>
+, <b>PM_ShadowVOffset</b>
+, <b>PM_FrameMargins</b>
+, <b>PM_IconButtonIconSize</b>
+, <br />
+&#160;&#160;<b>PM_TopLevelWindowRadius</b>
+, <b>PM_SwitchButtonHandleWidth</b>
+, <b>PM_SwithcButtonHandleHeight</b>
+, <b>PM_FloatingWidgetRadius</b>
+, <br />
+&#160;&#160;<b>PM_FloatingWidgetShadowRadius</b>
+, <b>PM_FloatingWidgetShadowMargins</b>
+, <b>PM_FloatingWidgetShadowHOffset</b>
+, <b>PM_FloatingWidgetShadowVOffset</b>
+, <br />
+&#160;&#160;<b>PM_ContentsMargins</b>
+, <b>PM_ContentsSpacing</b>
+, <b>PM_ButtonMinimizedSize</b>
+, <b>PM_CustomBase</b> = QStyle::PM_CustomBase + 0xf00000
+<br />
+ }</td></tr>
+<tr class="separator:ad0225bfb86e0b777f87808820264dd9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a989a88a41460409fbaeb8cdc65a29bf5"><td class="memItemLeft" align="right" valign="top"><a id="a989a88a41460409fbaeb8cdc65a29bf5"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>SubElement</b> { <br />
+&#160;&#160;<b>SE_IconButtonIcon</b> = QStyle::SE_CustomBase + 1
+, <b>SE_SwitchButtonGroove</b>
+, <b>SE_SwitchButtonHandle</b>
+, <b>SE_FloatingWidget</b>
+, <br />
+&#160;&#160;<b>SE_ButtonBoxButtonContents</b>
+, <b>SE_ButtonBoxButtonFocusRect</b>
+, <b>SE_CustomBase</b> = QStyle::SE_CustomBase + 0xf00000
+<br />
+ }</td></tr>
+<tr class="separator:a989a88a41460409fbaeb8cdc65a29bf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadbd2eed25a247ef66bd4d7e7bff5bf7"><td class="memItemLeft" align="right" valign="top"><a id="aadbd2eed25a247ef66bd4d7e7bff5bf7"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>ContentsType</b> { <br />
+&#160;&#160;<b>CT_IconButton</b> = QStyle::CT_CustomBase + 1
+, <b>CT_SwitchButton</b>
+, <b>CT_FloatingWidget</b>
+, <b>CT_ButtonBoxButton</b>
+, <br />
+&#160;&#160;<b>CT_CustomBase</b> = QStyle::CT_CustomBase + 0xf00000
+<br />
+ }</td></tr>
+<tr class="separator:aadbd2eed25a247ef66bd4d7e7bff5bf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86e309cb2aa39871b8c4983aeda38d46"><td class="memItemLeft" align="right" valign="top"><a id="a86e309cb2aa39871b8c4983aeda38d46"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>StyleState</b> { <br />
+&#160;&#160;<b>SS_NormalState</b> = 0x00000000
+, <b>SS_HoverState</b> = 0x00000001
+, <b>SS_PressState</b> = 0x00000002
+, <b>SS_StateCustomBase</b> = 0x000000f0
+, <br />
+&#160;&#160;<b>StyleState_Mask</b> = 0x000000ff
+, <b>SS_CheckedFlag</b> = 0x00000100
+, <b>SS_SelectedFlag</b> = 0x00000200
+, <b>SS_FocusFlag</b> = 0x00000400
+, <br />
+&#160;&#160;<b>SS_FlagCustomBase</b> = 0xf00000
+<br />
+ }</td></tr>
+<tr class="separator:a86e309cb2aa39871b8c4983aeda38d46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a421bacc997fba01eceebb979c545f210"><td class="memItemLeft" align="right" valign="top"><a id="a421bacc997fba01eceebb979c545f210"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>StandardPixmap</b> { <br />
+&#160;&#160;<b>SP_ForkElement</b> = QStyle::SP_CustomBase + 1
+, <b>SP_DecreaseElement</b>
+, <b>SP_IncreaseElement</b>
+, <b>SP_MarkElement</b>
+, <br />
+&#160;&#160;<b>SP_SelectElement</b>
+, <b>SP_EditElement</b>
+, <b>SP_ExpandElement</b>
+, <b>SP_ReduceElement</b>
+, <br />
+&#160;&#160;<b>SP_LockElement</b>
+, <b>SP_UnlockElement</b>
+, <b>SP_MediaVolumeLowElement</b>
+, <b>SP_MediaVolumeHighElement</b>
+, <br />
+&#160;&#160;<b>SP_MediaVolumeMutedElement</b>
+, <b>SP_MediaVolumeLeftElement</b>
+, <b>SP_MediaVolumeRightElement</b>
+, <b>SP_ArrowEnter</b>
+, <br />
+&#160;&#160;<b>SP_ArrowLeave</b>
+, <b>SP_ArrowNext</b>
+, <b>SP_ArrowPrev</b>
+, <b>SP_ShowPassword</b>
+, <br />
+&#160;&#160;<b>SP_HidePassword</b>
+, <b>SP_CloseButton</b>
+, <b>SP_IndicatorMajuscule</b>
+, <b>SP_IndicatorSearch</b>
+, <br />
+&#160;&#160;<b>SP_IndicatorUnchecked</b>
+, <b>SP_IndicatorChecked</b>
+, <b>SP_DeleteButton</b>
+, <b>SP_AddButton</b>
+, <br />
+&#160;&#160;<b>SP_TitleQuitFullButton</b>
+, <b>SP_TitleMoreButton</b>
+, <b>SP_Title_SS_LeftButton</b>
+, <b>SP_Title_SS_RightButton</b>
+, <br />
+&#160;&#160;<b>SP_Title_SS_ShowMaximizeButton</b>
+, <b>SP_Title_SS_ShowNormalButton</b>
+, <b>SP_CustomBase</b> = QStyle::SP_CustomBase + 0xf00000
+<br />
+ }</td></tr>
+<tr class="separator:a421bacc997fba01eceebb979c545f210"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a9dacd7d2c67a28213e6c15af46bbd3b0"><td class="memItemLeft" align="right" valign="top"><a id="a9dacd7d2c67a28213e6c15af46bbd3b0"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDStyle.html#a9dacd7d2c67a28213e6c15af46bbd3b0">DStyle</a> ()</td></tr>
+<tr class="memdesc:a9dacd7d2c67a28213e6c15af46bbd3b0"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDStyle.html">DStyle</a> 的默认构造函数. <br /></td></tr>
+<tr class="separator:a9dacd7d2c67a28213e6c15af46bbd3b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3196bf427c243ab5caf63e782a4f118e"><td class="memItemLeft" align="right" valign="top"><a id="a3196bf427c243ab5caf63e782a4f118e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>drawPrimitive</b> (DStyle::PrimitiveElement pe, const QStyleOption *opt, QPainter *p, const QWidget *w=nullptr) const</td></tr>
+<tr class="separator:a3196bf427c243ab5caf63e782a4f118e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54c614cf9e8c900fe377fa17c2a5cabd"><td class="memItemLeft" align="right" valign="top"><a id="a54c614cf9e8c900fe377fa17c2a5cabd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>drawControl</b> (DStyle::ControlElement ce, const QStyleOption *opt, QPainter *p, const QWidget *w=nullptr) const</td></tr>
+<tr class="separator:a54c614cf9e8c900fe377fa17c2a5cabd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbbad1cd11690548437cd04775d12196"><td class="memItemLeft" align="right" valign="top"><a id="acbbad1cd11690548437cd04775d12196"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>pixelMetric</b> (DStyle::PixelMetric m, const QStyleOption *opt=nullptr, const QWidget *widget=nullptr) const</td></tr>
+<tr class="separator:acbbad1cd11690548437cd04775d12196"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca959a25a07f66a83992a02496fa0a1e"><td class="memItemLeft" align="right" valign="top"><a id="aca959a25a07f66a83992a02496fa0a1e"></a>
+QRect&#160;</td><td class="memItemRight" valign="bottom"><b>subElementRect</b> (DStyle::SubElement r, const QStyleOption *opt, const QWidget *widget=nullptr) const</td></tr>
+<tr class="separator:aca959a25a07f66a83992a02496fa0a1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a0cbabca3a39ef624c674125f8e7694"><td class="memItemLeft" align="right" valign="top"><a id="a0a0cbabca3a39ef624c674125f8e7694"></a>
+QSize&#160;</td><td class="memItemRight" valign="bottom"><b>sizeFromContents</b> (DStyle::ContentsType ct, const QStyleOption *opt, const QSize &amp;contentsSize, const QWidget *widget=nullptr) const</td></tr>
+<tr class="separator:a0a0cbabca3a39ef624c674125f8e7694"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f57b8816749a0a623641846bd82749b"><td class="memItemLeft" align="right" valign="top"><a id="a2f57b8816749a0a623641846bd82749b"></a>
+QIcon&#160;</td><td class="memItemRight" valign="bottom"><b>standardIcon</b> (DStyle::StandardPixmap st, const QStyleOption *opt=nullptr, const QWidget *widget=nullptr) const</td></tr>
+<tr class="separator:a2f57b8816749a0a623641846bd82749b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8e5cf6767aa7ceb9b7c5183bf84fdde"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDStyle.html#aa8e5cf6767aa7ceb9b7c5183bf84fdde">drawPrimitive</a> (QStyle::PrimitiveElement pe, const QStyleOption *opt, QPainter *p, const QWidget *w=nullptr) const override</td></tr>
+<tr class="memdesc:aa8e5cf6767aa7ceb9b7c5183bf84fdde"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDStyle.html#af4317fbe7ac4dec3d611b2f7416ad30f" title="使用给定的 style 风格， pe 原始元素， opt 风格选项， p 画笔，以及 w 窗口， 绘制风格中的原始元素对象. 这是为便于使用而提供的一个重载成员函数....">DStyle::drawPrimitive</a>  <a href="classDStyle.html#aa8e5cf6767aa7ceb9b7c5183bf84fdde">更多...</a><br /></td></tr>
+<tr class="separator:aa8e5cf6767aa7ceb9b7c5183bf84fdde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a495fb28d4d38d1cc4b49ba30cb0d70db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDStyle.html#a495fb28d4d38d1cc4b49ba30cb0d70db">drawControl</a> (QStyle::ControlElement ce, const QStyleOption *opt, QPainter *p, const QWidget *w=nullptr) const override</td></tr>
+<tr class="memdesc:a495fb28d4d38d1cc4b49ba30cb0d70db"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDStyle.html#adf42b504462345989669610d5602ecd2" title="使用指定的 style 风格主题、 opt 风格选项、 p 画笔，绘制特定的 ce 控制元素.">DStyle::drawControl</a>  <a href="classDStyle.html#a495fb28d4d38d1cc4b49ba30cb0d70db">更多...</a><br /></td></tr>
+<tr class="separator:a495fb28d4d38d1cc4b49ba30cb0d70db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88d3e8859d7f5b326ece3ad4a02a0515"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDStyle.html#a88d3e8859d7f5b326ece3ad4a02a0515">pixelMetric</a> (QStyle::PixelMetric m, const QStyleOption *opt=nullptr, const QWidget *widget=nullptr) const override</td></tr>
+<tr class="memdesc:a88d3e8859d7f5b326ece3ad4a02a0515"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDStyle.html#afe31693ba8092cf475ec23c8785d91df" title="返回特定的 style 风格下， m 像素标准的值.">DStyle::pixelMetric</a>  <a href="classDStyle.html#a88d3e8859d7f5b326ece3ad4a02a0515">更多...</a><br /></td></tr>
+<tr class="separator:a88d3e8859d7f5b326ece3ad4a02a0515"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d274aca8713402935ba393c24f14a39"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDStyle.html#a0d274aca8713402935ba393c24f14a39">styleHint</a> (StyleHint sh, const QStyleOption *opt, const QWidget *w, QStyleHintReturn *shret) const override</td></tr>
+<tr class="memdesc:a0d274aca8713402935ba393c24f14a39"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDStyle.html#a0d274aca8713402935ba393c24f14a39" title="DStyle::styleHint">DStyle::styleHint</a>  <a href="classDStyle.html#a0d274aca8713402935ba393c24f14a39">更多...</a><br /></td></tr>
+<tr class="separator:a0d274aca8713402935ba393c24f14a39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0299226c4f4c0fb577f7e5a0acb43e80"><td class="memItemLeft" align="right" valign="top">QRect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDStyle.html#a0299226c4f4c0fb577f7e5a0acb43e80">subElementRect</a> (QStyle::SubElement r, const QStyleOption *opt, const QWidget *widget=nullptr) const override</td></tr>
+<tr class="memdesc:a0299226c4f4c0fb577f7e5a0acb43e80"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDStyle.html#a9757e986c1f8994d0c177bdf86818c01" title="通过给定的 style 风格, opt 风格选项和 widget 控件，返回 指定的 r 子元素区域矩形。">DStyle::subElementRect</a>  <a href="classDStyle.html#a0299226c4f4c0fb577f7e5a0acb43e80">更多...</a><br /></td></tr>
+<tr class="separator:a0299226c4f4c0fb577f7e5a0acb43e80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f9233dd63ca9dd0df1f0a7d0a3f7285"><td class="memItemLeft" align="right" valign="top">QSize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDStyle.html#a5f9233dd63ca9dd0df1f0a7d0a3f7285">sizeFromContents</a> (QStyle::ContentsType ct, const QStyleOption *opt, const QSize &amp;contentsSize, const QWidget *widget=nullptr) const override</td></tr>
+<tr class="memdesc:a5f9233dd63ca9dd0df1f0a7d0a3f7285"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDStyle.html#a4d7eee3989a491453969bccb2c7df1ad" title="返回子内容区域的 ct 的大小.">DStyle::sizeFromContents</a>  <a href="classDStyle.html#a5f9233dd63ca9dd0df1f0a7d0a3f7285">更多...</a><br /></td></tr>
+<tr class="separator:a5f9233dd63ca9dd0df1f0a7d0a3f7285"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef9f5e751ad7130e9b4956343c100a51"><td class="memItemLeft" align="right" valign="top">QIcon&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDStyle.html#aef9f5e751ad7130e9b4956343c100a51">standardIcon</a> (QStyle::StandardPixmap st, const QStyleOption *opt=nullptr, const QWidget *widget=nullptr) const override</td></tr>
+<tr class="memdesc:aef9f5e751ad7130e9b4956343c100a51"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDStyle.html#aabdcfb503a9e858839fd106d498aa98b" title="DStyle::standardIcon">DStyle::standardIcon</a>  <a href="classDStyle.html#aef9f5e751ad7130e9b4956343c100a51">更多...</a><br /></td></tr>
+<tr class="separator:aef9f5e751ad7130e9b4956343c100a51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb0631ec71cc182d88ba42cd7db7e31d"><td class="memItemLeft" align="right" valign="top">QPalette&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDStyle.html#afb0631ec71cc182d88ba42cd7db7e31d">standardPalette</a> () const override</td></tr>
+<tr class="memdesc:afb0631ec71cc182d88ba42cd7db7e31d"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取标准调色板  <a href="classDStyle.html#afb0631ec71cc182d88ba42cd7db7e31d">更多...</a><br /></td></tr>
+<tr class="separator:afb0631ec71cc182d88ba42cd7db7e31d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a562fe5983c7f928690e02fc7f37cf2fc"><td class="memItemLeft" align="right" valign="top"><a id="a562fe5983c7f928690e02fc7f37cf2fc"></a>
+QPixmap&#160;</td><td class="memItemRight" valign="bottom"><b>generatedIconPixmap</b> (QIcon::Mode iconMode, const QPixmap &amp;pixmap, const QStyleOption *opt) const override</td></tr>
+<tr class="separator:a562fe5983c7f928690e02fc7f37cf2fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f5c6a976f32634f5bd31d8e66c69cec"><td class="memItemLeft" align="right" valign="top">QBrush&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDStyle.html#a2f5c6a976f32634f5bd31d8e66c69cec">generatedBrush</a> (const QStyleOption *option, const QBrush &amp;base, QPalette::ColorGroup cg=QPalette::Normal, QPalette::ColorRole role=QPalette::NoRole) const</td></tr>
+<tr class="memdesc:a2f5c6a976f32634f5bd31d8e66c69cec"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取一个加工后的画刷  <a href="classDStyle.html#a2f5c6a976f32634f5bd31d8e66c69cec">更多...</a><br /></td></tr>
+<tr class="separator:a2f5c6a976f32634f5bd31d8e66c69cec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af668ae5890493be6fad3a48e6717f426"><td class="memItemLeft" align="right" valign="top">QBrush&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDStyle.html#af668ae5890493be6fad3a48e6717f426">generatedBrush</a> (StyleState state, const QStyleOption *option, const QBrush &amp;base, QPalette::ColorGroup cg=QPalette::Normal, QPalette::ColorRole role=QPalette::NoRole) const</td></tr>
+<tr class="memdesc:af668ae5890493be6fad3a48e6717f426"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取一个加工后的画刷  <a href="classDStyle.html#af668ae5890493be6fad3a48e6717f426">更多...</a><br /></td></tr>
+<tr class="separator:af668ae5890493be6fad3a48e6717f426"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af338d2e199a6c011c3e0be77b0021fb1"><td class="memItemLeft" align="right" valign="top">virtual QBrush&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDStyle.html#af338d2e199a6c011c3e0be77b0021fb1">generatedBrush</a> (StateFlags flags, const QBrush &amp;base, QPalette::ColorGroup cg=QPalette::Normal, QPalette::ColorRole role=QPalette::NoRole, const QStyleOption *option=nullptr) const</td></tr>
+<tr class="memdesc:af338d2e199a6c011c3e0be77b0021fb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取一个加工后的画刷  <a href="classDStyle.html#af338d2e199a6c011c3e0be77b0021fb1">更多...</a><br /></td></tr>
+<tr class="separator:af338d2e199a6c011c3e0be77b0021fb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28285c8bffdf1fe6fdba721f62a64091"><td class="memItemLeft" align="right" valign="top"><a id="a28285c8bffdf1fe6fdba721f62a64091"></a>
+QBrush&#160;</td><td class="memItemRight" valign="bottom"><b>generatedBrush</b> (const QStyleOption *option, const QBrush &amp;base, DPalette::ColorGroup cg=DPalette::Normal, DPalette::ColorType type=DPalette::ItemBackground) const</td></tr>
+<tr class="separator:a28285c8bffdf1fe6fdba721f62a64091"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa95bd14f945422e081db0024d8690092"><td class="memItemLeft" align="right" valign="top"><a id="aa95bd14f945422e081db0024d8690092"></a>
+QBrush&#160;</td><td class="memItemRight" valign="bottom"><b>generatedBrush</b> (StyleState state, const QStyleOption *option, const QBrush &amp;base, DPalette::ColorGroup cg=DPalette::Normal, DPalette::ColorType type=DPalette::ItemBackground) const</td></tr>
+<tr class="separator:aa95bd14f945422e081db0024d8690092"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d1a74dce08eb801f9ab51ecb7da6faf"><td class="memItemLeft" align="right" valign="top"><a id="a4d1a74dce08eb801f9ab51ecb7da6faf"></a>
+virtual QBrush&#160;</td><td class="memItemRight" valign="bottom"><b>generatedBrush</b> (StateFlags flags, const QBrush &amp;base, DPalette::ColorGroup cg=DPalette::Normal, DPalette::ColorType type=DPalette::ItemBackground, const QStyleOption *option=nullptr) const</td></tr>
+<tr class="separator:a4d1a74dce08eb801f9ab51ecb7da6faf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:ae77f31eba45fcc95023d27f0ca899778"><td class="memItemLeft" align="right" valign="top">static QColor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDStyle.html#ae77f31eba45fcc95023d27f0ca899778">adjustColor</a> (const QColor &amp;base, qint8 hueFloat=0, qint8 saturationFloat=0, qint8 lightnessFloat=0, qint8 redFloat=0, qint8 greenFloat=0, qint8 blueFloat=0, qint8 alphaFloat=0)</td></tr>
+<tr class="memdesc:ae77f31eba45fcc95023d27f0ca899778"><td class="mdescLeft">&#160;</td><td class="mdescRight">该函数用于调整给定颜色.  <a href="classDStyle.html#ae77f31eba45fcc95023d27f0ca899778">更多...</a><br /></td></tr>
+<tr class="separator:ae77f31eba45fcc95023d27f0ca899778"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8adaaeda71a3e23c0630cc0353353d2d"><td class="memItemLeft" align="right" valign="top">static QColor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDStyle.html#a8adaaeda71a3e23c0630cc0353353d2d">blendColor</a> (const QColor &amp;substrate, const QColor &amp;superstratum)</td></tr>
+<tr class="memdesc:a8adaaeda71a3e23c0630cc0353353d2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">该函数用于混合两种给定颜色.  <a href="classDStyle.html#a8adaaeda71a3e23c0630cc0353353d2d">更多...</a><br /></td></tr>
+<tr class="separator:a8adaaeda71a3e23c0630cc0353353d2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a027e03d29fe92f7acf6468b43f1c53fa"><td class="memItemLeft" align="right" valign="top">static QPair&lt; QIcon::Mode, QIcon::State &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDStyle.html#a027e03d29fe92f7acf6468b43f1c53fa">toIconModeState</a> (const QStyleOption *option)</td></tr>
+<tr class="memdesc:a027e03d29fe92f7acf6468b43f1c53fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据给定选项值返回图标的模式和状态.  <a href="classDStyle.html#a027e03d29fe92f7acf6468b43f1c53fa">更多...</a><br /></td></tr>
+<tr class="separator:a027e03d29fe92f7acf6468b43f1c53fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac60598ba9bb6a86270bcdfd8df5d9a1d"><td class="memItemLeft" align="right" valign="top"><a id="ac60598ba9bb6a86270bcdfd8df5d9a1d"></a>
+static DDciIcon::Mode&#160;</td><td class="memItemRight" valign="bottom"><b>toDciIconMode</b> (const QStyleOption *option)</td></tr>
+<tr class="separator:ac60598ba9bb6a86270bcdfd8df5d9a1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a192dd1f55b27e2fd4ac4f1f668baf86c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDStyle.html#a192dd1f55b27e2fd4ac4f1f668baf86c">setTooltipTextFormat</a> (Qt::TextFormat format)</td></tr>
+<tr class="memdesc:a192dd1f55b27e2fd4ac4f1f668baf86c"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置 tooltip 的文本格式.  <a href="classDStyle.html#a192dd1f55b27e2fd4ac4f1f668baf86c">更多...</a><br /></td></tr>
+<tr class="separator:a192dd1f55b27e2fd4ac4f1f668baf86c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1199dfe07678dc1badce0489c8fc88e3"><td class="memItemLeft" align="right" valign="top">static Qt::TextFormat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDStyle.html#a1199dfe07678dc1badce0489c8fc88e3">tooltipTextFormat</a> ()</td></tr>
+<tr class="memdesc:a1199dfe07678dc1badce0489c8fc88e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取 tooltip 文本格式.  <a href="classDStyle.html#a1199dfe07678dc1badce0489c8fc88e3">更多...</a><br /></td></tr>
+<tr class="separator:a1199dfe07678dc1badce0489c8fc88e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa61ec471be7e1fdde2e14b736dba9a15"><td class="memItemLeft" align="right" valign="top"><a id="aa61ec471be7e1fdde2e14b736dba9a15"></a>
+static DStyle::StyleState&#160;</td><td class="memItemRight" valign="bottom"><b>getState</b> (const QStyleOption *option)</td></tr>
+<tr class="separator:aa61ec471be7e1fdde2e14b736dba9a15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad707cfa871585633fdd799553f802b7c"><td class="memItemLeft" align="right" valign="top"><a id="ad707cfa871585633fdd799553f802b7c"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>setFocusRectVisible</b> (QWidget *widget, bool visible)</td></tr>
+<tr class="separator:ad707cfa871585633fdd799553f802b7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a31a9866890f378be7bd5deb0ea9e8b"><td class="memItemLeft" align="right" valign="top"><a id="a2a31a9866890f378be7bd5deb0ea9e8b"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>setFrameRadius</b> (QWidget *widget, int radius)</td></tr>
+<tr class="separator:a2a31a9866890f378be7bd5deb0ea9e8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0ae7edd794316e08c53772ceb58b072"><td class="memItemLeft" align="right" valign="top"><a id="ab0ae7edd794316e08c53772ceb58b072"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>setUncheckedItemIndicatorVisible</b> (QWidget *widget, bool visible)</td></tr>
+<tr class="separator:ab0ae7edd794316e08c53772ceb58b072"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4317fbe7ac4dec3d611b2f7416ad30f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDStyle.html#af4317fbe7ac4dec3d611b2f7416ad30f">drawPrimitive</a> (const QStyle *style, DStyle::PrimitiveElement pe, const QStyleOption *opt, QPainter *p, const QWidget *w=nullptr)</td></tr>
+<tr class="memdesc:af4317fbe7ac4dec3d611b2f7416ad30f"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用给定的 <em>style</em> 风格， <em>pe</em> 原始元素， <em>opt</em> 风格选项， <em>p</em> 画笔，以及 <em>w</em> 窗口， 绘制风格中的原始元素对象. 这是为便于使用而提供的一个重载成员函数.与上面的函数相比，它接受不同类型的参数.类似于 QStyle::drawPrimitive 函数，这里绘制的是 Dtk 控件中的基本原始元素，与 Qt 的接口不同，这个 接口是一个静态函数，通过传递一个 <em>style</em> 参数指定的风格实例，将其内部的绘制操作，都通过 style 中的 接口实现。<em>pe</em> 参数除了包括 QStyle::PrimitiveElement 中的原始元素之外，也包含了 DStyle::PrimitiveElement 枚举中的自定义类型。  <a href="classDStyle.html#af4317fbe7ac4dec3d611b2f7416ad30f">更多...</a><br /></td></tr>
+<tr class="separator:af4317fbe7ac4dec3d611b2f7416ad30f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf42b504462345989669610d5602ecd2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDStyle.html#adf42b504462345989669610d5602ecd2">drawControl</a> (const QStyle *style, DStyle::ControlElement ce, const QStyleOption *opt, QPainter *p, const QWidget *w=nullptr)</td></tr>
+<tr class="memdesc:adf42b504462345989669610d5602ecd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用指定的 <em>style</em> 风格主题、 <em>opt</em> 风格选项、 <em>p</em> 画笔，绘制特定的 <em>ce</em> 控制元素.  <a href="classDStyle.html#adf42b504462345989669610d5602ecd2">更多...</a><br /></td></tr>
+<tr class="separator:adf42b504462345989669610d5602ecd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe31693ba8092cf475ec23c8785d91df"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDStyle.html#afe31693ba8092cf475ec23c8785d91df">pixelMetric</a> (const QStyle *style, DStyle::PixelMetric m, const QStyleOption *opt=nullptr, const QWidget *widget=nullptr)</td></tr>
+<tr class="memdesc:afe31693ba8092cf475ec23c8785d91df"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回特定的 <em>style</em> 风格下， <em>m</em> 像素标准的值.  <a href="classDStyle.html#afe31693ba8092cf475ec23c8785d91df">更多...</a><br /></td></tr>
+<tr class="separator:afe31693ba8092cf475ec23c8785d91df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9757e986c1f8994d0c177bdf86818c01"><td class="memItemLeft" align="right" valign="top">static QRect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDStyle.html#a9757e986c1f8994d0c177bdf86818c01">subElementRect</a> (const QStyle *style, DStyle::SubElement r, const QStyleOption *opt, const QWidget *widget=nullptr)</td></tr>
+<tr class="memdesc:a9757e986c1f8994d0c177bdf86818c01"><td class="mdescLeft">&#160;</td><td class="mdescRight">通过给定的 <em>style</em> 风格, <em>opt</em> 风格选项和 <em>widget</em> 控件，返回 指定的 <em>r</em> 子元素区域矩形。  <a href="classDStyle.html#a9757e986c1f8994d0c177bdf86818c01">更多...</a><br /></td></tr>
+<tr class="separator:a9757e986c1f8994d0c177bdf86818c01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d7eee3989a491453969bccb2c7df1ad"><td class="memItemLeft" align="right" valign="top">static QSize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDStyle.html#a4d7eee3989a491453969bccb2c7df1ad">sizeFromContents</a> (const QStyle *style, DStyle::ContentsType ct, const QStyleOption *opt, const QSize &amp;contentsSize, const QWidget *widget=nullptr)</td></tr>
+<tr class="memdesc:a4d7eee3989a491453969bccb2c7df1ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回子内容区域的 <em>ct</em> 的大小.  <a href="classDStyle.html#a4d7eee3989a491453969bccb2c7df1ad">更多...</a><br /></td></tr>
+<tr class="separator:a4d7eee3989a491453969bccb2c7df1ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabdcfb503a9e858839fd106d498aa98b"><td class="memItemLeft" align="right" valign="top">static QIcon&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDStyle.html#aabdcfb503a9e858839fd106d498aa98b">standardIcon</a> (const QStyle *style, StandardPixmap st, const QStyleOption *opt=nullptr, const QWidget *widget=0)</td></tr>
+<tr class="memdesc:aabdcfb503a9e858839fd106d498aa98b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDStyle.html#aabdcfb503a9e858839fd106d498aa98b" title="DStyle::standardIcon">DStyle::standardIcon</a>  <a href="classDStyle.html#aabdcfb503a9e858839fd106d498aa98b">更多...</a><br /></td></tr>
+<tr class="separator:aabdcfb503a9e858839fd106d498aa98b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="ae77f31eba45fcc95023d27f0ca899778"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae77f31eba45fcc95023d27f0ca899778">&#9670;&nbsp;</a></span>adjustColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QColor DStyle::adjustColor </td>
+          <td>(</td>
+          <td class="paramtype">const QColor &amp;&#160;</td>
+          <td class="paramname"><em>base</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">qint8&#160;</td>
+          <td class="paramname"><em>hueFloat</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">qint8&#160;</td>
+          <td class="paramname"><em>saturationFloat</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">qint8&#160;</td>
+          <td class="paramname"><em>lightnessFloat</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">qint8&#160;</td>
+          <td class="paramname"><em>redFloat</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">qint8&#160;</td>
+          <td class="paramname"><em>greenFloat</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">qint8&#160;</td>
+          <td class="paramname"><em>blueFloat</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">qint8&#160;</td>
+          <td class="paramname"><em>alphaFloat</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>该函数用于调整给定颜色. </p>
+<p>此函数用于调整给定颜色 <em>base</em> 的色彩混合度，通过参数 <em>hueFloat</em> , <em>saturationFloat</em> <em>lightnessFloat</em> , <em>redFloat</em> , <em>greenFloat</em> , <em>blueFloat</em>, 以及 <em>alphaFloat</em> 来控制。其中 <em>hueFloat</em> 表示色调浮动值， <em>saturationFloat</em> 表示饱和度浮动值， <em>lightnessFloat</em> 表示 亮度浮动值， <em>redFloat</em> 表示红色色系的浮动值， <em>greenFloat</em> 表示绿色色系的浮动值， <em>blueFloat</em> 表示蓝色 色系的浮动值， <em>alphaFloat</em> 表示透明度的浮动值。</p>
+<dl class="section see"><dt>参见</dt><dd>Dtk::Gui::DGuiApplicationHelper::adjustColor() </dd></dl>
+
+</div>
+</div>
+<a id="a8adaaeda71a3e23c0630cc0353353d2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8adaaeda71a3e23c0630cc0353353d2d">&#9670;&nbsp;</a></span>blendColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QColor DStyle::blendColor </td>
+          <td>(</td>
+          <td class="paramtype">const QColor &amp;&#160;</td>
+          <td class="paramname"><em>substrate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QColor &amp;&#160;</td>
+          <td class="paramname"><em>superstratum</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>该函数用于混合两种给定颜色. </p>
+<p>此函数用于混合给定的 <em>substrate</em> 以及 <em>superstratum</em> 颜色值，并返回 </p><dl class="section return"><dt>返回</dt><dd>一个 以此两种颜色为基础的全新颜色。其中， <em>substrate</em> 表示底色, <em>superstratum</em> 表示上层 颜色。</dd></dl>
+<dl class="section see"><dt>参见</dt><dd>Dtk::Gui::DGuiApplicationHelper::blendColor() </dd></dl>
+
+</div>
+</div>
+<a id="adf42b504462345989669610d5602ecd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf42b504462345989669610d5602ecd2">&#9670;&nbsp;</a></span>drawControl() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DStyle::drawControl </td>
+          <td>(</td>
+          <td class="paramtype">const QStyle *&#160;</td>
+          <td class="paramname"><em>style</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DStyle::ControlElement&#160;</td>
+          <td class="paramname"><em>ce</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QStyleOption *&#160;</td>
+          <td class="paramname"><em>opt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QPainter *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QWidget *&#160;</td>
+          <td class="paramname"><em>w</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>使用指定的 <em>style</em> 风格主题、 <em>opt</em> 风格选项、 <em>p</em> 画笔，绘制特定的 <em>ce</em> 控制元素. </p>
+<p>控制元素 <em>ce</em> 包括 Qt 的控件和 Dtk 自研控件两种，特定的控制元素，需要将 <em>opt</em> 转换成特定的风格选项。 通常情况下，使用 qstyleoption_cast 进行转换。</p>
+<p><em>w</em> 为需要绘制的控件实例，某些情况下可以传空.</p>
+<dl class="section see"><dt>参见</dt><dd>QStyle::drawControl() DStyle::ControlElement </dd></dl>
+
+</div>
+</div>
+<a id="a495fb28d4d38d1cc4b49ba30cb0d70db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a495fb28d4d38d1cc4b49ba30cb0d70db">&#9670;&nbsp;</a></span>drawControl() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DStyle::drawControl </td>
+          <td>(</td>
+          <td class="paramtype">QStyle::ControlElement&#160;</td>
+          <td class="paramname"><em>ce</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QStyleOption *&#160;</td>
+          <td class="paramname"><em>opt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QPainter *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QWidget *&#160;</td>
+          <td class="paramname"><em>w</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classDStyle.html#adf42b504462345989669610d5602ecd2" title="使用指定的 style 风格主题、 opt 风格选项、 p 画笔，绘制特定的 ce 控制元素.">DStyle::drawControl</a> </p>
+<dl class="section see"><dt>参见</dt><dd>QStyle::drawControl() </dd></dl>
+
+</div>
+</div>
+<a id="af4317fbe7ac4dec3d611b2f7416ad30f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4317fbe7ac4dec3d611b2f7416ad30f">&#9670;&nbsp;</a></span>drawPrimitive() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DStyle::drawPrimitive </td>
+          <td>(</td>
+          <td class="paramtype">const QStyle *&#160;</td>
+          <td class="paramname"><em>style</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DStyle::PrimitiveElement&#160;</td>
+          <td class="paramname"><em>pe</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QStyleOption *&#160;</td>
+          <td class="paramname"><em>opt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QPainter *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QWidget *&#160;</td>
+          <td class="paramname"><em>w</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>使用给定的 <em>style</em> 风格， <em>pe</em> 原始元素， <em>opt</em> 风格选项， <em>p</em> 画笔，以及 <em>w</em> 窗口， 绘制风格中的原始元素对象. 这是为便于使用而提供的一个重载成员函数.与上面的函数相比，它接受不同类型的参数.类似于 QStyle::drawPrimitive 函数，这里绘制的是 Dtk 控件中的基本原始元素，与 Qt 的接口不同，这个 接口是一个静态函数，通过传递一个 <em>style</em> 参数指定的风格实例，将其内部的绘制操作，都通过 style 中的 接口实现。<em>pe</em> 参数除了包括 QStyle::PrimitiveElement 中的原始元素之外，也包含了 DStyle::PrimitiveElement 枚举中的自定义类型。 </p>
+<p><em>opt</em> 参数指定绘制时的各种状态值，不同控件经过不同操作，其状态也会不一样；当 <em>pe</em> 为 PrimitiveElement::PE_IconButtonPanel 时 表示需要绘制一个 IconButton 的面板，因此可以通过传递一个 <a class="el" href="classDStyleOptionButton.html">DStyleOptionButton</a> 的 <em>opt</em> 实例，并在该实例中指定绘制状态，如 Button 的 features ， state 等等信息。 <em>w</em> 参数在绘制某些原始元素时，可以传空，如 PE_ItemBackground 。但大多数情况下，需要指定 <em>w</em> 为被绘制 的控件实例。</p>
+<dl class="section see"><dt>参见</dt><dd>QStyle::drawPrimitive() </dd></dl>
+
+</div>
+</div>
+<a id="aa8e5cf6767aa7ceb9b7c5183bf84fdde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8e5cf6767aa7ceb9b7c5183bf84fdde">&#9670;&nbsp;</a></span>drawPrimitive() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DStyle::drawPrimitive </td>
+          <td>(</td>
+          <td class="paramtype">QStyle::PrimitiveElement&#160;</td>
+          <td class="paramname"><em>pe</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QStyleOption *&#160;</td>
+          <td class="paramname"><em>opt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QPainter *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QWidget *&#160;</td>
+          <td class="paramname"><em>w</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classDStyle.html#af4317fbe7ac4dec3d611b2f7416ad30f" title="使用给定的 style 风格， pe 原始元素， opt 风格选项， p 画笔，以及 w 窗口， 绘制风格中的原始元素对象. 这是为便于使用而提供的一个重载成员函数....">DStyle::drawPrimitive</a> </p>
+<dl class="section see"><dt>参见</dt><dd>QStyle::drawPrimitive() </dd></dl>
+
+</div>
+</div>
+<a id="a2f5c6a976f32634f5bd31d8e66c69cec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f5c6a976f32634f5bd31d8e66c69cec">&#9670;&nbsp;</a></span>generatedBrush() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QBrush DStyle::generatedBrush </td>
+          <td>(</td>
+          <td class="paramtype">const QStyleOption *&#160;</td>
+          <td class="paramname"><em>option</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QBrush &amp;&#160;</td>
+          <td class="paramname"><em>base</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QPalette::ColorGroup&#160;</td>
+          <td class="paramname"><em>cg</em> = <code>QPalette::Normal</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QPalette::ColorRole&#160;</td>
+          <td class="paramname"><em>role</em> = <code>QPalette::NoRole</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取一个加工后的画刷 </p>
+<p><em>base</em> 画刷. <em>option</em> 原始风格选项. <em>cg</em> 调色版中的色组. <em>role</em> 调色板中的颜色角色值</p>
+<dl class="section see"><dt>参见</dt><dd>QStyleOption </dd>
+<dd>
+QPalette::ColorGroup QPalette::ColorRole </dd></dl>
+<dl class="section return"><dt>返回</dt><dd>加工后的画刷 </dd></dl>
+
+</div>
+</div>
+<a id="af338d2e199a6c011c3e0be77b0021fb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af338d2e199a6c011c3e0be77b0021fb1">&#9670;&nbsp;</a></span>generatedBrush() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QBrush DStyle::generatedBrush </td>
+          <td>(</td>
+          <td class="paramtype">StateFlags&#160;</td>
+          <td class="paramname"><em>flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QBrush &amp;&#160;</td>
+          <td class="paramname"><em>base</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QPalette::ColorGroup&#160;</td>
+          <td class="paramname"><em>cg</em> = <code>QPalette::Normal</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QPalette::ColorRole&#160;</td>
+          <td class="paramname"><em>role</em> = <code>QPalette::NoRole</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QStyleOption *&#160;</td>
+          <td class="paramname"><em>option</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取一个加工后的画刷 </p>
+<p><em>base</em> 画刷 <em>flags</em> DStyle中的风格状态. <em>cg</em> 调色板中的色组. <em>role</em> 调色板中颜色角色值. <em>option</em> 风格选项.</p>
+<dl class="section see"><dt>参见</dt><dd>DStyle::StateFlags </dd>
+<dd>
+QPalette::ColorRole QPalette::ColorGroup QStyleOption </dd></dl>
+<dl class="section return"><dt>返回</dt><dd>加工后的画刷 </dd></dl>
+
+</div>
+</div>
+<a id="af668ae5890493be6fad3a48e6717f426"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af668ae5890493be6fad3a48e6717f426">&#9670;&nbsp;</a></span>generatedBrush() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QBrush DStyle::generatedBrush </td>
+          <td>(</td>
+          <td class="paramtype">DStyle::StyleState&#160;</td>
+          <td class="paramname"><em>state</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QStyleOption *&#160;</td>
+          <td class="paramname"><em>option</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QBrush &amp;&#160;</td>
+          <td class="paramname"><em>base</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QPalette::ColorGroup&#160;</td>
+          <td class="paramname"><em>cg</em> = <code>QPalette::Normal</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QPalette::ColorRole&#160;</td>
+          <td class="paramname"><em>role</em> = <code>QPalette::NoRole</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取一个加工后的画刷 </p>
+<p><em>base</em> 画刷. <em>state</em> DStyle中的风格状态. <em>option</em> 风格选项. <em>cg</em> 调色板中的色组. <em>role</em> 调色板中颜色角色值.</p>
+<dl class="section see"><dt>参见</dt><dd>DStyle::StyleState </dd>
+<dd>
+QStyleOption </dd>
+<dd>
+QPalette::ColorGroup QPalette::ColorRole </dd></dl>
+<dl class="section return"><dt>返回</dt><dd>加工后的画刷 </dd></dl>
+
+</div>
+</div>
+<a id="afe31693ba8092cf475ec23c8785d91df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe31693ba8092cf475ec23c8785d91df">&#9670;&nbsp;</a></span>pixelMetric() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DStyle::pixelMetric </td>
+          <td>(</td>
+          <td class="paramtype">const QStyle *&#160;</td>
+          <td class="paramname"><em>style</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DStyle::PixelMetric&#160;</td>
+          <td class="paramname"><em>m</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QStyleOption *&#160;</td>
+          <td class="paramname"><em>opt</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QWidget *&#160;</td>
+          <td class="paramname"><em>widget</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>返回特定的 <em>style</em> 风格下， <em>m</em> 像素标准的值. </p>
+<p>像素标准 <em>m</em> 的值可以时 QStyle::PixelMetric 也可以是 DStyle::PixelMetric 。 某些<em>m</em> 值下， <em>opt</em> 参数和 <em>widget</em> 参数可以为空。</p>
+<dl class="section return"><dt>返回</dt><dd>返回 <em>m</em> 对应的像素标准。</dd></dl>
+<dl class="section see"><dt>参见</dt><dd>QStyle::pixelMetric() </dd></dl>
+
+</div>
+</div>
+<a id="a88d3e8859d7f5b326ece3ad4a02a0515"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88d3e8859d7f5b326ece3ad4a02a0515">&#9670;&nbsp;</a></span>pixelMetric() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DStyle::pixelMetric </td>
+          <td>(</td>
+          <td class="paramtype">QStyle::PixelMetric&#160;</td>
+          <td class="paramname"><em>m</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QStyleOption *&#160;</td>
+          <td class="paramname"><em>opt</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QWidget *&#160;</td>
+          <td class="paramname"><em>widget</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classDStyle.html#afe31693ba8092cf475ec23c8785d91df" title="返回特定的 style 风格下， m 像素标准的值.">DStyle::pixelMetric</a> </p>
+<dl class="section see"><dt>参见</dt><dd>QStyle::pixelMetric() </dd></dl>
+
+</div>
+</div>
+<a id="a192dd1f55b27e2fd4ac4f1f668baf86c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a192dd1f55b27e2fd4ac4f1f668baf86c">&#9670;&nbsp;</a></span>setTooltipTextFormat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DStyle::setTooltipTextFormat </td>
+          <td>(</td>
+          <td class="paramtype">Qt::TextFormat&#160;</td>
+          <td class="paramname"><em>format</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置 tooltip 的文本格式. </p>
+<p>通过给定 <em>format</em> , 将 <a class="el" href="classDStyle.html">DStyle</a> 内部中的 ToolTip 文本格式设置为 <em>format</em> 指定的样式。</p>
+<dl class="section see"><dt>参见</dt><dd>Qt::TextFormat </dd></dl>
+
+</div>
+</div>
+<a id="a4d7eee3989a491453969bccb2c7df1ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d7eee3989a491453969bccb2c7df1ad">&#9670;&nbsp;</a></span>sizeFromContents() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QSize DStyle::sizeFromContents </td>
+          <td>(</td>
+          <td class="paramtype">const QStyle *&#160;</td>
+          <td class="paramname"><em>style</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DStyle::ContentsType&#160;</td>
+          <td class="paramname"><em>ct</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QStyleOption *&#160;</td>
+          <td class="paramname"><em>opt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QSize &amp;&#160;</td>
+          <td class="paramname"><em>contentsSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QWidget *&#160;</td>
+          <td class="paramname"><em>widget</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>返回子内容区域的 <em>ct</em> 的大小. </p>
+<p>参数 <em>style</em> 为指定的风格类型， <em>ct</em> 为子元素内容类型， <em>opt</em> 为风格选项，不同的控件风格选项不同。 <em>contentsSize</em> 提供的原始内容大小 <em>widget</em> 参数 为控件实例。</p>
+<dl class="section see"><dt>参见</dt><dd>QStyle::sizeFromContents() </dd></dl>
+
+</div>
+</div>
+<a id="a5f9233dd63ca9dd0df1f0a7d0a3f7285"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f9233dd63ca9dd0df1f0a7d0a3f7285">&#9670;&nbsp;</a></span>sizeFromContents() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QSize DStyle::sizeFromContents </td>
+          <td>(</td>
+          <td class="paramtype">QStyle::ContentsType&#160;</td>
+          <td class="paramname"><em>ct</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QStyleOption *&#160;</td>
+          <td class="paramname"><em>opt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QSize &amp;&#160;</td>
+          <td class="paramname"><em>contentsSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QWidget *&#160;</td>
+          <td class="paramname"><em>widget</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classDStyle.html#a4d7eee3989a491453969bccb2c7df1ad" title="返回子内容区域的 ct 的大小.">DStyle::sizeFromContents</a> </p>
+<dl class="section see"><dt>参见</dt><dd>QStyle::sizeFromContents() </dd></dl>
+
+</div>
+</div>
+<a id="aabdcfb503a9e858839fd106d498aa98b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabdcfb503a9e858839fd106d498aa98b">&#9670;&nbsp;</a></span>standardIcon() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QIcon DStyle::standardIcon </td>
+          <td>(</td>
+          <td class="paramtype">const QStyle *&#160;</td>
+          <td class="paramname"><em>style</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DStyle::StandardPixmap&#160;</td>
+          <td class="paramname"><em>st</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QStyleOption *&#160;</td>
+          <td class="paramname"><em>opt</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QWidget *&#160;</td>
+          <td class="paramname"><em>widget</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classDStyle.html#aabdcfb503a9e858839fd106d498aa98b" title="DStyle::standardIcon">DStyle::standardIcon</a> </p>
+<p><em>style</em> 风格实例 <em>st</em> 基本 Pixmap 对象枚举 <em>opt</em> 风格选项 <em>widget</em> 控件实例</p>
+<dl class="section see"><dt>参见</dt><dd>QStyle::standardIcon() </dd></dl>
+
+</div>
+</div>
+<a id="aef9f5e751ad7130e9b4956343c100a51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef9f5e751ad7130e9b4956343c100a51">&#9670;&nbsp;</a></span>standardIcon() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QIcon DStyle::standardIcon </td>
+          <td>(</td>
+          <td class="paramtype">QStyle::StandardPixmap&#160;</td>
+          <td class="paramname"><em>st</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QStyleOption *&#160;</td>
+          <td class="paramname"><em>opt</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QWidget *&#160;</td>
+          <td class="paramname"><em>widget</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classDStyle.html#aabdcfb503a9e858839fd106d498aa98b" title="DStyle::standardIcon">DStyle::standardIcon</a> </p>
+<dl class="section see"><dt>参见</dt><dd>QStyle::standardIcon() </dd></dl>
+
+</div>
+</div>
+<a id="afb0631ec71cc182d88ba42cd7db7e31d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb0631ec71cc182d88ba42cd7db7e31d">&#9670;&nbsp;</a></span>standardPalette()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QPalette DStyle::standardPalette </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取标准调色板 </p>
+<dl class="section return"><dt>返回</dt><dd>调色板 </dd></dl>
+
+</div>
+</div>
+<a id="a0d274aca8713402935ba393c24f14a39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d274aca8713402935ba393c24f14a39">&#9670;&nbsp;</a></span>styleHint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DStyle::styleHint </td>
+          <td>(</td>
+          <td class="paramtype">StyleHint&#160;</td>
+          <td class="paramname"><em>sh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QStyleOption *&#160;</td>
+          <td class="paramname"><em>opt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QWidget *&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QStyleHintReturn *&#160;</td>
+          <td class="paramname"><em>shret</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classDStyle.html#a0d274aca8713402935ba393c24f14a39" title="DStyle::styleHint">DStyle::styleHint</a> </p>
+<p><em>sh</em> 风格策略枚举 <em>opt</em> 风格选项 <em>w</em> 控件实例 <em>shret</em> 传出参数.</p>
+<dl class="section see"><dt>参见</dt><dd>QStyle::styleHint() </dd></dl>
+
+</div>
+</div>
+<a id="a9757e986c1f8994d0c177bdf86818c01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9757e986c1f8994d0c177bdf86818c01">&#9670;&nbsp;</a></span>subElementRect() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QRect DStyle::subElementRect </td>
+          <td>(</td>
+          <td class="paramtype">const QStyle *&#160;</td>
+          <td class="paramname"><em>style</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DStyle::SubElement&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QStyleOption *&#160;</td>
+          <td class="paramname"><em>opt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QWidget *&#160;</td>
+          <td class="paramname"><em>widget</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>通过给定的 <em>style</em> 风格, <em>opt</em> 风格选项和 <em>widget</em> 控件，返回 指定的 <em>r</em> 子元素区域矩形。 </p>
+<dl class="section return"><dt>返回</dt><dd>返回子元素 <em>r</em> 对应的屏幕坐标区域矩形。</dd></dl>
+<dl class="section see"><dt>参见</dt><dd>QStyle::subElementRect() </dd></dl>
+
+</div>
+</div>
+<a id="a0299226c4f4c0fb577f7e5a0acb43e80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0299226c4f4c0fb577f7e5a0acb43e80">&#9670;&nbsp;</a></span>subElementRect() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QRect DStyle::subElementRect </td>
+          <td>(</td>
+          <td class="paramtype">QStyle::SubElement&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QStyleOption *&#160;</td>
+          <td class="paramname"><em>opt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QWidget *&#160;</td>
+          <td class="paramname"><em>widget</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classDStyle.html#a9757e986c1f8994d0c177bdf86818c01" title="通过给定的 style 风格, opt 风格选项和 widget 控件，返回 指定的 r 子元素区域矩形。">DStyle::subElementRect</a> </p>
+<dl class="section see"><dt>参见</dt><dd>QStyle::subElementRect() </dd></dl>
+
+</div>
+</div>
+<a id="a027e03d29fe92f7acf6468b43f1c53fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a027e03d29fe92f7acf6468b43f1c53fa">&#9670;&nbsp;</a></span>toIconModeState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QPair&lt; QIcon::Mode, QIcon::State &gt; DStyle::toIconModeState </td>
+          <td>(</td>
+          <td class="paramtype">const QStyleOption *&#160;</td>
+          <td class="paramname"><em>option</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>根据给定选项值返回图标的模式和状态. </p>
+<p>通过参数 <em>option</em> 中的 QIcon::State 属性和 QIcon::Mode 属性， 返回 </p><dl class="section return"><dt>返回</dt><dd>当前图标模式对应的状态值。 </dd></dl>
+
+</div>
+</div>
+<a id="a1199dfe07678dc1badce0489c8fc88e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1199dfe07678dc1badce0489c8fc88e3">&#9670;&nbsp;</a></span>tooltipTextFormat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Qt::TextFormat DStyle::tooltipTextFormat </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取 tooltip 文本格式. </p>
+<dl class="section return"><dt>返回</dt><dd>返回 <a class="el" href="classDStyle.html">DStyle</a> 内部使用的 ToolTip 文本格式。</dd></dl>
+<dl class="section see"><dt>参见</dt><dd>Qt::TextFormat </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dtkwidget/include/dtkwidget/widgets/<a class="el" href="dstyle_8h_source.html">dstyle.h</a></li>
+<li>dtkwidget/src/widgets/dstyle.cpp</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classDStyle.html">DStyle</a></li>
+    <li class="footer">文档生成时间:doxtime</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

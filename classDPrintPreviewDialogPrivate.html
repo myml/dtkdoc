@@ -1,0 +1,728 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: DPrintPreviewDialogPrivate类 参考</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="change address" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classDPrintPreviewDialogPrivate.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="classDPrintPreviewDialogPrivate-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">DPrintPreviewDialogPrivate类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 DPrintPreviewDialogPrivate 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classDPrintPreviewDialogPrivate.png" usemap="#DPrintPreviewDialogPrivate_map" alt=""/>
+  <map id="DPrintPreviewDialogPrivate_map" name="DPrintPreviewDialogPrivate_map">
+<area href="classDDialogPrivate.html" alt="DDialogPrivate" shape="rect" coords="0,112,256,136"/>
+<area href="classDAbstractDialogPrivate.html" alt="DAbstractDialogPrivate" shape="rect" coords="0,56,256,80"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a2819f03a55a1518675a5d6fae0b7c2a5"><td class="memItemLeft" align="right" valign="top"><a id="a2819f03a55a1518675a5d6fae0b7c2a5"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>TipsNum</b> { <b>NullTip</b>
+, <b>MaxTip</b>
+, <b>CommaTip</b>
+, <b>FormatTip</b>
+ }</td></tr>
+<tr class="separator:a2819f03a55a1518675a5d6fae0b7c2a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24749a9c37fe28c08aa92f112ef97597"><td class="memItemLeft" align="right" valign="top"><a id="a24749a9c37fe28c08aa92f112ef97597"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>WaterMarkType</b> { <b>Type_None</b>
+, <b>Type_Text</b>
+, <b>Type_Image</b>
+ }</td></tr>
+<tr class="separator:a24749a9c37fe28c08aa92f112ef97597"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:aba533774289cbfc8c09552787b21ac84"><td class="memItemLeft" align="right" valign="top"><a id="aba533774289cbfc8c09552787b21ac84"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DPrintPreviewDialogPrivate</b> (<a class="el" href="classDPrintPreviewDialog.html">DPrintPreviewDialog</a> *qq)</td></tr>
+<tr class="separator:aba533774289cbfc8c09552787b21ac84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abeaf437887597f5fe37101ea32db2131"><td class="memItemLeft" align="right" valign="top"><a id="abeaf437887597f5fe37101ea32db2131"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>startup</b> ()</td></tr>
+<tr class="separator:abeaf437887597f5fe37101ea32db2131"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d3b08b55b9e9faa2999a7e4f09f2f27"><td class="memItemLeft" align="right" valign="top"><a id="a2d3b08b55b9e9faa2999a7e4f09f2f27"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>initui</b> ()</td></tr>
+<tr class="separator:a2d3b08b55b9e9faa2999a7e4f09f2f27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6e6544a4c9a34c86de0f5c346d1ea68"><td class="memItemLeft" align="right" valign="top"><a id="ac6e6544a4c9a34c86de0f5c346d1ea68"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>initleft</b> (QVBoxLayout *layout)</td></tr>
+<tr class="separator:ac6e6544a4c9a34c86de0f5c346d1ea68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5793ab0aeda08899c55d2e6ebf9a30b"><td class="memItemLeft" align="right" valign="top"><a id="ae5793ab0aeda08899c55d2e6ebf9a30b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>initright</b> (QVBoxLayout *layout)</td></tr>
+<tr class="separator:ae5793ab0aeda08899c55d2e6ebf9a30b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad77b9092097ce68727ad01992d0023e9"><td class="memItemLeft" align="right" valign="top"><a id="ad77b9092097ce68727ad01992d0023e9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>initbasicui</b> ()</td></tr>
+<tr class="separator:ad77b9092097ce68727ad01992d0023e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab55a4cc04e0732955c87bed3d6dc72cc"><td class="memItemLeft" align="right" valign="top"><a id="ab55a4cc04e0732955c87bed3d6dc72cc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>initadvanceui</b> ()</td></tr>
+<tr class="separator:ab55a4cc04e0732955c87bed3d6dc72cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1ba97431fd07e203315e6cd6eb0dc81"><td class="memItemLeft" align="right" valign="top"><a id="ae1ba97431fd07e203315e6cd6eb0dc81"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>initWaterMarkui</b> ()</td></tr>
+<tr class="separator:ae1ba97431fd07e203315e6cd6eb0dc81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b3dd8b06f40cc3aed37893dbd4a1270"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewDialogPrivate.html#a7b3dd8b06f40cc3aed37893dbd4a1270">initWaterSettings</a> ()</td></tr>
+<tr class="separator:a7b3dd8b06f40cc3aed37893dbd4a1270"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1e5020a56325056d47f7534cb2f6083"><td class="memItemLeft" align="right" valign="top"><a id="af1e5020a56325056d47f7534cb2f6083"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>marginsLayout</b> (bool adapted)</td></tr>
+<tr class="separator:af1e5020a56325056d47f7534cb2f6083"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0916d6aa3502ce58ec97d62a5c6c546c"><td class="memItemLeft" align="right" valign="top"><a id="a0916d6aa3502ce58ec97d62a5c6c546c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>initdata</b> ()</td></tr>
+<tr class="separator:a0916d6aa3502ce58ec97d62a5c6c546c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b4d4f200ec6a898acd34b54a7eb1149"><td class="memItemLeft" align="right" valign="top"><a id="a1b4d4f200ec6a898acd34b54a7eb1149"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>initconnections</b> ()</td></tr>
+<tr class="separator:a1b4d4f200ec6a898acd34b54a7eb1149"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add5c141dc339f7e38a07f3ed27dfd094"><td class="memItemLeft" align="right" valign="top"><a id="add5c141dc339f7e38a07f3ed27dfd094"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setfrmaeback</b> (<a class="el" href="classDFrame.html">DFrame</a> *frame)</td></tr>
+<tr class="separator:add5c141dc339f7e38a07f3ed27dfd094"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec455513bef2b0a6ee86da9106de5400"><td class="memItemLeft" align="right" valign="top"><a id="aec455513bef2b0a6ee86da9106de5400"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>showadvancesetting</b> ()</td></tr>
+<tr class="separator:aec455513bef2b0a6ee86da9106de5400"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a148f5d296f1d6bf68942aad1100bc6ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewDialogPrivate.html#a148f5d296f1d6bf68942aad1100bc6ec">setupPrinter</a> ()</td></tr>
+<tr class="separator:a148f5d296f1d6bf68942aad1100bc6ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac416e0997a6b873749210b9b203dbe24"><td class="memItemLeft" align="right" valign="top"><a id="ac416e0997a6b873749210b9b203dbe24"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setScaling</b> (int index)</td></tr>
+<tr class="separator:ac416e0997a6b873749210b9b203dbe24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac29848b7d42432c6a44619e5b0d8e8ff"><td class="memItemLeft" align="right" valign="top"><a id="ac29848b7d42432c6a44619e5b0d8e8ff"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>judgeSupportedAttributes</b> (const QString &amp;lastPaperSize)</td></tr>
+<tr class="separator:ac29848b7d42432c6a44619e5b0d8e8ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46e8004f25ff988ee3b02c8aa2470588"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewDialogPrivate.html#a46e8004f25ff988ee3b02c8aa2470588">setMininumMargins</a> ()</td></tr>
+<tr class="separator:a46e8004f25ff988ee3b02c8aa2470588"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55a5dd740280c2d0a75673f5ed4c8324"><td class="memItemLeft" align="right" valign="top"><a id="a55a5dd740280c2d0a75673f5ed4c8324"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewDialogPrivate.html#a55a5dd740280c2d0a75673f5ed4c8324">marginsUpdate</a> (bool isPrinterChanged)</td></tr>
+<tr class="memdesc:a55a5dd740280c2d0a75673f5ed4c8324"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDPrintPreviewDialogPrivate.html#a55a5dd740280c2d0a75673f5ed4c8324" title="DPrintPreviewDialogPrivate::marginsUpdate 切换打印机和纸张切换对于边距的刷新和预览页面的刷新 isPrinterchanged 判断是打印机切换或者是纸张切换">DPrintPreviewDialogPrivate::marginsUpdate</a> 切换打印机和纸张切换对于边距的刷新和预览页面的刷新 <em>isPrinterchanged</em> 判断是打印机切换或者是纸张切换 <br /></td></tr>
+<tr class="separator:a55a5dd740280c2d0a75673f5ed4c8324"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d8f120e99a96965197ba7c340896f2d"><td class="memItemLeft" align="right" valign="top"><a id="a1d8f120e99a96965197ba7c340896f2d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewDialogPrivate.html#a1d8f120e99a96965197ba7c340896f2d">adjustMargins</a> ()</td></tr>
+<tr class="memdesc:a1d8f120e99a96965197ba7c340896f2d"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDPrintPreviewDialogPrivate.html#a1d8f120e99a96965197ba7c340896f2d" title="DPrintPreviewDialogPrivate::adjustMargins 根据输入的边距数据调整边距">DPrintPreviewDialogPrivate::adjustMargins</a> 根据输入的边距数据调整边距 <br /></td></tr>
+<tr class="separator:a1d8f120e99a96965197ba7c340896f2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b87dae4446a0d9e38efa17a56967ab8"><td class="memItemLeft" align="right" valign="top"><a id="a0b87dae4446a0d9e38efa17a56967ab8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>themeTypeChange</b> (<a class="el" href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92">DGuiApplicationHelper::ColorType</a> themeType)</td></tr>
+<tr class="separator:a0b87dae4446a0d9e38efa17a56967ab8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78e16dbcb6fb59c9303da31f57a799ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewDialogPrivate.html#a78e16dbcb6fb59c9303da31f57a799ab">setPageIsLegal</a> (bool islegal)</td></tr>
+<tr class="separator:a78e16dbcb6fb59c9303da31f57a799ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1f535960e05d93d493b5e71517e53e8"><td class="memItemLeft" align="right" valign="top"><a id="ac1f535960e05d93d493b5e71517e53e8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>tipSelected</b> (TipsNum tipNum)</td></tr>
+<tr class="separator:ac1f535960e05d93d493b5e71517e53e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaab21a8cc52433189b12dcd3f697e750"><td class="memItemLeft" align="right" valign="top"><a id="aaab21a8cc52433189b12dcd3f697e750"></a>
+QVector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>checkDuplication</b> (QVector&lt; int &gt; data)</td></tr>
+<tr class="separator:aaab21a8cc52433189b12dcd3f697e750"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab095c43a69571ce4041e935397d4eb2a"><td class="memItemLeft" align="right" valign="top"><a id="ab095c43a69571ce4041e935397d4eb2a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>updateSubControlSettings</b> (DPrintPreviewSettingInfo::SettingType setting)</td></tr>
+<tr class="separator:ab095c43a69571ce4041e935397d4eb2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5d542382438f27f1a822e7cdb6386f0"><td class="memItemLeft" align="right" valign="top"><a id="af5d542382438f27f1a822e7cdb6386f0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>updateAllControlSettings</b> ()</td></tr>
+<tr class="separator:af5d542382438f27f1a822e7cdb6386f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf8b3976ce00f0b10359163d0eb4109f"><td class="memItemLeft" align="right" valign="top"><a id="adf8b3976ce00f0b10359163d0eb4109f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>updateAllContentSettings_impl</b> ()</td></tr>
+<tr class="separator:adf8b3976ce00f0b10359163d0eb4109f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c078868c25577a9bae7e83004bfc79b"><td class="memItemLeft" align="right" valign="top"><a id="a4c078868c25577a9bae7e83004bfc79b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>updateAllControlStatus</b> ()</td></tr>
+<tr class="separator:a4c078868c25577a9bae7e83004bfc79b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a37e479cfe244dc5bca7c4429b14fab"><td class="memItemLeft" align="right" valign="top"><a id="a5a37e479cfe244dc5bca7c4429b14fab"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewDialogPrivate.html#a5a37e479cfe244dc5bca7c4429b14fab">setEnable</a> (const int &amp;value, <a class="el" href="classDComboBox.html">DComboBox</a> *combox)</td></tr>
+<tr class="memdesc:a5a37e479cfe244dc5bca7c4429b14fab"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDPrintPreviewDialogPrivate.html#a5a37e479cfe244dc5bca7c4429b14fab" title="DPrintPreviewDialogPrivate::setEnable 设置纸张范围自定义可输入状态 value 判断选择的范围类型 combox 选择的具体的combox">DPrintPreviewDialogPrivate::setEnable</a> 设置纸张范围自定义可输入状态 <em>value</em> 判断选择的范围类型 <em>combox</em> 选择的具体的combox <br /></td></tr>
+<tr class="separator:a5a37e479cfe244dc5bca7c4429b14fab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a572569a00c3d207df6cfbffd46012799"><td class="memItemLeft" align="right" valign="top"><a id="a572569a00c3d207df6cfbffd46012799"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewDialogPrivate.html#a572569a00c3d207df6cfbffd46012799">setTurnPageBtnStatus</a> ()</td></tr>
+<tr class="memdesc:a572569a00c3d207df6cfbffd46012799"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDPrintPreviewDialogPrivate.html#a5a37e479cfe244dc5bca7c4429b14fab" title="DPrintPreviewDialogPrivate::setEnable 设置纸张范围自定义可输入状态 value 判断选择的范围类型 combox 选择的具体的combox">DPrintPreviewDialogPrivate::setEnable</a> 设置翻页按钮状态 <br /></td></tr>
+<tr class="separator:a572569a00c3d207df6cfbffd46012799"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b0933eaa93c0060a1ec68b384814128"><td class="memItemLeft" align="right" valign="top"><a id="a5b0933eaa93c0060a1ec68b384814128"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewDialogPrivate.html#a5b0933eaa93c0060a1ec68b384814128">watermarkTypeChoosed</a> (int index)</td></tr>
+<tr class="memdesc:a5b0933eaa93c0060a1ec68b384814128"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDPrintPreviewDialogPrivate.html#a5b0933eaa93c0060a1ec68b384814128" title="DPrintPreviewDialogPrivate::watermarkTypeChoosed 选取水印类型 index 判断选取的水印类型">DPrintPreviewDialogPrivate::watermarkTypeChoosed</a> 选取水印类型 <em>index</em> 判断选取的水印类型 <br /></td></tr>
+<tr class="separator:a5b0933eaa93c0060a1ec68b384814128"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ce835450d27a5c42f16999efad8c712"><td class="memItemLeft" align="right" valign="top"><a id="a4ce835450d27a5c42f16999efad8c712"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewDialogPrivate.html#a4ce835450d27a5c42f16999efad8c712">customPictureWatermarkChoosed</a> (const QString &amp;filename)</td></tr>
+<tr class="memdesc:a4ce835450d27a5c42f16999efad8c712"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDPrintPreviewDialogPrivate.html#a4ce835450d27a5c42f16999efad8c712" title="DPrintPreviewDialogPrivate::customPictureWatermarkChoosed 图片水印 state 图片水印路径">DPrintPreviewDialogPrivate::customPictureWatermarkChoosed</a> 图片水印 <em>state</em> 图片水印路径 <br /></td></tr>
+<tr class="separator:a4ce835450d27a5c42f16999efad8c712"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a712a3d074130cc588d0d518583a29b65"><td class="memItemLeft" align="right" valign="top"><a id="a712a3d074130cc588d0d518583a29b65"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewDialogPrivate.html#a712a3d074130cc588d0d518583a29b65">waterMarkBtnClicked</a> (bool checked)</td></tr>
+<tr class="memdesc:a712a3d074130cc588d0d518583a29b65"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDPrintPreviewDialogPrivate.html#a712a3d074130cc588d0d518583a29b65" title="DPrintPreviewDialogPrivate::waterMarkBtnClicked 是否开启水印 state 水印开启">DPrintPreviewDialogPrivate::waterMarkBtnClicked</a> 是否开启水印 <em>state</em> 水印开启 <br /></td></tr>
+<tr class="separator:a712a3d074130cc588d0d518583a29b65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba6a81fa3aa6cabd4ea41792e6dc4432"><td class="memItemLeft" align="right" valign="top"><a id="aba6a81fa3aa6cabd4ea41792e6dc4432"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewDialogPrivate.html#aba6a81fa3aa6cabd4ea41792e6dc4432">disablePrintSettings</a> ()</td></tr>
+<tr class="memdesc:aba6a81fa3aa6cabd4ea41792e6dc4432"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDPrintPreviewDialogPrivate.html#aba6a81fa3aa6cabd4ea41792e6dc4432" title="DPrintPreviewDialogPrivate::disablePrintSettings 如果按照路径打印文件，则禁用部分不能使用的功能">DPrintPreviewDialogPrivate::disablePrintSettings</a> 如果按照路径打印文件，则禁用部分不能使用的功能 <br /></td></tr>
+<tr class="separator:aba6a81fa3aa6cabd4ea41792e6dc4432"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a271afddc6d7c0717c31ecbf58c0182d8"><td class="memItemLeft" align="right" valign="top"><a id="a271afddc6d7c0717c31ecbf58c0182d8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewDialogPrivate.html#a271afddc6d7c0717c31ecbf58c0182d8">setPageLayoutEnable</a> (const bool &amp;checked)</td></tr>
+<tr class="memdesc:a271afddc6d7c0717c31ecbf58c0182d8"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDPrintPreviewDialogPrivate.html#a271afddc6d7c0717c31ecbf58c0182d8" title="DPrintPreviewDialogPrivate::setPageLayoutEnable 并列打印控件是否可用 checked 并列打印功能是否选中">DPrintPreviewDialogPrivate::setPageLayoutEnable</a> 并列打印控件是否可用 <em>checked</em> 并列打印功能是否选中 <br /></td></tr>
+<tr class="separator:a271afddc6d7c0717c31ecbf58c0182d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8aae4ae6d32389f1989a510d8f9dcc3d"><td class="memItemLeft" align="right" valign="top"><a id="a8aae4ae6d32389f1989a510d8f9dcc3d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>matchFitablePageSize</b> ()</td></tr>
+<tr class="separator:a8aae4ae6d32389f1989a510d8f9dcc3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47ad797e9660aced8942e65f18228600"><td class="memItemLeft" align="right" valign="top"><a id="a47ad797e9660aced8942e65f18228600"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isActualPrinter</b> (const QString &amp;name)</td></tr>
+<tr class="separator:a47ad797e9660aced8942e65f18228600"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9141fcdfa86a054c19f5f1947fc6b840"><td class="memItemLeft" align="right" valign="top"><a id="a9141fcdfa86a054c19f5f1947fc6b840"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewDialogPrivate.html#a9141fcdfa86a054c19f5f1947fc6b840">_q_printerChanged</a> (int index)</td></tr>
+<tr class="memdesc:a9141fcdfa86a054c19f5f1947fc6b840"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDPrintPreviewDialogPrivate.html#a9141fcdfa86a054c19f5f1947fc6b840" title="DPrintPreviewDialogPrivate::_q_printerChanged 根据选取不同的打印设备刷新界面和属性 index 判断选取的打印设备">DPrintPreviewDialogPrivate::_q_printerChanged</a> 根据选取不同的打印设备刷新界面和属性 <em>index</em> 判断选取的打印设备 <br /></td></tr>
+<tr class="separator:a9141fcdfa86a054c19f5f1947fc6b840"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90ba33367891b724b395d2588095af3f"><td class="memItemLeft" align="right" valign="top"><a id="a90ba33367891b724b395d2588095af3f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewDialogPrivate.html#a90ba33367891b724b395d2588095af3f">_q_pageRangeChanged</a> (int index)</td></tr>
+<tr class="memdesc:a90ba33367891b724b395d2588095af3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">DPrintPreviewDialogPrivate::slotPageRangeCombox 根据选取的不同纸张范围类型设置纸张范围 <em>index</em> 判断不同的范围类型 <br /></td></tr>
+<tr class="separator:a90ba33367891b724b395d2588095af3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a044f201cf07920ad72ad1a17f731549a"><td class="memItemLeft" align="right" valign="top"><a id="a044f201cf07920ad72ad1a17f731549a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewDialogPrivate.html#a044f201cf07920ad72ad1a17f731549a">_q_pageMarginChanged</a> (int index)</td></tr>
+<tr class="memdesc:a044f201cf07920ad72ad1a17f731549a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDPrintPreviewDialogPrivate.html#a044f201cf07920ad72ad1a17f731549a" title="DPrintPreviewDialogPrivate::_q_pageMarginChanged 根据选择不同的设置边距类型设置边距 index 判断选取的不同的设置边距的类型">DPrintPreviewDialogPrivate::_q_pageMarginChanged</a> 根据选择不同的设置边距类型设置边距 <em>index</em> 判断选取的不同的设置边距的类型 <br /></td></tr>
+<tr class="separator:a044f201cf07920ad72ad1a17f731549a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a557713714d53fd8ffb25001c8765b9ec"><td class="memItemLeft" align="right" valign="top"><a id="a557713714d53fd8ffb25001c8765b9ec"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewDialogPrivate.html#a557713714d53fd8ffb25001c8765b9ec">_q_ColorModeChange</a> (int index)</td></tr>
+<tr class="memdesc:a557713714d53fd8ffb25001c8765b9ec"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDPrintPreviewDialogPrivate.html#a557713714d53fd8ffb25001c8765b9ec" title="DPrintPreviewDialogPrivate::_q_ColorModeChange 根据色彩选项，调整预览图中的色彩为黑白或者彩色 index 当前选择彩色预览还是黑白预览">DPrintPreviewDialogPrivate::_q_ColorModeChange</a> 根据色彩选项，调整预览图中的色彩为黑白或者彩色 <em>index</em> 当前选择彩色预览还是黑白预览 <br /></td></tr>
+<tr class="separator:a557713714d53fd8ffb25001c8765b9ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a641430fc2e3c3e99b8d2d65a9eb2a7f3"><td class="memItemLeft" align="right" valign="top"><a id="a641430fc2e3c3e99b8d2d65a9eb2a7f3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewDialogPrivate.html#a641430fc2e3c3e99b8d2d65a9eb2a7f3">_q_startPrint</a> (bool clicked)</td></tr>
+<tr class="memdesc:a641430fc2e3c3e99b8d2d65a9eb2a7f3"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDPrintPreviewDialogPrivate.html#a641430fc2e3c3e99b8d2d65a9eb2a7f3" title="DPrintPreviewDialogPrivate::_q_startPrint 点击开始打印，设置属性 clicked 判断按钮点击状态">DPrintPreviewDialogPrivate::_q_startPrint</a> 点击开始打印，设置属性 <em>clicked</em> 判断按钮点击状态 <br /></td></tr>
+<tr class="separator:a641430fc2e3c3e99b8d2d65a9eb2a7f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a3cafc9232eda7e57e93e9f11451c7c"><td class="memItemLeft" align="right" valign="top"><a id="a8a3cafc9232eda7e57e93e9f11451c7c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewDialogPrivate.html#a8a3cafc9232eda7e57e93e9f11451c7c">_q_orientationChanged</a> (int index)</td></tr>
+<tr class="memdesc:a8a3cafc9232eda7e57e93e9f11451c7c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDPrintPreviewDialogPrivate.html#a8a3cafc9232eda7e57e93e9f11451c7c" title="DPrintPreviewDialogPrivate::_q_orientationChanged 根据按钮索引切换打印方向为横向或者纵向 index 当前按钮是横向按钮还是纵向按钮">DPrintPreviewDialogPrivate::_q_orientationChanged</a> 根据按钮索引切换打印方向为横向或者纵向 <em>index</em> 当前按钮是横向按钮还是纵向按钮 <br /></td></tr>
+<tr class="separator:a8a3cafc9232eda7e57e93e9f11451c7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e6f567e7d78f79edec751d215ab6b4d"><td class="memItemLeft" align="right" valign="top"><a id="a6e6f567e7d78f79edec751d215ab6b4d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewDialogPrivate.html#a6e6f567e7d78f79edec751d215ab6b4d">_q_customPagesFinished</a> ()</td></tr>
+<tr class="memdesc:a6e6f567e7d78f79edec751d215ab6b4d"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDPrintPreviewDialogPrivate.html#a6e6f567e7d78f79edec751d215ab6b4d" title="DPrintPreviewDialogPrivate::_q_customPagesFinished 自定义页面时，页码处理 index">DPrintPreviewDialogPrivate::_q_customPagesFinished</a> 自定义页面时，页码处理 <em>index</em> <br /></td></tr>
+<tr class="separator:a6e6f567e7d78f79edec751d215ab6b4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa97d50e20677625088fc0a9964b0147"><td class="memItemLeft" align="right" valign="top"><a id="afa97d50e20677625088fc0a9964b0147"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewDialogPrivate.html#afa97d50e20677625088fc0a9964b0147">_q_marginspinChanged</a> (double)</td></tr>
+<tr class="memdesc:afa97d50e20677625088fc0a9964b0147"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDPrintPreviewDialogPrivate.html#afa97d50e20677625088fc0a9964b0147" title="DPrintPreviewDialogPrivate::_q_marginspinChanged 自定义页边距spinbox值改变 marginValue 改变的值的大小">DPrintPreviewDialogPrivate::_q_marginspinChanged</a> 自定义页边距spinbox值改变 <em>marginValue</em> 改变的值的大小 <br /></td></tr>
+<tr class="separator:afa97d50e20677625088fc0a9964b0147"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c4c0344dc6d3afc5705633cca11f12b"><td class="memItemLeft" align="right" valign="top"><a id="a5c4c0344dc6d3afc5705633cca11f12b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewDialogPrivate.html#a5c4c0344dc6d3afc5705633cca11f12b">_q_marginEditFinished</a> ()</td></tr>
+<tr class="memdesc:a5c4c0344dc6d3afc5705633cca11f12b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDPrintPreviewDialogPrivate.html#afa97d50e20677625088fc0a9964b0147" title="DPrintPreviewDialogPrivate::_q_marginspinChanged 自定义页边距spinbox值改变 marginValue 改变的值的大小">DPrintPreviewDialogPrivate::_q_marginspinChanged</a> 自定义页边距spinbox焦点改变输入结束 <br /></td></tr>
+<tr class="separator:a5c4c0344dc6d3afc5705633cca11f12b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34c686d1faa7367db0e98abe130b8289"><td class="memItemLeft" align="right" valign="top"><a id="a34c686d1faa7367db0e98abe130b8289"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewDialogPrivate.html#a34c686d1faa7367db0e98abe130b8289">_q_currentPageSpinChanged</a> (int value)</td></tr>
+<tr class="memdesc:a34c686d1faa7367db0e98abe130b8289"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDPrintPreviewDialogPrivate.html#a34c686d1faa7367db0e98abe130b8289" title="DPrintPreviewDialogPrivate::_q_currentPageSpinChanged 根据当前页的页码的变化,变化翻页按钮的状态 value 当前页码">DPrintPreviewDialogPrivate::_q_currentPageSpinChanged</a> 根据当前页的页码的变化,变化翻页按钮的状态 <em>value</em> 当前页码 <br /></td></tr>
+<tr class="separator:a34c686d1faa7367db0e98abe130b8289"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a361695d993f0938fd6f14f7ae77739"><td class="memItemLeft" align="right" valign="top"><a id="a7a361695d993f0938fd6f14f7ae77739"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewDialogPrivate.html#a7a361695d993f0938fd6f14f7ae77739">_q_checkStateChanged</a> (int state)</td></tr>
+<tr class="memdesc:a7a361695d993f0938fd6f14f7ae77739"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDPrintPreviewDialogPrivate.html#a7a361695d993f0938fd6f14f7ae77739" title="DPrintPreviewDialogPrivate::_q_checkStateChanged 点击双面打印按钮 state 判断是否选中双面打印按钮">DPrintPreviewDialogPrivate::_q_checkStateChanged</a> 点击双面打印按钮 <em>state</em> 判断是否选中双面打印按钮 <br /></td></tr>
+<tr class="separator:a7a361695d993f0938fd6f14f7ae77739"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1a70f3cbce4a29d57e1c927cdee807a"><td class="memItemLeft" align="right" valign="top"><a id="ad1a70f3cbce4a29d57e1c927cdee807a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewDialogPrivate.html#ad1a70f3cbce4a29d57e1c927cdee807a">_q_textWaterMarkModeChanged</a> (int index)</td></tr>
+<tr class="memdesc:ad1a70f3cbce4a29d57e1c927cdee807a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDPrintPreviewDialogPrivate.html#ad1a70f3cbce4a29d57e1c927cdee807a" title="DPrintPreviewDialogPrivate::_q_textWaterMarkModeChanged 文本水印的内容选择 state 判断文本水印内容选择">DPrintPreviewDialogPrivate::_q_textWaterMarkModeChanged</a> 文本水印的内容选择 <em>state</em> 判断文本水印内容选择 <br /></td></tr>
+<tr class="separator:ad1a70f3cbce4a29d57e1c927cdee807a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fe4a66f1b028023eac19e4c25a50641"><td class="memItemLeft" align="right" valign="top"><a id="a6fe4a66f1b028023eac19e4c25a50641"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewDialogPrivate.html#a6fe4a66f1b028023eac19e4c25a50641">_q_customTextWatermarkFinished</a> ()</td></tr>
+<tr class="memdesc:a6fe4a66f1b028023eac19e4c25a50641"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDPrintPreviewDialogPrivate.html#a6fe4a66f1b028023eac19e4c25a50641" title="DPrintPreviewDialogPrivate::_q_customTextWatermarkFinished 文本水印的自定义输入 state 判断文本水印自定义">DPrintPreviewDialogPrivate::_q_customTextWatermarkFinished</a> 文本水印的自定义输入 <em>state</em> 判断文本水印自定义 <br /></td></tr>
+<tr class="separator:a6fe4a66f1b028023eac19e4c25a50641"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab2c6194327eca58c16996b05414026a"><td class="memItemLeft" align="right" valign="top"><a id="aab2c6194327eca58c16996b05414026a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewDialogPrivate.html#aab2c6194327eca58c16996b05414026a">_q_colorButtonCliked</a> (bool cliked)</td></tr>
+<tr class="memdesc:aab2c6194327eca58c16996b05414026a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDPrintPreviewDialogPrivate.html#aab2c6194327eca58c16996b05414026a" title="DPrintPreviewDialogPrivate::_q_colorButtonCliked 点击取色按钮显示取色窗口位置">DPrintPreviewDialogPrivate::_q_colorButtonCliked</a> 点击取色按钮显示取色窗口位置 <br /></td></tr>
+<tr class="separator:aab2c6194327eca58c16996b05414026a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb3af75093628f4ef6316ec335b0f426"><td class="memItemLeft" align="right" valign="top"><a id="adb3af75093628f4ef6316ec335b0f426"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewDialogPrivate.html#adb3af75093628f4ef6316ec335b0f426">_q_selectColorButton</a> (QColor color)</td></tr>
+<tr class="memdesc:adb3af75093628f4ef6316ec335b0f426"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDPrintPreviewDialogPrivate.html#adb3af75093628f4ef6316ec335b0f426" title="DPrintPreviewDialogPrivate::_q_selectColorButton 获取水印取色框获取到的颜色 color 水印的颜色">DPrintPreviewDialogPrivate::_q_selectColorButton</a> 获取水印取色框获取到的颜色 <em>color</em> 水印的颜色 <br /></td></tr>
+<tr class="separator:adb3af75093628f4ef6316ec335b0f426"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78dcda494e789afe311a7e4932374379"><td class="memItemLeft" align="right" valign="top"><a id="a78dcda494e789afe311a7e4932374379"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewDialogPrivate.html#a78dcda494e789afe311a7e4932374379">_q_pagePersheetComboIndexChanged</a> (int index)</td></tr>
+<tr class="memdesc:a78dcda494e789afe311a7e4932374379"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDPrintPreviewDialogPrivate.html#a78dcda494e789afe311a7e4932374379" title="DPrintPreviewDialogPrivate::_q_pagePersheetComboIndexChanged 并列打印选择 index 并列打印选择">DPrintPreviewDialogPrivate::_q_pagePersheetComboIndexChanged</a> 并列打印选择 <em>index</em> 并列打印选择 <br /></td></tr>
+<tr class="separator:a78dcda494e789afe311a7e4932374379"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5830fa02126991e445bdd8384b39d004"><td class="memItemLeft" align="right" valign="top"><a id="a5830fa02126991e445bdd8384b39d004"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPrintPreviewDialogPrivate.html#a5830fa02126991e445bdd8384b39d004">_q_printOrderComboIndexChanged</a> (int index)</td></tr>
+<tr class="memdesc:a5830fa02126991e445bdd8384b39d004"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDPrintPreviewDialogPrivate.html#a5830fa02126991e445bdd8384b39d004" title="DPrintPreviewDialogPrivate::_q_printOrderComboIndexChanged 打印顺序 index 打印顺序选择">DPrintPreviewDialogPrivate::_q_printOrderComboIndexChanged</a> 打印顺序 <em>index</em> 打印顺序选择 <br /></td></tr>
+<tr class="separator:a5830fa02126991e445bdd8384b39d004"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44f468dcb26f61125c5bfda83f6e0af5"><td class="memItemLeft" align="right" valign="top"><a id="a44f468dcb26f61125c5bfda83f6e0af5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>_q_spinboxValueEmptyChecked</b> (const QString &amp;)</td></tr>
+<tr class="separator:a44f468dcb26f61125c5bfda83f6e0af5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c2c0382574713c48ed1bffd745a33e7"><td class="memItemLeft" align="right" valign="top"><a id="a7c2c0382574713c48ed1bffd745a33e7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>pageRangeError</b> (TipsNum tipNum)</td></tr>
+<tr class="separator:a7c2c0382574713c48ed1bffd745a33e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:abbfecce790132b49d3a59c0036641db1"><td class="memItemLeft" align="right" valign="top"><a id="abbfecce790132b49d3a59c0036641db1"></a>
+<a class="el" href="classDPrinter.html">DPrinter</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>printer</b> = nullptr</td></tr>
+<tr class="separator:abbfecce790132b49d3a59c0036641db1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a467dcc5cb374e03ca20bcf5932cd31e4"><td class="memItemLeft" align="right" valign="top"><a id="a467dcc5cb374e03ca20bcf5932cd31e4"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>totalPages</b> = 0</td></tr>
+<tr class="separator:a467dcc5cb374e03ca20bcf5932cd31e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac09008295fc93f08966971bbdbce18cd"><td class="memItemLeft" align="right" valign="top"><a id="ac09008295fc93f08966971bbdbce18cd"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>fontSizeMore</b> = false</td></tr>
+<tr class="separator:ac09008295fc93f08966971bbdbce18cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4f01d9497d860c705564038d40f7914"><td class="memItemLeft" align="right" valign="top"><a id="af4f01d9497d860c705564038d40f7914"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>lastPageRange</b> = &quot;&quot;</td></tr>
+<tr class="separator:af4f01d9497d860c705564038d40f7914"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5327b5b3f4c0687e898330bbb442396"><td class="memItemLeft" align="right" valign="top"><a id="ac5327b5b3f4c0687e898330bbb442396"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>supportedDuplexFlag</b> = false</td></tr>
+<tr class="separator:ac5327b5b3f4c0687e898330bbb442396"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16554922328609a1e70af561195b4efa"><td class="memItemLeft" align="right" valign="top"><a id="a16554922328609a1e70af561195b4efa"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>supportedColorMode</b> = false</td></tr>
+<tr class="separator:a16554922328609a1e70af561195b4efa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2af8855e7cd30e6579a76501664ab3c"><td class="memItemLeft" align="right" valign="top"><a id="aa2af8855e7cd30e6579a76501664ab3c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isInited</b> = false</td></tr>
+<tr class="separator:aa2af8855e7cd30e6579a76501664ab3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aead754da5f42e1426157d50c23c95c50"><td class="memItemLeft" align="right" valign="top"><a id="aead754da5f42e1426157d50c23c95c50"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>strLengths</b> = 0</td></tr>
+<tr class="separator:aead754da5f42e1426157d50c23c95c50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9a7b41659afb8118acbecc0921c714d"><td class="memItemLeft" align="right" valign="top"><a id="ae9a7b41659afb8118acbecc0921c714d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isOnFocus</b> = false</td></tr>
+<tr class="separator:ae9a7b41659afb8118acbecc0921c714d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5534d9562d68cfa549211501321a8fd9"><td class="memItemLeft" align="right" valign="top"><a id="a5534d9562d68cfa549211501321a8fd9"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>lastCusWatermarkText</b> = &quot;&quot;</td></tr>
+<tr class="separator:a5534d9562d68cfa549211501321a8fd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1738e4db57d9210e11eb79d5ad517e13"><td class="memItemLeft" align="right" valign="top"><a id="a1738e4db57d9210e11eb79d5ad517e13"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isChecked</b> = false</td></tr>
+<tr class="separator:a1738e4db57d9210e11eb79d5ad517e13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ae4ec912e87369bc6a069051021daa2"><td class="memItemLeft" align="right" valign="top"><a id="a3ae4ec912e87369bc6a069051021daa2"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isEventHide</b> = false</td></tr>
+<tr class="separator:a3ae4ec912e87369bc6a069051021daa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a954d25be6714bdbacec763371a141e6d"><td class="memItemLeft" align="right" valign="top"><a id="a954d25be6714bdbacec763371a141e6d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isInitBtnColor</b> = false</td></tr>
+<tr class="separator:a954d25be6714bdbacec763371a141e6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cc0ea94e9e39b0afd9b8935c5c9b083"><td class="memItemLeft" align="right" valign="top"><a id="a2cc0ea94e9e39b0afd9b8935c5c9b083"></a>
+QColor&#160;</td><td class="memItemRight" valign="bottom"><b>waterColor</b></td></tr>
+<tr class="separator:a2cc0ea94e9e39b0afd9b8935c5c9b083"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26247d61e4dfb6fa3ae2ac5eca27672b"><td class="memItemLeft" align="right" valign="top"><a id="a26247d61e4dfb6fa3ae2ac5eca27672b"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>typeChoice</b> = 0</td></tr>
+<tr class="separator:a26247d61e4dfb6fa3ae2ac5eca27672b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f1c2016a77d8da42fb03f0c3537d484"><td class="memItemLeft" align="right" valign="top"><a id="a7f1c2016a77d8da42fb03f0c3537d484"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>directChoice</b> = 0</td></tr>
+<tr class="separator:a7f1c2016a77d8da42fb03f0c3537d484"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae79ba78f339bdee677d4e85d3115095f"><td class="memItemLeft" align="right" valign="top"><a id="ae79ba78f339bdee677d4e85d3115095f"></a>
+<a class="el" href="classDPrintPreviewWidget.html">DPrintPreviewWidget</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>pview</b> = nullptr</td></tr>
+<tr class="separator:ae79ba78f339bdee677d4e85d3115095f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c1b5d848a1ae37facaa0aea2dbb4df9"><td class="memItemLeft" align="right" valign="top"><a id="a8c1b5d848a1ae37facaa0aea2dbb4df9"></a>
+<a class="el" href="classDBackgroundGroup.html">DBackgroundGroup</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>back</b> = nullptr</td></tr>
+<tr class="separator:a8c1b5d848a1ae37facaa0aea2dbb4df9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec5190f7f99e157e926a5c61e4eba0c2"><td class="memItemLeft" align="right" valign="top"><a id="aec5190f7f99e157e926a5c61e4eba0c2"></a>
+DWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>basicsettingwdg</b> = nullptr</td></tr>
+<tr class="separator:aec5190f7f99e157e926a5c61e4eba0c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad23661548769c0168f71cec2d2a31c24"><td class="memItemLeft" align="right" valign="top"><a id="ad23661548769c0168f71cec2d2a31c24"></a>
+DWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>advancesettingwdg</b> = nullptr</td></tr>
+<tr class="separator:ad23661548769c0168f71cec2d2a31c24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a430f7ee863b80e2c2e3646c4642c3f0e"><td class="memItemLeft" align="right" valign="top"><a id="a430f7ee863b80e2c2e3646c4642c3f0e"></a>
+DWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>watermarksettingwdg</b> = nullptr</td></tr>
+<tr class="separator:a430f7ee863b80e2c2e3646c4642c3f0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ed632bcaf261f185271ce4d215de535"><td class="memItemLeft" align="right" valign="top"><a id="a2ed632bcaf261f185271ce4d215de535"></a>
+DWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>textWatermarkWdg</b> = nullptr</td></tr>
+<tr class="separator:a2ed632bcaf261f185271ce4d215de535"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0934eedfbe33ac2a072ba23203451c84"><td class="memItemLeft" align="right" valign="top"><a id="a0934eedfbe33ac2a072ba23203451c84"></a>
+DWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>picWatermarkWdg</b> = nullptr</td></tr>
+<tr class="separator:a0934eedfbe33ac2a072ba23203451c84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a311ed9730d0850069145d3a3cba665d0"><td class="memItemLeft" align="right" valign="top"><a id="a311ed9730d0850069145d3a3cba665d0"></a>
+<a class="el" href="classDIconButton.html">DIconButton</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>firstBtn</b> = nullptr</td></tr>
+<tr class="separator:a311ed9730d0850069145d3a3cba665d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52e0043fbb33a86b118ff869e6d61ad7"><td class="memItemLeft" align="right" valign="top"><a id="a52e0043fbb33a86b118ff869e6d61ad7"></a>
+<a class="el" href="classDIconButton.html">DIconButton</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>prevPageBtn</b> = nullptr</td></tr>
+<tr class="separator:a52e0043fbb33a86b118ff869e6d61ad7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac555613b8479b309bfeb98737cf30fdc"><td class="memItemLeft" align="right" valign="top"><a id="ac555613b8479b309bfeb98737cf30fdc"></a>
+<a class="el" href="classDSpinBox.html">DSpinBox</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>jumpPageEdit</b> = nullptr</td></tr>
+<tr class="separator:ac555613b8479b309bfeb98737cf30fdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51cfa6d4619b4c76af2660b608cada82"><td class="memItemLeft" align="right" valign="top"><a id="a51cfa6d4619b4c76af2660b608cada82"></a>
+<a class="el" href="classDLabel.html">DLabel</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>totalPageLabel</b> = nullptr</td></tr>
+<tr class="separator:a51cfa6d4619b4c76af2660b608cada82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac62139495e410e54ce2faea61855d9f3"><td class="memItemLeft" align="right" valign="top"><a id="ac62139495e410e54ce2faea61855d9f3"></a>
+<a class="el" href="classDLabel.html">DLabel</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>originTotalPageLabel</b> = nullptr</td></tr>
+<tr class="separator:ac62139495e410e54ce2faea61855d9f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4ed98e61fe5e453a9084dedd14a64b5"><td class="memItemLeft" align="right" valign="top"><a id="ae4ed98e61fe5e453a9084dedd14a64b5"></a>
+<a class="el" href="classDIconButton.html">DIconButton</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>nextPageBtn</b> = nullptr</td></tr>
+<tr class="separator:ae4ed98e61fe5e453a9084dedd14a64b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae66777e18f5e9f838558d1ff1273df54"><td class="memItemLeft" align="right" valign="top"><a id="ae66777e18f5e9f838558d1ff1273df54"></a>
+<a class="el" href="classDIconButton.html">DIconButton</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>lastBtn</b> = nullptr</td></tr>
+<tr class="separator:ae66777e18f5e9f838558d1ff1273df54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12d637e2554b7727b6960e0d3b8aa820"><td class="memItemLeft" align="right" valign="top"><a id="a12d637e2554b7727b6960e0d3b8aa820"></a>
+DPushButton *&#160;</td><td class="memItemRight" valign="bottom"><b>cancelBtn</b> = nullptr</td></tr>
+<tr class="separator:a12d637e2554b7727b6960e0d3b8aa820"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a491f6dfb46c69f4add3fb04bba89566b"><td class="memItemLeft" align="right" valign="top"><a id="a491f6dfb46c69f4add3fb04bba89566b"></a>
+<a class="el" href="classDSuggestButton.html">DSuggestButton</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>printBtn</b> = nullptr</td></tr>
+<tr class="separator:a491f6dfb46c69f4add3fb04bba89566b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa54a8375c95691fe09d08f07a994c78"><td class="memItemLeft" align="right" valign="top"><a id="aaa54a8375c95691fe09d08f07a994c78"></a>
+DPushButton *&#160;</td><td class="memItemRight" valign="bottom"><b>advanceBtn</b> = nullptr</td></tr>
+<tr class="separator:aaa54a8375c95691fe09d08f07a994c78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae393f6959396b7287354fd67542d16e8"><td class="memItemLeft" align="right" valign="top"><a id="ae393f6959396b7287354fd67542d16e8"></a>
+DScrollArea *&#160;</td><td class="memItemRight" valign="bottom"><b>scrollarea</b> = nullptr</td></tr>
+<tr class="separator:ae393f6959396b7287354fd67542d16e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6468e965712b02c8734e90251827093"><td class="memItemLeft" align="right" valign="top"><a id="ab6468e965712b02c8734e90251827093"></a>
+<a class="el" href="classDComboBox.html">DComboBox</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>printDeviceCombo</b> = nullptr</td></tr>
+<tr class="separator:ab6468e965712b02c8734e90251827093"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6912744fe9c1b443e5e581023855a2d3"><td class="memItemLeft" align="right" valign="top"><a id="a6912744fe9c1b443e5e581023855a2d3"></a>
+<a class="el" href="classDSpinBox.html">DSpinBox</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>copycountspinbox</b> = nullptr</td></tr>
+<tr class="separator:a6912744fe9c1b443e5e581023855a2d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad37815357bfa94a2d0570ecfab4cdce6"><td class="memItemLeft" align="right" valign="top"><a id="ad37815357bfa94a2d0570ecfab4cdce6"></a>
+<a class="el" href="classDComboBox.html">DComboBox</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>pageRangeCombo</b> = nullptr</td></tr>
+<tr class="separator:ad37815357bfa94a2d0570ecfab4cdce6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fcf54ad070e804be74d5f76f91f5ba6"><td class="memItemLeft" align="right" valign="top"><a id="a5fcf54ad070e804be74d5f76f91f5ba6"></a>
+<a class="el" href="classDLineEdit.html">DLineEdit</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>pageRangeEdit</b> = nullptr</td></tr>
+<tr class="separator:a5fcf54ad070e804be74d5f76f91f5ba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a2d459c1ea0ee6aaca3cad37a9f6277"><td class="memItemLeft" align="right" valign="top"><a id="a7a2d459c1ea0ee6aaca3cad37a9f6277"></a>
+QButtonGroup *&#160;</td><td class="memItemRight" valign="bottom"><b>orientationgroup</b> = nullptr</td></tr>
+<tr class="separator:a7a2d459c1ea0ee6aaca3cad37a9f6277"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a480bccc74972d1e21fbd12f90b2d24"><td class="memItemLeft" align="right" valign="top"><a id="a7a480bccc74972d1e21fbd12f90b2d24"></a>
+<a class="el" href="classDComboBox.html">DComboBox</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>colorModeCombo</b> = nullptr</td></tr>
+<tr class="separator:a7a480bccc74972d1e21fbd12f90b2d24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35efc196e98daf48c8bb5a288f5f1b29"><td class="memItemLeft" align="right" valign="top"><a id="a35efc196e98daf48c8bb5a288f5f1b29"></a>
+<a class="el" href="classDComboBox.html">DComboBox</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>marginsCombo</b> = nullptr</td></tr>
+<tr class="separator:a35efc196e98daf48c8bb5a288f5f1b29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e0e2928afda9e16eab84ab49e121214"><td class="memItemLeft" align="right" valign="top"><a id="a8e0e2928afda9e16eab84ab49e121214"></a>
+<a class="el" href="classDDoubleSpinBox.html">DDoubleSpinBox</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>marginTopSpin</b> = nullptr</td></tr>
+<tr class="separator:a8e0e2928afda9e16eab84ab49e121214"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab95791ab0beb878d6e1eecc3e8200fb"><td class="memItemLeft" align="right" valign="top"><a id="aab95791ab0beb878d6e1eecc3e8200fb"></a>
+<a class="el" href="classDDoubleSpinBox.html">DDoubleSpinBox</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>marginBottomSpin</b> = nullptr</td></tr>
+<tr class="separator:aab95791ab0beb878d6e1eecc3e8200fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7687d80af40a9c5f39a64b7c783612fd"><td class="memItemLeft" align="right" valign="top"><a id="a7687d80af40a9c5f39a64b7c783612fd"></a>
+<a class="el" href="classDDoubleSpinBox.html">DDoubleSpinBox</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>marginLeftSpin</b> = nullptr</td></tr>
+<tr class="separator:a7687d80af40a9c5f39a64b7c783612fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1bb147747db1409b2a735914c0cd710"><td class="memItemLeft" align="right" valign="top"><a id="ae1bb147747db1409b2a735914c0cd710"></a>
+<a class="el" href="classDDoubleSpinBox.html">DDoubleSpinBox</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>marginRightSpin</b> = nullptr</td></tr>
+<tr class="separator:ae1bb147747db1409b2a735914c0cd710"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb449f2fbc57d5b882c7891f3851350d"><td class="memItemLeft" align="right" valign="top"><a id="aeb449f2fbc57d5b882c7891f3851350d"></a>
+QButtonGroup *&#160;</td><td class="memItemRight" valign="bottom"><b>scaleGroup</b> = nullptr</td></tr>
+<tr class="separator:aeb449f2fbc57d5b882c7891f3851350d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a961e7421a9f158b06f924971a5f8e11d"><td class="memItemLeft" align="right" valign="top"><a id="a961e7421a9f158b06f924971a5f8e11d"></a>
+<a class="el" href="classDSpinBox.html">DSpinBox</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>scaleRateEdit</b> = nullptr</td></tr>
+<tr class="separator:a961e7421a9f158b06f924971a5f8e11d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac45339f6ae61420891c7f9be60a104ff"><td class="memItemLeft" align="right" valign="top"><a id="ac45339f6ae61420891c7f9be60a104ff"></a>
+<a class="el" href="classDComboBox.html">DComboBox</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>duplexCombo</b> = nullptr</td></tr>
+<tr class="separator:ac45339f6ae61420891c7f9be60a104ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a479f3a2b1357902e05eb3df22fcbac2c"><td class="memItemLeft" align="right" valign="top"><a id="a479f3a2b1357902e05eb3df22fcbac2c"></a>
+DCheckBox *&#160;</td><td class="memItemRight" valign="bottom"><b>duplexCheckBox</b> = nullptr</td></tr>
+<tr class="separator:a479f3a2b1357902e05eb3df22fcbac2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73d38e2b3d5a357e55d4dbe184f49022"><td class="memItemLeft" align="right" valign="top"><a id="a73d38e2b3d5a357e55d4dbe184f49022"></a>
+<a class="el" href="classDComboBox.html">DComboBox</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>paperSizeCombo</b> = nullptr</td></tr>
+<tr class="separator:a73d38e2b3d5a357e55d4dbe184f49022"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6101646d6e50997e06d24598184053d"><td class="memItemLeft" align="right" valign="top"><a id="ab6101646d6e50997e06d24598184053d"></a>
+<a class="el" href="classDComboBox.html">DComboBox</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>pagePerSheetCombo</b> = nullptr</td></tr>
+<tr class="separator:ab6101646d6e50997e06d24598184053d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21d8753b879959c73a207f6d66c4c56f"><td class="memItemLeft" align="right" valign="top"><a id="a21d8753b879959c73a207f6d66c4c56f"></a>
+DCheckBox *&#160;</td><td class="memItemRight" valign="bottom"><b>sidebysideCheckBox</b> = nullptr</td></tr>
+<tr class="separator:a21d8753b879959c73a207f6d66c4c56f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd417bb5b2d9d5bd5ce08054b4c97925"><td class="memItemLeft" align="right" valign="top"><a id="acd417bb5b2d9d5bd5ce08054b4c97925"></a>
+QButtonGroup *&#160;</td><td class="memItemRight" valign="bottom"><b>directGroup</b> = nullptr</td></tr>
+<tr class="separator:acd417bb5b2d9d5bd5ce08054b4c97925"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a596c2eccf505e5b73cc14fe679db5046"><td class="memItemLeft" align="right" valign="top"><a id="a596c2eccf505e5b73cc14fe679db5046"></a>
+QButtonGroup *&#160;</td><td class="memItemRight" valign="bottom"><b>printOrderGroup</b> = nullptr</td></tr>
+<tr class="separator:a596c2eccf505e5b73cc14fe679db5046"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a205afd97b9f7d2a0071fd23d87cc0a1d"><td class="memItemLeft" align="right" valign="top"><a id="a205afd97b9f7d2a0071fd23d87cc0a1d"></a>
+<a class="el" href="classDComboBox.html">DComboBox</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>inorderCombo</b> = nullptr</td></tr>
+<tr class="separator:a205afd97b9f7d2a0071fd23d87cc0a1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28038effcf00bfde16b6c31571f55184"><td class="memItemLeft" align="right" valign="top"><a id="a28038effcf00bfde16b6c31571f55184"></a>
+<a class="el" href="classDComboBox.html">DComboBox</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>waterTextCombo</b> = nullptr</td></tr>
+<tr class="separator:a28038effcf00bfde16b6c31571f55184"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23cd89b6cc71056599c184ff29964cec"><td class="memItemLeft" align="right" valign="top"><a id="a23cd89b6cc71056599c184ff29964cec"></a>
+<a class="el" href="classDIconButton.html">DIconButton</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>waterColorBtn</b> = nullptr</td></tr>
+<tr class="separator:a23cd89b6cc71056599c184ff29964cec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a835d5b380dd93c21b32e32b36d166caf"><td class="memItemLeft" align="right" valign="top"><a id="a835d5b380dd93c21b32e32b36d166caf"></a>
+<a class="el" href="classDLineEdit.html">DLineEdit</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>waterTextEdit</b> = nullptr</td></tr>
+<tr class="separator:a835d5b380dd93c21b32e32b36d166caf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49e10f90348b600167e45407f941b6d3"><td class="memItemLeft" align="right" valign="top"><a id="a49e10f90348b600167e45407f941b6d3"></a>
+<a class="el" href="classDComboBox.html">DComboBox</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>fontCombo</b> = nullptr</td></tr>
+<tr class="separator:a49e10f90348b600167e45407f941b6d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add40078a31ed94140822ec429031a24e"><td class="memItemLeft" align="right" valign="top"><a id="add40078a31ed94140822ec429031a24e"></a>
+<a class="el" href="classDSwitchButton.html">DSwitchButton</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>waterMarkBtn</b> = nullptr</td></tr>
+<tr class="separator:add40078a31ed94140822ec429031a24e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0edb13668c8ea12898e066f266f15d4"><td class="memItemLeft" align="right" valign="top"><a id="ab0edb13668c8ea12898e066f266f15d4"></a>
+<a class="el" href="classDFileChooserEdit.html">DFileChooserEdit</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>picPathEdit</b> = nullptr</td></tr>
+<tr class="separator:ab0edb13668c8ea12898e066f266f15d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cfc13d0e586c8f37a987182cb5f1e7c"><td class="memItemLeft" align="right" valign="top"><a id="a2cfc13d0e586c8f37a987182cb5f1e7c"></a>
+QButtonGroup *&#160;</td><td class="memItemRight" valign="bottom"><b>waterTypeGroup</b> = nullptr</td></tr>
+<tr class="separator:a2cfc13d0e586c8f37a987182cb5f1e7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a918229b1c3ce9cf0022e3a02a40dc3ab"><td class="memItemLeft" align="right" valign="top"><a id="a918229b1c3ce9cf0022e3a02a40dc3ab"></a>
+<a class="el" href="classDComboBox.html">DComboBox</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>waterPosCombox</b> = nullptr</td></tr>
+<tr class="separator:a918229b1c3ce9cf0022e3a02a40dc3ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d03f58eb22d791d3da4069af18a42c8"><td class="memItemLeft" align="right" valign="top"><a id="a4d03f58eb22d791d3da4069af18a42c8"></a>
+<a class="el" href="classDSpinBox.html">DSpinBox</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>inclinatBox</b> = nullptr</td></tr>
+<tr class="separator:a4d03f58eb22d791d3da4069af18a42c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93849a9e6110b4a3cdcc3e9a00da6678"><td class="memItemLeft" align="right" valign="top"><a id="a93849a9e6110b4a3cdcc3e9a00da6678"></a>
+<a class="el" href="classDSlider.html">DSlider</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>waterSizeSlider</b> = nullptr</td></tr>
+<tr class="separator:a93849a9e6110b4a3cdcc3e9a00da6678"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac886af8c435181e0b7f247d3b87a7893"><td class="memItemLeft" align="right" valign="top"><a id="ac886af8c435181e0b7f247d3b87a7893"></a>
+<a class="el" href="classDSpinBox.html">DSpinBox</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>sizeBox</b> = nullptr</td></tr>
+<tr class="separator:ac886af8c435181e0b7f247d3b87a7893"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c68db6ee09cf170c8eb598d01c757a1"><td class="memItemLeft" align="right" valign="top"><a id="a8c68db6ee09cf170c8eb598d01c757a1"></a>
+<a class="el" href="classDSlider.html">DSlider</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>wmOpaSlider</b> = nullptr</td></tr>
+<tr class="separator:a8c68db6ee09cf170c8eb598d01c757a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99a7eb503d1ba4e0cbce8df31e0e5518"><td class="memItemLeft" align="right" valign="top"><a id="a99a7eb503d1ba4e0cbce8df31e0e5518"></a>
+<a class="el" href="classDSpinBox.html">DSpinBox</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>opaBox</b> = nullptr</td></tr>
+<tr class="separator:a99a7eb503d1ba4e0cbce8df31e0e5518"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18c4dd9db772a3f8e4433685148ce961"><td class="memItemLeft" align="right" valign="top"><a id="a18c4dd9db772a3f8e4433685148ce961"></a>
+QVector&lt; qreal &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>marginOldValue</b></td></tr>
+<tr class="separator:a18c4dd9db772a3f8e4433685148ce961"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdbc350fd45e2612734db0028d2db221"><td class="memItemLeft" align="right" valign="top"><a id="afdbc350fd45e2612734db0028d2db221"></a>
+QList&lt; qreal &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>minnumMargins</b></td></tr>
+<tr class="separator:afdbc350fd45e2612734db0028d2db221"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdf32fb4698662778ae82fe80566fa95"><td class="memItemLeft" align="right" valign="top"><a id="afdf32fb4698662778ae82fe80566fa95"></a>
+QSpacerItem *&#160;</td><td class="memItemRight" valign="bottom"><b>spacer</b> = nullptr</td></tr>
+<tr class="separator:afdf32fb4698662778ae82fe80566fa95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abafe82545535cabafb74b6e6bb189676"><td class="memItemLeft" align="right" valign="top"><a id="abafe82545535cabafb74b6e6bb189676"></a>
+QSpacerItem *&#160;</td><td class="memItemRight" valign="bottom"><b>wmSpacer</b> = nullptr</td></tr>
+<tr class="separator:abafe82545535cabafb74b6e6bb189676"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd9c01d1ba837088c266f95b21c3bdbf"><td class="memItemLeft" align="right" valign="top"><a id="abd9c01d1ba837088c266f95b21c3bdbf"></a>
+<a class="el" href="classDFloatingWidget.html">DFloatingWidget</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>colorWidget</b> = nullptr</td></tr>
+<tr class="separator:abd9c01d1ba837088c266f95b21c3bdbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a217dd1ac2868398c938a62e41af2ceb3"><td class="memItemLeft" align="right" valign="top"><a id="a217dd1ac2868398c938a62e41af2ceb3"></a>
+DRadioButton *&#160;</td><td class="memItemRight" valign="bottom"><b>printInOrderRadio</b> = nullptr</td></tr>
+<tr class="separator:a217dd1ac2868398c938a62e41af2ceb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0184d38a822c26efa391a330a43c8ea6"><td class="memItemLeft" align="right" valign="top"><a id="a0184d38a822c26efa391a330a43c8ea6"></a>
+DWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>inorderwdg</b> = nullptr</td></tr>
+<tr class="separator:a0184d38a822c26efa391a330a43c8ea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bd5b376eff8060bbd168747cbe94637"><td class="memItemLeft" align="right" valign="top"><a id="a4bd5b376eff8060bbd168747cbe94637"></a>
+<a class="el" href="classDPrintPickColorWidget.html">DPrintPickColorWidget</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>pickColorWidget</b> = nullptr</td></tr>
+<tr class="separator:a4bd5b376eff8060bbd168747cbe94637"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac761f843b0c372d530290cb5f2cc839e"><td class="memItemLeft" align="right" valign="top"><a id="ac761f843b0c372d530290cb5f2cc839e"></a>
+QHash&lt; QWidget *, QString &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>spinboxTextCaches</b></td></tr>
+<tr class="separator:ac761f843b0c372d530290cb5f2cc839e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3face2dffb6ee94677d85cdebc026f3b"><td class="memItemLeft" align="right" valign="top"><a id="a3face2dffb6ee94677d85cdebc026f3b"></a>
+<a class="el" href="classPreviewSettingsPluginHelper.html">PreviewSettingsPluginHelper</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>settingHelper</b></td></tr>
+<tr class="separator:a3face2dffb6ee94677d85cdebc026f3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7330ee283caf0ab3d2dc234d2d36f8f"><td class="memItemLeft" align="right" valign="top"><a id="ab7330ee283caf0ab3d2dc234d2d36f8f"></a>
+QBasicTimer&#160;</td><td class="memItemRight" valign="bottom"><b>settingUpdateTimer</b></td></tr>
+<tr class="separator:ab7330ee283caf0ab3d2dc234d2d36f8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pro_methods_classDDialogPrivate"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classDDialogPrivate')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="classDDialogPrivate.html">DDialogPrivate</a></td></tr>
+<tr class="memitem:a1fc6ee620a88ec51f609f3c2dbf138c9 inherit pro_methods_classDDialogPrivate"><td class="memItemLeft" align="right" valign="top"><a id="a1fc6ee620a88ec51f609f3c2dbf138c9"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DDialogPrivate</b> (<a class="el" href="classDDialog.html">DDialog</a> *qq)</td></tr>
+<tr class="separator:a1fc6ee620a88ec51f609f3c2dbf138c9 inherit pro_methods_classDDialogPrivate"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ccdc0581ba4cc8e1d4d2dd83e1644b6 inherit pro_methods_classDDialogPrivate"><td class="memItemLeft" align="right" valign="top"><a id="a3ccdc0581ba4cc8e1d4d2dd83e1644b6"></a>
+QBoxLayout *&#160;</td><td class="memItemRight" valign="bottom"><b>getContentLayout</b> ()</td></tr>
+<tr class="separator:a3ccdc0581ba4cc8e1d4d2dd83e1644b6 inherit pro_methods_classDDialogPrivate"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classDAbstractDialogPrivate"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classDAbstractDialogPrivate')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="classDAbstractDialogPrivate.html">DAbstractDialogPrivate</a></td></tr>
+<tr class="memitem:ac935438aa9159dad544b6cc6cbac2404 inherit pro_methods_classDAbstractDialogPrivate"><td class="memItemLeft" align="right" valign="top"><a id="ac935438aa9159dad544b6cc6cbac2404"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DAbstractDialogPrivate</b> (<a class="el" href="classDAbstractDialog.html">DAbstractDialog</a> *qq)</td></tr>
+<tr class="separator:ac935438aa9159dad544b6cc6cbac2404 inherit pro_methods_classDAbstractDialogPrivate"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f31c954d1e6e383da872a1901e0db4b inherit pro_methods_classDAbstractDialogPrivate"><td class="memItemLeft" align="right" valign="top"><a id="a7f31c954d1e6e383da872a1901e0db4b"></a>
+QRect&#160;</td><td class="memItemRight" valign="bottom"><b>getParentGeometry</b> () const</td></tr>
+<tr class="separator:a7f31c954d1e6e383da872a1901e0db4b inherit pro_methods_classDAbstractDialogPrivate"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a7b3dd8b06f40cc3aed37893dbd4a1270"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b3dd8b06f40cc3aed37893dbd4a1270">&#9670;&nbsp;</a></span>initWaterSettings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DPrintPreviewDialogPrivate::initWaterSettings </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p><a class="el" href="classDPrintPreviewDialogPrivate.html#a7b3dd8b06f40cc3aed37893dbd4a1270">DPrintPreviewDialogPrivate::initWaterSettings</a> 初始化水印属性设置 </p>
+
+</div>
+</div>
+<a id="a46e8004f25ff988ee3b02c8aa2470588"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46e8004f25ff988ee3b02c8aa2470588">&#9670;&nbsp;</a></span>setMininumMargins()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DPrintPreviewDialogPrivate::setMininumMargins </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p><a class="el" href="classDPrintPreviewDialogPrivate.html#a46e8004f25ff988ee3b02c8aa2470588">DPrintPreviewDialogPrivate::setMininumMargins</a> 如果边距小于最小边距,设置成最小边距 </p>
+
+</div>
+</div>
+<a id="a78e16dbcb6fb59c9303da31f57a799ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78e16dbcb6fb59c9303da31f57a799ab">&#9670;&nbsp;</a></span>setPageIsLegal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DPrintPreviewDialogPrivate::setPageIsLegal </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>islegal</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p><a class="el" href="classDPrintPreviewDialogPrivate.html#a78e16dbcb6fb59c9303da31f57a799ab">DPrintPreviewDialogPrivate::setPageIsLegal</a> 检查自定义页码是否合法,不合法的话设置警告颜色,打印保存按钮置灰 </p>
+
+</div>
+</div>
+<a id="a148f5d296f1d6bf68942aad1100bc6ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a148f5d296f1d6bf68942aad1100bc6ec">&#9670;&nbsp;</a></span>setupPrinter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DPrintPreviewDialogPrivate::setupPrinter </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p><a class="el" href="classDPrintPreviewDialogPrivate.html#a148f5d296f1d6bf68942aad1100bc6ec">DPrintPreviewDialogPrivate::setupPrinter</a> 设置打印的相关基础属性和高级属性 </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dtkwidget/src/widgets/private/<a class="el" href="dprintpreviewdialog__p_8h_source.html">dprintpreviewdialog_p.h</a></li>
+<li>dtkwidget/src/widgets/dprintpreviewdialog.cpp</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classDPrintPreviewDialogPrivate.html">DPrintPreviewDialogPrivate</a></li>
+    <li class="footer">文档生成时间:doxtime</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

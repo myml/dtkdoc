@@ -1,0 +1,619 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: DDrawer类 参考</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="change address" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classDDrawer.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#signals">信号</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="classDDrawer-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">DDrawer类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 DDrawer 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classDDrawer.png" usemap="#DDrawer_map" alt=""/>
+  <map id="DDrawer_map" name="DDrawer_map">
+<area href="classDFrame.html" alt="DFrame" shape="rect" coords="102,56,296,80"/>
+<area href="classDArrowLineDrawer.html" alt="DArrowLineDrawer" shape="rect" coords="102,168,296,192"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+信号</h2></td></tr>
+<tr class="memitem:a1f4eaf89d2ef99174cd6db7337d5b1b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDrawer.html#a1f4eaf89d2ef99174cd6db7337d5b1b9">expandChange</a> (bool e)</td></tr>
+<tr class="memdesc:a1f4eaf89d2ef99174cd6db7337d5b1b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">内容控件可见性发生改变的信号  <a href="classDDrawer.html#a1f4eaf89d2ef99174cd6db7337d5b1b9">更多...</a><br /></td></tr>
+<tr class="separator:a1f4eaf89d2ef99174cd6db7337d5b1b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e4b9d39b8fc9e001010800d5383c76f"><td class="memItemLeft" align="right" valign="top"><a id="a8e4b9d39b8fc9e001010800d5383c76f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>sizeChanged</b> (QSize s)</td></tr>
+<tr class="separator:a8e4b9d39b8fc9e001010800d5383c76f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a57394661a72ee01ae364a5f70a27f2b6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDrawer.html#a57394661a72ee01ae364a5f70a27f2b6">DDrawer</a> (QWidget *parent=nullptr)</td></tr>
+<tr class="memdesc:a57394661a72ee01ae364a5f70a27f2b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取 <code><a class="el" href="classDDrawer.html#a57394661a72ee01ae364a5f70a27f2b6" title="获取 DDrawer::DDrawer实例 @aparam[in] parent 作为实例的父控件">DDrawer::DDrawer</a></code>实例 @aparam[in] parent 作为实例的父控件  <a href="classDDrawer.html#a57394661a72ee01ae364a5f70a27f2b6">更多...</a><br /></td></tr>
+<tr class="separator:a57394661a72ee01ae364a5f70a27f2b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a291d9fa0d23e1df4b871ba54f7199257"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDrawer.html#a291d9fa0d23e1df4b871ba54f7199257">setHeader</a> (QWidget *header)</td></tr>
+<tr class="memdesc:a291d9fa0d23e1df4b871ba54f7199257"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置标题控件,标题控件会始终显示在布局里  <a href="classDDrawer.html#a291d9fa0d23e1df4b871ba54f7199257">更多...</a><br /></td></tr>
+<tr class="separator:a291d9fa0d23e1df4b871ba54f7199257"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdbd8c1717059cbf13a98812a14eee96"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDrawer.html#acdbd8c1717059cbf13a98812a14eee96">setContent</a> (QWidget *content, Qt::Alignment alignment=Qt::AlignHCenter)</td></tr>
+<tr class="memdesc:acdbd8c1717059cbf13a98812a14eee96"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置内容控件，内容控件默认是隐藏的，调用 <code><a class="el" href="classDDrawer.html#a5cc8eebf60a9db68bf6abf2768c60d3e" title="设置内容控件的可见性">DDrawer::setExpand</a></code> 设置其可见性  <a href="classDDrawer.html#acdbd8c1717059cbf13a98812a14eee96">更多...</a><br /></td></tr>
+<tr class="separator:acdbd8c1717059cbf13a98812a14eee96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba71b84a294be08e7df70a1f4bc107df"><td class="memItemLeft" align="right" valign="top">QWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDrawer.html#aba71b84a294be08e7df70a1f4bc107df">getContent</a> () const</td></tr>
+<tr class="memdesc:aba71b84a294be08e7df70a1f4bc107df"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取内容控件对象  <a href="classDDrawer.html#aba71b84a294be08e7df70a1f4bc107df">更多...</a><br /></td></tr>
+<tr class="separator:aba71b84a294be08e7df70a1f4bc107df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac59ce154b686cbd1dc4770f28879a987"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDrawer.html#ac59ce154b686cbd1dc4770f28879a987">setHeaderHeight</a> (int height)</td></tr>
+<tr class="memdesc:ac59ce154b686cbd1dc4770f28879a987"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置标题控件的高度  <a href="classDDrawer.html#ac59ce154b686cbd1dc4770f28879a987">更多...</a><br /></td></tr>
+<tr class="separator:ac59ce154b686cbd1dc4770f28879a987"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cc8eebf60a9db68bf6abf2768c60d3e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDrawer.html#a5cc8eebf60a9db68bf6abf2768c60d3e">setExpand</a> (bool value)</td></tr>
+<tr class="memdesc:a5cc8eebf60a9db68bf6abf2768c60d3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置内容控件的可见性  <a href="classDDrawer.html#a5cc8eebf60a9db68bf6abf2768c60d3e">更多...</a><br /></td></tr>
+<tr class="separator:a5cc8eebf60a9db68bf6abf2768c60d3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4fbbe70fe34a0293fd7872afb22e31c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDrawer.html#ac4fbbe70fe34a0293fd7872afb22e31c">expand</a> () const</td></tr>
+<tr class="memdesc:ac4fbbe70fe34a0293fd7872afb22e31c"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取当前内容控件的可见性  <a href="classDDrawer.html#ac4fbbe70fe34a0293fd7872afb22e31c">更多...</a><br /></td></tr>
+<tr class="separator:ac4fbbe70fe34a0293fd7872afb22e31c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dc608cf5cf193fb1bbac17fcb73f8ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDrawer.html#a3dc608cf5cf193fb1bbac17fcb73f8ae">setAnimationDuration</a> (int duration)</td></tr>
+<tr class="memdesc:a3dc608cf5cf193fb1bbac17fcb73f8ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置内容控件的可见性改变时动画的时间  <a href="classDDrawer.html#a3dc608cf5cf193fb1bbac17fcb73f8ae">更多...</a><br /></td></tr>
+<tr class="separator:a3dc608cf5cf193fb1bbac17fcb73f8ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1604e41e52637258c2575639cb2e259a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDrawer.html#a1604e41e52637258c2575639cb2e259a">setAnimationEasingCurve</a> (QEasingCurve curve)</td></tr>
+<tr class="memdesc:a1604e41e52637258c2575639cb2e259a"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置内容控件的可见性改变时动画的样式  <a href="classDDrawer.html#a1604e41e52637258c2575639cb2e259a">更多...</a><br /></td></tr>
+<tr class="separator:a1604e41e52637258c2575639cb2e259a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa78d0e3dee52d7ef49cab585984aa2d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDrawer.html#aa78d0e3dee52d7ef49cab585984aa2d1">setSeparatorVisible</a> (bool arg)</td></tr>
+<tr class="memdesc:aa78d0e3dee52d7ef49cab585984aa2d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置是否允许标题控件与内容控件之间的分割线  <a href="classDDrawer.html#aa78d0e3dee52d7ef49cab585984aa2d1">更多...</a><br /></td></tr>
+<tr class="separator:aa78d0e3dee52d7ef49cab585984aa2d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d762b97cc953d8c1d7f37b6b6391ebd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDrawer.html#a1d762b97cc953d8c1d7f37b6b6391ebd">setExpandedSeparatorVisible</a> (bool arg)</td></tr>
+<tr class="memdesc:a1d762b97cc953d8c1d7f37b6b6391ebd"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置是否允许内容控件下的分割线  <a href="classDDrawer.html#a1d762b97cc953d8c1d7f37b6b6391ebd">更多...</a><br /></td></tr>
+<tr class="separator:a1d762b97cc953d8c1d7f37b6b6391ebd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classDFrame"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classDFrame')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="classDFrame.html">DFrame</a></td></tr>
+<tr class="memitem:ab8aea70683e87356f13b12c3232b11fd inherit pub_methods_classDFrame"><td class="memItemLeft" align="right" valign="top"><a id="ab8aea70683e87356f13b12c3232b11fd"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDFrame.html#ab8aea70683e87356f13b12c3232b11fd">DFrame</a> (QWidget *parent=nullptr)</td></tr>
+<tr class="memdesc:ab8aea70683e87356f13b12c3232b11fd inherit pub_methods_classDFrame"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDFrame.html#ab8aea70683e87356f13b12c3232b11fd" title="DFrame::DFrame 用于其他需要边框的widget的基类 parent">DFrame::DFrame</a> 用于其他需要边框的widget的基类 <em>parent</em> <br /></td></tr>
+<tr class="separator:ab8aea70683e87356f13b12c3232b11fd inherit pub_methods_classDFrame"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab70885116a3f88b39f6b746850b3b93d inherit pub_methods_classDFrame"><td class="memItemLeft" align="right" valign="top"><a id="ab70885116a3f88b39f6b746850b3b93d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDFrame.html#ab70885116a3f88b39f6b746850b3b93d">setFrameRounded</a> (bool on)</td></tr>
+<tr class="memdesc:ab70885116a3f88b39f6b746850b3b93d inherit pub_methods_classDFrame"><td class="mdescLeft">&#160;</td><td class="mdescRight">DFrame::setFrameRounded设置边框圆角是否开启 <em>on</em> true开启　false关闭 <br /></td></tr>
+<tr class="separator:ab70885116a3f88b39f6b746850b3b93d inherit pub_methods_classDFrame"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7e121179b92692772c6eeb971948e0f inherit pub_methods_classDFrame"><td class="memItemLeft" align="right" valign="top"><a id="aa7e121179b92692772c6eeb971948e0f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDFrame.html#aa7e121179b92692772c6eeb971948e0f">setBackgroundRole</a> (DGUI_NAMESPACE::DPalette::ColorType type)</td></tr>
+<tr class="memdesc:aa7e121179b92692772c6eeb971948e0f inherit pub_methods_classDFrame"><td class="mdescLeft">&#160;</td><td class="mdescRight">DFrame::setBackgroundRole　设置边框背景画刷的角色类型 <em>type</em> 背景画刷的角色类型 <br /></td></tr>
+<tr class="separator:aa7e121179b92692772c6eeb971948e0f inherit pub_methods_classDFrame"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a8f687f77fbfa674e49aa033022a3eee4"><td class="memItemLeft" align="right" valign="top"><a id="a8f687f77fbfa674e49aa033022a3eee4"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DDrawer</b> (<a class="el" href="classDDrawerPrivate.html">DDrawerPrivate</a> &amp;dd, QWidget *parent=nullptr)</td></tr>
+<tr class="separator:a8f687f77fbfa674e49aa033022a3eee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a092fa1afc46703242c2354b1a05ce8a9"><td class="memItemLeft" align="right" valign="top"><a id="a092fa1afc46703242c2354b1a05ce8a9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>resizeEvent</b> (QResizeEvent *e) Q_DECL_OVERRIDE</td></tr>
+<tr class="separator:a092fa1afc46703242c2354b1a05ce8a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classDFrame"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classDFrame')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="classDFrame.html">DFrame</a></td></tr>
+<tr class="memitem:a4d5a008c50045e860f553d51f38f9dd3 inherit pro_methods_classDFrame"><td class="memItemLeft" align="right" valign="top"><a id="a4d5a008c50045e860f553d51f38f9dd3"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DFrame</b> (<a class="el" href="classDFramePrivate.html">DFramePrivate</a> &amp;dd, QWidget *parent=nullptr)</td></tr>
+<tr class="separator:a4d5a008c50045e860f553d51f38f9dd3 inherit pro_methods_classDFrame"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae914c235d49f3f0d2acacf5669802da9 inherit pro_methods_classDFrame"><td class="memItemLeft" align="right" valign="top"><a id="ae914c235d49f3f0d2acacf5669802da9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>paintEvent</b> (QPaintEvent *event) override</td></tr>
+<tr class="separator:ae914c235d49f3f0d2acacf5669802da9 inherit pro_methods_classDFrame"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a57394661a72ee01ae364a5f70a27f2b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57394661a72ee01ae364a5f70a27f2b6">&#9670;&nbsp;</a></span>DDrawer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DDrawer::DDrawer </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取 <code><a class="el" href="classDDrawer.html#a57394661a72ee01ae364a5f70a27f2b6" title="获取 DDrawer::DDrawer实例 @aparam[in] parent 作为实例的父控件">DDrawer::DDrawer</a></code>实例 @aparam[in] parent 作为实例的父控件 </p>
+<p>Get DDRAWER :: DDRAWER example <em>parent</em> As the parent control part of the example </p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="ac4fbbe70fe34a0293fd7872afb22e31c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4fbbe70fe34a0293fd7872afb22e31c">&#9670;&nbsp;</a></span>expand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DDrawer::expand </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取当前内容控件的可见性 </p>
+<p>Visible to obtain the current content control.</p>
+<dl class="section return"><dt>返回</dt><dd>当前内容控件的可见性</dd>
+<dd>
+Visible of the current content control </dd></dl>
+
+</div>
+</div>
+<a id="a1f4eaf89d2ef99174cd6db7337d5b1b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f4eaf89d2ef99174cd6db7337d5b1b9">&#9670;&nbsp;</a></span>expandChange</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DDrawer::expandChange </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>e</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>内容控件可见性发生改变的信号 </p>
+<p><a class="el" href="classContent.html">Content</a> control visibility signal <em>e</em> For TRUE, the content control becomes visible, but vice versa</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">e</td><td>为 true 表示内容控件变为了可见，反之则反 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aba71b84a294be08e7df70a1f4bc107df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba71b84a294be08e7df70a1f4bc107df">&#9670;&nbsp;</a></span>getContent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QWidget * DDrawer::getContent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取内容控件对象 </p>
+<p>Get the content control object</p>
+<dl class="section return"><dt>返回</dt><dd>内容控件对象</dd>
+<dd>
+<a class="el" href="classContent.html">Content</a> control object </dd></dl>
+
+</div>
+</div>
+<a id="a3dc608cf5cf193fb1bbac17fcb73f8ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3dc608cf5cf193fb1bbac17fcb73f8ae">&#9670;&nbsp;</a></span>setAnimationDuration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DDrawer::setAnimationDuration </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>duration</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置内容控件的可见性改变时动画的时间 </p>
+<p>Set the time for the visibility of the content control when the animation time is changed.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">duration</td><td>指定动画时间</td></tr>
+  </table>
+  </dd>
+</dl>
+<p><em>duration</em> Specify the animation time </p>
+
+</div>
+</div>
+<a id="a1604e41e52637258c2575639cb2e259a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1604e41e52637258c2575639cb2e259a">&#9670;&nbsp;</a></span>setAnimationEasingCurve()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DDrawer::setAnimationEasingCurve </td>
+          <td>(</td>
+          <td class="paramtype">QEasingCurve&#160;</td>
+          <td class="paramname"><em>curve</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置内容控件的可见性改变时动画的样式 </p>
+<p>setTheVisibilityOfTheContentControlWhenTheAnimationStyleIsChangedOfTheContentControlWhenTheAnimationStyleIsChanged <em>curve</em> Specify animation style</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td>指定动画样式 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="acdbd8c1717059cbf13a98812a14eee96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdbd8c1717059cbf13a98812a14eee96">&#9670;&nbsp;</a></span>setContent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DDrawer::setContent </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>content</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Qt::Alignment&#160;</td>
+          <td class="paramname"><em>alignment</em> = <code>Qt::AlignHCenter</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置内容控件，内容控件默认是隐藏的，调用 <code><a class="el" href="classDDrawer.html#a5cc8eebf60a9db68bf6abf2768c60d3e" title="设置内容控件的可见性">DDrawer::setExpand</a></code> 设置其可见性 </p>
+<p>Set the content control <a class="el" href="classContent.html">Content</a> control is hidden by default, call ddrawer :: setexpand settings for its visibility <em>content</em> <a class="el" href="classContent.html">Content</a> controlent control <em>alignment</em> The alignment method of content control in the layout method of content control in the layout method of content control in the layout method of content control in the layout method of content control in the layout method of content control in the layout method of content control in the layout</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">content</td><td>内容控件 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">alignment</td><td>内容控件在布局中的对齐方式 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5cc8eebf60a9db68bf6abf2768c60d3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cc8eebf60a9db68bf6abf2768c60d3e">&#9670;&nbsp;</a></span>setExpand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DDrawer::setExpand </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置内容控件的可见性 </p>
+<p>Set the visibility of the content control.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>为 true 则内容控件可见，反之则不显示</td></tr>
+  </table>
+  </dd>
+</dl>
+<p><em>value</em> For TRUE, the content control can be seen, but vice versant control can be seen, but vice versa </p>
+
+<p>被 <a class="el" href="classDArrowLineDrawer.html#a9bf76cfa638b5ee5f1eda85b330d4d98">DArrowLineDrawer</a> 重载.</p>
+
+</div>
+</div>
+<a id="a1d762b97cc953d8c1d7f37b6b6391ebd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d762b97cc953d8c1d7f37b6b6391ebd">&#9670;&nbsp;</a></span>setExpandedSeparatorVisible()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DDrawer::setExpandedSeparatorVisible </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>arg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置是否允许内容控件下的分割线 </p>
+<p>Set the segmentation line under the content control.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">arg</td><td>为 ture 则显示分割线，反之则不显示</td></tr>
+  </table>
+  </dd>
+</dl>
+<p><em>arg</em> For ture, the segmentation line is displayed, but the instead does not display </p>
+
+</div>
+</div>
+<a id="a291d9fa0d23e1df4b871ba54f7199257"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a291d9fa0d23e1df4b871ba54f7199257">&#9670;&nbsp;</a></span>setHeader()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DDrawer::setHeader </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>header</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置标题控件,标题控件会始终显示在布局里 </p>
+<p>Set the title control The title control will always be displayed in the layout <em>header</em> Title control</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">header</td><td>标题控件 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac59ce154b686cbd1dc4770f28879a987"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac59ce154b686cbd1dc4770f28879a987">&#9670;&nbsp;</a></span>setHeaderHeight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DDrawer::setHeaderHeight </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置标题控件的高度 </p>
+<p>Set the height of the title control.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">height</td><td>指定的高度</td></tr>
+  </table>
+  </dd>
+</dl>
+<p><em>height</em> Specified height </p>
+
+</div>
+</div>
+<a id="aa78d0e3dee52d7ef49cab585984aa2d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa78d0e3dee52d7ef49cab585984aa2d1">&#9670;&nbsp;</a></span>setSeparatorVisible()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DDrawer::setSeparatorVisible </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>arg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置是否允许标题控件与内容控件之间的分割线 </p>
+<p>Set the segmentation line between the title control and the content control.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">arg</td><td>为 ture 则显示分割线，反之则不显示</td></tr>
+  </table>
+  </dd>
+</dl>
+<p><em>arg</em> For ture, the segmentation line is displayed, but the instead does not display </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dtkwidget/include/dtkwidget/widgets/<a class="el" href="ddrawer_8h_source.html">ddrawer.h</a></li>
+<li>dtkwidget/docs/widgets/ddrawer.zh_CN.dox</li>
+<li>dtkwidget/src/widgets/ddrawer.cpp</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classDDrawer.html">DDrawer</a></li>
+    <li class="footer">文档生成时间:doxtime</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

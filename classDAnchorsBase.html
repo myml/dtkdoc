@@ -1,0 +1,1349 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: DAnchorsBase类 参考</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="change address" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classDAnchorsBase.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-slots">Public 槽</a> &#124;
+<a href="#signals">信号</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#properties">属性</a> &#124;
+<a href="classDAnchorsBase-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">DAnchorsBase类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 DAnchorsBase 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classDAnchorsBase.png" usemap="#DAnchorsBase_map" alt=""/>
+  <map id="DAnchorsBase_map" name="DAnchorsBase_map">
+<area href="classDAnchors.html" alt="DAnchors&lt; T &gt;" shape="rect" coords="0,112,100,136"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a034076a4ac4485b80d33793e9c7fdec0"><td class="memItemLeft" align="right" valign="top"><a id="a034076a4ac4485b80d33793e9c7fdec0"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>AnchorError</b> { <br />
+&#160;&#160;<b>NoError</b>
+, <b>Conflict</b>
+, <b>TargetInvalid</b>
+, <b>PointInvalid</b>
+, <br />
+&#160;&#160;<b>LoopBind</b>
+<br />
+ }</td></tr>
+<tr class="separator:a034076a4ac4485b80d33793e9c7fdec0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Public 槽</h2></td></tr>
+<tr class="memitem:aaef568e7131a6ea61af667f9e9188783"><td class="memItemLeft" align="right" valign="top"><a id="aaef568e7131a6ea61af667f9e9188783"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setEnabled</b> (bool <a class="el" href="classDAnchorsBase.html#a826e09da24e328f0210ad8efa067946f">enabled</a>)</td></tr>
+<tr class="separator:aaef568e7131a6ea61af667f9e9188783"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7ad63c8ff4ccb2a4469d1db0796e9dd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAnchorsBase.html#aa7ad63c8ff4ccb2a4469d1db0796e9dd">setAnchor</a> (const Qt::AnchorPoint &amp;p, QWidget *<a class="el" href="classDAnchorsBase.html#a45220a39f990088e234fecbe1365618f">target</a>, const Qt::AnchorPoint &amp;point)</td></tr>
+<tr class="memdesc:aa7ad63c8ff4ccb2a4469d1db0796e9dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">为 <a class="el" href="classDAnchorsBase.html#a45220a39f990088e234fecbe1365618f" title="绑定了锚定功能的控件对象">DAnchorsBase::target</a> 对象设置锚定规则  <a href="classDAnchorsBase.html#aa7ad63c8ff4ccb2a4469d1db0796e9dd">更多...</a><br /></td></tr>
+<tr class="separator:aa7ad63c8ff4ccb2a4469d1db0796e9dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab946b4d51eedf2feb7009a6e83565716"><td class="memItemLeft" align="right" valign="top"><a id="ab946b4d51eedf2feb7009a6e83565716"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>setTop</b> (const <a class="el" href="structDAnchorInfo.html">DAnchorInfo</a> *<a class="el" href="classDAnchorsBase.html#aacbe1524bf770e24d1e28b4d68463f15">top</a>)</td></tr>
+<tr class="separator:ab946b4d51eedf2feb7009a6e83565716"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af02abff07a67f68aad3e639d8f1fc29d"><td class="memItemLeft" align="right" valign="top"><a id="af02abff07a67f68aad3e639d8f1fc29d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>setBottom</b> (const <a class="el" href="structDAnchorInfo.html">DAnchorInfo</a> *<a class="el" href="classDAnchorsBase.html#a96aab06a235a501bb0916594c4ce7415">bottom</a>)</td></tr>
+<tr class="separator:af02abff07a67f68aad3e639d8f1fc29d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1936bc7ed5c49f9990e0fca457933e84"><td class="memItemLeft" align="right" valign="top"><a id="a1936bc7ed5c49f9990e0fca457933e84"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>setLeft</b> (const <a class="el" href="structDAnchorInfo.html">DAnchorInfo</a> *<a class="el" href="classDAnchorsBase.html#a56481b506ac3e8e6abea37ff300455e0">left</a>)</td></tr>
+<tr class="separator:a1936bc7ed5c49f9990e0fca457933e84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5105cebcbe3d5cab627c2e274b8f86b8"><td class="memItemLeft" align="right" valign="top"><a id="a5105cebcbe3d5cab627c2e274b8f86b8"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>setRight</b> (const <a class="el" href="structDAnchorInfo.html">DAnchorInfo</a> *<a class="el" href="classDAnchorsBase.html#a70a1e3acbc693739098c681f143621c0">right</a>)</td></tr>
+<tr class="separator:a5105cebcbe3d5cab627c2e274b8f86b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afceb03b69282a23c5eb4e4f9861ba532"><td class="memItemLeft" align="right" valign="top"><a id="afceb03b69282a23c5eb4e4f9861ba532"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>setHorizontalCenter</b> (const <a class="el" href="structDAnchorInfo.html">DAnchorInfo</a> *<a class="el" href="classDAnchorsBase.html#a312b8194aa10f880a1b4d96557234405">horizontalCenter</a>)</td></tr>
+<tr class="separator:afceb03b69282a23c5eb4e4f9861ba532"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a368fe780c0cde368778c1af3784ee54a"><td class="memItemLeft" align="right" valign="top"><a id="a368fe780c0cde368778c1af3784ee54a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>setVerticalCenter</b> (const <a class="el" href="structDAnchorInfo.html">DAnchorInfo</a> *<a class="el" href="classDAnchorsBase.html#a44a33a87a7e13c559dce6fae6ca5c92e">verticalCenter</a>)</td></tr>
+<tr class="separator:a368fe780c0cde368778c1af3784ee54a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0ebae061bb412558b32bef3c7700b34"><td class="memItemLeft" align="right" valign="top"><a id="ab0ebae061bb412558b32bef3c7700b34"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>setFill</b> (QWidget *<a class="el" href="classDAnchorsBase.html#aee6b0024b467c0f82baf43345981972f">fill</a>)</td></tr>
+<tr class="separator:ab0ebae061bb412558b32bef3c7700b34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc0fc5520d4d58f443161ea26a7abcb1"><td class="memItemLeft" align="right" valign="top"><a id="afc0fc5520d4d58f443161ea26a7abcb1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>setCenterIn</b> (QWidget *<a class="el" href="classDAnchorsBase.html#ad41e7fff4550e1db1fdd79bebdc3ac2c">centerIn</a>)</td></tr>
+<tr class="separator:afc0fc5520d4d58f443161ea26a7abcb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34f5257dbae3a967e30764a4be6c89c4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAnchorsBase.html#a34f5257dbae3a967e30764a4be6c89c4">setFill</a> (<a class="el" href="classDAnchorsBase.html">DAnchorsBase</a> *<a class="el" href="classDAnchorsBase.html#aee6b0024b467c0f82baf43345981972f">fill</a>)</td></tr>
+<tr class="memdesc:a34f5257dbae3a967e30764a4be6c89c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">将 fill 中的target()作为参数调用其它重载函数 <em>fill</em>  <a href="classDAnchorsBase.html#a34f5257dbae3a967e30764a4be6c89c4">更多...</a><br /></td></tr>
+<tr class="separator:a34f5257dbae3a967e30764a4be6c89c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab482f0c0072be8a22d3b47a153024f08"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAnchorsBase.html#ab482f0c0072be8a22d3b47a153024f08">setCenterIn</a> (<a class="el" href="classDAnchorsBase.html">DAnchorsBase</a> *<a class="el" href="classDAnchorsBase.html#ad41e7fff4550e1db1fdd79bebdc3ac2c">centerIn</a>)</td></tr>
+<tr class="memdesc:ab482f0c0072be8a22d3b47a153024f08"><td class="mdescLeft">&#160;</td><td class="mdescRight">将 centerIn 中的target()作为参数调用其它重载函数 <em>centerIn</em>  <a href="classDAnchorsBase.html#ab482f0c0072be8a22d3b47a153024f08">更多...</a><br /></td></tr>
+<tr class="separator:ab482f0c0072be8a22d3b47a153024f08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b1107039dd7dc57778748b1eca403ae"><td class="memItemLeft" align="right" valign="top"><a id="a5b1107039dd7dc57778748b1eca403ae"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setMargins</b> (int <a class="el" href="classDAnchorsBase.html#a799e0ba24f1525070d39282ad7b4f421">margins</a>)</td></tr>
+<tr class="separator:a5b1107039dd7dc57778748b1eca403ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6b6368cfeb12e6a569d037b4b903f02"><td class="memItemLeft" align="right" valign="top"><a id="ac6b6368cfeb12e6a569d037b4b903f02"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setTopMargin</b> (int <a class="el" href="classDAnchorsBase.html#acc36da853d40582a78bda969063c5eeb">topMargin</a>)</td></tr>
+<tr class="separator:ac6b6368cfeb12e6a569d037b4b903f02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4988d647454c12057aa68101171c53fe"><td class="memItemLeft" align="right" valign="top"><a id="a4988d647454c12057aa68101171c53fe"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setBottomMargin</b> (int <a class="el" href="classDAnchorsBase.html#a928fe84da6e604a3c51e5272f54379c2">bottomMargin</a>)</td></tr>
+<tr class="separator:a4988d647454c12057aa68101171c53fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79660715129728c1391f5720cc1fbcde"><td class="memItemLeft" align="right" valign="top"><a id="a79660715129728c1391f5720cc1fbcde"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setLeftMargin</b> (int <a class="el" href="classDAnchorsBase.html#afb0e0a71973dec73ae07d36e80296614">leftMargin</a>)</td></tr>
+<tr class="separator:a79660715129728c1391f5720cc1fbcde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96a7a6e36b17520611abae027efd1f58"><td class="memItemLeft" align="right" valign="top"><a id="a96a7a6e36b17520611abae027efd1f58"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setRightMargin</b> (int <a class="el" href="classDAnchorsBase.html#aaff8732012dd21a70dc767b174d727cd">rightMargin</a>)</td></tr>
+<tr class="separator:a96a7a6e36b17520611abae027efd1f58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f459ee6331662611390dc254ea043fd"><td class="memItemLeft" align="right" valign="top"><a id="a2f459ee6331662611390dc254ea043fd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setHorizontalCenterOffset</b> (int <a class="el" href="classDAnchorsBase.html#aa9e852bbe6c864772dad969ee1bec1d2">horizontalCenterOffset</a>)</td></tr>
+<tr class="separator:a2f459ee6331662611390dc254ea043fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9346b91cbafdff2552a49de0ddea0fe9"><td class="memItemLeft" align="right" valign="top"><a id="a9346b91cbafdff2552a49de0ddea0fe9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setVerticalCenterOffset</b> (int <a class="el" href="classDAnchorsBase.html#ae12e57aa1784328e422f266162231065">verticalCenterOffset</a>)</td></tr>
+<tr class="separator:a9346b91cbafdff2552a49de0ddea0fe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21f5825cc9557e9384c22102e3e20198"><td class="memItemLeft" align="right" valign="top"><a id="a21f5825cc9557e9384c22102e3e20198"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setAlignWhenCentered</b> (bool alignWhenCentered)</td></tr>
+<tr class="separator:a21f5825cc9557e9384c22102e3e20198"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8878c0f752e2f67d16acfe2c927eeece"><td class="memItemLeft" align="right" valign="top"><a id="a8878c0f752e2f67d16acfe2c927eeece"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setTop</b> (int arg, Qt::AnchorPoint point)</td></tr>
+<tr class="separator:a8878c0f752e2f67d16acfe2c927eeece"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6802e723c28143f1628045bebd573e82"><td class="memItemLeft" align="right" valign="top"><a id="a6802e723c28143f1628045bebd573e82"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setBottom</b> (int arg, Qt::AnchorPoint point)</td></tr>
+<tr class="separator:a6802e723c28143f1628045bebd573e82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdcd44b04f19cb0de66a497b58732d99"><td class="memItemLeft" align="right" valign="top"><a id="abdcd44b04f19cb0de66a497b58732d99"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setLeft</b> (int arg, Qt::AnchorPoint point)</td></tr>
+<tr class="separator:abdcd44b04f19cb0de66a497b58732d99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa34cb6001ed8dd97b00187b17d97e47e"><td class="memItemLeft" align="right" valign="top"><a id="aa34cb6001ed8dd97b00187b17d97e47e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setRight</b> (int arg, Qt::AnchorPoint point)</td></tr>
+<tr class="separator:aa34cb6001ed8dd97b00187b17d97e47e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a888d7970f05c3a54419bba9594349100"><td class="memItemLeft" align="right" valign="top"><a id="a888d7970f05c3a54419bba9594349100"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setHorizontalCenter</b> (int arg, Qt::AnchorPoint point)</td></tr>
+<tr class="separator:a888d7970f05c3a54419bba9594349100"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae509d1b8f9ecf3c4ab3a379bdce27db1"><td class="memItemLeft" align="right" valign="top"><a id="ae509d1b8f9ecf3c4ab3a379bdce27db1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setVerticalCenter</b> (int arg, Qt::AnchorPoint point)</td></tr>
+<tr class="separator:ae509d1b8f9ecf3c4ab3a379bdce27db1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acafba8ba2307cbd37a01e2ba61d97414"><td class="memItemLeft" align="right" valign="top"><a id="acafba8ba2307cbd37a01e2ba61d97414"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAnchorsBase.html#acafba8ba2307cbd37a01e2ba61d97414">moveTop</a> (int arg)</td></tr>
+<tr class="memdesc:acafba8ba2307cbd37a01e2ba61d97414"><td class="mdescLeft">&#160;</td><td class="mdescRight">移动 target 控件的上边界到 arg 这个位置 <em>arg</em> 要移动到的位置 <br /></td></tr>
+<tr class="separator:acafba8ba2307cbd37a01e2ba61d97414"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade9999ddef5d6f1eebd64536813051ad"><td class="memItemLeft" align="right" valign="top"><a id="ade9999ddef5d6f1eebd64536813051ad"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAnchorsBase.html#ade9999ddef5d6f1eebd64536813051ad">moveBottom</a> (int arg)</td></tr>
+<tr class="memdesc:ade9999ddef5d6f1eebd64536813051ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">移动 target 控件的下边界到 arg 这个位置 <em>arg</em> 要移动到的位置 <br /></td></tr>
+<tr class="separator:ade9999ddef5d6f1eebd64536813051ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2b159c41ec3a83ab9ccc27b0e4f4f16"><td class="memItemLeft" align="right" valign="top"><a id="ad2b159c41ec3a83ab9ccc27b0e4f4f16"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAnchorsBase.html#ad2b159c41ec3a83ab9ccc27b0e4f4f16">moveLeft</a> (int arg)</td></tr>
+<tr class="memdesc:ad2b159c41ec3a83ab9ccc27b0e4f4f16"><td class="mdescLeft">&#160;</td><td class="mdescRight">移动 target 控件的左边界到 arg 这个位置 <em>arg</em> 要移动到的位置 <br /></td></tr>
+<tr class="separator:ad2b159c41ec3a83ab9ccc27b0e4f4f16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52c520e012f2a18ea4ea818556cdc372"><td class="memItemLeft" align="right" valign="top"><a id="a52c520e012f2a18ea4ea818556cdc372"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAnchorsBase.html#a52c520e012f2a18ea4ea818556cdc372">moveRight</a> (int arg)</td></tr>
+<tr class="memdesc:a52c520e012f2a18ea4ea818556cdc372"><td class="mdescLeft">&#160;</td><td class="mdescRight">移动 target 控件的右边界到 arg 这个位置 <em>arg</em> 要移动到的位置 <br /></td></tr>
+<tr class="separator:a52c520e012f2a18ea4ea818556cdc372"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe8bb3b17f3ed241443a4bb30c04d9a0"><td class="memItemLeft" align="right" valign="top"><a id="abe8bb3b17f3ed241443a4bb30c04d9a0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAnchorsBase.html#abe8bb3b17f3ed241443a4bb30c04d9a0">moveHorizontalCenter</a> (int arg)</td></tr>
+<tr class="memdesc:abe8bb3b17f3ed241443a4bb30c04d9a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">移动 target 控件的水平中线到 arg 这个位置 <em>arg</em> 要移动到的位置 <br /></td></tr>
+<tr class="separator:abe8bb3b17f3ed241443a4bb30c04d9a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa4ae423ced45e154f24851defd7e4fa"><td class="memItemLeft" align="right" valign="top"><a id="afa4ae423ced45e154f24851defd7e4fa"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAnchorsBase.html#afa4ae423ced45e154f24851defd7e4fa">moveVerticalCenter</a> (int arg)</td></tr>
+<tr class="memdesc:afa4ae423ced45e154f24851defd7e4fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">移动 target 控件的竖直中线到 arg 这个位置 <em>arg</em> 要移动到的位置 <br /></td></tr>
+<tr class="separator:afa4ae423ced45e154f24851defd7e4fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad13d5db3a3d97b8d2274458ce2e8c30c"><td class="memItemLeft" align="right" valign="top"><a id="ad13d5db3a3d97b8d2274458ce2e8c30c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAnchorsBase.html#ad13d5db3a3d97b8d2274458ce2e8c30c">moveCenter</a> (const QPoint &amp;arg)</td></tr>
+<tr class="memdesc:ad13d5db3a3d97b8d2274458ce2e8c30c"><td class="mdescLeft">&#160;</td><td class="mdescRight">移动 target 控件的上边界到 arg 这个位置 <em>arg</em> 要移动到的位置 <br /></td></tr>
+<tr class="separator:ad13d5db3a3d97b8d2274458ce2e8c30c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+信号</h2></td></tr>
+<tr class="memitem:a580423d9fbf2a0073edd190409d7f3a3"><td class="memItemLeft" align="right" valign="top"><a id="a580423d9fbf2a0073edd190409d7f3a3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAnchorsBase.html#a580423d9fbf2a0073edd190409d7f3a3">enabledChanged</a> (bool <a class="el" href="classDAnchorsBase.html#a826e09da24e328f0210ad8efa067946f">enabled</a>)</td></tr>
+<tr class="memdesc:a580423d9fbf2a0073edd190409d7f3a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号会在 <em>enabled</em> 属性的值改变时被发送 <br /></td></tr>
+<tr class="separator:a580423d9fbf2a0073edd190409d7f3a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9441c3e5b73ffea005625752446ee9a1"><td class="memItemLeft" align="right" valign="top"><a id="a9441c3e5b73ffea005625752446ee9a1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAnchorsBase.html#a9441c3e5b73ffea005625752446ee9a1">topChanged</a> (const <a class="el" href="structDAnchorInfo.html">DAnchorInfo</a> *<a class="el" href="classDAnchorsBase.html#aacbe1524bf770e24d1e28b4d68463f15">top</a>)</td></tr>
+<tr class="memdesc:a9441c3e5b73ffea005625752446ee9a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号会在 <em>top</em> 属性的值改变时被发送 <br /></td></tr>
+<tr class="separator:a9441c3e5b73ffea005625752446ee9a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f8bd08218d361f02b73650d03688646"><td class="memItemLeft" align="right" valign="top"><a id="a4f8bd08218d361f02b73650d03688646"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAnchorsBase.html#a4f8bd08218d361f02b73650d03688646">bottomChanged</a> (const <a class="el" href="structDAnchorInfo.html">DAnchorInfo</a> *<a class="el" href="classDAnchorsBase.html#a96aab06a235a501bb0916594c4ce7415">bottom</a>)</td></tr>
+<tr class="memdesc:a4f8bd08218d361f02b73650d03688646"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号会在 <em>bottom</em> 属性的值改变时被发送 <br /></td></tr>
+<tr class="separator:a4f8bd08218d361f02b73650d03688646"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0383f09d7ff793280d7e40b1d12456ab"><td class="memItemLeft" align="right" valign="top"><a id="a0383f09d7ff793280d7e40b1d12456ab"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAnchorsBase.html#a0383f09d7ff793280d7e40b1d12456ab">leftChanged</a> (const <a class="el" href="structDAnchorInfo.html">DAnchorInfo</a> *<a class="el" href="classDAnchorsBase.html#a56481b506ac3e8e6abea37ff300455e0">left</a>)</td></tr>
+<tr class="memdesc:a0383f09d7ff793280d7e40b1d12456ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号会在 <em>left</em> 属性的值改变时被发送 <br /></td></tr>
+<tr class="separator:a0383f09d7ff793280d7e40b1d12456ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedbcb19d5ac5c6a555cf5129a624e826"><td class="memItemLeft" align="right" valign="top"><a id="aedbcb19d5ac5c6a555cf5129a624e826"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAnchorsBase.html#aedbcb19d5ac5c6a555cf5129a624e826">rightChanged</a> (const <a class="el" href="structDAnchorInfo.html">DAnchorInfo</a> *<a class="el" href="classDAnchorsBase.html#a70a1e3acbc693739098c681f143621c0">right</a>)</td></tr>
+<tr class="memdesc:aedbcb19d5ac5c6a555cf5129a624e826"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号会在 <em>right</em> 属性的值改变时被发送 <br /></td></tr>
+<tr class="separator:aedbcb19d5ac5c6a555cf5129a624e826"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84b6892502bbc1f8838f06df748c4daa"><td class="memItemLeft" align="right" valign="top"><a id="a84b6892502bbc1f8838f06df748c4daa"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAnchorsBase.html#a84b6892502bbc1f8838f06df748c4daa">horizontalCenterChanged</a> (const <a class="el" href="structDAnchorInfo.html">DAnchorInfo</a> *<a class="el" href="classDAnchorsBase.html#a312b8194aa10f880a1b4d96557234405">horizontalCenter</a>)</td></tr>
+<tr class="memdesc:a84b6892502bbc1f8838f06df748c4daa"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号会在 <em>horizontalCenter</em> 属性的值改变时被发送 <br /></td></tr>
+<tr class="separator:a84b6892502bbc1f8838f06df748c4daa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f0f93e58273cf619d2f61416808a971"><td class="memItemLeft" align="right" valign="top"><a id="a6f0f93e58273cf619d2f61416808a971"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAnchorsBase.html#a6f0f93e58273cf619d2f61416808a971">verticalCenterChanged</a> (const <a class="el" href="structDAnchorInfo.html">DAnchorInfo</a> *<a class="el" href="classDAnchorsBase.html#a44a33a87a7e13c559dce6fae6ca5c92e">verticalCenter</a>)</td></tr>
+<tr class="memdesc:a6f0f93e58273cf619d2f61416808a971"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号会在 <em>verticalCenter</em> 属性的值改变时被发送 <br /></td></tr>
+<tr class="separator:a6f0f93e58273cf619d2f61416808a971"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a314be8ba3ce8dbbfeb8b96bbe7377c2a"><td class="memItemLeft" align="right" valign="top"><a id="a314be8ba3ce8dbbfeb8b96bbe7377c2a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAnchorsBase.html#a314be8ba3ce8dbbfeb8b96bbe7377c2a">fillChanged</a> (QWidget *<a class="el" href="classDAnchorsBase.html#aee6b0024b467c0f82baf43345981972f">fill</a>)</td></tr>
+<tr class="memdesc:a314be8ba3ce8dbbfeb8b96bbe7377c2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号会在 <em>fill</em> 属性的值改变时被发送 <br /></td></tr>
+<tr class="separator:a314be8ba3ce8dbbfeb8b96bbe7377c2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a835031f3c5c48cfd36cb834b710139c6"><td class="memItemLeft" align="right" valign="top"><a id="a835031f3c5c48cfd36cb834b710139c6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAnchorsBase.html#a835031f3c5c48cfd36cb834b710139c6">centerInChanged</a> (QWidget *<a class="el" href="classDAnchorsBase.html#ad41e7fff4550e1db1fdd79bebdc3ac2c">centerIn</a>)</td></tr>
+<tr class="memdesc:a835031f3c5c48cfd36cb834b710139c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号会在 <em>centerIn</em> 属性的值改变时被发送 <br /></td></tr>
+<tr class="separator:a835031f3c5c48cfd36cb834b710139c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed52c71cc1425a2c32a701568968aba7"><td class="memItemLeft" align="right" valign="top"><a id="aed52c71cc1425a2c32a701568968aba7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAnchorsBase.html#aed52c71cc1425a2c32a701568968aba7">marginsChanged</a> (int <a class="el" href="classDAnchorsBase.html#a799e0ba24f1525070d39282ad7b4f421">margins</a>)</td></tr>
+<tr class="memdesc:aed52c71cc1425a2c32a701568968aba7"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号会在 <em>margins</em> 属性的值改变时被发送 <br /></td></tr>
+<tr class="separator:aed52c71cc1425a2c32a701568968aba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefb57f54b327adedc7b1d55717aebb2b"><td class="memItemLeft" align="right" valign="top"><a id="aefb57f54b327adedc7b1d55717aebb2b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAnchorsBase.html#aefb57f54b327adedc7b1d55717aebb2b">topMarginChanged</a> (int <a class="el" href="classDAnchorsBase.html#acc36da853d40582a78bda969063c5eeb">topMargin</a>)</td></tr>
+<tr class="memdesc:aefb57f54b327adedc7b1d55717aebb2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号会在 <em>topMargin</em> 属性的值改变时被发送 <br /></td></tr>
+<tr class="separator:aefb57f54b327adedc7b1d55717aebb2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a189869aed734dbf6d0c037e96030986a"><td class="memItemLeft" align="right" valign="top"><a id="a189869aed734dbf6d0c037e96030986a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAnchorsBase.html#a189869aed734dbf6d0c037e96030986a">bottomMarginChanged</a> (int <a class="el" href="classDAnchorsBase.html#a928fe84da6e604a3c51e5272f54379c2">bottomMargin</a>)</td></tr>
+<tr class="memdesc:a189869aed734dbf6d0c037e96030986a"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号会在 <em>bottomMargin</em> 属性的值改变时被发送 <br /></td></tr>
+<tr class="separator:a189869aed734dbf6d0c037e96030986a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10bdd8e627a7bd9721a556d9ccdbb568"><td class="memItemLeft" align="right" valign="top"><a id="a10bdd8e627a7bd9721a556d9ccdbb568"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAnchorsBase.html#a10bdd8e627a7bd9721a556d9ccdbb568">leftMarginChanged</a> (int <a class="el" href="classDAnchorsBase.html#afb0e0a71973dec73ae07d36e80296614">leftMargin</a>)</td></tr>
+<tr class="memdesc:a10bdd8e627a7bd9721a556d9ccdbb568"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号会在 <em>leftMargin</em> 属性的值改变时被发送 <br /></td></tr>
+<tr class="separator:a10bdd8e627a7bd9721a556d9ccdbb568"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64d30aa142892368e71437cea18016ea"><td class="memItemLeft" align="right" valign="top"><a id="a64d30aa142892368e71437cea18016ea"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAnchorsBase.html#a64d30aa142892368e71437cea18016ea">rightMarginChanged</a> (int <a class="el" href="classDAnchorsBase.html#aaff8732012dd21a70dc767b174d727cd">rightMargin</a>)</td></tr>
+<tr class="memdesc:a64d30aa142892368e71437cea18016ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号会在 <em>rightMargin</em> 属性的值改变时被发送 <br /></td></tr>
+<tr class="separator:a64d30aa142892368e71437cea18016ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1a3584bf908941910a014201e7d3a4b"><td class="memItemLeft" align="right" valign="top"><a id="ac1a3584bf908941910a014201e7d3a4b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAnchorsBase.html#ac1a3584bf908941910a014201e7d3a4b">horizontalCenterOffsetChanged</a> (int <a class="el" href="classDAnchorsBase.html#aa9e852bbe6c864772dad969ee1bec1d2">horizontalCenterOffset</a>)</td></tr>
+<tr class="memdesc:ac1a3584bf908941910a014201e7d3a4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号会在 <em>horizontalCenterOffset</em> 属性的值改变时被发送 <br /></td></tr>
+<tr class="separator:ac1a3584bf908941910a014201e7d3a4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab761897700a60941fb229121794f2fbb"><td class="memItemLeft" align="right" valign="top"><a id="ab761897700a60941fb229121794f2fbb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAnchorsBase.html#ab761897700a60941fb229121794f2fbb">verticalCenterOffsetChanged</a> (int <a class="el" href="classDAnchorsBase.html#ae12e57aa1784328e422f266162231065">verticalCenterOffset</a>)</td></tr>
+<tr class="memdesc:ab761897700a60941fb229121794f2fbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号会在 <em>verticalCenterOffset</em> 属性的值改变时被发送 <br /></td></tr>
+<tr class="separator:ab761897700a60941fb229121794f2fbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a398b54df1373e4e5064586a16b03786f"><td class="memItemLeft" align="right" valign="top"><a id="a398b54df1373e4e5064586a16b03786f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>alignWhenCenteredChanged</b> (bool alignWhenCentered)</td></tr>
+<tr class="separator:a398b54df1373e4e5064586a16b03786f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a9470bf1a76d70fbb087537281d59d219"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAnchorsBase.html#a9470bf1a76d70fbb087537281d59d219">DAnchorsBase</a> (QWidget *w)</td></tr>
+<tr class="memdesc:a9470bf1a76d70fbb087537281d59d219"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造 <a class="el" href="classDAnchorsBase.html">DAnchorsBase</a> 对象，传入的 w 对象会和一个新的 <a class="el" href="classDAnchorsBase.html">DAnchorsBase</a> 对象 绑定到一起 <em>w</em> 需要使用锚定关系的控件  <a href="classDAnchorsBase.html#a9470bf1a76d70fbb087537281d59d219">更多...</a><br /></td></tr>
+<tr class="separator:a9470bf1a76d70fbb087537281d59d219"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a9431c4fcbb57ce2b3d931fbf445060"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAnchorsBase.html#a7a9431c4fcbb57ce2b3d931fbf445060">~DAnchorsBase</a> ()</td></tr>
+<tr class="memdesc:a7a9431c4fcbb57ce2b3d931fbf445060"><td class="mdescLeft">&#160;</td><td class="mdescRight">在析构时会判断此 <a class="el" href="classDAnchorsBase.html">DAnchorsBase</a> 对象是否和 target 存在绑定关系，如果是 则从映射表中移除绑定  <a href="classDAnchorsBase.html#a7a9431c4fcbb57ce2b3d931fbf445060">更多...</a><br /></td></tr>
+<tr class="separator:a7a9431c4fcbb57ce2b3d931fbf445060"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ad1d2d458b8c4aefe0eca4099462bb2"><td class="memItemLeft" align="right" valign="top"><a id="a9ad1d2d458b8c4aefe0eca4099462bb2"></a>
+QWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>target</b> () const</td></tr>
+<tr class="separator:a9ad1d2d458b8c4aefe0eca4099462bb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35b77de9d7aa369a85543ad8e828d1f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDEnhancedWidget.html">DEnhancedWidget</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAnchorsBase.html#a35b77de9d7aa369a85543ad8e828d1f6">enhancedWidget</a> () const</td></tr>
+<tr class="memdesc:a35b77de9d7aa369a85543ad8e828d1f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回 target 控件的扩展对象。此对象为 QWidget 对象额外提供了和控件大小、 位置相关的变化信号  <a href="classDAnchorsBase.html#a35b77de9d7aa369a85543ad8e828d1f6">更多...</a><br /></td></tr>
+<tr class="separator:a35b77de9d7aa369a85543ad8e828d1f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fd1f60122597918483e0f1a088b0d83"><td class="memItemLeft" align="right" valign="top"><a id="a4fd1f60122597918483e0f1a088b0d83"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>enabled</b> () const</td></tr>
+<tr class="separator:a4fd1f60122597918483e0f1a088b0d83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbce32c0a9f7535f4f19e8ec0052260e"><td class="memItemLeft" align="right" valign="top"><a id="adbce32c0a9f7535f4f19e8ec0052260e"></a>
+const <a class="el" href="classDAnchorsBase.html">DAnchorsBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>anchors</b> () const</td></tr>
+<tr class="separator:adbce32c0a9f7535f4f19e8ec0052260e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a568c3349dd795f67fb1b3e10a641e279"><td class="memItemLeft" align="right" valign="top"><a id="a568c3349dd795f67fb1b3e10a641e279"></a>
+const <a class="el" href="structDAnchorInfo.html">DAnchorInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>top</b> () const</td></tr>
+<tr class="separator:a568c3349dd795f67fb1b3e10a641e279"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafdb6fa31e799108f80ad308db665e21"><td class="memItemLeft" align="right" valign="top"><a id="aafdb6fa31e799108f80ad308db665e21"></a>
+const <a class="el" href="structDAnchorInfo.html">DAnchorInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>bottom</b> () const</td></tr>
+<tr class="separator:aafdb6fa31e799108f80ad308db665e21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a791ed505a2b71d4d125d47aaf46bd4f3"><td class="memItemLeft" align="right" valign="top"><a id="a791ed505a2b71d4d125d47aaf46bd4f3"></a>
+const <a class="el" href="structDAnchorInfo.html">DAnchorInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>left</b> () const</td></tr>
+<tr class="separator:a791ed505a2b71d4d125d47aaf46bd4f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebf54893a706b9312c76e5fe91d9650e"><td class="memItemLeft" align="right" valign="top"><a id="aebf54893a706b9312c76e5fe91d9650e"></a>
+const <a class="el" href="structDAnchorInfo.html">DAnchorInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>right</b> () const</td></tr>
+<tr class="separator:aebf54893a706b9312c76e5fe91d9650e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd9445de650e453089f9f2ba59d33b80"><td class="memItemLeft" align="right" valign="top"><a id="abd9445de650e453089f9f2ba59d33b80"></a>
+const <a class="el" href="structDAnchorInfo.html">DAnchorInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>horizontalCenter</b> () const</td></tr>
+<tr class="separator:abd9445de650e453089f9f2ba59d33b80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e340cd8b17626b1dc198b997ec0a4cb"><td class="memItemLeft" align="right" valign="top"><a id="a5e340cd8b17626b1dc198b997ec0a4cb"></a>
+const <a class="el" href="structDAnchorInfo.html">DAnchorInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>verticalCenter</b> () const</td></tr>
+<tr class="separator:a5e340cd8b17626b1dc198b997ec0a4cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a50585d31fbc9171e30537fcee62476"><td class="memItemLeft" align="right" valign="top"><a id="a7a50585d31fbc9171e30537fcee62476"></a>
+QWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>fill</b> () const</td></tr>
+<tr class="separator:a7a50585d31fbc9171e30537fcee62476"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98f17f9f1992d710e548e3456cb884bd"><td class="memItemLeft" align="right" valign="top"><a id="a98f17f9f1992d710e548e3456cb884bd"></a>
+QWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>centerIn</b> () const</td></tr>
+<tr class="separator:a98f17f9f1992d710e548e3456cb884bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac22565e32fa23e4f5da673015b311bb"><td class="memItemLeft" align="right" valign="top"><a id="aac22565e32fa23e4f5da673015b311bb"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>margins</b> () const</td></tr>
+<tr class="separator:aac22565e32fa23e4f5da673015b311bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4b7b4fa79e720e788110aaab587a6d9"><td class="memItemLeft" align="right" valign="top"><a id="aa4b7b4fa79e720e788110aaab587a6d9"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>topMargin</b> () const</td></tr>
+<tr class="separator:aa4b7b4fa79e720e788110aaab587a6d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d456d719bd778831e06b9be19d19b65"><td class="memItemLeft" align="right" valign="top"><a id="a5d456d719bd778831e06b9be19d19b65"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>bottomMargin</b> () const</td></tr>
+<tr class="separator:a5d456d719bd778831e06b9be19d19b65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6814300c6aeaf2d7554607f24e632341"><td class="memItemLeft" align="right" valign="top"><a id="a6814300c6aeaf2d7554607f24e632341"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>leftMargin</b> () const</td></tr>
+<tr class="separator:a6814300c6aeaf2d7554607f24e632341"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0111ca3afd86edb3905ff4501db994c"><td class="memItemLeft" align="right" valign="top"><a id="ab0111ca3afd86edb3905ff4501db994c"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>rightMargin</b> () const</td></tr>
+<tr class="separator:ab0111ca3afd86edb3905ff4501db994c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad37030c63f58f78f5284b04986e5b94d"><td class="memItemLeft" align="right" valign="top"><a id="ad37030c63f58f78f5284b04986e5b94d"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>horizontalCenterOffset</b> () const</td></tr>
+<tr class="separator:ad37030c63f58f78f5284b04986e5b94d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f4a57855583282a94aff7d373aa7136"><td class="memItemLeft" align="right" valign="top"><a id="a2f4a57855583282a94aff7d373aa7136"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>verticalCenterOffset</b> () const</td></tr>
+<tr class="separator:a2f4a57855583282a94aff7d373aa7136"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a626fe310ae8ca1b9fa9407b80dd9ed94"><td class="memItemLeft" align="right" valign="top"><a id="a626fe310ae8ca1b9fa9407b80dd9ed94"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>alignWhenCentered</b> () const</td></tr>
+<tr class="separator:a626fe310ae8ca1b9fa9407b80dd9ed94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33dec521134882d65d38af4fd481d8ad"><td class="memItemLeft" align="right" valign="top">AnchorError&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAnchorsBase.html#a33dec521134882d65d38af4fd481d8ad">errorCode</a> () const</td></tr>
+<tr class="memdesc:a33dec521134882d65d38af4fd481d8ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">锚定过程中产生的错误，在一个新的锚定函数被调用之前会清空此错误状态，每次 调用锚定函数后，可以通过此函数的返回值来判断锚定设置是否成功  <a href="classDAnchorsBase.html#a33dec521134882d65d38af4fd481d8ad">更多...</a><br /></td></tr>
+<tr class="separator:a33dec521134882d65d38af4fd481d8ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2061dbf36f9a8e545ba80af6cdf74cc7"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAnchorsBase.html#a2061dbf36f9a8e545ba80af6cdf74cc7">errorString</a> () const</td></tr>
+<tr class="memdesc:a2061dbf36f9a8e545ba80af6cdf74cc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">对 errorCode 的文本描述信息  <a href="classDAnchorsBase.html#a2061dbf36f9a8e545ba80af6cdf74cc7">更多...</a><br /></td></tr>
+<tr class="separator:a2061dbf36f9a8e545ba80af6cdf74cc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca960f4d639cf1afe41772e06b7def03"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAnchorsBase.html#aca960f4d639cf1afe41772e06b7def03">isBinding</a> (const <a class="el" href="structDAnchorInfo.html">DAnchorInfo</a> *info) const</td></tr>
+<tr class="memdesc:aca960f4d639cf1afe41772e06b7def03"><td class="mdescLeft">&#160;</td><td class="mdescRight">如果此 info 设置了锚定对象，则返回 true ，否则返回 false  <a href="classDAnchorsBase.html#aca960f4d639cf1afe41772e06b7def03">更多...</a><br /></td></tr>
+<tr class="separator:aca960f4d639cf1afe41772e06b7def03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a34f1ff02eb1b8cda41971e6d86dead47"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAnchorsBase.html#a34f1ff02eb1b8cda41971e6d86dead47">setAnchor</a> (QWidget *w, const Qt::AnchorPoint &amp;p, QWidget *<a class="el" href="classDAnchorsBase.html#a45220a39f990088e234fecbe1365618f">target</a>, const Qt::AnchorPoint &amp;point)</td></tr>
+<tr class="memdesc:a34f1ff02eb1b8cda41971e6d86dead47"><td class="mdescLeft">&#160;</td><td class="mdescRight">方便用户直接设置两个对象之间锚定关系的静态函数，调用此函数可能会隐式创建 <a class="el" href="classDAnchorsBase.html">DAnchorsBase</a> 对象 <em>w</em> 要锚定的控件对象 <em>p</em> 要锚定的锚线/锚点 <em>target</em> 锚定的目标对象 <em>point</em> 锚定的目标锚线/锚点  <a href="classDAnchorsBase.html#a34f1ff02eb1b8cda41971e6d86dead47">更多...</a><br /></td></tr>
+<tr class="separator:a34f1ff02eb1b8cda41971e6d86dead47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07caa92d2fbc8811131ee4d09a6da302"><td class="memItemLeft" align="right" valign="top"><a id="a07caa92d2fbc8811131ee4d09a6da302"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAnchorsBase.html#a07caa92d2fbc8811131ee4d09a6da302">clearAnchors</a> (const QWidget *w)</td></tr>
+<tr class="memdesc:a07caa92d2fbc8811131ee4d09a6da302"><td class="mdescLeft">&#160;</td><td class="mdescRight">清除和控件 w 相关的所有锚定关系，包括锚定w或者被w锚定的任何关联。会直接 销毁 w 对应的 <a class="el" href="classDAnchorsBase.html">DAnchorsBase</a> 对象 <em>w</em> <br /></td></tr>
+<tr class="separator:a07caa92d2fbc8811131ee4d09a6da302"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae92c1775f4be8d3447c3b54b0d705dbb"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classDAnchorsBase.html">DAnchorsBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAnchorsBase.html#ae92c1775f4be8d3447c3b54b0d705dbb">getAnchorBaseByWidget</a> (const QWidget *w)</td></tr>
+<tr class="memdesc:ae92c1775f4be8d3447c3b54b0d705dbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回与 w 绑定的 <a class="el" href="classDAnchorsBase.html">DAnchorsBase</a> 对象 <em>w</em>  <a href="classDAnchorsBase.html#ae92c1775f4be8d3447c3b54b0d705dbb">更多...</a><br /></td></tr>
+<tr class="separator:ae92c1775f4be8d3447c3b54b0d705dbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a129827fe0df573094cc1cf57ade9c59c"><td class="memItemLeft" align="right" valign="top"><a id="a129827fe0df573094cc1cf57ade9c59c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> (QWidget *w)</td></tr>
+<tr class="separator:a129827fe0df573094cc1cf57ade9c59c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:a45220a39f990088e234fecbe1365618f"><td class="memItemLeft" align="right" valign="top">QWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAnchorsBase.html#a45220a39f990088e234fecbe1365618f">target</a></td></tr>
+<tr class="memdesc:a45220a39f990088e234fecbe1365618f"><td class="mdescLeft">&#160;</td><td class="mdescRight">绑定了锚定功能的控件对象  <a href="classDAnchorsBase.html#a45220a39f990088e234fecbe1365618f">更多...</a><br /></td></tr>
+<tr class="separator:a45220a39f990088e234fecbe1365618f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a826e09da24e328f0210ad8efa067946f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAnchorsBase.html#a826e09da24e328f0210ad8efa067946f">enabled</a></td></tr>
+<tr class="memdesc:a826e09da24e328f0210ad8efa067946f"><td class="mdescLeft">&#160;</td><td class="mdescRight">控制锚定功能是否开启，为 false 时仅仅表示不会根据控件各种属性的变化来 来更新它的位置，但锚定关系并没有被解除  <a href="classDAnchorsBase.html#a826e09da24e328f0210ad8efa067946f">更多...</a><br /></td></tr>
+<tr class="separator:a826e09da24e328f0210ad8efa067946f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ac5365f1b6fe36a37c93e609c95b4c0"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classDAnchorsBase.html">DAnchorsBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAnchorsBase.html#a8ac5365f1b6fe36a37c93e609c95b4c0">anchors</a></td></tr>
+<tr class="memdesc:a8ac5365f1b6fe36a37c93e609c95b4c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">一个指向自己的指针  <a href="classDAnchorsBase.html#a8ac5365f1b6fe36a37c93e609c95b4c0">更多...</a><br /></td></tr>
+<tr class="separator:a8ac5365f1b6fe36a37c93e609c95b4c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacbe1524bf770e24d1e28b4d68463f15"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structDAnchorInfo.html">DAnchorInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAnchorsBase.html#aacbe1524bf770e24d1e28b4d68463f15">top</a></td></tr>
+<tr class="memdesc:aacbe1524bf770e24d1e28b4d68463f15"><td class="mdescLeft">&#160;</td><td class="mdescRight">target 控件上边界锚线的信息  <a href="classDAnchorsBase.html#aacbe1524bf770e24d1e28b4d68463f15">更多...</a><br /></td></tr>
+<tr class="separator:aacbe1524bf770e24d1e28b4d68463f15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96aab06a235a501bb0916594c4ce7415"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structDAnchorInfo.html">DAnchorInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAnchorsBase.html#a96aab06a235a501bb0916594c4ce7415">bottom</a></td></tr>
+<tr class="memdesc:a96aab06a235a501bb0916594c4ce7415"><td class="mdescLeft">&#160;</td><td class="mdescRight">target 控件下边界锚线的信息  <a href="classDAnchorsBase.html#a96aab06a235a501bb0916594c4ce7415">更多...</a><br /></td></tr>
+<tr class="separator:a96aab06a235a501bb0916594c4ce7415"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56481b506ac3e8e6abea37ff300455e0"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structDAnchorInfo.html">DAnchorInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAnchorsBase.html#a56481b506ac3e8e6abea37ff300455e0">left</a></td></tr>
+<tr class="memdesc:a56481b506ac3e8e6abea37ff300455e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">target 控件左边界锚线的信息  <a href="classDAnchorsBase.html#a56481b506ac3e8e6abea37ff300455e0">更多...</a><br /></td></tr>
+<tr class="separator:a56481b506ac3e8e6abea37ff300455e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70a1e3acbc693739098c681f143621c0"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structDAnchorInfo.html">DAnchorInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAnchorsBase.html#a70a1e3acbc693739098c681f143621c0">right</a></td></tr>
+<tr class="memdesc:a70a1e3acbc693739098c681f143621c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">target 控件右边界锚线的信息  <a href="classDAnchorsBase.html#a70a1e3acbc693739098c681f143621c0">更多...</a><br /></td></tr>
+<tr class="separator:a70a1e3acbc693739098c681f143621c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a312b8194aa10f880a1b4d96557234405"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structDAnchorInfo.html">DAnchorInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAnchorsBase.html#a312b8194aa10f880a1b4d96557234405">horizontalCenter</a></td></tr>
+<tr class="memdesc:a312b8194aa10f880a1b4d96557234405"><td class="mdescLeft">&#160;</td><td class="mdescRight">target 控件水平锚线的信息  <a href="classDAnchorsBase.html#a312b8194aa10f880a1b4d96557234405">更多...</a><br /></td></tr>
+<tr class="separator:a312b8194aa10f880a1b4d96557234405"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44a33a87a7e13c559dce6fae6ca5c92e"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structDAnchorInfo.html">DAnchorInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAnchorsBase.html#a44a33a87a7e13c559dce6fae6ca5c92e">verticalCenter</a></td></tr>
+<tr class="memdesc:a44a33a87a7e13c559dce6fae6ca5c92e"><td class="mdescLeft">&#160;</td><td class="mdescRight">target 控件竖直锚线的信息  <a href="classDAnchorsBase.html#a44a33a87a7e13c559dce6fae6ca5c92e">更多...</a><br /></td></tr>
+<tr class="separator:a44a33a87a7e13c559dce6fae6ca5c92e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee6b0024b467c0f82baf43345981972f"><td class="memItemLeft" align="right" valign="top">QWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAnchorsBase.html#aee6b0024b467c0f82baf43345981972f">fill</a></td></tr>
+<tr class="memdesc:aee6b0024b467c0f82baf43345981972f"><td class="mdescLeft">&#160;</td><td class="mdescRight">target 控件的填充目标对象  <a href="classDAnchorsBase.html#aee6b0024b467c0f82baf43345981972f">更多...</a><br /></td></tr>
+<tr class="separator:aee6b0024b467c0f82baf43345981972f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad41e7fff4550e1db1fdd79bebdc3ac2c"><td class="memItemLeft" align="right" valign="top">QWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAnchorsBase.html#ad41e7fff4550e1db1fdd79bebdc3ac2c">centerIn</a></td></tr>
+<tr class="memdesc:ad41e7fff4550e1db1fdd79bebdc3ac2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">target 控件的居中目标对象  <a href="classDAnchorsBase.html#ad41e7fff4550e1db1fdd79bebdc3ac2c">更多...</a><br /></td></tr>
+<tr class="separator:ad41e7fff4550e1db1fdd79bebdc3ac2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a799e0ba24f1525070d39282ad7b4f421"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAnchorsBase.html#a799e0ba24f1525070d39282ad7b4f421">margins</a></td></tr>
+<tr class="memdesc:a799e0ba24f1525070d39282ad7b4f421"><td class="mdescLeft">&#160;</td><td class="mdescRight">上下左右四条“锚线”的边距，此值的优先级低于每条“锚线”特定的 margin 值  <a href="classDAnchorsBase.html#a799e0ba24f1525070d39282ad7b4f421">更多...</a><br /></td></tr>
+<tr class="separator:a799e0ba24f1525070d39282ad7b4f421"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc36da853d40582a78bda969063c5eeb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAnchorsBase.html#acc36da853d40582a78bda969063c5eeb">topMargin</a></td></tr>
+<tr class="memdesc:acc36da853d40582a78bda969063c5eeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">上“锚线”的边距，优先级高于 margins  <a href="classDAnchorsBase.html#acc36da853d40582a78bda969063c5eeb">更多...</a><br /></td></tr>
+<tr class="separator:acc36da853d40582a78bda969063c5eeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a928fe84da6e604a3c51e5272f54379c2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAnchorsBase.html#a928fe84da6e604a3c51e5272f54379c2">bottomMargin</a></td></tr>
+<tr class="memdesc:a928fe84da6e604a3c51e5272f54379c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">下“锚线”的边距，优先级高于 margins  <a href="classDAnchorsBase.html#a928fe84da6e604a3c51e5272f54379c2">更多...</a><br /></td></tr>
+<tr class="separator:a928fe84da6e604a3c51e5272f54379c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb0e0a71973dec73ae07d36e80296614"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAnchorsBase.html#afb0e0a71973dec73ae07d36e80296614">leftMargin</a></td></tr>
+<tr class="memdesc:afb0e0a71973dec73ae07d36e80296614"><td class="mdescLeft">&#160;</td><td class="mdescRight">左“锚线”的边距，优先级高于 margins  <a href="classDAnchorsBase.html#afb0e0a71973dec73ae07d36e80296614">更多...</a><br /></td></tr>
+<tr class="separator:afb0e0a71973dec73ae07d36e80296614"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaff8732012dd21a70dc767b174d727cd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAnchorsBase.html#aaff8732012dd21a70dc767b174d727cd">rightMargin</a></td></tr>
+<tr class="memdesc:aaff8732012dd21a70dc767b174d727cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">右“锚线”的边距，优先级高于 margins  <a href="classDAnchorsBase.html#aaff8732012dd21a70dc767b174d727cd">更多...</a><br /></td></tr>
+<tr class="separator:aaff8732012dd21a70dc767b174d727cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9e852bbe6c864772dad969ee1bec1d2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAnchorsBase.html#aa9e852bbe6c864772dad969ee1bec1d2">horizontalCenterOffset</a></td></tr>
+<tr class="memdesc:aa9e852bbe6c864772dad969ee1bec1d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">水平“锚线”的偏移量  <a href="classDAnchorsBase.html#aa9e852bbe6c864772dad969ee1bec1d2">更多...</a><br /></td></tr>
+<tr class="separator:aa9e852bbe6c864772dad969ee1bec1d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae12e57aa1784328e422f266162231065"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAnchorsBase.html#ae12e57aa1784328e422f266162231065">verticalCenterOffset</a></td></tr>
+<tr class="memdesc:ae12e57aa1784328e422f266162231065"><td class="mdescLeft">&#160;</td><td class="mdescRight">竖直“锚线”的偏移量  <a href="classDAnchorsBase.html#ae12e57aa1784328e422f266162231065">更多...</a><br /></td></tr>
+<tr class="separator:ae12e57aa1784328e422f266162231065"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a489ca6a7270304aa3b26d8b2b052e16f"><td class="memItemLeft" align="right" valign="top"><a id="a489ca6a7270304aa3b26d8b2b052e16f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>alignWhenCentered</b></td></tr>
+<tr class="separator:a489ca6a7270304aa3b26d8b2b052e16f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a9470bf1a76d70fbb087537281d59d219"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9470bf1a76d70fbb087537281d59d219">&#9670;&nbsp;</a></span>DAnchorsBase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DAnchorsBase::DAnchorsBase </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>w</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>构造 <a class="el" href="classDAnchorsBase.html">DAnchorsBase</a> 对象，传入的 w 对象会和一个新的 <a class="el" href="classDAnchorsBase.html">DAnchorsBase</a> 对象 绑定到一起 <em>w</em> 需要使用锚定关系的控件 </p>
+<dl class="section note"><dt>注解</dt><dd>对 w 设置的锚定关系不会随着本次构造的 <a class="el" href="classDAnchorsBase.html">DAnchorsBase</a> 对象的销毁而消失。 此构造函数可能会隐式的构造一个新 <a class="el" href="classDAnchorsBase.html">DAnchorsBase</a> 对象用于真正的功能实现，函数执行 时会先检查当前是否已经有和 w 对象绑定的 <a class="el" href="classDAnchorsBase.html">DAnchorsBase</a> 对象，如果没有则会创建一 个新的 <a class="el" href="classDAnchorsBase.html">DAnchorsBase</a> 对象与之绑定，否则使用已有的对象。隐式创建的 <a class="el" href="classDAnchorsBase.html">DAnchorsBase</a> 对象会在对应的 QWidget 对象被销毁时自动销毁。 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDAnchorsBase.html#a45220a39f990088e234fecbe1365618f" title="绑定了锚定功能的控件对象">target()</a> <a class="el" href="classDAnchorsBase.html#a07caa92d2fbc8811131ee4d09a6da302" title="清除和控件 w 相关的所有锚定关系，包括锚定w或者被w锚定的任何关联。会直接 销毁 w 对应的 DAnchorsBase 对象 w">clearAnchors()</a> <a class="el" href="classDAnchorsBase.html#ae92c1775f4be8d3447c3b54b0d705dbb" title="返回与 w 绑定的 DAnchorsBase 对象 w">getAnchorBaseByWidget()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a7a9431c4fcbb57ce2b3d931fbf445060"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a9431c4fcbb57ce2b3d931fbf445060">&#9670;&nbsp;</a></span>~DAnchorsBase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DAnchorsBase::~DAnchorsBase </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在析构时会判断此 <a class="el" href="classDAnchorsBase.html">DAnchorsBase</a> 对象是否和 target 存在绑定关系，如果是 则从映射表中移除绑定 </p>
+<dl class="section warning"><dt>警告</dt><dd><a class="el" href="classDAnchorsBasePrivate.html">DAnchorsBasePrivate</a> 对象可能是在多个 <a class="el" href="classDAnchorsBase.html">DAnchorsBase</a> 对象之间显式 共享的，所以在销毁 <a class="el" href="classDAnchorsBase.html">DAnchorsBase</a> 后，对应的 <a class="el" href="classDAnchorsBasePrivate.html">DAnchorsBasePrivate</a> 对象不一定 会被销毁 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>QExplicitlySharedDataPointer </dd></dl>
+<p>TODO dynamic_cast会报警告<code>QSharedData is not polymorphic</code>，因为没有虚函数. 因为由QExplicitlySharedDataPointer管理, QSharedData没有虚析构， 导致delete QSharedData时，不会调用子类~DAnchorsBasePrivate. 之后改成QExplicitlySharedDataPointer&lt;DAnchorsBasePrivate&gt; d_ptr， d_ptr计数为0会调用~DAnchorsBasePrivate</p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a35b77de9d7aa369a85543ad8e828d1f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35b77de9d7aa369a85543ad8e828d1f6">&#9670;&nbsp;</a></span>enhancedWidget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDEnhancedWidget.html">DEnhancedWidget</a> * DAnchorsBase::enhancedWidget </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>返回 target 控件的扩展对象。此对象为 QWidget 对象额外提供了和控件大小、 位置相关的变化信号 </p>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDtk_1_1Widget_1_1DEnhancedWidget.html">Dtk::Widget::DEnhancedWidget</a> </dd></dl>
+
+</div>
+</div>
+<a id="a33dec521134882d65d38af4fd481d8ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33dec521134882d65d38af4fd481d8ad">&#9670;&nbsp;</a></span>errorCode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DAnchorsBase::AnchorError DAnchorsBase::errorCode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>锚定过程中产生的错误，在一个新的锚定函数被调用之前会清空此错误状态，每次 调用锚定函数后，可以通过此函数的返回值来判断锚定设置是否成功 </p>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDAnchorsBase.html#a2061dbf36f9a8e545ba80af6cdf74cc7" title="对 errorCode 的文本描述信息">errorString()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a2061dbf36f9a8e545ba80af6cdf74cc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2061dbf36f9a8e545ba80af6cdf74cc7">&#9670;&nbsp;</a></span>errorString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString DAnchorsBase::errorString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>对 errorCode 的文本描述信息 </p>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDAnchorsBase.html#a33dec521134882d65d38af4fd481d8ad" title="锚定过程中产生的错误，在一个新的锚定函数被调用之前会清空此错误状态，每次 调用锚定函数后，可以通过此函数的返回值来判断锚定设置是否成功">errorCode</a> </dd></dl>
+
+</div>
+</div>
+<a id="ae92c1775f4be8d3447c3b54b0d705dbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae92c1775f4be8d3447c3b54b0d705dbb">&#9670;&nbsp;</a></span>getAnchorBaseByWidget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDAnchorsBase.html">DAnchorsBase</a> * DAnchorsBase::getAnchorBaseByWidget </td>
+          <td>(</td>
+          <td class="paramtype">const QWidget *&#160;</td>
+          <td class="paramname"><em>w</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>返回与 w 绑定的 <a class="el" href="classDAnchorsBase.html">DAnchorsBase</a> 对象 <em>w</em> </p>
+<dl class="section return"><dt>返回</dt><dd>如果 w 没有对应的锚定对象，则返回空 </dd></dl>
+
+</div>
+</div>
+<a id="aca960f4d639cf1afe41772e06b7def03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca960f4d639cf1afe41772e06b7def03">&#9670;&nbsp;</a></span>isBinding()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DAnchorsBase::isBinding </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structDAnchorInfo.html">DAnchorInfo</a> *&#160;</td>
+          <td class="paramname"><em>info</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>如果此 info 设置了锚定对象，则返回 true ，否则返回 false </p>
+<div class="fragment"><div class="line"><a class="code" href="classDAnchors.html">DAnchors&lt;QWidget&gt;</a> w1;</div>
+<div class="line"><a class="code" href="classDAnchors.html">DAnchors&lt;QWidget&gt;</a> w2;</div>
+<div class="line"> </div>
+<div class="line">w1.setLeft(w2.<a class="code" href="classDAnchorsBase.html#a70a1e3acbc693739098c681f143621c0">right</a>());</div>
+<div class="line"> </div>
+<div class="line">qDebug() &lt;&lt; w1.<a class="code" href="classDAnchorsBase.html#aca960f4d639cf1afe41772e06b7def03">isBinding</a>(w1.<a class="code" href="classDAnchorsBase.html#a56481b506ac3e8e6abea37ff300455e0">left</a>()) &lt;&lt; w2.<a class="code" href="classDAnchorsBase.html#aca960f4d639cf1afe41772e06b7def03">isBinding</a>(w2.<a class="code" href="classDAnchorsBase.html#a70a1e3acbc693739098c681f143621c0">right</a>());</div>
+<div class="ttc" id="aclassDAnchorsBase_html_a56481b506ac3e8e6abea37ff300455e0"><div class="ttname"><a href="classDAnchorsBase.html#a56481b506ac3e8e6abea37ff300455e0">DAnchorsBase::left</a></div><div class="ttdeci">const DAnchorInfo * left</div><div class="ttdoc">target 控件左边界锚线的信息</div><div class="ttdef"><b>Definition:</b> danchors.h:71</div></div>
+<div class="ttc" id="aclassDAnchorsBase_html_a70a1e3acbc693739098c681f143621c0"><div class="ttname"><a href="classDAnchorsBase.html#a70a1e3acbc693739098c681f143621c0">DAnchorsBase::right</a></div><div class="ttdeci">const DAnchorInfo * right</div><div class="ttdoc">target 控件右边界锚线的信息</div><div class="ttdef"><b>Definition:</b> danchors.h:72</div></div>
+<div class="ttc" id="aclassDAnchorsBase_html_aca960f4d639cf1afe41772e06b7def03"><div class="ttname"><a href="classDAnchorsBase.html#aca960f4d639cf1afe41772e06b7def03">DAnchorsBase::isBinding</a></div><div class="ttdeci">bool isBinding(const DAnchorInfo *info) const</div><div class="ttdoc">如果此 info 设置了锚定对象，则返回 true ，否则返回 false</div><div class="ttdef"><b>Definition:</b> danchors.cpp:855</div></div>
+<div class="ttc" id="aclassDAnchors_html"><div class="ttname"><a href="classDAnchors.html">DAnchors</a></div><div class="ttdef"><b>Definition:</b> danchors.h:201</div></div>
+</div><!-- fragment --><p> 打印内容为：ture false <em>info</em> </p><dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="aa7ad63c8ff4ccb2a4469d1db0796e9dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7ad63c8ff4ccb2a4469d1db0796e9dd">&#9670;&nbsp;</a></span>setAnchor <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DAnchorsBase::setAnchor </td>
+          <td>(</td>
+          <td class="paramtype">const Qt::AnchorPoint &amp;&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>target</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Qt::AnchorPoint &amp;&#160;</td>
+          <td class="paramname"><em>point</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>为 <a class="el" href="classDAnchorsBase.html#a45220a39f990088e234fecbe1365618f" title="绑定了锚定功能的控件对象">DAnchorsBase::target</a> 对象设置锚定规则 </p>
+<dl class="section note"><dt>注解</dt><dd>可能会为目标控件隐式创建其对应的 <a class="el" href="classDAnchorsBase.html">DAnchorsBase</a> 对象 <em>p</em> 为当前控件的哪个锚线/锚点设置锚定规则 <em>target</em> 锚定的目标控件 <em>point</em> 锚定的目标锚线/锚点 </dd></dl>
+<dl class="section return"><dt>返回</dt><dd>如果设置成功，则返回 true，否则返回 false </dd></dl>
+
+</div>
+</div>
+<a id="a34f1ff02eb1b8cda41971e6d86dead47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34f1ff02eb1b8cda41971e6d86dead47">&#9670;&nbsp;</a></span>setAnchor() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DAnchorsBase::setAnchor </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Qt::AnchorPoint &amp;&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>target</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Qt::AnchorPoint &amp;&#160;</td>
+          <td class="paramname"><em>point</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>方便用户直接设置两个对象之间锚定关系的静态函数，调用此函数可能会隐式创建 <a class="el" href="classDAnchorsBase.html">DAnchorsBase</a> 对象 <em>w</em> 要锚定的控件对象 <em>p</em> 要锚定的锚线/锚点 <em>target</em> 锚定的目标对象 <em>point</em> 锚定的目标锚线/锚点 </p>
+<dl class="section return"><dt>返回</dt><dd>如果锚定成功，则返回 true，否则返回 false </dd></dl>
+
+</div>
+</div>
+<a id="ab482f0c0072be8a22d3b47a153024f08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab482f0c0072be8a22d3b47a153024f08">&#9670;&nbsp;</a></span>setCenterIn</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DAnchorsBase::setCenterIn </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classDAnchorsBase.html">DAnchorsBase</a> *&#160;</td>
+          <td class="paramname"><em>centerIn</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>将 centerIn 中的target()作为参数调用其它重载函数 <em>centerIn</em> </p>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a34f5257dbae3a967e30764a4be6c89c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34f5257dbae3a967e30764a4be6c89c4">&#9670;&nbsp;</a></span>setFill</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DAnchorsBase::setFill </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classDAnchorsBase.html">DAnchorsBase</a> *&#160;</td>
+          <td class="paramname"><em>fill</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>将 fill 中的target()作为参数调用其它重载函数 <em>fill</em> </p>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">属性说明</h2>
+<a id="a8ac5365f1b6fe36a37c93e609c95b4c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ac5365f1b6fe36a37c93e609c95b4c0">&#9670;&nbsp;</a></span>anchors</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DAnchorsBase::anchors</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>一个指向自己的指针 </p>
+<dl class="section note"><dt>注解</dt><dd>只读 </dd></dl>
+
+</div>
+</div>
+<a id="a96aab06a235a501bb0916594c4ce7415"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96aab06a235a501bb0916594c4ce7415">&#9670;&nbsp;</a></span>bottom</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DAnchorsBase::bottom</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>target 控件下边界锚线的信息 </p>
+<dl class="section note"><dt>注解</dt><dd>只能和 top verticalCenter bottom 绑定 </dd>
+<dd>
+对属性赋值不会更改它自身的值，而是对此锚线设置绑定关系 </dd>
+<dd>
+可读可写 </dd></dl>
+
+</div>
+</div>
+<a id="a928fe84da6e604a3c51e5272f54379c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a928fe84da6e604a3c51e5272f54379c2">&#9670;&nbsp;</a></span>bottomMargin</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DAnchorsBase::bottomMargin</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>下“锚线”的边距，优先级高于 margins </p>
+<dl class="section note"><dt>注解</dt><dd>可读可写 </dd></dl>
+
+</div>
+</div>
+<a id="ad41e7fff4550e1db1fdd79bebdc3ac2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad41e7fff4550e1db1fdd79bebdc3ac2c">&#9670;&nbsp;</a></span>centerIn</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DAnchorsBase::centerIn</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>target 控件的居中目标对象 </p>
+<dl class="section note"><dt>注解</dt><dd>可读可写 </dd></dl>
+
+</div>
+</div>
+<a id="a826e09da24e328f0210ad8efa067946f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a826e09da24e328f0210ad8efa067946f">&#9670;&nbsp;</a></span>enabled</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DAnchorsBase::enabled</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>控制锚定功能是否开启，为 false 时仅仅表示不会根据控件各种属性的变化来 来更新它的位置，但锚定关系并没有被解除 </p>
+<dl class="section note"><dt>注解</dt><dd>可读可写 </dd></dl>
+
+</div>
+</div>
+<a id="aee6b0024b467c0f82baf43345981972f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee6b0024b467c0f82baf43345981972f">&#9670;&nbsp;</a></span>fill</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DAnchorsBase::fill</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>target 控件的填充目标对象 </p>
+<dl class="section note"><dt>注解</dt><dd>可读可写 </dd></dl>
+
+</div>
+</div>
+<a id="a312b8194aa10f880a1b4d96557234405"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a312b8194aa10f880a1b4d96557234405">&#9670;&nbsp;</a></span>horizontalCenter</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DAnchorsBase::horizontalCenter</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>target 控件水平锚线的信息 </p>
+<dl class="section note"><dt>注解</dt><dd>只能和 left horizontalCenter right 绑定 </dd>
+<dd>
+对属性赋值不会更改它自身的值，而是对此锚线设置绑定关系 </dd>
+<dd>
+可读可写 </dd></dl>
+
+</div>
+</div>
+<a id="aa9e852bbe6c864772dad969ee1bec1d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9e852bbe6c864772dad969ee1bec1d2">&#9670;&nbsp;</a></span>horizontalCenterOffset</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DAnchorsBase::horizontalCenterOffset</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>水平“锚线”的偏移量 </p>
+<dl class="section note"><dt>注解</dt><dd>可读可写 </dd></dl>
+
+</div>
+</div>
+<a id="a56481b506ac3e8e6abea37ff300455e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56481b506ac3e8e6abea37ff300455e0">&#9670;&nbsp;</a></span>left</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DAnchorsBase::left</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>target 控件左边界锚线的信息 </p>
+<dl class="section note"><dt>注解</dt><dd>只能和 left horizontalCenter right 绑定 </dd>
+<dd>
+对属性赋值不会更改它自身的值，而是对此锚线设置绑定关系 </dd>
+<dd>
+可读可写 </dd></dl>
+
+</div>
+</div>
+<a id="afb0e0a71973dec73ae07d36e80296614"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb0e0a71973dec73ae07d36e80296614">&#9670;&nbsp;</a></span>leftMargin</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DAnchorsBase::leftMargin</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>左“锚线”的边距，优先级高于 margins </p>
+<dl class="section note"><dt>注解</dt><dd>可读可写 </dd></dl>
+
+</div>
+</div>
+<a id="a799e0ba24f1525070d39282ad7b4f421"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a799e0ba24f1525070d39282ad7b4f421">&#9670;&nbsp;</a></span>margins</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DAnchorsBase::margins</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>上下左右四条“锚线”的边距，此值的优先级低于每条“锚线”特定的 margin 值 </p>
+<dl class="section note"><dt>注解</dt><dd>可读可写 </dd></dl>
+
+</div>
+</div>
+<a id="a70a1e3acbc693739098c681f143621c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70a1e3acbc693739098c681f143621c0">&#9670;&nbsp;</a></span>right</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DAnchorsBase::right</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>target 控件右边界锚线的信息 </p>
+<dl class="section note"><dt>注解</dt><dd>只能和 left horizontalCenter right 绑定 </dd>
+<dd>
+对属性赋值不会更改它自身的值，而是对此锚线设置绑定关系 </dd>
+<dd>
+可读可写 </dd></dl>
+
+</div>
+</div>
+<a id="aaff8732012dd21a70dc767b174d727cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaff8732012dd21a70dc767b174d727cd">&#9670;&nbsp;</a></span>rightMargin</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DAnchorsBase::rightMargin</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>右“锚线”的边距，优先级高于 margins </p>
+<dl class="section note"><dt>注解</dt><dd>可读可写 </dd></dl>
+
+</div>
+</div>
+<a id="a45220a39f990088e234fecbe1365618f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45220a39f990088e234fecbe1365618f">&#9670;&nbsp;</a></span>target</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DAnchorsBase::target</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>绑定了锚定功能的控件对象 </p>
+<dl class="section note"><dt>注解</dt><dd>只读 </dd></dl>
+
+</div>
+</div>
+<a id="aacbe1524bf770e24d1e28b4d68463f15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacbe1524bf770e24d1e28b4d68463f15">&#9670;&nbsp;</a></span>top</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DAnchorsBase::top</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>target 控件上边界锚线的信息 </p>
+<dl class="section note"><dt>注解</dt><dd>只能和 top verticalCenter bottom 绑定 </dd>
+<dd>
+对属性赋值不会更改它自身的值，而是对此锚线设置绑定关系 </dd>
+<dd>
+可读可写 </dd></dl>
+
+</div>
+</div>
+<a id="acc36da853d40582a78bda969063c5eeb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc36da853d40582a78bda969063c5eeb">&#9670;&nbsp;</a></span>topMargin</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DAnchorsBase::topMargin</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>上“锚线”的边距，优先级高于 margins </p>
+<dl class="section note"><dt>注解</dt><dd>可读可写 </dd></dl>
+
+</div>
+</div>
+<a id="a44a33a87a7e13c559dce6fae6ca5c92e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44a33a87a7e13c559dce6fae6ca5c92e">&#9670;&nbsp;</a></span>verticalCenter</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DAnchorsBase::verticalCenter</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>target 控件竖直锚线的信息 </p>
+<dl class="section note"><dt>注解</dt><dd>只能和 top verticalCenter bottom 绑定 </dd>
+<dd>
+对属性赋值不会更改它自身的值，而是对此锚线设置绑定关系 </dd>
+<dd>
+可读可写 </dd></dl>
+
+</div>
+</div>
+<a id="ae12e57aa1784328e422f266162231065"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae12e57aa1784328e422f266162231065">&#9670;&nbsp;</a></span>verticalCenterOffset</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DAnchorsBase::verticalCenterOffset</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>竖直“锚线”的偏移量 </p>
+<dl class="section note"><dt>注解</dt><dd>可读可写 </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dtkwidget/include/dtkwidget/widgets/<a class="el" href="danchors_8h_source.html">danchors.h</a></li>
+<li>dtkwidget/src/widgets/danchors.cpp</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classDAnchorsBase.html">DAnchorsBase</a></li>
+    <li class="footer">文档生成时间:doxtime</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: dtkcore/include/util/dtimeunitformatter.h 源文件</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="change address" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('dtimeunitformatter_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">dtimeunitformatter.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="dtimeunitformatter_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-FileCopyrightText: 2017 - 2022 UnionTech Software Technology Co., Ltd.</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// SPDX-License-Identifier: LGPL-3.0-or-later</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef DTIMEUNITFORMATTER_H</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define DTIMEUNITFORMATTER_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;dtkcore_global.h&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="dabstractunitformatter_8h.html">dabstractunitformatter.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;DCORE_BEGIN_NAMESPACE</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classDtk_1_1Core_1_1DTimeUnitFormatter.html">   13</a></span>&#160;<span class="keyword">class </span>LIBDTKCORESHARED_EXPORT <a class="code" href="classDtk_1_1Core_1_1DTimeUnitFormatter.html">DTimeUnitFormatter</a> : <span class="keyword">public</span> <a class="code" href="classDtk_1_1Core_1_1DAbstractUnitFormatter.html">DAbstractUnitFormatter</a></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="classDtk_1_1Core_1_1DTimeUnitFormatter.html">DTimeUnitFormatter</a>();</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classDtk_1_1Core_1_1DTimeUnitFormatter.html#a9e6584592385affd85e9c31ce6b752eb">   18</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="classDtk_1_1Core_1_1DTimeUnitFormatter.html#a9e6584592385affd85e9c31ce6b752eb">TimeUnits</a></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        Seconds,</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        Minute,</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        Hour,</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        Day,</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    };</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    QString <a class="code" href="classDtk_1_1Core_1_1DAbstractUnitFormatter.html#a4d679f3197542b272b8cd6245ae37879">unitStr</a>(<span class="keywordtype">int</span> unitId) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classDtk_1_1Core_1_1DTimeUnitFormatter.html#ab0512bd396c99df42c45768b22d00aa6">   29</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classDtk_1_1Core_1_1DTimeUnitFormatter.html#ab0512bd396c99df42c45768b22d00aa6">unitMax</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> Day; }</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classDtk_1_1Core_1_1DTimeUnitFormatter.html#ad604070ed1c8fdb148f62216e4312fbc">   30</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classDtk_1_1Core_1_1DTimeUnitFormatter.html#ad604070ed1c8fdb148f62216e4312fbc">unitMin</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> Seconds; }</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    uint <a class="code" href="classDtk_1_1Core_1_1DAbstractUnitFormatter.html#a7ea807d504f17926cf92c1330d1e636c">unitConvertRate</a>(<span class="keywordtype">int</span> unitId) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;};</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;DCORE_END_NAMESPACE</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// DTIMEUNITFORMATTER_H</span></div>
+<div class="ttc" id="aclassDtk_1_1Core_1_1DAbstractUnitFormatter_html"><div class="ttname"><a href="classDtk_1_1Core_1_1DAbstractUnitFormatter.html">Dtk::Core::DAbstractUnitFormatter</a></div><div class="ttdoc">抽象格式化工具基类</div><div class="ttdef"><b>Definition:</b> dabstractunitformatter.h:16</div></div>
+<div class="ttc" id="aclassDtk_1_1Core_1_1DAbstractUnitFormatter_html_a4d679f3197542b272b8cd6245ae37879"><div class="ttname"><a href="classDtk_1_1Core_1_1DAbstractUnitFormatter.html#a4d679f3197542b272b8cd6245ae37879">Dtk::Core::DAbstractUnitFormatter::unitStr</a></div><div class="ttdeci">virtual QString unitStr(int unitId) const =0</div><div class="ttdoc">获取当前单位的字符串表示</div></div>
+<div class="ttc" id="aclassDtk_1_1Core_1_1DAbstractUnitFormatter_html_a7ea807d504f17926cf92c1330d1e636c"><div class="ttname"><a href="classDtk_1_1Core_1_1DAbstractUnitFormatter.html#a7ea807d504f17926cf92c1330d1e636c">Dtk::Core::DAbstractUnitFormatter::unitConvertRate</a></div><div class="ttdeci">virtual uint unitConvertRate(int unitId) const =0</div><div class="ttdoc">获取当前单位到下一高级单位的进率</div></div>
+<div class="ttc" id="aclassDtk_1_1Core_1_1DTimeUnitFormatter_html"><div class="ttname"><a href="classDtk_1_1Core_1_1DTimeUnitFormatter.html">Dtk::Core::DTimeUnitFormatter</a></div><div class="ttdoc">转换时间单位的工具类</div><div class="ttdef"><b>Definition:</b> dtimeunitformatter.h:14</div></div>
+<div class="ttc" id="aclassDtk_1_1Core_1_1DTimeUnitFormatter_html_a9e6584592385affd85e9c31ce6b752eb"><div class="ttname"><a href="classDtk_1_1Core_1_1DTimeUnitFormatter.html#a9e6584592385affd85e9c31ce6b752eb">Dtk::Core::DTimeUnitFormatter::TimeUnits</a></div><div class="ttdeci">TimeUnits</div><div class="ttdoc">时间单位枚举</div><div class="ttdef"><b>Definition:</b> dtimeunitformatter.h:19</div></div>
+<div class="ttc" id="aclassDtk_1_1Core_1_1DTimeUnitFormatter_html_ab0512bd396c99df42c45768b22d00aa6"><div class="ttname"><a href="classDtk_1_1Core_1_1DTimeUnitFormatter.html#ab0512bd396c99df42c45768b22d00aa6">Dtk::Core::DTimeUnitFormatter::unitMax</a></div><div class="ttdeci">int unitMax() const override</div><div class="ttdoc">获取最大的单位枚举</div><div class="ttdef"><b>Definition:</b> dtimeunitformatter.h:29</div></div>
+<div class="ttc" id="aclassDtk_1_1Core_1_1DTimeUnitFormatter_html_ad604070ed1c8fdb148f62216e4312fbc"><div class="ttname"><a href="classDtk_1_1Core_1_1DTimeUnitFormatter.html#ad604070ed1c8fdb148f62216e4312fbc">Dtk::Core::DTimeUnitFormatter::unitMin</a></div><div class="ttdeci">int unitMin() const override</div><div class="ttdoc">获取最小的单位枚举</div><div class="ttdef"><b>Definition:</b> dtimeunitformatter.h:30</div></div>
+<div class="ttc" id="adabstractunitformatter_8h_html"><div class="ttname"><a href="dabstractunitformatter_8h.html">dabstractunitformatter.h</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_6c3d837d12de6918ecc70ece2c9d5940.html">dtkcore</a></li><li class="navelem"><a class="el" href="dir_858a6aace3374df34beb3a5d036e09e4.html">include</a></li><li class="navelem"><a class="el" href="dir_24450d5b37828d2338747fbf63b34a61.html">util</a></li><li class="navelem"><a class="el" href="dtimeunitformatter_8h.html">dtimeunitformatter.h</a></li>
+    <li class="footer">文档生成时间:doxtime</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

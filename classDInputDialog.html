@@ -1,0 +1,2185 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: DInputDialog类 参考</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="change address" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classDInputDialog.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#signals">信号</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#properties">属性</a> &#124;
+<a href="classDInputDialog-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">DInputDialog类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 DInputDialog 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classDInputDialog.png" usemap="#DInputDialog_map" alt=""/>
+  <map id="DInputDialog_map" name="DInputDialog_map">
+<area href="classDDialog.html" alt="DDialog" shape="rect" coords="113,112,329,136"/>
+<area href="classDAbstractDialog.html" alt="DAbstractDialog" shape="rect" coords="113,56,329,80"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a7051c16c82ebd9d79ae24e7687780ac0"><td class="memItemLeft" align="right" valign="top"><a id="a7051c16c82ebd9d79ae24e7687780ac0"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>InputMode</b> { <b>TextInput</b>
+, <b>ComboBox</b>
+, <b>IntInput</b>
+, <b>DoubleInput</b>
+ }</td></tr>
+<tr class="separator:a7051c16c82ebd9d79ae24e7687780ac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_classDDialog"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classDDialog')"><img src="closed.png" alt="-"/>&#160;Public 类型 继承自 <a class="el" href="classDDialog.html">DDialog</a></td></tr>
+<tr class="memitem:ac901ef8351cb3bed42c54280118ffde9 inherit pub_types_classDDialog"><td class="memItemLeft" align="right" valign="top"><a id="ac901ef8351cb3bed42c54280118ffde9"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>ButtonType</b> { <b>ButtonNormal</b>
+, <b>ButtonWarning</b>
+, <b>ButtonRecommend</b>
+ }</td></tr>
+<tr class="separator:ac901ef8351cb3bed42c54280118ffde9 inherit pub_types_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_classDAbstractDialog"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classDAbstractDialog')"><img src="closed.png" alt="-"/>&#160;Public 类型 继承自 <a class="el" href="classDAbstractDialog.html">DAbstractDialog</a></td></tr>
+<tr class="memitem:a060bc23b8aaf6943f33ac8d370b7e6bb inherit pub_types_classDAbstractDialog"><td class="memItemLeft" align="right" valign="top"><a id="a060bc23b8aaf6943f33ac8d370b7e6bb"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>DisplayPosition</b> { <b>Center</b>
+, <b>TopRight</b>
+ }</td></tr>
+<tr class="separator:a060bc23b8aaf6943f33ac8d370b7e6bb inherit pub_types_classDAbstractDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade79bd62378cbfb48724772693698dd8 inherit pub_types_classDAbstractDialog"><td class="memItemLeft" align="right" valign="top"><a id="ade79bd62378cbfb48724772693698dd8"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>DisplayPostion</b> { <b>DisplayCenter</b> = Center
+, <b>DisplayTopRight</b> = TopRight
+ }</td></tr>
+<tr class="separator:ade79bd62378cbfb48724772693698dd8 inherit pub_types_classDAbstractDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+信号</h2></td></tr>
+<tr class="memitem:ad769df7720e537b022250c5da3c4748a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDialog.html#ad769df7720e537b022250c5da3c4748a">textValueChanged</a> (const QString &amp;text)</td></tr>
+<tr class="memdesc:ad769df7720e537b022250c5da3c4748a"><td class="mdescLeft">&#160;</td><td class="mdescRight">当属性 <a class="el" href="classDInputDialog.html#ac7dc0821c33ec8adaa3b1c0454c94e5d" title="这个属性保存对话框当前的输入文本">DInputDialog::textValue</a> 发生变化时调用此信号  <a href="classDInputDialog.html#ad769df7720e537b022250c5da3c4748a">更多...</a><br /></td></tr>
+<tr class="separator:ad769df7720e537b022250c5da3c4748a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8801a2f0ebbbb972300b0bc029dfa88b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDialog.html#a8801a2f0ebbbb972300b0bc029dfa88b">textValueSelected</a> (const QString &amp;text)</td></tr>
+<tr class="memdesc:a8801a2f0ebbbb972300b0bc029dfa88b"><td class="mdescLeft">&#160;</td><td class="mdescRight">确认按钮被点击时调用此信号.  <a href="classDInputDialog.html#a8801a2f0ebbbb972300b0bc029dfa88b">更多...</a><br /></td></tr>
+<tr class="separator:a8801a2f0ebbbb972300b0bc029dfa88b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dcb01a2055a92f73f28bd52ded9c8eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDialog.html#a7dcb01a2055a92f73f28bd52ded9c8eb">intValueChanged</a> (int value)</td></tr>
+<tr class="memdesc:a7dcb01a2055a92f73f28bd52ded9c8eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">当属性 <a class="el" href="classDInputDialog.html#a884c8f1b31c1ba76dd45c9231e2a7284" title="这个属性保存对话框当前的整型值">DInputDialog::intValue</a> 发生变化时调用此信号  <a href="classDInputDialog.html#a7dcb01a2055a92f73f28bd52ded9c8eb">更多...</a><br /></td></tr>
+<tr class="separator:a7dcb01a2055a92f73f28bd52ded9c8eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f8d95bd17d84bce18ebfd21da60554c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDialog.html#a2f8d95bd17d84bce18ebfd21da60554c">intValueSelected</a> (int value)</td></tr>
+<tr class="memdesc:a2f8d95bd17d84bce18ebfd21da60554c"><td class="mdescLeft">&#160;</td><td class="mdescRight">确认按钮被点击时调用此信号  <a href="classDInputDialog.html#a2f8d95bd17d84bce18ebfd21da60554c">更多...</a><br /></td></tr>
+<tr class="separator:a2f8d95bd17d84bce18ebfd21da60554c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d7b366aa802ec2038a12cd8eb649ff7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDialog.html#a1d7b366aa802ec2038a12cd8eb649ff7">doubleValueChanged</a> (double value)</td></tr>
+<tr class="memdesc:a1d7b366aa802ec2038a12cd8eb649ff7"><td class="mdescLeft">&#160;</td><td class="mdescRight">当属性 <a class="el" href="classDInputDialog.html#a80797c2d1965485b989adf829ddda801" title="这个属性保存对话框当前的浮点数值">DInputDialog::doubleValue</a> 发生变化时调用此信号  <a href="classDInputDialog.html#a1d7b366aa802ec2038a12cd8eb649ff7">更多...</a><br /></td></tr>
+<tr class="separator:a1d7b366aa802ec2038a12cd8eb649ff7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a459da35e84d68fc35da3161d274619"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDialog.html#a4a459da35e84d68fc35da3161d274619">doubleValueSelected</a> (double value)</td></tr>
+<tr class="memdesc:a4a459da35e84d68fc35da3161d274619"><td class="mdescLeft">&#160;</td><td class="mdescRight">确认按钮被点击时调用此信号  <a href="classDInputDialog.html#a4a459da35e84d68fc35da3161d274619">更多...</a><br /></td></tr>
+<tr class="separator:a4a459da35e84d68fc35da3161d274619"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0257002ec6e733efdfc9976d37261170"><td class="memItemLeft" align="right" valign="top"><a id="a0257002ec6e733efdfc9976d37261170"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDialog.html#a0257002ec6e733efdfc9976d37261170">cancelButtonClicked</a> ()</td></tr>
+<tr class="memdesc:a0257002ec6e733efdfc9976d37261170"><td class="mdescLeft">&#160;</td><td class="mdescRight">取消按钮被点击时调用此信号 <br /></td></tr>
+<tr class="separator:a0257002ec6e733efdfc9976d37261170"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace16659ee46a80bcff67f0d251a23154"><td class="memItemLeft" align="right" valign="top"><a id="ace16659ee46a80bcff67f0d251a23154"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDialog.html#ace16659ee46a80bcff67f0d251a23154">okButtonClicked</a> ()</td></tr>
+<tr class="memdesc:ace16659ee46a80bcff67f0d251a23154"><td class="mdescLeft">&#160;</td><td class="mdescRight">确认按钮被点击时调用此信号 <br /></td></tr>
+<tr class="separator:ace16659ee46a80bcff67f0d251a23154"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa83836ad4531b505209c5fcfe0a75ead"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDialog.html#aa83836ad4531b505209c5fcfe0a75ead">comboBoxCurrentIndexChanged</a> (int <a class="el" href="classDInputDialog.html#a61f33a14adf944bf5802403680e5bbc7">comboBoxCurrentIndex</a>)</td></tr>
+<tr class="memdesc:aa83836ad4531b505209c5fcfe0a75ead"><td class="mdescLeft">&#160;</td><td class="mdescRight">当属性 <a class="el" href="classDInputDialog.html#a61f33a14adf944bf5802403680e5bbc7" title="这个属性保存对话框中多选框当前的索引">DInputDialog::comboBoxCurrentIndex</a> 发生变化时调用此信号  <a href="classDInputDialog.html#aa83836ad4531b505209c5fcfe0a75ead">更多...</a><br /></td></tr>
+<tr class="separator:aa83836ad4531b505209c5fcfe0a75ead"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e1403c1f28a68a4bdca359d2da5d364"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDialog.html#a9e1403c1f28a68a4bdca359d2da5d364">textAlertChanged</a> (bool <a class="el" href="classDInputDialog.html#a2fe552c4bc6af78fdeb9febff7dc12cf">textAlert</a>)</td></tr>
+<tr class="memdesc:a9e1403c1f28a68a4bdca359d2da5d364"><td class="mdescLeft">&#160;</td><td class="mdescRight">当属性 <a class="el" href="classDInputDialog.html#a2fe552c4bc6af78fdeb9febff7dc12cf" title="这个属性保存对话框是否处于警告状态">DInputDialog::textAlert</a> 发生变化时调用此信号  <a href="classDInputDialog.html#a9e1403c1f28a68a4bdca359d2da5d364">更多...</a><br /></td></tr>
+<tr class="separator:a9e1403c1f28a68a4bdca359d2da5d364"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header signals_classDDialog"><td colspan="2" onclick="javascript:toggleInherit('signals_classDDialog')"><img src="closed.png" alt="-"/>&#160;信号 继承自 <a class="el" href="classDDialog.html">DDialog</a></td></tr>
+<tr class="memitem:abac8d3a2936c8c61c9f7f53bf83d7cec inherit signals_classDDialog"><td class="memItemLeft" align="right" valign="top"><a id="abac8d3a2936c8c61c9f7f53bf83d7cec"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>aboutToClose</b> ()</td></tr>
+<tr class="separator:abac8d3a2936c8c61c9f7f53bf83d7cec inherit signals_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13d3352387dcc9e216aeab011cb64d50 inherit signals_classDDialog"><td class="memItemLeft" align="right" valign="top"><a id="a13d3352387dcc9e216aeab011cb64d50"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>closed</b> ()</td></tr>
+<tr class="separator:a13d3352387dcc9e216aeab011cb64d50 inherit signals_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6791b357bf60aa9b9861282e2711aa55 inherit signals_classDDialog"><td class="memItemLeft" align="right" valign="top"><a id="a6791b357bf60aa9b9861282e2711aa55"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>buttonClicked</b> (int index, const QString &amp;text)</td></tr>
+<tr class="separator:a6791b357bf60aa9b9861282e2711aa55 inherit signals_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f3221f78e8dcdc8227dd7bf2e66ede5 inherit signals_classDDialog"><td class="memItemLeft" align="right" valign="top"><a id="a4f3221f78e8dcdc8227dd7bf2e66ede5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>titleChanged</b> (QString title)</td></tr>
+<tr class="separator:a4f3221f78e8dcdc8227dd7bf2e66ede5 inherit signals_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4612bc631b67128386a86440bd6a1f9c inherit signals_classDDialog"><td class="memItemLeft" align="right" valign="top"><a id="a4612bc631b67128386a86440bd6a1f9c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>messageChanged</b> (QString massage)</td></tr>
+<tr class="separator:a4612bc631b67128386a86440bd6a1f9c inherit signals_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add3ea910b15fffa41b6339bbc97cb18e inherit signals_classDDialog"><td class="memItemLeft" align="right" valign="top"><a id="add3ea910b15fffa41b6339bbc97cb18e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>textFormatChanged</b> (Qt::TextFormat textFormat)</td></tr>
+<tr class="separator:add3ea910b15fffa41b6339bbc97cb18e inherit signals_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b84a573c2288bec88e386db4c1056cd inherit signals_classDDialog"><td class="memItemLeft" align="right" valign="top"><a id="a6b84a573c2288bec88e386db4c1056cd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>sizeChanged</b> (QSize size)</td></tr>
+<tr class="separator:a6b84a573c2288bec88e386db4c1056cd inherit signals_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a413c6b9beeb96efb06bb3874596eda33 inherit signals_classDDialog"><td class="memItemLeft" align="right" valign="top"><a id="a413c6b9beeb96efb06bb3874596eda33"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>visibleChanged</b> (bool visible)</td></tr>
+<tr class="separator:a413c6b9beeb96efb06bb3874596eda33 inherit signals_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header signals_classDAbstractDialog"><td colspan="2" onclick="javascript:toggleInherit('signals_classDAbstractDialog')"><img src="closed.png" alt="-"/>&#160;信号 继承自 <a class="el" href="classDAbstractDialog.html">DAbstractDialog</a></td></tr>
+<tr class="memitem:a5562f9908619a183265ee3ce22ae4fcc inherit signals_classDAbstractDialog"><td class="memItemLeft" align="right" valign="top"><a id="a5562f9908619a183265ee3ce22ae4fcc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAbstractDialog.html#a5562f9908619a183265ee3ce22ae4fcc">sizeChanged</a> (QSize size)</td></tr>
+<tr class="memdesc:a5562f9908619a183265ee3ce22ae4fcc inherit signals_classDAbstractDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">窗口大小发生改变 <br /></td></tr>
+<tr class="separator:a5562f9908619a183265ee3ce22ae4fcc inherit signals_classDAbstractDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a41f0769bb1b237eaeca37bccbfb9f67a"><td class="memItemLeft" align="right" valign="top"><a id="a41f0769bb1b237eaeca37bccbfb9f67a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDialog.html#a41f0769bb1b237eaeca37bccbfb9f67a">DInputDialog</a> (QWidget *parent=0)</td></tr>
+<tr class="memdesc:a41f0769bb1b237eaeca37bccbfb9f67a"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取 <a class="el" href="classDInputDialog.html#a41f0769bb1b237eaeca37bccbfb9f67a" title="获取 DInputDialog::DInputDialog 实例 parent 作为 DInputDialog::DInputDialog 实例的父控件">DInputDialog::DInputDialog</a> 实例 <em>parent</em> 作为 <a class="el" href="classDInputDialog.html#a41f0769bb1b237eaeca37bccbfb9f67a" title="获取 DInputDialog::DInputDialog 实例 parent 作为 DInputDialog::DInputDialog 实例的父控件">DInputDialog::DInputDialog</a> 实例的父控件 <br /></td></tr>
+<tr class="separator:a41f0769bb1b237eaeca37bccbfb9f67a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84718d1b240dcd5697d1911ff32d7120"><td class="memItemLeft" align="right" valign="top">Q_SLOT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDialog.html#a84718d1b240dcd5697d1911ff32d7120">setInputMode</a> (InputMode mode)</td></tr>
+<tr class="separator:a84718d1b240dcd5697d1911ff32d7120"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac84e2abf8f1f12745c6a0e95bf718196"><td class="memItemLeft" align="right" valign="top"><a id="ac84e2abf8f1f12745c6a0e95bf718196"></a>
+InputMode&#160;</td><td class="memItemRight" valign="bottom"><b>inputMode</b> () const</td></tr>
+<tr class="separator:ac84e2abf8f1f12745c6a0e95bf718196"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6d3c6a5b30c81e4921ff4258cc6e190"><td class="memItemLeft" align="right" valign="top">Q_SLOT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDialog.html#aa6d3c6a5b30c81e4921ff4258cc6e190">setTextValue</a> (const QString &amp;text)</td></tr>
+<tr class="separator:aa6d3c6a5b30c81e4921ff4258cc6e190"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b14ec983fd8c5a4562c421e2dc6b8b8"><td class="memItemLeft" align="right" valign="top"><a id="a8b14ec983fd8c5a4562c421e2dc6b8b8"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>textValue</b> () const</td></tr>
+<tr class="separator:a8b14ec983fd8c5a4562c421e2dc6b8b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a702459e67510adea50ab6393c39510bf"><td class="memItemLeft" align="right" valign="top">Q_SLOT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDialog.html#a702459e67510adea50ab6393c39510bf">setTextEchoMode</a> (QLineEdit::EchoMode mode)</td></tr>
+<tr class="separator:a702459e67510adea50ab6393c39510bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a06681df5f5b105d28069f8b58b62a7"><td class="memItemLeft" align="right" valign="top"><a id="a6a06681df5f5b105d28069f8b58b62a7"></a>
+QLineEdit::EchoMode&#160;</td><td class="memItemRight" valign="bottom"><b>textEchoMode</b> () const</td></tr>
+<tr class="separator:a6a06681df5f5b105d28069f8b58b62a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae99f94b7de24c9a4f84a751025b762d"><td class="memItemLeft" align="right" valign="top">Q_SLOT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDialog.html#aae99f94b7de24c9a4f84a751025b762d">setComboBoxEditable</a> (bool editable)</td></tr>
+<tr class="separator:aae99f94b7de24c9a4f84a751025b762d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a0e80801fed5df8855518f0c06323e7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDialog.html#a5a0e80801fed5df8855518f0c06323e7">isComboBoxEditable</a> () const</td></tr>
+<tr class="separator:a5a0e80801fed5df8855518f0c06323e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fc69761a9278213b66c139be6e79e17"><td class="memItemLeft" align="right" valign="top">Q_SLOT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDialog.html#a2fc69761a9278213b66c139be6e79e17">setComboBoxItems</a> (const QStringList &amp;items)</td></tr>
+<tr class="separator:a2fc69761a9278213b66c139be6e79e17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27e8971da9441fda6a37c20d9b11b74b"><td class="memItemLeft" align="right" valign="top">QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDialog.html#a27e8971da9441fda6a37c20d9b11b74b">comboBoxItems</a> () const</td></tr>
+<tr class="separator:a27e8971da9441fda6a37c20d9b11b74b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1458cc918cdf17bb8e8730da6c303c3"><td class="memItemLeft" align="right" valign="top">Q_SLOT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDialog.html#ab1458cc918cdf17bb8e8730da6c303c3">setComboBoxCurrentIndex</a> (int <a class="el" href="classDInputDialog.html#a61f33a14adf944bf5802403680e5bbc7">comboBoxCurrentIndex</a>)</td></tr>
+<tr class="separator:ab1458cc918cdf17bb8e8730da6c303c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61087a8bcbaefb1d49a1a82813aed7aa"><td class="memItemLeft" align="right" valign="top"><a id="a61087a8bcbaefb1d49a1a82813aed7aa"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>comboBoxCurrentIndex</b> () const</td></tr>
+<tr class="separator:a61087a8bcbaefb1d49a1a82813aed7aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10b8273a5cc242d11e80483ea5582b8a"><td class="memItemLeft" align="right" valign="top">Q_SLOT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDialog.html#a10b8273a5cc242d11e80483ea5582b8a">setIntValue</a> (int value)</td></tr>
+<tr class="separator:a10b8273a5cc242d11e80483ea5582b8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50033ef5287e9092205ef103c637ee23"><td class="memItemLeft" align="right" valign="top"><a id="a50033ef5287e9092205ef103c637ee23"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>intValue</b> () const</td></tr>
+<tr class="separator:a50033ef5287e9092205ef103c637ee23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d2753c773ec37bcfbbac66c1ba16fbe"><td class="memItemLeft" align="right" valign="top">Q_SLOT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDialog.html#a4d2753c773ec37bcfbbac66c1ba16fbe">setIntMinimum</a> (int min)</td></tr>
+<tr class="separator:a4d2753c773ec37bcfbbac66c1ba16fbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a446769c5f27f857c46e330be05a23950"><td class="memItemLeft" align="right" valign="top"><a id="a446769c5f27f857c46e330be05a23950"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>intMinimum</b> () const</td></tr>
+<tr class="separator:a446769c5f27f857c46e330be05a23950"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af574779c3634c521ac31e44ae546bbc8"><td class="memItemLeft" align="right" valign="top">Q_SLOT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDialog.html#af574779c3634c521ac31e44ae546bbc8">setIntMaximum</a> (int max)</td></tr>
+<tr class="separator:af574779c3634c521ac31e44ae546bbc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9b57f81a7a743c145c16b3ec3275b0c"><td class="memItemLeft" align="right" valign="top"><a id="ab9b57f81a7a743c145c16b3ec3275b0c"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>intMaximum</b> () const</td></tr>
+<tr class="separator:ab9b57f81a7a743c145c16b3ec3275b0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a525965553f46ce357993bf050fa02986"><td class="memItemLeft" align="right" valign="top">Q_SLOT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDialog.html#a525965553f46ce357993bf050fa02986">setIntRange</a> (int min, int max)</td></tr>
+<tr class="memdesc:a525965553f46ce357993bf050fa02986"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置对话框中的整形可选输入框SpinBox的可选范围（最小值和最大值）  <a href="classDInputDialog.html#a525965553f46ce357993bf050fa02986">更多...</a><br /></td></tr>
+<tr class="separator:a525965553f46ce357993bf050fa02986"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b4713eca44de101c70bbef8e447a347"><td class="memItemLeft" align="right" valign="top">Q_SLOT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDialog.html#a8b4713eca44de101c70bbef8e447a347">setIntStep</a> (int step)</td></tr>
+<tr class="separator:a8b4713eca44de101c70bbef8e447a347"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ee46bb3de6a3ae565993e9188633cec"><td class="memItemLeft" align="right" valign="top"><a id="a1ee46bb3de6a3ae565993e9188633cec"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>intStep</b> () const</td></tr>
+<tr class="separator:a1ee46bb3de6a3ae565993e9188633cec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61ff7ac9bff8bbf7e1501fa9fbe026f7"><td class="memItemLeft" align="right" valign="top">Q_SLOT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDialog.html#a61ff7ac9bff8bbf7e1501fa9fbe026f7">setDoubleValue</a> (double value)</td></tr>
+<tr class="separator:a61ff7ac9bff8bbf7e1501fa9fbe026f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6ec00b0a089f4db9cc0cc7c8398bdec"><td class="memItemLeft" align="right" valign="top"><a id="ab6ec00b0a089f4db9cc0cc7c8398bdec"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>doubleValue</b> () const</td></tr>
+<tr class="separator:ab6ec00b0a089f4db9cc0cc7c8398bdec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b6f958a36ed1714fa9cbaf0ab76d6cb"><td class="memItemLeft" align="right" valign="top">Q_SLOT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDialog.html#a7b6f958a36ed1714fa9cbaf0ab76d6cb">setDoubleMinimum</a> (double min)</td></tr>
+<tr class="separator:a7b6f958a36ed1714fa9cbaf0ab76d6cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaafa3c8092a1d0d1cc2cbbde494cc62"><td class="memItemLeft" align="right" valign="top"><a id="aaaafa3c8092a1d0d1cc2cbbde494cc62"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>doubleMinimum</b> () const</td></tr>
+<tr class="separator:aaaafa3c8092a1d0d1cc2cbbde494cc62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e92d558c0f5c97da1e035538c5dba90"><td class="memItemLeft" align="right" valign="top">Q_SLOT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDialog.html#a2e92d558c0f5c97da1e035538c5dba90">setDoubleMaximum</a> (double max)</td></tr>
+<tr class="separator:a2e92d558c0f5c97da1e035538c5dba90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af042ad04cc2b118d9091e745ac3646b0"><td class="memItemLeft" align="right" valign="top"><a id="af042ad04cc2b118d9091e745ac3646b0"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>doubleMaximum</b> () const</td></tr>
+<tr class="separator:af042ad04cc2b118d9091e745ac3646b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbf36dce83ea00742c6543412dd2df73"><td class="memItemLeft" align="right" valign="top">Q_SLOT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDialog.html#acbf36dce83ea00742c6543412dd2df73">setDoubleRange</a> (double min, double max)</td></tr>
+<tr class="memdesc:acbf36dce83ea00742c6543412dd2df73"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置对话框中的浮点型可选输入框SpinBox的可选范围（最小值和最大值）  <a href="classDInputDialog.html#acbf36dce83ea00742c6543412dd2df73">更多...</a><br /></td></tr>
+<tr class="separator:acbf36dce83ea00742c6543412dd2df73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad087eaf722f4487a1a1028cbbc010c1f"><td class="memItemLeft" align="right" valign="top">Q_SLOT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDialog.html#ad087eaf722f4487a1a1028cbbc010c1f">setDoubleDecimals</a> (int decimals)</td></tr>
+<tr class="separator:ad087eaf722f4487a1a1028cbbc010c1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc39ccb4ff11f45bd2cc6cf1d648c00c"><td class="memItemLeft" align="right" valign="top"><a id="abc39ccb4ff11f45bd2cc6cf1d648c00c"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>doubleDecimals</b> () const</td></tr>
+<tr class="separator:abc39ccb4ff11f45bd2cc6cf1d648c00c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5329f2e3b225b5996d23b2b222757b7"><td class="memItemLeft" align="right" valign="top">Q_SLOT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDialog.html#ab5329f2e3b225b5996d23b2b222757b7">setOkButtonText</a> (const QString &amp;text)</td></tr>
+<tr class="separator:ab5329f2e3b225b5996d23b2b222757b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4bb106c32c16e224ca537ac75e6b08b"><td class="memItemLeft" align="right" valign="top"><a id="af4bb106c32c16e224ca537ac75e6b08b"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>okButtonText</b> () const</td></tr>
+<tr class="separator:af4bb106c32c16e224ca537ac75e6b08b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb2842733aa295ac906e2c7304ff871c"><td class="memItemLeft" align="right" valign="top"><a id="adb2842733aa295ac906e2c7304ff871c"></a>
+Q_SLOT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDialog.html#adb2842733aa295ac906e2c7304ff871c">setOkButtonEnabled</a> (const bool enable)</td></tr>
+<tr class="memdesc:adb2842733aa295ac906e2c7304ff871c"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置确认按钮是否可以点击 <em>enable</em> 为 true 即为可以点击，反之则反 <br /></td></tr>
+<tr class="separator:adb2842733aa295ac906e2c7304ff871c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37d6cbac6867fde5723881a90cbc0393"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDialog.html#a37d6cbac6867fde5723881a90cbc0393">okButtonIsEnabled</a> () const</td></tr>
+<tr class="memdesc:a37d6cbac6867fde5723881a90cbc0393"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取确认按钮是否可以点击  <a href="classDInputDialog.html#a37d6cbac6867fde5723881a90cbc0393">更多...</a><br /></td></tr>
+<tr class="separator:a37d6cbac6867fde5723881a90cbc0393"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46dc13635044797abbabe5e782895c24"><td class="memItemLeft" align="right" valign="top">Q_SLOT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDialog.html#a46dc13635044797abbabe5e782895c24">setCancelButtonText</a> (const QString &amp;text)</td></tr>
+<tr class="separator:a46dc13635044797abbabe5e782895c24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4028a165290d3af1aa44e650293deec4"><td class="memItemLeft" align="right" valign="top"><a id="a4028a165290d3af1aa44e650293deec4"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>cancelButtonText</b> () const</td></tr>
+<tr class="separator:a4028a165290d3af1aa44e650293deec4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb63eac5ab88b5779a40fb716f499a50"><td class="memItemLeft" align="right" valign="top">Q_SLOT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDialog.html#acb63eac5ab88b5779a40fb716f499a50">setTextAlert</a> (bool <a class="el" href="classDInputDialog.html#a2fe552c4bc6af78fdeb9febff7dc12cf">textAlert</a>)</td></tr>
+<tr class="separator:acb63eac5ab88b5779a40fb716f499a50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02457f7495e17b481a549a6e23b3f7d4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDialog.html#a02457f7495e17b481a549a6e23b3f7d4">isTextAlert</a> () const</td></tr>
+<tr class="separator:a02457f7495e17b481a549a6e23b3f7d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classDDialog"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classDDialog')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="classDDialog.html">DDialog</a></td></tr>
+<tr class="memitem:a97a2242020d7a491e91cf20652490e8a inherit pub_methods_classDDialog"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDialog.html#a97a2242020d7a491e91cf20652490e8a">DDialog</a> (QWidget *parent=nullptr)</td></tr>
+<tr class="memdesc:a97a2242020d7a491e91cf20652490e8a inherit pub_methods_classDDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造一个 <a class="el" href="classDDialog.html">DDialog</a> 对话框.  <a href="classDDialog.html#a97a2242020d7a491e91cf20652490e8a">更多...</a><br /></td></tr>
+<tr class="separator:a97a2242020d7a491e91cf20652490e8a inherit pub_methods_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15f5de87db51cf9a39e8bd4d3bfad82e inherit pub_methods_classDDialog"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDialog.html#a15f5de87db51cf9a39e8bd4d3bfad82e">DDialog</a> (const QString &amp;title, const QString &amp;message, QWidget *parent=0)</td></tr>
+<tr class="memdesc:a15f5de87db51cf9a39e8bd4d3bfad82e inherit pub_methods_classDDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造一个 <a class="el" href="classDDialog.html">DDialog</a> 对话框。  <a href="classDDialog.html#a15f5de87db51cf9a39e8bd4d3bfad82e">更多...</a><br /></td></tr>
+<tr class="separator:a15f5de87db51cf9a39e8bd4d3bfad82e inherit pub_methods_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8068d72c9a3cae47126fd0833089c562 inherit pub_methods_classDDialog"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDialog.html#a8068d72c9a3cae47126fd0833089c562">getButtonIndexByText</a> (const QString &amp;text) const</td></tr>
+<tr class="memdesc:a8068d72c9a3cae47126fd0833089c562 inherit pub_methods_classDDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">通过按钮文字获取按钮下标.  <a href="classDDialog.html#a8068d72c9a3cae47126fd0833089c562">更多...</a><br /></td></tr>
+<tr class="separator:a8068d72c9a3cae47126fd0833089c562 inherit pub_methods_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e366a5f298ca425157e1d39a99d3294 inherit pub_methods_classDDialog"><td class="memItemLeft" align="right" valign="top"><a id="a6e366a5f298ca425157e1d39a99d3294"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDialog.html#a6e366a5f298ca425157e1d39a99d3294">buttonCount</a> () const</td></tr>
+<tr class="memdesc:a6e366a5f298ca425157e1d39a99d3294 inherit pub_methods_classDDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">获得对话框包含的按钮数量. <br /></td></tr>
+<tr class="separator:a6e366a5f298ca425157e1d39a99d3294 inherit pub_methods_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a984b658383a1cc0b9f509c360772ffb0 inherit pub_methods_classDDialog"><td class="memItemLeft" align="right" valign="top"><a id="a984b658383a1cc0b9f509c360772ffb0"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDialog.html#a984b658383a1cc0b9f509c360772ffb0">contentCount</a> () const</td></tr>
+<tr class="memdesc:a984b658383a1cc0b9f509c360772ffb0 inherit pub_methods_classDDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">获得对话框所含的所有内容控件的数量. <br /></td></tr>
+<tr class="separator:a984b658383a1cc0b9f509c360772ffb0 inherit pub_methods_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa350a57e5319c95bde8b746ba3289501 inherit pub_methods_classDDialog"><td class="memItemLeft" align="right" valign="top"><a id="aa350a57e5319c95bde8b746ba3289501"></a>
+QList&lt; QAbstractButton * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDialog.html#aa350a57e5319c95bde8b746ba3289501">getButtons</a> () const</td></tr>
+<tr class="memdesc:aa350a57e5319c95bde8b746ba3289501 inherit pub_methods_classDDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">获得对话框的按钮列表 <br /></td></tr>
+<tr class="separator:aa350a57e5319c95bde8b746ba3289501 inherit pub_methods_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b97e47a5ccbc20ab98bbaed80fed7db inherit pub_methods_classDDialog"><td class="memItemLeft" align="right" valign="top"><a id="a8b97e47a5ccbc20ab98bbaed80fed7db"></a>
+QList&lt; QWidget * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDialog.html#a8b97e47a5ccbc20ab98bbaed80fed7db">getContents</a> () const</td></tr>
+<tr class="memdesc:a8b97e47a5ccbc20ab98bbaed80fed7db inherit pub_methods_classDDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">获得对话框所含的所有内容控件列表 <br /></td></tr>
+<tr class="separator:a8b97e47a5ccbc20ab98bbaed80fed7db inherit pub_methods_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dc1be0d023f57ea8740be7f912e7bc6 inherit pub_methods_classDDialog"><td class="memItemLeft" align="right" valign="top">QAbstractButton *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDialog.html#a6dc1be0d023f57ea8740be7f912e7bc6">getButton</a> (int index) const</td></tr>
+<tr class="memdesc:a6dc1be0d023f57ea8740be7f912e7bc6 inherit pub_methods_classDDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">获得指定下标所对应的按钮.  <a href="classDDialog.html#a6dc1be0d023f57ea8740be7f912e7bc6">更多...</a><br /></td></tr>
+<tr class="separator:a6dc1be0d023f57ea8740be7f912e7bc6 inherit pub_methods_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6b93f0db7cb4b561d398344033622eb inherit pub_methods_classDDialog"><td class="memItemLeft" align="right" valign="top">QWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDialog.html#ad6b93f0db7cb4b561d398344033622eb">getContent</a> (int index) const</td></tr>
+<tr class="memdesc:ad6b93f0db7cb4b561d398344033622eb inherit pub_methods_classDDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取指定下标对应的内容控件. <em>index　控件下标</em>  <a href="classDDialog.html#ad6b93f0db7cb4b561d398344033622eb">更多...</a><br /></td></tr>
+<tr class="separator:ad6b93f0db7cb4b561d398344033622eb inherit pub_methods_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ec577cc41042c13cbd06b03319bd277 inherit pub_methods_classDDialog"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDialog.html#a2ec577cc41042c13cbd06b03319bd277">title</a> () const</td></tr>
+<tr class="memdesc:a2ec577cc41042c13cbd06b03319bd277 inherit pub_methods_classDDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回对话框标题.  <a href="classDDialog.html#a2ec577cc41042c13cbd06b03319bd277">更多...</a><br /></td></tr>
+<tr class="separator:a2ec577cc41042c13cbd06b03319bd277 inherit pub_methods_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ae0022c664563e9b836748a1c533591 inherit pub_methods_classDDialog"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDialog.html#a8ae0022c664563e9b836748a1c533591">message</a> () const</td></tr>
+<tr class="memdesc:a8ae0022c664563e9b836748a1c533591 inherit pub_methods_classDDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回对话框消息文本.  <a href="classDDialog.html#a8ae0022c664563e9b836748a1c533591">更多...</a><br /></td></tr>
+<tr class="separator:a8ae0022c664563e9b836748a1c533591 inherit pub_methods_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad86a15911eebdc43f7809a4fa759ce9d inherit pub_methods_classDDialog"><td class="memItemLeft" align="right" valign="top">QIcon&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDialog.html#ad86a15911eebdc43f7809a4fa759ce9d">icon</a> () const</td></tr>
+<tr class="memdesc:ad86a15911eebdc43f7809a4fa759ce9d inherit pub_methods_classDDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回对话框图标.  <a href="classDDialog.html#ad86a15911eebdc43f7809a4fa759ce9d">更多...</a><br /></td></tr>
+<tr class="separator:ad86a15911eebdc43f7809a4fa759ce9d inherit pub_methods_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a011f9e5b368375402d9c482c3af4bd83 inherit pub_methods_classDDialog"><td class="memItemLeft" align="right" valign="top">D_DECL_DEPRECATED QPixmap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDialog.html#a011f9e5b368375402d9c482c3af4bd83">iconPixmap</a> () const</td></tr>
+<tr class="memdesc:a011f9e5b368375402d9c482c3af4bd83 inherit pub_methods_classDDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回对话框图标的 QPixmap 对象.  <a href="classDDialog.html#a011f9e5b368375402d9c482c3af4bd83">更多...</a><br /></td></tr>
+<tr class="separator:a011f9e5b368375402d9c482c3af4bd83 inherit pub_methods_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d30580e0705ebc1bf2571c183fe1fe3 inherit pub_methods_classDDialog"><td class="memItemLeft" align="right" valign="top">Qt::TextFormat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDialog.html#a1d30580e0705ebc1bf2571c183fe1fe3">textFormat</a> () const</td></tr>
+<tr class="memdesc:a1d30580e0705ebc1bf2571c183fe1fe3 inherit pub_methods_classDDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回对话框的文本格式.  <a href="classDDialog.html#a1d30580e0705ebc1bf2571c183fe1fe3">更多...</a><br /></td></tr>
+<tr class="separator:a1d30580e0705ebc1bf2571c183fe1fe3 inherit pub_methods_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34bb8bb05ff4d0b9ab1b637bdd9895dc inherit pub_methods_classDDialog"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDialog.html#a34bb8bb05ff4d0b9ab1b637bdd9895dc">onButtonClickedClose</a> () const</td></tr>
+<tr class="memdesc:a34bb8bb05ff4d0b9ab1b637bdd9895dc inherit pub_methods_classDDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">检查在点击任何按钮后是否都会关闭对话框.  <a href="classDDialog.html#a34bb8bb05ff4d0b9ab1b637bdd9895dc">更多...</a><br /></td></tr>
+<tr class="separator:a34bb8bb05ff4d0b9ab1b637bdd9895dc inherit pub_methods_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a450824bcd416895d8c0aa88eb38f088d inherit pub_methods_classDDialog"><td class="memItemLeft" align="right" valign="top"><a id="a450824bcd416895d8c0aa88eb38f088d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDialog.html#a450824bcd416895d8c0aa88eb38f088d">setContentLayoutContentsMargins</a> (const QMargins &amp;margins)</td></tr>
+<tr class="memdesc:a450824bcd416895d8c0aa88eb38f088d inherit pub_methods_classDDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">设定内容布局的内容 margin . <em>margins</em> 具体的 margins <br /></td></tr>
+<tr class="separator:a450824bcd416895d8c0aa88eb38f088d inherit pub_methods_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a650ec848ac70bb6f8c84d63e60a02ebe inherit pub_methods_classDDialog"><td class="memItemLeft" align="right" valign="top">QMargins&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDialog.html#a650ec848ac70bb6f8c84d63e60a02ebe">contentLayoutContentsMargins</a> () const</td></tr>
+<tr class="memdesc:a650ec848ac70bb6f8c84d63e60a02ebe inherit pub_methods_classDDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回内容布局的边距.  <a href="classDDialog.html#a650ec848ac70bb6f8c84d63e60a02ebe">更多...</a><br /></td></tr>
+<tr class="separator:a650ec848ac70bb6f8c84d63e60a02ebe inherit pub_methods_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45224fa6de7555748f2752fab530384b inherit pub_methods_classDDialog"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDialog.html#a45224fa6de7555748f2752fab530384b">closeButtonVisible</a> () const</td></tr>
+<tr class="memdesc:a45224fa6de7555748f2752fab530384b inherit pub_methods_classDDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">关闭按钮的可见属性.  <a href="classDDialog.html#a45224fa6de7555748f2752fab530384b">更多...</a><br /></td></tr>
+<tr class="separator:a45224fa6de7555748f2752fab530384b inherit pub_methods_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classDAbstractDialog"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classDAbstractDialog')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="classDAbstractDialog.html">DAbstractDialog</a></td></tr>
+<tr class="memitem:a3b7d7fe7c749d9e4c25f3c1519036368 inherit pub_methods_classDAbstractDialog"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAbstractDialog.html#a3b7d7fe7c749d9e4c25f3c1519036368">DAbstractDialog</a> (QWidget *parent=nullptr)</td></tr>
+<tr class="memdesc:a3b7d7fe7c749d9e4c25f3c1519036368 inherit pub_methods_classDAbstractDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造一个DAbstractDialog实例  <a href="classDAbstractDialog.html#a3b7d7fe7c749d9e4c25f3c1519036368">更多...</a><br /></td></tr>
+<tr class="separator:a3b7d7fe7c749d9e4c25f3c1519036368 inherit pub_methods_classDAbstractDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5cf9508f3c6a5d3ea1870ed10a25380 inherit pub_methods_classDAbstractDialog"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAbstractDialog.html#aa5cf9508f3c6a5d3ea1870ed10a25380">DAbstractDialog</a> (bool blurIfPossible, QWidget *parent=nullptr)</td></tr>
+<tr class="memdesc:aa5cf9508f3c6a5d3ea1870ed10a25380 inherit pub_methods_classDAbstractDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造一个 <a class="el" href="classDAbstractDialog.html">DAbstractDialog</a> 实例  <a href="classDAbstractDialog.html#aa5cf9508f3c6a5d3ea1870ed10a25380">更多...</a><br /></td></tr>
+<tr class="separator:aa5cf9508f3c6a5d3ea1870ed10a25380 inherit pub_methods_classDAbstractDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbb4b7cd7dbdeaf5af834a4d39b82949 inherit pub_methods_classDAbstractDialog"><td class="memItemLeft" align="right" valign="top"><a id="afbb4b7cd7dbdeaf5af834a4d39b82949"></a>
+DisplayPosition&#160;</td><td class="memItemRight" valign="bottom"><b>displayPosition</b> () const</td></tr>
+<tr class="separator:afbb4b7cd7dbdeaf5af834a4d39b82949 inherit pub_methods_classDAbstractDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a452c9920e4e0542acaaef808c774429b inherit pub_methods_classDAbstractDialog"><td class="memItemLeft" align="right" valign="top"><a id="a452c9920e4e0542acaaef808c774429b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAbstractDialog.html#a452c9920e4e0542acaaef808c774429b">move</a> (const QPoint &amp;pos)</td></tr>
+<tr class="memdesc:a452c9920e4e0542acaaef808c774429b inherit pub_methods_classDAbstractDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">将窗口移动到指定坐标 <br /></td></tr>
+<tr class="separator:a452c9920e4e0542acaaef808c774429b inherit pub_methods_classDAbstractDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0c623aea93b44f2a90a75abfb5213e3 inherit pub_methods_classDAbstractDialog"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAbstractDialog.html#ab0c623aea93b44f2a90a75abfb5213e3">move</a> (int x, int y)</td></tr>
+<tr class="memdesc:ab0c623aea93b44f2a90a75abfb5213e3 inherit pub_methods_classDAbstractDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">将窗口移动到指定坐标  <a href="classDAbstractDialog.html#ab0c623aea93b44f2a90a75abfb5213e3">更多...</a><br /></td></tr>
+<tr class="separator:ab0c623aea93b44f2a90a75abfb5213e3 inherit pub_methods_classDAbstractDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a854c68301ed4eb3c85219a0c41a08055 inherit pub_methods_classDAbstractDialog"><td class="memItemLeft" align="right" valign="top"><a id="a854c68301ed4eb3c85219a0c41a08055"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAbstractDialog.html#a854c68301ed4eb3c85219a0c41a08055">setGeometry</a> (const QRect &amp;rect)</td></tr>
+<tr class="memdesc:a854c68301ed4eb3c85219a0c41a08055 inherit pub_methods_classDAbstractDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造一个矩形 <br /></td></tr>
+<tr class="separator:a854c68301ed4eb3c85219a0c41a08055 inherit pub_methods_classDAbstractDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb89083078a7294cdc2a5156b0d5cb8b inherit pub_methods_classDAbstractDialog"><td class="memItemLeft" align="right" valign="top"><a id="afb89083078a7294cdc2a5156b0d5cb8b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setGeometry</b> (int x, int y, int width, int height)</td></tr>
+<tr class="separator:afb89083078a7294cdc2a5156b0d5cb8b inherit pub_methods_classDAbstractDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a20f55c03a0206c5e430f7125bfdbb8a3"><td class="memItemLeft" align="right" valign="top">static QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDialog.html#a20f55c03a0206c5e430f7125bfdbb8a3">getText</a> (QWidget *parent, const QString &amp;title, const QString &amp;message, QLineEdit::EchoMode echo=QLineEdit::Normal, const QString &amp;text=QString(), bool *ok=0, Qt::WindowFlags flags=0, Qt::InputMethodHints inputMethodHints=Qt::ImhNone)</td></tr>
+<tr class="memdesc:a20f55c03a0206c5e430f7125bfdbb8a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">快速创建一个可以输入文字的对话框 <em>parent</em> 作为对话框的父控件 <em>title</em> 作为对话框的标题 <em>message</em> 作为对话框提示信息 <em>echo</em> 设置文本输入框文字的显示模式 <em>text</em> 设置文本输入框文字默认的内容 <em>ok</em> 用于获取对话框是否点击了确认的指针 <em>flags</em> 设置对话框的窗口属性，一般无需设置 <em>inputMethodHints</em> 设置输入法相关属性，一般无需设置  <a href="classDInputDialog.html#a20f55c03a0206c5e430f7125bfdbb8a3">更多...</a><br /></td></tr>
+<tr class="separator:a20f55c03a0206c5e430f7125bfdbb8a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4967aae2a0b8aade4884d3a3312b0ea"><td class="memItemLeft" align="right" valign="top">static QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDialog.html#ad4967aae2a0b8aade4884d3a3312b0ea">getItem</a> (QWidget *parent, const QString &amp;title, const QString &amp;message, const QStringList &amp;items, int current=0, bool editable=true, bool *ok=0, Qt::WindowFlags flags=0, Qt::InputMethodHints inputMethodHints=Qt::ImhNone)</td></tr>
+<tr class="memdesc:ad4967aae2a0b8aade4884d3a3312b0ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">快速创建一个多选框的对话框 <em>parent</em> 作为对话框的父控件 <em>title</em> 作为对话框的标题 <em>message</em> 作为对话框提示信息 <em>items</em> 设置所有可选项 <em>current</em> 设置当前的可选项 <em>editable</em> 设置多选框是否可编辑 <em>ok</em> 用于获取对话框是否点击了确认的指针 <em>flags</em> 设置对话框的窗口属性，一般无需设置 <em>inputMethodHints</em> 设置输入法相关属性，一般无需设置  <a href="classDInputDialog.html#ad4967aae2a0b8aade4884d3a3312b0ea">更多...</a><br /></td></tr>
+<tr class="separator:ad4967aae2a0b8aade4884d3a3312b0ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b20934ad53a7621f5b96b1962d1513f"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDialog.html#a6b20934ad53a7621f5b96b1962d1513f">getInt</a> (QWidget *parent, const QString &amp;title, const QString &amp;message, int value=0, int minValue=-2147483647, int maxValue=2147483647, int step=1, bool *ok=0, Qt::WindowFlags flags=0)</td></tr>
+<tr class="memdesc:a6b20934ad53a7621f5b96b1962d1513f"><td class="mdescLeft">&#160;</td><td class="mdescRight">快速创建一个获取整数的对话框 <em>parent</em> 作为对话框的父控件 <em>title</em> 作为对话框的标题 <em>message</em> 作为对话框提示信息 <em>value</em> 设置默认的值 <em>minValue</em> 设置最小值 <em>maxValue</em> 设置最大值 <em>step</em> 设置步进值 <em>ok</em> 用于获取对话框是否点击了确认的指针 <em>flags</em> 设置对话框的窗口属性，一般无需设置  <a href="classDInputDialog.html#a6b20934ad53a7621f5b96b1962d1513f">更多...</a><br /></td></tr>
+<tr class="separator:a6b20934ad53a7621f5b96b1962d1513f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f1a1c3cd2bdfbc6cc042fa6474fd4d4"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDialog.html#a6f1a1c3cd2bdfbc6cc042fa6474fd4d4">getDouble</a> (QWidget *parent, const QString &amp;title, const QString &amp;message, double value=0, double minValue=-2147483647, double maxValue=2147483647, int decimals=1, bool *ok=0, Qt::WindowFlags flags=0)</td></tr>
+<tr class="memdesc:a6f1a1c3cd2bdfbc6cc042fa6474fd4d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">快速创建一个获取浮点数的对话框 <em>parent</em> 作为对话框的父控件 <em>title</em> 作为对话框的标题 <em>message</em> 作为对话框提示信息 <em>value</em> 设置默认的值 <em>minValue</em> 设置最小值 <em>maxValue</em> 设置最大值 <em>decimals</em> 设置精度 <em>ok</em> 用于获取对话框是否点击了确认的指针 <em>flags</em> 设置对话框的窗口属性，一般无需设置  <a href="classDInputDialog.html#a6f1a1c3cd2bdfbc6cc042fa6474fd4d4">更多...</a><br /></td></tr>
+<tr class="separator:a6f1a1c3cd2bdfbc6cc042fa6474fd4d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a26f453e1d5f83b7f06f28dd044259b72"><td class="memItemLeft" align="right" valign="top"><a id="a26f453e1d5f83b7f06f28dd044259b72"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>showEvent</b> (QShowEvent *e)</td></tr>
+<tr class="separator:a26f453e1d5f83b7f06f28dd044259b72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classDDialog"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classDDialog')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="classDDialog.html">DDialog</a></td></tr>
+<tr class="memitem:af292b7b53fc3e3fd5c2e967274d07110 inherit pro_methods_classDDialog"><td class="memItemLeft" align="right" valign="top"><a id="af292b7b53fc3e3fd5c2e967274d07110"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DDialog</b> (<a class="el" href="classDDialogPrivate.html">DDialogPrivate</a> &amp;dd, QWidget *parent=0)</td></tr>
+<tr class="separator:af292b7b53fc3e3fd5c2e967274d07110 inherit pro_methods_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6adba921a288613b241dcb1d230b913d inherit pro_methods_classDDialog"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDialog.html#a6adba921a288613b241dcb1d230b913d">showEvent</a> (QShowEvent *event) Q_DECL_OVERRIDE</td></tr>
+<tr class="separator:a6adba921a288613b241dcb1d230b913d inherit pro_methods_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a613af173ed5c279067d76792e3b646e9 inherit pro_methods_classDDialog"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDialog.html#a613af173ed5c279067d76792e3b646e9">hideEvent</a> (QHideEvent *event) Q_DECL_OVERRIDE</td></tr>
+<tr class="separator:a613af173ed5c279067d76792e3b646e9 inherit pro_methods_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3660c3895eec9b1f2d3a42be5d342c33 inherit pro_methods_classDDialog"><td class="memItemLeft" align="right" valign="top"><a id="a3660c3895eec9b1f2d3a42be5d342c33"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>closeEvent</b> (QCloseEvent *event) override</td></tr>
+<tr class="separator:a3660c3895eec9b1f2d3a42be5d342c33 inherit pro_methods_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae931fa031d7aa240ddf58cabc56feb9b inherit pro_methods_classDDialog"><td class="memItemLeft" align="right" valign="top"><a id="ae931fa031d7aa240ddf58cabc56feb9b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>childEvent</b> (QChildEvent *event) Q_DECL_OVERRIDE</td></tr>
+<tr class="separator:ae931fa031d7aa240ddf58cabc56feb9b inherit pro_methods_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af44a41730e13d723833279f3ac84b28b inherit pro_methods_classDDialog"><td class="memItemLeft" align="right" valign="top"><a id="af44a41730e13d723833279f3ac84b28b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>resizeEvent</b> (QResizeEvent *event) override</td></tr>
+<tr class="separator:af44a41730e13d723833279f3ac84b28b inherit pro_methods_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab5e88194fc3426d2bcb3e3f3be11125 inherit pro_methods_classDDialog"><td class="memItemLeft" align="right" valign="top"><a id="aab5e88194fc3426d2bcb3e3f3be11125"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>keyPressEvent</b> (QKeyEvent *event) override</td></tr>
+<tr class="separator:aab5e88194fc3426d2bcb3e3f3be11125 inherit pro_methods_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a6dc3bb59bfcd95598bc7e9ffaf03a4 inherit pro_methods_classDDialog"><td class="memItemLeft" align="right" valign="top"><a id="a2a6dc3bb59bfcd95598bc7e9ffaf03a4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>eventFilter</b> (QObject *watched, QEvent *event) override</td></tr>
+<tr class="separator:a2a6dc3bb59bfcd95598bc7e9ffaf03a4 inherit pro_methods_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classDAbstractDialog"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classDAbstractDialog')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="classDAbstractDialog.html">DAbstractDialog</a></td></tr>
+<tr class="memitem:acdbdd2d3b6fd58526d840455646fa79e inherit pro_methods_classDAbstractDialog"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAbstractDialog.html#acdbdd2d3b6fd58526d840455646fa79e">mouseMoveEvent</a> (QMouseEvent *event) Q_DECL_OVERRIDE</td></tr>
+<tr class="memdesc:acdbdd2d3b6fd58526d840455646fa79e inherit pro_methods_classDAbstractDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">对话框的鼠标移动事件  <a href="classDAbstractDialog.html#acdbdd2d3b6fd58526d840455646fa79e">更多...</a><br /></td></tr>
+<tr class="separator:acdbdd2d3b6fd58526d840455646fa79e inherit pro_methods_classDAbstractDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6b09526a7fa2d6047fdb14c5793deb3 inherit pro_methods_classDAbstractDialog"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAbstractDialog.html#ae6b09526a7fa2d6047fdb14c5793deb3">mousePressEvent</a> (QMouseEvent *event) Q_DECL_OVERRIDE</td></tr>
+<tr class="memdesc:ae6b09526a7fa2d6047fdb14c5793deb3 inherit pro_methods_classDAbstractDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">对话框的鼠标点击事件  <a href="classDAbstractDialog.html#ae6b09526a7fa2d6047fdb14c5793deb3">更多...</a><br /></td></tr>
+<tr class="separator:ae6b09526a7fa2d6047fdb14c5793deb3 inherit pro_methods_classDAbstractDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54fe9f009ae062e5fdda6eaaa7ba3f02 inherit pro_methods_classDAbstractDialog"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAbstractDialog.html#a54fe9f009ae062e5fdda6eaaa7ba3f02">mouseReleaseEvent</a> (QMouseEvent *event) Q_DECL_OVERRIDE</td></tr>
+<tr class="memdesc:a54fe9f009ae062e5fdda6eaaa7ba3f02 inherit pro_methods_classDAbstractDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">对话框的鼠标释放事件  <a href="classDAbstractDialog.html#a54fe9f009ae062e5fdda6eaaa7ba3f02">更多...</a><br /></td></tr>
+<tr class="separator:a54fe9f009ae062e5fdda6eaaa7ba3f02 inherit pro_methods_classDAbstractDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae571ec8f62cbfb9484eee57d524f5979 inherit pro_methods_classDAbstractDialog"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAbstractDialog.html#ae571ec8f62cbfb9484eee57d524f5979">resizeEvent</a> (QResizeEvent *event) Q_DECL_OVERRIDE</td></tr>
+<tr class="memdesc:ae571ec8f62cbfb9484eee57d524f5979 inherit pro_methods_classDAbstractDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">窗口大小改变事件  <a href="classDAbstractDialog.html#ae571ec8f62cbfb9484eee57d524f5979">更多...</a><br /></td></tr>
+<tr class="separator:ae571ec8f62cbfb9484eee57d524f5979 inherit pro_methods_classDAbstractDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc6badb93ebc965452ac391c546b6c72 inherit pro_methods_classDAbstractDialog"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAbstractDialog.html#adc6badb93ebc965452ac391c546b6c72">showEvent</a> (QShowEvent *event) override</td></tr>
+<tr class="memdesc:adc6badb93ebc965452ac391c546b6c72 inherit pro_methods_classDAbstractDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">窗口显示事件,如果收到过鼠标移动事件不再使用自动布局  <a href="classDAbstractDialog.html#adc6badb93ebc965452ac391c546b6c72">更多...</a><br /></td></tr>
+<tr class="separator:adc6badb93ebc965452ac391c546b6c72 inherit pro_methods_classDAbstractDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47a2a1e9af92e0cb4e61b55dfca71de1 inherit pro_methods_classDAbstractDialog"><td class="memItemLeft" align="right" valign="top"><a id="a47a2a1e9af92e0cb4e61b55dfca71de1"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DAbstractDialog</b> (<a class="el" href="classDAbstractDialogPrivate.html">DAbstractDialogPrivate</a> &amp;dd, QWidget *parent=nullptr)</td></tr>
+<tr class="separator:a47a2a1e9af92e0cb4e61b55dfca71de1 inherit pro_methods_classDAbstractDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:a979b3976777ba1ecc121e6dd67a1ca8f"><td class="memItemLeft" align="right" valign="top">InputMode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDialog.html#a979b3976777ba1ecc121e6dd67a1ca8f">inputMode</a></td></tr>
+<tr class="memdesc:a979b3976777ba1ecc121e6dd67a1ca8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">这个属性保存对话框当前的输入模式  <a href="classDInputDialog.html#a979b3976777ba1ecc121e6dd67a1ca8f">更多...</a><br /></td></tr>
+<tr class="separator:a979b3976777ba1ecc121e6dd67a1ca8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7dc0821c33ec8adaa3b1c0454c94e5d"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDialog.html#ac7dc0821c33ec8adaa3b1c0454c94e5d">textValue</a></td></tr>
+<tr class="memdesc:ac7dc0821c33ec8adaa3b1c0454c94e5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">这个属性保存对话框当前的输入文本  <a href="classDInputDialog.html#ac7dc0821c33ec8adaa3b1c0454c94e5d">更多...</a><br /></td></tr>
+<tr class="separator:ac7dc0821c33ec8adaa3b1c0454c94e5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a884c8f1b31c1ba76dd45c9231e2a7284"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDialog.html#a884c8f1b31c1ba76dd45c9231e2a7284">intValue</a></td></tr>
+<tr class="memdesc:a884c8f1b31c1ba76dd45c9231e2a7284"><td class="mdescLeft">&#160;</td><td class="mdescRight">这个属性保存对话框当前的整型值  <a href="classDInputDialog.html#a884c8f1b31c1ba76dd45c9231e2a7284">更多...</a><br /></td></tr>
+<tr class="separator:a884c8f1b31c1ba76dd45c9231e2a7284"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80797c2d1965485b989adf829ddda801"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDialog.html#a80797c2d1965485b989adf829ddda801">doubleValue</a></td></tr>
+<tr class="memdesc:a80797c2d1965485b989adf829ddda801"><td class="mdescLeft">&#160;</td><td class="mdescRight">这个属性保存对话框当前的浮点数值  <a href="classDInputDialog.html#a80797c2d1965485b989adf829ddda801">更多...</a><br /></td></tr>
+<tr class="separator:a80797c2d1965485b989adf829ddda801"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7adfd9a04ce831c7f1d030f337dd80f7"><td class="memItemLeft" align="right" valign="top">QLineEdit::EchoMode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDialog.html#a7adfd9a04ce831c7f1d030f337dd80f7">textEchoMode</a></td></tr>
+<tr class="memdesc:a7adfd9a04ce831c7f1d030f337dd80f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">这个属性保存对话框中的输入框文字显示模式  <a href="classDInputDialog.html#a7adfd9a04ce831c7f1d030f337dd80f7">更多...</a><br /></td></tr>
+<tr class="separator:a7adfd9a04ce831c7f1d030f337dd80f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa62d805ddb6ca08cd2fe684b28e2c2b0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDialog.html#aa62d805ddb6ca08cd2fe684b28e2c2b0">comboBoxEditable</a></td></tr>
+<tr class="memdesc:aa62d805ddb6ca08cd2fe684b28e2c2b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">这个属性表示对话框中的多选框是否可以编辑  <a href="classDInputDialog.html#aa62d805ddb6ca08cd2fe684b28e2c2b0">更多...</a><br /></td></tr>
+<tr class="separator:aa62d805ddb6ca08cd2fe684b28e2c2b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a429b2389094f2ebba0ff3e8fc2c42e14"><td class="memItemLeft" align="right" valign="top">QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDialog.html#a429b2389094f2ebba0ff3e8fc2c42e14">comboBoxItems</a></td></tr>
+<tr class="memdesc:a429b2389094f2ebba0ff3e8fc2c42e14"><td class="mdescLeft">&#160;</td><td class="mdescRight">这个属性保存对话框中多选框的所有可选值  <a href="classDInputDialog.html#a429b2389094f2ebba0ff3e8fc2c42e14">更多...</a><br /></td></tr>
+<tr class="separator:a429b2389094f2ebba0ff3e8fc2c42e14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61f33a14adf944bf5802403680e5bbc7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDialog.html#a61f33a14adf944bf5802403680e5bbc7">comboBoxCurrentIndex</a></td></tr>
+<tr class="memdesc:a61f33a14adf944bf5802403680e5bbc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">这个属性保存对话框中多选框当前的索引  <a href="classDInputDialog.html#a61f33a14adf944bf5802403680e5bbc7">更多...</a><br /></td></tr>
+<tr class="separator:a61f33a14adf944bf5802403680e5bbc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41156a2fefb1790727dc93895a8cf6a0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDialog.html#a41156a2fefb1790727dc93895a8cf6a0">intMinimum</a></td></tr>
+<tr class="memdesc:a41156a2fefb1790727dc93895a8cf6a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">这个属性保存对话框中的整形可选输入框SpinBox的最小值  <a href="classDInputDialog.html#a41156a2fefb1790727dc93895a8cf6a0">更多...</a><br /></td></tr>
+<tr class="separator:a41156a2fefb1790727dc93895a8cf6a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade7da6e4faebe51bdea4b8f4db5cb020"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDialog.html#ade7da6e4faebe51bdea4b8f4db5cb020">intMaximum</a></td></tr>
+<tr class="memdesc:ade7da6e4faebe51bdea4b8f4db5cb020"><td class="mdescLeft">&#160;</td><td class="mdescRight">这个属性保存对话框中的整形可选输入框SpinBox的最大值  <a href="classDInputDialog.html#ade7da6e4faebe51bdea4b8f4db5cb020">更多...</a><br /></td></tr>
+<tr class="separator:ade7da6e4faebe51bdea4b8f4db5cb020"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61f80f8e07deeb51cb809318dff840aa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDialog.html#a61f80f8e07deeb51cb809318dff840aa">intStep</a></td></tr>
+<tr class="memdesc:a61f80f8e07deeb51cb809318dff840aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">这个属性保存对话框中的可选输入框点击调增按钮时的步进值  <a href="classDInputDialog.html#a61f80f8e07deeb51cb809318dff840aa">更多...</a><br /></td></tr>
+<tr class="separator:a61f80f8e07deeb51cb809318dff840aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b1b5df259c209749267dba8ae12cfc7"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDialog.html#a9b1b5df259c209749267dba8ae12cfc7">doubleMinimum</a></td></tr>
+<tr class="memdesc:a9b1b5df259c209749267dba8ae12cfc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">这个属性保存对话框中的浮点型可选输入框SpinBox的最小值  <a href="classDInputDialog.html#a9b1b5df259c209749267dba8ae12cfc7">更多...</a><br /></td></tr>
+<tr class="separator:a9b1b5df259c209749267dba8ae12cfc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9292dc8f198b3cd558d84b30415b0b84"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDialog.html#a9292dc8f198b3cd558d84b30415b0b84">doubleMaximum</a></td></tr>
+<tr class="memdesc:a9292dc8f198b3cd558d84b30415b0b84"><td class="mdescLeft">&#160;</td><td class="mdescRight">这个属性保存对话框中的浮点型可选输入框SpinBox的最大值  <a href="classDInputDialog.html#a9292dc8f198b3cd558d84b30415b0b84">更多...</a><br /></td></tr>
+<tr class="separator:a9292dc8f198b3cd558d84b30415b0b84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3a5fcfc08276cfe3002e0a06efb827f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDialog.html#ae3a5fcfc08276cfe3002e0a06efb827f">doubleDecimals</a></td></tr>
+<tr class="memdesc:ae3a5fcfc08276cfe3002e0a06efb827f"><td class="mdescLeft">&#160;</td><td class="mdescRight">这个属性保存对话框中的浮点型可选输入框SpinBox的精度  <a href="classDInputDialog.html#ae3a5fcfc08276cfe3002e0a06efb827f">更多...</a><br /></td></tr>
+<tr class="separator:ae3a5fcfc08276cfe3002e0a06efb827f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d1e14f85c53590a13e7cdf8af2e411b"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDialog.html#a5d1e14f85c53590a13e7cdf8af2e411b">okButtonText</a></td></tr>
+<tr class="memdesc:a5d1e14f85c53590a13e7cdf8af2e411b"><td class="mdescLeft">&#160;</td><td class="mdescRight">这个属性保存对话框的确认按钮文字  <a href="classDInputDialog.html#a5d1e14f85c53590a13e7cdf8af2e411b">更多...</a><br /></td></tr>
+<tr class="separator:a5d1e14f85c53590a13e7cdf8af2e411b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86683a9254c4326adcea873d412bc8af"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDialog.html#a86683a9254c4326adcea873d412bc8af">cancelButtonText</a></td></tr>
+<tr class="memdesc:a86683a9254c4326adcea873d412bc8af"><td class="mdescLeft">&#160;</td><td class="mdescRight">这个属性保存对话框的取消按钮文字  <a href="classDInputDialog.html#a86683a9254c4326adcea873d412bc8af">更多...</a><br /></td></tr>
+<tr class="separator:a86683a9254c4326adcea873d412bc8af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fe552c4bc6af78fdeb9febff7dc12cf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDialog.html#a2fe552c4bc6af78fdeb9febff7dc12cf">textAlert</a></td></tr>
+<tr class="memdesc:a2fe552c4bc6af78fdeb9febff7dc12cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">这个属性保存对话框是否处于警告状态  <a href="classDInputDialog.html#a2fe552c4bc6af78fdeb9febff7dc12cf">更多...</a><br /></td></tr>
+<tr class="separator:a2fe552c4bc6af78fdeb9febff7dc12cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header properties_classDDialog"><td colspan="2" onclick="javascript:toggleInherit('properties_classDDialog')"><img src="closed.png" alt="-"/>&#160;属性 继承自 <a class="el" href="classDDialog.html">DDialog</a></td></tr>
+<tr class="memitem:a7d9700bdb3da1443268f0f54a88db294 inherit properties_classDDialog"><td class="memItemLeft" align="right" valign="top"><a id="a7d9700bdb3da1443268f0f54a88db294"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>title</b></td></tr>
+<tr class="separator:a7d9700bdb3da1443268f0f54a88db294 inherit properties_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a2f74809b78b0103bb0150afe797edf inherit properties_classDDialog"><td class="memItemLeft" align="right" valign="top"><a id="a2a2f74809b78b0103bb0150afe797edf"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>message</b></td></tr>
+<tr class="separator:a2a2f74809b78b0103bb0150afe797edf inherit properties_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c4b778077141b087843dbb70092f8b0 inherit properties_classDDialog"><td class="memItemLeft" align="right" valign="top"><a id="a4c4b778077141b087843dbb70092f8b0"></a>
+QIcon&#160;</td><td class="memItemRight" valign="bottom"><b>icon</b></td></tr>
+<tr class="separator:a4c4b778077141b087843dbb70092f8b0 inherit properties_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7ae66f530e071f79d8c9f69cb308309 inherit properties_classDDialog"><td class="memItemLeft" align="right" valign="top"><a id="ad7ae66f530e071f79d8c9f69cb308309"></a>
+Qt::TextFormat&#160;</td><td class="memItemRight" valign="bottom"><b>textFormat</b></td></tr>
+<tr class="separator:ad7ae66f530e071f79d8c9f69cb308309 inherit properties_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbb2be932ff70333bedc66a2c3e2072e inherit properties_classDDialog"><td class="memItemLeft" align="right" valign="top"><a id="adbb2be932ff70333bedc66a2c3e2072e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>onButtonClickedClose</b></td></tr>
+<tr class="separator:adbb2be932ff70333bedc66a2c3e2072e inherit properties_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c0cf660fa1d976c6c90c7a36e1353c9 inherit properties_classDDialog"><td class="memItemLeft" align="right" valign="top"><a id="a4c0cf660fa1d976c6c90c7a36e1353c9"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>closeButtonVisible</b></td></tr>
+<tr class="separator:a4c0cf660fa1d976c6c90c7a36e1353c9 inherit properties_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header properties_classDAbstractDialog"><td colspan="2" onclick="javascript:toggleInherit('properties_classDAbstractDialog')"><img src="closed.png" alt="-"/>&#160;属性 继承自 <a class="el" href="classDAbstractDialog.html">DAbstractDialog</a></td></tr>
+<tr class="memitem:a0be5ba4eb664919bcf245e368a1c1bcc inherit properties_classDAbstractDialog"><td class="memItemLeft" align="right" valign="top">DisplayPosition&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAbstractDialog.html#a0be5ba4eb664919bcf245e368a1c1bcc">displayPosition</a></td></tr>
+<tr class="memdesc:a0be5ba4eb664919bcf245e368a1c1bcc inherit properties_classDAbstractDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取对话框显示位置  <a href="classDAbstractDialog.html#a0be5ba4eb664919bcf245e368a1c1bcc">更多...</a><br /></td></tr>
+<tr class="separator:a0be5ba4eb664919bcf245e368a1c1bcc inherit properties_classDAbstractDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pub_slots_classDDialog"><td colspan="2" onclick="javascript:toggleInherit('pub_slots_classDDialog')"><img src="closed.png" alt="-"/>&#160;Public 槽 继承自 <a class="el" href="classDDialog.html">DDialog</a></td></tr>
+<tr class="memitem:a03999a489354652657f187572affe1a2 inherit pub_slots_classDDialog"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDialog.html#a03999a489354652657f187572affe1a2">addButton</a> (const QString &amp;text, bool isDefault=false, ButtonType type=ButtonNormal)</td></tr>
+<tr class="memdesc:a03999a489354652657f187572affe1a2 inherit pub_slots_classDDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">向对话框添加按钮.  <a href="classDDialog.html#a03999a489354652657f187572affe1a2">更多...</a><br /></td></tr>
+<tr class="separator:a03999a489354652657f187572affe1a2 inherit pub_slots_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2c35e90142226ba3f4c9e7ba5576560 inherit pub_slots_classDDialog"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDialog.html#ad2c35e90142226ba3f4c9e7ba5576560">addButtons</a> (const QStringList &amp;text)</td></tr>
+<tr class="memdesc:ad2c35e90142226ba3f4c9e7ba5576560 inherit pub_slots_classDDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">向对话框添加按钮.  <a href="classDDialog.html#ad2c35e90142226ba3f4c9e7ba5576560">更多...</a><br /></td></tr>
+<tr class="separator:ad2c35e90142226ba3f4c9e7ba5576560 inherit pub_slots_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4b20c40095b4d718f5bb25791a62d13 inherit pub_slots_classDDialog"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDialog.html#af4b20c40095b4d718f5bb25791a62d13">insertButton</a> (int index, const QString &amp;text, bool isDefault=false, ButtonType type=ButtonNormal)</td></tr>
+<tr class="memdesc:af4b20c40095b4d718f5bb25791a62d13 inherit pub_slots_classDDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">向对话框插入按钮.  <a href="classDDialog.html#af4b20c40095b4d718f5bb25791a62d13">更多...</a><br /></td></tr>
+<tr class="separator:af4b20c40095b4d718f5bb25791a62d13 inherit pub_slots_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1188ec30886ba8778fc1052706fc995 inherit pub_slots_classDDialog"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDialog.html#ab1188ec30886ba8778fc1052706fc995">insertButton</a> (int index, QAbstractButton *button, bool isDefault=false)</td></tr>
+<tr class="memdesc:ab1188ec30886ba8778fc1052706fc995 inherit pub_slots_classDDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">向对话框插入按钮.  <a href="classDDialog.html#ab1188ec30886ba8778fc1052706fc995">更多...</a><br /></td></tr>
+<tr class="separator:ab1188ec30886ba8778fc1052706fc995 inherit pub_slots_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accf07670403737a1b3b7341e0a406f15 inherit pub_slots_classDDialog"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDialog.html#accf07670403737a1b3b7341e0a406f15">insertButtons</a> (int index, const QStringList &amp;text)</td></tr>
+<tr class="memdesc:accf07670403737a1b3b7341e0a406f15 inherit pub_slots_classDDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">向对话框插入按钮.  <a href="classDDialog.html#accf07670403737a1b3b7341e0a406f15">更多...</a><br /></td></tr>
+<tr class="separator:accf07670403737a1b3b7341e0a406f15 inherit pub_slots_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acffdb4ea6133dc62f02fb7e8123ee8c6 inherit pub_slots_classDDialog"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDialog.html#acffdb4ea6133dc62f02fb7e8123ee8c6">removeButton</a> (int index)</td></tr>
+<tr class="memdesc:acffdb4ea6133dc62f02fb7e8123ee8c6 inherit pub_slots_classDDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">从对话框移除按钮.  <a href="classDDialog.html#acffdb4ea6133dc62f02fb7e8123ee8c6">更多...</a><br /></td></tr>
+<tr class="separator:acffdb4ea6133dc62f02fb7e8123ee8c6 inherit pub_slots_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13b41f5ce2d3b491148a37b1f3e2936d inherit pub_slots_classDDialog"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDialog.html#a13b41f5ce2d3b491148a37b1f3e2936d">removeButton</a> (QAbstractButton *button)</td></tr>
+<tr class="memdesc:a13b41f5ce2d3b491148a37b1f3e2936d inherit pub_slots_classDDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">从对话框移除按钮.  <a href="classDDialog.html#a13b41f5ce2d3b491148a37b1f3e2936d">更多...</a><br /></td></tr>
+<tr class="separator:a13b41f5ce2d3b491148a37b1f3e2936d inherit pub_slots_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acac8323f394800285dfb5d1540c50adb inherit pub_slots_classDDialog"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDialog.html#acac8323f394800285dfb5d1540c50adb">removeButtonByText</a> (const QString &amp;text)</td></tr>
+<tr class="memdesc:acac8323f394800285dfb5d1540c50adb inherit pub_slots_classDDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">从对话框移除按钮.  <a href="classDDialog.html#acac8323f394800285dfb5d1540c50adb">更多...</a><br /></td></tr>
+<tr class="separator:acac8323f394800285dfb5d1540c50adb inherit pub_slots_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad77d71530df35bacfaba552843e3b2f7 inherit pub_slots_classDDialog"><td class="memItemLeft" align="right" valign="top"><a id="ad77d71530df35bacfaba552843e3b2f7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDialog.html#ad77d71530df35bacfaba552843e3b2f7">clearButtons</a> ()</td></tr>
+<tr class="memdesc:ad77d71530df35bacfaba552843e3b2f7 inherit pub_slots_classDDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">清除所有按钮. <br /></td></tr>
+<tr class="separator:ad77d71530df35bacfaba552843e3b2f7 inherit pub_slots_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0ee4bb4733dd05d0a09189579d08c2e inherit pub_slots_classDDialog"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDialog.html#ac0ee4bb4733dd05d0a09189579d08c2e">setDefaultButton</a> (int index)</td></tr>
+<tr class="memdesc:ac0ee4bb4733dd05d0a09189579d08c2e inherit pub_slots_classDDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置默认按钮.  <a href="classDDialog.html#ac0ee4bb4733dd05d0a09189579d08c2e">更多...</a><br /></td></tr>
+<tr class="separator:ac0ee4bb4733dd05d0a09189579d08c2e inherit pub_slots_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8223734a7411e6bc2d4b823d07b93d9c inherit pub_slots_classDDialog"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDialog.html#a8223734a7411e6bc2d4b823d07b93d9c">setDefaultButton</a> (const QString &amp;str)</td></tr>
+<tr class="memdesc:a8223734a7411e6bc2d4b823d07b93d9c inherit pub_slots_classDDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置默认按钮.  <a href="classDDialog.html#a8223734a7411e6bc2d4b823d07b93d9c">更多...</a><br /></td></tr>
+<tr class="separator:a8223734a7411e6bc2d4b823d07b93d9c inherit pub_slots_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a718d6854a60f3551679465c71a537193 inherit pub_slots_classDDialog"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDialog.html#a718d6854a60f3551679465c71a537193">setDefaultButton</a> (QAbstractButton *button)</td></tr>
+<tr class="memdesc:a718d6854a60f3551679465c71a537193 inherit pub_slots_classDDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置默认按钮  <a href="classDDialog.html#a718d6854a60f3551679465c71a537193">更多...</a><br /></td></tr>
+<tr class="separator:a718d6854a60f3551679465c71a537193 inherit pub_slots_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ed96f3cb2520150bffdaea3b4e1ef38 inherit pub_slots_classDDialog"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDialog.html#a5ed96f3cb2520150bffdaea3b4e1ef38">addContent</a> (QWidget *widget, Qt::Alignment alignment={})</td></tr>
+<tr class="memdesc:a5ed96f3cb2520150bffdaea3b4e1ef38 inherit pub_slots_classDDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">添加控件到对话框内容布局.  <a href="classDDialog.html#a5ed96f3cb2520150bffdaea3b4e1ef38">更多...</a><br /></td></tr>
+<tr class="separator:a5ed96f3cb2520150bffdaea3b4e1ef38 inherit pub_slots_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a069f29ef0379a82d810201bed983bcac inherit pub_slots_classDDialog"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDialog.html#a069f29ef0379a82d810201bed983bcac">insertContent</a> (int index, QWidget *widget, Qt::Alignment alignment={})</td></tr>
+<tr class="memdesc:a069f29ef0379a82d810201bed983bcac inherit pub_slots_classDDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">在对话框内容布局指定位置插入控件.  <a href="classDDialog.html#a069f29ef0379a82d810201bed983bcac">更多...</a><br /></td></tr>
+<tr class="separator:a069f29ef0379a82d810201bed983bcac inherit pub_slots_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4524eeb046f2b5f350271ef41729eb7b inherit pub_slots_classDDialog"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDialog.html#a4524eeb046f2b5f350271ef41729eb7b">removeContent</a> (QWidget *widget, bool isDelete=true)</td></tr>
+<tr class="memdesc:a4524eeb046f2b5f350271ef41729eb7b inherit pub_slots_classDDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">从对话框内容布局中移除指定控件.  <a href="classDDialog.html#a4524eeb046f2b5f350271ef41729eb7b">更多...</a><br /></td></tr>
+<tr class="separator:a4524eeb046f2b5f350271ef41729eb7b inherit pub_slots_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa91361d0d011ced341664c0643cf9be inherit pub_slots_classDDialog"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDialog.html#aaa91361d0d011ced341664c0643cf9be">clearContents</a> (bool isDelete=true)</td></tr>
+<tr class="memdesc:aaa91361d0d011ced341664c0643cf9be inherit pub_slots_classDDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">清空对话框内容布局中的所有内容.  <a href="classDDialog.html#aaa91361d0d011ced341664c0643cf9be">更多...</a><br /></td></tr>
+<tr class="separator:aaa91361d0d011ced341664c0643cf9be inherit pub_slots_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ad28f058c6d7aa60cbf3159160753f3 inherit pub_slots_classDDialog"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDialog.html#a5ad28f058c6d7aa60cbf3159160753f3">setSpacing</a> (int spacing)</td></tr>
+<tr class="memdesc:a5ad28f058c6d7aa60cbf3159160753f3 inherit pub_slots_classDDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置对话框内容间隔.  <a href="classDDialog.html#a5ad28f058c6d7aa60cbf3159160753f3">更多...</a><br /></td></tr>
+<tr class="separator:a5ad28f058c6d7aa60cbf3159160753f3 inherit pub_slots_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4547072e8d8de47342d239d4b1e7eab inherit pub_slots_classDDialog"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDialog.html#af4547072e8d8de47342d239d4b1e7eab">addSpacing</a> (int spacing)</td></tr>
+<tr class="memdesc:af4547072e8d8de47342d239d4b1e7eab inherit pub_slots_classDDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">追加对话框内容间隔.  <a href="classDDialog.html#af4547072e8d8de47342d239d4b1e7eab">更多...</a><br /></td></tr>
+<tr class="separator:af4547072e8d8de47342d239d4b1e7eab inherit pub_slots_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b614d1933c9ad3be8fa56014c023677 inherit pub_slots_classDDialog"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDialog.html#a9b614d1933c9ad3be8fa56014c023677">insertSpacing</a> (int index, int spacing)</td></tr>
+<tr class="memdesc:a9b614d1933c9ad3be8fa56014c023677 inherit pub_slots_classDDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">插入对话框内容间隔.  <a href="classDDialog.html#a9b614d1933c9ad3be8fa56014c023677">更多...</a><br /></td></tr>
+<tr class="separator:a9b614d1933c9ad3be8fa56014c023677 inherit pub_slots_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af90eb8313f1246fe02921a2bdad28db6 inherit pub_slots_classDDialog"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDialog.html#af90eb8313f1246fe02921a2bdad28db6">clearSpacing</a> ()</td></tr>
+<tr class="memdesc:af90eb8313f1246fe02921a2bdad28db6 inherit pub_slots_classDDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">清除内容间隔.  <a href="classDDialog.html#af90eb8313f1246fe02921a2bdad28db6">更多...</a><br /></td></tr>
+<tr class="separator:af90eb8313f1246fe02921a2bdad28db6 inherit pub_slots_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab26c020109df58fe0a97c5efabe9762d inherit pub_slots_classDDialog"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDialog.html#ab26c020109df58fe0a97c5efabe9762d">setButtonText</a> (int index, const QString &amp;text)</td></tr>
+<tr class="memdesc:ab26c020109df58fe0a97c5efabe9762d inherit pub_slots_classDDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置按钮文字.  <a href="classDDialog.html#ab26c020109df58fe0a97c5efabe9762d">更多...</a><br /></td></tr>
+<tr class="separator:ab26c020109df58fe0a97c5efabe9762d inherit pub_slots_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec564ca9d7998739e64bc718b989344f inherit pub_slots_classDDialog"><td class="memItemLeft" align="right" valign="top"><a id="aec564ca9d7998739e64bc718b989344f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDialog.html#aec564ca9d7998739e64bc718b989344f">setButtonIcon</a> (int index, const QIcon &amp;icon)</td></tr>
+<tr class="memdesc:aec564ca9d7998739e64bc718b989344f inherit pub_slots_classDDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置按钮图标. <em>index</em> 需要设置图标的按钮的下标 <em>icon</em> 所需要设置的图标 <br /></td></tr>
+<tr class="separator:aec564ca9d7998739e64bc718b989344f inherit pub_slots_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a937b72977084f1b2414d704a957d76e6 inherit pub_slots_classDDialog"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDialog.html#a937b72977084f1b2414d704a957d76e6">setTitle</a> (const QString &amp;title)</td></tr>
+<tr class="memdesc:a937b72977084f1b2414d704a957d76e6 inherit pub_slots_classDDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置对话框标题.  <a href="classDDialog.html#a937b72977084f1b2414d704a957d76e6">更多...</a><br /></td></tr>
+<tr class="separator:a937b72977084f1b2414d704a957d76e6 inherit pub_slots_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6822ec1bab946be3edb71978fe04d6ca inherit pub_slots_classDDialog"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDialog.html#a6822ec1bab946be3edb71978fe04d6ca">setWordWrapTitle</a> (bool wordWrap)</td></tr>
+<tr class="memdesc:a6822ec1bab946be3edb71978fe04d6ca inherit pub_slots_classDDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">设定标题Label内容是否可截断换行.  <a href="classDDialog.html#a6822ec1bab946be3edb71978fe04d6ca">更多...</a><br /></td></tr>
+<tr class="separator:a6822ec1bab946be3edb71978fe04d6ca inherit pub_slots_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0431a7d2397963c2cec76983b1095985 inherit pub_slots_classDDialog"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDialog.html#a0431a7d2397963c2cec76983b1095985">setMessage</a> (const QString &amp;message)</td></tr>
+<tr class="memdesc:a0431a7d2397963c2cec76983b1095985 inherit pub_slots_classDDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置对话框消息内容.  <a href="classDDialog.html#a0431a7d2397963c2cec76983b1095985">更多...</a><br /></td></tr>
+<tr class="separator:a0431a7d2397963c2cec76983b1095985 inherit pub_slots_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d47e63d84e052b912b156e9fe74e3e8 inherit pub_slots_classDDialog"><td class="memItemLeft" align="right" valign="top"><a id="a7d47e63d84e052b912b156e9fe74e3e8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setWordWrapMessage</b> (bool wordWrap)</td></tr>
+<tr class="separator:a7d47e63d84e052b912b156e9fe74e3e8 inherit pub_slots_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac14ca8c14499a865c32f344f3b792365 inherit pub_slots_classDDialog"><td class="memItemLeft" align="right" valign="top"><a id="ac14ca8c14499a865c32f344f3b792365"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDialog.html#ac14ca8c14499a865c32f344f3b792365">setIcon</a> (const QIcon &amp;icon)</td></tr>
+<tr class="memdesc:ac14ca8c14499a865c32f344f3b792365 inherit pub_slots_classDDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置对话框图标. <em>icon</em> 对话框图标. <br /></td></tr>
+<tr class="separator:ac14ca8c14499a865c32f344f3b792365 inherit pub_slots_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83424e89a18ec1654f13a5976f06cea0 inherit pub_slots_classDDialog"><td class="memItemLeft" align="right" valign="top">D_DECL_DEPRECATED void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDialog.html#a83424e89a18ec1654f13a5976f06cea0">setIcon</a> (const QIcon &amp;icon, const QSize &amp;expectedSize)</td></tr>
+<tr class="memdesc:a83424e89a18ec1654f13a5976f06cea0 inherit pub_slots_classDDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置对话框图标. 这是为便于使用而提供的一个重载成员函数.与上面的函数相比，它接受不同类型的参数.为对话框设置图标，同时可以指定一个期望的图标大小。  <a href="classDDialog.html#a83424e89a18ec1654f13a5976f06cea0">更多...</a><br /></td></tr>
+<tr class="separator:a83424e89a18ec1654f13a5976f06cea0 inherit pub_slots_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d0c25342a48f1d77d458c727cfc731b inherit pub_slots_classDDialog"><td class="memItemLeft" align="right" valign="top">D_DECL_DEPRECATED void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDialog.html#a4d0c25342a48f1d77d458c727cfc731b">setIconPixmap</a> (const QPixmap &amp;<a class="el" href="classDDialog.html#a011f9e5b368375402d9c482c3af4bd83">iconPixmap</a>)</td></tr>
+<tr class="memdesc:a4d0c25342a48f1d77d458c727cfc731b inherit pub_slots_classDDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置对话框位图图标.  <a href="classDDialog.html#a4d0c25342a48f1d77d458c727cfc731b">更多...</a><br /></td></tr>
+<tr class="separator:a4d0c25342a48f1d77d458c727cfc731b inherit pub_slots_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af795ea5beef81d50e991b88b025e5f82 inherit pub_slots_classDDialog"><td class="memItemLeft" align="right" valign="top"><a id="af795ea5beef81d50e991b88b025e5f82"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDialog.html#af795ea5beef81d50e991b88b025e5f82">setTextFormat</a> (Qt::TextFormat textFormat)</td></tr>
+<tr class="memdesc:af795ea5beef81d50e991b88b025e5f82 inherit pub_slots_classDDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置文字格式. <em>textFormat</em> 文字格式. <br /></td></tr>
+<tr class="separator:af795ea5beef81d50e991b88b025e5f82 inherit pub_slots_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68b0b45360b02ffb51f9ccaf69b80e4a inherit pub_slots_classDDialog"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDialog.html#a68b0b45360b02ffb51f9ccaf69b80e4a">setOnButtonClickedClose</a> (bool onButtonClickedClose)</td></tr>
+<tr class="memdesc:a68b0b45360b02ffb51f9ccaf69b80e4a inherit pub_slots_classDDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置是否在点击按钮后关闭对话框.  <a href="classDDialog.html#a68b0b45360b02ffb51f9ccaf69b80e4a">更多...</a><br /></td></tr>
+<tr class="separator:a68b0b45360b02ffb51f9ccaf69b80e4a inherit pub_slots_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38e6ee5e94db54ecb90e928ca664edea inherit pub_slots_classDDialog"><td class="memItemLeft" align="right" valign="top"><a id="a38e6ee5e94db54ecb90e928ca664edea"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setCloseButtonVisible</b> (bool closeButtonVisible)</td></tr>
+<tr class="separator:a38e6ee5e94db54ecb90e928ca664edea inherit pub_slots_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc0499eec8cf37dabe79c3307f510881 inherit pub_slots_classDDialog"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDialog.html#acc0499eec8cf37dabe79c3307f510881">exec</a> () Q_DECL_OVERRIDE</td></tr>
+<tr class="memdesc:acc0499eec8cf37dabe79c3307f510881 inherit pub_slots_classDDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">以模态框形式显示当前对话框.  <a href="classDDialog.html#acc0499eec8cf37dabe79c3307f510881">更多...</a><br /></td></tr>
+<tr class="separator:acc0499eec8cf37dabe79c3307f510881 inherit pub_slots_classDDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_slots_classDAbstractDialog"><td colspan="2" onclick="javascript:toggleInherit('pub_slots_classDAbstractDialog')"><img src="closed.png" alt="-"/>&#160;Public 槽 继承自 <a class="el" href="classDAbstractDialog.html">DAbstractDialog</a></td></tr>
+<tr class="memitem:aff3573c58f1761086c9baf1f93489d11 inherit pub_slots_classDAbstractDialog"><td class="memItemLeft" align="right" valign="top"><a id="aff3573c58f1761086c9baf1f93489d11"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAbstractDialog.html#aff3573c58f1761086c9baf1f93489d11">moveToCenter</a> ()</td></tr>
+<tr class="memdesc:aff3573c58f1761086c9baf1f93489d11 inherit pub_slots_classDAbstractDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">将对话框移动至屏幕中央或其父控件的中央 <br /></td></tr>
+<tr class="separator:aff3573c58f1761086c9baf1f93489d11 inherit pub_slots_classDAbstractDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a453ccc1cff05192a59c9386c99e668bf inherit pub_slots_classDAbstractDialog"><td class="memItemLeft" align="right" valign="top"><a id="a453ccc1cff05192a59c9386c99e668bf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAbstractDialog.html#a453ccc1cff05192a59c9386c99e668bf">moveToTopRight</a> ()</td></tr>
+<tr class="memdesc:a453ccc1cff05192a59c9386c99e668bf inherit pub_slots_classDAbstractDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">将对话框移动至屏幕右上角或其父控件的右上角 <br /></td></tr>
+<tr class="separator:a453ccc1cff05192a59c9386c99e668bf inherit pub_slots_classDAbstractDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94c810ea9af09c84a0098aef6a7f5082 inherit pub_slots_classDAbstractDialog"><td class="memItemLeft" align="right" valign="top"><a id="a94c810ea9af09c84a0098aef6a7f5082"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAbstractDialog.html#a94c810ea9af09c84a0098aef6a7f5082">moveToCenterByRect</a> (const QRect &amp;rect)</td></tr>
+<tr class="memdesc:a94c810ea9af09c84a0098aef6a7f5082 inherit pub_slots_classDAbstractDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">移动对话框到给定<code>rect</code>区域的中央。<code>rect</code>是移动对话框要参照的<code>QRect</code>区域 <br /></td></tr>
+<tr class="separator:a94c810ea9af09c84a0098aef6a7f5082 inherit pub_slots_classDAbstractDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad564247f172d91745ff1791e309f0fc2 inherit pub_slots_classDAbstractDialog"><td class="memItemLeft" align="right" valign="top"><a id="ad564247f172d91745ff1791e309f0fc2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAbstractDialog.html#ad564247f172d91745ff1791e309f0fc2">moveToTopRightByRect</a> (const QRect &amp;rect)</td></tr>
+<tr class="memdesc:ad564247f172d91745ff1791e309f0fc2 inherit pub_slots_classDAbstractDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">移动对话框到给定<code>rect</code>区域的右上角。<code>rect</code>是移动所需要参照的<code>QRect</code>位置。 <br /></td></tr>
+<tr class="separator:ad564247f172d91745ff1791e309f0fc2 inherit pub_slots_classDAbstractDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae99e66e0f9217abd7251227f24363119 inherit pub_slots_classDAbstractDialog"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDAbstractDialog.html#ae99e66e0f9217abd7251227f24363119">setDisplayPosition</a> (DisplayPosition <a class="el" href="classDAbstractDialog.html#a0be5ba4eb664919bcf245e368a1c1bcc">displayPosition</a>)</td></tr>
+<tr class="memdesc:ae99e66e0f9217abd7251227f24363119 inherit pub_slots_classDAbstractDialog"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置对话框显示位置  <a href="classDAbstractDialog.html#ae99e66e0f9217abd7251227f24363119">更多...</a><br /></td></tr>
+<tr class="separator:ae99e66e0f9217abd7251227f24363119 inherit pub_slots_classDAbstractDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="aa83836ad4531b505209c5fcfe0a75ead"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa83836ad4531b505209c5fcfe0a75ead">&#9670;&nbsp;</a></span>comboBoxCurrentIndexChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DInputDialog::comboBoxCurrentIndexChanged </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>comboBoxCurrentIndex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>当属性 <a class="el" href="classDInputDialog.html#a61f33a14adf944bf5802403680e5bbc7" title="这个属性保存对话框中多选框当前的索引">DInputDialog::comboBoxCurrentIndex</a> 发生变化时调用此信号 </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDInputDialog.html#a61f33a14adf944bf5802403680e5bbc7" title="这个属性保存对话框中多选框当前的索引">DInputDialog::comboBoxCurrentIndex</a> </dd></dl>
+
+</div>
+</div>
+<a id="a27e8971da9441fda6a37c20d9b11b74b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27e8971da9441fda6a37c20d9b11b74b">&#9670;&nbsp;</a></span>comboBoxItems()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QStringList DInputDialog::comboBoxItems </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDInputDialog.html#a429b2389094f2ebba0ff3e8fc2c42e14" title="这个属性保存对话框中多选框的所有可选值">DInputDialog::comboBoxItems</a> </dd></dl>
+
+</div>
+</div>
+<a id="a1d7b366aa802ec2038a12cd8eb649ff7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d7b366aa802ec2038a12cd8eb649ff7">&#9670;&nbsp;</a></span>doubleValueChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DInputDialog::doubleValueChanged </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>当属性 <a class="el" href="classDInputDialog.html#a80797c2d1965485b989adf829ddda801" title="这个属性保存对话框当前的浮点数值">DInputDialog::doubleValue</a> 发生变化时调用此信号 </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDInputDialog.html#a80797c2d1965485b989adf829ddda801" title="这个属性保存对话框当前的浮点数值">DInputDialog::doubleValue</a> </dd></dl>
+
+</div>
+</div>
+<a id="a4a459da35e84d68fc35da3161d274619"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a459da35e84d68fc35da3161d274619">&#9670;&nbsp;</a></span>doubleValueSelected</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DInputDialog::doubleValueSelected </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>确认按钮被点击时调用此信号 </p>
+<p>如果InputMode是 DInputDialog::DoubleInput ，则确认按钮被点击时调用此信号发送当前的浮点数值</p>
+<p><em>value</em> 要发送的值 </p>
+
+</div>
+</div>
+<a id="a6f1a1c3cd2bdfbc6cc042fa6474fd4d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f1a1c3cd2bdfbc6cc042fa6474fd4d4">&#9670;&nbsp;</a></span>getDouble()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double DInputDialog::getDouble </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>title</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>value</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>minValue</em> = <code>-2147483647</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>maxValue</em> = <code>2147483647</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>decimals</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>ok</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Qt::WindowFlags&#160;</td>
+          <td class="paramname"><em>flags</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>快速创建一个获取浮点数的对话框 <em>parent</em> 作为对话框的父控件 <em>title</em> 作为对话框的标题 <em>message</em> 作为对话框提示信息 <em>value</em> 设置默认的值 <em>minValue</em> 设置最小值 <em>maxValue</em> 设置最大值 <em>decimals</em> 设置精度 <em>ok</em> 用于获取对话框是否点击了确认的指针 <em>flags</em> 设置对话框的窗口属性，一般无需设置 </p>
+<dl class="section return"><dt>返回</dt><dd>返回整数值 </dd></dl>
+
+</div>
+</div>
+<a id="a6b20934ad53a7621f5b96b1962d1513f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b20934ad53a7621f5b96b1962d1513f">&#9670;&nbsp;</a></span>getInt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DInputDialog::getInt </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>title</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>minValue</em> = <code>-2147483647</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>maxValue</em> = <code>2147483647</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>step</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>ok</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Qt::WindowFlags&#160;</td>
+          <td class="paramname"><em>flags</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>快速创建一个获取整数的对话框 <em>parent</em> 作为对话框的父控件 <em>title</em> 作为对话框的标题 <em>message</em> 作为对话框提示信息 <em>value</em> 设置默认的值 <em>minValue</em> 设置最小值 <em>maxValue</em> 设置最大值 <em>step</em> 设置步进值 <em>ok</em> 用于获取对话框是否点击了确认的指针 <em>flags</em> 设置对话框的窗口属性，一般无需设置 </p>
+<dl class="section return"><dt>返回</dt><dd>返回整数值 </dd></dl>
+
+</div>
+</div>
+<a id="ad4967aae2a0b8aade4884d3a3312b0ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4967aae2a0b8aade4884d3a3312b0ea">&#9670;&nbsp;</a></span>getItem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString DInputDialog::getItem </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>title</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QStringList &amp;&#160;</td>
+          <td class="paramname"><em>items</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>current</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>editable</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>ok</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Qt::WindowFlags&#160;</td>
+          <td class="paramname"><em>flags</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Qt::InputMethodHints&#160;</td>
+          <td class="paramname"><em>inputMethodHints</em> = <code>Qt::ImhNone</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>快速创建一个多选框的对话框 <em>parent</em> 作为对话框的父控件 <em>title</em> 作为对话框的标题 <em>message</em> 作为对话框提示信息 <em>items</em> 设置所有可选项 <em>current</em> 设置当前的可选项 <em>editable</em> 设置多选框是否可编辑 <em>ok</em> 用于获取对话框是否点击了确认的指针 <em>flags</em> 设置对话框的窗口属性，一般无需设置 <em>inputMethodHints</em> 设置输入法相关属性，一般无需设置 </p>
+<dl class="section return"><dt>返回</dt><dd>返回选中的项 </dd></dl>
+
+</div>
+</div>
+<a id="a20f55c03a0206c5e430f7125bfdbb8a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20f55c03a0206c5e430f7125bfdbb8a3">&#9670;&nbsp;</a></span>getText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString DInputDialog::getText </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>title</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QLineEdit::EchoMode&#160;</td>
+          <td class="paramname"><em>echo</em> = <code>QLineEdit::Normal</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>text</em> = <code>QString()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>ok</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Qt::WindowFlags&#160;</td>
+          <td class="paramname"><em>flags</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Qt::InputMethodHints&#160;</td>
+          <td class="paramname"><em>inputMethodHints</em> = <code>Qt::ImhNone</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>快速创建一个可以输入文字的对话框 <em>parent</em> 作为对话框的父控件 <em>title</em> 作为对话框的标题 <em>message</em> 作为对话框提示信息 <em>echo</em> 设置文本输入框文字的显示模式 <em>text</em> 设置文本输入框文字默认的内容 <em>ok</em> 用于获取对话框是否点击了确认的指针 <em>flags</em> 设置对话框的窗口属性，一般无需设置 <em>inputMethodHints</em> 设置输入法相关属性，一般无需设置 </p>
+<dl class="section return"><dt>返回</dt><dd>返回输入的字符串 </dd></dl>
+
+</div>
+</div>
+<a id="a7dcb01a2055a92f73f28bd52ded9c8eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7dcb01a2055a92f73f28bd52ded9c8eb">&#9670;&nbsp;</a></span>intValueChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DInputDialog::intValueChanged </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>当属性 <a class="el" href="classDInputDialog.html#a884c8f1b31c1ba76dd45c9231e2a7284" title="这个属性保存对话框当前的整型值">DInputDialog::intValue</a> 发生变化时调用此信号 </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDInputDialog.html#a884c8f1b31c1ba76dd45c9231e2a7284" title="这个属性保存对话框当前的整型值">DInputDialog::intValue</a> </dd></dl>
+
+</div>
+</div>
+<a id="a2f8d95bd17d84bce18ebfd21da60554c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f8d95bd17d84bce18ebfd21da60554c">&#9670;&nbsp;</a></span>intValueSelected</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DInputDialog::intValueSelected </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>确认按钮被点击时调用此信号 </p>
+<p>如果InputMode是 DInputDialog::IntInput ，则确认按钮被点击时调用此信号发送当前的整数值</p>
+<p><em>value</em> 要发送的值 </p>
+
+</div>
+</div>
+<a id="a5a0e80801fed5df8855518f0c06323e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a0e80801fed5df8855518f0c06323e7">&#9670;&nbsp;</a></span>isComboBoxEditable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DInputDialog::isComboBoxEditable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDInputDialog.html#aa62d805ddb6ca08cd2fe684b28e2c2b0" title="这个属性表示对话框中的多选框是否可以编辑">DInputDialog::comboBoxEditable</a> </dd></dl>
+
+</div>
+</div>
+<a id="a02457f7495e17b481a549a6e23b3f7d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02457f7495e17b481a549a6e23b3f7d4">&#9670;&nbsp;</a></span>isTextAlert()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DInputDialog::isTextAlert </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDInputDialog.html#a2fe552c4bc6af78fdeb9febff7dc12cf" title="这个属性保存对话框是否处于警告状态">DInputDialog::textAlert</a> </dd></dl>
+
+</div>
+</div>
+<a id="a37d6cbac6867fde5723881a90cbc0393"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37d6cbac6867fde5723881a90cbc0393">&#9670;&nbsp;</a></span>okButtonIsEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DInputDialog::okButtonIsEnabled </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取确认按钮是否可以点击 </p>
+<dl class="section return"><dt>返回</dt><dd>true 即为可以点击，反之则反 </dd></dl>
+
+</div>
+</div>
+<a id="a46dc13635044797abbabe5e782895c24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46dc13635044797abbabe5e782895c24">&#9670;&nbsp;</a></span>setCancelButtonText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DInputDialog::setCancelButtonText </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>text</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDInputDialog.html#a86683a9254c4326adcea873d412bc8af" title="这个属性保存对话框的取消按钮文字">DInputDialog::cancelButtonText</a> </dd></dl>
+
+</div>
+</div>
+<a id="ab1458cc918cdf17bb8e8730da6c303c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1458cc918cdf17bb8e8730da6c303c3">&#9670;&nbsp;</a></span>setComboBoxCurrentIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DInputDialog::setComboBoxCurrentIndex </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>comboBoxCurrentIndex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDInputDialog.html#a61f33a14adf944bf5802403680e5bbc7" title="这个属性保存对话框中多选框当前的索引">DInputDialog::comboBoxCurrentIndex</a> </dd></dl>
+
+</div>
+</div>
+<a id="aae99f94b7de24c9a4f84a751025b762d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae99f94b7de24c9a4f84a751025b762d">&#9670;&nbsp;</a></span>setComboBoxEditable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DInputDialog::setComboBoxEditable </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>editable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDInputDialog.html#aa62d805ddb6ca08cd2fe684b28e2c2b0" title="这个属性表示对话框中的多选框是否可以编辑">DInputDialog::comboBoxEditable</a> </dd></dl>
+
+</div>
+</div>
+<a id="a2fc69761a9278213b66c139be6e79e17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fc69761a9278213b66c139be6e79e17">&#9670;&nbsp;</a></span>setComboBoxItems()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DInputDialog::setComboBoxItems </td>
+          <td>(</td>
+          <td class="paramtype">const QStringList &amp;&#160;</td>
+          <td class="paramname"><em>items</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDInputDialog.html#aa62d805ddb6ca08cd2fe684b28e2c2b0" title="这个属性表示对话框中的多选框是否可以编辑">DInputDialog::comboBoxEditable</a> </dd></dl>
+
+</div>
+</div>
+<a id="ad087eaf722f4487a1a1028cbbc010c1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad087eaf722f4487a1a1028cbbc010c1f">&#9670;&nbsp;</a></span>setDoubleDecimals()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DInputDialog::setDoubleDecimals </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>decimals</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDInputDialog.html#ae3a5fcfc08276cfe3002e0a06efb827f" title="这个属性保存对话框中的浮点型可选输入框SpinBox的精度">DInputDialog::doubleDecimals</a> </dd></dl>
+
+</div>
+</div>
+<a id="a2e92d558c0f5c97da1e035538c5dba90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e92d558c0f5c97da1e035538c5dba90">&#9670;&nbsp;</a></span>setDoubleMaximum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DInputDialog::setDoubleMaximum </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>max</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDInputDialog.html#a9292dc8f198b3cd558d84b30415b0b84" title="这个属性保存对话框中的浮点型可选输入框SpinBox的最大值">DInputDialog::doubleMaximum</a> </dd></dl>
+
+</div>
+</div>
+<a id="a7b6f958a36ed1714fa9cbaf0ab76d6cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b6f958a36ed1714fa9cbaf0ab76d6cb">&#9670;&nbsp;</a></span>setDoubleMinimum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DInputDialog::setDoubleMinimum </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>min</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDInputDialog.html#a9b1b5df259c209749267dba8ae12cfc7" title="这个属性保存对话框中的浮点型可选输入框SpinBox的最小值">DInputDialog::doubleMinimum</a> </dd></dl>
+
+</div>
+</div>
+<a id="acbf36dce83ea00742c6543412dd2df73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbf36dce83ea00742c6543412dd2df73">&#9670;&nbsp;</a></span>setDoubleRange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DInputDialog::setDoubleRange </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>min</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>max</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置对话框中的浮点型可选输入框SpinBox的可选范围（最小值和最大值） </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDInputDialog.html#a9b1b5df259c209749267dba8ae12cfc7" title="这个属性保存对话框中的浮点型可选输入框SpinBox的最小值">DInputDialog::doubleMinimum</a> <a class="el" href="classDInputDialog.html#a9292dc8f198b3cd558d84b30415b0b84" title="这个属性保存对话框中的浮点型可选输入框SpinBox的最大值">DInputDialog::doubleMaximum</a> </dd></dl>
+
+</div>
+</div>
+<a id="a61ff7ac9bff8bbf7e1501fa9fbe026f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61ff7ac9bff8bbf7e1501fa9fbe026f7">&#9670;&nbsp;</a></span>setDoubleValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DInputDialog::setDoubleValue </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDInputDialog.html#a80797c2d1965485b989adf829ddda801" title="这个属性保存对话框当前的浮点数值">DInputDialog::doubleValue</a> </dd></dl>
+
+</div>
+</div>
+<a id="a84718d1b240dcd5697d1911ff32d7120"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84718d1b240dcd5697d1911ff32d7120">&#9670;&nbsp;</a></span>setInputMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DInputDialog::setInputMode </td>
+          <td>(</td>
+          <td class="paramtype">DInputDialog::InputMode&#160;</td>
+          <td class="paramname"><em>mode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDInputDialog.html#a979b3976777ba1ecc121e6dd67a1ca8f" title="这个属性保存对话框当前的输入模式">DInputDialog::inputMode</a> </dd></dl>
+
+</div>
+</div>
+<a id="af574779c3634c521ac31e44ae546bbc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af574779c3634c521ac31e44ae546bbc8">&#9670;&nbsp;</a></span>setIntMaximum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DInputDialog::setIntMaximum </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>max</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDInputDialog.html#ade7da6e4faebe51bdea4b8f4db5cb020" title="这个属性保存对话框中的整形可选输入框SpinBox的最大值">DInputDialog::intMaximum</a> </dd></dl>
+
+</div>
+</div>
+<a id="a4d2753c773ec37bcfbbac66c1ba16fbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d2753c773ec37bcfbbac66c1ba16fbe">&#9670;&nbsp;</a></span>setIntMinimum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DInputDialog::setIntMinimum </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>min</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDInputDialog.html#a41156a2fefb1790727dc93895a8cf6a0" title="这个属性保存对话框中的整形可选输入框SpinBox的最小值">DInputDialog::intMinimum</a> </dd></dl>
+
+</div>
+</div>
+<a id="a525965553f46ce357993bf050fa02986"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a525965553f46ce357993bf050fa02986">&#9670;&nbsp;</a></span>setIntRange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DInputDialog::setIntRange </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>min</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>max</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置对话框中的整形可选输入框SpinBox的可选范围（最小值和最大值） </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDInputDialog.html#a41156a2fefb1790727dc93895a8cf6a0" title="这个属性保存对话框中的整形可选输入框SpinBox的最小值">DInputDialog::intMinimum</a> <a class="el" href="classDInputDialog.html#ade7da6e4faebe51bdea4b8f4db5cb020" title="这个属性保存对话框中的整形可选输入框SpinBox的最大值">DInputDialog::intMaximum</a> </dd></dl>
+
+</div>
+</div>
+<a id="a8b4713eca44de101c70bbef8e447a347"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b4713eca44de101c70bbef8e447a347">&#9670;&nbsp;</a></span>setIntStep()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DInputDialog::setIntStep </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>step</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDInputDialog.html#a61f80f8e07deeb51cb809318dff840aa" title="这个属性保存对话框中的可选输入框点击调增按钮时的步进值">DInputDialog::intStep</a> </dd></dl>
+
+</div>
+</div>
+<a id="a10b8273a5cc242d11e80483ea5582b8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10b8273a5cc242d11e80483ea5582b8a">&#9670;&nbsp;</a></span>setIntValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DInputDialog::setIntValue </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDInputDialog.html#a884c8f1b31c1ba76dd45c9231e2a7284" title="这个属性保存对话框当前的整型值">DInputDialog::intValue</a> </dd></dl>
+
+</div>
+</div>
+<a id="ab5329f2e3b225b5996d23b2b222757b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5329f2e3b225b5996d23b2b222757b7">&#9670;&nbsp;</a></span>setOkButtonText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DInputDialog::setOkButtonText </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>text</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDInputDialog.html#a5d1e14f85c53590a13e7cdf8af2e411b" title="这个属性保存对话框的确认按钮文字">DInputDialog::okButtonText</a> </dd></dl>
+
+</div>
+</div>
+<a id="acb63eac5ab88b5779a40fb716f499a50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb63eac5ab88b5779a40fb716f499a50">&#9670;&nbsp;</a></span>setTextAlert()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DInputDialog::setTextAlert </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>textAlert</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDInputDialog.html#a2fe552c4bc6af78fdeb9febff7dc12cf" title="这个属性保存对话框是否处于警告状态">DInputDialog::textAlert</a> </dd></dl>
+
+</div>
+</div>
+<a id="a702459e67510adea50ab6393c39510bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a702459e67510adea50ab6393c39510bf">&#9670;&nbsp;</a></span>setTextEchoMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DInputDialog::setTextEchoMode </td>
+          <td>(</td>
+          <td class="paramtype">QLineEdit::EchoMode&#160;</td>
+          <td class="paramname"><em>mode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDInputDialog.html#a7adfd9a04ce831c7f1d030f337dd80f7" title="这个属性保存对话框中的输入框文字显示模式">DInputDialog::textEchoMode</a> </dd></dl>
+
+</div>
+</div>
+<a id="aa6d3c6a5b30c81e4921ff4258cc6e190"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6d3c6a5b30c81e4921ff4258cc6e190">&#9670;&nbsp;</a></span>setTextValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DInputDialog::setTextValue </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>text</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDInputDialog.html#ac7dc0821c33ec8adaa3b1c0454c94e5d" title="这个属性保存对话框当前的输入文本">DInputDialog::textValue</a> </dd></dl>
+
+</div>
+</div>
+<a id="a9e1403c1f28a68a4bdca359d2da5d364"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e1403c1f28a68a4bdca359d2da5d364">&#9670;&nbsp;</a></span>textAlertChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DInputDialog::textAlertChanged </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>textAlert</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>当属性 <a class="el" href="classDInputDialog.html#a2fe552c4bc6af78fdeb9febff7dc12cf" title="这个属性保存对话框是否处于警告状态">DInputDialog::textAlert</a> 发生变化时调用此信号 </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDInputDialog.html#a2fe552c4bc6af78fdeb9febff7dc12cf" title="这个属性保存对话框是否处于警告状态">DInputDialog::textAlert</a> </dd></dl>
+
+</div>
+</div>
+<a id="ad769df7720e537b022250c5da3c4748a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad769df7720e537b022250c5da3c4748a">&#9670;&nbsp;</a></span>textValueChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DInputDialog::textValueChanged </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>text</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>当属性 <a class="el" href="classDInputDialog.html#ac7dc0821c33ec8adaa3b1c0454c94e5d" title="这个属性保存对话框当前的输入文本">DInputDialog::textValue</a> 发生变化时调用此信号 </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDInputDialog.html#ac7dc0821c33ec8adaa3b1c0454c94e5d" title="这个属性保存对话框当前的输入文本">DInputDialog::textValue</a> </dd></dl>
+
+</div>
+</div>
+<a id="a8801a2f0ebbbb972300b0bc029dfa88b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8801a2f0ebbbb972300b0bc029dfa88b">&#9670;&nbsp;</a></span>textValueSelected</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DInputDialog::textValueSelected </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>text</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>确认按钮被点击时调用此信号. </p>
+<p>如果InputMode是 DInputDialog::TextInput 或者 DInputDialog::ComboBox ，则确认按钮被点击时调用此信号发送当前文本输入框或多选框中当前的值</p>
+<p><em>value</em> 要发送的值 </p>
+
+</div>
+</div>
+<h2 class="groupheader">属性说明</h2>
+<a id="a86683a9254c4326adcea873d412bc8af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86683a9254c4326adcea873d412bc8af">&#9670;&nbsp;</a></span>cancelButtonText</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DInputDialog::cancelButtonText</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>这个属性保存对话框的取消按钮文字 </p>
+<p>Getter: <a class="el" href="classDInputDialog.html#a86683a9254c4326adcea873d412bc8af" title="这个属性保存对话框的取消按钮文字">DInputDialog::cancelButtonText</a> , Setter: <a class="el" href="classDInputDialog.html#a46dc13635044797abbabe5e782895c24">DInputDialog::setCancelButtonText</a> </p>
+
+</div>
+</div>
+<a id="a61f33a14adf944bf5802403680e5bbc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61f33a14adf944bf5802403680e5bbc7">&#9670;&nbsp;</a></span>comboBoxCurrentIndex</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DInputDialog::comboBoxCurrentIndex</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>这个属性保存对话框中多选框当前的索引 </p>
+<p>Getter: <a class="el" href="classDInputDialog.html#a61f33a14adf944bf5802403680e5bbc7" title="这个属性保存对话框中多选框当前的索引">DInputDialog::comboBoxCurrentIndex</a> , Setter: <a class="el" href="classDInputDialog.html#ab1458cc918cdf17bb8e8730da6c303c3">DInputDialog::setComboBoxCurrentIndex</a> , Signal: <a class="el" href="classDInputDialog.html#aa83836ad4531b505209c5fcfe0a75ead" title="当属性 DInputDialog::comboBoxCurrentIndex 发生变化时调用此信号">DInputDialog::comboBoxCurrentIndexChanged</a> </p>
+
+</div>
+</div>
+<a id="aa62d805ddb6ca08cd2fe684b28e2c2b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa62d805ddb6ca08cd2fe684b28e2c2b0">&#9670;&nbsp;</a></span>comboBoxEditable</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DInputDialog::comboBoxEditable</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>这个属性表示对话框中的多选框是否可以编辑 </p>
+<p>Getter: <a class="el" href="classDInputDialog.html#a5a0e80801fed5df8855518f0c06323e7">DInputDialog::isComboBoxEditable</a> , Setter: <a class="el" href="classDInputDialog.html#aae99f94b7de24c9a4f84a751025b762d">DInputDialog::setComboBoxEditable</a> </p>
+
+</div>
+</div>
+<a id="a429b2389094f2ebba0ff3e8fc2c42e14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a429b2389094f2ebba0ff3e8fc2c42e14">&#9670;&nbsp;</a></span>comboBoxItems</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DInputDialog::comboBoxItems</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>这个属性保存对话框中多选框的所有可选值 </p>
+<p>Getter: <a class="el" href="classDInputDialog.html#a429b2389094f2ebba0ff3e8fc2c42e14" title="这个属性保存对话框中多选框的所有可选值">DInputDialog::comboBoxItems</a> , Setter: <a class="el" href="classDInputDialog.html#a2fc69761a9278213b66c139be6e79e17">DInputDialog::setComboBoxItems</a> </p>
+
+</div>
+</div>
+<a id="ae3a5fcfc08276cfe3002e0a06efb827f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3a5fcfc08276cfe3002e0a06efb827f">&#9670;&nbsp;</a></span>doubleDecimals</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DInputDialog::doubleDecimals</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>这个属性保存对话框中的浮点型可选输入框SpinBox的精度 </p>
+<p>精度即处理多少位小数</p>
+<p>Getter: <a class="el" href="classDInputDialog.html#ae3a5fcfc08276cfe3002e0a06efb827f" title="这个属性保存对话框中的浮点型可选输入框SpinBox的精度">DInputDialog::doubleDecimals</a> , Setter: <a class="el" href="classDInputDialog.html#ad087eaf722f4487a1a1028cbbc010c1f">DInputDialog::setDoubleDecimals</a> </p>
+
+</div>
+</div>
+<a id="a9292dc8f198b3cd558d84b30415b0b84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9292dc8f198b3cd558d84b30415b0b84">&#9670;&nbsp;</a></span>doubleMaximum</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DInputDialog::doubleMaximum</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>这个属性保存对话框中的浮点型可选输入框SpinBox的最大值 </p>
+<p>Getter: <a class="el" href="classDInputDialog.html#a9292dc8f198b3cd558d84b30415b0b84" title="这个属性保存对话框中的浮点型可选输入框SpinBox的最大值">DInputDialog::doubleMaximum</a> , Setter: <a class="el" href="classDInputDialog.html#a2e92d558c0f5c97da1e035538c5dba90">DInputDialog::setDoubleMaximum</a></p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDInputDialog.html#a9b1b5df259c209749267dba8ae12cfc7" title="这个属性保存对话框中的浮点型可选输入框SpinBox的最小值">DInputDialog::doubleMinimum</a> </dd></dl>
+
+</div>
+</div>
+<a id="a9b1b5df259c209749267dba8ae12cfc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b1b5df259c209749267dba8ae12cfc7">&#9670;&nbsp;</a></span>doubleMinimum</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DInputDialog::doubleMinimum</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>这个属性保存对话框中的浮点型可选输入框SpinBox的最小值 </p>
+<p>Getter: <a class="el" href="classDInputDialog.html#a9b1b5df259c209749267dba8ae12cfc7" title="这个属性保存对话框中的浮点型可选输入框SpinBox的最小值">DInputDialog::doubleMinimum</a> , Setter: <a class="el" href="classDInputDialog.html#a7b6f958a36ed1714fa9cbaf0ab76d6cb">DInputDialog::setDoubleMinimum</a></p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDInputDialog.html#a9292dc8f198b3cd558d84b30415b0b84" title="这个属性保存对话框中的浮点型可选输入框SpinBox的最大值">DInputDialog::doubleMaximum</a> </dd></dl>
+
+</div>
+</div>
+<a id="a80797c2d1965485b989adf829ddda801"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80797c2d1965485b989adf829ddda801">&#9670;&nbsp;</a></span>doubleValue</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DInputDialog::doubleValue</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>这个属性保存对话框当前的浮点数值 </p>
+<p>Getter: <a class="el" href="classDInputDialog.html#a80797c2d1965485b989adf829ddda801" title="这个属性保存对话框当前的浮点数值">DInputDialog::doubleValue</a> , Setter: <a class="el" href="classDInputDialog.html#a61ff7ac9bff8bbf7e1501fa9fbe026f7">DInputDialog::setDoubleValue</a> , Signal: <a class="el" href="classDInputDialog.html#a1d7b366aa802ec2038a12cd8eb649ff7" title="当属性 DInputDialog::doubleValue 发生变化时调用此信号">DInputDialog::doubleValueChanged</a> </p>
+
+</div>
+</div>
+<a id="a979b3976777ba1ecc121e6dd67a1ca8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a979b3976777ba1ecc121e6dd67a1ca8f">&#9670;&nbsp;</a></span>inputMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DInputDialog::inputMode</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>这个属性保存对话框当前的输入模式 </p>
+<p>查看 DInputDialog::InputMode 以了解对话框支持的多种输入模式</p>
+<p>Getter: <a class="el" href="classDInputDialog.html#a979b3976777ba1ecc121e6dd67a1ca8f" title="这个属性保存对话框当前的输入模式">DInputDialog::inputMode</a> , Setter: <a class="el" href="classDInputDialog.html#a84718d1b240dcd5697d1911ff32d7120">DInputDialog::setInputMode</a> </p><dl class="section see"><dt>参见</dt><dd>DInputDialog::InputMode </dd></dl>
+
+</div>
+</div>
+<a id="ade7da6e4faebe51bdea4b8f4db5cb020"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade7da6e4faebe51bdea4b8f4db5cb020">&#9670;&nbsp;</a></span>intMaximum</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DInputDialog::intMaximum</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>这个属性保存对话框中的整形可选输入框SpinBox的最大值 </p>
+<p>Getter: <a class="el" href="classDInputDialog.html#ade7da6e4faebe51bdea4b8f4db5cb020" title="这个属性保存对话框中的整形可选输入框SpinBox的最大值">DInputDialog::intMaximum</a> , Setter: <a class="el" href="classDInputDialog.html#af574779c3634c521ac31e44ae546bbc8">DInputDialog::setIntMaximum</a></p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDInputDialog.html#a41156a2fefb1790727dc93895a8cf6a0" title="这个属性保存对话框中的整形可选输入框SpinBox的最小值">DInputDialog::intMinimum</a> </dd></dl>
+
+</div>
+</div>
+<a id="a41156a2fefb1790727dc93895a8cf6a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41156a2fefb1790727dc93895a8cf6a0">&#9670;&nbsp;</a></span>intMinimum</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DInputDialog::intMinimum</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>这个属性保存对话框中的整形可选输入框SpinBox的最小值 </p>
+<p>Getter: <a class="el" href="classDInputDialog.html#a41156a2fefb1790727dc93895a8cf6a0" title="这个属性保存对话框中的整形可选输入框SpinBox的最小值">DInputDialog::intMinimum</a> , Setter: <a class="el" href="classDInputDialog.html#a4d2753c773ec37bcfbbac66c1ba16fbe">DInputDialog::setIntMinimum</a></p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDInputDialog.html#ade7da6e4faebe51bdea4b8f4db5cb020" title="这个属性保存对话框中的整形可选输入框SpinBox的最大值">DInputDialog::intMaximum</a> </dd></dl>
+
+</div>
+</div>
+<a id="a61f80f8e07deeb51cb809318dff840aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61f80f8e07deeb51cb809318dff840aa">&#9670;&nbsp;</a></span>intStep</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DInputDialog::intStep</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>这个属性保存对话框中的可选输入框点击调增按钮时的步进值 </p>
+<p>步进值即点击一次增大或减小多少</p>
+<p>Getter: <a class="el" href="classDInputDialog.html#a61f80f8e07deeb51cb809318dff840aa" title="这个属性保存对话框中的可选输入框点击调增按钮时的步进值">DInputDialog::intStep</a> , Setter: <a class="el" href="classDInputDialog.html#a8b4713eca44de101c70bbef8e447a347">DInputDialog::setIntStep</a> </p>
+
+</div>
+</div>
+<a id="a884c8f1b31c1ba76dd45c9231e2a7284"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a884c8f1b31c1ba76dd45c9231e2a7284">&#9670;&nbsp;</a></span>intValue</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DInputDialog::intValue</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>这个属性保存对话框当前的整型值 </p>
+<p>Getter: <a class="el" href="classDInputDialog.html#a884c8f1b31c1ba76dd45c9231e2a7284" title="这个属性保存对话框当前的整型值">DInputDialog::intValue</a> , Setter: <a class="el" href="classDInputDialog.html#a10b8273a5cc242d11e80483ea5582b8a">DInputDialog::setIntValue</a> , Signal: <a class="el" href="classDInputDialog.html#a7dcb01a2055a92f73f28bd52ded9c8eb" title="当属性 DInputDialog::intValue 发生变化时调用此信号">DInputDialog::intValueChanged</a> </p>
+
+</div>
+</div>
+<a id="a5d1e14f85c53590a13e7cdf8af2e411b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d1e14f85c53590a13e7cdf8af2e411b">&#9670;&nbsp;</a></span>okButtonText</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DInputDialog::okButtonText</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>这个属性保存对话框的确认按钮文字 </p>
+<p>Getter: <a class="el" href="classDInputDialog.html#a5d1e14f85c53590a13e7cdf8af2e411b" title="这个属性保存对话框的确认按钮文字">DInputDialog::okButtonText</a> , Setter: <a class="el" href="classDInputDialog.html#ab5329f2e3b225b5996d23b2b222757b7">DInputDialog::setOkButtonText</a> </p>
+
+</div>
+</div>
+<a id="a2fe552c4bc6af78fdeb9febff7dc12cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fe552c4bc6af78fdeb9febff7dc12cf">&#9670;&nbsp;</a></span>textAlert</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DInputDialog::textAlert</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>这个属性保存对话框是否处于警告状态 </p>
+<p>当对话框处于警告状态时，输入框的边框将会显示不同的颜色，一般警告告诉用户当前输入框的内容不合法</p>
+<p>Getter: <a class="el" href="classDInputDialog.html#a2fe552c4bc6af78fdeb9febff7dc12cf" title="这个属性保存对话框是否处于警告状态">DInputDialog::textAlert</a> , Setter: <a class="el" href="classDInputDialog.html#acb63eac5ab88b5779a40fb716f499a50">DInputDialog::setTextAlert</a> , Signal: <a class="el" href="classDInputDialog.html#a9e1403c1f28a68a4bdca359d2da5d364" title="当属性 DInputDialog::textAlert 发生变化时调用此信号">DInputDialog::textAlertChanged</a> </p>
+
+</div>
+</div>
+<a id="a7adfd9a04ce831c7f1d030f337dd80f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7adfd9a04ce831c7f1d030f337dd80f7">&#9670;&nbsp;</a></span>textEchoMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DInputDialog::textEchoMode</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>这个属性保存对话框中的输入框文字显示模式 </p>
+<p>Getter: <a class="el" href="classDInputDialog.html#a7adfd9a04ce831c7f1d030f337dd80f7" title="这个属性保存对话框中的输入框文字显示模式">DInputDialog::textEchoMode</a> , Setter: <a class="el" href="classDInputDialog.html#a702459e67510adea50ab6393c39510bf">DInputDialog::setTextEchoMode</a></p>
+<dl class="section see"><dt>参见</dt><dd>QLineEdit::EchoMode </dd></dl>
+
+</div>
+</div>
+<a id="ac7dc0821c33ec8adaa3b1c0454c94e5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7dc0821c33ec8adaa3b1c0454c94e5d">&#9670;&nbsp;</a></span>textValue</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DInputDialog::textValue</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>这个属性保存对话框当前的输入文本 </p>
+<p>如果当前的输入模式是 DInputDialog::ComboBox 则返回当前已选择的ComboBox选项，否则返回输入框的内容</p>
+<p>Getter: <a class="el" href="classDInputDialog.html#ac7dc0821c33ec8adaa3b1c0454c94e5d" title="这个属性保存对话框当前的输入文本">DInputDialog::textValue</a> , Setter: <a class="el" href="classDInputDialog.html#aa6d3c6a5b30c81e4921ff4258cc6e190">DInputDialog::setTextValue</a> , Signal: <a class="el" href="classDInputDialog.html#ad769df7720e537b022250c5da3c4748a" title="当属性 DInputDialog::textValue 发生变化时调用此信号">DInputDialog::textValueChanged</a></p>
+<dl class="section see"><dt>参见</dt><dd>DInputDialog::InputMode </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dtkwidget/include/dtkwidget/widgets/<a class="el" href="dinputdialog_8h_source.html">dinputdialog.h</a></li>
+<li>dtkwidget/src/widgets/dinputdialog.cpp</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classDInputDialog.html">DInputDialog</a></li>
+    <li class="footer">文档生成时间:doxtime</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

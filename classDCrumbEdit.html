@@ -1,0 +1,839 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: DCrumbEdit类 参考</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="change address" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classDCrumbEdit.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-slots">Public 槽</a> &#124;
+<a href="#signals">信号</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#properties">属性</a> &#124;
+<a href="classDCrumbEdit-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">DCrumbEdit类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 DCrumbEdit 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classDCrumbEdit.png" alt=""/>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a1d0a2eda235184d6730c5d7c5c0d2dcc"><td class="memItemLeft" align="right" valign="top"><a id="a1d0a2eda235184d6730c5d7c5c0d2dcc"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>CrumbType</b> { <br />
+&#160;&#160;<b>black</b> = Qt::black
+, <b>white</b> = Qt::white
+, <b>darkGray</b> = Qt::darkGray
+, <b>gray</b> = Qt::gray
+, <br />
+&#160;&#160;<b>lightGray</b> = Qt::lightGray
+, <b>red</b> = Qt::red
+, <b>green</b> = Qt::green
+, <b>blue</b> = Qt::blue
+, <br />
+&#160;&#160;<b>cyan</b> = Qt::cyan
+, <b>magenta</b> = Qt::magenta
+, <b>yellow</b> = Qt::yellow
+, <b>darkRed</b> = Qt::darkRed
+, <br />
+&#160;&#160;<b>darkGreen</b> = Qt::darkGreen
+, <b>darkBlue</b> = Qt::darkBlue
+, <b>darkCyan</b> = Qt::darkCyan
+, <b>darkMagenta</b> = Qt::darkMagenta
+, <br />
+&#160;&#160;<b>darkYellow</b> = Qt::darkYellow
+<br />
+ }</td></tr>
+<tr class="separator:a1d0a2eda235184d6730c5d7c5c0d2dcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Public 槽</h2></td></tr>
+<tr class="memitem:abb5e09364481a5d013f1a2894bf52c06"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDCrumbEdit.html#abb5e09364481a5d013f1a2894bf52c06">setCrumbReadOnly</a> (bool crumbReadOnly)</td></tr>
+<tr class="memdesc:abb5e09364481a5d013f1a2894bf52c06"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置或取消设置标签编辑控件的只读状态  <a href="classDCrumbEdit.html#abb5e09364481a5d013f1a2894bf52c06">更多...</a><br /></td></tr>
+<tr class="separator:abb5e09364481a5d013f1a2894bf52c06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b2f9284b01a1d988b23424f737171d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDCrumbEdit.html#a8b2f9284b01a1d988b23424f737171d5">setCrumbRadius</a> (int crumbRadius)</td></tr>
+<tr class="memdesc:a8b2f9284b01a1d988b23424f737171d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置控件圆角角度  <a href="classDCrumbEdit.html#a8b2f9284b01a1d988b23424f737171d5">更多...</a><br /></td></tr>
+<tr class="separator:a8b2f9284b01a1d988b23424f737171d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a189ba294158cf88aec4561fbec5da623"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDCrumbEdit.html#a189ba294158cf88aec4561fbec5da623">setSplitter</a> (const QString &amp;splitter)</td></tr>
+<tr class="memdesc:a189ba294158cf88aec4561fbec5da623"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置分割符  <a href="classDCrumbEdit.html#a189ba294158cf88aec4561fbec5da623">更多...</a><br /></td></tr>
+<tr class="separator:a189ba294158cf88aec4561fbec5da623"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86621af1e509c3f22b54daef137e786a"><td class="memItemLeft" align="right" valign="top"><a id="a86621af1e509c3f22b54daef137e786a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setDualClickMakeCrumb</b> (bool flag) Q_DECL_NOEXCEPT</td></tr>
+<tr class="separator:a86621af1e509c3f22b54daef137e786a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+信号</h2></td></tr>
+<tr class="memitem:ac06798f6367d3d83a85ecd071dcecae8"><td class="memItemLeft" align="right" valign="top"><a id="ac06798f6367d3d83a85ecd071dcecae8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>crumbAdded</b> (const QString &amp;text)</td></tr>
+<tr class="separator:ac06798f6367d3d83a85ecd071dcecae8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5af5c31086db24f63a688c51d610c894"><td class="memItemLeft" align="right" valign="top"><a id="a5af5c31086db24f63a688c51d610c894"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>crumbRemoved</b> (const QString &amp;text)</td></tr>
+<tr class="separator:a5af5c31086db24f63a688c51d610c894"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0ac7872c28a90c00b115902c1229b26"><td class="memItemLeft" align="right" valign="top"><a id="ab0ac7872c28a90c00b115902c1229b26"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>crumbListChanged</b> ()</td></tr>
+<tr class="separator:ab0ac7872c28a90c00b115902c1229b26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a36369788139aaf9ca5d8def08224f733"><td class="memItemLeft" align="right" valign="top"><a id="a36369788139aaf9ca5d8def08224f733"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DCrumbEdit</b> (QWidget *parent=0)</td></tr>
+<tr class="separator:a36369788139aaf9ca5d8def08224f733"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac67b2be4e92d2868a2cfeb7f72eab65b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDCrumbEdit.html#ac67b2be4e92d2868a2cfeb7f72eab65b">insertCrumb</a> (const <a class="el" href="classDCrumbTextFormat.html">DCrumbTextFormat</a> &amp;format, int pos=-1)</td></tr>
+<tr class="memdesc:ac67b2be4e92d2868a2cfeb7f72eab65b"><td class="mdescLeft">&#160;</td><td class="mdescRight">像标签编辑控件中插入新的标签  <a href="classDCrumbEdit.html#ac67b2be4e92d2868a2cfeb7f72eab65b">更多...</a><br /></td></tr>
+<tr class="separator:ac67b2be4e92d2868a2cfeb7f72eab65b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea1c8f246ef88edffe0a8c25dd6a216f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDCrumbEdit.html#aea1c8f246ef88edffe0a8c25dd6a216f">insertCrumb</a> (const QString &amp;text, int pos=-1)</td></tr>
+<tr class="memdesc:aea1c8f246ef88edffe0a8c25dd6a216f"><td class="mdescLeft">&#160;</td><td class="mdescRight">像标签编辑控件中插入新的标签  <a href="classDCrumbEdit.html#aea1c8f246ef88edffe0a8c25dd6a216f">更多...</a><br /></td></tr>
+<tr class="separator:aea1c8f246ef88edffe0a8c25dd6a216f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a239636e15c4f2a3378da107f7b6e3263"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDCrumbEdit.html#a239636e15c4f2a3378da107f7b6e3263">appendCrumb</a> (const <a class="el" href="classDCrumbTextFormat.html">DCrumbTextFormat</a> &amp;format)</td></tr>
+<tr class="memdesc:a239636e15c4f2a3378da107f7b6e3263"><td class="mdescLeft">&#160;</td><td class="mdescRight">像标签编辑控件中追加新的标签  <a href="classDCrumbEdit.html#a239636e15c4f2a3378da107f7b6e3263">更多...</a><br /></td></tr>
+<tr class="separator:a239636e15c4f2a3378da107f7b6e3263"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6faf77b415196cd4d517ef64e2474e93"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDCrumbEdit.html#a6faf77b415196cd4d517ef64e2474e93">appendCrumb</a> (const QString &amp;text)</td></tr>
+<tr class="memdesc:a6faf77b415196cd4d517ef64e2474e93"><td class="mdescLeft">&#160;</td><td class="mdescRight">像标签编辑控件中追加新的标签  <a href="classDCrumbEdit.html#a6faf77b415196cd4d517ef64e2474e93">更多...</a><br /></td></tr>
+<tr class="separator:a6faf77b415196cd4d517ef64e2474e93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad026df7e8171bd098b212668715116fd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDCrumbEdit.html#ad026df7e8171bd098b212668715116fd">containCrumb</a> (const QString &amp;text) const</td></tr>
+<tr class="memdesc:ad026df7e8171bd098b212668715116fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">检查当前控件是否已经包含了 <em>text</em> 标签 <em>text</em> 待检查的标签文字名称  <a href="classDCrumbEdit.html#ad026df7e8171bd098b212668715116fd">更多...</a><br /></td></tr>
+<tr class="separator:ad026df7e8171bd098b212668715116fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab719fa214451a1b859bced185e816e0d"><td class="memItemLeft" align="right" valign="top">QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDCrumbEdit.html#ab719fa214451a1b859bced185e816e0d">crumbList</a> () const</td></tr>
+<tr class="memdesc:ab719fa214451a1b859bced185e816e0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a list of crumb/tags inside the crumb edit widget.  <a href="classDCrumbEdit.html#ab719fa214451a1b859bced185e816e0d">更多...</a><br /></td></tr>
+<tr class="separator:ab719fa214451a1b859bced185e816e0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af071df548002d18a87322eddb4e04083"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDCrumbTextFormat.html">DCrumbTextFormat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDCrumbEdit.html#af071df548002d18a87322eddb4e04083">crumbTextFormat</a> (const QString &amp;text) const</td></tr>
+<tr class="memdesc:af071df548002d18a87322eddb4e04083"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the <a class="el" href="classDCrumbTextFormat.html">DCrumbTextFormat</a> matched the given tag <em>text</em> name.  <a href="classDCrumbEdit.html#af071df548002d18a87322eddb4e04083">更多...</a><br /></td></tr>
+<tr class="separator:af071df548002d18a87322eddb4e04083"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3edd04efd81ba446eb3f5f3fe2060177"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDCrumbTextFormat.html">DCrumbTextFormat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDCrumbEdit.html#a3edd04efd81ba446eb3f5f3fe2060177">makeTextFormat</a> () const</td></tr>
+<tr class="memdesc:a3edd04efd81ba446eb3f5f3fe2060177"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建一个直接可用的 <a class="el" href="classDCrumbTextFormat.html">DCrumbTextFormat</a> 对象.  <a href="classDCrumbEdit.html#a3edd04efd81ba446eb3f5f3fe2060177">更多...</a><br /></td></tr>
+<tr class="separator:a3edd04efd81ba446eb3f5f3fe2060177"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a112aaa7ab40a0dbd1d6fe82c0237496e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDCrumbTextFormat.html">DCrumbTextFormat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDCrumbEdit.html#a112aaa7ab40a0dbd1d6fe82c0237496e">makeTextFormat</a> (CrumbType type) const</td></tr>
+<tr class="memdesc:a112aaa7ab40a0dbd1d6fe82c0237496e"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据所给的标签类型（颜色）创建一个直接可用的 <a class="el" href="classDCrumbTextFormat.html">DCrumbTextFormat</a> 对象.  <a href="classDCrumbEdit.html#a112aaa7ab40a0dbd1d6fe82c0237496e">更多...</a><br /></td></tr>
+<tr class="separator:a112aaa7ab40a0dbd1d6fe82c0237496e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f0e5a303ca19954acee884d7853edbe"><td class="memItemLeft" align="right" valign="top"><a id="a3f0e5a303ca19954acee884d7853edbe"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>dualClickMakeCrumb</b> () const Q_DECL_NOEXCEPT</td></tr>
+<tr class="separator:a3f0e5a303ca19954acee884d7853edbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a575bf1b36141690de76cab2d6925dd3b"><td class="memItemLeft" align="right" valign="top"><a id="a575bf1b36141690de76cab2d6925dd3b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>crumbReadOnly</b> () const</td></tr>
+<tr class="separator:a575bf1b36141690de76cab2d6925dd3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a365c570ba507a60dba39c84483345409"><td class="memItemLeft" align="right" valign="top"><a id="a365c570ba507a60dba39c84483345409"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>crumbRadius</b> () const</td></tr>
+<tr class="separator:a365c570ba507a60dba39c84483345409"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00830ddaa1387d1d8284b54c00407d09"><td class="memItemLeft" align="right" valign="top"><a id="a00830ddaa1387d1d8284b54c00407d09"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>splitter</b> () const</td></tr>
+<tr class="separator:a00830ddaa1387d1d8284b54c00407d09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a3f3396240a8dc4bb029ecf194909e06a"><td class="memItemLeft" align="right" valign="top"><a id="a3f3396240a8dc4bb029ecf194909e06a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>event</b> (QEvent *e) override</td></tr>
+<tr class="separator:a3f3396240a8dc4bb029ecf194909e06a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afef19bb2cdc6c8eabd81521c62d11c32"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDCrumbEdit.html#afef19bb2cdc6c8eabd81521c62d11c32">paintEvent</a> (QPaintEvent *event) override</td></tr>
+<tr class="separator:afef19bb2cdc6c8eabd81521c62d11c32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dff2fa37abfced0d897595741108865"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDCrumbEdit.html#a7dff2fa37abfced0d897595741108865">keyPressEvent</a> (QKeyEvent *event) override</td></tr>
+<tr class="separator:a7dff2fa37abfced0d897595741108865"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54f7e5b7642c09f8f055d28db4f45da8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDCrumbEdit.html#a54f7e5b7642c09f8f055d28db4f45da8">mouseDoubleClickEvent</a> (QMouseEvent *event) override</td></tr>
+<tr class="separator:a54f7e5b7642c09f8f055d28db4f45da8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a5224981b44dd524646b75cab5a9634"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDCrumbEdit.html#a1a5224981b44dd524646b75cab5a9634">focusOutEvent</a> (QFocusEvent *event) override</td></tr>
+<tr class="separator:a1a5224981b44dd524646b75cab5a9634"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3322e2d87a354277ed7382889fe3d3c0"><td class="memItemLeft" align="right" valign="top">QMimeData *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDCrumbEdit.html#a3322e2d87a354277ed7382889fe3d3c0">createMimeDataFromSelection</a> () const override</td></tr>
+<tr class="separator:a3322e2d87a354277ed7382889fe3d3c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b99ca3200235bf3a3150f3097a07af6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDCrumbEdit.html#a6b99ca3200235bf3a3150f3097a07af6">canInsertFromMimeData</a> (const QMimeData *source) const override</td></tr>
+<tr class="separator:a6b99ca3200235bf3a3150f3097a07af6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3abd6afca3e0b64b6e0eaecb3f15a86"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDCrumbEdit.html#ad3abd6afca3e0b64b6e0eaecb3f15a86">insertFromMimeData</a> (const QMimeData *source) override</td></tr>
+<tr class="separator:ad3abd6afca3e0b64b6e0eaecb3f15a86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:af9c7a8add3006b06095de28f62504f16"><td class="memItemLeft" align="right" valign="top"><a id="af9c7a8add3006b06095de28f62504f16"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>crumbReadOnly</b></td></tr>
+<tr class="separator:af9c7a8add3006b06095de28f62504f16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68c2cb2699847d97835333cb9268ae94"><td class="memItemLeft" align="right" valign="top"><a id="a68c2cb2699847d97835333cb9268ae94"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>crumbRadius</b></td></tr>
+<tr class="separator:a68c2cb2699847d97835333cb9268ae94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30ff04d8ec6b4ba9ff3fec6c4d7e7044"><td class="memItemLeft" align="right" valign="top"><a id="a30ff04d8ec6b4ba9ff3fec6c4d7e7044"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>splitter</b></td></tr>
+<tr class="separator:a30ff04d8ec6b4ba9ff3fec6c4d7e7044"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2233fb38946b5b5709b9ddc817a73236"><td class="memItemLeft" align="right" valign="top"><a id="a2233fb38946b5b5709b9ddc817a73236"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>dualClickMakeCrumb</b></td></tr>
+<tr class="separator:a2233fb38946b5b5709b9ddc817a73236"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a239636e15c4f2a3378da107f7b6e3263"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a239636e15c4f2a3378da107f7b6e3263">&#9670;&nbsp;</a></span>appendCrumb() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DCrumbEdit::appendCrumb </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classDCrumbTextFormat.html">DCrumbTextFormat</a> &amp;&#160;</td>
+          <td class="paramname"><em>format</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>像标签编辑控件中追加新的标签 </p>
+<p>Append new tag/crumb to the crumb edit widget.</p>
+<p><em>format</em> 一个 <a class="el" href="classDCrumbTextFormat.html">DCrumbTextFormat</a> 对象. <em>format</em> a <a class="el" href="classDCrumbTextFormat.html">DCrumbTextFormat</a>.</p>
+<p>通过给定的 <a class="el" href="classDCrumbTextFormat.html">DCrumbTextFormat</a> 对象所描述的属性创建新的标签并追加到标签编辑控件中。若要创建一个直接可供使用的 <a class="el" href="classDCrumbTextFormat.html">DCrumbTextFormat</a> 对象，可以考虑使用 <a class="el" href="classDCrumbEdit.html#a3edd04efd81ba446eb3f5f3fe2060177" title="创建一个直接可用的 DCrumbTextFormat 对象.">makeTextFormat()</a> 。 Append new tag/crumb with the provided <a class="el" href="classDCrumbTextFormat.html">DCrumbTextFormat</a>. To create a ready-to-use <a class="el" href="classDCrumbTextFormat.html">DCrumbTextFormat</a> object, call <a class="el" href="classDCrumbEdit.html#a3edd04efd81ba446eb3f5f3fe2060177" title="创建一个直接可用的 DCrumbTextFormat 对象.">makeTextFormat()</a>.</p>
+<dl class="section return"><dt>返回</dt><dd>插入标签成功时返回 true，否则返回 false. </dd>
+<dd>
+true if we appended a new tag into the crumb edit widget.</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDCrumbEdit.html#a3edd04efd81ba446eb3f5f3fe2060177" title="创建一个直接可用的 DCrumbTextFormat 对象.">makeTextFormat()</a>, <a class="el" href="classDCrumbEdit.html#ac67b2be4e92d2868a2cfeb7f72eab65b" title="像标签编辑控件中插入新的标签">insertCrumb()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a6faf77b415196cd4d517ef64e2474e93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6faf77b415196cd4d517ef64e2474e93">&#9670;&nbsp;</a></span>appendCrumb() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DCrumbEdit::appendCrumb </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>text</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>像标签编辑控件中追加新的标签 </p>
+<p>Append new tag/crumb to the crumb edit widget.</p>
+<p><em>text</em> 标签的文字内容. <em>text</em> of the tag/crumb.</p>
+<p>通过给定的文字创建新的标签并追加到标签编辑控件中。 Append new tag/crumb with the provided text.</p>
+<dl class="section return"><dt>返回</dt><dd>插入标签成功时返回 true，否则返回 false. </dd>
+<dd>
+true if we appended a new tag into the crumb edit widget.</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDCrumbEdit.html#ac67b2be4e92d2868a2cfeb7f72eab65b" title="像标签编辑控件中插入新的标签">insertCrumb()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a6b99ca3200235bf3a3150f3097a07af6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b99ca3200235bf3a3150f3097a07af6">&#9670;&nbsp;</a></span>canInsertFromMimeData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DCrumbEdit::canInsertFromMimeData </td>
+          <td>(</td>
+          <td class="paramtype">const QMimeData *&#160;</td>
+          <td class="paramname"><em>source</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>\reimp </p>
+
+</div>
+</div>
+<a id="ad026df7e8171bd098b212668715116fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad026df7e8171bd098b212668715116fd">&#9670;&nbsp;</a></span>containCrumb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DCrumbEdit::containCrumb </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>text</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>检查当前控件是否已经包含了 <em>text</em> 标签 <em>text</em> 待检查的标签文字名称 </p>
+<dl class="section return"><dt>返回</dt><dd>如果包含，返回 true </dd></dl>
+
+</div>
+</div>
+<a id="a3322e2d87a354277ed7382889fe3d3c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3322e2d87a354277ed7382889fe3d3c0">&#9670;&nbsp;</a></span>createMimeDataFromSelection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QMimeData * DCrumbEdit::createMimeDataFromSelection </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>\reimp </p>
+
+</div>
+</div>
+<a id="ab719fa214451a1b859bced185e816e0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab719fa214451a1b859bced185e816e0d">&#9670;&nbsp;</a></span>crumbList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QStringList DCrumbEdit::crumbList </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a list of crumb/tags inside the crumb edit widget. </p>
+<p>取得标签输入控件内已包含的标签列表 </p>
+
+</div>
+</div>
+<a id="af071df548002d18a87322eddb4e04083"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af071df548002d18a87322eddb4e04083">&#9670;&nbsp;</a></span>crumbTextFormat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDCrumbTextFormat.html">DCrumbTextFormat</a> DCrumbEdit::crumbTextFormat </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>text</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the <a class="el" href="classDCrumbTextFormat.html">DCrumbTextFormat</a> matched the given tag <em>text</em> name. </p>
+<p>根据标签名称取得对应的标签样式属性 <a class="el" href="classDCrumbTextFormat.html">DCrumbTextFormat</a> 对象 </p>
+
+</div>
+</div>
+<a id="a1a5224981b44dd524646b75cab5a9634"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a5224981b44dd524646b75cab5a9634">&#9670;&nbsp;</a></span>focusOutEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DCrumbEdit::focusOutEvent </td>
+          <td>(</td>
+          <td class="paramtype">QFocusEvent *&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>\reimp </p>
+
+</div>
+</div>
+<a id="ac67b2be4e92d2868a2cfeb7f72eab65b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac67b2be4e92d2868a2cfeb7f72eab65b">&#9670;&nbsp;</a></span>insertCrumb() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DCrumbEdit::insertCrumb </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classDCrumbTextFormat.html">DCrumbTextFormat</a> &amp;&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pos</em> = <code>-1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>像标签编辑控件中插入新的标签 </p>
+<p>Insert new tag/crumb to the crumb edit widget at the given position.</p>
+<p><em>format</em> 一个 <a class="el" href="classDCrumbTextFormat.html">DCrumbTextFormat</a> 对象. <em>format</em> a <a class="el" href="classDCrumbTextFormat.html">DCrumbTextFormat</a>. <em>pos</em> 待插入的位置. <em>pos</em> position to be inserted.</p>
+<p>通过给定的 <a class="el" href="classDCrumbTextFormat.html">DCrumbTextFormat</a> 对象所描述的属性创建新的标签并追加到标签编辑控件中。若要创建一个直接可供使用的 <a class="el" href="classDCrumbTextFormat.html">DCrumbTextFormat</a> 对象，可以考虑使用 <a class="el" href="classDCrumbEdit.html#a3edd04efd81ba446eb3f5f3fe2060177" title="创建一个直接可用的 DCrumbTextFormat 对象.">makeTextFormat()</a> 。 Insert new tag/crumb with the provided <a class="el" href="classDCrumbTextFormat.html">DCrumbTextFormat</a> at the given position. To create a ready-to-use <a class="el" href="classDCrumbTextFormat.html">DCrumbTextFormat</a> object, call <a class="el" href="classDCrumbEdit.html#a3edd04efd81ba446eb3f5f3fe2060177" title="创建一个直接可用的 DCrumbTextFormat 对象.">makeTextFormat()</a>.</p>
+<dl class="section return"><dt>返回</dt><dd>插入标签成功时返回 true，否则返回 false. </dd>
+<dd>
+true if we appended a new tag into the crumb edit widget.</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDCrumbEdit.html#a3edd04efd81ba446eb3f5f3fe2060177" title="创建一个直接可用的 DCrumbTextFormat 对象.">makeTextFormat()</a>, <a class="el" href="classDCrumbEdit.html#ac67b2be4e92d2868a2cfeb7f72eab65b" title="像标签编辑控件中插入新的标签">insertCrumb()</a> </dd></dl>
+
+</div>
+</div>
+<a id="aea1c8f246ef88edffe0a8c25dd6a216f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea1c8f246ef88edffe0a8c25dd6a216f">&#9670;&nbsp;</a></span>insertCrumb() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DCrumbEdit::insertCrumb </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pos</em> = <code>-1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>像标签编辑控件中插入新的标签 </p>
+<p>Insert new tag/crumb to the crumb edit widget.</p>
+<p><em>text</em> 标签的文字内容. <em>text</em> of the tag/crumb. <em>pos</em> 待插入的位置. <em>pos</em> position to be inserted.</p>
+<p>通过给定的文字创建新的标签并插入到标签编辑控件中的指定位置。 Insert new tag/crumb with the provided text to the given position.</p>
+<dl class="section return"><dt>返回</dt><dd>插入标签成功时返回 true，否则返回 false. </dd>
+<dd>
+true if we appended a new tag into the crumb edit widget.</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDCrumbEdit.html#a239636e15c4f2a3378da107f7b6e3263" title="像标签编辑控件中追加新的标签">appendCrumb()</a> </dd></dl>
+
+</div>
+</div>
+<a id="ad3abd6afca3e0b64b6e0eaecb3f15a86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3abd6afca3e0b64b6e0eaecb3f15a86">&#9670;&nbsp;</a></span>insertFromMimeData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DCrumbEdit::insertFromMimeData </td>
+          <td>(</td>
+          <td class="paramtype">const QMimeData *&#160;</td>
+          <td class="paramname"><em>source</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>\reimp </p>
+
+</div>
+</div>
+<a id="a7dff2fa37abfced0d897595741108865"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7dff2fa37abfced0d897595741108865">&#9670;&nbsp;</a></span>keyPressEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DCrumbEdit::keyPressEvent </td>
+          <td>(</td>
+          <td class="paramtype">QKeyEvent *&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>\reimp </p>
+
+</div>
+</div>
+<a id="a3edd04efd81ba446eb3f5f3fe2060177"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3edd04efd81ba446eb3f5f3fe2060177">&#9670;&nbsp;</a></span>makeTextFormat() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDCrumbTextFormat.html">DCrumbTextFormat</a> DCrumbEdit::makeTextFormat </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>创建一个直接可用的 <a class="el" href="classDCrumbTextFormat.html">DCrumbTextFormat</a> 对象. </p>
+<p>create a ready-to-use <a class="el" href="classDCrumbTextFormat.html">DCrumbTextFormat</a> object.</p>
+<dl class="section return"><dt>返回</dt><dd>创建的 <a class="el" href="classDCrumbTextFormat.html">DCrumbTextFormat</a> 对象 </dd>
+<dd>
+the created <a class="el" href="classDCrumbTextFormat.html">DCrumbTextFormat</a> object </dd></dl>
+
+</div>
+</div>
+<a id="a112aaa7ab40a0dbd1d6fe82c0237496e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a112aaa7ab40a0dbd1d6fe82c0237496e">&#9670;&nbsp;</a></span>makeTextFormat() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDCrumbTextFormat.html">DCrumbTextFormat</a> DCrumbEdit::makeTextFormat </td>
+          <td>(</td>
+          <td class="paramtype">DCrumbEdit::CrumbType&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>根据所给的标签类型（颜色）创建一个直接可用的 <a class="el" href="classDCrumbTextFormat.html">DCrumbTextFormat</a> 对象. </p>
+<p>create a ready-to-use <a class="el" href="classDCrumbTextFormat.html">DCrumbTextFormat</a> object with the given color.</p>
+<p>将根据所给的（颜色）类型创建一个新的 <a class="el" href="classDCrumbTextFormat.html">DCrumbTextFormat</a> 对象，并将其内文字属性设为颜色的名称。 Create a ready-to-use <a class="el" href="classDCrumbTextFormat.html">DCrumbTextFormat</a> object with the given color, and set its text as the color name.</p>
+<dl class="section return"><dt>返回</dt><dd>创建的 <a class="el" href="classDCrumbTextFormat.html">DCrumbTextFormat</a> 对象 </dd>
+<dd>
+the created <a class="el" href="classDCrumbTextFormat.html">DCrumbTextFormat</a> object </dd></dl>
+
+</div>
+</div>
+<a id="a54f7e5b7642c09f8f055d28db4f45da8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54f7e5b7642c09f8f055d28db4f45da8">&#9670;&nbsp;</a></span>mouseDoubleClickEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DCrumbEdit::mouseDoubleClickEvent </td>
+          <td>(</td>
+          <td class="paramtype">QMouseEvent *&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>\reimp </p>
+
+</div>
+</div>
+<a id="afef19bb2cdc6c8eabd81521c62d11c32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afef19bb2cdc6c8eabd81521c62d11c32">&#9670;&nbsp;</a></span>paintEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DCrumbEdit::paintEvent </td>
+          <td>(</td>
+          <td class="paramtype">QPaintEvent *&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>\reimp </p>
+
+</div>
+</div>
+<a id="a8b2f9284b01a1d988b23424f737171d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b2f9284b01a1d988b23424f737171d5">&#9670;&nbsp;</a></span>setCrumbRadius</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DCrumbEdit::setCrumbRadius </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>crumbRadius</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置控件圆角角度 </p>
+<p><em>crumbRadius</em> 圆角角度. </p>
+
+</div>
+</div>
+<a id="abb5e09364481a5d013f1a2894bf52c06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb5e09364481a5d013f1a2894bf52c06">&#9670;&nbsp;</a></span>setCrumbReadOnly</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DCrumbEdit::setCrumbReadOnly </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>crumbReadOnly</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置或取消设置标签编辑控件的只读状态 </p>
+<p><em>crumbReadOnly</em> 是否只读. </p>
+
+</div>
+</div>
+<a id="a189ba294158cf88aec4561fbec5da623"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a189ba294158cf88aec4561fbec5da623">&#9670;&nbsp;</a></span>setSplitter</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DCrumbEdit::setSplitter </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>splitter</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置分割符 </p>
+<p>设置表示划分标签边界的分割字符，可用于一次性输入多个以给定分隔符分割的标签。</p>
+<p><em>splitter</em> 分割线字符. </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dtkwidget/include/dtkwidget/widgets/<a class="el" href="dcrumbedit_8h_source.html">dcrumbedit.h</a></li>
+<li>dtkwidget/src/widgets/dcrumbedit.cpp</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classDCrumbEdit.html">DCrumbEdit</a></li>
+    <li class="footer">文档生成时间:doxtime</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

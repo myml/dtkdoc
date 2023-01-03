@@ -1,0 +1,463 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: DFontSizeManager类 参考</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="change address" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classDFontSizeManager.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="classDFontSizeManager-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">DFontSizeManager类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:add9f9b6f37800b08b3be3bf57c9600b4"><td class="memItemLeft" align="right" valign="top"><a id="add9f9b6f37800b08b3be3bf57c9600b4"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>SizeType</b> { <br />
+&#160;&#160;<b>T1</b>
+, <b>T2</b>
+, <b>T3</b>
+, <b>T4</b>
+, <br />
+&#160;&#160;<b>T5</b>
+, <b>T6</b>
+, <b>T7</b>
+, <b>T8</b>
+, <br />
+&#160;&#160;<b>T9</b>
+, <b>T10</b>
+, <b>NSizeTypes</b>
+<br />
+ }</td></tr>
+<tr class="separator:add9f9b6f37800b08b3be3bf57c9600b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:acdb3d8016a3b881d1274f6836dbeec02"><td class="memItemLeft" align="right" valign="top"><a id="acdb3d8016a3b881d1274f6836dbeec02"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>bind</b> (QWidget *widget, SizeType type)</td></tr>
+<tr class="separator:acdb3d8016a3b881d1274f6836dbeec02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1882fe37243ec33dca65b7e549420296"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDFontSizeManager.html#a1882fe37243ec33dca65b7e549420296">bind</a> (QWidget *widget, SizeType type, int weight)</td></tr>
+<tr class="memdesc:a1882fe37243ec33dca65b7e549420296"><td class="mdescLeft">&#160;</td><td class="mdescRight">将字体的大小枚举 SizeType 和控件 widget 进行绑定, 其控件的字体大小(随绑定的枚举的)对应值的改变而改变; 系统自定义的绑定枚举值 T6, 若 T6 = 14px, 则其他枚举 T1 - T10 的数值,依次为:40, 30, 24, 20, 17, 14(T6), 13, 12, 11, 10; 系统自定义的绑定枚举值 T6 改为 T6 = 20px, 则其他枚举 T1 - T10 的数值,依次为:46, 36, 30, 26, 23, 20(T6), 19, 18, 17, 16; 即: 其对应的无论 T6 为何值, 其两个相邻的 T 值的差是定值: T(n) - T(n-1) == 定值 而系统是只设置 T6 这以枚举, 作为基准.  <a href="classDFontSizeManager.html#a1882fe37243ec33dca65b7e549420296">更多...</a><br /></td></tr>
+<tr class="separator:a1882fe37243ec33dca65b7e549420296"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21d1a132e973d1be037e4a9066baa5f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDFontSizeManager.html#a21d1a132e973d1be037e4a9066baa5f4">unbind</a> (QWidget *widget)</td></tr>
+<tr class="memdesc:a21d1a132e973d1be037e4a9066baa5f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">将字体大小枚举值和 widget 的绑定解除, 不跟随 "枚举对应的像素值" 而改变本控件的字体大小.  <a href="classDFontSizeManager.html#a21d1a132e973d1be037e4a9066baa5f4">更多...</a><br /></td></tr>
+<tr class="separator:a21d1a132e973d1be037e4a9066baa5f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1668e295e236a3cd79d35bb7d199ee4"><td class="memItemLeft" align="right" valign="top">quint16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDFontSizeManager.html#ad1668e295e236a3cd79d35bb7d199ee4">fontPixelSize</a> (SizeType type) const</td></tr>
+<tr class="memdesc:ad1668e295e236a3cd79d35bb7d199ee4"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取字体像素的大小.  <a href="classDFontSizeManager.html#ad1668e295e236a3cd79d35bb7d199ee4">更多...</a><br /></td></tr>
+<tr class="separator:ad1668e295e236a3cd79d35bb7d199ee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87e6d4fe0e47448080059cfd61d44fe5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDFontSizeManager.html#a87e6d4fe0e47448080059cfd61d44fe5">setFontPixelSize</a> (SizeType type, quint16 size)</td></tr>
+<tr class="memdesc:a87e6d4fe0e47448080059cfd61d44fe5"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置字体像素大小.  <a href="classDFontSizeManager.html#a87e6d4fe0e47448080059cfd61d44fe5">更多...</a><br /></td></tr>
+<tr class="separator:a87e6d4fe0e47448080059cfd61d44fe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae51e5a4367f947716d256cf1ed3e3564"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDFontSizeManager.html#ae51e5a4367f947716d256cf1ed3e3564">setFontGenericPixelSize</a> (quint16 size)</td></tr>
+<tr class="memdesc:ae51e5a4367f947716d256cf1ed3e3564"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置字体的通用像素大小.  <a href="classDFontSizeManager.html#ae51e5a4367f947716d256cf1ed3e3564">更多...</a><br /></td></tr>
+<tr class="separator:ae51e5a4367f947716d256cf1ed3e3564"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2daac5892873839fceaf25cde57ccd38"><td class="memItemLeft" align="right" valign="top"><a id="a2daac5892873839fceaf25cde57ccd38"></a>
+const QFont&#160;</td><td class="memItemRight" valign="bottom"><b>get</b> (SizeType type, const QFont &amp;base=QFont()) const</td></tr>
+<tr class="separator:a2daac5892873839fceaf25cde57ccd38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88655d29842b22bc027a4c882c29813c"><td class="memItemLeft" align="right" valign="top">const QFont&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDFontSizeManager.html#a88655d29842b22bc027a4c882c29813c">get</a> (SizeType type, int weight, const QFont &amp;base=QFont()) const</td></tr>
+<tr class="memdesc:a88655d29842b22bc027a4c882c29813c"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取字体.  <a href="classDFontSizeManager.html#a88655d29842b22bc027a4c882c29813c">更多...</a><br /></td></tr>
+<tr class="separator:a88655d29842b22bc027a4c882c29813c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33efbe9c8f9e370e3053dec391ca3ef5"><td class="memItemLeft" align="right" valign="top"><a id="a33efbe9c8f9e370e3053dec391ca3ef5"></a>
+const QFont&#160;</td><td class="memItemRight" valign="bottom"><b>t1</b> (const QFont &amp;base=QFont()) const</td></tr>
+<tr class="separator:a33efbe9c8f9e370e3053dec391ca3ef5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad18d9af720c6a4fb642b8999cfbaf004"><td class="memItemLeft" align="right" valign="top"><a id="ad18d9af720c6a4fb642b8999cfbaf004"></a>
+const QFont&#160;</td><td class="memItemRight" valign="bottom"><b>t2</b> (const QFont &amp;base=QFont()) const</td></tr>
+<tr class="separator:ad18d9af720c6a4fb642b8999cfbaf004"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a943b7e6d3fde01a81bf9e94bd4771926"><td class="memItemLeft" align="right" valign="top"><a id="a943b7e6d3fde01a81bf9e94bd4771926"></a>
+const QFont&#160;</td><td class="memItemRight" valign="bottom"><b>t3</b> (const QFont &amp;base=QFont()) const</td></tr>
+<tr class="separator:a943b7e6d3fde01a81bf9e94bd4771926"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4e3d05f71b08f2ed57dfe65259088a3"><td class="memItemLeft" align="right" valign="top"><a id="ae4e3d05f71b08f2ed57dfe65259088a3"></a>
+const QFont&#160;</td><td class="memItemRight" valign="bottom"><b>t4</b> (const QFont &amp;base=QFont()) const</td></tr>
+<tr class="separator:ae4e3d05f71b08f2ed57dfe65259088a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a519628f16234ba06d4d1e243879bf3fe"><td class="memItemLeft" align="right" valign="top"><a id="a519628f16234ba06d4d1e243879bf3fe"></a>
+const QFont&#160;</td><td class="memItemRight" valign="bottom"><b>t5</b> (const QFont &amp;base=QFont()) const</td></tr>
+<tr class="separator:a519628f16234ba06d4d1e243879bf3fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b28daffaa7cc1840466d534cfa8b474"><td class="memItemLeft" align="right" valign="top"><a id="a2b28daffaa7cc1840466d534cfa8b474"></a>
+const QFont&#160;</td><td class="memItemRight" valign="bottom"><b>t6</b> (const QFont &amp;base=QFont()) const</td></tr>
+<tr class="separator:a2b28daffaa7cc1840466d534cfa8b474"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1ac75f79ff43568d30c802e0746b640"><td class="memItemLeft" align="right" valign="top"><a id="ab1ac75f79ff43568d30c802e0746b640"></a>
+const QFont&#160;</td><td class="memItemRight" valign="bottom"><b>t7</b> (const QFont &amp;base=QFont()) const</td></tr>
+<tr class="separator:ab1ac75f79ff43568d30c802e0746b640"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3c6cc50c520679bc6f8f464dbf6819e"><td class="memItemLeft" align="right" valign="top"><a id="ab3c6cc50c520679bc6f8f464dbf6819e"></a>
+const QFont&#160;</td><td class="memItemRight" valign="bottom"><b>t8</b> (const QFont &amp;base=QFont()) const</td></tr>
+<tr class="separator:ab3c6cc50c520679bc6f8f464dbf6819e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21318fdaefb60138435f933a62d4ffb2"><td class="memItemLeft" align="right" valign="top"><a id="a21318fdaefb60138435f933a62d4ffb2"></a>
+const QFont&#160;</td><td class="memItemRight" valign="bottom"><b>t9</b> (const QFont &amp;base=QFont()) const</td></tr>
+<tr class="separator:a21318fdaefb60138435f933a62d4ffb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9abaa4bca350ee00335cf24c6ea6fbf"><td class="memItemLeft" align="right" valign="top"><a id="ae9abaa4bca350ee00335cf24c6ea6fbf"></a>
+const QFont&#160;</td><td class="memItemRight" valign="bottom"><b>t10</b> (const QFont &amp;base=QFont()) const</td></tr>
+<tr class="separator:ae9abaa4bca350ee00335cf24c6ea6fbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a4d38b4d13ee70801eb8f9f53851469b4"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classDFontSizeManager.html">DFontSizeManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDFontSizeManager.html#a4d38b4d13ee70801eb8f9f53851469b4">instance</a> ()</td></tr>
+<tr class="memdesc:a4d38b4d13ee70801eb8f9f53851469b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建一个字体管理的实例.  <a href="classDFontSizeManager.html#a4d38b4d13ee70801eb8f9f53851469b4">更多...</a><br /></td></tr>
+<tr class="separator:a4d38b4d13ee70801eb8f9f53851469b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1390d4c5aa962a08d182b0c882eadc92"><td class="memItemLeft" align="right" valign="top"><a id="a1390d4c5aa962a08d182b0c882eadc92"></a>
+static int&#160;</td><td class="memItemRight" valign="bottom"><b>fontPixelSize</b> (const QFont &amp;font)</td></tr>
+<tr class="separator:a1390d4c5aa962a08d182b0c882eadc92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a1882fe37243ec33dca65b7e549420296"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1882fe37243ec33dca65b7e549420296">&#9670;&nbsp;</a></span>bind()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DFontSizeManager::bind </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>widget</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DFontSizeManager::SizeType&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>weight</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>将字体的大小枚举 SizeType 和控件 widget 进行绑定, 其控件的字体大小(随绑定的枚举的)对应值的改变而改变; 系统自定义的绑定枚举值 T6, 若 T6 = 14px, 则其他枚举 T1 - T10 的数值,依次为:40, 30, 24, 20, 17, 14(T6), 13, 12, 11, 10; 系统自定义的绑定枚举值 T6 改为 T6 = 20px, 则其他枚举 T1 - T10 的数值,依次为:46, 36, 30, 26, 23, 20(T6), 19, 18, 17, 16; 即: 其对应的无论 T6 为何值, 其两个相邻的 T 值的差是定值: T(n) - T(n-1) == 定值 而系统是只设置 T6 这以枚举, 作为基准. </p>
+<p><em>widget</em> 将要绑定字体大小枚举数值的控件 <em>type</em> 字体的枚举类型, 每一个枚举数值对应着一个字体像素大小 </p>
+
+</div>
+</div>
+<a id="ad1668e295e236a3cd79d35bb7d199ee4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1668e295e236a3cd79d35bb7d199ee4">&#9670;&nbsp;</a></span>fontPixelSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">quint16 DFontSizeManager::fontPixelSize </td>
+          <td>(</td>
+          <td class="paramtype">DFontSizeManager::SizeType&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取字体像素的大小. </p>
+<p><em>type</em> 字体枚举类型 </p><dl class="section return"><dt>返回</dt><dd>返回字体像素的大小 </dd></dl>
+
+</div>
+</div>
+<a id="a88655d29842b22bc027a4c882c29813c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88655d29842b22bc027a4c882c29813c">&#9670;&nbsp;</a></span>get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const QFont DFontSizeManager::get </td>
+          <td>(</td>
+          <td class="paramtype">DFontSizeManager::SizeType&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>weight</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QFont &amp;&#160;</td>
+          <td class="paramname"><em>base</em> = <code>QFont()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取字体. </p>
+<p><em>type</em> 字体的大小枚举 <em>base</em> 将改变大小的字体 </p><dl class="section return"><dt>返回</dt><dd>返回设置字体大小后的字体 </dd></dl>
+
+</div>
+</div>
+<a id="a4d38b4d13ee70801eb8f9f53851469b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d38b4d13ee70801eb8f9f53851469b4">&#9670;&nbsp;</a></span>instance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDFontSizeManager.html">DFontSizeManager</a> * DFontSizeManager::instance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>创建一个字体管理的实例. </p>
+<dl class="section return"><dt>返回</dt><dd>返回一个创建的 static <a class="el" href="classDFontSizeManager.html">DFontSizeManager</a> 实例 </dd></dl>
+
+</div>
+</div>
+<a id="ae51e5a4367f947716d256cf1ed3e3564"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae51e5a4367f947716d256cf1ed3e3564">&#9670;&nbsp;</a></span>setFontGenericPixelSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DFontSizeManager::setFontGenericPixelSize </td>
+          <td>(</td>
+          <td class="paramtype">quint16&#160;</td>
+          <td class="paramname"><em>size</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置字体的通用像素大小. </p>
+<p><em>size</em> 预设计的字体像素的大小 </p>
+
+</div>
+</div>
+<a id="a87e6d4fe0e47448080059cfd61d44fe5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87e6d4fe0e47448080059cfd61d44fe5">&#9670;&nbsp;</a></span>setFontPixelSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DFontSizeManager::setFontPixelSize </td>
+          <td>(</td>
+          <td class="paramtype">DFontSizeManager::SizeType&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">quint16&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置字体像素大小. </p>
+<p><em>type</em> 字体枚举类型 <em>size</em> 字体大小 </p>
+
+</div>
+</div>
+<a id="a21d1a132e973d1be037e4a9066baa5f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21d1a132e973d1be037e4a9066baa5f4">&#9670;&nbsp;</a></span>unbind()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DFontSizeManager::unbind </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>widget</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>将字体大小枚举值和 widget 的绑定解除, 不跟随 "枚举对应的像素值" 而改变本控件的字体大小. </p>
+<p><em>widget</em> 与 "字体枚举所对应的像素值" 的 (解除绑定的控件) 对象 </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dtkwidget/include/dtkwidget/widgets/<a class="el" href="dstyleoption_8h_source.html">dstyleoption.h</a></li>
+<li>dtkwidget/src/widgets/dstyleoption.cpp</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classDFontSizeManager.html">DFontSizeManager</a></li>
+    <li class="footer">文档生成时间:doxtime</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

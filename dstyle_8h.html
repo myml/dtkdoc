@@ -1,0 +1,358 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: dtkwidget/include/dtkwidget/widgets/dstyle.h 文件参考</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="change address" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('dstyle_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">dstyle.h 文件参考<div class="ingroups"><a class="el" href="group__dtkwidget.html">Dtkwidget</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;dtkwidget_global.h&gt;</code><br />
+<code>#include &lt;DPalette&gt;</code><br />
+<code>#include &lt;DDciIcon&gt;</code><br />
+<code>#include &lt;QCommonStyle&gt;</code><br />
+<code>#include &lt;QPainter&gt;</code><br />
+<code>#include &lt;QIconEngine&gt;</code><br />
+<code>#include &lt;QStyleOption&gt;</code><br />
+<code>#include &lt;QApplication&gt;</code><br />
+</div>
+<p><a href="dstyle_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDStyle.html">DStyle</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDStyleHelper.html">DStyleHelper</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDStylePainter.html">DStylePainter</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDStyledIconEngine.html">DStyledIconEngine</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:aab6f8dc8d303e6f9355e1f4eb6acdad2"><td class="memItemLeft" align="right" valign="top"><a id="aab6f8dc8d303e6f9355e1f4eb6acdad2"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Corner</b> { <b>TopLeftCorner</b> = 0x00001
+, <b>TopRightCorner</b> = 0x00002
+, <b>BottomLeftCorner</b> = 0x00004
+, <b>BottomRightCorner</b> = 0x00008
+ }</td></tr>
+<tr class="separator:aab6f8dc8d303e6f9355e1f4eb6acdad2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a5e7fa79ce566686e1cff8f412e55d265"><td class="memItemLeft" align="right" valign="top"><a id="a5e7fa79ce566686e1cff8f412e55d265"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DDrawUtils::drawShadow</b> (QPainter *pa, const QRect &amp;rect, qreal xRadius, qreal yRadius, const QColor &amp;sc, qreal radius, const QPoint &amp;offset)</td></tr>
+<tr class="separator:a5e7fa79ce566686e1cff8f412e55d265"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b80c90b89883b568f19293ac9acde50"><td class="memItemLeft" align="right" valign="top"><a id="a1b80c90b89883b568f19293ac9acde50"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DDrawUtils::drawShadow</b> (QPainter *pa, const QRect &amp;rect, const QPainterPath &amp;path, const QColor &amp;sc, int radius, const QPoint &amp;offset)</td></tr>
+<tr class="separator:a1b80c90b89883b568f19293ac9acde50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea142db4ae6b0ac8291d1118899e902c"><td class="memItemLeft" align="right" valign="top"><a id="aea142db4ae6b0ac8291d1118899e902c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DDrawUtils::drawRoundedRect</b> (QPainter *pa, const QRect &amp;rect, qreal xRadius, qreal yRadius, Corners corners, Qt::SizeMode mode=Qt::AbsoluteSize)</td></tr>
+<tr class="separator:aea142db4ae6b0ac8291d1118899e902c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91756792c6e1b8f310927f5942e171cf"><td class="memItemLeft" align="right" valign="top"><a id="a91756792c6e1b8f310927f5942e171cf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DDrawUtils::drawFork</b> (QPainter *pa, const QRectF &amp;rect, const QColor &amp;color, int width=2)</td></tr>
+<tr class="separator:a91756792c6e1b8f310927f5942e171cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2c1f83f4f9c5d87c48a106cdec2df0c"><td class="memItemLeft" align="right" valign="top"><a id="ae2c1f83f4f9c5d87c48a106cdec2df0c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DDrawUtils::drawMark</b> (QPainter *pa, const QRectF &amp;rect, const QColor &amp;boxInside, const QColor &amp;boxOutside, const int penWidth, const int outLineLeng=2)</td></tr>
+<tr class="separator:ae2c1f83f4f9c5d87c48a106cdec2df0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7df46848ba1e95c2650eae1a328977ad"><td class="memItemLeft" align="right" valign="top"><a id="a7df46848ba1e95c2650eae1a328977ad"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DDrawUtils::drawBorder</b> (QPainter *pa, const QRectF &amp;rect, const QBrush &amp;brush, int borderWidth, int radius)</td></tr>
+<tr class="separator:a7df46848ba1e95c2650eae1a328977ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2903430935d6dfecb15df62b2ece5476"><td class="memItemLeft" align="right" valign="top"><a id="a2903430935d6dfecb15df62b2ece5476"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DDrawUtils::drawArrow</b> (QPainter *pa, const QRectF &amp;rect, const QColor &amp;color, Qt::ArrowType arrow, int width=2)</td></tr>
+<tr class="separator:a2903430935d6dfecb15df62b2ece5476"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3aa251c407425c18ff5197c9abb15a9c"><td class="memItemLeft" align="right" valign="top"><a id="a3aa251c407425c18ff5197c9abb15a9c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DDrawUtils::drawPlus</b> (QPainter *painter, const QRectF &amp;rect, const QColor &amp;color, qreal width)</td></tr>
+<tr class="separator:a3aa251c407425c18ff5197c9abb15a9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a425849bd607830f6ec32365d5da231e9"><td class="memItemLeft" align="right" valign="top"><a id="a425849bd607830f6ec32365d5da231e9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DDrawUtils::drawSubtract</b> (QPainter *painter, const QRectF &amp;rect, const QColor &amp;color, qreal width)</td></tr>
+<tr class="separator:a425849bd607830f6ec32365d5da231e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a817f5982e22b2fe0b6929dbd7dd32a9e"><td class="memItemLeft" align="right" valign="top"><a id="a817f5982e22b2fe0b6929dbd7dd32a9e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DDrawUtils::drawForkElement</b> (QPainter *pa, const QRectF &amp;rect)</td></tr>
+<tr class="separator:a817f5982e22b2fe0b6929dbd7dd32a9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab2bcf8e9f75ddaa10a1a4a9c95bdbba"><td class="memItemLeft" align="right" valign="top"><a id="aab2bcf8e9f75ddaa10a1a4a9c95bdbba"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DDrawUtils::drawArrowElement</b> (Qt::ArrowType arrow, QPainter *pa, const QRectF &amp;rect)</td></tr>
+<tr class="separator:aab2bcf8e9f75ddaa10a1a4a9c95bdbba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8de450addef8b82cf93248a537926528"><td class="memItemLeft" align="right" valign="top"><a id="a8de450addef8b82cf93248a537926528"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DDrawUtils::drawDecreaseElement</b> (QPainter *pa, const QRectF &amp;rect)</td></tr>
+<tr class="separator:a8de450addef8b82cf93248a537926528"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e1c7dd7ec5ff915aa3579e1e1e07f2a"><td class="memItemLeft" align="right" valign="top"><a id="a7e1c7dd7ec5ff915aa3579e1e1e07f2a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DDrawUtils::drawIncreaseElement</b> (QPainter *pa, const QRectF &amp;rect)</td></tr>
+<tr class="separator:a7e1c7dd7ec5ff915aa3579e1e1e07f2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d10d812c61e6628b0a2ac2776d46de7"><td class="memItemLeft" align="right" valign="top"><a id="a2d10d812c61e6628b0a2ac2776d46de7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DDrawUtils::drawMarkElement</b> (QPainter *pa, const QRectF &amp;rect)</td></tr>
+<tr class="separator:a2d10d812c61e6628b0a2ac2776d46de7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b5986ec846c2ee205a4face8116ec1f"><td class="memItemLeft" align="right" valign="top"><a id="a7b5986ec846c2ee205a4face8116ec1f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DDrawUtils::drawSelectElement</b> (QPainter *pa, const QRectF &amp;rect)</td></tr>
+<tr class="separator:a7b5986ec846c2ee205a4face8116ec1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae94ccf7f382bf839da2ee6c575fa241a"><td class="memItemLeft" align="right" valign="top"><a id="ae94ccf7f382bf839da2ee6c575fa241a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DDrawUtils::drawEditElement</b> (QPainter *pa, const QRectF &amp;rect)</td></tr>
+<tr class="separator:ae94ccf7f382bf839da2ee6c575fa241a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad90185ef9ab43c58cdd030066b457e56"><td class="memItemLeft" align="right" valign="top"><a id="ad90185ef9ab43c58cdd030066b457e56"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DDrawUtils::drawExpandElement</b> (QPainter *pa, const QRectF &amp;rect)</td></tr>
+<tr class="separator:ad90185ef9ab43c58cdd030066b457e56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5799611e484fbb60e6512c68f282593"><td class="memItemLeft" align="right" valign="top"><a id="ab5799611e484fbb60e6512c68f282593"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DDrawUtils::drawReduceElement</b> (QPainter *pa, const QRectF &amp;rect)</td></tr>
+<tr class="separator:ab5799611e484fbb60e6512c68f282593"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79b78c6659fc8911d5cf8175049dc741"><td class="memItemLeft" align="right" valign="top"><a id="a79b78c6659fc8911d5cf8175049dc741"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DDrawUtils::drawLockElement</b> (QPainter *pa, const QRectF &amp;rect)</td></tr>
+<tr class="separator:a79b78c6659fc8911d5cf8175049dc741"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40fd7786c741cee265e701aabdf3639a"><td class="memItemLeft" align="right" valign="top"><a id="a40fd7786c741cee265e701aabdf3639a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DDrawUtils::drawUnlockElement</b> (QPainter *pa, const QRectF &amp;rect)</td></tr>
+<tr class="separator:a40fd7786c741cee265e701aabdf3639a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a731ff772981bd31315c62d7a35a7ac33"><td class="memItemLeft" align="right" valign="top"><a id="a731ff772981bd31315c62d7a35a7ac33"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DDrawUtils::drawMediaVolumeElement</b> (QPainter *pa, const QRectF &amp;rect)</td></tr>
+<tr class="separator:a731ff772981bd31315c62d7a35a7ac33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f071f4b2ebc7e5df2d1992def6021b1"><td class="memItemLeft" align="right" valign="top"><a id="a4f071f4b2ebc7e5df2d1992def6021b1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DDrawUtils::drawMediaVolumeFullElement</b> (QPainter *pa, const QRectF &amp;rect)</td></tr>
+<tr class="separator:a4f071f4b2ebc7e5df2d1992def6021b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f5cae479384f326953279f69414cdbc"><td class="memItemLeft" align="right" valign="top"><a id="a4f5cae479384f326953279f69414cdbc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DDrawUtils::drawMediaVolumeMutedElement</b> (QPainter *pa, const QRectF &amp;rect)</td></tr>
+<tr class="separator:a4f5cae479384f326953279f69414cdbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebfc6fc520288ec9320cafda988c1f3a"><td class="memItemLeft" align="right" valign="top"><a id="aebfc6fc520288ec9320cafda988c1f3a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DDrawUtils::drawMediaVolumeLeftElement</b> (QPainter *pa, const QRectF &amp;rect)</td></tr>
+<tr class="separator:aebfc6fc520288ec9320cafda988c1f3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e5723fe5d72173166c2e0f5cee9f4a9"><td class="memItemLeft" align="right" valign="top"><a id="a0e5723fe5d72173166c2e0f5cee9f4a9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DDrawUtils::drawMediaVolumeRightElement</b> (QPainter *pa, const QRectF &amp;rect)</td></tr>
+<tr class="separator:a0e5723fe5d72173166c2e0f5cee9f4a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54412b8308bb3f54bcac4b2e0bc06234"><td class="memItemLeft" align="right" valign="top"><a id="a54412b8308bb3f54bcac4b2e0bc06234"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DDrawUtils::drawArrowEnter</b> (QPainter *pa, const QRectF &amp;rect)</td></tr>
+<tr class="separator:a54412b8308bb3f54bcac4b2e0bc06234"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bcb263e64aad90f87f77524aede5c96"><td class="memItemLeft" align="right" valign="top"><a id="a4bcb263e64aad90f87f77524aede5c96"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DDrawUtils::drawArrowLeave</b> (QPainter *pa, const QRectF &amp;rect)</td></tr>
+<tr class="separator:a4bcb263e64aad90f87f77524aede5c96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97697ab39fdfab885f565dffd2541a1c"><td class="memItemLeft" align="right" valign="top"><a id="a97697ab39fdfab885f565dffd2541a1c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DDrawUtils::drawArrowNext</b> (QPainter *pa, const QRectF &amp;rect)</td></tr>
+<tr class="separator:a97697ab39fdfab885f565dffd2541a1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6d887b92268e08b00a6323b7751038e"><td class="memItemLeft" align="right" valign="top"><a id="ab6d887b92268e08b00a6323b7751038e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DDrawUtils::drawArrowPrev</b> (QPainter *pa, const QRectF &amp;rect)</td></tr>
+<tr class="separator:ab6d887b92268e08b00a6323b7751038e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d3d972e657bc633409a304224a37d04"><td class="memItemLeft" align="right" valign="top"><a id="a3d3d972e657bc633409a304224a37d04"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DDrawUtils::drawShowPassword</b> (QPainter *pa, const QRectF &amp;rect)</td></tr>
+<tr class="separator:a3d3d972e657bc633409a304224a37d04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a772c8a5a5dd91251443cbc039a112bef"><td class="memItemLeft" align="right" valign="top"><a id="a772c8a5a5dd91251443cbc039a112bef"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DDrawUtils::drawHidePassword</b> (QPainter *pa, const QRectF &amp;rect)</td></tr>
+<tr class="separator:a772c8a5a5dd91251443cbc039a112bef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef08b22868cce0abbbdd1ba4c4b15118"><td class="memItemLeft" align="right" valign="top"><a id="aef08b22868cce0abbbdd1ba4c4b15118"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DDrawUtils::drawCloseButton</b> (QPainter *pa, const QRectF &amp;rect)</td></tr>
+<tr class="separator:aef08b22868cce0abbbdd1ba4c4b15118"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b12ee6488faa82153ada1973637d5b1"><td class="memItemLeft" align="right" valign="top"><a id="a0b12ee6488faa82153ada1973637d5b1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DDrawUtils::drawIndicatorMajuscule</b> (QPainter *pa, const QRectF &amp;rect)</td></tr>
+<tr class="separator:a0b12ee6488faa82153ada1973637d5b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0054f812c2a9708a55359fe7e5928faa"><td class="memItemLeft" align="right" valign="top"><a id="a0054f812c2a9708a55359fe7e5928faa"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DDrawUtils::drawIndicatorUnchecked</b> (QPainter *pa, const QRectF &amp;rect)</td></tr>
+<tr class="separator:a0054f812c2a9708a55359fe7e5928faa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11fb0e1dde06f3ddaa58e275c69c25e6"><td class="memItemLeft" align="right" valign="top"><a id="a11fb0e1dde06f3ddaa58e275c69c25e6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DDrawUtils::drawIndicatorChecked</b> (QPainter *pa, const QRectF &amp;rect)</td></tr>
+<tr class="separator:a11fb0e1dde06f3ddaa58e275c69c25e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade449c74138d5dcdbf9f0c6107aac6be"><td class="memItemLeft" align="right" valign="top"><a id="ade449c74138d5dcdbf9f0c6107aac6be"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DDrawUtils::drawDeleteButton</b> (QPainter *pa, const QRectF &amp;rect)</td></tr>
+<tr class="separator:ade449c74138d5dcdbf9f0c6107aac6be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a581283f3726f60484fcf9be2d9d82cb1"><td class="memItemLeft" align="right" valign="top"><a id="a581283f3726f60484fcf9be2d9d82cb1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DDrawUtils::drawAddButton</b> (QPainter *pa, const QRectF &amp;rect)</td></tr>
+<tr class="separator:a581283f3726f60484fcf9be2d9d82cb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55c2004527aa93df387a6b402d48ad49"><td class="memItemLeft" align="right" valign="top"><a id="a55c2004527aa93df387a6b402d48ad49"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DDrawUtils::drawTitleBarMenuButton</b> (QPainter *pa, const QRectF &amp;rect)</td></tr>
+<tr class="separator:a55c2004527aa93df387a6b402d48ad49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a049a8e6a39fc3b54985fa1004ccced74"><td class="memItemLeft" align="right" valign="top"><a id="a049a8e6a39fc3b54985fa1004ccced74"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DDrawUtils::drawTitleBarMinButton</b> (QPainter *pa, const QRectF &amp;rect)</td></tr>
+<tr class="separator:a049a8e6a39fc3b54985fa1004ccced74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf82feb44574bbbb2bf68bb3827b38bf"><td class="memItemLeft" align="right" valign="top"><a id="acf82feb44574bbbb2bf68bb3827b38bf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DDrawUtils::drawTitleBarMaxButton</b> (QPainter *pa, const QRectF &amp;rect)</td></tr>
+<tr class="separator:acf82feb44574bbbb2bf68bb3827b38bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80e43a63ee731229386b9f7c827d572f"><td class="memItemLeft" align="right" valign="top"><a id="a80e43a63ee731229386b9f7c827d572f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DDrawUtils::drawTitleBarCloseButton</b> (QPainter *pa, const QRectF &amp;rect)</td></tr>
+<tr class="separator:a80e43a63ee731229386b9f7c827d572f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a309a6b555d8543853c936d8f14eb1eca"><td class="memItemLeft" align="right" valign="top"><a id="a309a6b555d8543853c936d8f14eb1eca"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DDrawUtils::drawTitleBarNormalButton</b> (QPainter *pa, const QRectF &amp;rect)</td></tr>
+<tr class="separator:a309a6b555d8543853c936d8f14eb1eca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0e37b53b64a63be84aa26d9da084a08"><td class="memItemLeft" align="right" valign="top"><a id="ae0e37b53b64a63be84aa26d9da084a08"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DDrawUtils::drawTitleQuitFullButton</b> (QPainter *pa, const QRectF &amp;rect)</td></tr>
+<tr class="separator:ae0e37b53b64a63be84aa26d9da084a08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accdd3feffadafb6b5297f2eddcda4f99"><td class="memItemLeft" align="right" valign="top"><a id="accdd3feffadafb6b5297f2eddcda4f99"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DDrawUtils::drawArrowUp</b> (QPainter *pa, const QRectF &amp;rect)</td></tr>
+<tr class="separator:accdd3feffadafb6b5297f2eddcda4f99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f77164f0efba5042862026d4bd8fcd1"><td class="memItemLeft" align="right" valign="top"><a id="a6f77164f0efba5042862026d4bd8fcd1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DDrawUtils::drawArrowDown</b> (QPainter *pa, const QRectF &amp;rect)</td></tr>
+<tr class="separator:a6f77164f0efba5042862026d4bd8fcd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeac9b9e65b539014ec70535d371b4000"><td class="memItemLeft" align="right" valign="top"><a id="aeac9b9e65b539014ec70535d371b4000"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DDrawUtils::drawArrowLeft</b> (QPainter *pa, const QRectF &amp;rect)</td></tr>
+<tr class="separator:aeac9b9e65b539014ec70535d371b4000"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad15534d834a5123d3a151141e95b8994"><td class="memItemLeft" align="right" valign="top"><a id="ad15534d834a5123d3a151141e95b8994"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DDrawUtils::drawArrowRight</b> (QPainter *pa, const QRectF &amp;rect)</td></tr>
+<tr class="separator:ad15534d834a5123d3a151141e95b8994"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accb641b68a861d362996d51fcc0c74d1"><td class="memItemLeft" align="right" valign="top"><a id="accb641b68a861d362996d51fcc0c74d1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DDrawUtils::drawArrowBack</b> (QPainter *pa, const QRectF &amp;rect)</td></tr>
+<tr class="separator:accb641b68a861d362996d51fcc0c74d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a468e8f03fe89e13bbfa59d18bfe7a4bb"><td class="memItemLeft" align="right" valign="top"><a id="a468e8f03fe89e13bbfa59d18bfe7a4bb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DDrawUtils::drawArrowForward</b> (QPainter *pa, const QRectF &amp;rect)</td></tr>
+<tr class="separator:a468e8f03fe89e13bbfa59d18bfe7a4bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a676e4886ae721dbd8bef3f7bc03f018c"><td class="memItemLeft" align="right" valign="top"><a id="a676e4886ae721dbd8bef3f7bc03f018c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DDrawUtils::drawLineEditClearButton</b> (QPainter *pa, const QRectF &amp;rect)</td></tr>
+<tr class="separator:a676e4886ae721dbd8bef3f7bc03f018c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_cc1fdbae730d0dba18db2b924667b662.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_6819db61f31aacd6e31b437a606a4041.html">include</a></li><li class="navelem"><a class="el" href="dir_6719ee6af2149ba01bce2af57814b9e8.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_4faf4521db2f3764f9e00575717749e8.html">widgets</a></li><li class="navelem"><a class="el" href="dstyle_8h.html">dstyle.h</a></li>
+    <li class="footer">文档生成时间:doxtime</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

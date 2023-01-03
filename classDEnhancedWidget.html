@@ -1,0 +1,654 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: DEnhancedWidget类 参考</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="change address" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classDEnhancedWidget.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-slots">Public 槽</a> &#124;
+<a href="#signals">信号</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#properties">属性</a> &#124;
+<a href="classDEnhancedWidget-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">DEnhancedWidget类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 DEnhancedWidget 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classDEnhancedWidget.png" alt=""/>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Public 槽</h2></td></tr>
+<tr class="memitem:affb84ed60b1093d823f42cd1482772c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDEnhancedWidget.html#affb84ed60b1093d823f42cd1482772c3">setTarget</a> (QWidget *<a class="el" href="classDEnhancedWidget.html#a4e81818b58ad39482046c0993677c2f6">target</a>)</td></tr>
+<tr class="memdesc:affb84ed60b1093d823f42cd1482772c3"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDEnhancedWidget.html#affb84ed60b1093d823f42cd1482772c3" title="DEnhancedWidget::setTarget target">DEnhancedWidget::setTarget</a> <em>target</em>  <a href="classDEnhancedWidget.html#affb84ed60b1093d823f42cd1482772c3">更多...</a><br /></td></tr>
+<tr class="separator:affb84ed60b1093d823f42cd1482772c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a955bdd7e9c0acf8e9010f7c0656ab59f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDEnhancedWidget.html#a955bdd7e9c0acf8e9010f7c0656ab59f">setEnabled</a> (bool <a class="el" href="classDEnhancedWidget.html#a72031aa0ac338d7f844f174ce28392c0">enabled</a>)</td></tr>
+<tr class="memdesc:a955bdd7e9c0acf8e9010f7c0656ab59f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDEnhancedWidget.html#a955bdd7e9c0acf8e9010f7c0656ab59f" title="DEnhancedWidget::setEnabled enabled">DEnhancedWidget::setEnabled</a> <em>enabled</em>  <a href="classDEnhancedWidget.html#a955bdd7e9c0acf8e9010f7c0656ab59f">更多...</a><br /></td></tr>
+<tr class="separator:a955bdd7e9c0acf8e9010f7c0656ab59f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+信号</h2></td></tr>
+<tr class="memitem:acd4b367792ffe105198adc022d51a4bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDEnhancedWidget.html#acd4b367792ffe105198adc022d51a4bd">xChanged</a> (int x)</td></tr>
+<tr class="separator:acd4b367792ffe105198adc022d51a4bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e4bb4254be00e91c1914393fda639bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDEnhancedWidget.html#a0e4bb4254be00e91c1914393fda639bf">yChanged</a> (int y)</td></tr>
+<tr class="separator:a0e4bb4254be00e91c1914393fda639bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79444d04fa2c3b77ee4076deb9aae074"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDEnhancedWidget.html#a79444d04fa2c3b77ee4076deb9aae074">positionChanged</a> (const QPoint &amp;point)</td></tr>
+<tr class="separator:a79444d04fa2c3b77ee4076deb9aae074"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa74dbb2721f6be3fa65db7b445a05b32"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDEnhancedWidget.html#aa74dbb2721f6be3fa65db7b445a05b32">widthChanged</a> (int width)</td></tr>
+<tr class="separator:aa74dbb2721f6be3fa65db7b445a05b32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43c1a01bf8445c06fc5dbfd746da6333"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDEnhancedWidget.html#a43c1a01bf8445c06fc5dbfd746da6333">heightChanged</a> (int height)</td></tr>
+<tr class="separator:a43c1a01bf8445c06fc5dbfd746da6333"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd05371cca614e19b9b1bbe6b6d5a865"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDEnhancedWidget.html#acd05371cca614e19b9b1bbe6b6d5a865">sizeChanged</a> (const QSize &amp;size)</td></tr>
+<tr class="separator:acd05371cca614e19b9b1bbe6b6d5a865"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a510e9bbf1f8ca4ab6ccd67dfc79350"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDEnhancedWidget.html#a3a510e9bbf1f8ca4ab6ccd67dfc79350">targetChanged</a> (QWidget *<a class="el" href="classDEnhancedWidget.html#a4e81818b58ad39482046c0993677c2f6">target</a>)</td></tr>
+<tr class="separator:a3a510e9bbf1f8ca4ab6ccd67dfc79350"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4a520770e62e97d3cd5dd4a95429b07"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDEnhancedWidget.html#ae4a520770e62e97d3cd5dd4a95429b07">enabledChanged</a> (bool <a class="el" href="classDEnhancedWidget.html#a72031aa0ac338d7f844f174ce28392c0">enabled</a>)</td></tr>
+<tr class="separator:ae4a520770e62e97d3cd5dd4a95429b07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa05a770aa0bac2d77ce102b5c56031a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDEnhancedWidget.html#aa05a770aa0bac2d77ce102b5c56031a1">showed</a> ()</td></tr>
+<tr class="separator:aa05a770aa0bac2d77ce102b5c56031a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a779b5a22d4ce85f5da827558ab804862"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDEnhancedWidget.html#a779b5a22d4ce85f5da827558ab804862">DEnhancedWidget</a> (QWidget *<a class="el" href="classDEnhancedWidget.html#a4e81818b58ad39482046c0993677c2f6">target</a>, QObject *parent=0)</td></tr>
+<tr class="memdesc:a779b5a22d4ce85f5da827558ab804862"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDEnhancedWidget.html#a779b5a22d4ce85f5da827558ab804862" title="DEnhancedWidget::DEnhancedWidget 构造函数.">DEnhancedWidget::DEnhancedWidget</a> 构造函数.  <a href="classDEnhancedWidget.html#a779b5a22d4ce85f5da827558ab804862">更多...</a><br /></td></tr>
+<tr class="separator:a779b5a22d4ce85f5da827558ab804862"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ecf2b2cd9f6fa94b04009f981edcc28"><td class="memItemLeft" align="right" valign="top"><a id="a7ecf2b2cd9f6fa94b04009f981edcc28"></a>
+QWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>target</b> () const</td></tr>
+<tr class="separator:a7ecf2b2cd9f6fa94b04009f981edcc28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a518b6edf2cfdd8c8612450aa34ca8733"><td class="memItemLeft" align="right" valign="top"><a id="a518b6edf2cfdd8c8612450aa34ca8733"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>enabled</b> () const</td></tr>
+<tr class="separator:a518b6edf2cfdd8c8612450aa34ca8733"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a776fad064f2eb596163e606547bd266f"><td class="memItemLeft" align="right" valign="top"><a id="a776fad064f2eb596163e606547bd266f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>eventFilter</b> (QObject *o, QEvent *e) Q_DECL_OVERRIDE</td></tr>
+<tr class="separator:a776fad064f2eb596163e606547bd266f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:a4e81818b58ad39482046c0993677c2f6"><td class="memItemLeft" align="right" valign="top">QWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDEnhancedWidget.html#a4e81818b58ad39482046c0993677c2f6">target</a></td></tr>
+<tr class="memdesc:a4e81818b58ad39482046c0993677c2f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">要监听的目标控件，每一个 <a class="el" href="classDEnhancedWidget.html">DEnhancedWidget</a> 对象只能关联到一个 QWidget 对象 当 target 改变后，所有的信号和旧的 target 都不再有任何关系。  <a href="classDEnhancedWidget.html#a4e81818b58ad39482046c0993677c2f6">更多...</a><br /></td></tr>
+<tr class="separator:a4e81818b58ad39482046c0993677c2f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72031aa0ac338d7f844f174ce28392c0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDEnhancedWidget.html#a72031aa0ac338d7f844f174ce28392c0">enabled</a></td></tr>
+<tr class="memdesc:a72031aa0ac338d7f844f174ce28392c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">值为 true 时过滤 target 控件的事件发送信号。否则卸载事件过滤器，控件属性 改变时也不会发出信号。  <a href="classDEnhancedWidget.html#a72031aa0ac338d7f844f174ce28392c0">更多...</a><br /></td></tr>
+<tr class="separator:a72031aa0ac338d7f844f174ce28392c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a779b5a22d4ce85f5da827558ab804862"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a779b5a22d4ce85f5da827558ab804862">&#9670;&nbsp;</a></span>DEnhancedWidget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DEnhancedWidget::DEnhancedWidget </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classDEnhancedWidget.html#a779b5a22d4ce85f5da827558ab804862" title="DEnhancedWidget::DEnhancedWidget 构造函数.">DEnhancedWidget::DEnhancedWidget</a> 构造函数. </p>
+<p><em>w</em> 初始时指定的 target 控件 <em>parent</em> 父对象，直接传递给基类 </p><dl class="section see"><dt>参见</dt><dd><a class="el" href="classDEnhancedWidget.html#a4e81818b58ad39482046c0993677c2f6" title="要监听的目标控件，每一个 DEnhancedWidget 对象只能关联到一个 QWidget 对象 当 target 改变后，所有的信号和旧的 target 都不再有任何关系。">DEnhancedWidget::target</a> </dd>
+<dd>
+QObject::parent </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="ae4a520770e62e97d3cd5dd4a95429b07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4a520770e62e97d3cd5dd4a95429b07">&#9670;&nbsp;</a></span>enabledChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DEnhancedWidget::enabledChanged </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enabled</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p><em>enabled</em> 是否可用. 这个信号在属性 <a class="el" href="classDEnhancedWidget.html#a72031aa0ac338d7f844f174ce28392c0" title="值为 true 时过滤 target 控件的事件发送信号。否则卸载事件过滤器，控件属性 改变时也不会发出信号。">DEnhancedWidget::enabled</a> <em>enabled</em> 被改变后发送 </p>
+
+</div>
+</div>
+<a id="a43c1a01bf8445c06fc5dbfd746da6333"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43c1a01bf8445c06fc5dbfd746da6333">&#9670;&nbsp;</a></span>heightChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DEnhancedWidget::heightChanged </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p><em>height</em> 改变的高度大小. 这个信号在目标控件的高度改变后被发送 </p>
+
+</div>
+</div>
+<a id="a79444d04fa2c3b77ee4076deb9aae074"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79444d04fa2c3b77ee4076deb9aae074">&#9670;&nbsp;</a></span>positionChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DEnhancedWidget::positionChanged </td>
+          <td>(</td>
+          <td class="paramtype">const QPoint &amp;&#160;</td>
+          <td class="paramname"><em>point</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p><em>point</em> 改变的位置坐标. 这个信号在目标控件的坐标改变后被发送 </p>
+
+</div>
+</div>
+<a id="a955bdd7e9c0acf8e9010f7c0656ab59f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a955bdd7e9c0acf8e9010f7c0656ab59f">&#9670;&nbsp;</a></span>setEnabled</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DEnhancedWidget::setEnabled </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enabled</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classDEnhancedWidget.html#a955bdd7e9c0acf8e9010f7c0656ab59f" title="DEnhancedWidget::setEnabled enabled">DEnhancedWidget::setEnabled</a> <em>enabled</em> </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDEnhancedWidget.html#a72031aa0ac338d7f844f174ce28392c0" title="值为 true 时过滤 target 控件的事件发送信号。否则卸载事件过滤器，控件属性 改变时也不会发出信号。">DEnhancedWidget::enabled</a> </dd></dl>
+
+</div>
+</div>
+<a id="affb84ed60b1093d823f42cd1482772c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affb84ed60b1093d823f42cd1482772c3">&#9670;&nbsp;</a></span>setTarget</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DEnhancedWidget::setTarget </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>target</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classDEnhancedWidget.html#affb84ed60b1093d823f42cd1482772c3" title="DEnhancedWidget::setTarget target">DEnhancedWidget::setTarget</a> <em>target</em> </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDEnhancedWidget.html#a4e81818b58ad39482046c0993677c2f6" title="要监听的目标控件，每一个 DEnhancedWidget 对象只能关联到一个 QWidget 对象 当 target 改变后，所有的信号和旧的 target 都不再有任何关系。">DEnhancedWidget::target</a> </dd></dl>
+
+</div>
+</div>
+<a id="aa05a770aa0bac2d77ce102b5c56031a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa05a770aa0bac2d77ce102b5c56031a1">&#9670;&nbsp;</a></span>showed</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DEnhancedWidget::showed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>这个信号在目标控件显示后发送 </p>
+
+</div>
+</div>
+<a id="acd05371cca614e19b9b1bbe6b6d5a865"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd05371cca614e19b9b1bbe6b6d5a865">&#9670;&nbsp;</a></span>sizeChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DEnhancedWidget::sizeChanged </td>
+          <td>(</td>
+          <td class="paramtype">const QSize &amp;&#160;</td>
+          <td class="paramname"><em>size</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p><em>size</em> 改变的大小. 这个信号在目标控件的大小改变后被发送 </p>
+
+</div>
+</div>
+<a id="a3a510e9bbf1f8ca4ab6ccd67dfc79350"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a510e9bbf1f8ca4ab6ccd67dfc79350">&#9670;&nbsp;</a></span>targetChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DEnhancedWidget::targetChanged </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>target</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p><em>target</em> 目标控件. 这个信号在属性 <a class="el" href="classDEnhancedWidget.html#a4e81818b58ad39482046c0993677c2f6" title="要监听的目标控件，每一个 DEnhancedWidget 对象只能关联到一个 QWidget 对象 当 target 改变后，所有的信号和旧的 target 都不再有任何关系。">DEnhancedWidget::target</a> 被改变后发送 </p>
+
+</div>
+</div>
+<a id="aa74dbb2721f6be3fa65db7b445a05b32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa74dbb2721f6be3fa65db7b445a05b32">&#9670;&nbsp;</a></span>widthChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DEnhancedWidget::widthChanged </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p><em>width</em> 改变的宽度大小. 这个信号在目标控件的宽度改变后被发送 </p>
+
+</div>
+</div>
+<a id="acd4b367792ffe105198adc022d51a4bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd4b367792ffe105198adc022d51a4bd">&#9670;&nbsp;</a></span>xChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DEnhancedWidget::xChanged </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p><em>x</em> 改变的 x 轴坐标. 这个信号在目标控件的 x 坐标改变后被发送 </p>
+
+</div>
+</div>
+<a id="a0e4bb4254be00e91c1914393fda639bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e4bb4254be00e91c1914393fda639bf">&#9670;&nbsp;</a></span>yChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DEnhancedWidget::yChanged </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p><em>y</em> 改变的 y 轴坐标. 这个信号在目标控件的 y 坐标改变后被发送 </p>
+
+</div>
+</div>
+<h2 class="groupheader">属性说明</h2>
+<a id="a72031aa0ac338d7f844f174ce28392c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72031aa0ac338d7f844f174ce28392c0">&#9670;&nbsp;</a></span>enabled</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DEnhancedWidget::enabled</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>值为 true 时过滤 target 控件的事件发送信号。否则卸载事件过滤器，控件属性 改变时也不会发出信号。 </p>
+<dl class="section note"><dt>注解</dt><dd>可读可写 </dd></dl>
+
+</div>
+</div>
+<a id="a4e81818b58ad39482046c0993677c2f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e81818b58ad39482046c0993677c2f6">&#9670;&nbsp;</a></span>target</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DEnhancedWidget::target</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>要监听的目标控件，每一个 <a class="el" href="classDEnhancedWidget.html">DEnhancedWidget</a> 对象只能关联到一个 QWidget 对象 当 target 改变后，所有的信号和旧的 target 都不再有任何关系。 </p>
+<div class="fragment"><div class="line">QWidget *w1 = <span class="keyword">new</span> QWidget();</div>
+<div class="line">w1-&gt;show();</div>
+<div class="line"><a class="code" href="classDEnhancedWidget.html">DEnhancedWidget</a> *ew = <span class="keyword">new</span> <a class="code" href="classDEnhancedWidget.html#a779b5a22d4ce85f5da827558ab804862">DEnhancedWidget</a>(w1);</div>
+<div class="line">connect(ew, &amp;<a class="code" href="classDEnhancedWidget.html#acd4b367792ffe105198adc022d51a4bd">DEnhancedWidget::xChanged</a>, [] (<span class="keywordtype">int</span> x) {</div>
+<div class="line">   qDebug() &lt;&lt; x;</div>
+<div class="line">});</div>
+<div class="line">QWidget *w2 = <span class="keyword">new</span> QWidget();</div>
+<div class="line">ew.<a class="code" href="classDEnhancedWidget.html#affb84ed60b1093d823f42cd1482772c3">setTarget</a>(w2);</div>
+<div class="line">w1-&gt;move(100, 100);</div>
+<div class="ttc" id="aclassDEnhancedWidget_html"><div class="ttname"><a href="classDEnhancedWidget.html">DEnhancedWidget</a></div><div class="ttdef"><b>Definition:</b> denhancedwidget.h:16</div></div>
+<div class="ttc" id="aclassDEnhancedWidget_html_a779b5a22d4ce85f5da827558ab804862"><div class="ttname"><a href="classDEnhancedWidget.html#a779b5a22d4ce85f5da827558ab804862">DEnhancedWidget::DEnhancedWidget</a></div><div class="ttdeci">DEnhancedWidget(QWidget *target, QObject *parent=0)</div><div class="ttdoc">DEnhancedWidget::DEnhancedWidget 构造函数.</div><div class="ttdef"><b>Definition:</b> denhancedwidget.cpp:137</div></div>
+<div class="ttc" id="aclassDEnhancedWidget_html_acd4b367792ffe105198adc022d51a4bd"><div class="ttname"><a href="classDEnhancedWidget.html#acd4b367792ffe105198adc022d51a4bd">DEnhancedWidget::xChanged</a></div><div class="ttdeci">void xChanged(int x)</div></div>
+<div class="ttc" id="aclassDEnhancedWidget_html_affb84ed60b1093d823f42cd1482772c3"><div class="ttname"><a href="classDEnhancedWidget.html#affb84ed60b1093d823f42cd1482772c3">DEnhancedWidget::setTarget</a></div><div class="ttdeci">void setTarget(QWidget *target)</div><div class="ttdoc">DEnhancedWidget::setTarget target</div><div class="ttdef"><b>Definition:</b> denhancedwidget.cpp:173</div></div>
+</div><!-- fragment --><p> 移动控件 w1 时不会有任何打印 </p><div class="fragment"><div class="line">w2-&gt;show();</div>
+<div class="line">w2-&gt;move(100, 100);</div>
+</div><!-- fragment --><p> 移动控件 w2 时会有打印 虽然将 target 设置为 w2 之前就已经连接了 x 改变的信号，不过 w2 位置改变时可以收到信号 </p><dl class="section note"><dt>注解</dt><dd>可读可写 </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dtkwidget/include/dtkwidget/widgets/<a class="el" href="denhancedwidget_8h_source.html">denhancedwidget.h</a></li>
+<li>dtkwidget/src/widgets/denhancedwidget.cpp</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classDEnhancedWidget.html">DEnhancedWidget</a></li>
+    <li class="footer">文档生成时间:doxtime</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

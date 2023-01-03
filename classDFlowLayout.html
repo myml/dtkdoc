@@ -1,0 +1,884 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: DFlowLayout类 参考</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="change address" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classDFlowLayout.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-slots">Public 槽</a> &#124;
+<a href="#signals">信号</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#properties">属性</a> &#124;
+<a href="classDFlowLayout-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">DFlowLayout类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 DFlowLayout 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classDFlowLayout.png" alt=""/>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a048a799c7a06c73f82671da611415fef"><td class="memItemLeft" align="right" valign="top"><a id="a048a799c7a06c73f82671da611415fef"></a>
+typedef QListView::Flow&#160;</td><td class="memItemRight" valign="bottom"><b>Flow</b></td></tr>
+<tr class="separator:a048a799c7a06c73f82671da611415fef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Public 槽</h2></td></tr>
+<tr class="memitem:a444857ae4f995d270e77bb7e34e95b64"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDFlowLayout.html#a444857ae4f995d270e77bb7e34e95b64">setHorizontalSpacing</a> (int horizontalSpacing)</td></tr>
+<tr class="memdesc:a444857ae4f995d270e77bb7e34e95b64"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置纵横横向的元素疏密度（Spacing）.  <a href="classDFlowLayout.html#a444857ae4f995d270e77bb7e34e95b64">更多...</a><br /></td></tr>
+<tr class="separator:a444857ae4f995d270e77bb7e34e95b64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b2a386a24c7d93b9101a9c633905f55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDFlowLayout.html#a1b2a386a24c7d93b9101a9c633905f55">setVerticalSpacing</a> (int verticalSpacing)</td></tr>
+<tr class="memdesc:a1b2a386a24c7d93b9101a9c633905f55"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置纵横纵向的元素疏密度（Spacing）  <a href="classDFlowLayout.html#a1b2a386a24c7d93b9101a9c633905f55">更多...</a><br /></td></tr>
+<tr class="separator:a1b2a386a24c7d93b9101a9c633905f55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83004594feda3e5f7a37425c767f2ab7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDFlowLayout.html#a83004594feda3e5f7a37425c767f2ab7">setSpacing</a> (int spacing)</td></tr>
+<tr class="memdesc:a83004594feda3e5f7a37425c767f2ab7"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置纵横两个方向的元素疏密度（Spacing）  <a href="classDFlowLayout.html#a83004594feda3e5f7a37425c767f2ab7">更多...</a><br /></td></tr>
+<tr class="separator:a83004594feda3e5f7a37425c767f2ab7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a95898b832ec4f8e479a17d03c0e27a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDFlowLayout.html#a3a95898b832ec4f8e479a17d03c0e27a">setFlow</a> (Flow flow)</td></tr>
+<tr class="memdesc:a3a95898b832ec4f8e479a17d03c0e27a"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置布局方向  <a href="classDFlowLayout.html#a3a95898b832ec4f8e479a17d03c0e27a">更多...</a><br /></td></tr>
+<tr class="separator:a3a95898b832ec4f8e479a17d03c0e27a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+信号</h2></td></tr>
+<tr class="memitem:a1cd7d5bef5192ccd40b6439c8588324f"><td class="memItemLeft" align="right" valign="top"><a id="a1cd7d5bef5192ccd40b6439c8588324f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>horizontalSpacingChanged</b> (int horizontalSpacing)</td></tr>
+<tr class="separator:a1cd7d5bef5192ccd40b6439c8588324f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22f404792c037a7b1d2dbe070a7ee378"><td class="memItemLeft" align="right" valign="top"><a id="a22f404792c037a7b1d2dbe070a7ee378"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>verticalSpacingChanged</b> (int verticalSpacing)</td></tr>
+<tr class="separator:a22f404792c037a7b1d2dbe070a7ee378"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad55b0f119cbe481b6c1af58ae84fa101"><td class="memItemLeft" align="right" valign="top"><a id="ad55b0f119cbe481b6c1af58ae84fa101"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>countChanged</b> (int count)</td></tr>
+<tr class="separator:ad55b0f119cbe481b6c1af58ae84fa101"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabe1e1f8c5a0e767196f98b87b470c88"><td class="memItemLeft" align="right" valign="top"><a id="aabe1e1f8c5a0e767196f98b87b470c88"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>flowChanged</b> (Flow flow)</td></tr>
+<tr class="separator:aabe1e1f8c5a0e767196f98b87b470c88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecedab7a4d9a0b2b89f7c6cccc7ec516"><td class="memItemLeft" align="right" valign="top"><a id="aecedab7a4d9a0b2b89f7c6cccc7ec516"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>sizeHintChanged</b> (QSize sizeHint) const</td></tr>
+<tr class="separator:aecedab7a4d9a0b2b89f7c6cccc7ec516"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:aabcf19d8e27def2fa007450d5fabe72c"><td class="memItemLeft" align="right" valign="top"><a id="aabcf19d8e27def2fa007450d5fabe72c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DFlowLayout</b> (QWidget *parent)</td></tr>
+<tr class="separator:aabcf19d8e27def2fa007450d5fabe72c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add3c8bdc620b58797847010257b3043d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDFlowLayout.html#add3c8bdc620b58797847010257b3043d">insertItem</a> (int index, QLayoutItem *item)</td></tr>
+<tr class="memdesc:add3c8bdc620b58797847010257b3043d"><td class="mdescLeft">&#160;</td><td class="mdescRight">向布局中插入一个 QLayoutItem.  <a href="classDFlowLayout.html#add3c8bdc620b58797847010257b3043d">更多...</a><br /></td></tr>
+<tr class="separator:add3c8bdc620b58797847010257b3043d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4606788589276afac1f53faa5bd75007"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDFlowLayout.html#a4606788589276afac1f53faa5bd75007">insertWidget</a> (int index, QWidget *widget)</td></tr>
+<tr class="memdesc:a4606788589276afac1f53faa5bd75007"><td class="mdescLeft">&#160;</td><td class="mdescRight">向布局中插入一个 QWidget.  <a href="classDFlowLayout.html#a4606788589276afac1f53faa5bd75007">更多...</a><br /></td></tr>
+<tr class="separator:a4606788589276afac1f53faa5bd75007"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd3290649ff9fead5422b0c7009663f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDFlowLayout.html#abd3290649ff9fead5422b0c7009663f7">insertLayout</a> (int index, QLayout *layout)</td></tr>
+<tr class="memdesc:abd3290649ff9fead5422b0c7009663f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">向布局中插入一个 QLayout 子布局.  <a href="classDFlowLayout.html#abd3290649ff9fead5422b0c7009663f7">更多...</a><br /></td></tr>
+<tr class="separator:abd3290649ff9fead5422b0c7009663f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af38f734c02e01cc90085b8453b18712a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDFlowLayout.html#af38f734c02e01cc90085b8453b18712a">insertSpacing</a> (int index, int size)</td></tr>
+<tr class="memdesc:af38f734c02e01cc90085b8453b18712a"><td class="mdescLeft">&#160;</td><td class="mdescRight">向布局中插入一个指定大小的占位符（QSpacerItem）.  <a href="classDFlowLayout.html#af38f734c02e01cc90085b8453b18712a">更多...</a><br /></td></tr>
+<tr class="separator:af38f734c02e01cc90085b8453b18712a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41f5302b0afb2693e935d45d69a86174"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDFlowLayout.html#a41f5302b0afb2693e935d45d69a86174">insertStretch</a> (int index, int stretch=0)</td></tr>
+<tr class="memdesc:a41f5302b0afb2693e935d45d69a86174"><td class="mdescLeft">&#160;</td><td class="mdescRight">向布局中插入一个扩充大小的占位符（QSpacerItem）.  <a href="classDFlowLayout.html#a41f5302b0afb2693e935d45d69a86174">更多...</a><br /></td></tr>
+<tr class="separator:a41f5302b0afb2693e935d45d69a86174"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af001b54375f07343857f7d0f19affc57"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDFlowLayout.html#af001b54375f07343857f7d0f19affc57">insertSpacerItem</a> (int index, QSpacerItem *spacerItem)</td></tr>
+<tr class="memdesc:af001b54375f07343857f7d0f19affc57"><td class="mdescLeft">&#160;</td><td class="mdescRight">向布局中插入一个占位符（QSpacerItem）.  <a href="classDFlowLayout.html#af001b54375f07343857f7d0f19affc57">更多...</a><br /></td></tr>
+<tr class="separator:af001b54375f07343857f7d0f19affc57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24395bc6981864663f63cca7fa1d38dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDFlowLayout.html#a24395bc6981864663f63cca7fa1d38dc">addSpacing</a> (int size)</td></tr>
+<tr class="memdesc:a24395bc6981864663f63cca7fa1d38dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">向布局中追加一个固定大小的占位符（QSpacerItem）.  <a href="classDFlowLayout.html#a24395bc6981864663f63cca7fa1d38dc">更多...</a><br /></td></tr>
+<tr class="separator:a24395bc6981864663f63cca7fa1d38dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e4d125f9a8cf7d70cb1f34fbc8f53c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDFlowLayout.html#a7e4d125f9a8cf7d70cb1f34fbc8f53c4">addStretch</a> (int stretch=0)</td></tr>
+<tr class="memdesc:a7e4d125f9a8cf7d70cb1f34fbc8f53c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">向布局中追加一个扩充大小的占位符（QSpacerItem）.  <a href="classDFlowLayout.html#a7e4d125f9a8cf7d70cb1f34fbc8f53c4">更多...</a><br /></td></tr>
+<tr class="separator:a7e4d125f9a8cf7d70cb1f34fbc8f53c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62cb6c5a3c7631f0175923dacc900263"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDFlowLayout.html#a62cb6c5a3c7631f0175923dacc900263">addSpacerItem</a> (QSpacerItem *spacerItem)</td></tr>
+<tr class="memdesc:a62cb6c5a3c7631f0175923dacc900263"><td class="mdescLeft">&#160;</td><td class="mdescRight">向布局中追加一个的占位符（QSpacerItem）.  <a href="classDFlowLayout.html#a62cb6c5a3c7631f0175923dacc900263">更多...</a><br /></td></tr>
+<tr class="separator:a62cb6c5a3c7631f0175923dacc900263"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ca7f32828c63774ef30fe8fd30c409e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDFlowLayout.html#a3ca7f32828c63774ef30fe8fd30c409e">addItem</a> (QLayoutItem *item) Q_DECL_OVERRIDE</td></tr>
+<tr class="memdesc:a3ca7f32828c63774ef30fe8fd30c409e"><td class="mdescLeft">&#160;</td><td class="mdescRight">向布局中追加一个 QLayoutItem.  <a href="classDFlowLayout.html#a3ca7f32828c63774ef30fe8fd30c409e">更多...</a><br /></td></tr>
+<tr class="separator:a3ca7f32828c63774ef30fe8fd30c409e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4733374419f239f6f2ac442615fec51"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDFlowLayout.html#ac4733374419f239f6f2ac442615fec51">hasHeightForWidth</a> () const Q_DECL_OVERRIDE</td></tr>
+<tr class="memdesc:ac4733374419f239f6f2ac442615fec51"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否可以有固定高度.  <a href="classDFlowLayout.html#ac4733374419f239f6f2ac442615fec51">更多...</a><br /></td></tr>
+<tr class="separator:ac4733374419f239f6f2ac442615fec51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af204722516914f09161374289237cbf4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDFlowLayout.html#af204722516914f09161374289237cbf4">heightForWidth</a> (int) const Q_DECL_OVERRIDE</td></tr>
+<tr class="memdesc:af204722516914f09161374289237cbf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据指定宽度获得对应高度.  <a href="classDFlowLayout.html#af204722516914f09161374289237cbf4">更多...</a><br /></td></tr>
+<tr class="separator:af204722516914f09161374289237cbf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dd33b25505bc6739d99575f5c71e5de"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDFlowLayout.html#a1dd33b25505bc6739d99575f5c71e5de">count</a> () const Q_DECL_OVERRIDE</td></tr>
+<tr class="memdesc:a1dd33b25505bc6739d99575f5c71e5de"><td class="mdescLeft">&#160;</td><td class="mdescRight">布局内的元素数量.  <a href="classDFlowLayout.html#a1dd33b25505bc6739d99575f5c71e5de">更多...</a><br /></td></tr>
+<tr class="separator:a1dd33b25505bc6739d99575f5c71e5de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a608bef4651cd7e4bdaca83ef79ca08c6"><td class="memItemLeft" align="right" valign="top"><a id="a608bef4651cd7e4bdaca83ef79ca08c6"></a>
+QLayoutItem *&#160;</td><td class="memItemRight" valign="bottom"><b>itemAt</b> (int index) const Q_DECL_OVERRIDE</td></tr>
+<tr class="separator:a608bef4651cd7e4bdaca83ef79ca08c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f6ef215b48768f775db3f69e1b77a28"><td class="memItemLeft" align="right" valign="top"><a id="a7f6ef215b48768f775db3f69e1b77a28"></a>
+QSize&#160;</td><td class="memItemRight" valign="bottom"><b>minimumSize</b> () const Q_DECL_OVERRIDE</td></tr>
+<tr class="separator:a7f6ef215b48768f775db3f69e1b77a28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaab175caabafc08f53c522a166011220"><td class="memItemLeft" align="right" valign="top"><a id="aaab175caabafc08f53c522a166011220"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setGeometry</b> (const QRect &amp;rect) Q_DECL_OVERRIDE</td></tr>
+<tr class="separator:aaab175caabafc08f53c522a166011220"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89fe104f146875117c764d1107ba08d3"><td class="memItemLeft" align="right" valign="top"><a id="a89fe104f146875117c764d1107ba08d3"></a>
+QSize&#160;</td><td class="memItemRight" valign="bottom"><b>sizeHint</b> () const Q_DECL_OVERRIDE</td></tr>
+<tr class="separator:a89fe104f146875117c764d1107ba08d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63a409d74a598a8a4444174f076ef0b2"><td class="memItemLeft" align="right" valign="top">QLayoutItem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDFlowLayout.html#a63a409d74a598a8a4444174f076ef0b2">takeAt</a> (int index) Q_DECL_OVERRIDE</td></tr>
+<tr class="memdesc:a63a409d74a598a8a4444174f076ef0b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">移除并取得 <em>index</em> 位置的对应元素.  <a href="classDFlowLayout.html#a63a409d74a598a8a4444174f076ef0b2">更多...</a><br /></td></tr>
+<tr class="separator:a63a409d74a598a8a4444174f076ef0b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9752a61f65f5ccea41edf3c43df54e9"><td class="memItemLeft" align="right" valign="top"><a id="ad9752a61f65f5ccea41edf3c43df54e9"></a>
+Qt::Orientations&#160;</td><td class="memItemRight" valign="bottom"><b>expandingDirections</b> () const Q_DECL_OVERRIDE</td></tr>
+<tr class="separator:ad9752a61f65f5ccea41edf3c43df54e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50a788fcb9cf4f01feb1e3e2980b0da5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDFlowLayout.html#a50a788fcb9cf4f01feb1e3e2980b0da5">horizontalSpacing</a> () const</td></tr>
+<tr class="memdesc:a50a788fcb9cf4f01feb1e3e2980b0da5"><td class="mdescLeft">&#160;</td><td class="mdescRight">取得横横横向的元素疏密度（Spacing）.  <a href="classDFlowLayout.html#a50a788fcb9cf4f01feb1e3e2980b0da5">更多...</a><br /></td></tr>
+<tr class="separator:a50a788fcb9cf4f01feb1e3e2980b0da5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8036a67baf95e7f5acfe83358cb4dc4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDFlowLayout.html#ab8036a67baf95e7f5acfe83358cb4dc4">verticalSpacing</a> () const</td></tr>
+<tr class="memdesc:ab8036a67baf95e7f5acfe83358cb4dc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">取得纵横横向的元素疏密度（Spacing）.  <a href="classDFlowLayout.html#ab8036a67baf95e7f5acfe83358cb4dc4">更多...</a><br /></td></tr>
+<tr class="separator:ab8036a67baf95e7f5acfe83358cb4dc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f4c6548e7a137494194c6337cf2e83b"><td class="memItemLeft" align="right" valign="top">Flow&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDFlowLayout.html#a6f4c6548e7a137494194c6337cf2e83b">flow</a> () const</td></tr>
+<tr class="memdesc:a6f4c6548e7a137494194c6337cf2e83b"><td class="mdescLeft">&#160;</td><td class="mdescRight">取得流布局的方向  <a href="classDFlowLayout.html#a6f4c6548e7a137494194c6337cf2e83b">更多...</a><br /></td></tr>
+<tr class="separator:a6f4c6548e7a137494194c6337cf2e83b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:afa4ef034871289c71aafe22453f0f07e"><td class="memItemLeft" align="right" valign="top"><a id="afa4ef034871289c71aafe22453f0f07e"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>horizontalSpacing</b></td></tr>
+<tr class="separator:afa4ef034871289c71aafe22453f0f07e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05c532468f9f743907e4e4a78920dd34"><td class="memItemLeft" align="right" valign="top"><a id="a05c532468f9f743907e4e4a78920dd34"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>verticalSpacing</b></td></tr>
+<tr class="separator:a05c532468f9f743907e4e4a78920dd34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42b04b1311331b0289ce512229dcba7b"><td class="memItemLeft" align="right" valign="top"><a id="a42b04b1311331b0289ce512229dcba7b"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>count</b></td></tr>
+<tr class="separator:a42b04b1311331b0289ce512229dcba7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a122321d7b53e18a0b3146949fad5e999"><td class="memItemLeft" align="right" valign="top"><a id="a122321d7b53e18a0b3146949fad5e999"></a>
+Flow&#160;</td><td class="memItemRight" valign="bottom"><b>flow</b></td></tr>
+<tr class="separator:a122321d7b53e18a0b3146949fad5e999"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add23d5ea9ac28598e5e67146eaf24a2e"><td class="memItemLeft" align="right" valign="top"><a id="add23d5ea9ac28598e5e67146eaf24a2e"></a>
+QSize&#160;</td><td class="memItemRight" valign="bottom"><b>sizeHint</b></td></tr>
+<tr class="separator:add23d5ea9ac28598e5e67146eaf24a2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a3ca7f32828c63774ef30fe8fd30c409e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ca7f32828c63774ef30fe8fd30c409e">&#9670;&nbsp;</a></span>addItem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DFlowLayout::addItem </td>
+          <td>(</td>
+          <td class="paramtype">QLayoutItem *&#160;</td>
+          <td class="paramname"><em>item</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>向布局中追加一个 QLayoutItem. </p>
+<p>Insert a QLayoutItem to layout.</p>
+<p><em>item</em> 待插入的 QLayoutItem <em>item</em> to be insert.</p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDFlowLayout.html#add3c8bdc620b58797847010257b3043d" title="向布局中插入一个 QLayoutItem.">insertItem()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a62cb6c5a3c7631f0175923dacc900263"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62cb6c5a3c7631f0175923dacc900263">&#9670;&nbsp;</a></span>addSpacerItem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DFlowLayout::addSpacerItem </td>
+          <td>(</td>
+          <td class="paramtype">QSpacerItem *&#160;</td>
+          <td class="paramname"><em>spacerItem</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>向布局中追加一个的占位符（QSpacerItem）. </p>
+<p>Insert a QSpacerItem to layout.</p>
+<p><em>spacerItem</em> 待插入的 QSpacerItem <em>spacerItem</em> to be insert.</p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDFlowLayout.html#af001b54375f07343857f7d0f19affc57" title="向布局中插入一个占位符（QSpacerItem）.">insertSpacerItem()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a24395bc6981864663f63cca7fa1d38dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24395bc6981864663f63cca7fa1d38dc">&#9670;&nbsp;</a></span>addSpacing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DFlowLayout::addSpacing </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>向布局中追加一个固定大小的占位符（QSpacerItem）. </p>
+<p>Insert a fixed <em>size</em> QSpacerItem to layout.</p>
+<p><em>size</em> 占位符大小 <em>size</em> of the QSpacerItem to be insert</p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDFlowLayout.html#af38f734c02e01cc90085b8453b18712a" title="向布局中插入一个指定大小的占位符（QSpacerItem）.">insertSpacing()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a7e4d125f9a8cf7d70cb1f34fbc8f53c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e4d125f9a8cf7d70cb1f34fbc8f53c4">&#9670;&nbsp;</a></span>addStretch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DFlowLayout::addStretch </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>stretch</em> = <code>0</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>向布局中追加一个扩充大小的占位符（QSpacerItem）. </p>
+<p>Insert a expanding QSpacerItem to layout.</p>
+<p><em>stretch</em> 没有作用的参数 <em>stretch</em> Unused argument.</p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDFlowLayout.html#a41f5302b0afb2693e935d45d69a86174" title="向布局中插入一个扩充大小的占位符（QSpacerItem）.">insertStretch()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a1dd33b25505bc6739d99575f5c71e5de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1dd33b25505bc6739d99575f5c71e5de">&#9670;&nbsp;</a></span>count()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DFlowLayout::count </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>布局内的元素数量. </p>
+<p>item count in layout. </p>
+
+</div>
+</div>
+<a id="a6f4c6548e7a137494194c6337cf2e83b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f4c6548e7a137494194c6337cf2e83b">&#9670;&nbsp;</a></span>flow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DFlowLayout::Flow DFlowLayout::flow </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>取得流布局的方向 </p>
+<p>get flow direction.</p>
+<dl class="section return"><dt>返回</dt><dd>返回当前流布局的方向. </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDFlowLayout.html#a3a95898b832ec4f8e479a17d03c0e27a" title="设置布局方向">setFlow()</a> </dd></dl>
+
+</div>
+</div>
+<a id="ac4733374419f239f6f2ac442615fec51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4733374419f239f6f2ac442615fec51">&#9670;&nbsp;</a></span>hasHeightForWidth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DFlowLayout::hasHeightForWidth </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>是否可以有固定高度. </p>
+<p>check if layout can have a fixed height.</p>
+<dl class="section return"><dt>返回</dt><dd>可以通过高度获取宽度返回 true，否则返回 false.</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDFlowLayout.html#af204722516914f09161374289237cbf4" title="根据指定宽度获得对应高度.">heightForWidth()</a> </dd></dl>
+
+</div>
+</div>
+<a id="af204722516914f09161374289237cbf4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af204722516914f09161374289237cbf4">&#9670;&nbsp;</a></span>heightForWidth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DFlowLayout::heightForWidth </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>根据指定宽度获得对应高度. </p>
+<p>set fixed height. <em>width</em> 宽度. </p><dl class="section return"><dt>返回</dt><dd>指定高度.</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDFlowLayout.html#af204722516914f09161374289237cbf4" title="根据指定宽度获得对应高度.">heightForWidth()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a50a788fcb9cf4f01feb1e3e2980b0da5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50a788fcb9cf4f01feb1e3e2980b0da5">&#9670;&nbsp;</a></span>horizontalSpacing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DFlowLayout::horizontalSpacing </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>取得横横横向的元素疏密度（Spacing）. </p>
+<p>get flow spacing in horizontal direction.</p>
+<dl class="section return"><dt>返回</dt><dd>返回水平方向的间距（疏密度）. </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDFlowLayout.html#a444857ae4f995d270e77bb7e34e95b64" title="设置纵横横向的元素疏密度（Spacing）.">setHorizontalSpacing()</a> </dd></dl>
+
+</div>
+</div>
+<a id="add3c8bdc620b58797847010257b3043d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add3c8bdc620b58797847010257b3043d">&#9670;&nbsp;</a></span>insertItem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DFlowLayout::insertItem </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QLayoutItem *&#160;</td>
+          <td class="paramname"><em>item</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>向布局中插入一个 QLayoutItem. </p>
+<p>Insert item to layout.</p>
+<p><em>index</em> 插入到的位置 <em>item</em> 待插入的 QLayoutItem</p>
+<p><em>index</em> to be insert <em>item</em> the QLayoutItem to be insert</p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDFlowLayout.html#a3ca7f32828c63774ef30fe8fd30c409e" title="向布局中追加一个 QLayoutItem.">addItem()</a> </dd></dl>
+
+</div>
+</div>
+<a id="abd3290649ff9fead5422b0c7009663f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd3290649ff9fead5422b0c7009663f7">&#9670;&nbsp;</a></span>insertLayout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DFlowLayout::insertLayout </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QLayout *&#160;</td>
+          <td class="paramname"><em>layout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>向布局中插入一个 QLayout 子布局. </p>
+<p>Insert a sub-layout to layout.</p>
+<p><em>index</em> 插入到的位置 <em>layout</em> 待插入的 QLayout</p>
+<p><em>index</em> to be insert <em>layout</em> the QLayout to be insert </p>
+
+</div>
+</div>
+<a id="af001b54375f07343857f7d0f19affc57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af001b54375f07343857f7d0f19affc57">&#9670;&nbsp;</a></span>insertSpacerItem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DFlowLayout::insertSpacerItem </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QSpacerItem *&#160;</td>
+          <td class="paramname"><em>spacerItem</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>向布局中插入一个占位符（QSpacerItem）. </p>
+<p>Insert a fixed size QSpacer to layout.</p>
+<p><em>index</em> 插入到的位置 <em>spacerItem</em> 待插入的 QSpacerItem</p>
+<p><em>index</em> to be insert <em>spacerItem</em> to be insert</p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDFlowLayout.html#a62cb6c5a3c7631f0175923dacc900263" title="向布局中追加一个的占位符（QSpacerItem）.">addSpacerItem()</a> </dd></dl>
+
+</div>
+</div>
+<a id="af38f734c02e01cc90085b8453b18712a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af38f734c02e01cc90085b8453b18712a">&#9670;&nbsp;</a></span>insertSpacing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DFlowLayout::insertSpacing </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>向布局中插入一个指定大小的占位符（QSpacerItem）. </p>
+<p>Insert a fixed <em>size</em> QSpacerItem to layout.</p>
+<p><em>index</em> 插入到的位置 <em>size</em> 待插入的 QSpacerItem 的大小</p>
+<p><em>index</em> to be insert <em>size</em> of the QSpacerItem to be insert </p>
+
+</div>
+</div>
+<a id="a41f5302b0afb2693e935d45d69a86174"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41f5302b0afb2693e935d45d69a86174">&#9670;&nbsp;</a></span>insertStretch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DFlowLayout::insertStretch </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>stretch</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>向布局中插入一个扩充大小的占位符（QSpacerItem）. </p>
+<p>Insert a expanding QSpacerItem to layout.</p>
+<p><em>index</em> 插入到的位置 <em>stretch</em> 没有作用的参数</p>
+<p><em>index</em> to be insert <em>stretch</em> Unused argument </p>
+
+</div>
+</div>
+<a id="a4606788589276afac1f53faa5bd75007"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4606788589276afac1f53faa5bd75007">&#9670;&nbsp;</a></span>insertWidget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DFlowLayout::insertWidget </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>widget</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>向布局中插入一个 QWidget. </p>
+<p>Insert widget to layout.</p>
+<p><em>index</em> 插入到的位置 <em>widget</em> 待插入的 QWidget</p>
+<p><em>index</em> to be insert <em>widget</em> the QWidget to be insert </p>
+
+</div>
+</div>
+<a id="a3a95898b832ec4f8e479a17d03c0e27a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a95898b832ec4f8e479a17d03c0e27a">&#9670;&nbsp;</a></span>setFlow</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DFlowLayout::setFlow </td>
+          <td>(</td>
+          <td class="paramtype">Flow&#160;</td>
+          <td class="paramname"><em>direction</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置布局方向 </p>
+<p>set flow <em>direction</em> </p>
+<dl class="section see"><dt>参见</dt><dd>QListView::Flow, flow() </dd></dl>
+
+</div>
+</div>
+<a id="a444857ae4f995d270e77bb7e34e95b64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a444857ae4f995d270e77bb7e34e95b64">&#9670;&nbsp;</a></span>setHorizontalSpacing</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DFlowLayout::setHorizontalSpacing </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>horizontalSpacing</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置纵横横向的元素疏密度（Spacing）. </p>
+<p>set flow spacing in horizontal direction.</p>
+<p><em>horizontalSpacing</em> 水平间距值</p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDFlowLayout.html#a83004594feda3e5f7a37425c767f2ab7" title="设置纵横两个方向的元素疏密度（Spacing）">setSpacing()</a>, <a class="el" href="classDFlowLayout.html#a1b2a386a24c7d93b9101a9c633905f55" title="设置纵横纵向的元素疏密度（Spacing）">setVerticalSpacing()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a83004594feda3e5f7a37425c767f2ab7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83004594feda3e5f7a37425c767f2ab7">&#9670;&nbsp;</a></span>setSpacing</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DFlowLayout::setSpacing </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>spacing</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置纵横两个方向的元素疏密度（Spacing） </p>
+<p>set flow <em>spacing</em> in horizontal and vertical direction.</p>
+<p><em>spacing</em> 两个方向的间距值.</p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDFlowLayout.html#a1b2a386a24c7d93b9101a9c633905f55" title="设置纵横纵向的元素疏密度（Spacing）">setVerticalSpacing()</a>, <a class="el" href="classDFlowLayout.html#a444857ae4f995d270e77bb7e34e95b64" title="设置纵横横向的元素疏密度（Spacing）.">setHorizontalSpacing()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a1b2a386a24c7d93b9101a9c633905f55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b2a386a24c7d93b9101a9c633905f55">&#9670;&nbsp;</a></span>setVerticalSpacing</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DFlowLayout::setVerticalSpacing </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>verticalSpacing</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置纵横纵向的元素疏密度（Spacing） </p>
+<p>set flow <em>verticalSpacing</em> in vertical direction.</p>
+<p><em>verticalSpacing</em> 竖直方向的间距值.</p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDFlowLayout.html#a83004594feda3e5f7a37425c767f2ab7" title="设置纵横两个方向的元素疏密度（Spacing）">setSpacing()</a>, <a class="el" href="classDFlowLayout.html#a444857ae4f995d270e77bb7e34e95b64" title="设置纵横横向的元素疏密度（Spacing）.">setHorizontalSpacing()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a63a409d74a598a8a4444174f076ef0b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63a409d74a598a8a4444174f076ef0b2">&#9670;&nbsp;</a></span>takeAt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QLayoutItem * DFlowLayout::takeAt </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>移除并取得 <em>index</em> 位置的对应元素. </p>
+<p>take the QLayoutItem at the given <em>index</em>. </p>
+
+</div>
+</div>
+<a id="ab8036a67baf95e7f5acfe83358cb4dc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8036a67baf95e7f5acfe83358cb4dc4">&#9670;&nbsp;</a></span>verticalSpacing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DFlowLayout::verticalSpacing </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>取得纵横横向的元素疏密度（Spacing）. </p>
+<p>get flow spacing in vertical direction.</p>
+<dl class="section return"><dt>返回</dt><dd>返回竖直方向的间距（疏密度）. </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDFlowLayout.html#a1b2a386a24c7d93b9101a9c633905f55" title="设置纵横纵向的元素疏密度（Spacing）">setVerticalSpacing()</a> </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dtkwidget/include/dtkwidget/widgets/<a class="el" href="dflowlayout_8h_source.html">dflowlayout.h</a></li>
+<li>dtkwidget/src/widgets/dflowlayout.cpp</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classDFlowLayout.html">DFlowLayout</a></li>
+    <li class="footer">文档生成时间:doxtime</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

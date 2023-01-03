@@ -1,0 +1,460 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: DSpinBox类 参考</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="change address" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classDSpinBox.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-slots">Public 槽</a> &#124;
+<a href="#signals">信号</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#properties">属性</a> &#124;
+<a href="classDSpinBox-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">DSpinBox类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 DSpinBox 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classDSpinBox.png" alt=""/>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Public 槽</h2></td></tr>
+<tr class="memitem:aea54362c517d2f19663f1dbdbd3d5672"><td class="memItemLeft" align="right" valign="top"><a id="aea54362c517d2f19663f1dbdbd3d5672"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setAlert</b> (bool <a class="el" href="classDSpinBox.html#aa0cd7e19b95a714aa275d0d881fdee66">alert</a>)</td></tr>
+<tr class="separator:aea54362c517d2f19663f1dbdbd3d5672"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affe124530e2d49b3a5c795de9d699af8"><td class="memItemLeft" align="right" valign="top"><a id="affe124530e2d49b3a5c795de9d699af8"></a>
+D_DECL_DEPRECATED void&#160;</td><td class="memItemRight" valign="bottom"><b>setDefaultValue</b> (int defaultValue)</td></tr>
+<tr class="separator:affe124530e2d49b3a5c795de9d699af8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+信号</h2></td></tr>
+<tr class="memitem:adc73dad572b700a621f3f2255c89a67d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSpinBox.html#adc73dad572b700a621f3f2255c89a67d">alertChanged</a> (bool <a class="el" href="classDSpinBox.html#aa0cd7e19b95a714aa275d0d881fdee66">alert</a>)</td></tr>
+<tr class="memdesc:adc73dad572b700a621f3f2255c89a67d"><td class="mdescLeft">&#160;</td><td class="mdescRight">警告状态发生了变化.  <a href="classDSpinBox.html#adc73dad572b700a621f3f2255c89a67d">更多...</a><br /></td></tr>
+<tr class="separator:adc73dad572b700a621f3f2255c89a67d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac84ad79c09aa966ab4b963111766fc04"><td class="memItemLeft" align="right" valign="top">D_DECL_DEPRECATED void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSpinBox.html#ac84ad79c09aa966ab4b963111766fc04">defaultValueChanged</a> (int defaultValue)</td></tr>
+<tr class="memdesc:ac84ad79c09aa966ab4b963111766fc04"><td class="mdescLeft">&#160;</td><td class="mdescRight">默认值发生了变化.  <a href="classDSpinBox.html#ac84ad79c09aa966ab4b963111766fc04">更多...</a><br /></td></tr>
+<tr class="separator:ac84ad79c09aa966ab4b963111766fc04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a81298d435e84b79e266d0ad416260a9d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSpinBox.html#a81298d435e84b79e266d0ad416260a9d">DSpinBox</a> (QWidget *parent=nullptr)</td></tr>
+<tr class="memdesc:a81298d435e84b79e266d0ad416260a9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造一个 <a class="el" href="classDSpinBox.html">DSpinBox</a> 实例。  <a href="classDSpinBox.html#a81298d435e84b79e266d0ad416260a9d">更多...</a><br /></td></tr>
+<tr class="separator:a81298d435e84b79e266d0ad416260a9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab84f33ab717b843cebc973c7ff9e800"><td class="memItemLeft" align="right" valign="top">QLineEdit *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSpinBox.html#aab84f33ab717b843cebc973c7ff9e800">lineEdit</a> () const</td></tr>
+<tr class="memdesc:aab84f33ab717b843cebc973c7ff9e800"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取输入框控件。  <a href="classDSpinBox.html#aab84f33ab717b843cebc973c7ff9e800">更多...</a><br /></td></tr>
+<tr class="separator:aab84f33ab717b843cebc973c7ff9e800"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a922d0ab1a23a0d1b23253319cfd1c591"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSpinBox.html#a922d0ab1a23a0d1b23253319cfd1c591">isAlert</a> () const</td></tr>
+<tr class="memdesc:a922d0ab1a23a0d1b23253319cfd1c591"><td class="mdescLeft">&#160;</td><td class="mdescRight">表示当前控件是否处于警告状态的属性.  <a href="classDSpinBox.html#a922d0ab1a23a0d1b23253319cfd1c591">更多...</a><br /></td></tr>
+<tr class="separator:a922d0ab1a23a0d1b23253319cfd1c591"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0cf810a3a802c4ccdea82f0cf888f79"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSpinBox.html#aa0cf810a3a802c4ccdea82f0cf888f79">showAlertMessage</a> (const QString &amp;text, int duration=3000)</td></tr>
+<tr class="memdesc:aa0cf810a3a802c4ccdea82f0cf888f79"><td class="mdescLeft">&#160;</td><td class="mdescRight">显示指定的文本消息，超过指定时间后警告消息消失.  <a href="classDSpinBox.html#aa0cf810a3a802c4ccdea82f0cf888f79">更多...</a><br /></td></tr>
+<tr class="separator:aa0cf810a3a802c4ccdea82f0cf888f79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd3f4730a4e39d58e5a456c5b33fc12e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSpinBox.html#abd3f4730a4e39d58e5a456c5b33fc12e">showAlertMessage</a> (const QString &amp;text, QWidget *follower, int duration=3000)</td></tr>
+<tr class="memdesc:abd3f4730a4e39d58e5a456c5b33fc12e"><td class="mdescLeft">&#160;</td><td class="mdescRight">显示指定的文本消息，超过指定时间后警告消息消失.  <a href="classDSpinBox.html#abd3f4730a4e39d58e5a456c5b33fc12e">更多...</a><br /></td></tr>
+<tr class="separator:abd3f4730a4e39d58e5a456c5b33fc12e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a8ab449a658658692c48977e0c55337"><td class="memItemLeft" align="right" valign="top">D_DECL_DEPRECATED int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSpinBox.html#a7a8ab449a658658692c48977e0c55337">defaultValue</a> () const</td></tr>
+<tr class="memdesc:a7a8ab449a658658692c48977e0c55337"><td class="mdescLeft">&#160;</td><td class="mdescRight">这个属性的值是控件的默认值。  <a href="classDSpinBox.html#a7a8ab449a658658692c48977e0c55337">更多...</a><br /></td></tr>
+<tr class="separator:a7a8ab449a658658692c48977e0c55337"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf52eb0a1c742906bc6667725877db11"><td class="memItemLeft" align="right" valign="top"><a id="acf52eb0a1c742906bc6667725877db11"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setEnabledEmbedStyle</b> (bool enabled)</td></tr>
+<tr class="separator:acf52eb0a1c742906bc6667725877db11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:aa0cd7e19b95a714aa275d0d881fdee66"><td class="memItemLeft" align="right" valign="top"><a id="aa0cd7e19b95a714aa275d0d881fdee66"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDSpinBox.html#aa0cd7e19b95a714aa275d0d881fdee66">alert</a></td></tr>
+<tr class="memdesc:aa0cd7e19b95a714aa275d0d881fdee66"><td class="mdescLeft">&#160;</td><td class="mdescRight">This property holds whether the widget on alert mode. <br /></td></tr>
+<tr class="separator:aa0cd7e19b95a714aa275d0d881fdee66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad27d75123886ef068a178a060ef2e8a6"><td class="memItemLeft" align="right" valign="top"><a id="ad27d75123886ef068a178a060ef2e8a6"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>defaultValue</b></td></tr>
+<tr class="separator:ad27d75123886ef068a178a060ef2e8a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a81298d435e84b79e266d0ad416260a9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81298d435e84b79e266d0ad416260a9d">&#9670;&nbsp;</a></span>DSpinBox()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DSpinBox::DSpinBox </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>构造一个 <a class="el" href="classDSpinBox.html">DSpinBox</a> 实例。 </p>
+<p><a class="el" href="classDSpinBox.html#a81298d435e84b79e266d0ad416260a9d" title="构造一个 DSpinBox 实例。">DSpinBox::DSpinBox</a> constructs an instance of <a class="el" href="classDSpinBox.html">DSpinBox</a></p>
+<p><em>parent</em> 作为该实例的父控件。 <em>parent</em> is passed to QSpinBox constructor </p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="adc73dad572b700a621f3f2255c89a67d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc73dad572b700a621f3f2255c89a67d">&#9670;&nbsp;</a></span>alertChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DSpinBox::alertChanged </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>alert</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>警告状态发生了变化. </p>
+<p><em>alert</em> 当前的警告状态。 </p>
+
+</div>
+</div>
+<a id="a7a8ab449a658658692c48977e0c55337"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a8ab449a658658692c48977e0c55337">&#9670;&nbsp;</a></span>defaultValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DSpinBox::defaultValue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>这个属性的值是控件的默认值。 </p>
+<p>使用 DSpinBox::defaultValue 获取默认值，使用 DSpinBox::setDefaultValue 设置默认值, 点击控件上的 reset 按钮会设置为此值。 </p>
+
+</div>
+</div>
+<a id="ac84ad79c09aa966ab4b963111766fc04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac84ad79c09aa966ab4b963111766fc04">&#9670;&nbsp;</a></span>defaultValueChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DSpinBox::defaultValueChanged </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>defaultValue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>默认值发生了变化. </p>
+<p><em>defaultValue</em> 控件的默认值。 </p>
+
+</div>
+</div>
+<a id="a922d0ab1a23a0d1b23253319cfd1c591"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a922d0ab1a23a0d1b23253319cfd1c591">&#9670;&nbsp;</a></span>isAlert()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DSpinBox::isAlert </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>表示当前控件是否处于警告状态的属性. </p>
+<p>使用 <a class="el" href="classDSpinBox.html#a922d0ab1a23a0d1b23253319cfd1c591" title="表示当前控件是否处于警告状态的属性.">DSpinBox::isAlert</a> 获取属性当前状态，使用 DSpinBox::setAlert 设置属性的状态。</p>
+<dl class="section return"><dt>返回</dt><dd>当前状态处于警告状态，返回 true，否则返回 false. </dd></dl>
+
+</div>
+</div>
+<a id="aab84f33ab717b843cebc973c7ff9e800"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab84f33ab717b843cebc973c7ff9e800">&#9670;&nbsp;</a></span>lineEdit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QLineEdit * DSpinBox::lineEdit </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取输入框控件。 </p>
+<dl class="section return"><dt>返回</dt><dd>返回正在使用的输入库控件对象。 </dd>
+<dd>
+the QLineEdit used by this spin box. </dd></dl>
+
+</div>
+</div>
+<a id="aa0cf810a3a802c4ccdea82f0cf888f79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0cf810a3a802c4ccdea82f0cf888f79">&#9670;&nbsp;</a></span>showAlertMessage() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DSpinBox::showAlertMessage </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>duration</em> = <code>3000</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>显示指定的文本消息，超过指定时间后警告消息消失. </p>
+<p><em>text</em> text警告的文本 <em>duration</em> 显示的时间长度，单位毫秒 </p>
+
+</div>
+</div>
+<a id="abd3f4730a4e39d58e5a456c5b33fc12e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd3f4730a4e39d58e5a456c5b33fc12e">&#9670;&nbsp;</a></span>showAlertMessage() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DSpinBox::showAlertMessage </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>follower</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>duration</em> = <code>3000</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>显示指定的文本消息，超过指定时间后警告消息消失. </p>
+<p><em>text</em> text警告的文本 <em>follower</em> 指定文本消息跟随的对象 <em>duration</em> 显示的时间长度，单位毫秒 </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dtkwidget/include/dtkwidget/widgets/<a class="el" href="dspinbox_8h_source.html">dspinbox.h</a></li>
+<li>dtkwidget/src/widgets/dspinbox.cpp</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classDSpinBox.html">DSpinBox</a></li>
+    <li class="footer">文档生成时间:doxtime</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>
