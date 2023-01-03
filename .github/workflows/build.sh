@@ -9,7 +9,8 @@ cmake -Bbuild -DBUILD_DOCS=ON -DBUILD_TESTING=OFF -DDOXYGEN_GENERATE_HTML="YES" 
             -DDOXYGEN_GENERATE_TREEVIEW="YES"\
             -DDOXYGEN_DISABLE_INDEX="NO"\
             -DDOXYGEN_FULL_SIDEBAR="NO"\
+            -DDOXYGEN_GENERATE_TAGFILE="build/docs/html/dtk.tags"\
             -DDOXYGEN_HTML_HEADER="./doxygen-theme/doxygen-awesome-css/header.html"\
             -DDOXYGEN_HTML_FOOTER="./doxygen-theme/doxygen-awesome-css/footer.html"\
-            -DDOXYGEN_TAGFILES="qtcore.tags=http://doc.qt.io/qt-5/;qtwidgets/tags=http://doc.qt.io/qt-5/" .
+            -DDOXYGEN_TAGFILES="qt/qtcore.tags=http://doc.qt.io/qt-5/;qt/qtwidgets.tags=http://doc.qt.io/qt-5/;qt/qtgui.tags=http://doc.qt.io/qt-5/;qt/qtnetwork.tags=http://doc.qt.io/qt-5/" .
 cmake --build build --target doxygen
