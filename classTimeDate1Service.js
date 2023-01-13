@@ -1,0 +1,28 @@
+var classTimeDate1Service =
+[
+    [ "TimeDate1Service", "classTimeDate1Service.html#a17f258161cd37303319385fc6ce1349c", null ],
+    [ "~TimeDate1Service", "classTimeDate1Service.html#abe454f47b715ebee9180e7fe5b02ec15", null ],
+    [ "canNTP", "classTimeDate1Service.html#a8794e0530ca1263ca6d30bdc58e6f6c6", null ],
+    [ "ListTimezones", "classTimeDate1Service.html#accebf9a5a5c8b04f1dadf633321f2151", null ],
+    [ "localRTC", "classTimeDate1Service.html#afeb607ff2ee16e4f070c7b0add814328", null ],
+    [ "NTP", "classTimeDate1Service.html#aaec16b5f8a4f6b565ee56a3a1fdfd27c", null ],
+    [ "NTPSynchronized", "classTimeDate1Service.html#a72dc30c03314647b06f95bdfd403a5fd", null ],
+    [ "RTCTimeUSec", "classTimeDate1Service.html#a1d51c7efcbafbed1d3f83577ff3ef844", null ],
+    [ "SetLocalRTC", "classTimeDate1Service.html#a8168d78fb53df8b15784cc858693582d", null ],
+    [ "SetNTP", "classTimeDate1Service.html#a853bcff3491c4d805dbda869c8407f83", null ],
+    [ "SetTime", "classTimeDate1Service.html#ad599c0bd2a0a7620f121476720011456", null ],
+    [ "SetTimezone", "classTimeDate1Service.html#a636637420c406bd5d887b1d5937da3ef", null ],
+    [ "timeUSec", "classTimeDate1Service.html#a0822356b92bb98369cdb06e06afeeb62", null ],
+    [ "timezone", "classTimeDate1Service.html#afde3d336ed3ed173a8f6353525359179", null ],
+    [ "setLocalRTC_sig", "classTimeDate1Service.html#abde5f405a02be0855e3a698deb54083c", null ],
+    [ "setLocalTime_sig", "classTimeDate1Service.html#a9da696899c3b1adc58d780d41b8c6290", null ],
+    [ "setTime_sig", "classTimeDate1Service.html#ab95b1caf229a032e68cc4670106ad998", null ],
+    [ "setTimezone_sig", "classTimeDate1Service.html#abec4a6eabf4f3973a4b8057d91048a2a", null ],
+    [ "CanNTP", "classTimeDate1Service.html#aa79165a7dbbb04d20f581c1853b785f4", null ],
+    [ "LocalRTC", "classTimeDate1Service.html#ae68c43dcb3bbb323f96adb2776f0ff37", null ],
+    [ "NTP", "classTimeDate1Service.html#a323d0f17277cf2c94c9694251b8c1bf1", null ],
+    [ "NTPSynchronized", "classTimeDate1Service.html#a702dc2ce7cf7a9433da76c014feb9583", null ],
+    [ "RTCTimeUSec", "classTimeDate1Service.html#afcf7fd5e5d6106ac777c2aada07d8370", null ],
+    [ "TimeUSec", "classTimeDate1Service.html#a3e1c4bbbd7bb40f21a6e026e2880b9ff", null ],
+    [ "Timezone", "classTimeDate1Service.html#a441c8ef5b41ca1bf4da760d387d7699d", null ]
+];

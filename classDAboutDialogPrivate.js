@@ -1,6 +1,7 @@
 var classDAboutDialogPrivate =
 [
     [ "DAboutDialogPrivate", "classDAboutDialogPrivate.html#acac0ad7c4af93e6d1ebfd0a5e56a2a36", null ],
+    [ "_q_onFeatureActivated", "classDAboutDialogPrivate.html#aa9525efe96ac881b4a8dd25ecad69cea", null ],
     [ "_q_onLinkActivated", "classDAboutDialogPrivate.html#a9efe387341b2cf0c2edd5ada5399e877", null ],
     [ "init", "classDAboutDialogPrivate.html#a5196aa06614198155f8dfa9076ea56e0", null ],
     [ "loadDistributionInfo", "classDAboutDialogPrivate.html#a714ed2da29e8bb9332a4efd8acabbb92", null ],
@@ -11,10 +12,12 @@ var classDAboutDialogPrivate =
     [ "acknowledgementLink", "classDAboutDialogPrivate.html#aa32735dfe6a7af82c0f6f17b0561d3c6", null ],
     [ "companyLogoLabel", "classDAboutDialogPrivate.html#a4cc7db01db7fd4b2025e8cbfab85877d", null ],
     [ "descriptionLabel", "classDAboutDialogPrivate.html#ad2da44dca700dc3b56667ccd82e765de", null ],
+    [ "featureLabel", "classDAboutDialogPrivate.html#a2b5947501bd9acc514cb82ad0fd138db", null ],
     [ "licenseLabel", "classDAboutDialogPrivate.html#a70e8ee5b6ec97080fc1ef342a5489a6a", null ],
     [ "logoLabel", "classDAboutDialogPrivate.html#a610931fbdac80018deef77367e0c331c", null ],
     [ "logoPath", "classDAboutDialogPrivate.html#a1bc678aaf2228b7d3010d28e7d65519b", null ],
     [ "productNameLabel", "classDAboutDialogPrivate.html#a3625f7efe90731f57a944994441833a8", null ],
+    [ "redPointLabel", "classDAboutDialogPrivate.html#a6b22f610762989e094a976e84332ebee", null ],
     [ "versionLabel", "classDAboutDialogPrivate.html#a51d56e55c7f5c849a56bac1187c42087", null ],
     [ "websiteLabel", "classDAboutDialogPrivate.html#a0881040e1365a74e6c134a29fce80c6b", null ],
     [ "websiteLink", "classDAboutDialogPrivate.html#afd7750cf4c1a77c22158f50b37086b94", null ],

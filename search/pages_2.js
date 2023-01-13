@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['util_26ndash_3bdtkgui工具组件_36140',['util&amp;ndash;dtkgui工具组件',['../util.html',1,'']]]
+  ['global_26ndash_3bdtk全局工具组件_41568',['global&amp;ndash;dtk全局工具组件',['../global.html',1,'']]]
 ];

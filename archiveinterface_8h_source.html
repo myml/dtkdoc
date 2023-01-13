@@ -1,0 +1,387 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: dtkio/src/dtkcompressor/3rdparty/interface/archiveinterface/archiveinterface.h 源文件</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="https://github.com/linuxdeepin/dtkdoc" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('archiveinterface_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">archiveinterface.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Copyright (c) 2007 Henrique Pinto &lt;henrique.pinto@kdemail.net&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright (c) 2008-2009 Harald Hvaal &lt;haraldhv@stud.ntnu.no&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Copyright (c) 2009-2012 Raphael Kubo da Costa &lt;rakuco@FreeBSD.org&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * Copyright (c) 2016 Vladyslav Batyrenko &lt;mvlabat@gmail.com&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * Redistribution and use in source and binary forms, with or without</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * modification, are permitted provided that the following conditions</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * are met:</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * 1. Redistributions of source code must retain the above copyright</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> *    notice, this list of conditions and the following disclaimer.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> * 2. Redistributions in binary form must reproduce the above copyright</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> *    notice, this list of conditions and the following disclaimer in the</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> *    documentation and/or other materials provided with the distribution.</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS&#39;&#39; AND ANY EXPRESS OR</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> * INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES ( INCLUDING, BUT</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> * NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> * DATA, OR PROFITS; OR BUSINESS INTERRUPTION ) HOWEVER CAUSED AND ON ANY</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> * THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> * ( INCLUDING NEGLIGENCE OR OTHERWISE ) ARISING IN ANY WAY OUT OF THE USE OF</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#ifndef ARCHIVEINTERFACE_H</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#define ARCHIVEINTERFACE_H</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;commonstruct.h&quot;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;kpluginmetadata.h&quot;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;common.h&quot;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &lt;QObject&gt;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &lt;QString&gt;</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &lt;QMimeType&gt;</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#include &lt;QFileDevice&gt;</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#include &lt;QSet&gt;</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">class </span>Query;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">// 只读（查看和解压等）</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classReadOnlyArchiveInterface.html">   45</a></span>&#160;<span class="keyword">class </span><a class="code" href="classReadOnlyArchiveInterface.html">ReadOnlyArchiveInterface</a> : <span class="keyword">public</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">Q_OBJECT</a></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classReadOnlyArchiveInterface.html">ReadOnlyArchiveInterface</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a>, <span class="keyword">const</span> QVariantList &amp;args);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    ~<a class="code" href="classReadOnlyArchiveInterface.html">ReadOnlyArchiveInterface</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="comment">// 插件类型</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">enum</span> Plugintype {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        PT_UnKnown,</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        PT_Cliinterface,</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        PT_LibArchive,</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        PT_Libzip,</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        PT_Libminizip,</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        PT_Libpigz</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    };</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">//    // 工作类型</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">//    enum WorkType {</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">//        WT_List,</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">//        WT_Extract,</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">//        WT_Add,</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">//        WT_Delete,</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">//        WT_Move,</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">//        WT_Copy,</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">//        WT_Comment,</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">//        WT_Test</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">//    };</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="classReadOnlyArchiveInterface.html#a873da184844ffc4112e024c89a8d214a">   79</a></span>&#160;    <span class="keyword">virtual</span> PluginFinishType <a class="code" href="classReadOnlyArchiveInterface.html#a873da184844ffc4112e024c89a8d214a">list</a>() = 0;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="classReadOnlyArchiveInterface.html#aa3c05dc7ef74efddc2c58245a9d8ded3">   85</a></span>&#160;    <span class="keyword">virtual</span> PluginFinishType <a class="code" href="classReadOnlyArchiveInterface.html#aa3c05dc7ef74efddc2c58245a9d8ded3">testArchive</a>() = 0;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="classReadOnlyArchiveInterface.html#a08e59beb516c2e1fe1a0dd5874bfe58c">   93</a></span>&#160;    <span class="keyword">virtual</span> PluginFinishType <a class="code" href="classReadOnlyArchiveInterface.html#a08e59beb516c2e1fe1a0dd5874bfe58c">extractFiles</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qlist.html">QList&lt;FileEntry&gt;</a> &amp;files, <span class="keyword">const</span> <a class="code" href="structExtractionOptions.html">ExtractionOptions</a> &amp;options) = 0;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classReadOnlyArchiveInterface.html#a1f7826b3f081795afc8e381a552e2f02">waitForFinished</a>();</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classReadOnlyArchiveInterface.html#a7e9a22bbf118dc928ca86a4dcb041001">setPassword</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;strPassword);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> <a class="code" href="classReadOnlyArchiveInterface.html#aa7fd45b39c7583d3296048bcbe692975">getPassword</a>();</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    ErrorType <a class="code" href="classReadOnlyArchiveInterface.html#a8fd5d18cf575c632780afd63183c4844">errorType</a>();</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="classReadOnlyArchiveInterface.html#a1854dc9ac2e9f311df49ddc76376a3a2">  122</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classReadOnlyArchiveInterface.html#a1854dc9ac2e9f311df49ddc76376a3a2">pauseOperation</a>() = 0;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
+<div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="classReadOnlyArchiveInterface.html#ab45b5da3cac8bbcb747774757612cd51">  127</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classReadOnlyArchiveInterface.html#ab45b5da3cac8bbcb747774757612cd51">continueOperation</a>() = 0;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classReadOnlyArchiveInterface.html#aa874e38172fd4987277052077c744820">doKill</a>();</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classReadOnlyArchiveInterface.html#a5f5d2a408c9cf6f2e3cb0bd6f0af2851">status</a>();</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <span class="keywordtype">bool</span> isUserCancel() {<span class="keywordflow">return</span> m_bCancel;}</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160; </div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classReadOnlyArchiveInterface.html#ab0254c92375e59468d25bd254f1245cd">setWaitForFinishedSignal</a>(<span class="keywordtype">bool</span> value);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160; </div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qfiledevice.html#Permission-enum">QFileDevice::Permissions</a> <a class="code" href="classReadOnlyArchiveInterface.html#a1a8d229a9efbad722d4f43e75edeebef">getPermissions</a>(<span class="keyword">const</span> mode_t &amp;perm);</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160; </div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classReadOnlyArchiveInterface.html#ae3f1064131c8922c651036d51b1cdf63">handleEntry</a>(<span class="keyword">const</span> <a class="code" href="structFileEntry.html">FileEntry</a> &amp;entry);</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160; </div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classReadOnlyArchiveInterface.html#a7bb981cb239c4c7057bfbbf0b425ef87">isInsufficientDiskSpace</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> diskPath, qint64 standard = 10 * 1024 * 1024);</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160; </div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SIGNALS">Q_SIGNALS</a>:</div>
+<div class="line"><a name="l00176"></a><span class="lineno"><a class="line" href="classReadOnlyArchiveInterface.html#a73f76acfde5179fd4fec29a5835e9700">  176</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classReadOnlyArchiveInterface.html#a73f76acfde5179fd4fec29a5835e9700">signalFinished</a>(PluginFinishType eType);</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="keywordtype">void</span> error(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;message = <span class="stringliteral">&quot;&quot;</span>, <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;details = <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160; </div>
+<div class="line"><a name="l00183"></a><span class="lineno"><a class="line" href="classReadOnlyArchiveInterface.html#a06681456655fd7670c10906008b52227">  183</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classReadOnlyArchiveInterface.html#a06681456655fd7670c10906008b52227">signalprogress</a>(<span class="keywordtype">double</span> dPercentage);</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160; </div>
+<div class="line"><a name="l00189"></a><span class="lineno"><a class="line" href="classReadOnlyArchiveInterface.html#a09b61c02458a2b4b8da69fec1938c56d">  189</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classReadOnlyArchiveInterface.html#a09b61c02458a2b4b8da69fec1938c56d">signalCurFileName</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;filename);</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160; </div>
+<div class="line"><a name="l00195"></a><span class="lineno"><a class="line" href="classReadOnlyArchiveInterface.html#a5e353419dc57169749f2c02a435efc00">  195</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classReadOnlyArchiveInterface.html#a5e353419dc57169749f2c02a435efc00">signalFileWriteErrorName</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;filename);</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160; </div>
+<div class="line"><a name="l00200"></a><span class="lineno"><a class="line" href="classReadOnlyArchiveInterface.html#ad02c0b5a63f2d9fb713d3bcbb045939d">  200</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classReadOnlyArchiveInterface.html#ad02c0b5a63f2d9fb713d3bcbb045939d">signalCancel</a>();</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160; </div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    Plugintype m_ePlugintype = PT_UnKnown;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160; </div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<span class="comment">//    bool getHandleCurEntry() const;</span></div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160; </div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <span class="keywordtype">bool</span> m_bWaitForFinished = <span class="keyword">false</span>;    <span class="comment">// 等待结束 true:CLI false:调接口</span></div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    uint m_numberOfEntries; <span class="comment">//原有的归档数量</span></div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <a class="code" href="classKPluginMetaData.html">KPluginMetaData</a> m_metaData;</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> m_strArchiveName; <span class="comment">//1、压缩：最终的压缩包名 2、解压：加载的压缩包名</span></div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    <a class="code" href="structCustomMimeType.html">CustomMimeType</a> m_mimetype;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    <a class="code" href="classCommon.html">Common</a> *m_common = <span class="keyword">nullptr</span>; <span class="comment">// 通用工具类</span></div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <span class="keywordtype">bool</span> m_bOverwriteAll = <span class="keyword">false</span>;        <span class="comment">//是否全部覆盖</span></div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    <span class="keywordtype">bool</span> m_bSkipAll = <span class="keyword">false</span>;             <span class="comment">// 是否全部跳过</span></div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;<span class="comment">//    bool m_bHandleCurEntry = false; //false:提取使用选中文件及子文件 true:提取使用选中文件</span></div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    WorkType m_workStatus = WT_List;  <span class="comment">// 记录当前工作状态（add、list、extract...）</span></div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160; </div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    ErrorType m_eErrorType = ET_NoError;    <span class="comment">// 错误类型</span></div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> m_strPassword;          <span class="comment">// 密码</span></div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160; </div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <span class="keywordtype">bool</span> m_bCancel = <span class="keyword">false</span>;     <span class="comment">// 是否取消</span></div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    <span class="keywordtype">bool</span> m_bPause = <span class="keyword">false</span>;      <span class="comment">// 是否暂停</span></div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160; </div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qset.html">QSet&lt;QString&gt;</a> m_setHasRootDirs;  <span class="comment">// 存储list时已经处理过的文件夹名称</span></div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qset.html">QSet&lt;QString&gt;</a> m_setHasHandlesDirs;  <span class="comment">// 存储list时已经处理过的文件夹名称</span></div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;};</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160; </div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;<span class="comment">// 可读可写（可用来压缩、查看、解压等）</span></div>
+<div class="line"><a name="l00230"></a><span class="lineno"><a class="line" href="classReadWriteArchiveInterface.html">  230</a></span>&#160;<span class="keyword">class </span><a class="code" href="classReadWriteArchiveInterface.html">ReadWriteArchiveInterface</a> : <span class="keyword">public</span> <a class="code" href="classReadOnlyArchiveInterface.html">ReadOnlyArchiveInterface</a></div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;{</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">Q_OBJECT</a></div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160; </div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classReadWriteArchiveInterface.html">ReadWriteArchiveInterface</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a>, <span class="keyword">const</span> QVariantList &amp;args);</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    ~<a class="code" href="classReadWriteArchiveInterface.html">ReadWriteArchiveInterface</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160; </div>
+<div class="line"><a name="l00244"></a><span class="lineno"><a class="line" href="classReadWriteArchiveInterface.html#a13ba5d77d631bde463c412058efeaa46">  244</a></span>&#160;    <span class="keyword">virtual</span> PluginFinishType <a class="code" href="classReadWriteArchiveInterface.html#a13ba5d77d631bde463c412058efeaa46">addFiles</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qlist.html">QList&lt;FileEntry&gt;</a> &amp;files, <span class="keyword">const</span> <a class="code" href="structCompressOptions.html">CompressOptions</a> &amp;options) = 0;</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160; </div>
+<div class="line"><a name="l00252"></a><span class="lineno"><a class="line" href="classReadWriteArchiveInterface.html#ace52be15b86b70f5302388567d662d8c">  252</a></span>&#160;    <span class="keyword">virtual</span> PluginFinishType <a class="code" href="classReadWriteArchiveInterface.html#ace52be15b86b70f5302388567d662d8c">moveFiles</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qlist.html">QList&lt;FileEntry&gt;</a> &amp;files, <span class="keyword">const</span> <a class="code" href="structCompressOptions.html">CompressOptions</a> &amp;options) = 0;</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160; </div>
+<div class="line"><a name="l00260"></a><span class="lineno"><a class="line" href="classReadWriteArchiveInterface.html#ad67e19d046dc564269afcf8c5d892f6f">  260</a></span>&#160;    <span class="keyword">virtual</span> PluginFinishType <a class="code" href="classReadWriteArchiveInterface.html#ad67e19d046dc564269afcf8c5d892f6f">copyFiles</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qlist.html">QList&lt;FileEntry&gt;</a> &amp;files, <span class="keyword">const</span> <a class="code" href="structCompressOptions.html">CompressOptions</a> &amp;options) = 0;</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160; </div>
+<div class="line"><a name="l00267"></a><span class="lineno"><a class="line" href="classReadWriteArchiveInterface.html#a5fb6467d52d90fabbc1c17d7df1f6978">  267</a></span>&#160;    <span class="keyword">virtual</span> PluginFinishType <a class="code" href="classReadWriteArchiveInterface.html#a5fb6467d52d90fabbc1c17d7df1f6978">deleteFiles</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qlist.html">QList&lt;FileEntry&gt;</a> &amp;files) = 0;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160; </div>
+<div class="line"><a name="l00274"></a><span class="lineno"><a class="line" href="classReadWriteArchiveInterface.html#a49dc1515509d7723a20f5478221a382e">  274</a></span>&#160;    <span class="keyword">virtual</span> PluginFinishType <a class="code" href="classReadWriteArchiveInterface.html#a49dc1515509d7723a20f5478221a382e">renameFiles</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qlist.html">QList&lt;FileEntry&gt;</a> &amp;files) = 0;</div>
+<div class="line"><a name="l00280"></a><span class="lineno"><a class="line" href="classReadWriteArchiveInterface.html#a1c073d96a0079ed4fda8cb48a461df69">  280</a></span>&#160;    <span class="keyword">virtual</span> PluginFinishType <a class="code" href="classReadWriteArchiveInterface.html#a1c073d96a0079ed4fda8cb48a461df69">addComment</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;comment) = 0;</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160; </div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> <a class="code" href="classReadWriteArchiveInterface.html#a17b3f001e4bb2e0f9c02a66136576922">getArchiveName</a>();</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160; </div>
+<div class="line"><a name="l00292"></a><span class="lineno"><a class="line" href="classReadWriteArchiveInterface.html#af58e8cc304542df17fcdb14d138b4d8c">  292</a></span>&#160;    <span class="keyword">virtual</span> PluginFinishType <a class="code" href="classReadWriteArchiveInterface.html#af58e8cc304542df17fcdb14d138b4d8c">updateArchiveData</a>(<span class="keyword">const</span> <a class="code" href="structUpdateOptions.html">UpdateOptions</a> &amp;options) = 0;</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;};</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160; </div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// ARCHIVEINTERFACE_H</span></div>
+<div class="ttc" id="aclassCommon_html"><div class="ttname"><a href="classCommon.html">Common</a></div><div class="ttdef"><b>Definition:</b> common.h:12</div></div>
+<div class="ttc" id="aclassKPluginMetaData_html"><div class="ttname"><a href="classKPluginMetaData.html">KPluginMetaData</a></div><div class="ttdef"><b>Definition:</b> kpluginmetadata.h:93</div></div>
+<div class="ttc" id="aclassReadOnlyArchiveInterface_html"><div class="ttname"><a href="classReadOnlyArchiveInterface.html">ReadOnlyArchiveInterface</a></div><div class="ttdef"><b>Definition:</b> archiveinterface.h:46</div></div>
+<div class="ttc" id="aclassReadOnlyArchiveInterface_html_a06681456655fd7670c10906008b52227"><div class="ttname"><a href="classReadOnlyArchiveInterface.html#a06681456655fd7670c10906008b52227">ReadOnlyArchiveInterface::signalprogress</a></div><div class="ttdeci">void signalprogress(double dPercentage)</div><div class="ttdoc">signalprogress 进度信号</div></div>
+<div class="ttc" id="aclassReadOnlyArchiveInterface_html_a08e59beb516c2e1fe1a0dd5874bfe58c"><div class="ttname"><a href="classReadOnlyArchiveInterface.html#a08e59beb516c2e1fe1a0dd5874bfe58c">ReadOnlyArchiveInterface::extractFiles</a></div><div class="ttdeci">virtual PluginFinishType extractFiles(const QList&lt; FileEntry &gt; &amp;files, const ExtractionOptions &amp;options)=0</div><div class="ttdoc">extractFiles 解压</div></div>
+<div class="ttc" id="aclassReadOnlyArchiveInterface_html_a09b61c02458a2b4b8da69fec1938c56d"><div class="ttname"><a href="classReadOnlyArchiveInterface.html#a09b61c02458a2b4b8da69fec1938c56d">ReadOnlyArchiveInterface::signalCurFileName</a></div><div class="ttdeci">void signalCurFileName(const QString &amp;filename)</div><div class="ttdoc">signalCurFileName 发送当前正在操作的文件名</div></div>
+<div class="ttc" id="aclassReadOnlyArchiveInterface_html_a1854dc9ac2e9f311df49ddc76376a3a2"><div class="ttname"><a href="classReadOnlyArchiveInterface.html#a1854dc9ac2e9f311df49ddc76376a3a2">ReadOnlyArchiveInterface::pauseOperation</a></div><div class="ttdeci">virtual void pauseOperation()=0</div><div class="ttdoc">pauseOperation 暂停操作</div></div>
+<div class="ttc" id="aclassReadOnlyArchiveInterface_html_a1a8d229a9efbad722d4f43e75edeebef"><div class="ttname"><a href="classReadOnlyArchiveInterface.html#a1a8d229a9efbad722d4f43e75edeebef">ReadOnlyArchiveInterface::getPermissions</a></div><div class="ttdeci">QFileDevice::Permissions getPermissions(const mode_t &amp;perm)</div><div class="ttdoc">getPermissions 权限转换</div><div class="ttdef"><b>Definition:</b> archiveinterface.cpp:93</div></div>
+<div class="ttc" id="aclassReadOnlyArchiveInterface_html_a1f7826b3f081795afc8e381a552e2f02"><div class="ttname"><a href="classReadOnlyArchiveInterface.html#a1f7826b3f081795afc8e381a552e2f02">ReadOnlyArchiveInterface::waitForFinished</a></div><div class="ttdeci">bool waitForFinished()</div><div class="ttdoc">waitForFinished 判断是否通过线程调用</div><div class="ttdef"><b>Definition:</b> archiveinterface.cpp:57</div></div>
+<div class="ttc" id="aclassReadOnlyArchiveInterface_html_a5e353419dc57169749f2c02a435efc00"><div class="ttname"><a href="classReadOnlyArchiveInterface.html#a5e353419dc57169749f2c02a435efc00">ReadOnlyArchiveInterface::signalFileWriteErrorName</a></div><div class="ttdeci">void signalFileWriteErrorName(const QString &amp;filename)</div><div class="ttdoc">signalFileWriteErrorName 发送创建失败的文件名</div></div>
+<div class="ttc" id="aclassReadOnlyArchiveInterface_html_a5f5d2a408c9cf6f2e3cb0bd6f0af2851"><div class="ttname"><a href="classReadOnlyArchiveInterface.html#a5f5d2a408c9cf6f2e3cb0bd6f0af2851">ReadOnlyArchiveInterface::status</a></div><div class="ttdeci">bool status()</div><div class="ttdoc">status 状态</div><div class="ttdef"><b>Definition:</b> archiveinterface.cpp:83</div></div>
+<div class="ttc" id="aclassReadOnlyArchiveInterface_html_a73f76acfde5179fd4fec29a5835e9700"><div class="ttname"><a href="classReadOnlyArchiveInterface.html#a73f76acfde5179fd4fec29a5835e9700">ReadOnlyArchiveInterface::signalFinished</a></div><div class="ttdeci">void signalFinished(PluginFinishType eType)</div><div class="ttdoc">signalFinished 结束信号</div></div>
+<div class="ttc" id="aclassReadOnlyArchiveInterface_html_a7bb981cb239c4c7057bfbbf0b425ef87"><div class="ttname"><a href="classReadOnlyArchiveInterface.html#a7bb981cb239c4c7057bfbbf0b425ef87">ReadOnlyArchiveInterface::isInsufficientDiskSpace</a></div><div class="ttdeci">bool isInsufficientDiskSpace(QString diskPath, qint64 standard=10 *1024 *1024)</div><div class="ttdoc">isInsufficientDiskSpace 判断磁盘空间是否不足</div><div class="ttdef"><b>Definition:</b> archiveinterface.cpp:189</div></div>
+<div class="ttc" id="aclassReadOnlyArchiveInterface_html_a7e9a22bbf118dc928ca86a4dcb041001"><div class="ttname"><a href="classReadOnlyArchiveInterface.html#a7e9a22bbf118dc928ca86a4dcb041001">ReadOnlyArchiveInterface::setPassword</a></div><div class="ttdeci">void setPassword(const QString &amp;strPassword)</div><div class="ttdoc">setPassword 设置解压密码</div><div class="ttdef"><b>Definition:</b> archiveinterface.cpp:62</div></div>
+<div class="ttc" id="aclassReadOnlyArchiveInterface_html_a873da184844ffc4112e024c89a8d214a"><div class="ttname"><a href="classReadOnlyArchiveInterface.html#a873da184844ffc4112e024c89a8d214a">ReadOnlyArchiveInterface::list</a></div><div class="ttdeci">virtual PluginFinishType list()=0</div><div class="ttdoc">list 加载压缩包</div></div>
+<div class="ttc" id="aclassReadOnlyArchiveInterface_html_a8fd5d18cf575c632780afd63183c4844"><div class="ttname"><a href="classReadOnlyArchiveInterface.html#a8fd5d18cf575c632780afd63183c4844">ReadOnlyArchiveInterface::errorType</a></div><div class="ttdeci">ErrorType errorType()</div><div class="ttdoc">errorType 获取错误类型</div><div class="ttdef"><b>Definition:</b> archiveinterface.cpp:73</div></div>
+<div class="ttc" id="aclassReadOnlyArchiveInterface_html_aa3c05dc7ef74efddc2c58245a9d8ded3"><div class="ttname"><a href="classReadOnlyArchiveInterface.html#aa3c05dc7ef74efddc2c58245a9d8ded3">ReadOnlyArchiveInterface::testArchive</a></div><div class="ttdeci">virtual PluginFinishType testArchive()=0</div><div class="ttdoc">testArchive 测试压缩包</div></div>
+<div class="ttc" id="aclassReadOnlyArchiveInterface_html_aa7fd45b39c7583d3296048bcbe692975"><div class="ttname"><a href="classReadOnlyArchiveInterface.html#aa7fd45b39c7583d3296048bcbe692975">ReadOnlyArchiveInterface::getPassword</a></div><div class="ttdeci">QString getPassword()</div><div class="ttdoc">getPassword 获取当前文件密码</div><div class="ttdef"><b>Definition:</b> archiveinterface.cpp:68</div></div>
+<div class="ttc" id="aclassReadOnlyArchiveInterface_html_aa874e38172fd4987277052077c744820"><div class="ttname"><a href="classReadOnlyArchiveInterface.html#aa874e38172fd4987277052077c744820">ReadOnlyArchiveInterface::doKill</a></div><div class="ttdeci">virtual bool doKill()</div><div class="ttdoc">doKill 强杀操作</div><div class="ttdef"><b>Definition:</b> archiveinterface.cpp:78</div></div>
+<div class="ttc" id="aclassReadOnlyArchiveInterface_html_ab0254c92375e59468d25bd254f1245cd"><div class="ttname"><a href="classReadOnlyArchiveInterface.html#ab0254c92375e59468d25bd254f1245cd">ReadOnlyArchiveInterface::setWaitForFinishedSignal</a></div><div class="ttdeci">void setWaitForFinishedSignal(bool value)</div><div class="ttdef"><b>Definition:</b> archiveinterface.cpp:88</div></div>
+<div class="ttc" id="aclassReadOnlyArchiveInterface_html_ab45b5da3cac8bbcb747774757612cd51"><div class="ttname"><a href="classReadOnlyArchiveInterface.html#ab45b5da3cac8bbcb747774757612cd51">ReadOnlyArchiveInterface::continueOperation</a></div><div class="ttdeci">virtual void continueOperation()=0</div><div class="ttdoc">continueOperation 继续操作</div></div>
+<div class="ttc" id="aclassReadOnlyArchiveInterface_html_ad02c0b5a63f2d9fb713d3bcbb045939d"><div class="ttname"><a href="classReadOnlyArchiveInterface.html#ad02c0b5a63f2d9fb713d3bcbb045939d">ReadOnlyArchiveInterface::signalCancel</a></div><div class="ttdeci">void signalCancel()</div><div class="ttdoc">signalCancel 取消信号</div></div>
+<div class="ttc" id="aclassReadOnlyArchiveInterface_html_ae3f1064131c8922c651036d51b1cdf63"><div class="ttname"><a href="classReadOnlyArchiveInterface.html#ae3f1064131c8922c651036d51b1cdf63">ReadOnlyArchiveInterface::handleEntry</a></div><div class="ttdeci">void handleEntry(const FileEntry &amp;entry)</div><div class="ttdoc">handleEntry 处理文件数据（主要针对加载时未列出文件夹的情况）</div><div class="ttdef"><b>Definition:</b> archiveinterface.cpp:137</div></div>
+<div class="ttc" id="aclassReadWriteArchiveInterface_html"><div class="ttname"><a href="classReadWriteArchiveInterface.html">ReadWriteArchiveInterface</a></div><div class="ttdef"><b>Definition:</b> archiveinterface.h:231</div></div>
+<div class="ttc" id="aclassReadWriteArchiveInterface_html_a13ba5d77d631bde463c412058efeaa46"><div class="ttname"><a href="classReadWriteArchiveInterface.html#a13ba5d77d631bde463c412058efeaa46">ReadWriteArchiveInterface::addFiles</a></div><div class="ttdeci">virtual PluginFinishType addFiles(const QList&lt; FileEntry &gt; &amp;files, const CompressOptions &amp;options)=0</div><div class="ttdoc">addFiles 压缩文件</div></div>
+<div class="ttc" id="aclassReadWriteArchiveInterface_html_a17b3f001e4bb2e0f9c02a66136576922"><div class="ttname"><a href="classReadWriteArchiveInterface.html#a17b3f001e4bb2e0f9c02a66136576922">ReadWriteArchiveInterface::getArchiveName</a></div><div class="ttdeci">QString getArchiveName()</div><div class="ttdoc">getArchiveName 获取最终的压缩包名，提供给压缩取消删除使用</div><div class="ttdef"><b>Definition:</b> archiveinterface.cpp:227</div></div>
+<div class="ttc" id="aclassReadWriteArchiveInterface_html_a1c073d96a0079ed4fda8cb48a461df69"><div class="ttname"><a href="classReadWriteArchiveInterface.html#a1c073d96a0079ed4fda8cb48a461df69">ReadWriteArchiveInterface::addComment</a></div><div class="ttdeci">virtual PluginFinishType addComment(const QString &amp;comment)=0</div><div class="ttdoc">addComment 添加注释</div></div>
+<div class="ttc" id="aclassReadWriteArchiveInterface_html_a49dc1515509d7723a20f5478221a382e"><div class="ttname"><a href="classReadWriteArchiveInterface.html#a49dc1515509d7723a20f5478221a382e">ReadWriteArchiveInterface::renameFiles</a></div><div class="ttdeci">virtual PluginFinishType renameFiles(const QList&lt; FileEntry &gt; &amp;files)=0</div><div class="ttdoc">renameFiles 重命名压缩文件</div></div>
+<div class="ttc" id="aclassReadWriteArchiveInterface_html_a5fb6467d52d90fabbc1c17d7df1f6978"><div class="ttname"><a href="classReadWriteArchiveInterface.html#a5fb6467d52d90fabbc1c17d7df1f6978">ReadWriteArchiveInterface::deleteFiles</a></div><div class="ttdeci">virtual PluginFinishType deleteFiles(const QList&lt; FileEntry &gt; &amp;files)=0</div><div class="ttdoc">addFiles 删除压缩文件</div></div>
+<div class="ttc" id="aclassReadWriteArchiveInterface_html_ace52be15b86b70f5302388567d662d8c"><div class="ttname"><a href="classReadWriteArchiveInterface.html#ace52be15b86b70f5302388567d662d8c">ReadWriteArchiveInterface::moveFiles</a></div><div class="ttdeci">virtual PluginFinishType moveFiles(const QList&lt; FileEntry &gt; &amp;files, const CompressOptions &amp;options)=0</div><div class="ttdoc">addFiles 移动压缩文件</div></div>
+<div class="ttc" id="aclassReadWriteArchiveInterface_html_ad67e19d046dc564269afcf8c5d892f6f"><div class="ttname"><a href="classReadWriteArchiveInterface.html#ad67e19d046dc564269afcf8c5d892f6f">ReadWriteArchiveInterface::copyFiles</a></div><div class="ttdeci">virtual PluginFinishType copyFiles(const QList&lt; FileEntry &gt; &amp;files, const CompressOptions &amp;options)=0</div><div class="ttdoc">addFiles 拷贝压缩文件</div></div>
+<div class="ttc" id="aclassReadWriteArchiveInterface_html_af58e8cc304542df17fcdb14d138b4d8c"><div class="ttname"><a href="classReadWriteArchiveInterface.html#af58e8cc304542df17fcdb14d138b4d8c">ReadWriteArchiveInterface::updateArchiveData</a></div><div class="ttdeci">virtual PluginFinishType updateArchiveData(const UpdateOptions &amp;options)=0</div><div class="ttdoc">updateArchiveData 更新压缩包数据</div></div>
+<div class="ttc" id="aqfiledevice_html_Permission-enum"><div class="ttname"><a href="http://doc.qt.io/qt-5/qfiledevice.html#Permission-enum">QFileDevice::Permissions</a></div><div class="ttdeci">typedef Permissions</div></div>
+<div class="ttc" id="aqlist_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qlist.html">QList&lt; FileEntry &gt;</a></div></div>
+<div class="ttc" id="aqobject_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html">QObject</a></div></div>
+<div class="ttc" id="aqobject_html_Q_OBJECT"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">QObject::Q_OBJECT</a></div><div class="ttdeci">Q_OBJECTQ_OBJECT</div></div>
+<div class="ttc" id="aqobject_html_Q_SIGNALS"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_SIGNALS">QObject::Q_SIGNALS</a></div><div class="ttdeci">Q_SIGNALSQ_SIGNALS</div></div>
+<div class="ttc" id="aqobject_html_parent"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#parent">QObject::parent</a></div><div class="ttdeci">QObject * parent() const const</div></div>
+<div class="ttc" id="aqset_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qset.html">QSet&lt; QString &gt;</a></div></div>
+<div class="ttc" id="aqstring_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstring.html">QString</a></div></div>
+<div class="ttc" id="astructCompressOptions_html"><div class="ttname"><a href="structCompressOptions.html">CompressOptions</a></div><div class="ttdef"><b>Definition:</b> commonstruct.h:140</div></div>
+<div class="ttc" id="astructCustomMimeType_html"><div class="ttname"><a href="structCustomMimeType.html">CustomMimeType</a></div><div class="ttdef"><b>Definition:</b> commonstruct.h:228</div></div>
+<div class="ttc" id="astructExtractionOptions_html"><div class="ttname"><a href="structExtractionOptions.html">ExtractionOptions</a></div><div class="ttdef"><b>Definition:</b> commonstruct.h:169</div></div>
+<div class="ttc" id="astructFileEntry_html"><div class="ttname"><a href="structFileEntry.html">FileEntry</a></div><div class="ttdef"><b>Definition:</b> commonstruct.h:71</div></div>
+<div class="ttc" id="astructUpdateOptions_html"><div class="ttname"><a href="structUpdateOptions.html">UpdateOptions</a></div><div class="ttdef"><b>Definition:</b> commonstruct.h:195</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_0990604d0eb8363f4260fee8d79bba7c.html">dtkio</a></li><li class="navelem"><a class="el" href="dir_f218eea51e6ba76871d0d7e538e54c2d.html">src</a></li><li class="navelem"><a class="el" href="dir_64e7b8374d0b59199acbe839986a12d4.html">dtkcompressor</a></li><li class="navelem"><a class="el" href="dir_d1ee9709c8a9c8a6288a9650a6bf8ddf.html">3rdparty</a></li><li class="navelem"><a class="el" href="dir_88f6681accce92f79d1508b1d9a9c26a.html">interface</a></li><li class="navelem"><a class="el" href="dir_c64791eb41a3f1ff7f08f56a94bda1de.html">archiveinterface</a></li><li class="navelem"><b>archiveinterface.h</b></li>
+    <li class="footer">文档生成时间:2023-01-13-07:39  +00</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

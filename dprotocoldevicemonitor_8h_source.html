@@ -1,0 +1,234 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: dtkio/include/dtkmount/dprotocoldevicemonitor.h 源文件</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="https://github.com/linuxdeepin/dtkdoc" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('dprotocoldevicemonitor_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">dprotocoldevicemonitor.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="dprotocoldevicemonitor_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-FileCopyrightText: 2022 UnionTech Software Technology Co., Ltd.</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// SPDX-License-Identifier: LGPL-3.0-or-later</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef DPROTOCOLDEVICEMONITOR_H</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define DPROTOCOLDEVICEMONITOR_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;DtkMountGlobal&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;QObject&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;DMOUNT_BEGIN_NAMESPACE</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">class </span><a class="code" href="classDProtocolDeviceMonitor.html">DProtocolDeviceMonitor</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span>DDeviceManager {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<a class="code" href="classDProtocolDeviceMonitor.html">DProtocolDeviceMonitor</a> *globalProtocolDeviceMonitor();</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;}   <span class="comment">// namespace DDeviceManager</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">class </span><a class="code" href="classDProtocolDeviceMonitorPrivate.html">DProtocolDeviceMonitorPrivate</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classDProtocolDeviceMonitor.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDProtocolDeviceMonitor.html">DProtocolDeviceMonitor</a> : <span class="keyword">public</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">Q_OBJECT</a></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    Q_DECLARE_PRIVATE(<a class="code" href="classDProtocolDeviceMonitor.html">DProtocolDeviceMonitor</a>)</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">friend</span> <a class="code" href="classDProtocolDeviceMonitor.html">DProtocolDeviceMonitor</a> *DDeviceManager::globalProtocolDeviceMonitor();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="classDProtocolDeviceMonitor.html#af75f75a9fb97a723e0d52963d258a53c">~DProtocolDeviceMonitor</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDProtocolDeviceMonitor.html#a4b14cf742b4579ead501c715ff944580">setWatchChanges</a>(<span class="keywordtype">bool</span> <a class="code" href="classDProtocolDeviceMonitor.html#a0b95f2cba688c23b975148f4071deef9">watchChanges</a>);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classDProtocolDeviceMonitor.html#a0b95f2cba688c23b975148f4071deef9">watchChanges</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> <a class="code" href="classDProtocolDeviceMonitor.html#a91512511b0a87415e8b86caa9b37a7ca">devices</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SIGNALS">Q_SIGNALS</a>:</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classDProtocolDeviceMonitor.html#a870bde49fe3da2d844d691ebe640a067">   34</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDProtocolDeviceMonitor.html#a870bde49fe3da2d844d691ebe640a067">deviceAdded</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;devUrl);</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classDProtocolDeviceMonitor.html#aaa27235cbf9164f578551a34e9db4682">   35</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDProtocolDeviceMonitor.html#aaa27235cbf9164f578551a34e9db4682">deviceRemoved</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;devUrl);</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classDProtocolDeviceMonitor.html#adc0500c0920ea440329cba9e6a4c2835">   36</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDProtocolDeviceMonitor.html#adc0500c0920ea440329cba9e6a4c2835">mountAdded</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;devUrl, <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;mountPoint);</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classDProtocolDeviceMonitor.html#a4f6c4f063fea053a46a3f2bb04c9667c">   37</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDProtocolDeviceMonitor.html#a4f6c4f063fea053a46a3f2bb04c9667c">mountRemoved</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;devUrl);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDProtocolDeviceMonitor.html">DProtocolDeviceMonitor</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a> = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qscopedpointer.html">QScopedPointer&lt;DProtocolDeviceMonitorPrivate&gt;</a> d_ptr;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;};</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;DMOUNT_END_NAMESPACE</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#endif   </span><span class="comment">// DPROTOCOLDEVICEMONITOR_H</span></div>
+<div class="ttc" id="aclassDProtocolDeviceMonitorPrivate_html"><div class="ttname"><a href="classDProtocolDeviceMonitorPrivate.html">DProtocolDeviceMonitorPrivate</a></div><div class="ttdef"><b>Definition:</b> dprotocoldevicemonitor_p.h:19</div></div>
+<div class="ttc" id="aclassDProtocolDeviceMonitor_html"><div class="ttname"><a href="classDProtocolDeviceMonitor.html">DProtocolDeviceMonitor</a></div><div class="ttdef"><b>Definition:</b> dprotocoldevicemonitor.h:21</div></div>
+<div class="ttc" id="aclassDProtocolDeviceMonitor_html_a0b95f2cba688c23b975148f4071deef9"><div class="ttname"><a href="classDProtocolDeviceMonitor.html#a0b95f2cba688c23b975148f4071deef9">DProtocolDeviceMonitor::watchChanges</a></div><div class="ttdeci">bool watchChanges() const</div><div class="ttdoc">获取当前监视器工作状态</div><div class="ttdef"><b>Definition:</b> dprotocoldevicemonitor.cpp:35</div></div>
+<div class="ttc" id="aclassDProtocolDeviceMonitor_html_a4b14cf742b4579ead501c715ff944580"><div class="ttname"><a href="classDProtocolDeviceMonitor.html#a4b14cf742b4579ead501c715ff944580">DProtocolDeviceMonitor::setWatchChanges</a></div><div class="ttdeci">void setWatchChanges(bool watchChanges)</div><div class="ttdoc">开启或关闭设备监听</div><div class="ttdef"><b>Definition:</b> dprotocoldevicemonitor.cpp:29</div></div>
+<div class="ttc" id="aclassDProtocolDeviceMonitor_html_a4f6c4f063fea053a46a3f2bb04c9667c"><div class="ttname"><a href="classDProtocolDeviceMonitor.html#a4f6c4f063fea053a46a3f2bb04c9667c">DProtocolDeviceMonitor::mountRemoved</a></div><div class="ttdeci">void mountRemoved(const QString &amp;devUrl)</div><div class="ttdoc">信号，告知设备卸载</div></div>
+<div class="ttc" id="aclassDProtocolDeviceMonitor_html_a870bde49fe3da2d844d691ebe640a067"><div class="ttname"><a href="classDProtocolDeviceMonitor.html#a870bde49fe3da2d844d691ebe640a067">DProtocolDeviceMonitor::deviceAdded</a></div><div class="ttdeci">void deviceAdded(const QString &amp;devUrl)</div><div class="ttdoc">信号，告知协议设备添加</div></div>
+<div class="ttc" id="aclassDProtocolDeviceMonitor_html_a91512511b0a87415e8b86caa9b37a7ca"><div class="ttname"><a href="classDProtocolDeviceMonitor.html#a91512511b0a87415e8b86caa9b37a7ca">DProtocolDeviceMonitor::devices</a></div><div class="ttdeci">QStringList devices() const</div><div class="ttdoc">获取当前所有协议设备列表</div><div class="ttdef"><b>Definition:</b> dprotocoldevicemonitor.cpp:41</div></div>
+<div class="ttc" id="aclassDProtocolDeviceMonitor_html_aaa27235cbf9164f578551a34e9db4682"><div class="ttname"><a href="classDProtocolDeviceMonitor.html#aaa27235cbf9164f578551a34e9db4682">DProtocolDeviceMonitor::deviceRemoved</a></div><div class="ttdeci">void deviceRemoved(const QString &amp;devUrl)</div><div class="ttdoc">信号，告知协议设备移除</div></div>
+<div class="ttc" id="aclassDProtocolDeviceMonitor_html_adc0500c0920ea440329cba9e6a4c2835"><div class="ttname"><a href="classDProtocolDeviceMonitor.html#adc0500c0920ea440329cba9e6a4c2835">DProtocolDeviceMonitor::mountAdded</a></div><div class="ttdeci">void mountAdded(const QString &amp;devUrl, const QString &amp;mountPoint)</div><div class="ttdoc">信号，告知设备挂载</div></div>
+<div class="ttc" id="aclassDProtocolDeviceMonitor_html_af75f75a9fb97a723e0d52963d258a53c"><div class="ttname"><a href="classDProtocolDeviceMonitor.html#af75f75a9fb97a723e0d52963d258a53c">DProtocolDeviceMonitor::~DProtocolDeviceMonitor</a></div><div class="ttdeci">~DProtocolDeviceMonitor() override</div><div class="ttdoc">析构函数</div><div class="ttdef"><b>Definition:</b> dprotocoldevicemonitor.cpp:25</div></div>
+<div class="ttc" id="aqobject_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html">QObject</a></div></div>
+<div class="ttc" id="aqobject_html_Q_OBJECT"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">QObject::Q_OBJECT</a></div><div class="ttdeci">Q_OBJECTQ_OBJECT</div></div>
+<div class="ttc" id="aqobject_html_Q_SIGNALS"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_SIGNALS">QObject::Q_SIGNALS</a></div><div class="ttdeci">Q_SIGNALSQ_SIGNALS</div></div>
+<div class="ttc" id="aqobject_html_parent"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#parent">QObject::parent</a></div><div class="ttdeci">QObject * parent() const const</div></div>
+<div class="ttc" id="aqscopedpointer_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qscopedpointer.html">QScopedPointer&lt; DProtocolDeviceMonitorPrivate &gt;</a></div></div>
+<div class="ttc" id="aqstring_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstring.html">QString</a></div></div>
+<div class="ttc" id="aqstringlist_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_0990604d0eb8363f4260fee8d79bba7c.html">dtkio</a></li><li class="navelem"><a class="el" href="dir_604bc778b00ebf51725a557963c2fd0c.html">include</a></li><li class="navelem"><a class="el" href="dir_f14a32aa7ea21debd10e28fcc1e93a6a.html">dtkmount</a></li><li class="navelem"><a class="el" href="dprotocoldevicemonitor_8h.html">dprotocoldevicemonitor.h</a></li>
+    <li class="footer">文档生成时间:2023-01-13-07:39  +00</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

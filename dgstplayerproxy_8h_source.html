@@ -1,0 +1,326 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: dtkmultimedia/include/dtkmultimedia/dgstplayerproxy.h 源文件</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="https://github.com/linuxdeepin/dtkdoc" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('dgstplayerproxy_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">dgstplayerproxy.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="dgstplayerproxy_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-FileCopyrightText: 2022 UnionTech Software Technology Co., Ltd.</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// SPDX-License-Identifier: LGPL-3.0-or-later</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef DGSTPLAYERPROXY_H</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define DGSTPLAYERPROXY_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="dplayerbackend_8h.html">dplayerbackend.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;QMediaPlayer&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;DMULTIMEDIA_BEGIN_NAMESPACE</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">class </span><a class="code" href="classVideoSurface.html">VideoSurface</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">class </span><a class="code" href="classDGstPlayerProxyPrivate.html">DGstPlayerProxyPrivate</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classDGstPlayerProxy.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDGstPlayerProxy.html">DGstPlayerProxy</a> : <span class="keyword">public</span> <a class="code" href="classDPlayerBackend.html">DPlayerBackend</a></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">Q_OBJECT</a></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    Q_DECLARE_PRIVATE(<a class="code" href="classDGstPlayerProxy.html">DGstPlayerProxy</a>)</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDGstPlayerProxy.html">DGstPlayerProxy</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a> = 0);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classDGstPlayerProxy.html">DGstPlayerProxy</a>();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDGstPlayerProxy.html#a6813a25a05c7c5e4dd5621457892fc61">firstInit</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDGstPlayerProxy.html#afe757a280beaaf72150b22743849f6f3">updateRoundClip</a>(<span class="keywordtype">bool</span> roundClip);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDGstPlayerProxy.html#a3a18dd83bf1a5c42255e47a0b38d9e5d">setCurrentFrame</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qimage.html">QImage</a> &amp;img);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">const</span> <a class="code" href="structPlayingMovieInfo.html">PlayingMovieInfo</a> &amp;<a class="code" href="classDGstPlayerProxy.html#a4af088793f4e2a35b41396167c899c15">playingMovieInfo</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classDGstPlayerProxy.html#aaae7aeefd542dad92eb0937eacb22e1d">isPlayable</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDGstPlayerProxy.html#a1b206b57ee0db8d46b2c0a68eea912b1">pollingEndOfPlayback</a>();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">void</span> pollingStartOfPlayback();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    qint64 <a class="code" href="classDGstPlayerProxy.html#a1fe8c790764419122c22090d82b51a93">duration</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    qint64 <a class="code" href="classDGstPlayerProxy.html#a5a8f7ac99e0ce535791fbab767248e94">elapsed</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qsize.html">QSize</a> <a class="code" href="classDGstPlayerProxy.html#a7cd79f3f8067dd3824c12b16861b05ab">videoSize</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDGstPlayerProxy.html#ac9c6c8b9e6bdb5c0e4d62418bad73321">setPlaySpeed</a>(<span class="keywordtype">double</span> dTimes) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDGstPlayerProxy.html#a94a21ce199b5904607a4ac6f3fce8868">savePlaybackPosition</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">public</span> slots:</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDGstPlayerProxy.html#a7979017b6cb33240e9f004feb5edbc88">play</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDGstPlayerProxy.html#a75a18503c7196e0d869ccbd006f22654">pauseResume</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDGstPlayerProxy.html#ac173fdfbb7d2c22d54fe3b1a9656f937">stop</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDGstPlayerProxy.html#a1df79cb9d5d16eea52047c99beea6911">seekForward</a>(<span class="keywordtype">int</span> nSecs) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDGstPlayerProxy.html#a756d5940ae96a1bfe7a4d17a08ae583f">seekBackward</a>(<span class="keywordtype">int</span> nSecs) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDGstPlayerProxy.html#a0b7bf814560dc7a0054eaa413170a476">seekAbsolute</a>(<span class="keywordtype">int</span> nPos) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDGstPlayerProxy.html#a6cde77949bbff0d5f2fc8d92443d02cf">volumeUp</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDGstPlayerProxy.html#af5fb8df16d623bd3c51c2f8dd7523181">volumeDown</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDGstPlayerProxy.html#ae860d9086f3b35a632e1a6d7376c9579">changeVolume</a>(<span class="keywordtype">int</span> nVol) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classDGstPlayerProxy.html#a1a3e3c9abcccb20bb974538bdb4b575a">volume</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classDGstPlayerProxy.html#af2390371f30661cece7f2549d97a112d">muted</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDGstPlayerProxy.html#a90ca64b70443248e35bd13073e31b734">toggleMute</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDGstPlayerProxy.html#ad7fad01cce5521db5c6746e4d11fa52a">setMute</a>(<span class="keywordtype">bool</span> bMute) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDGstPlayerProxy.html#a38ebdd5132cb56d27a29bdfb965f8ef8">updateSubStyle</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;font, <span class="keywordtype">int</span> sz) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDGstPlayerProxy.html#a5fb961873a3fb97e19a841d78bfb2355">setSubCodepage</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;cp) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> <a class="code" href="classDGstPlayerProxy.html#a16611c79485ff89b553794109e95ab8c">subCodepage</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDGstPlayerProxy.html#af91819e1252bd55973a83451f466c99e">addSubSearchPath</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;path) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classDGstPlayerProxy.html#ab44b165f6a69a6f75cd6ba2eccd6ea3d">loadSubtitle</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qfileinfo.html">QFileInfo</a> &amp;fi) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDGstPlayerProxy.html#a20dc02dd62d922e23ce75ea3e4ee9c33">toggleSubtitle</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classDGstPlayerProxy.html#ae209b677fdd6e112ce77b37079a275fe">isSubVisible</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDGstPlayerProxy.html#a9ea39cd64cc67646de6f74cf5538e662">selectSubtitle</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDGstPlayerProxy.html#a1efd248b102213e0d4f9addb8910d622">selectTrack</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDGstPlayerProxy.html#aee885f3ec629e0dcbbb12953a17b6f0d">setSubDelay</a>(<span class="keywordtype">double</span> secs) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="classDGstPlayerProxy.html#aceeb7ffc9954c86eba43f0f7dc0ef534">subDelay</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classDGstPlayerProxy.html#afa9d36297889c7480e6ac17d52abfed2">aid</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classDGstPlayerProxy.html#a8524d363cfd21dffe232e0bca24426bb">sid</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDGstPlayerProxy.html#a33260550eccf1896bc6d7a750c1d7313">changeSoundMode</a>(SoundMode) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDGstPlayerProxy.html#a43ebf275a4cfc8f20d676090bb05c940">setVideoAspect</a>(<span class="keywordtype">double</span> r) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="classDGstPlayerProxy.html#ab9451e4ec15878ce53affdee1d42b957">videoAspect</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classDGstPlayerProxy.html#a358cd02e9e9b0885a357da4faef3ba36">videoRotation</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDGstPlayerProxy.html#a505f39e1c20e68da4c9aded186a364e0">setVideoRotation</a>(<span class="keywordtype">int</span> degree) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qimage.html">QImage</a> <a class="code" href="classDGstPlayerProxy.html#a8b4bb53e3a46e10b58b577cda9a235b7">takeScreenshot</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDGstPlayerProxy.html#a30efde85c0f3e26284f8079dbb299c97">burstScreenshot</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDGstPlayerProxy.html#a6a276210474d48b9b2c45a00f8735eca">stopBurstScreenshot</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qvariant.html">QVariant</a> <a class="code" href="classDGstPlayerProxy.html#ac6d6ca99554b275297bf9a83d3654c4b">getProperty</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDGstPlayerProxy.html#a386f66ef0e67aed3fac9e8577920fe23">setProperty</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;, <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qvariant.html">QVariant</a> &amp;) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDGstPlayerProxy.html#a157ec4acbbc5ab62212f3fb9a60ee3b2">nextFrame</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDGstPlayerProxy.html#af765ee24c110cc19380e221e6784e39c">previousFrame</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDGstPlayerProxy.html#afc05acf7874108001fa410bda41cbbfc">makeCurrent</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDGstPlayerProxy.html#ab251ba95b023f46697122b9152d0ea90">changehwaccelMode</a>(hwaccelMode hwaccelMode) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keyword">protected</span> slots:</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> slotStateChanged(QMediaPlayer::State newState);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">void</span> slotMediaStatusChanged(QMediaPlayer::MediaStatus status);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">void</span> slotPositionChanged(qint64 position);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">void</span> slotMediaError(QMediaPlayer::Error error);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qscopedpointer.html">QScopedPointer&lt;DGstPlayerProxyPrivate&gt;</a> d_ptr;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;};</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;DMULTIMEDIA_END_NAMESPACE</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* ifndef DGSTPLAYERPROXY_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="aclassDGstPlayerProxyPrivate_html"><div class="ttname"><a href="classDGstPlayerProxyPrivate.html">DGstPlayerProxyPrivate</a></div><div class="ttdef"><b>Definition:</b> dgstplayerproxy_p.h:13</div></div>
+<div class="ttc" id="aclassDGstPlayerProxy_html"><div class="ttname"><a href="classDGstPlayerProxy.html">DGstPlayerProxy</a></div><div class="ttdef"><b>Definition:</b> dgstplayerproxy.h:16</div></div>
+<div class="ttc" id="aclassDGstPlayerProxy_html_a0b7bf814560dc7a0054eaa413170a476"><div class="ttname"><a href="classDGstPlayerProxy.html#a0b7bf814560dc7a0054eaa413170a476">DGstPlayerProxy::seekAbsolute</a></div><div class="ttdeci">void seekAbsolute(int nPos) override</div><div class="ttdoc">seek播放媒体.</div><div class="ttdef"><b>Definition:</b> dgstplayerproxy.cpp:437</div></div>
+<div class="ttc" id="aclassDGstPlayerProxy_html_a157ec4acbbc5ab62212f3fb9a60ee3b2"><div class="ttname"><a href="classDGstPlayerProxy.html#a157ec4acbbc5ab62212f3fb9a60ee3b2">DGstPlayerProxy::nextFrame</a></div><div class="ttdeci">void nextFrame() override</div><div class="ttdoc">媒体下一帧.</div><div class="ttdef"><b>Definition:</b> dgstplayerproxy.cpp:337</div></div>
+<div class="ttc" id="aclassDGstPlayerProxy_html_a16611c79485ff89b553794109e95ab8c"><div class="ttname"><a href="classDGstPlayerProxy.html#a16611c79485ff89b553794109e95ab8c">DGstPlayerProxy::subCodepage</a></div><div class="ttdeci">QString subCodepage() override</div><div class="ttdoc">获取媒体Sub字幕编码页.</div><div class="ttdef"><b>Definition:</b> dgstplayerproxy.cpp:217</div></div>
+<div class="ttc" id="aclassDGstPlayerProxy_html_a1a3e3c9abcccb20bb974538bdb4b575a"><div class="ttname"><a href="classDGstPlayerProxy.html#a1a3e3c9abcccb20bb974538bdb4b575a">DGstPlayerProxy::volume</a></div><div class="ttdeci">int volume() const override</div><div class="ttdoc">获取媒体播放音量.</div><div class="ttdef"><b>Definition:</b> dgstplayerproxy.cpp:177</div></div>
+<div class="ttc" id="aclassDGstPlayerProxy_html_a1b206b57ee0db8d46b2c0a68eea912b1"><div class="ttname"><a href="classDGstPlayerProxy.html#a1b206b57ee0db8d46b2c0a68eea912b1">DGstPlayerProxy::pollingEndOfPlayback</a></div><div class="ttdeci">void pollingEndOfPlayback()</div><div class="ttdoc">轮询直到播放结束.</div><div class="ttdef"><b>Definition:</b> dgstplayerproxy.cpp:71</div></div>
+<div class="ttc" id="aclassDGstPlayerProxy_html_a1df79cb9d5d16eea52047c99beea6911"><div class="ttname"><a href="classDGstPlayerProxy.html#a1df79cb9d5d16eea52047c99beea6911">DGstPlayerProxy::seekForward</a></div><div class="ttdeci">void seekForward(int nSecs) override</div><div class="ttdoc">向前seek播放媒体.</div><div class="ttdef"><b>Definition:</b> dgstplayerproxy.cpp:411</div></div>
+<div class="ttc" id="aclassDGstPlayerProxy_html_a1efd248b102213e0d4f9addb8910d622"><div class="ttname"><a href="classDGstPlayerProxy.html#a1efd248b102213e0d4f9addb8910d622">DGstPlayerProxy::selectTrack</a></div><div class="ttdeci">void selectTrack(int id) override</div><div class="ttdoc">根据id选择音频轨道.</div><div class="ttdef"><b>Definition:</b> dgstplayerproxy.cpp:247</div></div>
+<div class="ttc" id="aclassDGstPlayerProxy_html_a1fe8c790764419122c22090d82b51a93"><div class="ttname"><a href="classDGstPlayerProxy.html#a1fe8c790764419122c22090d82b51a93">DGstPlayerProxy::duration</a></div><div class="ttdeci">qint64 duration() const override</div><div class="ttdoc">获取媒体时长.</div><div class="ttdef"><b>Definition:</b> dgstplayerproxy.cpp:448</div></div>
+<div class="ttc" id="aclassDGstPlayerProxy_html_a20dc02dd62d922e23ce75ea3e4ee9c33"><div class="ttname"><a href="classDGstPlayerProxy.html#a20dc02dd62d922e23ce75ea3e4ee9c33">DGstPlayerProxy::toggleSubtitle</a></div><div class="ttdeci">void toggleSubtitle() override</div><div class="ttdoc">设置是否显示Sub字幕.</div><div class="ttdef"><b>Definition:</b> dgstplayerproxy.cpp:233</div></div>
+<div class="ttc" id="aclassDGstPlayerProxy_html_a30efde85c0f3e26284f8079dbb299c97"><div class="ttname"><a href="classDGstPlayerProxy.html#a30efde85c0f3e26284f8079dbb299c97">DGstPlayerProxy::burstScreenshot</a></div><div class="ttdeci">void burstScreenshot() override</div><div class="ttdoc">连拍截图，截图间隔时间为5秒.</div><div class="ttdef"><b>Definition:</b> dgstplayerproxy.cpp:302</div></div>
+<div class="ttc" id="aclassDGstPlayerProxy_html_a33260550eccf1896bc6d7a750c1d7313"><div class="ttname"><a href="classDGstPlayerProxy.html#a33260550eccf1896bc6d7a750c1d7313">DGstPlayerProxy::changeSoundMode</a></div><div class="ttdeci">void changeSoundMode(SoundMode) override</div><div class="ttdoc">改变声音播放模式.</div><div class="ttdef"><b>Definition:</b> dgstplayerproxy.cpp:272</div></div>
+<div class="ttc" id="aclassDGstPlayerProxy_html_a358cd02e9e9b0885a357da4faef3ba36"><div class="ttname"><a href="classDGstPlayerProxy.html#a358cd02e9e9b0885a357da4faef3ba36">DGstPlayerProxy::videoRotation</a></div><div class="ttdeci">int videoRotation() const override</div><div class="ttdoc">获取顺时针旋转视频角度.</div><div class="ttdef"><b>Definition:</b> dgstplayerproxy.cpp:286</div></div>
+<div class="ttc" id="aclassDGstPlayerProxy_html_a386f66ef0e67aed3fac9e8577920fe23"><div class="ttname"><a href="classDGstPlayerProxy.html#a386f66ef0e67aed3fac9e8577920fe23">DGstPlayerProxy::setProperty</a></div><div class="ttdeci">void setProperty(const QString &amp;, const QVariant &amp;) override</div><div class="ttdoc">设置播放属性.</div><div class="ttdef"><b>Definition:</b> dgstplayerproxy.cpp:333</div></div>
+<div class="ttc" id="aclassDGstPlayerProxy_html_a38ebdd5132cb56d27a29bdfb965f8ef8"><div class="ttname"><a href="classDGstPlayerProxy.html#a38ebdd5132cb56d27a29bdfb965f8ef8">DGstPlayerProxy::updateSubStyle</a></div><div class="ttdeci">void updateSubStyle(const QString &amp;font, int sz) override</div><div class="ttdoc">更新媒体播放文字显示样式.</div><div class="ttdef"><b>Definition:</b> dgstplayerproxy.cpp:206</div></div>
+<div class="ttc" id="aclassDGstPlayerProxy_html_a3a18dd83bf1a5c42255e47a0b38d9e5d"><div class="ttname"><a href="classDGstPlayerProxy.html#a3a18dd83bf1a5c42255e47a0b38d9e5d">DGstPlayerProxy::setCurrentFrame</a></div><div class="ttdeci">void setCurrentFrame(const QImage &amp;img)</div><div class="ttdoc">设置当前帧的值.</div><div class="ttdef"><b>Definition:</b> dgstplayerproxy.cpp:56</div></div>
+<div class="ttc" id="aclassDGstPlayerProxy_html_a43ebf275a4cfc8f20d676090bb05c940"><div class="ttname"><a href="classDGstPlayerProxy.html#a43ebf275a4cfc8f20d676090bb05c940">DGstPlayerProxy::setVideoAspect</a></div><div class="ttdeci">void setVideoAspect(double r) override</div><div class="ttdoc">设置媒体播放显示长宽比.</div><div class="ttdef"><b>Definition:</b> dgstplayerproxy.cpp:276</div></div>
+<div class="ttc" id="aclassDGstPlayerProxy_html_a4af088793f4e2a35b41396167c899c15"><div class="ttname"><a href="classDGstPlayerProxy.html#a4af088793f4e2a35b41396167c899c15">DGstPlayerProxy::playingMovieInfo</a></div><div class="ttdeci">const PlayingMovieInfo &amp; playingMovieInfo() override</div><div class="ttdoc">获取当前播放媒体信息.</div><div class="ttdef"><b>Definition:</b> dgstplayerproxy.cpp:81</div></div>
+<div class="ttc" id="aclassDGstPlayerProxy_html_a505f39e1c20e68da4c9aded186a364e0"><div class="ttname"><a href="classDGstPlayerProxy.html#a505f39e1c20e68da4c9aded186a364e0">DGstPlayerProxy::setVideoRotation</a></div><div class="ttdeci">void setVideoRotation(int degree) override</div><div class="ttdoc">设置顺时针旋转视频角度.</div><div class="ttdef"><b>Definition:</b> dgstplayerproxy.cpp:291</div></div>
+<div class="ttc" id="aclassDGstPlayerProxy_html_a5a8f7ac99e0ce535791fbab767248e94"><div class="ttname"><a href="classDGstPlayerProxy.html#a5a8f7ac99e0ce535791fbab767248e94">DGstPlayerProxy::elapsed</a></div><div class="ttdeci">qint64 elapsed() const override</div><div class="ttdoc">获取媒体已播放时长.</div><div class="ttdef"><b>Definition:</b> dgstplayerproxy.cpp:454</div></div>
+<div class="ttc" id="aclassDGstPlayerProxy_html_a5fb961873a3fb97e19a841d78bfb2355"><div class="ttname"><a href="classDGstPlayerProxy.html#a5fb961873a3fb97e19a841d78bfb2355">DGstPlayerProxy::setSubCodepage</a></div><div class="ttdeci">void setSubCodepage(const QString &amp;cp) override</div><div class="ttdoc">设置媒体Sub字幕编码页.</div><div class="ttdef"><b>Definition:</b> dgstplayerproxy.cpp:212</div></div>
+<div class="ttc" id="aclassDGstPlayerProxy_html_a6813a25a05c7c5e4dd5621457892fc61"><div class="ttname"><a href="classDGstPlayerProxy.html#a6813a25a05c7c5e4dd5621457892fc61">DGstPlayerProxy::firstInit</a></div><div class="ttdeci">void firstInit() override</div><div class="ttdoc">第一次打开播放器播放视频.</div><div class="ttdef"><b>Definition:</b> dgstplayerproxy.cpp:47</div></div>
+<div class="ttc" id="aclassDGstPlayerProxy_html_a6a276210474d48b9b2c45a00f8735eca"><div class="ttname"><a href="classDGstPlayerProxy.html#a6a276210474d48b9b2c45a00f8735eca">DGstPlayerProxy::stopBurstScreenshot</a></div><div class="ttdeci">void stopBurstScreenshot() override</div><div class="ttdoc">停止连拍截图.</div><div class="ttdef"><b>Definition:</b> dgstplayerproxy.cpp:324</div></div>
+<div class="ttc" id="aclassDGstPlayerProxy_html_a6cde77949bbff0d5f2fc8d92443d02cf"><div class="ttname"><a href="classDGstPlayerProxy.html#a6cde77949bbff0d5f2fc8d92443d02cf">DGstPlayerProxy::volumeUp</a></div><div class="ttdeci">void volumeUp() override</div><div class="ttdoc">音量上升.</div><div class="ttdef"><b>Definition:</b> dgstplayerproxy.cpp:157</div></div>
+<div class="ttc" id="aclassDGstPlayerProxy_html_a756d5940ae96a1bfe7a4d17a08ae583f"><div class="ttname"><a href="classDGstPlayerProxy.html#a756d5940ae96a1bfe7a4d17a08ae583f">DGstPlayerProxy::seekBackward</a></div><div class="ttdeci">void seekBackward(int nSecs) override</div><div class="ttdoc">向后seek播放媒体.</div><div class="ttdef"><b>Definition:</b> dgstplayerproxy.cpp:424</div></div>
+<div class="ttc" id="aclassDGstPlayerProxy_html_a75a18503c7196e0d869ccbd006f22654"><div class="ttname"><a href="classDGstPlayerProxy.html#a75a18503c7196e0d869ccbd006f22654">DGstPlayerProxy::pauseResume</a></div><div class="ttdeci">void pauseResume() override</div><div class="ttdoc">暂停恢复播放媒体.</div><div class="ttdef"><b>Definition:</b> dgstplayerproxy.cpp:384</div></div>
+<div class="ttc" id="aclassDGstPlayerProxy_html_a7979017b6cb33240e9f004feb5edbc88"><div class="ttname"><a href="classDGstPlayerProxy.html#a7979017b6cb33240e9f004feb5edbc88">DGstPlayerProxy::play</a></div><div class="ttdeci">void play() override</div><div class="ttdoc">播放媒体.</div><div class="ttdef"><b>Definition:</b> dgstplayerproxy.cpp:371</div></div>
+<div class="ttc" id="aclassDGstPlayerProxy_html_a7cd79f3f8067dd3824c12b16861b05ab"><div class="ttname"><a href="classDGstPlayerProxy.html#a7cd79f3f8067dd3824c12b16861b05ab">DGstPlayerProxy::videoSize</a></div><div class="ttdeci">QSize videoSize() const override</div><div class="ttdoc">获取媒体分辨率.</div><div class="ttdef"><b>Definition:</b> dgstplayerproxy.cpp:443</div></div>
+<div class="ttc" id="aclassDGstPlayerProxy_html_a8524d363cfd21dffe232e0bca24426bb"><div class="ttname"><a href="classDGstPlayerProxy.html#a8524d363cfd21dffe232e0bca24426bb">DGstPlayerProxy::sid</a></div><div class="ttdeci">int sid() const override</div><div class="ttdoc">获取Sub字幕id.</div><div class="ttdef"><b>Definition:</b> dgstplayerproxy.cpp:267</div></div>
+<div class="ttc" id="aclassDGstPlayerProxy_html_a8b4bb53e3a46e10b58b577cda9a235b7"><div class="ttname"><a href="classDGstPlayerProxy.html#a8b4bb53e3a46e10b58b577cda9a235b7">DGstPlayerProxy::takeScreenshot</a></div><div class="ttdeci">QImage takeScreenshot() const override</div><div class="ttdoc">获取当前视频播放的截图.</div><div class="ttdef"><b>Definition:</b> dgstplayerproxy.cpp:296</div></div>
+<div class="ttc" id="aclassDGstPlayerProxy_html_a90ca64b70443248e35bd13073e31b734"><div class="ttname"><a href="classDGstPlayerProxy.html#a90ca64b70443248e35bd13073e31b734">DGstPlayerProxy::toggleMute</a></div><div class="ttdeci">void toggleMute() override</div><div class="ttdoc">执行静音与取消操作.</div><div class="ttdef"><b>Definition:</b> dgstplayerproxy.cpp:191</div></div>
+<div class="ttc" id="aclassDGstPlayerProxy_html_a94a21ce199b5904607a4ac6f3fce8868"><div class="ttname"><a href="classDGstPlayerProxy.html#a94a21ce199b5904607a4ac6f3fce8868">DGstPlayerProxy::savePlaybackPosition</a></div><div class="ttdeci">void savePlaybackPosition() override</div><div class="ttdoc">保存当前视频播放位置.</div><div class="ttdef"><b>Definition:</b> dgstplayerproxy.cpp:142</div></div>
+<div class="ttc" id="aclassDGstPlayerProxy_html_a9ea39cd64cc67646de6f74cf5538e662"><div class="ttname"><a href="classDGstPlayerProxy.html#a9ea39cd64cc67646de6f74cf5538e662">DGstPlayerProxy::selectSubtitle</a></div><div class="ttdeci">void selectSubtitle(int id) override</div><div class="ttdoc">根据id选择加载媒体Sub字幕.</div><div class="ttdef"><b>Definition:</b> dgstplayerproxy.cpp:242</div></div>
+<div class="ttc" id="aclassDGstPlayerProxy_html_aaae7aeefd542dad92eb0937eacb22e1d"><div class="ttname"><a href="classDGstPlayerProxy.html#aaae7aeefd542dad92eb0937eacb22e1d">DGstPlayerProxy::isPlayable</a></div><div class="ttdeci">bool isPlayable() const override</div><div class="ttdoc">当前媒体是否能够播放.</div><div class="ttdef"><b>Definition:</b> dgstplayerproxy.cpp:87</div></div>
+<div class="ttc" id="aclassDGstPlayerProxy_html_ab251ba95b023f46697122b9152d0ea90"><div class="ttname"><a href="classDGstPlayerProxy.html#ab251ba95b023f46697122b9152d0ea90">DGstPlayerProxy::changehwaccelMode</a></div><div class="ttdeci">void changehwaccelMode(hwaccelMode hwaccelMode) override</div><div class="ttdoc">改变硬件加速模式.</div><div class="ttdef"><b>Definition:</b> dgstplayerproxy.cpp:349</div></div>
+<div class="ttc" id="aclassDGstPlayerProxy_html_ab44b165f6a69a6f75cd6ba2eccd6ea3d"><div class="ttname"><a href="classDGstPlayerProxy.html#ab44b165f6a69a6f75cd6ba2eccd6ea3d">DGstPlayerProxy::loadSubtitle</a></div><div class="ttdeci">bool loadSubtitle(const QFileInfo &amp;fi) override</div><div class="ttdoc">加载媒体Sub字幕标题.</div><div class="ttdef"><b>Definition:</b> dgstplayerproxy.cpp:227</div></div>
+<div class="ttc" id="aclassDGstPlayerProxy_html_ab9451e4ec15878ce53affdee1d42b957"><div class="ttname"><a href="classDGstPlayerProxy.html#ab9451e4ec15878ce53affdee1d42b957">DGstPlayerProxy::videoAspect</a></div><div class="ttdeci">double videoAspect() const override</div><div class="ttdoc">获取媒体播放显示长宽比.</div><div class="ttdef"><b>Definition:</b> dgstplayerproxy.cpp:281</div></div>
+<div class="ttc" id="aclassDGstPlayerProxy_html_ac173fdfbb7d2c22d54fe3b1a9656f937"><div class="ttname"><a href="classDGstPlayerProxy.html#ac173fdfbb7d2c22d54fe3b1a9656f937">DGstPlayerProxy::stop</a></div><div class="ttdeci">void stop() override</div><div class="ttdoc">停止播放媒体.</div><div class="ttdef"><b>Definition:</b> dgstplayerproxy.cpp:394</div></div>
+<div class="ttc" id="aclassDGstPlayerProxy_html_ac6d6ca99554b275297bf9a83d3654c4b"><div class="ttname"><a href="classDGstPlayerProxy.html#ac6d6ca99554b275297bf9a83d3654c4b">DGstPlayerProxy::getProperty</a></div><div class="ttdeci">QVariant getProperty(const QString &amp;) const override</div><div class="ttdoc">根据参数获取播放设置参数属性.</div><div class="ttdef"><b>Definition:</b> dgstplayerproxy.cpp:328</div></div>
+<div class="ttc" id="aclassDGstPlayerProxy_html_ac9c6c8b9e6bdb5c0e4d62418bad73321"><div class="ttname"><a href="classDGstPlayerProxy.html#ac9c6c8b9e6bdb5c0e4d62418bad73321">DGstPlayerProxy::setPlaySpeed</a></div><div class="ttdeci">void setPlaySpeed(double dTimes) override</div><div class="ttdoc">设置媒体播放速度.</div><div class="ttdef"><b>Definition:</b> dgstplayerproxy.cpp:149</div></div>
+<div class="ttc" id="aclassDGstPlayerProxy_html_aceeb7ffc9954c86eba43f0f7dc0ef534"><div class="ttname"><a href="classDGstPlayerProxy.html#aceeb7ffc9954c86eba43f0f7dc0ef534">DGstPlayerProxy::subDelay</a></div><div class="ttdeci">double subDelay() const override</div><div class="ttdoc">获取Sub字幕延迟显示时间.</div><div class="ttdef"><b>Definition:</b> dgstplayerproxy.cpp:257</div></div>
+<div class="ttc" id="aclassDGstPlayerProxy_html_ad7fad01cce5521db5c6746e4d11fa52a"><div class="ttname"><a href="classDGstPlayerProxy.html#ad7fad01cce5521db5c6746e4d11fa52a">DGstPlayerProxy::setMute</a></div><div class="ttdeci">void setMute(bool bMute) override</div><div class="ttdoc">设置静音与取消操作.</div><div class="ttdef"><b>Definition:</b> dgstplayerproxy.cpp:200</div></div>
+<div class="ttc" id="aclassDGstPlayerProxy_html_ae209b677fdd6e112ce77b37079a275fe"><div class="ttname"><a href="classDGstPlayerProxy.html#ae209b677fdd6e112ce77b37079a275fe">DGstPlayerProxy::isSubVisible</a></div><div class="ttdeci">bool isSubVisible() override</div><div class="ttdoc">Sub字幕是否显示.</div><div class="ttdef"><b>Definition:</b> dgstplayerproxy.cpp:237</div></div>
+<div class="ttc" id="aclassDGstPlayerProxy_html_ae860d9086f3b35a632e1a6d7376c9579"><div class="ttname"><a href="classDGstPlayerProxy.html#ae860d9086f3b35a632e1a6d7376c9579">DGstPlayerProxy::changeVolume</a></div><div class="ttdeci">void changeVolume(int nVol) override</div><div class="ttdoc">音量改变.</div><div class="ttdef"><b>Definition:</b> dgstplayerproxy.cpp:171</div></div>
+<div class="ttc" id="aclassDGstPlayerProxy_html_aee885f3ec629e0dcbbb12953a17b6f0d"><div class="ttname"><a href="classDGstPlayerProxy.html#aee885f3ec629e0dcbbb12953a17b6f0d">DGstPlayerProxy::setSubDelay</a></div><div class="ttdeci">void setSubDelay(double secs) override</div><div class="ttdoc">设置Sub字幕延迟显示时间.</div><div class="ttdef"><b>Definition:</b> dgstplayerproxy.cpp:252</div></div>
+<div class="ttc" id="aclassDGstPlayerProxy_html_af2390371f30661cece7f2549d97a112d"><div class="ttname"><a href="classDGstPlayerProxy.html#af2390371f30661cece7f2549d97a112d">DGstPlayerProxy::muted</a></div><div class="ttdeci">bool muted() const override</div><div class="ttdoc">获取媒体播放是否静音.</div><div class="ttdef"><b>Definition:</b> dgstplayerproxy.cpp:185</div></div>
+<div class="ttc" id="aclassDGstPlayerProxy_html_af5fb8df16d623bd3c51c2f8dd7523181"><div class="ttname"><a href="classDGstPlayerProxy.html#af5fb8df16d623bd3c51c2f8dd7523181">DGstPlayerProxy::volumeDown</a></div><div class="ttdeci">void volumeDown() override</div><div class="ttdoc">音量下降.</div><div class="ttdef"><b>Definition:</b> dgstplayerproxy.cpp:164</div></div>
+<div class="ttc" id="aclassDGstPlayerProxy_html_af765ee24c110cc19380e221e6784e39c"><div class="ttname"><a href="classDGstPlayerProxy.html#af765ee24c110cc19380e221e6784e39c">DGstPlayerProxy::previousFrame</a></div><div class="ttdeci">void previousFrame() override</div><div class="ttdoc">媒体上一帧.</div><div class="ttdef"><b>Definition:</b> dgstplayerproxy.cpp:341</div></div>
+<div class="ttc" id="aclassDGstPlayerProxy_html_af91819e1252bd55973a83451f466c99e"><div class="ttname"><a href="classDGstPlayerProxy.html#af91819e1252bd55973a83451f466c99e">DGstPlayerProxy::addSubSearchPath</a></div><div class="ttdeci">void addSubSearchPath(const QString &amp;path) override</div><div class="ttdoc">添加媒体Sub字幕路径.</div><div class="ttdef"><b>Definition:</b> dgstplayerproxy.cpp:222</div></div>
+<div class="ttc" id="aclassDGstPlayerProxy_html_afa9d36297889c7480e6ac17d52abfed2"><div class="ttname"><a href="classDGstPlayerProxy.html#afa9d36297889c7480e6ac17d52abfed2">DGstPlayerProxy::aid</a></div><div class="ttdeci">int aid() const override</div><div class="ttdoc">获取音轨id.</div><div class="ttdef"><b>Definition:</b> dgstplayerproxy.cpp:262</div></div>
+<div class="ttc" id="aclassDGstPlayerProxy_html_afc05acf7874108001fa410bda41cbbfc"><div class="ttname"><a href="classDGstPlayerProxy.html#afc05acf7874108001fa410bda41cbbfc">DGstPlayerProxy::makeCurrent</a></div><div class="ttdeci">void makeCurrent() override</div><div class="ttdoc">指定绘制设备.</div><div class="ttdef"><b>Definition:</b> dgstplayerproxy.cpp:345</div></div>
+<div class="ttc" id="aclassDGstPlayerProxy_html_afe757a280beaaf72150b22743849f6f3"><div class="ttname"><a href="classDGstPlayerProxy.html#afe757a280beaaf72150b22743849f6f3">DGstPlayerProxy::updateRoundClip</a></div><div class="ttdeci">void updateRoundClip(bool roundClip)</div><div class="ttdoc">播放界面圆角显示.</div><div class="ttdef"><b>Definition:</b> dgstplayerproxy.cpp:51</div></div>
+<div class="ttc" id="aclassDPlayerBackend_html"><div class="ttname"><a href="classDPlayerBackend.html">DPlayerBackend</a></div><div class="ttdef"><b>Definition:</b> dplayerbackend.h:25</div></div>
+<div class="ttc" id="aclassVideoSurface_html"><div class="ttname"><a href="classVideoSurface.html">VideoSurface</a></div><div class="ttdef"><b>Definition:</b> videosurface.h:14</div></div>
+<div class="ttc" id="adplayerbackend_8h_html"><div class="ttname"><a href="dplayerbackend_8h.html">dplayerbackend.h</a></div></div>
+<div class="ttc" id="aqfileinfo_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qfileinfo.html">QFileInfo</a></div></div>
+<div class="ttc" id="aqimage_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qimage.html">QImage</a></div></div>
+<div class="ttc" id="aqobject_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html">QObject</a></div></div>
+<div class="ttc" id="aqobject_html_Q_OBJECT"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">QObject::Q_OBJECT</a></div><div class="ttdeci">Q_OBJECTQ_OBJECT</div></div>
+<div class="ttc" id="aqobject_html_parent"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#parent">QObject::parent</a></div><div class="ttdeci">QObject * parent() const const</div></div>
+<div class="ttc" id="aqscopedpointer_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qscopedpointer.html">QScopedPointer&lt; DGstPlayerProxyPrivate &gt;</a></div></div>
+<div class="ttc" id="aqsize_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qsize.html">QSize</a></div></div>
+<div class="ttc" id="aqstring_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstring.html">QString</a></div></div>
+<div class="ttc" id="aqvariant_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qvariant.html">QVariant</a></div></div>
+<div class="ttc" id="astructPlayingMovieInfo_html"><div class="ttname"><a href="structPlayingMovieInfo.html">PlayingMovieInfo</a></div><div class="ttdef"><b>Definition:</b> dplayerbackend.h:18</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_02ec0c46e08cde8e12788abb022f8c38.html">dtkmultimedia</a></li><li class="navelem"><a class="el" href="dir_2078faecabe7b884e0d998d9a0e5e0b8.html">include</a></li><li class="navelem"><a class="el" href="dir_740b6d2c3a8b6c5ce1c96a063386ec95.html">dtkmultimedia</a></li><li class="navelem"><a class="el" href="dgstplayerproxy_8h.html">dgstplayerproxy.h</a></li>
+    <li class="footer">文档生成时间:2023-01-13-07:39  +00</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

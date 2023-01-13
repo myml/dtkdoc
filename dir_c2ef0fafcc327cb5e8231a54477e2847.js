@@ -16,6 +16,7 @@ var dir_c2ef0fafcc327cb5e8231a54477e2847 =
     [ "dcombobox_p.h", "dcombobox__p_8h_source.html", null ],
     [ "ddialog_p.h", "ddialog__p_8h_source.html", null ],
     [ "ddrawer_p.h", "ddrawer__p_8h_source.html", null ],
+    [ "dfeaturedisplaydialog_p.h", "dfeaturedisplaydialog__p_8h_source.html", null ],
     [ "dfilechooseredit_p.h", "dfilechooseredit__p_8h_source.html", null ],
     [ "dfloatingmessage_p.h", "dfloatingmessage__p_8h_source.html", null ],
     [ "dfloatingwidget_p.h", "dfloatingwidget__p_8h_source.html", null ],

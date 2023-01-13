@@ -1,0 +1,27 @@
+var classDPowerManager =
+[
+    [ "DPowerManager", "classDPowerManager.html#a1934cf09737590df34288ba3616b0391", null ],
+    [ "~DPowerManager", "classDPowerManager.html#a908280ae4d362b5a75b698c69edea791", null ],
+    [ "criticalAction", "classDPowerManager.html#a2e7a402089ad2e99f631df148b146ca7", null ],
+    [ "daemonVersion", "classDPowerManager.html#a67c3f0cba18ec3512598e6cf6e4ecc69", null ],
+    [ "deviceAdded", "classDPowerManager.html#a8269d6b2104ee7e86aac881123cdf70b", null ],
+    [ "deviceRemoved", "classDPowerManager.html#a693dc2f59735b134e0cff0e52c1aa97d", null ],
+    [ "devices", "classDPowerManager.html#af6ffb05bce6122ab2ce81400c0c51309", null ],
+    [ "displayDevice", "classDPowerManager.html#a19668ace2d5b6c97c3827f8c085fe190", null ],
+    [ "findDeviceByName", "classDPowerManager.html#aee2b10027b2ff61ffe621eac94e2cb24", null ],
+    [ "hasBattery", "classDPowerManager.html#a69a0916bf3e4056a8777e7ea323b4a88", null ],
+    [ "kbdBacklight", "classDPowerManager.html#abce2d2e4b3c9598a6f544ca7a6c0ebb4", null ],
+    [ "lidIsClosed", "classDPowerManager.html#a2d99eea3f3649efe2a38266d6ffb8001", null ],
+    [ "lidIsClosedChanged", "classDPowerManager.html#ad522fbcd0951e2ca96ec01d98cba0037", null ],
+    [ "lidIsPresent", "classDPowerManager.html#a9f1ddbb1203088a04a48da975633e7ff", null ],
+    [ "lidIsPresentChanged", "classDPowerManager.html#af0107650b8d8cec8eb34892597ff0eda", null ],
+    [ "onBattery", "classDPowerManager.html#a41ae88a04e8d2ae3b258408557ccc1b6", null ],
+    [ "refresh", "classDPowerManager.html#a804b587ecbc864e7c3287820fdfe6f9a", null ],
+    [ "supportKbdBacklight", "classDPowerManager.html#af33cb9354376c80d117d2c5449d673dd", null ],
+    [ "daemonVersion", "classDPowerManager.html#a518623f498f22a9692838299be962058", null ],
+    [ "hasBattery", "classDPowerManager.html#a4d40b11e40c7fd922147908ef41b1f71", null ],
+    [ "lidIsClosed", "classDPowerManager.html#a0e40845adba23def8e9bd843cd533d9f", null ],
+    [ "lidIsPresent", "classDPowerManager.html#a243129992fac4c7f3feb089598215661", null ],
+    [ "onBattery", "classDPowerManager.html#aa18ffd317d9c8164acdb52bbf7517a05", null ],
+    [ "supportKbdBacklight", "classDPowerManager.html#aa6e15c29198ffa2f5939b8ac4121a037", null ]
+];

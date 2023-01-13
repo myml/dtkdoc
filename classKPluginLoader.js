@@ -1,0 +1,27 @@
+var classKPluginLoader =
+[
+    [ "KPluginLoader", "classKPluginLoader.html#ae7ff5d6804969e9dc5bfeb233a8d2ebb", null ],
+    [ "KPluginLoader", "classKPluginLoader.html#a30e49d279c41c552dc4e7b5447c79f13", null ],
+    [ "~KPluginLoader", "classKPluginLoader.html#a9218a209e48bad8a2674c1853c0776ce", null ],
+    [ "errorString", "classKPluginLoader.html#a5946adcb4875ff4559ce45109276c5ac", null ],
+    [ "factory", "classKPluginLoader.html#a606ba35fc203e419e9318dbb4ee48738", null ],
+    [ "fileName", "classKPluginLoader.html#aea0ae91b58e26608d8c530f30a4cb33a", null ],
+    [ "findPlugin", "classKPluginLoader.html#a3a69c4f1826926a2145f14770b8b5010", null ],
+    [ "findPlugins", "classKPluginLoader.html#abe8d620c94c3f7c3d05b991777b37815", null ],
+    [ "findPluginsById", "classKPluginLoader.html#a7448249b7b7dbc337f82bd91b17d91c7", null ],
+    [ "forEachPlugin", "classKPluginLoader.html#a7f8bc12a6e3620de37e160559ebe965f", null ],
+    [ "instance", "classKPluginLoader.html#a8e66938a21d1f6da57245b4ba283a39e", null ],
+    [ "instantiatePlugins", "classKPluginLoader.html#a8276166ff91de40b031cc73f25e1263b", null ],
+    [ "isLoaded", "classKPluginLoader.html#a1becb866362f7afcf32d31f1193b699a", null ],
+    [ "load", "classKPluginLoader.html#a5fc3ca8f68bb520989cd3eed78c4bc47", null ],
+    [ "loadHints", "classKPluginLoader.html#abeeac0beb222cd9882e3e049bc2e9a2d", null ],
+    [ "metaData", "classKPluginLoader.html#aef87229b778a4b30d09680539579b910", null ],
+    [ "pluginName", "classKPluginLoader.html#a4ccb4478e90992bee16b02e84c083d3d", null ],
+    [ "pluginVersion", "classKPluginLoader.html#abb0cadbbc94aa56f4cfc4139502d0256", null ],
+    [ "setLoadHints", "classKPluginLoader.html#a9f583f22f3283c4afc410bfe9ad95aa3", null ],
+    [ "unload", "classKPluginLoader.html#a18e3f751ecd02360ed9e8ace853dc016", null ],
+    [ "fileName", "classKPluginLoader.html#a99b52af573df98873c98a94f12ede89f", null ],
+    [ "loadHints", "classKPluginLoader.html#a7cc213df7fbac138df5203f640f23d5a", null ],
+    [ "pluginName", "classKPluginLoader.html#ab098f6bb733ecf0d5ff2d392eaba751a", null ],
+    [ "pluginVersion", "classKPluginLoader.html#a83f263c07e2470420f3f9d4f4a2267cd", null ]
+];

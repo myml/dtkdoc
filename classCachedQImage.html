@@ -1,0 +1,779 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: CachedQImage类 参考</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="https://github.com/linuxdeepin/dtkdoc" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classCachedQImage.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="classCachedQImage-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">CachedQImage类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 CachedQImage 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classCachedQImage.png" usemap="#CachedQImage_map" alt=""/>
+  <map id="CachedQImage_map" name="CachedQImage_map">
+<area target="_parent" href="http://doc.qt.io/qt-5/qshareddata.html" alt="QSharedData" shape="rect" coords="0,56,99,80"/>
+<area target="_parent" href="http://doc.qt.io/qt-5/qimage.html" alt="QImage" shape="rect" coords="109,56,208,80"/>
+<area target="_parent" href="http://doc.qt.io/qt-5/qpaintdevice.html" alt="QPaintDevice" shape="rect" coords="109,0,208,24"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a62735f065d70e3ea36089ab787aa4059"><td class="memItemLeft" align="right" valign="top"><a id="a62735f065d70e3ea36089ab787aa4059"></a>
+typedef <a class="elRef" href="http://doc.qt.io/qt-5/qpair.html">QPair</a>&lt; <a class="elRef" href="http://doc.qt.io/qt-5/qsize.html">QSize</a>, <a class="el" href="classCachedQImage.html">CachedQImage</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>CacheData</b></td></tr>
+<tr class="separator:a62735f065d70e3ea36089ab787aa4059"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_qimage"><td colspan="2" onclick="javascript:toggleInherit('pub_types_qimage')"><img src="closed.png" alt="-"/>&#160;Public 类型 继承自 <a class="el"  href="http://doc.qt.io/qt-5/qimage.html">QImage</a></td></tr>
+<tr class="memitem:InvertMode-enum inherit pub_types_qimage"><td class="memItemLeft" align="right" valign="top"><a id="InvertMode-enum"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>InvertMode</b> </td></tr>
+<tr class="separator:InvertMode-enum inherit pub_types_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Format-enum inherit pub_types_qimage"><td class="memItemLeft" align="right" valign="top"><a id="Format-enum"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Format</b> </td></tr>
+<tr class="separator:Format-enum inherit pub_types_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_qpaintdevice"><td colspan="2" onclick="javascript:toggleInherit('pub_types_qpaintdevice')"><img src="closed.png" alt="-"/>&#160;Public 类型 继承自 <a class="el"  href="http://doc.qt.io/qt-5/qpaintdevice.html">QPaintDevice</a></td></tr>
+<tr class="memitem:PaintDeviceMetric-enum inherit pub_types_qpaintdevice"><td class="memItemLeft" align="right" valign="top"><a id="PaintDeviceMetric-enum"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>PaintDeviceMetric</b> </td></tr>
+<tr class="separator:PaintDeviceMetric-enum inherit pub_types_qpaintdevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ab1aba1528f3972e300e120d4e314ba52"><td class="memItemLeft" align="right" valign="top"><a id="ab1aba1528f3972e300e120d4e314ba52"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CachedQImage</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qsize.html">QSize</a> &amp;<a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#size">size</a>)</td></tr>
+<tr class="separator:ab1aba1528f3972e300e120d4e314ba52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_qshareddata"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_qshareddata')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el"  href="http://doc.qt.io/qt-5/qshareddata.html">QSharedData</a></td></tr>
+<tr class="memitem:QSharedData-1 inherit pub_methods_qshareddata"><td class="memItemLeft" align="right" valign="top"><a id="QSharedData-1"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qshareddata.html#QSharedData-1">QSharedData</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qshareddata.html">QSharedData</a> &amp;)</td></tr>
+<tr class="separator:QSharedData-1 inherit pub_methods_qshareddata"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_qimage"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_qimage')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el"  href="http://doc.qt.io/qt-5/qimage.html">QImage</a></td></tr>
+<tr class="memitem:QImage-1 inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="QImage-1"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#QImage-1">QImage</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qsize.html">QSize</a> &amp;<a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#size">size</a>, <a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#Format-enum">QImage::Format</a> <a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#format">format</a>)</td></tr>
+<tr class="separator:QImage-1 inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:QImage-2 inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="QImage-2"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#QImage-2">QImage</a> (int <a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#width">width</a>, int <a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#height">height</a>, <a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#Format-enum">QImage::Format</a> <a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#format">format</a>)</td></tr>
+<tr class="separator:QImage-2 inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:QImage-3 inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="QImage-3"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#QImage-3">QImage</a> (uchar *data, int <a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#width">width</a>, int <a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#height">height</a>, <a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#Format-enum">QImage::Format</a> <a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#format">format</a>, <a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#QImageCleanupFunction-typedef">QImageCleanupFunction</a> cleanupFunction, void *cleanupInfo)</td></tr>
+<tr class="separator:QImage-3 inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:QImage-4 inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="QImage-4"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#QImage-4">QImage</a> (const uchar *data, int <a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#width">width</a>, int <a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#height">height</a>, <a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#Format-enum">QImage::Format</a> <a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#format">format</a>, <a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#QImageCleanupFunction-typedef">QImageCleanupFunction</a> cleanupFunction, void *cleanupInfo)</td></tr>
+<tr class="separator:QImage-4 inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:QImage-5 inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="QImage-5"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#QImage-5">QImage</a> (uchar *data, int <a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#width">width</a>, int <a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#height">height</a>, int <a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#bytesPerLine">bytesPerLine</a>, <a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#Format-enum">QImage::Format</a> <a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#format">format</a>, <a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#QImageCleanupFunction-typedef">QImageCleanupFunction</a> cleanupFunction, void *cleanupInfo)</td></tr>
+<tr class="separator:QImage-5 inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:QImage-6 inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="QImage-6"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#QImage-6">QImage</a> (const uchar *data, int <a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#width">width</a>, int <a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#height">height</a>, int <a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#bytesPerLine">bytesPerLine</a>, <a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#Format-enum">QImage::Format</a> <a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#format">format</a>, <a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#QImageCleanupFunction-typedef">QImageCleanupFunction</a> cleanupFunction, void *cleanupInfo)</td></tr>
+<tr class="separator:QImage-6 inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:QImage-7 inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="QImage-7"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#QImage-7">QImage</a> (const char *const[] xpm)</td></tr>
+<tr class="separator:QImage-7 inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:QImage-8 inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="QImage-8"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#QImage-8">QImage</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;fileName, const char *<a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#format">format</a>)</td></tr>
+<tr class="separator:QImage-8 inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:QImage-9 inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="QImage-9"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#QImage-9">QImage</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qimage.html">QImage</a> &amp;image)</td></tr>
+<tr class="separator:QImage-9 inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:QImage-10 inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="QImage-10"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#QImage-10">QImage</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qimage.html">QImage</a> &amp;&amp;other)</td></tr>
+<tr class="separator:QImage-10 inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:operator-eq inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="operator-eq"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qimage.html">QImage</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#operator-eq">operator=</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qimage.html">QImage</a> &amp;image)</td></tr>
+<tr class="separator:operator-eq inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:operator-eq-1 inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="operator-eq-1"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qimage.html">QImage</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#operator-eq-1">operator=</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qimage.html">QImage</a> &amp;&amp;other)</td></tr>
+<tr class="separator:operator-eq-1 inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:swap inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="swap"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#swap">swap</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qimage.html">QImage</a> &amp;other)</td></tr>
+<tr class="separator:swap inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:isNull inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="isNull"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#isNull">isNull</a> () const const</td></tr>
+<tr class="separator:isNull inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:operator-eq-eq inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="operator-eq-eq"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#operator-eq-eq">operator==</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qimage.html">QImage</a> &amp;image) const const</td></tr>
+<tr class="separator:operator-eq-eq inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:operator-not-eq inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="operator-not-eq"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#operator-not-eq">operator!=</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qimage.html">QImage</a> &amp;image) const const</td></tr>
+<tr class="separator:operator-not-eq inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:operator-QVariant inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="operator-QVariant"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qvariant.html">QVariant</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#operator-QVariant">operator QVariant</a> () const const</td></tr>
+<tr class="separator:operator-QVariant inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:copy inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="copy"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qimage.html">QImage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#copy">copy</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qrect.html">QRect</a> &amp;rectangle) const const</td></tr>
+<tr class="separator:copy inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:copy-1 inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="copy-1"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qimage.html">QImage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#copy-1">copy</a> (int x, int y, int <a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#width">width</a>, int <a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#height">height</a>) const const</td></tr>
+<tr class="separator:copy-1 inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:format inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="format"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#Format-enum">QImage::Format</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#format">format</a> () const const</td></tr>
+<tr class="separator:format inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:convertToFormat inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="convertToFormat"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qimage.html">QImage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#convertToFormat">convertToFormat</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#Format-enum">QImage::Format</a> <a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#format">format</a>, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#ImageConversionFlag-enum">Qt::ImageConversionFlags</a> flags) const &amp;const</td></tr>
+<tr class="separator:convertToFormat inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:convertToFormat-1 inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="convertToFormat-1"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qimage.html">QImage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#convertToFormat-1">convertToFormat</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#Format-enum">QImage::Format</a> <a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#format">format</a>, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#ImageConversionFlag-enum">Qt::ImageConversionFlags</a> flags) &amp;&amp;</td></tr>
+<tr class="separator:convertToFormat-1 inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:convertToFormat-2 inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="convertToFormat-2"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qimage.html">QImage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#convertToFormat-2">convertToFormat</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#Format-enum">QImage::Format</a> <a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#format">format</a>, const <a class="elRef" href="http://doc.qt.io/qt-5/qvector.html">QVector</a>&lt; QRgb &gt; &amp;<a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#colorTable">colorTable</a>, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#ImageConversionFlag-enum">Qt::ImageConversionFlags</a> flags) const const</td></tr>
+<tr class="separator:convertToFormat-2 inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:reinterpretAsFormat inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="reinterpretAsFormat"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#reinterpretAsFormat">reinterpretAsFormat</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#Format-enum">QImage::Format</a> <a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#format">format</a>)</td></tr>
+<tr class="separator:reinterpretAsFormat inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:convertTo inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="convertTo"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#convertTo">convertTo</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#Format-enum">QImage::Format</a> <a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#format">format</a>, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#ImageConversionFlag-enum">Qt::ImageConversionFlags</a> flags)</td></tr>
+<tr class="separator:convertTo inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:width inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="width"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#width">width</a> () const const</td></tr>
+<tr class="separator:width inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:height inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="height"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#height">height</a> () const const</td></tr>
+<tr class="separator:height inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:size inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="size"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qsize.html">QSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#size">size</a> () const const</td></tr>
+<tr class="separator:size inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:rect inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="rect"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qrect.html">QRect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#rect">rect</a> () const const</td></tr>
+<tr class="separator:rect inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:depth inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="depth"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#depth">depth</a> () const const</td></tr>
+<tr class="separator:depth inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:colorCount inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="colorCount"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#colorCount">colorCount</a> () const const</td></tr>
+<tr class="separator:colorCount inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:bitPlaneCount inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="bitPlaneCount"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#bitPlaneCount">bitPlaneCount</a> () const const</td></tr>
+<tr class="separator:bitPlaneCount inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:color inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="color"></a>
+QRgb&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#color">color</a> (int i) const const</td></tr>
+<tr class="separator:color inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setColor inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="setColor"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#setColor">setColor</a> (int index, QRgb colorValue)</td></tr>
+<tr class="separator:setColor inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setColorCount inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="setColorCount"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#setColorCount">setColorCount</a> (int <a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#colorCount">colorCount</a>)</td></tr>
+<tr class="separator:setColorCount inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:allGray inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="allGray"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#allGray">allGray</a> () const const</td></tr>
+<tr class="separator:allGray inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:isGrayscale inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="isGrayscale"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#isGrayscale">isGrayscale</a> () const const</td></tr>
+<tr class="separator:isGrayscale inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:bits inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="bits"></a>
+uchar *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#bits">bits</a> ()</td></tr>
+<tr class="separator:bits inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:bits-1 inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="bits-1"></a>
+const uchar *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#bits-1">bits</a> () const const</td></tr>
+<tr class="separator:bits-1 inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:constBits inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="constBits"></a>
+const uchar *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#constBits">constBits</a> () const const</td></tr>
+<tr class="separator:constBits inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:byteCount inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="byteCount"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage-obsolete.html#byteCount">byteCount</a> () const const</td></tr>
+<tr class="separator:byteCount inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:sizeInBytes inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="sizeInBytes"></a>
+qsizetype&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#sizeInBytes">sizeInBytes</a> () const const</td></tr>
+<tr class="separator:sizeInBytes inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:scanLine inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="scanLine"></a>
+uchar *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#scanLine">scanLine</a> (int i)</td></tr>
+<tr class="separator:scanLine inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:scanLine-1 inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="scanLine-1"></a>
+const uchar *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#scanLine-1">scanLine</a> (int i) const const</td></tr>
+<tr class="separator:scanLine-1 inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:constScanLine inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="constScanLine"></a>
+const uchar *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#constScanLine">constScanLine</a> (int i) const const</td></tr>
+<tr class="separator:constScanLine inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:bytesPerLine inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="bytesPerLine"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#bytesPerLine">bytesPerLine</a> () const const</td></tr>
+<tr class="separator:bytesPerLine inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:valid-1 inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="valid-1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#valid-1">valid</a> (int x, int y) const const</td></tr>
+<tr class="separator:valid-1 inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:valid inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="valid"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#valid">valid</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qpoint.html">QPoint</a> &amp;pos) const const</td></tr>
+<tr class="separator:valid inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:pixelIndex-1 inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="pixelIndex-1"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#pixelIndex-1">pixelIndex</a> (int x, int y) const const</td></tr>
+<tr class="separator:pixelIndex-1 inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:pixelIndex inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="pixelIndex"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#pixelIndex">pixelIndex</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qpoint.html">QPoint</a> &amp;position) const const</td></tr>
+<tr class="separator:pixelIndex inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:pixel-1 inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="pixel-1"></a>
+QRgb&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#pixel-1">pixel</a> (int x, int y) const const</td></tr>
+<tr class="separator:pixel-1 inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:pixel inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="pixel"></a>
+QRgb&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#pixel">pixel</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qpoint.html">QPoint</a> &amp;position) const const</td></tr>
+<tr class="separator:pixel inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setPixel-1 inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="setPixel-1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#setPixel-1">setPixel</a> (int x, int y, uint index_or_rgb)</td></tr>
+<tr class="separator:setPixel-1 inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setPixel inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="setPixel"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#setPixel">setPixel</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qpoint.html">QPoint</a> &amp;position, uint index_or_rgb)</td></tr>
+<tr class="separator:setPixel inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:pixelColor-1 inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="pixelColor-1"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qcolor.html">QColor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#pixelColor-1">pixelColor</a> (int x, int y) const const</td></tr>
+<tr class="separator:pixelColor-1 inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:pixelColor inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="pixelColor"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qcolor.html">QColor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#pixelColor">pixelColor</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qpoint.html">QPoint</a> &amp;position) const const</td></tr>
+<tr class="separator:pixelColor inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setPixelColor-1 inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="setPixelColor-1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#setPixelColor-1">setPixelColor</a> (int x, int y, const <a class="elRef" href="http://doc.qt.io/qt-5/qcolor.html">QColor</a> &amp;<a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#color">color</a>)</td></tr>
+<tr class="separator:setPixelColor-1 inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setPixelColor inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="setPixelColor"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#setPixelColor">setPixelColor</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qpoint.html">QPoint</a> &amp;position, const <a class="elRef" href="http://doc.qt.io/qt-5/qcolor.html">QColor</a> &amp;<a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#color">color</a>)</td></tr>
+<tr class="separator:setPixelColor inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:colorTable inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="colorTable"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qvector.html">QVector</a>&lt; QRgb &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#colorTable">colorTable</a> () const const</td></tr>
+<tr class="separator:colorTable inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setColorTable inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="setColorTable"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#setColorTable">setColorTable</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qvector.html">QVector</a>&lt; QRgb &gt; colors)</td></tr>
+<tr class="separator:setColorTable inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:devicePixelRatio inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="devicePixelRatio"></a>
+qreal&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#devicePixelRatio">devicePixelRatio</a> () const const</td></tr>
+<tr class="separator:devicePixelRatio inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setDevicePixelRatio inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="setDevicePixelRatio"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#setDevicePixelRatio">setDevicePixelRatio</a> (qreal scaleFactor)</td></tr>
+<tr class="separator:setDevicePixelRatio inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:fill inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="fill"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#fill">fill</a> (uint pixelValue)</td></tr>
+<tr class="separator:fill inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:fill-1 inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="fill-1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#fill-1">fill</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qcolor.html">QColor</a> &amp;<a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#color">color</a>)</td></tr>
+<tr class="separator:fill-1 inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:fill-2 inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="fill-2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#fill-2">fill</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qt.html#GlobalColor-enum">Qt::GlobalColor</a> <a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#color">color</a>)</td></tr>
+<tr class="separator:fill-2 inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:hasAlphaChannel inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="hasAlphaChannel"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#hasAlphaChannel">hasAlphaChannel</a> () const const</td></tr>
+<tr class="separator:hasAlphaChannel inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setAlphaChannel inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="setAlphaChannel"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#setAlphaChannel">setAlphaChannel</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qimage.html">QImage</a> &amp;<a class="elRef" href="http://doc.qt.io/qt-5/qimage-obsolete.html#alphaChannel">alphaChannel</a>)</td></tr>
+<tr class="separator:setAlphaChannel inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:alphaChannel inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="alphaChannel"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qimage.html">QImage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage-obsolete.html#alphaChannel">alphaChannel</a> () const const</td></tr>
+<tr class="separator:alphaChannel inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:createAlphaMask inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="createAlphaMask"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qimage.html">QImage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#createAlphaMask">createAlphaMask</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qt.html#ImageConversionFlag-enum">Qt::ImageConversionFlags</a> flags) const const</td></tr>
+<tr class="separator:createAlphaMask inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:createHeuristicMask inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="createHeuristicMask"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qimage.html">QImage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#createHeuristicMask">createHeuristicMask</a> (bool clipTight) const const</td></tr>
+<tr class="separator:createHeuristicMask inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:createMaskFromColor inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="createMaskFromColor"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qimage.html">QImage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#createMaskFromColor">createMaskFromColor</a> (QRgb <a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#color">color</a>, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#MaskMode-enum">Qt::MaskMode</a> mode) const const</td></tr>
+<tr class="separator:createMaskFromColor inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:scaled-1 inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="scaled-1"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qimage.html">QImage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#scaled-1">scaled</a> (int <a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#width">width</a>, int <a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#height">height</a>, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#AspectRatioMode-enum">Qt::AspectRatioMode</a> aspectRatioMode, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#TransformationMode-enum">Qt::TransformationMode</a> transformMode) const const</td></tr>
+<tr class="separator:scaled-1 inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:scaled inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="scaled"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qimage.html">QImage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#scaled">scaled</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qsize.html">QSize</a> &amp;<a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#size">size</a>, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#AspectRatioMode-enum">Qt::AspectRatioMode</a> aspectRatioMode, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#TransformationMode-enum">Qt::TransformationMode</a> transformMode) const const</td></tr>
+<tr class="separator:scaled inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:scaledToWidth inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="scaledToWidth"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qimage.html">QImage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#scaledToWidth">scaledToWidth</a> (int <a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#width">width</a>, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#TransformationMode-enum">Qt::TransformationMode</a> mode) const const</td></tr>
+<tr class="separator:scaledToWidth inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:scaledToHeight inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="scaledToHeight"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qimage.html">QImage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#scaledToHeight">scaledToHeight</a> (int <a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#height">height</a>, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#TransformationMode-enum">Qt::TransformationMode</a> mode) const const</td></tr>
+<tr class="separator:scaledToHeight inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:transformed inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="transformed"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qimage.html">QImage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage-obsolete.html#transformed">transformed</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qmatrix.html">QMatrix</a> &amp;matrix, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#TransformationMode-enum">Qt::TransformationMode</a> mode) const const</td></tr>
+<tr class="separator:transformed inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:transformed-1 inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="transformed-1"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qimage.html">QImage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#transformed-1">transformed</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qtransform.html">QTransform</a> &amp;matrix, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#TransformationMode-enum">Qt::TransformationMode</a> mode) const const</td></tr>
+<tr class="separator:transformed-1 inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:mirrored inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="mirrored"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qimage.html">QImage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#mirrored">mirrored</a> (bool horizontal, bool vertical) const &amp;const</td></tr>
+<tr class="separator:mirrored inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:mirrored-1 inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="mirrored-1"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qimage.html">QImage</a> &amp;&amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#mirrored-1">mirrored</a> (bool horizontal, bool vertical) &amp;&amp;</td></tr>
+<tr class="separator:mirrored-1 inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:rgbSwapped inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="rgbSwapped"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qimage.html">QImage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#rgbSwapped">rgbSwapped</a> () const &amp;const</td></tr>
+<tr class="separator:rgbSwapped inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:rgbSwapped-1 inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="rgbSwapped-1"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qimage.html">QImage</a> &amp;&amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#rgbSwapped-1">rgbSwapped</a> () &amp;&amp;</td></tr>
+<tr class="separator:rgbSwapped-1 inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:invertPixels inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="invertPixels"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#invertPixels">invertPixels</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#InvertMode-enum">QImage::InvertMode</a> mode)</td></tr>
+<tr class="separator:invertPixels inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:colorSpace inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="colorSpace"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qcolorspace.html">QColorSpace</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#colorSpace">colorSpace</a> () const const</td></tr>
+<tr class="separator:colorSpace inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:convertedToColorSpace inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="convertedToColorSpace"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qimage.html">QImage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#convertedToColorSpace">convertedToColorSpace</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qcolorspace.html">QColorSpace</a> &amp;<a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#colorSpace">colorSpace</a>) const const</td></tr>
+<tr class="separator:convertedToColorSpace inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:convertToColorSpace inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="convertToColorSpace"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#convertToColorSpace">convertToColorSpace</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qcolorspace.html">QColorSpace</a> &amp;<a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#colorSpace">colorSpace</a>)</td></tr>
+<tr class="separator:convertToColorSpace inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setColorSpace inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="setColorSpace"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#setColorSpace">setColorSpace</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qcolorspace.html">QColorSpace</a> &amp;<a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#colorSpace">colorSpace</a>)</td></tr>
+<tr class="separator:setColorSpace inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:applyColorTransform inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="applyColorTransform"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#applyColorTransform">applyColorTransform</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qcolortransform.html">QColorTransform</a> &amp;transform)</td></tr>
+<tr class="separator:applyColorTransform inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:load-1 inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="load-1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#load-1">load</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html">QIODevice</a> *device, const char *<a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#format">format</a>)</td></tr>
+<tr class="separator:load-1 inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:load inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="load"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#load">load</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;fileName, const char *<a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#format">format</a>)</td></tr>
+<tr class="separator:load inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:loadFromData inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="loadFromData"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#loadFromData">loadFromData</a> (const uchar *data, int len, const char *<a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#format">format</a>)</td></tr>
+<tr class="separator:loadFromData inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:loadFromData-1 inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="loadFromData-1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#loadFromData-1">loadFromData</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a> &amp;data, const char *<a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#format">format</a>)</td></tr>
+<tr class="separator:loadFromData-1 inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:save inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="save"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#save">save</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;fileName, const char *<a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#format">format</a>, int quality) const const</td></tr>
+<tr class="separator:save inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:save-1 inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="save-1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#save-1">save</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html">QIODevice</a> *device, const char *<a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#format">format</a>, int quality) const const</td></tr>
+<tr class="separator:save-1 inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:serialNumber inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="serialNumber"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage-obsolete.html#serialNumber">serialNumber</a> () const const</td></tr>
+<tr class="separator:serialNumber inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:cacheKey inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="cacheKey"></a>
+qint64&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#cacheKey">cacheKey</a> () const const</td></tr>
+<tr class="separator:cacheKey inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dotsPerMeterX inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="dotsPerMeterX"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#dotsPerMeterX">dotsPerMeterX</a> () const const</td></tr>
+<tr class="separator:dotsPerMeterX inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dotsPerMeterY inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="dotsPerMeterY"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#dotsPerMeterY">dotsPerMeterY</a> () const const</td></tr>
+<tr class="separator:dotsPerMeterY inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setDotsPerMeterX inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="setDotsPerMeterX"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#setDotsPerMeterX">setDotsPerMeterX</a> (int x)</td></tr>
+<tr class="separator:setDotsPerMeterX inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setDotsPerMeterY inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="setDotsPerMeterY"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#setDotsPerMeterY">setDotsPerMeterY</a> (int y)</td></tr>
+<tr class="separator:setDotsPerMeterY inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:offset inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="offset"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qpoint.html">QPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#offset">offset</a> () const const</td></tr>
+<tr class="separator:offset inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setOffset inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="setOffset"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#setOffset">setOffset</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qpoint.html">QPoint</a> &amp;<a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#offset">offset</a>)</td></tr>
+<tr class="separator:setOffset inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:textKeys inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="textKeys"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#textKeys">textKeys</a> () const const</td></tr>
+<tr class="separator:textKeys inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:text inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="text"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#text">text</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;key) const const</td></tr>
+<tr class="separator:text inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setText inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="setText"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#setText">setText</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;key, const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;<a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#text">text</a>)</td></tr>
+<tr class="separator:setText inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:pixelFormat inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="pixelFormat"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qpixelformat.html">QPixelFormat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#pixelFormat">pixelFormat</a> () const const</td></tr>
+<tr class="separator:pixelFormat inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:toCGImage inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="toCGImage"></a>
+CGImageRef&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#toCGImage">toCGImage</a> () const const</td></tr>
+<tr class="separator:toCGImage inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:text-1 inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="text-1"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage-obsolete.html#text-1">text</a> (const char *key, const char *language) const const</td></tr>
+<tr class="separator:text-1 inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:textList inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="textList"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qlist.html">QList</a>&lt; <a class="elRef" href="http://doc.qt.io/qt-5/qimagetextkeylang.html">QImageTextKeyLang</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage-obsolete.html#textList">textList</a> () const const</td></tr>
+<tr class="separator:textList inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:textLanguages inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="textLanguages"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage-obsolete.html#textLanguages">textLanguages</a> () const const</td></tr>
+<tr class="separator:textLanguages inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:text-2 inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="text-2"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage-obsolete.html#text-2">text</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qimagetextkeylang.html">QImageTextKeyLang</a> &amp;keywordAndLanguage) const const</td></tr>
+<tr class="separator:text-2 inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setText-1 inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="setText-1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage-obsolete.html#setText-1">setText</a> (const char *key, const char *language, const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;<a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#text">text</a>)</td></tr>
+<tr class="separator:setText-1 inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:numColors inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="numColors"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage-obsolete.html#numColors">numColors</a> () const const</td></tr>
+<tr class="separator:numColors inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setNumColors inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="setNumColors"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage-obsolete.html#setNumColors">setNumColors</a> (int n)</td></tr>
+<tr class="separator:setNumColors inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:numBytes inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="numBytes"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage-obsolete.html#numBytes">numBytes</a> () const const</td></tr>
+<tr class="separator:numBytes inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:operator-lt-lt-21 inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="operator-lt-lt-21"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qdatastream.html">QDataStream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#operator-lt-lt-21">operator&lt;&lt;</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qdatastream.html">QDataStream</a> &amp;stream, const <a class="elRef" href="http://doc.qt.io/qt-5/qimage.html">QImage</a> &amp;image)</td></tr>
+<tr class="separator:operator-lt-lt-21 inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:operator-gt-gt inherit pub_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="operator-gt-gt"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qdatastream.html">QDataStream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#operator-gt-gt">operator&gt;&gt;</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qdatastream.html">QDataStream</a> &amp;stream, <a class="elRef" href="http://doc.qt.io/qt-5/qimage.html">QImage</a> &amp;image)</td></tr>
+<tr class="separator:operator-gt-gt inherit pub_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_qpaintdevice"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_qpaintdevice')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el"  href="http://doc.qt.io/qt-5/qpaintdevice.html">QPaintDevice</a></td></tr>
+<tr class="memitem:paintingActive inherit pub_methods_qpaintdevice"><td class="memItemLeft" align="right" valign="top"><a id="paintingActive"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qpaintdevice.html#paintingActive">paintingActive</a> () const const</td></tr>
+<tr class="separator:paintingActive inherit pub_methods_qpaintdevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:paintEngine inherit pub_methods_qpaintdevice"><td class="memItemLeft" align="right" valign="top"><a id="paintEngine"></a>
+virtual <a class="elRef" href="http://doc.qt.io/qt-5/qpaintengine.html">QPaintEngine</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qpaintdevice.html#paintEngine">paintEngine</a> () const const=0</td></tr>
+<tr class="separator:paintEngine inherit pub_methods_qpaintdevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:width inherit pub_methods_qpaintdevice"><td class="memItemLeft" align="right" valign="top"><a id="width"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qpaintdevice.html#width">width</a> () const const</td></tr>
+<tr class="separator:width inherit pub_methods_qpaintdevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:height inherit pub_methods_qpaintdevice"><td class="memItemLeft" align="right" valign="top"><a id="height"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qpaintdevice.html#height">height</a> () const const</td></tr>
+<tr class="separator:height inherit pub_methods_qpaintdevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:widthMM inherit pub_methods_qpaintdevice"><td class="memItemLeft" align="right" valign="top"><a id="widthMM"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qpaintdevice.html#widthMM">widthMM</a> () const const</td></tr>
+<tr class="separator:widthMM inherit pub_methods_qpaintdevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:heightMM inherit pub_methods_qpaintdevice"><td class="memItemLeft" align="right" valign="top"><a id="heightMM"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qpaintdevice.html#heightMM">heightMM</a> () const const</td></tr>
+<tr class="separator:heightMM inherit pub_methods_qpaintdevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:logicalDpiX inherit pub_methods_qpaintdevice"><td class="memItemLeft" align="right" valign="top"><a id="logicalDpiX"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qpaintdevice.html#logicalDpiX">logicalDpiX</a> () const const</td></tr>
+<tr class="separator:logicalDpiX inherit pub_methods_qpaintdevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:logicalDpiY inherit pub_methods_qpaintdevice"><td class="memItemLeft" align="right" valign="top"><a id="logicalDpiY"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qpaintdevice.html#logicalDpiY">logicalDpiY</a> () const const</td></tr>
+<tr class="separator:logicalDpiY inherit pub_methods_qpaintdevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:physicalDpiX inherit pub_methods_qpaintdevice"><td class="memItemLeft" align="right" valign="top"><a id="physicalDpiX"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qpaintdevice.html#physicalDpiX">physicalDpiX</a> () const const</td></tr>
+<tr class="separator:physicalDpiX inherit pub_methods_qpaintdevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:physicalDpiY inherit pub_methods_qpaintdevice"><td class="memItemLeft" align="right" valign="top"><a id="physicalDpiY"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qpaintdevice.html#physicalDpiY">physicalDpiY</a> () const const</td></tr>
+<tr class="separator:physicalDpiY inherit pub_methods_qpaintdevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:devicePixelRatio inherit pub_methods_qpaintdevice"><td class="memItemLeft" align="right" valign="top"><a id="devicePixelRatio"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qpaintdevice.html#devicePixelRatio">devicePixelRatio</a> () const const</td></tr>
+<tr class="separator:devicePixelRatio inherit pub_methods_qpaintdevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:devicePixelRatioF inherit pub_methods_qpaintdevice"><td class="memItemLeft" align="right" valign="top"><a id="devicePixelRatioF"></a>
+qreal&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qpaintdevice.html#devicePixelRatioF">devicePixelRatioF</a> () const const</td></tr>
+<tr class="separator:devicePixelRatioF inherit pub_methods_qpaintdevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:colorCount inherit pub_methods_qpaintdevice"><td class="memItemLeft" align="right" valign="top"><a id="colorCount"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qpaintdevice.html#colorCount">colorCount</a> () const const</td></tr>
+<tr class="separator:colorCount inherit pub_methods_qpaintdevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:depth inherit pub_methods_qpaintdevice"><td class="memItemLeft" align="right" valign="top"><a id="depth"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qpaintdevice.html#depth">depth</a> () const const</td></tr>
+<tr class="separator:depth inherit pub_methods_qpaintdevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a65bf8f994f86975e4a75485117c5a4a7"><td class="memItemLeft" align="right" valign="top"><a id="a65bf8f994f86975e4a75485117c5a4a7"></a>
+static <a class="elRef" href="http://doc.qt.io/qt-5/qexplicitlyshareddatapointer.html">QExplicitlySharedDataPointer</a>&lt; <a class="el" href="classCachedQImage.html">CachedQImage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getImage</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qsize.html">QSize</a> &amp;<a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#size">size</a>, bool allowedGreaterSize)</td></tr>
+<tr class="separator:a65bf8f994f86975e4a75485117c5a4a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_qimage"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_qimage')"><img src="closed.png" alt="-"/>&#160;静态 Public 成员函数 继承自 <a class="el"  href="http://doc.qt.io/qt-5/qimage.html">QImage</a></td></tr>
+<tr class="memitem:trueMatrix inherit pub_static_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="trueMatrix"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qmatrix.html">QMatrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage-obsolete.html#trueMatrix">trueMatrix</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qmatrix.html">QMatrix</a> &amp;matrix, int <a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#width">width</a>, int <a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#height">height</a>)</td></tr>
+<tr class="separator:trueMatrix inherit pub_static_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:trueMatrix-1 inherit pub_static_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="trueMatrix-1"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qtransform.html">QTransform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#trueMatrix-1">trueMatrix</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qtransform.html">QTransform</a> &amp;matrix, int <a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#width">width</a>, int <a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#height">height</a>)</td></tr>
+<tr class="separator:trueMatrix-1 inherit pub_static_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:fromData inherit pub_static_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="fromData"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qimage.html">QImage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#fromData">fromData</a> (const uchar *data, int <a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#size">size</a>, const char *<a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#format">format</a>)</td></tr>
+<tr class="separator:fromData inherit pub_static_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:fromData-1 inherit pub_static_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="fromData-1"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qimage.html">QImage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#fromData-1">fromData</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a> &amp;data, const char *<a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#format">format</a>)</td></tr>
+<tr class="separator:fromData-1 inherit pub_static_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:toPixelFormat inherit pub_static_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="toPixelFormat"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qpixelformat.html">QPixelFormat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#toPixelFormat">toPixelFormat</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#Format-enum">QImage::Format</a> <a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#format">format</a>)</td></tr>
+<tr class="separator:toPixelFormat inherit pub_static_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:toImageFormat inherit pub_static_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="toImageFormat"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#Format-enum">QImage::Format</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#toImageFormat">toImageFormat</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qpixelformat.html">QPixelFormat</a> <a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#format">format</a>)</td></tr>
+<tr class="separator:toImageFormat inherit pub_static_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pub_attribs_qimage"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_qimage')"><img src="closed.png" alt="-"/>&#160;Public 属性 继承自 <a class="el"  href="http://doc.qt.io/qt-5/qimage.html">QImage</a></td></tr>
+<tr class="memitem:QImageCleanupFunction-typedef inherit pub_attribs_qimage"><td class="memItemLeft" align="right" valign="top"><a id="QImageCleanupFunction-typedef"></a>
+typedef&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#QImageCleanupFunction-typedef">QImageCleanupFunction</a></td></tr>
+<tr class="separator:QImageCleanupFunction-typedef inherit pub_attribs_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:InvertMode-enum inherit pub_attribs_qimage"><td class="memItemLeft" align="right" valign="top"><a id="InvertMode-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#InvertMode-enum">InvertRgb</a></td></tr>
+<tr class="separator:InvertMode-enum inherit pub_attribs_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:InvertMode-enum inherit pub_attribs_qimage"><td class="memItemLeft" align="right" valign="top"><a id="InvertMode-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#InvertMode-enum">InvertRgba</a></td></tr>
+<tr class="separator:InvertMode-enum inherit pub_attribs_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Format-enum inherit pub_attribs_qimage"><td class="memItemLeft" align="right" valign="top"><a id="Format-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#Format-enum">Format_Invalid</a></td></tr>
+<tr class="separator:Format-enum inherit pub_attribs_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Format-enum inherit pub_attribs_qimage"><td class="memItemLeft" align="right" valign="top"><a id="Format-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#Format-enum">Format_Mono</a></td></tr>
+<tr class="separator:Format-enum inherit pub_attribs_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Format-enum inherit pub_attribs_qimage"><td class="memItemLeft" align="right" valign="top"><a id="Format-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#Format-enum">Format_MonoLSB</a></td></tr>
+<tr class="separator:Format-enum inherit pub_attribs_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Format-enum inherit pub_attribs_qimage"><td class="memItemLeft" align="right" valign="top"><a id="Format-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#Format-enum">Format_Indexed8</a></td></tr>
+<tr class="separator:Format-enum inherit pub_attribs_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Format-enum inherit pub_attribs_qimage"><td class="memItemLeft" align="right" valign="top"><a id="Format-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#Format-enum">Format_RGB32</a></td></tr>
+<tr class="separator:Format-enum inherit pub_attribs_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Format-enum inherit pub_attribs_qimage"><td class="memItemLeft" align="right" valign="top"><a id="Format-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#Format-enum">Format_ARGB32</a></td></tr>
+<tr class="separator:Format-enum inherit pub_attribs_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Format-enum inherit pub_attribs_qimage"><td class="memItemLeft" align="right" valign="top"><a id="Format-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#Format-enum">Format_ARGB32_Premultiplied</a></td></tr>
+<tr class="separator:Format-enum inherit pub_attribs_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Format-enum inherit pub_attribs_qimage"><td class="memItemLeft" align="right" valign="top"><a id="Format-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#Format-enum">Format_RGB16</a></td></tr>
+<tr class="separator:Format-enum inherit pub_attribs_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Format-enum inherit pub_attribs_qimage"><td class="memItemLeft" align="right" valign="top"><a id="Format-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#Format-enum">Format_ARGB8565_Premultiplied</a></td></tr>
+<tr class="separator:Format-enum inherit pub_attribs_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Format-enum inherit pub_attribs_qimage"><td class="memItemLeft" align="right" valign="top"><a id="Format-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#Format-enum">Format_RGB666</a></td></tr>
+<tr class="separator:Format-enum inherit pub_attribs_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Format-enum inherit pub_attribs_qimage"><td class="memItemLeft" align="right" valign="top"><a id="Format-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#Format-enum">Format_ARGB6666_Premultiplied</a></td></tr>
+<tr class="separator:Format-enum inherit pub_attribs_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Format-enum inherit pub_attribs_qimage"><td class="memItemLeft" align="right" valign="top"><a id="Format-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#Format-enum">Format_RGB555</a></td></tr>
+<tr class="separator:Format-enum inherit pub_attribs_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Format-enum inherit pub_attribs_qimage"><td class="memItemLeft" align="right" valign="top"><a id="Format-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#Format-enum">Format_ARGB8555_Premultiplied</a></td></tr>
+<tr class="separator:Format-enum inherit pub_attribs_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Format-enum inherit pub_attribs_qimage"><td class="memItemLeft" align="right" valign="top"><a id="Format-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#Format-enum">Format_RGB888</a></td></tr>
+<tr class="separator:Format-enum inherit pub_attribs_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Format-enum inherit pub_attribs_qimage"><td class="memItemLeft" align="right" valign="top"><a id="Format-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#Format-enum">Format_RGB444</a></td></tr>
+<tr class="separator:Format-enum inherit pub_attribs_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Format-enum inherit pub_attribs_qimage"><td class="memItemLeft" align="right" valign="top"><a id="Format-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#Format-enum">Format_ARGB4444_Premultiplied</a></td></tr>
+<tr class="separator:Format-enum inherit pub_attribs_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Format-enum inherit pub_attribs_qimage"><td class="memItemLeft" align="right" valign="top"><a id="Format-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#Format-enum">Format_RGBX8888</a></td></tr>
+<tr class="separator:Format-enum inherit pub_attribs_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Format-enum inherit pub_attribs_qimage"><td class="memItemLeft" align="right" valign="top"><a id="Format-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#Format-enum">Format_RGBA8888</a></td></tr>
+<tr class="separator:Format-enum inherit pub_attribs_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Format-enum inherit pub_attribs_qimage"><td class="memItemLeft" align="right" valign="top"><a id="Format-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#Format-enum">Format_RGBA8888_Premultiplied</a></td></tr>
+<tr class="separator:Format-enum inherit pub_attribs_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Format-enum inherit pub_attribs_qimage"><td class="memItemLeft" align="right" valign="top"><a id="Format-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#Format-enum">Format_BGR30</a></td></tr>
+<tr class="separator:Format-enum inherit pub_attribs_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Format-enum inherit pub_attribs_qimage"><td class="memItemLeft" align="right" valign="top"><a id="Format-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#Format-enum">Format_A2BGR30_Premultiplied</a></td></tr>
+<tr class="separator:Format-enum inherit pub_attribs_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Format-enum inherit pub_attribs_qimage"><td class="memItemLeft" align="right" valign="top"><a id="Format-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#Format-enum">Format_RGB30</a></td></tr>
+<tr class="separator:Format-enum inherit pub_attribs_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Format-enum inherit pub_attribs_qimage"><td class="memItemLeft" align="right" valign="top"><a id="Format-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#Format-enum">Format_A2RGB30_Premultiplied</a></td></tr>
+<tr class="separator:Format-enum inherit pub_attribs_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Format-enum inherit pub_attribs_qimage"><td class="memItemLeft" align="right" valign="top"><a id="Format-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#Format-enum">Format_Alpha8</a></td></tr>
+<tr class="separator:Format-enum inherit pub_attribs_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Format-enum inherit pub_attribs_qimage"><td class="memItemLeft" align="right" valign="top"><a id="Format-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#Format-enum">Format_Grayscale8</a></td></tr>
+<tr class="separator:Format-enum inherit pub_attribs_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Format-enum inherit pub_attribs_qimage"><td class="memItemLeft" align="right" valign="top"><a id="Format-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#Format-enum">Format_RGBX64</a></td></tr>
+<tr class="separator:Format-enum inherit pub_attribs_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Format-enum inherit pub_attribs_qimage"><td class="memItemLeft" align="right" valign="top"><a id="Format-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#Format-enum">Format_RGBA64</a></td></tr>
+<tr class="separator:Format-enum inherit pub_attribs_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Format-enum inherit pub_attribs_qimage"><td class="memItemLeft" align="right" valign="top"><a id="Format-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#Format-enum">Format_RGBA64_Premultiplied</a></td></tr>
+<tr class="separator:Format-enum inherit pub_attribs_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Format-enum inherit pub_attribs_qimage"><td class="memItemLeft" align="right" valign="top"><a id="Format-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#Format-enum">Format_Grayscale16</a></td></tr>
+<tr class="separator:Format-enum inherit pub_attribs_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Format-enum inherit pub_attribs_qimage"><td class="memItemLeft" align="right" valign="top"><a id="Format-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#Format-enum">Format_BGR888</a></td></tr>
+<tr class="separator:Format-enum inherit pub_attribs_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_qpaintdevice"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_qpaintdevice')"><img src="closed.png" alt="-"/>&#160;Public 属性 继承自 <a class="el"  href="http://doc.qt.io/qt-5/qpaintdevice.html">QPaintDevice</a></td></tr>
+<tr class="memitem:PaintDeviceMetric-enum inherit pub_attribs_qpaintdevice"><td class="memItemLeft" align="right" valign="top"><a id="PaintDeviceMetric-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qpaintdevice.html#PaintDeviceMetric-enum">PdmWidth</a></td></tr>
+<tr class="separator:PaintDeviceMetric-enum inherit pub_attribs_qpaintdevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:PaintDeviceMetric-enum inherit pub_attribs_qpaintdevice"><td class="memItemLeft" align="right" valign="top"><a id="PaintDeviceMetric-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qpaintdevice.html#PaintDeviceMetric-enum">PdmHeight</a></td></tr>
+<tr class="separator:PaintDeviceMetric-enum inherit pub_attribs_qpaintdevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:PaintDeviceMetric-enum inherit pub_attribs_qpaintdevice"><td class="memItemLeft" align="right" valign="top"><a id="PaintDeviceMetric-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qpaintdevice.html#PaintDeviceMetric-enum">PdmWidthMM</a></td></tr>
+<tr class="separator:PaintDeviceMetric-enum inherit pub_attribs_qpaintdevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:PaintDeviceMetric-enum inherit pub_attribs_qpaintdevice"><td class="memItemLeft" align="right" valign="top"><a id="PaintDeviceMetric-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qpaintdevice.html#PaintDeviceMetric-enum">PdmHeightMM</a></td></tr>
+<tr class="separator:PaintDeviceMetric-enum inherit pub_attribs_qpaintdevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:PaintDeviceMetric-enum inherit pub_attribs_qpaintdevice"><td class="memItemLeft" align="right" valign="top"><a id="PaintDeviceMetric-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qpaintdevice.html#PaintDeviceMetric-enum">PdmNumColors</a></td></tr>
+<tr class="separator:PaintDeviceMetric-enum inherit pub_attribs_qpaintdevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:PaintDeviceMetric-enum inherit pub_attribs_qpaintdevice"><td class="memItemLeft" align="right" valign="top"><a id="PaintDeviceMetric-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qpaintdevice.html#PaintDeviceMetric-enum">PdmDepth</a></td></tr>
+<tr class="separator:PaintDeviceMetric-enum inherit pub_attribs_qpaintdevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:PaintDeviceMetric-enum inherit pub_attribs_qpaintdevice"><td class="memItemLeft" align="right" valign="top"><a id="PaintDeviceMetric-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qpaintdevice.html#PaintDeviceMetric-enum">PdmDpiX</a></td></tr>
+<tr class="separator:PaintDeviceMetric-enum inherit pub_attribs_qpaintdevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:PaintDeviceMetric-enum inherit pub_attribs_qpaintdevice"><td class="memItemLeft" align="right" valign="top"><a id="PaintDeviceMetric-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qpaintdevice.html#PaintDeviceMetric-enum">PdmDpiY</a></td></tr>
+<tr class="separator:PaintDeviceMetric-enum inherit pub_attribs_qpaintdevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:PaintDeviceMetric-enum inherit pub_attribs_qpaintdevice"><td class="memItemLeft" align="right" valign="top"><a id="PaintDeviceMetric-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qpaintdevice.html#PaintDeviceMetric-enum">PdmPhysicalDpiX</a></td></tr>
+<tr class="separator:PaintDeviceMetric-enum inherit pub_attribs_qpaintdevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:PaintDeviceMetric-enum inherit pub_attribs_qpaintdevice"><td class="memItemLeft" align="right" valign="top"><a id="PaintDeviceMetric-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qpaintdevice.html#PaintDeviceMetric-enum">PdmPhysicalDpiY</a></td></tr>
+<tr class="separator:PaintDeviceMetric-enum inherit pub_attribs_qpaintdevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:PaintDeviceMetric-enum inherit pub_attribs_qpaintdevice"><td class="memItemLeft" align="right" valign="top"><a id="PaintDeviceMetric-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qpaintdevice.html#PaintDeviceMetric-enum">PdmDevicePixelRatio</a></td></tr>
+<tr class="separator:PaintDeviceMetric-enum inherit pub_attribs_qpaintdevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:PaintDeviceMetric-enum inherit pub_attribs_qpaintdevice"><td class="memItemLeft" align="right" valign="top"><a id="PaintDeviceMetric-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qpaintdevice.html#PaintDeviceMetric-enum">PdmDevicePixelRatioScaled</a></td></tr>
+<tr class="separator:PaintDeviceMetric-enum inherit pub_attribs_qpaintdevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_qimage"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_qimage')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el"  href="http://doc.qt.io/qt-5/qimage.html">QImage</a></td></tr>
+<tr class="memitem:smoothScaled inherit pro_methods_qimage"><td class="memItemLeft" align="right" valign="top"><a id="smoothScaled"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qimage.html">QImage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html#smoothScaled">smoothScaled</a> (int w, int h) const const</td></tr>
+<tr class="separator:smoothScaled inherit pro_methods_qimage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_qpaintdevice"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_qpaintdevice')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el"  href="http://doc.qt.io/qt-5/qpaintdevice.html">QPaintDevice</a></td></tr>
+<tr class="memitem:metric inherit pro_methods_qpaintdevice"><td class="memItemLeft" align="right" valign="top"><a id="metric"></a>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qpaintdevice.html#metric">metric</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qpaintdevice.html#PaintDeviceMetric-enum">QPaintDevice::PaintDeviceMetric</a> metric) const const</td></tr>
+<tr class="separator:metric inherit pro_methods_qpaintdevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dtkdeclarative/src/private/dblitframebuffernode.cpp</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classCachedQImage.html">CachedQImage</a></li>
+    <li class="footer">文档生成时间:2023-01-13-07:39  +00</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

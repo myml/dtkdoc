@@ -15,6 +15,7 @@ var classDDialog =
     [ "addSpacing", "classDDialog.html#af4547072e8d8de47342d239d4b1e7eab", null ],
     [ "buttonClicked", "classDDialog.html#a6791b357bf60aa9b9861282e2711aa55", null ],
     [ "buttonCount", "classDDialog.html#a6e366a5f298ca425157e1d39a99d3294", null ],
+    [ "changeEvent", "classDDialog.html#a8e2c0957f4f88e6bdd11000ef8fa8d35", null ],
     [ "childEvent", "classDDialog.html#ae931fa031d7aa240ddf58cabc56feb9b", null ],
     [ "clearButtons", "classDDialog.html#ad77d71530df35bacfaba552843e3b2f7", null ],
     [ "clearContents", "classDDialog.html#aaa91361d0d011ced341664c0643cf9be", null ],

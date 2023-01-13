@@ -37,6 +37,7 @@ var classDStyle =
       [ "PM_ContentsMargins", "classDStyle.html#ad0225bfb86e0b777f87808820264dd9faa42d13ed7539755411a40228b36cef4c", null ],
       [ "PM_ContentsSpacing", "classDStyle.html#ad0225bfb86e0b777f87808820264dd9fac93fbdbb0a291043c8ae7f0cbcce6c4c", null ],
       [ "PM_ButtonMinimizedSize", "classDStyle.html#ad0225bfb86e0b777f87808820264dd9faf836e76dfed3af384dd467d347f6cb03", null ],
+      [ "PM_ToolTipLabelWidth", "classDStyle.html#ad0225bfb86e0b777f87808820264dd9fa55a34a9b0e07fc5ccf3165bb69c710e8", null ],
       [ "PM_CustomBase", "classDStyle.html#ad0225bfb86e0b777f87808820264dd9facf244827ef7b59be6a7757a66a228c1f", null ]
     ] ],
     [ "PrimitiveElement", "classDStyle.html#a091d6ed0460172cb797a4d87137f6e86", [
@@ -107,7 +108,7 @@ var classDStyle =
       [ "SE_CustomBase", "classDStyle.html#a989a88a41460409fbaeb8cdc65a29bf5a49319ceb872fc6521449dfc91b3fc9f5", null ]
     ] ],
     [ "DStyle", "classDStyle.html#a9dacd7d2c67a28213e6c15af46bbd3b0", null ],
-    [ "adjustColor", "classDStyle.html#ae77f31eba45fcc95023d27f0ca899778", null ],
+    [ "adjustColor", "classDStyle.html#af34b5f976da8863f7726de6c1f3e34e7", null ],
     [ "blendColor", "classDStyle.html#a8adaaeda71a3e23c0630cc0353353d2d", null ],
     [ "drawControl", "classDStyle.html#adf42b504462345989669610d5602ecd2", null ],
     [ "drawControl", "classDStyle.html#a54c614cf9e8c900fe377fa17c2a5cabd", null ],
@@ -124,14 +125,13 @@ var classDStyle =
     [ "generatedBrush", "classDStyle.html#aa95bd14f945422e081db0024d8690092", null ],
     [ "generatedBrush", "classDStyle.html#af668ae5890493be6fad3a48e6717f426", null ],
     [ "generatedIconPixmap", "classDStyle.html#a562fe5983c7f928690e02fc7f37cf2fc", null ],
-    [ "getState", "classDStyle.html#aa61ec471be7e1fdde2e14b736dba9a15", null ],
     [ "pixelMetric", "classDStyle.html#afe31693ba8092cf475ec23c8785d91df", null ],
     [ "pixelMetric", "classDStyle.html#acbbad1cd11690548437cd04775d12196", null ],
     [ "pixelMetric", "classDStyle.html#a7a79ac0ec032bb10eec0426f142b5999", null ],
     [ "pixelMetric", "classDStyle.html#a88d3e8859d7f5b326ece3ad4a02a0515", null ],
     [ "setFocusRectVisible", "classDStyle.html#ad707cfa871585633fdd799553f802b7c", null ],
     [ "setFrameRadius", "classDStyle.html#a2a31a9866890f378be7bd5deb0ea9e8b", null ],
-    [ "setTooltipTextFormat", "classDStyle.html#a192dd1f55b27e2fd4ac4f1f668baf86c", null ],
+    [ "setRedPointVisible", "classDStyle.html#a84361625c991c718f1283ea551e66e26", null ],
     [ "setUncheckedItemIndicatorVisible", "classDStyle.html#ab0ae7edd794316e08c53772ceb58b072", null ],
     [ "sizeFromContents", "classDStyle.html#a4d7eee3989a491453969bccb2c7df1ad", null ],
     [ "sizeFromContents", "classDStyle.html#a0a0cbabca3a39ef624c674125f8e7694", null ],
@@ -147,6 +147,5 @@ var classDStyle =
     [ "subElementRect", "classDStyle.html#a0299226c4f4c0fb577f7e5a0acb43e80", null ],
     [ "subElementRect", "classDStyle.html#aacd49a1fd22a0f4f26d972defda3fbab", null ],
     [ "toDciIconMode", "classDStyle.html#ac60598ba9bb6a86270bcdfd8df5d9a1d", null ],
-    [ "toIconModeState", "classDStyle.html#a027e03d29fe92f7acf6468b43f1c53fa", null ],
-    [ "tooltipTextFormat", "classDStyle.html#a1199dfe07678dc1badce0489c8fc88e3", null ]
+    [ "toIconModeState", "classDStyle.html#a027e03d29fe92f7acf6468b43f1c53fa", null ]
 ];

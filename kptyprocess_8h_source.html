@@ -1,0 +1,310 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: dtkio/src/dtkcompressor/3rdparty/interface/process/kptyprocess.h 源文件</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="https://github.com/linuxdeepin/dtkdoc" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('kptyprocess_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">kptyprocess.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * This file is a part of QTerminal - http://gitorious.org/qterminal</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * This file was un-linked from KDE and modified</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * by Maxim Bourmistrov &lt;maxim@unixconn.com&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">    This file is part of the KDE libraries</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">    Copyright (C) 2007 Oswald Buddenhagen &lt;ossi@kde.org&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">    This library is free software; you can redistribute it and/or</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">    modify it under the terms of the GNU Library General Public</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">    License as published by the Free Software Foundation; either</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">    version 2 of the License, or (at your option) any later version.</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">    This library is distributed in the hope that it will be useful,</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">    but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">    Library General Public License for more details.</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">    You should have received a copy of the GNU Library General Public License</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">    along with this library; see the file COPYING.LIB.  If not, write to</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">    the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">    Boston, MA 02110-1301, USA.</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#ifndef KPTYPROCESS_H</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#define KPTYPROCESS_H</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;kprocess.h&quot;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;kptydevice.h&quot;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &lt;csignal&gt;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">class </span><a class="code" href="classKPtyDevice.html">KPtyDevice</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">class </span><a class="code" href="classKPtyProcessPrivate.html">KPtyProcessPrivate</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classKPtyProcess.html">   57</a></span>&#160;<span class="keyword">class </span><a class="code" href="classKPtyProcess.html">KPtyProcess</a> : <span class="keyword">public</span> <a class="code" href="classKProcess.html">KProcess</a></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;{</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">Q_OBJECT</a></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    Q_DECLARE_PRIVATE(<a class="code" href="classKPtyProcess.html">KPtyProcess</a>)</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="classKPtyProcess.html#ada77181de92d8c9d6e74c87e60777e34">   63</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="classKPtyProcess.html#ada77181de92d8c9d6e74c87e60777e34">PtyChannelFlag</a> {</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classKPtyProcess.html#ada77181de92d8c9d6e74c87e60777e34aa2b4e0876cd871573c09b44e7203d83c">   64</a></span>&#160;        <a class="code" href="classKPtyProcess.html#ada77181de92d8c9d6e74c87e60777e34aa2b4e0876cd871573c09b44e7203d83c">NoChannels</a> = 0, </div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classKPtyProcess.html#ada77181de92d8c9d6e74c87e60777e34a3eb0bb44351c443441dfab31307bf11a">   65</a></span>&#160;        <a class="code" href="classKPtyProcess.html#ada77181de92d8c9d6e74c87e60777e34a3eb0bb44351c443441dfab31307bf11a">StdinChannel</a> = 1, </div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="classKPtyProcess.html#ada77181de92d8c9d6e74c87e60777e34a6d32c3e25bfcb0f5b49f90ceb5d61421">   66</a></span>&#160;        <a class="code" href="classKPtyProcess.html#ada77181de92d8c9d6e74c87e60777e34a6d32c3e25bfcb0f5b49f90ceb5d61421">StdoutChannel</a> = 2, </div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classKPtyProcess.html#ada77181de92d8c9d6e74c87e60777e34af0d693c623e020a7070dae1cb21ef9b0">   67</a></span>&#160;        <a class="code" href="classKPtyProcess.html#ada77181de92d8c9d6e74c87e60777e34af0d693c623e020a7070dae1cb21ef9b0">StderrChannel</a> = 4, </div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classKPtyProcess.html#ada77181de92d8c9d6e74c87e60777e34a14ba39cb36082e5614bc867b8432d6bc">   68</a></span>&#160;        <a class="code" href="classKPtyProcess.html#ada77181de92d8c9d6e74c87e60777e34a14ba39cb36082e5614bc867b8432d6bc">AllOutputChannels</a> = 6, </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <a class="code" href="classKPtyProcess.html#ada77181de92d8c9d6e74c87e60777e34a5a94552fc77286fe169dd8a3ffc2b4f3">AllChannels</a> = 7 </div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="classKPtyProcess.html#ada77181de92d8c9d6e74c87e60777e34a5a94552fc77286fe169dd8a3ffc2b4f3">   70</a></span>&#160;    };</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    Q_DECLARE_FLAGS(PtyChannels, <a class="code" href="classKPtyProcess.html#ada77181de92d8c9d6e74c87e60777e34">PtyChannelFlag</a>)</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classKPtyProcess.html#a7301056d929cfa123907b1d3943b727e">KPtyProcess</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a> = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <a class="code" href="classKPtyProcess.html#a7301056d929cfa123907b1d3943b727e">KPtyProcess</a>(<span class="keywordtype">int</span> ptyMasterFd, <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a> = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <a class="code" href="classKPtyProcess.html#aa079f304417088171dfc97c90d93918e">~KPtyProcess</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classKPtyProcess.html#a40c2bc7b8bd4b9ea091fabf4f8b31699">setPtyChannels</a>(PtyChannels channels);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">bool</span> isRunning()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <span class="keywordtype">bool</span> rval;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        (<a class="code" href="classKProcess.html#a0c991c492a346417f352b88b4e313c8c">pid</a>() &gt; 0) ? rval= <span class="keyword">true</span> : rval= <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="keywordflow">return</span> rval;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    }</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    PtyChannels <a class="code" href="classKPtyProcess.html#a19af7c710c3d55307e7ecd3a56086696">ptyChannels</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classKPtyProcess.html#a21cebc9d33750d469ace27063f90e762">setUseUtmp</a>(<span class="keywordtype">bool</span> value);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classKPtyProcess.html#a197d82f41b3ee4ff535e4eaea0a771f0">isUseUtmp</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <a class="code" href="classKPtyDevice.html">KPtyDevice</a> *<a class="code" href="classKPtyProcess.html#a709b98ac4a7851306f89649d0b592374">pty</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160; </div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classKPtyProcess.html#a5d8528842c61e7ceca70318bde02164a">setupChildProcess</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    Q_PRIVATE_SLOT(d_func(), <span class="keywordtype">void</span> _k_onStateChanged(<a class="codeRef" href="http://doc.qt.io/qt-5/qprocess.html#ProcessState-enum">QProcess::ProcessState</a>))</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;};</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160; </div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="comment">// private data //</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00158"></a><span class="lineno"><a class="line" href="classKPtyProcessPrivate.html">  158</a></span>&#160;<span class="keyword">class </span><a class="code" href="classKPtyProcessPrivate.html">KPtyProcessPrivate</a> : <span class="keyword">public</span> <a class="code" href="classKProcessPrivate.html">KProcessPrivate</a> {</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <a class="code" href="classKPtyProcessPrivate.html">KPtyProcessPrivate</a>() :</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        ptyChannels(<a class="code" href="classKPtyProcess.html#ada77181de92d8c9d6e74c87e60777e34aa2b4e0876cd871573c09b44e7203d83c">KPtyProcess::NoChannels</a>),</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        addUtmp(<span class="keyword">false</span>)</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    {</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    }</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160; </div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="keywordtype">void</span> _k_onStateChanged(<a class="codeRef" href="http://doc.qt.io/qt-5/qprocess.html#ProcessState-enum">QProcess::ProcessState</a> newState)</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    {</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        <span class="keywordflow">if</span> (newState == <a class="codeRef" href="http://doc.qt.io/qt-5/qprocess.html#ProcessState-enum">QProcess::NotRunning</a> &amp;&amp; addUtmp)</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            pty-&gt;<a class="code" href="classKPty.html#ac4025fe9bcbdb48cfd5c31a36f7af5bc">logout</a>();</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    }</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160; </div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <a class="code" href="classKPtyDevice.html">KPtyDevice</a> *pty;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    KPtyProcess::PtyChannels ptyChannels;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="keywordtype">bool</span> addUtmp : 1;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;};</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160; </div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;Q_DECLARE_OPERATORS_FOR_FLAGS(KPtyProcess::PtyChannels)</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160; </div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassKProcessPrivate_html"><div class="ttname"><a href="classKProcessPrivate.html">KProcessPrivate</a></div><div class="ttdef"><b>Definition:</b> kprocess.h:350</div></div>
+<div class="ttc" id="aclassKProcess_html"><div class="ttname"><a href="classKProcess.html">KProcess</a></div><div class="ttdef"><b>Definition:</b> kprocess.h:53</div></div>
+<div class="ttc" id="aclassKProcess_html_a0c991c492a346417f352b88b4e313c8c"><div class="ttname"><a href="classKProcess.html#a0c991c492a346417f352b88b4e313c8c">KProcess::pid</a></div><div class="ttdeci">int pid() const</div><div class="ttdef"><b>Definition:</b> kprocess.cpp:404</div></div>
+<div class="ttc" id="aclassKPtyDevice_html"><div class="ttname"><a href="classKPtyDevice.html">KPtyDevice</a></div><div class="ttdef"><b>Definition:</b> kptydevice.h:49</div></div>
+<div class="ttc" id="aclassKPtyProcessPrivate_html"><div class="ttname"><a href="classKPtyProcessPrivate.html">KPtyProcessPrivate</a></div><div class="ttdef"><b>Definition:</b> kptyprocess.h:158</div></div>
+<div class="ttc" id="aclassKPtyProcess_html"><div class="ttname"><a href="classKPtyProcess.html">KPtyProcess</a></div><div class="ttdef"><b>Definition:</b> kptyprocess.h:58</div></div>
+<div class="ttc" id="aclassKPtyProcess_html_a197d82f41b3ee4ff535e4eaea0a771f0"><div class="ttname"><a href="classKPtyProcess.html#a197d82f41b3ee4ff535e4eaea0a771f0">KPtyProcess::isUseUtmp</a></div><div class="ttdeci">bool isUseUtmp() const</div><div class="ttdef"><b>Definition:</b> kptyprocess.cpp:108</div></div>
+<div class="ttc" id="aclassKPtyProcess_html_a19af7c710c3d55307e7ecd3a56086696"><div class="ttname"><a href="classKPtyProcess.html#a19af7c710c3d55307e7ecd3a56086696">KPtyProcess::ptyChannels</a></div><div class="ttdeci">PtyChannels ptyChannels() const</div><div class="ttdef"><b>Definition:</b> kptyprocess.cpp:94</div></div>
+<div class="ttc" id="aclassKPtyProcess_html_a21cebc9d33750d469ace27063f90e762"><div class="ttname"><a href="classKPtyProcess.html#a21cebc9d33750d469ace27063f90e762">KPtyProcess::setUseUtmp</a></div><div class="ttdeci">void setUseUtmp(bool value)</div><div class="ttdef"><b>Definition:</b> kptyprocess.cpp:101</div></div>
+<div class="ttc" id="aclassKPtyProcess_html_a40c2bc7b8bd4b9ea091fabf4f8b31699"><div class="ttname"><a href="classKPtyProcess.html#a40c2bc7b8bd4b9ea091fabf4f8b31699">KPtyProcess::setPtyChannels</a></div><div class="ttdeci">void setPtyChannels(PtyChannels channels)</div><div class="ttdef"><b>Definition:</b> kptyprocess.cpp:87</div></div>
+<div class="ttc" id="aclassKPtyProcess_html_a5d8528842c61e7ceca70318bde02164a"><div class="ttname"><a href="classKPtyProcess.html#a5d8528842c61e7ceca70318bde02164a">KPtyProcess::setupChildProcess</a></div><div class="ttdeci">void setupChildProcess() override</div><div class="ttdef"><b>Definition:</b> kptyprocess.cpp:122</div></div>
+<div class="ttc" id="aclassKPtyProcess_html_a709b98ac4a7851306f89649d0b592374"><div class="ttname"><a href="classKPtyProcess.html#a709b98ac4a7851306f89649d0b592374">KPtyProcess::pty</a></div><div class="ttdeci">KPtyDevice * pty() const</div><div class="ttdef"><b>Definition:</b> kptyprocess.cpp:115</div></div>
+<div class="ttc" id="aclassKPtyProcess_html_a7301056d929cfa123907b1d3943b727e"><div class="ttname"><a href="classKPtyProcess.html#a7301056d929cfa123907b1d3943b727e">KPtyProcess::KPtyProcess</a></div><div class="ttdeci">KPtyProcess(QObject *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> kptyprocess.cpp:40</div></div>
+<div class="ttc" id="aclassKPtyProcess_html_aa079f304417088171dfc97c90d93918e"><div class="ttname"><a href="classKPtyProcess.html#aa079f304417088171dfc97c90d93918e">KPtyProcess::~KPtyProcess</a></div><div class="ttdeci">~KPtyProcess() override</div><div class="ttdef"><b>Definition:</b> kptyprocess.cpp:62</div></div>
+<div class="ttc" id="aclassKPtyProcess_html_ada77181de92d8c9d6e74c87e60777e34"><div class="ttname"><a href="classKPtyProcess.html#ada77181de92d8c9d6e74c87e60777e34">KPtyProcess::PtyChannelFlag</a></div><div class="ttdeci">PtyChannelFlag</div><div class="ttdef"><b>Definition:</b> kptyprocess.h:63</div></div>
+<div class="ttc" id="aclassKPtyProcess_html_ada77181de92d8c9d6e74c87e60777e34a14ba39cb36082e5614bc867b8432d6bc"><div class="ttname"><a href="classKPtyProcess.html#ada77181de92d8c9d6e74c87e60777e34a14ba39cb36082e5614bc867b8432d6bc">KPtyProcess::AllOutputChannels</a></div><div class="ttdeci">@ AllOutputChannels</div><div class="ttdef"><b>Definition:</b> kptyprocess.h:68</div></div>
+<div class="ttc" id="aclassKPtyProcess_html_ada77181de92d8c9d6e74c87e60777e34a3eb0bb44351c443441dfab31307bf11a"><div class="ttname"><a href="classKPtyProcess.html#ada77181de92d8c9d6e74c87e60777e34a3eb0bb44351c443441dfab31307bf11a">KPtyProcess::StdinChannel</a></div><div class="ttdeci">@ StdinChannel</div><div class="ttdef"><b>Definition:</b> kptyprocess.h:65</div></div>
+<div class="ttc" id="aclassKPtyProcess_html_ada77181de92d8c9d6e74c87e60777e34a5a94552fc77286fe169dd8a3ffc2b4f3"><div class="ttname"><a href="classKPtyProcess.html#ada77181de92d8c9d6e74c87e60777e34a5a94552fc77286fe169dd8a3ffc2b4f3">KPtyProcess::AllChannels</a></div><div class="ttdeci">@ AllChannels</div><div class="ttdef"><b>Definition:</b> kptyprocess.h:69</div></div>
+<div class="ttc" id="aclassKPtyProcess_html_ada77181de92d8c9d6e74c87e60777e34a6d32c3e25bfcb0f5b49f90ceb5d61421"><div class="ttname"><a href="classKPtyProcess.html#ada77181de92d8c9d6e74c87e60777e34a6d32c3e25bfcb0f5b49f90ceb5d61421">KPtyProcess::StdoutChannel</a></div><div class="ttdeci">@ StdoutChannel</div><div class="ttdef"><b>Definition:</b> kptyprocess.h:66</div></div>
+<div class="ttc" id="aclassKPtyProcess_html_ada77181de92d8c9d6e74c87e60777e34aa2b4e0876cd871573c09b44e7203d83c"><div class="ttname"><a href="classKPtyProcess.html#ada77181de92d8c9d6e74c87e60777e34aa2b4e0876cd871573c09b44e7203d83c">KPtyProcess::NoChannels</a></div><div class="ttdeci">@ NoChannels</div><div class="ttdef"><b>Definition:</b> kptyprocess.h:64</div></div>
+<div class="ttc" id="aclassKPtyProcess_html_ada77181de92d8c9d6e74c87e60777e34af0d693c623e020a7070dae1cb21ef9b0"><div class="ttname"><a href="classKPtyProcess.html#ada77181de92d8c9d6e74c87e60777e34af0d693c623e020a7070dae1cb21ef9b0">KPtyProcess::StderrChannel</a></div><div class="ttdeci">@ StderrChannel</div><div class="ttdef"><b>Definition:</b> kptyprocess.h:67</div></div>
+<div class="ttc" id="aclassKPty_html_ac4025fe9bcbdb48cfd5c31a36f7af5bc"><div class="ttname"><a href="classKPty.html#ac4025fe9bcbdb48cfd5c31a36f7af5bc">KPty::logout</a></div><div class="ttdeci">void logout()</div><div class="ttdef"><b>Definition:</b> kpty.cpp:596</div></div>
+<div class="ttc" id="aqobject_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html">QObject</a></div></div>
+<div class="ttc" id="aqobject_html_Q_OBJECT"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">QObject::Q_OBJECT</a></div><div class="ttdeci">Q_OBJECTQ_OBJECT</div></div>
+<div class="ttc" id="aqobject_html_parent"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#parent">QObject::parent</a></div><div class="ttdeci">QObject * parent() const const</div></div>
+<div class="ttc" id="aqprocess_html_ProcessState-enum"><div class="ttname"><a href="http://doc.qt.io/qt-5/qprocess.html#ProcessState-enum">QProcess::ProcessState</a></div><div class="ttdeci">ProcessState</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_0990604d0eb8363f4260fee8d79bba7c.html">dtkio</a></li><li class="navelem"><a class="el" href="dir_f218eea51e6ba76871d0d7e538e54c2d.html">src</a></li><li class="navelem"><a class="el" href="dir_64e7b8374d0b59199acbe839986a12d4.html">dtkcompressor</a></li><li class="navelem"><a class="el" href="dir_d1ee9709c8a9c8a6288a9650a6bf8ddf.html">3rdparty</a></li><li class="navelem"><a class="el" href="dir_88f6681accce92f79d1508b1d9a9c26a.html">interface</a></li><li class="navelem"><a class="el" href="dir_be458f78dcfc38b2dc4f83be2ef6df51.html">process</a></li><li class="navelem"><b>kptyprocess.h</b></li>
+    <li class="footer">文档生成时间:2023-01-13-07:39  +00</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,354 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: dtkio/src/dtkcompressor/3rdparty/interface/process/kprocess.h 源文件</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="https://github.com/linuxdeepin/dtkdoc" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('kprocess_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">kprocess.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * This file is a part of QTerminal - http://gitorious.org/qterminal</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * This file was un-linked from KDE and modified</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * by Maxim Bourmistrov &lt;maxim@unixconn.com&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">    This file is part of the KDE libraries</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">    Copyright (C) 2007 Oswald Buddenhagen &lt;ossi@kde.org&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">    This library is free software; you can redistribute it and/or</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">    modify it under the terms of the GNU Library General Public</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">    License as published by the Free Software Foundation; either</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">    version 2 of the License, or (at your option) any later version.</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">    This library is distributed in the hope that it will be useful,</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">    but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">    Library General Public License for more details.</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">    You should have received a copy of the GNU Library General Public License</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">    along with this library; see the file COPYING.LIB.  If not, write to</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">    the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">    Boston, MA 02110-1301, USA.</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#ifndef KPROCESS_H</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#define KPROCESS_H</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">//#include &lt;kdecore_export.h&gt;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &lt;QProcess&gt;</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">class </span><a class="code" href="classKProcessPrivate.html">KProcessPrivate</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classKProcess.html">   52</a></span>&#160;<span class="keyword">class </span><a class="code" href="classKProcess.html">KProcess</a> : <span class="keyword">public</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qprocess.html">QProcess</a></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">Q_OBJECT</a></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    Q_DECLARE_PRIVATE(<a class="code" href="classKProcess.html">KProcess</a>)</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classKProcess.html#a4acf3452f1bf5bd3954d272168b16c87">   62</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="classKProcess.html#a4acf3452f1bf5bd3954d272168b16c87">OutputChannelMode</a> {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <a class="code" href="classKProcess.html#a4acf3452f1bf5bd3954d272168b16c87af4d4c1acd2fb7db2f33e0063cada2f1a">SeparateChannels</a> = <a class="codeRef" href="http://doc.qt.io/qt-5/qprocess.html#ProcessChannelMode-enum">QProcess::SeparateChannels</a>,</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <a class="code" href="classKProcess.html#a4acf3452f1bf5bd3954d272168b16c87ad56a69aaab2b00eaebcae0ca58debbbc">MergedChannels</a> = <a class="codeRef" href="http://doc.qt.io/qt-5/qprocess.html#ProcessChannelMode-enum">QProcess::MergedChannels</a>,</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <a class="code" href="classKProcess.html#a4acf3452f1bf5bd3954d272168b16c87ae59dc625768089fceea8977391c02e0b">ForwardedChannels</a> = <a class="codeRef" href="http://doc.qt.io/qt-5/qprocess.html#ProcessChannelMode-enum">QProcess::ForwardedChannels</a>,</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <a class="code" href="classKProcess.html#a4acf3452f1bf5bd3954d272168b16c87a6b5f2d82d9a5599806b5d8013ab58694">OnlyStdoutChannel</a>,</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <a class="code" href="classKProcess.html#a4acf3452f1bf5bd3954d272168b16c87af91ed9d3f45f13f1c58901a61b1df887">OnlyStderrChannel</a>  </div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="classKProcess.html#a4acf3452f1bf5bd3954d272168b16c87af91ed9d3f45f13f1c58901a61b1df887">   75</a></span>&#160;    };</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classKProcess.html#ada85375766be65c1d36a0de3b3668fd0">KProcess</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a> = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <a class="code" href="classKProcess.html#ad3933c65b05ce3e3d19c8b592ca0220f">~KProcess</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classKProcess.html#a7c91d212c2fa397f4a7b1840c5de5c2f">setOutputChannelMode</a>(<a class="code" href="classKProcess.html#a4acf3452f1bf5bd3954d272168b16c87">OutputChannelMode</a> mode);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <a class="code" href="classKProcess.html#a4acf3452f1bf5bd3954d272168b16c87">OutputChannelMode</a> <a class="code" href="classKProcess.html#a63e4e99b82df9671fd88a14380084d20">outputChannelMode</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classKProcess.html#a2fde098c4fea5e5178982309d02f266f">setNextOpenMode</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qiodevice.html#OpenModeFlag-enum">QIODevice::OpenMode</a> mode);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classKProcess.html#ad5218a3478719d72a4db4a1adf3dbb20">setEnv</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;name, <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;value, <span class="keywordtype">bool</span> overwrite = <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classKProcess.html#a536b23bca1d0b25a885dc83752eb0619">unsetEnv</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;name);</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classKProcess.html#aa0c47cd15a2782c36404870c024f4915">clearEnvironment</a>();</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classKProcess.html#afad13da571471df810159602aea3d781">setProgram</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;exe, <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> &amp;args = <a class="codeRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a>());</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160; </div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classKProcess.html#afad13da571471df810159602aea3d781">setProgram</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> &amp;argv);</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <a class="code" href="classKProcess.html">KProcess</a> &amp;<a class="code" href="classKProcess.html#a622180f48f80ff03c7d29b2d6ae8fa70">operator&lt;&lt;</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;arg);</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160; </div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <a class="code" href="classKProcess.html">KProcess</a> &amp;<a class="code" href="classKProcess.html#a622180f48f80ff03c7d29b2d6ae8fa70">operator&lt;&lt;</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> &amp;args);</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160; </div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classKProcess.html#a432e2ddd9c3f2b56f3430ae92b097827">clearProgram</a>();</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160; </div>
+<div class="line"><a name="l00220"></a><span class="lineno"><a class="line" href="classKProcess.html#a291b7b2bec6c9f49e0f5140ff06e75c2">  220</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classKProcess.html#a291b7b2bec6c9f49e0f5140ff06e75c2">setShellCommand</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;cmd);</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160; </div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> <a class="code" href="classKProcess.html#a680bbb4c8186dd463d044640358344ff">program</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160; </div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classKProcess.html#a28f6c3ffc96c76490fe9a552c053a417">start</a>();</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160; </div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classKProcess.html#adc5c9b1a37d04ad56c8261503a08ea82">execute</a>(<span class="keywordtype">int</span> msecs = -1);</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160; </div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="classKProcess.html#adc5c9b1a37d04ad56c8261503a08ea82">execute</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;exe, <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> &amp;args = <a class="codeRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a>(), <span class="keywordtype">int</span> msecs = -1);</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160; </div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="classKProcess.html#adc5c9b1a37d04ad56c8261503a08ea82">execute</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> &amp;argv, <span class="keywordtype">int</span> msecs = -1);</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160; </div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classKProcess.html#a724d24732a54ae27f1c83133f18a2de8">startDetached</a>();</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160; </div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="classKProcess.html#a724d24732a54ae27f1c83133f18a2de8">startDetached</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;exe, <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> &amp;args = <a class="codeRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a>());</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160; </div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="classKProcess.html#a724d24732a54ae27f1c83133f18a2de8">startDetached</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> &amp;argv);</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160; </div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classKProcess.html#a0c991c492a346417f352b88b4e313c8c">pid</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160; </div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    <a class="code" href="classKProcess.html#ada85375766be65c1d36a0de3b3668fd0">KProcess</a>(<a class="code" href="classKProcessPrivate.html">KProcessPrivate</a> *d, <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a>);</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160; </div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    <a class="code" href="classKProcessPrivate.html">KProcessPrivate</a> *<span class="keyword">const</span> d_ptr;</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160; </div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    <span class="comment">// hide those</span></div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    <span class="keyword">using</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qprocess-obsolete.html#setReadChannelMode">QProcess::setReadChannelMode</a>;</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    <span class="keyword">using</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qprocess-obsolete.html#readChannelMode">QProcess::readChannelMode</a>;</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    <span class="keyword">using</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qprocess.html#setProcessChannelMode">QProcess::setProcessChannelMode</a>;</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    <span class="keyword">using</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qprocess.html#processChannelMode">QProcess::processChannelMode</a>;</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160; </div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    Q_PRIVATE_SLOT(d_func(), <span class="keywordtype">void</span> _k_forwardStdout())</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    Q_PRIVATE_SLOT(d_func(), <span class="keywordtype">void</span> _k_forwardStderr())</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;};</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160; </div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;<span class="comment">/* ----------- kprocess_p.h ---------------- */</span></div>
+<div class="line"><a name="l00349"></a><span class="lineno"><a class="line" href="classKProcessPrivate.html">  349</a></span>&#160;class <a class="code" href="classKProcessPrivate.html">KProcessPrivate</a></div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;{</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160; </div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    Q_DECLARE_PUBLIC(<a class="code" href="classKProcess.html">KProcess</a>)</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160; </div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    <a class="code" href="classKProcessPrivate.html">KProcessPrivate</a>() :</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;        <a class="codeRef" href="http://doc.qt.io/qt-5/qiodevice.html#openMode">openMode</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qiodevice.html#OpenModeFlag-enum">QIODevice::ReadWrite</a>)</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    {</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    }</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classKProcessPrivate.html">KProcessPrivate</a>()</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    {</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    }</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    <span class="keywordtype">void</span> writeAll(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a> &amp;buf, <span class="keywordtype">int</span> fd);</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    <span class="keywordtype">void</span> forwardStd(<a class="codeRef" href="http://doc.qt.io/qt-5/qprocess.html#ProcessChannel-enum">KProcess::ProcessChannel</a> good, <span class="keywordtype">int</span> fd);</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;    <span class="keywordtype">void</span> _k_forwardStdout();</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;    <span class="keywordtype">void</span> _k_forwardStderr();</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160; </div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> prog;</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> args;</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    <a class="code" href="classKProcess.html#a4acf3452f1bf5bd3954d272168b16c87">KProcess::OutputChannelMode</a> <a class="code" href="classKProcess.html#a63e4e99b82df9671fd88a14380084d20">outputChannelMode</a>;</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qiodevice.html#OpenModeFlag-enum">QIODevice::OpenMode</a> <a class="codeRef" href="http://doc.qt.io/qt-5/qiodevice.html#openMode">openMode</a>;</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160; </div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;    <a class="code" href="classKProcess.html">KProcess</a> *q_ptr;</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;};</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;<span class="comment">/* ------------------------------------------- */</span></div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160; </div>
+<div class="ttc" id="aclassKProcessPrivate_html"><div class="ttname"><a href="classKProcessPrivate.html">KProcessPrivate</a></div><div class="ttdef"><b>Definition:</b> kprocess.h:350</div></div>
+<div class="ttc" id="aclassKProcess_html"><div class="ttname"><a href="classKProcess.html">KProcess</a></div><div class="ttdef"><b>Definition:</b> kprocess.h:53</div></div>
+<div class="ttc" id="aclassKProcess_html_a0c991c492a346417f352b88b4e313c8c"><div class="ttname"><a href="classKProcess.html#a0c991c492a346417f352b88b4e313c8c">KProcess::pid</a></div><div class="ttdeci">int pid() const</div><div class="ttdef"><b>Definition:</b> kprocess.cpp:404</div></div>
+<div class="ttc" id="aclassKProcess_html_a28f6c3ffc96c76490fe9a552c053a417"><div class="ttname"><a href="classKProcess.html#a28f6c3ffc96c76490fe9a552c053a417">KProcess::start</a></div><div class="ttdeci">void start()</div><div class="ttdef"><b>Definition:</b> kprocess.cpp:343</div></div>
+<div class="ttc" id="aclassKProcess_html_a291b7b2bec6c9f49e0f5140ff06e75c2"><div class="ttname"><a href="classKProcess.html#a291b7b2bec6c9f49e0f5140ff06e75c2">KProcess::setShellCommand</a></div><div class="ttdeci">void setShellCommand(const QString &amp;cmd)</div></div>
+<div class="ttc" id="aclassKProcess_html_a2fde098c4fea5e5178982309d02f266f"><div class="ttname"><a href="classKProcess.html#a2fde098c4fea5e5178982309d02f266f">KProcess::setNextOpenMode</a></div><div class="ttdeci">void setNextOpenMode(QIODevice::OpenMode mode)</div><div class="ttdef"><b>Definition:</b> kprocess.cpp:157</div></div>
+<div class="ttc" id="aclassKProcess_html_a432e2ddd9c3f2b56f3430ae92b097827"><div class="ttname"><a href="classKProcess.html#a432e2ddd9c3f2b56f3430ae92b097827">KProcess::clearProgram</a></div><div class="ttdeci">void clearProgram()</div><div class="ttdef"><b>Definition:</b> kprocess.cpp:256</div></div>
+<div class="ttc" id="aclassKProcess_html_a4acf3452f1bf5bd3954d272168b16c87"><div class="ttname"><a href="classKProcess.html#a4acf3452f1bf5bd3954d272168b16c87">KProcess::OutputChannelMode</a></div><div class="ttdeci">OutputChannelMode</div><div class="ttdef"><b>Definition:</b> kprocess.h:62</div></div>
+<div class="ttc" id="aclassKProcess_html_a4acf3452f1bf5bd3954d272168b16c87a6b5f2d82d9a5599806b5d8013ab58694"><div class="ttname"><a href="classKProcess.html#a4acf3452f1bf5bd3954d272168b16c87a6b5f2d82d9a5599806b5d8013ab58694">KProcess::OnlyStdoutChannel</a></div><div class="ttdeci">@ OnlyStdoutChannel</div><div class="ttdef"><b>Definition:</b> kprocess.h:72</div></div>
+<div class="ttc" id="aclassKProcess_html_a4acf3452f1bf5bd3954d272168b16c87ad56a69aaab2b00eaebcae0ca58debbbc"><div class="ttname"><a href="classKProcess.html#a4acf3452f1bf5bd3954d272168b16c87ad56a69aaab2b00eaebcae0ca58debbbc">KProcess::MergedChannels</a></div><div class="ttdeci">@ MergedChannels</div><div class="ttdef"><b>Definition:</b> kprocess.h:66</div></div>
+<div class="ttc" id="aclassKProcess_html_a4acf3452f1bf5bd3954d272168b16c87ae59dc625768089fceea8977391c02e0b"><div class="ttname"><a href="classKProcess.html#a4acf3452f1bf5bd3954d272168b16c87ae59dc625768089fceea8977391c02e0b">KProcess::ForwardedChannels</a></div><div class="ttdeci">@ ForwardedChannels</div><div class="ttdef"><b>Definition:</b> kprocess.h:69</div></div>
+<div class="ttc" id="aclassKProcess_html_a4acf3452f1bf5bd3954d272168b16c87af4d4c1acd2fb7db2f33e0063cada2f1a"><div class="ttname"><a href="classKProcess.html#a4acf3452f1bf5bd3954d272168b16c87af4d4c1acd2fb7db2f33e0063cada2f1a">KProcess::SeparateChannels</a></div><div class="ttdeci">@ SeparateChannels</div><div class="ttdef"><b>Definition:</b> kprocess.h:63</div></div>
+<div class="ttc" id="aclassKProcess_html_a4acf3452f1bf5bd3954d272168b16c87af91ed9d3f45f13f1c58901a61b1df887"><div class="ttname"><a href="classKProcess.html#a4acf3452f1bf5bd3954d272168b16c87af91ed9d3f45f13f1c58901a61b1df887">KProcess::OnlyStderrChannel</a></div><div class="ttdeci">@ OnlyStderrChannel</div><div class="ttdef"><b>Definition:</b> kprocess.h:74</div></div>
+<div class="ttc" id="aclassKProcess_html_a536b23bca1d0b25a885dc83752eb0619"><div class="ttname"><a href="classKProcess.html#a536b23bca1d0b25a885dc83752eb0619">KProcess::unsetEnv</a></div><div class="ttdeci">void unsetEnv(const QString &amp;name)</div><div class="ttdef"><b>Definition:</b> kprocess.cpp:192</div></div>
+<div class="ttc" id="aclassKProcess_html_a622180f48f80ff03c7d29b2d6ae8fa70"><div class="ttname"><a href="classKProcess.html#a622180f48f80ff03c7d29b2d6ae8fa70">KProcess::operator&lt;&lt;</a></div><div class="ttdeci">KProcess &amp; operator&lt;&lt;(const QString &amp;arg)</div><div class="ttdef"><b>Definition:</b> kprocess.cpp:234</div></div>
+<div class="ttc" id="aclassKProcess_html_a63e4e99b82df9671fd88a14380084d20"><div class="ttname"><a href="classKProcess.html#a63e4e99b82df9671fd88a14380084d20">KProcess::outputChannelMode</a></div><div class="ttdeci">OutputChannelMode outputChannelMode() const</div><div class="ttdef"><b>Definition:</b> kprocess.cpp:150</div></div>
+<div class="ttc" id="aclassKProcess_html_a680bbb4c8186dd463d044640358344ff"><div class="ttname"><a href="classKProcess.html#a680bbb4c8186dd463d044640358344ff">KProcess::program</a></div><div class="ttdeci">QStringList program() const</div><div class="ttdef"><b>Definition:</b> kprocess.cpp:334</div></div>
+<div class="ttc" id="aclassKProcess_html_a724d24732a54ae27f1c83133f18a2de8"><div class="ttname"><a href="classKProcess.html#a724d24732a54ae27f1c83133f18a2de8">KProcess::startDetached</a></div><div class="ttdeci">int startDetached()</div><div class="ttdef"><b>Definition:</b> kprocess.cpp:377</div></div>
+<div class="ttc" id="aclassKProcess_html_a7c91d212c2fa397f4a7b1840c5de5c2f"><div class="ttname"><a href="classKProcess.html#a7c91d212c2fa397f4a7b1840c5de5c2f">KProcess::setOutputChannelMode</a></div><div class="ttdeci">void setOutputChannelMode(OutputChannelMode mode)</div><div class="ttdef"><b>Definition:</b> kprocess.cpp:129</div></div>
+<div class="ttc" id="aclassKProcess_html_aa0c47cd15a2782c36404870c024f4915"><div class="ttname"><a href="classKProcess.html#aa0c47cd15a2782c36404870c024f4915">KProcess::clearEnvironment</a></div><div class="ttdeci">void clearEnvironment()</div><div class="ttdef"><b>Definition:</b> kprocess.cpp:166</div></div>
+<div class="ttc" id="aclassKProcess_html_ad3933c65b05ce3e3d19c8b592ca0220f"><div class="ttname"><a href="classKProcess.html#ad3933c65b05ce3e3d19c8b592ca0220f">KProcess::~KProcess</a></div><div class="ttdeci">~KProcess() override</div><div class="ttdef"><b>Definition:</b> kprocess.cpp:124</div></div>
+<div class="ttc" id="aclassKProcess_html_ad5218a3478719d72a4db4a1adf3dbb20"><div class="ttname"><a href="classKProcess.html#ad5218a3478719d72a4db4a1adf3dbb20">KProcess::setEnv</a></div><div class="ttdeci">void setEnv(const QString &amp;name, const QString &amp;value, bool overwrite=true)</div><div class="ttdef"><b>Definition:</b> kprocess.cpp:171</div></div>
+<div class="ttc" id="aclassKProcess_html_ada85375766be65c1d36a0de3b3668fd0"><div class="ttname"><a href="classKProcess.html#ada85375766be65c1d36a0de3b3668fd0">KProcess::KProcess</a></div><div class="ttdeci">KProcess(QObject *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> kprocess.cpp:108</div></div>
+<div class="ttc" id="aclassKProcess_html_adc5c9b1a37d04ad56c8261503a08ea82"><div class="ttname"><a href="classKProcess.html#adc5c9b1a37d04ad56c8261503a08ea82">KProcess::execute</a></div><div class="ttdeci">int execute(int msecs=-1)</div><div class="ttdef"><b>Definition:</b> kprocess.cpp:350</div></div>
+<div class="ttc" id="aclassKProcess_html_afad13da571471df810159602aea3d781"><div class="ttname"><a href="classKProcess.html#afad13da571471df810159602aea3d781">KProcess::setProgram</a></div><div class="ttdeci">void setProgram(const QString &amp;exe, const QStringList &amp;args=QStringList())</div><div class="ttdef"><b>Definition:</b> kprocess.cpp:211</div></div>
+<div class="ttc" id="aqbytearray_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a></div></div>
+<div class="ttc" id="aqiodevice_html_OpenModeFlag-enum"><div class="ttname"><a href="http://doc.qt.io/qt-5/qiodevice.html#OpenModeFlag-enum">QIODevice::OpenMode</a></div><div class="ttdeci">typedef OpenMode</div></div>
+<div class="ttc" id="aqiodevice_html_openMode"><div class="ttname"><a href="http://doc.qt.io/qt-5/qiodevice.html#openMode">QIODevice::openMode</a></div><div class="ttdeci">QIODevice::OpenMode openMode() const const</div></div>
+<div class="ttc" id="aqobject_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html">QObject</a></div></div>
+<div class="ttc" id="aqobject_html_Q_OBJECT"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">QObject::Q_OBJECT</a></div><div class="ttdeci">Q_OBJECTQ_OBJECT</div></div>
+<div class="ttc" id="aqobject_html_parent"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#parent">QObject::parent</a></div><div class="ttdeci">QObject * parent() const const</div></div>
+<div class="ttc" id="aqprocess-obsolete_html_readChannelMode"><div class="ttname"><a href="http://doc.qt.io/qt-5/qprocess-obsolete.html#readChannelMode">QProcess::readChannelMode</a></div><div class="ttdeci">QProcess::ProcessChannelMode readChannelMode() const const</div></div>
+<div class="ttc" id="aqprocess-obsolete_html_setReadChannelMode"><div class="ttname"><a href="http://doc.qt.io/qt-5/qprocess-obsolete.html#setReadChannelMode">QProcess::setReadChannelMode</a></div><div class="ttdeci">void setReadChannelMode(QProcess::ProcessChannelMode mode)</div></div>
+<div class="ttc" id="aqprocess_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qprocess.html">QProcess</a></div></div>
+<div class="ttc" id="aqprocess_html_ProcessChannel-enum"><div class="ttname"><a href="http://doc.qt.io/qt-5/qprocess.html#ProcessChannel-enum">QProcess::ProcessChannel</a></div><div class="ttdeci">ProcessChannel</div></div>
+<div class="ttc" id="aqprocess_html_ProcessChannelMode-enum"><div class="ttname"><a href="http://doc.qt.io/qt-5/qprocess.html#ProcessChannelMode-enum">QProcess::SeparateChannels</a></div><div class="ttdeci">SeparateChannels</div></div>
+<div class="ttc" id="aqprocess_html_processChannelMode"><div class="ttname"><a href="http://doc.qt.io/qt-5/qprocess.html#processChannelMode">QProcess::processChannelMode</a></div><div class="ttdeci">QProcess::ProcessChannelMode processChannelMode() const const</div></div>
+<div class="ttc" id="aqprocess_html_setProcessChannelMode"><div class="ttname"><a href="http://doc.qt.io/qt-5/qprocess.html#setProcessChannelMode">QProcess::setProcessChannelMode</a></div><div class="ttdeci">void setProcessChannelMode(QProcess::ProcessChannelMode mode)</div></div>
+<div class="ttc" id="aqstring_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstring.html">QString</a></div></div>
+<div class="ttc" id="aqstringlist_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_0990604d0eb8363f4260fee8d79bba7c.html">dtkio</a></li><li class="navelem"><a class="el" href="dir_f218eea51e6ba76871d0d7e538e54c2d.html">src</a></li><li class="navelem"><a class="el" href="dir_64e7b8374d0b59199acbe839986a12d4.html">dtkcompressor</a></li><li class="navelem"><a class="el" href="dir_d1ee9709c8a9c8a6288a9650a6bf8ddf.html">3rdparty</a></li><li class="navelem"><a class="el" href="dir_88f6681accce92f79d1508b1d9a9c26a.html">interface</a></li><li class="navelem"><a class="el" href="dir_be458f78dcfc38b2dc4f83be2ef6df51.html">process</a></li><li class="navelem"><b>kprocess.h</b></li>
+    <li class="footer">文档生成时间:2023-01-13-07:39  +00</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

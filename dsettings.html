@@ -153,11 +153,148 @@ $(document).ready(function(){initNavTree('dsettings.html',''); initResizable(); 
 <div class="title">dsettings&ndash;dtk设置工具组件 </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="autotoc_md19"></a>
+<div class="textblock"><h1><a class="anchor" id="autotoc_md17"></a>
 DSettings</h1>
-<h2><a class="anchor" id="autotoc_md20"></a>
+<h2><a class="anchor" id="autotoc_md18"></a>
 DSettings：dtk设置组件</h2>
-<p>TODO：添加dsettings组件的使用说明 </p>
+<p><a href="dsettings_8h.html">dsettings.h 详细文档</a></p>
+<p>项目目录结构如下：</p>
+<div class="fragment"><div class="line">├── CMakeLists.txt</div>
+<div class="line">├── data</div>
+<div class="line">│   └── settings.json</div>
+<div class="line">├── data.qrc</div>
+<div class="line">└── main.cpp</div>
+</div><!-- fragment --><p>CMakeLists.txt:</p>
+<div class="fragment"><div class="line">cmake_minimum_required(VERSION 3.1.0)                # 指定cmake最低版本</div>
+<div class="line"> </div>
+<div class="line">project(dsetting-example VERSION 1.0.0 LANGUAGES CXX)# 指定项目名称, 版本, 语言 cxx就是c++</div>
+<div class="line"> </div>
+<div class="line">set(CMAKE_CXX_STANDARD 11)                           # 指定c++标准</div>
+<div class="line">set(CMAKE_CXX_STANDARD_REQUIRED ON)                  # 指定c++标准要求,至少为11以上</div>
+<div class="line"> </div>
+<div class="line">set(CMAKE_AUTORCC ON)                                # support qt resource file # 支持qt资源文件</div>
+<div class="line"> </div>
+<div class="line">set(CMAKE_EXPORT_COMPILE_COMMANDS ON)                # 支持 clangd</div>
+<div class="line"> </div>
+<div class="line">if (CMAKE_VERSION VERSION_LESS &quot;3.7.0&quot;)              # 如果cmake版本小于3.7.0</div>
+<div class="line">    set(CMAKE_INCLUDE_CURRENT_DIR ON)                # 设置包含当前目录</div>
+<div class="line">endif()</div>
+<div class="line"> </div>
+<div class="line">find_package(DtkCore REQUIRED)                       # 寻找Dtk组件Core</div>
+<div class="line"> </div>
+<div class="line">add_executable(${PROJECT_NAME}                       # 生成可执行文件</div>
+<div class="line">    main.cpp</div>
+<div class="line">    data.qrc</div>
+<div class="line">)</div>
+<div class="line"> </div>
+<div class="line">target_link_libraries(${PROJECT_NAME} PRIVATE        # 添加需要链接的共享库</div>
+<div class="line">    Dtk::Core</div>
+<div class="line">)</div>
+</div><!-- fragment --><p>settings.json:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">    &quot;groups&quot;: [{</div>
+<div class="line">        &quot;key&quot;: &quot;base&quot;,</div>
+<div class="line">        &quot;name&quot;: &quot;Basic settings&quot;,</div>
+<div class="line">        &quot;groups&quot;: [{</div>
+<div class="line">                &quot;key&quot;: &quot;open_action&quot;,</div>
+<div class="line">                &quot;name&quot;: &quot;Open Action&quot;,</div>
+<div class="line">                &quot;options&quot;: [{</div>
+<div class="line">                        &quot;key&quot;: &quot;alway_open_on_new&quot;,</div>
+<div class="line">                        &quot;type&quot;: &quot;checkbox&quot;,</div>
+<div class="line">                        &quot;text&quot;: &quot;Always Open On New Windows&quot;,</div>
+<div class="line">                        &quot;default&quot;: true</div>
+<div class="line">                    },</div>
+<div class="line">                    {</div>
+<div class="line">                        &quot;key&quot;: &quot;open_file_action&quot;,</div>
+<div class="line">                        &quot;name&quot;: &quot;Open File:&quot;,</div>
+<div class="line">                        &quot;type&quot;: &quot;combobox&quot;,</div>
+<div class="line">                        &quot;default&quot;: &quot;&quot;</div>
+<div class="line">                    }</div>
+<div class="line">                ]</div>
+<div class="line">            },</div>
+<div class="line">            {</div>
+<div class="line">                &quot;key&quot;: &quot;new_tab_windows&quot;,</div>
+<div class="line">                &quot;name&quot;: &quot;New Tab &amp; Window&quot;,</div>
+<div class="line">                &quot;options&quot;: [{</div>
+<div class="line">                        &quot;key&quot;: &quot;new_window_path&quot;,</div>
+<div class="line">                        &quot;name&quot;: &quot;New Window Open:&quot;,</div>
+<div class="line">                        &quot;type&quot;: &quot;combobox&quot;,</div>
+<div class="line">                        &quot;default&quot;: &quot;&quot;</div>
+<div class="line">                    },</div>
+<div class="line">                    {</div>
+<div class="line">                        &quot;key&quot;: &quot;new_tab_path&quot;,</div>
+<div class="line">                        &quot;name&quot;: &quot;New Tab Open:&quot;,</div>
+<div class="line">                        &quot;type&quot;: &quot;combobox&quot;,</div>
+<div class="line">                        &quot;default&quot;: &quot;&quot;</div>
+<div class="line">                    }</div>
+<div class="line">                ]</div>
+<div class="line">            }</div>
+<div class="line">        ]</div>
+<div class="line">    }]</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>data.qrc</p>
+<div class="fragment"><div class="line">&lt;<span class="keywordtype">RCC</span>&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">qresource</span> <span class="keyword">prefix</span>=<span class="stringliteral">&quot;/&quot;</span>&gt;</div>
+<div class="line">        &lt;<span class="keywordtype">file</span>&gt;<span class="keyword">data</span>/<span class="keyword">settings.json</span>&lt;/<span class="keywordtype">file</span>&gt;</div>
+<div class="line">    &lt;/<span class="keywordtype">qresource</span>&gt;</div>
+<div class="line">&lt;/<span class="keywordtype">RCC</span>&gt;</div>
+</div><!-- fragment --><p>main.cpp</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;QCoreApplication&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;DSettings&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="qsettingbackend_8h.html">qsettingbackend.h</a>&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;DSettingsGroup&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;DSettingsOption&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;QTemporaryFile&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;QDebug&gt;</span></div>
+<div class="line"> </div>
+<div class="line">DCORE_USE_NAMESPACE</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> *argv[])</div>
+<div class="line">{</div>
+<div class="line">    <a class="codeRef" href="http://doc.qt.io/qt-5/qcoreapplication.html">QCoreApplication</a> a(argc, argv);</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 初始化一个存储后端</span></div>
+<div class="line">    <a class="codeRef" href="http://doc.qt.io/qt-5/qtemporaryfile.html">QTemporaryFile</a> tmpFile;</div>
+<div class="line">    tmpFile.<a class="codeRef" href="http://doc.qt.io/qt-5/qtemporaryfile.html#open">open</a>();</div>
+<div class="line">    <a class="codeRef" href="http://doc.qt.io/qt-5/qpointer.html">QPointer&lt;QSettingBackend&gt;</a> backend = <span class="keyword">new</span> QSettingBackend(tmpFile.<a class="codeRef" href="http://doc.qt.io/qt-5/qtemporaryfile.html#fileName">fileName</a>());</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 从json中初始化配置</span></div>
+<div class="line">    <a class="codeRef" href="http://doc.qt.io/qt-5/qpointer.html">QPointer&lt;DSettings&gt;</a> settings = DSettings::fromJsonFile(<span class="stringliteral">&quot;:/data/settings.json&quot;</span>);</div>
+<div class="line">    settings-&gt;setBackend(backend);</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 读取配置</span></div>
+<div class="line">    <span class="comment">// 该组中包含一个base的root组,两个子组: open_action/new_tab_windows,每个子组有包含若干选项。</span></div>
+<div class="line">    <span class="comment">// 对于&quot;New Window Open:&quot;这个配置,其完整的访问id为base.new_tab_windows.new_window_path。</span></div>
+<div class="line">    <a class="codeRef" href="http://doc.qt.io/qt-5/qpointer.html">QPointer&lt;DSettingsOption&gt;</a> opt = settings-&gt;option(<span class="stringliteral">&quot;base.new_tab_windows.new_window_path&quot;</span>);</div>
+<div class="line">    qDebug() &lt;&lt; opt-&gt;value();</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 修改配置</span></div>
+<div class="line">    opt-&gt;setValue(<span class="stringliteral">&quot;Test&quot;</span>);</div>
+<div class="line">    qDebug() &lt;&lt; opt-&gt;value();</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 获取所有keys</span></div>
+<div class="line">    <a class="codeRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> keys = settings-&gt;keys();</div>
+<div class="line">    qDebug() &lt;&lt; keys;</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// base.open_action对应的组</span></div>
+<div class="line">    <a class="codeRef" href="http://doc.qt.io/qt-5/qpointer.html">QPointer&lt;DSettingsGroup&gt;</a> group = settings-&gt;group(<span class="stringliteral">&quot;base.open_action&quot;</span>);</div>
+<div class="line">    qDebug() &lt;&lt; group-&gt;key();</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">return</span> a.exec();</div>
+<div class="line">}</div>
+<div class="ttc" id="aqcoreapplication_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qcoreapplication.html">QCoreApplication</a></div></div>
+<div class="ttc" id="aqpointer_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qpointer.html">QPointer</a></div></div>
+<div class="ttc" id="aqsettingbackend_8h_html"><div class="ttname"><a href="qsettingbackend_8h.html">qsettingbackend.h</a></div></div>
+<div class="ttc" id="aqstringlist_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a></div></div>
+<div class="ttc" id="aqtemporaryfile_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qtemporaryfile.html">QTemporaryFile</a></div></div>
+<div class="ttc" id="aqtemporaryfile_html_fileName"><div class="ttname"><a href="http://doc.qt.io/qt-5/qtemporaryfile.html#fileName">QTemporaryFile::fileName</a></div><div class="ttdeci">virtual QString fileName() const const override</div></div>
+<div class="ttc" id="aqtemporaryfile_html_open"><div class="ttname"><a href="http://doc.qt.io/qt-5/qtemporaryfile.html#open">QTemporaryFile::open</a></div><div class="ttdeci">bool open()</div></div>
+</div><!-- fragment --><p>编译运行:</p>
+<div class="fragment"><div class="line">cmake -Bbuild</div>
+<div class="line">cmake --build build</div>
+<div class="line">./build/dsetting-example</div>
+</div><!-- fragment --><p>运行结果如下图:</p>
+<p><img src="/docs/src/dsettings.png" alt="img" class="inline"/> </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
@@ -165,7 +302,7 @@ DSettings：dtk设置组件</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">文档生成时间:2023-01-03-09:52  +00</li>
+    <li class="footer">文档生成时间:2023-01-13-07:39  +00</li>
     <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
     <li class="footer">制作者:deepin doc doc go SIG</li>
     <li class="footer">文档使用CC-BY-4.0共享 </a>

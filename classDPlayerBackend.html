@@ -1,0 +1,2246 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: DPlayerBackend类 参考</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="https://github.com/linuxdeepin/dtkdoc" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classDPlayerBackend.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-slots">Public 槽</a> &#124;
+<a href="#signals">信号</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="#properties">属性</a> &#124;
+<a href="classDPlayerBackend-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">DPlayerBackend类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 DPlayerBackend 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classDPlayerBackend.png" usemap="#DPlayerBackend_map" alt=""/>
+  <map id="DPlayerBackend_map" name="DPlayerBackend_map">
+<area target="_parent" href="http://doc.qt.io/qt-5/qobject.html" alt="QObject" shape="rect" coords="59,0,168,24"/>
+<area href="classDGstPlayerProxy.html" alt="DGstPlayerProxy" shape="rect" coords="0,112,109,136"/>
+<area href="classDMpvProxy.html" alt="DMpvProxy" shape="rect" coords="119,112,228,136"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a03d4ba268d9006ba4e9f68b53631136e"><td class="memItemLeft" align="right" valign="top"><a id="a03d4ba268d9006ba4e9f68b53631136e"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>PlayState</b> { <b>Playing</b>
+, <b>Paused</b>
+, <b>Stopped</b>
+ }</td></tr>
+<tr class="separator:a03d4ba268d9006ba4e9f68b53631136e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf718f2b0f1c3611a119d4dfed8dbcda"><td class="memItemLeft" align="right" valign="top"><a id="acf718f2b0f1c3611a119d4dfed8dbcda"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>DebugLevel</b> { <b>Info</b>
+, <b>Debug</b>
+, <b>Verbose</b>
+ }</td></tr>
+<tr class="separator:acf718f2b0f1c3611a119d4dfed8dbcda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2f160dc4fce3a7d83ddb9e9b671c162"><td class="memItemLeft" align="right" valign="top"><a id="aa2f160dc4fce3a7d83ddb9e9b671c162"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>SoundMode</b> { <b>Stereo</b>
+, <b>Left</b>
+, <b>Right</b>
+ }</td></tr>
+<tr class="separator:aa2f160dc4fce3a7d83ddb9e9b671c162"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab483047a498de214b3f0ca23655a5d13"><td class="memItemLeft" align="right" valign="top"><a id="ab483047a498de214b3f0ca23655a5d13"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>hwaccelMode</b> { <b>hwaccelAuto</b> = 0
+, <b>hwaccelOpen</b>
+, <b>hwaccelClose</b>
+ }</td></tr>
+<tr class="separator:ab483047a498de214b3f0ca23655a5d13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Public 槽</h2></td></tr>
+<tr class="memitem:abc509550f3c315400011b7810fc93c91"><td class="memItemLeft" align="right" valign="top"><a id="abc509550f3c315400011b7810fc93c91"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPlayerBackend.html#abc509550f3c315400011b7810fc93c91">play</a> ()=0</td></tr>
+<tr class="memdesc:abc509550f3c315400011b7810fc93c91"><td class="mdescLeft">&#160;</td><td class="mdescRight">纯虚函数-播放媒体. <br /></td></tr>
+<tr class="separator:abc509550f3c315400011b7810fc93c91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ee1f9c83215a99fb0bb27c13ca2341f"><td class="memItemLeft" align="right" valign="top"><a id="a7ee1f9c83215a99fb0bb27c13ca2341f"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPlayerBackend.html#a7ee1f9c83215a99fb0bb27c13ca2341f">pauseResume</a> ()=0</td></tr>
+<tr class="memdesc:a7ee1f9c83215a99fb0bb27c13ca2341f"><td class="mdescLeft">&#160;</td><td class="mdescRight">纯虚函数-暂停播放. <br /></td></tr>
+<tr class="separator:a7ee1f9c83215a99fb0bb27c13ca2341f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f50a1413bff0d6e0dd0d0d28880c283"><td class="memItemLeft" align="right" valign="top"><a id="a8f50a1413bff0d6e0dd0d0d28880c283"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPlayerBackend.html#a8f50a1413bff0d6e0dd0d0d28880c283">stop</a> ()=0</td></tr>
+<tr class="memdesc:a8f50a1413bff0d6e0dd0d0d28880c283"><td class="mdescLeft">&#160;</td><td class="mdescRight">纯虚函数-停止播放. <br /></td></tr>
+<tr class="separator:a8f50a1413bff0d6e0dd0d0d28880c283"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae824def13b76a29b77758eed11abbe94"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPlayerBackend.html#ae824def13b76a29b77758eed11abbe94">seekForward</a> (int secs)=0</td></tr>
+<tr class="memdesc:ae824def13b76a29b77758eed11abbe94"><td class="mdescLeft">&#160;</td><td class="mdescRight">纯虚函数-向前seek播放媒体.  <a href="classDPlayerBackend.html#ae824def13b76a29b77758eed11abbe94">更多...</a><br /></td></tr>
+<tr class="separator:ae824def13b76a29b77758eed11abbe94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a625a18cdf92231cfa20c6f543caac596"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPlayerBackend.html#a625a18cdf92231cfa20c6f543caac596">seekBackward</a> (int secs)=0</td></tr>
+<tr class="memdesc:a625a18cdf92231cfa20c6f543caac596"><td class="mdescLeft">&#160;</td><td class="mdescRight">纯虚函数-向后seek播放媒体.  <a href="classDPlayerBackend.html#a625a18cdf92231cfa20c6f543caac596">更多...</a><br /></td></tr>
+<tr class="separator:a625a18cdf92231cfa20c6f543caac596"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24e7ed9afe22314e0bbb558550a631d8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPlayerBackend.html#a24e7ed9afe22314e0bbb558550a631d8">seekAbsolute</a> (int)=0</td></tr>
+<tr class="memdesc:a24e7ed9afe22314e0bbb558550a631d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">纯虚函数-seek播放媒体.  <a href="classDPlayerBackend.html#a24e7ed9afe22314e0bbb558550a631d8">更多...</a><br /></td></tr>
+<tr class="separator:a24e7ed9afe22314e0bbb558550a631d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04249b3e0a5bf3769b777414b0de48d8"><td class="memItemLeft" align="right" valign="top"><a id="a04249b3e0a5bf3769b777414b0de48d8"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPlayerBackend.html#a04249b3e0a5bf3769b777414b0de48d8">volumeUp</a> ()=0</td></tr>
+<tr class="memdesc:a04249b3e0a5bf3769b777414b0de48d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">纯虚函数-音量上升. <br /></td></tr>
+<tr class="separator:a04249b3e0a5bf3769b777414b0de48d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37d07e57ba78fb391ea5135270120c38"><td class="memItemLeft" align="right" valign="top"><a id="a37d07e57ba78fb391ea5135270120c38"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPlayerBackend.html#a37d07e57ba78fb391ea5135270120c38">volumeDown</a> ()=0</td></tr>
+<tr class="memdesc:a37d07e57ba78fb391ea5135270120c38"><td class="mdescLeft">&#160;</td><td class="mdescRight">纯虚函数-音量下降. <br /></td></tr>
+<tr class="separator:a37d07e57ba78fb391ea5135270120c38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c0bf91d39f619d1466635024722d17d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPlayerBackend.html#a6c0bf91d39f619d1466635024722d17d">changeVolume</a> (int val)=0</td></tr>
+<tr class="memdesc:a6c0bf91d39f619d1466635024722d17d"><td class="mdescLeft">&#160;</td><td class="mdescRight">纯虚函数-音量改变.  <a href="classDPlayerBackend.html#a6c0bf91d39f619d1466635024722d17d">更多...</a><br /></td></tr>
+<tr class="separator:a6c0bf91d39f619d1466635024722d17d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cf93d63bea795ebfbc731a6b7353a14"><td class="memItemLeft" align="right" valign="top"><a id="a0cf93d63bea795ebfbc731a6b7353a14"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPlayerBackend.html#a0cf93d63bea795ebfbc731a6b7353a14">toggleMute</a> ()=0</td></tr>
+<tr class="memdesc:a0cf93d63bea795ebfbc731a6b7353a14"><td class="mdescLeft">&#160;</td><td class="mdescRight">纯虚函数-执行静音与取消操作. <br /></td></tr>
+<tr class="separator:a0cf93d63bea795ebfbc731a6b7353a14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a442cffd2beac38bd2f69a55637e47392"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPlayerBackend.html#a442cffd2beac38bd2f69a55637e47392">setMute</a> (bool bMute)=0</td></tr>
+<tr class="memdesc:a442cffd2beac38bd2f69a55637e47392"><td class="mdescLeft">&#160;</td><td class="mdescRight">纯虚函数-设置静音与取消操作.  <a href="classDPlayerBackend.html#a442cffd2beac38bd2f69a55637e47392">更多...</a><br /></td></tr>
+<tr class="separator:a442cffd2beac38bd2f69a55637e47392"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac34ce111b11bcb706b71d3f62988d524"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPlayerBackend.html#ac34ce111b11bcb706b71d3f62988d524">setWinID</a> (const qint64 &amp;<a class="el" href="classDPlayerBackend.html#ab8e3f52c306b4cdfe17881a4bedc1426">winID</a>)</td></tr>
+<tr class="memdesc:ac34ce111b11bcb706b71d3f62988d524"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置窗口wid.  <a href="classDPlayerBackend.html#ac34ce111b11bcb706b71d3f62988d524">更多...</a><br /></td></tr>
+<tr class="separator:ac34ce111b11bcb706b71d3f62988d524"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8e3f52c306b4cdfe17881a4bedc1426"><td class="memItemLeft" align="right" valign="top">qint64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPlayerBackend.html#ab8e3f52c306b4cdfe17881a4bedc1426">winID</a> () const</td></tr>
+<tr class="memdesc:ab8e3f52c306b4cdfe17881a4bedc1426"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取窗口wid.  <a href="classDPlayerBackend.html#ab8e3f52c306b4cdfe17881a4bedc1426">更多...</a><br /></td></tr>
+<tr class="separator:ab8e3f52c306b4cdfe17881a4bedc1426"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+信号</h2></td></tr>
+<tr class="memitem:a5942b5653c384022da86eaa6eec8562c"><td class="memItemLeft" align="right" valign="top"><a id="a5942b5653c384022da86eaa6eec8562c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>tracksChanged</b> ()</td></tr>
+<tr class="separator:a5942b5653c384022da86eaa6eec8562c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38ed10b25f1e2e03290af83931959805"><td class="memItemLeft" align="right" valign="top"><a id="a38ed10b25f1e2e03290af83931959805"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>elapsedChanged</b> ()</td></tr>
+<tr class="separator:a38ed10b25f1e2e03290af83931959805"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84b1f6e5bdb67d1dc81c941bf3fd27bb"><td class="memItemLeft" align="right" valign="top"><a id="a84b1f6e5bdb67d1dc81c941bf3fd27bb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>videoSizeChanged</b> ()</td></tr>
+<tr class="separator:a84b1f6e5bdb67d1dc81c941bf3fd27bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83246839ef789229efd9918cd5ce1780"><td class="memItemLeft" align="right" valign="top"><a id="a83246839ef789229efd9918cd5ce1780"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>stateChanged</b> ()</td></tr>
+<tr class="separator:a83246839ef789229efd9918cd5ce1780"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a254c95eb30c1c1b7f6854e9e7a26cb06"><td class="memItemLeft" align="right" valign="top"><a id="a254c95eb30c1c1b7f6854e9e7a26cb06"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>fileLoaded</b> ()</td></tr>
+<tr class="separator:a254c95eb30c1c1b7f6854e9e7a26cb06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9079cf9902a8943f8bf093792bb8f7be"><td class="memItemLeft" align="right" valign="top"><a id="a9079cf9902a8943f8bf093792bb8f7be"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>muteChanged</b> ()</td></tr>
+<tr class="separator:a9079cf9902a8943f8bf093792bb8f7be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2441121bf0f60f92102a53e0994d66c7"><td class="memItemLeft" align="right" valign="top"><a id="a2441121bf0f60f92102a53e0994d66c7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>volumeChanged</b> ()</td></tr>
+<tr class="separator:a2441121bf0f60f92102a53e0994d66c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61464862d8cf3e71bdf396e77bf74ed1"><td class="memItemLeft" align="right" valign="top"><a id="a61464862d8cf3e71bdf396e77bf74ed1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>sidChanged</b> ()</td></tr>
+<tr class="separator:a61464862d8cf3e71bdf396e77bf74ed1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa06059a328d6708615686efac98aa8da"><td class="memItemLeft" align="right" valign="top"><a id="aa06059a328d6708615686efac98aa8da"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>aidChanged</b> ()</td></tr>
+<tr class="separator:aa06059a328d6708615686efac98aa8da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96cea126bffb43726ee2a6e587d3aeab"><td class="memItemLeft" align="right" valign="top"><a id="a96cea126bffb43726ee2a6e587d3aeab"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>processFrame</b> (QVideoFrame &amp;frame)</td></tr>
+<tr class="separator:a96cea126bffb43726ee2a6e587d3aeab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace1275caadeb1721b8ea5da746d50c7a"><td class="memItemLeft" align="right" valign="top"><a id="ace1275caadeb1721b8ea5da746d50c7a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>notifyScreenshot</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qimage.html">QImage</a> &amp;frame, qint64 time)</td></tr>
+<tr class="separator:ace1275caadeb1721b8ea5da746d50c7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae72b39a3d8bd5a8f2fd97159ef13bb1d"><td class="memItemLeft" align="right" valign="top"><a id="ae72b39a3d8bd5a8f2fd97159ef13bb1d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>mpvErrorLogsChanged</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> prefix, const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> text)</td></tr>
+<tr class="separator:ae72b39a3d8bd5a8f2fd97159ef13bb1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f947a31790c5b0305199f5233eaff64"><td class="memItemLeft" align="right" valign="top"><a id="a8f947a31790c5b0305199f5233eaff64"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>mpvWarningLogsChanged</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> prefix, const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> text)</td></tr>
+<tr class="separator:a8f947a31790c5b0305199f5233eaff64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb0430e20549f906b2774cac312c5387"><td class="memItemLeft" align="right" valign="top"><a id="aeb0430e20549f906b2774cac312c5387"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>urlpause</b> (bool status)</td></tr>
+<tr class="separator:aeb0430e20549f906b2774cac312c5387"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a615d52f2df6e7bedef6947ce4c237880"><td class="memItemLeft" align="right" valign="top"><a id="a615d52f2df6e7bedef6947ce4c237880"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>sigMediaError</b> ()</td></tr>
+<tr class="separator:a615d52f2df6e7bedef6947ce4c237880"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a902b6ce526320c01fadf3d01c9e9d6fd"><td class="memItemLeft" align="right" valign="top"><a id="a902b6ce526320c01fadf3d01c9e9d6fd"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DPlayerBackend</b> (<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a>=nullptr)</td></tr>
+<tr class="separator:a902b6ce526320c01fadf3d01c9e9d6fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98bf676cf3157e04fd9aff71a4116249"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPlayerBackend.html#a98bf676cf3157e04fd9aff71a4116249">setPlayFile</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qurl.html">QUrl</a> &amp;url)</td></tr>
+<tr class="memdesc:a98bf676cf3157e04fd9aff71a4116249"><td class="mdescLeft">&#160;</td><td class="mdescRight">虚函数-设置播放媒体流地址.  <a href="classDPlayerBackend.html#a98bf676cf3157e04fd9aff71a4116249">更多...</a><br /></td></tr>
+<tr class="separator:a98bf676cf3157e04fd9aff71a4116249"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff66341ff0dfbe38a542437fd47403cb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPlayerBackend.html#aff66341ff0dfbe38a542437fd47403cb">setDVDDevice</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;path)</td></tr>
+<tr class="memdesc:aff66341ff0dfbe38a542437fd47403cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">虚函数-设置DVD地址.  <a href="classDPlayerBackend.html#aff66341ff0dfbe38a542437fd47403cb">更多...</a><br /></td></tr>
+<tr class="separator:aff66341ff0dfbe38a542437fd47403cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1924c30bac6fbc72a17846e4fd10c46"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPlayerBackend.html#af1924c30bac6fbc72a17846e4fd10c46">isPlayable</a> () const =0</td></tr>
+<tr class="memdesc:af1924c30bac6fbc72a17846e4fd10c46"><td class="mdescLeft">&#160;</td><td class="mdescRight">纯虚函数-当前媒体是否能够播放.  <a href="classDPlayerBackend.html#af1924c30bac6fbc72a17846e4fd10c46">更多...</a><br /></td></tr>
+<tr class="separator:af1924c30bac6fbc72a17846e4fd10c46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7efa117f8a28c06e25332b251aed046c"><td class="memItemLeft" align="right" valign="top">virtual qint64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPlayerBackend.html#a7efa117f8a28c06e25332b251aed046c">duration</a> () const</td></tr>
+<tr class="memdesc:a7efa117f8a28c06e25332b251aed046c"><td class="mdescLeft">&#160;</td><td class="mdescRight">虚函数-获取媒体时长.  <a href="classDPlayerBackend.html#a7efa117f8a28c06e25332b251aed046c">更多...</a><br /></td></tr>
+<tr class="separator:a7efa117f8a28c06e25332b251aed046c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aceeafab6b3d081fd975a7ea9c50bc626"><td class="memItemLeft" align="right" valign="top">virtual qint64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPlayerBackend.html#aceeafab6b3d081fd975a7ea9c50bc626">elapsed</a> () const</td></tr>
+<tr class="memdesc:aceeafab6b3d081fd975a7ea9c50bc626"><td class="mdescLeft">&#160;</td><td class="mdescRight">虚函数-获取媒体已播放时长.  <a href="classDPlayerBackend.html#aceeafab6b3d081fd975a7ea9c50bc626">更多...</a><br /></td></tr>
+<tr class="separator:aceeafab6b3d081fd975a7ea9c50bc626"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afab907d35b654aeabbd6f399d09f027f"><td class="memItemLeft" align="right" valign="top">virtual <a class="elRef" href="http://doc.qt.io/qt-5/qsize.html">QSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPlayerBackend.html#afab907d35b654aeabbd6f399d09f027f">videoSize</a> () const =0</td></tr>
+<tr class="memdesc:afab907d35b654aeabbd6f399d09f027f"><td class="mdescLeft">&#160;</td><td class="mdescRight">纯虚函数-获取媒体分辨率.  <a href="classDPlayerBackend.html#afab907d35b654aeabbd6f399d09f027f">更多...</a><br /></td></tr>
+<tr class="separator:afab907d35b654aeabbd6f399d09f027f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae01f737da9a67ee44a46500d3bc0c286"><td class="memItemLeft" align="right" valign="top"><a id="ae01f737da9a67ee44a46500d3bc0c286"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>paused</b> ()</td></tr>
+<tr class="separator:ae01f737da9a67ee44a46500d3bc0c286"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71b00b7aa8fc7fc838b45293f9f3141c"><td class="memItemLeft" align="right" valign="top">virtual PlayState&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPlayerBackend.html#a71b00b7aa8fc7fc838b45293f9f3141c">state</a> () const</td></tr>
+<tr class="memdesc:a71b00b7aa8fc7fc838b45293f9f3141c"><td class="mdescLeft">&#160;</td><td class="mdescRight">虚函数-获取媒体分辨率.  <a href="classDPlayerBackend.html#a71b00b7aa8fc7fc838b45293f9f3141c">更多...</a><br /></td></tr>
+<tr class="separator:a71b00b7aa8fc7fc838b45293f9f3141c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4f55a6f472418a208264a1d889411be"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPlayerBackend.html#af4f55a6f472418a208264a1d889411be">setState</a> (PlayState state)</td></tr>
+<tr class="memdesc:af4f55a6f472418a208264a1d889411be"><td class="mdescLeft">&#160;</td><td class="mdescRight">虚函数-设置媒体播放状态.  <a href="classDPlayerBackend.html#af4f55a6f472418a208264a1d889411be">更多...</a><br /></td></tr>
+<tr class="separator:af4f55a6f472418a208264a1d889411be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0571cf2a71241c9e52197c88b57849b0"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="structPlayingMovieInfo.html">PlayingMovieInfo</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPlayerBackend.html#a0571cf2a71241c9e52197c88b57849b0">playingMovieInfo</a> ()=0</td></tr>
+<tr class="memdesc:a0571cf2a71241c9e52197c88b57849b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">纯虚函数-获取当前播放媒体信息.  <a href="classDPlayerBackend.html#a0571cf2a71241c9e52197c88b57849b0">更多...</a><br /></td></tr>
+<tr class="separator:a0571cf2a71241c9e52197c88b57849b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6be31bd4c1d5087f9f5f4c21524df4b6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPlayerBackend.html#a6be31bd4c1d5087f9f5f4c21524df4b6">setPlaySpeed</a> (double times)=0</td></tr>
+<tr class="memdesc:a6be31bd4c1d5087f9f5f4c21524df4b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">纯虚函数-设置媒体播放速度.  <a href="classDPlayerBackend.html#a6be31bd4c1d5087f9f5f4c21524df4b6">更多...</a><br /></td></tr>
+<tr class="separator:a6be31bd4c1d5087f9f5f4c21524df4b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6360960803f45100b50e3255774a4882"><td class="memItemLeft" align="right" valign="top"><a id="a6360960803f45100b50e3255774a4882"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPlayerBackend.html#a6360960803f45100b50e3255774a4882">savePlaybackPosition</a> ()=0</td></tr>
+<tr class="memdesc:a6360960803f45100b50e3255774a4882"><td class="mdescLeft">&#160;</td><td class="mdescRight">纯虚函数-保存当前视频播放位置. <br /></td></tr>
+<tr class="separator:a6360960803f45100b50e3255774a4882"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada3e54b737fb32bc525a9f3ec5da4454"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPlayerBackend.html#ada3e54b737fb32bc525a9f3ec5da4454">updateSubStyle</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;font, int sz)=0</td></tr>
+<tr class="memdesc:ada3e54b737fb32bc525a9f3ec5da4454"><td class="mdescLeft">&#160;</td><td class="mdescRight">纯虚函数-更新媒体播放文字显示样式.  <a href="classDPlayerBackend.html#ada3e54b737fb32bc525a9f3ec5da4454">更多...</a><br /></td></tr>
+<tr class="separator:ada3e54b737fb32bc525a9f3ec5da4454"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4fc84587fc6d82336e3cd45fdb1421d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPlayerBackend.html#ae4fc84587fc6d82336e3cd45fdb1421d">setSubCodepage</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;cp)=0</td></tr>
+<tr class="memdesc:ae4fc84587fc6d82336e3cd45fdb1421d"><td class="mdescLeft">&#160;</td><td class="mdescRight">纯虚函数-设置媒体Sub字幕编码页.  <a href="classDPlayerBackend.html#ae4fc84587fc6d82336e3cd45fdb1421d">更多...</a><br /></td></tr>
+<tr class="separator:ae4fc84587fc6d82336e3cd45fdb1421d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add060c0561a026e07facd35f7e4f0afd"><td class="memItemLeft" align="right" valign="top">virtual <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPlayerBackend.html#add060c0561a026e07facd35f7e4f0afd">subCodepage</a> ()=0</td></tr>
+<tr class="memdesc:add060c0561a026e07facd35f7e4f0afd"><td class="mdescLeft">&#160;</td><td class="mdescRight">纯虚函数-获取媒体Sub字幕编码页.  <a href="classDPlayerBackend.html#add060c0561a026e07facd35f7e4f0afd">更多...</a><br /></td></tr>
+<tr class="separator:add060c0561a026e07facd35f7e4f0afd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a949037d1ac6c37228f09ff6e29bbcb7a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPlayerBackend.html#a949037d1ac6c37228f09ff6e29bbcb7a">addSubSearchPath</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;path)=0</td></tr>
+<tr class="memdesc:a949037d1ac6c37228f09ff6e29bbcb7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">纯虚函数-添加媒体Sub字幕路径.  <a href="classDPlayerBackend.html#a949037d1ac6c37228f09ff6e29bbcb7a">更多...</a><br /></td></tr>
+<tr class="separator:a949037d1ac6c37228f09ff6e29bbcb7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7e7fc3c6402a9354c2615b7bb78c1a1"><td class="memItemLeft" align="right" valign="top"><a id="ad7e7fc3c6402a9354c2615b7bb78c1a1"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPlayerBackend.html#ad7e7fc3c6402a9354c2615b7bb78c1a1">firstInit</a> ()=0</td></tr>
+<tr class="memdesc:ad7e7fc3c6402a9354c2615b7bb78c1a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">纯虚函数-第一次打开播放器播放视频. <br /></td></tr>
+<tr class="separator:ad7e7fc3c6402a9354c2615b7bb78c1a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6457cdefced4336b72dc15a87183af1"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPlayerBackend.html#ad6457cdefced4336b72dc15a87183af1">loadSubtitle</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qfileinfo.html">QFileInfo</a> &amp;fi)=0</td></tr>
+<tr class="memdesc:ad6457cdefced4336b72dc15a87183af1"><td class="mdescLeft">&#160;</td><td class="mdescRight">纯虚函数-加载媒体Sub字幕标题.  <a href="classDPlayerBackend.html#ad6457cdefced4336b72dc15a87183af1">更多...</a><br /></td></tr>
+<tr class="separator:ad6457cdefced4336b72dc15a87183af1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19b843a85afb9ed466382cfa2d901748"><td class="memItemLeft" align="right" valign="top"><a id="a19b843a85afb9ed466382cfa2d901748"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPlayerBackend.html#a19b843a85afb9ed466382cfa2d901748">toggleSubtitle</a> ()=0</td></tr>
+<tr class="memdesc:a19b843a85afb9ed466382cfa2d901748"><td class="mdescLeft">&#160;</td><td class="mdescRight">纯虚函数-设置是否显示Sub字幕. <br /></td></tr>
+<tr class="separator:a19b843a85afb9ed466382cfa2d901748"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d386b7bea50b9aa9bbb5028818a5200"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPlayerBackend.html#a5d386b7bea50b9aa9bbb5028818a5200">isSubVisible</a> ()=0</td></tr>
+<tr class="memdesc:a5d386b7bea50b9aa9bbb5028818a5200"><td class="mdescLeft">&#160;</td><td class="mdescRight">纯虚函数-Sub字幕是否显示.  <a href="classDPlayerBackend.html#a5d386b7bea50b9aa9bbb5028818a5200">更多...</a><br /></td></tr>
+<tr class="separator:a5d386b7bea50b9aa9bbb5028818a5200"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab987efb1d837a1f8c8cf3620c70fc029"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPlayerBackend.html#ab987efb1d837a1f8c8cf3620c70fc029">selectSubtitle</a> (int id)=0</td></tr>
+<tr class="memdesc:ab987efb1d837a1f8c8cf3620c70fc029"><td class="mdescLeft">&#160;</td><td class="mdescRight">纯虚函数-根据id选择加载媒体Sub字幕.  <a href="classDPlayerBackend.html#ab987efb1d837a1f8c8cf3620c70fc029">更多...</a><br /></td></tr>
+<tr class="separator:ab987efb1d837a1f8c8cf3620c70fc029"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a082e4efeb5c9b7d214d3af48bf3f21c1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPlayerBackend.html#a082e4efeb5c9b7d214d3af48bf3f21c1">selectTrack</a> (int id)=0</td></tr>
+<tr class="memdesc:a082e4efeb5c9b7d214d3af48bf3f21c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">纯虚函数-根据id选择音频轨道.  <a href="classDPlayerBackend.html#a082e4efeb5c9b7d214d3af48bf3f21c1">更多...</a><br /></td></tr>
+<tr class="separator:a082e4efeb5c9b7d214d3af48bf3f21c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32fe95390fefa4cccd7938775fe8bf35"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPlayerBackend.html#a32fe95390fefa4cccd7938775fe8bf35">setSubDelay</a> (double secs)=0</td></tr>
+<tr class="memdesc:a32fe95390fefa4cccd7938775fe8bf35"><td class="mdescLeft">&#160;</td><td class="mdescRight">纯虚函数-设置Sub字幕延迟显示时间.  <a href="classDPlayerBackend.html#a32fe95390fefa4cccd7938775fe8bf35">更多...</a><br /></td></tr>
+<tr class="separator:a32fe95390fefa4cccd7938775fe8bf35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a063eefa6c86ec09d11c7787a336be8f3"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPlayerBackend.html#a063eefa6c86ec09d11c7787a336be8f3">subDelay</a> () const =0</td></tr>
+<tr class="memdesc:a063eefa6c86ec09d11c7787a336be8f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">纯虚函数-获取Sub字幕延迟显示时间.  <a href="classDPlayerBackend.html#a063eefa6c86ec09d11c7787a336be8f3">更多...</a><br /></td></tr>
+<tr class="separator:a063eefa6c86ec09d11c7787a336be8f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae888cead68e7a3058eefb6c6e5b1e473"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPlayerBackend.html#ae888cead68e7a3058eefb6c6e5b1e473">aid</a> () const =0</td></tr>
+<tr class="memdesc:ae888cead68e7a3058eefb6c6e5b1e473"><td class="mdescLeft">&#160;</td><td class="mdescRight">纯虚函数-获取音轨id.  <a href="classDPlayerBackend.html#ae888cead68e7a3058eefb6c6e5b1e473">更多...</a><br /></td></tr>
+<tr class="separator:ae888cead68e7a3058eefb6c6e5b1e473"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7decbef9d8ffb67e548ea223e25704f"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPlayerBackend.html#ab7decbef9d8ffb67e548ea223e25704f">sid</a> () const =0</td></tr>
+<tr class="memdesc:ab7decbef9d8ffb67e548ea223e25704f"><td class="mdescLeft">&#160;</td><td class="mdescRight">纯虚函数-获取Sub字幕id.  <a href="classDPlayerBackend.html#ab7decbef9d8ffb67e548ea223e25704f">更多...</a><br /></td></tr>
+<tr class="separator:ab7decbef9d8ffb67e548ea223e25704f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a539f4f3d0c9db8aa344436d5f993d2bb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPlayerBackend.html#a539f4f3d0c9db8aa344436d5f993d2bb">changeSoundMode</a> (SoundMode)=0</td></tr>
+<tr class="memdesc:a539f4f3d0c9db8aa344436d5f993d2bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">纯虚函数-改变声音播放模式.  <a href="classDPlayerBackend.html#a539f4f3d0c9db8aa344436d5f993d2bb">更多...</a><br /></td></tr>
+<tr class="separator:a539f4f3d0c9db8aa344436d5f993d2bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21a0186dc2780fef31172ececfef3f06"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPlayerBackend.html#a21a0186dc2780fef31172ececfef3f06">volume</a> () const =0</td></tr>
+<tr class="memdesc:a21a0186dc2780fef31172ececfef3f06"><td class="mdescLeft">&#160;</td><td class="mdescRight">纯虚函数-获取媒体播放音量.  <a href="classDPlayerBackend.html#a21a0186dc2780fef31172ececfef3f06">更多...</a><br /></td></tr>
+<tr class="separator:a21a0186dc2780fef31172ececfef3f06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea7e508794baa37398c8d4355ff5e415"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPlayerBackend.html#aea7e508794baa37398c8d4355ff5e415">muted</a> () const =0</td></tr>
+<tr class="memdesc:aea7e508794baa37398c8d4355ff5e415"><td class="mdescLeft">&#160;</td><td class="mdescRight">纯虚函数-获取媒体播放是否静音.  <a href="classDPlayerBackend.html#aea7e508794baa37398c8d4355ff5e415">更多...</a><br /></td></tr>
+<tr class="separator:aea7e508794baa37398c8d4355ff5e415"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a835de32e043fd9dd5684ae16f002d298"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPlayerBackend.html#a835de32e043fd9dd5684ae16f002d298">setVideoAspect</a> (double r)=0</td></tr>
+<tr class="memdesc:a835de32e043fd9dd5684ae16f002d298"><td class="mdescLeft">&#160;</td><td class="mdescRight">纯虚函数-设置媒体播放显示长宽比.  <a href="classDPlayerBackend.html#a835de32e043fd9dd5684ae16f002d298">更多...</a><br /></td></tr>
+<tr class="separator:a835de32e043fd9dd5684ae16f002d298"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35d64af0fe15bf83515cbfcbe7aa6c7d"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPlayerBackend.html#a35d64af0fe15bf83515cbfcbe7aa6c7d">videoAspect</a> () const =0</td></tr>
+<tr class="memdesc:a35d64af0fe15bf83515cbfcbe7aa6c7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">纯虚函数-获取媒体播放显示长宽比.  <a href="classDPlayerBackend.html#a35d64af0fe15bf83515cbfcbe7aa6c7d">更多...</a><br /></td></tr>
+<tr class="separator:a35d64af0fe15bf83515cbfcbe7aa6c7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7a02dd3a17816fbb4cda9219ff214d3"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPlayerBackend.html#ae7a02dd3a17816fbb4cda9219ff214d3">videoRotation</a> () const =0</td></tr>
+<tr class="memdesc:ae7a02dd3a17816fbb4cda9219ff214d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">纯虚函数-获取顺时针旋转视频角度.  <a href="classDPlayerBackend.html#ae7a02dd3a17816fbb4cda9219ff214d3">更多...</a><br /></td></tr>
+<tr class="separator:ae7a02dd3a17816fbb4cda9219ff214d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e6bccb75cfc891a9d7900b12f4fdb2a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPlayerBackend.html#a1e6bccb75cfc891a9d7900b12f4fdb2a">setVideoRotation</a> (int degree)=0</td></tr>
+<tr class="memdesc:a1e6bccb75cfc891a9d7900b12f4fdb2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">纯虚函数-设置顺时针旋转视频角度.  <a href="classDPlayerBackend.html#a1e6bccb75cfc891a9d7900b12f4fdb2a">更多...</a><br /></td></tr>
+<tr class="separator:a1e6bccb75cfc891a9d7900b12f4fdb2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad02937621dd1af15ab9d027eed3434d3"><td class="memItemLeft" align="right" valign="top">virtual <a class="elRef" href="http://doc.qt.io/qt-5/qimage.html">QImage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPlayerBackend.html#ad02937621dd1af15ab9d027eed3434d3">takeScreenshot</a> () const =0</td></tr>
+<tr class="memdesc:ad02937621dd1af15ab9d027eed3434d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">纯虚函数-获取当前视频播放的截图.  <a href="classDPlayerBackend.html#ad02937621dd1af15ab9d027eed3434d3">更多...</a><br /></td></tr>
+<tr class="separator:ad02937621dd1af15ab9d027eed3434d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3afb303ede1015d87d3acadec24090b2"><td class="memItemLeft" align="right" valign="top"><a id="a3afb303ede1015d87d3acadec24090b2"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPlayerBackend.html#a3afb303ede1015d87d3acadec24090b2">burstScreenshot</a> ()=0</td></tr>
+<tr class="memdesc:a3afb303ede1015d87d3acadec24090b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">纯虚函数-连拍截图，截图间隔时间为5秒. <br /></td></tr>
+<tr class="separator:a3afb303ede1015d87d3acadec24090b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b302c140838cac4318aa88c7d5d6b86"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPlayerBackend.html#a9b302c140838cac4318aa88c7d5d6b86">stopBurstScreenshot</a> ()=0</td></tr>
+<tr class="memdesc:a9b302c140838cac4318aa88c7d5d6b86"><td class="mdescLeft">&#160;</td><td class="mdescRight">纯虚函数-停止连拍截图.  <a href="classDPlayerBackend.html#a9b302c140838cac4318aa88c7d5d6b86">更多...</a><br /></td></tr>
+<tr class="separator:a9b302c140838cac4318aa88c7d5d6b86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae63b3e7a90b23a8e1f13543c808654d8"><td class="memItemLeft" align="right" valign="top">virtual <a class="elRef" href="http://doc.qt.io/qt-5/qvariant.html">QVariant</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPlayerBackend.html#ae63b3e7a90b23a8e1f13543c808654d8">getProperty</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;) const =0</td></tr>
+<tr class="memdesc:ae63b3e7a90b23a8e1f13543c808654d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">纯虚函数-根据参数获取播放属性.  <a href="classDPlayerBackend.html#ae63b3e7a90b23a8e1f13543c808654d8">更多...</a><br /></td></tr>
+<tr class="separator:ae63b3e7a90b23a8e1f13543c808654d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46bab222886ce659d6581d384a7f47d4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPlayerBackend.html#a46bab222886ce659d6581d384a7f47d4">setProperty</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;, const <a class="elRef" href="http://doc.qt.io/qt-5/qvariant.html">QVariant</a> &amp;)=0</td></tr>
+<tr class="memdesc:a46bab222886ce659d6581d384a7f47d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">纯虚函数-设置播放属性.  <a href="classDPlayerBackend.html#a46bab222886ce659d6581d384a7f47d4">更多...</a><br /></td></tr>
+<tr class="separator:a46bab222886ce659d6581d384a7f47d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c743155e02a9e274a417f0a55f64a14"><td class="memItemLeft" align="right" valign="top"><a id="a2c743155e02a9e274a417f0a55f64a14"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPlayerBackend.html#a2c743155e02a9e274a417f0a55f64a14">nextFrame</a> ()=0</td></tr>
+<tr class="memdesc:a2c743155e02a9e274a417f0a55f64a14"><td class="mdescLeft">&#160;</td><td class="mdescRight">纯虚函数-媒体下一帧. <br /></td></tr>
+<tr class="separator:a2c743155e02a9e274a417f0a55f64a14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbe41d8755d0033dd43e2aa49102f926"><td class="memItemLeft" align="right" valign="top"><a id="acbe41d8755d0033dd43e2aa49102f926"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPlayerBackend.html#acbe41d8755d0033dd43e2aa49102f926">previousFrame</a> ()=0</td></tr>
+<tr class="memdesc:acbe41d8755d0033dd43e2aa49102f926"><td class="mdescLeft">&#160;</td><td class="mdescRight">纯虚函数-媒体上一帧. <br /></td></tr>
+<tr class="separator:acbe41d8755d0033dd43e2aa49102f926"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8108a034328a6f16f3d86138c7edcbb7"><td class="memItemLeft" align="right" valign="top"><a id="a8108a034328a6f16f3d86138c7edcbb7"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPlayerBackend.html#a8108a034328a6f16f3d86138c7edcbb7">makeCurrent</a> ()=0</td></tr>
+<tr class="memdesc:a8108a034328a6f16f3d86138c7edcbb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">纯虚函数-指定绘制设备. <br /></td></tr>
+<tr class="separator:a8108a034328a6f16f3d86138c7edcbb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad46fe0184a008caf92d98a3cfa363ec1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPlayerBackend.html#ad46fe0184a008caf92d98a3cfa363ec1">changehwaccelMode</a> (hwaccelMode hwaccelMode)=0</td></tr>
+<tr class="memdesc:ad46fe0184a008caf92d98a3cfa363ec1"><td class="mdescLeft">&#160;</td><td class="mdescRight">纯虚函数-改变硬件加速模式.  <a href="classDPlayerBackend.html#ad46fe0184a008caf92d98a3cfa363ec1">更多...</a><br /></td></tr>
+<tr class="separator:ad46fe0184a008caf92d98a3cfa363ec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebd9937e07d32b3fed6ac452616a38af"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="http://doc.qt.io/qt-5/qurl.html">QUrl</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPlayerBackend.html#aebd9937e07d32b3fed6ac452616a38af">urlFile</a> () const</td></tr>
+<tr class="memdesc:aebd9937e07d32b3fed6ac452616a38af"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取播放媒体地址.  <a href="classDPlayerBackend.html#aebd9937e07d32b3fed6ac452616a38af">更多...</a><br /></td></tr>
+<tr class="separator:aebd9937e07d32b3fed6ac452616a38af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_qobject"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_qobject')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el"  href="http://doc.qt.io/qt-5/qobject.html">QObject</a></td></tr>
+<tr class="memitem:metaObject inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="metaObject"></a>
+virtual const <a class="elRef" href="http://doc.qt.io/qt-5/qmetaobject.html">QMetaObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#metaObject">metaObject</a> () const const</td></tr>
+<tr class="separator:metaObject inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:QObject inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="QObject"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#QObject">QObject</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a>)</td></tr>
+<tr class="separator:QObject inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:event inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="event"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#event">event</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qevent.html">QEvent</a> *e)</td></tr>
+<tr class="separator:event inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:eventFilter inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="eventFilter"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#eventFilter">eventFilter</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *watched, <a class="elRef" href="http://doc.qt.io/qt-5/qevent.html">QEvent</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#event">event</a>)</td></tr>
+<tr class="separator:eventFilter inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:objectName-prop inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="objectName-prop"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#objectName-prop">objectName</a> () const const</td></tr>
+<tr class="separator:objectName-prop inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:objectName-prop inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="objectName-prop"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#objectName-prop">setObjectName</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;name)</td></tr>
+<tr class="separator:objectName-prop inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:isWidgetType inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="isWidgetType"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#isWidgetType">isWidgetType</a> () const const</td></tr>
+<tr class="separator:isWidgetType inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:isWindowType inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="isWindowType"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#isWindowType">isWindowType</a> () const const</td></tr>
+<tr class="separator:isWindowType inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:signalsBlocked inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="signalsBlocked"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#signalsBlocked">signalsBlocked</a> () const const</td></tr>
+<tr class="separator:signalsBlocked inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:blockSignals inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="blockSignals"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#blockSignals">blockSignals</a> (bool block)</td></tr>
+<tr class="separator:blockSignals inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:thread inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="thread"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qthread.html">QThread</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#thread">thread</a> () const const</td></tr>
+<tr class="separator:thread inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:moveToThread inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="moveToThread"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#moveToThread">moveToThread</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qthread.html">QThread</a> *targetThread)</td></tr>
+<tr class="separator:moveToThread inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:startTimer inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="startTimer"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#startTimer">startTimer</a> (int interval, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#TimerType-enum">Qt::TimerType</a> timerType)</td></tr>
+<tr class="separator:startTimer inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:startTimer-1 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="startTimer-1"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#startTimer-1">startTimer</a> (std::chrono::milliseconds time, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#TimerType-enum">Qt::TimerType</a> timerType)</td></tr>
+<tr class="separator:startTimer-1 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:killTimer inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="killTimer"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#killTimer">killTimer</a> (int id)</td></tr>
+<tr class="separator:killTimer inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:findChild inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="findChild"></a>
+T&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#findChild">findChild</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;name, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#FindChildOption-enum">Qt::FindChildOptions</a> options) const const</td></tr>
+<tr class="separator:findChild inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:findChildren inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="findChildren"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qlist.html">QList</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#findChildren">findChildren</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;name, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#FindChildOption-enum">Qt::FindChildOptions</a> options) const const</td></tr>
+<tr class="separator:findChildren inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:findChildren-1 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="findChildren-1"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qlist.html">QList</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject-obsolete.html#findChildren-1">findChildren</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qregexp.html">QRegExp</a> &amp;regExp, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#FindChildOption-enum">Qt::FindChildOptions</a> options) const const</td></tr>
+<tr class="separator:findChildren-1 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:findChildren-2 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="findChildren-2"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qlist.html">QList</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#findChildren-2">findChildren</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qregularexpression.html">QRegularExpression</a> &amp;re, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#FindChildOption-enum">Qt::FindChildOptions</a> options) const const</td></tr>
+<tr class="separator:findChildren-2 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:children inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="children"></a>
+const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#QObjectList-typedef">QObjectList</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#children">children</a> () const const</td></tr>
+<tr class="separator:children inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setParent inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="setParent"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#setParent">setParent</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a>)</td></tr>
+<tr class="separator:setParent inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:installEventFilter inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="installEventFilter"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#installEventFilter">installEventFilter</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *filterObj)</td></tr>
+<tr class="separator:installEventFilter inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:removeEventFilter inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="removeEventFilter"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#removeEventFilter">removeEventFilter</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *obj)</td></tr>
+<tr class="separator:removeEventFilter inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connect-2 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect-2"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#connect-2">connect</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const char *signal, const char *method, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#ConnectionType-enum">Qt::ConnectionType</a> type) const const</td></tr>
+<tr class="separator:connect-2 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnect-2 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect-2"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#disconnect-2">disconnect</a> (const char *signal, const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const char *method) const const</td></tr>
+<tr class="separator:disconnect-2 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnect-3 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect-3"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#disconnect-3">disconnect</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const char *method) const const</td></tr>
+<tr class="separator:disconnect-3 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dumpObjectTree-1 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="dumpObjectTree-1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject-obsolete.html#dumpObjectTree-1">dumpObjectTree</a> ()</td></tr>
+<tr class="separator:dumpObjectTree-1 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dumpObjectInfo-1 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="dumpObjectInfo-1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject-obsolete.html#dumpObjectInfo-1">dumpObjectInfo</a> ()</td></tr>
+<tr class="separator:dumpObjectInfo-1 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dumpObjectTree inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="dumpObjectTree"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#dumpObjectTree">dumpObjectTree</a> () const const</td></tr>
+<tr class="separator:dumpObjectTree inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dumpObjectInfo inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="dumpObjectInfo"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#dumpObjectInfo">dumpObjectInfo</a> () const const</td></tr>
+<tr class="separator:dumpObjectInfo inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setProperty inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="setProperty"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#setProperty">setProperty</a> (const char *name, const <a class="elRef" href="http://doc.qt.io/qt-5/qvariant.html">QVariant</a> &amp;value)</td></tr>
+<tr class="separator:setProperty inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:property inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="property"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qvariant.html">QVariant</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#property">property</a> (const char *name) const const</td></tr>
+<tr class="separator:property inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dynamicPropertyNames inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="dynamicPropertyNames"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qlist.html">QList</a>&lt; <a class="elRef" href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#dynamicPropertyNames">dynamicPropertyNames</a> () const const</td></tr>
+<tr class="separator:dynamicPropertyNames inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:destroyed inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="destroyed"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#destroyed">destroyed</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *obj)</td></tr>
+<tr class="separator:destroyed inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:objectNameChanged inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="objectNameChanged"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#objectNameChanged">objectNameChanged</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#objectName-prop">objectName</a>)</td></tr>
+<tr class="separator:objectNameChanged inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:parent inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="parent"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a> () const const</td></tr>
+<tr class="separator:parent inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:inherits inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="inherits"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#inherits">inherits</a> (const char *className) const const</td></tr>
+<tr class="separator:inherits inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:deleteLater inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="deleteLater"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#deleteLater">deleteLater</a> ()</td></tr>
+<tr class="separator:deleteLater inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_DISABLE_COPY inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_DISABLE_COPY"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_DISABLE_COPY">Q_DISABLE_COPY</a> (Class)</td></tr>
+<tr class="separator:Q_DISABLE_COPY inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_DISABLE_MOVE inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_DISABLE_MOVE"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_DISABLE_MOVE">Q_DISABLE_MOVE</a> (Class)</td></tr>
+<tr class="separator:Q_DISABLE_MOVE inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_DISABLE_COPY_MOVE inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_DISABLE_COPY_MOVE"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_DISABLE_COPY_MOVE">Q_DISABLE_COPY_MOVE</a> (Class)</td></tr>
+<tr class="separator:Q_DISABLE_COPY_MOVE inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:qobject_cast inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="qobject_cast"></a>
+T&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#qobject_cast">qobject_cast</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *object)</td></tr>
+<tr class="separator:qobject_cast inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:qobject_cast-1 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="qobject_cast-1"></a>
+T&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#qobject_cast-1">qobject_cast</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *object)</td></tr>
+<tr class="separator:qobject_cast-1 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:qFindChild inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="qFindChild"></a>
+T&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject-obsolete.html#qFindChild">qFindChild</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *obj, const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;name)</td></tr>
+<tr class="separator:qFindChild inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:qFindChildren inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="qFindChildren"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qlist.html">QList</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject-obsolete.html#qFindChildren">qFindChildren</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *obj, const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;name)</td></tr>
+<tr class="separator:qFindChildren inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:qFindChildren-1 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="qFindChildren-1"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qlist.html">QList</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#qFindChildren-1">qFindChildren</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *obj, const <a class="elRef" href="http://doc.qt.io/qt-5/qregexp.html">QRegExp</a> &amp;regExp)</td></tr>
+<tr class="separator:qFindChildren-1 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_CLASSINFO inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_CLASSINFO"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_CLASSINFO">Q_CLASSINFO</a> (Name, Value)</td></tr>
+<tr class="separator:Q_CLASSINFO inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_INTERFACES inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_INTERFACES"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_INTERFACES">Q_INTERFACES</a> (...)</td></tr>
+<tr class="separator:Q_INTERFACES inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_PROPERTY inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_PROPERTY"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a> (...)</td></tr>
+<tr class="separator:Q_PROPERTY inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_ENUMS inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_ENUMS"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject-obsolete.html#Q_ENUMS">Q_ENUMS</a> (...)</td></tr>
+<tr class="separator:Q_ENUMS inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_FLAGS inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_FLAGS"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject-obsolete.html#Q_FLAGS">Q_FLAGS</a> (...)</td></tr>
+<tr class="separator:Q_FLAGS inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_ENUM inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_ENUM"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_ENUM">Q_ENUM</a> (...)</td></tr>
+<tr class="separator:Q_ENUM inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_FLAG inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_FLAG"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_FLAG">Q_FLAG</a> (...)</td></tr>
+<tr class="separator:Q_FLAG inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_ENUM_NS inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_ENUM_NS"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_ENUM_NS">Q_ENUM_NS</a> (...)</td></tr>
+<tr class="separator:Q_ENUM_NS inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_FLAG_NS inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_FLAG_NS"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_FLAG_NS">Q_FLAG_NS</a> (...)</td></tr>
+<tr class="separator:Q_FLAG_NS inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_OBJECT inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_OBJECT"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">Q_OBJECT</a> Q_OBJECT</td></tr>
+<tr class="separator:Q_OBJECT inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_GADGET inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_GADGET"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_GADGET">Q_GADGET</a> Q_GADGET</td></tr>
+<tr class="separator:Q_GADGET inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_NAMESPACE inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_NAMESPACE"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_NAMESPACE">Q_NAMESPACE</a> Q_NAMESPACE</td></tr>
+<tr class="separator:Q_NAMESPACE inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_NAMESPACE_EXPORT inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_NAMESPACE_EXPORT"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_NAMESPACE_EXPORT">Q_NAMESPACE_EXPORT</a> (EXPORT_MACRO)</td></tr>
+<tr class="separator:Q_NAMESPACE_EXPORT inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_SIGNALS inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_SIGNALS"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SIGNALS">Q_SIGNALS</a> Q_SIGNALS</td></tr>
+<tr class="separator:Q_SIGNALS inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_SIGNAL inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_SIGNAL"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SIGNAL">Q_SIGNAL</a> Q_SIGNAL</td></tr>
+<tr class="separator:Q_SIGNAL inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_SLOTS inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_SLOTS"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SLOTS">Q_SLOTS</a> Q_SLOTS</td></tr>
+<tr class="separator:Q_SLOTS inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_SLOT inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_SLOT"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SLOT">Q_SLOT</a> Q_SLOT</td></tr>
+<tr class="separator:Q_SLOT inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_EMIT inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_EMIT"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_EMIT">Q_EMIT</a> Q_EMIT</td></tr>
+<tr class="separator:Q_EMIT inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_INVOKABLE inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_INVOKABLE"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_INVOKABLE">Q_INVOKABLE</a> Q_INVOKABLE</td></tr>
+<tr class="separator:Q_INVOKABLE inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_REVISION inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_REVISION"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_REVISION">Q_REVISION</a> Q_REVISION</td></tr>
+<tr class="separator:Q_REVISION inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_SET_OBJECT_NAME inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_SET_OBJECT_NAME"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SET_OBJECT_NAME">Q_SET_OBJECT_NAME</a> (<a class="el" href="classObject.html">Object</a>)</td></tr>
+<tr class="separator:Q_SET_OBJECT_NAME inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:QT_NO_NARROWING_CONVERSIONS_IN_CONNECT inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="QT_NO_NARROWING_CONVERSIONS_IN_CONNECT"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#QT_NO_NARROWING_CONVERSIONS_IN_CONNECT">QT_NO_NARROWING_CONVERSIONS_IN_CONNECT</a> QT_NO_NARROWING_CONVERSIONS_IN_CONNECT</td></tr>
+<tr class="separator:QT_NO_NARROWING_CONVERSIONS_IN_CONNECT inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a08004bae3851a58d8ad1bbdb68690f82"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPlayerBackend.html#a08004bae3851a58d8ad1bbdb68690f82">setDebugLevel</a> (DebugLevel lvl)</td></tr>
+<tr class="memdesc:a08004bae3851a58d8ad1bbdb68690f82"><td class="mdescLeft">&#160;</td><td class="mdescRight">静态函数-设置调试等级.  <a href="classDPlayerBackend.html#a08004bae3851a58d8ad1bbdb68690f82">更多...</a><br /></td></tr>
+<tr class="separator:a08004bae3851a58d8ad1bbdb68690f82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade139ef7ac3f2ffa7cc5ac240d77a26d"><td class="memItemLeft" align="right" valign="top">static DebugLevel&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPlayerBackend.html#ade139ef7ac3f2ffa7cc5ac240d77a26d">debugLevel</a> ()</td></tr>
+<tr class="memdesc:ade139ef7ac3f2ffa7cc5ac240d77a26d"><td class="mdescLeft">&#160;</td><td class="mdescRight">静态函数-获取调试等级.  <a href="classDPlayerBackend.html#ade139ef7ac3f2ffa7cc5ac240d77a26d">更多...</a><br /></td></tr>
+<tr class="separator:ade139ef7ac3f2ffa7cc5ac240d77a26d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_qobject"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_qobject')"><img src="closed.png" alt="-"/>&#160;静态 Public 成员函数 继承自 <a class="el"  href="http://doc.qt.io/qt-5/qobject.html">QObject</a></td></tr>
+<tr class="memitem:tr inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="tr"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#tr">tr</a> (const char *sourceText, const char *disambiguation, int n)</td></tr>
+<tr class="separator:tr inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:trUtf8 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="trUtf8"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject-obsolete.html#trUtf8">trUtf8</a> (const char *sourceText, const char *disambiguation, int n)</td></tr>
+<tr class="separator:trUtf8 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connect inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#connect">connect</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const char *signal, const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const char *method, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#ConnectionType-enum">Qt::ConnectionType</a> type)</td></tr>
+<tr class="separator:connect inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connect-1 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect-1"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#connect-1">connect</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const <a class="elRef" href="http://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;signal, const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const <a class="elRef" href="http://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;method, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#ConnectionType-enum">Qt::ConnectionType</a> type)</td></tr>
+<tr class="separator:connect-1 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connect-3 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect-3"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#connect-3">connect</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#sender">sender</a>, PointerToMemberFunction signal, const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, PointerToMemberFunction method, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#ConnectionType-enum">Qt::ConnectionType</a> type)</td></tr>
+<tr class="separator:connect-3 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connect-4 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect-4"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#connect-4">connect</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#sender">sender</a>, PointerToMemberFunction signal, Functor functor)</td></tr>
+<tr class="separator:connect-4 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connect-5 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect-5"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#connect-5">connect</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#sender">sender</a>, PointerToMemberFunction signal, const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *context, Functor functor, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#ConnectionType-enum">Qt::ConnectionType</a> type)</td></tr>
+<tr class="separator:connect-5 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnect inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#disconnect">disconnect</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const char *signal, const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const char *method)</td></tr>
+<tr class="separator:disconnect inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnect-1 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect-1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#disconnect-1">disconnect</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const <a class="elRef" href="http://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;signal, const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const <a class="elRef" href="http://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;method)</td></tr>
+<tr class="separator:disconnect-1 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnect-4 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect-4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#disconnect-4">disconnect</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a> &amp;connection)</td></tr>
+<tr class="separator:disconnect-4 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnect-5 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect-5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#disconnect-5">disconnect</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#sender">sender</a>, PointerToMemberFunction signal, const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, PointerToMemberFunction method)</td></tr>
+<tr class="separator:disconnect-5 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:ae0ea50b2c8cc3913b4bb00477d24ba40"><td class="memItemLeft" align="right" valign="top"><a id="ae0ea50b2c8cc3913b4bb00477d24ba40"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qscopedpointer.html">QScopedPointer</a>&lt; <a class="el" href="classDPlayerBackendPrivate.html">DPlayerBackendPrivate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>d_ptr</b></td></tr>
+<tr class="separator:ae0ea50b2c8cc3913b4bb00477d24ba40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:a12b6aa72a3a99e046e15314fbe1d3998"><td class="memItemLeft" align="right" valign="top"><a id="a12b6aa72a3a99e046e15314fbe1d3998"></a>
+qint64&#160;</td><td class="memItemRight" valign="bottom"><b>duration</b></td></tr>
+<tr class="separator:a12b6aa72a3a99e046e15314fbe1d3998"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac40977b2882ee3df76b533f7d33f806c"><td class="memItemLeft" align="right" valign="top"><a id="ac40977b2882ee3df76b533f7d33f806c"></a>
+qint64&#160;</td><td class="memItemRight" valign="bottom"><b>elapsed</b></td></tr>
+<tr class="separator:ac40977b2882ee3df76b533f7d33f806c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a192d177ec8f06dfa6aaf932c451c64bd"><td class="memItemLeft" align="right" valign="top"><a id="a192d177ec8f06dfa6aaf932c451c64bd"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qsize.html">QSize</a>&#160;</td><td class="memItemRight" valign="bottom"><b>videoSize</b></td></tr>
+<tr class="separator:a192d177ec8f06dfa6aaf932c451c64bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f1947e8f1deb89ce982fb35d8f70e43"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDPlayerBackend.html#a1f1947e8f1deb89ce982fb35d8f70e43">paused</a></td></tr>
+<tr class="memdesc:a1f1947e8f1deb89ce982fb35d8f70e43"><td class="mdescLeft">&#160;</td><td class="mdescRight">虚函数-获取播放是否被暂停.  <a href="classDPlayerBackend.html#a1f1947e8f1deb89ce982fb35d8f70e43">更多...</a><br /></td></tr>
+<tr class="separator:a1f1947e8f1deb89ce982fb35d8f70e43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fa883f6faa4b31df6c6f825783a83c0"><td class="memItemLeft" align="right" valign="top"><a id="a9fa883f6faa4b31df6c6f825783a83c0"></a>
+PlayState&#160;</td><td class="memItemRight" valign="bottom"><b>state</b></td></tr>
+<tr class="separator:a9fa883f6faa4b31df6c6f825783a83c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header properties_qobject"><td colspan="2" onclick="javascript:toggleInherit('properties_qobject')"><img src="closed.png" alt="-"/>&#160;属性 继承自 <a class="el"  href="http://doc.qt.io/qt-5/qobject.html">QObject</a></td></tr>
+<tr class="memitem:objectName-prop inherit properties_qobject"><td class="memItemLeft" align="right" valign="top"><a id="objectName-prop"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#objectName-prop">objectName</a></td></tr>
+<tr class="separator:objectName-prop inherit properties_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pub_attribs_qobject"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_qobject')"><img src="closed.png" alt="-"/>&#160;Public 属性 继承自 <a class="el"  href="http://doc.qt.io/qt-5/qobject.html">QObject</a></td></tr>
+<tr class="memitem:QObjectList-typedef inherit pub_attribs_qobject"><td class="memItemLeft" align="right" valign="top"><a id="QObjectList-typedef"></a>
+typedef&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#QObjectList-typedef">QObjectList</a></td></tr>
+<tr class="separator:QObjectList-typedef inherit pub_attribs_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_qobject"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_qobject')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el"  href="http://doc.qt.io/qt-5/qobject.html">QObject</a></td></tr>
+<tr class="memitem:sender inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="sender"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#sender">sender</a> () const const</td></tr>
+<tr class="separator:sender inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:senderSignalIndex inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="senderSignalIndex"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#senderSignalIndex">senderSignalIndex</a> () const const</td></tr>
+<tr class="separator:senderSignalIndex inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:receivers inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="receivers"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#receivers">receivers</a> (const char *signal) const const</td></tr>
+<tr class="separator:receivers inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:isSignalConnected inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="isSignalConnected"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#isSignalConnected">isSignalConnected</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;signal) const const</td></tr>
+<tr class="separator:isSignalConnected inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:timerEvent inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="timerEvent"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#timerEvent">timerEvent</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qtimerevent.html">QTimerEvent</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#event">event</a>)</td></tr>
+<tr class="separator:timerEvent inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:childEvent inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="childEvent"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#childEvent">childEvent</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qchildevent.html">QChildEvent</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#event">event</a>)</td></tr>
+<tr class="separator:childEvent inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:customEvent inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="customEvent"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#customEvent">customEvent</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qevent.html">QEvent</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#event">event</a>)</td></tr>
+<tr class="separator:customEvent inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connectNotify inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connectNotify"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#connectNotify">connectNotify</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;signal)</td></tr>
+<tr class="separator:connectNotify inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnectNotify inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnectNotify"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#disconnectNotify">disconnectNotify</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;signal)</td></tr>
+<tr class="separator:disconnectNotify inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a949037d1ac6c37228f09ff6e29bbcb7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a949037d1ac6c37228f09ff6e29bbcb7a">&#9670;&nbsp;</a></span>addSubSearchPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DPlayerBackend::addSubSearchPath </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>纯虚函数-添加媒体Sub字幕路径. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">path</td><td>媒体Sub字幕路径. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在 <a class="el" href="classDMpvProxy.html#a37542b27fc1943e28b640aa322bb56fd">DMpvProxy</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="ae888cead68e7a3058eefb6c6e5b1e473"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae888cead68e7a3058eefb6c6e5b1e473">&#9670;&nbsp;</a></span>aid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DPlayerBackend::aid </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>纯虚函数-获取音轨id. </p>
+<dl class="section return"><dt>返回</dt><dd>音轨id. </dd></dl>
+
+<p>在 <a class="el" href="classDMpvProxy.html#a2b37a4e70f2f5343244e36457950f60b">DMpvProxy</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="ad46fe0184a008caf92d98a3cfa363ec1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad46fe0184a008caf92d98a3cfa363ec1">&#9670;&nbsp;</a></span>changehwaccelMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DPlayerBackend::changehwaccelMode </td>
+          <td>(</td>
+          <td class="paramtype">hwaccelMode&#160;</td>
+          <td class="paramname"><em>hwaccelMode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>纯虚函数-改变硬件加速模式. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">hwaccelMode</td><td>硬件加速模式. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在 <a class="el" href="classDMpvProxy.html#a2172784eecd50d9fcd482913752c671f">DMpvProxy</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="a539f4f3d0c9db8aa344436d5f993d2bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a539f4f3d0c9db8aa344436d5f993d2bb">&#9670;&nbsp;</a></span>changeSoundMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DPlayerBackend::changeSoundMode </td>
+          <td>(</td>
+          <td class="paramtype">SoundMode&#160;</td>
+          <td class="paramname"><em>mode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>纯虚函数-改变声音播放模式. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>声音播放模式. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在 <a class="el" href="classDMpvProxy.html#a7788c4ae8dff2bc115a408b528bd33a3">DMpvProxy</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="a6c0bf91d39f619d1466635024722d17d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c0bf91d39f619d1466635024722d17d">&#9670;&nbsp;</a></span>changeVolume</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DPlayerBackend::changeVolume </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>纯虚函数-音量改变. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">nVol</td><td>音量值. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ade139ef7ac3f2ffa7cc5ac240d77a26d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade139ef7ac3f2ffa7cc5ac240d77a26d">&#9670;&nbsp;</a></span>debugLevel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DPlayerBackend::DebugLevel DPlayerBackend::debugLevel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>静态函数-获取调试等级. </p>
+<dl class="section return"><dt>返回</dt><dd>调试等级. </dd></dl>
+
+</div>
+</div>
+<a id="a7efa117f8a28c06e25332b251aed046c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7efa117f8a28c06e25332b251aed046c">&#9670;&nbsp;</a></span>duration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">qint64 DPlayerBackend::duration </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>虚函数-获取媒体时长. </p>
+<dl class="section return"><dt>返回</dt><dd>媒体时长. </dd></dl>
+
+<p>被 <a class="el" href="classDMpvProxy.html#ab0abd1b99b51d32b5753418a1c717337">DMpvProxy</a> , 以及 <a class="el" href="classDGstPlayerProxy.html#a1fe8c790764419122c22090d82b51a93">DGstPlayerProxy</a> 重载.</p>
+
+</div>
+</div>
+<a id="aceeafab6b3d081fd975a7ea9c50bc626"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aceeafab6b3d081fd975a7ea9c50bc626">&#9670;&nbsp;</a></span>elapsed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">qint64 DPlayerBackend::elapsed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>虚函数-获取媒体已播放时长. </p>
+<dl class="section return"><dt>返回</dt><dd>媒体已播放时长. </dd></dl>
+
+<p>被 <a class="el" href="classDMpvProxy.html#a4111b2418bdfe5a40ca8e57781b1f7a0">DMpvProxy</a> , 以及 <a class="el" href="classDGstPlayerProxy.html#a5a8f7ac99e0ce535791fbab767248e94">DGstPlayerProxy</a> 重载.</p>
+
+</div>
+</div>
+<a id="ae63b3e7a90b23a8e1f13543c808654d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae63b3e7a90b23a8e1f13543c808654d8">&#9670;&nbsp;</a></span>getProperty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" href="http://doc.qt.io/qt-5/qvariant.html">QVariant</a> DPlayerBackend::getProperty </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>纯虚函数-根据参数获取播放属性. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>主键. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>播放属性. </dd></dl>
+
+<p>在 <a class="el" href="classDMpvProxy.html#aed7932af6ff1d59cdb1f3fa5691422a2">DMpvProxy</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="af1924c30bac6fbc72a17846e4fd10c46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1924c30bac6fbc72a17846e4fd10c46">&#9670;&nbsp;</a></span>isPlayable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DPlayerBackend::isPlayable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>纯虚函数-当前媒体是否能够播放. </p>
+<dl class="section return"><dt>返回</dt><dd>是否能够播放. </dd></dl>
+
+<p>在 <a class="el" href="classDMpvProxy.html#a65b636da5ca98223147abb56a00100da">DMpvProxy</a> , 以及 <a class="el" href="classDGstPlayerProxy.html#aaae7aeefd542dad92eb0937eacb22e1d">DGstPlayerProxy</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="a5d386b7bea50b9aa9bbb5028818a5200"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d386b7bea50b9aa9bbb5028818a5200">&#9670;&nbsp;</a></span>isSubVisible()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DPlayerBackend::isSubVisible </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>纯虚函数-Sub字幕是否显示. </p>
+<dl class="section return"><dt>返回</dt><dd>Sub字幕是否显示， true为显示， 其他为不显示. </dd></dl>
+
+<p>在 <a class="el" href="classDMpvProxy.html#a9640a0982f6d8f0f4bab5bec57124502">DMpvProxy</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="ad6457cdefced4336b72dc15a87183af1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6457cdefced4336b72dc15a87183af1">&#9670;&nbsp;</a></span>loadSubtitle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DPlayerBackend::loadSubtitle </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" href="http://doc.qt.io/qt-5/qfileinfo.html">QFileInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>fi</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>纯虚函数-加载媒体Sub字幕标题. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fi</td><td>媒体Sub字幕文件信息. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在 <a class="el" href="classDMpvProxy.html#ab8ad6df17eea37f6a84d4c4037bdf1d2">DMpvProxy</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="aea7e508794baa37398c8d4355ff5e415"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea7e508794baa37398c8d4355ff5e415">&#9670;&nbsp;</a></span>muted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DPlayerBackend::muted </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>纯虚函数-获取媒体播放是否静音. </p>
+<dl class="section return"><dt>返回</dt><dd>是否静音， true为静音. </dd></dl>
+
+<p>在 <a class="el" href="classDMpvProxy.html#a029fce22286cc9095ea63d38e14f32a7">DMpvProxy</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="a0571cf2a71241c9e52197c88b57849b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0571cf2a71241c9e52197c88b57849b0">&#9670;&nbsp;</a></span>playingMovieInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="structPlayingMovieInfo.html">PlayingMovieInfo</a> &amp; DPlayerBackend::playingMovieInfo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>纯虚函数-获取当前播放媒体信息. </p>
+<dl class="section return"><dt>返回</dt><dd>当前播放媒体信息. </dd></dl>
+
+<p>在 <a class="el" href="classDMpvProxy.html#adcc8bc099ddff93cb435468346d1f39a">DMpvProxy</a> , 以及 <a class="el" href="classDGstPlayerProxy.html#a4af088793f4e2a35b41396167c899c15">DGstPlayerProxy</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="a24e7ed9afe22314e0bbb558550a631d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24e7ed9afe22314e0bbb558550a631d8">&#9670;&nbsp;</a></span>seekAbsolute</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DPlayerBackend::seekAbsolute </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>纯虚函数-seek播放媒体. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">nPos</td><td>seek位置. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a625a18cdf92231cfa20c6f543caac596"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a625a18cdf92231cfa20c6f543caac596">&#9670;&nbsp;</a></span>seekBackward</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DPlayerBackend::seekBackward </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>secs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>纯虚函数-向后seek播放媒体. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">nSecs</td><td>seek时长. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae824def13b76a29b77758eed11abbe94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae824def13b76a29b77758eed11abbe94">&#9670;&nbsp;</a></span>seekForward</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DPlayerBackend::seekForward </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>secs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>纯虚函数-向前seek播放媒体. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">nSecs</td><td>seek时长. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab987efb1d837a1f8c8cf3620c70fc029"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab987efb1d837a1f8c8cf3620c70fc029">&#9670;&nbsp;</a></span>selectSubtitle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DPlayerBackend::selectSubtitle </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>纯虚函数-根据id选择加载媒体Sub字幕. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>媒体Sub字幕id. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在 <a class="el" href="classDMpvProxy.html#aeb72f303b41eef5a8c65d204c4f9f863">DMpvProxy</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="a082e4efeb5c9b7d214d3af48bf3f21c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a082e4efeb5c9b7d214d3af48bf3f21c1">&#9670;&nbsp;</a></span>selectTrack()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DPlayerBackend::selectTrack </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>纯虚函数-根据id选择音频轨道. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>音频轨道id. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在 <a class="el" href="classDMpvProxy.html#af36ce5377d17d20c7c3c8740ea13757f">DMpvProxy</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="a08004bae3851a58d8ad1bbdb68690f82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08004bae3851a58d8ad1bbdb68690f82">&#9670;&nbsp;</a></span>setDebugLevel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DPlayerBackend::setDebugLevel </td>
+          <td>(</td>
+          <td class="paramtype">DebugLevel&#160;</td>
+          <td class="paramname"><em>lvl</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>静态函数-设置调试等级. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">lvl</td><td>调试等级. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aff66341ff0dfbe38a542437fd47403cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff66341ff0dfbe38a542437fd47403cb">&#9670;&nbsp;</a></span>setDVDDevice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DPlayerBackend::setDVDDevice </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>虚函数-设置DVD地址. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">path</td><td>DVD地址. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a442cffd2beac38bd2f69a55637e47392"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a442cffd2beac38bd2f69a55637e47392">&#9670;&nbsp;</a></span>setMute</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DPlayerBackend::setMute </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bMute</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>纯虚函数-设置静音与取消操作. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bMute</td><td>true为静音. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a98bf676cf3157e04fd9aff71a4116249"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98bf676cf3157e04fd9aff71a4116249">&#9670;&nbsp;</a></span>setPlayFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DPlayerBackend::setPlayFile </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" href="http://doc.qt.io/qt-5/qurl.html">QUrl</a> &amp;&#160;</td>
+          <td class="paramname"><em>url</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>虚函数-设置播放媒体流地址. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">url</td><td>媒体流地址. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6be31bd4c1d5087f9f5f4c21524df4b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6be31bd4c1d5087f9f5f4c21524df4b6">&#9670;&nbsp;</a></span>setPlaySpeed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DPlayerBackend::setPlaySpeed </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>speed</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>纯虚函数-设置媒体播放速度. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">speed</td><td>媒体播放速度. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在 <a class="el" href="classDMpvProxy.html#a77565e2b7b3cd567405e4eed4c655b0f">DMpvProxy</a> , 以及 <a class="el" href="classDGstPlayerProxy.html#ac9c6c8b9e6bdb5c0e4d62418bad73321">DGstPlayerProxy</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="a46bab222886ce659d6581d384a7f47d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46bab222886ce659d6581d384a7f47d4">&#9670;&nbsp;</a></span>setProperty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DPlayerBackend::setProperty </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="elRef" href="http://doc.qt.io/qt-5/qvariant.html">QVariant</a> &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>纯虚函数-设置播放属性. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>主键. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>主键对应的值. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在 <a class="el" href="classDMpvProxy.html#a7b38b8d34486816db4e2c1d9ff273842">DMpvProxy</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="af4f55a6f472418a208264a1d889411be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4f55a6f472418a208264a1d889411be">&#9670;&nbsp;</a></span>setState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DPlayerBackend::setState </td>
+          <td>(</td>
+          <td class="paramtype">PlayState&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>虚函数-设置媒体播放状态. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">state</td><td>媒体播放状态. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae4fc84587fc6d82336e3cd45fdb1421d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4fc84587fc6d82336e3cd45fdb1421d">&#9670;&nbsp;</a></span>setSubCodepage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DPlayerBackend::setSubCodepage </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>cp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>纯虚函数-设置媒体Sub字幕编码页. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cp</td><td>编码页. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在 <a class="el" href="classDMpvProxy.html#af167e0e975778d3c2075509f0c3dbda8">DMpvProxy</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="a32fe95390fefa4cccd7938775fe8bf35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32fe95390fefa4cccd7938775fe8bf35">&#9670;&nbsp;</a></span>setSubDelay()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DPlayerBackend::setSubDelay </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>secs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>纯虚函数-设置Sub字幕延迟显示时间. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">secs</td><td>Sub字幕延迟显示时间. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在 <a class="el" href="classDMpvProxy.html#a660bff97e85947cb261a21870cba541e">DMpvProxy</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="a835de32e043fd9dd5684ae16f002d298"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a835de32e043fd9dd5684ae16f002d298">&#9670;&nbsp;</a></span>setVideoAspect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DPlayerBackend::setVideoAspect </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>r</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>纯虚函数-设置媒体播放显示长宽比. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">r</td><td>媒体播放长宽比. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在 <a class="el" href="classDMpvProxy.html#aae5f83dbbda0831dd97cdba51adab581">DMpvProxy</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="a1e6bccb75cfc891a9d7900b12f4fdb2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e6bccb75cfc891a9d7900b12f4fdb2a">&#9670;&nbsp;</a></span>setVideoRotation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DPlayerBackend::setVideoRotation </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>degree</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>纯虚函数-设置顺时针旋转视频角度. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">degree</td><td>顺时针旋转视频角度. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在 <a class="el" href="classDMpvProxy.html#ad1399ffeb8bd8207b4a735633dba72d7">DMpvProxy</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="ac34ce111b11bcb706b71d3f62988d524"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac34ce111b11bcb706b71d3f62988d524">&#9670;&nbsp;</a></span>setWinID</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DPlayerBackend::setWinID </td>
+          <td>(</td>
+          <td class="paramtype">const qint64 &amp;&#160;</td>
+          <td class="paramname"><em>winID</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置窗口wid. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">winID</td><td>窗口wid. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab7decbef9d8ffb67e548ea223e25704f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7decbef9d8ffb67e548ea223e25704f">&#9670;&nbsp;</a></span>sid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DPlayerBackend::sid </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>纯虚函数-获取Sub字幕id. </p>
+<dl class="section return"><dt>返回</dt><dd>Sub字幕id. </dd></dl>
+
+<p>在 <a class="el" href="classDMpvProxy.html#ac140dfdc2115394e72ce6731392b71a9">DMpvProxy</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="a71b00b7aa8fc7fc838b45293f9f3141c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71b00b7aa8fc7fc838b45293f9f3141c">&#9670;&nbsp;</a></span>state()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DPlayerBackend::PlayState DPlayerBackend::state </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>虚函数-获取媒体分辨率. </p>
+<dl class="section return"><dt>返回</dt><dd>媒体分辨率. </dd></dl>
+
+</div>
+</div>
+<a id="a9b302c140838cac4318aa88c7d5d6b86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b302c140838cac4318aa88c7d5d6b86">&#9670;&nbsp;</a></span>stopBurstScreenshot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DPlayerBackend::stopBurstScreenshot </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>纯虚函数-停止连拍截图. </p>
+<dl class="section return"><dt>返回</dt><dd>当前视频播放的截图. </dd></dl>
+
+<p>在 <a class="el" href="classDMpvProxy.html#a8d9e30708fe38866e14b7def90b3c785">DMpvProxy</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="add060c0561a026e07facd35f7e4f0afd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add060c0561a026e07facd35f7e4f0afd">&#9670;&nbsp;</a></span>subCodepage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> DPlayerBackend::subCodepage </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>纯虚函数-获取媒体Sub字幕编码页. </p>
+<dl class="section return"><dt>返回</dt><dd>Sub字幕编码页. </dd></dl>
+
+<p>在 <a class="el" href="classDMpvProxy.html#adec4669d061050be9e5e94490b92a153">DMpvProxy</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="a063eefa6c86ec09d11c7787a336be8f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a063eefa6c86ec09d11c7787a336be8f3">&#9670;&nbsp;</a></span>subDelay()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double DPlayerBackend::subDelay </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>纯虚函数-获取Sub字幕延迟显示时间. </p>
+<dl class="section return"><dt>返回</dt><dd>Sub字幕延迟显示时间. </dd></dl>
+
+<p>在 <a class="el" href="classDMpvProxy.html#a8c4737cb2c5a84e21016b8bdda36c171">DMpvProxy</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="ad02937621dd1af15ab9d027eed3434d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad02937621dd1af15ab9d027eed3434d3">&#9670;&nbsp;</a></span>takeScreenshot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" href="http://doc.qt.io/qt-5/qimage.html">QImage</a> DPlayerBackend::takeScreenshot </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>纯虚函数-获取当前视频播放的截图. </p>
+<dl class="section return"><dt>返回</dt><dd>当前视频播放的截图. </dd></dl>
+
+<p>在 <a class="el" href="classDMpvProxy.html#a8599e28643c7debd5c5f7db1969f6bd5">DMpvProxy</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="ada3e54b737fb32bc525a9f3ec5da4454"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada3e54b737fb32bc525a9f3ec5da4454">&#9670;&nbsp;</a></span>updateSubStyle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DPlayerBackend::updateSubStyle </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>font</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sz</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>纯虚函数-更新媒体播放文字显示样式. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">font</td><td>媒体播放显示字体. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sz</td><td>媒体播放显示字体大小. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在 <a class="el" href="classDMpvProxy.html#a5888baa8e1f75baf7c46bb5903174b52">DMpvProxy</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="aebd9937e07d32b3fed6ac452616a38af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebd9937e07d32b3fed6ac452616a38af">&#9670;&nbsp;</a></span>urlFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" href="http://doc.qt.io/qt-5/qurl.html">QUrl</a> DPlayerBackend::urlFile </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取播放媒体地址. </p>
+<dl class="section return"><dt>返回</dt><dd>播放媒体地址. </dd></dl>
+
+</div>
+</div>
+<a id="a35d64af0fe15bf83515cbfcbe7aa6c7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35d64af0fe15bf83515cbfcbe7aa6c7d">&#9670;&nbsp;</a></span>videoAspect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double DPlayerBackend::videoAspect </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>纯虚函数-获取媒体播放显示长宽比. </p>
+<dl class="section return"><dt>返回</dt><dd>播放显示长宽比. </dd></dl>
+
+<p>在 <a class="el" href="classDMpvProxy.html#a3c6f9b96ef4eeece1b82751459a69b07">DMpvProxy</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="ae7a02dd3a17816fbb4cda9219ff214d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7a02dd3a17816fbb4cda9219ff214d3">&#9670;&nbsp;</a></span>videoRotation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DPlayerBackend::videoRotation </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>纯虚函数-获取顺时针旋转视频角度. </p>
+<dl class="section return"><dt>返回</dt><dd>顺时针旋转视频角度. </dd></dl>
+
+<p>在 <a class="el" href="classDMpvProxy.html#ac927fab54bf26bccf667a86ac8079bad">DMpvProxy</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="afab907d35b654aeabbd6f399d09f027f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afab907d35b654aeabbd6f399d09f027f">&#9670;&nbsp;</a></span>videoSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" href="http://doc.qt.io/qt-5/qsize.html">QSize</a> DPlayerBackend::videoSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>纯虚函数-获取媒体分辨率. </p>
+<dl class="section return"><dt>返回</dt><dd>媒体分辨率. </dd></dl>
+
+<p>在 <a class="el" href="classDMpvProxy.html#a497a55bb5da1af81846f705bf3e26e1b">DMpvProxy</a> , 以及 <a class="el" href="classDGstPlayerProxy.html#a7cd79f3f8067dd3824c12b16861b05ab">DGstPlayerProxy</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="a21a0186dc2780fef31172ececfef3f06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21a0186dc2780fef31172ececfef3f06">&#9670;&nbsp;</a></span>volume()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DPlayerBackend::volume </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>纯虚函数-获取媒体播放音量. </p>
+<dl class="section return"><dt>返回</dt><dd>媒体播放音量. </dd></dl>
+
+<p>在 <a class="el" href="classDMpvProxy.html#ac778fd825526a29ccdf0eba321003fe5">DMpvProxy</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="ab8e3f52c306b4cdfe17881a4bedc1426"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8e3f52c306b4cdfe17881a4bedc1426">&#9670;&nbsp;</a></span>winID</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">qint64 DPlayerBackend::winID </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取窗口wid. </p>
+<dl class="section return"><dt>返回</dt><dd>窗口wid. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">属性说明</h2>
+<a id="a1f1947e8f1deb89ce982fb35d8f70e43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f1947e8f1deb89ce982fb35d8f70e43">&#9670;&nbsp;</a></span>paused</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DPlayerBackend::paused</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>虚函数-获取播放是否被暂停. </p>
+<dl class="section return"><dt>返回</dt><dd>是否暂停， true为暂停，其他为非暂停状态. </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dtkmultimedia/include/dtkmultimedia/<a class="el" href="dplayerbackend_8h_source.html">dplayerbackend.h</a></li>
+<li>dtkmultimedia/docs/dtkmultimedia/dplayerbackend.zh_CN.dox</li>
+<li>dtkmultimedia/src/multimedia/common/interface/dplayerbackend.cpp</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classDPlayerBackend.html">DPlayerBackend</a></li>
+    <li class="footer">文档生成时间:2023-01-13-07:39  +00</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

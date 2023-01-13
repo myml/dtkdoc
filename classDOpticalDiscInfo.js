@@ -1,0 +1,25 @@
+var classDOpticalDiscInfo =
+[
+    [ "DOpticalDiscInfo", "classDOpticalDiscInfo.html#a4787ab53d332f9b3a288d5d3f41d2ce3", null ],
+    [ "~DOpticalDiscInfo", "classDOpticalDiscInfo.html#a1e2f3afbc5d21b96e89b98fdfdd59200", null ],
+    [ "availableSize", "classDOpticalDiscInfo.html#ad36dc1c3f0ce2c0b4b1902382f65c8cc", null ],
+    [ "blank", "classDOpticalDiscInfo.html#a05053f73e9e7091df53b2853b3b39b48", null ],
+    [ "dataBlocks", "classDOpticalDiscInfo.html#a69668ae9149cd511d0a4dfcdb67363ce", null ],
+    [ "device", "classDOpticalDiscInfo.html#acb8ec7d9fddeb4a4cb68d084536bbe6c", null ],
+    [ "mediaType", "classDOpticalDiscInfo.html#af2a92781ddf645c17f8b71bf7960e2f4", null ],
+    [ "operator=", "classDOpticalDiscInfo.html#accd37e5a95a3bde5125ecb60a229bc70", null ],
+    [ "totalSize", "classDOpticalDiscInfo.html#afcab7cb7342e3564d362bdb8b19929dd", null ],
+    [ "usedSize", "classDOpticalDiscInfo.html#a4b9bff9c63098509dc7244a30224abb8", null ],
+    [ "volumeName", "classDOpticalDiscInfo.html#a03687d1e9b42511263f098f52f56b914", null ],
+    [ "writeSpeed", "classDOpticalDiscInfo.html#a35b90f981b0abbb9528a39112bf6a8b8", null ],
+    [ "DOpticalDiscManager::createOpticalDiscInfo", "classDOpticalDiscInfo.html#a4a87078cd5988c43f8aa0f328791dc28", null ],
+    [ "availableSize", "classDOpticalDiscInfo.html#aedecc2fab9f443f7023b67119904abdb", null ],
+    [ "blank", "classDOpticalDiscInfo.html#a4736a08f0e5b561115b54cb3e7045ae3", null ],
+    [ "dataBlocks", "classDOpticalDiscInfo.html#a14bbbba88705ce5cb555507669d84a17", null ],
+    [ "device", "classDOpticalDiscInfo.html#a27acbbf487d63ce39844141ae054c342", null ],
+    [ "mediaType", "classDOpticalDiscInfo.html#a877056aa75407e43b05972a8350c71e7", null ],
+    [ "totalSize", "classDOpticalDiscInfo.html#a0eb268d044f26fa115fc6f705066ed47", null ],
+    [ "usedSize", "classDOpticalDiscInfo.html#aa96b55e7125eb5877cc1ae18d1b1182a", null ],
+    [ "volumeName", "classDOpticalDiscInfo.html#a0aa889e29a9979dd9bb97e7211d4713e", null ],
+    [ "writeSpeed", "classDOpticalDiscInfo.html#a39db54b063e4e868f30051d639a604cc", null ]
+];

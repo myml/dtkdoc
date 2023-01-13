@@ -159,7 +159,7 @@ DTk dci：dci工具类</h1>
  下面内容是关于dci文件的简介，还有一部分使用以及工具将会在以后的文档中提供 </p>
 <h2><a class="anchor" id="autotoc_md1"></a>
 关于dci图标简介</h2>
-<p><code>DCI</code> 图标是一种整合性图标格式，应用可以使用该图标完成多种状态的自动变化。例如， <code>ListView</code> 控件中高亮的 <code>Item</code> 图标自动反白，<code>Menu</code> 中图标跟随当前 <code>Item</code> 变化等等。</p>
+<p><code>DCI</code> 图标是一种整合性图标格式，应用可以使用该图标完成多种状态的自动变化。例如， <code>ListView</code> 控件中高亮的 <code>Item</code> 图标自动反白，<code><a class="el" href="classMenu.html" title="提供一种行云设计风格的 Menu 控件.">Menu</a></code> 中图标跟随当前 <code>Item</code> 变化等等。</p>
 <p><code>dtkcore</code> 中提供了一个 <code>DDciFile</code> 的类，实现 <code>DCI</code> 文件的逻辑。其只是对数据的打包，不限于图片数据，可以是任何文本和二进制数据。 <code>dtkcore</code> 中还提供了用于在文管中解析文件的文件引擎，专门用于通过 <code><a class="elRef" href="http://doc.qt.io/qt-5/qfile.html">QFile</a></code> 和 <code><a class="elRef" href="http://doc.qt.io/qt-5/qdir.html">QDir</a></code> 处理 <code>dci</code> 文件。</p>
 <p>dtkgui 中提供了一个 <code><a class="el" href="classDDciIcon.html">DDciIcon</a></code> 类，实现了对 <code>DCI</code> 图标的逻辑。区别于 <code>DDciFile</code> ，它是 <code>DDciFile</code> 的上层封装，即使用 DDciFile 可以将文件进行打包归档的功能，封装了一种图标格式。 <code><a class="el" href="classDDciIcon.html">DDciIcon</a></code> 中提供的接口，都是针对图标的，并无 <code>DDciFile</code> 的数据处理操作，多个 <code><a class="el" href="classDDciIcon.html">DDciIcon</a></code> 进行数据拷贝和交换时，可以进行数据共享。 <code><a class="el" href="classDDciIcon.html">DDciIcon</a></code> 可以通过调用 pixmap 函数返回需要显示的图片数据，也可以通过调用 paint 函数直接将内容绘制到目标内部。解析 Dci 图标的过程，这里讲解一下，详细过程可以查看代码理解： 首先需要创建一个 DDciFile 来解析 (*.dci) 文件，无论是本地文本还是二进制数据，都可以通过 <code>DDciFile</code> 来解析内部内容。 根据 <code><a class="el" href="classDDciIcon.html">DDciIcon</a></code> 中规定好的路径格式，来解析出图标中拟定的各种信息，一般情况下的 <code><a class="el" href="classDDciIcon.html">DDciIcon</a></code> 的路径格式是这样的：</p>
 <p><img src="dciicon-tree.png" alt="" class="inline" title="DCI图标结构路径"/></p>
@@ -212,7 +212,7 @@ DTk dci：dci工具类</h1>
 </ol>
 <h3><a class="anchor" id="autotoc_md4"></a>
 2.  图标大小和缩放比</h3>
-<p>应用所关心的图标大小是否正常，是否能够适配高缩放比模式等等。 <code>DCI</code> 图标中都做到了这些，默认情况下，设计师所提供的图标大小能够满足应用开发的需求，应用只需要主动调用接口指定图标大小即可，例如 <code>dtkwidget</code>,中 <code><a class="el" href="classDIconButton.html">DIconButton</a></code> 可以使用 <code>setIconSize</code> 指定； <code>QML</code> 中可以指定 <code>DciIcon</code> 控件的 <code>sourceSize</code> 或者 <code>Button</code> 控件的 <code>icon.size</code> 等等。而对于高缩放比的适配， <code>DTK</code> 已经全部完成无需应用关心。 </p>
+<p>应用所关心的图标大小是否正常，是否能够适配高缩放比模式等等。 <code>DCI</code> 图标中都做到了这些，默认情况下，设计师所提供的图标大小能够满足应用开发的需求，应用只需要主动调用接口指定图标大小即可，例如 <code>dtkwidget</code>,中 <code><a class="el" href="classDIconButton.html">DIconButton</a></code> 可以使用 <code>setIconSize</code> 指定； <code>QML</code> 中可以指定 <code>DciIcon</code> 控件的 <code>sourceSize</code> 或者 <code><a class="el" href="classButton.html" title="提供一种行云设计风格的 Button 控件.">Button</a></code> 控件的 <code>icon.size</code> 等等。而对于高缩放比的适配， <code>DTK</code> 已经全部完成无需应用关心。 </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
@@ -220,7 +220,7 @@ DTk dci：dci工具类</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">文档生成时间:2023-01-03-09:52  +00</li>
+    <li class="footer">文档生成时间:2023-01-13-07:39  +00</li>
     <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
     <li class="footer">制作者:deepin doc doc go SIG</li>
     <li class="footer">文档使用CC-BY-4.0共享 </a>

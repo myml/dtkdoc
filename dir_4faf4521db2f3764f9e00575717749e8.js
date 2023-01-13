@@ -56,6 +56,10 @@ var dir_4faf4521db2f3764f9e00575717749e8 =
     [ "ddrawergroup.h", "ddrawergroup_8h_source.html", null ],
     [ "denhancedwidget.h", "denhancedwidget_8h_source.html", null ],
     [ "dexpandgroup.h", "dexpandgroup_8h_source.html", null ],
+    [ "dfeaturedisplaydialog.h", "dfeaturedisplaydialog_8h.html", [
+      [ "DFeatureItem", "classDFeatureItem.html", "classDFeatureItem" ],
+      [ "DFeatureDisplayDialog", "classDFeatureDisplayDialog.html", "classDFeatureDisplayDialog" ]
+    ] ],
     [ "dfilechooseredit.h", "dfilechooseredit_8h.html", [
       [ "DFileChooserEdit", "classDFileChooserEdit.html", "classDFileChooserEdit" ]
     ] ],

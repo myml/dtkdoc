@@ -1,0 +1,353 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: TrackPointAdaptor类 参考</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="https://github.com/linuxdeepin/dtkdoc" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classTrackPointAdaptor.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-slots">Public 槽</a> &#124;
+<a href="#signals">信号</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-attribs">静态 Public 属性</a> &#124;
+<a href="#properties">属性</a> &#124;
+<a href="classTrackPointAdaptor-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">TrackPointAdaptor类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 TrackPointAdaptor 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classTrackPointAdaptor.png" alt=""/>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Public 槽</h2></td></tr>
+<tr class="memitem:aae1542210d7f6313a9300f398a4d38e6"><td class="memItemLeft" align="right" valign="top"><a id="aae1542210d7f6313a9300f398a4d38e6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Reset</b> ()</td></tr>
+<tr class="separator:aae1542210d7f6313a9300f398a4d38e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+信号</h2></td></tr>
+<tr class="memitem:a937275652387c40bc05adc00253678fb"><td class="memItemLeft" align="right" valign="top"><a id="a937275652387c40bc05adc00253678fb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ExistChanged</b> (bool exist)</td></tr>
+<tr class="separator:a937275652387c40bc05adc00253678fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f0041e902c8302c847cc829aed24826"><td class="memItemLeft" align="right" valign="top"><a id="a4f0041e902c8302c847cc829aed24826"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>LeftHandedChanged</b> (bool leftHanded)</td></tr>
+<tr class="separator:a4f0041e902c8302c847cc829aed24826"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e4cf070bbca9e6413f0e7ee5f505e95"><td class="memItemLeft" align="right" valign="top"><a id="a7e4cf070bbca9e6413f0e7ee5f505e95"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>MiddleButtonEnabledChanged</b> (bool enabled)</td></tr>
+<tr class="separator:a7e4cf070bbca9e6413f0e7ee5f505e95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5238b66f3fd24ac7e810359ce12504a8"><td class="memItemLeft" align="right" valign="top"><a id="a5238b66f3fd24ac7e810359ce12504a8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>WheelEmulationChanged</b> (bool emulation)</td></tr>
+<tr class="separator:a5238b66f3fd24ac7e810359ce12504a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e25f0710460c1c8e545fc05cbfbf8e0"><td class="memItemLeft" align="right" valign="top"><a id="a0e25f0710460c1c8e545fc05cbfbf8e0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>WheelHorizScrollChanged</b> (bool horizScroll)</td></tr>
+<tr class="separator:a0e25f0710460c1c8e545fc05cbfbf8e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3403947ca199c03978edda73889a94e3"><td class="memItemLeft" align="right" valign="top"><a id="a3403947ca199c03978edda73889a94e3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>MotionAccelerationChanged</b> (double acceleration)</td></tr>
+<tr class="separator:a3403947ca199c03978edda73889a94e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafef055476ede521d244322ddc8270f4"><td class="memItemLeft" align="right" valign="top"><a id="aafef055476ede521d244322ddc8270f4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>MiddleButtonTimeoutChanged</b> (qint32 timeout)</td></tr>
+<tr class="separator:aafef055476ede521d244322ddc8270f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c5289f0544bd86b5af89c8a85eec398"><td class="memItemLeft" align="right" valign="top"><a id="a2c5289f0544bd86b5af89c8a85eec398"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>WheelEmulationButtonChanged</b> (qint32 button)</td></tr>
+<tr class="separator:a2c5289f0544bd86b5af89c8a85eec398"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f1e37ffe77a2f52974b178e39b137d9"><td class="memItemLeft" align="right" valign="top"><a id="a1f1e37ffe77a2f52974b178e39b137d9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>WheelEmulationTimeoutChanged</b> (qint32 timeout)</td></tr>
+<tr class="separator:a1f1e37ffe77a2f52974b178e39b137d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6584e5eaa837fa331c7630d77fe44d6c"><td class="memItemLeft" align="right" valign="top"><a id="a6584e5eaa837fa331c7630d77fe44d6c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DeviceListChanged</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;deviceList)</td></tr>
+<tr class="separator:a6584e5eaa837fa331c7630d77fe44d6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ad9ac9ebf4e009d717bcccebf019c738c"><td class="memItemLeft" align="right" valign="top"><a id="ad9ac9ebf4e009d717bcccebf019c738c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>Exist</b> () const</td></tr>
+<tr class="separator:ad9ac9ebf4e009d717bcccebf019c738c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab919b25c7cca9852ac5bb487963afccc"><td class="memItemLeft" align="right" valign="top"><a id="ab919b25c7cca9852ac5bb487963afccc"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>LeftHanded</b> () const</td></tr>
+<tr class="separator:ab919b25c7cca9852ac5bb487963afccc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a055249f20cc26ca65cb253b0e6741707"><td class="memItemLeft" align="right" valign="top"><a id="a055249f20cc26ca65cb253b0e6741707"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>MiddleButtonEnabled</b> () const</td></tr>
+<tr class="separator:a055249f20cc26ca65cb253b0e6741707"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6072b0e0665b50e56f2d9311002745a6"><td class="memItemLeft" align="right" valign="top"><a id="a6072b0e0665b50e56f2d9311002745a6"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>WheelEmulation</b> () const</td></tr>
+<tr class="separator:a6072b0e0665b50e56f2d9311002745a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8506b2a08dbe19942756c247d3b7602"><td class="memItemLeft" align="right" valign="top"><a id="ab8506b2a08dbe19942756c247d3b7602"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>WheelHorizScroll</b> () const</td></tr>
+<tr class="separator:ab8506b2a08dbe19942756c247d3b7602"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61ca9ddd434c68beba446745b39c5b52"><td class="memItemLeft" align="right" valign="top"><a id="a61ca9ddd434c68beba446745b39c5b52"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>MotionAcceleration</b> () const</td></tr>
+<tr class="separator:a61ca9ddd434c68beba446745b39c5b52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaec741a6dc25b195a7fed02748618cdb"><td class="memItemLeft" align="right" valign="top"><a id="aaec741a6dc25b195a7fed02748618cdb"></a>
+qint32&#160;</td><td class="memItemRight" valign="bottom"><b>MiddleButtonTimeout</b> () const</td></tr>
+<tr class="separator:aaec741a6dc25b195a7fed02748618cdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4ce96a9cd10b367843d4c817ed583df"><td class="memItemLeft" align="right" valign="top"><a id="ad4ce96a9cd10b367843d4c817ed583df"></a>
+qint32&#160;</td><td class="memItemRight" valign="bottom"><b>WheelEmulationButton</b> () const</td></tr>
+<tr class="separator:ad4ce96a9cd10b367843d4c817ed583df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c8654d77d6e4470414485614109a9fa"><td class="memItemLeft" align="right" valign="top"><a id="a3c8654d77d6e4470414485614109a9fa"></a>
+qint32&#160;</td><td class="memItemRight" valign="bottom"><b>WheelEmulationTimeout</b> () const</td></tr>
+<tr class="separator:a3c8654d77d6e4470414485614109a9fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac63fa8050bbfa6492b53bc64c3e9027c"><td class="memItemLeft" align="right" valign="top"><a id="ac63fa8050bbfa6492b53bc64c3e9027c"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DeviceList</b> () const</td></tr>
+<tr class="separator:ac63fa8050bbfa6492b53bc64c3e9027c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adea03b4faa3693640611d318482b51df"><td class="memItemLeft" align="right" valign="top"><a id="adea03b4faa3693640611d318482b51df"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetLeftHanded</b> (bool leftHanded)</td></tr>
+<tr class="separator:adea03b4faa3693640611d318482b51df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7dd34b26abbfbbd38b2a401631d2e27"><td class="memItemLeft" align="right" valign="top"><a id="af7dd34b26abbfbbd38b2a401631d2e27"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetMiddleButtonEnabled</b> (bool enabled)</td></tr>
+<tr class="separator:af7dd34b26abbfbbd38b2a401631d2e27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc26de8aae7736f0136ed1bd3bcfcbd2"><td class="memItemLeft" align="right" valign="top"><a id="afc26de8aae7736f0136ed1bd3bcfcbd2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetWheelEmulation</b> (bool emulation)</td></tr>
+<tr class="separator:afc26de8aae7736f0136ed1bd3bcfcbd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fdeff8c8f205033a99de995ce62bdc6"><td class="memItemLeft" align="right" valign="top"><a id="a8fdeff8c8f205033a99de995ce62bdc6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetWheelHorizScroll</b> (bool horizScroll)</td></tr>
+<tr class="separator:a8fdeff8c8f205033a99de995ce62bdc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a187ed5713bfd88f26e412ca0995343e7"><td class="memItemLeft" align="right" valign="top"><a id="a187ed5713bfd88f26e412ca0995343e7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetMotionAcceleration</b> (double acceleration)</td></tr>
+<tr class="separator:a187ed5713bfd88f26e412ca0995343e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5e31e3c9ae604d0a6ec834185d1ddb6"><td class="memItemLeft" align="right" valign="top"><a id="aa5e31e3c9ae604d0a6ec834185d1ddb6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetMiddleButtonTimeout</b> (qint32 timeout)</td></tr>
+<tr class="separator:aa5e31e3c9ae604d0a6ec834185d1ddb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9616c667beb9623c453e13422be6a7e4"><td class="memItemLeft" align="right" valign="top"><a id="a9616c667beb9623c453e13422be6a7e4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetWheelEmulationButton</b> (qint32 button)</td></tr>
+<tr class="separator:a9616c667beb9623c453e13422be6a7e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9f342aa6d43e2d46695ebc6fe829ada"><td class="memItemLeft" align="right" valign="top"><a id="aa9f342aa6d43e2d46695ebc6fe829ada"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetWheelEmulationTimeout</b> (qint32 timeout)</td></tr>
+<tr class="separator:aa9f342aa6d43e2d46695ebc6fe829ada"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fb299255bf26e9d0a84599ea085e954"><td class="memItemLeft" align="right" valign="top"><a id="a9fb299255bf26e9d0a84599ea085e954"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>TrackPointAdaptor</b> (<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *parent=nullptr)</td></tr>
+<tr class="separator:a9fb299255bf26e9d0a84599ea085e954"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+静态 Public 属性</h2></td></tr>
+<tr class="memitem:a03cf3c3a421d73e5a4e7766e8c6ba0ba"><td class="memItemLeft" align="right" valign="top"><a id="a03cf3c3a421d73e5a4e7766e8c6ba0ba"></a>
+static const bool&#160;</td><td class="memItemRight" valign="bottom"><b>ExistDefault</b> = true</td></tr>
+<tr class="separator:a03cf3c3a421d73e5a4e7766e8c6ba0ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a683740e8392dd92b3c393634d266cc4c"><td class="memItemLeft" align="right" valign="top"><a id="a683740e8392dd92b3c393634d266cc4c"></a>
+static const bool&#160;</td><td class="memItemRight" valign="bottom"><b>LeftHandedDefault</b> = false</td></tr>
+<tr class="separator:a683740e8392dd92b3c393634d266cc4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5b5072a8d02b541bbc5c8a2f9b4402f"><td class="memItemLeft" align="right" valign="top"><a id="aa5b5072a8d02b541bbc5c8a2f9b4402f"></a>
+static const bool&#160;</td><td class="memItemRight" valign="bottom"><b>MiddleButtonEnabledDefault</b> = true</td></tr>
+<tr class="separator:aa5b5072a8d02b541bbc5c8a2f9b4402f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac3063d7172286d061e22450164215f4"><td class="memItemLeft" align="right" valign="top"><a id="aac3063d7172286d061e22450164215f4"></a>
+static const bool&#160;</td><td class="memItemRight" valign="bottom"><b>WheelEmulationDefault</b> = true</td></tr>
+<tr class="separator:aac3063d7172286d061e22450164215f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78d5133a50f53026ad89174ab6d02b9b"><td class="memItemLeft" align="right" valign="top"><a id="a78d5133a50f53026ad89174ab6d02b9b"></a>
+static const bool&#160;</td><td class="memItemRight" valign="bottom"><b>WheelHorizScrollDefault</b> = true</td></tr>
+<tr class="separator:a78d5133a50f53026ad89174ab6d02b9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb3fcc5bd676f198e60a26f240e63e1b"><td class="memItemLeft" align="right" valign="top"><a id="adb3fcc5bd676f198e60a26f240e63e1b"></a>
+static const double&#160;</td><td class="memItemRight" valign="bottom"><b>MotionAccelerationDefault</b> = 1.0</td></tr>
+<tr class="separator:adb3fcc5bd676f198e60a26f240e63e1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c371f145cfb7f27bcab3d7fc01e1555"><td class="memItemLeft" align="right" valign="top"><a id="a9c371f145cfb7f27bcab3d7fc01e1555"></a>
+static const qint32&#160;</td><td class="memItemRight" valign="bottom"><b>MiddleButtonTimeoutDefault</b> = 500</td></tr>
+<tr class="separator:a9c371f145cfb7f27bcab3d7fc01e1555"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdfc8bbde46c0109faf5f6dec054939f"><td class="memItemLeft" align="right" valign="top"><a id="acdfc8bbde46c0109faf5f6dec054939f"></a>
+static const qint32&#160;</td><td class="memItemRight" valign="bottom"><b>WheelEmulationButtonDefault</b> = 2</td></tr>
+<tr class="separator:acdfc8bbde46c0109faf5f6dec054939f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d76a18cbf2a575ae369b84480d1b7f9"><td class="memItemLeft" align="right" valign="top"><a id="a8d76a18cbf2a575ae369b84480d1b7f9"></a>
+static const qint32&#160;</td><td class="memItemRight" valign="bottom"><b>WheelEmulationTimeoutDefault</b> = 500</td></tr>
+<tr class="separator:a8d76a18cbf2a575ae369b84480d1b7f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf7723b9edf3a3f9baff4baf077d7a5a"><td class="memItemLeft" align="right" valign="top"><a id="abf7723b9edf3a3f9baff4baf077d7a5a"></a>
+static const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DeviceListDefault</b> = QStringLiteral(&quot;[{\&quot;Id\&quot;: 10, \&quot;Name\&quot;: \&quot;Test TrackPoint\&quot;}]&quot;)</td></tr>
+<tr class="separator:abf7723b9edf3a3f9baff4baf077d7a5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:a7ccec027c55f3257364b0c02d68aa81d"><td class="memItemLeft" align="right" valign="top"><a id="a7ccec027c55f3257364b0c02d68aa81d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>Exist</b></td></tr>
+<tr class="separator:a7ccec027c55f3257364b0c02d68aa81d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcce6500e8499bd0f5c786e99c6aecf0"><td class="memItemLeft" align="right" valign="top"><a id="afcce6500e8499bd0f5c786e99c6aecf0"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>LeftHanded</b></td></tr>
+<tr class="separator:afcce6500e8499bd0f5c786e99c6aecf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d2065e1331dcd06adf71ea2855cbeb6"><td class="memItemLeft" align="right" valign="top"><a id="a8d2065e1331dcd06adf71ea2855cbeb6"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>MiddleButtonEnabled</b></td></tr>
+<tr class="separator:a8d2065e1331dcd06adf71ea2855cbeb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cc3fcc1a1cc857cf0dc5413fb540f74"><td class="memItemLeft" align="right" valign="top"><a id="a8cc3fcc1a1cc857cf0dc5413fb540f74"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>WheelEmulation</b></td></tr>
+<tr class="separator:a8cc3fcc1a1cc857cf0dc5413fb540f74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f19b3ef16bbe5d721e8ce510924fd95"><td class="memItemLeft" align="right" valign="top"><a id="a8f19b3ef16bbe5d721e8ce510924fd95"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>WheelHorizScroll</b></td></tr>
+<tr class="separator:a8f19b3ef16bbe5d721e8ce510924fd95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bfa5b99cd84bf41cb67ec4790c54606"><td class="memItemLeft" align="right" valign="top"><a id="a6bfa5b99cd84bf41cb67ec4790c54606"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>MotionAcceleration</b></td></tr>
+<tr class="separator:a6bfa5b99cd84bf41cb67ec4790c54606"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3612c92b592a4a0738fd906e2f34469b"><td class="memItemLeft" align="right" valign="top"><a id="a3612c92b592a4a0738fd906e2f34469b"></a>
+qint32&#160;</td><td class="memItemRight" valign="bottom"><b>MiddleButtonTimeout</b></td></tr>
+<tr class="separator:a3612c92b592a4a0738fd906e2f34469b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9052e3d16930a8a078222e68f87285b7"><td class="memItemLeft" align="right" valign="top"><a id="a9052e3d16930a8a078222e68f87285b7"></a>
+qint32&#160;</td><td class="memItemRight" valign="bottom"><b>WheelEmulationButton</b></td></tr>
+<tr class="separator:a9052e3d16930a8a078222e68f87285b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21578430f0c529800eef52ab9a497253"><td class="memItemLeft" align="right" valign="top"><a id="a21578430f0c529800eef52ab9a497253"></a>
+qint32&#160;</td><td class="memItemRight" valign="bottom"><b>WheelEmulationTimeout</b></td></tr>
+<tr class="separator:a21578430f0c529800eef52ab9a497253"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16799ffb76e3367ddc5e17855074de91"><td class="memItemLeft" align="right" valign="top"><a id="a16799ffb76e3367ddc5e17855074de91"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DeviceList</b></td></tr>
+<tr class="separator:a16799ffb76e3367ddc5e17855074de91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dtkdevice/tests/inputdevices/fakedbus/<a class="el" href="trackpointadaptor_8h_source.html">trackpointadaptor.h</a></li>
+<li>dtkdevice/tests/inputdevices/fakedbus/trackpointadaptor.cpp</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classTrackPointAdaptor.html">TrackPointAdaptor</a></li>
+    <li class="footer">文档生成时间:2023-01-13-07:39  +00</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

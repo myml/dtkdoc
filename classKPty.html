@@ -1,0 +1,588 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: KPty类 参考</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="https://github.com/linuxdeepin/dtkdoc" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classKPty.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="classKPty-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">KPty类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="kpty_8h_source.html">kpty.h</a>&gt;</code></p>
+<div class="dynheader">
+类 KPty 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classKPty.png" usemap="#KPty_map" alt=""/>
+  <map id="KPty_map" name="KPty_map">
+<area href="classKPtyDevice.html" alt="KPtyDevice" shape="rect" coords="0,56,78,80"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:aca21f55c06c2ed859840ceccae66b1b3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPty.html#aca21f55c06c2ed859840ceccae66b1b3">KPty</a> ()</td></tr>
+<tr class="separator:aca21f55c06c2ed859840ceccae66b1b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0afc8e28f6a1ca85b4b2c9aa0ab8103f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPty.html#a0afc8e28f6a1ca85b4b2c9aa0ab8103f">~KPty</a> ()</td></tr>
+<tr class="separator:a0afc8e28f6a1ca85b4b2c9aa0ab8103f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86bddd6694e074fd24be475caf535b37"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPty.html#a86bddd6694e074fd24be475caf535b37">open</a> ()</td></tr>
+<tr class="separator:a86bddd6694e074fd24be475caf535b37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad01afbd75dc327b68b94aa826d69a4aa"><td class="memItemLeft" align="right" valign="top"><a id="ad01afbd75dc327b68b94aa826d69a4aa"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>open</b> (int fd)</td></tr>
+<tr class="separator:ad01afbd75dc327b68b94aa826d69a4aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae56d44b940d90ae01747ee5411ee76a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPty.html#ae56d44b940d90ae01747ee5411ee76a0">close</a> ()</td></tr>
+<tr class="separator:ae56d44b940d90ae01747ee5411ee76a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae8c3f69ce6909544fc40ac8024873a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPty.html#aae8c3f69ce6909544fc40ac8024873a6">closeSlave</a> ()</td></tr>
+<tr class="separator:aae8c3f69ce6909544fc40ac8024873a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea1fe52296e10345b6615d24c4b4bc36"><td class="memItemLeft" align="right" valign="top"><a id="aea1fe52296e10345b6615d24c4b4bc36"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>openSlave</b> ()</td></tr>
+<tr class="separator:aea1fe52296e10345b6615d24c4b4bc36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2af83326dd2887c6eca7b47044c74892"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPty.html#a2af83326dd2887c6eca7b47044c74892">setCTty</a> ()</td></tr>
+<tr class="separator:a2af83326dd2887c6eca7b47044c74892"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d4c06eafef9a76141b3d822465305fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPty.html#a5d4c06eafef9a76141b3d822465305fc">login</a> (const char *user=nullptr, const char *remotehost=nullptr)</td></tr>
+<tr class="separator:a5d4c06eafef9a76141b3d822465305fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4025fe9bcbdb48cfd5c31a36f7af5bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPty.html#ac4025fe9bcbdb48cfd5c31a36f7af5bc">logout</a> ()</td></tr>
+<tr class="separator:ac4025fe9bcbdb48cfd5c31a36f7af5bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93aa46e0fc039f6b123bf8681da8b1e5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPty.html#a93aa46e0fc039f6b123bf8681da8b1e5">tcGetAttr</a> (struct ::termios *ttmode) const</td></tr>
+<tr class="separator:a93aa46e0fc039f6b123bf8681da8b1e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8ff981097616a592e05b9e63fe0e435"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPty.html#ac8ff981097616a592e05b9e63fe0e435">tcSetAttr</a> (struct ::termios *ttmode)</td></tr>
+<tr class="separator:ac8ff981097616a592e05b9e63fe0e435"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9a7934d31aade1761a0e935daf67a98"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPty.html#ac9a7934d31aade1761a0e935daf67a98">setWinSize</a> (int lines, int columns)</td></tr>
+<tr class="separator:ac9a7934d31aade1761a0e935daf67a98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a862d499ca8f57cdd2e59151f9bf6923d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPty.html#a862d499ca8f57cdd2e59151f9bf6923d">setEcho</a> (bool echo)</td></tr>
+<tr class="separator:a862d499ca8f57cdd2e59151f9bf6923d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6cbaa66473981aae1965555993aebc1"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPty.html#ac6cbaa66473981aae1965555993aebc1">ttyName</a> () const</td></tr>
+<tr class="separator:ac6cbaa66473981aae1965555993aebc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a419f7b2c58f355506444d9265fd28665"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPty.html#a419f7b2c58f355506444d9265fd28665">masterFd</a> () const</td></tr>
+<tr class="separator:a419f7b2c58f355506444d9265fd28665"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1a6583e7179ebeae27bc10988121381"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPty.html#ad1a6583e7179ebeae27bc10988121381">slaveFd</a> () const</td></tr>
+<tr class="separator:ad1a6583e7179ebeae27bc10988121381"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a3fc3412e16adcea3d1e1128db2c87e6d"><td class="memItemLeft" align="right" valign="top"><a id="a3fc3412e16adcea3d1e1128db2c87e6d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>KPty</b> (<a class="el" href="classKPtyPrivate.html">KPtyPrivate</a> *d)</td></tr>
+<tr class="separator:a3fc3412e16adcea3d1e1128db2c87e6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:a49e7236dd7c768addca9f2ecd03fc2e7"><td class="memItemLeft" align="right" valign="top"><a id="a49e7236dd7c768addca9f2ecd03fc2e7"></a>
+<a class="el" href="classKPtyPrivate.html">KPtyPrivate</a> *const&#160;</td><td class="memItemRight" valign="bottom"><b>d_ptr</b></td></tr>
+<tr class="separator:a49e7236dd7c768addca9f2ecd03fc2e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Provides primitives for opening &amp; closing a pseudo TTY pair, assigning the controlling TTY, utmp registration and setting various terminal attributes. </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="aca21f55c06c2ed859840ceccae66b1b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca21f55c06c2ed859840ceccae66b1b3">&#9670;&nbsp;</a></span>KPty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KPty::KPty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Constructor </p>
+
+</div>
+</div>
+<a id="a0afc8e28f6a1ca85b4b2c9aa0ab8103f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0afc8e28f6a1ca85b4b2c9aa0ab8103f">&#9670;&nbsp;</a></span>~KPty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KPty::~KPty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Destructor:</p>
+<p>If the pty is still open, it will be closed. Note, however, that an utmp registration is <em>not</em> undone. </p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="ae56d44b940d90ae01747ee5411ee76a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae56d44b940d90ae01747ee5411ee76a0">&#9670;&nbsp;</a></span>close()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KPty::close </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Close the pty master/slave pair. </p>
+
+</div>
+</div>
+<a id="aae8c3f69ce6909544fc40ac8024873a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae8c3f69ce6909544fc40ac8024873a6">&#9670;&nbsp;</a></span>closeSlave()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KPty::closeSlave </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Close the pty slave descriptor.</p>
+<p>When creating the pty, <a class="el" href="classKPty.html">KPty</a> also opens the slave and keeps it open. Consequently the master will never receive an EOF notification. Usually this is the desired behavior, as a closed pty slave can be reopened any time - unlike a pipe or socket. However, in some cases pipe-alike behavior might be desired.</p>
+<p>After this function was called, <a class="el" href="classKPty.html#ad1a6583e7179ebeae27bc10988121381">slaveFd()</a> and <a class="el" href="classKPty.html#a2af83326dd2887c6eca7b47044c74892">setCTty()</a> cannot be used. </p>
+
+</div>
+</div>
+<a id="a5d4c06eafef9a76141b3d822465305fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d4c06eafef9a76141b3d822465305fc">&#9670;&nbsp;</a></span>login()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KPty::login </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>user</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>remotehost</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Creates an utmp entry for the tty. This function must be called after calling setCTty and making this pty the stdin. </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">user</td><td>the user to be logged on </td></tr>
+    <tr><td class="paramname">remotehost</td><td>the host from which the login is coming. This is <em>not</em> the local host. For remote logins it should be the hostname of the client. For local logins from inside an X session it should be the name of the X display. Otherwise it should be empty. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac4025fe9bcbdb48cfd5c31a36f7af5bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4025fe9bcbdb48cfd5c31a36f7af5bc">&#9670;&nbsp;</a></span>logout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KPty::logout </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Removes the utmp entry for this tty. </p>
+
+</div>
+</div>
+<a id="a419f7b2c58f355506444d9265fd28665"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a419f7b2c58f355506444d9265fd28665">&#9670;&nbsp;</a></span>masterFd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int KPty::masterFd </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>the file descriptor of the master pty</dd></dl>
+<p>This function should be called only while the pty is open. </p>
+
+</div>
+</div>
+<a id="a86bddd6694e074fd24be475caf535b37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86bddd6694e074fd24be475caf535b37">&#9670;&nbsp;</a></span>open()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KPty::open </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Create a pty master/slave pair.</p>
+<dl class="section return"><dt>返回</dt><dd>true if a pty pair was successfully opened </dd></dl>
+
+</div>
+</div>
+<a id="a2af83326dd2887c6eca7b47044c74892"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2af83326dd2887c6eca7b47044c74892">&#9670;&nbsp;</a></span>setCTty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KPty::setCTty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Creates a new session and process group and makes this pty the controlling tty. </p>
+
+</div>
+</div>
+<a id="a862d499ca8f57cdd2e59151f9bf6923d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a862d499ca8f57cdd2e59151f9bf6923d">&#9670;&nbsp;</a></span>setEcho()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KPty::setEcho </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>echo</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set whether the pty should echo input.</p>
+<p>Echo is on by default. If the output of automatically fed (non-interactive) PTY clients needs to be parsed, disabling echo often makes it much simpler.</p>
+<p>This function can be used only while the PTY is open.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">echo</td><td>true if input should be echoed. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd><code>true</code> on success, false otherwise </dd></dl>
+
+</div>
+</div>
+<a id="ac9a7934d31aade1761a0e935daf67a98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9a7934d31aade1761a0e935daf67a98">&#9670;&nbsp;</a></span>setWinSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KPty::setWinSize </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>lines</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>columns</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Change the logical (screen) size of the pty. The default is 24 lines by 80 columns.</p>
+<p>This function can be used only while the PTY is open.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lines</td><td>the number of rows </td></tr>
+    <tr><td class="paramname">columns</td><td>the number of columns </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd><code>true</code> on success, false otherwise </dd></dl>
+
+</div>
+</div>
+<a id="ad1a6583e7179ebeae27bc10988121381"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1a6583e7179ebeae27bc10988121381">&#9670;&nbsp;</a></span>slaveFd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int KPty::slaveFd </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>the file descriptor of the slave pty</dd></dl>
+<p>This function should be called only while the pty slave is open. </p>
+
+</div>
+</div>
+<a id="a93aa46e0fc039f6b123bf8681da8b1e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93aa46e0fc039f6b123bf8681da8b1e5">&#9670;&nbsp;</a></span>tcGetAttr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KPty::tcGetAttr </td>
+          <td>(</td>
+          <td class="paramtype">struct ::termios *&#160;</td>
+          <td class="paramname"><em>ttmode</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Wrapper around tcgetattr(3).</p>
+<p>This function can be used only while the PTY is open. You will need an #include &lt;termios.h&gt; to do anything useful with it.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ttmode</td><td>a pointer to a termios structure. Note: when declaring ttmode, <code>struct</code> <code>::termios</code> must be used - without the '::' some version of HP-UX thinks, this declares the struct in your class, in your method. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd><code>true</code> on success, false otherwise </dd></dl>
+
+</div>
+</div>
+<a id="ac8ff981097616a592e05b9e63fe0e435"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8ff981097616a592e05b9e63fe0e435">&#9670;&nbsp;</a></span>tcSetAttr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KPty::tcSetAttr </td>
+          <td>(</td>
+          <td class="paramtype">struct ::termios *&#160;</td>
+          <td class="paramname"><em>ttmode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Wrapper around tcsetattr(3) with mode TCSANOW.</p>
+<p>This function can be used only while the PTY is open.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ttmode</td><td>a pointer to a termios structure. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd><code>true</code> on success, false otherwise. Note that success means that <em>at</em> <em>least</em> <em>one</em> attribute could be set. </dd></dl>
+
+</div>
+</div>
+<a id="ac6cbaa66473981aae1965555993aebc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6cbaa66473981aae1965555993aebc1">&#9670;&nbsp;</a></span>ttyName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * KPty::ttyName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>the name of the slave pty device.</dd></dl>
+<p>This function should be called only while the pty is open. </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dtkio/src/dtkcompressor/3rdparty/interface/process/<a class="el" href="kpty_8h_source.html">kpty.h</a></li>
+<li>dtkio/src/dtkcompressor/3rdparty/interface/process/kpty.cpp</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classKPty.html">KPty</a></li>
+    <li class="footer">文档生成时间:2023-01-13-07:39  +00</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

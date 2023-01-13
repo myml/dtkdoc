@@ -1,0 +1,27 @@
+var classTimeSync1Interface =
+[
+    [ "TimeSync1Interface", "classTimeSync1Interface.html#a9ef0f474386460eefa1658cc5ccecb34", null ],
+    [ "~TimeSync1Interface", "classTimeSync1Interface.html#a93a8eb47d63a13ef630953b587cff456", null ],
+    [ "fallbackNTPServers", "classTimeSync1Interface.html#a1d60f840156cb977edf4217cafb6fbd8", null ],
+    [ "frequency", "classTimeSync1Interface.html#a4ab3a92a25bb4d09053150f15aac24b6", null ],
+    [ "linkNTPServers", "classTimeSync1Interface.html#a331b4a4fcec92c4938a19b12ff181d73", null ],
+    [ "NTPMessage", "classTimeSync1Interface.html#acc4b659d3fa47e6fc5af805bd171b6ef", null ],
+    [ "pollIntervalMaxUSec", "classTimeSync1Interface.html#a0d6b5c527642f15d9a0ce720bd7bc2ca", null ],
+    [ "pollIntervalMinUSec", "classTimeSync1Interface.html#a6c3039a377f9927d7bfc6a1f497ddf4b", null ],
+    [ "pollIntervalUSec", "classTimeSync1Interface.html#ab296649efeed8ec4805751407c4e5bdf", null ],
+    [ "rootDistanceMaxUSec", "classTimeSync1Interface.html#ac7ddba8745d27d09a58a9c0b8ae338e7", null ],
+    [ "serverAddress", "classTimeSync1Interface.html#a8e6c9dcaeb552950ed7a38d0ce3d7c0b", null ],
+    [ "serverName", "classTimeSync1Interface.html#a2139eede0fdce8a569474943d9b891db", null ],
+    [ "systemNTPServers", "classTimeSync1Interface.html#ac2677c904cd7fb3b363887ce391d9409", null ],
+    [ "FallbackNTPServers", "classTimeSync1Interface.html#a8854512cabebbc66ef05f602f3302e47", null ],
+    [ "Frequency", "classTimeSync1Interface.html#a9158632bc52736f87c99241554ac8be9", null ],
+    [ "LinkNTPServers", "classTimeSync1Interface.html#a5de37895b4ab94957dd7d83b68011d02", null ],
+    [ "NTPMessage", "classTimeSync1Interface.html#a871a35f6ed8289b978bce09b6a1ba82a", null ],
+    [ "PollIntervalMaxUSec", "classTimeSync1Interface.html#ace04a7d208f7375c9166d693422fff6c", null ],
+    [ "PollIntervalMinUSec", "classTimeSync1Interface.html#ae38a4767c07638449e29bc91e18d7370", null ],
+    [ "PollIntervalUSec", "classTimeSync1Interface.html#a0a59ec3be9252b0cebc465f04cebc471", null ],
+    [ "RootDistanceMaxUSec", "classTimeSync1Interface.html#aa48b47505f4f7067fc60971201bb3227", null ],
+    [ "ServerAddress", "classTimeSync1Interface.html#ad7c6fbf18d81ba16c6eb72ccfedcc21c", null ],
+    [ "ServerName", "classTimeSync1Interface.html#a1d006cb88b0aedc0258e02b95b9a7bb6", null ],
+    [ "SystemNTPServers", "classTimeSync1Interface.html#ac8180e4186c66ebb54576b330d693768", null ]
+];

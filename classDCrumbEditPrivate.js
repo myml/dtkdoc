@@ -16,6 +16,7 @@ var classDCrumbEditPrivate =
     [ "currentBrush", "classDCrumbEditPrivate.html#a2e464a4c5c403a2c49d39fde122a6895", null ],
     [ "currentText", "classDCrumbEditPrivate.html#aacacf4ebe40a638e3caba483dea08702", null ],
     [ "dualClickMakeCrumb", "classDCrumbEditPrivate.html#ab6c5ec239eef51739e11adafa8f8e4d9", null ],
+    [ "explicitCrumbRadius", "classDCrumbEditPrivate.html#adeea15f6adc75d3724a9f06ed8cbbcb8", null ],
     [ "formatList", "classDCrumbEditPrivate.html#ad9aa0d40421ec1477409bfb63cf4f973", null ],
     [ "formats", "classDCrumbEditPrivate.html#aeb0781b6d74b154e871423522856deb1", null ],
     [ "object", "classDCrumbEditPrivate.html#ab7bb618a92152f5bb97bb9e8e8cabe21", null ],

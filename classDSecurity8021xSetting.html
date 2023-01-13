@@ -1,0 +1,572 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: DSecurity8021xSetting类 参考</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="https://github.com/linuxdeepin/dtkdoc" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classDSecurity8021xSetting.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="classDSecurity8021xSetting-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">DSecurity8021xSetting类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 DSecurity8021xSetting 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classDSecurity8021xSetting.png" usemap="#DSecurity8021xSetting_map" alt=""/>
+  <map id="DSecurity8021xSetting_map" name="DSecurity8021xSetting_map">
+<area href="classDNMSetting.html" alt="DNMSetting" shape="rect" coords="0,0,140,24"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a472acc1885856da18216f69ea7ecd7d4"><td class="memItemLeft" align="right" valign="top"><a id="a472acc1885856da18216f69ea7ecd7d4"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><b>EapMethod</b> { <br />
+&#160;&#160;<b>Unknown</b> = 0
+, <b>Leap</b>
+, <b>Md5</b>
+, <b>Tls</b>
+, <br />
+&#160;&#160;<b>Peap</b>
+, <b>Ttls</b>
+, <b>Sim</b>
+, <b>Fast</b>
+, <br />
+&#160;&#160;<b>Pwd</b>
+<br />
+ }</td></tr>
+<tr class="separator:a472acc1885856da18216f69ea7ecd7d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a556ef2f2819de26f9a9da9c1f5b5f66d"><td class="memItemLeft" align="right" valign="top"><a id="a556ef2f2819de26f9a9da9c1f5b5f66d"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><b>PeapVersion</b> { <b>Unknown</b> = -1
+, <b>Zero</b>
+, <b>One</b>
+ }</td></tr>
+<tr class="separator:a556ef2f2819de26f9a9da9c1f5b5f66d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05f6f179348c303223c23b5bd3018e32"><td class="memItemLeft" align="right" valign="top"><a id="a05f6f179348c303223c23b5bd3018e32"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><b>PeapLabel</b> { <b>Unknown</b> = 0
+, <b>Force</b>
+ }</td></tr>
+<tr class="separator:a05f6f179348c303223c23b5bd3018e32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa9dd53082ef80f1a33531a1b1731c14"><td class="memItemLeft" align="right" valign="top"><a id="afa9dd53082ef80f1a33531a1b1731c14"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><b>FastProvisioning</b> { <br />
+&#160;&#160;<b>Unknown</b> = -1
+, <b>Disabled</b>
+, <b>AllowUnauthenticated</b>
+, <b>AllowAuthenticated</b>
+, <br />
+&#160;&#160;<b>AllowBoth</b>
+<br />
+ }</td></tr>
+<tr class="separator:afa9dd53082ef80f1a33531a1b1731c14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49b01c5c964ad909c1506c83166d8daf"><td class="memItemLeft" align="right" valign="top"><a id="a49b01c5c964ad909c1506c83166d8daf"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><b>AuthMethod</b> { <br />
+&#160;&#160;<b>Unknown</b> = 0
+, <b>Pap</b>
+, <b>Chap</b>
+, <b>Mschap</b>
+, <br />
+&#160;&#160;<b>Mschapv2</b>
+, <b>Gtc</b>
+, <b>Otp</b>
+, <b>Md5</b>
+, <br />
+&#160;&#160;<b>Tls</b>
+<br />
+ }</td></tr>
+<tr class="separator:a49b01c5c964ad909c1506c83166d8daf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6842c8f04c71471623f94719502dc00c"><td class="memItemLeft" align="right" valign="top"><a id="a6842c8f04c71471623f94719502dc00c"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><b>AuthEapMethod</b> { <br />
+&#160;&#160;<b>Unknown</b> = 0
+, <b>Md5</b>
+, <b>Mschapv2</b>
+, <b>Otp</b>
+, <br />
+&#160;&#160;<b>Gtc</b>
+, <b>Tls</b>
+<br />
+ }</td></tr>
+<tr class="separator:a6842c8f04c71471623f94719502dc00c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_classDNMSetting"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classDNMSetting')"><img src="closed.png" alt="-"/>&#160;Public 类型 继承自 <a class="el" href="classDNMSetting.html">DNMSetting</a></td></tr>
+<tr class="memitem:a475e0fd3d19f592bd2c19db78be30047 inherit pub_types_classDNMSetting"><td class="memItemLeft" align="right" valign="top"><a id="a475e0fd3d19f592bd2c19db78be30047"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><b>SettingType</b> { <br />
+&#160;&#160;<b>Unknown</b>
+, <b>Adsl</b>
+, <b>Cdma</b>
+, <b>Gsm</b>
+, <br />
+&#160;&#160;<b>Infiniband</b>
+, <b>Ipv4</b>
+, <b>Ipv6</b>
+, <b>Ppp</b>
+, <br />
+&#160;&#160;<b>Pppoe</b>
+, <b>Security8021x</b>
+, <b>Serial</b>
+, <b>Vpn</b>
+, <br />
+&#160;&#160;<b>Wired</b>
+, <b>Wireless</b>
+, <b>WirelessSecurity</b>
+, <b>Bluetooth</b>
+, <br />
+&#160;&#160;<b>OlpcMesh</b>
+, <b>Vlan</b>
+, <b>Wimax</b>
+, <b>Bond</b>
+, <br />
+&#160;&#160;<b>Bridge</b>
+, <b>BridgePort</b>
+, <b>Team</b>
+, <b>Generic</b>
+, <br />
+&#160;&#160;<b>Tun</b>
+, <b>Vxlan</b>
+, <b>IpTunnel</b>
+, <b>Proxy</b>
+, <br />
+&#160;&#160;<b>User</b>
+, <b>OvsBridge</b>
+, <b>OvsInterface</b>
+, <b>OvsPatch</b>
+, <br />
+&#160;&#160;<b>OvsPort</b>
+, <b>Match</b>
+, <b>Tc</b>
+, <b>TeamPort</b>
+, <br />
+&#160;&#160;<b>Macsec</b>
+, <b>Dcb</b>
+, <b>WireGuard</b>
+<br />
+ }</td></tr>
+<tr class="separator:a475e0fd3d19f592bd2c19db78be30047 inherit pub_types_classDNMSetting"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b85525afb4f795f04df8435359a397b inherit pub_types_classDNMSetting"><td class="memItemLeft" align="right" valign="top"><a id="a8b85525afb4f795f04df8435359a397b"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><b>SecretFlagType</b> { <b>None</b> = 0
+, <b>AgentOwned</b> = 0x01
+, <b>NotSaved</b> = 0x02
+, <b>NotRequired</b> = 0x04
+ }</td></tr>
+<tr class="separator:a8b85525afb4f795f04df8435359a397b inherit pub_types_classDNMSetting"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a1587757ed375ed19761296ee73110a2b"><td class="memItemLeft" align="right" valign="top"><a id="a1587757ed375ed19761296ee73110a2b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DSecurity8021xSetting</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qsharedpointer.html">QSharedPointer</a>&lt; <a class="el" href="classDSecurity8021xSetting.html">DSecurity8021xSetting</a> &gt; &amp;other)</td></tr>
+<tr class="separator:a1587757ed375ed19761296ee73110a2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a829e9a5cad385613a4e5ca54ca06b9d1"><td class="memItemLeft" align="right" valign="top"><a id="a829e9a5cad385613a4e5ca54ca06b9d1"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>name</b> () const override</td></tr>
+<tr class="separator:a829e9a5cad385613a4e5ca54ca06b9d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11630586c0834d7d29382273a6d5411f"><td class="memItemLeft" align="right" valign="top"><a id="a11630586c0834d7d29382273a6d5411f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setEapMethods</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qlist.html">QList</a>&lt; EapMethod &gt; &amp;methods)</td></tr>
+<tr class="separator:a11630586c0834d7d29382273a6d5411f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35582f3117dd584c3fbebf04b0150501"><td class="memItemLeft" align="right" valign="top"><a id="a35582f3117dd584c3fbebf04b0150501"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qlist.html">QList</a>&lt; EapMethod &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>eapMethods</b> () const</td></tr>
+<tr class="separator:a35582f3117dd584c3fbebf04b0150501"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a600f14c808e9dcd4789cbaad2f9fa351"><td class="memItemLeft" align="right" valign="top"><a id="a600f14c808e9dcd4789cbaad2f9fa351"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setIdentity</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;identity)</td></tr>
+<tr class="separator:a600f14c808e9dcd4789cbaad2f9fa351"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8efb1e1f740a5ddb8b62cb20e5896f8"><td class="memItemLeft" align="right" valign="top"><a id="aa8efb1e1f740a5ddb8b62cb20e5896f8"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>identity</b> () const</td></tr>
+<tr class="separator:aa8efb1e1f740a5ddb8b62cb20e5896f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49ccb95afbd7137f3070e8a53e28c1a8"><td class="memItemLeft" align="right" valign="top"><a id="a49ccb95afbd7137f3070e8a53e28c1a8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setAnonymousIdentity</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;identity)</td></tr>
+<tr class="separator:a49ccb95afbd7137f3070e8a53e28c1a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b3f483f87d04c3150487864a681556f"><td class="memItemLeft" align="right" valign="top"><a id="a5b3f483f87d04c3150487864a681556f"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>anonymousIdentity</b> () const</td></tr>
+<tr class="separator:a5b3f483f87d04c3150487864a681556f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69a3c587a04ff1b09d8c598f4e52de48"><td class="memItemLeft" align="right" valign="top"><a id="a69a3c587a04ff1b09d8c598f4e52de48"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setDomainSuffixMatch</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;domainSuffixMatch)</td></tr>
+<tr class="separator:a69a3c587a04ff1b09d8c598f4e52de48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93c201d1e64b2bd6994d90bbab2b46de"><td class="memItemLeft" align="right" valign="top"><a id="a93c201d1e64b2bd6994d90bbab2b46de"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>domainSuffixMatch</b> () const</td></tr>
+<tr class="separator:a93c201d1e64b2bd6994d90bbab2b46de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c4d64329d7dd0461a1413f2d6ac9d01"><td class="memItemLeft" align="right" valign="top"><a id="a8c4d64329d7dd0461a1413f2d6ac9d01"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setPacFile</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;filePath)</td></tr>
+<tr class="separator:a8c4d64329d7dd0461a1413f2d6ac9d01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdb05a5fe5226912beb940ca95051e70"><td class="memItemLeft" align="right" valign="top"><a id="afdb05a5fe5226912beb940ca95051e70"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>pacFile</b> () const</td></tr>
+<tr class="separator:afdb05a5fe5226912beb940ca95051e70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3324b9df4745a22b81ec2f5c831ee112"><td class="memItemLeft" align="right" valign="top"><a id="a3324b9df4745a22b81ec2f5c831ee112"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setCaCertificate</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a> &amp;certificate)</td></tr>
+<tr class="separator:a3324b9df4745a22b81ec2f5c831ee112"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6542e541f4f640862ecda5a40e3480a6"><td class="memItemLeft" align="right" valign="top"><a id="a6542e541f4f640862ecda5a40e3480a6"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a>&#160;</td><td class="memItemRight" valign="bottom"><b>caCertificate</b> () const</td></tr>
+<tr class="separator:a6542e541f4f640862ecda5a40e3480a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81778340553051dae18b1fa4159e313d"><td class="memItemLeft" align="right" valign="top"><a id="a81778340553051dae18b1fa4159e313d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setCaPath</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;path)</td></tr>
+<tr class="separator:a81778340553051dae18b1fa4159e313d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41d914b8cb99e276247469dd1597083b"><td class="memItemLeft" align="right" valign="top"><a id="a41d914b8cb99e276247469dd1597083b"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>caPath</b> () const</td></tr>
+<tr class="separator:a41d914b8cb99e276247469dd1597083b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44195c105882e045386750ee1d004210"><td class="memItemLeft" align="right" valign="top"><a id="a44195c105882e045386750ee1d004210"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setAltSubjectMatches</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> &amp;strings)</td></tr>
+<tr class="separator:a44195c105882e045386750ee1d004210"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20f79fe530dcbb9d9a87002e7d90f98b"><td class="memItemLeft" align="right" valign="top"><a id="a20f79fe530dcbb9d9a87002e7d90f98b"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a>&#160;</td><td class="memItemRight" valign="bottom"><b>altSubjectMatches</b> () const</td></tr>
+<tr class="separator:a20f79fe530dcbb9d9a87002e7d90f98b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee1ec99ecd02a72dc9ab134cd2732c92"><td class="memItemLeft" align="right" valign="top"><a id="aee1ec99ecd02a72dc9ab134cd2732c92"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setClientCertificate</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a> &amp;certificate)</td></tr>
+<tr class="separator:aee1ec99ecd02a72dc9ab134cd2732c92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f1d20ca99345a3e5d362e53ef447703"><td class="memItemLeft" align="right" valign="top"><a id="a5f1d20ca99345a3e5d362e53ef447703"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a>&#160;</td><td class="memItemRight" valign="bottom"><b>clientCertificate</b> () const</td></tr>
+<tr class="separator:a5f1d20ca99345a3e5d362e53ef447703"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f7965d11f291dc5539f7d6fc0136d8c"><td class="memItemLeft" align="right" valign="top"><a id="a0f7965d11f291dc5539f7d6fc0136d8c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setPhase1PeapVersion</b> (PeapVersion version)</td></tr>
+<tr class="separator:a0f7965d11f291dc5539f7d6fc0136d8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb001d8729c8a0c0642982b23d40e43c"><td class="memItemLeft" align="right" valign="top"><a id="adb001d8729c8a0c0642982b23d40e43c"></a>
+PeapVersion&#160;</td><td class="memItemRight" valign="bottom"><b>phase1PeapVersion</b> () const</td></tr>
+<tr class="separator:adb001d8729c8a0c0642982b23d40e43c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6ba0fd272200657fc7f797e81cd4202"><td class="memItemLeft" align="right" valign="top"><a id="ab6ba0fd272200657fc7f797e81cd4202"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setPhase1PeapLabel</b> (PeapLabel <a class="el" href="structlabel.html">label</a>)</td></tr>
+<tr class="separator:ab6ba0fd272200657fc7f797e81cd4202"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71d182cb54276c97aa0e038f37f2ec90"><td class="memItemLeft" align="right" valign="top"><a id="a71d182cb54276c97aa0e038f37f2ec90"></a>
+PeapLabel&#160;</td><td class="memItemRight" valign="bottom"><b>phase1PeapLabel</b> () const</td></tr>
+<tr class="separator:a71d182cb54276c97aa0e038f37f2ec90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe5be7747e3f5904c3453c63cb7ca316"><td class="memItemLeft" align="right" valign="top"><a id="afe5be7747e3f5904c3453c63cb7ca316"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setPhase1FastProvisioning</b> (FastProvisioning provisioning)</td></tr>
+<tr class="separator:afe5be7747e3f5904c3453c63cb7ca316"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa37ceac553f5eb8c41ce30dffda5e20f"><td class="memItemLeft" align="right" valign="top"><a id="aa37ceac553f5eb8c41ce30dffda5e20f"></a>
+FastProvisioning&#160;</td><td class="memItemRight" valign="bottom"><b>phase1FastProvisioning</b> () const</td></tr>
+<tr class="separator:aa37ceac553f5eb8c41ce30dffda5e20f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4519ea605fa256da925f9c4b01b0a579"><td class="memItemLeft" align="right" valign="top"><a id="a4519ea605fa256da925f9c4b01b0a579"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setPhase2AuthMethod</b> (AuthMethod method)</td></tr>
+<tr class="separator:a4519ea605fa256da925f9c4b01b0a579"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6d2c0619900285bea690362ff91d95d"><td class="memItemLeft" align="right" valign="top"><a id="ae6d2c0619900285bea690362ff91d95d"></a>
+AuthMethod&#160;</td><td class="memItemRight" valign="bottom"><b>phase2AuthMethod</b> () const</td></tr>
+<tr class="separator:ae6d2c0619900285bea690362ff91d95d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97f2df970143151c7659fcbc600b64c5"><td class="memItemLeft" align="right" valign="top"><a id="a97f2df970143151c7659fcbc600b64c5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setPhase2AuthEapMethod</b> (AuthEapMethod method)</td></tr>
+<tr class="separator:a97f2df970143151c7659fcbc600b64c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdba9ca3f71770395d632c1bcdb7ff58"><td class="memItemLeft" align="right" valign="top"><a id="acdba9ca3f71770395d632c1bcdb7ff58"></a>
+AuthEapMethod&#160;</td><td class="memItemRight" valign="bottom"><b>phase2AuthEapMethod</b> () const</td></tr>
+<tr class="separator:acdba9ca3f71770395d632c1bcdb7ff58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfb642f7e44c3e47f6b95e0dba366a9e"><td class="memItemLeft" align="right" valign="top"><a id="adfb642f7e44c3e47f6b95e0dba366a9e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setPhase2CaCertificate</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a> &amp;certificate)</td></tr>
+<tr class="separator:adfb642f7e44c3e47f6b95e0dba366a9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dab501dae1c5adbc1b6b2524ca9c0a0"><td class="memItemLeft" align="right" valign="top"><a id="a5dab501dae1c5adbc1b6b2524ca9c0a0"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a>&#160;</td><td class="memItemRight" valign="bottom"><b>phase2CaCertificate</b> () const</td></tr>
+<tr class="separator:a5dab501dae1c5adbc1b6b2524ca9c0a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f5a60d61d921ed2963292aef22b0d8f"><td class="memItemLeft" align="right" valign="top"><a id="a6f5a60d61d921ed2963292aef22b0d8f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setPhase2CaPath</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;path)</td></tr>
+<tr class="separator:a6f5a60d61d921ed2963292aef22b0d8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ec09876b27481ac5ab7e4ed793a454c"><td class="memItemLeft" align="right" valign="top"><a id="a9ec09876b27481ac5ab7e4ed793a454c"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>phase2CaPath</b> () const</td></tr>
+<tr class="separator:a9ec09876b27481ac5ab7e4ed793a454c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac13f7ae8d0757d468cf5f47f1b226bf1"><td class="memItemLeft" align="right" valign="top"><a id="ac13f7ae8d0757d468cf5f47f1b226bf1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setPhase2DomainSuffixMatch</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;substring)</td></tr>
+<tr class="separator:ac13f7ae8d0757d468cf5f47f1b226bf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff96ebba2f243646a876632f9139b27e"><td class="memItemLeft" align="right" valign="top"><a id="aff96ebba2f243646a876632f9139b27e"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>phase2DomainSuffixMatch</b> () const</td></tr>
+<tr class="separator:aff96ebba2f243646a876632f9139b27e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04d0c61a7501b55b2dbcded6fb8b74f2"><td class="memItemLeft" align="right" valign="top"><a id="a04d0c61a7501b55b2dbcded6fb8b74f2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setPhase2AltSubjectMatches</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> &amp;strings)</td></tr>
+<tr class="separator:a04d0c61a7501b55b2dbcded6fb8b74f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe4a3d4d9418a7b9e9b7a7939952b592"><td class="memItemLeft" align="right" valign="top"><a id="abe4a3d4d9418a7b9e9b7a7939952b592"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a>&#160;</td><td class="memItemRight" valign="bottom"><b>phase2AltSubjectMatches</b> () const</td></tr>
+<tr class="separator:abe4a3d4d9418a7b9e9b7a7939952b592"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87436ecf4b592a0d0cb3463d84aa5fbc"><td class="memItemLeft" align="right" valign="top"><a id="a87436ecf4b592a0d0cb3463d84aa5fbc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setPhase2ClientCertificate</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a> &amp;certificate)</td></tr>
+<tr class="separator:a87436ecf4b592a0d0cb3463d84aa5fbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b20dd328519451e2f2a69a89b5b6643"><td class="memItemLeft" align="right" valign="top"><a id="a8b20dd328519451e2f2a69a89b5b6643"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a>&#160;</td><td class="memItemRight" valign="bottom"><b>phase2ClientCertificate</b> () const</td></tr>
+<tr class="separator:a8b20dd328519451e2f2a69a89b5b6643"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad4949dadaff95d07c737682041604c8"><td class="memItemLeft" align="right" valign="top"><a id="aad4949dadaff95d07c737682041604c8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setPassword</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;password)</td></tr>
+<tr class="separator:aad4949dadaff95d07c737682041604c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82c6d4392b434c5b2187087ae40f4af5"><td class="memItemLeft" align="right" valign="top"><a id="a82c6d4392b434c5b2187087ae40f4af5"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>password</b> () const</td></tr>
+<tr class="separator:a82c6d4392b434c5b2187087ae40f4af5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bf66e4eca8b912d183aca8903afab3e"><td class="memItemLeft" align="right" valign="top"><a id="a0bf66e4eca8b912d183aca8903afab3e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setPasswordFlags</b> (DNMSetting::SecretFlags flags)</td></tr>
+<tr class="separator:a0bf66e4eca8b912d183aca8903afab3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4c549808b45a4be01537d6a35f0239f"><td class="memItemLeft" align="right" valign="top"><a id="ac4c549808b45a4be01537d6a35f0239f"></a>
+DNMSetting::SecretFlags&#160;</td><td class="memItemRight" valign="bottom"><b>passwordFlags</b> () const</td></tr>
+<tr class="separator:ac4c549808b45a4be01537d6a35f0239f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59d79b86bb57bc0de7f669a39828ab19"><td class="memItemLeft" align="right" valign="top"><a id="a59d79b86bb57bc0de7f669a39828ab19"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setPasswordRaw</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a> &amp;password)</td></tr>
+<tr class="separator:a59d79b86bb57bc0de7f669a39828ab19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f38b303bf1a07f3398fa7210cff438b"><td class="memItemLeft" align="right" valign="top"><a id="a8f38b303bf1a07f3398fa7210cff438b"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a>&#160;</td><td class="memItemRight" valign="bottom"><b>passwordRaw</b> () const</td></tr>
+<tr class="separator:a8f38b303bf1a07f3398fa7210cff438b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae358dbbda3f9d02f505b975bc7a4ec71"><td class="memItemLeft" align="right" valign="top"><a id="ae358dbbda3f9d02f505b975bc7a4ec71"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setPasswordRawFlags</b> (DNMSetting::SecretFlags flags)</td></tr>
+<tr class="separator:ae358dbbda3f9d02f505b975bc7a4ec71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c4b6b7aa608f1e28428530d32f7d4e0"><td class="memItemLeft" align="right" valign="top"><a id="a5c4b6b7aa608f1e28428530d32f7d4e0"></a>
+DNMSetting::SecretFlags&#160;</td><td class="memItemRight" valign="bottom"><b>passwordRawFlags</b> () const</td></tr>
+<tr class="separator:a5c4b6b7aa608f1e28428530d32f7d4e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39bef5fe1961ae961871f3599c008fbb"><td class="memItemLeft" align="right" valign="top"><a id="a39bef5fe1961ae961871f3599c008fbb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setPrivateKey</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a> &amp;key)</td></tr>
+<tr class="separator:a39bef5fe1961ae961871f3599c008fbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae31ea773b5736047d39c9077b941c13e"><td class="memItemLeft" align="right" valign="top"><a id="ae31ea773b5736047d39c9077b941c13e"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a>&#160;</td><td class="memItemRight" valign="bottom"><b>privateKey</b> () const</td></tr>
+<tr class="separator:ae31ea773b5736047d39c9077b941c13e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5578a1d4fed5a9a9b40453bf67b6bd6c"><td class="memItemLeft" align="right" valign="top"><a id="a5578a1d4fed5a9a9b40453bf67b6bd6c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setPrivateKeyPassword</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;password)</td></tr>
+<tr class="separator:a5578a1d4fed5a9a9b40453bf67b6bd6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45bab01914d2dfe2dedfcb50ef53b5fb"><td class="memItemLeft" align="right" valign="top"><a id="a45bab01914d2dfe2dedfcb50ef53b5fb"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>privateKeyPassword</b> () const</td></tr>
+<tr class="separator:a45bab01914d2dfe2dedfcb50ef53b5fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a642e6f4b3dad9c446d8c3e54e501501d"><td class="memItemLeft" align="right" valign="top"><a id="a642e6f4b3dad9c446d8c3e54e501501d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setPrivateKeyPasswordFlags</b> (DNMSetting::SecretFlags flags)</td></tr>
+<tr class="separator:a642e6f4b3dad9c446d8c3e54e501501d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfcabc9fae41b6c686ad1e6404e0425e"><td class="memItemLeft" align="right" valign="top"><a id="abfcabc9fae41b6c686ad1e6404e0425e"></a>
+DNMSetting::SecretFlags&#160;</td><td class="memItemRight" valign="bottom"><b>privateKeyPasswordFlags</b> () const</td></tr>
+<tr class="separator:abfcabc9fae41b6c686ad1e6404e0425e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0b17c9f0607ac6e854ec260b6b25277"><td class="memItemLeft" align="right" valign="top"><a id="ad0b17c9f0607ac6e854ec260b6b25277"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setPhase2PrivateKey</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a> &amp;key)</td></tr>
+<tr class="separator:ad0b17c9f0607ac6e854ec260b6b25277"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0183b349dd2198c969a5ca4e2417e520"><td class="memItemLeft" align="right" valign="top"><a id="a0183b349dd2198c969a5ca4e2417e520"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a>&#160;</td><td class="memItemRight" valign="bottom"><b>phase2PrivateKey</b> () const</td></tr>
+<tr class="separator:a0183b349dd2198c969a5ca4e2417e520"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a916746f4dc707e01cee437c797fa674e"><td class="memItemLeft" align="right" valign="top"><a id="a916746f4dc707e01cee437c797fa674e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setPhase2PrivateKeyPassword</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;password)</td></tr>
+<tr class="separator:a916746f4dc707e01cee437c797fa674e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a904e58c61b93eb3828eacae6e506c6ab"><td class="memItemLeft" align="right" valign="top"><a id="a904e58c61b93eb3828eacae6e506c6ab"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>phase2PrivateKeyPassword</b> () const</td></tr>
+<tr class="separator:a904e58c61b93eb3828eacae6e506c6ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab5930d296dac400a2040973afa4f63d"><td class="memItemLeft" align="right" valign="top"><a id="aab5930d296dac400a2040973afa4f63d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setPhase2PrivateKeyPasswordFlags</b> (DNMSetting::SecretFlags flags)</td></tr>
+<tr class="separator:aab5930d296dac400a2040973afa4f63d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0f13840b4edde80eaee7503d060b4b7"><td class="memItemLeft" align="right" valign="top"><a id="ac0f13840b4edde80eaee7503d060b4b7"></a>
+DNMSetting::SecretFlags&#160;</td><td class="memItemRight" valign="bottom"><b>phase2PrivateKeyPasswordFlags</b> () const</td></tr>
+<tr class="separator:ac0f13840b4edde80eaee7503d060b4b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad51ffa753b8fba9f7991ae063dd5923"><td class="memItemLeft" align="right" valign="top"><a id="aad51ffa753b8fba9f7991ae063dd5923"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setPin</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;pin)</td></tr>
+<tr class="separator:aad51ffa753b8fba9f7991ae063dd5923"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acefced2758abbbfe88cf388668cb09ad"><td class="memItemLeft" align="right" valign="top"><a id="acefced2758abbbfe88cf388668cb09ad"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>pin</b> () const</td></tr>
+<tr class="separator:acefced2758abbbfe88cf388668cb09ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef9b58a756726e874ce3d45666d57740"><td class="memItemLeft" align="right" valign="top"><a id="aef9b58a756726e874ce3d45666d57740"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setPinFlags</b> (DNMSetting::SecretFlags flags)</td></tr>
+<tr class="separator:aef9b58a756726e874ce3d45666d57740"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bb455c0d0181474b0f13382e398d9ef"><td class="memItemLeft" align="right" valign="top"><a id="a4bb455c0d0181474b0f13382e398d9ef"></a>
+DNMSetting::SecretFlags&#160;</td><td class="memItemRight" valign="bottom"><b>pinFlags</b> () const</td></tr>
+<tr class="separator:a4bb455c0d0181474b0f13382e398d9ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a283aa6474f09743ebef6e2e84fa8e06a"><td class="memItemLeft" align="right" valign="top"><a id="a283aa6474f09743ebef6e2e84fa8e06a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setSystemCaCertificates</b> (bool use)</td></tr>
+<tr class="separator:a283aa6474f09743ebef6e2e84fa8e06a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3a8ff17a34cdde9c7920a42a1a28bb6"><td class="memItemLeft" align="right" valign="top"><a id="af3a8ff17a34cdde9c7920a42a1a28bb6"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>systemCaCertificates</b> () const</td></tr>
+<tr class="separator:af3a8ff17a34cdde9c7920a42a1a28bb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66d64cca6ff47119328f1698e47e801e"><td class="memItemLeft" align="right" valign="top"><a id="a66d64cca6ff47119328f1698e47e801e"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a>&#160;</td><td class="memItemRight" valign="bottom"><b>needSecrets</b> (bool requestNew=false) const override</td></tr>
+<tr class="separator:a66d64cca6ff47119328f1698e47e801e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78723a51abf1c9d705f01b18d27b7c1e"><td class="memItemLeft" align="right" valign="top"><a id="a78723a51abf1c9d705f01b18d27b7c1e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>fromMap</b> (const QVariantMap &amp;setting) override</td></tr>
+<tr class="separator:a78723a51abf1c9d705f01b18d27b7c1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a702b177bf528bba9b83070d6ee25a172"><td class="memItemLeft" align="right" valign="top"><a id="a702b177bf528bba9b83070d6ee25a172"></a>
+QVariantMap&#160;</td><td class="memItemRight" valign="bottom"><b>toMap</b> () const override</td></tr>
+<tr class="separator:a702b177bf528bba9b83070d6ee25a172"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae90d7da0b04203b5bce632afc86eb753"><td class="memItemLeft" align="right" valign="top"><a id="ae90d7da0b04203b5bce632afc86eb753"></a>
+QVariantMap&#160;</td><td class="memItemRight" valign="bottom"><b>secretsToMap</b> () const override</td></tr>
+<tr class="separator:ae90d7da0b04203b5bce632afc86eb753"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab83830f36a0533f7495df2255de7b3c"><td class="memItemLeft" align="right" valign="top"><a id="aab83830f36a0533f7495df2255de7b3c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>mapToSecrets</b> (const QVariantMap &amp;secrets) override</td></tr>
+<tr class="separator:aab83830f36a0533f7495df2255de7b3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classDNMSetting"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classDNMSetting')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="classDNMSetting.html">DNMSetting</a></td></tr>
+<tr class="memitem:acfe6926ae353701a90f4f5913d9eed18 inherit pub_methods_classDNMSetting"><td class="memItemLeft" align="right" valign="top"><a id="acfe6926ae353701a90f4f5913d9eed18"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DNMSetting</b> (SettingType type)</td></tr>
+<tr class="separator:acfe6926ae353701a90f4f5913d9eed18 inherit pub_methods_classDNMSetting"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d7b1ad2e3fb2dec9ecaef83c7d9957e inherit pub_methods_classDNMSetting"><td class="memItemLeft" align="right" valign="top"><a id="a4d7b1ad2e3fb2dec9ecaef83c7d9957e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DNMSetting</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qsharedpointer.html">QSharedPointer</a>&lt; <a class="el" href="classDNMSetting.html">DNMSetting</a> &gt; &amp;setting)</td></tr>
+<tr class="separator:a4d7b1ad2e3fb2dec9ecaef83c7d9957e inherit pub_methods_classDNMSetting"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4759eb6e2dde1ab8978d10d751c16f9e inherit pub_methods_classDNMSetting"><td class="memItemLeft" align="right" valign="top"><a id="a4759eb6e2dde1ab8978d10d751c16f9e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setType</b> (SettingType type)</td></tr>
+<tr class="separator:a4759eb6e2dde1ab8978d10d751c16f9e inherit pub_methods_classDNMSetting"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93f0a963aef41a6f7a0ce9a62213f47c inherit pub_methods_classDNMSetting"><td class="memItemLeft" align="right" valign="top"><a id="a93f0a963aef41a6f7a0ce9a62213f47c"></a>
+SettingType&#160;</td><td class="memItemRight" valign="bottom"><b>type</b> () const</td></tr>
+<tr class="separator:a93f0a963aef41a6f7a0ce9a62213f47c inherit pub_methods_classDNMSetting"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7138e431057f6f3b9f2ce0186ca12101 inherit pub_methods_classDNMSetting"><td class="memItemLeft" align="right" valign="top"><a id="a7138e431057f6f3b9f2ce0186ca12101"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isInit</b> () const</td></tr>
+<tr class="separator:a7138e431057f6f3b9f2ce0186ca12101 inherit pub_methods_classDNMSetting"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb8a30cb736258a319bce010b87f28b4 inherit pub_methods_classDNMSetting"><td class="memItemLeft" align="right" valign="top"><a id="adb8a30cb736258a319bce010b87f28b4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setInit</b> (bool init)</td></tr>
+<tr class="separator:adb8a30cb736258a319bce010b87f28b4 inherit pub_methods_classDNMSetting"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c5adeb6b0a2bdfa6cbac7d705bc733a inherit pub_methods_classDNMSetting"><td class="memItemLeft" align="right" valign="top"><a id="a9c5adeb6b0a2bdfa6cbac7d705bc733a"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stringMapTosecrets</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qmap.html">QMap</a>&lt; <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>, <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &gt; &amp;map)</td></tr>
+<tr class="separator:a9c5adeb6b0a2bdfa6cbac7d705bc733a inherit pub_methods_classDNMSetting"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc3cabf974d9ce752c4553dc4f9a52c2 inherit pub_methods_classDNMSetting"><td class="memItemLeft" align="right" valign="top"><a id="afc3cabf974d9ce752c4553dc4f9a52c2"></a>
+virtual <a class="elRef" href="http://doc.qt.io/qt-5/qmap.html">QMap</a>&lt; <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>, <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>secretsToStringMap</b> () const</td></tr>
+<tr class="separator:afc3cabf974d9ce752c4553dc4f9a52c2 inherit pub_methods_classDNMSetting"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:ad6a8de3826ef9caf5d88ed0fe017e40b"><td class="memItemLeft" align="right" valign="top"><a id="ad6a8de3826ef9caf5d88ed0fe017e40b"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qscopedpointer.html">QScopedPointer</a>&lt; <a class="el" href="classDSecurity8021xSettingPrivate.html">DSecurity8021xSettingPrivate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>d_ptr</b></td></tr>
+<tr class="separator:ad6a8de3826ef9caf5d88ed0fe017e40b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classDNMSetting"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classDNMSetting')"><img src="closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="classDNMSetting.html">DNMSetting</a></td></tr>
+<tr class="memitem:ac6f9c959dc2a6da048cf0aa8834c8d33 inherit pro_attribs_classDNMSetting"><td class="memItemLeft" align="right" valign="top"><a id="ac6f9c959dc2a6da048cf0aa8834c8d33"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qscopedpointer.html">QScopedPointer</a>&lt; <a class="el" href="classDNMSettingPrivate.html">DNMSettingPrivate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>d_ptr</b></td></tr>
+<tr class="separator:ac6f9c959dc2a6da048cf0aa8834c8d33 inherit pro_attribs_classDNMSetting"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pub_static_methods_classDNMSetting"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classDNMSetting')"><img src="closed.png" alt="-"/>&#160;静态 Public 成员函数 继承自 <a class="el" href="classDNMSetting.html">DNMSetting</a></td></tr>
+<tr class="memitem:af08bf84209a3deaf1fb67318334cc379 inherit pub_static_methods_classDNMSetting"><td class="memItemLeft" align="right" valign="top"><a id="af08bf84209a3deaf1fb67318334cc379"></a>
+static <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>typeToString</b> (const SettingType type)</td></tr>
+<tr class="separator:af08bf84209a3deaf1fb67318334cc379 inherit pub_static_methods_classDNMSetting"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65a90d8fe0d5176cc41bf3b6507e25d9 inherit pub_static_methods_classDNMSetting"><td class="memItemLeft" align="right" valign="top"><a id="a65a90d8fe0d5176cc41bf3b6507e25d9"></a>
+static SettingType&#160;</td><td class="memItemRight" valign="bottom"><b>stringToType</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;str)</td></tr>
+<tr class="separator:a65a90d8fe0d5176cc41bf3b6507e25d9 inherit pub_static_methods_classDNMSetting"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dtknetworkmanager/include/settings/<a class="el" href="dsecurity8021xsetting_8h_source.html">dsecurity8021xsetting.h</a></li>
+<li>dtknetworkmanager/src/settingsSrc/dsecurity8021xsetting.cpp</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classDSecurity8021xSetting.html">DSecurity8021xSetting</a></li>
+    <li class="footer">文档生成时间:2023-01-13-07:39  +00</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

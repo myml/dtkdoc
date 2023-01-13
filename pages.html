@@ -154,15 +154,56 @@ $(document).ready(function(){initNavTree('pages.html',''); initResizable(); });
 </div><!--header-->
 <div class="contents">
 <div class="textblock">这里列出了所有相关页面:</div><div class="directory">
-<table class="directory">
+<div class="levels">[详情级别 <span onclick="javascript:toggleLevel(1);">1</span><span onclick="javascript:toggleLevel(2);">2</span>]</div><table class="directory">
 <tr id="row_0_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="dic.html" target="_self">dci&ndash;dci图标工具类</a></td><td class="desc"></td></tr>
 <tr id="row_1_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="dfilesystem.html" target="_self">dfilesystem&ndash;dtk文件系统操作的封装</a></td><td class="desc"></td></tr>
 <tr id="row_2_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="global.html" target="_self">global&ndash;dtk全局工具组件</a></td><td class="desc"></td></tr>
-<tr id="row_3_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="dsettings.html" target="_self">dsettings&ndash;dtk设置工具组件</a></td><td class="desc"></td></tr>
-<tr id="row_4_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="md_dtkcore_README_zh_CN.html" target="_self">Deepin Tool Kit Core</a></td><td class="desc"></td></tr>
-<tr id="row_5_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="util.html" target="_self">util&ndash;dtkgui工具组件</a></td><td class="desc"></td></tr>
-<tr id="row_6_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="md_dtkgui_README_zh_CN.html" target="_self">Deepin Tool Kit Gui</a></td><td class="desc"></td></tr>
-<tr id="row_7_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="md_dtkwidget_README_zh_CN.html" target="_self">Deepin Tool Kit Widget</a></td><td class="desc"></td></tr>
+<tr id="row_3_"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_3_" class="arrow" onclick="toggleFolder('3_')">&#9660;</span><a class="el" href="md_dtkcore_docs_MainPage_zh_CN.html" target="_self">MainPage.zh_CN</a></td><td class="desc">Dtk </td></tr>
+<tr id="row_3_0_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a class="el" href="DLog.html" target="_self">dlog&ndash;dtk日志组件</a></td><td class="desc"></td></tr>
+<tr id="row_4_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="dsettings.html" target="_self">dsettings&ndash;dtk设置工具组件</a></td><td class="desc"></td></tr>
+<tr id="row_5_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="md_dtkcore_docs_util_index_zh_CN.html" target="_self">DTK util</a></td><td class="desc"></td></tr>
+<tr id="row_6_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="md_dtkcore_README_zh_CN.html" target="_self">Deepin Tool Kit Core</a></td><td class="desc"></td></tr>
+<tr id="row_7_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="DevSpecification.html" target="_self">开发规范</a></td><td class="desc"></td></tr>
+<tr id="row_8_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="md_dtkdeclarative_docs_index_zh_CN.html" target="_self">dtkdeclarative</a></td><td class="desc"></td></tr>
+<tr id="row_9_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="qml.html" target="_self">qml</a></td><td class="desc"></td></tr>
+<tr id="row_10_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="md_dtkdeclarative_README_zh_CN.html" target="_self">dtkdeclarative</a></td><td class="desc"></td></tr>
+<tr id="row_11_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="inputdevices.html" target="_self">inputdevices</a></td><td class="desc">Dtkinputdevices模块 </td></tr>
+<tr id="row_12_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="lsdevice.html" target="_self">lsdevice</a></td><td class="desc">Dtklsdevice模块 </td></tr>
+<tr id="row_13_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="md_dtkdevice_README_zh_CN.html" target="_self">dtkdevice</a></td><td class="desc"></td></tr>
+<tr id="row_14_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="kernel.html" target="_self">kernel&ndash;dtkgui核心组件</a></td><td class="desc"></td></tr>
+<tr id="row_15_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="util.html" target="_self">util&ndash;dtkgui工具组件</a></td><td class="desc"></td></tr>
+<tr id="row_16_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="md_dtkgui_README_zh_CN.html" target="_self">Deepin Tool Kit Gui</a></td><td class="desc"></td></tr>
+<tr id="row_17_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="dtkburn.html" target="_self">dtkburn</a></td><td class="desc">Dtk 光驱业务模块 </td></tr>
+<tr id="row_18_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="dtkcompressor.html" target="_self">dtkcompressor</a></td><td class="desc">Dtk 文件压缩业务模块 </td></tr>
+<tr id="row_19_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="dtkio.html" target="_self">dtkio</a></td><td class="desc">Dtk 文件基本业务模块 </td></tr>
+<tr id="row_20_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="dtkmount.html" target="_self">dtkmount</a></td><td class="desc">Dtk 挂载业务模块 </td></tr>
+<tr id="row_21_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="dtksearch.html" target="_self">dtksearch</a></td><td class="desc">Dtk 搜索业务模块 </td></tr>
+<tr id="row_22_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="md_dtkio_README_zh_CN.html" target="_self"># dtk</a></td><td class="desc"></td></tr>
+<tr id="row_23_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="dtkmultimedia.html" target="_self">dtkmultimedia</a></td><td class="desc">Dtk多媒体模块挂件 </td></tr>
+<tr id="row_24_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="dtkmultimediawidgets.html" target="_self">dtkmultimediawidgets</a></td><td class="desc">Dtk多媒体模块 </td></tr>
+<tr id="row_25_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="dtkocr.html" target="_self">dtkocr</a></td><td class="desc">Dtk光学图文识别模块 </td></tr>
+<tr id="row_26_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="md_dtkmultimedia_docs_index_zh_CN.html" target="_self">中文页面</a></td><td class="desc"></td></tr>
+<tr id="row_27_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="md_dtkmultimedia_README_zh_CN.html" target="_self">Development Tool Kit Multimedia</a></td><td class="desc"></td></tr>
+<tr id="row_28_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="md_dtknetworkmanager_docs_index_zh_CN.html" target="_self">dtknetworkmanager</a></td><td class="desc"></td></tr>
+<tr id="row_29_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="md_dtknetworkmanager_README_zh_CN.html" target="_self">dtknetworkmanager</a></td><td class="desc"></td></tr>
+<tr id="row_30_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="md_dtknotifications_docs_index_zh_CN.html" target="_self">index.zh_CN</a></td><td class="desc"></td></tr>
+<tr id="row_31_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="md_dtknotifications_README_zh_CN.html" target="_self">Development Tool Kit System Settings</a></td><td class="desc"></td></tr>
+<tr id="row_32_"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_32_" class="arrow" onclick="toggleFolder('32_')">&#9660;</span><a class="el" href="md_dtksystemsettings_docs_index_zh_CN.html" target="_self">dtksystemsettings</a></td><td class="desc"></td></tr>
+<tr id="row_32_0_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a class="el" href="dtkaccounts.html" target="_self">dtkaccounts</a></td><td class="desc">Dtk用户管理模块 </td></tr>
+<tr id="row_32_1_"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a class="el" href="dtklogin.html" target="_self">dtklogin</a></td><td class="desc">Dtk登录管理模块 </td></tr>
+<tr id="row_32_2_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a class="el" href="dtkpower.html" target="_self">dtkpower</a></td><td class="desc">Dtk电源管理模块 </td></tr>
+<tr id="row_32_3_"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a class="el" href="dtkrfmanager.html" target="_self">dtkrfmanager</a></td><td class="desc">Dtk无线设备管理模块 </td></tr>
+<tr id="row_32_4_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a class="el" href="dtksystemtime.html" target="_self">dtksystemtime</a></td><td class="desc">Dtk时间同步管理模块 </td></tr>
+<tr id="row_33_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="md_dtksystemsettings_README_zh_CN.html" target="_self">Development Tool Kit System Settings</a></td><td class="desc"></td></tr>
+<tr id="row_34_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="md_dtksystemsettings_src_accounts_README_zh_CN.html" target="_self">项目名称</a></td><td class="desc"></td></tr>
+<tr id="row_35_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="md_dtksystemsettings_src_login_README_zh_CN.html" target="_self">项目名称</a></td><td class="desc"></td></tr>
+<tr id="row_36_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="md_dtksystemsettings_src_power_README_zh_CN.html" target="_self">项目名称</a></td><td class="desc"></td></tr>
+<tr id="row_37_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="md_dtksystemsettings_src_rfmanager_README_zh_CN.html" target="_self">dtkrfmanager</a></td><td class="desc"></td></tr>
+<tr id="row_38_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="md_dtksystemsettings_src_systemtime_README_zh_CN.html" target="_self">项目名称</a></td><td class="desc"></td></tr>
+<tr id="row_39_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="md_dtkwidget_docs_index_zh_CN.html" target="_self">dtkwidget</a></td><td class="desc"></td></tr>
+<tr id="row_40_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="md_dtkwidget_docs_widgets_index_zh_CN.html" target="_self">DLog</a></td><td class="desc"></td></tr>
+<tr id="row_41_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="md_dtkwidget_README_zh_CN.html" target="_self">Deepin Tool Kit Widget</a></td><td class="desc"></td></tr>
+<tr id="row_42_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="deprecated.html" target="_self">弃用列表</a></td><td class="desc"></td></tr>
 </table>
 </div><!-- directory -->
 </div><!-- contents -->
@@ -171,7 +212,7 @@ $(document).ready(function(){initNavTree('pages.html',''); initResizable(); });
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">文档生成时间:2023-01-03-09:52  +00</li>
+    <li class="footer">文档生成时间:2023-01-13-07:39  +00</li>
     <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
     <li class="footer">制作者:deepin doc doc go SIG</li>
     <li class="footer">文档使用CC-BY-4.0共享 </a>

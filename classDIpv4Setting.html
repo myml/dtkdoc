@@ -1,0 +1,427 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: DIpv4Setting类 参考</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="https://github.com/linuxdeepin/dtkdoc" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classDIpv4Setting.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="classDIpv4Setting-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">DIpv4Setting类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 DIpv4Setting 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classDIpv4Setting.png" usemap="#DIpv4Setting_map" alt=""/>
+  <map id="DIpv4Setting_map" name="DIpv4Setting_map">
+<area href="classDNMSetting.html" alt="DNMSetting" shape="rect" coords="0,0,83,24"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a0dca9eddaac29ce84961b622b3e05d67"><td class="memItemLeft" align="right" valign="top"><a id="a0dca9eddaac29ce84961b622b3e05d67"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DIpv4Setting</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qsharedpointer.html">QSharedPointer</a>&lt; <a class="el" href="classDIpv4Setting.html">DIpv4Setting</a> &gt; &amp;other)</td></tr>
+<tr class="separator:a0dca9eddaac29ce84961b622b3e05d67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51c76ef3b3fbc0d548ae9ff66fa0fedd"><td class="memItemLeft" align="right" valign="top"><a id="a51c76ef3b3fbc0d548ae9ff66fa0fedd"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>name</b> () const override</td></tr>
+<tr class="separator:a51c76ef3b3fbc0d548ae9ff66fa0fedd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76eefca29c9dd3c7ec3b131edfd081ff"><td class="memItemLeft" align="right" valign="top"><a id="a76eefca29c9dd3c7ec3b131edfd081ff"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setMethod</b> (NMConfigMethod method)</td></tr>
+<tr class="separator:a76eefca29c9dd3c7ec3b131edfd081ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc3e3ee9b0f19d92ed6c93a54faa6d1d"><td class="memItemLeft" align="right" valign="top"><a id="adc3e3ee9b0f19d92ed6c93a54faa6d1d"></a>
+NMConfigMethod&#160;</td><td class="memItemRight" valign="bottom"><b>method</b> () const</td></tr>
+<tr class="separator:adc3e3ee9b0f19d92ed6c93a54faa6d1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ff2799402f6ab597eb0defbab44e825"><td class="memItemLeft" align="right" valign="top"><a id="a3ff2799402f6ab597eb0defbab44e825"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setDns</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qlist.html">QList</a>&lt; <a class="elRef" href="http://doc.qt.io/qt-5/qhostaddress.html">QHostAddress</a> &gt; &amp;dns)</td></tr>
+<tr class="separator:a3ff2799402f6ab597eb0defbab44e825"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c8ad80f1116233785ce7780377e4bf2"><td class="memItemLeft" align="right" valign="top"><a id="a3c8ad80f1116233785ce7780377e4bf2"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qlist.html">QList</a>&lt; <a class="elRef" href="http://doc.qt.io/qt-5/qhostaddress.html">QHostAddress</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>dns</b> () const</td></tr>
+<tr class="separator:a3c8ad80f1116233785ce7780377e4bf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a889760471746fec89dfef134ab5d3f58"><td class="memItemLeft" align="right" valign="top"><a id="a889760471746fec89dfef134ab5d3f58"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setDnsSearch</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> &amp;domains)</td></tr>
+<tr class="separator:a889760471746fec89dfef134ab5d3f58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c356a25511862d58e405f3323bb7fad"><td class="memItemLeft" align="right" valign="top"><a id="a8c356a25511862d58e405f3323bb7fad"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a>&#160;</td><td class="memItemRight" valign="bottom"><b>dnsSearch</b> () const</td></tr>
+<tr class="separator:a8c356a25511862d58e405f3323bb7fad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a41da83fbc5caee82b728e439b7f700"><td class="memItemLeft" align="right" valign="top"><a id="a4a41da83fbc5caee82b728e439b7f700"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setRouteMetric</b> (int metric)</td></tr>
+<tr class="separator:a4a41da83fbc5caee82b728e439b7f700"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9abc9a195ec97ffdf433edd1ada5b24"><td class="memItemLeft" align="right" valign="top"><a id="ab9abc9a195ec97ffdf433edd1ada5b24"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>routeMetric</b> () const</td></tr>
+<tr class="separator:ab9abc9a195ec97ffdf433edd1ada5b24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2a0486bf1a0b43ea87b2bbe588edf75"><td class="memItemLeft" align="right" valign="top"><a id="af2a0486bf1a0b43ea87b2bbe588edf75"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setIgnoreAutoRoutes</b> (bool ignore)</td></tr>
+<tr class="separator:af2a0486bf1a0b43ea87b2bbe588edf75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af26750c2012652f694010d018370b139"><td class="memItemLeft" align="right" valign="top"><a id="af26750c2012652f694010d018370b139"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>ignoreAutoRoutes</b> () const</td></tr>
+<tr class="separator:af26750c2012652f694010d018370b139"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34a9d56bdf4ab16748ec24c2174cc2fa"><td class="memItemLeft" align="right" valign="top"><a id="a34a9d56bdf4ab16748ec24c2174cc2fa"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setIgnoreAutoDns</b> (bool ignore)</td></tr>
+<tr class="separator:a34a9d56bdf4ab16748ec24c2174cc2fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e3bb28cb3879c3bda71bef61ced2a40"><td class="memItemLeft" align="right" valign="top"><a id="a3e3bb28cb3879c3bda71bef61ced2a40"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>ignoreAutoDns</b> () const</td></tr>
+<tr class="separator:a3e3bb28cb3879c3bda71bef61ced2a40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32c8c782f6fc62e7454e294c6a1818af"><td class="memItemLeft" align="right" valign="top"><a id="a32c8c782f6fc62e7454e294c6a1818af"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setDhcpClientId</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;id)</td></tr>
+<tr class="separator:a32c8c782f6fc62e7454e294c6a1818af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fc6c18546525dbe02680fd4b829ed38"><td class="memItemLeft" align="right" valign="top"><a id="a0fc6c18546525dbe02680fd4b829ed38"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>dhcpClientId</b> () const</td></tr>
+<tr class="separator:a0fc6c18546525dbe02680fd4b829ed38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ac45f48ba5b420a89e21b5767b983b6"><td class="memItemLeft" align="right" valign="top"><a id="a9ac45f48ba5b420a89e21b5767b983b6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setDhcpSendHostname</b> (bool send)</td></tr>
+<tr class="separator:a9ac45f48ba5b420a89e21b5767b983b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b53628a456661402d7cf6a8d20eea35"><td class="memItemLeft" align="right" valign="top"><a id="a1b53628a456661402d7cf6a8d20eea35"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>dhcpSendHostname</b> () const</td></tr>
+<tr class="separator:a1b53628a456661402d7cf6a8d20eea35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f8dace597dafb83906bb5f7004696f5"><td class="memItemLeft" align="right" valign="top"><a id="a2f8dace597dafb83906bb5f7004696f5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setDhcpHostname</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;hostname)</td></tr>
+<tr class="separator:a2f8dace597dafb83906bb5f7004696f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1f12f1ce415b9af47a046fcaa42c019"><td class="memItemLeft" align="right" valign="top"><a id="ac1f12f1ce415b9af47a046fcaa42c019"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>dhcpHostname</b> () const</td></tr>
+<tr class="separator:ac1f12f1ce415b9af47a046fcaa42c019"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48ecfb6ebc86b18671a59f0aae3537c0"><td class="memItemLeft" align="right" valign="top"><a id="a48ecfb6ebc86b18671a59f0aae3537c0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setNeverDefault</b> (bool neverDefault)</td></tr>
+<tr class="separator:a48ecfb6ebc86b18671a59f0aae3537c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02afec984da7855f24a177d0059dbcae"><td class="memItemLeft" align="right" valign="top"><a id="a02afec984da7855f24a177d0059dbcae"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>neverDefault</b> () const</td></tr>
+<tr class="separator:a02afec984da7855f24a177d0059dbcae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88f351412d423fc4e6e53d02a8c6c094"><td class="memItemLeft" align="right" valign="top"><a id="a88f351412d423fc4e6e53d02a8c6c094"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setMayFail</b> (bool mayFail)</td></tr>
+<tr class="separator:a88f351412d423fc4e6e53d02a8c6c094"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8bfcc8e61d14f07789376b0497f2012"><td class="memItemLeft" align="right" valign="top"><a id="af8bfcc8e61d14f07789376b0497f2012"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>mayFail</b> () const</td></tr>
+<tr class="separator:af8bfcc8e61d14f07789376b0497f2012"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dd63c97a6d6d6e0a21ae8bda3bdc494"><td class="memItemLeft" align="right" valign="top"><a id="a0dd63c97a6d6d6e0a21ae8bda3bdc494"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setDadTimeout</b> (qint32 timeout)</td></tr>
+<tr class="separator:a0dd63c97a6d6d6e0a21ae8bda3bdc494"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a2d4b5dce558e3196455d3d27802625"><td class="memItemLeft" align="right" valign="top"><a id="a1a2d4b5dce558e3196455d3d27802625"></a>
+qint32&#160;</td><td class="memItemRight" valign="bottom"><b>dadTimeout</b> () const</td></tr>
+<tr class="separator:a1a2d4b5dce558e3196455d3d27802625"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1b959da741085354377028e51ba7a4d"><td class="memItemLeft" align="right" valign="top"><a id="aa1b959da741085354377028e51ba7a4d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setDhcpFqdn</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;fqdn)</td></tr>
+<tr class="separator:aa1b959da741085354377028e51ba7a4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ba6cd36861665d2785324d06b5e523e"><td class="memItemLeft" align="right" valign="top"><a id="a6ba6cd36861665d2785324d06b5e523e"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>dhcpFqdn</b> () const</td></tr>
+<tr class="separator:a6ba6cd36861665d2785324d06b5e523e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50839b9041415bfe3c476a6694780e72"><td class="memItemLeft" align="right" valign="top"><a id="a50839b9041415bfe3c476a6694780e72"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setDnsOptions</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> &amp;options)</td></tr>
+<tr class="separator:a50839b9041415bfe3c476a6694780e72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab34f79492b6966c667cffc61954b3188"><td class="memItemLeft" align="right" valign="top"><a id="ab34f79492b6966c667cffc61954b3188"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a>&#160;</td><td class="memItemRight" valign="bottom"><b>dnsOptions</b> () const</td></tr>
+<tr class="separator:ab34f79492b6966c667cffc61954b3188"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96c9c7c1e6a40eb9dee37d55b4b2a9fe"><td class="memItemLeft" align="right" valign="top"><a id="a96c9c7c1e6a40eb9dee37d55b4b2a9fe"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setDnsPriority</b> (qint32 priority)</td></tr>
+<tr class="separator:a96c9c7c1e6a40eb9dee37d55b4b2a9fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4125f2e9467713997aaf84bb5d8a7f1"><td class="memItemLeft" align="right" valign="top"><a id="ae4125f2e9467713997aaf84bb5d8a7f1"></a>
+qint32&#160;</td><td class="memItemRight" valign="bottom"><b>dnsPriority</b> () const</td></tr>
+<tr class="separator:ae4125f2e9467713997aaf84bb5d8a7f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab20971afd0d7bbf5947cb8a1fecb698f"><td class="memItemLeft" align="right" valign="top"><a id="ab20971afd0d7bbf5947cb8a1fecb698f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setGateway</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;gateway)</td></tr>
+<tr class="separator:ab20971afd0d7bbf5947cb8a1fecb698f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac015dbb8f45f069340957afab53ca25e"><td class="memItemLeft" align="right" valign="top"><a id="ac015dbb8f45f069340957afab53ca25e"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>gateway</b> () const</td></tr>
+<tr class="separator:ac015dbb8f45f069340957afab53ca25e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24c94f5f30fa1b1854b89bd2a8711add"><td class="memItemLeft" align="right" valign="top"><a id="a24c94f5f30fa1b1854b89bd2a8711add"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setAddressData</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qlist.html">QList</a>&lt; <a class="elRef" href="http://doc.qt.io/qt-5/qmap.html">Config</a> &gt; &amp;addressData)</td></tr>
+<tr class="separator:a24c94f5f30fa1b1854b89bd2a8711add"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a486f6c2de1b70cb91b1e19dbb58ffa56"><td class="memItemLeft" align="right" valign="top"><a id="a486f6c2de1b70cb91b1e19dbb58ffa56"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qlist.html">QList</a>&lt; <a class="elRef" href="http://doc.qt.io/qt-5/qmap.html">Config</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>addressData</b> () const</td></tr>
+<tr class="separator:a486f6c2de1b70cb91b1e19dbb58ffa56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48bd1513483b1e259c093255ef1bdd82"><td class="memItemLeft" align="right" valign="top"><a id="a48bd1513483b1e259c093255ef1bdd82"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setRouteData</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qlist.html">QList</a>&lt; <a class="elRef" href="http://doc.qt.io/qt-5/qmap.html">Config</a> &gt; &amp;routeData)</td></tr>
+<tr class="separator:a48bd1513483b1e259c093255ef1bdd82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad69d5d98e405e342e22bc4ad6ec3a49c"><td class="memItemLeft" align="right" valign="top"><a id="ad69d5d98e405e342e22bc4ad6ec3a49c"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qlist.html">QList</a>&lt; <a class="elRef" href="http://doc.qt.io/qt-5/qmap.html">Config</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>routeData</b> () const</td></tr>
+<tr class="separator:ad69d5d98e405e342e22bc4ad6ec3a49c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8916f68dd7729c3f802df2cfa3a6f572"><td class="memItemLeft" align="right" valign="top"><a id="a8916f68dd7729c3f802df2cfa3a6f572"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>fromMap</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qmap.html">Config</a> &amp;setting) override</td></tr>
+<tr class="separator:a8916f68dd7729c3f802df2cfa3a6f572"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa682b8165261bc8d7f988db5bdf68736"><td class="memItemLeft" align="right" valign="top"><a id="aa682b8165261bc8d7f988db5bdf68736"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qmap.html">Config</a>&#160;</td><td class="memItemRight" valign="bottom"><b>toMap</b> () const override</td></tr>
+<tr class="separator:aa682b8165261bc8d7f988db5bdf68736"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classDNMSetting"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classDNMSetting')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="classDNMSetting.html">DNMSetting</a></td></tr>
+<tr class="memitem:acfe6926ae353701a90f4f5913d9eed18 inherit pub_methods_classDNMSetting"><td class="memItemLeft" align="right" valign="top"><a id="acfe6926ae353701a90f4f5913d9eed18"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DNMSetting</b> (SettingType type)</td></tr>
+<tr class="separator:acfe6926ae353701a90f4f5913d9eed18 inherit pub_methods_classDNMSetting"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d7b1ad2e3fb2dec9ecaef83c7d9957e inherit pub_methods_classDNMSetting"><td class="memItemLeft" align="right" valign="top"><a id="a4d7b1ad2e3fb2dec9ecaef83c7d9957e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DNMSetting</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qsharedpointer.html">QSharedPointer</a>&lt; <a class="el" href="classDNMSetting.html">DNMSetting</a> &gt; &amp;setting)</td></tr>
+<tr class="separator:a4d7b1ad2e3fb2dec9ecaef83c7d9957e inherit pub_methods_classDNMSetting"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a871f792ac731763dd1ae3c67ac8fed85 inherit pub_methods_classDNMSetting"><td class="memItemLeft" align="right" valign="top"><a id="a871f792ac731763dd1ae3c67ac8fed85"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>fromMap</b> (const QVariantMap &amp;map)=0</td></tr>
+<tr class="separator:a871f792ac731763dd1ae3c67ac8fed85 inherit pub_methods_classDNMSetting"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4759eb6e2dde1ab8978d10d751c16f9e inherit pub_methods_classDNMSetting"><td class="memItemLeft" align="right" valign="top"><a id="a4759eb6e2dde1ab8978d10d751c16f9e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setType</b> (SettingType type)</td></tr>
+<tr class="separator:a4759eb6e2dde1ab8978d10d751c16f9e inherit pub_methods_classDNMSetting"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93f0a963aef41a6f7a0ce9a62213f47c inherit pub_methods_classDNMSetting"><td class="memItemLeft" align="right" valign="top"><a id="a93f0a963aef41a6f7a0ce9a62213f47c"></a>
+SettingType&#160;</td><td class="memItemRight" valign="bottom"><b>type</b> () const</td></tr>
+<tr class="separator:a93f0a963aef41a6f7a0ce9a62213f47c inherit pub_methods_classDNMSetting"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7138e431057f6f3b9f2ce0186ca12101 inherit pub_methods_classDNMSetting"><td class="memItemLeft" align="right" valign="top"><a id="a7138e431057f6f3b9f2ce0186ca12101"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isInit</b> () const</td></tr>
+<tr class="separator:a7138e431057f6f3b9f2ce0186ca12101 inherit pub_methods_classDNMSetting"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb8a30cb736258a319bce010b87f28b4 inherit pub_methods_classDNMSetting"><td class="memItemLeft" align="right" valign="top"><a id="adb8a30cb736258a319bce010b87f28b4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setInit</b> (bool init)</td></tr>
+<tr class="separator:adb8a30cb736258a319bce010b87f28b4 inherit pub_methods_classDNMSetting"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07f001b926132954558abc9f1c2100a6 inherit pub_methods_classDNMSetting"><td class="memItemLeft" align="right" valign="top"><a id="a07f001b926132954558abc9f1c2100a6"></a>
+virtual <a class="elRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a>&#160;</td><td class="memItemRight" valign="bottom"><b>needSecrets</b> (bool request=false) const</td></tr>
+<tr class="separator:a07f001b926132954558abc9f1c2100a6 inherit pub_methods_classDNMSetting"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77fee54f45e6481413256067038bc3a3 inherit pub_methods_classDNMSetting"><td class="memItemLeft" align="right" valign="top"><a id="a77fee54f45e6481413256067038bc3a3"></a>
+virtual QVariantMap&#160;</td><td class="memItemRight" valign="bottom"><b>secretsToMap</b> () const</td></tr>
+<tr class="separator:a77fee54f45e6481413256067038bc3a3 inherit pub_methods_classDNMSetting"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a331c4f8058e292229c884d3713a53a inherit pub_methods_classDNMSetting"><td class="memItemLeft" align="right" valign="top"><a id="a1a331c4f8058e292229c884d3713a53a"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>mapToSecrets</b> (const QVariantMap &amp;secrets)</td></tr>
+<tr class="separator:a1a331c4f8058e292229c884d3713a53a inherit pub_methods_classDNMSetting"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c5adeb6b0a2bdfa6cbac7d705bc733a inherit pub_methods_classDNMSetting"><td class="memItemLeft" align="right" valign="top"><a id="a9c5adeb6b0a2bdfa6cbac7d705bc733a"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stringMapTosecrets</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qmap.html">QMap</a>&lt; <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>, <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &gt; &amp;map)</td></tr>
+<tr class="separator:a9c5adeb6b0a2bdfa6cbac7d705bc733a inherit pub_methods_classDNMSetting"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc3cabf974d9ce752c4553dc4f9a52c2 inherit pub_methods_classDNMSetting"><td class="memItemLeft" align="right" valign="top"><a id="afc3cabf974d9ce752c4553dc4f9a52c2"></a>
+virtual <a class="elRef" href="http://doc.qt.io/qt-5/qmap.html">QMap</a>&lt; <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>, <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>secretsToStringMap</b> () const</td></tr>
+<tr class="separator:afc3cabf974d9ce752c4553dc4f9a52c2 inherit pub_methods_classDNMSetting"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:aea1926e741e0520d62027a77d4d9ffa6"><td class="memItemLeft" align="right" valign="top"><a id="aea1926e741e0520d62027a77d4d9ffa6"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qscopedpointer.html">QScopedPointer</a>&lt; <a class="el" href="classDIpv4SettingPrivate.html">DIpv4SettingPrivate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>d_ptr</b></td></tr>
+<tr class="separator:aea1926e741e0520d62027a77d4d9ffa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classDNMSetting"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classDNMSetting')"><img src="closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="classDNMSetting.html">DNMSetting</a></td></tr>
+<tr class="memitem:ac6f9c959dc2a6da048cf0aa8834c8d33 inherit pro_attribs_classDNMSetting"><td class="memItemLeft" align="right" valign="top"><a id="ac6f9c959dc2a6da048cf0aa8834c8d33"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qscopedpointer.html">QScopedPointer</a>&lt; <a class="el" href="classDNMSettingPrivate.html">DNMSettingPrivate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>d_ptr</b></td></tr>
+<tr class="separator:ac6f9c959dc2a6da048cf0aa8834c8d33 inherit pro_attribs_classDNMSetting"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pub_types_classDNMSetting"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classDNMSetting')"><img src="closed.png" alt="-"/>&#160;Public 类型 继承自 <a class="el" href="classDNMSetting.html">DNMSetting</a></td></tr>
+<tr class="memitem:a475e0fd3d19f592bd2c19db78be30047 inherit pub_types_classDNMSetting"><td class="memItemLeft" align="right" valign="top"><a id="a475e0fd3d19f592bd2c19db78be30047"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><b>SettingType</b> { <br />
+&#160;&#160;<b>Unknown</b>
+, <b>Adsl</b>
+, <b>Cdma</b>
+, <b>Gsm</b>
+, <br />
+&#160;&#160;<b>Infiniband</b>
+, <b>Ipv4</b>
+, <b>Ipv6</b>
+, <b>Ppp</b>
+, <br />
+&#160;&#160;<b>Pppoe</b>
+, <b>Security8021x</b>
+, <b>Serial</b>
+, <b>Vpn</b>
+, <br />
+&#160;&#160;<b>Wired</b>
+, <b>Wireless</b>
+, <b>WirelessSecurity</b>
+, <b>Bluetooth</b>
+, <br />
+&#160;&#160;<b>OlpcMesh</b>
+, <b>Vlan</b>
+, <b>Wimax</b>
+, <b>Bond</b>
+, <br />
+&#160;&#160;<b>Bridge</b>
+, <b>BridgePort</b>
+, <b>Team</b>
+, <b>Generic</b>
+, <br />
+&#160;&#160;<b>Tun</b>
+, <b>Vxlan</b>
+, <b>IpTunnel</b>
+, <b>Proxy</b>
+, <br />
+&#160;&#160;<b>User</b>
+, <b>OvsBridge</b>
+, <b>OvsInterface</b>
+, <b>OvsPatch</b>
+, <br />
+&#160;&#160;<b>OvsPort</b>
+, <b>Match</b>
+, <b>Tc</b>
+, <b>TeamPort</b>
+, <br />
+&#160;&#160;<b>Macsec</b>
+, <b>Dcb</b>
+, <b>WireGuard</b>
+<br />
+ }</td></tr>
+<tr class="separator:a475e0fd3d19f592bd2c19db78be30047 inherit pub_types_classDNMSetting"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b85525afb4f795f04df8435359a397b inherit pub_types_classDNMSetting"><td class="memItemLeft" align="right" valign="top"><a id="a8b85525afb4f795f04df8435359a397b"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><b>SecretFlagType</b> { <b>None</b> = 0
+, <b>AgentOwned</b> = 0x01
+, <b>NotSaved</b> = 0x02
+, <b>NotRequired</b> = 0x04
+ }</td></tr>
+<tr class="separator:a8b85525afb4f795f04df8435359a397b inherit pub_types_classDNMSetting"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_classDNMSetting"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classDNMSetting')"><img src="closed.png" alt="-"/>&#160;静态 Public 成员函数 继承自 <a class="el" href="classDNMSetting.html">DNMSetting</a></td></tr>
+<tr class="memitem:af08bf84209a3deaf1fb67318334cc379 inherit pub_static_methods_classDNMSetting"><td class="memItemLeft" align="right" valign="top"><a id="af08bf84209a3deaf1fb67318334cc379"></a>
+static <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>typeToString</b> (const SettingType type)</td></tr>
+<tr class="separator:af08bf84209a3deaf1fb67318334cc379 inherit pub_static_methods_classDNMSetting"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65a90d8fe0d5176cc41bf3b6507e25d9 inherit pub_static_methods_classDNMSetting"><td class="memItemLeft" align="right" valign="top"><a id="a65a90d8fe0d5176cc41bf3b6507e25d9"></a>
+static SettingType&#160;</td><td class="memItemRight" valign="bottom"><b>stringToType</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;str)</td></tr>
+<tr class="separator:a65a90d8fe0d5176cc41bf3b6507e25d9 inherit pub_static_methods_classDNMSetting"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dtknetworkmanager/include/settings/<a class="el" href="dipv4setting_8h_source.html">dipv4setting.h</a></li>
+<li>dtknetworkmanager/src/settingsSrc/dipv4setting.cpp</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classDIpv4Setting.html">DIpv4Setting</a></li>
+    <li class="footer">文档生成时间:2023-01-13-07:39  +00</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

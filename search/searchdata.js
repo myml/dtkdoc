@@ -1,18 +1,18 @@
 var indexSectionsWithContent =
 {
-  0: "_abcdefghijklmnopqrstuvwxyz~",
-  1: "_abcdefgiklmnopqrstuvw",
-  2: "q",
+  0: "#._abcdefghijklmnopqrstuvwxyz~中开弃项",
+  1: "_abcdefghijklmnopqrstuvw",
+  2: "dq",
   3: "acdfglqr",
   4: "_abcdefghijklmnopqrstuvwxyz~",
   5: "abcdefghijklmnopqrstuvwxyz",
-  6: "w",
+  6: "cw",
   7: "abcdefghijklmnopqrstuvwy",
-  8: "abcdilrux",
+  8: "abcdefghiklmnoprstuwxy",
   9: "abcdefghiklmnopqrstuvwxyz",
   10: "os",
-  11: "bdeilpstw",
-  12: "dgu"
+  11: ".bdeilpqstw",
+  12: "#dgiklmqu中开弃项"
 };
 
 var indexSectionNames =

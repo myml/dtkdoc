@@ -1,0 +1,2951 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: DLoginManager类 参考</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="https://github.com/linuxdeepin/dtkdoc" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classDLoginManager.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-slots">Public 槽</a> &#124;
+<a href="#signals">信号</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#properties">属性</a> &#124;
+<a href="classDLoginManager-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">DLoginManager类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 DLoginManager 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classDLoginManager.png" usemap="#DLoginManager_map" alt=""/>
+  <map id="DLoginManager_map" name="DLoginManager_map">
+<area target="_parent" href="http://doc.qt.io/qt-5/qobject.html" alt="QObject" shape="rect" coords="0,0,103,24"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Public 槽</h2></td></tr>
+<tr class="memitem:a0263f39c63d547a2ac50109e47abc744"><td class="memItemLeft" align="right" valign="top"><a id="a0263f39c63d547a2ac50109e47abc744"></a>
+DExpected&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#a0263f39c63d547a2ac50109e47abc744">activateSession</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;sessionId)</td></tr>
+<tr class="memdesc:a0263f39c63d547a2ac50109e47abc744"><td class="mdescLeft">&#160;</td><td class="mdescRight">将具有指定 ID 的会话带到前台 <br /></td></tr>
+<tr class="separator:a0263f39c63d547a2ac50109e47abc744"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fd62300b322f4e5524124e0ebc8d120"><td class="memItemLeft" align="right" valign="top"><a id="a7fd62300b322f4e5524124e0ebc8d120"></a>
+DExpected&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#a7fd62300b322f4e5524124e0ebc8d120">activateSessionOnSeat</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;sessionId, const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;seatId)</td></tr>
+<tr class="memdesc:a7fd62300b322f4e5524124e0ebc8d120"><td class="mdescLeft">&#160;</td><td class="mdescRight">将指定ID, 指定seat的会话带到前台 <br /></td></tr>
+<tr class="separator:a7fd62300b322f4e5524124e0ebc8d120"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fd29270aaf5f6b86928edc4761a2133"><td class="memItemLeft" align="right" valign="top">DExpected&lt; LoginExecStatus &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#a6fd29270aaf5f6b86928edc4761a2133">canHalt</a> ()</td></tr>
+<tr class="memdesc:a6fd29270aaf5f6b86928edc4761a2133"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取当前用户下计算机是否支持停止  <a href="classDLoginManager.html#a6fd29270aaf5f6b86928edc4761a2133">更多...</a><br /></td></tr>
+<tr class="separator:a6fd29270aaf5f6b86928edc4761a2133"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac1a6f21eced36e1c12d3cef7e3db4a8"><td class="memItemLeft" align="right" valign="top">DExpected&lt; LoginExecStatus &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#aac1a6f21eced36e1c12d3cef7e3db4a8">canHibernate</a> ()</td></tr>
+<tr class="memdesc:aac1a6f21eced36e1c12d3cef7e3db4a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取当前用户下计算机是否支持休眠  <a href="classDLoginManager.html#aac1a6f21eced36e1c12d3cef7e3db4a8">更多...</a><br /></td></tr>
+<tr class="separator:aac1a6f21eced36e1c12d3cef7e3db4a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3263f72250ed116570107b42a3130a78"><td class="memItemLeft" align="right" valign="top">DExpected&lt; LoginExecStatus &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#a3263f72250ed116570107b42a3130a78">canHybridSleep</a> ()</td></tr>
+<tr class="memdesc:a3263f72250ed116570107b42a3130a78"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取当前用户下计算机是否支持混合睡眠  <a href="classDLoginManager.html#a3263f72250ed116570107b42a3130a78">更多...</a><br /></td></tr>
+<tr class="separator:a3263f72250ed116570107b42a3130a78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a340b865056d9496c988cd3cba945ca5c"><td class="memItemLeft" align="right" valign="top">DExpected&lt; LoginExecStatus &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#a340b865056d9496c988cd3cba945ca5c">canPowerOff</a> ()</td></tr>
+<tr class="memdesc:a340b865056d9496c988cd3cba945ca5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取当前用户下计算机是否支持关机  <a href="classDLoginManager.html#a340b865056d9496c988cd3cba945ca5c">更多...</a><br /></td></tr>
+<tr class="separator:a340b865056d9496c988cd3cba945ca5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9070a9f26154e9b7c58899f5a0671feb"><td class="memItemLeft" align="right" valign="top">DExpected&lt; LoginExecStatus &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#a9070a9f26154e9b7c58899f5a0671feb">canReboot</a> ()</td></tr>
+<tr class="memdesc:a9070a9f26154e9b7c58899f5a0671feb"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取当前用户下计算机是否支持重启  <a href="classDLoginManager.html#a9070a9f26154e9b7c58899f5a0671feb">更多...</a><br /></td></tr>
+<tr class="separator:a9070a9f26154e9b7c58899f5a0671feb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24bf13e858c7761a8a08f3d5265dfbae"><td class="memItemLeft" align="right" valign="top">DExpected&lt; LoginExecStatus &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#a24bf13e858c7761a8a08f3d5265dfbae">canSuspend</a> ()</td></tr>
+<tr class="memdesc:a24bf13e858c7761a8a08f3d5265dfbae"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取当前用户下计算机是否支持挂起  <a href="classDLoginManager.html#a24bf13e858c7761a8a08f3d5265dfbae">更多...</a><br /></td></tr>
+<tr class="separator:a24bf13e858c7761a8a08f3d5265dfbae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9f9313cc59efde30a784c8c8366c3ad"><td class="memItemLeft" align="right" valign="top">DExpected&lt; LoginExecStatus &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#af9f9313cc59efde30a784c8c8366c3ad">canSuspendThenHibernate</a> ()</td></tr>
+<tr class="memdesc:af9f9313cc59efde30a784c8c8366c3ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取当前用户下计算机是否支持挂起然后休眠  <a href="classDLoginManager.html#af9f9313cc59efde30a784c8c8366c3ad">更多...</a><br /></td></tr>
+<tr class="separator:af9f9313cc59efde30a784c8c8366c3ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2bc42ca4f773c7b597c3f8ba38771bb"><td class="memItemLeft" align="right" valign="top">DExpected&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#ab2bc42ca4f773c7b597c3f8ba38771bb">cancelScheduledShutdown</a> ()</td></tr>
+<tr class="memdesc:ab2bc42ca4f773c7b597c3f8ba38771bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">取消一个预定的关机  <a href="classDLoginManager.html#ab2bc42ca4f773c7b597c3f8ba38771bb">更多...</a><br /></td></tr>
+<tr class="separator:ab2bc42ca4f773c7b597c3f8ba38771bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a3286077b5684a64f6296631097292a"><td class="memItemLeft" align="right" valign="top">DExpected&lt; <a class="elRef" href="http://doc.qt.io/qt-5/qsharedpointer.html">LoginSeatPtr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#a2a3286077b5684a64f6296631097292a">findSeatById</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;seatId)</td></tr>
+<tr class="memdesc:a2a3286077b5684a64f6296631097292a"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取seat对象  <a href="classDLoginManager.html#a2a3286077b5684a64f6296631097292a">更多...</a><br /></td></tr>
+<tr class="separator:a2a3286077b5684a64f6296631097292a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacf70b6db436d55a2361388ace57bd5a"><td class="memItemLeft" align="right" valign="top">DExpected&lt; <a class="elRef" href="http://doc.qt.io/qt-5/qsharedpointer.html">LoginSessionPtr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#aacf70b6db436d55a2361388ace57bd5a">findSessionById</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;sessionId)</td></tr>
+<tr class="memdesc:aacf70b6db436d55a2361388ace57bd5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取session对象  <a href="classDLoginManager.html#aacf70b6db436d55a2361388ace57bd5a">更多...</a><br /></td></tr>
+<tr class="separator:aacf70b6db436d55a2361388ace57bd5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9b8f98b427fe8e1527ea436f09e5832"><td class="memItemLeft" align="right" valign="top">DExpected&lt; <a class="elRef" href="http://doc.qt.io/qt-5/qsharedpointer.html">LoginSessionPtr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#ac9b8f98b427fe8e1527ea436f09e5832">findSessionByPID</a> (quint32 PID)</td></tr>
+<tr class="memdesc:ac9b8f98b427fe8e1527ea436f09e5832"><td class="mdescLeft">&#160;</td><td class="mdescRight">通过进程号pid获取session对象  <a href="classDLoginManager.html#ac9b8f98b427fe8e1527ea436f09e5832">更多...</a><br /></td></tr>
+<tr class="separator:ac9b8f98b427fe8e1527ea436f09e5832"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49c6f998be613a15098e23b8eb835550"><td class="memItemLeft" align="right" valign="top">DExpected&lt; <a class="elRef" href="http://doc.qt.io/qt-5/qsharedpointer.html">LoginUserPtr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#a49c6f998be613a15098e23b8eb835550">findUserById</a> (quint32 UID)</td></tr>
+<tr class="memdesc:a49c6f998be613a15098e23b8eb835550"><td class="mdescLeft">&#160;</td><td class="mdescRight">通过uid获取User对象  <a href="classDLoginManager.html#a49c6f998be613a15098e23b8eb835550">更多...</a><br /></td></tr>
+<tr class="separator:a49c6f998be613a15098e23b8eb835550"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a396a909e3dab7afa7dfe2e8f06feaa68"><td class="memItemLeft" align="right" valign="top">DExpected&lt; <a class="elRef" href="http://doc.qt.io/qt-5/qsharedpointer.html">LoginUserPtr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#a396a909e3dab7afa7dfe2e8f06feaa68">findUserByPID</a> (quint32 PID)</td></tr>
+<tr class="memdesc:a396a909e3dab7afa7dfe2e8f06feaa68"><td class="mdescLeft">&#160;</td><td class="mdescRight">通过进程id获取User信息  <a href="classDLoginManager.html#a396a909e3dab7afa7dfe2e8f06feaa68">更多...</a><br /></td></tr>
+<tr class="separator:a396a909e3dab7afa7dfe2e8f06feaa68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f8d3e9e3830683f76681b0b24bbe793"><td class="memItemLeft" align="right" valign="top">DExpected&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#a2f8d3e9e3830683f76681b0b24bbe793">halt</a> (bool interactive=false)</td></tr>
+<tr class="memdesc:a2f8d3e9e3830683f76681b0b24bbe793"><td class="mdescLeft">&#160;</td><td class="mdescRight">计算机暂停操作, 暂停（不关闭电源关闭）  <a href="classDLoginManager.html#a2f8d3e9e3830683f76681b0b24bbe793">更多...</a><br /></td></tr>
+<tr class="separator:a2f8d3e9e3830683f76681b0b24bbe793"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7909528b4bf7857833bc8d99da7105b"><td class="memItemLeft" align="right" valign="top">DExpected&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#aa7909528b4bf7857833bc8d99da7105b">hibernate</a> (bool interactive=false)</td></tr>
+<tr class="memdesc:aa7909528b4bf7857833bc8d99da7105b"><td class="mdescLeft">&#160;</td><td class="mdescRight">计算机执行休眠操作, 休眠（将内存中数据保存到磁盘并将机器关闭）  <a href="classDLoginManager.html#aa7909528b4bf7857833bc8d99da7105b">更多...</a><br /></td></tr>
+<tr class="separator:aa7909528b4bf7857833bc8d99da7105b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab96ee9b5fafcd6e0df40c21f912cf1e3"><td class="memItemLeft" align="right" valign="top">DExpected&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#ab96ee9b5fafcd6e0df40c21f912cf1e3">hybridSleep</a> (bool interactive=false)</td></tr>
+<tr class="memdesc:ab96ee9b5fafcd6e0df40c21f912cf1e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">计算机执行混合睡眠, 混合睡眠模式, 即系统既休眠又挂起  <a href="classDLoginManager.html#ab96ee9b5fafcd6e0df40c21f912cf1e3">更多...</a><br /></td></tr>
+<tr class="separator:ab96ee9b5fafcd6e0df40c21f912cf1e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6799052dc9ae001eab3a0ca5a95a846a"><td class="memItemLeft" align="right" valign="top">DExpected&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#a6799052dc9ae001eab3a0ca5a95a846a">inhibit</a> (int what, const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;who, const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;why, LoginInhibitMode mode)</td></tr>
+<tr class="memdesc:a6799052dc9ae001eab3a0ca5a95a846a"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建一个抑制锁, 抑制锁：一个程序可以阻止或延迟系统休眠或关机  <a href="classDLoginManager.html#a6799052dc9ae001eab3a0ca5a95a846a">更多...</a><br /></td></tr>
+<tr class="separator:a6799052dc9ae001eab3a0ca5a95a846a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af820978dc0d7c5cc1f54c06caa7d423c"><td class="memItemLeft" align="right" valign="top">DExpected&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#af820978dc0d7c5cc1f54c06caa7d423c">killSession</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;sessionId, LoginSessionRole who, qint32 signalNumber)</td></tr>
+<tr class="memdesc:af820978dc0d7c5cc1f54c06caa7d423c"><td class="mdescLeft">&#160;</td><td class="mdescRight">可用于向会话的一个或所有进程发送 Unix 信号, 作为参数, 它接受会话 id、字符串“ leader”或“ all”和一个信号编号。 如果“ leader”通过, 则只有会话“ leader”被终止。如果“ all”通过, 则会话的所有进程都将被终止。  <a href="classDLoginManager.html#af820978dc0d7c5cc1f54c06caa7d423c">更多...</a><br /></td></tr>
+<tr class="separator:af820978dc0d7c5cc1f54c06caa7d423c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d065b547fa691dfdc2e699b6b40ab47"><td class="memItemLeft" align="right" valign="top">DExpected&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#a1d065b547fa691dfdc2e699b6b40ab47">killUser</a> (quint32 UID, qint32 signalNumber)</td></tr>
+<tr class="memdesc:a1d065b547fa691dfdc2e699b6b40ab47"><td class="mdescLeft">&#160;</td><td class="mdescRight">可用于向用户的所有进程发送 Unix 信号。作为参数, 它需要用户 ID 和信号编号  <a href="classDLoginManager.html#a1d065b547fa691dfdc2e699b6b40ab47">更多...</a><br /></td></tr>
+<tr class="separator:a1d065b547fa691dfdc2e699b6b40ab47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a688c066e6f05d6fabdac2cb84ce8263a"><td class="memItemLeft" align="right" valign="top">DExpected&lt; <a class="elRef" href="http://doc.qt.io/qt-5/qlist.html">LoginInhibitorList</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#a688c066e6f05d6fabdac2cb84ce8263a">listInhibitors</a> ()</td></tr>
+<tr class="memdesc:a688c066e6f05d6fabdac2cb84ce8263a"><td class="mdescLeft">&#160;</td><td class="mdescRight">列出所有当前有效的抑制器。  <a href="classDLoginManager.html#a688c066e6f05d6fabdac2cb84ce8263a">更多...</a><br /></td></tr>
+<tr class="separator:a688c066e6f05d6fabdac2cb84ce8263a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afefe151de534da2fa00d0346592a270c"><td class="memItemLeft" align="right" valign="top">DExpected&lt; <a class="elRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#afefe151de534da2fa00d0346592a270c">listSeats</a> ()</td></tr>
+<tr class="memdesc:afefe151de534da2fa00d0346592a270c"><td class="mdescLeft">&#160;</td><td class="mdescRight">列出所有的seat  <a href="classDLoginManager.html#afefe151de534da2fa00d0346592a270c">更多...</a><br /></td></tr>
+<tr class="separator:afefe151de534da2fa00d0346592a270c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f854b9f1c2d0b07b27ffcc263747820"><td class="memItemLeft" align="right" valign="top">DExpected&lt; <a class="elRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#a9f854b9f1c2d0b07b27ffcc263747820">listSessions</a> ()</td></tr>
+<tr class="memdesc:a9f854b9f1c2d0b07b27ffcc263747820"><td class="mdescLeft">&#160;</td><td class="mdescRight">列出所有的Session  <a href="classDLoginManager.html#a9f854b9f1c2d0b07b27ffcc263747820">更多...</a><br /></td></tr>
+<tr class="separator:a9f854b9f1c2d0b07b27ffcc263747820"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58e9b0174887d67b7b6ede9d089dd451"><td class="memItemLeft" align="right" valign="top">DExpected&lt; <a class="elRef" href="http://doc.qt.io/qt-5/qlist.html">QList</a>&lt; quint32 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#a58e9b0174887d67b7b6ede9d089dd451">listUsers</a> ()</td></tr>
+<tr class="memdesc:a58e9b0174887d67b7b6ede9d089dd451"><td class="mdescLeft">&#160;</td><td class="mdescRight">列出所有的User  <a href="classDLoginManager.html#a58e9b0174887d67b7b6ede9d089dd451">更多...</a><br /></td></tr>
+<tr class="separator:a58e9b0174887d67b7b6ede9d089dd451"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5352aa878ef06acb753ddcea08cb6438"><td class="memItemLeft" align="right" valign="top">DExpected&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#a5352aa878ef06acb753ddcea08cb6438">lockSession</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;sessionId)</td></tr>
+<tr class="memdesc:a5352aa878ef06acb753ddcea08cb6438"><td class="mdescLeft">&#160;</td><td class="mdescRight">要求具有指定 ID 的会话激活屏幕锁定  <a href="classDLoginManager.html#a5352aa878ef06acb753ddcea08cb6438">更多...</a><br /></td></tr>
+<tr class="separator:a5352aa878ef06acb753ddcea08cb6438"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c2bd560ccf33a05954795a51537e0bc"><td class="memItemLeft" align="right" valign="top">DExpected&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#a8c2bd560ccf33a05954795a51537e0bc">powerOff</a> (bool interactive=false)</td></tr>
+<tr class="memdesc:a8c2bd560ccf33a05954795a51537e0bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">关机  <a href="classDLoginManager.html#a8c2bd560ccf33a05954795a51537e0bc">更多...</a><br /></td></tr>
+<tr class="separator:a8c2bd560ccf33a05954795a51537e0bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab82f42d37cbbdf4c51625550fe0c61ef"><td class="memItemLeft" align="right" valign="top">DExpected&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#ab82f42d37cbbdf4c51625550fe0c61ef">reboot</a> (bool interactive=false)</td></tr>
+<tr class="memdesc:ab82f42d37cbbdf4c51625550fe0c61ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">重启  <a href="classDLoginManager.html#ab82f42d37cbbdf4c51625550fe0c61ef">更多...</a><br /></td></tr>
+<tr class="separator:ab82f42d37cbbdf4c51625550fe0c61ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae121f9af00eb37d8a5ea3b46404228fe"><td class="memItemLeft" align="right" valign="top">DExpected&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#ae121f9af00eb37d8a5ea3b46404228fe">scheduleShutdown</a> (LoginShutdownType type, const <a class="elRef" href="http://doc.qt.io/qt-5/qdatetime.html">QDateTime</a> &amp;usec)</td></tr>
+<tr class="memdesc:ae121f9af00eb37d8a5ea3b46404228fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">在一定时间后定时关机  <a href="classDLoginManager.html#ae121f9af00eb37d8a5ea3b46404228fe">更多...</a><br /></td></tr>
+<tr class="separator:ae121f9af00eb37d8a5ea3b46404228fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1a51960a49c772b5c5b4f95afc0a48f"><td class="memItemLeft" align="right" valign="top">DExpected&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#ae1a51960a49c772b5c5b4f95afc0a48f">setUserLinger</a> (quint32 UID, bool enable, bool interactive)</td></tr>
+<tr class="memdesc:ae1a51960a49c772b5c5b4f95afc0a48f"><td class="mdescLeft">&#160;</td><td class="mdescRight">启用或禁用用户滞留。如果启用, 将保留用户的运行时目录, 并且他们可以在注销时继续运行进程。如果禁用, 运行时目录会在他们注销后立即消失  <a href="classDLoginManager.html#ae1a51960a49c772b5c5b4f95afc0a48f">更多...</a><br /></td></tr>
+<tr class="separator:ae1a51960a49c772b5c5b4f95afc0a48f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44dd4bc1d7ddeecbe1934535b3ae250c"><td class="memItemLeft" align="right" valign="top">DExpected&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#a44dd4bc1d7ddeecbe1934535b3ae250c">suspend</a> (bool interactive=false)</td></tr>
+<tr class="memdesc:a44dd4bc1d7ddeecbe1934535b3ae250c"><td class="mdescLeft">&#160;</td><td class="mdescRight">计算机执行挂起操作（系统状态保存到 RAM 并关闭 CPU）  <a href="classDLoginManager.html#a44dd4bc1d7ddeecbe1934535b3ae250c">更多...</a><br /></td></tr>
+<tr class="separator:a44dd4bc1d7ddeecbe1934535b3ae250c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a439211f55e54208d5a1e7f4d49d77703"><td class="memItemLeft" align="right" valign="top">DExpected&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#a439211f55e54208d5a1e7f4d49d77703">suspendThenHibernate</a> (bool interactive=false)</td></tr>
+<tr class="memdesc:a439211f55e54208d5a1e7f4d49d77703"><td class="mdescLeft">&#160;</td><td class="mdescRight">计算机系统被暂停, 随后使用RTC定时器唤醒并休眠  <a href="classDLoginManager.html#a439211f55e54208d5a1e7f4d49d77703">更多...</a><br /></td></tr>
+<tr class="separator:a439211f55e54208d5a1e7f4d49d77703"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88f971a43bd23e1c1e8de459b6cd9283"><td class="memItemLeft" align="right" valign="top">DExpected&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#a88f971a43bd23e1c1e8de459b6cd9283">terminateSession</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;sessionId)</td></tr>
+<tr class="memdesc:a88f971a43bd23e1c1e8de459b6cd9283"><td class="mdescLeft">&#160;</td><td class="mdescRight">可用于强制终止一个特定会话  <a href="classDLoginManager.html#a88f971a43bd23e1c1e8de459b6cd9283">更多...</a><br /></td></tr>
+<tr class="separator:a88f971a43bd23e1c1e8de459b6cd9283"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1026776c1163fe0a0823f027eb6da772"><td class="memItemLeft" align="right" valign="top">DExpected&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#a1026776c1163fe0a0823f027eb6da772">terminateUser</a> (quint32 uid)</td></tr>
+<tr class="memdesc:a1026776c1163fe0a0823f027eb6da772"><td class="mdescLeft">&#160;</td><td class="mdescRight">可用于强制终止用户的所有进程  <a href="classDLoginManager.html#a1026776c1163fe0a0823f027eb6da772">更多...</a><br /></td></tr>
+<tr class="separator:a1026776c1163fe0a0823f027eb6da772"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd568a06bd769b0d76d3774fa00ea399"><td class="memItemLeft" align="right" valign="top">DExpected&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#abd568a06bd769b0d76d3774fa00ea399">logout</a> ()</td></tr>
+<tr class="memdesc:abd568a06bd769b0d76d3774fa00ea399"><td class="mdescLeft">&#160;</td><td class="mdescRight">登出  <a href="classDLoginManager.html#abd568a06bd769b0d76d3774fa00ea399">更多...</a><br /></td></tr>
+<tr class="separator:abd568a06bd769b0d76d3774fa00ea399"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af327c3d24e846226c1ed0caa6feacc4a"><td class="memItemLeft" align="right" valign="top">DExpected&lt; <a class="elRef" href="http://doc.qt.io/qt-5/qsharedpointer.html">LoginSeatPtr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#af327c3d24e846226c1ed0caa6feacc4a">currentSeat</a> ()</td></tr>
+<tr class="memdesc:af327c3d24e846226c1ed0caa6feacc4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">当前的seat  <a href="classDLoginManager.html#af327c3d24e846226c1ed0caa6feacc4a">更多...</a><br /></td></tr>
+<tr class="separator:af327c3d24e846226c1ed0caa6feacc4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab54260ce61248a4e535a588dd1358eb"><td class="memItemLeft" align="right" valign="top">DExpected&lt; <a class="elRef" href="http://doc.qt.io/qt-5/qsharedpointer.html">LoginSessionPtr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#aab54260ce61248a4e535a588dd1358eb">currentSession</a> ()</td></tr>
+<tr class="memdesc:aab54260ce61248a4e535a588dd1358eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">当前的session  <a href="classDLoginManager.html#aab54260ce61248a4e535a588dd1358eb">更多...</a><br /></td></tr>
+<tr class="separator:aab54260ce61248a4e535a588dd1358eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba29d5d744c1b455de9e9b150b66b0f7"><td class="memItemLeft" align="right" valign="top">DExpected&lt; <a class="elRef" href="http://doc.qt.io/qt-5/qsharedpointer.html">LoginUserPtr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#aba29d5d744c1b455de9e9b150b66b0f7">currentUser</a> ()</td></tr>
+<tr class="memdesc:aba29d5d744c1b455de9e9b150b66b0f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">当前的user  <a href="classDLoginManager.html#aba29d5d744c1b455de9e9b150b66b0f7">更多...</a><br /></td></tr>
+<tr class="separator:aba29d5d744c1b455de9e9b150b66b0f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+信号</h2></td></tr>
+<tr class="memitem:a5c2734f314459899f9eb1e39598d24d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#a5c2734f314459899f9eb1e39598d24d4">prepareForShutdown</a> (bool value)</td></tr>
+<tr class="memdesc:a5c2734f314459899f9eb1e39598d24d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">PrepareForShutdown()和PrepareForSleep()信号在系统关闭之前（使用参数“ true” ）或之后（使用参数“ false”）发送, 分别用于重新启动/关机和挂起/休眠。应用程序可以使用它来将数据保存在磁盘上、释放内存或执行其他应在关机/睡眠前不久完成的工作, 以及延迟抑制器。完成这项工作后, 他们应该释放他们的抑制锁, 以免进一步延迟操作。  <a href="classDLoginManager.html#a5c2734f314459899f9eb1e39598d24d4">更多...</a><br /></td></tr>
+<tr class="separator:a5c2734f314459899f9eb1e39598d24d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23c2181ea676434184773be11edbc2ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#a23c2181ea676434184773be11edbc2ca">prepareForSleep</a> (bool value)</td></tr>
+<tr class="separator:a23c2181ea676434184773be11edbc2ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97e6dee754fa2808de85609e8ef4c5e2"><td class="memItemLeft" align="right" valign="top"><a id="a97e6dee754fa2808de85609e8ef4c5e2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#a97e6dee754fa2808de85609e8ef4c5e2">seatNew</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;seatId)</td></tr>
+<tr class="memdesc:a97e6dee754fa2808de85609e8ef4c5e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">每次创建或删除会话、用户登录或注销或添加或删除seat时都会发送<code>UserRemoved</code>、<code>SeatNew</code>、<code>SessionNew</code>、 <code>SeatRemoved</code>、<code>SessionRemoved</code>、<code>UserNew</code>信号 。它们每个都包含对象的 ID 和对象路径。 <br /></td></tr>
+<tr class="separator:a97e6dee754fa2808de85609e8ef4c5e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bbe5e7921898af9c476e79b6cdca7b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#a7bbe5e7921898af9c476e79b6cdca7b7">seatRemoved</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;seatId)</td></tr>
+<tr class="separator:a7bbe5e7921898af9c476e79b6cdca7b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afaeefaac8195f27e2747531ba487f2aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#afaeefaac8195f27e2747531ba487f2aa">sessionNew</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;sessionId)</td></tr>
+<tr class="separator:afaeefaac8195f27e2747531ba487f2aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f2b628830d1714de3b9a932934384f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#a1f2b628830d1714de3b9a932934384f7">sessionRemoved</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;sessionId)</td></tr>
+<tr class="separator:a1f2b628830d1714de3b9a932934384f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e7a056e23d22b5d5e72579a8e7f1954"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#a9e7a056e23d22b5d5e72579a8e7f1954">userNew</a> (quint32 UID)</td></tr>
+<tr class="separator:a9e7a056e23d22b5d5e72579a8e7f1954"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62541448b5b5eea3f975f3736410c3b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#a62541448b5b5eea3f975f3736410c3b5">userRemoved</a> (quint32 UID)</td></tr>
+<tr class="separator:a62541448b5b5eea3f975f3736410c3b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a5ef5f538f657cbafe83679748f631aea"><td class="memItemLeft" align="right" valign="top"><a id="a5ef5f538f657cbafe83679748f631aea"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#a5ef5f538f657cbafe83679748f631aea">DLoginManager</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a>=nullptr)</td></tr>
+<tr class="memdesc:a5ef5f538f657cbafe83679748f631aea"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造获取login manager <br /></td></tr>
+<tr class="separator:a5ef5f538f657cbafe83679748f631aea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a987954b99c1a825569beca90a5ade4e9"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#a987954b99c1a825569beca90a5ade4e9">killExcludeUsers</a> () const</td></tr>
+<tr class="memdesc:a987954b99c1a825569beca90a5ade4e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">读取 KillExcludeUsers 属性。 该属性将获取采用空格分割的用户列表, 在设置了 KillUserProcesses=yes 将会排除该用户会话范围内的进程。如果未设置 KillExcludeUsers=yes, 则默认排除“root”用户。  <a href="classDLoginManager.html#a987954b99c1a825569beca90a5ade4e9">更多...</a><br /></td></tr>
+<tr class="separator:a987954b99c1a825569beca90a5ade4e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b204908d2a09225133b26f34f84e528"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#a0b204908d2a09225133b26f34f84e528">killOnlyUsers</a> () const</td></tr>
+<tr class="memdesc:a0b204908d2a09225133b26f34f84e528"><td class="mdescLeft">&#160;</td><td class="mdescRight">读取killOnlyUsers属性 检查KillOnlyUsers的取值。如果指定了这个设置, 只有这些用户的会话作用域中的进程将被杀死。否则, 用户将受到KillUserProcesses=yes设置的限制。  <a href="classDLoginManager.html#a0b204908d2a09225133b26f34f84e528">更多...</a><br /></td></tr>
+<tr class="separator:a0b204908d2a09225133b26f34f84e528"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10de27f42a0672b43824c36061d05be1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#a10de27f42a0672b43824c36061d05be1">docked</a> () const</td></tr>
+<tr class="memdesc:a10de27f42a0672b43824c36061d05be1"><td class="mdescLeft">&#160;</td><td class="mdescRight">如果机器被连接到一个底座或者拓展坞（包含usbhub）上, Docked取值为true  <a href="classDLoginManager.html#a10de27f42a0672b43824c36061d05be1">更多...</a><br /></td></tr>
+<tr class="separator:a10de27f42a0672b43824c36061d05be1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a686ee1ad2082b61a622d51ac6df9d44b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#a686ee1ad2082b61a622d51ac6df9d44b">idleHint</a> () const</td></tr>
+<tr class="memdesc:a686ee1ad2082b61a622d51ac6df9d44b"><td class="mdescLeft">&#160;</td><td class="mdescRight">反映系统的空闲提示状态。如果系统空闲则为True  <a href="classDLoginManager.html#a686ee1ad2082b61a622d51ac6df9d44b">更多...</a><br /></td></tr>
+<tr class="separator:a686ee1ad2082b61a622d51ac6df9d44b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d8870dc98428da25669411e1b73fcd9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#a2d8870dc98428da25669411e1b73fcd9">killUserProcesses</a> () const</td></tr>
+<tr class="memdesc:a2d8870dc98428da25669411e1b73fcd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">查看killUserProcesses当前配置, 当用户注销时是否应该杀死该用户的进程。 如果返回为true, 则该会话对应的作用域单元和该作用域内的所有进程将被终止。如果返回为 "false", 则该作用域被 "抛弃"  <a href="classDLoginManager.html#a2d8870dc98428da25669411e1b73fcd9">更多...</a><br /></td></tr>
+<tr class="separator:a2d8870dc98428da25669411e1b73fcd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a252fe712ef2654ad72e000989fdced9d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#a252fe712ef2654ad72e000989fdced9d">lidClosed</a> () const</td></tr>
+<tr class="memdesc:a252fe712ef2654ad72e000989fdced9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">当（笔记本电脑）的盖子关闭时, LidClosed为true。  <a href="classDLoginManager.html#a252fe712ef2654ad72e000989fdced9d">更多...</a><br /></td></tr>
+<tr class="separator:a252fe712ef2654ad72e000989fdced9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee393e9f2e143da8b6bb26414257f719"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#aee393e9f2e143da8b6bb26414257f719">preparingForShutdown</a> () const</td></tr>
+<tr class="memdesc:aee393e9f2e143da8b6bb26414257f719"><td class="mdescLeft">&#160;</td><td class="mdescRight">在两个PrepareForShutdown和PrepareForSleep信号的间隔期间分别为真  <a href="classDLoginManager.html#aee393e9f2e143da8b6bb26414257f719">更多...</a><br /></td></tr>
+<tr class="separator:aee393e9f2e143da8b6bb26414257f719"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8021cb35bf0c2a093a11d761587c6692"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#a8021cb35bf0c2a093a11d761587c6692">preparingForSleep</a> () const</td></tr>
+<tr class="memdesc:a8021cb35bf0c2a093a11d761587c6692"><td class="mdescLeft">&#160;</td><td class="mdescRight">在两个PrepareForShutdown和PrepareForSleep信号的间隔期间分别为真  <a href="classDLoginManager.html#a8021cb35bf0c2a093a11d761587c6692">更多...</a><br /></td></tr>
+<tr class="separator:a8021cb35bf0c2a093a11d761587c6692"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad177f09f19e8f1b4829a99b1dc89acad"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#ad177f09f19e8f1b4829a99b1dc89acad">removeIPC</a> () const</td></tr>
+<tr class="memdesc:ad177f09f19e8f1b4829a99b1dc89acad"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回一个属性设置, 当用户完全注销时, 属于用户的System V和POSIX IPC对象是否应被删除。 返回一个布尔参数。如果为true, 在用户的最后一个会话结束后, 用户不得消耗IPC资源。 这包括System V的信号、共享内存和消息队列, 以及POSIX共享内存和消息队列。 请注意, 根用户和其他系统用户的IPC对象不受此设置的影响。默认值为 "true"。  <a href="classDLoginManager.html#ad177f09f19e8f1b4829a99b1dc89acad">更多...</a><br /></td></tr>
+<tr class="separator:ad177f09f19e8f1b4829a99b1dc89acad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac47aa2520657ed5a657745ecba7f2cda"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#ac47aa2520657ed5a657745ecba7f2cda">blockInhibited</a> () const</td></tr>
+<tr class="memdesc:ac47aa2520657ed5a657745ecba7f2cda"><td class="mdescLeft">&#160;</td><td class="mdescRight">读取各个模式的当前活动锁:  <a href="classDLoginManager.html#ac47aa2520657ed5a657745ecba7f2cda">更多...</a><br /></td></tr>
+<tr class="separator:ac47aa2520657ed5a657745ecba7f2cda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f846c5448368eb25933b583cb6f2fc5"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#a6f846c5448368eb25933b583cb6f2fc5">delayInhibited</a> () const</td></tr>
+<tr class="memdesc:a6f846c5448368eb25933b583cb6f2fc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">读取各个模式的当前活动锁  <a href="classDLoginManager.html#a6f846c5448368eb25933b583cb6f2fc5">更多...</a><br /></td></tr>
+<tr class="separator:a6f846c5448368eb25933b583cb6f2fc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea9bd379e939bf1b5504d617458ce804"><td class="memItemLeft" align="right" valign="top"><a class="el" href="dlogintypes_8h.html#a2bb25797f4265d9041919b9d3bc858e7">PowerAction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#aea9bd379e939bf1b5504d617458ce804">handleHibernateKey</a> () const</td></tr>
+<tr class="memdesc:aea9bd379e939bf1b5504d617458ce804"><td class="mdescLeft">&#160;</td><td class="mdescRight">读取休眠按键的定义（默认是休眠）  <a href="classDLoginManager.html#aea9bd379e939bf1b5504d617458ce804">更多...</a><br /></td></tr>
+<tr class="separator:aea9bd379e939bf1b5504d617458ce804"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a82c6092fc4185278390c50aea97b9e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="dlogintypes_8h.html#a2bb25797f4265d9041919b9d3bc858e7">PowerAction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#a7a82c6092fc4185278390c50aea97b9e">handleLidSwitch</a> () const</td></tr>
+<tr class="memdesc:a7a82c6092fc4185278390c50aea97b9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">读取笔记本合上盖子的行为 （默认是暂停）  <a href="classDLoginManager.html#a7a82c6092fc4185278390c50aea97b9e">更多...</a><br /></td></tr>
+<tr class="separator:a7a82c6092fc4185278390c50aea97b9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35784bd188d7e3520aed4eecda453f64"><td class="memItemLeft" align="right" valign="top"><a class="el" href="dlogintypes_8h.html#a2bb25797f4265d9041919b9d3bc858e7">PowerAction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#a35784bd188d7e3520aed4eecda453f64">handleLidSwitchDocked</a> () const</td></tr>
+<tr class="memdesc:a35784bd188d7e3520aed4eecda453f64"><td class="mdescLeft">&#160;</td><td class="mdescRight">读取笔记本连上底座或者拓展坞后合上盖子的行为 （默认是忽略）  <a href="classDLoginManager.html#a35784bd188d7e3520aed4eecda453f64">更多...</a><br /></td></tr>
+<tr class="separator:a35784bd188d7e3520aed4eecda453f64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63421b18c1bac73bbe70a4005e40bf27"><td class="memItemLeft" align="right" valign="top"><a class="el" href="dlogintypes_8h.html#a2bb25797f4265d9041919b9d3bc858e7">PowerAction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#a63421b18c1bac73bbe70a4005e40bf27">handleLidSwitchExternalPower</a> () const</td></tr>
+<tr class="memdesc:a63421b18c1bac73bbe70a4005e40bf27"><td class="mdescLeft">&#160;</td><td class="mdescRight">读取笔记本连上底座或者拓展坞且链接电源后合上盖子的行为 （默认为空（完全忽略））  <a href="classDLoginManager.html#a63421b18c1bac73bbe70a4005e40bf27">更多...</a><br /></td></tr>
+<tr class="separator:a63421b18c1bac73bbe70a4005e40bf27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a669123646d48113601c8e3e7a57302a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="dlogintypes_8h.html#a2bb25797f4265d9041919b9d3bc858e7">PowerAction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#a669123646d48113601c8e3e7a57302a2">handlePowerKey</a> () const</td></tr>
+<tr class="memdesc:a669123646d48113601c8e3e7a57302a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">读取电源按键的定义 （默认是关机）  <a href="classDLoginManager.html#a669123646d48113601c8e3e7a57302a2">更多...</a><br /></td></tr>
+<tr class="separator:a669123646d48113601c8e3e7a57302a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcdd51d163678a22bb36ce39b6daf61d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="dlogintypes_8h.html#a2bb25797f4265d9041919b9d3bc858e7">PowerAction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#afcdd51d163678a22bb36ce39b6daf61d">handleSuspendKey</a> () const</td></tr>
+<tr class="memdesc:afcdd51d163678a22bb36ce39b6daf61d"><td class="mdescLeft">&#160;</td><td class="mdescRight">读取暂停按键的定义 （默认是暂停）  <a href="classDLoginManager.html#afcdd51d163678a22bb36ce39b6daf61d">更多...</a><br /></td></tr>
+<tr class="separator:afcdd51d163678a22bb36ce39b6daf61d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77fb5dce80d52a6f483332715b34a075"><td class="memItemLeft" align="right" valign="top"><a class="el" href="dlogintypes_8h.html#a2bb25797f4265d9041919b9d3bc858e7">PowerAction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#a77fb5dce80d52a6f483332715b34a075">idleAction</a> () const</td></tr>
+<tr class="memdesc:a77fb5dce80d52a6f483332715b34a075"><td class="mdescLeft">&#160;</td><td class="mdescRight">读取系统空闲时采取的行动 （默认是忽略）  <a href="classDLoginManager.html#a77fb5dce80d52a6f483332715b34a075">更多...</a><br /></td></tr>
+<tr class="separator:a77fb5dce80d52a6f483332715b34a075"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fa45594d55a1c7ce189d11eab159c27"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structScheduledShutdownValue.html">ScheduledShutdownValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#a0fa45594d55a1c7ce189d11eab159c27">scheduledShutdown</a> () const</td></tr>
+<tr class="memdesc:a0fa45594d55a1c7ce189d11eab159c27"><td class="mdescLeft">&#160;</td><td class="mdescRight">读取scheduledShutdown的值, 返回两个参数, 第一个电源管理状态名, 第二个是unix时间戳（精确到微秒）, 可以使用scheduleShutdown方法进行写入。 具体含义见同名方法  <a href="classDLoginManager.html#a0fa45594d55a1c7ce189d11eab159c27">更多...</a><br /></td></tr>
+<tr class="separator:a0fa45594d55a1c7ce189d11eab159c27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85d08984ff64c9473bfcc5ea8a3c8e0f"><td class="memItemLeft" align="right" valign="top">quint32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#a85d08984ff64c9473bfcc5ea8a3c8e0f">nAutoVTs</a> () const</td></tr>
+<tr class="memdesc:a85d08984ff64c9473bfcc5ea8a3c8e0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">读取默认配置分配多少个虚拟终端（VT）, 默认为6  <a href="classDLoginManager.html#a85d08984ff64c9473bfcc5ea8a3c8e0f">更多...</a><br /></td></tr>
+<tr class="separator:a85d08984ff64c9473bfcc5ea8a3c8e0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a085179ba572b8e0351604c5dcd3dc4ee"><td class="memItemLeft" align="right" valign="top">quint64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#a085179ba572b8e0351604c5dcd3dc4ee">holdoffTimeoutUSec</a> () const</td></tr>
+<tr class="memdesc:a085179ba572b8e0351604c5dcd3dc4ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">读取系统启动或恢复后, systemd暂不对lid事件做出反应的时间段  <a href="classDLoginManager.html#a085179ba572b8e0351604c5dcd3dc4ee">更多...</a><br /></td></tr>
+<tr class="separator:a085179ba572b8e0351604c5dcd3dc4ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6510df99f1dba025609ab84f575be263"><td class="memItemLeft" align="right" valign="top">quint64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#a6510df99f1dba025609ab84f575be263">idleActionUSec</a> () const</td></tr>
+<tr class="memdesc:a6510df99f1dba025609ab84f575be263"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置系统空闲时采取的行动的动作延迟  <a href="classDLoginManager.html#a6510df99f1dba025609ab84f575be263">更多...</a><br /></td></tr>
+<tr class="separator:a6510df99f1dba025609ab84f575be263"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8166301bbd8a88b71b4ec0d89e9c7551"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="http://doc.qt.io/qt-5/qdatetime.html">QDateTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#a8166301bbd8a88b71b4ec0d89e9c7551">idleSinceHint</a> () const</td></tr>
+<tr class="memdesc:a8166301bbd8a88b71b4ec0d89e9c7551"><td class="mdescLeft">&#160;</td><td class="mdescRight">空闲提示布尔值的最后一次更改的时间  <a href="classDLoginManager.html#a8166301bbd8a88b71b4ec0d89e9c7551">更多...</a><br /></td></tr>
+<tr class="separator:a8166301bbd8a88b71b4ec0d89e9c7551"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a148aec23e0e3e8e61c005254ddc59416"><td class="memItemLeft" align="right" valign="top">quint64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#a148aec23e0e3e8e61c005254ddc59416">idleSinceHintMonotonic</a> () const</td></tr>
+<tr class="memdesc:a148aec23e0e3e8e61c005254ddc59416"><td class="mdescLeft">&#160;</td><td class="mdescRight">空闲提示布尔值的最后一次更改的时间戳  <a href="classDLoginManager.html#a148aec23e0e3e8e61c005254ddc59416">更多...</a><br /></td></tr>
+<tr class="separator:a148aec23e0e3e8e61c005254ddc59416"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfe8a54f24a246fd69a22683b04248ed"><td class="memItemLeft" align="right" valign="top">quint64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#abfe8a54f24a246fd69a22683b04248ed">inhibitDelayMaxUSec</a> () const</td></tr>
+<tr class="memdesc:abfe8a54f24a246fd69a22683b04248ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">读取由于"delay"类型的抑制器锁处于活动状态而延迟系统关闭或睡眠请求的最大时间,默认为5s 5000000us  <a href="classDLoginManager.html#abfe8a54f24a246fd69a22683b04248ed">更多...</a><br /></td></tr>
+<tr class="separator:abfe8a54f24a246fd69a22683b04248ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27243c8c1b502393646f98c64431c11a"><td class="memItemLeft" align="right" valign="top">quint64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#a27243c8c1b502393646f98c64431c11a">inhibitorsMax</a> () const</td></tr>
+<tr class="memdesc:a27243c8c1b502393646f98c64431c11a"><td class="mdescLeft">&#160;</td><td class="mdescRight">读取允许的最大并发抑制器数量, 默认8192  <a href="classDLoginManager.html#a27243c8c1b502393646f98c64431c11a">更多...</a><br /></td></tr>
+<tr class="separator:a27243c8c1b502393646f98c64431c11a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ececc4dabd69bc64d71cc8dd331f30f"><td class="memItemLeft" align="right" valign="top">quint64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#a7ececc4dabd69bc64d71cc8dd331f30f">nCurrentInhibitors</a> () const</td></tr>
+<tr class="memdesc:a7ececc4dabd69bc64d71cc8dd331f30f"><td class="mdescLeft">&#160;</td><td class="mdescRight">读取当前注册抑制器数量  <a href="classDLoginManager.html#a7ececc4dabd69bc64d71cc8dd331f30f">更多...</a><br /></td></tr>
+<tr class="separator:a7ececc4dabd69bc64d71cc8dd331f30f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c964035705273f544bd6ebd726f77ff"><td class="memItemLeft" align="right" valign="top">quint64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#a3c964035705273f544bd6ebd726f77ff">nCurrentSessions</a> () const</td></tr>
+<tr class="memdesc:a3c964035705273f544bd6ebd726f77ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">读取当前注册的会话数量  <a href="classDLoginManager.html#a3c964035705273f544bd6ebd726f77ff">更多...</a><br /></td></tr>
+<tr class="separator:a3c964035705273f544bd6ebd726f77ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38cea875b2f1187a2f7c792a252ccfa7"><td class="memItemLeft" align="right" valign="top">quint64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#a38cea875b2f1187a2f7c792a252ccfa7">runtimeDirectoryInodesMax</a> () const</td></tr>
+<tr class="memdesc:a38cea875b2f1187a2f7c792a252ccfa7"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置每个登录用户的$XDG_RUNTIME_DIR运行时目录的大小限制。  <a href="classDLoginManager.html#a38cea875b2f1187a2f7c792a252ccfa7">更多...</a><br /></td></tr>
+<tr class="separator:a38cea875b2f1187a2f7c792a252ccfa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4753f919a73760a81c33ef9792b780a2"><td class="memItemLeft" align="right" valign="top">quint64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#a4753f919a73760a81c33ef9792b780a2">runtimeDirectorySize</a> () const</td></tr>
+<tr class="memdesc:a4753f919a73760a81c33ef9792b780a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">读取每个登录用户的$XDG_RUNTIME_DIR运行时目录的大小限制。  <a href="classDLoginManager.html#a4753f919a73760a81c33ef9792b780a2">更多...</a><br /></td></tr>
+<tr class="separator:a4753f919a73760a81c33ef9792b780a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1481d1895ac2e2d174aef7a8e9d28d8e"><td class="memItemLeft" align="right" valign="top">quint64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#a1481d1895ac2e2d174aef7a8e9d28d8e">sessionsMax</a> () const</td></tr>
+<tr class="memdesc:a1481d1895ac2e2d174aef7a8e9d28d8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">读取要管理的并发用户会话的最大数量  <a href="classDLoginManager.html#a1481d1895ac2e2d174aef7a8e9d28d8e">更多...</a><br /></td></tr>
+<tr class="separator:a1481d1895ac2e2d174aef7a8e9d28d8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae1f62725f33729a875cb1a39b1417ad"><td class="memItemLeft" align="right" valign="top">quint64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDLoginManager.html#aae1f62725f33729a875cb1a39b1417ad">userStopDelayUSec</a> () const</td></tr>
+<tr class="memdesc:aae1f62725f33729a875cb1a39b1417ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">读取在用户完全注销后为其保留用户记录和每个用户服务user.service的时间  <a href="classDLoginManager.html#aae1f62725f33729a875cb1a39b1417ad">更多...</a><br /></td></tr>
+<tr class="separator:aae1f62725f33729a875cb1a39b1417ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_qobject"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_qobject')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el"  href="http://doc.qt.io/qt-5/qobject.html">QObject</a></td></tr>
+<tr class="memitem:metaObject inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="metaObject"></a>
+virtual const <a class="elRef" href="http://doc.qt.io/qt-5/qmetaobject.html">QMetaObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#metaObject">metaObject</a> () const const</td></tr>
+<tr class="separator:metaObject inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:QObject inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="QObject"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#QObject">QObject</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a>)</td></tr>
+<tr class="separator:QObject inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:event inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="event"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#event">event</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qevent.html">QEvent</a> *e)</td></tr>
+<tr class="separator:event inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:eventFilter inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="eventFilter"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#eventFilter">eventFilter</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *watched, <a class="elRef" href="http://doc.qt.io/qt-5/qevent.html">QEvent</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#event">event</a>)</td></tr>
+<tr class="separator:eventFilter inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:objectName-prop inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="objectName-prop"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#objectName-prop">objectName</a> () const const</td></tr>
+<tr class="separator:objectName-prop inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:objectName-prop inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="objectName-prop"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#objectName-prop">setObjectName</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;name)</td></tr>
+<tr class="separator:objectName-prop inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:isWidgetType inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="isWidgetType"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#isWidgetType">isWidgetType</a> () const const</td></tr>
+<tr class="separator:isWidgetType inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:isWindowType inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="isWindowType"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#isWindowType">isWindowType</a> () const const</td></tr>
+<tr class="separator:isWindowType inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:signalsBlocked inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="signalsBlocked"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#signalsBlocked">signalsBlocked</a> () const const</td></tr>
+<tr class="separator:signalsBlocked inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:blockSignals inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="blockSignals"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#blockSignals">blockSignals</a> (bool block)</td></tr>
+<tr class="separator:blockSignals inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:thread inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="thread"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qthread.html">QThread</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#thread">thread</a> () const const</td></tr>
+<tr class="separator:thread inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:moveToThread inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="moveToThread"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#moveToThread">moveToThread</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qthread.html">QThread</a> *targetThread)</td></tr>
+<tr class="separator:moveToThread inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:startTimer inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="startTimer"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#startTimer">startTimer</a> (int interval, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#TimerType-enum">Qt::TimerType</a> timerType)</td></tr>
+<tr class="separator:startTimer inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:startTimer-1 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="startTimer-1"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#startTimer-1">startTimer</a> (std::chrono::milliseconds time, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#TimerType-enum">Qt::TimerType</a> timerType)</td></tr>
+<tr class="separator:startTimer-1 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:killTimer inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="killTimer"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#killTimer">killTimer</a> (int id)</td></tr>
+<tr class="separator:killTimer inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:findChild inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="findChild"></a>
+T&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#findChild">findChild</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;name, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#FindChildOption-enum">Qt::FindChildOptions</a> options) const const</td></tr>
+<tr class="separator:findChild inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:findChildren inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="findChildren"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qlist.html">QList</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#findChildren">findChildren</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;name, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#FindChildOption-enum">Qt::FindChildOptions</a> options) const const</td></tr>
+<tr class="separator:findChildren inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:findChildren-1 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="findChildren-1"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qlist.html">QList</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject-obsolete.html#findChildren-1">findChildren</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qregexp.html">QRegExp</a> &amp;regExp, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#FindChildOption-enum">Qt::FindChildOptions</a> options) const const</td></tr>
+<tr class="separator:findChildren-1 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:findChildren-2 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="findChildren-2"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qlist.html">QList</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#findChildren-2">findChildren</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qregularexpression.html">QRegularExpression</a> &amp;re, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#FindChildOption-enum">Qt::FindChildOptions</a> options) const const</td></tr>
+<tr class="separator:findChildren-2 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:children inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="children"></a>
+const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#QObjectList-typedef">QObjectList</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#children">children</a> () const const</td></tr>
+<tr class="separator:children inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setParent inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="setParent"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#setParent">setParent</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a>)</td></tr>
+<tr class="separator:setParent inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:installEventFilter inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="installEventFilter"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#installEventFilter">installEventFilter</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *filterObj)</td></tr>
+<tr class="separator:installEventFilter inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:removeEventFilter inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="removeEventFilter"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#removeEventFilter">removeEventFilter</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *obj)</td></tr>
+<tr class="separator:removeEventFilter inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connect-2 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect-2"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#connect-2">connect</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const char *signal, const char *method, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#ConnectionType-enum">Qt::ConnectionType</a> type) const const</td></tr>
+<tr class="separator:connect-2 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnect-2 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect-2"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#disconnect-2">disconnect</a> (const char *signal, const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const char *method) const const</td></tr>
+<tr class="separator:disconnect-2 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnect-3 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect-3"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#disconnect-3">disconnect</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const char *method) const const</td></tr>
+<tr class="separator:disconnect-3 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dumpObjectTree-1 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="dumpObjectTree-1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject-obsolete.html#dumpObjectTree-1">dumpObjectTree</a> ()</td></tr>
+<tr class="separator:dumpObjectTree-1 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dumpObjectInfo-1 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="dumpObjectInfo-1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject-obsolete.html#dumpObjectInfo-1">dumpObjectInfo</a> ()</td></tr>
+<tr class="separator:dumpObjectInfo-1 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dumpObjectTree inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="dumpObjectTree"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#dumpObjectTree">dumpObjectTree</a> () const const</td></tr>
+<tr class="separator:dumpObjectTree inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dumpObjectInfo inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="dumpObjectInfo"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#dumpObjectInfo">dumpObjectInfo</a> () const const</td></tr>
+<tr class="separator:dumpObjectInfo inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setProperty inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="setProperty"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#setProperty">setProperty</a> (const char *name, const <a class="elRef" href="http://doc.qt.io/qt-5/qvariant.html">QVariant</a> &amp;value)</td></tr>
+<tr class="separator:setProperty inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:property inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="property"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qvariant.html">QVariant</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#property">property</a> (const char *name) const const</td></tr>
+<tr class="separator:property inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dynamicPropertyNames inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="dynamicPropertyNames"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qlist.html">QList</a>&lt; <a class="elRef" href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#dynamicPropertyNames">dynamicPropertyNames</a> () const const</td></tr>
+<tr class="separator:dynamicPropertyNames inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:destroyed inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="destroyed"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#destroyed">destroyed</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *obj)</td></tr>
+<tr class="separator:destroyed inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:objectNameChanged inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="objectNameChanged"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#objectNameChanged">objectNameChanged</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#objectName-prop">objectName</a>)</td></tr>
+<tr class="separator:objectNameChanged inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:parent inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="parent"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a> () const const</td></tr>
+<tr class="separator:parent inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:inherits inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="inherits"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#inherits">inherits</a> (const char *className) const const</td></tr>
+<tr class="separator:inherits inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:deleteLater inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="deleteLater"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#deleteLater">deleteLater</a> ()</td></tr>
+<tr class="separator:deleteLater inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_DISABLE_COPY inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_DISABLE_COPY"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_DISABLE_COPY">Q_DISABLE_COPY</a> (Class)</td></tr>
+<tr class="separator:Q_DISABLE_COPY inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_DISABLE_MOVE inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_DISABLE_MOVE"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_DISABLE_MOVE">Q_DISABLE_MOVE</a> (Class)</td></tr>
+<tr class="separator:Q_DISABLE_MOVE inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_DISABLE_COPY_MOVE inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_DISABLE_COPY_MOVE"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_DISABLE_COPY_MOVE">Q_DISABLE_COPY_MOVE</a> (Class)</td></tr>
+<tr class="separator:Q_DISABLE_COPY_MOVE inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:qobject_cast inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="qobject_cast"></a>
+T&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#qobject_cast">qobject_cast</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *object)</td></tr>
+<tr class="separator:qobject_cast inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:qobject_cast-1 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="qobject_cast-1"></a>
+T&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#qobject_cast-1">qobject_cast</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *object)</td></tr>
+<tr class="separator:qobject_cast-1 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:qFindChild inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="qFindChild"></a>
+T&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject-obsolete.html#qFindChild">qFindChild</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *obj, const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;name)</td></tr>
+<tr class="separator:qFindChild inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:qFindChildren inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="qFindChildren"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qlist.html">QList</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject-obsolete.html#qFindChildren">qFindChildren</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *obj, const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;name)</td></tr>
+<tr class="separator:qFindChildren inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:qFindChildren-1 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="qFindChildren-1"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qlist.html">QList</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#qFindChildren-1">qFindChildren</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *obj, const <a class="elRef" href="http://doc.qt.io/qt-5/qregexp.html">QRegExp</a> &amp;regExp)</td></tr>
+<tr class="separator:qFindChildren-1 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_CLASSINFO inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_CLASSINFO"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_CLASSINFO">Q_CLASSINFO</a> (Name, Value)</td></tr>
+<tr class="separator:Q_CLASSINFO inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_INTERFACES inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_INTERFACES"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_INTERFACES">Q_INTERFACES</a> (...)</td></tr>
+<tr class="separator:Q_INTERFACES inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_PROPERTY inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_PROPERTY"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a> (...)</td></tr>
+<tr class="separator:Q_PROPERTY inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_ENUMS inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_ENUMS"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject-obsolete.html#Q_ENUMS">Q_ENUMS</a> (...)</td></tr>
+<tr class="separator:Q_ENUMS inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_FLAGS inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_FLAGS"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject-obsolete.html#Q_FLAGS">Q_FLAGS</a> (...)</td></tr>
+<tr class="separator:Q_FLAGS inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_ENUM inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_ENUM"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_ENUM">Q_ENUM</a> (...)</td></tr>
+<tr class="separator:Q_ENUM inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_FLAG inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_FLAG"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_FLAG">Q_FLAG</a> (...)</td></tr>
+<tr class="separator:Q_FLAG inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_ENUM_NS inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_ENUM_NS"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_ENUM_NS">Q_ENUM_NS</a> (...)</td></tr>
+<tr class="separator:Q_ENUM_NS inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_FLAG_NS inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_FLAG_NS"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_FLAG_NS">Q_FLAG_NS</a> (...)</td></tr>
+<tr class="separator:Q_FLAG_NS inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_OBJECT inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_OBJECT"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">Q_OBJECT</a> Q_OBJECT</td></tr>
+<tr class="separator:Q_OBJECT inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_GADGET inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_GADGET"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_GADGET">Q_GADGET</a> Q_GADGET</td></tr>
+<tr class="separator:Q_GADGET inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_NAMESPACE inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_NAMESPACE"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_NAMESPACE">Q_NAMESPACE</a> Q_NAMESPACE</td></tr>
+<tr class="separator:Q_NAMESPACE inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_NAMESPACE_EXPORT inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_NAMESPACE_EXPORT"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_NAMESPACE_EXPORT">Q_NAMESPACE_EXPORT</a> (EXPORT_MACRO)</td></tr>
+<tr class="separator:Q_NAMESPACE_EXPORT inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_SIGNALS inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_SIGNALS"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SIGNALS">Q_SIGNALS</a> Q_SIGNALS</td></tr>
+<tr class="separator:Q_SIGNALS inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_SIGNAL inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_SIGNAL"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SIGNAL">Q_SIGNAL</a> Q_SIGNAL</td></tr>
+<tr class="separator:Q_SIGNAL inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_SLOTS inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_SLOTS"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SLOTS">Q_SLOTS</a> Q_SLOTS</td></tr>
+<tr class="separator:Q_SLOTS inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_SLOT inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_SLOT"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SLOT">Q_SLOT</a> Q_SLOT</td></tr>
+<tr class="separator:Q_SLOT inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_EMIT inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_EMIT"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_EMIT">Q_EMIT</a> Q_EMIT</td></tr>
+<tr class="separator:Q_EMIT inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_INVOKABLE inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_INVOKABLE"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_INVOKABLE">Q_INVOKABLE</a> Q_INVOKABLE</td></tr>
+<tr class="separator:Q_INVOKABLE inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_REVISION inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_REVISION"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_REVISION">Q_REVISION</a> Q_REVISION</td></tr>
+<tr class="separator:Q_REVISION inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_SET_OBJECT_NAME inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_SET_OBJECT_NAME"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SET_OBJECT_NAME">Q_SET_OBJECT_NAME</a> (<a class="el" href="classObject.html">Object</a>)</td></tr>
+<tr class="separator:Q_SET_OBJECT_NAME inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:QT_NO_NARROWING_CONVERSIONS_IN_CONNECT inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="QT_NO_NARROWING_CONVERSIONS_IN_CONNECT"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#QT_NO_NARROWING_CONVERSIONS_IN_CONNECT">QT_NO_NARROWING_CONVERSIONS_IN_CONNECT</a> QT_NO_NARROWING_CONVERSIONS_IN_CONNECT</td></tr>
+<tr class="separator:QT_NO_NARROWING_CONVERSIONS_IN_CONNECT inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:afd3033581501240d207f0cab9da75523"><td class="memItemLeft" align="right" valign="top"><a id="afd3033581501240d207f0cab9da75523"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a>&#160;</td><td class="memItemRight" valign="bottom"><b>killExcludeUsers</b></td></tr>
+<tr class="separator:afd3033581501240d207f0cab9da75523"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3790afaeda70af8159a5e71f7360dc5"><td class="memItemLeft" align="right" valign="top"><a id="aa3790afaeda70af8159a5e71f7360dc5"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a>&#160;</td><td class="memItemRight" valign="bottom"><b>killOnlyUsers</b></td></tr>
+<tr class="separator:aa3790afaeda70af8159a5e71f7360dc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af44095ca15dfe0ffca11a730f2ab9885"><td class="memItemLeft" align="right" valign="top"><a id="af44095ca15dfe0ffca11a730f2ab9885"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>docked</b></td></tr>
+<tr class="separator:af44095ca15dfe0ffca11a730f2ab9885"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeac6ab7cdaae56f824118c6f24cc55bc"><td class="memItemLeft" align="right" valign="top"><a id="aeac6ab7cdaae56f824118c6f24cc55bc"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>idleHint</b></td></tr>
+<tr class="separator:aeac6ab7cdaae56f824118c6f24cc55bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf4e20e78917d5b326ad2a86119e6852"><td class="memItemLeft" align="right" valign="top"><a id="acf4e20e78917d5b326ad2a86119e6852"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>killUserProcesses</b></td></tr>
+<tr class="separator:acf4e20e78917d5b326ad2a86119e6852"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc7b903cb500a5efa782a66de921c932"><td class="memItemLeft" align="right" valign="top"><a id="acc7b903cb500a5efa782a66de921c932"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>lidClosed</b></td></tr>
+<tr class="separator:acc7b903cb500a5efa782a66de921c932"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae71a69285b27e560c137ef6f72aaa220"><td class="memItemLeft" align="right" valign="top"><a id="ae71a69285b27e560c137ef6f72aaa220"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>preparingForShutdown</b></td></tr>
+<tr class="separator:ae71a69285b27e560c137ef6f72aaa220"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15a1395c1313e1989871ef2e5ceed8b9"><td class="memItemLeft" align="right" valign="top"><a id="a15a1395c1313e1989871ef2e5ceed8b9"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>preparingForSleep</b></td></tr>
+<tr class="separator:a15a1395c1313e1989871ef2e5ceed8b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acce396066a9fc8d5d9c2681c98e3f6a3"><td class="memItemLeft" align="right" valign="top"><a id="acce396066a9fc8d5d9c2681c98e3f6a3"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>removeIPC</b></td></tr>
+<tr class="separator:acce396066a9fc8d5d9c2681c98e3f6a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad061f9764d9a8795e0f3bfc956661ce"><td class="memItemLeft" align="right" valign="top"><a id="aad061f9764d9a8795e0f3bfc956661ce"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>blockInhibited</b></td></tr>
+<tr class="separator:aad061f9764d9a8795e0f3bfc956661ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92d420e1c351e20ac820c7e599638f8f"><td class="memItemLeft" align="right" valign="top"><a id="a92d420e1c351e20ac820c7e599638f8f"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>delayInhibited</b></td></tr>
+<tr class="separator:a92d420e1c351e20ac820c7e599638f8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ca81435012383433ee602b204b0805d"><td class="memItemLeft" align="right" valign="top"><a id="a4ca81435012383433ee602b204b0805d"></a>
+<a class="el" href="dlogintypes_8h.html#a2bb25797f4265d9041919b9d3bc858e7">PowerAction</a>&#160;</td><td class="memItemRight" valign="bottom"><b>handleHibernateKey</b></td></tr>
+<tr class="separator:a4ca81435012383433ee602b204b0805d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab01bedd3fc57fe5be7d2bfda94c7fd0b"><td class="memItemLeft" align="right" valign="top"><a id="ab01bedd3fc57fe5be7d2bfda94c7fd0b"></a>
+<a class="el" href="dlogintypes_8h.html#a2bb25797f4265d9041919b9d3bc858e7">PowerAction</a>&#160;</td><td class="memItemRight" valign="bottom"><b>handleLidSwitch</b></td></tr>
+<tr class="separator:ab01bedd3fc57fe5be7d2bfda94c7fd0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1be234aa519f7d3ad785f01df401b032"><td class="memItemLeft" align="right" valign="top"><a id="a1be234aa519f7d3ad785f01df401b032"></a>
+<a class="el" href="dlogintypes_8h.html#a2bb25797f4265d9041919b9d3bc858e7">PowerAction</a>&#160;</td><td class="memItemRight" valign="bottom"><b>handleLidSwitchDocked</b></td></tr>
+<tr class="separator:a1be234aa519f7d3ad785f01df401b032"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26f8e08f1887d924b5ecb7928f7e70d9"><td class="memItemLeft" align="right" valign="top"><a id="a26f8e08f1887d924b5ecb7928f7e70d9"></a>
+<a class="el" href="dlogintypes_8h.html#a2bb25797f4265d9041919b9d3bc858e7">PowerAction</a>&#160;</td><td class="memItemRight" valign="bottom"><b>handleLidSwitchExternalPower</b></td></tr>
+<tr class="separator:a26f8e08f1887d924b5ecb7928f7e70d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6238575de181971cb6f146c75a0b87cc"><td class="memItemLeft" align="right" valign="top"><a id="a6238575de181971cb6f146c75a0b87cc"></a>
+<a class="el" href="dlogintypes_8h.html#a2bb25797f4265d9041919b9d3bc858e7">PowerAction</a>&#160;</td><td class="memItemRight" valign="bottom"><b>handlePowerKey</b></td></tr>
+<tr class="separator:a6238575de181971cb6f146c75a0b87cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9466edefb787545b44f17957d0303ad5"><td class="memItemLeft" align="right" valign="top"><a id="a9466edefb787545b44f17957d0303ad5"></a>
+<a class="el" href="dlogintypes_8h.html#a2bb25797f4265d9041919b9d3bc858e7">PowerAction</a>&#160;</td><td class="memItemRight" valign="bottom"><b>handleSuspendKey</b></td></tr>
+<tr class="separator:a9466edefb787545b44f17957d0303ad5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ac437456b06d3b1ed622eee1c49ec21"><td class="memItemLeft" align="right" valign="top"><a id="a9ac437456b06d3b1ed622eee1c49ec21"></a>
+<a class="el" href="dlogintypes_8h.html#a2bb25797f4265d9041919b9d3bc858e7">PowerAction</a>&#160;</td><td class="memItemRight" valign="bottom"><b>idleAction</b></td></tr>
+<tr class="separator:a9ac437456b06d3b1ed622eee1c49ec21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9195889acc281e848b97c50b4f122f1e"><td class="memItemLeft" align="right" valign="top"><a id="a9195889acc281e848b97c50b4f122f1e"></a>
+<a class="el" href="structScheduledShutdownValue.html">ScheduledShutdownValue</a>&#160;</td><td class="memItemRight" valign="bottom"><b>scheduledShutdown</b></td></tr>
+<tr class="separator:a9195889acc281e848b97c50b4f122f1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8631cae2257389cbef50fa91d7f3d2ae"><td class="memItemLeft" align="right" valign="top"><a id="a8631cae2257389cbef50fa91d7f3d2ae"></a>
+quint32&#160;</td><td class="memItemRight" valign="bottom"><b>nAutoVTs</b></td></tr>
+<tr class="separator:a8631cae2257389cbef50fa91d7f3d2ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2fbf54000d6c0003e7137dcc2246448"><td class="memItemLeft" align="right" valign="top"><a id="aa2fbf54000d6c0003e7137dcc2246448"></a>
+quint64&#160;</td><td class="memItemRight" valign="bottom"><b>holdoffTimeoutUSec</b></td></tr>
+<tr class="separator:aa2fbf54000d6c0003e7137dcc2246448"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84bd5f941a4cd8e217763c9c9bb85d3d"><td class="memItemLeft" align="right" valign="top"><a id="a84bd5f941a4cd8e217763c9c9bb85d3d"></a>
+quint64&#160;</td><td class="memItemRight" valign="bottom"><b>idleActionUSec</b></td></tr>
+<tr class="separator:a84bd5f941a4cd8e217763c9c9bb85d3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c472a123aa902f84cd6b50a2be17f02"><td class="memItemLeft" align="right" valign="top"><a id="a6c472a123aa902f84cd6b50a2be17f02"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qdatetime.html">QDateTime</a>&#160;</td><td class="memItemRight" valign="bottom"><b>idleSinceHint</b></td></tr>
+<tr class="separator:a6c472a123aa902f84cd6b50a2be17f02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeaba945d38bcc4461c2d1ea0eedb2686"><td class="memItemLeft" align="right" valign="top"><a id="aeaba945d38bcc4461c2d1ea0eedb2686"></a>
+quint64&#160;</td><td class="memItemRight" valign="bottom"><b>idleSinceHintMonotonic</b></td></tr>
+<tr class="separator:aeaba945d38bcc4461c2d1ea0eedb2686"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63044d1c2ce1c7ea58a2653b059de701"><td class="memItemLeft" align="right" valign="top"><a id="a63044d1c2ce1c7ea58a2653b059de701"></a>
+quint64&#160;</td><td class="memItemRight" valign="bottom"><b>inhibitDelayMaxUSec</b></td></tr>
+<tr class="separator:a63044d1c2ce1c7ea58a2653b059de701"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d31d928c2b1e898c712ff191f792687"><td class="memItemLeft" align="right" valign="top"><a id="a7d31d928c2b1e898c712ff191f792687"></a>
+quint64&#160;</td><td class="memItemRight" valign="bottom"><b>inhibitorsMax</b></td></tr>
+<tr class="separator:a7d31d928c2b1e898c712ff191f792687"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49a335addd7addcf81e727f6b2a8273d"><td class="memItemLeft" align="right" valign="top"><a id="a49a335addd7addcf81e727f6b2a8273d"></a>
+quint64&#160;</td><td class="memItemRight" valign="bottom"><b>nCurrentInhibitors</b></td></tr>
+<tr class="separator:a49a335addd7addcf81e727f6b2a8273d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd03eb2164955d8d4935f0badd6cef29"><td class="memItemLeft" align="right" valign="top"><a id="acd03eb2164955d8d4935f0badd6cef29"></a>
+quint64&#160;</td><td class="memItemRight" valign="bottom"><b>nCurrentSessions</b></td></tr>
+<tr class="separator:acd03eb2164955d8d4935f0badd6cef29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8034fdf86eadd902d2a36cca121431a"><td class="memItemLeft" align="right" valign="top"><a id="ad8034fdf86eadd902d2a36cca121431a"></a>
+quint64&#160;</td><td class="memItemRight" valign="bottom"><b>runtimeDirectoryInodesMax</b></td></tr>
+<tr class="separator:ad8034fdf86eadd902d2a36cca121431a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b9554b772a320811b9286b0a720323e"><td class="memItemLeft" align="right" valign="top"><a id="a3b9554b772a320811b9286b0a720323e"></a>
+quint64&#160;</td><td class="memItemRight" valign="bottom"><b>runtimeDirectorySize</b></td></tr>
+<tr class="separator:a3b9554b772a320811b9286b0a720323e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae304b4a523806d7fcda19d50e5ebd01a"><td class="memItemLeft" align="right" valign="top"><a id="ae304b4a523806d7fcda19d50e5ebd01a"></a>
+quint64&#160;</td><td class="memItemRight" valign="bottom"><b>sessionsMax</b></td></tr>
+<tr class="separator:ae304b4a523806d7fcda19d50e5ebd01a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af32e1923f9e9c89473e904969600a267"><td class="memItemLeft" align="right" valign="top"><a id="af32e1923f9e9c89473e904969600a267"></a>
+quint64&#160;</td><td class="memItemRight" valign="bottom"><b>userStopDelayUSec</b></td></tr>
+<tr class="separator:af32e1923f9e9c89473e904969600a267"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header properties_qobject"><td colspan="2" onclick="javascript:toggleInherit('properties_qobject')"><img src="closed.png" alt="-"/>&#160;属性 继承自 <a class="el"  href="http://doc.qt.io/qt-5/qobject.html">QObject</a></td></tr>
+<tr class="memitem:objectName-prop inherit properties_qobject"><td class="memItemLeft" align="right" valign="top"><a id="objectName-prop"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#objectName-prop">objectName</a></td></tr>
+<tr class="separator:objectName-prop inherit properties_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pub_static_methods_qobject"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_qobject')"><img src="closed.png" alt="-"/>&#160;静态 Public 成员函数 继承自 <a class="el"  href="http://doc.qt.io/qt-5/qobject.html">QObject</a></td></tr>
+<tr class="memitem:tr inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="tr"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#tr">tr</a> (const char *sourceText, const char *disambiguation, int n)</td></tr>
+<tr class="separator:tr inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:trUtf8 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="trUtf8"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject-obsolete.html#trUtf8">trUtf8</a> (const char *sourceText, const char *disambiguation, int n)</td></tr>
+<tr class="separator:trUtf8 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connect inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#connect">connect</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const char *signal, const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const char *method, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#ConnectionType-enum">Qt::ConnectionType</a> type)</td></tr>
+<tr class="separator:connect inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connect-1 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect-1"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#connect-1">connect</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const <a class="elRef" href="http://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;signal, const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const <a class="elRef" href="http://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;method, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#ConnectionType-enum">Qt::ConnectionType</a> type)</td></tr>
+<tr class="separator:connect-1 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connect-3 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect-3"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#connect-3">connect</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#sender">sender</a>, PointerToMemberFunction signal, const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, PointerToMemberFunction method, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#ConnectionType-enum">Qt::ConnectionType</a> type)</td></tr>
+<tr class="separator:connect-3 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connect-4 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect-4"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#connect-4">connect</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#sender">sender</a>, PointerToMemberFunction signal, Functor functor)</td></tr>
+<tr class="separator:connect-4 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connect-5 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect-5"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#connect-5">connect</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#sender">sender</a>, PointerToMemberFunction signal, const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *context, Functor functor, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#ConnectionType-enum">Qt::ConnectionType</a> type)</td></tr>
+<tr class="separator:connect-5 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnect inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#disconnect">disconnect</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const char *signal, const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const char *method)</td></tr>
+<tr class="separator:disconnect inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnect-1 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect-1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#disconnect-1">disconnect</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const <a class="elRef" href="http://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;signal, const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const <a class="elRef" href="http://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;method)</td></tr>
+<tr class="separator:disconnect-1 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnect-4 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect-4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#disconnect-4">disconnect</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a> &amp;connection)</td></tr>
+<tr class="separator:disconnect-4 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnect-5 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect-5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#disconnect-5">disconnect</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#sender">sender</a>, PointerToMemberFunction signal, const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, PointerToMemberFunction method)</td></tr>
+<tr class="separator:disconnect-5 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_qobject"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_qobject')"><img src="closed.png" alt="-"/>&#160;Public 属性 继承自 <a class="el"  href="http://doc.qt.io/qt-5/qobject.html">QObject</a></td></tr>
+<tr class="memitem:QObjectList-typedef inherit pub_attribs_qobject"><td class="memItemLeft" align="right" valign="top"><a id="QObjectList-typedef"></a>
+typedef&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#QObjectList-typedef">QObjectList</a></td></tr>
+<tr class="separator:QObjectList-typedef inherit pub_attribs_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_qobject"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_qobject')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el"  href="http://doc.qt.io/qt-5/qobject.html">QObject</a></td></tr>
+<tr class="memitem:sender inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="sender"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#sender">sender</a> () const const</td></tr>
+<tr class="separator:sender inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:senderSignalIndex inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="senderSignalIndex"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#senderSignalIndex">senderSignalIndex</a> () const const</td></tr>
+<tr class="separator:senderSignalIndex inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:receivers inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="receivers"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#receivers">receivers</a> (const char *signal) const const</td></tr>
+<tr class="separator:receivers inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:isSignalConnected inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="isSignalConnected"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#isSignalConnected">isSignalConnected</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;signal) const const</td></tr>
+<tr class="separator:isSignalConnected inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:timerEvent inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="timerEvent"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#timerEvent">timerEvent</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qtimerevent.html">QTimerEvent</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#event">event</a>)</td></tr>
+<tr class="separator:timerEvent inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:childEvent inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="childEvent"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#childEvent">childEvent</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qchildevent.html">QChildEvent</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#event">event</a>)</td></tr>
+<tr class="separator:childEvent inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:customEvent inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="customEvent"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#customEvent">customEvent</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qevent.html">QEvent</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#event">event</a>)</td></tr>
+<tr class="separator:customEvent inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connectNotify inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connectNotify"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#connectNotify">connectNotify</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;signal)</td></tr>
+<tr class="separator:connectNotify inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnectNotify inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnectNotify"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#disconnectNotify">disconnectNotify</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;signal)</td></tr>
+<tr class="separator:disconnectNotify inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="ac47aa2520657ed5a657745ecba7f2cda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac47aa2520657ed5a657745ecba7f2cda">&#9670;&nbsp;</a></span>blockInhibited()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> DLoginManager::blockInhibited </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>读取各个模式的当前活动锁: </p>
+<dl class="section return"><dt>返回</dt><dd>例如："handle-power-key"、"handle-suspend-key" 、"handle-lid-switch" </dd></dl>
+
+</div>
+</div>
+<a id="ab2bc42ca4f773c7b597c3f8ba38771bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2bc42ca4f773c7b597c3f8ba38771bb">&#9670;&nbsp;</a></span>cancelScheduledShutdown</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DExpected&lt; bool &gt; DLoginManager::cancelScheduledShutdown </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>取消一个预定的关机 </p>
+<dl class="section see"><dt>参见</dt><dd>void DLoginManager::scheduleShutdown(const ShutdownType type, const QDateTime &amp;usec) </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">true</td><td>计划了关机操作并且被此操作取消 </td></tr>
+    <tr><td class="paramname">false</td><td>未计划关机操作 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6fd29270aaf5f6b86928edc4761a2133"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fd29270aaf5f6b86928edc4761a2133">&#9670;&nbsp;</a></span>canHalt</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DExpected&lt; <a class="el" href="dlogintypes_8h.html#af731d761e6bc00fb129beb923360caac">ExecuteStatus</a> &gt; DLoginManager::canHalt </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取当前用户下计算机是否支持停止 </p>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">Na</td><td>该操作不可用, 因为硬件、内核或驱动程序不支持它。 </td></tr>
+    <tr><td class="paramname">Yes</td><td>表示支持该操作, 用户无需进一步认证即可执行该操作。 </td></tr>
+    <tr><td class="paramname">No</td><td>表示该操作可用, 但不允许用户执行该操作。 </td></tr>
+    <tr><td class="paramname">Challenge</td><td>返回, 操作可用, 但必须经过授权。 </td></tr>
+    <tr><td class="paramname">Unknown</td><td>未知或者其他状态 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aac1a6f21eced36e1c12d3cef7e3db4a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac1a6f21eced36e1c12d3cef7e3db4a8">&#9670;&nbsp;</a></span>canHibernate</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DExpected&lt; <a class="el" href="dlogintypes_8h.html#af731d761e6bc00fb129beb923360caac">DTK_LOGIN_NAMESPACE::ExecuteStatus</a> &gt; DLoginManager::canHibernate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取当前用户下计算机是否支持休眠 </p>
+<dl class="section note"><dt>注解</dt><dd>休眠：将内存中数据保存到磁盘并将机器关闭 </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">Na</td><td>该操作不可用, 因为硬件、内核或驱动程序不支持它。 </td></tr>
+    <tr><td class="paramname">Yes</td><td>表示支持该操作, 用户无需进一步认证即可执行该操作。 </td></tr>
+    <tr><td class="paramname">No</td><td>表示该操作可用, 但不允许用户执行该操作。 </td></tr>
+    <tr><td class="paramname">Challenge</td><td>返回, 操作可用, 但必须经过授权。 </td></tr>
+    <tr><td class="paramname">Unknown</td><td>未知或者其他状态 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3263f72250ed116570107b42a3130a78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3263f72250ed116570107b42a3130a78">&#9670;&nbsp;</a></span>canHybridSleep</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DExpected&lt; <a class="el" href="dlogintypes_8h.html#af731d761e6bc00fb129beb923360caac">DTK_LOGIN_NAMESPACE::ExecuteStatus</a> &gt; DLoginManager::canHybridSleep </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取当前用户下计算机是否支持混合睡眠 </p>
+<dl class="section note"><dt>注解</dt><dd>混合睡眠：即系统既休眠又挂起 </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">Na</td><td>该操作不可用, 因为硬件、内核或驱动程序不支持它。 </td></tr>
+    <tr><td class="paramname">Yes</td><td>表示支持该操作, 用户无需进一步认证即可执行该操作。 </td></tr>
+    <tr><td class="paramname">No</td><td>表示该操作可用, 但不允许用户执行该操作。 </td></tr>
+    <tr><td class="paramname">Challenge</td><td>返回, 操作可用, 但必须经过授权。 </td></tr>
+    <tr><td class="paramname">Unknown</td><td>未知或者其他状态 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a340b865056d9496c988cd3cba945ca5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a340b865056d9496c988cd3cba945ca5c">&#9670;&nbsp;</a></span>canPowerOff</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DExpected&lt; <a class="el" href="dlogintypes_8h.html#af731d761e6bc00fb129beb923360caac">DTK_LOGIN_NAMESPACE::ExecuteStatus</a> &gt; DLoginManager::canPowerOff </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取当前用户下计算机是否支持关机 </p>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">Na</td><td>该操作不可用, 因为硬件、内核或驱动程序不支持它。 </td></tr>
+    <tr><td class="paramname">Yes</td><td>表示支持该操作, 用户无需进一步认证即可执行该操作。 </td></tr>
+    <tr><td class="paramname">No</td><td>表示该操作可用, 但不允许用户执行该操作。 </td></tr>
+    <tr><td class="paramname">Challenge</td><td>返回, 操作可用, 但必须经过授权。 </td></tr>
+    <tr><td class="paramname">Unknown</td><td>未知或者其他状态 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9070a9f26154e9b7c58899f5a0671feb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9070a9f26154e9b7c58899f5a0671feb">&#9670;&nbsp;</a></span>canReboot</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DExpected&lt; <a class="el" href="dlogintypes_8h.html#af731d761e6bc00fb129beb923360caac">DTK_LOGIN_NAMESPACE::ExecuteStatus</a> &gt; DLoginManager::canReboot </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取当前用户下计算机是否支持重启 </p>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">Na</td><td>该操作不可用, 因为硬件、内核或驱动程序不支持它。 </td></tr>
+    <tr><td class="paramname">Yes</td><td>表示支持该操作, 用户无需进一步认证即可执行该操作。 </td></tr>
+    <tr><td class="paramname">No</td><td>表示该操作可用, 但不允许用户执行该操作。 </td></tr>
+    <tr><td class="paramname">Challenge</td><td>返回, 操作可用, 但必须经过授权。 </td></tr>
+    <tr><td class="paramname">Unknown</td><td>未知或者其他状态 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a24bf13e858c7761a8a08f3d5265dfbae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24bf13e858c7761a8a08f3d5265dfbae">&#9670;&nbsp;</a></span>canSuspend</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DExpected&lt; <a class="el" href="dlogintypes_8h.html#af731d761e6bc00fb129beb923360caac">DTK_LOGIN_NAMESPACE::ExecuteStatus</a> &gt; DLoginManager::canSuspend </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取当前用户下计算机是否支持挂起 </p>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">Na</td><td>该操作不可用, 因为硬件、内核或驱动程序不支持它。 </td></tr>
+    <tr><td class="paramname">Yes</td><td>表示支持该操作, 用户无需进一步认证即可执行该操作。 </td></tr>
+    <tr><td class="paramname">No</td><td>表示该操作可用, 但不允许用户执行该操作。 </td></tr>
+    <tr><td class="paramname">Challenge</td><td>返回, 操作可用, 但必须经过授权。 </td></tr>
+    <tr><td class="paramname">Unknown</td><td>未知或者其他状态 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af9f9313cc59efde30a784c8c8366c3ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9f9313cc59efde30a784c8c8366c3ad">&#9670;&nbsp;</a></span>canSuspendThenHibernate</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DExpected&lt; <a class="el" href="dlogintypes_8h.html#af731d761e6bc00fb129beb923360caac">DTK_LOGIN_NAMESPACE::ExecuteStatus</a> &gt; DLoginManager::canSuspendThenHibernate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取当前用户下计算机是否支持挂起然后休眠 </p>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">Na</td><td>该操作不可用, 因为硬件、内核或驱动程序不支持它。 </td></tr>
+    <tr><td class="paramname">Yes</td><td>表示支持该操作, 用户无需进一步认证即可执行该操作。 </td></tr>
+    <tr><td class="paramname">No</td><td>表示该操作可用, 但不允许用户执行该操作。 </td></tr>
+    <tr><td class="paramname">Challenge</td><td>返回, 操作可用, 但必须经过授权。 </td></tr>
+    <tr><td class="paramname">Unknown</td><td>未知或者其他状态 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af327c3d24e846226c1ed0caa6feacc4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af327c3d24e846226c1ed0caa6feacc4a">&#9670;&nbsp;</a></span>currentSeat</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DExpected&lt; <a class="elRef" href="http://doc.qt.io/qt-5/qsharedpointer.html">LoginSeatPtr</a> &gt; DLoginManager::currentSeat </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>当前的seat </p>
+<dl class="section return"><dt>返回</dt><dd>返回当前的seat对象 </dd></dl>
+
+</div>
+</div>
+<a id="aab54260ce61248a4e535a588dd1358eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab54260ce61248a4e535a588dd1358eb">&#9670;&nbsp;</a></span>currentSession</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DExpected&lt; <a class="elRef" href="http://doc.qt.io/qt-5/qsharedpointer.html">LoginSessionPtr</a> &gt; DLoginManager::currentSession </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>当前的session </p>
+<dl class="section return"><dt>返回</dt><dd>返回当前的seat对象 </dd></dl>
+
+</div>
+</div>
+<a id="aba29d5d744c1b455de9e9b150b66b0f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba29d5d744c1b455de9e9b150b66b0f7">&#9670;&nbsp;</a></span>currentUser</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DExpected&lt; <a class="elRef" href="http://doc.qt.io/qt-5/qsharedpointer.html">LoginUserPtr</a> &gt; DLoginManager::currentUser </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>当前的user </p>
+<dl class="section return"><dt>返回</dt><dd>返回当前的user对象 </dd></dl>
+
+</div>
+</div>
+<a id="a6f846c5448368eb25933b583cb6f2fc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f846c5448368eb25933b583cb6f2fc5">&#9670;&nbsp;</a></span>delayInhibited()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> DLoginManager::delayInhibited </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>读取各个模式的当前活动锁 </p>
+<dl class="section return"><dt>返回</dt><dd>例如："sleep" </dd></dl>
+
+</div>
+</div>
+<a id="a10de27f42a0672b43824c36061d05be1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10de27f42a0672b43824c36061d05be1">&#9670;&nbsp;</a></span>docked()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DLoginManager::docked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>如果机器被连接到一个底座或者拓展坞（包含usbhub）上, Docked取值为true </p>
+<dl class="section return"><dt>返回</dt><dd>布尔值 </dd></dl>
+
+</div>
+</div>
+<a id="a2a3286077b5684a64f6296631097292a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a3286077b5684a64f6296631097292a">&#9670;&nbsp;</a></span>findSeatById</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DExpected&lt; <a class="elRef" href="http://doc.qt.io/qt-5/qsharedpointer.html">LoginSeatPtr</a> &gt; DLoginManager::findSeatById </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>seatId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取seat对象 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">seatId</td><td>seatId, 例如：“seat0” </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>seat对象 </dd></dl>
+
+</div>
+</div>
+<a id="aacf70b6db436d55a2361388ace57bd5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacf70b6db436d55a2361388ace57bd5a">&#9670;&nbsp;</a></span>findSessionById</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DExpected&lt; <a class="elRef" href="http://doc.qt.io/qt-5/qsharedpointer.html">LoginSessionPtr</a> &gt; DLoginManager::findSessionById </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>sessionId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取session对象 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sessionId</td><td>例如：“2” </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>session对象 </dd></dl>
+
+</div>
+</div>
+<a id="ac9b8f98b427fe8e1527ea436f09e5832"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9b8f98b427fe8e1527ea436f09e5832">&#9670;&nbsp;</a></span>findSessionByPID</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DExpected&lt; <a class="elRef" href="http://doc.qt.io/qt-5/qsharedpointer.html">LoginSessionPtr</a> &gt; DLoginManager::findSessionByPID </td>
+          <td>(</td>
+          <td class="paramtype">quint32&#160;</td>
+          <td class="paramname"><em>PID</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>通过进程号pid获取session对象 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">PID</td><td>进程id </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>session对象 </dd></dl>
+
+</div>
+</div>
+<a id="a49c6f998be613a15098e23b8eb835550"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49c6f998be613a15098e23b8eb835550">&#9670;&nbsp;</a></span>findUserById</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DExpected&lt; <a class="elRef" href="http://doc.qt.io/qt-5/qsharedpointer.html">LoginUserPtr</a> &gt; DLoginManager::findUserById </td>
+          <td>(</td>
+          <td class="paramtype">quint32&#160;</td>
+          <td class="paramname"><em>UID</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>通过uid获取User对象 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">UID</td><td>用户id </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>user对象 </dd></dl>
+
+</div>
+</div>
+<a id="a396a909e3dab7afa7dfe2e8f06feaa68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a396a909e3dab7afa7dfe2e8f06feaa68">&#9670;&nbsp;</a></span>findUserByPID</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DExpected&lt; <a class="elRef" href="http://doc.qt.io/qt-5/qsharedpointer.html">LoginUserPtr</a> &gt; DLoginManager::findUserByPID </td>
+          <td>(</td>
+          <td class="paramtype">quint32&#160;</td>
+          <td class="paramname"><em>PID</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>通过进程id获取User信息 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">PID</td><td>进程id </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>user对象 </dd></dl>
+
+</div>
+</div>
+<a id="a2f8d3e9e3830683f76681b0b24bbe793"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f8d3e9e3830683f76681b0b24bbe793">&#9670;&nbsp;</a></span>halt</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DExpected&lt; void &gt; DLoginManager::halt </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>interactive</em> = <code>false</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>计算机暂停操作, 暂停（不关闭电源关闭） </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">interactive</td><td>一个交互式布尔参数可用于控制 polkit 是否应在需要时以交互方式要求用户提供认证凭证 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aea9bd379e939bf1b5504d617458ce804"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea9bd379e939bf1b5504d617458ce804">&#9670;&nbsp;</a></span>handleHibernateKey()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="dlogintypes_8h.html#a2bb25797f4265d9041919b9d3bc858e7">PowerAction</a> DLoginManager::handleHibernateKey </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>读取休眠按键的定义（默认是休眠） </p>
+<dl class="section return"><dt>返回</dt><dd>默认："hibernate", 可以是关机或者睡眠等其他电源管理状态。 </dd></dl>
+
+</div>
+</div>
+<a id="a7a82c6092fc4185278390c50aea97b9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a82c6092fc4185278390c50aea97b9e">&#9670;&nbsp;</a></span>handleLidSwitch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="dlogintypes_8h.html#a2bb25797f4265d9041919b9d3bc858e7">PowerAction</a> DLoginManager::handleLidSwitch </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>读取笔记本合上盖子的行为 （默认是暂停） </p>
+<dl class="section return"><dt>返回</dt><dd>默认："suspend", 可以是关机或者睡眠等其他电源管理状态。 </dd></dl>
+
+</div>
+</div>
+<a id="a35784bd188d7e3520aed4eecda453f64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35784bd188d7e3520aed4eecda453f64">&#9670;&nbsp;</a></span>handleLidSwitchDocked()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="dlogintypes_8h.html#a2bb25797f4265d9041919b9d3bc858e7">PowerAction</a> DLoginManager::handleLidSwitchDocked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>读取笔记本连上底座或者拓展坞后合上盖子的行为 （默认是忽略） </p>
+<dl class="section return"><dt>返回</dt><dd>默认："ignore", 可以是关机或者睡眠等其他电源管理状态。 </dd></dl>
+
+</div>
+</div>
+<a id="a63421b18c1bac73bbe70a4005e40bf27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63421b18c1bac73bbe70a4005e40bf27">&#9670;&nbsp;</a></span>handleLidSwitchExternalPower()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="dlogintypes_8h.html#a2bb25797f4265d9041919b9d3bc858e7">PowerAction</a> DLoginManager::handleLidSwitchExternalPower </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>读取笔记本连上底座或者拓展坞且链接电源后合上盖子的行为 （默认为空（完全忽略）） </p>
+<dl class="section return"><dt>返回</dt><dd>默认："", 可以是关机或者睡眠等其他电源管理状态。 </dd></dl>
+
+</div>
+</div>
+<a id="a669123646d48113601c8e3e7a57302a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a669123646d48113601c8e3e7a57302a2">&#9670;&nbsp;</a></span>handlePowerKey()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="dlogintypes_8h.html#a2bb25797f4265d9041919b9d3bc858e7">PowerAction</a> DLoginManager::handlePowerKey </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>读取电源按键的定义 （默认是关机） </p>
+<dl class="section return"><dt>返回</dt><dd>默认："poweroff", 可以是其他电源管理状态。 </dd></dl>
+
+</div>
+</div>
+<a id="afcdd51d163678a22bb36ce39b6daf61d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcdd51d163678a22bb36ce39b6daf61d">&#9670;&nbsp;</a></span>handleSuspendKey()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="dlogintypes_8h.html#a2bb25797f4265d9041919b9d3bc858e7">PowerAction</a> DLoginManager::handleSuspendKey </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>读取暂停按键的定义 （默认是暂停） </p>
+<dl class="section return"><dt>返回</dt><dd>默认："suspend", 可以是关机或者睡眠等其他电源管理状态。 </dd></dl>
+
+</div>
+</div>
+<a id="aa7909528b4bf7857833bc8d99da7105b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7909528b4bf7857833bc8d99da7105b">&#9670;&nbsp;</a></span>hibernate</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DExpected&lt; void &gt; DLoginManager::hibernate </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>interactive</em> = <code>false</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>计算机执行休眠操作, 休眠（将内存中数据保存到磁盘并将机器关闭） </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">interactive</td><td>一个交互式布尔参数可用于控制 polkit 是否应在需要时以交互方式要求用户提供认证凭证 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a085179ba572b8e0351604c5dcd3dc4ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a085179ba572b8e0351604c5dcd3dc4ee">&#9670;&nbsp;</a></span>holdoffTimeoutUSec()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">quint64 DLoginManager::holdoffTimeoutUSec </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>读取系统启动或恢复后, systemd暂不对lid事件做出反应的时间段 </p>
+<dl class="section return"><dt>返回</dt><dd>30000000 或者其他数字 </dd></dl>
+
+</div>
+</div>
+<a id="ab96ee9b5fafcd6e0df40c21f912cf1e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab96ee9b5fafcd6e0df40c21f912cf1e3">&#9670;&nbsp;</a></span>hybridSleep</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DExpected&lt; void &gt; DLoginManager::hybridSleep </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>interactive</em> = <code>false</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>计算机执行混合睡眠, 混合睡眠模式, 即系统既休眠又挂起 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">interactive</td><td>一个交互式布尔参数可用于控制 polkit 是否应在需要时以交互方式要求用户提供认证凭证 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a77fb5dce80d52a6f483332715b34a075"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77fb5dce80d52a6f483332715b34a075">&#9670;&nbsp;</a></span>idleAction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="dlogintypes_8h.html#a2bb25797f4265d9041919b9d3bc858e7">PowerAction</a> DLoginManager::idleAction </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>读取系统空闲时采取的行动 （默认是忽略） </p>
+<dl class="section return"><dt>返回</dt><dd>默认："ignore", 可以是关机或者睡眠等其他电源管理状态。 </dd></dl>
+
+</div>
+</div>
+<a id="a6510df99f1dba025609ab84f575be263"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6510df99f1dba025609ab84f575be263">&#9670;&nbsp;</a></span>idleActionUSec()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">quint64 DLoginManager::idleActionUSec </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置系统空闲时采取的行动的动作延迟 </p>
+<dl class="section return"><dt>返回</dt><dd>18000000 或者其他数字 </dd></dl>
+
+</div>
+</div>
+<a id="a686ee1ad2082b61a622d51ac6df9d44b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a686ee1ad2082b61a622d51ac6df9d44b">&#9670;&nbsp;</a></span>idleHint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DLoginManager::idleHint </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>反映系统的空闲提示状态。如果系统空闲则为True </p>
+<dl class="section return"><dt>返回</dt><dd>布尔值 </dd></dl>
+
+</div>
+</div>
+<a id="a8166301bbd8a88b71b4ec0d89e9c7551"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8166301bbd8a88b71b4ec0d89e9c7551">&#9670;&nbsp;</a></span>idleSinceHint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" href="http://doc.qt.io/qt-5/qdatetime.html">QDateTime</a> DLoginManager::idleSinceHint </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>空闲提示布尔值的最后一次更改的时间 </p>
+<dl class="section return"><dt>返回</dt><dd>0 或者其他数字 </dd></dl>
+
+</div>
+</div>
+<a id="a148aec23e0e3e8e61c005254ddc59416"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a148aec23e0e3e8e61c005254ddc59416">&#9670;&nbsp;</a></span>idleSinceHintMonotonic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">quint64 DLoginManager::idleSinceHintMonotonic </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>空闲提示布尔值的最后一次更改的时间戳 </p>
+<dl class="section return"><dt>返回</dt><dd>0 或者其他数字 </dd></dl>
+
+</div>
+</div>
+<a id="a6799052dc9ae001eab3a0ca5a95a846a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6799052dc9ae001eab3a0ca5a95a846a">&#9670;&nbsp;</a></span>inhibit</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DExpected&lt; int &gt; DLoginManager::inhibit </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>what</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>who</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>why</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LoginInhibitMode&#160;</td>
+          <td class="paramname"><em>mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>创建一个抑制锁, 抑制锁：一个程序可以阻止或延迟系统休眠或关机 </p>
+<dl class="section see"><dt>参见</dt><dd><a href="https://www.freedesktop.org/wiki/Software/systemd/inhibit/">freedesktop中关于抑制锁的介绍</a> </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">what</td><td>为一个32位无符号数, 应该使用命名空间InhibitBehavior中的常量相或而成, 其相当于使用“:”连接对应的字符串。"shutdown"(重启/关机/kexec), "sleep"(休眠), "idle"(空闲), "handle-power-key"(按下电源键), "handle-suspend-key"(按下休眠键), "handle-hibernate-key"(按下休眠键), "handle-lid-switch"(合上盖子)。 中的一个或多个, 用冒号分隔, 用于禁止关机/重启、挂起/休眠、自动空闲逻辑或硬件密钥处理。默认值是 "idle:sleep:shutdown" </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">who</td><td>应该是一个简短的人类可读字符串, 用于标识获取锁的应用程序, 若未设置, 则使用被执行的命令行字符串。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">why</td><td>应该是一个简短的人类可读字符串, 用于标识获取锁的原因。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>应该是“ block”或“delay“它代表是否应将禁止视为强制性或是否应将操作延迟到某个最大时间。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>注释：人类可读字符串的定义是：对用户友好的字符串, 通常使用ASCII码中支持的字符, 使用英文语法描述当前程序名和原因 </dd></dl>
+<dl class="section return"><dt>返回</dt><dd>该方法返回一个文件描述符。在此文件描述符及其所有副本关闭时释放锁 </dd></dl>
+
+</div>
+</div>
+<a id="abfe8a54f24a246fd69a22683b04248ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfe8a54f24a246fd69a22683b04248ed">&#9670;&nbsp;</a></span>inhibitDelayMaxUSec()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">quint64 DLoginManager::inhibitDelayMaxUSec </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>读取由于"delay"类型的抑制器锁处于活动状态而延迟系统关闭或睡眠请求的最大时间,默认为5s 5000000us </p>
+<dl class="section return"><dt>返回</dt><dd>5000000或者其他数字 </dd></dl>
+
+</div>
+</div>
+<a id="a27243c8c1b502393646f98c64431c11a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27243c8c1b502393646f98c64431c11a">&#9670;&nbsp;</a></span>inhibitorsMax()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">quint64 DLoginManager::inhibitorsMax </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>读取允许的最大并发抑制器数量, 默认8192 </p>
+<dl class="section return"><dt>返回</dt><dd>8192或者其他数字 </dd></dl>
+
+</div>
+</div>
+<a id="a987954b99c1a825569beca90a5ade4e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a987954b99c1a825569beca90a5ade4e9">&#9670;&nbsp;</a></span>killExcludeUsers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> DLoginManager::killExcludeUsers </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>读取 KillExcludeUsers 属性。 该属性将获取采用空格分割的用户列表, 在设置了 KillUserProcesses=yes 将会排除该用户会话范围内的进程。如果未设置 KillExcludeUsers=yes, 则默认排除“root”用户。 </p>
+<dl class="section note"><dt>注解</dt><dd>注意, 返回的是一个QList,需要使用[]来获取列表中某个元素 </dd></dl>
+<dl class="section return"><dt>返回</dt><dd>以空格分割的用户列表. </dd></dl>
+
+</div>
+</div>
+<a id="a0b204908d2a09225133b26f34f84e528"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b204908d2a09225133b26f34f84e528">&#9670;&nbsp;</a></span>killOnlyUsers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> DLoginManager::killOnlyUsers </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>读取killOnlyUsers属性 检查KillOnlyUsers的取值。如果指定了这个设置, 只有这些用户的会话作用域中的进程将被杀死。否则, 用户将受到KillUserProcesses=yes设置的限制。 </p>
+<dl class="section note"><dt>注解</dt><dd>注意, 返回的是一个QList,需要使用[]来获取列表中某个元素 </dd></dl>
+<dl class="section return"><dt>返回</dt><dd>以空格分割的用户列表 </dd></dl>
+
+</div>
+</div>
+<a id="af820978dc0d7c5cc1f54c06caa7d423c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af820978dc0d7c5cc1f54c06caa7d423c">&#9670;&nbsp;</a></span>killSession</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DExpected&lt; void &gt; DLoginManager::killSession </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>sessionId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LoginSessionRole&#160;</td>
+          <td class="paramname"><em>who</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">qint32&#160;</td>
+          <td class="paramname"><em>signalNumber</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>可用于向会话的一个或所有进程发送 Unix 信号, 作为参数, 它接受会话 id、字符串“ leader”或“ all”和一个信号编号。 如果“ leader”通过, 则只有会话“ leader”被终止。如果“ all”通过, 则会话的所有进程都将被终止。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sessionId</td><td>会话id </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">who</td><td>“leader”或“all” </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">signalNumber</td><td>信号编号 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>在shell中输入<code>kill -l</code>获取信号编号 </dd></dl>
+
+</div>
+</div>
+<a id="a1d065b547fa691dfdc2e699b6b40ab47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d065b547fa691dfdc2e699b6b40ab47">&#9670;&nbsp;</a></span>killUser</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DExpected&lt; void &gt; DLoginManager::killUser </td>
+          <td>(</td>
+          <td class="paramtype">quint32&#160;</td>
+          <td class="paramname"><em>UID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">qint32&#160;</td>
+          <td class="paramname"><em>signalNumber</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>可用于向用户的所有进程发送 Unix 信号。作为参数, 它需要用户 ID 和信号编号 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">uid</td><td>用户id </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">signalNumber</td><td>信号编号 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>在shell中输入<code>kill -l</code>获取信号编号 </dd></dl>
+
+</div>
+</div>
+<a id="a2d8870dc98428da25669411e1b73fcd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d8870dc98428da25669411e1b73fcd9">&#9670;&nbsp;</a></span>killUserProcesses()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DLoginManager::killUserProcesses </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>查看killUserProcesses当前配置, 当用户注销时是否应该杀死该用户的进程。 如果返回为true, 则该会话对应的作用域单元和该作用域内的所有进程将被终止。如果返回为 "false", 则该作用域被 "抛弃" </p>
+<dl class="section return"><dt>返回</dt><dd>布尔值 </dd></dl>
+
+</div>
+</div>
+<a id="a252fe712ef2654ad72e000989fdced9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a252fe712ef2654ad72e000989fdced9d">&#9670;&nbsp;</a></span>lidClosed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DLoginManager::lidClosed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>当（笔记本电脑）的盖子关闭时, LidClosed为true。 </p>
+<dl class="section return"><dt>返回</dt><dd>布尔值 </dd></dl>
+
+</div>
+</div>
+<a id="a688c066e6f05d6fabdac2cb84ce8263a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a688c066e6f05d6fabdac2cb84ce8263a">&#9670;&nbsp;</a></span>listInhibitors</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DExpected&lt; <a class="elRef" href="http://doc.qt.io/qt-5/qlist.html">LoginInhibitorList</a> &gt; DLoginManager::listInhibitors </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>列出所有当前有效的抑制器。 </p>
+<dl class="section return"><dt>返回</dt><dd>QList&lt;Inhibitor&gt;: 一个由what、who、why、 mode、uid（用户 ID）和pid（进程 ID）组成的结构数组。 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd>注意, 返回的是一个QList,需要使用[]来获取列表中某个元素 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>DLoginManager::inhibit(const QString &amp;what, const QString &amp;who, const QString &amp;why, const QString &amp;mode) </dd></dl>
+
+</div>
+</div>
+<a id="afefe151de534da2fa00d0346592a270c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afefe151de534da2fa00d0346592a270c">&#9670;&nbsp;</a></span>listSeats</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DExpected&lt; <a class="elRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> &gt; DLoginManager::listSeats </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>列出所有的seat </p>
+<dl class="section note"><dt>注解</dt><dd>注意, 返回的是一个QList,需要使用[]来获取列表中某个元素 </dd></dl>
+<dl class="section return"><dt>返回</dt><dd>返回所有的seat, 以列表的形式。 例如'seat0' </dd></dl>
+
+</div>
+</div>
+<a id="a9f854b9f1c2d0b07b27ffcc263747820"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f854b9f1c2d0b07b27ffcc263747820">&#9670;&nbsp;</a></span>listSessions</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DExpected&lt; <a class="elRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> &gt; DLoginManager::listSessions </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>列出所有的Session </p>
+<dl class="section note"><dt>注解</dt><dd>注意, 返回的是一个QList,需要使用[]来获取列表中某个元素 </dd></dl>
+<dl class="section return"><dt>返回</dt><dd>返回所有的session, 以列表的形式。例如：'5' </dd></dl>
+
+</div>
+</div>
+<a id="a58e9b0174887d67b7b6ede9d089dd451"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58e9b0174887d67b7b6ede9d089dd451">&#9670;&nbsp;</a></span>listUsers</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DExpected&lt; <a class="elRef" href="http://doc.qt.io/qt-5/qlist.html">QList</a>&lt; quint32 &gt; &gt; DLoginManager::listUsers </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>列出所有的User </p>
+<dl class="section note"><dt>注解</dt><dd>注意, 返回的是一个QList,需要使用[]来获取列表中某个元素 </dd></dl>
+<dl class="section return"><dt>返回</dt><dd>列出所有的User, 以列表的形式。例如：1000 </dd></dl>
+
+</div>
+</div>
+<a id="a5352aa878ef06acb753ddcea08cb6438"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5352aa878ef06acb753ddcea08cb6438">&#9670;&nbsp;</a></span>lockSession</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DExpected&lt; void &gt; DLoginManager::lockSession </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>sessionId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>要求具有指定 ID 的会话激活屏幕锁定 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sessionId</td><td>会话id </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abd568a06bd769b0d76d3774fa00ea399"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd568a06bd769b0d76d3774fa00ea399">&#9670;&nbsp;</a></span>logout</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DExpected&lt; void &gt; DLoginManager::logout </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>登出 </p>
+<dl class="section note"><dt>注解</dt><dd>注意：此操作为危险操作, 会丢弃当前活动, 请确保运行前重要文件已经得到妥善处理 </dd></dl>
+
+</div>
+</div>
+<a id="a85d08984ff64c9473bfcc5ea8a3c8e0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85d08984ff64c9473bfcc5ea8a3c8e0f">&#9670;&nbsp;</a></span>nAutoVTs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">quint32 DLoginManager::nAutoVTs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>读取默认配置分配多少个虚拟终端（VT）, 默认为6 </p>
+<dl class="section return"><dt>返回</dt><dd>6 或者其他数字 </dd></dl>
+
+</div>
+</div>
+<a id="a7ececc4dabd69bc64d71cc8dd331f30f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ececc4dabd69bc64d71cc8dd331f30f">&#9670;&nbsp;</a></span>nCurrentInhibitors()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">quint64 DLoginManager::nCurrentInhibitors </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>读取当前注册抑制器数量 </p>
+<dl class="section return"><dt>返回</dt><dd>数字 </dd></dl>
+
+</div>
+</div>
+<a id="a3c964035705273f544bd6ebd726f77ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c964035705273f544bd6ebd726f77ff">&#9670;&nbsp;</a></span>nCurrentSessions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">quint64 DLoginManager::nCurrentSessions </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>读取当前注册的会话数量 </p>
+<dl class="section return"><dt>返回</dt><dd>数字 </dd></dl>
+
+</div>
+</div>
+<a id="a8c2bd560ccf33a05954795a51537e0bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c2bd560ccf33a05954795a51537e0bc">&#9670;&nbsp;</a></span>powerOff</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DExpected&lt; void &gt; DLoginManager::powerOff </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>interactive</em> = <code>false</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>关机 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">interactive</td><td>一个交互式布尔参数可用于控制 polkit 是否应在需要时以交互方式要求用户提供认证凭证 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5c2734f314459899f9eb1e39598d24d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c2734f314459899f9eb1e39598d24d4">&#9670;&nbsp;</a></span>prepareForShutdown</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DLoginManager::prepareForShutdown </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>PrepareForShutdown()和PrepareForSleep()信号在系统关闭之前（使用参数“ true” ）或之后（使用参数“ false”）发送, 分别用于重新启动/关机和挂起/休眠。应用程序可以使用它来将数据保存在磁盘上、释放内存或执行其他应在关机/睡眠前不久完成的工作, 以及延迟抑制器。完成这项工作后, 他们应该释放他们的抑制锁, 以免进一步延迟操作。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>布尔值 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a23c2181ea676434184773be11edbc2ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23c2181ea676434184773be11edbc2ca">&#9670;&nbsp;</a></span>prepareForSleep</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DLoginManager::prepareForSleep </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDLoginManager.html#a5c2734f314459899f9eb1e39598d24d4" title="PrepareForShutdown()和PrepareForSleep()信号在系统关闭之前（使用参数“ true” ）或之后（使用参数“ false”）发送, 分别用于重新启动/关机和挂起/休眠。应...">DLoginManager::prepareForShutdown(const bool value)</a> </dd></dl>
+
+</div>
+</div>
+<a id="aee393e9f2e143da8b6bb26414257f719"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee393e9f2e143da8b6bb26414257f719">&#9670;&nbsp;</a></span>preparingForShutdown()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DLoginManager::preparingForShutdown </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在两个PrepareForShutdown和PrepareForSleep信号的间隔期间分别为真 </p>
+<dl class="section return"><dt>返回</dt><dd>布尔值 </dd></dl>
+
+</div>
+</div>
+<a id="a8021cb35bf0c2a093a11d761587c6692"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8021cb35bf0c2a093a11d761587c6692">&#9670;&nbsp;</a></span>preparingForSleep()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DLoginManager::preparingForSleep </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在两个PrepareForShutdown和PrepareForSleep信号的间隔期间分别为真 </p>
+<dl class="section return"><dt>返回</dt><dd>布尔值 </dd></dl>
+
+</div>
+</div>
+<a id="ab82f42d37cbbdf4c51625550fe0c61ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab82f42d37cbbdf4c51625550fe0c61ef">&#9670;&nbsp;</a></span>reboot</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DExpected&lt; void &gt; DLoginManager::reboot </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>interactive</em> = <code>false</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>重启 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">interactive</td><td>一个交互式布尔参数可用于控制 polkit 是否应在需要时以交互方式要求用户提供认证凭证 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad177f09f19e8f1b4829a99b1dc89acad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad177f09f19e8f1b4829a99b1dc89acad">&#9670;&nbsp;</a></span>removeIPC()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DLoginManager::removeIPC </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>返回一个属性设置, 当用户完全注销时, 属于用户的System V和POSIX IPC对象是否应被删除。 返回一个布尔参数。如果为true, 在用户的最后一个会话结束后, 用户不得消耗IPC资源。 这包括System V的信号、共享内存和消息队列, 以及POSIX共享内存和消息队列。 请注意, 根用户和其他系统用户的IPC对象不受此设置的影响。默认值为 "true"。 </p>
+<dl class="section return"><dt>返回</dt><dd>布尔值 </dd></dl>
+
+</div>
+</div>
+<a id="a38cea875b2f1187a2f7c792a252ccfa7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38cea875b2f1187a2f7c792a252ccfa7">&#9670;&nbsp;</a></span>runtimeDirectoryInodesMax()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">quint64 DLoginManager::runtimeDirectoryInodesMax </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置每个登录用户的$XDG_RUNTIME_DIR运行时目录的大小限制。 </p>
+<dl class="section note"><dt>注解</dt><dd>这个大小只是一个安全限制。由于每个运行时目录是一个tmpfs文件系统, 它只消耗所需的内存 </dd></dl>
+<dl class="section return"><dt>返回</dt><dd>数字 </dd></dl>
+
+</div>
+</div>
+<a id="a4753f919a73760a81c33ef9792b780a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4753f919a73760a81c33ef9792b780a2">&#9670;&nbsp;</a></span>runtimeDirectorySize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">quint64 DLoginManager::runtimeDirectorySize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>读取每个登录用户的$XDG_RUNTIME_DIR运行时目录的大小限制。 </p>
+<dl class="section return"><dt>返回</dt><dd>数字 </dd></dl>
+
+</div>
+</div>
+<a id="a0fa45594d55a1c7ce189d11eab159c27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fa45594d55a1c7ce189d11eab159c27">&#9670;&nbsp;</a></span>scheduledShutdown()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structScheduledShutdownValue.html">ScheduledShutdownValue</a> DLoginManager::scheduledShutdown </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>读取scheduledShutdown的值, 返回两个参数, 第一个电源管理状态名, 第二个是unix时间戳（精确到微秒）, 可以使用scheduleShutdown方法进行写入。 具体含义见同名方法 </p>
+<dl class="section return"><dt>返回</dt><dd>包含关机类型和时间的结构体 </dd></dl>
+
+</div>
+</div>
+<a id="ae121f9af00eb37d8a5ea3b46404228fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae121f9af00eb37d8a5ea3b46404228fe">&#9670;&nbsp;</a></span>scheduleShutdown</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DExpected&lt; void &gt; DLoginManager::scheduleShutdown </td>
+          <td>(</td>
+          <td class="paramtype">LoginShutdownType&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="elRef" href="http://doc.qt.io/qt-5/qdatetime.html">QDateTime</a> &amp;&#160;</td>
+          <td class="paramname"><em>usec</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在一定时间后定时关机 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>关机操作类型, 可以是"poweroff"、"dry-poweroff"、"reboot"、"dry-reboot"、"halt "和 "dry-halt "之一 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">usec</td><td>Unix时间戳, 从1970.1.1零点开始到现在的微秒时间 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7bbe5e7921898af9c476e79b6cdca7b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bbe5e7921898af9c476e79b6cdca7b7">&#9670;&nbsp;</a></span>seatRemoved</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DLoginManager::seatRemoved </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>seatId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section see"><dt>参见</dt><dd>DLoginManager::SeatNew(const QString &amp;seatId) </dd></dl>
+
+</div>
+</div>
+<a id="afaeefaac8195f27e2747531ba487f2aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afaeefaac8195f27e2747531ba487f2aa">&#9670;&nbsp;</a></span>sessionNew</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DLoginManager::sessionNew </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>sessionId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section see"><dt>参见</dt><dd>DLoginManager::SeatNew(const QString &amp;seatId) </dd></dl>
+
+</div>
+</div>
+<a id="a1f2b628830d1714de3b9a932934384f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f2b628830d1714de3b9a932934384f7">&#9670;&nbsp;</a></span>sessionRemoved</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DLoginManager::sessionRemoved </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>sessionId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section see"><dt>参见</dt><dd>DLoginManager::SeatNew(const QString &amp;seatId) </dd></dl>
+
+</div>
+</div>
+<a id="a1481d1895ac2e2d174aef7a8e9d28d8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1481d1895ac2e2d174aef7a8e9d28d8e">&#9670;&nbsp;</a></span>sessionsMax()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">quint64 DLoginManager::sessionsMax </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>读取要管理的并发用户会话的最大数量 </p>
+<dl class="section return"><dt>返回</dt><dd>数字 </dd></dl>
+
+</div>
+</div>
+<a id="ae1a51960a49c772b5c5b4f95afc0a48f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1a51960a49c772b5c5b4f95afc0a48f">&#9670;&nbsp;</a></span>setUserLinger</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DExpected&lt; void &gt; DLoginManager::setUserLinger </td>
+          <td>(</td>
+          <td class="paramtype">quint32&#160;</td>
+          <td class="paramname"><em>UID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>interactive</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>启用或禁用用户滞留。如果启用, 将保留用户的运行时目录, 并且他们可以在注销时继续运行进程。如果禁用, 运行时目录会在他们注销后立即消失 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">uid</td><td>用户id </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>一个是否启用/禁用的布尔值 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">interactive</td><td>一个交互式布尔参数可用于控制 polkit 是否应在需要时以交互方式要求用户提供认证凭证 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>请注意, 用户滞留状态会持久性地保存在磁盘上。 </dd></dl>
+
+</div>
+</div>
+<a id="a44dd4bc1d7ddeecbe1934535b3ae250c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44dd4bc1d7ddeecbe1934535b3ae250c">&#9670;&nbsp;</a></span>suspend</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DExpected&lt; void &gt; DLoginManager::suspend </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>interactive</em> = <code>false</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>计算机执行挂起操作（系统状态保存到 RAM 并关闭 CPU） </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">interactive</td><td>一个交互式布尔参数可用于控制 polkit 是否应在需要时以交互方式要求用户提供认证凭证 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a439211f55e54208d5a1e7f4d49d77703"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a439211f55e54208d5a1e7f4d49d77703">&#9670;&nbsp;</a></span>suspendThenHibernate</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DExpected&lt; void &gt; DLoginManager::suspendThenHibernate </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>interactive</em> = <code>false</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>计算机系统被暂停, 随后使用RTC定时器唤醒并休眠 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">interactive</td><td>一个交互式布尔参数可用于控制 polkit 是否应在需要时以交互方式要求用户提供认证凭证 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a88f971a43bd23e1c1e8de459b6cd9283"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88f971a43bd23e1c1e8de459b6cd9283">&#9670;&nbsp;</a></span>terminateSession</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DExpected&lt; void &gt; DLoginManager::terminateSession </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>sessionId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>可用于强制终止一个特定会话 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sessionId</td><td>会话编号 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1026776c1163fe0a0823f027eb6da772"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1026776c1163fe0a0823f027eb6da772">&#9670;&nbsp;</a></span>terminateUser</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DExpected&lt; void &gt; DLoginManager::terminateUser </td>
+          <td>(</td>
+          <td class="paramtype">quint32&#160;</td>
+          <td class="paramname"><em>uid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>可用于强制终止用户的所有进程 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">uid</td><td>用户编号 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9e7a056e23d22b5d5e72579a8e7f1954"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e7a056e23d22b5d5e72579a8e7f1954">&#9670;&nbsp;</a></span>userNew</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DLoginManager::userNew </td>
+          <td>(</td>
+          <td class="paramtype">quint32&#160;</td>
+          <td class="paramname"><em>UID</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section see"><dt>参见</dt><dd>DLoginManager::SeatNew(const QString &amp;seatId) </dd></dl>
+
+</div>
+</div>
+<a id="a62541448b5b5eea3f975f3736410c3b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62541448b5b5eea3f975f3736410c3b5">&#9670;&nbsp;</a></span>userRemoved</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DLoginManager::userRemoved </td>
+          <td>(</td>
+          <td class="paramtype">quint32&#160;</td>
+          <td class="paramname"><em>UID</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classDLoginManager.html#a97e6dee754fa2808de85609e8ef4c5e2" title="每次创建或删除会话、用户登录或注销或添加或删除seat时都会发送UserRemoved、SeatNew、SessionNew、 SeatRemoved、SessionRemoved、UserNew信号 ...">DLoginManager::seatNew(const QString &amp;seatId)</a> </dd></dl>
+
+</div>
+</div>
+<a id="aae1f62725f33729a875cb1a39b1417ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae1f62725f33729a875cb1a39b1417ad">&#9670;&nbsp;</a></span>userStopDelayUSec()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">quint64 DLoginManager::userStopDelayUSec </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>读取在用户完全注销后为其保留用户记录和每个用户服务user.service的时间 </p>
+<dl class="section return"><dt>返回</dt><dd>数字 </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dtksystemsettings/include/login/<a class="el" href="dloginmanager_8h_source.html">dloginmanager.h</a></li>
+<li>dtksystemsettings/docs/login/dloginmanager.zh_CN.dox</li>
+<li>dtksystemsettings/src/login/dloginmanager.cpp</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classDLoginManager.html">DLoginManager</a></li>
+    <li class="footer">文档生成时间:2023-01-13-07:39  +00</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

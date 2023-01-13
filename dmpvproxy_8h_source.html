@@ -1,0 +1,357 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: dtkmultimedia/include/dtkmultimedia/dmpvproxy.h 源文件</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="https://github.com/linuxdeepin/dtkdoc" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('dmpvproxy_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">dmpvproxy.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="dmpvproxy_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-FileCopyrightText: 2022 UnionTech Software Technology Co., Ltd.</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// SPDX-License-Identifier: LGPL-3.0-or-later</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef DMPVPROXY_H</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define DMPVPROXY_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define MWV206_0</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="dplayerbackend_8h.html">dplayerbackend.h</a>&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#undef Bool</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">class </span>mpv_handle;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;DMULTIMEDIA_BEGIN_NAMESPACE</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">class </span><a class="code" href="classDMpvGLWidget.html">DMpvGLWidget</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">class </span><a class="code" href="structPlayingMovieInfo.html">PlayingMovieInfo</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classMpvHandle.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="classMpvHandle.html">MpvHandle</a></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">struct </span>container</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keyword">explicit</span> container(mpv_handle *pHandle);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        ~container();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        mpv_handle *m_pHandle;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    };</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qsharedpointer.html">QSharedPointer&lt;container&gt;</a> sptr;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">static</span> <a class="code" href="classMpvHandle.html">MpvHandle</a> fromRawHandle(mpv_handle *pHandle);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">operator</span> mpv_handle *() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;};</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">enum</span> DecodeMode { AUTO = 0,</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                  HARDWARE,</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                  SOFTWARE };</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">class </span><a class="code" href="classDMpvProxyPrivate.html">DMpvProxyPrivate</a>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classDMpvProxy.html">   40</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDMpvProxy.html">DMpvProxy</a> : <span class="keyword">public</span> <a class="code" href="classDPlayerBackend.html">DPlayerBackend</a></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">Q_OBJECT</a></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    Q_DECLARE_PRIVATE(<a class="code" href="classDMpvProxy.html">DMpvProxy</a>)</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;signals:</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> has_mpv_events();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> crashCheck();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> notifyCreateOpenGL(<a class="code" href="classMpvHandle.html">MpvHandle</a> handle);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="classMpvHandle.html">MpvHandle</a> getMpvHandle();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDMpvProxy.html">DMpvProxy</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a> = 0);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classDMpvProxy.html">DMpvProxy</a>();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDMpvProxy.html#adee3f94b8eae27d246e720fa5cea5394">setDecodeModel</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qvariant.html">QVariant</a> &amp;value);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDMpvProxy.html#a04eb06befd290f80c3c9bc8b9fc64069">refreshDecode</a>();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDMpvProxy.html#ad20894b8bad891ee245082e1a214de8e">initMpvFuns</a>();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDMpvProxy.html#ae68d8b44acdb0b0a14ba553bee0d0900">firstInit</a>();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDMpvProxy.html#aaba33550497eba8dad5cca43839b85c3">initSetting</a>();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">const</span> <a class="code" href="structPlayingMovieInfo.html">PlayingMovieInfo</a> &amp;<a class="code" href="classDMpvProxy.html#adcc8bc099ddff93cb435468346d1f39a">playingMovieInfo</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classDMpvProxy.html#a65b636da5ca98223147abb56a00100da">isPlayable</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDMpvProxy.html#aaaf20e64be8f00d813b837fe220d30d9">pollingEndOfPlayback</a>();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    qint64 <a class="code" href="classDMpvProxy.html#ab0abd1b99b51d32b5753418a1c717337">duration</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    qint64 <a class="code" href="classDMpvProxy.html#a4111b2418bdfe5a40ca8e57781b1f7a0">elapsed</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qsize.html">QSize</a> <a class="code" href="classDMpvProxy.html#a497a55bb5da1af81846f705bf3e26e1b">videoSize</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDMpvProxy.html#a77565e2b7b3cd567405e4eed4c655b0f">setPlaySpeed</a>(<span class="keywordtype">double</span> dTimes) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDMpvProxy.html#a09ceec8ea48ce4142cf83a4dd23fb1d7">savePlaybackPosition</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classDMpvProxy.html#ab8ad6df17eea37f6a84d4c4037bdf1d2">loadSubtitle</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qfileinfo.html">QFileInfo</a> &amp;fileInfo) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDMpvProxy.html#a06d6dc7d5ef4bb2c74ce92019389b1e5">toggleSubtitle</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classDMpvProxy.html#a9640a0982f6d8f0f4bab5bec57124502">isSubVisible</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDMpvProxy.html#aeb72f303b41eef5a8c65d204c4f9f863">selectSubtitle</a>(<span class="keywordtype">int</span> nId) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classDMpvProxy.html#ac140dfdc2115394e72ce6731392b71a9">sid</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDMpvProxy.html#a660bff97e85947cb261a21870cba541e">setSubDelay</a>(<span class="keywordtype">double</span> dSecs) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="classDMpvProxy.html#a8c4737cb2c5a84e21016b8bdda36c171">subDelay</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDMpvProxy.html#a5888baa8e1f75baf7c46bb5903174b52">updateSubStyle</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;sFont, <span class="keywordtype">int</span> nSize) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDMpvProxy.html#af167e0e975778d3c2075509f0c3dbda8">setSubCodepage</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;sCodePage) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> <a class="code" href="classDMpvProxy.html#adec4669d061050be9e5e94490b92a153">subCodepage</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDMpvProxy.html#a37542b27fc1943e28b640aa322bb56fd">addSubSearchPath</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;sPath) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDMpvProxy.html#af36ce5377d17d20c7c3c8740ea13757f">selectTrack</a>(<span class="keywordtype">int</span> nId) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classDMpvProxy.html#a2b37a4e70f2f5343244e36457950f60b">aid</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDMpvProxy.html#a7788c4ae8dff2bc115a408b528bd33a3">changeSoundMode</a>(SoundMode soundMode) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classDMpvProxy.html#ac778fd825526a29ccdf0eba321003fe5">volume</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classDMpvProxy.html#a029fce22286cc9095ea63d38e14f32a7">muted</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDMpvProxy.html#aae5f83dbbda0831dd97cdba51adab581">setVideoAspect</a>(<span class="keywordtype">double</span> dValue) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="classDMpvProxy.html#a3c6f9b96ef4eeece1b82751459a69b07">videoAspect</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classDMpvProxy.html#ac927fab54bf26bccf667a86ac8079bad">videoRotation</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDMpvProxy.html#ad1399ffeb8bd8207b4a735633dba72d7">setVideoRotation</a>(<span class="keywordtype">int</span> nDegree) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qimage.html">QImage</a> <a class="code" href="classDMpvProxy.html#a8599e28643c7debd5c5f7db1969f6bd5">takeScreenshot</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDMpvProxy.html#aa98116094297762f5370798f775ba187">burstScreenshot</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDMpvProxy.html#a8d9e30708fe38866e14b7def90b3c785">stopBurstScreenshot</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qvariant.html">QVariant</a> <a class="code" href="classDMpvProxy.html#aed7932af6ff1d59cdb1f3fa5691422a2">getProperty</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDMpvProxy.html#a7b38b8d34486816db4e2c1d9ff273842">setProperty</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;, <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qvariant.html">QVariant</a> &amp;) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDMpvProxy.html#a2025e0f322b49506e4472aeb84c1d068">nextFrame</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDMpvProxy.html#a23c7b62d57f3210d7324777aac9ee856">previousFrame</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDMpvProxy.html#a2172784eecd50d9fcd482913752c671f">changehwaccelMode</a>(hwaccelMode hwaccelMode) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDMpvProxy.html#a057b0c9de970e34b4057818d4e7c9bc0">makeCurrent</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keyword">public</span> slots:</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">void</span> play() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">void</span> pauseResume() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">void</span> stop() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">void</span> seekForward(<span class="keywordtype">int</span> nSecs) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">void</span> seekBackward(<span class="keywordtype">int</span> nSecs) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">void</span> seekAbsolute(<span class="keywordtype">int</span> nPos) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordtype">void</span> volumeUp() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordtype">void</span> volumeDown() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordtype">void</span> changeVolume(<span class="keywordtype">int</span> nVol) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordtype">void</span> toggleMute() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">void</span> setMute(<span class="keywordtype">bool</span> bMute) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">void</span> setWinID(<span class="keyword">const</span> qint64 &amp;<a class="code" href="classDPlayerBackend.html#ab8e3f52c306b4cdfe17881a4bedc1426">winID</a>) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordtype">void</span> initMember();</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordtype">void</span> initGpuInfoFuns();</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordtype">bool</span> isSurportHardWareDecode(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> sDecodeName, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;nVideoWidth, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;nVideoHeight);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordtype">int</span> getDecodeProbeValue(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> sDecodeName);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="keyword">protected</span> slots:</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordtype">void</span> handle_mpv_events();</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordtype">void</span> stepBurstScreenshot();</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qscopedpointer.html">QScopedPointer&lt;DMpvProxyPrivate&gt;</a> d_ptr;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;};</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;DMULTIMEDIA_END_NAMESPACE</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* ifndef DMPVPROXY_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="aclassDMpvGLWidget_html"><div class="ttname"><a href="classDMpvGLWidget.html">DMpvGLWidget</a></div><div class="ttdef"><b>Definition:</b> dmpvglwidget.h:29</div></div>
+<div class="ttc" id="aclassDMpvProxyPrivate_html"><div class="ttname"><a href="classDMpvProxyPrivate.html">DMpvProxyPrivate</a></div><div class="ttdef"><b>Definition:</b> dmpvproxy_p.h:33</div></div>
+<div class="ttc" id="aclassDMpvProxy_html"><div class="ttname"><a href="classDMpvProxy.html">DMpvProxy</a></div><div class="ttdef"><b>Definition:</b> dmpvproxy.h:41</div></div>
+<div class="ttc" id="aclassDMpvProxy_html_a029fce22286cc9095ea63d38e14f32a7"><div class="ttname"><a href="classDMpvProxy.html#a029fce22286cc9095ea63d38e14f32a7">DMpvProxy::muted</a></div><div class="ttdeci">bool muted() const override</div><div class="ttdoc">获取媒体播放是否静音.</div><div class="ttdef"><b>Definition:</b> dmpvproxy.cpp:933</div></div>
+<div class="ttc" id="aclassDMpvProxy_html_a04eb06befd290f80c3c9bc8b9fc64069"><div class="ttname"><a href="classDMpvProxy.html#a04eb06befd290f80c3c9bc8b9fc64069">DMpvProxy::refreshDecode</a></div><div class="ttdeci">void refreshDecode()</div><div class="ttdoc">刷新解码模式.</div><div class="ttdef"><b>Definition:</b> dmpvproxy.cpp:953</div></div>
+<div class="ttc" id="aclassDMpvProxy_html_a057b0c9de970e34b4057818d4e7c9bc0"><div class="ttname"><a href="classDMpvProxy.html#a057b0c9de970e34b4057818d4e7c9bc0">DMpvProxy::makeCurrent</a></div><div class="ttdeci">void makeCurrent() override</div><div class="ttdoc">指定绘制设备.</div><div class="ttdef"><b>Definition:</b> dmpvproxy.cpp:1490</div></div>
+<div class="ttc" id="aclassDMpvProxy_html_a06d6dc7d5ef4bb2c74ce92019389b1e5"><div class="ttname"><a href="classDMpvProxy.html#a06d6dc7d5ef4bb2c74ce92019389b1e5">DMpvProxy::toggleSubtitle</a></div><div class="ttdeci">void toggleSubtitle() override</div><div class="ttdoc">设置是否显示Sub字幕.</div><div class="ttdef"><b>Definition:</b> dmpvproxy.cpp:824</div></div>
+<div class="ttc" id="aclassDMpvProxy_html_a09ceec8ea48ce4142cf83a4dd23fb1d7"><div class="ttname"><a href="classDMpvProxy.html#a09ceec8ea48ce4142cf83a4dd23fb1d7">DMpvProxy::savePlaybackPosition</a></div><div class="ttdeci">void savePlaybackPosition() override</div><div class="ttdoc">保存当前视频播放位置.</div><div class="ttdef"><b>Definition:</b> dmpvproxy.cpp:801</div></div>
+<div class="ttc" id="aclassDMpvProxy_html_a2025e0f322b49506e4472aeb84c1d068"><div class="ttname"><a href="classDMpvProxy.html#a2025e0f322b49506e4472aeb84c1d068">DMpvProxy::nextFrame</a></div><div class="ttdeci">void nextFrame() override</div><div class="ttdoc">媒体下一帧.</div><div class="ttdef"><b>Definition:</b> dmpvproxy.cpp:1454</div></div>
+<div class="ttc" id="aclassDMpvProxy_html_a2172784eecd50d9fcd482913752c671f"><div class="ttname"><a href="classDMpvProxy.html#a2172784eecd50d9fcd482913752c671f">DMpvProxy::changehwaccelMode</a></div><div class="ttdeci">void changehwaccelMode(hwaccelMode hwaccelMode) override</div><div class="ttdoc">改变硬件加速模式.</div><div class="ttdef"><b>Definition:</b> dmpvproxy.cpp:1472</div></div>
+<div class="ttc" id="aclassDMpvProxy_html_a23c7b62d57f3210d7324777aac9ee856"><div class="ttname"><a href="classDMpvProxy.html#a23c7b62d57f3210d7324777aac9ee856">DMpvProxy::previousFrame</a></div><div class="ttdeci">void previousFrame() override</div><div class="ttdoc">媒体上一帧.</div><div class="ttdef"><b>Definition:</b> dmpvproxy.cpp:1463</div></div>
+<div class="ttc" id="aclassDMpvProxy_html_a2b37a4e70f2f5343244e36457950f60b"><div class="ttname"><a href="classDMpvProxy.html#a2b37a4e70f2f5343244e36457950f60b">DMpvProxy::aid</a></div><div class="ttdeci">int aid() const override</div><div class="ttdoc">获取音轨id.</div><div class="ttdef"><b>Definition:</b> dmpvproxy.cpp:834</div></div>
+<div class="ttc" id="aclassDMpvProxy_html_a37542b27fc1943e28b640aa322bb56fd"><div class="ttname"><a href="classDMpvProxy.html#a37542b27fc1943e28b640aa322bb56fd">DMpvProxy::addSubSearchPath</a></div><div class="ttdeci">void addSubSearchPath(const QString &amp;sPath) override</div><div class="ttdoc">添加媒体Sub字幕路径.</div><div class="ttdef"><b>Definition:</b> dmpvproxy.cpp:772</div></div>
+<div class="ttc" id="aclassDMpvProxy_html_a3c6f9b96ef4eeece1b82751459a69b07"><div class="ttname"><a href="classDMpvProxy.html#a3c6f9b96ef4eeece1b82751459a69b07">DMpvProxy::videoAspect</a></div><div class="ttdeci">double videoAspect() const override</div><div class="ttdoc">获取媒体播放显示长宽比.</div><div class="ttdef"><b>Definition:</b> dmpvproxy.cpp:927</div></div>
+<div class="ttc" id="aclassDMpvProxy_html_a4111b2418bdfe5a40ca8e57781b1f7a0"><div class="ttname"><a href="classDMpvProxy.html#a4111b2418bdfe5a40ca8e57781b1f7a0">DMpvProxy::elapsed</a></div><div class="ttdeci">qint64 elapsed() const override</div><div class="ttdoc">获取媒体已播放时长.</div><div class="ttdef"><b>Definition:</b> dmpvproxy.cpp:1396</div></div>
+<div class="ttc" id="aclassDMpvProxy_html_a497a55bb5da1af81846f705bf3e26e1b"><div class="ttname"><a href="classDMpvProxy.html#a497a55bb5da1af81846f705bf3e26e1b">DMpvProxy::videoSize</a></div><div class="ttdeci">QSize videoSize() const override</div><div class="ttdoc">获取媒体分辨率.</div><div class="ttdef"><b>Definition:</b> dmpvproxy.cpp:1369</div></div>
+<div class="ttc" id="aclassDMpvProxy_html_a5888baa8e1f75baf7c46bb5903174b52"><div class="ttname"><a href="classDMpvProxy.html#a5888baa8e1f75baf7c46bb5903174b52">DMpvProxy::updateSubStyle</a></div><div class="ttdeci">void updateSubStyle(const QString &amp;sFont, int nSize) override</div><div class="ttdoc">更新媒体播放文字显示样式.</div><div class="ttdef"><b>Definition:</b> dmpvproxy.cpp:789</div></div>
+<div class="ttc" id="aclassDMpvProxy_html_a65b636da5ca98223147abb56a00100da"><div class="ttname"><a href="classDMpvProxy.html#a65b636da5ca98223147abb56a00100da">DMpvProxy::isPlayable</a></div><div class="ttdeci">bool isPlayable() const override</div><div class="ttdoc">当前媒体是否能够播放.</div><div class="ttdef"><b>Definition:</b> dmpvproxy.cpp:523</div></div>
+<div class="ttc" id="aclassDMpvProxy_html_a660bff97e85947cb261a21870cba541e"><div class="ttname"><a href="classDMpvProxy.html#a660bff97e85947cb261a21870cba541e">DMpvProxy::setSubDelay</a></div><div class="ttdeci">void setSubDelay(double dSecs) override</div><div class="ttdoc">设置Sub字幕延迟显示时间.</div><div class="ttdef"><b>Definition:</b> dmpvproxy.cpp:749</div></div>
+<div class="ttc" id="aclassDMpvProxy_html_a77565e2b7b3cd567405e4eed4c655b0f"><div class="ttname"><a href="classDMpvProxy.html#a77565e2b7b3cd567405e4eed4c655b0f">DMpvProxy::setPlaySpeed</a></div><div class="ttdeci">void setPlaySpeed(double dTimes) override</div><div class="ttdoc">设置媒体播放速度.</div><div class="ttdef"><b>Definition:</b> dmpvproxy.cpp:808</div></div>
+<div class="ttc" id="aclassDMpvProxy_html_a7788c4ae8dff2bc115a408b528bd33a3"><div class="ttname"><a href="classDMpvProxy.html#a7788c4ae8dff2bc115a408b528bd33a3">DMpvProxy::changeSoundMode</a></div><div class="ttdeci">void changeSoundMode(SoundMode soundMode) override</div><div class="ttdoc">改变声音播放模式.</div><div class="ttdef"><b>Definition:</b> dmpvproxy.cpp:854</div></div>
+<div class="ttc" id="aclassDMpvProxy_html_a7b38b8d34486816db4e2c1d9ff273842"><div class="ttname"><a href="classDMpvProxy.html#a7b38b8d34486816db4e2c1d9ff273842">DMpvProxy::setProperty</a></div><div class="ttdeci">void setProperty(const QString &amp;, const QVariant &amp;) override</div><div class="ttdoc">设置播放属性.</div><div class="ttdef"><b>Definition:</b> dmpvproxy.cpp:1501</div></div>
+<div class="ttc" id="aclassDMpvProxy_html_a8599e28643c7debd5c5f7db1969f6bd5"><div class="ttname"><a href="classDMpvProxy.html#a8599e28643c7debd5c5f7db1969f6bd5">DMpvProxy::takeScreenshot</a></div><div class="ttdeci">QImage takeScreenshot() const override</div><div class="ttdoc">获取当前视频播放的截图.</div><div class="ttdef"><b>Definition:</b> dmpvproxy.cpp:1101</div></div>
+<div class="ttc" id="aclassDMpvProxy_html_a8c4737cb2c5a84e21016b8bdda36c171"><div class="ttname"><a href="classDMpvProxy.html#a8c4737cb2c5a84e21016b8bdda36c171">DMpvProxy::subDelay</a></div><div class="ttdeci">double subDelay() const override</div><div class="ttdoc">获取Sub字幕延迟显示时间.</div><div class="ttdef"><b>Definition:</b> dmpvproxy.cpp:755</div></div>
+<div class="ttc" id="aclassDMpvProxy_html_a8d9e30708fe38866e14b7def90b3c785"><div class="ttname"><a href="classDMpvProxy.html#a8d9e30708fe38866e14b7def90b3c785">DMpvProxy::stopBurstScreenshot</a></div><div class="ttdeci">void stopBurstScreenshot() override</div><div class="ttdoc">停止连拍截图.</div><div class="ttdef"><b>Definition:</b> dmpvproxy.cpp:1325</div></div>
+<div class="ttc" id="aclassDMpvProxy_html_a9640a0982f6d8f0f4bab5bec57124502"><div class="ttname"><a href="classDMpvProxy.html#a9640a0982f6d8f0f4bab5bec57124502">DMpvProxy::isSubVisible</a></div><div class="ttdeci">bool isSubVisible() override</div><div class="ttdoc">Sub字幕是否显示.</div><div class="ttdef"><b>Definition:</b> dmpvproxy.cpp:743</div></div>
+<div class="ttc" id="aclassDMpvProxy_html_aa98116094297762f5370798f775ba187"><div class="ttname"><a href="classDMpvProxy.html#aa98116094297762f5370798f775ba187">DMpvProxy::burstScreenshot</a></div><div class="ttdeci">void burstScreenshot() override</div><div class="ttdoc">连拍截图，截图间隔时间为5秒</div><div class="ttdef"><b>Definition:</b> dmpvproxy.cpp:1108</div></div>
+<div class="ttc" id="aclassDMpvProxy_html_aaaf20e64be8f00d813b837fe220d30d9"><div class="ttname"><a href="classDMpvProxy.html#aaaf20e64be8f00d813b837fe220d30d9">DMpvProxy::pollingEndOfPlayback</a></div><div class="ttdeci">void pollingEndOfPlayback()</div><div class="ttdoc">轮询直到播放结束.</div><div class="ttdef"><b>Definition:</b> dmpvproxy.cpp:488</div></div>
+<div class="ttc" id="aclassDMpvProxy_html_aaba33550497eba8dad5cca43839b85c3"><div class="ttname"><a href="classDMpvProxy.html#aaba33550497eba8dad5cca43839b85c3">DMpvProxy::initSetting</a></div><div class="ttdeci">void initSetting()</div><div class="ttdoc">初始化播放设置.</div><div class="ttdef"><b>Definition:</b> dmpvproxy.cpp:238</div></div>
+<div class="ttc" id="aclassDMpvProxy_html_aae5f83dbbda0831dd97cdba51adab581"><div class="ttname"><a href="classDMpvProxy.html#aae5f83dbbda0831dd97cdba51adab581">DMpvProxy::setVideoAspect</a></div><div class="ttdeci">void setVideoAspect(double dValue) override</div><div class="ttdoc">设置媒体播放显示长宽比.</div><div class="ttdef"><b>Definition:</b> dmpvproxy.cpp:921</div></div>
+<div class="ttc" id="aclassDMpvProxy_html_ab0abd1b99b51d32b5753418a1c717337"><div class="ttname"><a href="classDMpvProxy.html#ab0abd1b99b51d32b5753418a1c717337">DMpvProxy::duration</a></div><div class="ttdeci">qint64 duration() const override</div><div class="ttdoc">获取媒体时长.</div><div class="ttdef"><b>Definition:</b> dmpvproxy.cpp:1384</div></div>
+<div class="ttc" id="aclassDMpvProxy_html_ab8ad6df17eea37f6a84d4c4037bdf1d2"><div class="ttname"><a href="classDMpvProxy.html#ab8ad6df17eea37f6a84d4c4037bdf1d2">DMpvProxy::loadSubtitle</a></div><div class="ttdeci">bool loadSubtitle(const QFileInfo &amp;fileInfo) override</div><div class="ttdoc">加载媒体Sub字幕标题.</div><div class="ttdef"><b>Definition:</b> dmpvproxy.cpp:724</div></div>
+<div class="ttc" id="aclassDMpvProxy_html_ac140dfdc2115394e72ce6731392b71a9"><div class="ttname"><a href="classDMpvProxy.html#ac140dfdc2115394e72ce6731392b71a9">DMpvProxy::sid</a></div><div class="ttdeci">int sid() const override</div><div class="ttdoc">获取Sub字幕id.</div><div class="ttdef"><b>Definition:</b> dmpvproxy.cpp:840</div></div>
+<div class="ttc" id="aclassDMpvProxy_html_ac778fd825526a29ccdf0eba321003fe5"><div class="ttname"><a href="classDMpvProxy.html#ac778fd825526a29ccdf0eba321003fe5">DMpvProxy::volume</a></div><div class="ttdeci">int volume() const override</div><div class="ttdoc">获取媒体播放音量.</div><div class="ttdef"><b>Definition:</b> dmpvproxy.cpp:900</div></div>
+<div class="ttc" id="aclassDMpvProxy_html_ac927fab54bf26bccf667a86ac8079bad"><div class="ttname"><a href="classDMpvProxy.html#ac927fab54bf26bccf667a86ac8079bad">DMpvProxy::videoRotation</a></div><div class="ttdeci">int videoRotation() const override</div><div class="ttdoc">获取顺时针旋转视频角度.</div><div class="ttdef"><b>Definition:</b> dmpvproxy.cpp:908</div></div>
+<div class="ttc" id="aclassDMpvProxy_html_ad1399ffeb8bd8207b4a735633dba72d7"><div class="ttname"><a href="classDMpvProxy.html#ad1399ffeb8bd8207b4a735633dba72d7">DMpvProxy::setVideoRotation</a></div><div class="ttdeci">void setVideoRotation(int nDegree) override</div><div class="ttdoc">设置顺时针旋转视频角度.</div><div class="ttdef"><b>Definition:</b> dmpvproxy.cpp:915</div></div>
+<div class="ttc" id="aclassDMpvProxy_html_ad20894b8bad891ee245082e1a214de8e"><div class="ttname"><a href="classDMpvProxy.html#ad20894b8bad891ee245082e1a214de8e">DMpvProxy::initMpvFuns</a></div><div class="ttdeci">void initMpvFuns()</div><div class="ttdoc">初始化mpv接口函数.</div><div class="ttdef"><b>Definition:</b> dmpvproxy.cpp:189</div></div>
+<div class="ttc" id="aclassDMpvProxy_html_adcc8bc099ddff93cb435468346d1f39a"><div class="ttname"><a href="classDMpvProxy.html#adcc8bc099ddff93cb435468346d1f39a">DMpvProxy::playingMovieInfo</a></div><div class="ttdeci">const PlayingMovieInfo &amp; playingMovieInfo() override</div><div class="ttdoc">获取当前播放媒体信息.</div><div class="ttdef"><b>Definition:</b> dmpvproxy.cpp:517</div></div>
+<div class="ttc" id="aclassDMpvProxy_html_adec4669d061050be9e5e94490b92a153"><div class="ttname"><a href="classDMpvProxy.html#adec4669d061050be9e5e94490b92a153">DMpvProxy::subCodepage</a></div><div class="ttdeci">QString subCodepage() override</div><div class="ttdoc">获取媒体Sub字幕编码页.</div><div class="ttdef"><b>Definition:</b> dmpvproxy.cpp:761</div></div>
+<div class="ttc" id="aclassDMpvProxy_html_adee3f94b8eae27d246e720fa5cea5394"><div class="ttname"><a href="classDMpvProxy.html#adee3f94b8eae27d246e720fa5cea5394">DMpvProxy::setDecodeModel</a></div><div class="ttdeci">void setDecodeModel(const QVariant &amp;value)</div><div class="ttdoc">设置解码模式.</div><div class="ttdef"><b>Definition:</b> dmpvproxy.cpp:183</div></div>
+<div class="ttc" id="aclassDMpvProxy_html_ae68d8b44acdb0b0a14ba553bee0d0900"><div class="ttname"><a href="classDMpvProxy.html#ae68d8b44acdb0b0a14ba553bee0d0900">DMpvProxy::firstInit</a></div><div class="ttdeci">void firstInit()</div><div class="ttdoc">第一次打开播放器播放视频.</div><div class="ttdef"><b>Definition:</b> dmpvproxy.cpp:222</div></div>
+<div class="ttc" id="aclassDMpvProxy_html_aeb72f303b41eef5a8c65d204c4f9f863"><div class="ttname"><a href="classDMpvProxy.html#aeb72f303b41eef5a8c65d204c4f9f863">DMpvProxy::selectSubtitle</a></div><div class="ttdeci">void selectSubtitle(int nId) override</div><div class="ttdoc">根据id选择加载媒体Sub字幕.</div><div class="ttdef"><b>Definition:</b> dmpvproxy.cpp:814</div></div>
+<div class="ttc" id="aclassDMpvProxy_html_aed7932af6ff1d59cdb1f3fa5691422a2"><div class="ttname"><a href="classDMpvProxy.html#aed7932af6ff1d59cdb1f3fa5691422a2">DMpvProxy::getProperty</a></div><div class="ttdeci">QVariant getProperty(const QString &amp;) const override</div><div class="ttdoc">根据参数获取播放属性.</div><div class="ttdef"><b>Definition:</b> dmpvproxy.cpp:1495</div></div>
+<div class="ttc" id="aclassDMpvProxy_html_af167e0e975778d3c2075509f0c3dbda8"><div class="ttname"><a href="classDMpvProxy.html#af167e0e975778d3c2075509f0c3dbda8">DMpvProxy::setSubCodepage</a></div><div class="ttdeci">void setSubCodepage(const QString &amp;sCodePage) override</div><div class="ttdoc">设置媒体Sub字幕编码页.</div><div class="ttdef"><b>Definition:</b> dmpvproxy.cpp:779</div></div>
+<div class="ttc" id="aclassDMpvProxy_html_af36ce5377d17d20c7c3c8740ea13757f"><div class="ttname"><a href="classDMpvProxy.html#af36ce5377d17d20c7c3c8740ea13757f">DMpvProxy::selectTrack</a></div><div class="ttdeci">void selectTrack(int nId) override</div><div class="ttdoc">根据id选择音频轨道.</div><div class="ttdef"><b>Definition:</b> dmpvproxy.cpp:846</div></div>
+<div class="ttc" id="aclassDPlayerBackend_html"><div class="ttname"><a href="classDPlayerBackend.html">DPlayerBackend</a></div><div class="ttdef"><b>Definition:</b> dplayerbackend.h:25</div></div>
+<div class="ttc" id="aclassDPlayerBackend_html_ab8e3f52c306b4cdfe17881a4bedc1426"><div class="ttname"><a href="classDPlayerBackend.html#ab8e3f52c306b4cdfe17881a4bedc1426">DPlayerBackend::winID</a></div><div class="ttdeci">qint64 winID() const</div><div class="ttdoc">获取窗口wid.</div><div class="ttdef"><b>Definition:</b> dplayerbackend.cpp:79</div></div>
+<div class="ttc" id="aclassMpvHandle_html"><div class="ttname"><a href="classMpvHandle.html">MpvHandle</a></div><div class="ttdef"><b>Definition:</b> dmpvproxy.h:20</div></div>
+<div class="ttc" id="adplayerbackend_8h_html"><div class="ttname"><a href="dplayerbackend_8h.html">dplayerbackend.h</a></div></div>
+<div class="ttc" id="aqfileinfo_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qfileinfo.html">QFileInfo</a></div></div>
+<div class="ttc" id="aqimage_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qimage.html">QImage</a></div></div>
+<div class="ttc" id="aqobject_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html">QObject</a></div></div>
+<div class="ttc" id="aqobject_html_Q_OBJECT"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">QObject::Q_OBJECT</a></div><div class="ttdeci">Q_OBJECTQ_OBJECT</div></div>
+<div class="ttc" id="aqobject_html_parent"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#parent">QObject::parent</a></div><div class="ttdeci">QObject * parent() const const</div></div>
+<div class="ttc" id="aqscopedpointer_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qscopedpointer.html">QScopedPointer&lt; DMpvProxyPrivate &gt;</a></div></div>
+<div class="ttc" id="aqsharedpointer_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qsharedpointer.html">QSharedPointer&lt; container &gt;</a></div></div>
+<div class="ttc" id="aqsize_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qsize.html">QSize</a></div></div>
+<div class="ttc" id="aqstring_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstring.html">QString</a></div></div>
+<div class="ttc" id="aqvariant_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qvariant.html">QVariant</a></div></div>
+<div class="ttc" id="astructPlayingMovieInfo_html"><div class="ttname"><a href="structPlayingMovieInfo.html">PlayingMovieInfo</a></div><div class="ttdef"><b>Definition:</b> dplayerbackend.h:18</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_02ec0c46e08cde8e12788abb022f8c38.html">dtkmultimedia</a></li><li class="navelem"><a class="el" href="dir_2078faecabe7b884e0d998d9a0e5e0b8.html">include</a></li><li class="navelem"><a class="el" href="dir_740b6d2c3a8b6c5ce1c96a063386ec95.html">dtkmultimedia</a></li><li class="navelem"><a class="el" href="dmpvproxy_8h.html">dmpvproxy.h</a></li>
+    <li class="footer">文档生成时间:2023-01-13-07:39  +00</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

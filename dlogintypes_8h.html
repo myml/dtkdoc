@@ -1,0 +1,694 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: dtksystemsettings/include/login/dlogintypes.h 文件参考</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="https://github.com/linuxdeepin/dtkdoc" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('dlogintypes_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">dlogintypes.h 文件参考<div class="ingroups"><a class="el" href="group__dtklogin.html">Dtklogin</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;dtklogin_global.h&quot;</code><br />
+<code>#include &lt;qobject.h&gt;</code><br />
+<code>#include &lt;qvariant.h&gt;</code><br />
+<code>#include &lt;qdatetime.h&gt;</code><br />
+</div>
+<p><a href="dlogintypes_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structScheduledShutdownValue.html">ScheduledShutdownValue</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structInhibitor.html">Inhibitor</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:a670d0decc7b8e4594fa959d9a8d1f721"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dlogintypes_8h.html#a670d0decc7b8e4594fa959d9a8d1f721">ShutdownType</a> { <br />
+&#160;&#160;<a class="el" href="dlogintypes_8h.html#a670d0decc7b8e4594fa959d9a8d1f721a280a96254b645aa2c2c336ef2e235c37">PowerOff</a>
+, <a class="el" href="dlogintypes_8h.html#a670d0decc7b8e4594fa959d9a8d1f721a2adfbd74d631b912b5d73da23733ba77">DryPowerOff</a>
+, <a class="el" href="dlogintypes_8h.html#a670d0decc7b8e4594fa959d9a8d1f721a1de72c4fc6d69a741fff1cbb7cdb9e90">Reboot</a>
+, <a class="el" href="dlogintypes_8h.html#a670d0decc7b8e4594fa959d9a8d1f721a7756fe3aa3ff1e986ea5448cff4d75e2">DryReboot</a>
+, <br />
+&#160;&#160;<a class="el" href="dlogintypes_8h.html#a670d0decc7b8e4594fa959d9a8d1f721a4558f7fa8f5356a88a53347ad89babde">Halt</a>
+, <a class="el" href="dlogintypes_8h.html#a670d0decc7b8e4594fa959d9a8d1f721a09dd56cbe30eb264f1389c37150614ab">DryHalt</a>
+, <a class="el" href="dlogintypes_8h.html#a670d0decc7b8e4594fa959d9a8d1f721a88183b946cc5f0e8c96b2e66e1c74a7e">Unknown</a>
+<br />
+ }</td></tr>
+<tr class="separator:a670d0decc7b8e4594fa959d9a8d1f721"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38a942b5a4e892f272d54d469b6d592d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dlogintypes_8h.html#a38a942b5a4e892f272d54d469b6d592d">InhibitBehavior</a> { <br />
+&#160;&#160;<a class="el" href="dlogintypes_8h.html#a38a942b5a4e892f272d54d469b6d592dad7eff72d3e298432f32c409409c16d91">Shutdown</a> = 1 &lt;&lt; 0
+, <a class="el" href="dlogintypes_8h.html#a38a942b5a4e892f272d54d469b6d592da7ae599ab0325912d75016baf57084021">Sleep</a> = 1 &lt;&lt; 1
+, <b>Idle</b> = 1 &lt;&lt; 2
+, <b>HandlePowerKey</b> = 1 &lt;&lt; 3
+, <br />
+&#160;&#160;<b>HandleSuspendKey</b> = 1 &lt;&lt; 4
+, <b>HandleHibernateKey</b> = 1 &lt;&lt; 5
+, <b>HandleLidSwitch</b> = 1 &lt;&lt; 6
+<br />
+ }</td></tr>
+<tr class="separator:a38a942b5a4e892f272d54d469b6d592d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bb25797f4265d9041919b9d3bc858e7"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dlogintypes_8h.html#a2bb25797f4265d9041919b9d3bc858e7">PowerAction</a> { <br />
+&#160;&#160;<a class="el" href="dlogintypes_8h.html#a2bb25797f4265d9041919b9d3bc858e7a280a96254b645aa2c2c336ef2e235c37">PowerOff</a>
+, <a class="el" href="dlogintypes_8h.html#a2bb25797f4265d9041919b9d3bc858e7a1de72c4fc6d69a741fff1cbb7cdb9e90">Reboot</a>
+, <a class="el" href="dlogintypes_8h.html#a2bb25797f4265d9041919b9d3bc858e7a4558f7fa8f5356a88a53347ad89babde">Halt</a>
+, <a class="el" href="dlogintypes_8h.html#a2bb25797f4265d9041919b9d3bc858e7a4048edab8450b2620da78e3df4f067e1">KExec</a>
+, <br />
+&#160;&#160;<a class="el" href="dlogintypes_8h.html#a2bb25797f4265d9041919b9d3bc858e7ab3834d6f7a63e5e750e0ca5ecf31e3b9">Suspend</a>
+, <a class="el" href="dlogintypes_8h.html#a2bb25797f4265d9041919b9d3bc858e7af8cb4b31358f17fa37cfae6c2a0a13d3">Hibernate</a>
+, <a class="el" href="dlogintypes_8h.html#a2bb25797f4265d9041919b9d3bc858e7a64167242d94a04ebadcad7a46489b036">HybridSleep</a>
+, <a class="el" href="dlogintypes_8h.html#a2bb25797f4265d9041919b9d3bc858e7af78efa07f1ae4b6032f01df239592045">SuspendThenHibernate</a>
+, <br />
+&#160;&#160;<a class="el" href="dlogintypes_8h.html#a2bb25797f4265d9041919b9d3bc858e7ab485167c5b0e59d47009a16f90fe2659">Lock</a>
+, <a class="el" href="dlogintypes_8h.html#a2bb25797f4265d9041919b9d3bc858e7ada337aa54bcb70265c71244f971157b9">FactoryReset</a>
+, <a class="el" href="dlogintypes_8h.html#a2bb25797f4265d9041919b9d3bc858e7afd038fc7f319e48f3115d92bf5bdbef9">Ignore</a>
+, <a class="el" href="dlogintypes_8h.html#a2bb25797f4265d9041919b9d3bc858e7a88183b946cc5f0e8c96b2e66e1c74a7e">Unknown</a>
+<br />
+ }</td></tr>
+<tr class="separator:a2bb25797f4265d9041919b9d3bc858e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af731d761e6bc00fb129beb923360caac"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dlogintypes_8h.html#af731d761e6bc00fb129beb923360caac">ExecuteStatus</a> { <br />
+&#160;&#160;<a class="el" href="dlogintypes_8h.html#af731d761e6bc00fb129beb923360caaca93cba07454f06a4a960172bbd6e2a435">Yes</a>
+, <a class="el" href="dlogintypes_8h.html#af731d761e6bc00fb129beb923360caacabafd7322c6e97d25b6299b5d6fe8920b">No</a>
+, <a class="el" href="dlogintypes_8h.html#af731d761e6bc00fb129beb923360caacab5f5623b6137a89a1dadf079a5e92266">Challenge</a>
+, <a class="el" href="dlogintypes_8h.html#af731d761e6bc00fb129beb923360caaca91fbc1ffc46dc5e768f6b154bb548e37">Na</a>
+, <br />
+&#160;&#160;<a class="el" href="dlogintypes_8h.html#af731d761e6bc00fb129beb923360caaca88183b946cc5f0e8c96b2e66e1c74a7e">Unknown</a>
+<br />
+ }</td></tr>
+<tr class="separator:af731d761e6bc00fb129beb923360caac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3c6e91d92dc0717d57e3ddbabeaab59"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dlogintypes_8h.html#ab3c6e91d92dc0717d57e3ddbabeaab59">SessionRole</a> { <a class="el" href="dlogintypes_8h.html#ab3c6e91d92dc0717d57e3ddbabeaab59a5158a250e30f1fb4415d86ded2c8e0c5">Leader</a>
+, <a class="el" href="dlogintypes_8h.html#ab3c6e91d92dc0717d57e3ddbabeaab59ab1c94ca2fbc3e78fc30069c8d0f01680">All</a>
+, <a class="el" href="dlogintypes_8h.html#ab3c6e91d92dc0717d57e3ddbabeaab59a88183b946cc5f0e8c96b2e66e1c74a7e">Unknown</a>
+ }</td></tr>
+<tr class="separator:ab3c6e91d92dc0717d57e3ddbabeaab59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa98a3cf5c979d3762ffd3f5190d05f26"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dlogintypes_8h.html#aa98a3cf5c979d3762ffd3f5190d05f26">InhibitMode</a> { <a class="el" href="dlogintypes_8h.html#aa98a3cf5c979d3762ffd3f5190d05f26ae1e4c8c9ccd9fc39c391da4bcd093fb2">Block</a>
+, <a class="el" href="dlogintypes_8h.html#aa98a3cf5c979d3762ffd3f5190d05f26a8f497c1a3d15af9e0c215019f26b887d">Delay</a>
+, <a class="el" href="dlogintypes_8h.html#aa98a3cf5c979d3762ffd3f5190d05f26a88183b946cc5f0e8c96b2e66e1c74a7e">Unknown</a>
+ }</td></tr>
+<tr class="separator:aa98a3cf5c979d3762ffd3f5190d05f26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac82c179a797c0d7c249d1b98a8e3aa8f"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dlogintypes_8h.html#ac82c179a797c0d7c249d1b98a8e3aa8f">SessionState</a> { <a class="el" href="dlogintypes_8h.html#ac82c179a797c0d7c249d1b98a8e3aa8fa54f664c70c22054ea0d8d26fc3997ce7">Online</a>
+, <a class="el" href="dlogintypes_8h.html#ac82c179a797c0d7c249d1b98a8e3aa8fa4d3d769b812b6faa6b76e1a8abaece2d">Active</a>
+, <a class="el" href="dlogintypes_8h.html#ac82c179a797c0d7c249d1b98a8e3aa8fa5c8de6f894682fdb1786037b2040a26e">Closing</a>
+, <a class="el" href="dlogintypes_8h.html#ac82c179a797c0d7c249d1b98a8e3aa8fa88183b946cc5f0e8c96b2e66e1c74a7e">Unknown</a>
+ }</td></tr>
+<tr class="separator:ac82c179a797c0d7c249d1b98a8e3aa8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0695685c902e6c161ea20c244f605044"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dlogintypes_8h.html#a0695685c902e6c161ea20c244f605044">SessionType</a> { <br />
+&#160;&#160;<a class="el" href="dlogintypes_8h.html#a0695685c902e6c161ea20c244f605044a77ffb0038a392d97d302ada53a282ceb">TTY</a>
+, <a class="el" href="dlogintypes_8h.html#a0695685c902e6c161ea20c244f605044ad21ab1ce30c9c7735c0591317f50ab85">X11</a>
+, <a class="el" href="dlogintypes_8h.html#a0695685c902e6c161ea20c244f605044a6c6d132c43d2385e87d7e7eaf78636ef">Mir</a>
+, <a class="el" href="dlogintypes_8h.html#a0695685c902e6c161ea20c244f605044abd9c6c9ca372721e187caeb1654b4209">Wayland</a>
+, <br />
+&#160;&#160;<a class="el" href="dlogintypes_8h.html#a0695685c902e6c161ea20c244f605044a6fcdc090caeade09d0efd6253932b6f5">Unspecified</a>
+<br />
+ }</td></tr>
+<tr class="separator:a0695685c902e6c161ea20c244f605044"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c5150b0576b7945ffc33ec1fd5e10da"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dlogintypes_8h.html#a5c5150b0576b7945ffc33ec1fd5e10da">SessionClass</a> { <a class="el" href="dlogintypes_8h.html#a5c5150b0576b7945ffc33ec1fd5e10daa8f9bfe9d1345237cb3b2b205864da075">User</a>
+, <a class="el" href="dlogintypes_8h.html#a5c5150b0576b7945ffc33ec1fd5e10daadc048b8147f739348ff06e94e257a62b">Greeter</a>
+, <a class="el" href="dlogintypes_8h.html#a5c5150b0576b7945ffc33ec1fd5e10daa795fc04747be6afaf53be47fb2be1a22">LockScreen</a>
+, <a class="el" href="dlogintypes_8h.html#a5c5150b0576b7945ffc33ec1fd5e10daa88183b946cc5f0e8c96b2e66e1c74a7e">Unknown</a>
+ }</td></tr>
+<tr class="separator:a5c5150b0576b7945ffc33ec1fd5e10da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af564843a4caaf5a6aaa0b59e9e77430f"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dlogintypes_8h.html#af564843a4caaf5a6aaa0b59e9e77430f">UserState</a> { <br />
+&#160;&#160;<a class="el" href="dlogintypes_8h.html#af564843a4caaf5a6aaa0b59e9e77430fa8d9da4bc0e49a50e09ac9f7e56789d39">Offline</a>
+, <a class="el" href="dlogintypes_8h.html#af564843a4caaf5a6aaa0b59e9e77430faafb203ac058ef880a784132cf81492ec">Lingering</a>
+, <a class="el" href="dlogintypes_8h.html#af564843a4caaf5a6aaa0b59e9e77430fa54f664c70c22054ea0d8d26fc3997ce7">Online</a>
+, <a class="el" href="dlogintypes_8h.html#af564843a4caaf5a6aaa0b59e9e77430fa4d3d769b812b6faa6b76e1a8abaece2d">Active</a>
+, <br />
+&#160;&#160;<a class="el" href="dlogintypes_8h.html#af564843a4caaf5a6aaa0b59e9e77430fa5c8de6f894682fdb1786037b2040a26e">Closing</a>
+, <a class="el" href="dlogintypes_8h.html#af564843a4caaf5a6aaa0b59e9e77430fa88183b946cc5f0e8c96b2e66e1c74a7e">Unknown</a>
+<br />
+ }</td></tr>
+<tr class="separator:af564843a4caaf5a6aaa0b59e9e77430f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed94e4d78a670690f9e43defb133d752"><td class="memItemLeft" align="right" valign="top"><a id="aed94e4d78a670690f9e43defb133d752"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>DLoginErrorCode</b> { <br />
+&#160;&#160;<b>NoError</b> = 0
+, <b>Other</b> = 1
+, <b>Failed</b>
+, <b>NoMemory</b>
+, <br />
+&#160;&#160;<b>ServiceUnknown</b>
+, <b>NoReply</b>
+, <b>BadAddress</b>
+, <b>NotSupported</b>
+, <br />
+&#160;&#160;<b>LimitsExceeded</b>
+, <b>AccessDenied</b>
+, <b>NoServer</b>
+, <b>Timeout</b>
+, <br />
+&#160;&#160;<b>NoNetwork</b>
+, <b>AddressInUse</b>
+, <b>Disconnected</b>
+, <b>InvalidArgs</b>
+, <br />
+&#160;&#160;<b>UnknownMethod</b>
+, <b>TimedOut</b>
+, <b>InvalidSignature</b>
+, <b>UnknownInterface</b>
+, <br />
+&#160;&#160;<b>UnknownObject</b>
+, <b>UnknownProperty</b>
+, <b>PropertyReadOnly</b>
+, <b>InternalError</b>
+, <br />
+&#160;&#160;<b>InvalidService</b>
+, <b>InvalidObjectPath</b>
+, <b>InvalidInterface</b>
+, <b>InvalidMember</b>
+<br />
+ }</td></tr>
+<tr class="separator:aed94e4d78a670690f9e43defb133d752"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a2c2e4e181cfe007f870ea3a5b14c307f"><td class="memItemLeft" align="right" valign="top"><a id="a2c2e4e181cfe007f870ea3a5b14c307f"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qdebug.html">QDebug</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (<a class="elRef" href="http://doc.qt.io/qt-5/qdebug.html">QDebug</a> debug, const <a class="el" href="dlogintypes_8h.html#a670d0decc7b8e4594fa959d9a8d1f721">ShutdownType</a> &amp;type)</td></tr>
+<tr class="separator:a2c2e4e181cfe007f870ea3a5b14c307f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef39b0fc99bcc22e6018249c662c9da6"><td class="memItemLeft" align="right" valign="top"><a id="aef39b0fc99bcc22e6018249c662c9da6"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qdebug.html">QDebug</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (<a class="elRef" href="http://doc.qt.io/qt-5/qdebug.html">QDebug</a> debug, const <a class="el" href="structScheduledShutdownValue.html">ScheduledShutdownValue</a> &amp;scheduledShutdown)</td></tr>
+<tr class="separator:aef39b0fc99bcc22e6018249c662c9da6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85cff373476e3f7ceb21b7f3bf71d03e"><td class="memItemLeft" align="right" valign="top"><a id="a85cff373476e3f7ceb21b7f3bf71d03e"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qdebug.html">QDebug</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (<a class="elRef" href="http://doc.qt.io/qt-5/qdebug.html">QDebug</a> debug, const <a class="el" href="dlogintypes_8h.html#a2bb25797f4265d9041919b9d3bc858e7">PowerAction</a> &amp;action)</td></tr>
+<tr class="separator:a85cff373476e3f7ceb21b7f3bf71d03e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac03981772f580334ad9a6353a47ee24c"><td class="memItemLeft" align="right" valign="top"><a id="ac03981772f580334ad9a6353a47ee24c"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qdebug.html">QDebug</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (<a class="elRef" href="http://doc.qt.io/qt-5/qdebug.html">QDebug</a> debug, const <a class="el" href="dlogintypes_8h.html#af731d761e6bc00fb129beb923360caac">ExecuteStatus</a> &amp;status)</td></tr>
+<tr class="separator:ac03981772f580334ad9a6353a47ee24c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2cb9d8a3bad05e8f549de87da7adfae"><td class="memItemLeft" align="right" valign="top"><a id="aa2cb9d8a3bad05e8f549de87da7adfae"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qdebug.html">QDebug</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (<a class="elRef" href="http://doc.qt.io/qt-5/qdebug.html">QDebug</a> debug, const <a class="el" href="dlogintypes_8h.html#ab3c6e91d92dc0717d57e3ddbabeaab59">SessionRole</a> &amp;role)</td></tr>
+<tr class="separator:aa2cb9d8a3bad05e8f549de87da7adfae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d28e676d1f9cef65dcc4e76f28d9ff1"><td class="memItemLeft" align="right" valign="top"><a id="a7d28e676d1f9cef65dcc4e76f28d9ff1"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qdebug.html">QDebug</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (<a class="elRef" href="http://doc.qt.io/qt-5/qdebug.html">QDebug</a> debug, const <a class="el" href="dlogintypes_8h.html#aa98a3cf5c979d3762ffd3f5190d05f26">InhibitMode</a> &amp;mode)</td></tr>
+<tr class="separator:a7d28e676d1f9cef65dcc4e76f28d9ff1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6db79f4b49088463a72ce69b64ede43"><td class="memItemLeft" align="right" valign="top"><a id="ac6db79f4b49088463a72ce69b64ede43"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qdebug.html">QDebug</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (<a class="elRef" href="http://doc.qt.io/qt-5/qdebug.html">QDebug</a> debug, const <a class="el" href="dlogintypes_8h.html#ac82c179a797c0d7c249d1b98a8e3aa8f">SessionState</a> &amp;state)</td></tr>
+<tr class="separator:ac6db79f4b49088463a72ce69b64ede43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b0a9d90d823671b5f50aaf8c1708ee8"><td class="memItemLeft" align="right" valign="top"><a id="a4b0a9d90d823671b5f50aaf8c1708ee8"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qdebug.html">QDebug</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (<a class="elRef" href="http://doc.qt.io/qt-5/qdebug.html">QDebug</a> debug, const <a class="el" href="dlogintypes_8h.html#a0695685c902e6c161ea20c244f605044">SessionType</a> &amp;type)</td></tr>
+<tr class="separator:a4b0a9d90d823671b5f50aaf8c1708ee8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5416558eb304c5427cb9414eb20783d9"><td class="memItemLeft" align="right" valign="top"><a id="a5416558eb304c5427cb9414eb20783d9"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qdebug.html">QDebug</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (<a class="elRef" href="http://doc.qt.io/qt-5/qdebug.html">QDebug</a> debug, const <a class="el" href="dlogintypes_8h.html#a5c5150b0576b7945ffc33ec1fd5e10da">SessionClass</a> &amp;sessionClass)</td></tr>
+<tr class="separator:a5416558eb304c5427cb9414eb20783d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a659722d6d809448f7684d8437175d009"><td class="memItemLeft" align="right" valign="top"><a id="a659722d6d809448f7684d8437175d009"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qdebug.html">QDebug</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (<a class="elRef" href="http://doc.qt.io/qt-5/qdebug.html">QDebug</a> debug, const <a class="el" href="dlogintypes_8h.html#af564843a4caaf5a6aaa0b59e9e77430f">UserState</a> &amp;userState)</td></tr>
+<tr class="separator:a659722d6d809448f7684d8437175d009"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p><a class="el" href="dlogintypes_8h.html">dlogintypes.h</a> 中定义了login组件需要使用到的一些自定义数据结构。 </p>
+</div><h2 class="groupheader">枚举类型说明</h2>
+<a id="af731d761e6bc00fb129beb923360caac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af731d761e6bc00fb129beb923360caac">&#9670;&nbsp;</a></span>ExecuteStatus</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="dlogintypes_8h.html#af731d761e6bc00fb129beb923360caac">ExecuteStatus</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="af731d761e6bc00fb129beb923360caaca93cba07454f06a4a960172bbd6e2a435"></a>Yes&#160;</td><td class="fielddoc"><p>可以 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af731d761e6bc00fb129beb923360caacabafd7322c6e97d25b6299b5d6fe8920b"></a>No&#160;</td><td class="fielddoc"><p>硬件支持但用户不可以 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af731d761e6bc00fb129beb923360caacab5f5623b6137a89a1dadf079a5e92266"></a>Challenge&#160;</td><td class="fielddoc"><p>鉴权后可以 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af731d761e6bc00fb129beb923360caaca91fbc1ffc46dc5e768f6b154bb548e37"></a>Na&#160;</td><td class="fielddoc"><p>硬件不支持 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af731d761e6bc00fb129beb923360caaca88183b946cc5f0e8c96b2e66e1c74a7e"></a>Unknown&#160;</td><td class="fielddoc"><p>未知 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a38a942b5a4e892f272d54d469b6d592d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38a942b5a4e892f272d54d469b6d592d">&#9670;&nbsp;</a></span>InhibitBehavior</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="dlogintypes_8h.html#a38a942b5a4e892f272d54d469b6d592d">InhibitBehavior</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a38a942b5a4e892f272d54d469b6d592dad7eff72d3e298432f32c409409c16d91"></a>Shutdown&#160;</td><td class="fielddoc"><p>关机 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a38a942b5a4e892f272d54d469b6d592da7ae599ab0325912d75016baf57084021"></a>Sleep&#160;</td><td class="fielddoc"><p>睡眠 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="aa98a3cf5c979d3762ffd3f5190d05f26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa98a3cf5c979d3762ffd3f5190d05f26">&#9670;&nbsp;</a></span>InhibitMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="dlogintypes_8h.html#aa98a3cf5c979d3762ffd3f5190d05f26">InhibitMode</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="aa98a3cf5c979d3762ffd3f5190d05f26ae1e4c8c9ccd9fc39c391da4bcd093fb2"></a>Block&#160;</td><td class="fielddoc"><p>完全禁止操作，直到锁被释放。 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa98a3cf5c979d3762ffd3f5190d05f26a8f497c1a3d15af9e0c215019f26b887d"></a>Delay&#160;</td><td class="fielddoc"><p>只是暂时禁止操作, 直到锁被释放或达到一定的时间。DLoginManager::inhibitDelayMaxUSec获取超时时间。这旨在提供需要在系统挂起之前以同步方式执行操作但不允许无限期阻止挂起的应用程序使用。此模式仅适用于睡眠和关机的锁定。 </p><dl class="section see"><dt>参见</dt><dd>DLoginManager::inhibitDelayMaxUSec </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="aa98a3cf5c979d3762ffd3f5190d05f26a88183b946cc5f0e8c96b2e66e1c74a7e"></a>Unknown&#160;</td><td class="fielddoc"><p>未知 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a2bb25797f4265d9041919b9d3bc858e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bb25797f4265d9041919b9d3bc858e7">&#9670;&nbsp;</a></span>PowerAction</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="dlogintypes_8h.html#a2bb25797f4265d9041919b9d3bc858e7">PowerAction</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a2bb25797f4265d9041919b9d3bc858e7a280a96254b645aa2c2c336ef2e235c37"></a>PowerOff&#160;</td><td class="fielddoc"><p>关机 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a2bb25797f4265d9041919b9d3bc858e7a1de72c4fc6d69a741fff1cbb7cdb9e90"></a>Reboot&#160;</td><td class="fielddoc"><p>重启 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a2bb25797f4265d9041919b9d3bc858e7a4558f7fa8f5356a88a53347ad89babde"></a>Halt&#160;</td><td class="fielddoc"><p>关机不关闭电源 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a2bb25797f4265d9041919b9d3bc858e7a4048edab8450b2620da78e3df4f067e1"></a>KExec&#160;</td><td class="fielddoc"><p>加载新内核 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a2bb25797f4265d9041919b9d3bc858e7ab3834d6f7a63e5e750e0ca5ecf31e3b9"></a>Suspend&#160;</td><td class="fielddoc"><p>待机 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a2bb25797f4265d9041919b9d3bc858e7af8cb4b31358f17fa37cfae6c2a0a13d3"></a>Hibernate&#160;</td><td class="fielddoc"><p>休眠 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a2bb25797f4265d9041919b9d3bc858e7a64167242d94a04ebadcad7a46489b036"></a>HybridSleep&#160;</td><td class="fielddoc"><p>混合睡眠 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a2bb25797f4265d9041919b9d3bc858e7af78efa07f1ae4b6032f01df239592045"></a>SuspendThenHibernate&#160;</td><td class="fielddoc"><p>先待机后休眠 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a2bb25797f4265d9041919b9d3bc858e7ab485167c5b0e59d47009a16f90fe2659"></a>Lock&#160;</td><td class="fielddoc"><p>锁屏 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a2bb25797f4265d9041919b9d3bc858e7ada337aa54bcb70265c71244f971157b9"></a>FactoryReset&#160;</td><td class="fielddoc"><p>还原设置 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a2bb25797f4265d9041919b9d3bc858e7afd038fc7f319e48f3115d92bf5bdbef9"></a>Ignore&#160;</td><td class="fielddoc"><p>忽略 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a2bb25797f4265d9041919b9d3bc858e7a88183b946cc5f0e8c96b2e66e1c74a7e"></a>Unknown&#160;</td><td class="fielddoc"><p>未知 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a5c5150b0576b7945ffc33ec1fd5e10da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c5150b0576b7945ffc33ec1fd5e10da">&#9670;&nbsp;</a></span>SessionClass</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="dlogintypes_8h.html#a5c5150b0576b7945ffc33ec1fd5e10da">SessionClass</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a5c5150b0576b7945ffc33ec1fd5e10daa8f9bfe9d1345237cb3b2b205864da075"></a>User&#160;</td><td class="fielddoc"><p>由用户创建 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5c5150b0576b7945ffc33ec1fd5e10daadc048b8147f739348ff06e94e257a62b"></a>Greeter&#160;</td><td class="fielddoc"><p>由登录界面创建 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5c5150b0576b7945ffc33ec1fd5e10daa795fc04747be6afaf53be47fb2be1a22"></a>LockScreen&#160;</td><td class="fielddoc"><p>由锁屏程序创建 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5c5150b0576b7945ffc33ec1fd5e10daa88183b946cc5f0e8c96b2e66e1c74a7e"></a>Unknown&#160;</td><td class="fielddoc"><p>未知 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ab3c6e91d92dc0717d57e3ddbabeaab59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3c6e91d92dc0717d57e3ddbabeaab59">&#9670;&nbsp;</a></span>SessionRole</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="dlogintypes_8h.html#ab3c6e91d92dc0717d57e3ddbabeaab59">SessionRole</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="ab3c6e91d92dc0717d57e3ddbabeaab59a5158a250e30f1fb4415d86ded2c8e0c5"></a>Leader&#160;</td><td class="fielddoc"><p>父进程 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ab3c6e91d92dc0717d57e3ddbabeaab59ab1c94ca2fbc3e78fc30069c8d0f01680"></a>All&#160;</td><td class="fielddoc"><p>所有进程 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ab3c6e91d92dc0717d57e3ddbabeaab59a88183b946cc5f0e8c96b2e66e1c74a7e"></a>Unknown&#160;</td><td class="fielddoc"><p>未知 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ac82c179a797c0d7c249d1b98a8e3aa8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac82c179a797c0d7c249d1b98a8e3aa8f">&#9670;&nbsp;</a></span>SessionState</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="dlogintypes_8h.html#ac82c179a797c0d7c249d1b98a8e3aa8f">SessionState</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="ac82c179a797c0d7c249d1b98a8e3aa8fa54f664c70c22054ea0d8d26fc3997ce7"></a>Online&#160;</td><td class="fielddoc"><p>在线 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac82c179a797c0d7c249d1b98a8e3aa8fa4d3d769b812b6faa6b76e1a8abaece2d"></a>Active&#160;</td><td class="fielddoc"><p>已激活 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac82c179a797c0d7c249d1b98a8e3aa8fa5c8de6f894682fdb1786037b2040a26e"></a>Closing&#160;</td><td class="fielddoc"><p>关闭中 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac82c179a797c0d7c249d1b98a8e3aa8fa88183b946cc5f0e8c96b2e66e1c74a7e"></a>Unknown&#160;</td><td class="fielddoc"><p>未知 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a0695685c902e6c161ea20c244f605044"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0695685c902e6c161ea20c244f605044">&#9670;&nbsp;</a></span>SessionType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="dlogintypes_8h.html#a0695685c902e6c161ea20c244f605044">SessionType</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a0695685c902e6c161ea20c244f605044a77ffb0038a392d97d302ada53a282ceb"></a>TTY&#160;</td><td class="fielddoc"><p>TTY环境 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0695685c902e6c161ea20c244f605044ad21ab1ce30c9c7735c0591317f50ab85"></a>X11&#160;</td><td class="fielddoc"><p>X11环境 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0695685c902e6c161ea20c244f605044a6c6d132c43d2385e87d7e7eaf78636ef"></a>Mir&#160;</td><td class="fielddoc"><p>Mir环境 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0695685c902e6c161ea20c244f605044abd9c6c9ca372721e187caeb1654b4209"></a>Wayland&#160;</td><td class="fielddoc"><p>Wayland环境 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0695685c902e6c161ea20c244f605044a6fcdc090caeade09d0efd6253932b6f5"></a>Unspecified&#160;</td><td class="fielddoc"><p>未知的环境 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a670d0decc7b8e4594fa959d9a8d1f721"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a670d0decc7b8e4594fa959d9a8d1f721">&#9670;&nbsp;</a></span>ShutdownType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="dlogintypes_8h.html#a670d0decc7b8e4594fa959d9a8d1f721">ShutdownType</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a670d0decc7b8e4594fa959d9a8d1f721a280a96254b645aa2c2c336ef2e235c37"></a>PowerOff&#160;</td><td class="fielddoc"><p>关机 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a670d0decc7b8e4594fa959d9a8d1f721a2adfbd74d631b912b5d73da23733ba77"></a>DryPowerOff&#160;</td><td class="fielddoc"><p>实际并不执行关机 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a670d0decc7b8e4594fa959d9a8d1f721a1de72c4fc6d69a741fff1cbb7cdb9e90"></a>Reboot&#160;</td><td class="fielddoc"><p>重启 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a670d0decc7b8e4594fa959d9a8d1f721a7756fe3aa3ff1e986ea5448cff4d75e2"></a>DryReboot&#160;</td><td class="fielddoc"><p>实际并不执行重启 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a670d0decc7b8e4594fa959d9a8d1f721a4558f7fa8f5356a88a53347ad89babde"></a>Halt&#160;</td><td class="fielddoc"><p>关机不关闭电源 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a670d0decc7b8e4594fa959d9a8d1f721a09dd56cbe30eb264f1389c37150614ab"></a>DryHalt&#160;</td><td class="fielddoc"><p>实际并不执行关机 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a670d0decc7b8e4594fa959d9a8d1f721a88183b946cc5f0e8c96b2e66e1c74a7e"></a>Unknown&#160;</td><td class="fielddoc"><p>未知操作 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="af564843a4caaf5a6aaa0b59e9e77430f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af564843a4caaf5a6aaa0b59e9e77430f">&#9670;&nbsp;</a></span>UserState</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="dlogintypes_8h.html#af564843a4caaf5a6aaa0b59e9e77430f">UserState</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="af564843a4caaf5a6aaa0b59e9e77430fa8d9da4bc0e49a50e09ac9f7e56789d39"></a>Offline&#160;</td><td class="fielddoc"><p>离线 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af564843a4caaf5a6aaa0b59e9e77430faafb203ac058ef880a784132cf81492ec"></a>Lingering&#160;</td><td class="fielddoc"><p>滞留中 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af564843a4caaf5a6aaa0b59e9e77430fa54f664c70c22054ea0d8d26fc3997ce7"></a>Online&#160;</td><td class="fielddoc"><p>在线 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af564843a4caaf5a6aaa0b59e9e77430fa4d3d769b812b6faa6b76e1a8abaece2d"></a>Active&#160;</td><td class="fielddoc"><p>已激活 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af564843a4caaf5a6aaa0b59e9e77430fa5c8de6f894682fdb1786037b2040a26e"></a>Closing&#160;</td><td class="fielddoc"><p>关闭中 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af564843a4caaf5a6aaa0b59e9e77430fa88183b946cc5f0e8c96b2e66e1c74a7e"></a>Unknown&#160;</td><td class="fielddoc"><p>未知 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_e026ef78b2e8057db961dedccd38eaa6.html">dtksystemsettings</a></li><li class="navelem"><a class="el" href="dir_74c8413d5fcf4a8002824ebffa0726a6.html">include</a></li><li class="navelem"><a class="el" href="dir_b47534d6c87141b43263e70591ed891a.html">login</a></li><li class="navelem"><a class="el" href="dlogintypes_8h.html">dlogintypes.h</a></li>
+    <li class="footer">文档生成时间:2023-01-13-07:39  +00</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

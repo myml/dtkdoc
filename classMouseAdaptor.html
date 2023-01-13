@@ -1,0 +1,353 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: MouseAdaptor类 参考</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="https://github.com/linuxdeepin/dtkdoc" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classMouseAdaptor.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-slots">Public 槽</a> &#124;
+<a href="#signals">信号</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-attribs">静态 Public 属性</a> &#124;
+<a href="#properties">属性</a> &#124;
+<a href="classMouseAdaptor-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">MouseAdaptor类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 MouseAdaptor 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classMouseAdaptor.png" alt=""/>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Public 槽</h2></td></tr>
+<tr class="memitem:a9a0bb907fbd2c069132f9a03c16a8436"><td class="memItemLeft" align="right" valign="top"><a id="a9a0bb907fbd2c069132f9a03c16a8436"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Reset</b> ()</td></tr>
+<tr class="separator:a9a0bb907fbd2c069132f9a03c16a8436"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+信号</h2></td></tr>
+<tr class="memitem:ab0d5a129b8916901b56867d27ba0d1ef"><td class="memItemLeft" align="right" valign="top"><a id="ab0d5a129b8916901b56867d27ba0d1ef"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DisableTpadChanged</b> (bool disable)</td></tr>
+<tr class="separator:ab0d5a129b8916901b56867d27ba0d1ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a528846efdebc7e37fb7e367b3f6a8f69"><td class="memItemLeft" align="right" valign="top"><a id="a528846efdebc7e37fb7e367b3f6a8f69"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AdaptiveAccelProfileChanged</b> (bool adaptive)</td></tr>
+<tr class="separator:a528846efdebc7e37fb7e367b3f6a8f69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a8780ec3efc9ab9fa6fcb9d671a0523"><td class="memItemLeft" align="right" valign="top"><a id="a7a8780ec3efc9ab9fa6fcb9d671a0523"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ExistChanged</b> (bool exist)</td></tr>
+<tr class="separator:a7a8780ec3efc9ab9fa6fcb9d671a0523"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab07e075bb7f7140fae6e937234292e80"><td class="memItemLeft" align="right" valign="top"><a id="ab07e075bb7f7140fae6e937234292e80"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>LeftHandedChanged</b> (bool leftHanded)</td></tr>
+<tr class="separator:ab07e075bb7f7140fae6e937234292e80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cb644d3aad6bf0906812505ed95e5f3"><td class="memItemLeft" align="right" valign="top"><a id="a0cb644d3aad6bf0906812505ed95e5f3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>MiddleButtonEmulationChanged</b> (bool emulation)</td></tr>
+<tr class="separator:a0cb644d3aad6bf0906812505ed95e5f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa20442f09f87649a92aba833aa725f7d"><td class="memItemLeft" align="right" valign="top"><a id="aa20442f09f87649a92aba833aa725f7d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>NaturalScrollChanged</b> (bool naturalScroll)</td></tr>
+<tr class="separator:aa20442f09f87649a92aba833aa725f7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea550890486b5220c35538cea774d7d5"><td class="memItemLeft" align="right" valign="top"><a id="aea550890486b5220c35538cea774d7d5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>MotionAccelerationChanged</b> (double acceleration)</td></tr>
+<tr class="separator:aea550890486b5220c35538cea774d7d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab4a2f796774eface747d4e96a6dc890"><td class="memItemLeft" align="right" valign="top"><a id="aab4a2f796774eface747d4e96a6dc890"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DoubleClickChanged</b> (qint32 interval)</td></tr>
+<tr class="separator:aab4a2f796774eface747d4e96a6dc890"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0c0a37d07802ab1690ce55dfee94fb0"><td class="memItemLeft" align="right" valign="top"><a id="ab0c0a37d07802ab1690ce55dfee94fb0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DragThresholdChanged</b> (qint32 threshold)</td></tr>
+<tr class="separator:ab0c0a37d07802ab1690ce55dfee94fb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca384352e2c7948e82bf2d2474590a1b"><td class="memItemLeft" align="right" valign="top"><a id="aca384352e2c7948e82bf2d2474590a1b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DeviceListChanged</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;deviceList)</td></tr>
+<tr class="separator:aca384352e2c7948e82bf2d2474590a1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:aca2d66cadd2a21da59926a833876d7be"><td class="memItemLeft" align="right" valign="top"><a id="aca2d66cadd2a21da59926a833876d7be"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>DisableTpad</b> () const</td></tr>
+<tr class="separator:aca2d66cadd2a21da59926a833876d7be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e7bf98d227ce9f8b8e80ff1b9c16abf"><td class="memItemLeft" align="right" valign="top"><a id="a3e7bf98d227ce9f8b8e80ff1b9c16abf"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>AdaptiveAccelProfile</b> () const</td></tr>
+<tr class="separator:a3e7bf98d227ce9f8b8e80ff1b9c16abf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40896e384b7b112f6ca2e6f518176414"><td class="memItemLeft" align="right" valign="top"><a id="a40896e384b7b112f6ca2e6f518176414"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>Exist</b> () const</td></tr>
+<tr class="separator:a40896e384b7b112f6ca2e6f518176414"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0410cd57aefeeb31a58aa65fc3c34ead"><td class="memItemLeft" align="right" valign="top"><a id="a0410cd57aefeeb31a58aa65fc3c34ead"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>LeftHanded</b> () const</td></tr>
+<tr class="separator:a0410cd57aefeeb31a58aa65fc3c34ead"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2bc074bbe3f59cd64b65f9682d4d973"><td class="memItemLeft" align="right" valign="top"><a id="ab2bc074bbe3f59cd64b65f9682d4d973"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>MiddleButtonEmulation</b> () const</td></tr>
+<tr class="separator:ab2bc074bbe3f59cd64b65f9682d4d973"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6ed08858c33953a56c38ed1c489bcd1"><td class="memItemLeft" align="right" valign="top"><a id="ad6ed08858c33953a56c38ed1c489bcd1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>NaturalScroll</b> () const</td></tr>
+<tr class="separator:ad6ed08858c33953a56c38ed1c489bcd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9fc0d8245590ab981f198cff47ea02e"><td class="memItemLeft" align="right" valign="top"><a id="ab9fc0d8245590ab981f198cff47ea02e"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>MotionAcceleration</b> () const</td></tr>
+<tr class="separator:ab9fc0d8245590ab981f198cff47ea02e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d2f467b244382428e619aa6e3811513"><td class="memItemLeft" align="right" valign="top"><a id="a9d2f467b244382428e619aa6e3811513"></a>
+qint32&#160;</td><td class="memItemRight" valign="bottom"><b>DoubleClick</b> () const</td></tr>
+<tr class="separator:a9d2f467b244382428e619aa6e3811513"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f1559019d34b8a2efb4eaca54e3e83d"><td class="memItemLeft" align="right" valign="top"><a id="a0f1559019d34b8a2efb4eaca54e3e83d"></a>
+qint32&#160;</td><td class="memItemRight" valign="bottom"><b>DragThreshold</b> () const</td></tr>
+<tr class="separator:a0f1559019d34b8a2efb4eaca54e3e83d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a110922cb9ecc8457c54c847111de2706"><td class="memItemLeft" align="right" valign="top"><a id="a110922cb9ecc8457c54c847111de2706"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DeviceList</b> () const</td></tr>
+<tr class="separator:a110922cb9ecc8457c54c847111de2706"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18eacbc09cd2186c41fa3a58c8cd7026"><td class="memItemLeft" align="right" valign="top"><a id="a18eacbc09cd2186c41fa3a58c8cd7026"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDisableTpad</b> (bool disable)</td></tr>
+<tr class="separator:a18eacbc09cd2186c41fa3a58c8cd7026"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9640b737cd39abab8f36a49fe7a44fa"><td class="memItemLeft" align="right" valign="top"><a id="af9640b737cd39abab8f36a49fe7a44fa"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAdaptiveAccelProfile</b> (bool adaptive)</td></tr>
+<tr class="separator:af9640b737cd39abab8f36a49fe7a44fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79c9f9671fbeda4e38d1f79b636d90e0"><td class="memItemLeft" align="right" valign="top"><a id="a79c9f9671fbeda4e38d1f79b636d90e0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetLeftHanded</b> (bool leftHanded)</td></tr>
+<tr class="separator:a79c9f9671fbeda4e38d1f79b636d90e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1c69145a19f05ce36f40a910c688b35"><td class="memItemLeft" align="right" valign="top"><a id="af1c69145a19f05ce36f40a910c688b35"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetMiddleButtonEmulation</b> (bool emulation)</td></tr>
+<tr class="separator:af1c69145a19f05ce36f40a910c688b35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd1e25ca9d3601bd5176dd835b17493d"><td class="memItemLeft" align="right" valign="top"><a id="abd1e25ca9d3601bd5176dd835b17493d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetNaturalScroll</b> (bool naturalScroll)</td></tr>
+<tr class="separator:abd1e25ca9d3601bd5176dd835b17493d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78e756a3a1ada362211119d00c2bbecc"><td class="memItemLeft" align="right" valign="top"><a id="a78e756a3a1ada362211119d00c2bbecc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetMotionAcceleration</b> (double acceleration)</td></tr>
+<tr class="separator:a78e756a3a1ada362211119d00c2bbecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12f67741db516347a6b87c6d2d9c59d9"><td class="memItemLeft" align="right" valign="top"><a id="a12f67741db516347a6b87c6d2d9c59d9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDoubleClick</b> (qint32 interval)</td></tr>
+<tr class="separator:a12f67741db516347a6b87c6d2d9c59d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeba41e0c0f7bd08b781f9fa29f1c0fe9"><td class="memItemLeft" align="right" valign="top"><a id="aeba41e0c0f7bd08b781f9fa29f1c0fe9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDragThreshold</b> (qint32 threshold)</td></tr>
+<tr class="separator:aeba41e0c0f7bd08b781f9fa29f1c0fe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abda6706c4833b7ee9d9373b84352e432"><td class="memItemLeft" align="right" valign="top"><a id="abda6706c4833b7ee9d9373b84352e432"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>MouseAdaptor</b> (<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *parent=nullptr)</td></tr>
+<tr class="separator:abda6706c4833b7ee9d9373b84352e432"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+静态 Public 属性</h2></td></tr>
+<tr class="memitem:aa1b5c098011aa4949cdb6ef9fb3e901a"><td class="memItemLeft" align="right" valign="top"><a id="aa1b5c098011aa4949cdb6ef9fb3e901a"></a>
+static const bool&#160;</td><td class="memItemRight" valign="bottom"><b>AdaptiveAccelProfileDefault</b> = false</td></tr>
+<tr class="separator:aa1b5c098011aa4949cdb6ef9fb3e901a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5bc8712ee5e5901d286e1a2c3ca72c9"><td class="memItemLeft" align="right" valign="top"><a id="aa5bc8712ee5e5901d286e1a2c3ca72c9"></a>
+static const bool&#160;</td><td class="memItemRight" valign="bottom"><b>DisableTpadDefault</b> = false</td></tr>
+<tr class="separator:aa5bc8712ee5e5901d286e1a2c3ca72c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bede8a86343ffc4ab12b0016b47626d"><td class="memItemLeft" align="right" valign="top"><a id="a8bede8a86343ffc4ab12b0016b47626d"></a>
+static const bool&#160;</td><td class="memItemRight" valign="bottom"><b>ExistDefault</b> = true</td></tr>
+<tr class="separator:a8bede8a86343ffc4ab12b0016b47626d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a975bfc085df2dcc3f74e1afd56fa8188"><td class="memItemLeft" align="right" valign="top"><a id="a975bfc085df2dcc3f74e1afd56fa8188"></a>
+static const bool&#160;</td><td class="memItemRight" valign="bottom"><b>LeftHandedDefault</b> = false</td></tr>
+<tr class="separator:a975bfc085df2dcc3f74e1afd56fa8188"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76326b7bede40d00c5834e64a81999bb"><td class="memItemLeft" align="right" valign="top"><a id="a76326b7bede40d00c5834e64a81999bb"></a>
+static const bool&#160;</td><td class="memItemRight" valign="bottom"><b>MiddleButtonEmulationDefault</b> = true</td></tr>
+<tr class="separator:a76326b7bede40d00c5834e64a81999bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11961348da989472f2043ff6caf19106"><td class="memItemLeft" align="right" valign="top"><a id="a11961348da989472f2043ff6caf19106"></a>
+static const bool&#160;</td><td class="memItemRight" valign="bottom"><b>NaturalScrollDefault</b> = false</td></tr>
+<tr class="separator:a11961348da989472f2043ff6caf19106"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af68a0527a54cb4e4b666961f125280fa"><td class="memItemLeft" align="right" valign="top"><a id="af68a0527a54cb4e4b666961f125280fa"></a>
+static const double&#160;</td><td class="memItemRight" valign="bottom"><b>MotionAccelerationDefault</b> = 1.0</td></tr>
+<tr class="separator:af68a0527a54cb4e4b666961f125280fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a228504386914021857fcb546aed3872b"><td class="memItemLeft" align="right" valign="top"><a id="a228504386914021857fcb546aed3872b"></a>
+static const qint32&#160;</td><td class="memItemRight" valign="bottom"><b>DoubleClickDefault</b> = 500</td></tr>
+<tr class="separator:a228504386914021857fcb546aed3872b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e26857d970b64dd243532274d74702f"><td class="memItemLeft" align="right" valign="top"><a id="a5e26857d970b64dd243532274d74702f"></a>
+static const qint32&#160;</td><td class="memItemRight" valign="bottom"><b>DragThresholdDefault</b> = 20</td></tr>
+<tr class="separator:a5e26857d970b64dd243532274d74702f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a619d15a19c5993b3a219c5f921f0549d"><td class="memItemLeft" align="right" valign="top"><a id="a619d15a19c5993b3a219c5f921f0549d"></a>
+static const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DeviceListDefault</b> = QStringLiteral(&quot;[{\&quot;Id\&quot;: 10, \&quot;Name\&quot;: \&quot;Test Mouse\&quot;}]&quot;)</td></tr>
+<tr class="separator:a619d15a19c5993b3a219c5f921f0549d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:a6163b596680f915e141f1de0fa3464bd"><td class="memItemLeft" align="right" valign="top"><a id="a6163b596680f915e141f1de0fa3464bd"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>AdaptiveAccelProfile</b></td></tr>
+<tr class="separator:a6163b596680f915e141f1de0fa3464bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2b55e55b882a5803beddc75bec8ee5b"><td class="memItemLeft" align="right" valign="top"><a id="ae2b55e55b882a5803beddc75bec8ee5b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>DisableTpad</b></td></tr>
+<tr class="separator:ae2b55e55b882a5803beddc75bec8ee5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adae756d567e232f360e35da164f6afc1"><td class="memItemLeft" align="right" valign="top"><a id="adae756d567e232f360e35da164f6afc1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>Exist</b></td></tr>
+<tr class="separator:adae756d567e232f360e35da164f6afc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0afa958ab2d2970a9f75cc9230da040a"><td class="memItemLeft" align="right" valign="top"><a id="a0afa958ab2d2970a9f75cc9230da040a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>LeftHanded</b></td></tr>
+<tr class="separator:a0afa958ab2d2970a9f75cc9230da040a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2f2bbac404b82986ddca70908fe9fa2"><td class="memItemLeft" align="right" valign="top"><a id="aa2f2bbac404b82986ddca70908fe9fa2"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>MiddleButtonEmulation</b></td></tr>
+<tr class="separator:aa2f2bbac404b82986ddca70908fe9fa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1de379a95dcc3ad5e1a8dc653182a134"><td class="memItemLeft" align="right" valign="top"><a id="a1de379a95dcc3ad5e1a8dc653182a134"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>NaturalScroll</b></td></tr>
+<tr class="separator:a1de379a95dcc3ad5e1a8dc653182a134"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7423df99e0ea2045c49a708fb0995d48"><td class="memItemLeft" align="right" valign="top"><a id="a7423df99e0ea2045c49a708fb0995d48"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>MotionAcceleration</b></td></tr>
+<tr class="separator:a7423df99e0ea2045c49a708fb0995d48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae04216b842fec306fdf6db1f5b1ef8bf"><td class="memItemLeft" align="right" valign="top"><a id="ae04216b842fec306fdf6db1f5b1ef8bf"></a>
+qint32&#160;</td><td class="memItemRight" valign="bottom"><b>DoubleClick</b></td></tr>
+<tr class="separator:ae04216b842fec306fdf6db1f5b1ef8bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fd1670136022cb0fc965b6351ab9d8e"><td class="memItemLeft" align="right" valign="top"><a id="a9fd1670136022cb0fc965b6351ab9d8e"></a>
+qint32&#160;</td><td class="memItemRight" valign="bottom"><b>DragThreshold</b></td></tr>
+<tr class="separator:a9fd1670136022cb0fc965b6351ab9d8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a634f8c2c46a3c5163a437c0340437262"><td class="memItemLeft" align="right" valign="top"><a id="a634f8c2c46a3c5163a437c0340437262"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DeviceList</b></td></tr>
+<tr class="separator:a634f8c2c46a3c5163a437c0340437262"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dtkdevice/tests/inputdevices/fakedbus/<a class="el" href="mouseadaptor_8h_source.html">mouseadaptor.h</a></li>
+<li>dtkdevice/tests/inputdevices/fakedbus/mouseadaptor.cpp</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classMouseAdaptor.html">MouseAdaptor</a></li>
+    <li class="footer">文档生成时间:2023-01-13-07:39  +00</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

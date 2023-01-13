@@ -160,8 +160,8 @@ $(document).ready(function(){initNavTree('dguiapplicationhelper__p_8h_source.htm
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef DGUIAPPLICATIONHELPER_P_H</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define DGUIAPPLICATIONHELPER_P_H</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;dguiapplicationhelper.h&quot;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;dplatformtheme.h&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="dguiapplicationhelper_8h.html">dguiapplicationhelper.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="dplatformtheme_8h.html">dplatformtheme.h</a>&quot;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;DObjectPrivate&gt;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
@@ -183,32 +183,38 @@ $(document).ready(function(){initNavTree('dguiapplicationhelper__p_8h_source.htm
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> staticCleanApplication();</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="classDPlatformTheme.html">DPlatformTheme</a> *initWindow(<a class="codeRef" href="http://doc.qt.io/qt-5/qwindow.html">QWindow</a> *window) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> _q_initApplicationTheme(<span class="keywordtype">bool</span> notifyChange = <span class="keyword">false</span>);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> notifyAppThemeChanged();</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">// 返回程序是否自定义了调色板</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> isCustomPalette() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92">DGuiApplicationHelper::ColorType</a> paletteType = <a class="code" href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92a95bb3c2345b862eb18aebb372351099d">DGuiApplicationHelper::UnknownType</a>;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">// 系统级别的主题设置</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="classDPlatformTheme.html">DPlatformTheme</a> *systemTheme = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qscopedpointer.html">QScopedPointer&lt;DPalette&gt;</a> appPalette;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="comment">// 获取QLocalSever消息的等待时间</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> waitTime;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">static</span> DGuiApplicationHelper::Attributes attributes;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">// 应用程序级别的主题设置</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="classDPlatformTheme.html">DPlatformTheme</a> *appTheme = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;};</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;Q_DECLARE_OPERATORS_FOR_FLAGS(DGuiApplicationHelper::Attributes)</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;DGUI_END_NAMESPACE</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> _q_sizeModeChanged(<span class="keywordtype">int</span> mode);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    DGuiApplicationHelper::SizeMode fetchSizeMode(<span class="keywordtype">bool</span> *isSystemSizeMode = <span class="keyword">nullptr</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> notifyAppThemeChanged();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="comment">// 返回程序是否自定义了调色板</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> isCustomPalette() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92">DGuiApplicationHelper::ColorType</a> paletteType = <a class="code" href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92a95bb3c2345b862eb18aebb372351099d">DGuiApplicationHelper::UnknownType</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="comment">// 系统级别的主题设置</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="classDPlatformTheme.html">DPlatformTheme</a> *systemTheme = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qscopedpointer.html">QScopedPointer&lt;DPalette&gt;</a> appPalette;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">// 获取QLocalSever消息的等待时间</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> waitTime;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">static</span> DGuiApplicationHelper::Attributes attributes;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    DGuiApplicationHelper::SizeMode systemSizeMode = DGuiApplicationHelper::NormalMode;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    DGuiApplicationHelper::SizeMode explicitSizeMode;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">// 应用程序级别的主题设置</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="classDPlatformTheme.html">DPlatformTheme</a> *appTheme = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;};</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// DGUIAPPLICATIONHELPER_P_H</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;Q_DECLARE_OPERATORS_FOR_FLAGS(DGuiApplicationHelper::Attributes)</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;DGUI_END_NAMESPACE</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// DGUIAPPLICATIONHELPER_P_H</span></div>
 <div class="ttc" id="aclassDGuiApplicationHelper_html"><div class="ttname"><a href="classDGuiApplicationHelper.html">DGuiApplicationHelper</a></div><div class="ttdef"><b>Definition:</b> dguiapplicationhelper.h:21</div></div>
 <div class="ttc" id="aclassDGuiApplicationHelper_html_aded1affde49f3af542f861eedbd32d92"><div class="ttname"><a href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92">DGuiApplicationHelper::ColorType</a></div><div class="ttdeci">ColorType</div><div class="ttdef"><b>Definition:</b> dguiapplicationhelper.h:30</div></div>
 <div class="ttc" id="aclassDGuiApplicationHelper_html_aded1affde49f3af542f861eedbd32d92a95bb3c2345b862eb18aebb372351099d"><div class="ttname"><a href="classDGuiApplicationHelper.html#aded1affde49f3af542f861eedbd32d92a95bb3c2345b862eb18aebb372351099d">DGuiApplicationHelper::UnknownType</a></div><div class="ttdeci">@ UnknownType</div><div class="ttdef"><b>Definition:</b> dguiapplicationhelper.h:31</div></div>
 <div class="ttc" id="aclassDPlatformTheme_html"><div class="ttname"><a href="classDPlatformTheme.html">DPlatformTheme</a></div><div class="ttdef"><b>Definition:</b> dplatformtheme.h:17</div></div>
+<div class="ttc" id="adguiapplicationhelper_8h_html"><div class="ttname"><a href="dguiapplicationhelper_8h.html">dguiapplicationhelper.h</a></div></div>
+<div class="ttc" id="adplatformtheme_8h_html"><div class="ttname"><a href="dplatformtheme_8h.html">dplatformtheme.h</a></div></div>
 <div class="ttc" id="aqguiapplication_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qguiapplication.html">QGuiApplication</a></div></div>
 <div class="ttc" id="aqlocalserver_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qlocalserver.html">QLocalServer</a></div></div>
 <div class="ttc" id="aqscopedpointer_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qscopedpointer.html">QScopedPointer&lt; DPalette &gt;</a></div></div>
@@ -220,7 +226,7 @@ $(document).ready(function(){initNavTree('dguiapplicationhelper__p_8h_source.htm
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01e26ae7551668ca493319620c16a3ae.html">dtkgui</a></li><li class="navelem"><a class="el" href="dir_f1a11d12171d66e86c8e928f2778dd27.html">src</a></li><li class="navelem"><a class="el" href="dir_a509d977e8d1d333b9dd2c9a77f5374d.html">private</a></li><li class="navelem"><b>dguiapplicationhelper_p.h</b></li>
-    <li class="footer">文档生成时间:2023-01-03-09:52  +00</li>
+    <li class="footer">文档生成时间:2023-01-13-07:39  +00</li>
     <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
     <li class="footer">制作者:deepin doc doc go SIG</li>
     <li class="footer">文档使用CC-BY-4.0共享 </a>

@@ -1,0 +1,513 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: DQuickIconImage类 参考</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="https://github.com/linuxdeepin/dtkdoc" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classDQuickIconImage.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-slots">Public 槽</a> &#124;
+<a href="#signals">信号</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#properties">属性</a> &#124;
+<a href="classDQuickIconImage-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">DQuickIconImage类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 DQuickIconImage 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classDQuickIconImage.png" alt=""/>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a755ae5ae6ceb55e3a934ff731cdc998c"><td class="memItemLeft" align="right" valign="top"><a id="a755ae5ae6ceb55e3a934ff731cdc998c"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><b>Mode</b> { <br />
+&#160;&#160;<b>Invalid</b> = QIcon::Normal - 1
+, <b>Normal</b> = QIcon::Normal
+, <b>Disabled</b> = QIcon::Disabled
+, <b>Active</b> = QIcon::Active
+, <br />
+&#160;&#160;<b>Selected</b> = QIcon::Selected
+<br />
+ }</td></tr>
+<tr class="separator:a755ae5ae6ceb55e3a934ff731cdc998c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c636a32571065c2334575f69f06509d"><td class="memItemLeft" align="right" valign="top"><a id="a5c636a32571065c2334575f69f06509d"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><b>State</b> { <b>On</b> = QIcon::On
+, <b>Off</b> = QIcon::Off
+ }</td></tr>
+<tr class="separator:a5c636a32571065c2334575f69f06509d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Public 槽</h2></td></tr>
+<tr class="memitem:a196895dab94df11036f04fd8708c4851"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDQuickIconImage.html#a196895dab94df11036f04fd8708c4851">setName</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;name)</td></tr>
+<tr class="memdesc:a196895dab94df11036f04fd8708c4851"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDQuickIconImage.html#a196895dab94df11036f04fd8708c4851" title="DQuickIconImage::setName">DQuickIconImage::setName</a>  <a href="classDQuickIconImage.html#a196895dab94df11036f04fd8708c4851">更多...</a><br /></td></tr>
+<tr class="separator:a196895dab94df11036f04fd8708c4851"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3630393b4222e04ba884e6ac80878cb4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDQuickIconImage.html#a3630393b4222e04ba884e6ac80878cb4">setState</a> (State state)</td></tr>
+<tr class="memdesc:a3630393b4222e04ba884e6ac80878cb4"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDQuickIconImage.html#a3630393b4222e04ba884e6ac80878cb4" title="DQuickIconImage::setState">DQuickIconImage::setState</a>  <a href="classDQuickIconImage.html#a3630393b4222e04ba884e6ac80878cb4">更多...</a><br /></td></tr>
+<tr class="separator:a3630393b4222e04ba884e6ac80878cb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c4542c4e9fd481e0831908c5bf6d487"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDQuickIconImage.html#a3c4542c4e9fd481e0831908c5bf6d487">setMode</a> (Mode mode)</td></tr>
+<tr class="memdesc:a3c4542c4e9fd481e0831908c5bf6d487"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDQuickIconImage.html#a3c4542c4e9fd481e0831908c5bf6d487" title="DQuickIconImage::setMode">DQuickIconImage::setMode</a>  <a href="classDQuickIconImage.html#a3c4542c4e9fd481e0831908c5bf6d487">更多...</a><br /></td></tr>
+<tr class="separator:a3c4542c4e9fd481e0831908c5bf6d487"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcfb44aa5dfc79e332fa79d476d84698"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDQuickIconImage.html#adcfb44aa5dfc79e332fa79d476d84698">setColor</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qcolor.html">QColor</a> &amp;color)</td></tr>
+<tr class="memdesc:adcfb44aa5dfc79e332fa79d476d84698"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDQuickIconImage.html#adcfb44aa5dfc79e332fa79d476d84698" title="DQuickIconImage::setColor">DQuickIconImage::setColor</a>  <a href="classDQuickIconImage.html#adcfb44aa5dfc79e332fa79d476d84698">更多...</a><br /></td></tr>
+<tr class="separator:adcfb44aa5dfc79e332fa79d476d84698"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7808efe3cb92024e52bdb5d49d1e3b71"><td class="memItemLeft" align="right" valign="top"><a id="a7808efe3cb92024e52bdb5d49d1e3b71"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setFallbackSource</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qurl.html">QUrl</a> &amp;newSource)</td></tr>
+<tr class="separator:a7808efe3cb92024e52bdb5d49d1e3b71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+信号</h2></td></tr>
+<tr class="memitem:a278ad772c39438d78dbd6a252790ce51"><td class="memItemLeft" align="right" valign="top"><a id="a278ad772c39438d78dbd6a252790ce51"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>nameChanged</b> ()</td></tr>
+<tr class="separator:a278ad772c39438d78dbd6a252790ce51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1169575bb4a0a98a3a1dc85d5063f010"><td class="memItemLeft" align="right" valign="top"><a id="a1169575bb4a0a98a3a1dc85d5063f010"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>stateChanged</b> ()</td></tr>
+<tr class="separator:a1169575bb4a0a98a3a1dc85d5063f010"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8aeae5f1a49512171716d5103af5bd02"><td class="memItemLeft" align="right" valign="top"><a id="a8aeae5f1a49512171716d5103af5bd02"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>modeChanged</b> ()</td></tr>
+<tr class="separator:a8aeae5f1a49512171716d5103af5bd02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbfad568be39a773ef9f33e078121656"><td class="memItemLeft" align="right" valign="top"><a id="adbfad568be39a773ef9f33e078121656"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>colorChanged</b> ()</td></tr>
+<tr class="separator:adbfad568be39a773ef9f33e078121656"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76946d62b912068610dcbb99148ed75a"><td class="memItemLeft" align="right" valign="top"><a id="a76946d62b912068610dcbb99148ed75a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>fallbackSourceChanged</b> ()</td></tr>
+<tr class="separator:a76946d62b912068610dcbb99148ed75a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a8c0d352e15a405d4536fdadd01485cd3"><td class="memItemLeft" align="right" valign="top"><a id="a8c0d352e15a405d4536fdadd01485cd3"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DQuickIconImage</b> (QQuickItem *parent=nullptr)</td></tr>
+<tr class="separator:a8c0d352e15a405d4536fdadd01485cd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a3a8157243bf97959169c3ddfbca7da"><td class="memItemLeft" align="right" valign="top"><a id="a0a3a8157243bf97959169c3ddfbca7da"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>componentComplete</b> () override</td></tr>
+<tr class="separator:a0a3a8157243bf97959169c3ddfbca7da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40744218f5be8d8b69ed6cf7d85d439c"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDQuickIconImage.html#a40744218f5be8d8b69ed6cf7d85d439c">name</a> () const</td></tr>
+<tr class="memdesc:a40744218f5be8d8b69ed6cf7d85d439c"><td class="mdescLeft">&#160;</td><td class="mdescRight">DQuickIconImage::name  <a href="classDQuickIconImage.html#a40744218f5be8d8b69ed6cf7d85d439c">更多...</a><br /></td></tr>
+<tr class="separator:a40744218f5be8d8b69ed6cf7d85d439c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbd8a48d513e8e84816d40270975425a"><td class="memItemLeft" align="right" valign="top">State&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDQuickIconImage.html#acbd8a48d513e8e84816d40270975425a">state</a> () const</td></tr>
+<tr class="memdesc:acbd8a48d513e8e84816d40270975425a"><td class="mdescLeft">&#160;</td><td class="mdescRight">DQuickIconImage::state  <a href="classDQuickIconImage.html#acbd8a48d513e8e84816d40270975425a">更多...</a><br /></td></tr>
+<tr class="separator:acbd8a48d513e8e84816d40270975425a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23f7bed87864ad06dcd825c3caa47f81"><td class="memItemLeft" align="right" valign="top">Mode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDQuickIconImage.html#a23f7bed87864ad06dcd825c3caa47f81">mode</a> () const</td></tr>
+<tr class="memdesc:a23f7bed87864ad06dcd825c3caa47f81"><td class="mdescLeft">&#160;</td><td class="mdescRight">DQuickIconImage::mode  <a href="classDQuickIconImage.html#a23f7bed87864ad06dcd825c3caa47f81">更多...</a><br /></td></tr>
+<tr class="separator:a23f7bed87864ad06dcd825c3caa47f81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc67f3699607963a41f723a6e32cd164"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="http://doc.qt.io/qt-5/qcolor.html">QColor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDQuickIconImage.html#acc67f3699607963a41f723a6e32cd164">color</a> () const</td></tr>
+<tr class="memdesc:acc67f3699607963a41f723a6e32cd164"><td class="mdescLeft">&#160;</td><td class="mdescRight">DQuickIconImage::color  <a href="classDQuickIconImage.html#acc67f3699607963a41f723a6e32cd164">更多...</a><br /></td></tr>
+<tr class="separator:acc67f3699607963a41f723a6e32cd164"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ad83b5da84d6b00c6a28cf21242fd42"><td class="memItemLeft" align="right" valign="top"><a id="a4ad83b5da84d6b00c6a28cf21242fd42"></a>
+const <a class="elRef" href="http://doc.qt.io/qt-5/qurl.html">QUrl</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>fallbackSource</b> () const</td></tr>
+<tr class="separator:a4ad83b5da84d6b00c6a28cf21242fd42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:aeb0fb20575c585a87caabfccb55a5ccd"><td class="memItemLeft" align="right" valign="top"><a id="aeb0fb20575c585a87caabfccb55a5ccd"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DQuickIconImage</b> (<a class="el" href="classDQuickIconImagePrivate.html">DQuickIconImagePrivate</a> &amp;dd, QQuickItem *parent)</td></tr>
+<tr class="separator:aeb0fb20575c585a87caabfccb55a5ccd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1af11e38c5e602ba62befc6cbe564101"><td class="memItemLeft" align="right" valign="top"><a id="a1af11e38c5e602ba62befc6cbe564101"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>itemChange</b> (ItemChange change, const ItemChangeData &amp;value) override</td></tr>
+<tr class="separator:a1af11e38c5e602ba62befc6cbe564101"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60a776880025b20856e4b32a183d7ac4"><td class="memItemLeft" align="right" valign="top"><a id="a60a776880025b20856e4b32a183d7ac4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>pixmapChange</b> () override</td></tr>
+<tr class="separator:a60a776880025b20856e4b32a183d7ac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:af510b526282fe09e17c35b42a4747c7f"><td class="memItemLeft" align="right" valign="top"><a id="af510b526282fe09e17c35b42a4747c7f"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>name</b></td></tr>
+<tr class="separator:af510b526282fe09e17c35b42a4747c7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29b10dbf0436ff09c4cbf7c41b7a4437"><td class="memItemLeft" align="right" valign="top"><a id="a29b10dbf0436ff09c4cbf7c41b7a4437"></a>
+Mode&#160;</td><td class="memItemRight" valign="bottom"><b>mode</b></td></tr>
+<tr class="separator:a29b10dbf0436ff09c4cbf7c41b7a4437"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af597e87d37ac4c32aebd289b37d1ae0d"><td class="memItemLeft" align="right" valign="top"><a id="af597e87d37ac4c32aebd289b37d1ae0d"></a>
+State&#160;</td><td class="memItemRight" valign="bottom"><b>state</b></td></tr>
+<tr class="separator:af597e87d37ac4c32aebd289b37d1ae0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a2026b3c0c12d7eac2e0eb4c1c3d113"><td class="memItemLeft" align="right" valign="top"><a id="a0a2026b3c0c12d7eac2e0eb4c1c3d113"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qcolor.html">QColor</a>&#160;</td><td class="memItemRight" valign="bottom"><b>color</b></td></tr>
+<tr class="separator:a0a2026b3c0c12d7eac2e0eb4c1c3d113"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a516db73d686647dc58c1fd1a1106ac82"><td class="memItemLeft" align="right" valign="top"><a id="a516db73d686647dc58c1fd1a1106ac82"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qurl.html">QUrl</a>&#160;</td><td class="memItemRight" valign="bottom"><b>fallbackSource</b></td></tr>
+<tr class="separator:a516db73d686647dc58c1fd1a1106ac82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="acc67f3699607963a41f723a6e32cd164"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc67f3699607963a41f723a6e32cd164">&#9670;&nbsp;</a></span>color()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" href="http://doc.qt.io/qt-5/qcolor.html">QColor</a> DQuickIconImage::color </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>DQuickIconImage::color </p>
+<dl class="section return"><dt>返回</dt><dd>Returns the color of theme icon used in QML Application. </dd></dl>
+
+</div>
+</div>
+<a id="a23f7bed87864ad06dcd825c3caa47f81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23f7bed87864ad06dcd825c3caa47f81">&#9670;&nbsp;</a></span>mode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DQuickIconImage::Mode DQuickIconImage::mode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>DQuickIconImage::mode </p>
+<dl class="section return"><dt>返回</dt><dd>Returns the mode of theme icon used in QML Application. </dd></dl>
+
+</div>
+</div>
+<a id="a40744218f5be8d8b69ed6cf7d85d439c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40744218f5be8d8b69ed6cf7d85d439c">&#9670;&nbsp;</a></span>name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> DQuickIconImage::name </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>DQuickIconImage::name </p>
+<dl class="section return"><dt>返回</dt><dd>Returns the name of theme icon used in QML Application. </dd></dl>
+
+</div>
+</div>
+<a id="adcfb44aa5dfc79e332fa79d476d84698"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcfb44aa5dfc79e332fa79d476d84698">&#9670;&nbsp;</a></span>setColor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DQuickIconImage::setColor </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" href="http://doc.qt.io/qt-5/qcolor.html">QColor</a> &amp;&#160;</td>
+          <td class="paramname"><em>color</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classDQuickIconImage.html#adcfb44aa5dfc79e332fa79d476d84698" title="DQuickIconImage::setColor">DQuickIconImage::setColor</a> </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">color</td><td>can set to show the icon used in QML Application. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3c4542c4e9fd481e0831908c5bf6d487"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c4542c4e9fd481e0831908c5bf6d487">&#9670;&nbsp;</a></span>setMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DQuickIconImage::setMode </td>
+          <td>(</td>
+          <td class="paramtype">Mode&#160;</td>
+          <td class="paramname"><em>mode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classDQuickIconImage.html#a3c4542c4e9fd481e0831908c5bf6d487" title="DQuickIconImage::setMode">DQuickIconImage::setMode</a> </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mode</td><td>can set to show the icon used in QML Application. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a196895dab94df11036f04fd8708c4851"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a196895dab94df11036f04fd8708c4851">&#9670;&nbsp;</a></span>setName</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DQuickIconImage::setName </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classDQuickIconImage.html#a196895dab94df11036f04fd8708c4851" title="DQuickIconImage::setName">DQuickIconImage::setName</a> </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>can set to show the icon used in QML Application. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3630393b4222e04ba884e6ac80878cb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3630393b4222e04ba884e6ac80878cb4">&#9670;&nbsp;</a></span>setState</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DQuickIconImage::setState </td>
+          <td>(</td>
+          <td class="paramtype">State&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classDQuickIconImage.html#a3630393b4222e04ba884e6ac80878cb4" title="DQuickIconImage::setState">DQuickIconImage::setState</a> </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">state</td><td>can set to show the icon used in QML Application. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="acbd8a48d513e8e84816d40270975425a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbd8a48d513e8e84816d40270975425a">&#9670;&nbsp;</a></span>state()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DQuickIconImage::State DQuickIconImage::state </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>DQuickIconImage::state </p>
+<dl class="section return"><dt>返回</dt><dd>Returns the state of theme icon used in QML Application. </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dtkdeclarative/src/private/<a class="el" href="dquickiconimage__p_8h_source.html">dquickiconimage_p.h</a></li>
+<li>dtkdeclarative/src/private/dquickiconimage.cpp</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classDQuickIconImage.html">DQuickIconImage</a></li>
+    <li class="footer">文档生成时间:2023-01-13-07:39  +00</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

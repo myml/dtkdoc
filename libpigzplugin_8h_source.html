@@ -1,0 +1,292 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: dtkio/src/dtkcompressor/3rdparty/libpigzplugin/libpigzplugin.h 源文件</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="https://github.com/linuxdeepin/dtkdoc" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('libpigzplugin_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">libpigzplugin.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * ark -- archiver for the KDE project</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Copyright (C) 2009 Harald Hvaal &lt;haraldhv@stud.ntnu.no&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * Copyright (C) 2009-2010 Raphael Kubo da Costa &lt;rakuco@FreeBSD.org&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * Copyright (c) 2016 Vladyslav Batyrenko &lt;mvlabat@gmail.com&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * This program is free software; you can redistribute it and/or</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * modify it under the terms of the GNU General Public License</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> * as published by the Free Software Foundation; either version 2</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * of the License, or (at your option) any later version.</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> * This program is distributed in the hope that it will be useful,</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * GNU General Public License for more details.</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * You should have received a copy of the GNU General Public License</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * along with this program; if not, write to the Free Software</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#ifndef libPigzPlugin_H</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#define libPigzPlugin_H</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;cliinterface.h&quot;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;kpluginfactory.h&quot;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classLibPigzPluginFactory.html">   30</a></span>&#160;<span class="keyword">class </span><a class="code" href="classLibPigzPluginFactory.html">LibPigzPluginFactory</a> : <span class="keyword">public</span> <a class="code" href="classKPluginFactory.html">KPluginFactory</a></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">Q_OBJECT</a></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    Q_PLUGIN_METADATA(IID <span class="stringliteral">&quot;org.kde.KPluginFactory&quot;</span> FILE <span class="stringliteral">&quot;kerfuffle_libpigz.json&quot;</span>)</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_INTERFACES">Q_INTERFACES</a>(<a class="code" href="classKPluginFactory.html">KPluginFactory</a>)</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classLibPigzPluginFactory.html">LibPigzPluginFactory</a>();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    ~<a class="code" href="classLibPigzPluginFactory.html">LibPigzPluginFactory</a>();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;};</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classLibPigzPlugin.html">   41</a></span>&#160;<span class="keyword">class </span><a class="code" href="classLibPigzPlugin.html">LibPigzPlugin</a> : <span class="keyword">public</span> <a class="code" href="classReadWriteArchiveInterface.html">ReadWriteArchiveInterface</a></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">Q_OBJECT</a></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classLibPigzPlugin.html">LibPigzPlugin</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a>, <span class="keyword">const</span> QVariantList &amp;args);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    ~<a class="code" href="classLibPigzPlugin.html">LibPigzPlugin</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    PluginFinishType <a class="code" href="classLibPigzPlugin.html#a05b0cc729dc47a1b5ddec3f4964cc189">list</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    PluginFinishType <a class="code" href="classLibPigzPlugin.html#ab67f055d1d5f0df18afe6360c6db4b29">testArchive</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    PluginFinishType <a class="code" href="classLibPigzPlugin.html#a339b053e5ba52287b67fa94c823b0a23">extractFiles</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qlist.html">QList&lt;FileEntry&gt;</a> &amp;files, <span class="keyword">const</span> <a class="code" href="structExtractionOptions.html">ExtractionOptions</a> &amp;options) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    PluginFinishType <a class="code" href="classLibPigzPlugin.html#a9272433156f14887a6bdcb1a50d2211e">addFiles</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qlist.html">QList&lt;FileEntry&gt;</a> &amp;files, <span class="keyword">const</span> <a class="code" href="structCompressOptions.html">CompressOptions</a> &amp;options) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    PluginFinishType <a class="code" href="classLibPigzPlugin.html#a8694faa22ced4f252818094fe7e13397">moveFiles</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qlist.html">QList&lt;FileEntry&gt;</a> &amp;files, <span class="keyword">const</span> <a class="code" href="structCompressOptions.html">CompressOptions</a> &amp;options) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    PluginFinishType <a class="code" href="classLibPigzPlugin.html#adffb2cdb96fcaeb1c59c6ba488b3b4e7">copyFiles</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qlist.html">QList&lt;FileEntry&gt;</a> &amp;files, <span class="keyword">const</span> <a class="code" href="structCompressOptions.html">CompressOptions</a> &amp;options) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    PluginFinishType <a class="code" href="classLibPigzPlugin.html#a128ada4b05c751bead2c75380530af37">deleteFiles</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qlist.html">QList&lt;FileEntry&gt;</a> &amp;files) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    PluginFinishType <a class="code" href="classLibPigzPlugin.html#a27303148b85fa4e89eee3818ffd25b02">renameFiles</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qlist.html">QList&lt;FileEntry&gt;</a> &amp;files) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    PluginFinishType <a class="code" href="classLibPigzPlugin.html#a759154a7c46359f574aafe5deccfafb2">addComment</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;comment) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    PluginFinishType <a class="code" href="classLibPigzPlugin.html#a80b4bd509eb311a7002fb08d2c7243e6">updateArchiveData</a>(<span class="keyword">const</span> <a class="code" href="structUpdateOptions.html">UpdateOptions</a> &amp;options) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classLibPigzPlugin.html#acabae8fbc6608473e17cecd8741f88f5">pauseOperation</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classLibPigzPlugin.html#a3f38a9ec82295d6822f4139c5b0cb7dc">continueOperation</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classLibPigzPlugin.html#ac047fab92e7832d2a8ce8bfeed2ed02a">doKill</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">bool</span> handleLine(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;line);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> killProcess(<span class="keywordtype">bool</span> emitFinished = <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">void</span> deleteProcess();</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">void</span> getChildProcessId(qint64 processId, <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> &amp;listKey, <a class="codeRef" href="http://doc.qt.io/qt-5/qvector.html">QVector&lt;qint64&gt;</a> &amp;childprocessid);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keyword">private</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SLOTS">Q_SLOTS</a>:</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">void</span> readStdout(<span class="keywordtype">bool</span> handleAll = <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">void</span> processFinished(<span class="keywordtype">int</span> exitCode, <a class="codeRef" href="http://doc.qt.io/qt-5/qprocess.html#ExitStatus-enum">QProcess::ExitStatus</a> exitStatus);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <a class="code" href="classKPtyProcess.html">KPtyProcess</a> *m_process = <span class="keyword">nullptr</span>;  <span class="comment">// 工作进程</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">bool</span> m_isProcessKilled = <span class="keyword">false</span>;  <span class="comment">// 进程已经结束</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a> m_stdOutData;  <span class="comment">// 存储命令行输出数据</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    qint64  m_processId;  <span class="comment">// 进程Id</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qvector.html">QVector&lt;qint64&gt;</a> m_childProcessId; <span class="comment">// 压缩tar.gz文件的子进程Id</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    qlonglong m_qTotalSize; <span class="comment">// 源文件总大小</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;};</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// libPigzPlugin_H</span></div>
+<div class="ttc" id="aclassKPluginFactory_html"><div class="ttname"><a href="classKPluginFactory.html">KPluginFactory</a></div><div class="ttdef"><b>Definition:</b> kpluginfactory.h:65</div></div>
+<div class="ttc" id="aclassKPtyProcess_html"><div class="ttname"><a href="classKPtyProcess.html">KPtyProcess</a></div><div class="ttdef"><b>Definition:</b> kptyprocess.h:58</div></div>
+<div class="ttc" id="aclassLibPigzPluginFactory_html"><div class="ttname"><a href="classLibPigzPluginFactory.html">LibPigzPluginFactory</a></div><div class="ttdef"><b>Definition:</b> libpigzplugin.h:31</div></div>
+<div class="ttc" id="aclassLibPigzPlugin_html"><div class="ttname"><a href="classLibPigzPlugin.html">LibPigzPlugin</a></div><div class="ttdef"><b>Definition:</b> libpigzplugin.h:42</div></div>
+<div class="ttc" id="aclassLibPigzPlugin_html_a05b0cc729dc47a1b5ddec3f4964cc189"><div class="ttname"><a href="classLibPigzPlugin.html#a05b0cc729dc47a1b5ddec3f4964cc189">LibPigzPlugin::list</a></div><div class="ttdeci">PluginFinishType list() override</div><div class="ttdoc">list 加载压缩包</div><div class="ttdef"><b>Definition:</b> libpigzplugin.cpp:58</div></div>
+<div class="ttc" id="aclassLibPigzPlugin_html_a128ada4b05c751bead2c75380530af37"><div class="ttname"><a href="classLibPigzPlugin.html#a128ada4b05c751bead2c75380530af37">LibPigzPlugin::deleteFiles</a></div><div class="ttdeci">PluginFinishType deleteFiles(const QList&lt; FileEntry &gt; &amp;files) override</div><div class="ttdoc">addFiles 删除压缩文件</div><div class="ttdef"><b>Definition:</b> libpigzplugin.cpp:145</div></div>
+<div class="ttc" id="aclassLibPigzPlugin_html_a27303148b85fa4e89eee3818ffd25b02"><div class="ttname"><a href="classLibPigzPlugin.html#a27303148b85fa4e89eee3818ffd25b02">LibPigzPlugin::renameFiles</a></div><div class="ttdeci">PluginFinishType renameFiles(const QList&lt; FileEntry &gt; &amp;files) override</div><div class="ttdoc">renameFiles 重命名压缩文件</div><div class="ttdef"><b>Definition:</b> libpigzplugin.cpp:150</div></div>
+<div class="ttc" id="aclassLibPigzPlugin_html_a339b053e5ba52287b67fa94c823b0a23"><div class="ttname"><a href="classLibPigzPlugin.html#a339b053e5ba52287b67fa94c823b0a23">LibPigzPlugin::extractFiles</a></div><div class="ttdeci">PluginFinishType extractFiles(const QList&lt; FileEntry &gt; &amp;files, const ExtractionOptions &amp;options) override</div><div class="ttdoc">extractFiles 解压</div><div class="ttdef"><b>Definition:</b> libpigzplugin.cpp:68</div></div>
+<div class="ttc" id="aclassLibPigzPlugin_html_a3f38a9ec82295d6822f4139c5b0cb7dc"><div class="ttname"><a href="classLibPigzPlugin.html#a3f38a9ec82295d6822f4139c5b0cb7dc">LibPigzPlugin::continueOperation</a></div><div class="ttdeci">void continueOperation() override</div><div class="ttdoc">continueOperation 继续操作</div><div class="ttdef"><b>Definition:</b> libpigzplugin.cpp:180</div></div>
+<div class="ttc" id="aclassLibPigzPlugin_html_a759154a7c46359f574aafe5deccfafb2"><div class="ttname"><a href="classLibPigzPlugin.html#a759154a7c46359f574aafe5deccfafb2">LibPigzPlugin::addComment</a></div><div class="ttdeci">PluginFinishType addComment(const QString &amp;comment) override</div><div class="ttdoc">addComment 添加注释</div><div class="ttdef"><b>Definition:</b> libpigzplugin.cpp:155</div></div>
+<div class="ttc" id="aclassLibPigzPlugin_html_a80b4bd509eb311a7002fb08d2c7243e6"><div class="ttname"><a href="classLibPigzPlugin.html#a80b4bd509eb311a7002fb08d2c7243e6">LibPigzPlugin::updateArchiveData</a></div><div class="ttdeci">PluginFinishType updateArchiveData(const UpdateOptions &amp;options) override</div><div class="ttdoc">updateArchiveData 更新压缩包数据</div><div class="ttdef"><b>Definition:</b> libpigzplugin.cpp:160</div></div>
+<div class="ttc" id="aclassLibPigzPlugin_html_a8694faa22ced4f252818094fe7e13397"><div class="ttname"><a href="classLibPigzPlugin.html#a8694faa22ced4f252818094fe7e13397">LibPigzPlugin::moveFiles</a></div><div class="ttdeci">PluginFinishType moveFiles(const QList&lt; FileEntry &gt; &amp;files, const CompressOptions &amp;options) override</div><div class="ttdoc">addFiles 移动压缩文件</div><div class="ttdef"><b>Definition:</b> libpigzplugin.cpp:135</div></div>
+<div class="ttc" id="aclassLibPigzPlugin_html_a9272433156f14887a6bdcb1a50d2211e"><div class="ttname"><a href="classLibPigzPlugin.html#a9272433156f14887a6bdcb1a50d2211e">LibPigzPlugin::addFiles</a></div><div class="ttdeci">PluginFinishType addFiles(const QList&lt; FileEntry &gt; &amp;files, const CompressOptions &amp;options) override</div><div class="ttdoc">addFiles 压缩文件</div><div class="ttdef"><b>Definition:</b> libpigzplugin.cpp:73</div></div>
+<div class="ttc" id="aclassLibPigzPlugin_html_ab67f055d1d5f0df18afe6360c6db4b29"><div class="ttname"><a href="classLibPigzPlugin.html#ab67f055d1d5f0df18afe6360c6db4b29">LibPigzPlugin::testArchive</a></div><div class="ttdeci">PluginFinishType testArchive() override</div><div class="ttdoc">testArchive 测试压缩包</div><div class="ttdef"><b>Definition:</b> libpigzplugin.cpp:63</div></div>
+<div class="ttc" id="aclassLibPigzPlugin_html_ac047fab92e7832d2a8ce8bfeed2ed02a"><div class="ttname"><a href="classLibPigzPlugin.html#ac047fab92e7832d2a8ce8bfeed2ed02a">LibPigzPlugin::doKill</a></div><div class="ttdeci">bool doKill() override</div><div class="ttdoc">doKill 强行取消</div><div class="ttdef"><b>Definition:</b> libpigzplugin.cpp:195</div></div>
+<div class="ttc" id="aclassLibPigzPlugin_html_acabae8fbc6608473e17cecd8741f88f5"><div class="ttname"><a href="classLibPigzPlugin.html#acabae8fbc6608473e17cecd8741f88f5">LibPigzPlugin::pauseOperation</a></div><div class="ttdeci">void pauseOperation() override</div><div class="ttdoc">pauseOperation 暂停操作</div><div class="ttdef"><b>Definition:</b> libpigzplugin.cpp:165</div></div>
+<div class="ttc" id="aclassLibPigzPlugin_html_adffb2cdb96fcaeb1c59c6ba488b3b4e7"><div class="ttname"><a href="classLibPigzPlugin.html#adffb2cdb96fcaeb1c59c6ba488b3b4e7">LibPigzPlugin::copyFiles</a></div><div class="ttdeci">PluginFinishType copyFiles(const QList&lt; FileEntry &gt; &amp;files, const CompressOptions &amp;options) override</div><div class="ttdoc">addFiles 拷贝压缩文件</div><div class="ttdef"><b>Definition:</b> libpigzplugin.cpp:140</div></div>
+<div class="ttc" id="aclassReadWriteArchiveInterface_html"><div class="ttname"><a href="classReadWriteArchiveInterface.html">ReadWriteArchiveInterface</a></div><div class="ttdef"><b>Definition:</b> archiveinterface.h:231</div></div>
+<div class="ttc" id="aqbytearray_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a></div></div>
+<div class="ttc" id="aqlist_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qlist.html">QList&lt; FileEntry &gt;</a></div></div>
+<div class="ttc" id="aqobject_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html">QObject</a></div></div>
+<div class="ttc" id="aqobject_html_Q_INTERFACES"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_INTERFACES">QObject::Q_INTERFACES</a></div><div class="ttdeci">Q_INTERFACES(...)</div></div>
+<div class="ttc" id="aqobject_html_Q_OBJECT"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">QObject::Q_OBJECT</a></div><div class="ttdeci">Q_OBJECTQ_OBJECT</div></div>
+<div class="ttc" id="aqobject_html_Q_SLOTS"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_SLOTS">QObject::Q_SLOTS</a></div><div class="ttdeci">Q_SLOTSQ_SLOTS</div></div>
+<div class="ttc" id="aqobject_html_parent"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#parent">QObject::parent</a></div><div class="ttdeci">QObject * parent() const const</div></div>
+<div class="ttc" id="aqprocess_html_ExitStatus-enum"><div class="ttname"><a href="http://doc.qt.io/qt-5/qprocess.html#ExitStatus-enum">QProcess::ExitStatus</a></div><div class="ttdeci">ExitStatus</div></div>
+<div class="ttc" id="aqstring_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstring.html">QString</a></div></div>
+<div class="ttc" id="aqstringlist_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a></div></div>
+<div class="ttc" id="aqvector_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qvector.html">QVector&lt; qint64 &gt;</a></div></div>
+<div class="ttc" id="astructCompressOptions_html"><div class="ttname"><a href="structCompressOptions.html">CompressOptions</a></div><div class="ttdef"><b>Definition:</b> commonstruct.h:140</div></div>
+<div class="ttc" id="astructExtractionOptions_html"><div class="ttname"><a href="structExtractionOptions.html">ExtractionOptions</a></div><div class="ttdef"><b>Definition:</b> commonstruct.h:169</div></div>
+<div class="ttc" id="astructUpdateOptions_html"><div class="ttname"><a href="structUpdateOptions.html">UpdateOptions</a></div><div class="ttdef"><b>Definition:</b> commonstruct.h:195</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_0990604d0eb8363f4260fee8d79bba7c.html">dtkio</a></li><li class="navelem"><a class="el" href="dir_f218eea51e6ba76871d0d7e538e54c2d.html">src</a></li><li class="navelem"><a class="el" href="dir_64e7b8374d0b59199acbe839986a12d4.html">dtkcompressor</a></li><li class="navelem"><a class="el" href="dir_d1ee9709c8a9c8a6288a9650a6bf8ddf.html">3rdparty</a></li><li class="navelem"><a class="el" href="dir_2cccca08b306d59a76ec7881b0c5e1f0.html">libpigzplugin</a></li><li class="navelem"><b>libpigzplugin.h</b></li>
+    <li class="footer">文档生成时间:2023-01-13-07:39  +00</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

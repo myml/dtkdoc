@@ -156,7 +156,137 @@ $(document).ready(function(){initNavTree('classDtk_1_1Gui_1_1DDciIcon.html','');
 
 <p><code>#include &lt;<a class="el" href="ddciicon_8h_source.html">ddciicon.h</a>&gt;</code></p>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
-<div class="textblock"><p>如果需要详细dci相关介绍以及规范文档, 可以参见<a href="https://github.com/linuxdeepin/deepin-specifications/blob/master/unstable/%E5%9B%BE%E6%A0%87%E6%96%87%E4%BB%B6%E8%A7%84%E8%8C%83.md">dci文件图标规范</a> </p>
+<div class="textblock"><p>如果需要详细dci相关介绍以及规范文档, 可以参见<a href="https://github.com/linuxdeepin/deepin-specifications/blob/master/unstable/%E5%9B%BE%E6%A0%87%E6%96%87%E4%BB%B6%E8%A7%84%E8%8C%83.md">dci文件图标规范</a></p>
+<h2><a class="anchor" id="autotoc_md88"></a>
+DDciIcon示例</h2>
+<p>项目目录结构在同一目录下</p>
+<h2><a class="anchor" id="autotoc_md89"></a>
+CMakeLists.txt</h2>
+<div class="fragment"><div class="line">cmake_minimum_required(VERSION 3.1.0)                # 指定cmake最低版本</div>
+<div class="line"> </div>
+<div class="line">project(ddciicon-example VERSION 1.0.0 LANGUAGES CXX) # 指定项目名称, 版本, 语言 cxx就是c++</div>
+<div class="line"> </div>
+<div class="line">set(CMAKE_CXX_STANDARD 11)                           # 指定c++标准</div>
+<div class="line">set(CMAKE_CXX_STANDARD_REQUIRED ON)                  # 指定c++标准要求,至少为11以上</div>
+<div class="line"> </div>
+<div class="line">set(CMAKE_AUTOMOC ON)                                # 支持qt moc</div>
+<div class="line">set(CMAKE_AUTORCC ON)                                # support qt resource file # 支持qt资源文件</div>
+<div class="line"> </div>
+<div class="line">set(CMAKE_EXPORT_COMPILE_COMMANDS ON)                # 支持 clangd</div>
+<div class="line"> </div>
+<div class="line">if (CMAKE_VERSION VERSION_LESS &quot;3.7.0&quot;)              # 如果cmake版本小于3.7.0</div>
+<div class="line">    set(CMAKE_INCLUDE_CURRENT_DIR ON)                # 设置包含当前目录</div>
+<div class="line">endif()</div>
+<div class="line"> </div>
+<div class="line">find_package(Qt5 REQUIRED COMPONENTS Core)           # 寻找Qt5组件Core</div>
+<div class="line">find_package(Qt5 REQUIRED COMPONENTS Gui)            # 寻找Qt5组件Core</div>
+<div class="line">find_package(Qt5 REQUIRED COMPONENTS Widgets)        # 寻找Qt5组件Widgets</div>
+<div class="line">find_package(DtkCore REQUIRED)                       # 寻找Dtk组件Core</div>
+<div class="line">find_package(Dtk REQUIRED COMPONENTS Gui)            # 寻找Dtk组件Gui</div>
+<div class="line">find_package(Dtk REQUIRED COMPONENTS Widget)         # 寻找Dtk组件Widget</div>
+<div class="line"> </div>
+<div class="line">add_executable(${PROJECT_NAME}                       # 生成可执行文件</div>
+<div class="line">    main.cpp</div>
+<div class="line">    qml.qrc</div>
+<div class="line">)</div>
+<div class="line"> </div>
+<div class="line">target_link_libraries(${PROJECT_NAME} PRIVATE        # 添加需要链接的共享库</div>
+<div class="line">    Qt5::Core</div>
+<div class="line">    Qt5::Gui</div>
+<div class="line">    Qt5::Widgets</div>
+<div class="line">    Dtk::Core</div>
+<div class="line">    dtkgui</div>
+<div class="line">    dtkwidget</div>
+<div class="line">)</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md90"></a>
+main.cpp</h2>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;DApplication&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;DWidgetUtil&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;DIconButton&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;DDciIcon&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;QtDebug&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;QFormLayout&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;DMainWindow&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;QWidget&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;QLabel&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;QHBoxLayout&gt;</span></div>
+<div class="line"> </div>
+<div class="line">DWIDGET_USE_NAMESPACE</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> *argv[])</div>
+<div class="line">{</div>
+<div class="line">    <a class="code" href="classDApplication.html">DApplication</a> a(argc, argv);</div>
+<div class="line">    <a class="code" href="classDMainWindow.html">DMainWindow</a> win;</div>
+<div class="line"> </div>
+<div class="line">    <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a> w;</div>
+<div class="line">    <a class="codeRef" href="http://doc.qt.io/qt-5/qformlayout.html">QFormLayout</a>* layout = <span class="keyword">new</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qformlayout.html">QFormLayout</a>(&amp;w);</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// fromTheme表示从图标主题中寻找资源。</span></div>
+<div class="line">    <a class="code" href="classDDciIcon.html">DDciIcon</a> dci = DDciIcon::fromTheme(<span class="stringliteral">&quot;select_indicator&quot;</span>);</div>
+<div class="line"> </div>
+<div class="line">    <span class="keyword">auto</span> icon = dci.matchIcon(0, DDciIcon::Light, DDciIcon::Hover);</div>
+<div class="line">    qDebug() &lt;&lt; <span class="stringliteral">&quot;DCI图标的实际大小&quot;</span> &lt;&lt; dci.actualSize(icon);</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 定义一个函数，传入DIconButton，以及提示信息</span></div>
+<div class="line">    <span class="keyword">auto</span> addBtnRow = [&amp;](<a class="code" href="classDIconButton.html">DIconButton</a> *iconBtn, <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> name){</div>
+<div class="line">        iconBtn-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qabstractbutton.html#iconSize-prop">setIconSize</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qsize.html">QSize</a>(32,32));</div>
+<div class="line">        <a class="codeRef" href="http://doc.qt.io/qt-5/qhboxlayout.html">QHBoxLayout</a> *hlayout = <span class="keyword">new</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qhboxlayout.html">QHBoxLayout</a>();</div>
+<div class="line">        hlayout-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qboxlayout.html#addWidget">addWidget</a>(iconBtn);</div>
+<div class="line">        <a class="codeRef" href="http://doc.qt.io/qt-5/qlabel.html">QLabel</a> *btnLabel = <span class="keyword">new</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qlabel.html">QLabel</a>(name);</div>
+<div class="line">        hlayout-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qboxlayout.html#addWidget">addWidget</a>(btnLabel);</div>
+<div class="line">        <span class="keywordflow">return</span> hlayout;</div>
+<div class="line">    };</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 将DDciIcon传入DIconButton</span></div>
+<div class="line">    <a class="code" href="classDIconButton.html">DIconButton</a> *iconBtn1 = <span class="keyword">new</span> <a class="code" href="classDIconButton.html">DIconButton</a>(dci);</div>
+<div class="line">    layout-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qformlayout.html#addRow">addRow</a>(addBtnRow(iconBtn1, <span class="stringliteral">&quot;icon button&quot;</span>));</div>
+<div class="line"> </div>
+<div class="line">    <a class="code" href="classDIconButton.html">DIconButton</a> *iconBtn2 = <span class="keyword">new</span> <a class="code" href="classDIconButton.html">DIconButton</a>(dci);</div>
+<div class="line">    iconBtn2-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html#setDisabled">setDisabled</a>(<span class="keyword">true</span>);</div>
+<div class="line">    layout-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qformlayout.html#addRow">addRow</a>(addBtnRow(iconBtn2, <span class="stringliteral">&quot;disabled state&quot;</span>));</div>
+<div class="line"> </div>
+<div class="line">    <a class="code" href="classDIconButton.html">DIconButton</a> *iconBtn3 = <span class="keyword">new</span> <a class="code" href="classDIconButton.html">DIconButton</a>(dci);</div>
+<div class="line">    iconBtn3-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qabstractbutton.html#down-prop">setDown</a>(<span class="keyword">true</span>);</div>
+<div class="line">    layout-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qformlayout.html#addRow">addRow</a>(addBtnRow(iconBtn3, <span class="stringliteral">&quot;pressed state&quot;</span>));</div>
+<div class="line"> </div>
+<div class="line">    win.<a class="codeRef" href="http://doc.qt.io/qt-5/qmainwindow.html#setCentralWidget">setCentralWidget</a>(&amp;w);</div>
+<div class="line">    win.<a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html#resize-1">resize</a>(200,100);</div>
+<div class="line">    win.<a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html#show">show</a>();</div>
+<div class="line">    Dtk::Widget::moveToCenter(&amp;win);</div>
+<div class="line">    <span class="keywordflow">return</span> a.exec();</div>
+<div class="line">}</div>
+<div class="ttc" id="aclassDApplication_html"><div class="ttname"><a href="classDApplication.html">DApplication</a></div><div class="ttdef"><b>Definition:</b> dapplication.h:32</div></div>
+<div class="ttc" id="aclassDDciIcon_html"><div class="ttname"><a href="classDDciIcon.html">DDciIcon</a></div><div class="ttdef"><b>Definition:</b> ddciicon.h:22</div></div>
+<div class="ttc" id="aclassDIconButton_html"><div class="ttname"><a href="classDIconButton.html">DIconButton</a></div><div class="ttdef"><b>Definition:</b> diconbutton.h:24</div></div>
+<div class="ttc" id="aclassDMainWindow_html"><div class="ttname"><a href="classDMainWindow.html">DMainWindow</a></div><div class="ttdef"><b>Definition:</b> dmainwindow.h:20</div></div>
+<div class="ttc" id="aqabstractbutton_html_down-prop"><div class="ttname"><a href="http://doc.qt.io/qt-5/qabstractbutton.html#down-prop">QAbstractButton::setDown</a></div><div class="ttdeci">void setDown(bool)</div></div>
+<div class="ttc" id="aqabstractbutton_html_iconSize-prop"><div class="ttname"><a href="http://doc.qt.io/qt-5/qabstractbutton.html#iconSize-prop">QAbstractButton::setIconSize</a></div><div class="ttdeci">void setIconSize(const QSize &amp;size)</div></div>
+<div class="ttc" id="aqboxlayout_html_addWidget"><div class="ttname"><a href="http://doc.qt.io/qt-5/qboxlayout.html#addWidget">QBoxLayout::addWidget</a></div><div class="ttdeci">void addWidget(QWidget *widget, int stretch, Qt::Alignment alignment)</div></div>
+<div class="ttc" id="aqformlayout_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qformlayout.html">QFormLayout</a></div></div>
+<div class="ttc" id="aqformlayout_html_addRow"><div class="ttname"><a href="http://doc.qt.io/qt-5/qformlayout.html#addRow">QFormLayout::addRow</a></div><div class="ttdeci">void addRow(QWidget *label, QWidget *field)</div></div>
+<div class="ttc" id="aqhboxlayout_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qhboxlayout.html">QHBoxLayout</a></div></div>
+<div class="ttc" id="aqlabel_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qlabel.html">QLabel</a></div></div>
+<div class="ttc" id="aqmainwindow_html_setCentralWidget"><div class="ttname"><a href="http://doc.qt.io/qt-5/qmainwindow.html#setCentralWidget">QMainWindow::setCentralWidget</a></div><div class="ttdeci">void setCentralWidget(QWidget *widget)</div></div>
+<div class="ttc" id="aqsize_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qsize.html">QSize</a></div></div>
+<div class="ttc" id="aqstring_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstring.html">QString</a></div></div>
+<div class="ttc" id="aqwidget_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a></div></div>
+<div class="ttc" id="aqwidget_html_resize-1"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html#resize-1">QWidget::resize</a></div><div class="ttdeci">void resize(int w, int h)</div></div>
+<div class="ttc" id="aqwidget_html_setDisabled"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html#setDisabled">QWidget::setDisabled</a></div><div class="ttdeci">void setDisabled(bool disable)</div></div>
+<div class="ttc" id="aqwidget_html_show"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html#show">QWidget::show</a></div><div class="ttdeci">void show()</div></div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md91"></a>
+qml.qrc</h2>
+<div class="fragment"><div class="line">&lt;<span class="keywordtype">RCC</span>&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">qresource</span> <span class="keyword">prefix</span>=<span class="stringliteral">&quot;/dsg/built-in-icons&quot;</span>&gt;</div>
+<div class="line">        &lt;<span class="keywordtype">file</span>&gt;<span class="keyword">select_indicator.dci</span>&lt;/<span class="keywordtype">file</span>&gt;</div>
+<div class="line">    &lt;/<span class="keywordtype">qresource</span>&gt;</div>
+<div class="line">&lt;/<span class="keywordtype">RCC</span>&gt;</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md92"></a>
+select_indicator.dci</h2>
+<p>下载dci-demo解压获取，这是个用qml编写的例子，使用DDciIcon更灵活 <a href="https://github.com/linuxdeepin/deepin-specifications/blob/master/unstable/dci-demo.zip">dci-demo</a></p>
+<p>编译和运行程序 </p><div class="fragment"><div class="line">cmake -B build</div>
+<div class="line">cmake --build build</div>
+<div class="line">./build/ddciicon-example</div>
+</div><!-- fragment --><p>程序运行效果如下： <img src="/docs/images/ddciicon-example1.jpg" alt="ddciicon-example" class="inline"/> </p>
 </div><hr/>该类的文档由以下文件生成:<ul>
 <li>dtkgui/docs/util/ddciicon.zh_CN.dox</li>
 </ul>
@@ -167,7 +297,7 @@ $(document).ready(function(){initNavTree('classDtk_1_1Gui_1_1DDciIcon.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classDtk_1_1Gui_1_1DDciIcon.html">DDciIcon</a></li>
-    <li class="footer">文档生成时间:2023-01-03-09:52  +00</li>
+    <li class="footer">文档生成时间:2023-01-13-07:39  +00</li>
     <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
     <li class="footer">制作者:deepin doc doc go SIG</li>
     <li class="footer">文档使用CC-BY-4.0共享 </a>

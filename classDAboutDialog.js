@@ -4,6 +4,7 @@ var classDAboutDialog =
     [ "acknowledgementLink", "classDAboutDialog.html#a0dcf32ef152fec984f850bc2abb09aa0", null ],
     [ "companyLogo", "classDAboutDialog.html#af8bec9f2af7a961b472c3b07aa06183d", null ],
     [ "description", "classDAboutDialog.html#ae790256d3069468b429c079eeee7e630", null ],
+    [ "featureActivated", "classDAboutDialog.html#a4c279b341a887d5aeb59ab38891db87e", null ],
     [ "keyPressEvent", "classDAboutDialog.html#a317c87537ac2b57d90abea8143510d08", null ],
     [ "license", "classDAboutDialog.html#a0e82850223a403a1ac08c464df20a83e", null ],
     [ "productName", "classDAboutDialog.html#a297ce67d72faab88f2847e009fa2657d", null ],

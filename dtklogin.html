@@ -1,0 +1,479 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: dtklogin</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="https://github.com/linuxdeepin/dtkdoc" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('dtklogin.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="PageDoc"><div class="header">
+  <div class="headertitle">
+<div class="title">dtklogin </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p>dtk登录管理模块</p>
+<h2><a class="anchor" id="autotoc_md184"></a>
+项目介绍</h2>
+<p>dtklogin是对systemd-logind的DBus接口和dde-daemon提供的相关接口的封装。用于观察和管理用户 login 以及 seat 的状态。<br  />
+ <a class="el" href="group__dtklogin.html#group_dtklogin">接口文档</a></p>
+<h2><a class="anchor" id="autotoc_md185"></a>
+项目结构</h2>
+<p>该模块一共提供四个类：</p>
+<ul>
+<li><code><a class="el" href="classDLoginManager.html">DLoginManager</a></code> 管理器对象，可直接构造</li>
+<li><code><a class="el" href="classDLoginSeat.html">DLoginSeat</a></code> Seat对象，可通过DLoginManager获取</li>
+<li><code><a class="el" href="classDLoginSession.html">DLoginSession</a></code> 会话对象，可通过DLoginManager获取</li>
+<li><code><a class="el" href="classDLoginUser.html">DLoginUser</a></code> 用户对象，可通过DLoginManager获取</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md186"></a>
+配置管理</h2>
+<p>登录管理的配置文件存在于下列文件中：</p>
+<div class="fragment"><div class="line">/etc/systemd/logind.conf</div>
+<div class="line">/etc/systemd/logind.conf.d/*.conf</div>
+<div class="line">/run/systemd/logind.conf.d/*.conf</div>
+<div class="line">/usr/lib/systemd/logind.conf.d/*.conf</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md187"></a>
+说明</h2>
+<p>这些文件配置了 systemd 登录管理器的各种参数，有关语法的描述，请参见<a href="https://www.freedesktop.org/software/systemd/man/systemd.syntax.html">systemd.syntax</a>。</p>
+<h2><a class="anchor" id="autotoc_md188"></a>
+配置目录和优先级</h2>
+<p>默认配置是在编译期间设置的，因此只有在需要改变这些默认配置时才需要配置。主配置文件/etc/systemd/logind.conf包含注释掉的条目，其显示的默认值作为管理员的指南。可以通过编辑此文件或创建插件来进行本地覆盖。建议使用插件进行本地配置，而不是修改主配置文件。<br  />
+</p>
+<p>除了主配置文件之外，还从/usr/lib/systemd/*.conf.d/、/usr/local/lib/systemd/*.conf.d/和/etc/systemd/*.conf.d/这些目录中读取插件. 这些插件具有更高的优先级并覆盖主配置文件。*.conf.d/子目录中的配置文件按其文件名字典顺序排序，而不管它们位于哪个子目录中。当多个文件指定相同的选项时，对于仅接受单个值的选项，文件中最后排序的条目优先；对于接受列表值的选项，条目在排序文件中出现时被收集。<br  />
+</p>
+<p>当包需要自定义配置时，可以在/usr/中安装插件。/etc/的文件是为本地管理员保留的，他们可以使用此逻辑覆盖供应商软件包安装的配置文件。必须使用插件来覆盖包插件，因为主配置文件的优先级较低。建议在这些子目录中的所有文件名前加上一个两位数字和一个破折号，以简化文件的排序。<br  />
+</p>
+<p>要禁用供应商提供的配置文件，推荐的方法是在/etc目录中放置一个/dev/null符号链接，其文件名与供应商配置文件相同。</p>
+<h2><a class="anchor" id="autotoc_md189"></a>
+使用实例</h2>
+<p><code>main.cpp</code></p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;QCoreApplication&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;demo.h&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;signaldemo.h&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;propertydemo.h&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;powerdemo.h&quot;</span></div>
+<div class="line"> </div>
+<div class="line">DLOGIN_USE_NAMESPACE</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> *argv[])</div>
+<div class="line">{</div>
+<div class="line">    <a class="codeRef" href="http://doc.qt.io/qt-5/qcoreapplication.html">QCoreApplication</a> app(argc, argv);</div>
+<div class="line">    <a class="codeRef" href="http://doc.qt.io/qt-5/qlist.html">QList&lt;Demo *&gt;</a> demos = {<span class="keyword">new</span> <a class="code" href="classSignalDemo.html">SignalDemo</a>(&amp;app), <span class="keyword">new</span> <a class="code" href="classPropertyDemo.html">PropertyDemo</a>(&amp;app), <span class="keyword">new</span> <a class="code" href="classPowerDemo.html">PowerDemo</a>(&amp;app)};</div>
+<div class="line">    <span class="keywordflow">foreach</span> (<span class="keyword">const</span> <span class="keyword">auto</span> demo, demos) {</div>
+<div class="line">        demo-&gt;run();</div>
+<div class="line">    }</div>
+<div class="line">    <span class="keywordflow">return</span> app.exec();</div>
+<div class="line">}</div>
+<div class="ttc" id="aclassPowerDemo_html"><div class="ttname"><a href="classPowerDemo.html">PowerDemo</a></div><div class="ttdef"><b>Definition:</b> powerdemo.h:11</div></div>
+<div class="ttc" id="aclassPropertyDemo_html"><div class="ttname"><a href="classPropertyDemo.html">PropertyDemo</a></div><div class="ttdef"><b>Definition:</b> propertydemo.h:10</div></div>
+<div class="ttc" id="aclassSignalDemo_html"><div class="ttname"><a href="classSignalDemo.html">SignalDemo</a></div><div class="ttdef"><b>Definition:</b> signaldemo.h:11</div></div>
+<div class="ttc" id="aqcoreapplication_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qcoreapplication.html">QCoreApplication</a></div></div>
+<div class="ttc" id="aqlist_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qlist.html">QList</a></div></div>
+</div><!-- fragment --><p><code>demo.h</code></p>
+<div class="fragment"><div class="line"><span class="preprocessor">#pragma once</span></div>
+<div class="line"><span class="preprocessor">#include &lt;qobject.h&gt;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">class </span>Demo : <span class="keyword">public</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a></div>
+<div class="line">{</div>
+<div class="line"><span class="keyword">public</span>:</div>
+<div class="line">    Demo(<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line">    <span class="keyword">virtual</span> <span class="keywordtype">int</span> run() = 0;</div>
+<div class="line">};</div>
+<div class="ttc" id="aqobject_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html">QObject</a></div></div>
+</div><!-- fragment --><p><code>demo.cpp</code></p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;demo.h&quot;</span></div>
+<div class="line"> </div>
+<div class="line">Demo::Demo(<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *parent)</div>
+<div class="line">    : <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a>(parent)</div>
+<div class="line">{</div>
+<div class="line">}</div>
+</div><!-- fragment --><p><code><a class="el" href="propertydemo_8h_source.html">propertydemo.h</a></code></p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;demo.h&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="dloginmanager_8h.html">dloginmanager.h</a>&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="dloginsession_8h.html">dloginsession.h</a>&quot;</span></div>
+<div class="line">DLOGIN_USE_NAMESPACE</div>
+<div class="line"><span class="keyword">class </span><a class="code" href="classPropertyDemo.html">PropertyDemo</a> : <span class="keyword">public</span> Demo</div>
+<div class="line">{</div>
+<div class="line">    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">Q_OBJECT</a></div>
+<div class="line"><span class="keyword">public</span>:</div>
+<div class="line">    <a class="code" href="classPropertyDemo.html">PropertyDemo</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a> = <span class="keyword">nullptr</span>);</div>
+<div class="line">    <span class="keywordtype">int</span> run() <span class="keyword">override</span>;</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">private</span>:</div>
+<div class="line">    <a class="code" href="classDLoginManager.html">DLoginManager</a> *m_manager;</div>
+<div class="line">    <a class="codeRef" href="http://doc.qt.io/qt-5/qsharedpointer.html">QSharedPointer&lt;DLoginSession&gt;</a> m_currentSession;</div>
+<div class="line">};</div>
+<div class="ttc" id="aclassDLoginManager_html"><div class="ttname"><a href="classDLoginManager.html">DLoginManager</a></div><div class="ttdef"><b>Definition:</b> dloginmanager.h:35</div></div>
+<div class="ttc" id="adloginmanager_8h_html"><div class="ttname"><a href="dloginmanager_8h.html">dloginmanager.h</a></div><div class="ttdoc">dloginmanager.h 中定义了登录管理对象的接口。</div></div>
+<div class="ttc" id="adloginsession_8h_html"><div class="ttname"><a href="dloginsession_8h.html">dloginsession.h</a></div><div class="ttdoc">loginsession.h 中定义了会话管理的接口</div></div>
+<div class="ttc" id="aqobject_html_Q_OBJECT"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">QObject::Q_OBJECT</a></div><div class="ttdeci">Q_OBJECTQ_OBJECT</div></div>
+<div class="ttc" id="aqobject_html_parent"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#parent">QObject::parent</a></div><div class="ttdeci">QObject * parent() const const</div></div>
+<div class="ttc" id="aqsharedpointer_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qsharedpointer.html">QSharedPointer&lt; DLoginSession &gt;</a></div></div>
+</div><!-- fragment --><p><code>propertydemo.cpp</code></p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;propertydemo.h&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;qdebug.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;QMetaObject&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;QMetaProperty&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="dloginuser_8h.html">dloginuser.h</a>&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="dloginseat_8h.html">dloginseat.h</a>&quot;</span></div>
+<div class="line"> </div>
+<div class="line">PropertyDemo::PropertyDemo(<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *parent)</div>
+<div class="line">    : Demo(parent)</div>
+<div class="line">    , m_manager(new <a class="code" href="classDLoginManager.html">DLoginManager</a>)</div>
+<div class="line">    , m_currentSession(m_manager-&gt;currentSession())</div>
+<div class="line">{</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> PropertyDemo::run()</div>
+<div class="line">{</div>
+<div class="line">    <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qmetaobject.html">QMetaObject</a> *mo = m_manager-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#metaObject">metaObject</a>();</div>
+<div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; mo-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qmetaobject.html#propertyCount">propertyCount</a>(); i++) {</div>
+<div class="line">        <a class="codeRef" href="http://doc.qt.io/qt-5/qmetaproperty.html">QMetaProperty</a> mp = mo-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qmetaobject.html#property">property</a>(i);</div>
+<div class="line">        qDebug() &lt;&lt; <span class="stringliteral">&quot;Property:&quot;</span> &lt;&lt; mp.<a class="codeRef" href="http://doc.qt.io/qt-5/qmetaproperty.html#name">name</a>() &lt;&lt; <span class="stringliteral">&quot;, type:&quot;</span> &lt;&lt; mp.<a class="codeRef" href="http://doc.qt.io/qt-5/qmetaproperty.html#typeName">typeName</a>() &lt;&lt; <span class="stringliteral">&quot;, readable:&quot;</span> &lt;&lt; mp.<a class="codeRef" href="http://doc.qt.io/qt-5/qmetaproperty.html#isReadable">isReadable</a>()</div>
+<div class="line">                 &lt;&lt; <span class="stringliteral">&quot;, writable:&quot;</span> &lt;&lt; mp.<a class="codeRef" href="http://doc.qt.io/qt-5/qmetaproperty.html#isWritable">isWritable</a>() &lt;&lt; <span class="stringliteral">&quot;, value:&quot;</span> &lt;&lt; mp.<a class="codeRef" href="http://doc.qt.io/qt-5/qmetaproperty.html#read">read</a>(m_manager);</div>
+<div class="line">    }</div>
+<div class="line">    qDebug() &lt;&lt; m_manager-&gt;scheduledShutdown();</div>
+<div class="line">    <span class="keyword">auto</span> user = m_manager-&gt;<a class="code" href="classDLoginManager.html#a49c6f998be613a15098e23b8eb835550">findUserById</a>(1000);</div>
+<div class="line">    mo = user-&gt;metaObject();</div>
+<div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; mo-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qmetaobject.html#propertyCount">propertyCount</a>(); i++) {</div>
+<div class="line">        <a class="codeRef" href="http://doc.qt.io/qt-5/qmetaproperty.html">QMetaProperty</a> mp = mo-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qmetaobject.html#property">property</a>(i);</div>
+<div class="line">        qDebug() &lt;&lt; <span class="stringliteral">&quot;Property:&quot;</span> &lt;&lt; mp.<a class="codeRef" href="http://doc.qt.io/qt-5/qmetaproperty.html#name">name</a>() &lt;&lt; <span class="stringliteral">&quot;, type:&quot;</span> &lt;&lt; mp.<a class="codeRef" href="http://doc.qt.io/qt-5/qmetaproperty.html#typeName">typeName</a>() &lt;&lt; <span class="stringliteral">&quot;, readable:&quot;</span> &lt;&lt; mp.<a class="codeRef" href="http://doc.qt.io/qt-5/qmetaproperty.html#isReadable">isReadable</a>()</div>
+<div class="line">                 &lt;&lt; <span class="stringliteral">&quot;, writable:&quot;</span> &lt;&lt; mp.<a class="codeRef" href="http://doc.qt.io/qt-5/qmetaproperty.html#isWritable">isWritable</a>() &lt;&lt; <span class="stringliteral">&quot;, value:&quot;</span> &lt;&lt; mp.<a class="codeRef" href="http://doc.qt.io/qt-5/qmetaproperty.html#read">read</a>(user.data());</div>
+<div class="line">    }</div>
+<div class="line">    qDebug() &lt;&lt; user-&gt;UID();</div>
+<div class="line">    <span class="keyword">auto</span> session = m_manager-&gt;<a class="code" href="classDLoginManager.html#aacf70b6db436d55a2361388ace57bd5a">findSessionById</a>(m_currentSession-&gt;id());</div>
+<div class="line">    mo = session-&gt;metaObject();</div>
+<div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; mo-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qmetaobject.html#propertyCount">propertyCount</a>(); i++) {</div>
+<div class="line">        <a class="codeRef" href="http://doc.qt.io/qt-5/qmetaproperty.html">QMetaProperty</a> mp = mo-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qmetaobject.html#property">property</a>(i);</div>
+<div class="line">        qDebug() &lt;&lt; <span class="stringliteral">&quot;Property:&quot;</span> &lt;&lt; mp.<a class="codeRef" href="http://doc.qt.io/qt-5/qmetaproperty.html#name">name</a>() &lt;&lt; <span class="stringliteral">&quot;, type:&quot;</span> &lt;&lt; mp.<a class="codeRef" href="http://doc.qt.io/qt-5/qmetaproperty.html#typeName">typeName</a>() &lt;&lt; <span class="stringliteral">&quot;, readable:&quot;</span> &lt;&lt; mp.<a class="codeRef" href="http://doc.qt.io/qt-5/qmetaproperty.html#isReadable">isReadable</a>()</div>
+<div class="line">                 &lt;&lt; <span class="stringliteral">&quot;, writable:&quot;</span> &lt;&lt; mp.<a class="codeRef" href="http://doc.qt.io/qt-5/qmetaproperty.html#isWritable">isWritable</a>() &lt;&lt; <span class="stringliteral">&quot;, value:&quot;</span> &lt;&lt; mp.<a class="codeRef" href="http://doc.qt.io/qt-5/qmetaproperty.html#read">read</a>(session.data());</div>
+<div class="line">    }</div>
+<div class="line">    qDebug() &lt;&lt; session-&gt;id();</div>
+<div class="line">    <span class="keyword">auto</span> seat = m_manager-&gt;<a class="code" href="classDLoginManager.html#af327c3d24e846226c1ed0caa6feacc4a">currentSeat</a>();</div>
+<div class="line">    mo = seat-&gt;metaObject();</div>
+<div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; mo-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qmetaobject.html#propertyCount">propertyCount</a>(); i++) {</div>
+<div class="line">        <a class="codeRef" href="http://doc.qt.io/qt-5/qmetaproperty.html">QMetaProperty</a> mp = mo-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qmetaobject.html#property">property</a>(i);</div>
+<div class="line">        qDebug() &lt;&lt; <span class="stringliteral">&quot;Property:&quot;</span> &lt;&lt; mp.<a class="codeRef" href="http://doc.qt.io/qt-5/qmetaproperty.html#name">name</a>() &lt;&lt; <span class="stringliteral">&quot;, type:&quot;</span> &lt;&lt; mp.<a class="codeRef" href="http://doc.qt.io/qt-5/qmetaproperty.html#typeName">typeName</a>() &lt;&lt; <span class="stringliteral">&quot;, readable:&quot;</span> &lt;&lt; mp.<a class="codeRef" href="http://doc.qt.io/qt-5/qmetaproperty.html#isReadable">isReadable</a>()</div>
+<div class="line">                 &lt;&lt; <span class="stringliteral">&quot;, writable:&quot;</span> &lt;&lt; mp.<a class="codeRef" href="http://doc.qt.io/qt-5/qmetaproperty.html#isWritable">isWritable</a>() &lt;&lt; <span class="stringliteral">&quot;, value:&quot;</span> &lt;&lt; mp.<a class="codeRef" href="http://doc.qt.io/qt-5/qmetaproperty.html#read">read</a>(seat.data());</div>
+<div class="line">    }</div>
+<div class="line">    qDebug() &lt;&lt; seat-&gt;id();</div>
+<div class="line">    <span class="keywordflow">return</span> 0;</div>
+<div class="line">}</div>
+<div class="ttc" id="aclassDLoginManager_html_a49c6f998be613a15098e23b8eb835550"><div class="ttname"><a href="classDLoginManager.html#a49c6f998be613a15098e23b8eb835550">DLoginManager::findUserById</a></div><div class="ttdeci">DExpected&lt; LoginUserPtr &gt; findUserById(quint32 UID)</div><div class="ttdoc">通过uid获取User对象</div><div class="ttdef"><b>Definition:</b> dloginmanager.cpp:410</div></div>
+<div class="ttc" id="aclassDLoginManager_html_aacf70b6db436d55a2361388ace57bd5a"><div class="ttname"><a href="classDLoginManager.html#aacf70b6db436d55a2361388ace57bd5a">DLoginManager::findSessionById</a></div><div class="ttdeci">DExpected&lt; LoginSessionPtr &gt; findSessionById(const QString &amp;sessionId)</div><div class="ttdoc">获取session对象</div><div class="ttdef"><b>Definition:</b> dloginmanager.cpp:388</div></div>
+<div class="ttc" id="aclassDLoginManager_html_af327c3d24e846226c1ed0caa6feacc4a"><div class="ttname"><a href="classDLoginManager.html#af327c3d24e846226c1ed0caa6feacc4a">DLoginManager::currentSeat</a></div><div class="ttdeci">DExpected&lt; LoginSeatPtr &gt; currentSeat()</div><div class="ttdoc">当前的seat</div><div class="ttdef"><b>Definition:</b> dloginmanager.cpp:669</div></div>
+<div class="ttc" id="adloginseat_8h_html"><div class="ttname"><a href="dloginseat_8h.html">dloginseat.h</a></div><div class="ttdoc">dloginseat.h 中定义了管理用户seat的接口。</div></div>
+<div class="ttc" id="adloginuser_8h_html"><div class="ttname"><a href="dloginuser_8h.html">dloginuser.h</a></div></div>
+<div class="ttc" id="aqmetaobject_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qmetaobject.html">QMetaObject</a></div></div>
+<div class="ttc" id="aqmetaobject_html_property"><div class="ttname"><a href="http://doc.qt.io/qt-5/qmetaobject.html#property">QMetaObject::property</a></div><div class="ttdeci">QMetaProperty property(int index) const const</div></div>
+<div class="ttc" id="aqmetaobject_html_propertyCount"><div class="ttname"><a href="http://doc.qt.io/qt-5/qmetaobject.html#propertyCount">QMetaObject::propertyCount</a></div><div class="ttdeci">int propertyCount() const const</div></div>
+<div class="ttc" id="aqmetaproperty_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qmetaproperty.html">QMetaProperty</a></div></div>
+<div class="ttc" id="aqmetaproperty_html_isReadable"><div class="ttname"><a href="http://doc.qt.io/qt-5/qmetaproperty.html#isReadable">QMetaProperty::isReadable</a></div><div class="ttdeci">bool isReadable() const const</div></div>
+<div class="ttc" id="aqmetaproperty_html_isWritable"><div class="ttname"><a href="http://doc.qt.io/qt-5/qmetaproperty.html#isWritable">QMetaProperty::isWritable</a></div><div class="ttdeci">bool isWritable() const const</div></div>
+<div class="ttc" id="aqmetaproperty_html_name"><div class="ttname"><a href="http://doc.qt.io/qt-5/qmetaproperty.html#name">QMetaProperty::name</a></div><div class="ttdeci">const char * name() const const</div></div>
+<div class="ttc" id="aqmetaproperty_html_read"><div class="ttname"><a href="http://doc.qt.io/qt-5/qmetaproperty.html#read">QMetaProperty::read</a></div><div class="ttdeci">QVariant read(const QObject *object) const const</div></div>
+<div class="ttc" id="aqmetaproperty_html_typeName"><div class="ttname"><a href="http://doc.qt.io/qt-5/qmetaproperty.html#typeName">QMetaProperty::typeName</a></div><div class="ttdeci">const char * typeName() const const</div></div>
+<div class="ttc" id="aqobject_html_metaObject"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#metaObject">QObject::metaObject</a></div><div class="ttdeci">virtual const QMetaObject * metaObject() const const</div></div>
+</div><!-- fragment --><p>既可使用元对象系统获取属性，也可以通过函数获取</p>
+<p><code><a class="el" href="signaldemo_8h_source.html">signaldemo.h</a></code></p>
+<div class="fragment"><div class="line"><span class="preprocessor">#pragma once</span></div>
+<div class="line"><span class="preprocessor">#include &quot;demo.h&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="dloginmanager_8h.html">dloginmanager.h</a>&quot;</span></div>
+<div class="line"> </div>
+<div class="line">DLOGIN_USE_NAMESPACE</div>
+<div class="line"><span class="keyword">class </span><a class="code" href="classSignalDemo.html">SignalDemo</a> : <span class="keyword">public</span> Demo</div>
+<div class="line">{</div>
+<div class="line">    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">Q_OBJECT</a></div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">public</span>:</div>
+<div class="line">    <a class="code" href="classSignalDemo.html">SignalDemo</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a> = <span class="keyword">nullptr</span>);</div>
+<div class="line">    <span class="keywordtype">int</span> run() <span class="keyword">override</span>;</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">private</span>:</div>
+<div class="line">    <a class="code" href="classDLoginManager.html">DLoginManager</a> *m_manager;</div>
+<div class="line">    <a class="codeRef" href="http://doc.qt.io/qt-5/qsharedpointer.html">QSharedPointer&lt;DLoginSession&gt;</a> m_currentSession;</div>
+<div class="line">};</div>
+</div><!-- fragment --><p><code>signaldemo.cpp</code></p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;signaldemo.h&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="dloginsession_8h.html">dloginsession.h</a>&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;qdebug.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;qfile.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;qdir.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;qtextstream.h&gt;</span></div>
+<div class="line">SignalDemo::SignalDemo(<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *parent)</div>
+<div class="line">    : Demo(parent)</div>
+<div class="line">    , m_manager(new <a class="code" href="classDLoginManager.html">DLoginManager</a>)</div>
+<div class="line">    , m_currentSession(m_manager-&gt;currentSession())</div>
+<div class="line">{</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> SignalDemo::run()</div>
+<div class="line">{</div>
+<div class="line">    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#connect">connect</a>(m_currentSession.<a class="codeRef" href="http://doc.qt.io/qt-5/qsharedpointer.html#data">data</a>(), &amp;<a class="code" href="classDLoginSession.html#a1e642d2cf71762b3727b9c4d152d909e">DLoginSession::lockedChanged</a>, <span class="keyword">this</span>, [&amp;](<span class="keywordtype">bool</span> locked) {</div>
+<div class="line">        qDebug() &lt;&lt; <span class="stringliteral">&quot;Lock changed:&quot;</span> &lt;&lt; locked;</div>
+<div class="line">    });</div>
+<div class="line">    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#connect">connect</a>(m_manager, &amp;<a class="code" href="classDLoginManager.html#a9e7a056e23d22b5d5e72579a8e7f1954">DLoginManager::userNew</a>, <span class="keyword">this</span>, [=](quint32 UID) { qDebug() &lt;&lt; <span class="stringliteral">&quot;User&quot;</span> &lt;&lt; UID &lt;&lt; <span class="stringliteral">&quot;is added.&quot;</span>; });</div>
+<div class="line">    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#connect">connect</a>(m_manager, &amp;<a class="code" href="classDLoginManager.html#a62541448b5b5eea3f975f3736410c3b5">DLoginManager::userRemoved</a>, <span class="keyword">this</span>, [=](quint32 UID) { qDebug() &lt;&lt; <span class="stringliteral">&quot;User&quot;</span> &lt;&lt; UID &lt;&lt; <span class="stringliteral">&quot;is removed.&quot;</span>; });</div>
+<div class="line">    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#connect">connect</a>(m_manager, &amp;<a class="code" href="classDLoginManager.html#afaeefaac8195f27e2747531ba487f2aa">DLoginManager::sessionNew</a>, <span class="keyword">this</span>, [=](<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> sessionId) {</div>
+<div class="line">        qDebug() &lt;&lt; <span class="stringliteral">&quot;Session&quot;</span> &lt;&lt; sessionId &lt;&lt; <span class="stringliteral">&quot;is added.&quot;</span>;</div>
+<div class="line">    });</div>
+<div class="line">    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#connect">connect</a>(m_manager, &amp;<a class="code" href="classDLoginManager.html#a1f2b628830d1714de3b9a932934384f7">DLoginManager::sessionRemoved</a>, <span class="keyword">this</span>, [=](<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;sessionId) {</div>
+<div class="line">        qDebug() &lt;&lt; <span class="stringliteral">&quot;Session&quot;</span> &lt;&lt; sessionId &lt;&lt; <span class="stringliteral">&quot;is removed.&quot;</span>;</div>
+<div class="line">    });</div>
+<div class="line">    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#connect">connect</a>(m_currentSession.<a class="codeRef" href="http://doc.qt.io/qt-5/qsharedpointer.html#data">data</a>(), &amp;<a class="code" href="classDLoginSession.html#af73733641e52dc84a0b5c1bb56c2cf7a">DLoginSession::autostartAdded</a>, <span class="keyword">this</span>, [=](<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> name) {</div>
+<div class="line">        qDebug() &lt;&lt; <span class="stringliteral">&quot;Autostart&quot;</span> &lt;&lt; name &lt;&lt; <span class="stringliteral">&quot;is added.&quot;</span>;</div>
+<div class="line">    });</div>
+<div class="line">    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#connect">connect</a>(m_currentSession.<a class="codeRef" href="http://doc.qt.io/qt-5/qsharedpointer.html#data">data</a>(), &amp;<a class="code" href="classDLoginSession.html#ae7f51f23fceac09d50f9a938deaf917b">DLoginSession::autostartRemoved</a>, <span class="keyword">this</span>, [=](<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;name) {</div>
+<div class="line">        qDebug() &lt;&lt; <span class="stringliteral">&quot;Autostart&quot;</span> &lt;&lt; name &lt;&lt; <span class="stringliteral">&quot;is removed.&quot;</span>;</div>
+<div class="line">    });</div>
+<div class="line">    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#connect">connect</a>(</div>
+<div class="line">        m_manager, &amp;<a class="code" href="classDLoginManager.html#a23c2181ea676434184773be11edbc2ca">DLoginManager::prepareForSleep</a>, <span class="keyword">this</span>, [=](<span class="keywordtype">bool</span> value) { qDebug() &lt;&lt; <span class="stringliteral">&quot;Prepare for sleep, value:&quot;</span> &lt;&lt; value; });</div>
+<div class="line">    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#connect">connect</a>(m_manager, &amp;<a class="code" href="classDLoginManager.html#a5c2734f314459899f9eb1e39598d24d4">DLoginManager::prepareForShutdown</a>, <span class="keyword">this</span>, [=](<span class="keywordtype">bool</span> value) {</div>
+<div class="line">        qDebug() &lt;&lt; <span class="stringliteral">&quot;Prepare for shutdown, value:&quot;</span> &lt;&lt; value;</div>
+<div class="line">        <a class="codeRef" href="http://doc.qt.io/qt-5/qfile.html">QFile</a> file(<a class="codeRef" href="http://doc.qt.io/qt-5/qdir.html#currentPath">QDir::currentPath</a>() + <span class="stringliteral">&quot;/shutdown.log&quot;</span>);</div>
+<div class="line">        <span class="keywordflow">while</span> (!file.open(<a class="codeRef" href="http://doc.qt.io/qt-5/qiodevice.html#OpenModeFlag-enum">QIODevice::ReadWrite</a> | <a class="codeRef" href="http://doc.qt.io/qt-5/qiodevice.html#OpenModeFlag-enum">QIODevice::Append</a>))</div>
+<div class="line">            ;</div>
+<div class="line">        <a class="codeRef" href="http://doc.qt.io/qt-5/qtextstream.html">QTextStream</a> stream(&amp;file);</div>
+<div class="line">        stream &lt;&lt; <a class="codeRef" href="http://doc.qt.io/qt-5/qdatetime.html#currentDateTime">QDateTime::currentDateTime</a>().<a class="codeRef" href="http://doc.qt.io/qt-5/qdatetime.html#toString-1">toString</a>() &lt;&lt; <span class="stringliteral">&quot;: value = &quot;</span> &lt;&lt; value;</div>
+<div class="line">        file.close();</div>
+<div class="line">    });</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">return</span> 0;</div>
+<div class="line">}</div>
+<div class="ttc" id="aclassDLoginManager_html_a1f2b628830d1714de3b9a932934384f7"><div class="ttname"><a href="classDLoginManager.html#a1f2b628830d1714de3b9a932934384f7">DLoginManager::sessionRemoved</a></div><div class="ttdeci">void sessionRemoved(const QString &amp;sessionId)</div></div>
+<div class="ttc" id="aclassDLoginManager_html_a23c2181ea676434184773be11edbc2ca"><div class="ttname"><a href="classDLoginManager.html#a23c2181ea676434184773be11edbc2ca">DLoginManager::prepareForSleep</a></div><div class="ttdeci">void prepareForSleep(bool value)</div></div>
+<div class="ttc" id="aclassDLoginManager_html_a5c2734f314459899f9eb1e39598d24d4"><div class="ttname"><a href="classDLoginManager.html#a5c2734f314459899f9eb1e39598d24d4">DLoginManager::prepareForShutdown</a></div><div class="ttdeci">void prepareForShutdown(bool value)</div><div class="ttdoc">PrepareForShutdown()和PrepareForSleep()信号在系统关闭之前（使用参数“ true” ）或之后（使用参数“ false”）发送, 分别用于重新启动/关机和挂起/休眠。应...</div></div>
+<div class="ttc" id="aclassDLoginManager_html_a62541448b5b5eea3f975f3736410c3b5"><div class="ttname"><a href="classDLoginManager.html#a62541448b5b5eea3f975f3736410c3b5">DLoginManager::userRemoved</a></div><div class="ttdeci">void userRemoved(quint32 UID)</div></div>
+<div class="ttc" id="aclassDLoginManager_html_a9e7a056e23d22b5d5e72579a8e7f1954"><div class="ttname"><a href="classDLoginManager.html#a9e7a056e23d22b5d5e72579a8e7f1954">DLoginManager::userNew</a></div><div class="ttdeci">void userNew(quint32 UID)</div></div>
+<div class="ttc" id="aclassDLoginManager_html_afaeefaac8195f27e2747531ba487f2aa"><div class="ttname"><a href="classDLoginManager.html#afaeefaac8195f27e2747531ba487f2aa">DLoginManager::sessionNew</a></div><div class="ttdeci">void sessionNew(const QString &amp;sessionId)</div></div>
+<div class="ttc" id="aclassDLoginSession_html_a1e642d2cf71762b3727b9c4d152d909e"><div class="ttname"><a href="classDLoginSession.html#a1e642d2cf71762b3727b9c4d152d909e">DLoginSession::lockedChanged</a></div><div class="ttdeci">void lockedChanged(bool locked)</div><div class="ttdoc">锁屏切换信号</div></div>
+<div class="ttc" id="aclassDLoginSession_html_ae7f51f23fceac09d50f9a938deaf917b"><div class="ttname"><a href="classDLoginSession.html#ae7f51f23fceac09d50f9a938deaf917b">DLoginSession::autostartRemoved</a></div><div class="ttdeci">void autostartRemoved(const QString &amp;fileName)</div><div class="ttdoc">自启应用被删除信号</div></div>
+<div class="ttc" id="aclassDLoginSession_html_af73733641e52dc84a0b5c1bb56c2cf7a"><div class="ttname"><a href="classDLoginSession.html#af73733641e52dc84a0b5c1bb56c2cf7a">DLoginSession::autostartAdded</a></div><div class="ttdeci">void autostartAdded(const QString &amp;fileName)</div><div class="ttdoc">自启应用被添加信号</div></div>
+<div class="ttc" id="aqdatetime_html_currentDateTime"><div class="ttname"><a href="http://doc.qt.io/qt-5/qdatetime.html#currentDateTime">QDateTime::currentDateTime</a></div><div class="ttdeci">QDateTime currentDateTime()</div></div>
+<div class="ttc" id="aqdatetime_html_toString-1"><div class="ttname"><a href="http://doc.qt.io/qt-5/qdatetime.html#toString-1">QDateTime::toString</a></div><div class="ttdeci">QString toString(Qt::DateFormat format) const const</div></div>
+<div class="ttc" id="aqdir_html_currentPath"><div class="ttname"><a href="http://doc.qt.io/qt-5/qdir.html#currentPath">QDir::currentPath</a></div><div class="ttdeci">QString currentPath()</div></div>
+<div class="ttc" id="aqfile_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qfile.html">QFile</a></div></div>
+<div class="ttc" id="aqiodevice_html_OpenModeFlag-enum"><div class="ttname"><a href="http://doc.qt.io/qt-5/qiodevice.html#OpenModeFlag-enum">QIODevice::ReadWrite</a></div><div class="ttdeci">ReadWrite</div></div>
+<div class="ttc" id="aqobject_html_connect"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#connect">QObject::connect</a></div><div class="ttdeci">QMetaObject::Connection connect(const QObject *sender, const char *signal, const QObject *receiver, const char *method, Qt::ConnectionType type)</div></div>
+<div class="ttc" id="aqsharedpointer_html_data"><div class="ttname"><a href="http://doc.qt.io/qt-5/qsharedpointer.html#data">QSharedPointer::data</a></div><div class="ttdeci">T * data() const const</div></div>
+<div class="ttc" id="aqstring_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstring.html">QString</a></div></div>
+<div class="ttc" id="aqtextstream_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qtextstream.html">QTextStream</a></div></div>
+</div><!-- fragment --><p>可直接连接对象的信号</p>
+<p><code><a class="el" href="powerdemo_8h_source.html">powerdemo.h</a></code></p>
+<div class="fragment"><div class="line"><span class="preprocessor">#pragma once</span></div>
+<div class="line"><span class="preprocessor">#include &quot;demo.h&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="dloginmanager_8h.html">dloginmanager.h</a>&quot;</span></div>
+<div class="line">DLOGIN_USE_NAMESPACE</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">class </span><a class="code" href="classPowerDemo.html">PowerDemo</a> : <span class="keyword">public</span> Demo</div>
+<div class="line">{</div>
+<div class="line">    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">Q_OBJECT</a></div>
+<div class="line"><span class="keyword">public</span>:</div>
+<div class="line">    <a class="code" href="classPowerDemo.html">PowerDemo</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a> = <span class="keyword">nullptr</span>);</div>
+<div class="line">    <span class="keywordtype">int</span> run() <span class="keyword">override</span>;</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">private</span>:</div>
+<div class="line">    <a class="code" href="classDLoginManager.html">DLoginManager</a> *m_manager;</div>
+<div class="line">};</div>
+</div><!-- fragment --><p><code>powerdemo.cpp</code></p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;powerdemo.h&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;qdebug.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="dlogintypes_8h.html">dlogintypes.h</a>&quot;</span></div>
+<div class="line"> </div>
+<div class="line">PowerDemo::PowerDemo(<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *parent)</div>
+<div class="line">    : Demo(parent)</div>
+<div class="line">    , m_manager(new <a class="code" href="classDLoginManager.html">DLoginManager</a>)</div>
+<div class="line">{</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> PowerDemo::run()</div>
+<div class="line">{</div>
+<div class="line">    m_manager-&gt;<a class="code" href="classDLoginManager.html#a6799052dc9ae001eab3a0ca5a95a846a">inhibit</a>(<a class="code" href="dlogintypes_8h.html#a38a942b5a4e892f272d54d469b6d592da7ae599ab0325912d75016baf57084021">InhibitBehavior::Sleep</a>, <span class="stringliteral">&quot;demo&quot;</span>, <span class="stringliteral">&quot;block reboot&quot;</span>, <a class="code" href="dlogintypes_8h.html#aa98a3cf5c979d3762ffd3f5190d05f26ae1e4c8c9ccd9fc39c391da4bcd093fb2">InhibitMode::Block</a>);</div>
+<div class="line">    m_manager-&gt;<a class="code" href="classDLoginManager.html#a6799052dc9ae001eab3a0ca5a95a846a">inhibit</a>(<a class="code" href="dlogintypes_8h.html#a38a942b5a4e892f272d54d469b6d592dad7eff72d3e298432f32c409409c16d91">InhibitBehavior::Shutdown</a>, <span class="stringliteral">&quot;demo&quot;</span>, <span class="stringliteral">&quot;delay shutdown&quot;</span>, <a class="code" href="dlogintypes_8h.html#aa98a3cf5c979d3762ffd3f5190d05f26a8f497c1a3d15af9e0c215019f26b887d">InhibitMode::Delay</a>);</div>
+<div class="line">    qDebug() &lt;&lt; m_manager-&gt;<a class="code" href="classDLoginManager.html#a688c066e6f05d6fabdac2cb84ce8263a">listInhibitors</a>();</div>
+<div class="line">    qDebug() &lt;&lt; m_manager-&gt;<a class="code" href="classDLoginManager.html#a24bf13e858c7761a8a08f3d5265dfbae">canSuspend</a>();</div>
+<div class="line">    qDebug() &lt;&lt; m_manager-&gt;<a class="code" href="classDLoginManager.html#a340b865056d9496c988cd3cba945ca5c">canPowerOff</a>();</div>
+<div class="line">    <span class="keyword">auto</span> time = <a class="codeRef" href="http://doc.qt.io/qt-5/qdatetime.html#currentDateTime">QDateTime::currentDateTime</a>();</div>
+<div class="line">    m_manager-&gt;<a class="code" href="classDLoginManager.html#ae121f9af00eb37d8a5ea3b46404228fe">scheduleShutdown</a>(<a class="code" href="dlogintypes_8h.html#a670d0decc7b8e4594fa959d9a8d1f721a1de72c4fc6d69a741fff1cbb7cdb9e90">ShutdownType::Reboot</a>, time.addSecs(1000));</div>
+<div class="line">    qDebug() &lt;&lt; m_manager-&gt;scheduledShutdown();</div>
+<div class="line">    m_manager-&gt;<a class="code" href="classDLoginManager.html#ab2bc42ca4f773c7b597c3f8ba38771bb">cancelScheduledShutdown</a>();</div>
+<div class="line">    qDebug() &lt;&lt; m_manager-&gt;scheduledShutdown();</div>
+<div class="line">    std::string str;</div>
+<div class="line">    getline(std::cin, str);</div>
+<div class="line">    m_manager-&gt;<a class="code" href="classDLoginManager.html#a8c2bd560ccf33a05954795a51537e0bc">powerOff</a>(<span class="keyword">false</span>);</div>
+<div class="line">    <span class="keywordflow">return</span> 0;</div>
+<div class="line">}</div>
+<div class="ttc" id="aclassDLoginManager_html_a24bf13e858c7761a8a08f3d5265dfbae"><div class="ttname"><a href="classDLoginManager.html#a24bf13e858c7761a8a08f3d5265dfbae">DLoginManager::canSuspend</a></div><div class="ttdeci">DExpected&lt; LoginExecStatus &gt; canSuspend()</div><div class="ttdoc">获取当前用户下计算机是否支持挂起</div><div class="ttdef"><b>Definition:</b> dloginmanager.cpp:344</div></div>
+<div class="ttc" id="aclassDLoginManager_html_a340b865056d9496c988cd3cba945ca5c"><div class="ttname"><a href="classDLoginManager.html#a340b865056d9496c988cd3cba945ca5c">DLoginManager::canPowerOff</a></div><div class="ttdeci">DExpected&lt; LoginExecStatus &gt; canPowerOff()</div><div class="ttdoc">获取当前用户下计算机是否支持关机</div><div class="ttdef"><b>Definition:</b> dloginmanager.cpp:322</div></div>
+<div class="ttc" id="aclassDLoginManager_html_a6799052dc9ae001eab3a0ca5a95a846a"><div class="ttname"><a href="classDLoginManager.html#a6799052dc9ae001eab3a0ca5a95a846a">DLoginManager::inhibit</a></div><div class="ttdeci">DExpected&lt; int &gt; inhibit(int what, const QString &amp;who, const QString &amp;why, LoginInhibitMode mode)</div><div class="ttdoc">创建一个抑制锁, 抑制锁：一个程序可以阻止或延迟系统休眠或关机</div><div class="ttdef"><b>Definition:</b> dloginmanager.cpp:465</div></div>
+<div class="ttc" id="aclassDLoginManager_html_a688c066e6f05d6fabdac2cb84ce8263a"><div class="ttname"><a href="classDLoginManager.html#a688c066e6f05d6fabdac2cb84ce8263a">DLoginManager::listInhibitors</a></div><div class="ttdeci">DExpected&lt; LoginInhibitorList &gt; listInhibitors()</div><div class="ttdoc">列出所有当前有效的抑制器。</div><div class="ttdef"><b>Definition:</b> dloginmanager.cpp:499</div></div>
+<div class="ttc" id="aclassDLoginManager_html_a8c2bd560ccf33a05954795a51537e0bc"><div class="ttname"><a href="classDLoginManager.html#a8c2bd560ccf33a05954795a51537e0bc">DLoginManager::powerOff</a></div><div class="ttdeci">DExpected&lt; void &gt; powerOff(bool interactive=false)</div><div class="ttdoc">关机</div><div class="ttdef"><b>Definition:</b> dloginmanager.cpp:570</div></div>
+<div class="ttc" id="aclassDLoginManager_html_ab2bc42ca4f773c7b597c3f8ba38771bb"><div class="ttname"><a href="classDLoginManager.html#ab2bc42ca4f773c7b597c3f8ba38771bb">DLoginManager::cancelScheduledShutdown</a></div><div class="ttdeci">DExpected&lt; bool &gt; cancelScheduledShutdown()</div><div class="ttdoc">取消一个预定的关机</div><div class="ttdef"><b>Definition:</b> dloginmanager.cpp:366</div></div>
+<div class="ttc" id="aclassDLoginManager_html_ae121f9af00eb37d8a5ea3b46404228fe"><div class="ttname"><a href="classDLoginManager.html#ae121f9af00eb37d8a5ea3b46404228fe">DLoginManager::scheduleShutdown</a></div><div class="ttdeci">DExpected&lt; void &gt; scheduleShutdown(LoginShutdownType type, const QDateTime &amp;usec)</div><div class="ttdoc">在一定时间后定时关机</div><div class="ttdef"><b>Definition:</b> dloginmanager.cpp:592</div></div>
+<div class="ttc" id="adlogintypes_8h_html"><div class="ttname"><a href="dlogintypes_8h.html">dlogintypes.h</a></div></div>
+<div class="ttc" id="adlogintypes_8h_html_a38a942b5a4e892f272d54d469b6d592da7ae599ab0325912d75016baf57084021"><div class="ttname"><a href="dlogintypes_8h.html#a38a942b5a4e892f272d54d469b6d592da7ae599ab0325912d75016baf57084021">Sleep</a></div><div class="ttdeci">@ Sleep</div><div class="ttdef"><b>Definition:</b> dlogintypes.h:23</div></div>
+<div class="ttc" id="adlogintypes_8h_html_a38a942b5a4e892f272d54d469b6d592dad7eff72d3e298432f32c409409c16d91"><div class="ttname"><a href="dlogintypes_8h.html#a38a942b5a4e892f272d54d469b6d592dad7eff72d3e298432f32c409409c16d91">Shutdown</a></div><div class="ttdeci">@ Shutdown</div><div class="ttdef"><b>Definition:</b> dlogintypes.h:22</div></div>
+<div class="ttc" id="adlogintypes_8h_html_a670d0decc7b8e4594fa959d9a8d1f721a1de72c4fc6d69a741fff1cbb7cdb9e90"><div class="ttname"><a href="dlogintypes_8h.html#a670d0decc7b8e4594fa959d9a8d1f721a1de72c4fc6d69a741fff1cbb7cdb9e90">ShutdownType::Reboot</a></div><div class="ttdeci">@ Reboot</div></div>
+<div class="ttc" id="adlogintypes_8h_html_aa98a3cf5c979d3762ffd3f5190d05f26a8f497c1a3d15af9e0c215019f26b887d"><div class="ttname"><a href="dlogintypes_8h.html#aa98a3cf5c979d3762ffd3f5190d05f26a8f497c1a3d15af9e0c215019f26b887d">InhibitMode::Delay</a></div><div class="ttdeci">@ Delay</div></div>
+<div class="ttc" id="adlogintypes_8h_html_aa98a3cf5c979d3762ffd3f5190d05f26ae1e4c8c9ccd9fc39c391da4bcd093fb2"><div class="ttname"><a href="dlogintypes_8h.html#aa98a3cf5c979d3762ffd3f5190d05f26ae1e4c8c9ccd9fc39c391da4bcd093fb2">InhibitMode::Block</a></div><div class="ttdeci">@ Block</div></div>
+</div><!-- fragment --><p>调用相关方法可以执行系统相关操作，并触发信号 </p>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="md_dtksystemsettings_docs_index_zh_CN.html">dtksystemsettings</a></li>
+    <li class="footer">文档生成时间:2023-01-13-07:39  +00</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

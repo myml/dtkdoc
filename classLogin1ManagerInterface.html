@@ -1,0 +1,928 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: Login1ManagerInterface类 参考</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="https://github.com/linuxdeepin/dtkdoc" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classLogin1ManagerInterface.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-slots">Public 槽</a> &#124;
+<a href="#signals">信号</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#properties">属性</a> &#124;
+<a href="classLogin1ManagerInterface-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">Login1ManagerInterface类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 Login1ManagerInterface 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classLogin1ManagerInterface.png" usemap="#Login1ManagerInterface_map" alt=""/>
+  <map id="Login1ManagerInterface_map" name="Login1ManagerInterface_map">
+<area target="_parent" href="http://doc.qt.io/qt-5/qobject.html" alt="QObject" shape="rect" coords="0,0,151,24"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Public 槽</h2></td></tr>
+<tr class="memitem:a9553a8f8f566b998c4839838490a359d"><td class="memItemLeft" align="right" valign="top"><a id="a9553a8f8f566b998c4839838490a359d"></a>
+QDBusPendingReply&#160;</td><td class="memItemRight" valign="bottom"><b>activateSession</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;sessionId)</td></tr>
+<tr class="separator:a9553a8f8f566b998c4839838490a359d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95ba47a55a3061ca5fc968347a0ba5fb"><td class="memItemLeft" align="right" valign="top"><a id="a95ba47a55a3061ca5fc968347a0ba5fb"></a>
+QDBusPendingReply&#160;</td><td class="memItemRight" valign="bottom"><b>activateSessionOnSeat</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;sessionId, const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;seatId)</td></tr>
+<tr class="separator:a95ba47a55a3061ca5fc968347a0ba5fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd2de904af289964e7da42bc81b46b26"><td class="memItemLeft" align="right" valign="top"><a id="abd2de904af289964e7da42bc81b46b26"></a>
+QDBusPendingReply&#160;</td><td class="memItemRight" valign="bottom"><b>attachDevice</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;seatId, const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;sysfsPath, bool interactive)</td></tr>
+<tr class="separator:abd2de904af289964e7da42bc81b46b26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaf7bbf178cf7b2d8d842d093a45ef63"><td class="memItemLeft" align="right" valign="top"><a id="aaaf7bbf178cf7b2d8d842d093a45ef63"></a>
+QDBusPendingReply&lt; <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>canHalt</b> ()</td></tr>
+<tr class="separator:aaaf7bbf178cf7b2d8d842d093a45ef63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c8adbb17606e772106bc3cac3deeb34"><td class="memItemLeft" align="right" valign="top"><a id="a5c8adbb17606e772106bc3cac3deeb34"></a>
+QDBusPendingReply&lt; <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>canHibernate</b> ()</td></tr>
+<tr class="separator:a5c8adbb17606e772106bc3cac3deeb34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa755190f73595d5e00588c2d8752ea24"><td class="memItemLeft" align="right" valign="top"><a id="aa755190f73595d5e00588c2d8752ea24"></a>
+QDBusPendingReply&lt; <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>canHybridSleep</b> ()</td></tr>
+<tr class="separator:aa755190f73595d5e00588c2d8752ea24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e7cfa5bf5c2c9b40e205f5578e96638"><td class="memItemLeft" align="right" valign="top"><a id="a0e7cfa5bf5c2c9b40e205f5578e96638"></a>
+QDBusPendingReply&lt; <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>canPowerOff</b> ()</td></tr>
+<tr class="separator:a0e7cfa5bf5c2c9b40e205f5578e96638"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5eb7be57fa11e8f87f83d8dd65001ff"><td class="memItemLeft" align="right" valign="top"><a id="af5eb7be57fa11e8f87f83d8dd65001ff"></a>
+QDBusPendingReply&lt; <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>canReboot</b> ()</td></tr>
+<tr class="separator:af5eb7be57fa11e8f87f83d8dd65001ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af831aa22c46d2a38a9ea8812bba9fccc"><td class="memItemLeft" align="right" valign="top"><a id="af831aa22c46d2a38a9ea8812bba9fccc"></a>
+QDBusPendingReply&lt; <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>canRebootParameter</b> ()</td></tr>
+<tr class="separator:af831aa22c46d2a38a9ea8812bba9fccc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bc31e9634c6eccf88da127e8f6dd75f"><td class="memItemLeft" align="right" valign="top"><a id="a7bc31e9634c6eccf88da127e8f6dd75f"></a>
+QDBusPendingReply&lt; <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>canRebootToBootLoaderEntry</b> ()</td></tr>
+<tr class="separator:a7bc31e9634c6eccf88da127e8f6dd75f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17dc7ae453bcc21445c9bd7ac7f08cc8"><td class="memItemLeft" align="right" valign="top"><a id="a17dc7ae453bcc21445c9bd7ac7f08cc8"></a>
+QDBusPendingReply&lt; <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>canRebootToBootLoaderMenu</b> ()</td></tr>
+<tr class="separator:a17dc7ae453bcc21445c9bd7ac7f08cc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf6ae96228858c1142f56934d5f68938"><td class="memItemLeft" align="right" valign="top"><a id="abf6ae96228858c1142f56934d5f68938"></a>
+QDBusPendingReply&lt; <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>canRebootToFirmwareSetup</b> ()</td></tr>
+<tr class="separator:abf6ae96228858c1142f56934d5f68938"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5e7bdd94cbd32d6c518ab80e3bbbda2"><td class="memItemLeft" align="right" valign="top"><a id="af5e7bdd94cbd32d6c518ab80e3bbbda2"></a>
+QDBusPendingReply&lt; <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>canSuspend</b> ()</td></tr>
+<tr class="separator:af5e7bdd94cbd32d6c518ab80e3bbbda2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a063ee77720263ecad8e841c2d5f1093c"><td class="memItemLeft" align="right" valign="top"><a id="a063ee77720263ecad8e841c2d5f1093c"></a>
+QDBusPendingReply&lt; <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>canSuspendThenHibernate</b> ()</td></tr>
+<tr class="separator:a063ee77720263ecad8e841c2d5f1093c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab69776f60b29110d8df4c3c0d8305c26"><td class="memItemLeft" align="right" valign="top"><a id="ab69776f60b29110d8df4c3c0d8305c26"></a>
+QDBusPendingReply&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>cancelScheduledShutdown</b> ()</td></tr>
+<tr class="separator:ab69776f60b29110d8df4c3c0d8305c26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4a3b2b5344da76b082707be8eb7d1cd"><td class="memItemLeft" align="right" valign="top"><a id="ad4a3b2b5344da76b082707be8eb7d1cd"></a>
+QDBusPendingReply&#160;</td><td class="memItemRight" valign="bottom"><b>flushDevices</b> (bool interactive)</td></tr>
+<tr class="separator:ad4a3b2b5344da76b082707be8eb7d1cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1122dc0caadb020614e329c5f80f6f14"><td class="memItemLeft" align="right" valign="top"><a id="a1122dc0caadb020614e329c5f80f6f14"></a>
+QDBusPendingReply&lt; QDBusObjectPath &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getSeat</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;seatId)</td></tr>
+<tr class="separator:a1122dc0caadb020614e329c5f80f6f14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9373507853f93267dd1bc822b4a58121"><td class="memItemLeft" align="right" valign="top"><a id="a9373507853f93267dd1bc822b4a58121"></a>
+QDBusPendingReply&lt; QDBusObjectPath &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getSession</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;sessionId)</td></tr>
+<tr class="separator:a9373507853f93267dd1bc822b4a58121"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a368a32ac11bbdd710f7e49b1191ae3d1"><td class="memItemLeft" align="right" valign="top"><a id="a368a32ac11bbdd710f7e49b1191ae3d1"></a>
+QDBusPendingReply&lt; QDBusObjectPath &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getSessionByPID</b> (quint32 pid)</td></tr>
+<tr class="separator:a368a32ac11bbdd710f7e49b1191ae3d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac9c7a5f1d7e387fb6ec6966c46a4332"><td class="memItemLeft" align="right" valign="top"><a id="aac9c7a5f1d7e387fb6ec6966c46a4332"></a>
+QDBusPendingReply&lt; QDBusObjectPath &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getUser</b> (quint32 UID)</td></tr>
+<tr class="separator:aac9c7a5f1d7e387fb6ec6966c46a4332"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac75b63283021bdf34d3926bc46eaf1f1"><td class="memItemLeft" align="right" valign="top"><a id="ac75b63283021bdf34d3926bc46eaf1f1"></a>
+QDBusPendingReply&lt; QDBusObjectPath &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getUserByPID</b> (quint32 pid)</td></tr>
+<tr class="separator:ac75b63283021bdf34d3926bc46eaf1f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a412a31baa0aad3b2fb8675a8ec3371d4"><td class="memItemLeft" align="right" valign="top"><a id="a412a31baa0aad3b2fb8675a8ec3371d4"></a>
+QDBusPendingReply&#160;</td><td class="memItemRight" valign="bottom"><b>halt</b> (bool interactive)</td></tr>
+<tr class="separator:a412a31baa0aad3b2fb8675a8ec3371d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a410718ceb1964876575ca316ae1ff418"><td class="memItemLeft" align="right" valign="top"><a id="a410718ceb1964876575ca316ae1ff418"></a>
+QDBusPendingReply&#160;</td><td class="memItemRight" valign="bottom"><b>haltWithFlags</b> (quint64 flags)</td></tr>
+<tr class="separator:a410718ceb1964876575ca316ae1ff418"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8107050eddf25207da2f0e323101f60f"><td class="memItemLeft" align="right" valign="top"><a id="a8107050eddf25207da2f0e323101f60f"></a>
+QDBusPendingReply&#160;</td><td class="memItemRight" valign="bottom"><b>hibernate</b> (bool interactive)</td></tr>
+<tr class="separator:a8107050eddf25207da2f0e323101f60f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5194c7c09cf7b342898b06a9f35e173a"><td class="memItemLeft" align="right" valign="top"><a id="a5194c7c09cf7b342898b06a9f35e173a"></a>
+QDBusPendingReply&#160;</td><td class="memItemRight" valign="bottom"><b>hibernateWithFlags</b> (quint64 flags)</td></tr>
+<tr class="separator:a5194c7c09cf7b342898b06a9f35e173a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3d6a908669dd4883e9d3947c328b6af"><td class="memItemLeft" align="right" valign="top"><a id="ae3d6a908669dd4883e9d3947c328b6af"></a>
+QDBusPendingReply&#160;</td><td class="memItemRight" valign="bottom"><b>hybridSleep</b> (bool interactive)</td></tr>
+<tr class="separator:ae3d6a908669dd4883e9d3947c328b6af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09aefe91db7c7c52f9d5c07101fbd54e"><td class="memItemLeft" align="right" valign="top"><a id="a09aefe91db7c7c52f9d5c07101fbd54e"></a>
+QDBusPendingReply&#160;</td><td class="memItemRight" valign="bottom"><b>hybridSleepWithFlags</b> (quint64 flags)</td></tr>
+<tr class="separator:a09aefe91db7c7c52f9d5c07101fbd54e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8a2ea5f9ff1d01e6a5e95d33495ce83"><td class="memItemLeft" align="right" valign="top"><a id="aa8a2ea5f9ff1d01e6a5e95d33495ce83"></a>
+QDBusPendingReply&lt; QDBusUnixFileDescriptor &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>inhibit</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;what, const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;who, const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;why, const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;mode)</td></tr>
+<tr class="separator:aa8a2ea5f9ff1d01e6a5e95d33495ce83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b48b4726408eb88ddb74c7475906576"><td class="memItemLeft" align="right" valign="top"><a id="a5b48b4726408eb88ddb74c7475906576"></a>
+QDBusPendingReply&#160;</td><td class="memItemRight" valign="bottom"><b>killSession</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;sessionId, const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;who, qint32 signalNumber)</td></tr>
+<tr class="separator:a5b48b4726408eb88ddb74c7475906576"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3018c2b298d44dbec34ebe13477c842b"><td class="memItemLeft" align="right" valign="top"><a id="a3018c2b298d44dbec34ebe13477c842b"></a>
+QDBusPendingReply&#160;</td><td class="memItemRight" valign="bottom"><b>killUser</b> (quint32 UID, qint32 signalName)</td></tr>
+<tr class="separator:a3018c2b298d44dbec34ebe13477c842b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf0eebc50a58eaacb883143202c06208"><td class="memItemLeft" align="right" valign="top"><a id="acf0eebc50a58eaacb883143202c06208"></a>
+QDBusPendingReply&lt; <a class="elRef" href="http://doc.qt.io/qt-5/qlist.html">QList</a>&lt; <a class="el" href="structDBusInhibitor.html">DBusInhibitor</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>listInhibitors</b> ()</td></tr>
+<tr class="separator:acf0eebc50a58eaacb883143202c06208"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4d02e56cb9b3b833a3cbb63eca13d34"><td class="memItemLeft" align="right" valign="top"><a id="ad4d02e56cb9b3b833a3cbb63eca13d34"></a>
+QDBusPendingReply&lt; <a class="elRef" href="http://doc.qt.io/qt-5/qlist.html">QList</a>&lt; DTK_LOGIN_NAMESPACE::DBusSeat &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>listSeats</b> ()</td></tr>
+<tr class="separator:ad4d02e56cb9b3b833a3cbb63eca13d34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecb2afffc025761567f35befeecc022e"><td class="memItemLeft" align="right" valign="top"><a id="aecb2afffc025761567f35befeecc022e"></a>
+QDBusPendingReply&lt; <a class="elRef" href="http://doc.qt.io/qt-5/qlist.html">QList</a>&lt; DTK_LOGIN_NAMESPACE::DBusSession &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>listSessions</b> ()</td></tr>
+<tr class="separator:aecb2afffc025761567f35befeecc022e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a582938a94e34be1e3a9770a9048cb6"><td class="memItemLeft" align="right" valign="top"><a id="a8a582938a94e34be1e3a9770a9048cb6"></a>
+QDBusPendingReply&lt; <a class="elRef" href="http://doc.qt.io/qt-5/qlist.html">QList</a>&lt; DTK_LOGIN_NAMESPACE::DBusUser &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>listUsers</b> ()</td></tr>
+<tr class="separator:a8a582938a94e34be1e3a9770a9048cb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81df67607d5846192349413014a561d6"><td class="memItemLeft" align="right" valign="top"><a id="a81df67607d5846192349413014a561d6"></a>
+QDBusPendingReply&#160;</td><td class="memItemRight" valign="bottom"><b>lockSession</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;sessionId)</td></tr>
+<tr class="separator:a81df67607d5846192349413014a561d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0e4318cc123802ff4351df8b096d502"><td class="memItemLeft" align="right" valign="top"><a id="ac0e4318cc123802ff4351df8b096d502"></a>
+QDBusPendingReply&#160;</td><td class="memItemRight" valign="bottom"><b>lockSessions</b> ()</td></tr>
+<tr class="separator:ac0e4318cc123802ff4351df8b096d502"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada67a8719c639690dbb48158a83cf903"><td class="memItemLeft" align="right" valign="top"><a id="ada67a8719c639690dbb48158a83cf903"></a>
+QDBusPendingReply&#160;</td><td class="memItemRight" valign="bottom"><b>powerOff</b> (bool interactive)</td></tr>
+<tr class="separator:ada67a8719c639690dbb48158a83cf903"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90326032f62c412d5c420f8498b88e3e"><td class="memItemLeft" align="right" valign="top"><a id="a90326032f62c412d5c420f8498b88e3e"></a>
+QDBusPendingReply&#160;</td><td class="memItemRight" valign="bottom"><b>powerOffWithFlags</b> (quint64 flags)</td></tr>
+<tr class="separator:a90326032f62c412d5c420f8498b88e3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b87a29850d615691c2409c044a0d8e6"><td class="memItemLeft" align="right" valign="top"><a id="a9b87a29850d615691c2409c044a0d8e6"></a>
+QDBusPendingReply&#160;</td><td class="memItemRight" valign="bottom"><b>reboot</b> (bool interactive)</td></tr>
+<tr class="separator:a9b87a29850d615691c2409c044a0d8e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3601f0ab764263a2aa253019fb989035"><td class="memItemLeft" align="right" valign="top"><a id="a3601f0ab764263a2aa253019fb989035"></a>
+QDBusPendingReply&#160;</td><td class="memItemRight" valign="bottom"><b>rebootWithFlags</b> (quint64 flags)</td></tr>
+<tr class="separator:a3601f0ab764263a2aa253019fb989035"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3405d37f55cc327f4bd88a01765e6f55"><td class="memItemLeft" align="right" valign="top"><a id="a3405d37f55cc327f4bd88a01765e6f55"></a>
+QDBusPendingReply&#160;</td><td class="memItemRight" valign="bottom"><b>releaseSession</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;sessionId)</td></tr>
+<tr class="separator:a3405d37f55cc327f4bd88a01765e6f55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11086526c02b9b342a9dc4abc148100e"><td class="memItemLeft" align="right" valign="top"><a id="a11086526c02b9b342a9dc4abc148100e"></a>
+QDBusPendingReply&#160;</td><td class="memItemRight" valign="bottom"><b>scheduleShutdown</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;type, quint64 usec)</td></tr>
+<tr class="separator:a11086526c02b9b342a9dc4abc148100e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0be0ab3cac7cffcb0195b5366dea2f38"><td class="memItemLeft" align="right" valign="top"><a id="a0be0ab3cac7cffcb0195b5366dea2f38"></a>
+QDBusPendingReply&#160;</td><td class="memItemRight" valign="bottom"><b>setRebootParameter</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;parameter)</td></tr>
+<tr class="separator:a0be0ab3cac7cffcb0195b5366dea2f38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af250647a28334fe582ed5c7a45234298"><td class="memItemLeft" align="right" valign="top"><a id="af250647a28334fe582ed5c7a45234298"></a>
+QDBusPendingReply&#160;</td><td class="memItemRight" valign="bottom"><b>setRebootToBootLoaderEntry</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;bootLoaderEntry)</td></tr>
+<tr class="separator:af250647a28334fe582ed5c7a45234298"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1135f386d45b196ca941d83effb8efec"><td class="memItemLeft" align="right" valign="top"><a id="a1135f386d45b196ca941d83effb8efec"></a>
+QDBusPendingReply&#160;</td><td class="memItemRight" valign="bottom"><b>setRebootToBootLoaderMenu</b> (quint64 timeout)</td></tr>
+<tr class="separator:a1135f386d45b196ca941d83effb8efec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6338edc1694a40c33370fb4a7b657f87"><td class="memItemLeft" align="right" valign="top"><a id="a6338edc1694a40c33370fb4a7b657f87"></a>
+QDBusPendingReply&#160;</td><td class="memItemRight" valign="bottom"><b>setRebootToFirmwareSetup</b> (bool enable)</td></tr>
+<tr class="separator:a6338edc1694a40c33370fb4a7b657f87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec14f88982477d5236e7d269d8b074ed"><td class="memItemLeft" align="right" valign="top"><a id="aec14f88982477d5236e7d269d8b074ed"></a>
+QDBusPendingReply&#160;</td><td class="memItemRight" valign="bottom"><b>setUserLinger</b> (quint32 UID, bool enable, bool interactive)</td></tr>
+<tr class="separator:aec14f88982477d5236e7d269d8b074ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a244b7381e3dd22dcd75cc32e32ff6fec"><td class="memItemLeft" align="right" valign="top"><a id="a244b7381e3dd22dcd75cc32e32ff6fec"></a>
+QDBusPendingReply&#160;</td><td class="memItemRight" valign="bottom"><b>suspend</b> (bool interactive)</td></tr>
+<tr class="separator:a244b7381e3dd22dcd75cc32e32ff6fec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69d064e8036fd8181e4c94640aa13e1a"><td class="memItemLeft" align="right" valign="top"><a id="a69d064e8036fd8181e4c94640aa13e1a"></a>
+QDBusPendingReply&#160;</td><td class="memItemRight" valign="bottom"><b>suspendWithFlags</b> (quint64 flags)</td></tr>
+<tr class="separator:a69d064e8036fd8181e4c94640aa13e1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab20407cedb312367d44d1f0e05bce668"><td class="memItemLeft" align="right" valign="top"><a id="ab20407cedb312367d44d1f0e05bce668"></a>
+QDBusPendingReply&#160;</td><td class="memItemRight" valign="bottom"><b>suspendThenHibernate</b> (bool interactive)</td></tr>
+<tr class="separator:ab20407cedb312367d44d1f0e05bce668"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58b904c73c9ad8151f36784c9e54fba0"><td class="memItemLeft" align="right" valign="top"><a id="a58b904c73c9ad8151f36784c9e54fba0"></a>
+QDBusPendingReply&#160;</td><td class="memItemRight" valign="bottom"><b>suspendThenHibernateWithFlags</b> (quint64 flags)</td></tr>
+<tr class="separator:a58b904c73c9ad8151f36784c9e54fba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace47ed1c37398c3dd8fe0656d90075cf"><td class="memItemLeft" align="right" valign="top"><a id="ace47ed1c37398c3dd8fe0656d90075cf"></a>
+QDBusPendingReply&#160;</td><td class="memItemRight" valign="bottom"><b>terminateSeat</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;seatId)</td></tr>
+<tr class="separator:ace47ed1c37398c3dd8fe0656d90075cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9aa3b27823f40a3d17e852e2ac32313"><td class="memItemLeft" align="right" valign="top"><a id="ac9aa3b27823f40a3d17e852e2ac32313"></a>
+QDBusPendingReply&#160;</td><td class="memItemRight" valign="bottom"><b>terminateSession</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;sessionId)</td></tr>
+<tr class="separator:ac9aa3b27823f40a3d17e852e2ac32313"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78833aa0b45bd13924ea9fb16defbefc"><td class="memItemLeft" align="right" valign="top"><a id="a78833aa0b45bd13924ea9fb16defbefc"></a>
+QDBusPendingReply&#160;</td><td class="memItemRight" valign="bottom"><b>terminateUser</b> (const quint32 UID)</td></tr>
+<tr class="separator:a78833aa0b45bd13924ea9fb16defbefc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa799caa2f9fdc575b32122512e880b92"><td class="memItemLeft" align="right" valign="top"><a id="aa799caa2f9fdc575b32122512e880b92"></a>
+QDBusPendingReply&#160;</td><td class="memItemRight" valign="bottom"><b>unlockSession</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;sessionId)</td></tr>
+<tr class="separator:aa799caa2f9fdc575b32122512e880b92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cabf4748af5eb806ccf8b5ef40a4582"><td class="memItemLeft" align="right" valign="top"><a id="a5cabf4748af5eb806ccf8b5ef40a4582"></a>
+QDBusPendingReply&#160;</td><td class="memItemRight" valign="bottom"><b>unlockSessions</b> ()</td></tr>
+<tr class="separator:a5cabf4748af5eb806ccf8b5ef40a4582"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+信号</h2></td></tr>
+<tr class="memitem:a45b6eed3df46514958ff1cf095e14504"><td class="memItemLeft" align="right" valign="top"><a id="a45b6eed3df46514958ff1cf095e14504"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>prepareForShutdown</b> (bool value)</td></tr>
+<tr class="separator:a45b6eed3df46514958ff1cf095e14504"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae000194c26186d8b4f45ee15b9a0a01d"><td class="memItemLeft" align="right" valign="top"><a id="ae000194c26186d8b4f45ee15b9a0a01d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>prepareForSleep</b> (bool value)</td></tr>
+<tr class="separator:ae000194c26186d8b4f45ee15b9a0a01d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84d66fab1f1bba48e1867f5d6b31e535"><td class="memItemLeft" align="right" valign="top"><a id="a84d66fab1f1bba48e1867f5d6b31e535"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>seatNew</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;seatId, const QDBusObjectPath &amp;seatPath)</td></tr>
+<tr class="separator:a84d66fab1f1bba48e1867f5d6b31e535"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc012a389f368553ba546b97737ebc44"><td class="memItemLeft" align="right" valign="top"><a id="abc012a389f368553ba546b97737ebc44"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>seatRemoved</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;seatId, const QDBusObjectPath &amp;seatPath)</td></tr>
+<tr class="separator:abc012a389f368553ba546b97737ebc44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff57b918dbc17e838536f5d6e2e5c3a4"><td class="memItemLeft" align="right" valign="top"><a id="aff57b918dbc17e838536f5d6e2e5c3a4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>sessionNew</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;sessionId, const QDBusObjectPath &amp;sessionPath)</td></tr>
+<tr class="separator:aff57b918dbc17e838536f5d6e2e5c3a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5391d1e7295fd8c39fe98746ae77729d"><td class="memItemLeft" align="right" valign="top"><a id="a5391d1e7295fd8c39fe98746ae77729d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>sessionRemoved</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;sessionId, const QDBusObjectPath &amp;sessionPath)</td></tr>
+<tr class="separator:a5391d1e7295fd8c39fe98746ae77729d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac336b3bf7695362131aa8ab6f53a2fd2"><td class="memItemLeft" align="right" valign="top"><a id="ac336b3bf7695362131aa8ab6f53a2fd2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>userNew</b> (quint32 UID, const QDBusObjectPath &amp;seatPath)</td></tr>
+<tr class="separator:ac336b3bf7695362131aa8ab6f53a2fd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08f35337ebb521b767484cbf6aa26ae8"><td class="memItemLeft" align="right" valign="top"><a id="a08f35337ebb521b767484cbf6aa26ae8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>userRemoved</b> (quint32 UID, const QDBusObjectPath &amp;seatPath)</td></tr>
+<tr class="separator:a08f35337ebb521b767484cbf6aa26ae8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:af56049dda9a06d37b4129f462b398849"><td class="memItemLeft" align="right" valign="top"><a id="af56049dda9a06d37b4129f462b398849"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Login1ManagerInterface</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;service, const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;path, QDBusConnection connection, <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a>=nullptr)</td></tr>
+<tr class="separator:af56049dda9a06d37b4129f462b398849"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f845100d594be8b76c095d4778aede2"><td class="memItemLeft" align="right" valign="top"><a id="a2f845100d594be8b76c095d4778aede2"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a>&#160;</td><td class="memItemRight" valign="bottom"><b>bootLoaderEntries</b> () const</td></tr>
+<tr class="separator:a2f845100d594be8b76c095d4778aede2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa469f5bd2200eaa4fb84f7f8f4ac5e96"><td class="memItemLeft" align="right" valign="top"><a id="aa469f5bd2200eaa4fb84f7f8f4ac5e96"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a>&#160;</td><td class="memItemRight" valign="bottom"><b>killExcludeUsers</b> () const</td></tr>
+<tr class="separator:aa469f5bd2200eaa4fb84f7f8f4ac5e96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace5b4640bb8f6409aa7914f5e9887709"><td class="memItemLeft" align="right" valign="top"><a id="ace5b4640bb8f6409aa7914f5e9887709"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a>&#160;</td><td class="memItemRight" valign="bottom"><b>killOnlyUsers</b> () const</td></tr>
+<tr class="separator:ace5b4640bb8f6409aa7914f5e9887709"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c396a5b0c56d29e687cf401c48a241f"><td class="memItemLeft" align="right" valign="top"><a id="a7c396a5b0c56d29e687cf401c48a241f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>docked</b> () const</td></tr>
+<tr class="separator:a7c396a5b0c56d29e687cf401c48a241f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadb522f1a17fe2001f5d8e4f9e9d64d3"><td class="memItemLeft" align="right" valign="top"><a id="aadb522f1a17fe2001f5d8e4f9e9d64d3"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>enableWallMessages</b> () const</td></tr>
+<tr class="separator:aadb522f1a17fe2001f5d8e4f9e9d64d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0dd17d8540c3b425ffe6de4276603ec"><td class="memItemLeft" align="right" valign="top"><a id="af0dd17d8540c3b425ffe6de4276603ec"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setEnableWallMessages</b> (bool enable)</td></tr>
+<tr class="separator:af0dd17d8540c3b425ffe6de4276603ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ad9c7e4fa1c0521bf32e2338473a9b7"><td class="memItemLeft" align="right" valign="top"><a id="a4ad9c7e4fa1c0521bf32e2338473a9b7"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>idleHint</b> () const</td></tr>
+<tr class="separator:a4ad9c7e4fa1c0521bf32e2338473a9b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f27b18237ecceb24b85c1ae564a5768"><td class="memItemLeft" align="right" valign="top"><a id="a0f27b18237ecceb24b85c1ae564a5768"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>killUserProcesses</b> () const</td></tr>
+<tr class="separator:a0f27b18237ecceb24b85c1ae564a5768"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ab298dfa7828edffae35da66301bc3c"><td class="memItemLeft" align="right" valign="top"><a id="a4ab298dfa7828edffae35da66301bc3c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>lidClosed</b> () const</td></tr>
+<tr class="separator:a4ab298dfa7828edffae35da66301bc3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a559dee5fbc545d1479621093dba2c4ac"><td class="memItemLeft" align="right" valign="top"><a id="a559dee5fbc545d1479621093dba2c4ac"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>onExternalPower</b> () const</td></tr>
+<tr class="separator:a559dee5fbc545d1479621093dba2c4ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb6d331ff778bec6809b9930926569c9"><td class="memItemLeft" align="right" valign="top"><a id="aeb6d331ff778bec6809b9930926569c9"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>preparingForShutdown</b> () const</td></tr>
+<tr class="separator:aeb6d331ff778bec6809b9930926569c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12d4a1d4b15e66c18f959d955a782013"><td class="memItemLeft" align="right" valign="top"><a id="a12d4a1d4b15e66c18f959d955a782013"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>preparingForSleep</b> () const</td></tr>
+<tr class="separator:a12d4a1d4b15e66c18f959d955a782013"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4875fe3435e08f3496277e270f4923b9"><td class="memItemLeft" align="right" valign="top"><a id="a4875fe3435e08f3496277e270f4923b9"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>rebootToFirmwareSetup</b> () const</td></tr>
+<tr class="separator:a4875fe3435e08f3496277e270f4923b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34d8980c998f524f719651ff36ac420a"><td class="memItemLeft" align="right" valign="top"><a id="a34d8980c998f524f719651ff36ac420a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>removeIPC</b> () const</td></tr>
+<tr class="separator:a34d8980c998f524f719651ff36ac420a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcb914f6fe0ed61bb261959ae52cb91f"><td class="memItemLeft" align="right" valign="top"><a id="adcb914f6fe0ed61bb261959ae52cb91f"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>blockInhibited</b> () const</td></tr>
+<tr class="separator:adcb914f6fe0ed61bb261959ae52cb91f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08bb85925b43f023bf5b907abe39d7fe"><td class="memItemLeft" align="right" valign="top"><a id="a08bb85925b43f023bf5b907abe39d7fe"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>delayInhibited</b> () const</td></tr>
+<tr class="separator:a08bb85925b43f023bf5b907abe39d7fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72f522a564fc5414b7a97948968dae39"><td class="memItemLeft" align="right" valign="top"><a id="a72f522a564fc5414b7a97948968dae39"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>handleHibernateKey</b> () const</td></tr>
+<tr class="separator:a72f522a564fc5414b7a97948968dae39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a407f34aa7c3ea1630a553443e52d918f"><td class="memItemLeft" align="right" valign="top"><a id="a407f34aa7c3ea1630a553443e52d918f"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>handleLidSwitch</b> () const</td></tr>
+<tr class="separator:a407f34aa7c3ea1630a553443e52d918f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67e63b7033cee2888465ff4447d839d6"><td class="memItemLeft" align="right" valign="top"><a id="a67e63b7033cee2888465ff4447d839d6"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>handleLidSwitchDocked</b> () const</td></tr>
+<tr class="separator:a67e63b7033cee2888465ff4447d839d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66e4b329096de9380176a4de587c2343"><td class="memItemLeft" align="right" valign="top"><a id="a66e4b329096de9380176a4de587c2343"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>handleLidSwitchExternalPower</b> () const</td></tr>
+<tr class="separator:a66e4b329096de9380176a4de587c2343"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbe22b7e679471d531306d32d290d786"><td class="memItemLeft" align="right" valign="top"><a id="acbe22b7e679471d531306d32d290d786"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>handlePowerKey</b> () const</td></tr>
+<tr class="separator:acbe22b7e679471d531306d32d290d786"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9346ad716404dd0f75fd6fef7f3cde9f"><td class="memItemLeft" align="right" valign="top"><a id="a9346ad716404dd0f75fd6fef7f3cde9f"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>handleSuspendKey</b> () const</td></tr>
+<tr class="separator:a9346ad716404dd0f75fd6fef7f3cde9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2748c9872c1ad1284067eaeab86f6d67"><td class="memItemLeft" align="right" valign="top"><a id="a2748c9872c1ad1284067eaeab86f6d67"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>idleAction</b> () const</td></tr>
+<tr class="separator:a2748c9872c1ad1284067eaeab86f6d67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73db8ef47e1fb9f29711a724fd395de4"><td class="memItemLeft" align="right" valign="top"><a id="a73db8ef47e1fb9f29711a724fd395de4"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>rebootParameter</b> () const</td></tr>
+<tr class="separator:a73db8ef47e1fb9f29711a724fd395de4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d74ee002a06870a9297e7a6518c4fe8"><td class="memItemLeft" align="right" valign="top"><a id="a0d74ee002a06870a9297e7a6518c4fe8"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>rebootToBootLoaderEntry</b> () const</td></tr>
+<tr class="separator:a0d74ee002a06870a9297e7a6518c4fe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39fa6322b1f54c47bec095f9259cde08"><td class="memItemLeft" align="right" valign="top"><a id="a39fa6322b1f54c47bec095f9259cde08"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>wallMessage</b> () const</td></tr>
+<tr class="separator:a39fa6322b1f54c47bec095f9259cde08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b5408616f1d1ddd1b1345c777238dfe"><td class="memItemLeft" align="right" valign="top"><a id="a2b5408616f1d1ddd1b1345c777238dfe"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setWallMessage</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;message)</td></tr>
+<tr class="separator:a2b5408616f1d1ddd1b1345c777238dfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2542f38d834edbb1a0296bca1c6e83b1"><td class="memItemLeft" align="right" valign="top"><a id="a2542f38d834edbb1a0296bca1c6e83b1"></a>
+<a class="el" href="structDBusScheduledShutdownValue.html">DBusScheduledShutdownValue</a>&#160;</td><td class="memItemRight" valign="bottom"><b>scheduledShutdown</b> () const</td></tr>
+<tr class="separator:a2542f38d834edbb1a0296bca1c6e83b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad72bc9bc6b2a550b533ff2af79941b0"><td class="memItemLeft" align="right" valign="top"><a id="aad72bc9bc6b2a550b533ff2af79941b0"></a>
+quint32&#160;</td><td class="memItemRight" valign="bottom"><b>nAutoVTs</b> () const</td></tr>
+<tr class="separator:aad72bc9bc6b2a550b533ff2af79941b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a900fc33c03c7bea2ee65af5221f7b4ba"><td class="memItemLeft" align="right" valign="top"><a id="a900fc33c03c7bea2ee65af5221f7b4ba"></a>
+quint64&#160;</td><td class="memItemRight" valign="bottom"><b>holdoffTimeoutUSec</b> () const</td></tr>
+<tr class="separator:a900fc33c03c7bea2ee65af5221f7b4ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6633e7412906986e36ffa2dd4658f174"><td class="memItemLeft" align="right" valign="top"><a id="a6633e7412906986e36ffa2dd4658f174"></a>
+quint64&#160;</td><td class="memItemRight" valign="bottom"><b>idleActionUSec</b> () const</td></tr>
+<tr class="separator:a6633e7412906986e36ffa2dd4658f174"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa9b4b5c01d63402c775c4d21635ae5d"><td class="memItemLeft" align="right" valign="top"><a id="afa9b4b5c01d63402c775c4d21635ae5d"></a>
+quint64&#160;</td><td class="memItemRight" valign="bottom"><b>idleSinceHint</b> () const</td></tr>
+<tr class="separator:afa9b4b5c01d63402c775c4d21635ae5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad630e0852c1f70e0aa6cdb356af3ba96"><td class="memItemLeft" align="right" valign="top"><a id="ad630e0852c1f70e0aa6cdb356af3ba96"></a>
+quint64&#160;</td><td class="memItemRight" valign="bottom"><b>idleSinceHintMonotonic</b> () const</td></tr>
+<tr class="separator:ad630e0852c1f70e0aa6cdb356af3ba96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af00df9c91d1a16293bf95a02c98489dd"><td class="memItemLeft" align="right" valign="top"><a id="af00df9c91d1a16293bf95a02c98489dd"></a>
+quint64&#160;</td><td class="memItemRight" valign="bottom"><b>inhibitDelayMaxUSec</b> () const</td></tr>
+<tr class="separator:af00df9c91d1a16293bf95a02c98489dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7507799c3d484cebd4603fe0dc02c74f"><td class="memItemLeft" align="right" valign="top"><a id="a7507799c3d484cebd4603fe0dc02c74f"></a>
+quint64&#160;</td><td class="memItemRight" valign="bottom"><b>inhibitorsMax</b> () const</td></tr>
+<tr class="separator:a7507799c3d484cebd4603fe0dc02c74f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa89b8fdca3704433dc96e02856e29f02"><td class="memItemLeft" align="right" valign="top"><a id="aa89b8fdca3704433dc96e02856e29f02"></a>
+quint64&#160;</td><td class="memItemRight" valign="bottom"><b>nCurrentInhibitors</b> () const</td></tr>
+<tr class="separator:aa89b8fdca3704433dc96e02856e29f02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb72773d88a566dccdaad80e728ee1d3"><td class="memItemLeft" align="right" valign="top"><a id="adb72773d88a566dccdaad80e728ee1d3"></a>
+quint64&#160;</td><td class="memItemRight" valign="bottom"><b>nCurrentSessions</b> () const</td></tr>
+<tr class="separator:adb72773d88a566dccdaad80e728ee1d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae38c1f1814c0223ee99bcab4c4174a67"><td class="memItemLeft" align="right" valign="top"><a id="ae38c1f1814c0223ee99bcab4c4174a67"></a>
+quint64&#160;</td><td class="memItemRight" valign="bottom"><b>rebootToBootLoaderMenu</b> () const</td></tr>
+<tr class="separator:ae38c1f1814c0223ee99bcab4c4174a67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04143d9e0aa84078080c31a34cdeca7b"><td class="memItemLeft" align="right" valign="top"><a id="a04143d9e0aa84078080c31a34cdeca7b"></a>
+quint64&#160;</td><td class="memItemRight" valign="bottom"><b>runtimeDirectoryInodesMax</b> () const</td></tr>
+<tr class="separator:a04143d9e0aa84078080c31a34cdeca7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae75d00afef28a6f2ac833c3f0db8b18f"><td class="memItemLeft" align="right" valign="top"><a id="ae75d00afef28a6f2ac833c3f0db8b18f"></a>
+quint64&#160;</td><td class="memItemRight" valign="bottom"><b>runtimeDirectorySize</b> () const</td></tr>
+<tr class="separator:ae75d00afef28a6f2ac833c3f0db8b18f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2e9be6c7ebe4d841c2d89607f3ab4c6"><td class="memItemLeft" align="right" valign="top"><a id="ab2e9be6c7ebe4d841c2d89607f3ab4c6"></a>
+quint64&#160;</td><td class="memItemRight" valign="bottom"><b>sessionsMax</b> () const</td></tr>
+<tr class="separator:ab2e9be6c7ebe4d841c2d89607f3ab4c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cc2d7097ee6bc8da468f079e939f416"><td class="memItemLeft" align="right" valign="top"><a id="a3cc2d7097ee6bc8da468f079e939f416"></a>
+quint64&#160;</td><td class="memItemRight" valign="bottom"><b>userStopDelayUSec</b> () const</td></tr>
+<tr class="separator:a3cc2d7097ee6bc8da468f079e939f416"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_qobject"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_qobject')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el"  href="http://doc.qt.io/qt-5/qobject.html">QObject</a></td></tr>
+<tr class="memitem:metaObject inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="metaObject"></a>
+virtual const <a class="elRef" href="http://doc.qt.io/qt-5/qmetaobject.html">QMetaObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#metaObject">metaObject</a> () const const</td></tr>
+<tr class="separator:metaObject inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:QObject inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="QObject"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#QObject">QObject</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a>)</td></tr>
+<tr class="separator:QObject inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:event inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="event"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#event">event</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qevent.html">QEvent</a> *e)</td></tr>
+<tr class="separator:event inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:eventFilter inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="eventFilter"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#eventFilter">eventFilter</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *watched, <a class="elRef" href="http://doc.qt.io/qt-5/qevent.html">QEvent</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#event">event</a>)</td></tr>
+<tr class="separator:eventFilter inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:objectName-prop inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="objectName-prop"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#objectName-prop">objectName</a> () const const</td></tr>
+<tr class="separator:objectName-prop inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:objectName-prop inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="objectName-prop"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#objectName-prop">setObjectName</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;name)</td></tr>
+<tr class="separator:objectName-prop inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:isWidgetType inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="isWidgetType"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#isWidgetType">isWidgetType</a> () const const</td></tr>
+<tr class="separator:isWidgetType inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:isWindowType inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="isWindowType"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#isWindowType">isWindowType</a> () const const</td></tr>
+<tr class="separator:isWindowType inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:signalsBlocked inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="signalsBlocked"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#signalsBlocked">signalsBlocked</a> () const const</td></tr>
+<tr class="separator:signalsBlocked inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:blockSignals inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="blockSignals"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#blockSignals">blockSignals</a> (bool block)</td></tr>
+<tr class="separator:blockSignals inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:thread inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="thread"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qthread.html">QThread</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#thread">thread</a> () const const</td></tr>
+<tr class="separator:thread inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:moveToThread inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="moveToThread"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#moveToThread">moveToThread</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qthread.html">QThread</a> *targetThread)</td></tr>
+<tr class="separator:moveToThread inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:startTimer inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="startTimer"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#startTimer">startTimer</a> (int interval, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#TimerType-enum">Qt::TimerType</a> timerType)</td></tr>
+<tr class="separator:startTimer inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:startTimer-1 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="startTimer-1"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#startTimer-1">startTimer</a> (std::chrono::milliseconds time, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#TimerType-enum">Qt::TimerType</a> timerType)</td></tr>
+<tr class="separator:startTimer-1 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:killTimer inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="killTimer"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#killTimer">killTimer</a> (int id)</td></tr>
+<tr class="separator:killTimer inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:findChild inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="findChild"></a>
+T&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#findChild">findChild</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;name, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#FindChildOption-enum">Qt::FindChildOptions</a> options) const const</td></tr>
+<tr class="separator:findChild inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:findChildren inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="findChildren"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qlist.html">QList</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#findChildren">findChildren</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;name, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#FindChildOption-enum">Qt::FindChildOptions</a> options) const const</td></tr>
+<tr class="separator:findChildren inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:findChildren-1 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="findChildren-1"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qlist.html">QList</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject-obsolete.html#findChildren-1">findChildren</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qregexp.html">QRegExp</a> &amp;regExp, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#FindChildOption-enum">Qt::FindChildOptions</a> options) const const</td></tr>
+<tr class="separator:findChildren-1 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:findChildren-2 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="findChildren-2"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qlist.html">QList</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#findChildren-2">findChildren</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qregularexpression.html">QRegularExpression</a> &amp;re, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#FindChildOption-enum">Qt::FindChildOptions</a> options) const const</td></tr>
+<tr class="separator:findChildren-2 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:children inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="children"></a>
+const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#QObjectList-typedef">QObjectList</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#children">children</a> () const const</td></tr>
+<tr class="separator:children inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setParent inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="setParent"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#setParent">setParent</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a>)</td></tr>
+<tr class="separator:setParent inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:installEventFilter inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="installEventFilter"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#installEventFilter">installEventFilter</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *filterObj)</td></tr>
+<tr class="separator:installEventFilter inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:removeEventFilter inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="removeEventFilter"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#removeEventFilter">removeEventFilter</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *obj)</td></tr>
+<tr class="separator:removeEventFilter inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connect-2 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect-2"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#connect-2">connect</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const char *signal, const char *method, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#ConnectionType-enum">Qt::ConnectionType</a> type) const const</td></tr>
+<tr class="separator:connect-2 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnect-2 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect-2"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#disconnect-2">disconnect</a> (const char *signal, const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const char *method) const const</td></tr>
+<tr class="separator:disconnect-2 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnect-3 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect-3"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#disconnect-3">disconnect</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const char *method) const const</td></tr>
+<tr class="separator:disconnect-3 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dumpObjectTree-1 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="dumpObjectTree-1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject-obsolete.html#dumpObjectTree-1">dumpObjectTree</a> ()</td></tr>
+<tr class="separator:dumpObjectTree-1 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dumpObjectInfo-1 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="dumpObjectInfo-1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject-obsolete.html#dumpObjectInfo-1">dumpObjectInfo</a> ()</td></tr>
+<tr class="separator:dumpObjectInfo-1 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dumpObjectTree inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="dumpObjectTree"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#dumpObjectTree">dumpObjectTree</a> () const const</td></tr>
+<tr class="separator:dumpObjectTree inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dumpObjectInfo inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="dumpObjectInfo"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#dumpObjectInfo">dumpObjectInfo</a> () const const</td></tr>
+<tr class="separator:dumpObjectInfo inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setProperty inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="setProperty"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#setProperty">setProperty</a> (const char *name, const <a class="elRef" href="http://doc.qt.io/qt-5/qvariant.html">QVariant</a> &amp;value)</td></tr>
+<tr class="separator:setProperty inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:property inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="property"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qvariant.html">QVariant</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#property">property</a> (const char *name) const const</td></tr>
+<tr class="separator:property inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dynamicPropertyNames inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="dynamicPropertyNames"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qlist.html">QList</a>&lt; <a class="elRef" href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#dynamicPropertyNames">dynamicPropertyNames</a> () const const</td></tr>
+<tr class="separator:dynamicPropertyNames inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:destroyed inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="destroyed"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#destroyed">destroyed</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *obj)</td></tr>
+<tr class="separator:destroyed inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:objectNameChanged inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="objectNameChanged"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#objectNameChanged">objectNameChanged</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#objectName-prop">objectName</a>)</td></tr>
+<tr class="separator:objectNameChanged inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:parent inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="parent"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a> () const const</td></tr>
+<tr class="separator:parent inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:inherits inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="inherits"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#inherits">inherits</a> (const char *className) const const</td></tr>
+<tr class="separator:inherits inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:deleteLater inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="deleteLater"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#deleteLater">deleteLater</a> ()</td></tr>
+<tr class="separator:deleteLater inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_DISABLE_COPY inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_DISABLE_COPY"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_DISABLE_COPY">Q_DISABLE_COPY</a> (Class)</td></tr>
+<tr class="separator:Q_DISABLE_COPY inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_DISABLE_MOVE inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_DISABLE_MOVE"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_DISABLE_MOVE">Q_DISABLE_MOVE</a> (Class)</td></tr>
+<tr class="separator:Q_DISABLE_MOVE inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_DISABLE_COPY_MOVE inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_DISABLE_COPY_MOVE"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_DISABLE_COPY_MOVE">Q_DISABLE_COPY_MOVE</a> (Class)</td></tr>
+<tr class="separator:Q_DISABLE_COPY_MOVE inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:qobject_cast inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="qobject_cast"></a>
+T&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#qobject_cast">qobject_cast</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *object)</td></tr>
+<tr class="separator:qobject_cast inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:qobject_cast-1 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="qobject_cast-1"></a>
+T&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#qobject_cast-1">qobject_cast</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *object)</td></tr>
+<tr class="separator:qobject_cast-1 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:qFindChild inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="qFindChild"></a>
+T&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject-obsolete.html#qFindChild">qFindChild</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *obj, const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;name)</td></tr>
+<tr class="separator:qFindChild inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:qFindChildren inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="qFindChildren"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qlist.html">QList</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject-obsolete.html#qFindChildren">qFindChildren</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *obj, const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;name)</td></tr>
+<tr class="separator:qFindChildren inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:qFindChildren-1 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="qFindChildren-1"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qlist.html">QList</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#qFindChildren-1">qFindChildren</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *obj, const <a class="elRef" href="http://doc.qt.io/qt-5/qregexp.html">QRegExp</a> &amp;regExp)</td></tr>
+<tr class="separator:qFindChildren-1 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_CLASSINFO inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_CLASSINFO"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_CLASSINFO">Q_CLASSINFO</a> (Name, Value)</td></tr>
+<tr class="separator:Q_CLASSINFO inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_INTERFACES inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_INTERFACES"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_INTERFACES">Q_INTERFACES</a> (...)</td></tr>
+<tr class="separator:Q_INTERFACES inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_PROPERTY inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_PROPERTY"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a> (...)</td></tr>
+<tr class="separator:Q_PROPERTY inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_ENUMS inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_ENUMS"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject-obsolete.html#Q_ENUMS">Q_ENUMS</a> (...)</td></tr>
+<tr class="separator:Q_ENUMS inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_FLAGS inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_FLAGS"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject-obsolete.html#Q_FLAGS">Q_FLAGS</a> (...)</td></tr>
+<tr class="separator:Q_FLAGS inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_ENUM inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_ENUM"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_ENUM">Q_ENUM</a> (...)</td></tr>
+<tr class="separator:Q_ENUM inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_FLAG inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_FLAG"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_FLAG">Q_FLAG</a> (...)</td></tr>
+<tr class="separator:Q_FLAG inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_ENUM_NS inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_ENUM_NS"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_ENUM_NS">Q_ENUM_NS</a> (...)</td></tr>
+<tr class="separator:Q_ENUM_NS inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_FLAG_NS inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_FLAG_NS"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_FLAG_NS">Q_FLAG_NS</a> (...)</td></tr>
+<tr class="separator:Q_FLAG_NS inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_OBJECT inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_OBJECT"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">Q_OBJECT</a> Q_OBJECT</td></tr>
+<tr class="separator:Q_OBJECT inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_GADGET inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_GADGET"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_GADGET">Q_GADGET</a> Q_GADGET</td></tr>
+<tr class="separator:Q_GADGET inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_NAMESPACE inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_NAMESPACE"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_NAMESPACE">Q_NAMESPACE</a> Q_NAMESPACE</td></tr>
+<tr class="separator:Q_NAMESPACE inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_NAMESPACE_EXPORT inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_NAMESPACE_EXPORT"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_NAMESPACE_EXPORT">Q_NAMESPACE_EXPORT</a> (EXPORT_MACRO)</td></tr>
+<tr class="separator:Q_NAMESPACE_EXPORT inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_SIGNALS inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_SIGNALS"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SIGNALS">Q_SIGNALS</a> Q_SIGNALS</td></tr>
+<tr class="separator:Q_SIGNALS inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_SIGNAL inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_SIGNAL"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SIGNAL">Q_SIGNAL</a> Q_SIGNAL</td></tr>
+<tr class="separator:Q_SIGNAL inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_SLOTS inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_SLOTS"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SLOTS">Q_SLOTS</a> Q_SLOTS</td></tr>
+<tr class="separator:Q_SLOTS inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_SLOT inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_SLOT"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SLOT">Q_SLOT</a> Q_SLOT</td></tr>
+<tr class="separator:Q_SLOT inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_EMIT inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_EMIT"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_EMIT">Q_EMIT</a> Q_EMIT</td></tr>
+<tr class="separator:Q_EMIT inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_INVOKABLE inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_INVOKABLE"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_INVOKABLE">Q_INVOKABLE</a> Q_INVOKABLE</td></tr>
+<tr class="separator:Q_INVOKABLE inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_REVISION inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_REVISION"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_REVISION">Q_REVISION</a> Q_REVISION</td></tr>
+<tr class="separator:Q_REVISION inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_SET_OBJECT_NAME inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_SET_OBJECT_NAME"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SET_OBJECT_NAME">Q_SET_OBJECT_NAME</a> (<a class="el" href="classObject.html">Object</a>)</td></tr>
+<tr class="separator:Q_SET_OBJECT_NAME inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:QT_NO_NARROWING_CONVERSIONS_IN_CONNECT inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="QT_NO_NARROWING_CONVERSIONS_IN_CONNECT"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#QT_NO_NARROWING_CONVERSIONS_IN_CONNECT">QT_NO_NARROWING_CONVERSIONS_IN_CONNECT</a> QT_NO_NARROWING_CONVERSIONS_IN_CONNECT</td></tr>
+<tr class="separator:QT_NO_NARROWING_CONVERSIONS_IN_CONNECT inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:aad3ed984257a9e254a5656d13a94a4b2"><td class="memItemLeft" align="right" valign="top"><a id="aad3ed984257a9e254a5656d13a94a4b2"></a>
+static const char *&#160;</td><td class="memItemRight" valign="bottom"><b>staticInterfaceName</b> ()</td></tr>
+<tr class="separator:aad3ed984257a9e254a5656d13a94a4b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_qobject"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_qobject')"><img src="closed.png" alt="-"/>&#160;静态 Public 成员函数 继承自 <a class="el"  href="http://doc.qt.io/qt-5/qobject.html">QObject</a></td></tr>
+<tr class="memitem:tr inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="tr"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#tr">tr</a> (const char *sourceText, const char *disambiguation, int n)</td></tr>
+<tr class="separator:tr inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:trUtf8 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="trUtf8"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject-obsolete.html#trUtf8">trUtf8</a> (const char *sourceText, const char *disambiguation, int n)</td></tr>
+<tr class="separator:trUtf8 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connect inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#connect">connect</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const char *signal, const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const char *method, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#ConnectionType-enum">Qt::ConnectionType</a> type)</td></tr>
+<tr class="separator:connect inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connect-1 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect-1"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#connect-1">connect</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const <a class="elRef" href="http://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;signal, const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const <a class="elRef" href="http://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;method, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#ConnectionType-enum">Qt::ConnectionType</a> type)</td></tr>
+<tr class="separator:connect-1 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connect-3 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect-3"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#connect-3">connect</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#sender">sender</a>, PointerToMemberFunction signal, const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, PointerToMemberFunction method, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#ConnectionType-enum">Qt::ConnectionType</a> type)</td></tr>
+<tr class="separator:connect-3 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connect-4 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect-4"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#connect-4">connect</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#sender">sender</a>, PointerToMemberFunction signal, Functor functor)</td></tr>
+<tr class="separator:connect-4 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connect-5 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect-5"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#connect-5">connect</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#sender">sender</a>, PointerToMemberFunction signal, const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *context, Functor functor, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#ConnectionType-enum">Qt::ConnectionType</a> type)</td></tr>
+<tr class="separator:connect-5 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnect inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#disconnect">disconnect</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const char *signal, const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const char *method)</td></tr>
+<tr class="separator:disconnect inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnect-1 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect-1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#disconnect-1">disconnect</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const <a class="elRef" href="http://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;signal, const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const <a class="elRef" href="http://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;method)</td></tr>
+<tr class="separator:disconnect-1 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnect-4 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect-4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#disconnect-4">disconnect</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a> &amp;connection)</td></tr>
+<tr class="separator:disconnect-4 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnect-5 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect-5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#disconnect-5">disconnect</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#sender">sender</a>, PointerToMemberFunction signal, const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, PointerToMemberFunction method)</td></tr>
+<tr class="separator:disconnect-5 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:a89a5b47b183bc41300a3280244d4dc85"><td class="memItemLeft" align="right" valign="top"><a id="a89a5b47b183bc41300a3280244d4dc85"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a>&#160;</td><td class="memItemRight" valign="bottom"><b>bootLoaderEntries</b></td></tr>
+<tr class="separator:a89a5b47b183bc41300a3280244d4dc85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace636d436f9b9c3745cd037ea60d3c48"><td class="memItemLeft" align="right" valign="top"><a id="ace636d436f9b9c3745cd037ea60d3c48"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a>&#160;</td><td class="memItemRight" valign="bottom"><b>killExcludeUsers</b></td></tr>
+<tr class="separator:ace636d436f9b9c3745cd037ea60d3c48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9884ab47a77cd8b82fc232fce3d2cb44"><td class="memItemLeft" align="right" valign="top"><a id="a9884ab47a77cd8b82fc232fce3d2cb44"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a>&#160;</td><td class="memItemRight" valign="bottom"><b>killOnlyUsers</b></td></tr>
+<tr class="separator:a9884ab47a77cd8b82fc232fce3d2cb44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1d7c12a5ed195c55a707a3ac38a2f46"><td class="memItemLeft" align="right" valign="top"><a id="ac1d7c12a5ed195c55a707a3ac38a2f46"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>docked</b></td></tr>
+<tr class="separator:ac1d7c12a5ed195c55a707a3ac38a2f46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af45ca41548fa90ecbdc4cc56f4478aa6"><td class="memItemLeft" align="right" valign="top"><a id="af45ca41548fa90ecbdc4cc56f4478aa6"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>enableWallMessages</b></td></tr>
+<tr class="separator:af45ca41548fa90ecbdc4cc56f4478aa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3f7105d9b93681f5e6683abba1bf708"><td class="memItemLeft" align="right" valign="top"><a id="ae3f7105d9b93681f5e6683abba1bf708"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>idleHint</b></td></tr>
+<tr class="separator:ae3f7105d9b93681f5e6683abba1bf708"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc1cf3be52df2f00f3dda9b66bf1e995"><td class="memItemLeft" align="right" valign="top"><a id="afc1cf3be52df2f00f3dda9b66bf1e995"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>killUserProcesses</b></td></tr>
+<tr class="separator:afc1cf3be52df2f00f3dda9b66bf1e995"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a692f6b16251c893065bbbd5e47e6bdeb"><td class="memItemLeft" align="right" valign="top"><a id="a692f6b16251c893065bbbd5e47e6bdeb"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>lidClosed</b></td></tr>
+<tr class="separator:a692f6b16251c893065bbbd5e47e6bdeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4fd2fdf6297f1823883b9f568f12004"><td class="memItemLeft" align="right" valign="top"><a id="af4fd2fdf6297f1823883b9f568f12004"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>onExternalPower</b></td></tr>
+<tr class="separator:af4fd2fdf6297f1823883b9f568f12004"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af29cec2dfa4ce898023a3610e00fc4f6"><td class="memItemLeft" align="right" valign="top"><a id="af29cec2dfa4ce898023a3610e00fc4f6"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>preparingForShutdown</b></td></tr>
+<tr class="separator:af29cec2dfa4ce898023a3610e00fc4f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf5d96dc3cc71c81a11e5e6bf045e101"><td class="memItemLeft" align="right" valign="top"><a id="abf5d96dc3cc71c81a11e5e6bf045e101"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>preparingForSleep</b></td></tr>
+<tr class="separator:abf5d96dc3cc71c81a11e5e6bf045e101"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae98d4b9bb38cb799356195d93bf3bcd4"><td class="memItemLeft" align="right" valign="top"><a id="ae98d4b9bb38cb799356195d93bf3bcd4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>rebootToFirmwareSetup</b></td></tr>
+<tr class="separator:ae98d4b9bb38cb799356195d93bf3bcd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84dbca52249eb9872153136dcf81fd8b"><td class="memItemLeft" align="right" valign="top"><a id="a84dbca52249eb9872153136dcf81fd8b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>removeIPC</b></td></tr>
+<tr class="separator:a84dbca52249eb9872153136dcf81fd8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c32b8929bb3adbd3115165fb4dedaed"><td class="memItemLeft" align="right" valign="top"><a id="a6c32b8929bb3adbd3115165fb4dedaed"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>blockInhibited</b></td></tr>
+<tr class="separator:a6c32b8929bb3adbd3115165fb4dedaed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cb929bd2548e56427c39be3861f0982"><td class="memItemLeft" align="right" valign="top"><a id="a5cb929bd2548e56427c39be3861f0982"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>delayInhibited</b></td></tr>
+<tr class="separator:a5cb929bd2548e56427c39be3861f0982"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae06355085e89fe904c178e80fe15646"><td class="memItemLeft" align="right" valign="top"><a id="aae06355085e89fe904c178e80fe15646"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>handleHibernateKey</b></td></tr>
+<tr class="separator:aae06355085e89fe904c178e80fe15646"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8409017514f297964e11746f2d052e24"><td class="memItemLeft" align="right" valign="top"><a id="a8409017514f297964e11746f2d052e24"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>handleLidSwitch</b></td></tr>
+<tr class="separator:a8409017514f297964e11746f2d052e24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0295c6ff2419bce609708a876d4b83ff"><td class="memItemLeft" align="right" valign="top"><a id="a0295c6ff2419bce609708a876d4b83ff"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>handleLidSwitchDocked</b></td></tr>
+<tr class="separator:a0295c6ff2419bce609708a876d4b83ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6a3359590ab6a7a5a303cdc3f811ff5"><td class="memItemLeft" align="right" valign="top"><a id="ac6a3359590ab6a7a5a303cdc3f811ff5"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>handleLidSwitchExternalPower</b></td></tr>
+<tr class="separator:ac6a3359590ab6a7a5a303cdc3f811ff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a428e61f1f246f10bcff4e15d0a685c22"><td class="memItemLeft" align="right" valign="top"><a id="a428e61f1f246f10bcff4e15d0a685c22"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>handlePowerKey</b></td></tr>
+<tr class="separator:a428e61f1f246f10bcff4e15d0a685c22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ab119d0e1f3619c978f2aa1b263c193"><td class="memItemLeft" align="right" valign="top"><a id="a9ab119d0e1f3619c978f2aa1b263c193"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>handleSuspendKey</b></td></tr>
+<tr class="separator:a9ab119d0e1f3619c978f2aa1b263c193"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a8c96a6e598eda8375d41bcf23c91ec"><td class="memItemLeft" align="right" valign="top"><a id="a4a8c96a6e598eda8375d41bcf23c91ec"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>idleAction</b></td></tr>
+<tr class="separator:a4a8c96a6e598eda8375d41bcf23c91ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1d100bd3d5cab91cc59f429ed964423"><td class="memItemLeft" align="right" valign="top"><a id="ae1d100bd3d5cab91cc59f429ed964423"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>rebootParameter</b></td></tr>
+<tr class="separator:ae1d100bd3d5cab91cc59f429ed964423"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1feaed2da4e9ba0e85d0e460af3d9d3c"><td class="memItemLeft" align="right" valign="top"><a id="a1feaed2da4e9ba0e85d0e460af3d9d3c"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>rebootToBootLoaderEntry</b></td></tr>
+<tr class="separator:a1feaed2da4e9ba0e85d0e460af3d9d3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaed257e2223c53f8018e6c8324923a3c"><td class="memItemLeft" align="right" valign="top"><a id="aaed257e2223c53f8018e6c8324923a3c"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>wallMessage</b></td></tr>
+<tr class="separator:aaed257e2223c53f8018e6c8324923a3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ac2a7b6d901e6ff2fbfba22140b98e6"><td class="memItemLeft" align="right" valign="top"><a id="a3ac2a7b6d901e6ff2fbfba22140b98e6"></a>
+<a class="el" href="structDBusScheduledShutdownValue.html">DBusScheduledShutdownValue</a>&#160;</td><td class="memItemRight" valign="bottom"><b>scheduledShutdown</b></td></tr>
+<tr class="separator:a3ac2a7b6d901e6ff2fbfba22140b98e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fd28029be3dfee71a3a01a6b01021ee"><td class="memItemLeft" align="right" valign="top"><a id="a2fd28029be3dfee71a3a01a6b01021ee"></a>
+quint32&#160;</td><td class="memItemRight" valign="bottom"><b>nAutoVTs</b></td></tr>
+<tr class="separator:a2fd28029be3dfee71a3a01a6b01021ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb71ef4c49b332269ef84432682f7f6e"><td class="memItemLeft" align="right" valign="top"><a id="aeb71ef4c49b332269ef84432682f7f6e"></a>
+quint64&#160;</td><td class="memItemRight" valign="bottom"><b>holdoffTimeoutUSec</b></td></tr>
+<tr class="separator:aeb71ef4c49b332269ef84432682f7f6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bf63b32115ffd1170b207a3db26aab0"><td class="memItemLeft" align="right" valign="top"><a id="a9bf63b32115ffd1170b207a3db26aab0"></a>
+quint64&#160;</td><td class="memItemRight" valign="bottom"><b>idleActionUSec</b></td></tr>
+<tr class="separator:a9bf63b32115ffd1170b207a3db26aab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada02365f65cea8bac11f86c8c9f64606"><td class="memItemLeft" align="right" valign="top"><a id="ada02365f65cea8bac11f86c8c9f64606"></a>
+quint64&#160;</td><td class="memItemRight" valign="bottom"><b>idleSinceHint</b></td></tr>
+<tr class="separator:ada02365f65cea8bac11f86c8c9f64606"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35909d72f768feb7c29c2c6cad0d33b7"><td class="memItemLeft" align="right" valign="top"><a id="a35909d72f768feb7c29c2c6cad0d33b7"></a>
+quint64&#160;</td><td class="memItemRight" valign="bottom"><b>idleSinceHintMonotonic</b></td></tr>
+<tr class="separator:a35909d72f768feb7c29c2c6cad0d33b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50afb16742d04fa15b9278026ce768f5"><td class="memItemLeft" align="right" valign="top"><a id="a50afb16742d04fa15b9278026ce768f5"></a>
+quint64&#160;</td><td class="memItemRight" valign="bottom"><b>inhibitDelayMaxUSec</b></td></tr>
+<tr class="separator:a50afb16742d04fa15b9278026ce768f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f6342dd0388717f7ae37efa06556b62"><td class="memItemLeft" align="right" valign="top"><a id="a7f6342dd0388717f7ae37efa06556b62"></a>
+quint64&#160;</td><td class="memItemRight" valign="bottom"><b>inhibitorsMax</b></td></tr>
+<tr class="separator:a7f6342dd0388717f7ae37efa06556b62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85eea8735574b5c9d034f0759af15f6a"><td class="memItemLeft" align="right" valign="top"><a id="a85eea8735574b5c9d034f0759af15f6a"></a>
+quint64&#160;</td><td class="memItemRight" valign="bottom"><b>nCurrentInhibitors</b></td></tr>
+<tr class="separator:a85eea8735574b5c9d034f0759af15f6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25e1208dd35db29ebbf14852098c1f0e"><td class="memItemLeft" align="right" valign="top"><a id="a25e1208dd35db29ebbf14852098c1f0e"></a>
+quint64&#160;</td><td class="memItemRight" valign="bottom"><b>nCurrentSessions</b></td></tr>
+<tr class="separator:a25e1208dd35db29ebbf14852098c1f0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad3c724a732dfcd30108d1dc474cbb63"><td class="memItemLeft" align="right" valign="top"><a id="aad3c724a732dfcd30108d1dc474cbb63"></a>
+quint64&#160;</td><td class="memItemRight" valign="bottom"><b>rebootToBootLoaderMenu</b></td></tr>
+<tr class="separator:aad3c724a732dfcd30108d1dc474cbb63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a321549c3ab41b0075b30bc137a33167e"><td class="memItemLeft" align="right" valign="top"><a id="a321549c3ab41b0075b30bc137a33167e"></a>
+quint64&#160;</td><td class="memItemRight" valign="bottom"><b>runtimeDirectoryInodesMax</b></td></tr>
+<tr class="separator:a321549c3ab41b0075b30bc137a33167e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61f585819f72f71c4c1f95280187fe7b"><td class="memItemLeft" align="right" valign="top"><a id="a61f585819f72f71c4c1f95280187fe7b"></a>
+quint64&#160;</td><td class="memItemRight" valign="bottom"><b>runtimeDirectorySize</b></td></tr>
+<tr class="separator:a61f585819f72f71c4c1f95280187fe7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b1ea6914be4a7204c77fbf110a5d15f"><td class="memItemLeft" align="right" valign="top"><a id="a0b1ea6914be4a7204c77fbf110a5d15f"></a>
+quint64&#160;</td><td class="memItemRight" valign="bottom"><b>sessionsMax</b></td></tr>
+<tr class="separator:a0b1ea6914be4a7204c77fbf110a5d15f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10feb7b39a51c6d270fe0198bf85b49d"><td class="memItemLeft" align="right" valign="top"><a id="a10feb7b39a51c6d270fe0198bf85b49d"></a>
+quint64&#160;</td><td class="memItemRight" valign="bottom"><b>userStopDelayUSec</b></td></tr>
+<tr class="separator:a10feb7b39a51c6d270fe0198bf85b49d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header properties_qobject"><td colspan="2" onclick="javascript:toggleInherit('properties_qobject')"><img src="closed.png" alt="-"/>&#160;属性 继承自 <a class="el"  href="http://doc.qt.io/qt-5/qobject.html">QObject</a></td></tr>
+<tr class="memitem:objectName-prop inherit properties_qobject"><td class="memItemLeft" align="right" valign="top"><a id="objectName-prop"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#objectName-prop">objectName</a></td></tr>
+<tr class="separator:objectName-prop inherit properties_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pub_attribs_qobject"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_qobject')"><img src="closed.png" alt="-"/>&#160;Public 属性 继承自 <a class="el"  href="http://doc.qt.io/qt-5/qobject.html">QObject</a></td></tr>
+<tr class="memitem:QObjectList-typedef inherit pub_attribs_qobject"><td class="memItemLeft" align="right" valign="top"><a id="QObjectList-typedef"></a>
+typedef&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#QObjectList-typedef">QObjectList</a></td></tr>
+<tr class="separator:QObjectList-typedef inherit pub_attribs_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_qobject"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_qobject')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el"  href="http://doc.qt.io/qt-5/qobject.html">QObject</a></td></tr>
+<tr class="memitem:sender inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="sender"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#sender">sender</a> () const const</td></tr>
+<tr class="separator:sender inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:senderSignalIndex inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="senderSignalIndex"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#senderSignalIndex">senderSignalIndex</a> () const const</td></tr>
+<tr class="separator:senderSignalIndex inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:receivers inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="receivers"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#receivers">receivers</a> (const char *signal) const const</td></tr>
+<tr class="separator:receivers inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:isSignalConnected inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="isSignalConnected"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#isSignalConnected">isSignalConnected</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;signal) const const</td></tr>
+<tr class="separator:isSignalConnected inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:timerEvent inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="timerEvent"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#timerEvent">timerEvent</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qtimerevent.html">QTimerEvent</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#event">event</a>)</td></tr>
+<tr class="separator:timerEvent inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:childEvent inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="childEvent"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#childEvent">childEvent</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qchildevent.html">QChildEvent</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#event">event</a>)</td></tr>
+<tr class="separator:childEvent inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:customEvent inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="customEvent"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#customEvent">customEvent</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qevent.html">QEvent</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#event">event</a>)</td></tr>
+<tr class="separator:customEvent inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connectNotify inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connectNotify"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#connectNotify">connectNotify</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;signal)</td></tr>
+<tr class="separator:connectNotify inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnectNotify inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnectNotify"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#disconnectNotify">disconnectNotify</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;signal)</td></tr>
+<tr class="separator:disconnectNotify inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dtksystemsettings/src/login/dbus/<a class="el" href="login1managerinterface_8h_source.html">login1managerinterface.h</a></li>
+<li>dtksystemsettings/src/login/dbus/login1managerinterface.cpp</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classLogin1ManagerInterface.html">Login1ManagerInterface</a></li>
+    <li class="footer">文档生成时间:2023-01-13-07:39  +00</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

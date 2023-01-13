@@ -1,0 +1,28 @@
+var classDSearch =
+[
+    [ "ResultFilterFunc", "classDSearch.html#a53d0e9ef42b9c7df664f9f55732e2946", null ],
+    [ "DSearch", "classDSearch.html#a6fe3fba02a5d7825c2e4025374812d26", null ],
+    [ "DSearch", "classDSearch.html#a927df976f3265a5cb1d5ef0e4eb81747", null ],
+    [ "~DSearch", "classDSearch.html#a23d8713cef846cfc839dc2f694c4513a", null ],
+    [ "clearIndex", "classDSearch.html#a5dc9b4c5aacd16e886fd15804989d9d8", null ],
+    [ "completed", "classDSearch.html#abc93aa53dccfbf3121b0ad3f934994d1", null ],
+    [ "createIndex", "classDSearch.html#a4904d881e1fa64b1af2c1c4041d7dca1", null ],
+    [ "indexPath", "classDSearch.html#a7382129ff283a61a23246eed39bac518", null ],
+    [ "indexState", "classDSearch.html#ab5d9bc7cb974df5569a0c7c3a6068c75", null ],
+    [ "matched", "classDSearch.html#a8f90b0e9e8d0b7c20ec187b5914b95e5", null ],
+    [ "matchedResults", "classDSearch.html#af1321a85d99d3cc7bdec8c9e6cbd1c20", null ],
+    [ "maxResultCount", "classDSearch.html#a684b82918a57a7fb452db9e6393f0af2", null ],
+    [ "search", "classDSearch.html#a4c077d634393d7169cd3f5c29d575fae", null ],
+    [ "searchFlags", "classDSearch.html#af10f6e2580dfca58b89cb9cdb614b9f7", null ],
+    [ "setAutoIndex", "classDSearch.html#ab76390b704d9ca6c29810e26caaf6108", null ],
+    [ "setIndexPath", "classDSearch.html#a8fd05344975149d02d7071a6499a5823", null ],
+    [ "setMaxResultCount", "classDSearch.html#a1a23d6c4e7cf748aac613af9293b4a94", null ],
+    [ "setResultFilter", "classDSearch.html#ae5e0c9eb4cbdf8b602aa3e39ce54a7f1", null ],
+    [ "setSearchFlags", "classDSearch.html#a8432aea804b861388bc7d9df40540c1d", null ],
+    [ "stop", "classDSearch.html#ad0d5e59a92bed2c38df8fc3902fd2eed", null ],
+    [ "stoped", "classDSearch.html#ae4883de8c58961b34711184d645db106", null ],
+    [ "updateIndex", "classDSearch.html#ada931a841438c00283ffff0942211342", null ],
+    [ "indexPath", "classDSearch.html#a867c1b1abf14006cfd24c7dfd906b97d", null ],
+    [ "maxResultCount", "classDSearch.html#a5f664e7696b8aa9f038b0802e7c20001", null ],
+    [ "searchFlags", "classDSearch.html#a9f30e3cea8d5b188ac581938817a6cef", null ]
+];

@@ -8,7 +8,7 @@ var dir_b67047e2e65acb2a6dc102261b2b7c8e =
     [ "layoutexample.h", "layoutexample_8h_source.html", null ],
     [ "lcdnumberexample.h", "lcdnumberexample_8h_source.html", null ],
     [ "listviewexample.h", "listviewexample_8h_source.html", null ],
-    [ "mainwindow.h", "examples_2dwidget-examples_2collections_2mainwindow_8h_source.html", null ],
+    [ "mainwindow.h", "dtkwidget_2examples_2dwidget-examples_2collections_2mainwindow_8h_source.html", null ],
     [ "menuexample.h", "menuexample_8h_source.html", null ],
     [ "pagewindowinterface.h", "pagewindowinterface_8h_source.html", null ],
     [ "progressbarexample.h", "progressbarexample_8h_source.html", null ],

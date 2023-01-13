@@ -1,0 +1,559 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: dtkmultimedia/src/multimediawidgets/engine/multimedia/player/dplaylistmodel.h 源文件</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="https://github.com/linuxdeepin/dtkdoc" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('dplaylistmodel_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">dplaylistmodel.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-FileCopyrightText: 2022 UnionTech Software Technology Co., Ltd.</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// SPDX-License-Identifier: LGPL-3.0-or-later</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef DPLAYLISTMODEL_H</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define DPLAYLISTMODEL_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;QtWidgets&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">//#include &lt;QtConcurrent&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;DApplicationHelper&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;libffmpegthumbnailer/videothumbnailerc.h&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;utils.h&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;QMutex&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;QNetworkReply&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;dtkmultimedia.h&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;libffmpegthumbnailer/videothumbnailerc.h&gt;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#define THUMBNAIL_SIZE 500</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#define SEEK_TIME &quot;00:00:01&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">typedef</span> video_thumbnailer *(*mvideo_thumbnailer)();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">typedef</span> void (*mvideo_thumbnailer_destroy)(video_thumbnailer *thumbnailer);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">/* create image_data structure */</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">typedef</span> image_data *(*mvideo_thumbnailer_create_image_data)(void);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">/* destroy image_data structure */</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">typedef</span> void (*mvideo_thumbnailer_destroy_image_data)(image_data *data);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">typedef</span> int (*mvideo_thumbnailer_generate_thumbnail_to_buffer)(</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        video_thumbnailer *thumbnailer, <span class="keyword">const</span> <span class="keywordtype">char</span> *movie_filename, image_data *generated_image_data);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;DMULTIMEDIA_BEGIN_NAMESPACE</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">class </span><a class="code" href="classPlayerEngine.html">PlayerEngine</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">class </span><a class="code" href="classLoadThread.html">LoadThread</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">class </span><a class="code" href="classGetThumanbil.html">GetThumanbil</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="structModeMovieInfo.html">   37</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structModeMovieInfo.html">ModeMovieInfo</a></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">bool</span> valid;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> title;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> fileType;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> resolution;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> filePath;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> creation;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">// rotation in metadata, this affects width/height</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">int</span> rawRotate;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    qint64 fileSize;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    qint64 duration;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">int</span> width = -1;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">int</span> height = -1;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">int</span> vCodecID;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    qint64 vCodeRate;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">int</span> fps;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">float</span> proportion;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">int</span> aCodeID;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    qint64 aCodeRate;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">int</span> aDigit;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">int</span> channels;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">int</span> sampling;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#ifdef _MOVIE_USE_</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> strFmtName;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="structModeMovieInfo.html">ModeMovieInfo</a>()</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        valid = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        rawRotate = -1;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        fileSize = -1;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        duration = -1;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        width = -1;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        height = -1;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        vCodecID = -1;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        aCodeRate = -1;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        fps = -1;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        proportion = -1.0;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        aCodeID = -1;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        aCodeRate = -1;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        aDigit = -1;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        channels = -1;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        sampling = -1;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keyword">static</span> <span class="keyword">struct </span><a class="code" href="structModeMovieInfo.html">ModeMovieInfo</a> parseFromFile(const <a class="codeRef" href="http://doc.qt.io/qt-5/qfileinfo.html">QFileInfo</a> &amp;fi, <span class="keywordtype">bool</span> *ok = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> durationStr()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keywordflow">return</span> utils::Time2str(duration);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> videoCodec()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keywordflow">return</span> utils::videoIndex2str(vCodecID);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    }</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> audioCodec()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordflow">return</span> utils::audioIndex2str(aCodeID);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    }</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> sizeStr()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="keyword">auto</span> K = 1024;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keyword">auto</span> M = 1024 * K;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="keyword">auto</span> G = 1024 * M;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <span class="keywordflow">if</span> (fileSize &gt; G) {</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <span class="keywordflow">return</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>(QT_TR_NOOP(<span class="stringliteral">&quot;%1G&quot;</span>)).<a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html#arg-1">arg</a>((<span class="keywordtype">double</span>)fileSize / G, 0, <span class="charliteral">&#39;f&#39;</span>, 1);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (fileSize &gt; M) {</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            <span class="keywordflow">return</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>(QT_TR_NOOP(<span class="stringliteral">&quot;%1M&quot;</span>)).<a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html#arg-1">arg</a>((<span class="keywordtype">double</span>)fileSize / M, 0, <span class="charliteral">&#39;f&#39;</span>, 1);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (fileSize &gt; K) {</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            <span class="keywordflow">return</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>(QT_TR_NOOP(<span class="stringliteral">&quot;%1K&quot;</span>)).<a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html#arg-1">arg</a>((<span class="keywordtype">double</span>)fileSize / K, 0, <span class="charliteral">&#39;f&#39;</span>, 1);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        }</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="keywordflow">return</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>(QT_TR_NOOP(<span class="stringliteral">&quot;%1&quot;</span>)).<a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html#arg-1">arg</a>(fileSize);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    }</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordtype">bool</span> isRawFormat()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keywordtype">bool</span> bFlag = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor">#ifdef _MOVIE_USE_</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <span class="keywordflow">if</span> (strFmtName.<a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html#contains-1">contains</a>(<span class="stringliteral">&quot;raw&quot;</span>, <a class="codeRef" href="http://doc.qt.io/qt-5/qt.html#CaseSensitivity-enum">Qt::CaseInsensitive</a>)) bFlag = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keywordflow">return</span> bFlag;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    }</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;};</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
+<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="structPlayItemInfo.html">  124</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structPlayItemInfo.html">PlayItemInfo</a></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;{</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordtype">bool</span> valid;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordtype">bool</span> loaded;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qurl.html">QUrl</a> url;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qfileinfo.html">QFileInfo</a> info;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qpixmap.html">QPixmap</a> thumbnail;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qpixmap.html">QPixmap</a> thumbnail_dark;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keyword">struct </span><a class="code" href="structModeMovieInfo.html">ModeMovieInfo</a> mi;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordtype">bool</span> refresh();</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;};</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="keyword">using</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qpair.html">AppendJob</a> = <a class="codeRef" href="http://doc.qt.io/qt-5/qpair.html">QPair&lt;QUrl, QFileInfo&gt;</a>;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="keyword">using</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qlist.html">PlayItemInfoList</a> = <a class="codeRef" href="http://doc.qt.io/qt-5/qlist.html">QList&lt;PlayItemInfo&gt;</a>;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="keyword">using</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qlist.html">UrlList</a> = <a class="codeRef" href="http://doc.qt.io/qt-5/qlist.html">QList&lt;QUrl&gt;</a>;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
+<div class="line"><a name="l00141"></a><span class="lineno"><a class="line" href="classDPlaylistModel.html">  141</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDPlaylistModel.html">DPlaylistModel</a> : <span class="keyword">public</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a></div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;{</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">Q_OBJECT</a></div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(<span class="keywordtype">int</span> count READ count NOTIFY countChanged)</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(<span class="keywordtype">int</span> current READ current WRITE changeCurrent NOTIFY currentChanged)</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160; </div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classPlayerEngine.html">PlayerEngine</a>;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keyword">enum</span> PlayMode {</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        OrderPlay,</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        ShufflePlay,</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        SinglePlay,</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        SingleLoop,</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        ListLoop,</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    };</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160; </div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="keywordtype">void</span> stop();</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    PlayMode playMode() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keywordtype">void</span> setPlayMode(PlayMode pm);</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160; </div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDPlaylistModel.html">DPlaylistModel</a>(<a class="code" href="classPlayerEngine.html">PlayerEngine</a> *engine);</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    ~<a class="code" href="classDPlaylistModel.html">DPlaylistModel</a>();</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160; </div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    qint64 getUrlFileTotalSize(<a class="codeRef" href="http://doc.qt.io/qt-5/qurl.html">QUrl</a> url, <span class="keywordtype">int</span> tryTimes) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; </div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="keywordtype">void</span> clear();</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keywordtype">void</span> remove(<span class="keywordtype">int</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html#pos-prop">pos</a>);</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="keywordtype">void</span> append(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qurl.html">QUrl</a> &amp;);</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160; </div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="keywordtype">void</span> appendAsync(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qlist.html">QList&lt;QUrl&gt;</a> &amp;);</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="keywordtype">void</span> collectionJob(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qlist.html">QList&lt;QUrl&gt;</a> &amp;, <a class="codeRef" href="http://doc.qt.io/qt-5/qlist.html">QList&lt;QUrl&gt;</a> &amp;);</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160; </div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="keywordtype">void</span> playNext(<span class="keywordtype">bool</span> fromUser);</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <span class="keywordtype">void</span> playPrev(<span class="keywordtype">bool</span> fromUser);</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160; </div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="keywordtype">int</span> count() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qlist.html">QList&lt;PlayItemInfo&gt;</a> &amp;items()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        <span class="keywordflow">return</span> m_infos;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    }</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qlist.html">QList&lt;PlayItemInfo&gt;</a> &amp;items()</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    {</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        <span class="keywordflow">return</span> m_infos;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    }</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160; </div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <span class="keywordtype">int</span> current() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="keyword">const</span> <a class="code" href="structPlayItemInfo.html">PlayItemInfo</a> &amp;currentInfo() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <a class="code" href="structPlayItemInfo.html">PlayItemInfo</a> &amp;currentInfo();</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <span class="keywordtype">int</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html#size-prop">size</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="keywordtype">int</span> indexOf(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qurl.html">QUrl</a> &amp;url);</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <span class="keywordtype">void</span> switchPosition(<span class="keywordtype">int</span> p1, <span class="keywordtype">int</span> p2);</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="keywordtype">void</span> handleAsyncAppendResults(<a class="codeRef" href="http://doc.qt.io/qt-5/qlist.html">QList&lt;PlayItemInfo&gt;</a> &amp;pil);</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="keyword">struct </span><a class="code" href="structPlayItemInfo.html">PlayItemInfo</a> calculatePlayInfo(const <a class="codeRef" href="http://doc.qt.io/qt-5/qurl.html">QUrl</a> &amp;, <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qfileinfo.html">QFileInfo</a> &amp;fi, <span class="keywordtype">bool</span> isDvd = <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <span class="keywordtype">bool</span> getthreadstate();</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <span class="keywordtype">void</span> savePlaylist();</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <span class="keywordtype">void</span> clearPlaylist();</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qlist.html">QList&lt;QUrl&gt;</a> getLoadList()</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    {</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        <span class="keywordflow">return</span> m_loadFile;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    };</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="keywordtype">void</span> loadPlaylist();</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <span class="keywordtype">bool</span> getThumanbilRunning();</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160; </div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <a class="code" href="structModeMovieInfo.html">ModeMovieInfo</a> getMovieInfo(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qurl.html">QUrl</a> &amp;url, <span class="keywordtype">bool</span> *is);</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160; </div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qimage.html">QImage</a> getMovieCover(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qurl.html">QUrl</a> &amp;url);</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160; </div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="keyword">public</span> slots:</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <span class="keywordtype">void</span> changeCurrent(<span class="keywordtype">int</span>);</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    <span class="keywordtype">void</span> delayedAppendAsync(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qlist.html">QList&lt;QUrl&gt;</a> &amp;);</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    <span class="keywordtype">void</span> clearLoad();</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160; </div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;<span class="keyword">private</span> slots:</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    <span class="keywordtype">void</span> onAsyncFinished();</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    <span class="keywordtype">void</span> onAsyncUpdate(<a class="code" href="structPlayItemInfo.html">PlayItemInfo</a>);</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    <span class="keywordtype">void</span> slotStateChanged();</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160; </div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;signals:</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <span class="keywordtype">void</span> countChanged();</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <span class="keywordtype">void</span> currentChanged();</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <span class="keywordtype">void</span> itemRemoved(<span class="keywordtype">int</span>);</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    <span class="keywordtype">void</span> itemsAppended();</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    <span class="keywordtype">void</span> emptied();</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    <span class="keywordtype">void</span> playModeChanged(PlayMode);</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <span class="keywordtype">void</span> asyncAppendFinished(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qlist.html">QList&lt;PlayItemInfo&gt;</a> &amp;);</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    <span class="keywordtype">void</span> itemInfoUpdated(<span class="keywordtype">int</span> <span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <span class="keywordtype">void</span> updateDuration();</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160; </div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    <span class="keywordtype">void</span> initThumb();</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    <span class="keywordtype">void</span> initFFmpeg();</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <span class="keywordtype">bool</span> getMusicPix(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qfileinfo.html">QFileInfo</a> &amp;fi, <a class="codeRef" href="http://doc.qt.io/qt-5/qpixmap.html">QPixmap</a> &amp;rImg);</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    <span class="keyword">struct </span><a class="code" href="structModeMovieInfo.html">ModeMovieInfo</a> parseFromFile(const <a class="codeRef" href="http://doc.qt.io/qt-5/qfileinfo.html">QFileInfo</a> &amp;fi, <span class="keywordtype">bool</span> *ok = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    <span class="keyword">struct </span><a class="code" href="structModeMovieInfo.html">ModeMovieInfo</a> parseFromFileByQt(const <a class="codeRef" href="http://doc.qt.io/qt-5/qfileinfo.html">QFileInfo</a> &amp;fi, <span class="keywordtype">bool</span> *ok = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> libPath(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;strlib);</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    <span class="keywordtype">bool</span> m_firstLoad { <span class="keyword">true</span> };</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    <span class="keywordtype">int</span> m_count { 0 };</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <span class="keywordtype">int</span> m_current { -1 };</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    <span class="keywordtype">int</span> m_last { -1 };</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    <span class="keywordtype">bool</span> m_hasNormalVideo { <span class="keyword">false</span> };</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    PlayMode m_playMode { PlayMode::OrderPlay };</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qlist.html">QList&lt;PlayItemInfo&gt;</a> m_infos;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160; </div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qlist.html">QList&lt;int&gt;</a> m_playOrder;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    <span class="keywordtype">int</span> m_shufflePlayed { 0 };</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    <span class="keywordtype">int</span> m_loopCount { 0 };</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160; </div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qlist.html">QList&lt;AppendJob&gt;</a> m_pendingJob;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qset.html">QSet&lt;QString&gt;</a> m_urlsInJob;</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160; </div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qqueue.html">QQueue&lt;UrlList&gt;</a> m_pendingAppendReq;</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160; </div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    <span class="keywordtype">bool</span> m_userRequestingItem { <span class="keyword">false</span> };</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160; </div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    video_thumbnailer *m_video_thumbnailer = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    image_data *m_image_data = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160; </div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    mvideo_thumbnailer m_mvideo_thumbnailer = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    mvideo_thumbnailer_destroy m_mvideo_thumbnailer_destroy = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    mvideo_thumbnailer_create_image_data m_mvideo_thumbnailer_create_image_data = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    mvideo_thumbnailer_destroy_image_data m_mvideo_thumbnailer_destroy_image_data = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    mvideo_thumbnailer_generate_thumbnail_to_buffer m_mvideo_thumbnailer_generate_thumbnail_to_buffer = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160; </div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    <a class="code" href="classPlayerEngine.html">PlayerEngine</a> *m_engine { <span class="keyword">nullptr</span> };</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160; </div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> m_playlistFile;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160; </div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <a class="code" href="classLoadThread.html">LoadThread</a> *m_ploadThread;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <a class="code" href="classGetThumanbil.html">GetThumanbil</a> *m_getThumanbil { <span class="keyword">nullptr</span> };</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qmutex.html">QMutex</a> *m_pdataMutex;</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    <span class="keywordtype">bool</span> m_brunning;</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qlist.html">QList&lt;QUrl&gt;</a> m_tempList;</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qlist.html">QList&lt;QUrl&gt;</a> m_loadFile;</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    <span class="keywordtype">bool</span> m_initFFmpeg { <span class="keyword">false</span> };</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    <span class="keywordtype">bool</span> m_bInitThumb { <span class="keyword">false</span> };</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    <a class="code" href="structPlayItemInfo.html">PlayItemInfo</a> m_currentInfo;</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160; </div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    <span class="keywordtype">void</span> reshuffle();</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    <span class="keywordtype">void</span> appendSingle(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qurl.html">QUrl</a> &amp;);</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    <span class="keywordtype">void</span> tryPlayCurrent(<span class="keywordtype">bool</span> next);</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;};</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160; </div>
+<div class="line"><a name="l00284"></a><span class="lineno"><a class="line" href="classLoadThread.html">  284</a></span>&#160;<span class="keyword">class </span><a class="code" href="classLoadThread.html">LoadThread</a> : <span class="keyword">public</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qthread.html">QThread</a></div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;{</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">Q_OBJECT</a></div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160; </div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    <a class="code" href="classLoadThread.html">LoadThread</a>(<a class="code" href="classDPlaylistModel.html">DPlaylistModel</a> *model, <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qlist.html">QList&lt;QUrl&gt;</a> &amp;urls);</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    ~<a class="code" href="classLoadThread.html">LoadThread</a>();</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160; </div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    <span class="keywordtype">void</span> run();</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160; </div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    <a class="code" href="classDPlaylistModel.html">DPlaylistModel</a> *m_pModel;</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qlist.html">QList&lt;QUrl&gt;</a> m_urls;</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qlist.html">QList&lt;AppendJob&gt;</a> m_pendingJob;</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qset.html">QSet&lt;QString&gt;</a> m_urlsInJob;</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;};</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160; </div>
+<div class="line"><a name="l00302"></a><span class="lineno"><a class="line" href="classGetThumanbil.html">  302</a></span>&#160;<span class="keyword">class </span><a class="code" href="classGetThumanbil.html">GetThumanbil</a> : <span class="keyword">public</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qthread.html">QThread</a></div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;{</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">Q_OBJECT</a></div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <a class="code" href="classGetThumanbil.html">GetThumanbil</a>(<a class="code" href="classDPlaylistModel.html">DPlaylistModel</a> *model, <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qlist.html">QList&lt;QUrl&gt;</a> &amp;urls)</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;        : m_model(model), m_urls(urls)</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    {</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;        <span class="comment">//        m_model = model;</span></div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        <span class="comment">//        m_urls = urls;</span></div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;        m_mutex = <span class="keyword">new</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qmutex.html">QMutex</a>;</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    };</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    ~<a class="code" href="classGetThumanbil.html">GetThumanbil</a>()</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    {</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;        m_stop = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;        <span class="keyword">delete</span> m_mutex;</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;        m_mutex = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    };</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    <span class="keywordtype">void</span> stop()</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    {</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        m_stop = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    };</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    <span class="keywordtype">void</span> setUrls(<a class="codeRef" href="http://doc.qt.io/qt-5/qlist.html">QList&lt;QUrl&gt;</a> urls)</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    {</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        m_mutex-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qmutex.html#lock">lock</a>();</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        m_urls = urls;</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;        m_mutex-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qmutex.html#unlock">unlock</a>();</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    };</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    <span class="keywordtype">void</span> clearItem()</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    {</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        m_mutex-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qmutex.html#lock">lock</a>();</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        m_urls.<a class="codeRef" href="http://doc.qt.io/qt-5/qlist.html#clear">clear</a>();</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;        m_mutex-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qmutex.html#unlock">unlock</a>();</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    };</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160; </div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    <span class="keywordtype">void</span> run()</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    {</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;        m_mutex-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qmutex.html#lock">lock</a>();</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;        <a class="codeRef" href="http://doc.qt.io/qt-5/qlist.html">QList&lt;QUrl&gt;</a> urls = m_urls;</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;        m_mutex-&gt;<a class="codeRef" href="http://doc.qt.io/qt-5/qmutex.html#unlock">unlock</a>();</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;        <span class="keywordflow">foreach</span> (<a class="codeRef" href="http://doc.qt.io/qt-5/qurl.html">QUrl</a> url, urls) {</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;            <a class="codeRef" href="http://doc.qt.io/qt-5/qfileinfo.html">QFileInfo</a> info(url.<a class="codeRef" href="http://doc.qt.io/qt-5/qurl.html#path">path</a>());</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;            emit updateItem(m_model-&gt;calculatePlayInfo(url, info, <span class="keyword">false</span>));</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;            <span class="keywordflow">if</span> (m_stop) <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;        }</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    }</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160; </div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;signals:</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    <span class="keywordtype">void</span> updateItem(<a class="code" href="structPlayItemInfo.html">PlayItemInfo</a>);</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160; </div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    <a class="code" href="classDPlaylistModel.html">DPlaylistModel</a> *m_model;</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qlist.html">QList&lt;QUrl&gt;</a> m_urls;</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qmutex.html">QMutex</a> *m_mutex;</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    <span class="keywordtype">bool</span> m_stop { <span class="keyword">false</span> };</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;};</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160; </div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;DMULTIMEDIA_END_NAMESPACE</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160; </div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* ifndef DPLAYLISTMODEL_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="aclassDPlaylistModel_html"><div class="ttname"><a href="classDPlaylistModel.html">DPlaylistModel</a></div><div class="ttdef"><b>Definition:</b> dplaylistmodel.h:142</div></div>
+<div class="ttc" id="aclassGetThumanbil_html"><div class="ttname"><a href="classGetThumanbil.html">GetThumanbil</a></div><div class="ttdef"><b>Definition:</b> dplaylistmodel.h:303</div></div>
+<div class="ttc" id="aclassLoadThread_html"><div class="ttname"><a href="classLoadThread.html">LoadThread</a></div><div class="ttdef"><b>Definition:</b> dplaylistmodel.h:285</div></div>
+<div class="ttc" id="aclassPlayerEngine_html"><div class="ttname"><a href="classPlayerEngine.html">PlayerEngine</a></div><div class="ttdef"><b>Definition:</b> playerengine.h:21</div></div>
+<div class="ttc" id="aqfileinfo_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qfileinfo.html">QFileInfo</a></div></div>
+<div class="ttc" id="aqimage_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qimage.html">QImage</a></div></div>
+<div class="ttc" id="aqlist_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qlist.html">QList&lt; PlayItemInfo &gt;</a></div></div>
+<div class="ttc" id="aqlist_html_clear"><div class="ttname"><a href="http://doc.qt.io/qt-5/qlist.html#clear">QList::clear</a></div><div class="ttdeci">void clear()</div></div>
+<div class="ttc" id="aqmutex_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qmutex.html">QMutex</a></div></div>
+<div class="ttc" id="aqmutex_html_lock"><div class="ttname"><a href="http://doc.qt.io/qt-5/qmutex.html#lock">QMutex::lock</a></div><div class="ttdeci">void lock()</div></div>
+<div class="ttc" id="aqmutex_html_unlock"><div class="ttname"><a href="http://doc.qt.io/qt-5/qmutex.html#unlock">QMutex::unlock</a></div><div class="ttdeci">void unlock()</div></div>
+<div class="ttc" id="aqobject_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html">QObject</a></div></div>
+<div class="ttc" id="aqobject_html_Q_OBJECT"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">QObject::Q_OBJECT</a></div><div class="ttdeci">Q_OBJECTQ_OBJECT</div></div>
+<div class="ttc" id="aqobject_html_Q_PROPERTY"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">QObject::Q_PROPERTY</a></div><div class="ttdeci">Q_PROPERTY(...)</div></div>
+<div class="ttc" id="aqpair_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qpair.html">QPair</a></div></div>
+<div class="ttc" id="aqpixmap_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qpixmap.html">QPixmap</a></div></div>
+<div class="ttc" id="aqqueue_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qqueue.html">QQueue</a></div></div>
+<div class="ttc" id="aqset_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qset.html">QSet&lt; QString &gt;</a></div></div>
+<div class="ttc" id="aqstring_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstring.html">QString</a></div></div>
+<div class="ttc" id="aqstring_html_arg-1"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstring.html#arg-1">QString::arg</a></div><div class="ttdeci">QString arg(qlonglong a, int fieldWidth, int base, QChar fillChar) const const</div></div>
+<div class="ttc" id="aqstring_html_contains-1"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstring.html#contains-1">QString::contains</a></div><div class="ttdeci">bool contains(QChar ch, Qt::CaseSensitivity cs) const const</div></div>
+<div class="ttc" id="aqt_html_CaseSensitivity-enum"><div class="ttname"><a href="http://doc.qt.io/qt-5/qt.html#CaseSensitivity-enum">Qt::CaseInsensitive</a></div><div class="ttdeci">CaseInsensitive</div></div>
+<div class="ttc" id="aqthread_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qthread.html">QThread</a></div></div>
+<div class="ttc" id="aqurl_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qurl.html">QUrl</a></div></div>
+<div class="ttc" id="aqurl_html_path"><div class="ttname"><a href="http://doc.qt.io/qt-5/qurl.html#path">QUrl::path</a></div><div class="ttdeci">QString path(QUrl::ComponentFormattingOptions options) const const</div></div>
+<div class="ttc" id="aqwidget_html_pos-prop"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html#pos-prop">QWidget::pos</a></div><div class="ttdeci">pos</div></div>
+<div class="ttc" id="aqwidget_html_size-prop"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html#size-prop">QWidget::size</a></div><div class="ttdeci">size</div></div>
+<div class="ttc" id="astructModeMovieInfo_html"><div class="ttname"><a href="structModeMovieInfo.html">ModeMovieInfo</a></div><div class="ttdef"><b>Definition:</b> dplaylistmodel.h:38</div></div>
+<div class="ttc" id="astructPlayItemInfo_html"><div class="ttname"><a href="structPlayItemInfo.html">PlayItemInfo</a></div><div class="ttdef"><b>Definition:</b> dplaylistmodel.h:125</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_02ec0c46e08cde8e12788abb022f8c38.html">dtkmultimedia</a></li><li class="navelem"><a class="el" href="dir_98e5f065507b0122a9a407c8dfba0e89.html">src</a></li><li class="navelem"><a class="el" href="dir_3338237d5663e5fc5c9b65ff4fdb8367.html">multimediawidgets</a></li><li class="navelem"><a class="el" href="dir_1948daa176b38b3f74feed09561f0f07.html">engine</a></li><li class="navelem"><a class="el" href="dir_cf79d4e658d08d0b9f6d87c84a8b6209.html">multimedia</a></li><li class="navelem"><a class="el" href="dir_689d905ae40565dffc0a9bbd48b07a8c.html">player</a></li><li class="navelem"><b>dplaylistmodel.h</b></li>
+    <li class="footer">文档生成时间:2023-01-13-07:39  +00</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

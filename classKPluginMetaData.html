@@ -1,0 +1,1209 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: KPluginMetaData类 参考</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="https://github.com/linuxdeepin/dtkdoc" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classKPluginMetaData.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="classKPluginMetaData-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">KPluginMetaData类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="kpluginmetadata_8h_source.html">KPluginMetaData</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a4dcccc645bd07a7f49a88b54846f227b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginMetaData.html#a4dcccc645bd07a7f49a88b54846f227b">KPluginMetaData</a> ()</td></tr>
+<tr class="separator:a4dcccc645bd07a7f49a88b54846f227b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a449ce8a3569498bd65464e08813c9d6c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginMetaData.html#a449ce8a3569498bd65464e08813c9d6c">KPluginMetaData</a> (const <a class="el" href="classKPluginLoader.html">KPluginLoader</a> &amp;loader)</td></tr>
+<tr class="separator:a449ce8a3569498bd65464e08813c9d6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2e7d4c4d056966e565382571614e90b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginMetaData.html#ab2e7d4c4d056966e565382571614e90b">KPluginMetaData</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qpluginloader.html">QPluginLoader</a> &amp;loader)</td></tr>
+<tr class="separator:ab2e7d4c4d056966e565382571614e90b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0516c295306719273d38c86606082762"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginMetaData.html#a0516c295306719273d38c86606082762">KPluginMetaData</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;file)</td></tr>
+<tr class="separator:a0516c295306719273d38c86606082762"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa68eb26460d7b83d8ddedd4cd9a8c398"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginMetaData.html#aa68eb26460d7b83d8ddedd4cd9a8c398">KPluginMetaData</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qjsonobject.html">QJsonObject</a> &amp;metaData, const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;file)</td></tr>
+<tr class="separator:aa68eb26460d7b83d8ddedd4cd9a8c398"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bbdbb7e9aaf250fba43fb946a2b4089"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginMetaData.html#a7bbdbb7e9aaf250fba43fb946a2b4089">KPluginMetaData</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qjsonobject.html">QJsonObject</a> &amp;metaData, const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;pluginFile, const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;metaDataFile)</td></tr>
+<tr class="separator:a7bbdbb7e9aaf250fba43fb946a2b4089"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fb8469c88524f85704f7b4b3a14be25"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginMetaData.html#a0fb8469c88524f85704f7b4b3a14be25">KPluginMetaData</a> (const <a class="el" href="classKPluginMetaData.html">KPluginMetaData</a> &amp;)</td></tr>
+<tr class="separator:a0fb8469c88524f85704f7b4b3a14be25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e88b4a436e75d8e7ec13dc80cdef3ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKPluginMetaData.html">KPluginMetaData</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginMetaData.html#a7e88b4a436e75d8e7ec13dc80cdef3ac">operator=</a> (const <a class="el" href="classKPluginMetaData.html">KPluginMetaData</a> &amp;)</td></tr>
+<tr class="separator:a7e88b4a436e75d8e7ec13dc80cdef3ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53d7c2c2feda71ab2c1aad92e212a322"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginMetaData.html#a53d7c2c2feda71ab2c1aad92e212a322">~KPluginMetaData</a> ()</td></tr>
+<tr class="separator:a53d7c2c2feda71ab2c1aad92e212a322"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9205b02a9444f87e501f221bd97f6533"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginMetaData.html#a9205b02a9444f87e501f221bd97f6533">isValid</a> () const</td></tr>
+<tr class="separator:a9205b02a9444f87e501f221bd97f6533"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24482f74542b07a6be502bd9d2ee38a2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginMetaData.html#a24482f74542b07a6be502bd9d2ee38a2">isHidden</a> () const</td></tr>
+<tr class="separator:a24482f74542b07a6be502bd9d2ee38a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a758e9e9ff04b9731ec8366db4fe15150"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginMetaData.html#a758e9e9ff04b9731ec8366db4fe15150">fileName</a> () const</td></tr>
+<tr class="separator:a758e9e9ff04b9731ec8366db4fe15150"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d64a2a5bbc19874c11dc003c8f203a6"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginMetaData.html#a3d64a2a5bbc19874c11dc003c8f203a6">metaDataFileName</a> () const</td></tr>
+<tr class="separator:a3d64a2a5bbc19874c11dc003c8f203a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61a4c18a7ad2ebd063221a9936be1113"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="http://doc.qt.io/qt-5/qjsonobject.html">QJsonObject</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginMetaData.html#a61a4c18a7ad2ebd063221a9936be1113">rawData</a> () const</td></tr>
+<tr class="separator:a61a4c18a7ad2ebd063221a9936be1113"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebd1096b7fd356dd84bc7ef19ab08d01"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginMetaData.html#aebd1096b7fd356dd84bc7ef19ab08d01">instantiate</a> () const</td></tr>
+<tr class="separator:aebd1096b7fd356dd84bc7ef19ab08d01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9011b7492ac24e0370aad06397c43352"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginMetaData.html#a9011b7492ac24e0370aad06397c43352">name</a> () const</td></tr>
+<tr class="separator:a9011b7492ac24e0370aad06397c43352"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae43bf4faf9e18daca990b078b75f365e"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginMetaData.html#ae43bf4faf9e18daca990b078b75f365e">description</a> () const</td></tr>
+<tr class="separator:ae43bf4faf9e18daca990b078b75f365e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd2fccc76b54d28f401ca34672b5d3cf"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginMetaData.html#abd2fccc76b54d28f401ca34672b5d3cf">extraInformation</a> () const</td></tr>
+<tr class="separator:abd2fccc76b54d28f401ca34672b5d3cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7ee7f8fbdecf319503797c3433d635f"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="http://doc.qt.io/qt-5/qlist.html">QList</a>&lt; KAboutPerson &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginMetaData.html#aa7ee7f8fbdecf319503797c3433d635f">authors</a> () const</td></tr>
+<tr class="separator:aa7ee7f8fbdecf319503797c3433d635f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e29597f95964df36ce3a86e7b82829b"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="http://doc.qt.io/qt-5/qlist.html">QList</a>&lt; KAboutPerson &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginMetaData.html#a1e29597f95964df36ce3a86e7b82829b">translators</a> () const</td></tr>
+<tr class="separator:a1e29597f95964df36ce3a86e7b82829b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a7f77b84db3e5c5f902fa6bf78ce2c1"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="http://doc.qt.io/qt-5/qlist.html">QList</a>&lt; KAboutPerson &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginMetaData.html#a0a7f77b84db3e5c5f902fa6bf78ce2c1">otherContributors</a> () const</td></tr>
+<tr class="separator:a0a7f77b84db3e5c5f902fa6bf78ce2c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a180f69cc826818124edd7214570fe46f"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginMetaData.html#a180f69cc826818124edd7214570fe46f">category</a> () const</td></tr>
+<tr class="separator:a180f69cc826818124edd7214570fe46f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88b810061ce01edf3c70cd78143ee938"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginMetaData.html#a88b810061ce01edf3c70cd78143ee938">iconName</a> () const</td></tr>
+<tr class="separator:a88b810061ce01edf3c70cd78143ee938"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5336c78daa810e14ec1dd303e9c327b3"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginMetaData.html#a5336c78daa810e14ec1dd303e9c327b3">license</a> () const</td></tr>
+<tr class="separator:a5336c78daa810e14ec1dd303e9c327b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37898ea09c863c4a9c75eee794381f6e"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginMetaData.html#a37898ea09c863c4a9c75eee794381f6e">copyrightText</a> () const</td></tr>
+<tr class="separator:a37898ea09c863c4a9c75eee794381f6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06b3f4742bb2d5ad5a2598c4ef8bd75d"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginMetaData.html#a06b3f4742bb2d5ad5a2598c4ef8bd75d">pluginId</a> () const</td></tr>
+<tr class="separator:a06b3f4742bb2d5ad5a2598c4ef8bd75d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac19d8a09870418b903b816b9b19eec57"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginMetaData.html#ac19d8a09870418b903b816b9b19eec57">version</a> () const</td></tr>
+<tr class="separator:ac19d8a09870418b903b816b9b19eec57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a409ef7e1391c68f36f25ab994932b774"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginMetaData.html#a409ef7e1391c68f36f25ab994932b774">website</a> () const</td></tr>
+<tr class="separator:a409ef7e1391c68f36f25ab994932b774"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82d2e87db9b834bfbb6f0155709b617c"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginMetaData.html#a82d2e87db9b834bfbb6f0155709b617c">dependencies</a> () const</td></tr>
+<tr class="separator:a82d2e87db9b834bfbb6f0155709b617c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1d6d1a0f58f750f7a36dbc9d1f03b09"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginMetaData.html#aa1d6d1a0f58f750f7a36dbc9d1f03b09">serviceTypes</a> () const</td></tr>
+<tr class="separator:aa1d6d1a0f58f750f7a36dbc9d1f03b09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f02e0567f393d33c3f59955aa8f9260"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginMetaData.html#a1f02e0567f393d33c3f59955aa8f9260">mimeTypes</a> () const</td></tr>
+<tr class="separator:a1f02e0567f393d33c3f59955aa8f9260"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee0aa2c916f3421625107701500d82f0"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginMetaData.html#aee0aa2c916f3421625107701500d82f0">formFactors</a> () const</td></tr>
+<tr class="separator:aee0aa2c916f3421625107701500d82f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad48f98a3a3be6b07d9359ea0774ebf0f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginMetaData.html#ad48f98a3a3be6b07d9359ea0774ebf0f">isEnabledByDefault</a> () const</td></tr>
+<tr class="separator:ad48f98a3a3be6b07d9359ea0774ebf0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a375fa8ec5b1a562d8fad70c593f825b7"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginMetaData.html#a375fa8ec5b1a562d8fad70c593f825b7">value</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;key, const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;defaultValue=<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>()) const</td></tr>
+<tr class="separator:a375fa8ec5b1a562d8fad70c593f825b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa74438c63e21519b6185b65a6d41832a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginMetaData.html#aa74438c63e21519b6185b65a6d41832a">operator==</a> (const <a class="el" href="classKPluginMetaData.html">KPluginMetaData</a> &amp;other) const</td></tr>
+<tr class="separator:aa74438c63e21519b6185b65a6d41832a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dc965510a0e5f4147cb401e5a1eb615"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginMetaData.html#a4dc965510a0e5f4147cb401e5a1eb615">operator!=</a> (const <a class="el" href="classKPluginMetaData.html">KPluginMetaData</a> &amp;other) const</td></tr>
+<tr class="separator:a4dc965510a0e5f4147cb401e5a1eb615"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:acde2b677d17e82eb9311bab4185bd821"><td class="memItemLeft" align="right" valign="top">static <a class="elRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginMetaData.html#acde2b677d17e82eb9311bab4185bd821">readStringList</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qjsonobject.html">QJsonObject</a> &amp;obj, const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;key)</td></tr>
+<tr class="separator:acde2b677d17e82eb9311bab4185bd821"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab71f4d031e39fe834f4ac83d6f27e36a"><td class="memItemLeft" align="right" valign="top">static <a class="elRef" href="http://doc.qt.io/qt-5/qjsonvalue.html">QJsonValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginMetaData.html#ab71f4d031e39fe834f4ac83d6f27e36a">readTranslatedValue</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qjsonobject.html">QJsonObject</a> &amp;jo, const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;key, const <a class="elRef" href="http://doc.qt.io/qt-5/qjsonvalue.html">QJsonValue</a> &amp;defaultValue=<a class="elRef" href="http://doc.qt.io/qt-5/qjsonvalue.html">QJsonValue</a>())</td></tr>
+<tr class="separator:ab71f4d031e39fe834f4ac83d6f27e36a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fc9f5db9cecfd1a245e2a4a98b83fb0"><td class="memItemLeft" align="right" valign="top">static <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginMetaData.html#a0fc9f5db9cecfd1a245e2a4a98b83fb0">readTranslatedString</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qjsonobject.html">QJsonObject</a> &amp;jo, const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;key, const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;defaultValue=<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>())</td></tr>
+<tr class="separator:a0fc9f5db9cecfd1a245e2a4a98b83fb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>This class allows easily accessing some standardized values from the JSON metadata that can be embedded into <a class="elRef" href="http://doc.qt.io/qt-5/qt.html">Qt</a> plugins. Additional plugin-specific metadata can be retrieved by directly reading from the <a class="elRef" href="http://doc.qt.io/qt-5/qjsonobject.html">QJsonObject</a> returned by <a class="el" href="classKPluginMetaData.html#a61a4c18a7ad2ebd063221a9936be1113">KPluginMetaData::rawData()</a>.</p>
+<p>This class can be used instead of KPluginInfo from KService for applications that only load <a class="elRef" href="http://doc.qt.io/qt-5/qt.html">Qt</a> C++ plugins.</p>
+<p>The following keys will be read from an object "KPlugin" inside the metadata JSON:</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Key   </th><th class="markdownTableHeadNone">Accessor function   </th><th class="markdownTableHeadNone">JSON Type    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Name   </td><td class="markdownTableBodyNone"><a class="el" href="classKPluginMetaData.html#a9011b7492ac24e0370aad06397c43352">name()</a>   </td><td class="markdownTableBodyNone">string    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Description   </td><td class="markdownTableBodyNone"><a class="el" href="classKPluginMetaData.html#ae43bf4faf9e18daca990b078b75f365e">description()</a>   </td><td class="markdownTableBodyNone">string    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">ExtraInformation   </td><td class="markdownTableBodyNone"><a class="el" href="classKPluginMetaData.html#abd2fccc76b54d28f401ca34672b5d3cf">extraInformation()</a>   </td><td class="markdownTableBodyNone">string    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Icon   </td><td class="markdownTableBodyNone"><a class="el" href="classKPluginMetaData.html#a88b810061ce01edf3c70cd78143ee938">iconName()</a>   </td><td class="markdownTableBodyNone">string    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Authors   </td><td class="markdownTableBodyNone"><a class="el" href="classKPluginMetaData.html#aa7ee7f8fbdecf319503797c3433d635f">authors()</a>   </td><td class="markdownTableBodyNone">object array (KAboutPerson)    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Category   </td><td class="markdownTableBodyNone"><a class="el" href="classKPluginMetaData.html#a180f69cc826818124edd7214570fe46f">category()</a>   </td><td class="markdownTableBodyNone">string    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">License   </td><td class="markdownTableBodyNone"><a class="el" href="classKPluginMetaData.html#a5336c78daa810e14ec1dd303e9c327b3">license()</a>   </td><td class="markdownTableBodyNone">string    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Copyright   </td><td class="markdownTableBodyNone"><a class="el" href="classKPluginMetaData.html#a37898ea09c863c4a9c75eee794381f6e">copyrightText()</a>   </td><td class="markdownTableBodyNone">string    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Id   </td><td class="markdownTableBodyNone"><a class="el" href="classKPluginMetaData.html#a06b3f4742bb2d5ad5a2598c4ef8bd75d">pluginId()</a>   </td><td class="markdownTableBodyNone">string    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Version   </td><td class="markdownTableBodyNone"><a class="el" href="classKPluginMetaData.html#ac19d8a09870418b903b816b9b19eec57">version()</a>   </td><td class="markdownTableBodyNone">string    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Website   </td><td class="markdownTableBodyNone"><a class="el" href="classKPluginMetaData.html#a409ef7e1391c68f36f25ab994932b774">website()</a>   </td><td class="markdownTableBodyNone">string    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">EnabledByDefault   </td><td class="markdownTableBodyNone"><a class="el" href="classKPluginMetaData.html#ad48f98a3a3be6b07d9359ea0774ebf0f">isEnabledByDefault()</a>   </td><td class="markdownTableBodyNone">bool    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">ServiceTypes   </td><td class="markdownTableBodyNone"><a class="el" href="classKPluginMetaData.html#aa1d6d1a0f58f750f7a36dbc9d1f03b09">serviceTypes()</a>   </td><td class="markdownTableBodyNone">string array    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">MimeTypes   </td><td class="markdownTableBodyNone"><a class="el" href="classKPluginMetaData.html#a1f02e0567f393d33c3f59955aa8f9260">mimeTypes()</a>   </td><td class="markdownTableBodyNone">string array    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">FormFactors   </td><td class="markdownTableBodyNone"><a class="el" href="classKPluginMetaData.html#aee0aa2c916f3421625107701500d82f0">formFactors()</a>   </td><td class="markdownTableBodyNone">string array    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Translators   </td><td class="markdownTableBodyNone"><a class="el" href="classKPluginMetaData.html#a1e29597f95964df36ce3a86e7b82829b">translators()</a>   </td><td class="markdownTableBodyNone">object array (KAboutPerson)    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">OtherContributors   </td><td class="markdownTableBodyNone"><a class="el" href="classKPluginMetaData.html#a0a7f77b84db3e5c5f902fa6bf78ce2c1">otherContributors()</a>   </td><td class="markdownTableBodyNone">object array (KAboutPerson)   </td></tr>
+</table>
+<p>The Authors, Translators and OtherContributors keys are expected to be list of objects that match the structure expected by KAboutPerson::fromJSON().</p>
+<p>An example metadata json file could look like this: </p><pre class="fragment">{
+  "KPlugin": {
+     "Name": "Date and Time",
+     "Description": "Date and time by timezone",
+     "Icon": "preferences-system-time",
+     "Authors": { "Name": "Aaron Seigo", "Email": "aseigo@kde.org" },
+     "Category": "Date and Time",
+     "Dependencies": [],
+     "EnabledByDefault": "true",
+     "License": "LGPL",
+     "Id": "time",
+     "Version": "1.0",
+     "Website": "https://plasma.kde.org/",
+     "ServiceTypes": ["Plasma/DataEngine"]
+  }
+}
+</pre><dl class="section see"><dt>参见</dt><dd>KAboutPerson::fromJSON() </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>5.1 </dd></dl>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a4dcccc645bd07a7f49a88b54846f227b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4dcccc645bd07a7f49a88b54846f227b">&#9670;&nbsp;</a></span>KPluginMetaData() <span class="overload">[1/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KPluginMetaData::KPluginMetaData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Creates an invalid <a class="el" href="classKPluginMetaData.html">KPluginMetaData</a> instance </p>
+
+</div>
+</div>
+<a id="a449ce8a3569498bd65464e08813c9d6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a449ce8a3569498bd65464e08813c9d6c">&#9670;&nbsp;</a></span>KPluginMetaData() <span class="overload">[2/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KPluginMetaData::KPluginMetaData </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classKPluginLoader.html">KPluginLoader</a> &amp;&#160;</td>
+          <td class="paramname"><em>loader</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Reads the plugin metadata from a <a class="el" href="classKPluginLoader.html">KPluginLoader</a> instance. You must call KPluginLoader::setFileName() or use the appropriate constructor on <code>loader</code> before calling this. </p>
+
+</div>
+</div>
+<a id="ab2e7d4c4d056966e565382571614e90b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2e7d4c4d056966e565382571614e90b">&#9670;&nbsp;</a></span>KPluginMetaData() <span class="overload">[3/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KPluginMetaData::KPluginMetaData </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" href="http://doc.qt.io/qt-5/qpluginloader.html">QPluginLoader</a> &amp;&#160;</td>
+          <td class="paramname"><em>loader</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Reads the plugin metadata from a <a class="elRef" href="http://doc.qt.io/qt-5/qpluginloader.html">QPluginLoader</a> instance. You must call <a class="elRef" href="http://doc.qt.io/qt-5/qpluginloader.html#fileName-prop">QPluginLoader::setFileName()</a> or use the appropriate constructor on <code>loader</code> before calling this. </p>
+
+</div>
+</div>
+<a id="a0516c295306719273d38c86606082762"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0516c295306719273d38c86606082762">&#9670;&nbsp;</a></span>KPluginMetaData() <span class="overload">[4/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KPluginMetaData::KPluginMetaData </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>file</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Reads the plugin metadata from a plugin or .desktop which can be loaded from <code>file</code>.</p>
+<p>For plugins, platform-specific library suffixes may be omitted since <code>file</code> will be resolved using the same logic as <a class="elRef" href="http://doc.qt.io/qt-5/qpluginloader.html">QPluginLoader</a>.</p>
+<p>If the file name ends with ".desktop", the .desktop file will be parsed instead of reading the metadata from the <a class="elRef" href="http://doc.qt.io/qt-5/qpluginloader.html">QPluginLoader</a>. This is the same as calling KPluginMetaData::fromDesktopFile() without the serviceTypes parameter.</p>
+<p>If <code>file</code> ends with .json, the file will be loaded as the <a class="elRef" href="http://doc.qt.io/qt-5/qjsonobject.html">QJsonObject</a> metadata.</p>
+<dl class="section see"><dt>参见</dt><dd><a class="elRef" href="http://doc.qt.io/qt-5/qpluginloader.html#fileName-prop">QPluginLoader::setFileName()</a> </dd>
+<dd>
+KPluginMetaData::fromDesktopFile() </dd></dl>
+
+</div>
+</div>
+<a id="aa68eb26460d7b83d8ddedd4cd9a8c398"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa68eb26460d7b83d8ddedd4cd9a8c398">&#9670;&nbsp;</a></span>KPluginMetaData() <span class="overload">[5/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KPluginMetaData::KPluginMetaData </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" href="http://doc.qt.io/qt-5/qjsonobject.html">QJsonObject</a> &amp;&#160;</td>
+          <td class="paramname"><em>metaData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>file</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Creates a <a class="el" href="classKPluginMetaData.html">KPluginMetaData</a> from a <a class="elRef" href="http://doc.qt.io/qt-5/qjsonobject.html">QJsonObject</a> holding the metadata and a file name This can be used if the data is not retrieved from a <a class="elRef" href="http://doc.qt.io/qt-5/qt.html">Qt</a> C++ plugin library but from some other source. </p><dl class="section see"><dt>参见</dt><dd><a class="el" href="classKPluginMetaData.html#a7bbdbb7e9aaf250fba43fb946a2b4089">KPluginMetaData(const QJsonObject &amp;, const QString &amp;, const QString &amp;)</a> </dd></dl>
+
+</div>
+</div>
+<a id="a7bbdbb7e9aaf250fba43fb946a2b4089"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bbdbb7e9aaf250fba43fb946a2b4089">&#9670;&nbsp;</a></span>KPluginMetaData() <span class="overload">[6/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KPluginMetaData::KPluginMetaData </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" href="http://doc.qt.io/qt-5/qjsonobject.html">QJsonObject</a> &amp;&#160;</td>
+          <td class="paramname"><em>metaData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>pluginFile</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>metaDataFile</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Creates a <a class="el" href="classKPluginMetaData.html">KPluginMetaData</a> </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">metaData</td><td>the JSON metadata to use for this object </td></tr>
+    <tr><td class="paramname">pluginFile</td><td>the file that the plugin can be loaded from </td></tr>
+    <tr><td class="paramname">metaDataFile</td><td>the file that the JSON metadata was read from</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>This can be used if the data is not retrieved from a <a class="elRef" href="http://doc.qt.io/qt-5/qt.html">Qt</a> C++ plugin library but from some other source.</p>
+<dl class="section since"><dt>自从</dt><dd>5.5 </dd></dl>
+
+</div>
+</div>
+<a id="a0fb8469c88524f85704f7b4b3a14be25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fb8469c88524f85704f7b4b3a14be25">&#9670;&nbsp;</a></span>KPluginMetaData() <span class="overload">[7/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KPluginMetaData::KPluginMetaData </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classKPluginMetaData.html">KPluginMetaData</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Copy contructor </p>
+
+</div>
+</div>
+<a id="a53d7c2c2feda71ab2c1aad92e212a322"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53d7c2c2feda71ab2c1aad92e212a322">&#9670;&nbsp;</a></span>~KPluginMetaData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KPluginMetaData::~KPluginMetaData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Destructor </p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="aa7ee7f8fbdecf319503797c3433d635f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7ee7f8fbdecf319503797c3433d635f">&#9670;&nbsp;</a></span>authors()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" href="http://doc.qt.io/qt-5/qlist.html">QList</a>&lt;KAboutPerson&gt; KPluginMetaData::authors </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>the author(s) of this plugin. </dd></dl>
+
+</div>
+</div>
+<a id="a180f69cc826818124edd7214570fe46f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a180f69cc826818124edd7214570fe46f">&#9670;&nbsp;</a></span>category()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> KPluginMetaData::category </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>the categories of this plugin (e.g. "playlist/skin"). </dd></dl>
+
+</div>
+</div>
+<a id="a37898ea09c863c4a9c75eee794381f6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37898ea09c863c4a9c75eee794381f6e">&#9670;&nbsp;</a></span>copyrightText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> KPluginMetaData::copyrightText </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>a short copyright statement</dd></dl>
+<dl class="section since"><dt>自从</dt><dd>5.18 </dd></dl>
+
+</div>
+</div>
+<a id="a82d2e87db9b834bfbb6f0155709b617c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82d2e87db9b834bfbb6f0155709b617c">&#9670;&nbsp;</a></span>dependencies()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> KPluginMetaData::dependencies </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>a list of plugins that this plugin depends on so that it can function properly </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>KJsonPluginInfo::pluginId() </dd></dl>
+
+</div>
+</div>
+<a id="ae43bf4faf9e18daca990b078b75f365e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae43bf4faf9e18daca990b078b75f365e">&#9670;&nbsp;</a></span>description()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> KPluginMetaData::description </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>a short description of the plugin. </dd></dl>
+
+</div>
+</div>
+<a id="abd2fccc76b54d28f401ca34672b5d3cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd2fccc76b54d28f401ca34672b5d3cf">&#9670;&nbsp;</a></span>extraInformation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> KPluginMetaData::extraInformation </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>additional information about this plugin (e.g. for use in an "about plugin" dialog)</dd></dl>
+<dl class="section since"><dt>自从</dt><dd>5.18 </dd></dl>
+
+</div>
+</div>
+<a id="a758e9e9ff04b9731ec8366db4fe15150"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a758e9e9ff04b9731ec8366db4fe15150">&#9670;&nbsp;</a></span>fileName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> KPluginMetaData::fileName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>the path to the plugin. This string can be passed to the <a class="el" href="classKPluginLoader.html">KPluginLoader</a> or <a class="elRef" href="http://doc.qt.io/qt-5/qpluginloader.html">QPluginLoader</a> constructors in order to attempt to load this plugin. </dd></dl>
+<dl class="section note"><dt>注解</dt><dd>It is not guaranteed that this is a valid path to a shared library (i.e. loadable by <a class="elRef" href="http://doc.qt.io/qt-5/qpluginloader.html">QPluginLoader</a>) since the metadata could also refer to a non-C++ plugin. </dd></dl>
+
+</div>
+</div>
+<a id="aee0aa2c916f3421625107701500d82f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee0aa2c916f3421625107701500d82f0">&#9670;&nbsp;</a></span>formFactors()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> KPluginMetaData::formFactors </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>A string list of formfactors this plugin is useful for, e.g. desktop, tablet, handset, mediacenter, etc. The keys for this are not formally defined.</dd></dl>
+<dl class="section since"><dt>自从</dt><dd>5.12 </dd></dl>
+
+</div>
+</div>
+<a id="a88b810061ce01edf3c70cd78143ee938"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88b810061ce01edf3c70cd78143ee938">&#9670;&nbsp;</a></span>iconName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> KPluginMetaData::iconName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>the icon name for this plugin </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="elRef" href="http://doc.qt.io/qt-5/qicon.html#fromTheme">QIcon::fromTheme()</a> </dd></dl>
+
+</div>
+</div>
+<a id="aebd1096b7fd356dd84bc7ef19ab08d01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebd1096b7fd356dd84bc7ef19ab08d01">&#9670;&nbsp;</a></span>instantiate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> * KPluginMetaData::instantiate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Tries to instantiate this plugin using <a class="el" href="classKPluginMetaData.html#a758e9e9ff04b9731ec8366db4fe15150">KPluginMetaData::fileName()</a>. </p><dl class="section note"><dt>注解</dt><dd>The value of <a class="el" href="classKPluginMetaData.html#a82d2e87db9b834bfbb6f0155709b617c">KPluginMetaData::dependencies()</a> is not used here, dependencies must be resolved manually.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>The plugin root object or <code>nullptr</code> if it could not be loaded </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="elRef" href="http://doc.qt.io/qt-5/qpluginloader.html#instance">QPluginLoader::instance()</a>, <a class="el" href="classKPluginLoader.html#a8e66938a21d1f6da57245b4ba283a39e">KPluginLoader::instance()</a> </dd></dl>
+
+</div>
+</div>
+<a id="ad48f98a3a3be6b07d9359ea0774ebf0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad48f98a3a3be6b07d9359ea0774ebf0f">&#9670;&nbsp;</a></span>isEnabledByDefault()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KPluginMetaData::isEnabledByDefault </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>whether the plugin should be enabled by default. This is only a recommendation, applications can ignore this value if they want to. </dd></dl>
+
+</div>
+</div>
+<a id="a24482f74542b07a6be502bd9d2ee38a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24482f74542b07a6be502bd9d2ee38a2">&#9670;&nbsp;</a></span>isHidden()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KPluginMetaData::isHidden </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>whether this object should be hidden, this is usually not used for binary plugins, when loading a <a class="el" href="classKPluginMetaData.html">KPluginMetaData</a> from a .desktop file, this will reflect the value of the "Hidden" key.</dd></dl>
+<dl class="section since"><dt>自从</dt><dd>5.8 </dd></dl>
+
+</div>
+</div>
+<a id="a9205b02a9444f87e501f221bd97f6533"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9205b02a9444f87e501f221bd97f6533">&#9670;&nbsp;</a></span>isValid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KPluginMetaData::isValid </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>whether this object holds valid information about a plugin. If this is <code>true</code> <a class="el" href="classKPluginMetaData.html#a06b3f4742bb2d5ad5a2598c4ef8bd75d">pluginId()</a> will return a non-empty string. </dd></dl>
+
+</div>
+</div>
+<a id="a5336c78daa810e14ec1dd303e9c327b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5336c78daa810e14ec1dd303e9c327b3">&#9670;&nbsp;</a></span>license()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> KPluginMetaData::license </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>the short license identifier (e.g. LGPL). </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>KAboutLicense::byKeyword() for retrieving the full <a class="el" href="classKPluginMetaData.html#a5336c78daa810e14ec1dd303e9c327b3">license</a> information </dd></dl>
+
+</div>
+</div>
+<a id="a3d64a2a5bbc19874c11dc003c8f203a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d64a2a5bbc19874c11dc003c8f203a6">&#9670;&nbsp;</a></span>metaDataFileName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> KPluginMetaData::metaDataFileName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>the file that the metadata was read from. This is not necessarily the same as <a class="el" href="classKPluginMetaData.html#a758e9e9ff04b9731ec8366db4fe15150">fileName()</a>, since not all plugins have the metadata embedded. The metadata could also be stored in a separate .desktop file.</dd></dl>
+<dl class="section since"><dt>自从</dt><dd>5.5 </dd></dl>
+
+</div>
+</div>
+<a id="a1f02e0567f393d33c3f59955aa8f9260"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f02e0567f393d33c3f59955aa8f9260">&#9670;&nbsp;</a></span>mimeTypes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> KPluginMetaData::mimeTypes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>a list of MIME types this plugin can handle (e.g. "application/pdf", "image/png", etc.) </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>5.16 </dd></dl>
+
+</div>
+</div>
+<a id="a9011b7492ac24e0370aad06397c43352"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9011b7492ac24e0370aad06397c43352">&#9670;&nbsp;</a></span>name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> KPluginMetaData::name </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>the user visible name of the plugin. </dd></dl>
+
+</div>
+</div>
+<a id="a4dc965510a0e5f4147cb401e5a1eb615"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4dc965510a0e5f4147cb401e5a1eb615">&#9670;&nbsp;</a></span>operator!=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KPluginMetaData::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classKPluginMetaData.html">KPluginMetaData</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd><code>true</code> if this object is not equal to <code>other</code>, otherwise <code>false</code>. </dd></dl>
+
+</div>
+</div>
+<a id="a7e88b4a436e75d8e7ec13dc80cdef3ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e88b4a436e75d8e7ec13dc80cdef3ac">&#9670;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKPluginMetaData.html">KPluginMetaData</a> &amp; KPluginMetaData::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classKPluginMetaData.html">KPluginMetaData</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Copy assignment </p>
+
+</div>
+</div>
+<a id="aa74438c63e21519b6185b65a6d41832a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa74438c63e21519b6185b65a6d41832a">&#9670;&nbsp;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KPluginMetaData::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classKPluginMetaData.html">KPluginMetaData</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd><code>true</code> if this object is equal to <code>other</code>, otherwise <code>false</code> </dd></dl>
+
+</div>
+</div>
+<a id="a0a7f77b84db3e5c5f902fa6bf78ce2c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a7f77b84db3e5c5f902fa6bf78ce2c1">&#9670;&nbsp;</a></span>otherContributors()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" href="http://doc.qt.io/qt-5/qlist.html">QList</a>&lt;KAboutPerson&gt; KPluginMetaData::otherContributors </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>a list of people that contributed to this plugin (other than the authors and translators).</dd></dl>
+<dl class="section since"><dt>自从</dt><dd>5.18 </dd></dl>
+
+</div>
+</div>
+<a id="a06b3f4742bb2d5ad5a2598c4ef8bd75d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06b3f4742bb2d5ad5a2598c4ef8bd75d">&#9670;&nbsp;</a></span>pluginId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> KPluginMetaData::pluginId </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>the internal name of the plugin (for KParts Plugins this is the same name as set in the .rc file). If the plugin name property is not set in the metadata this will return the plugin file name without the file extension. </dd></dl>
+
+</div>
+</div>
+<a id="a61a4c18a7ad2ebd063221a9936be1113"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61a4c18a7ad2ebd063221a9936be1113">&#9670;&nbsp;</a></span>rawData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" href="http://doc.qt.io/qt-5/qjsonobject.html">QJsonObject</a> KPluginMetaData::rawData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>the full metadata stored inside the plugin file. </dd></dl>
+
+</div>
+</div>
+<a id="acde2b677d17e82eb9311bab4185bd821"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acde2b677d17e82eb9311bab4185bd821">&#9670;&nbsp;</a></span>readStringList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> KPluginMetaData::readStringList </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" href="http://doc.qt.io/qt-5/qjsonobject.html">QJsonObject</a> &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>key</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>the value for <code>key</code> inside <code>jo</code> as a string list. If the type of <code>key</code> is string, a list with containing just that string will be returned, if it is an array the list will contain one entry for each array member. If the key cannot be found an empty list will be returned. </dd></dl>
+
+</div>
+</div>
+<a id="a0fc9f5db9cecfd1a245e2a4a98b83fb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fc9f5db9cecfd1a245e2a4a98b83fb0">&#9670;&nbsp;</a></span>readTranslatedString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> KPluginMetaData::readTranslatedString </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" href="http://doc.qt.io/qt-5/qjsonobject.html">QJsonObject</a> &amp;&#160;</td>
+          <td class="paramname"><em>jo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>defaultValue</em> = <code><a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>the translated value of <code>key</code> from <code>jo</code> as a string or <code>defaultValue</code> if <code>key</code> was not found or the value for <code>key</code> is not of type string </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>KPluginMetaData::readTranslatedValue(const QJsonObject &amp;jo, const QString &amp;key) </dd></dl>
+
+</div>
+</div>
+<a id="ab71f4d031e39fe834f4ac83d6f27e36a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab71f4d031e39fe834f4ac83d6f27e36a">&#9670;&nbsp;</a></span>readTranslatedValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" href="http://doc.qt.io/qt-5/qjsonvalue.html">QJsonValue</a> KPluginMetaData::readTranslatedValue </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" href="http://doc.qt.io/qt-5/qjsonobject.html">QJsonObject</a> &amp;&#160;</td>
+          <td class="paramname"><em>jo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="elRef" href="http://doc.qt.io/qt-5/qjsonvalue.html">QJsonValue</a> &amp;&#160;</td>
+          <td class="paramname"><em>defaultValue</em> = <code><a class="elRef" href="http://doc.qt.io/qt-5/qjsonvalue.html">QJsonValue</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Reads a value from <code>jo</code> but unlike <a class="elRef" href="http://doc.qt.io/qt-5/qjsonobject.html#value">QJsonObject::value()</a> it allows different entries for each locale This is done by appending the locale identifier in brackets to the key (e.g. "[de_DE]" or "[es]") When looking for a key "foo" with German (Germany) locale we will first attempt to read "foo[de_DE]", if that does not exist "foo[de]", finally falling back to "foo" if that also doesn't exist. </p><dl class="section return"><dt>返回</dt><dd>the translated value for <code>key</code> from <code>jo</code> or <code>defaultValue</code> if <code>key</code> was not found </dd></dl>
+
+</div>
+</div>
+<a id="aa1d6d1a0f58f750f7a36dbc9d1f03b09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1d6d1a0f58f750f7a36dbc9d1f03b09">&#9670;&nbsp;</a></span>serviceTypes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> KPluginMetaData::serviceTypes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section note"><dt>注解</dt><dd>Unlike KService this does not contain the MIME types. To get the handled MIME types use the <a class="el" href="classKPluginMetaData.html#a1f02e0567f393d33c3f59955aa8f9260">KPluginMetaData::mimeTypes()</a> function. </dd></dl>
+<dl class="section return"><dt>返回</dt><dd>a list of service types this plugin implements (e.g. "Plasma/DataEngine") </dd></dl>
+
+</div>
+</div>
+<a id="a1e29597f95964df36ce3a86e7b82829b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e29597f95964df36ce3a86e7b82829b">&#9670;&nbsp;</a></span>translators()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" href="http://doc.qt.io/qt-5/qlist.html">QList</a>&lt;KAboutPerson&gt; KPluginMetaData::translators </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>the translator(s) of this plugin.</dd></dl>
+<dl class="section since"><dt>自从</dt><dd>5.18 </dd></dl>
+
+</div>
+</div>
+<a id="a375fa8ec5b1a562d8fad70c593f825b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a375fa8ec5b1a562d8fad70c593f825b7">&#9670;&nbsp;</a></span>value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> KPluginMetaData::value </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>defaultValue</em> = <code><a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>the value for <code>key</code> from the metadata or <code>defaultValue</code> if the key does not exist or the value for <code>key</code> is not of type string</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classKPluginMetaData.html#a61a4c18a7ad2ebd063221a9936be1113">KPluginMetaData::rawData()</a> if <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> is not the correct type for <code>key</code> </dd></dl>
+
+</div>
+</div>
+<a id="ac19d8a09870418b903b816b9b19eec57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac19d8a09870418b903b816b9b19eec57">&#9670;&nbsp;</a></span>version()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> KPluginMetaData::version </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>the version of the plugin. </dd></dl>
+
+</div>
+</div>
+<a id="a409ef7e1391c68f36f25ab994932b774"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a409ef7e1391c68f36f25ab994932b774">&#9670;&nbsp;</a></span>website()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> KPluginMetaData::website </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>the website of the plugin. </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dtkio/src/dtkcompressor/3rdparty/interface/plugin/<a class="el" href="kpluginmetadata_8h_source.html">kpluginmetadata.h</a></li>
+<li>dtkio/src/dtkcompressor/3rdparty/interface/plugin/kpluginmetadata.cpp</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classKPluginMetaData.html">KPluginMetaData</a></li>
+    <li class="footer">文档生成时间:2023-01-13-07:39  +00</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

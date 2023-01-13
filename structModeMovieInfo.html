@@ -1,0 +1,267 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: ModeMovieInfo结构体 参考</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="https://github.com/linuxdeepin/dtkdoc" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('structModeMovieInfo.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="structModeMovieInfo-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">ModeMovieInfo结构体 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a4752852d3e9294f0435c8dfd739a93ea"><td class="memItemLeft" align="right" valign="top"><a id="a4752852d3e9294f0435c8dfd739a93ea"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>durationStr</b> () const</td></tr>
+<tr class="separator:a4752852d3e9294f0435c8dfd739a93ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0be610350bde52e9f4899cb7925f44e6"><td class="memItemLeft" align="right" valign="top"><a id="a0be610350bde52e9f4899cb7925f44e6"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>videoCodec</b> () const</td></tr>
+<tr class="separator:a0be610350bde52e9f4899cb7925f44e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68e3fefa1da04dba4c5aab859525c08a"><td class="memItemLeft" align="right" valign="top"><a id="a68e3fefa1da04dba4c5aab859525c08a"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>audioCodec</b> () const</td></tr>
+<tr class="separator:a68e3fefa1da04dba4c5aab859525c08a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae6a06ea0faca737c985da09e641cd13"><td class="memItemLeft" align="right" valign="top"><a id="aae6a06ea0faca737c985da09e641cd13"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sizeStr</b> () const</td></tr>
+<tr class="separator:aae6a06ea0faca737c985da09e641cd13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd76ac1d56a0bd863199b67f205379f6"><td class="memItemLeft" align="right" valign="top"><a id="afd76ac1d56a0bd863199b67f205379f6"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isRawFormat</b> () const</td></tr>
+<tr class="separator:afd76ac1d56a0bd863199b67f205379f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:af5f9d3327dc5b19d1d37f545d228700b"><td class="memItemLeft" align="right" valign="top"><a id="af5f9d3327dc5b19d1d37f545d228700b"></a>
+static struct <a class="el" href="structModeMovieInfo.html">ModeMovieInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><b>parseFromFile</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qfileinfo.html">QFileInfo</a> &amp;fi, bool *ok=nullptr)</td></tr>
+<tr class="separator:af5f9d3327dc5b19d1d37f545d228700b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a9e2a9fa384d8c360643fd3ce9eb87461"><td class="memItemLeft" align="right" valign="top"><a id="a9e2a9fa384d8c360643fd3ce9eb87461"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>valid</b></td></tr>
+<tr class="separator:a9e2a9fa384d8c360643fd3ce9eb87461"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a793cb864b63bf9e5d068d7f6988e16d0"><td class="memItemLeft" align="right" valign="top"><a id="a793cb864b63bf9e5d068d7f6988e16d0"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>title</b></td></tr>
+<tr class="separator:a793cb864b63bf9e5d068d7f6988e16d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68ad7c32588d2b39df7e563ed79c7759"><td class="memItemLeft" align="right" valign="top"><a id="a68ad7c32588d2b39df7e563ed79c7759"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>fileType</b></td></tr>
+<tr class="separator:a68ad7c32588d2b39df7e563ed79c7759"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a984a5de57685a6dd58b664c89f1149f6"><td class="memItemLeft" align="right" valign="top"><a id="a984a5de57685a6dd58b664c89f1149f6"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>resolution</b></td></tr>
+<tr class="separator:a984a5de57685a6dd58b664c89f1149f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4950ee9d9f6c2b5a1652df18f62ff3f6"><td class="memItemLeft" align="right" valign="top"><a id="a4950ee9d9f6c2b5a1652df18f62ff3f6"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>filePath</b></td></tr>
+<tr class="separator:a4950ee9d9f6c2b5a1652df18f62ff3f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addb53d00aebc9c712308b188d2e3ec24"><td class="memItemLeft" align="right" valign="top"><a id="addb53d00aebc9c712308b188d2e3ec24"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>creation</b></td></tr>
+<tr class="separator:addb53d00aebc9c712308b188d2e3ec24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a187f41974be5858cfc29ca4e3bbc4b72"><td class="memItemLeft" align="right" valign="top"><a id="a187f41974be5858cfc29ca4e3bbc4b72"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>rawRotate</b></td></tr>
+<tr class="separator:a187f41974be5858cfc29ca4e3bbc4b72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66f642815154b4694cbfe9a1cb6e253a"><td class="memItemLeft" align="right" valign="top"><a id="a66f642815154b4694cbfe9a1cb6e253a"></a>
+qint64&#160;</td><td class="memItemRight" valign="bottom"><b>fileSize</b></td></tr>
+<tr class="separator:a66f642815154b4694cbfe9a1cb6e253a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af51652f699fd7cabd4fc65f5834f2726"><td class="memItemLeft" align="right" valign="top"><a id="af51652f699fd7cabd4fc65f5834f2726"></a>
+qint64&#160;</td><td class="memItemRight" valign="bottom"><b>duration</b></td></tr>
+<tr class="separator:af51652f699fd7cabd4fc65f5834f2726"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9991cd88c16237131f40d37e0a43898e"><td class="memItemLeft" align="right" valign="top"><a id="a9991cd88c16237131f40d37e0a43898e"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>width</b> = -1</td></tr>
+<tr class="separator:a9991cd88c16237131f40d37e0a43898e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd9fea279a9b587efc8f65ad9e76b946"><td class="memItemLeft" align="right" valign="top"><a id="abd9fea279a9b587efc8f65ad9e76b946"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>height</b> = -1</td></tr>
+<tr class="separator:abd9fea279a9b587efc8f65ad9e76b946"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa71b55174057d6081295956110f4e63a"><td class="memItemLeft" align="right" valign="top"><a id="aa71b55174057d6081295956110f4e63a"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>vCodecID</b></td></tr>
+<tr class="separator:aa71b55174057d6081295956110f4e63a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abab13f898f9375d7902b265d1064f3ad"><td class="memItemLeft" align="right" valign="top"><a id="abab13f898f9375d7902b265d1064f3ad"></a>
+qint64&#160;</td><td class="memItemRight" valign="bottom"><b>vCodeRate</b></td></tr>
+<tr class="separator:abab13f898f9375d7902b265d1064f3ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b9a0c712c8946b537204a0a10b7c00a"><td class="memItemLeft" align="right" valign="top"><a id="a0b9a0c712c8946b537204a0a10b7c00a"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>fps</b></td></tr>
+<tr class="separator:a0b9a0c712c8946b537204a0a10b7c00a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a453404817b8f8219d2a7b7c5a2968169"><td class="memItemLeft" align="right" valign="top"><a id="a453404817b8f8219d2a7b7c5a2968169"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>proportion</b></td></tr>
+<tr class="separator:a453404817b8f8219d2a7b7c5a2968169"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d968d0072e3eb21a3fed07f93662d9c"><td class="memItemLeft" align="right" valign="top"><a id="a7d968d0072e3eb21a3fed07f93662d9c"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>aCodeID</b></td></tr>
+<tr class="separator:a7d968d0072e3eb21a3fed07f93662d9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf957ba230c895e14140ede194d14730"><td class="memItemLeft" align="right" valign="top"><a id="aaf957ba230c895e14140ede194d14730"></a>
+qint64&#160;</td><td class="memItemRight" valign="bottom"><b>aCodeRate</b></td></tr>
+<tr class="separator:aaf957ba230c895e14140ede194d14730"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c360888a0526f2d34f5b5a8a982e2c4"><td class="memItemLeft" align="right" valign="top"><a id="a7c360888a0526f2d34f5b5a8a982e2c4"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>aDigit</b></td></tr>
+<tr class="separator:a7c360888a0526f2d34f5b5a8a982e2c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e931982ec499a1bc2281f9179dc1dba"><td class="memItemLeft" align="right" valign="top"><a id="a1e931982ec499a1bc2281f9179dc1dba"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>channels</b></td></tr>
+<tr class="separator:a1e931982ec499a1bc2281f9179dc1dba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07af84c4ce6456277025a7e4ee47b5d8"><td class="memItemLeft" align="right" valign="top"><a id="a07af84c4ce6456277025a7e4ee47b5d8"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sampling</b></td></tr>
+<tr class="separator:a07af84c4ce6456277025a7e4ee47b5d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/>该结构体的文档由以下文件生成:<ul>
+<li>dtkmultimedia/src/multimediawidgets/engine/multimedia/player/<a class="el" href="dplaylistmodel_8h_source.html">dplaylistmodel.h</a></li>
+<li>dtkmultimedia/src/multimediawidgets/engine/multimedia/player/dplaylistmodel.cpp</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="structModeMovieInfo.html">ModeMovieInfo</a></li>
+    <li class="footer">文档生成时间:2023-01-13-07:39  +00</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

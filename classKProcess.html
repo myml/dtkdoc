@@ -1,0 +1,1729 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: KProcess类 参考</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="https://github.com/linuxdeepin/dtkdoc" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classKProcess.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="classKProcess-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">KProcess类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="kprocess_8h_source.html">KProcess</a>&gt;</code></p>
+<div class="dynheader">
+类 KProcess 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classKProcess.png" usemap="#KProcess_map" alt=""/>
+  <map id="KProcess_map" name="KProcess_map">
+<area target="_parent" href="http://doc.qt.io/qt-5/qprocess.html" alt="QProcess" shape="rect" coords="0,112,84,136"/>
+<area target="_parent" href="http://doc.qt.io/qt-5/qiodevice.html" alt="QIODevice" shape="rect" coords="0,56,84,80"/>
+<area target="_parent" href="http://doc.qt.io/qt-5/qobject.html" alt="QObject" shape="rect" coords="0,0,84,24"/>
+<area href="classKPtyProcess.html" alt="KPtyProcess" shape="rect" coords="0,224,84,248"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a4acf3452f1bf5bd3954d272168b16c87"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKProcess.html#a4acf3452f1bf5bd3954d272168b16c87">OutputChannelMode</a> { <br />
+&#160;&#160;<a class="el" href="classKProcess.html#a4acf3452f1bf5bd3954d272168b16c87af4d4c1acd2fb7db2f33e0063cada2f1a">SeparateChannels</a> = QProcess::SeparateChannels
+, <a class="el" href="classKProcess.html#a4acf3452f1bf5bd3954d272168b16c87ad56a69aaab2b00eaebcae0ca58debbbc">MergedChannels</a> = QProcess::MergedChannels
+, <a class="el" href="classKProcess.html#a4acf3452f1bf5bd3954d272168b16c87ae59dc625768089fceea8977391c02e0b">ForwardedChannels</a> = QProcess::ForwardedChannels
+, <a class="el" href="classKProcess.html#a4acf3452f1bf5bd3954d272168b16c87a6b5f2d82d9a5599806b5d8013ab58694">OnlyStdoutChannel</a>
+, <br />
+&#160;&#160;<a class="el" href="classKProcess.html#a4acf3452f1bf5bd3954d272168b16c87af91ed9d3f45f13f1c58901a61b1df887">OnlyStderrChannel</a>
+<br />
+ }</td></tr>
+<tr class="separator:a4acf3452f1bf5bd3954d272168b16c87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_qprocess"><td colspan="2" onclick="javascript:toggleInherit('pub_types_qprocess')"><img src="closed.png" alt="-"/>&#160;Public 类型 继承自 <a class="el"  href="http://doc.qt.io/qt-5/qprocess.html">QProcess</a></td></tr>
+<tr class="memitem:ProcessError-enum inherit pub_types_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="ProcessError-enum"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>ProcessError</b> </td></tr>
+<tr class="separator:ProcessError-enum inherit pub_types_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ProcessState-enum inherit pub_types_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="ProcessState-enum"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>ProcessState</b> </td></tr>
+<tr class="separator:ProcessState-enum inherit pub_types_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ProcessChannel-enum inherit pub_types_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="ProcessChannel-enum"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>ProcessChannel</b> </td></tr>
+<tr class="separator:ProcessChannel-enum inherit pub_types_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ProcessChannelMode-enum inherit pub_types_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="ProcessChannelMode-enum"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>ProcessChannelMode</b> </td></tr>
+<tr class="separator:ProcessChannelMode-enum inherit pub_types_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:InputChannelMode-enum inherit pub_types_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="InputChannelMode-enum"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>InputChannelMode</b> </td></tr>
+<tr class="separator:InputChannelMode-enum inherit pub_types_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ExitStatus-enum inherit pub_types_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="ExitStatus-enum"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>ExitStatus</b> </td></tr>
+<tr class="separator:ExitStatus-enum inherit pub_types_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_qiodevice"><td colspan="2" onclick="javascript:toggleInherit('pub_types_qiodevice')"><img src="closed.png" alt="-"/>&#160;Public 类型 继承自 <a class="el"  href="http://doc.qt.io/qt-5/qiodevice.html">QIODevice</a></td></tr>
+<tr class="memitem:OpenModeFlag-enum inherit pub_types_qiodevice"><td class="memItemLeft" align="right" valign="top"><a id="OpenModeFlag-enum"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>OpenModeFlag</b> </td></tr>
+<tr class="separator:OpenModeFlag-enum inherit pub_types_qiodevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ada85375766be65c1d36a0de3b3668fd0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKProcess.html#ada85375766be65c1d36a0de3b3668fd0">KProcess</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a>=nullptr)</td></tr>
+<tr class="separator:ada85375766be65c1d36a0de3b3668fd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3933c65b05ce3e3d19c8b592ca0220f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKProcess.html#ad3933c65b05ce3e3d19c8b592ca0220f">~KProcess</a> () override</td></tr>
+<tr class="separator:ad3933c65b05ce3e3d19c8b592ca0220f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c91d212c2fa397f4a7b1840c5de5c2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKProcess.html#a7c91d212c2fa397f4a7b1840c5de5c2f">setOutputChannelMode</a> (<a class="el" href="classKProcess.html#a4acf3452f1bf5bd3954d272168b16c87">OutputChannelMode</a> mode)</td></tr>
+<tr class="separator:a7c91d212c2fa397f4a7b1840c5de5c2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63e4e99b82df9671fd88a14380084d20"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKProcess.html#a4acf3452f1bf5bd3954d272168b16c87">OutputChannelMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKProcess.html#a63e4e99b82df9671fd88a14380084d20">outputChannelMode</a> () const</td></tr>
+<tr class="separator:a63e4e99b82df9671fd88a14380084d20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fde098c4fea5e5178982309d02f266f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKProcess.html#a2fde098c4fea5e5178982309d02f266f">setNextOpenMode</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html#OpenModeFlag-enum">QIODevice::OpenMode</a> mode)</td></tr>
+<tr class="separator:a2fde098c4fea5e5178982309d02f266f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5218a3478719d72a4db4a1adf3dbb20"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKProcess.html#ad5218a3478719d72a4db4a1adf3dbb20">setEnv</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;name, const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;value, bool overwrite=true)</td></tr>
+<tr class="separator:ad5218a3478719d72a4db4a1adf3dbb20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a536b23bca1d0b25a885dc83752eb0619"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKProcess.html#a536b23bca1d0b25a885dc83752eb0619">unsetEnv</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;name)</td></tr>
+<tr class="separator:a536b23bca1d0b25a885dc83752eb0619"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0c47cd15a2782c36404870c024f4915"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKProcess.html#aa0c47cd15a2782c36404870c024f4915">clearEnvironment</a> ()</td></tr>
+<tr class="separator:aa0c47cd15a2782c36404870c024f4915"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afad13da571471df810159602aea3d781"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKProcess.html#afad13da571471df810159602aea3d781">setProgram</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;exe, const <a class="elRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> &amp;args=<a class="elRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a>())</td></tr>
+<tr class="separator:afad13da571471df810159602aea3d781"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0d38be873db69cd97863e429e2e37ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKProcess.html#aa0d38be873db69cd97863e429e2e37ad">setProgram</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> &amp;argv)</td></tr>
+<tr class="separator:aa0d38be873db69cd97863e429e2e37ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a622180f48f80ff03c7d29b2d6ae8fa70"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKProcess.html">KProcess</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKProcess.html#a622180f48f80ff03c7d29b2d6ae8fa70">operator&lt;&lt;</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;arg)</td></tr>
+<tr class="separator:a622180f48f80ff03c7d29b2d6ae8fa70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c023c6dea904e00486ff08ea7214f7e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKProcess.html">KProcess</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKProcess.html#a2c023c6dea904e00486ff08ea7214f7e">operator&lt;&lt;</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> &amp;args)</td></tr>
+<tr class="separator:a2c023c6dea904e00486ff08ea7214f7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a432e2ddd9c3f2b56f3430ae92b097827"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKProcess.html#a432e2ddd9c3f2b56f3430ae92b097827">clearProgram</a> ()</td></tr>
+<tr class="separator:a432e2ddd9c3f2b56f3430ae92b097827"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a291b7b2bec6c9f49e0f5140ff06e75c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKProcess.html#a291b7b2bec6c9f49e0f5140ff06e75c2">setShellCommand</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;cmd)</td></tr>
+<tr class="separator:a291b7b2bec6c9f49e0f5140ff06e75c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a680bbb4c8186dd463d044640358344ff"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKProcess.html#a680bbb4c8186dd463d044640358344ff">program</a> () const</td></tr>
+<tr class="separator:a680bbb4c8186dd463d044640358344ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28f6c3ffc96c76490fe9a552c053a417"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKProcess.html#a28f6c3ffc96c76490fe9a552c053a417">start</a> ()</td></tr>
+<tr class="separator:a28f6c3ffc96c76490fe9a552c053a417"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc5c9b1a37d04ad56c8261503a08ea82"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKProcess.html#adc5c9b1a37d04ad56c8261503a08ea82">execute</a> (int msecs=-1)</td></tr>
+<tr class="separator:adc5c9b1a37d04ad56c8261503a08ea82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a724d24732a54ae27f1c83133f18a2de8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKProcess.html#a724d24732a54ae27f1c83133f18a2de8">startDetached</a> ()</td></tr>
+<tr class="separator:a724d24732a54ae27f1c83133f18a2de8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c991c492a346417f352b88b4e313c8c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKProcess.html#a0c991c492a346417f352b88b4e313c8c">pid</a> () const</td></tr>
+<tr class="separator:a0c991c492a346417f352b88b4e313c8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_qprocess"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_qprocess')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el"  href="http://doc.qt.io/qt-5/qprocess.html">QProcess</a></td></tr>
+<tr class="memitem:QProcess inherit pub_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="QProcess"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#QProcess">QProcess</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a>)</td></tr>
+<tr class="separator:QProcess inherit pub_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:start inherit pub_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="start"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#start">start</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;<a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#program">program</a>, const <a class="elRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> &amp;<a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#arguments">arguments</a>, <a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html#OpenModeFlag-enum">QIODevice::OpenMode</a> mode)</td></tr>
+<tr class="separator:start inherit pub_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:start-1 inherit pub_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="start-1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess-obsolete.html#start-1">start</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;command, <a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html#OpenModeFlag-enum">QIODevice::OpenMode</a> mode)</td></tr>
+<tr class="separator:start-1 inherit pub_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:start-2 inherit pub_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="start-2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#start-2">start</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html#OpenModeFlag-enum">QIODevice::OpenMode</a> mode)</td></tr>
+<tr class="separator:start-2 inherit pub_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:startDetached inherit pub_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="startDetached"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#startDetached">startDetached</a> (qint64 *<a class="elRef" href="http://doc.qt.io/qt-5/qprocess-obsolete.html#pid">pid</a>)</td></tr>
+<tr class="separator:startDetached inherit pub_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:open inherit pub_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="open"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#open">open</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html#OpenModeFlag-enum">QIODevice::OpenMode</a> mode) override</td></tr>
+<tr class="separator:open inherit pub_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:program inherit pub_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="program"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#program">program</a> () const const</td></tr>
+<tr class="separator:program inherit pub_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setProgram inherit pub_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="setProgram"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#setProgram">setProgram</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;<a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#program">program</a>)</td></tr>
+<tr class="separator:setProgram inherit pub_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:arguments inherit pub_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="arguments"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#arguments">arguments</a> () const const</td></tr>
+<tr class="separator:arguments inherit pub_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setArguments inherit pub_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="setArguments"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#setArguments">setArguments</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> &amp;<a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#arguments">arguments</a>)</td></tr>
+<tr class="separator:setArguments inherit pub_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:readChannelMode inherit pub_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="readChannelMode"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#ProcessChannelMode-enum">QProcess::ProcessChannelMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess-obsolete.html#readChannelMode">readChannelMode</a> () const const</td></tr>
+<tr class="separator:readChannelMode inherit pub_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setReadChannelMode inherit pub_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="setReadChannelMode"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess-obsolete.html#setReadChannelMode">setReadChannelMode</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#ProcessChannelMode-enum">QProcess::ProcessChannelMode</a> mode)</td></tr>
+<tr class="separator:setReadChannelMode inherit pub_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:processChannelMode inherit pub_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="processChannelMode"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#ProcessChannelMode-enum">QProcess::ProcessChannelMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#processChannelMode">processChannelMode</a> () const const</td></tr>
+<tr class="separator:processChannelMode inherit pub_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setProcessChannelMode inherit pub_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="setProcessChannelMode"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#setProcessChannelMode">setProcessChannelMode</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#ProcessChannelMode-enum">QProcess::ProcessChannelMode</a> mode)</td></tr>
+<tr class="separator:setProcessChannelMode inherit pub_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:inputChannelMode inherit pub_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="inputChannelMode"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#InputChannelMode-enum">QProcess::InputChannelMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#inputChannelMode">inputChannelMode</a> () const const</td></tr>
+<tr class="separator:inputChannelMode inherit pub_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setInputChannelMode inherit pub_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="setInputChannelMode"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#setInputChannelMode">setInputChannelMode</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#InputChannelMode-enum">QProcess::InputChannelMode</a> mode)</td></tr>
+<tr class="separator:setInputChannelMode inherit pub_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:readChannel inherit pub_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="readChannel"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#ProcessChannel-enum">QProcess::ProcessChannel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#readChannel">readChannel</a> () const const</td></tr>
+<tr class="separator:readChannel inherit pub_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setReadChannel inherit pub_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="setReadChannel"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#setReadChannel">setReadChannel</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#ProcessChannel-enum">QProcess::ProcessChannel</a> channel)</td></tr>
+<tr class="separator:setReadChannel inherit pub_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:closeReadChannel inherit pub_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="closeReadChannel"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#closeReadChannel">closeReadChannel</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#ProcessChannel-enum">QProcess::ProcessChannel</a> channel)</td></tr>
+<tr class="separator:closeReadChannel inherit pub_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:closeWriteChannel inherit pub_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="closeWriteChannel"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#closeWriteChannel">closeWriteChannel</a> ()</td></tr>
+<tr class="separator:closeWriteChannel inherit pub_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setStandardInputFile inherit pub_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="setStandardInputFile"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#setStandardInputFile">setStandardInputFile</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;fileName)</td></tr>
+<tr class="separator:setStandardInputFile inherit pub_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setStandardOutputFile inherit pub_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="setStandardOutputFile"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#setStandardOutputFile">setStandardOutputFile</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;fileName, <a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html#OpenModeFlag-enum">QIODevice::OpenMode</a> mode)</td></tr>
+<tr class="separator:setStandardOutputFile inherit pub_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setStandardErrorFile inherit pub_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="setStandardErrorFile"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#setStandardErrorFile">setStandardErrorFile</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;fileName, <a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html#OpenModeFlag-enum">QIODevice::OpenMode</a> mode)</td></tr>
+<tr class="separator:setStandardErrorFile inherit pub_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setStandardOutputProcess inherit pub_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="setStandardOutputProcess"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#setStandardOutputProcess">setStandardOutputProcess</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html">QProcess</a> *destination)</td></tr>
+<tr class="separator:setStandardOutputProcess inherit pub_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:nativeArguments inherit pub_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="nativeArguments"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#nativeArguments">nativeArguments</a> () const const</td></tr>
+<tr class="separator:nativeArguments inherit pub_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setNativeArguments inherit pub_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="setNativeArguments"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#setNativeArguments">setNativeArguments</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;<a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#arguments">arguments</a>)</td></tr>
+<tr class="separator:setNativeArguments inherit pub_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:createProcessArgumentsModifier inherit pub_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="createProcessArgumentsModifier"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#CreateProcessArgumentModifier-typedef">QProcess::CreateProcessArgumentModifier</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#createProcessArgumentsModifier">createProcessArgumentsModifier</a> () const const</td></tr>
+<tr class="separator:createProcessArgumentsModifier inherit pub_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setCreateProcessArgumentsModifier inherit pub_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="setCreateProcessArgumentsModifier"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#setCreateProcessArgumentsModifier">setCreateProcessArgumentsModifier</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#CreateProcessArgumentModifier-typedef">QProcess::CreateProcessArgumentModifier</a> modifier)</td></tr>
+<tr class="separator:setCreateProcessArgumentsModifier inherit pub_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:workingDirectory inherit pub_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="workingDirectory"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#workingDirectory">workingDirectory</a> () const const</td></tr>
+<tr class="separator:workingDirectory inherit pub_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setWorkingDirectory inherit pub_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="setWorkingDirectory"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#setWorkingDirectory">setWorkingDirectory</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;dir)</td></tr>
+<tr class="separator:setWorkingDirectory inherit pub_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setEnvironment inherit pub_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="setEnvironment"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess-obsolete.html#setEnvironment">setEnvironment</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> &amp;<a class="elRef" href="http://doc.qt.io/qt-5/qprocess-obsolete.html#environment">environment</a>)</td></tr>
+<tr class="separator:setEnvironment inherit pub_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:environment inherit pub_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="environment"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess-obsolete.html#environment">environment</a> () const const</td></tr>
+<tr class="separator:environment inherit pub_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setProcessEnvironment inherit pub_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="setProcessEnvironment"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#setProcessEnvironment">setProcessEnvironment</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qprocessenvironment.html">QProcessEnvironment</a> &amp;<a class="elRef" href="http://doc.qt.io/qt-5/qprocess-obsolete.html#environment">environment</a>)</td></tr>
+<tr class="separator:setProcessEnvironment inherit pub_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:processEnvironment inherit pub_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="processEnvironment"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qprocessenvironment.html">QProcessEnvironment</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#processEnvironment">processEnvironment</a> () const const</td></tr>
+<tr class="separator:processEnvironment inherit pub_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:error inherit pub_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="error"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#ProcessError-enum">QProcess::ProcessError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#error">error</a> () const const</td></tr>
+<tr class="separator:error inherit pub_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:state inherit pub_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="state"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#ProcessState-enum">QProcess::ProcessState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#state">state</a> () const const</td></tr>
+<tr class="separator:state inherit pub_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:pid inherit pub_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="pid"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#Q_PID-typedef">Q_PID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess-obsolete.html#pid">pid</a> () const const</td></tr>
+<tr class="separator:pid inherit pub_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:processId inherit pub_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="processId"></a>
+qint64&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#processId">processId</a> () const const</td></tr>
+<tr class="separator:processId inherit pub_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:waitForStarted inherit pub_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="waitForStarted"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#waitForStarted">waitForStarted</a> (int msecs)</td></tr>
+<tr class="separator:waitForStarted inherit pub_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:waitForReadyRead inherit pub_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="waitForReadyRead"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#waitForReadyRead">waitForReadyRead</a> (int msecs) override</td></tr>
+<tr class="separator:waitForReadyRead inherit pub_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:waitForBytesWritten inherit pub_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="waitForBytesWritten"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#waitForBytesWritten">waitForBytesWritten</a> (int msecs) override</td></tr>
+<tr class="separator:waitForBytesWritten inherit pub_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:waitForFinished inherit pub_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="waitForFinished"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#waitForFinished">waitForFinished</a> (int msecs)</td></tr>
+<tr class="separator:waitForFinished inherit pub_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:readAllStandardOutput inherit pub_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="readAllStandardOutput"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#readAllStandardOutput">readAllStandardOutput</a> ()</td></tr>
+<tr class="separator:readAllStandardOutput inherit pub_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:readAllStandardError inherit pub_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="readAllStandardError"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#readAllStandardError">readAllStandardError</a> ()</td></tr>
+<tr class="separator:readAllStandardError inherit pub_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:exitCode inherit pub_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="exitCode"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#exitCode">exitCode</a> () const const</td></tr>
+<tr class="separator:exitCode inherit pub_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:exitStatus inherit pub_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="exitStatus"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#ExitStatus-enum">QProcess::ExitStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#exitStatus">exitStatus</a> () const const</td></tr>
+<tr class="separator:exitStatus inherit pub_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:bytesAvailable inherit pub_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="bytesAvailable"></a>
+virtual qint64&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#bytesAvailable">bytesAvailable</a> () const const override</td></tr>
+<tr class="separator:bytesAvailable inherit pub_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:bytesToWrite inherit pub_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="bytesToWrite"></a>
+virtual qint64&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#bytesToWrite">bytesToWrite</a> () const const override</td></tr>
+<tr class="separator:bytesToWrite inherit pub_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:isSequential inherit pub_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="isSequential"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#isSequential">isSequential</a> () const const override</td></tr>
+<tr class="separator:isSequential inherit pub_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:canReadLine inherit pub_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="canReadLine"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#canReadLine">canReadLine</a> () const const override</td></tr>
+<tr class="separator:canReadLine inherit pub_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:close inherit pub_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="close"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#close">close</a> () override</td></tr>
+<tr class="separator:close inherit pub_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:atEnd inherit pub_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="atEnd"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#atEnd">atEnd</a> () const const override</td></tr>
+<tr class="separator:atEnd inherit pub_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:terminate inherit pub_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="terminate"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#terminate">terminate</a> ()</td></tr>
+<tr class="separator:terminate inherit pub_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:kill inherit pub_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="kill"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#kill">kill</a> ()</td></tr>
+<tr class="separator:kill inherit pub_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:started inherit pub_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="started"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#started">started</a> ()</td></tr>
+<tr class="separator:started inherit pub_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:finished-1 inherit pub_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="finished-1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess-obsolete.html#finished-1">finished</a> (int <a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#exitCode">exitCode</a>)</td></tr>
+<tr class="separator:finished-1 inherit pub_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:finished inherit pub_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="finished"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#finished">finished</a> (int <a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#exitCode">exitCode</a>, <a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#ExitStatus-enum">QProcess::ExitStatus</a> <a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#exitStatus">exitStatus</a>)</td></tr>
+<tr class="separator:finished inherit pub_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:error-1 inherit pub_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="error-1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess-obsolete.html#error-1">error</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#ProcessError-enum">QProcess::ProcessError</a> error)</td></tr>
+<tr class="separator:error-1 inherit pub_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:errorOccurred inherit pub_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="errorOccurred"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#errorOccurred">errorOccurred</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#ProcessError-enum">QProcess::ProcessError</a> <a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#error">error</a>)</td></tr>
+<tr class="separator:errorOccurred inherit pub_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:stateChanged inherit pub_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="stateChanged"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#stateChanged">stateChanged</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#ProcessState-enum">QProcess::ProcessState</a> newState)</td></tr>
+<tr class="separator:stateChanged inherit pub_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:readyReadStandardOutput inherit pub_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="readyReadStandardOutput"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#readyReadStandardOutput">readyReadStandardOutput</a> ()</td></tr>
+<tr class="separator:readyReadStandardOutput inherit pub_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:readyReadStandardError inherit pub_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="readyReadStandardError"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#readyReadStandardError">readyReadStandardError</a> ()</td></tr>
+<tr class="separator:readyReadStandardError inherit pub_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:QT_NO_PROCESS_COMBINED_ARGUMENT_START inherit pub_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="QT_NO_PROCESS_COMBINED_ARGUMENT_START"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#QT_NO_PROCESS_COMBINED_ARGUMENT_START">QT_NO_PROCESS_COMBINED_ARGUMENT_START</a> QT_NO_PROCESS_COMBINED_ARGUMENT_START</td></tr>
+<tr class="separator:QT_NO_PROCESS_COMBINED_ARGUMENT_START inherit pub_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_qiodevice"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_qiodevice')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el"  href="http://doc.qt.io/qt-5/qiodevice.html">QIODevice</a></td></tr>
+<tr class="memitem:QIODevice-1 inherit pub_methods_qiodevice"><td class="memItemLeft" align="right" valign="top"><a id="QIODevice-1"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html#QIODevice-1">QIODevice</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a>)</td></tr>
+<tr class="separator:QIODevice-1 inherit pub_methods_qiodevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:openMode inherit pub_methods_qiodevice"><td class="memItemLeft" align="right" valign="top"><a id="openMode"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html#OpenModeFlag-enum">QIODevice::OpenMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html#openMode">openMode</a> () const const</td></tr>
+<tr class="separator:openMode inherit pub_methods_qiodevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setTextModeEnabled inherit pub_methods_qiodevice"><td class="memItemLeft" align="right" valign="top"><a id="setTextModeEnabled"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html#setTextModeEnabled">setTextModeEnabled</a> (bool enabled)</td></tr>
+<tr class="separator:setTextModeEnabled inherit pub_methods_qiodevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:isTextModeEnabled inherit pub_methods_qiodevice"><td class="memItemLeft" align="right" valign="top"><a id="isTextModeEnabled"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html#isTextModeEnabled">isTextModeEnabled</a> () const const</td></tr>
+<tr class="separator:isTextModeEnabled inherit pub_methods_qiodevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:isOpen inherit pub_methods_qiodevice"><td class="memItemLeft" align="right" valign="top"><a id="isOpen"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html#isOpen">isOpen</a> () const const</td></tr>
+<tr class="separator:isOpen inherit pub_methods_qiodevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:isReadable inherit pub_methods_qiodevice"><td class="memItemLeft" align="right" valign="top"><a id="isReadable"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html#isReadable">isReadable</a> () const const</td></tr>
+<tr class="separator:isReadable inherit pub_methods_qiodevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:isWritable inherit pub_methods_qiodevice"><td class="memItemLeft" align="right" valign="top"><a id="isWritable"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html#isWritable">isWritable</a> () const const</td></tr>
+<tr class="separator:isWritable inherit pub_methods_qiodevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:readChannelCount inherit pub_methods_qiodevice"><td class="memItemLeft" align="right" valign="top"><a id="readChannelCount"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html#readChannelCount">readChannelCount</a> () const const</td></tr>
+<tr class="separator:readChannelCount inherit pub_methods_qiodevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:writeChannelCount inherit pub_methods_qiodevice"><td class="memItemLeft" align="right" valign="top"><a id="writeChannelCount"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html#writeChannelCount">writeChannelCount</a> () const const</td></tr>
+<tr class="separator:writeChannelCount inherit pub_methods_qiodevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:currentReadChannel inherit pub_methods_qiodevice"><td class="memItemLeft" align="right" valign="top"><a id="currentReadChannel"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html#currentReadChannel">currentReadChannel</a> () const const</td></tr>
+<tr class="separator:currentReadChannel inherit pub_methods_qiodevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setCurrentReadChannel inherit pub_methods_qiodevice"><td class="memItemLeft" align="right" valign="top"><a id="setCurrentReadChannel"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html#setCurrentReadChannel">setCurrentReadChannel</a> (int channel)</td></tr>
+<tr class="separator:setCurrentReadChannel inherit pub_methods_qiodevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:currentWriteChannel inherit pub_methods_qiodevice"><td class="memItemLeft" align="right" valign="top"><a id="currentWriteChannel"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html#currentWriteChannel">currentWriteChannel</a> () const const</td></tr>
+<tr class="separator:currentWriteChannel inherit pub_methods_qiodevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setCurrentWriteChannel inherit pub_methods_qiodevice"><td class="memItemLeft" align="right" valign="top"><a id="setCurrentWriteChannel"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html#setCurrentWriteChannel">setCurrentWriteChannel</a> (int channel)</td></tr>
+<tr class="separator:setCurrentWriteChannel inherit pub_methods_qiodevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:pos inherit pub_methods_qiodevice"><td class="memItemLeft" align="right" valign="top"><a id="pos"></a>
+virtual qint64&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html#pos">pos</a> () const const</td></tr>
+<tr class="separator:pos inherit pub_methods_qiodevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:size inherit pub_methods_qiodevice"><td class="memItemLeft" align="right" valign="top"><a id="size"></a>
+virtual qint64&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html#size">size</a> () const const</td></tr>
+<tr class="separator:size inherit pub_methods_qiodevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:seek inherit pub_methods_qiodevice"><td class="memItemLeft" align="right" valign="top"><a id="seek"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html#seek">seek</a> (qint64 <a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html#pos">pos</a>)</td></tr>
+<tr class="separator:seek inherit pub_methods_qiodevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:reset inherit pub_methods_qiodevice"><td class="memItemLeft" align="right" valign="top"><a id="reset"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html#reset">reset</a> ()</td></tr>
+<tr class="separator:reset inherit pub_methods_qiodevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:read inherit pub_methods_qiodevice"><td class="memItemLeft" align="right" valign="top"><a id="read"></a>
+qint64&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html#read">read</a> (char *data, qint64 maxSize)</td></tr>
+<tr class="separator:read inherit pub_methods_qiodevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:read-1 inherit pub_methods_qiodevice"><td class="memItemLeft" align="right" valign="top"><a id="read-1"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html#read-1">read</a> (qint64 maxSize)</td></tr>
+<tr class="separator:read-1 inherit pub_methods_qiodevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:readAll inherit pub_methods_qiodevice"><td class="memItemLeft" align="right" valign="top"><a id="readAll"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html#readAll">readAll</a> ()</td></tr>
+<tr class="separator:readAll inherit pub_methods_qiodevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:readLine inherit pub_methods_qiodevice"><td class="memItemLeft" align="right" valign="top"><a id="readLine"></a>
+qint64&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html#readLine">readLine</a> (char *data, qint64 maxSize)</td></tr>
+<tr class="separator:readLine inherit pub_methods_qiodevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:readLine-1 inherit pub_methods_qiodevice"><td class="memItemLeft" align="right" valign="top"><a id="readLine-1"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html#readLine-1">readLine</a> (qint64 maxSize)</td></tr>
+<tr class="separator:readLine-1 inherit pub_methods_qiodevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:startTransaction inherit pub_methods_qiodevice"><td class="memItemLeft" align="right" valign="top"><a id="startTransaction"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html#startTransaction">startTransaction</a> ()</td></tr>
+<tr class="separator:startTransaction inherit pub_methods_qiodevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:commitTransaction inherit pub_methods_qiodevice"><td class="memItemLeft" align="right" valign="top"><a id="commitTransaction"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html#commitTransaction">commitTransaction</a> ()</td></tr>
+<tr class="separator:commitTransaction inherit pub_methods_qiodevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:rollbackTransaction inherit pub_methods_qiodevice"><td class="memItemLeft" align="right" valign="top"><a id="rollbackTransaction"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html#rollbackTransaction">rollbackTransaction</a> ()</td></tr>
+<tr class="separator:rollbackTransaction inherit pub_methods_qiodevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:isTransactionStarted inherit pub_methods_qiodevice"><td class="memItemLeft" align="right" valign="top"><a id="isTransactionStarted"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html#isTransactionStarted">isTransactionStarted</a> () const const</td></tr>
+<tr class="separator:isTransactionStarted inherit pub_methods_qiodevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:write inherit pub_methods_qiodevice"><td class="memItemLeft" align="right" valign="top"><a id="write"></a>
+qint64&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html#write">write</a> (const char *data, qint64 maxSize)</td></tr>
+<tr class="separator:write inherit pub_methods_qiodevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:write-1 inherit pub_methods_qiodevice"><td class="memItemLeft" align="right" valign="top"><a id="write-1"></a>
+qint64&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html#write-1">write</a> (const char *data)</td></tr>
+<tr class="separator:write-1 inherit pub_methods_qiodevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:write-2 inherit pub_methods_qiodevice"><td class="memItemLeft" align="right" valign="top"><a id="write-2"></a>
+qint64&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html#write-2">write</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a> &amp;byteArray)</td></tr>
+<tr class="separator:write-2 inherit pub_methods_qiodevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:peek inherit pub_methods_qiodevice"><td class="memItemLeft" align="right" valign="top"><a id="peek"></a>
+qint64&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html#peek">peek</a> (char *data, qint64 maxSize)</td></tr>
+<tr class="separator:peek inherit pub_methods_qiodevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:peek-1 inherit pub_methods_qiodevice"><td class="memItemLeft" align="right" valign="top"><a id="peek-1"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html#peek-1">peek</a> (qint64 maxSize)</td></tr>
+<tr class="separator:peek-1 inherit pub_methods_qiodevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:skip inherit pub_methods_qiodevice"><td class="memItemLeft" align="right" valign="top"><a id="skip"></a>
+qint64&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html#skip">skip</a> (qint64 maxSize)</td></tr>
+<tr class="separator:skip inherit pub_methods_qiodevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ungetChar inherit pub_methods_qiodevice"><td class="memItemLeft" align="right" valign="top"><a id="ungetChar"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html#ungetChar">ungetChar</a> (char c)</td></tr>
+<tr class="separator:ungetChar inherit pub_methods_qiodevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:putChar inherit pub_methods_qiodevice"><td class="memItemLeft" align="right" valign="top"><a id="putChar"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html#putChar">putChar</a> (char c)</td></tr>
+<tr class="separator:putChar inherit pub_methods_qiodevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:getChar inherit pub_methods_qiodevice"><td class="memItemLeft" align="right" valign="top"><a id="getChar"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html#getChar">getChar</a> (char *c)</td></tr>
+<tr class="separator:getChar inherit pub_methods_qiodevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:errorString inherit pub_methods_qiodevice"><td class="memItemLeft" align="right" valign="top"><a id="errorString"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html#errorString">errorString</a> () const const</td></tr>
+<tr class="separator:errorString inherit pub_methods_qiodevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:readyRead inherit pub_methods_qiodevice"><td class="memItemLeft" align="right" valign="top"><a id="readyRead"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html#readyRead">readyRead</a> ()</td></tr>
+<tr class="separator:readyRead inherit pub_methods_qiodevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:channelReadyRead inherit pub_methods_qiodevice"><td class="memItemLeft" align="right" valign="top"><a id="channelReadyRead"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html#channelReadyRead">channelReadyRead</a> (int channel)</td></tr>
+<tr class="separator:channelReadyRead inherit pub_methods_qiodevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:bytesWritten inherit pub_methods_qiodevice"><td class="memItemLeft" align="right" valign="top"><a id="bytesWritten"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html#bytesWritten">bytesWritten</a> (qint64 bytes)</td></tr>
+<tr class="separator:bytesWritten inherit pub_methods_qiodevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:channelBytesWritten inherit pub_methods_qiodevice"><td class="memItemLeft" align="right" valign="top"><a id="channelBytesWritten"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html#channelBytesWritten">channelBytesWritten</a> (int channel, qint64 bytes)</td></tr>
+<tr class="separator:channelBytesWritten inherit pub_methods_qiodevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aboutToClose inherit pub_methods_qiodevice"><td class="memItemLeft" align="right" valign="top"><a id="aboutToClose"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html#aboutToClose">aboutToClose</a> ()</td></tr>
+<tr class="separator:aboutToClose inherit pub_methods_qiodevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:readChannelFinished inherit pub_methods_qiodevice"><td class="memItemLeft" align="right" valign="top"><a id="readChannelFinished"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html#readChannelFinished">readChannelFinished</a> ()</td></tr>
+<tr class="separator:readChannelFinished inherit pub_methods_qiodevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_qobject"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_qobject')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el"  href="http://doc.qt.io/qt-5/qobject.html">QObject</a></td></tr>
+<tr class="memitem:metaObject inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="metaObject"></a>
+virtual const <a class="elRef" href="http://doc.qt.io/qt-5/qmetaobject.html">QMetaObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#metaObject">metaObject</a> () const const</td></tr>
+<tr class="separator:metaObject inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:QObject inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="QObject"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#QObject">QObject</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a>)</td></tr>
+<tr class="separator:QObject inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:event inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="event"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#event">event</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qevent.html">QEvent</a> *e)</td></tr>
+<tr class="separator:event inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:eventFilter inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="eventFilter"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#eventFilter">eventFilter</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *watched, <a class="elRef" href="http://doc.qt.io/qt-5/qevent.html">QEvent</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#event">event</a>)</td></tr>
+<tr class="separator:eventFilter inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:objectName-prop inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="objectName-prop"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#objectName-prop">objectName</a> () const const</td></tr>
+<tr class="separator:objectName-prop inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:objectName-prop inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="objectName-prop"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#objectName-prop">setObjectName</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;name)</td></tr>
+<tr class="separator:objectName-prop inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:isWidgetType inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="isWidgetType"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#isWidgetType">isWidgetType</a> () const const</td></tr>
+<tr class="separator:isWidgetType inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:isWindowType inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="isWindowType"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#isWindowType">isWindowType</a> () const const</td></tr>
+<tr class="separator:isWindowType inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:signalsBlocked inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="signalsBlocked"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#signalsBlocked">signalsBlocked</a> () const const</td></tr>
+<tr class="separator:signalsBlocked inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:blockSignals inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="blockSignals"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#blockSignals">blockSignals</a> (bool block)</td></tr>
+<tr class="separator:blockSignals inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:thread inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="thread"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qthread.html">QThread</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#thread">thread</a> () const const</td></tr>
+<tr class="separator:thread inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:moveToThread inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="moveToThread"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#moveToThread">moveToThread</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qthread.html">QThread</a> *targetThread)</td></tr>
+<tr class="separator:moveToThread inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:startTimer inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="startTimer"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#startTimer">startTimer</a> (int interval, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#TimerType-enum">Qt::TimerType</a> timerType)</td></tr>
+<tr class="separator:startTimer inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:startTimer-1 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="startTimer-1"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#startTimer-1">startTimer</a> (std::chrono::milliseconds time, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#TimerType-enum">Qt::TimerType</a> timerType)</td></tr>
+<tr class="separator:startTimer-1 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:killTimer inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="killTimer"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#killTimer">killTimer</a> (int id)</td></tr>
+<tr class="separator:killTimer inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:findChild inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="findChild"></a>
+T&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#findChild">findChild</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;name, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#FindChildOption-enum">Qt::FindChildOptions</a> options) const const</td></tr>
+<tr class="separator:findChild inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:findChildren inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="findChildren"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qlist.html">QList</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#findChildren">findChildren</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;name, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#FindChildOption-enum">Qt::FindChildOptions</a> options) const const</td></tr>
+<tr class="separator:findChildren inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:findChildren-1 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="findChildren-1"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qlist.html">QList</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject-obsolete.html#findChildren-1">findChildren</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qregexp.html">QRegExp</a> &amp;regExp, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#FindChildOption-enum">Qt::FindChildOptions</a> options) const const</td></tr>
+<tr class="separator:findChildren-1 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:findChildren-2 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="findChildren-2"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qlist.html">QList</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#findChildren-2">findChildren</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qregularexpression.html">QRegularExpression</a> &amp;re, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#FindChildOption-enum">Qt::FindChildOptions</a> options) const const</td></tr>
+<tr class="separator:findChildren-2 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:children inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="children"></a>
+const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#QObjectList-typedef">QObjectList</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#children">children</a> () const const</td></tr>
+<tr class="separator:children inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setParent inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="setParent"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#setParent">setParent</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a>)</td></tr>
+<tr class="separator:setParent inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:installEventFilter inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="installEventFilter"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#installEventFilter">installEventFilter</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *filterObj)</td></tr>
+<tr class="separator:installEventFilter inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:removeEventFilter inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="removeEventFilter"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#removeEventFilter">removeEventFilter</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *obj)</td></tr>
+<tr class="separator:removeEventFilter inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connect-2 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect-2"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#connect-2">connect</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const char *signal, const char *method, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#ConnectionType-enum">Qt::ConnectionType</a> type) const const</td></tr>
+<tr class="separator:connect-2 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnect-2 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect-2"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#disconnect-2">disconnect</a> (const char *signal, const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const char *method) const const</td></tr>
+<tr class="separator:disconnect-2 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnect-3 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect-3"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#disconnect-3">disconnect</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const char *method) const const</td></tr>
+<tr class="separator:disconnect-3 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dumpObjectTree-1 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="dumpObjectTree-1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject-obsolete.html#dumpObjectTree-1">dumpObjectTree</a> ()</td></tr>
+<tr class="separator:dumpObjectTree-1 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dumpObjectInfo-1 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="dumpObjectInfo-1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject-obsolete.html#dumpObjectInfo-1">dumpObjectInfo</a> ()</td></tr>
+<tr class="separator:dumpObjectInfo-1 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dumpObjectTree inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="dumpObjectTree"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#dumpObjectTree">dumpObjectTree</a> () const const</td></tr>
+<tr class="separator:dumpObjectTree inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dumpObjectInfo inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="dumpObjectInfo"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#dumpObjectInfo">dumpObjectInfo</a> () const const</td></tr>
+<tr class="separator:dumpObjectInfo inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setProperty inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="setProperty"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#setProperty">setProperty</a> (const char *name, const <a class="elRef" href="http://doc.qt.io/qt-5/qvariant.html">QVariant</a> &amp;value)</td></tr>
+<tr class="separator:setProperty inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:property inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="property"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qvariant.html">QVariant</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#property">property</a> (const char *name) const const</td></tr>
+<tr class="separator:property inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dynamicPropertyNames inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="dynamicPropertyNames"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qlist.html">QList</a>&lt; <a class="elRef" href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#dynamicPropertyNames">dynamicPropertyNames</a> () const const</td></tr>
+<tr class="separator:dynamicPropertyNames inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:destroyed inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="destroyed"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#destroyed">destroyed</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *obj)</td></tr>
+<tr class="separator:destroyed inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:objectNameChanged inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="objectNameChanged"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#objectNameChanged">objectNameChanged</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#objectName-prop">objectName</a>)</td></tr>
+<tr class="separator:objectNameChanged inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:parent inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="parent"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a> () const const</td></tr>
+<tr class="separator:parent inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:inherits inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="inherits"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#inherits">inherits</a> (const char *className) const const</td></tr>
+<tr class="separator:inherits inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:deleteLater inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="deleteLater"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#deleteLater">deleteLater</a> ()</td></tr>
+<tr class="separator:deleteLater inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_DISABLE_COPY inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_DISABLE_COPY"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_DISABLE_COPY">Q_DISABLE_COPY</a> (Class)</td></tr>
+<tr class="separator:Q_DISABLE_COPY inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_DISABLE_MOVE inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_DISABLE_MOVE"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_DISABLE_MOVE">Q_DISABLE_MOVE</a> (Class)</td></tr>
+<tr class="separator:Q_DISABLE_MOVE inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_DISABLE_COPY_MOVE inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_DISABLE_COPY_MOVE"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_DISABLE_COPY_MOVE">Q_DISABLE_COPY_MOVE</a> (Class)</td></tr>
+<tr class="separator:Q_DISABLE_COPY_MOVE inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:qobject_cast inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="qobject_cast"></a>
+T&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#qobject_cast">qobject_cast</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *object)</td></tr>
+<tr class="separator:qobject_cast inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:qobject_cast-1 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="qobject_cast-1"></a>
+T&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#qobject_cast-1">qobject_cast</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *object)</td></tr>
+<tr class="separator:qobject_cast-1 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:qFindChild inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="qFindChild"></a>
+T&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject-obsolete.html#qFindChild">qFindChild</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *obj, const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;name)</td></tr>
+<tr class="separator:qFindChild inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:qFindChildren inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="qFindChildren"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qlist.html">QList</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject-obsolete.html#qFindChildren">qFindChildren</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *obj, const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;name)</td></tr>
+<tr class="separator:qFindChildren inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:qFindChildren-1 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="qFindChildren-1"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qlist.html">QList</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#qFindChildren-1">qFindChildren</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *obj, const <a class="elRef" href="http://doc.qt.io/qt-5/qregexp.html">QRegExp</a> &amp;regExp)</td></tr>
+<tr class="separator:qFindChildren-1 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_CLASSINFO inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_CLASSINFO"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_CLASSINFO">Q_CLASSINFO</a> (Name, Value)</td></tr>
+<tr class="separator:Q_CLASSINFO inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_INTERFACES inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_INTERFACES"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_INTERFACES">Q_INTERFACES</a> (...)</td></tr>
+<tr class="separator:Q_INTERFACES inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_PROPERTY inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_PROPERTY"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a> (...)</td></tr>
+<tr class="separator:Q_PROPERTY inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_ENUMS inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_ENUMS"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject-obsolete.html#Q_ENUMS">Q_ENUMS</a> (...)</td></tr>
+<tr class="separator:Q_ENUMS inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_FLAGS inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_FLAGS"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject-obsolete.html#Q_FLAGS">Q_FLAGS</a> (...)</td></tr>
+<tr class="separator:Q_FLAGS inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_ENUM inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_ENUM"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_ENUM">Q_ENUM</a> (...)</td></tr>
+<tr class="separator:Q_ENUM inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_FLAG inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_FLAG"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_FLAG">Q_FLAG</a> (...)</td></tr>
+<tr class="separator:Q_FLAG inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_ENUM_NS inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_ENUM_NS"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_ENUM_NS">Q_ENUM_NS</a> (...)</td></tr>
+<tr class="separator:Q_ENUM_NS inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_FLAG_NS inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_FLAG_NS"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_FLAG_NS">Q_FLAG_NS</a> (...)</td></tr>
+<tr class="separator:Q_FLAG_NS inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_OBJECT inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_OBJECT"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">Q_OBJECT</a> Q_OBJECT</td></tr>
+<tr class="separator:Q_OBJECT inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_GADGET inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_GADGET"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_GADGET">Q_GADGET</a> Q_GADGET</td></tr>
+<tr class="separator:Q_GADGET inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_NAMESPACE inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_NAMESPACE"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_NAMESPACE">Q_NAMESPACE</a> Q_NAMESPACE</td></tr>
+<tr class="separator:Q_NAMESPACE inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_NAMESPACE_EXPORT inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_NAMESPACE_EXPORT"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_NAMESPACE_EXPORT">Q_NAMESPACE_EXPORT</a> (EXPORT_MACRO)</td></tr>
+<tr class="separator:Q_NAMESPACE_EXPORT inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_SIGNALS inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_SIGNALS"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SIGNALS">Q_SIGNALS</a> Q_SIGNALS</td></tr>
+<tr class="separator:Q_SIGNALS inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_SIGNAL inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_SIGNAL"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SIGNAL">Q_SIGNAL</a> Q_SIGNAL</td></tr>
+<tr class="separator:Q_SIGNAL inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_SLOTS inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_SLOTS"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SLOTS">Q_SLOTS</a> Q_SLOTS</td></tr>
+<tr class="separator:Q_SLOTS inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_SLOT inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_SLOT"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SLOT">Q_SLOT</a> Q_SLOT</td></tr>
+<tr class="separator:Q_SLOT inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_EMIT inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_EMIT"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_EMIT">Q_EMIT</a> Q_EMIT</td></tr>
+<tr class="separator:Q_EMIT inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_INVOKABLE inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_INVOKABLE"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_INVOKABLE">Q_INVOKABLE</a> Q_INVOKABLE</td></tr>
+<tr class="separator:Q_INVOKABLE inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_REVISION inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_REVISION"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_REVISION">Q_REVISION</a> Q_REVISION</td></tr>
+<tr class="separator:Q_REVISION inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_SET_OBJECT_NAME inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_SET_OBJECT_NAME"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SET_OBJECT_NAME">Q_SET_OBJECT_NAME</a> (<a class="el" href="classObject.html">Object</a>)</td></tr>
+<tr class="separator:Q_SET_OBJECT_NAME inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:QT_NO_NARROWING_CONVERSIONS_IN_CONNECT inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="QT_NO_NARROWING_CONVERSIONS_IN_CONNECT"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#QT_NO_NARROWING_CONVERSIONS_IN_CONNECT">QT_NO_NARROWING_CONVERSIONS_IN_CONNECT</a> QT_NO_NARROWING_CONVERSIONS_IN_CONNECT</td></tr>
+<tr class="separator:QT_NO_NARROWING_CONVERSIONS_IN_CONNECT inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a913f73fb177f7425f7f76f06bfb203b9"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKProcess.html#a913f73fb177f7425f7f76f06bfb203b9">execute</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;exe, const <a class="elRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> &amp;args=<a class="elRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a>(), int msecs=-1)</td></tr>
+<tr class="separator:a913f73fb177f7425f7f76f06bfb203b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a998db042f0ad3f6b92fd738cd73c0379"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKProcess.html#a998db042f0ad3f6b92fd738cd73c0379">execute</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> &amp;argv, int msecs=-1)</td></tr>
+<tr class="separator:a998db042f0ad3f6b92fd738cd73c0379"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24321850a114a718cdf7d601d1c076a1"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKProcess.html#a24321850a114a718cdf7d601d1c076a1">startDetached</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;exe, const <a class="elRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> &amp;args=<a class="elRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a>())</td></tr>
+<tr class="separator:a24321850a114a718cdf7d601d1c076a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74af9d9f41d3f6fd41366d371c98015e"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKProcess.html#a74af9d9f41d3f6fd41366d371c98015e">startDetached</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> &amp;argv)</td></tr>
+<tr class="separator:a74af9d9f41d3f6fd41366d371c98015e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_qprocess"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_qprocess')"><img src="closed.png" alt="-"/>&#160;静态 Public 成员函数 继承自 <a class="el"  href="http://doc.qt.io/qt-5/qprocess.html">QProcess</a></td></tr>
+<tr class="memitem:execute inherit pub_static_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="execute"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#execute">execute</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;<a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#program">program</a>, const <a class="elRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> &amp;<a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#arguments">arguments</a>)</td></tr>
+<tr class="separator:execute inherit pub_static_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:execute-1 inherit pub_static_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="execute-1"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess-obsolete.html#execute-1">execute</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;command)</td></tr>
+<tr class="separator:execute-1 inherit pub_static_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:startDetached-1 inherit pub_static_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="startDetached-1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#startDetached-1">startDetached</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;<a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#program">program</a>, const <a class="elRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> &amp;<a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#arguments">arguments</a>, const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;<a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#workingDirectory">workingDirectory</a>, qint64 *<a class="elRef" href="http://doc.qt.io/qt-5/qprocess-obsolete.html#pid">pid</a>)</td></tr>
+<tr class="separator:startDetached-1 inherit pub_static_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:startDetached-2 inherit pub_static_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="startDetached-2"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess-obsolete.html#startDetached-2">startDetached</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;command)</td></tr>
+<tr class="separator:startDetached-2 inherit pub_static_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:systemEnvironment inherit pub_static_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="systemEnvironment"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#systemEnvironment">systemEnvironment</a> ()</td></tr>
+<tr class="separator:systemEnvironment inherit pub_static_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:nullDevice inherit pub_static_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="nullDevice"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#nullDevice">nullDevice</a> ()</td></tr>
+<tr class="separator:nullDevice inherit pub_static_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:splitCommand inherit pub_static_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="splitCommand"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#splitCommand">splitCommand</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qstringview.html">QStringView</a> command)</td></tr>
+<tr class="separator:splitCommand inherit pub_static_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_qobject"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_qobject')"><img src="closed.png" alt="-"/>&#160;静态 Public 成员函数 继承自 <a class="el"  href="http://doc.qt.io/qt-5/qobject.html">QObject</a></td></tr>
+<tr class="memitem:tr inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="tr"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#tr">tr</a> (const char *sourceText, const char *disambiguation, int n)</td></tr>
+<tr class="separator:tr inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:trUtf8 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="trUtf8"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject-obsolete.html#trUtf8">trUtf8</a> (const char *sourceText, const char *disambiguation, int n)</td></tr>
+<tr class="separator:trUtf8 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connect inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#connect">connect</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const char *signal, const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const char *method, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#ConnectionType-enum">Qt::ConnectionType</a> type)</td></tr>
+<tr class="separator:connect inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connect-1 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect-1"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#connect-1">connect</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const <a class="elRef" href="http://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;signal, const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const <a class="elRef" href="http://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;method, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#ConnectionType-enum">Qt::ConnectionType</a> type)</td></tr>
+<tr class="separator:connect-1 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connect-3 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect-3"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#connect-3">connect</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#sender">sender</a>, PointerToMemberFunction signal, const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, PointerToMemberFunction method, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#ConnectionType-enum">Qt::ConnectionType</a> type)</td></tr>
+<tr class="separator:connect-3 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connect-4 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect-4"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#connect-4">connect</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#sender">sender</a>, PointerToMemberFunction signal, Functor functor)</td></tr>
+<tr class="separator:connect-4 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connect-5 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect-5"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#connect-5">connect</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#sender">sender</a>, PointerToMemberFunction signal, const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *context, Functor functor, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#ConnectionType-enum">Qt::ConnectionType</a> type)</td></tr>
+<tr class="separator:connect-5 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnect inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#disconnect">disconnect</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const char *signal, const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const char *method)</td></tr>
+<tr class="separator:disconnect inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnect-1 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect-1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#disconnect-1">disconnect</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const <a class="elRef" href="http://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;signal, const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const <a class="elRef" href="http://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;method)</td></tr>
+<tr class="separator:disconnect-1 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnect-4 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect-4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#disconnect-4">disconnect</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a> &amp;connection)</td></tr>
+<tr class="separator:disconnect-4 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnect-5 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect-5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#disconnect-5">disconnect</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#sender">sender</a>, PointerToMemberFunction signal, const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, PointerToMemberFunction method)</td></tr>
+<tr class="separator:disconnect-5 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a3ab437173ad7c4280ff8c7d0031c90ac"><td class="memItemLeft" align="right" valign="top"><a id="a3ab437173ad7c4280ff8c7d0031c90ac"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>KProcess</b> (<a class="el" href="classKProcessPrivate.html">KProcessPrivate</a> *d, <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a>)</td></tr>
+<tr class="separator:a3ab437173ad7c4280ff8c7d0031c90ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_qprocess"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_qprocess')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el"  href="http://doc.qt.io/qt-5/qprocess.html">QProcess</a></td></tr>
+<tr class="memitem:setProcessState inherit pro_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="setProcessState"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#setProcessState">setProcessState</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#ProcessState-enum">QProcess::ProcessState</a> <a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#state">state</a>)</td></tr>
+<tr class="separator:setProcessState inherit pro_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setupChildProcess inherit pro_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="setupChildProcess"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#setupChildProcess">setupChildProcess</a> ()</td></tr>
+<tr class="separator:setupChildProcess inherit pro_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:readData inherit pro_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="readData"></a>
+virtual qint64&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#readData">readData</a> (char *data, qint64 maxlen) override</td></tr>
+<tr class="separator:readData inherit pro_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:writeData inherit pro_methods_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="writeData"></a>
+virtual qint64&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#writeData">writeData</a> (const char *data, qint64 len) override</td></tr>
+<tr class="separator:writeData inherit pro_methods_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_qiodevice"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_qiodevice')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el"  href="http://doc.qt.io/qt-5/qiodevice.html">QIODevice</a></td></tr>
+<tr class="memitem:readLineData inherit pro_methods_qiodevice"><td class="memItemLeft" align="right" valign="top"><a id="readLineData"></a>
+virtual qint64&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html#readLineData">readLineData</a> (char *data, qint64 maxSize)</td></tr>
+<tr class="separator:readLineData inherit pro_methods_qiodevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setOpenMode inherit pro_methods_qiodevice"><td class="memItemLeft" align="right" valign="top"><a id="setOpenMode"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html#setOpenMode">setOpenMode</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html#OpenModeFlag-enum">QIODevice::OpenMode</a> <a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html#openMode">openMode</a>)</td></tr>
+<tr class="separator:setOpenMode inherit pro_methods_qiodevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setErrorString inherit pro_methods_qiodevice"><td class="memItemLeft" align="right" valign="top"><a id="setErrorString"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html#setErrorString">setErrorString</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;str)</td></tr>
+<tr class="separator:setErrorString inherit pro_methods_qiodevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_qobject"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_qobject')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el"  href="http://doc.qt.io/qt-5/qobject.html">QObject</a></td></tr>
+<tr class="memitem:sender inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="sender"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#sender">sender</a> () const const</td></tr>
+<tr class="separator:sender inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:senderSignalIndex inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="senderSignalIndex"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#senderSignalIndex">senderSignalIndex</a> () const const</td></tr>
+<tr class="separator:senderSignalIndex inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:receivers inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="receivers"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#receivers">receivers</a> (const char *signal) const const</td></tr>
+<tr class="separator:receivers inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:isSignalConnected inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="isSignalConnected"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#isSignalConnected">isSignalConnected</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;signal) const const</td></tr>
+<tr class="separator:isSignalConnected inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:timerEvent inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="timerEvent"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#timerEvent">timerEvent</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qtimerevent.html">QTimerEvent</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#event">event</a>)</td></tr>
+<tr class="separator:timerEvent inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:childEvent inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="childEvent"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#childEvent">childEvent</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qchildevent.html">QChildEvent</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#event">event</a>)</td></tr>
+<tr class="separator:childEvent inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:customEvent inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="customEvent"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#customEvent">customEvent</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qevent.html">QEvent</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#event">event</a>)</td></tr>
+<tr class="separator:customEvent inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connectNotify inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connectNotify"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#connectNotify">connectNotify</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;signal)</td></tr>
+<tr class="separator:connectNotify inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnectNotify inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnectNotify"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#disconnectNotify">disconnectNotify</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;signal)</td></tr>
+<tr class="separator:disconnectNotify inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:a3e9af74721a82e0c0dea2c0596886a99"><td class="memItemLeft" align="right" valign="top"><a id="a3e9af74721a82e0c0dea2c0596886a99"></a>
+<a class="el" href="classKProcessPrivate.html">KProcessPrivate</a> *const&#160;</td><td class="memItemRight" valign="bottom"><b>d_ptr</b></td></tr>
+<tr class="separator:a3e9af74721a82e0c0dea2c0596886a99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pub_attribs_qprocess"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_qprocess')"><img src="closed.png" alt="-"/>&#160;Public 属性 继承自 <a class="el"  href="http://doc.qt.io/qt-5/qprocess.html">QProcess</a></td></tr>
+<tr class="memitem:CreateProcessArgumentModifier-typedef inherit pub_attribs_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="CreateProcessArgumentModifier-typedef"></a>
+typedef&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#CreateProcessArgumentModifier-typedef">CreateProcessArgumentModifier</a></td></tr>
+<tr class="separator:CreateProcessArgumentModifier-typedef inherit pub_attribs_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_PID-typedef inherit pub_attribs_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="Q_PID-typedef"></a>
+typedef&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#Q_PID-typedef">Q_PID</a></td></tr>
+<tr class="separator:Q_PID-typedef inherit pub_attribs_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ProcessError-enum inherit pub_attribs_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="ProcessError-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#ProcessError-enum">FailedToStart</a></td></tr>
+<tr class="separator:ProcessError-enum inherit pub_attribs_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ProcessError-enum inherit pub_attribs_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="ProcessError-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#ProcessError-enum">Crashed</a></td></tr>
+<tr class="separator:ProcessError-enum inherit pub_attribs_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ProcessError-enum inherit pub_attribs_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="ProcessError-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#ProcessError-enum">Timedout</a></td></tr>
+<tr class="separator:ProcessError-enum inherit pub_attribs_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ProcessError-enum inherit pub_attribs_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="ProcessError-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#ProcessError-enum">ReadError</a></td></tr>
+<tr class="separator:ProcessError-enum inherit pub_attribs_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ProcessError-enum inherit pub_attribs_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="ProcessError-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#ProcessError-enum">WriteError</a></td></tr>
+<tr class="separator:ProcessError-enum inherit pub_attribs_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ProcessError-enum inherit pub_attribs_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="ProcessError-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#ProcessError-enum">UnknownError</a></td></tr>
+<tr class="separator:ProcessError-enum inherit pub_attribs_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ProcessState-enum inherit pub_attribs_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="ProcessState-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#ProcessState-enum">NotRunning</a></td></tr>
+<tr class="separator:ProcessState-enum inherit pub_attribs_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ProcessState-enum inherit pub_attribs_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="ProcessState-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#ProcessState-enum">Starting</a></td></tr>
+<tr class="separator:ProcessState-enum inherit pub_attribs_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ProcessState-enum inherit pub_attribs_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="ProcessState-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#ProcessState-enum">Running</a></td></tr>
+<tr class="separator:ProcessState-enum inherit pub_attribs_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ProcessChannel-enum inherit pub_attribs_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="ProcessChannel-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#ProcessChannel-enum">StandardOutput</a></td></tr>
+<tr class="separator:ProcessChannel-enum inherit pub_attribs_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ProcessChannel-enum inherit pub_attribs_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="ProcessChannel-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#ProcessChannel-enum">StandardError</a></td></tr>
+<tr class="separator:ProcessChannel-enum inherit pub_attribs_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ProcessChannelMode-enum inherit pub_attribs_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="ProcessChannelMode-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#ProcessChannelMode-enum">SeparateChannels</a></td></tr>
+<tr class="separator:ProcessChannelMode-enum inherit pub_attribs_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ProcessChannelMode-enum inherit pub_attribs_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="ProcessChannelMode-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#ProcessChannelMode-enum">MergedChannels</a></td></tr>
+<tr class="separator:ProcessChannelMode-enum inherit pub_attribs_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ProcessChannelMode-enum inherit pub_attribs_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="ProcessChannelMode-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#ProcessChannelMode-enum">ForwardedChannels</a></td></tr>
+<tr class="separator:ProcessChannelMode-enum inherit pub_attribs_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ProcessChannelMode-enum inherit pub_attribs_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="ProcessChannelMode-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#ProcessChannelMode-enum">ForwardedOutputChannel</a></td></tr>
+<tr class="separator:ProcessChannelMode-enum inherit pub_attribs_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ProcessChannelMode-enum inherit pub_attribs_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="ProcessChannelMode-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#ProcessChannelMode-enum">ForwardedErrorChannel</a></td></tr>
+<tr class="separator:ProcessChannelMode-enum inherit pub_attribs_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:InputChannelMode-enum inherit pub_attribs_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="InputChannelMode-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#InputChannelMode-enum">ManagedInputChannel</a></td></tr>
+<tr class="separator:InputChannelMode-enum inherit pub_attribs_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:InputChannelMode-enum inherit pub_attribs_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="InputChannelMode-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#InputChannelMode-enum">ForwardedInputChannel</a></td></tr>
+<tr class="separator:InputChannelMode-enum inherit pub_attribs_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ExitStatus-enum inherit pub_attribs_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="ExitStatus-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#ExitStatus-enum">NormalExit</a></td></tr>
+<tr class="separator:ExitStatus-enum inherit pub_attribs_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ExitStatus-enum inherit pub_attribs_qprocess"><td class="memItemLeft" align="right" valign="top"><a id="ExitStatus-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#ExitStatus-enum">CrashExit</a></td></tr>
+<tr class="separator:ExitStatus-enum inherit pub_attribs_qprocess"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_qiodevice"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_qiodevice')"><img src="closed.png" alt="-"/>&#160;Public 属性 继承自 <a class="el"  href="http://doc.qt.io/qt-5/qiodevice.html">QIODevice</a></td></tr>
+<tr class="memitem:OpenModeFlag-enum inherit pub_attribs_qiodevice"><td class="memItemLeft" align="right" valign="top"><a id="OpenModeFlag-enum"></a>
+typedef&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html#OpenModeFlag-enum">OpenMode</a></td></tr>
+<tr class="separator:OpenModeFlag-enum inherit pub_attribs_qiodevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:OpenModeFlag-enum inherit pub_attribs_qiodevice"><td class="memItemLeft" align="right" valign="top"><a id="OpenModeFlag-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html#OpenModeFlag-enum">NotOpen</a></td></tr>
+<tr class="separator:OpenModeFlag-enum inherit pub_attribs_qiodevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:OpenModeFlag-enum inherit pub_attribs_qiodevice"><td class="memItemLeft" align="right" valign="top"><a id="OpenModeFlag-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html#OpenModeFlag-enum">ReadOnly</a></td></tr>
+<tr class="separator:OpenModeFlag-enum inherit pub_attribs_qiodevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:OpenModeFlag-enum inherit pub_attribs_qiodevice"><td class="memItemLeft" align="right" valign="top"><a id="OpenModeFlag-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html#OpenModeFlag-enum">WriteOnly</a></td></tr>
+<tr class="separator:OpenModeFlag-enum inherit pub_attribs_qiodevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:OpenModeFlag-enum inherit pub_attribs_qiodevice"><td class="memItemLeft" align="right" valign="top"><a id="OpenModeFlag-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html#OpenModeFlag-enum">ReadWrite</a></td></tr>
+<tr class="separator:OpenModeFlag-enum inherit pub_attribs_qiodevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:OpenModeFlag-enum inherit pub_attribs_qiodevice"><td class="memItemLeft" align="right" valign="top"><a id="OpenModeFlag-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html#OpenModeFlag-enum">Append</a></td></tr>
+<tr class="separator:OpenModeFlag-enum inherit pub_attribs_qiodevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:OpenModeFlag-enum inherit pub_attribs_qiodevice"><td class="memItemLeft" align="right" valign="top"><a id="OpenModeFlag-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html#OpenModeFlag-enum">Truncate</a></td></tr>
+<tr class="separator:OpenModeFlag-enum inherit pub_attribs_qiodevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:OpenModeFlag-enum inherit pub_attribs_qiodevice"><td class="memItemLeft" align="right" valign="top"><a id="OpenModeFlag-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html#OpenModeFlag-enum">Text</a></td></tr>
+<tr class="separator:OpenModeFlag-enum inherit pub_attribs_qiodevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:OpenModeFlag-enum inherit pub_attribs_qiodevice"><td class="memItemLeft" align="right" valign="top"><a id="OpenModeFlag-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html#OpenModeFlag-enum">Unbuffered</a></td></tr>
+<tr class="separator:OpenModeFlag-enum inherit pub_attribs_qiodevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:OpenModeFlag-enum inherit pub_attribs_qiodevice"><td class="memItemLeft" align="right" valign="top"><a id="OpenModeFlag-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html#OpenModeFlag-enum">NewOnly</a></td></tr>
+<tr class="separator:OpenModeFlag-enum inherit pub_attribs_qiodevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:OpenModeFlag-enum inherit pub_attribs_qiodevice"><td class="memItemLeft" align="right" valign="top"><a id="OpenModeFlag-enum"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html#OpenModeFlag-enum">ExistingOnly</a></td></tr>
+<tr class="separator:OpenModeFlag-enum inherit pub_attribs_qiodevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_qobject"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_qobject')"><img src="closed.png" alt="-"/>&#160;Public 属性 继承自 <a class="el"  href="http://doc.qt.io/qt-5/qobject.html">QObject</a></td></tr>
+<tr class="memitem:QObjectList-typedef inherit pub_attribs_qobject"><td class="memItemLeft" align="right" valign="top"><a id="QObjectList-typedef"></a>
+typedef&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#QObjectList-typedef">QObjectList</a></td></tr>
+<tr class="separator:QObjectList-typedef inherit pub_attribs_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header properties_qobject"><td colspan="2" onclick="javascript:toggleInherit('properties_qobject')"><img src="closed.png" alt="-"/>&#160;属性 继承自 <a class="el"  href="http://doc.qt.io/qt-5/qobject.html">QObject</a></td></tr>
+<tr class="memitem:objectName-prop inherit properties_qobject"><td class="memItemLeft" align="right" valign="top"><a id="objectName-prop"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#objectName-prop">objectName</a></td></tr>
+<tr class="separator:objectName-prop inherit properties_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Child process invocation, monitoring and control.</p>
+<p>This class extends <a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html">QProcess</a> by some useful functionality, overrides some defaults with saner values and wraps parts of the API into a more accessible one. This is the preferred way of spawning child processes in KDE; don't use <a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html">QProcess</a> directly.</p>
+<dl class="section author"><dt>作者</dt><dd>Oswald Buddenhagen <a href="#" onclick="location.href='mai'+'lto:'+'oss'+'i@'+'kde'+'.o'+'rg'; return false;">ossi@<span style="display: none;">.nosp@m.</span>kde.<span style="display: none;">.nosp@m.</span>org</a> </dd></dl>
+</div><h2 class="groupheader">成员枚举类型说明</h2>
+<a id="a4acf3452f1bf5bd3954d272168b16c87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4acf3452f1bf5bd3954d272168b16c87">&#9670;&nbsp;</a></span>OutputChannelMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classKProcess.html#a4acf3452f1bf5bd3954d272168b16c87">KProcess::OutputChannelMode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Modes in which the output channels can be opened. </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a4acf3452f1bf5bd3954d272168b16c87af4d4c1acd2fb7db2f33e0063cada2f1a"></a>SeparateChannels&#160;</td><td class="fielddoc"><p>Standard output and standard error are handled by <a class="el" href="classKProcess.html">KProcess</a> as separate channels </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a4acf3452f1bf5bd3954d272168b16c87ad56a69aaab2b00eaebcae0ca58debbbc"></a>MergedChannels&#160;</td><td class="fielddoc"><p>Standard output and standard error are handled by <a class="el" href="classKProcess.html">KProcess</a> as one channel </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a4acf3452f1bf5bd3954d272168b16c87ae59dc625768089fceea8977391c02e0b"></a>ForwardedChannels&#160;</td><td class="fielddoc"><p>Both standard output and standard error are forwarded to the parent process' respective channel </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a4acf3452f1bf5bd3954d272168b16c87a6b5f2d82d9a5599806b5d8013ab58694"></a>OnlyStdoutChannel&#160;</td><td class="fielddoc"><p>Only standard output is handled; standard error is forwarded </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a4acf3452f1bf5bd3954d272168b16c87af91ed9d3f45f13f1c58901a61b1df887"></a>OnlyStderrChannel&#160;</td><td class="fielddoc"><p>Only standard error is handled; standard output is forwarded </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a id="ada85375766be65c1d36a0de3b3668fd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada85375766be65c1d36a0de3b3668fd0">&#9670;&nbsp;</a></span>KProcess()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KProcess::KProcess </td>
+          <td>(</td>
+          <td class="paramtype"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Constructor </p>
+
+</div>
+</div>
+<a id="ad3933c65b05ce3e3d19c8b592ca0220f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3933c65b05ce3e3d19c8b592ca0220f">&#9670;&nbsp;</a></span>~KProcess()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KProcess::~KProcess </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Destructor </p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="aa0c47cd15a2782c36404870c024f4915"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0c47cd15a2782c36404870c024f4915">&#9670;&nbsp;</a></span>clearEnvironment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KProcess::clearEnvironment </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Empties the process' environment.</p>
+<p>Note that LD_LIBRARY_PATH/DYLD_LIBRARY_PATH is automatically added on *NIX.</p>
+<p>This function must be called before starting the process. </p>
+
+</div>
+</div>
+<a id="a432e2ddd9c3f2b56f3430ae92b097827"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a432e2ddd9c3f2b56f3430ae92b097827">&#9670;&nbsp;</a></span>clearProgram()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KProcess::clearProgram </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Clear the program and command line argument list. </p>
+
+</div>
+</div>
+<a id="a913f73fb177f7425f7f76f06bfb203b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a913f73fb177f7425f7f76f06bfb203b9">&#9670;&nbsp;</a></span>execute() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int KProcess::execute </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>exe</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="elRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> &amp;&#160;</td>
+          <td class="paramname"><em>args</em> = <code><a class="elRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a>()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>msecs</em> = <code>-1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>这是为便于使用而提供的一个重载成员函数.与上面的函数相比，它接受不同类型的参数.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">exe</td><td>the program to execute </td></tr>
+    <tr><td class="paramname">args</td><td>the command line arguments for the program, one per list element </td></tr>
+    <tr><td class="paramname">msecs</td><td>time to wait for process to exit before killing it </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>-2 if the process could not be started, -1 if it crashed, otherwise its exit code </dd></dl>
+
+</div>
+</div>
+<a id="a998db042f0ad3f6b92fd738cd73c0379"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a998db042f0ad3f6b92fd738cd73c0379">&#9670;&nbsp;</a></span>execute() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int KProcess::execute </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> &amp;&#160;</td>
+          <td class="paramname"><em>argv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>msecs</em> = <code>-1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>这是为便于使用而提供的一个重载成员函数.与上面的函数相比，它接受不同类型的参数.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">argv</td><td>the program to execute and the command line arguments for the program, one per list element </td></tr>
+    <tr><td class="paramname">msecs</td><td>time to wait for process to exit before killing it </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>-2 if the process could not be started, -1 if it crashed, otherwise its exit code </dd></dl>
+
+</div>
+</div>
+<a id="adc5c9b1a37d04ad56c8261503a08ea82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc5c9b1a37d04ad56c8261503a08ea82">&#9670;&nbsp;</a></span>execute() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int KProcess::execute </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>msecs</em> = <code>-1</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Start the process, wait for it to finish, and return the exit code.</p>
+<p>This method is roughly equivalent to the sequence: <code> <a class="el" href="classKProcess.html#a28f6c3ffc96c76490fe9a552c053a417">start()</a>; waitForFinished(msecs); return <a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#exitCode">exitCode()</a>; </code></p>
+<p>Unlike the other <a class="el" href="classKProcess.html#adc5c9b1a37d04ad56c8261503a08ea82">execute()</a> variants this method is not static, so the process can be parametrized properly and talked to.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msecs</td><td>time to wait for process to exit before killing it </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>-2 if the process could not be started, -1 if it crashed, otherwise its exit code </dd></dl>
+
+</div>
+</div>
+<a id="a622180f48f80ff03c7d29b2d6ae8fa70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a622180f48f80ff03c7d29b2d6ae8fa70">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKProcess.html">KProcess</a> &amp; KProcess::operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>arg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Append an element to the command line argument list for this process.</p>
+<p>If no executable is set yet, it will be set instead.</p>
+<p>For example, doing an "ls -l /usr/local/bin" can be achieved by: </p><div class="fragment"><div class="line"><a class="code" href="classKProcess.html">KProcess</a> p;</div>
+<div class="line">p &lt;&lt; <span class="stringliteral">&quot;ls&quot;</span> &lt;&lt; <span class="stringliteral">&quot;-l&quot;</span> &lt;&lt; <span class="stringliteral">&quot;/usr/local/bin&quot;</span>;</div>
+<div class="line">...</div>
+<div class="ttc" id="aclassKProcess_html"><div class="ttname"><a href="classKProcess.html">KProcess</a></div><div class="ttdef"><b>Definition:</b> kprocess.h:53</div></div>
+</div><!-- fragment --><p>This function must be called before starting the process, obviously.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">arg</td><td>the argument to add </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>a reference to this <a class="el" href="classKProcess.html">KProcess</a> </dd></dl>
+
+</div>
+</div>
+<a id="a2c023c6dea904e00486ff08ea7214f7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c023c6dea904e00486ff08ea7214f7e">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKProcess.html">KProcess</a> &amp; KProcess::operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> &amp;&#160;</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>这是为便于使用而提供的一个重载成员函数.与上面的函数相比，它接受不同类型的参数.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">args</td><td>the arguments to add </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>a reference to this <a class="el" href="classKProcess.html">KProcess</a> </dd></dl>
+
+</div>
+</div>
+<a id="a63e4e99b82df9671fd88a14380084d20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63e4e99b82df9671fd88a14380084d20">&#9670;&nbsp;</a></span>outputChannelMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKProcess.html#a4acf3452f1bf5bd3954d272168b16c87">KProcess::OutputChannelMode</a> KProcess::outputChannelMode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Query how the output channels of the child process are handled.</p>
+<dl class="section return"><dt>返回</dt><dd>the output channel handling mode </dd></dl>
+
+</div>
+</div>
+<a id="a0c991c492a346417f352b88b4e313c8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c991c492a346417f352b88b4e313c8c">&#9670;&nbsp;</a></span>pid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int KProcess::pid </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Obtain the process' ID as known to the system.</p>
+<p>Unlike with <a class="elRef" href="http://doc.qt.io/qt-5/qprocess-obsolete.html#pid">QProcess::pid()</a>, this is a real PID also on Windows.</p>
+<p>This function can be called only while the process is running. It cannot be applied to detached processes.</p>
+<dl class="section return"><dt>返回</dt><dd>the process ID </dd></dl>
+
+</div>
+</div>
+<a id="a680bbb4c8186dd463d044640358344ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a680bbb4c8186dd463d044640358344ff">&#9670;&nbsp;</a></span>program()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> KProcess::program </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Obtain the currently set program and arguments.</p>
+<dl class="section return"><dt>返回</dt><dd>a list, the first element being the program, the remaining ones being command line arguments to the program. </dd></dl>
+
+</div>
+</div>
+<a id="ad5218a3478719d72a4db4a1adf3dbb20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5218a3478719d72a4db4a1adf3dbb20">&#9670;&nbsp;</a></span>setEnv()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KProcess::setEnv </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>overwrite</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Adds the variable <code>name</code> to the process' environment.</p>
+<p>This function must be called before starting the process.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>the name of the environment variable </td></tr>
+    <tr><td class="paramname">value</td><td>the new value for the environment variable </td></tr>
+    <tr><td class="paramname">overwrite</td><td>if <code>false</code> and the environment variable is already set, the old value will be preserved </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2fde098c4fea5e5178982309d02f266f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fde098c4fea5e5178982309d02f266f">&#9670;&nbsp;</a></span>setNextOpenMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KProcess::setNextOpenMode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html#OpenModeFlag-enum">QIODevice::OpenMode</a>&#160;</td>
+          <td class="paramname"><em>mode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set the <a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html">QIODevice</a> open mode the process will be opened in.</p>
+<p>This function must be called before starting the process, obviously.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mode</td><td>the open mode. Note that this mode is automatically "reduced" according to the channel modes and redirections. The default is <a class="elRef" href="http://doc.qt.io/qt-5/qiodevice.html#OpenModeFlag-enum">QIODevice::ReadWrite</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7c91d212c2fa397f4a7b1840c5de5c2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c91d212c2fa397f4a7b1840c5de5c2f">&#9670;&nbsp;</a></span>setOutputChannelMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KProcess::setOutputChannelMode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classKProcess.html#a4acf3452f1bf5bd3954d272168b16c87">OutputChannelMode</a>&#160;</td>
+          <td class="paramname"><em>mode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set how to handle the output channels of the child process.</p>
+<p>The default is ForwardedChannels, which is unlike in <a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html">QProcess</a>. Do not request more than you actually handle, as this output is simply lost otherwise.</p>
+<p>This function must be called before starting the process.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mode</td><td>the output channel handling mode </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afad13da571471df810159602aea3d781"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afad13da571471df810159602aea3d781">&#9670;&nbsp;</a></span>setProgram() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KProcess::setProgram </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>exe</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="elRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> &amp;&#160;</td>
+          <td class="paramname"><em>args</em> = <code><a class="elRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set the program and the command line arguments.</p>
+<p>This function must be called before starting the process, obviously.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">exe</td><td>the program to execute </td></tr>
+    <tr><td class="paramname">args</td><td>the command line arguments for the program, one per list element </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa0d38be873db69cd97863e429e2e37ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0d38be873db69cd97863e429e2e37ad">&#9670;&nbsp;</a></span>setProgram() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KProcess::setProgram </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> &amp;&#160;</td>
+          <td class="paramname"><em>argv</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>这是为便于使用而提供的一个重载成员函数.与上面的函数相比，它接受不同类型的参数.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">argv</td><td>the program to execute and the command line arguments for the program, one per list element </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a291b7b2bec6c9f49e0f5140ff06e75c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a291b7b2bec6c9f49e0f5140ff06e75c2">&#9670;&nbsp;</a></span>setShellCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KProcess::setShellCommand </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>cmd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set a command to execute through a shell (a POSIX sh on *NIX and cmd.exe on Windows).</p>
+<p>Using this for anything but user-supplied commands is usually a bad idea, as the command's syntax depends on the platform. Redirections including pipes, etc. are better handled by the respective functions provided by <a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html">QProcess</a>.</p>
+<p>If <a class="el" href="classKProcess.html">KProcess</a> determines that the command does not really need a shell, it will trasparently execute it without one for performance reasons.</p>
+<p>This function must be called before starting the process, obviously.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cmd</td><td>the command to execute through a shell. The caller must make sure that all filenames etc. are properly quoted when passed as argument. Failure to do so often results in serious security holes. See KShell::quoteArg(). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a28f6c3ffc96c76490fe9a552c053a417"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28f6c3ffc96c76490fe9a552c053a417">&#9670;&nbsp;</a></span>start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KProcess::start </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Start the process.</p>
+<dl class="section see"><dt>参见</dt><dd>QProcess::start(const QString &amp;, const QStringList &amp;, OpenMode) </dd></dl>
+
+</div>
+</div>
+<a id="a724d24732a54ae27f1c83133f18a2de8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a724d24732a54ae27f1c83133f18a2de8">&#9670;&nbsp;</a></span>startDetached() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int KProcess::startDetached </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Start the process and detach from it. See <a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#startDetached">QProcess::startDetached()</a> for details.</p>
+<p>Unlike the other <a class="el" href="classKProcess.html#a724d24732a54ae27f1c83133f18a2de8">startDetached()</a> variants this method is not static, so the process can be parametrized properly. </p><dl class="section note"><dt>注解</dt><dd>Currently, only the <a class="el" href="classKProcess.html#afad13da571471df810159602aea3d781">setProgram()</a>/setShellCommand() and <a class="elRef" href="http://doc.qt.io/qt-5/qprocess.html#setWorkingDirectory">setWorkingDirectory()</a> parametrizations are supported.</dd></dl>
+<p>The <a class="el" href="classKProcess.html">KProcess</a> object may be re-used immediately after calling this function.</p>
+<dl class="section return"><dt>返回</dt><dd>the PID of the started process or 0 on error </dd></dl>
+
+</div>
+</div>
+<a id="a24321850a114a718cdf7d601d1c076a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24321850a114a718cdf7d601d1c076a1">&#9670;&nbsp;</a></span>startDetached() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int KProcess::startDetached </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>exe</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="elRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> &amp;&#160;</td>
+          <td class="paramname"><em>args</em> = <code><a class="elRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>这是为便于使用而提供的一个重载成员函数.与上面的函数相比，它接受不同类型的参数.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">exe</td><td>the program to start </td></tr>
+    <tr><td class="paramname">args</td><td>the command line arguments for the program, one per list element </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>the PID of the started process or 0 on error </dd></dl>
+
+</div>
+</div>
+<a id="a74af9d9f41d3f6fd41366d371c98015e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74af9d9f41d3f6fd41366d371c98015e">&#9670;&nbsp;</a></span>startDetached() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int KProcess::startDetached </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> &amp;&#160;</td>
+          <td class="paramname"><em>argv</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>这是为便于使用而提供的一个重载成员函数.与上面的函数相比，它接受不同类型的参数.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">argv</td><td>the program to start and the command line arguments for the program, one per list element </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>the PID of the started process or 0 on error </dd></dl>
+
+</div>
+</div>
+<a id="a536b23bca1d0b25a885dc83752eb0619"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a536b23bca1d0b25a885dc83752eb0619">&#9670;&nbsp;</a></span>unsetEnv()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KProcess::unsetEnv </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Removes the variable <code>name</code> from the process' environment.</p>
+<p>This function must be called before starting the process.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>the name of the environment variable </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dtkio/src/dtkcompressor/3rdparty/interface/process/<a class="el" href="kprocess_8h_source.html">kprocess.h</a></li>
+<li>dtkio/src/dtkcompressor/3rdparty/interface/process/kprocess.cpp</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classKProcess.html">KProcess</a></li>
+    <li class="footer">文档生成时间:2023-01-13-07:39  +00</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

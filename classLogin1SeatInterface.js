@@ -1,0 +1,27 @@
+var classLogin1SeatInterface =
+[
+    [ "Login1SeatInterface", "classLogin1SeatInterface.html#aaf5516d063260d161484d0d70df9e36a", null ],
+    [ "~Login1SeatInterface", "classLogin1SeatInterface.html#a36f2f39fb501830b6a8df188fe3c65c0", null ],
+    [ "activateSession", "classLogin1SeatInterface.html#a7d7e6d60f832de48daac890a8fd2a4a6", null ],
+    [ "activeSession", "classLogin1SeatInterface.html#acb11d2ac762886e1ad96f35855390c94", null ],
+    [ "canGraphical", "classLogin1SeatInterface.html#a8442d87494eff91894d39d96243174d8", null ],
+    [ "canTTY", "classLogin1SeatInterface.html#aab51f351085ecf028953963250f3b238", null ],
+    [ "id", "classLogin1SeatInterface.html#a6f4e32f7e73679467368ed94495f2685", null ],
+    [ "idleHint", "classLogin1SeatInterface.html#a9b6b654da7bdb2f5cd46b9bc992b5ba8", null ],
+    [ "idleSinceHint", "classLogin1SeatInterface.html#afc9a0e888da747dfca6de3d9540cae50", null ],
+    [ "idleSinceHintMonotonic", "classLogin1SeatInterface.html#abeed47923c9c9582e22fb2604ca10d4b", null ],
+    [ "sessions", "classLogin1SeatInterface.html#a0a3476673a989d2f619c469d90b12dc4", null ],
+    [ "staticInterfaceName", "classLogin1SeatInterface.html#afb909a817e917f4cb2d360d26585acc4", null ],
+    [ "switchTo", "classLogin1SeatInterface.html#acc08f719a97f8112b08cd9563d6ff49b", null ],
+    [ "switchToNext", "classLogin1SeatInterface.html#a78a1adb4e1726f109f707a8ce5c4d902", null ],
+    [ "switchToPrevious", "classLogin1SeatInterface.html#ade3560ec205cccb12e7a4049bfc2c021", null ],
+    [ "terminate", "classLogin1SeatInterface.html#a911ec4e5bda740865850bb22639ce885", null ],
+    [ "activeSession", "classLogin1SeatInterface.html#aa8ffd39ef32a38373d327670ef393038", null ],
+    [ "canGraphical", "classLogin1SeatInterface.html#a277573218c908f37d55342ac4103c224", null ],
+    [ "canTTY", "classLogin1SeatInterface.html#a419e1ff867183ce8c14838c65261f9ed", null ],
+    [ "id", "classLogin1SeatInterface.html#a21f3707d093dfd1e79396cbc5226fba2", null ],
+    [ "idleHint", "classLogin1SeatInterface.html#a6a964cd0b3b3b7ab15627cd959561509", null ],
+    [ "idleSinceHint", "classLogin1SeatInterface.html#a340c66b0e041a46628a05986fc1964ef", null ],
+    [ "idleSinceHintMonotonic", "classLogin1SeatInterface.html#ad72550955636988393f8f5546711c780", null ],
+    [ "sessions", "classLogin1SeatInterface.html#ae2131acd251ceafbbc6e97f762d1ff4e", null ]
+];

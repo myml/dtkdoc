@@ -5,6 +5,7 @@ var classDFloatingMessage =
       [ "ResidentType", "classDFloatingMessage.html#a20157287373f03d64d08a0fb5003644bac9dfa6ed4c22f62b7de1db47468417df", null ]
     ] ],
     [ "DFloatingMessage", "classDFloatingMessage.html#a86f462d72671e5e5b3effde5f66f27af", null ],
+    [ "changeEvent", "classDFloatingMessage.html#a140be18037f7a65525a79782577ec2b8", null ],
     [ "closeButtonClicked", "classDFloatingMessage.html#af861349bf6bb99890577c8a48c578fd9", null ],
     [ "messageType", "classDFloatingMessage.html#a07b0c27f49dec5f464ddef5b731f4ba3", null ],
     [ "setDuration", "classDFloatingMessage.html#a2a5cfea17af78221a467eadeef161687", null ],

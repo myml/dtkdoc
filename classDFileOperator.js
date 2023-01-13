@@ -1,0 +1,25 @@
+var classDFileOperator =
+[
+    [ "DFileOperator", "classDFileOperator.html#a188f92c8d00c87adc90483b664c071a2", null ],
+    [ "~DFileOperator", "classDFileOperator.html#ae1abc9e2900ac5651c7aa9d0c1cd338d", null ],
+    [ "copyFile", "classDFileOperator.html#a0c872919e3c6d1f82f7c84db81683557", null ],
+    [ "copyFileAsync", "classDFileOperator.html#a80fe8f6e131c7a7cb8260c3be90bc504", null ],
+    [ "createLink", "classDFileOperator.html#a35c92e3bdb1c309ea3b57b727bb29a7c", null ],
+    [ "createLinkAsync", "classDFileOperator.html#a6805b49a8f286fd2dd1c5c391cc5bb89", null ],
+    [ "deleteFile", "classDFileOperator.html#ac849566a45c45548d21be133069861b5", null ],
+    [ "deleteFileAsync", "classDFileOperator.html#a3982892bf21c6210423caee4c3616084", null ],
+    [ "lastError", "classDFileOperator.html#a30291dd9fd1449fde5498f476fd2f1b9", null ],
+    [ "makeDirectory", "classDFileOperator.html#a3061ff7ef9225d58464aa02c1dd0d0db", null ],
+    [ "makeDirectoryAsync", "classDFileOperator.html#aafb2f895da9387745bdbda1d3c8a76ec", null ],
+    [ "moveFile", "classDFileOperator.html#a21f4d8b68225947c47ac50654b90d34d", null ],
+    [ "moveFileAsync", "classDFileOperator.html#aab980b2abfd0bd99bac1b3466efb6cc1", null ],
+    [ "renameFile", "classDFileOperator.html#a789ea4f3a852c8f0a8268ed07460841c", null ],
+    [ "renameFileAsync", "classDFileOperator.html#a428e238fba037d4b2ed2239ada8aa166", null ],
+    [ "restoreFile", "classDFileOperator.html#a2ca075a4df9e13619aeec8198a67f54f", null ],
+    [ "restoreFileAsync", "classDFileOperator.html#ad21d6b7005156f9f942301987b963dc1", null ],
+    [ "touchFile", "classDFileOperator.html#a665f0d19522373c1e33137943ca68458", null ],
+    [ "touchFileAsync", "classDFileOperator.html#a2b83d92db9cc14c7b52c112e8bb56549", null ],
+    [ "trashFile", "classDFileOperator.html#a2b7e49c2bd468bc427a8c2e943bf52bd", null ],
+    [ "trashFileAsync", "classDFileOperator.html#a113d6950864f2603deb38a0634c8b911", null ],
+    [ "url", "classDFileOperator.html#a70b6b2e746e77f30ea0995db9d6c9a6f", null ]
+];

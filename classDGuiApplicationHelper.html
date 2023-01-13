@@ -185,6 +185,10 @@ Public 类型</h2></td></tr>
 , <b>WorldScope</b>
  }</td></tr>
 <tr class="separator:a4cbf8f991616c3f8e1b85a8a4fb113e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34515d2fe20f1657c4e0b49eadc4cc90"><td class="memItemLeft" align="right" valign="top"><a id="a34515d2fe20f1657c4e0b49eadc4cc90"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>SizeMode</b> { <b>NormalMode</b>
+, <b>CompactMode</b>
+ }</td></tr>
+<tr class="separator:a34515d2fe20f1657c4e0b49eadc4cc90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2609d4dc9b44f180e93c23f2bc1155c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGuiApplicationHelper.html#af2609d4dc9b44f180e93c23f2bc1155c">Attribute</a> { <br />
 &#160;&#160;<a class="el" href="classDGuiApplicationHelper.html#af2609d4dc9b44f180e93c23f2bc1155caeff4d0f8dd5d66a2cccb9ae9d35bdab9">UseInactiveColorGroup</a> = 1 &lt;&lt; 0
 , <a class="el" href="classDGuiApplicationHelper.html#af2609d4dc9b44f180e93c23f2bc1155ca4b2fd01fb675d8834a977785369b1488">ColorCompositing</a> = 1 &lt;&lt; 1
@@ -219,6 +223,20 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a8cc3b2b55f588b1b39d403420c4083a5"><td class="memItemLeft" align="right" valign="top"><a id="a8cc3b2b55f588b1b39d403420c4083a5"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>openUrl</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;url)</td></tr>
 <tr class="separator:a8cc3b2b55f588b1b39d403420c4083a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae950b7b4e01a6ed440e006a4d3ab4487"><td class="memItemLeft" align="right" valign="top">DGuiApplicationHelper::SizeMode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGuiApplicationHelper.html#ae950b7b4e01a6ed440e006a4d3ab4487">sizeMode</a> () const</td></tr>
+<tr class="memdesc:ae950b7b4e01a6ed440e006a4d3ab4487"><td class="mdescLeft">&#160;</td><td class="mdescRight">当前应用的控件大小模式。  <a href="classDGuiApplicationHelper.html#ae950b7b4e01a6ed440e006a4d3ab4487">更多...</a><br /></td></tr>
+<tr class="separator:ae950b7b4e01a6ed440e006a4d3ab4487"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a208e5c9822d5b492f7d30df6df1efeb9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGuiApplicationHelper.html#a208e5c9822d5b492f7d30df6df1efeb9">setSizeMode</a> (const DGuiApplicationHelper::SizeMode mode)</td></tr>
+<tr class="memdesc:a208e5c9822d5b492f7d30df6df1efeb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置应用控件大小模式，应用使用的为此模式，不再响应系统的控件大小模式。  <a href="classDGuiApplicationHelper.html#a208e5c9822d5b492f7d30df6df1efeb9">更多...</a><br /></td></tr>
+<tr class="separator:a208e5c9822d5b492f7d30df6df1efeb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab27c0fafd1b8f0b2e288978cea8450a"><td class="memItemLeft" align="right" valign="top"><a id="aab27c0fafd1b8f0b2e288978cea8450a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGuiApplicationHelper.html#aab27c0fafd1b8f0b2e288978cea8450a">resetSizeMode</a> ()</td></tr>
+<tr class="memdesc:aab27c0fafd1b8f0b2e288978cea8450a"><td class="mdescLeft">&#160;</td><td class="mdescRight">重置设置应用控件大小模式，跟随系统的控件大小模式。 <br /></td></tr>
+<tr class="separator:aab27c0fafd1b8f0b2e288978cea8450a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2162fe02c11d1d7d9f1c16aa5c4ae54b"><td class="memItemLeft" align="right" valign="top"><a id="a2162fe02c11d1d7d9f1c16aa5c4ae54b"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGuiApplicationHelper.html#a2162fe02c11d1d7d9f1c16aa5c4ae54b">isCompactMode</a> ()</td></tr>
+<tr class="memdesc:a2162fe02c11d1d7d9f1c16aa5c4ae54b"><td class="mdescLeft">&#160;</td><td class="mdescRight">当前控件大小模式是否为紧凑模式。 <br /></td></tr>
+<tr class="separator:a2162fe02c11d1d7d9f1c16aa5c4ae54b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
 信号</h2></td></tr>
@@ -237,6 +255,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>fontChanged</b> (cons
 <tr class="memitem:a5001b4c491748c4b04bf45b97e2bb003"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGuiApplicationHelper.html#a5001b4c491748c4b04bf45b97e2bb003">applicationPaletteChanged</a> ()</td></tr>
 <tr class="memdesc:a5001b4c491748c4b04bf45b97e2bb003"><td class="mdescLeft">&#160;</td><td class="mdescRight">通知调色板对象的改变。  <a href="classDGuiApplicationHelper.html#a5001b4c491748c4b04bf45b97e2bb003">更多...</a><br /></td></tr>
 <tr class="separator:a5001b4c491748c4b04bf45b97e2bb003"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac3729c9f48d2d959b8020dee0c2fd17"><td class="memItemLeft" align="right" valign="top"><a id="aac3729c9f48d2d959b8020dee0c2fd17"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGuiApplicationHelper.html#aac3729c9f48d2d959b8020dee0c2fd17">sizeModeChanged</a> (DGuiApplicationHelper::SizeMode <a class="el" href="classDGuiApplicationHelper.html#ae950b7b4e01a6ed440e006a4d3ab4487">sizeMode</a>)</td></tr>
+<tr class="memdesc:aac3729c9f48d2d959b8020dee0c2fd17"><td class="mdescLeft">&#160;</td><td class="mdescRight">通知控件大小模式发生改变。 <br /></td></tr>
+<tr class="separator:aac3729c9f48d2d959b8020dee0c2fd17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
@@ -476,7 +498,7 @@ T&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http
 &#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_REVISION">Q_REVISION</a> Q_REVISION</td></tr>
 <tr class="separator:Q_REVISION inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:Q_SET_OBJECT_NAME inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_SET_OBJECT_NAME"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SET_OBJECT_NAME">Q_SET_OBJECT_NAME</a> (Object)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SET_OBJECT_NAME">Q_SET_OBJECT_NAME</a> (<a class="el" href="classObject.html">Object</a>)</td></tr>
 <tr class="separator:Q_SET_OBJECT_NAME inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:QT_NO_NARROWING_CONVERSIONS_IN_CONNECT inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="QT_NO_NARROWING_CONVERSIONS_IN_CONNECT"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#QT_NO_NARROWING_CONVERSIONS_IN_CONNECT">QT_NO_NARROWING_CONVERSIONS_IN_CONNECT</a> QT_NO_NARROWING_CONVERSIONS_IN_CONNECT</td></tr>
@@ -1601,6 +1623,72 @@ DGuiApplicationHelper::setSingleInstanceInterval设置 </dd></dl>
 
 </div>
 </div>
+<a id="a208e5c9822d5b492f7d30df6df1efeb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a208e5c9822d5b492f7d30df6df1efeb9">&#9670;&nbsp;</a></span>setSizeMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DGuiApplicationHelper::setSizeMode </td>
+          <td>(</td>
+          <td class="paramtype">const DGuiApplicationHelper::SizeMode&#160;</td>
+          <td class="paramname"><em>sizeMode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置应用控件大小模式，应用使用的为此模式，不再响应系统的控件大小模式。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sizeMode</td><td>需要设置的控件大小模式. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae950b7b4e01a6ed440e006a4d3ab4487"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae950b7b4e01a6ed440e006a4d3ab4487">&#9670;&nbsp;</a></span>sizeMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DGuiApplicationHelper::SizeMode DGuiApplicationHelper::sizeMode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>当前应用的控件大小模式。 </p>
+<ul>
+<li>若应用没有设置控件大小模式，则跟随系统的控件大小模式</li>
+<li>用户也可以设置环境变量 D_DTK_SIZEMODE 来影响应用的大小模式的支持，<code>D_DTK_SIZEMODE=1</code>为指定为普通模式， 当应用没有显示设置控件大小模式，则会采用普通模式。</li>
+<li>优先级为 <code><a class="el" href="classDGuiApplicationHelper.html#a208e5c9822d5b492f7d30df6df1efeb9" title="设置应用控件大小模式，应用使用的为此模式，不再响应系统的控件大小模式。">DGuiApplicationHelper::setSizeMode</a></code> &gt; <code>D_DTK_SIZEMODE</code> &gt; <code>System's SizeMode</code>。 </li>
+</ul>
+
+</div>
+</div>
 <a id="aa88a702eaaada0055b51d9b8617ab648"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa88a702eaaada0055b51d9b8617ab648">&#9670;&nbsp;</a></span>standardPalette()</h2>
 
@@ -1828,7 +1916,7 @@ DGuiApplicationHelper::setSingleInstanceInterval设置 </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classDGuiApplicationHelper.html">DGuiApplicationHelper</a></li>
-    <li class="footer">文档生成时间:2023-01-03-09:52  +00</li>
+    <li class="footer">文档生成时间:2023-01-13-07:39  +00</li>
     <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
     <li class="footer">制作者:deepin doc doc go SIG</li>
     <li class="footer">文档使用CC-BY-4.0共享 </a>

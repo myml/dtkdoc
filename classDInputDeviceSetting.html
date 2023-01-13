@@ -1,0 +1,1919 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: DInputDeviceSetting类 参考</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="https://github.com/linuxdeepin/dtkdoc" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classDInputDeviceSetting.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-slots">Public 槽</a> &#124;
+<a href="#signals">信号</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#properties">属性</a> &#124;
+<a href="#friends">友元</a> &#124;
+<a href="classDInputDeviceSetting-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">DInputDeviceSetting类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 DInputDeviceSetting 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classDInputDeviceSetting.png" usemap="#DInputDeviceSetting_map" alt=""/>
+  <map id="DInputDeviceSetting_map" name="DInputDeviceSetting_map">
+<area target="_parent" href="http://doc.qt.io/qt-5/qobject.html" alt="QObject" shape="rect" coords="0,0,126,24"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a0f34a8aa200797530e64784466f7e5c1"><td class="memItemLeft" align="right" valign="top"><a id="a0f34a8aa200797530e64784466f7e5c1"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>Ptr</b> = <a class="elRef" href="http://doc.qt.io/qt-5/qsharedpointer.html">QSharedPointer</a>&lt; <a class="el" href="classDInputDeviceSetting.html">DInputDeviceSetting</a> &gt;</td></tr>
+<tr class="separator:a0f34a8aa200797530e64784466f7e5c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Public 槽</h2></td></tr>
+<tr class="memitem:a33e585cafccfa4a089340efdc727937b"><td class="memItemLeft" align="right" valign="top">DExpected&lt; quint32 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDeviceSetting.html#a33e585cafccfa4a089340efdc727937b">pressureSensitivity</a> (quint32 id)</td></tr>
+<tr class="memdesc:a33e585cafccfa4a089340efdc727937b"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取特定设备的压力感应级别  <a href="classDInputDeviceSetting.html#a33e585cafccfa4a089340efdc727937b">更多...</a><br /></td></tr>
+<tr class="separator:a33e585cafccfa4a089340efdc727937b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7b8b928f5bbaef4fc8d427846fe7206"><td class="memItemLeft" align="right" valign="top">DExpected&lt; quint32 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDeviceSetting.html#ab7b8b928f5bbaef4fc8d427846fe7206">rawSampleSize</a> (quint32 id)</td></tr>
+<tr class="memdesc:ab7b8b928f5bbaef4fc8d427846fe7206"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取特别设备的平滑窗口采样大小  <a href="classDInputDeviceSetting.html#ab7b8b928f5bbaef4fc8d427846fe7206">更多...</a><br /></td></tr>
+<tr class="separator:ab7b8b928f5bbaef4fc8d427846fe7206"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbf065103833327cf457e145d824170e"><td class="memItemLeft" align="right" valign="top">DExpected&lt; quint32 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDeviceSetting.html#afbf065103833327cf457e145d824170e">pressureThreshold</a> (quint32 id)</td></tr>
+<tr class="memdesc:afbf065103833327cf457e145d824170e"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取特定设备的压感事件阈值  <a href="classDInputDeviceSetting.html#afbf065103833327cf457e145d824170e">更多...</a><br /></td></tr>
+<tr class="separator:afbf065103833327cf457e145d824170e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bde9654965178e86a3e83a4e30c7381"><td class="memItemLeft" align="right" valign="top">DExpected&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDeviceSetting.html#a5bde9654965178e86a3e83a4e30c7381">forceProportions</a> (quint32 id)</td></tr>
+<tr class="memdesc:a5bde9654965178e86a3e83a4e30c7381"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取特定设备是否强制调整为输出的比例  <a href="classDInputDeviceSetting.html#a5bde9654965178e86a3e83a4e30c7381">更多...</a><br /></td></tr>
+<tr class="separator:a5bde9654965178e86a3e83a4e30c7381"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ca83368a4320f2b17c413d8ca354c95"><td class="memItemLeft" align="right" valign="top">DExpected&lt; <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDeviceSetting.html#a6ca83368a4320f2b17c413d8ca354c95">mapOutput</a> (quint32 id)</td></tr>
+<tr class="memdesc:a6ca83368a4320f2b17c413d8ca354c95"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取特定设备的输出映射(显示)  <a href="classDInputDeviceSetting.html#a6ca83368a4320f2b17c413d8ca354c95">更多...</a><br /></td></tr>
+<tr class="separator:a6ca83368a4320f2b17c413d8ca354c95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fa6f5f528700ac9945cfddf566468c6"><td class="memItemLeft" align="right" valign="top">DExpected&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDeviceSetting.html#a1fa6f5f528700ac9945cfddf566468c6">mouseEnterRemap</a> (quint32 id)</td></tr>
+<tr class="memdesc:a1fa6f5f528700ac9945cfddf566468c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取特定设备是否在进入新的显示时进行重新映射  <a href="classDInputDeviceSetting.html#a1fa6f5f528700ac9945cfddf566468c6">更多...</a><br /></td></tr>
+<tr class="separator:a1fa6f5f528700ac9945cfddf566468c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7c3216586ee321cf588e835ca757ef6"><td class="memItemLeft" align="right" valign="top">DExpected&lt; quint32 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDeviceSetting.html#ad7c3216586ee321cf588e835ca757ef6">suppress</a> (quint32 id)</td></tr>
+<tr class="memdesc:ad7c3216586ee321cf588e835ca757ef6"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取特定设备坐标或者压感变化事件之间的最小间隔  <a href="classDInputDeviceSetting.html#ad7c3216586ee321cf588e835ca757ef6">更多...</a><br /></td></tr>
+<tr class="separator:ad7c3216586ee321cf588e835ca757ef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad74dabf01e133c8276d61478600fb41c"><td class="memItemLeft" align="right" valign="top">DExpected&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDeviceSetting.html#ad74dabf01e133c8276d61478600fb41c">setPressureSensitivity</a> (quint32 id, quint32 sensitivity)</td></tr>
+<tr class="memdesc:ad74dabf01e133c8276d61478600fb41c"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置特定设备的压感灵敏度  <a href="classDInputDeviceSetting.html#ad74dabf01e133c8276d61478600fb41c">更多...</a><br /></td></tr>
+<tr class="separator:ad74dabf01e133c8276d61478600fb41c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeee342dff64a1ff71c6ca6075b4d991b"><td class="memItemLeft" align="right" valign="top">DExpected&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDeviceSetting.html#aeee342dff64a1ff71c6ca6075b4d991b">setRawSampleSize</a> (quint32 id, quint32 size)</td></tr>
+<tr class="memdesc:aeee342dff64a1ff71c6ca6075b4d991b"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置特定设备的平滑窗口取样大小  <a href="classDInputDeviceSetting.html#aeee342dff64a1ff71c6ca6075b4d991b">更多...</a><br /></td></tr>
+<tr class="separator:aeee342dff64a1ff71c6ca6075b4d991b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e4a0583400a0013fc823df27b5a1479"><td class="memItemLeft" align="right" valign="top">DExpected&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDeviceSetting.html#a4e4a0583400a0013fc823df27b5a1479">setPressureThreshold</a> (quint32 id, quint32 threshold)</td></tr>
+<tr class="memdesc:a4e4a0583400a0013fc823df27b5a1479"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置特定设备的压感事件阈值  <a href="classDInputDeviceSetting.html#a4e4a0583400a0013fc823df27b5a1479">更多...</a><br /></td></tr>
+<tr class="separator:a4e4a0583400a0013fc823df27b5a1479"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff5367dae157dfae5e8eb4a15fc867b3"><td class="memItemLeft" align="right" valign="top">DExpected&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDeviceSetting.html#aff5367dae157dfae5e8eb4a15fc867b3">setForceProportions</a> (quint32 id, bool force)</td></tr>
+<tr class="memdesc:aff5367dae157dfae5e8eb4a15fc867b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置特定设备是否强制调整为输出的比例  <a href="classDInputDeviceSetting.html#aff5367dae157dfae5e8eb4a15fc867b3">更多...</a><br /></td></tr>
+<tr class="separator:aff5367dae157dfae5e8eb4a15fc867b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d4aede8fbcd8022e876cce677fe9a05"><td class="memItemLeft" align="right" valign="top">DExpected&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDeviceSetting.html#a7d4aede8fbcd8022e876cce677fe9a05">setMouseEnterRemap</a> (quint32 id, bool remap)</td></tr>
+<tr class="memdesc:a7d4aede8fbcd8022e876cce677fe9a05"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置特定设备是否在鼠标进入新的输出的时候重新映射  <a href="classDInputDeviceSetting.html#a7d4aede8fbcd8022e876cce677fe9a05">更多...</a><br /></td></tr>
+<tr class="separator:a7d4aede8fbcd8022e876cce677fe9a05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4e545f32c715d313db35ee24db53ba2"><td class="memItemLeft" align="right" valign="top">DExpected&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDeviceSetting.html#ae4e545f32c715d313db35ee24db53ba2">setSuppress</a> (quint32 id, quint32 <a class="el" href="classDInputDeviceSetting.html#ad7c3216586ee321cf588e835ca757ef6">suppress</a>)</td></tr>
+<tr class="memdesc:ae4e545f32c715d313db35ee24db53ba2"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置特定设备坐标或者压感变化事件之间的最小间隔  <a href="classDInputDeviceSetting.html#ae4e545f32c715d313db35ee24db53ba2">更多...</a><br /></td></tr>
+<tr class="separator:ae4e545f32c715d313db35ee24db53ba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab668e61c36f3085ba2eabc4836d3f4bf"><td class="memItemLeft" align="right" valign="top">DExpected&lt; DInputKeyAction &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDeviceSetting.html#ab668e61c36f3085ba2eabc4836d3f4bf">keymap</a> (quint32 id, DInputKey key)</td></tr>
+<tr class="memdesc:ab668e61c36f3085ba2eabc4836d3f4bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取特定设备特定按键的行为  <a href="classDInputDeviceSetting.html#ab668e61c36f3085ba2eabc4836d3f4bf">更多...</a><br /></td></tr>
+<tr class="separator:ab668e61c36f3085ba2eabc4836d3f4bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab342640ba26a539cde0b35a698ee29bb"><td class="memItemLeft" align="right" valign="top">DExpected&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDeviceSetting.html#ab342640ba26a539cde0b35a698ee29bb">setKeymap</a> (quint32 id, DInputKey key, DInputKeyAction action)</td></tr>
+<tr class="memdesc:ab342640ba26a539cde0b35a698ee29bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置特定设备某个按键对应的行为  <a href="classDInputDeviceSetting.html#ab342640ba26a539cde0b35a698ee29bb">更多...</a><br /></td></tr>
+<tr class="separator:ab342640ba26a539cde0b35a698ee29bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+信号</h2></td></tr>
+<tr class="memitem:a212d793a42a41e48795257858bcd41fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDeviceSetting.html#a212d793a42a41e48795257858bcd41fb">disableTouchPadWhileMouseChanged</a> (bool disabled)</td></tr>
+<tr class="memdesc:a212d793a42a41e48795257858bcd41fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">属性disableTouchPadWhileMouse改变时触发的信号  <a href="classDInputDeviceSetting.html#a212d793a42a41e48795257858bcd41fb">更多...</a><br /></td></tr>
+<tr class="separator:a212d793a42a41e48795257858bcd41fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48197cceb41ee2ac2bf83b8c1586da0a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDeviceSetting.html#a48197cceb41ee2ac2bf83b8c1586da0a">doubleClickIntervalChanged</a> (quint32 interval)</td></tr>
+<tr class="memdesc:a48197cceb41ee2ac2bf83b8c1586da0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">属性doubleClickInterval改变时触发的信号  <a href="classDInputDeviceSetting.html#a48197cceb41ee2ac2bf83b8c1586da0a">更多...</a><br /></td></tr>
+<tr class="separator:a48197cceb41ee2ac2bf83b8c1586da0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46e29f34f00c1d51f272747ec9cbede1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDeviceSetting.html#a46e29f34f00c1d51f272747ec9cbede1">dragThresholdChanged</a> (quint32 distance)</td></tr>
+<tr class="memdesc:a46e29f34f00c1d51f272747ec9cbede1"><td class="mdescLeft">&#160;</td><td class="mdescRight">属性dragThreshold改变时触发的信号  <a href="classDInputDeviceSetting.html#a46e29f34f00c1d51f272747ec9cbede1">更多...</a><br /></td></tr>
+<tr class="separator:a46e29f34f00c1d51f272747ec9cbede1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecd9b64014a7ac3f6e2b29808de7a9d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDeviceSetting.html#aecd9b64014a7ac3f6e2b29808de7a9d0">repeatEnabledChanged</a> (bool enabled)</td></tr>
+<tr class="memdesc:aecd9b64014a7ac3f6e2b29808de7a9d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">属性repeatEnabled改变时触发的信号  <a href="classDInputDeviceSetting.html#aecd9b64014a7ac3f6e2b29808de7a9d0">更多...</a><br /></td></tr>
+<tr class="separator:aecd9b64014a7ac3f6e2b29808de7a9d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4353eaa12d5d34172069ef345f4a5341"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDeviceSetting.html#a4353eaa12d5d34172069ef345f4a5341">repeatDelayChanged</a> (quint32 delay)</td></tr>
+<tr class="memdesc:a4353eaa12d5d34172069ef345f4a5341"><td class="mdescLeft">&#160;</td><td class="mdescRight">属性repeatDelay改变时触发的信号  <a href="classDInputDeviceSetting.html#a4353eaa12d5d34172069ef345f4a5341">更多...</a><br /></td></tr>
+<tr class="separator:a4353eaa12d5d34172069ef345f4a5341"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a985fcdd50bdb596e50ecb365de4fe724"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDeviceSetting.html#a985fcdd50bdb596e50ecb365de4fe724">repeatIntervalChanged</a> (quint32 interval)</td></tr>
+<tr class="memdesc:a985fcdd50bdb596e50ecb365de4fe724"><td class="mdescLeft">&#160;</td><td class="mdescRight">属性repeatInterval改变时触发的信号  <a href="classDInputDeviceSetting.html#a985fcdd50bdb596e50ecb365de4fe724">更多...</a><br /></td></tr>
+<tr class="separator:a985fcdd50bdb596e50ecb365de4fe724"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee6b82601e143a1f2e002d403d4fbed2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDeviceSetting.html#aee6b82601e143a1f2e002d403d4fbed2">cursorBlinkIntervalChanged</a> (qint32 interval)</td></tr>
+<tr class="memdesc:aee6b82601e143a1f2e002d403d4fbed2"><td class="mdescLeft">&#160;</td><td class="mdescRight">属性cursorBlinkInterval改变时触发的信号  <a href="classDInputDeviceSetting.html#aee6b82601e143a1f2e002d403d4fbed2">更多...</a><br /></td></tr>
+<tr class="separator:aee6b82601e143a1f2e002d403d4fbed2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02b78697bf0fe53a5cec62d7199c4913"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDeviceSetting.html#a02b78697bf0fe53a5cec62d7199c4913">wheelSpeedChanged</a> (quint32 speed)</td></tr>
+<tr class="memdesc:a02b78697bf0fe53a5cec62d7199c4913"><td class="mdescLeft">&#160;</td><td class="mdescRight">属性wheelSpeed改变时触发的信号  <a href="classDInputDeviceSetting.html#a02b78697bf0fe53a5cec62d7199c4913">更多...</a><br /></td></tr>
+<tr class="separator:a02b78697bf0fe53a5cec62d7199c4913"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ab245c8d5e36000769608f9a139d09c88"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDeviceSetting.html#ab245c8d5e36000769608f9a139d09c88">disableTouchPadWhileMouse</a> () const</td></tr>
+<tr class="memdesc:ab245c8d5e36000769608f9a139d09c88"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取是否在连接鼠标时禁用触摸板  <a href="classDInputDeviceSetting.html#ab245c8d5e36000769608f9a139d09c88">更多...</a><br /></td></tr>
+<tr class="separator:ab245c8d5e36000769608f9a139d09c88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacab6018e57e4bb4f0e0af8d54a6908d"><td class="memItemLeft" align="right" valign="top">quint32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDeviceSetting.html#aacab6018e57e4bb4f0e0af8d54a6908d">doubleClickInterval</a> () const</td></tr>
+<tr class="memdesc:aacab6018e57e4bb4f0e0af8d54a6908d"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取鼠标和触摸板双击时间间隔  <a href="classDInputDeviceSetting.html#aacab6018e57e4bb4f0e0af8d54a6908d">更多...</a><br /></td></tr>
+<tr class="separator:aacab6018e57e4bb4f0e0af8d54a6908d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac533d35024f1e9e5796413372984a0f3"><td class="memItemLeft" align="right" valign="top">quint32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDeviceSetting.html#ac533d35024f1e9e5796413372984a0f3">dragThreshold</a> () const</td></tr>
+<tr class="memdesc:ac533d35024f1e9e5796413372984a0f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取鼠标和触摸板产生拖拽事件的最小移动距离  <a href="classDInputDeviceSetting.html#ac533d35024f1e9e5796413372984a0f3">更多...</a><br /></td></tr>
+<tr class="separator:ac533d35024f1e9e5796413372984a0f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42dcd59f4f09b43b64e8d235a3c141d4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDeviceSetting.html#a42dcd59f4f09b43b64e8d235a3c141d4">repeatEnabled</a> () const</td></tr>
+<tr class="memdesc:a42dcd59f4f09b43b64e8d235a3c141d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取键盘是否开启按键重复  <a href="classDInputDeviceSetting.html#a42dcd59f4f09b43b64e8d235a3c141d4">更多...</a><br /></td></tr>
+<tr class="separator:a42dcd59f4f09b43b64e8d235a3c141d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5d8ee32c01ee65613acdb86114475ec"><td class="memItemLeft" align="right" valign="top">quint32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDeviceSetting.html#aa5d8ee32c01ee65613acdb86114475ec">repeatDelay</a> () const</td></tr>
+<tr class="memdesc:aa5d8ee32c01ee65613acdb86114475ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取按键重复触发延迟  <a href="classDInputDeviceSetting.html#aa5d8ee32c01ee65613acdb86114475ec">更多...</a><br /></td></tr>
+<tr class="separator:aa5d8ee32c01ee65613acdb86114475ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf049b4088365fa9a624638619819c4d"><td class="memItemLeft" align="right" valign="top">quint32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDeviceSetting.html#aaf049b4088365fa9a624638619819c4d">repeatInterval</a> () const</td></tr>
+<tr class="memdesc:aaf049b4088365fa9a624638619819c4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取按键重复触发间隔时间  <a href="classDInputDeviceSetting.html#aaf049b4088365fa9a624638619819c4d">更多...</a><br /></td></tr>
+<tr class="separator:aaf049b4088365fa9a624638619819c4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3ffc278504a60151fdeb4be765e5696"><td class="memItemLeft" align="right" valign="top">qint32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDeviceSetting.html#aa3ffc278504a60151fdeb4be765e5696">cursorBlinkInterval</a> () const</td></tr>
+<tr class="memdesc:aa3ffc278504a60151fdeb4be765e5696"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取光标闪烁间隔时间  <a href="classDInputDeviceSetting.html#aa3ffc278504a60151fdeb4be765e5696">更多...</a><br /></td></tr>
+<tr class="separator:aa3ffc278504a60151fdeb4be765e5696"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61124fd3c89cd7d29669da2ff9da81a8"><td class="memItemLeft" align="right" valign="top">quint32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDeviceSetting.html#a61124fd3c89cd7d29669da2ff9da81a8">wheelSpeed</a> () const</td></tr>
+<tr class="memdesc:a61124fd3c89cd7d29669da2ff9da81a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取滚轮速度  <a href="classDInputDeviceSetting.html#a61124fd3c89cd7d29669da2ff9da81a8">更多...</a><br /></td></tr>
+<tr class="separator:a61124fd3c89cd7d29669da2ff9da81a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf2c73b62fcf17c06f05d5b98923879f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDeviceSetting.html#adf2c73b62fcf17c06f05d5b98923879f">setDisableTouchPadWhileMouse</a> (bool disabled)</td></tr>
+<tr class="memdesc:adf2c73b62fcf17c06f05d5b98923879f"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置是否在连接鼠标时禁用触摸板  <a href="classDInputDeviceSetting.html#adf2c73b62fcf17c06f05d5b98923879f">更多...</a><br /></td></tr>
+<tr class="separator:adf2c73b62fcf17c06f05d5b98923879f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac04fc1af17134e26f2066131d6923542"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDeviceSetting.html#ac04fc1af17134e26f2066131d6923542">setDoubleClickInterval</a> (quint32 interval)</td></tr>
+<tr class="memdesc:ac04fc1af17134e26f2066131d6923542"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置鼠标和触摸板双击事件的时间间隔  <a href="classDInputDeviceSetting.html#ac04fc1af17134e26f2066131d6923542">更多...</a><br /></td></tr>
+<tr class="separator:ac04fc1af17134e26f2066131d6923542"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adaa448d636203d81410771e1e2beed3c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDeviceSetting.html#adaa448d636203d81410771e1e2beed3c">setDragThreshold</a> (quint32 distance)</td></tr>
+<tr class="memdesc:adaa448d636203d81410771e1e2beed3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置拖拽事件的最小距离  <a href="classDInputDeviceSetting.html#adaa448d636203d81410771e1e2beed3c">更多...</a><br /></td></tr>
+<tr class="separator:adaa448d636203d81410771e1e2beed3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2916b147b022fc65e333620ad8e5370"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDeviceSetting.html#ae2916b147b022fc65e333620ad8e5370">setRepeatEnabled</a> (bool enabled)</td></tr>
+<tr class="memdesc:ae2916b147b022fc65e333620ad8e5370"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置是否开启按键重复  <a href="classDInputDeviceSetting.html#ae2916b147b022fc65e333620ad8e5370">更多...</a><br /></td></tr>
+<tr class="separator:ae2916b147b022fc65e333620ad8e5370"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a183f0aa5401abe78d326b9beb2972192"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDeviceSetting.html#a183f0aa5401abe78d326b9beb2972192">setRepeatDelay</a> (quint32 delay)</td></tr>
+<tr class="memdesc:a183f0aa5401abe78d326b9beb2972192"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置按键重复触发延迟  <a href="classDInputDeviceSetting.html#a183f0aa5401abe78d326b9beb2972192">更多...</a><br /></td></tr>
+<tr class="separator:a183f0aa5401abe78d326b9beb2972192"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39f81f8ec765f486bb8fe39378239cdc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDeviceSetting.html#a39f81f8ec765f486bb8fe39378239cdc">setRepeatInterval</a> (quint32 interval)</td></tr>
+<tr class="memdesc:a39f81f8ec765f486bb8fe39378239cdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置按键重复事件触发时间间隔  <a href="classDInputDeviceSetting.html#a39f81f8ec765f486bb8fe39378239cdc">更多...</a><br /></td></tr>
+<tr class="separator:a39f81f8ec765f486bb8fe39378239cdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59e8212b18401866fb58453abb588c57"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDeviceSetting.html#a59e8212b18401866fb58453abb588c57">setCursorBlinkInterval</a> (qint32 interval)</td></tr>
+<tr class="memdesc:a59e8212b18401866fb58453abb588c57"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置光标闪烁时间间隔  <a href="classDInputDeviceSetting.html#a59e8212b18401866fb58453abb588c57">更多...</a><br /></td></tr>
+<tr class="separator:a59e8212b18401866fb58453abb588c57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c2e68d8a4712a4d36e210b73d907fe5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDInputDeviceSetting.html#a7c2e68d8a4712a4d36e210b73d907fe5">setWheelSpeed</a> (quint32 speed)</td></tr>
+<tr class="memdesc:a7c2e68d8a4712a4d36e210b73d907fe5"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置滚轮速度  <a href="classDInputDeviceSetting.html#a7c2e68d8a4712a4d36e210b73d907fe5">更多...</a><br /></td></tr>
+<tr class="separator:a7c2e68d8a4712a4d36e210b73d907fe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_qobject"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_qobject')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el"  href="http://doc.qt.io/qt-5/qobject.html">QObject</a></td></tr>
+<tr class="memitem:metaObject inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="metaObject"></a>
+virtual const <a class="elRef" href="http://doc.qt.io/qt-5/qmetaobject.html">QMetaObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#metaObject">metaObject</a> () const const</td></tr>
+<tr class="separator:metaObject inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:QObject inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="QObject"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#QObject">QObject</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a>)</td></tr>
+<tr class="separator:QObject inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:event inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="event"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#event">event</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qevent.html">QEvent</a> *e)</td></tr>
+<tr class="separator:event inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:eventFilter inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="eventFilter"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#eventFilter">eventFilter</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *watched, <a class="elRef" href="http://doc.qt.io/qt-5/qevent.html">QEvent</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#event">event</a>)</td></tr>
+<tr class="separator:eventFilter inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:objectName-prop inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="objectName-prop"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#objectName-prop">objectName</a> () const const</td></tr>
+<tr class="separator:objectName-prop inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:objectName-prop inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="objectName-prop"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#objectName-prop">setObjectName</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;name)</td></tr>
+<tr class="separator:objectName-prop inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:isWidgetType inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="isWidgetType"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#isWidgetType">isWidgetType</a> () const const</td></tr>
+<tr class="separator:isWidgetType inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:isWindowType inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="isWindowType"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#isWindowType">isWindowType</a> () const const</td></tr>
+<tr class="separator:isWindowType inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:signalsBlocked inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="signalsBlocked"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#signalsBlocked">signalsBlocked</a> () const const</td></tr>
+<tr class="separator:signalsBlocked inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:blockSignals inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="blockSignals"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#blockSignals">blockSignals</a> (bool block)</td></tr>
+<tr class="separator:blockSignals inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:thread inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="thread"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qthread.html">QThread</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#thread">thread</a> () const const</td></tr>
+<tr class="separator:thread inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:moveToThread inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="moveToThread"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#moveToThread">moveToThread</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qthread.html">QThread</a> *targetThread)</td></tr>
+<tr class="separator:moveToThread inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:startTimer inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="startTimer"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#startTimer">startTimer</a> (int interval, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#TimerType-enum">Qt::TimerType</a> timerType)</td></tr>
+<tr class="separator:startTimer inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:startTimer-1 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="startTimer-1"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#startTimer-1">startTimer</a> (std::chrono::milliseconds time, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#TimerType-enum">Qt::TimerType</a> timerType)</td></tr>
+<tr class="separator:startTimer-1 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:killTimer inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="killTimer"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#killTimer">killTimer</a> (int id)</td></tr>
+<tr class="separator:killTimer inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:findChild inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="findChild"></a>
+T&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#findChild">findChild</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;name, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#FindChildOption-enum">Qt::FindChildOptions</a> options) const const</td></tr>
+<tr class="separator:findChild inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:findChildren inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="findChildren"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qlist.html">QList</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#findChildren">findChildren</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;name, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#FindChildOption-enum">Qt::FindChildOptions</a> options) const const</td></tr>
+<tr class="separator:findChildren inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:findChildren-1 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="findChildren-1"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qlist.html">QList</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject-obsolete.html#findChildren-1">findChildren</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qregexp.html">QRegExp</a> &amp;regExp, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#FindChildOption-enum">Qt::FindChildOptions</a> options) const const</td></tr>
+<tr class="separator:findChildren-1 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:findChildren-2 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="findChildren-2"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qlist.html">QList</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#findChildren-2">findChildren</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qregularexpression.html">QRegularExpression</a> &amp;re, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#FindChildOption-enum">Qt::FindChildOptions</a> options) const const</td></tr>
+<tr class="separator:findChildren-2 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:children inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="children"></a>
+const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#QObjectList-typedef">QObjectList</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#children">children</a> () const const</td></tr>
+<tr class="separator:children inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setParent inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="setParent"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#setParent">setParent</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a>)</td></tr>
+<tr class="separator:setParent inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:installEventFilter inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="installEventFilter"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#installEventFilter">installEventFilter</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *filterObj)</td></tr>
+<tr class="separator:installEventFilter inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:removeEventFilter inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="removeEventFilter"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#removeEventFilter">removeEventFilter</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *obj)</td></tr>
+<tr class="separator:removeEventFilter inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connect-2 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect-2"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#connect-2">connect</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const char *signal, const char *method, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#ConnectionType-enum">Qt::ConnectionType</a> type) const const</td></tr>
+<tr class="separator:connect-2 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnect-2 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect-2"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#disconnect-2">disconnect</a> (const char *signal, const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const char *method) const const</td></tr>
+<tr class="separator:disconnect-2 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnect-3 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect-3"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#disconnect-3">disconnect</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const char *method) const const</td></tr>
+<tr class="separator:disconnect-3 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dumpObjectTree-1 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="dumpObjectTree-1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject-obsolete.html#dumpObjectTree-1">dumpObjectTree</a> ()</td></tr>
+<tr class="separator:dumpObjectTree-1 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dumpObjectInfo-1 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="dumpObjectInfo-1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject-obsolete.html#dumpObjectInfo-1">dumpObjectInfo</a> ()</td></tr>
+<tr class="separator:dumpObjectInfo-1 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dumpObjectTree inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="dumpObjectTree"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#dumpObjectTree">dumpObjectTree</a> () const const</td></tr>
+<tr class="separator:dumpObjectTree inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dumpObjectInfo inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="dumpObjectInfo"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#dumpObjectInfo">dumpObjectInfo</a> () const const</td></tr>
+<tr class="separator:dumpObjectInfo inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setProperty inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="setProperty"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#setProperty">setProperty</a> (const char *name, const <a class="elRef" href="http://doc.qt.io/qt-5/qvariant.html">QVariant</a> &amp;value)</td></tr>
+<tr class="separator:setProperty inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:property inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="property"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qvariant.html">QVariant</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#property">property</a> (const char *name) const const</td></tr>
+<tr class="separator:property inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dynamicPropertyNames inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="dynamicPropertyNames"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qlist.html">QList</a>&lt; <a class="elRef" href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#dynamicPropertyNames">dynamicPropertyNames</a> () const const</td></tr>
+<tr class="separator:dynamicPropertyNames inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:destroyed inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="destroyed"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#destroyed">destroyed</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *obj)</td></tr>
+<tr class="separator:destroyed inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:objectNameChanged inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="objectNameChanged"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#objectNameChanged">objectNameChanged</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#objectName-prop">objectName</a>)</td></tr>
+<tr class="separator:objectNameChanged inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:parent inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="parent"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a> () const const</td></tr>
+<tr class="separator:parent inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:inherits inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="inherits"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#inherits">inherits</a> (const char *className) const const</td></tr>
+<tr class="separator:inherits inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:deleteLater inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="deleteLater"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#deleteLater">deleteLater</a> ()</td></tr>
+<tr class="separator:deleteLater inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_DISABLE_COPY inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_DISABLE_COPY"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_DISABLE_COPY">Q_DISABLE_COPY</a> (Class)</td></tr>
+<tr class="separator:Q_DISABLE_COPY inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_DISABLE_MOVE inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_DISABLE_MOVE"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_DISABLE_MOVE">Q_DISABLE_MOVE</a> (Class)</td></tr>
+<tr class="separator:Q_DISABLE_MOVE inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_DISABLE_COPY_MOVE inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_DISABLE_COPY_MOVE"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_DISABLE_COPY_MOVE">Q_DISABLE_COPY_MOVE</a> (Class)</td></tr>
+<tr class="separator:Q_DISABLE_COPY_MOVE inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:qobject_cast inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="qobject_cast"></a>
+T&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#qobject_cast">qobject_cast</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *object)</td></tr>
+<tr class="separator:qobject_cast inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:qobject_cast-1 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="qobject_cast-1"></a>
+T&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#qobject_cast-1">qobject_cast</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *object)</td></tr>
+<tr class="separator:qobject_cast-1 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:qFindChild inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="qFindChild"></a>
+T&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject-obsolete.html#qFindChild">qFindChild</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *obj, const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;name)</td></tr>
+<tr class="separator:qFindChild inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:qFindChildren inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="qFindChildren"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qlist.html">QList</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject-obsolete.html#qFindChildren">qFindChildren</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *obj, const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;name)</td></tr>
+<tr class="separator:qFindChildren inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:qFindChildren-1 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="qFindChildren-1"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qlist.html">QList</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#qFindChildren-1">qFindChildren</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *obj, const <a class="elRef" href="http://doc.qt.io/qt-5/qregexp.html">QRegExp</a> &amp;regExp)</td></tr>
+<tr class="separator:qFindChildren-1 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_CLASSINFO inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_CLASSINFO"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_CLASSINFO">Q_CLASSINFO</a> (Name, Value)</td></tr>
+<tr class="separator:Q_CLASSINFO inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_INTERFACES inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_INTERFACES"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_INTERFACES">Q_INTERFACES</a> (...)</td></tr>
+<tr class="separator:Q_INTERFACES inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_PROPERTY inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_PROPERTY"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a> (...)</td></tr>
+<tr class="separator:Q_PROPERTY inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_ENUMS inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_ENUMS"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject-obsolete.html#Q_ENUMS">Q_ENUMS</a> (...)</td></tr>
+<tr class="separator:Q_ENUMS inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_FLAGS inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_FLAGS"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject-obsolete.html#Q_FLAGS">Q_FLAGS</a> (...)</td></tr>
+<tr class="separator:Q_FLAGS inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_ENUM inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_ENUM"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_ENUM">Q_ENUM</a> (...)</td></tr>
+<tr class="separator:Q_ENUM inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_FLAG inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_FLAG"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_FLAG">Q_FLAG</a> (...)</td></tr>
+<tr class="separator:Q_FLAG inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_ENUM_NS inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_ENUM_NS"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_ENUM_NS">Q_ENUM_NS</a> (...)</td></tr>
+<tr class="separator:Q_ENUM_NS inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_FLAG_NS inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_FLAG_NS"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_FLAG_NS">Q_FLAG_NS</a> (...)</td></tr>
+<tr class="separator:Q_FLAG_NS inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_OBJECT inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_OBJECT"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">Q_OBJECT</a> Q_OBJECT</td></tr>
+<tr class="separator:Q_OBJECT inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_GADGET inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_GADGET"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_GADGET">Q_GADGET</a> Q_GADGET</td></tr>
+<tr class="separator:Q_GADGET inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_NAMESPACE inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_NAMESPACE"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_NAMESPACE">Q_NAMESPACE</a> Q_NAMESPACE</td></tr>
+<tr class="separator:Q_NAMESPACE inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_NAMESPACE_EXPORT inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_NAMESPACE_EXPORT"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_NAMESPACE_EXPORT">Q_NAMESPACE_EXPORT</a> (EXPORT_MACRO)</td></tr>
+<tr class="separator:Q_NAMESPACE_EXPORT inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_SIGNALS inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_SIGNALS"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SIGNALS">Q_SIGNALS</a> Q_SIGNALS</td></tr>
+<tr class="separator:Q_SIGNALS inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_SIGNAL inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_SIGNAL"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SIGNAL">Q_SIGNAL</a> Q_SIGNAL</td></tr>
+<tr class="separator:Q_SIGNAL inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_SLOTS inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_SLOTS"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SLOTS">Q_SLOTS</a> Q_SLOTS</td></tr>
+<tr class="separator:Q_SLOTS inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_SLOT inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_SLOT"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SLOT">Q_SLOT</a> Q_SLOT</td></tr>
+<tr class="separator:Q_SLOT inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_EMIT inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_EMIT"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_EMIT">Q_EMIT</a> Q_EMIT</td></tr>
+<tr class="separator:Q_EMIT inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_INVOKABLE inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_INVOKABLE"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_INVOKABLE">Q_INVOKABLE</a> Q_INVOKABLE</td></tr>
+<tr class="separator:Q_INVOKABLE inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_REVISION inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_REVISION"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_REVISION">Q_REVISION</a> Q_REVISION</td></tr>
+<tr class="separator:Q_REVISION inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_SET_OBJECT_NAME inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_SET_OBJECT_NAME"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SET_OBJECT_NAME">Q_SET_OBJECT_NAME</a> (<a class="el" href="classObject.html">Object</a>)</td></tr>
+<tr class="separator:Q_SET_OBJECT_NAME inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:QT_NO_NARROWING_CONVERSIONS_IN_CONNECT inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="QT_NO_NARROWING_CONVERSIONS_IN_CONNECT"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#QT_NO_NARROWING_CONVERSIONS_IN_CONNECT">QT_NO_NARROWING_CONVERSIONS_IN_CONNECT</a> QT_NO_NARROWING_CONVERSIONS_IN_CONNECT</td></tr>
+<tr class="separator:QT_NO_NARROWING_CONVERSIONS_IN_CONNECT inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:a61f5b82025b86f1afd1e8b37021e55b8"><td class="memItemLeft" align="right" valign="top"><a id="a61f5b82025b86f1afd1e8b37021e55b8"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>disableTouchPadWhileMouse</b></td></tr>
+<tr class="separator:a61f5b82025b86f1afd1e8b37021e55b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a264d7b9e0461fcfa4f70c901fcfa3d40"><td class="memItemLeft" align="right" valign="top"><a id="a264d7b9e0461fcfa4f70c901fcfa3d40"></a>
+quint32&#160;</td><td class="memItemRight" valign="bottom"><b>doubleClickInterval</b></td></tr>
+<tr class="separator:a264d7b9e0461fcfa4f70c901fcfa3d40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5579c3e2f4917aaa12c644ef1022f9c2"><td class="memItemLeft" align="right" valign="top"><a id="a5579c3e2f4917aaa12c644ef1022f9c2"></a>
+quint32&#160;</td><td class="memItemRight" valign="bottom"><b>dragThreshold</b></td></tr>
+<tr class="separator:a5579c3e2f4917aaa12c644ef1022f9c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7153d15c8a7db537709f086a68c59efd"><td class="memItemLeft" align="right" valign="top"><a id="a7153d15c8a7db537709f086a68c59efd"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>repeatEnabled</b></td></tr>
+<tr class="separator:a7153d15c8a7db537709f086a68c59efd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfb5afecf28cde8b05e321351c773a75"><td class="memItemLeft" align="right" valign="top"><a id="abfb5afecf28cde8b05e321351c773a75"></a>
+quint32&#160;</td><td class="memItemRight" valign="bottom"><b>repeatDelay</b></td></tr>
+<tr class="separator:abfb5afecf28cde8b05e321351c773a75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dce8b605a1841007963bb6786bffd32"><td class="memItemLeft" align="right" valign="top"><a id="a2dce8b605a1841007963bb6786bffd32"></a>
+quint32&#160;</td><td class="memItemRight" valign="bottom"><b>repeatInterval</b></td></tr>
+<tr class="separator:a2dce8b605a1841007963bb6786bffd32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02fad570aeb7d96f57782e165f01e7a4"><td class="memItemLeft" align="right" valign="top"><a id="a02fad570aeb7d96f57782e165f01e7a4"></a>
+qint32&#160;</td><td class="memItemRight" valign="bottom"><b>cursorBlinkInterval</b></td></tr>
+<tr class="separator:a02fad570aeb7d96f57782e165f01e7a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26729a73511e064a9d864aaa9b854a62"><td class="memItemLeft" align="right" valign="top"><a id="a26729a73511e064a9d864aaa9b854a62"></a>
+quint32&#160;</td><td class="memItemRight" valign="bottom"><b>wheelSpeed</b></td></tr>
+<tr class="separator:a26729a73511e064a9d864aaa9b854a62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header properties_qobject"><td colspan="2" onclick="javascript:toggleInherit('properties_qobject')"><img src="closed.png" alt="-"/>&#160;属性 继承自 <a class="el"  href="http://doc.qt.io/qt-5/qobject.html">QObject</a></td></tr>
+<tr class="memitem:objectName-prop inherit properties_qobject"><td class="memItemLeft" align="right" valign="top"><a id="objectName-prop"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#objectName-prop">objectName</a></td></tr>
+<tr class="separator:objectName-prop inherit properties_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+友元</h2></td></tr>
+<tr class="memitem:aea4d5bafc5183eb2314a562d31a47a39"><td class="memItemLeft" align="right" valign="top"><a id="aea4d5bafc5183eb2314a562d31a47a39"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>DInputDeviceManager</b></td></tr>
+<tr class="separator:aea4d5bafc5183eb2314a562d31a47a39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pub_static_methods_qobject"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_qobject')"><img src="closed.png" alt="-"/>&#160;静态 Public 成员函数 继承自 <a class="el"  href="http://doc.qt.io/qt-5/qobject.html">QObject</a></td></tr>
+<tr class="memitem:tr inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="tr"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#tr">tr</a> (const char *sourceText, const char *disambiguation, int n)</td></tr>
+<tr class="separator:tr inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:trUtf8 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="trUtf8"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject-obsolete.html#trUtf8">trUtf8</a> (const char *sourceText, const char *disambiguation, int n)</td></tr>
+<tr class="separator:trUtf8 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connect inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#connect">connect</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const char *signal, const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const char *method, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#ConnectionType-enum">Qt::ConnectionType</a> type)</td></tr>
+<tr class="separator:connect inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connect-1 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect-1"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#connect-1">connect</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const <a class="elRef" href="http://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;signal, const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const <a class="elRef" href="http://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;method, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#ConnectionType-enum">Qt::ConnectionType</a> type)</td></tr>
+<tr class="separator:connect-1 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connect-3 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect-3"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#connect-3">connect</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#sender">sender</a>, PointerToMemberFunction signal, const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, PointerToMemberFunction method, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#ConnectionType-enum">Qt::ConnectionType</a> type)</td></tr>
+<tr class="separator:connect-3 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connect-4 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect-4"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#connect-4">connect</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#sender">sender</a>, PointerToMemberFunction signal, Functor functor)</td></tr>
+<tr class="separator:connect-4 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connect-5 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect-5"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#connect-5">connect</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#sender">sender</a>, PointerToMemberFunction signal, const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *context, Functor functor, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#ConnectionType-enum">Qt::ConnectionType</a> type)</td></tr>
+<tr class="separator:connect-5 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnect inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#disconnect">disconnect</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const char *signal, const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const char *method)</td></tr>
+<tr class="separator:disconnect inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnect-1 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect-1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#disconnect-1">disconnect</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const <a class="elRef" href="http://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;signal, const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const <a class="elRef" href="http://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;method)</td></tr>
+<tr class="separator:disconnect-1 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnect-4 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect-4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#disconnect-4">disconnect</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a> &amp;connection)</td></tr>
+<tr class="separator:disconnect-4 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnect-5 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect-5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#disconnect-5">disconnect</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#sender">sender</a>, PointerToMemberFunction signal, const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, PointerToMemberFunction method)</td></tr>
+<tr class="separator:disconnect-5 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_qobject"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_qobject')"><img src="closed.png" alt="-"/>&#160;Public 属性 继承自 <a class="el"  href="http://doc.qt.io/qt-5/qobject.html">QObject</a></td></tr>
+<tr class="memitem:QObjectList-typedef inherit pub_attribs_qobject"><td class="memItemLeft" align="right" valign="top"><a id="QObjectList-typedef"></a>
+typedef&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#QObjectList-typedef">QObjectList</a></td></tr>
+<tr class="separator:QObjectList-typedef inherit pub_attribs_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_qobject"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_qobject')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el"  href="http://doc.qt.io/qt-5/qobject.html">QObject</a></td></tr>
+<tr class="memitem:sender inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="sender"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#sender">sender</a> () const const</td></tr>
+<tr class="separator:sender inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:senderSignalIndex inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="senderSignalIndex"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#senderSignalIndex">senderSignalIndex</a> () const const</td></tr>
+<tr class="separator:senderSignalIndex inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:receivers inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="receivers"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#receivers">receivers</a> (const char *signal) const const</td></tr>
+<tr class="separator:receivers inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:isSignalConnected inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="isSignalConnected"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#isSignalConnected">isSignalConnected</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;signal) const const</td></tr>
+<tr class="separator:isSignalConnected inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:timerEvent inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="timerEvent"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#timerEvent">timerEvent</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qtimerevent.html">QTimerEvent</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#event">event</a>)</td></tr>
+<tr class="separator:timerEvent inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:childEvent inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="childEvent"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#childEvent">childEvent</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qchildevent.html">QChildEvent</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#event">event</a>)</td></tr>
+<tr class="separator:childEvent inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:customEvent inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="customEvent"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#customEvent">customEvent</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qevent.html">QEvent</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#event">event</a>)</td></tr>
+<tr class="separator:customEvent inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connectNotify inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connectNotify"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#connectNotify">connectNotify</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;signal)</td></tr>
+<tr class="separator:connectNotify inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnectNotify inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnectNotify"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#disconnectNotify">disconnectNotify</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;signal)</td></tr>
+<tr class="separator:disconnectNotify inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="aa3ffc278504a60151fdeb4be765e5696"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3ffc278504a60151fdeb4be765e5696">&#9670;&nbsp;</a></span>cursorBlinkInterval()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">qint32 DInputDeviceSetting::cursorBlinkInterval </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取光标闪烁间隔时间 </p>
+<dl class="section return"><dt>返回</dt><dd>光标闪烁的间隔时间 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>cursorBlinkInterval </dd></dl>
+
+</div>
+</div>
+<a id="aee6b82601e143a1f2e002d403d4fbed2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee6b82601e143a1f2e002d403d4fbed2">&#9670;&nbsp;</a></span>cursorBlinkIntervalChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DInputDeviceSetting::cursorBlinkIntervalChanged </td>
+          <td>(</td>
+          <td class="paramtype">qint32&#160;</td>
+          <td class="paramname"><em>interval</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>属性cursorBlinkInterval改变时触发的信号 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">interval</td><td>光标闪烁的间隔时间 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab245c8d5e36000769608f9a139d09c88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab245c8d5e36000769608f9a139d09c88">&#9670;&nbsp;</a></span>disableTouchPadWhileMouse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DInputDeviceSetting::disableTouchPadWhileMouse </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取是否在连接鼠标时禁用触摸板 </p>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">true</td><td>在连接鼠标时禁用触摸板 </td></tr>
+    <tr><td class="paramname">false</td><td>在连接鼠标时不禁用触摸板 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a212d793a42a41e48795257858bcd41fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a212d793a42a41e48795257858bcd41fb">&#9670;&nbsp;</a></span>disableTouchPadWhileMouseChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DInputDeviceSetting::disableTouchPadWhileMouseChanged </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>disabled</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>属性disableTouchPadWhileMouse改变时触发的信号 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">disabled</td><td>是否禁用触摸板 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aacab6018e57e4bb4f0e0af8d54a6908d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacab6018e57e4bb4f0e0af8d54a6908d">&#9670;&nbsp;</a></span>doubleClickInterval()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">quint32 DInputDeviceSetting::doubleClickInterval </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取鼠标和触摸板双击时间间隔 </p>
+<dl class="section see"><dt>参见</dt><dd>doubleClickInterval </dd></dl>
+
+</div>
+</div>
+<a id="a48197cceb41ee2ac2bf83b8c1586da0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48197cceb41ee2ac2bf83b8c1586da0a">&#9670;&nbsp;</a></span>doubleClickIntervalChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DInputDeviceSetting::doubleClickIntervalChanged </td>
+          <td>(</td>
+          <td class="paramtype">quint32&#160;</td>
+          <td class="paramname"><em>interval</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>属性doubleClickInterval改变时触发的信号 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">interval</td><td>双击事件的时间间隔 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac533d35024f1e9e5796413372984a0f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac533d35024f1e9e5796413372984a0f3">&#9670;&nbsp;</a></span>dragThreshold()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">quint32 DInputDeviceSetting::dragThreshold </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取鼠标和触摸板产生拖拽事件的最小移动距离 </p>
+<dl class="section see"><dt>参见</dt><dd>dragThreshold </dd></dl>
+
+</div>
+</div>
+<a id="a46e29f34f00c1d51f272747ec9cbede1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46e29f34f00c1d51f272747ec9cbede1">&#9670;&nbsp;</a></span>dragThresholdChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DInputDeviceSetting::dragThresholdChanged </td>
+          <td>(</td>
+          <td class="paramtype">quint32&#160;</td>
+          <td class="paramname"><em>distance</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>属性dragThreshold改变时触发的信号 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">distance</td><td>触发拖拽事件的最小间隔 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5bde9654965178e86a3e83a4e30c7381"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bde9654965178e86a3e83a4e30c7381">&#9670;&nbsp;</a></span>forceProportions</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DExpected&lt; bool &gt; DInputDeviceSetting::forceProportions </td>
+          <td>(</td>
+          <td class="paramtype">quint32&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取特定设备是否强制调整为输出的比例 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>设备id </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>特定设备是否强制调整为输出的比例的DExpected对象</dd></dl>
+<p>数位板相关的设置 </p>
+
+</div>
+</div>
+<a id="ab668e61c36f3085ba2eabc4836d3f4bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab668e61c36f3085ba2eabc4836d3f4bf">&#9670;&nbsp;</a></span>keymap</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DExpected&lt; KeyAction &gt; DInputDeviceSetting::keymap </td>
+          <td>(</td>
+          <td class="paramtype">quint32&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DInputKey&#160;</td>
+          <td class="paramname"><em>key</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取特定设备特定按键的行为 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>设备id </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>key的类型 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>KeyAction的DExpected对象 </dd></dl>
+
+</div>
+</div>
+<a id="a6ca83368a4320f2b17c413d8ca354c95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ca83368a4320f2b17c413d8ca354c95">&#9670;&nbsp;</a></span>mapOutput</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DExpected&lt; <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &gt; DInputDeviceSetting::mapOutput </td>
+          <td>(</td>
+          <td class="paramtype">quint32&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取特定设备的输出映射(显示) </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>设备id </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>设备输出映射的DExpected对象</dd></dl>
+<p>数位板相关的设置 </p>
+
+</div>
+</div>
+<a id="a1fa6f5f528700ac9945cfddf566468c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fa6f5f528700ac9945cfddf566468c6">&#9670;&nbsp;</a></span>mouseEnterRemap</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DExpected&lt; bool &gt; DInputDeviceSetting::mouseEnterRemap </td>
+          <td>(</td>
+          <td class="paramtype">quint32&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取特定设备是否在进入新的显示时进行重新映射 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>设备id </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>是否重新映射的DExpected对象</dd></dl>
+<p>数位板相关的设置 </p>
+
+</div>
+</div>
+<a id="a33e585cafccfa4a089340efdc727937b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33e585cafccfa4a089340efdc727937b">&#9670;&nbsp;</a></span>pressureSensitivity</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DExpected&lt; quint32 &gt; DInputDeviceSetting::pressureSensitivity </td>
+          <td>(</td>
+          <td class="paramtype">quint32&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取特定设备的压力感应级别 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>设备id </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>压力感应级别的DExpected对象</dd></dl>
+<p>只有数位板和数位笔才有压力感应级别相关的设置 </p>
+
+</div>
+</div>
+<a id="afbf065103833327cf457e145d824170e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbf065103833327cf457e145d824170e">&#9670;&nbsp;</a></span>pressureThreshold</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DExpected&lt; quint32 &gt; DInputDeviceSetting::pressureThreshold </td>
+          <td>(</td>
+          <td class="paramtype">quint32&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取特定设备的压感事件阈值 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>设备id </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>压感事件阈值的DExpected对象</dd></dl>
+<p>只有数位板和数位笔才有压感事件阈值相关的设置 </p>
+
+</div>
+</div>
+<a id="ab7b8b928f5bbaef4fc8d427846fe7206"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7b8b928f5bbaef4fc8d427846fe7206">&#9670;&nbsp;</a></span>rawSampleSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DExpected&lt; quint32 &gt; DInputDeviceSetting::rawSampleSize </td>
+          <td>(</td>
+          <td class="paramtype">quint32&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取特别设备的平滑窗口采样大小 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>设备id </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>平滑窗口采样大小的DExpected对象</dd></dl>
+<p>只有数位板和数位笔才有平滑窗口采样大小相关的设置 </p>
+
+</div>
+</div>
+<a id="aa5d8ee32c01ee65613acdb86114475ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5d8ee32c01ee65613acdb86114475ec">&#9670;&nbsp;</a></span>repeatDelay()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">quint32 DInputDeviceSetting::repeatDelay </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取按键重复触发延迟 </p>
+<dl class="section return"><dt>返回</dt><dd>按键重复触发之前的延迟 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>repeatDelay </dd></dl>
+
+</div>
+</div>
+<a id="a4353eaa12d5d34172069ef345f4a5341"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4353eaa12d5d34172069ef345f4a5341">&#9670;&nbsp;</a></span>repeatDelayChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DInputDeviceSetting::repeatDelayChanged </td>
+          <td>(</td>
+          <td class="paramtype">quint32&#160;</td>
+          <td class="paramname"><em>delay</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>属性repeatDelay改变时触发的信号 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">delay</td><td>按键重复触发之前的延迟 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a42dcd59f4f09b43b64e8d235a3c141d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42dcd59f4f09b43b64e8d235a3c141d4">&#9670;&nbsp;</a></span>repeatEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DInputDeviceSetting::repeatEnabled </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取键盘是否开启按键重复 </p>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">true</td><td>键盘开启按键重复, 在长按某一按键时, 将定时触发按键事件 </td></tr>
+    <tr><td class="paramname">false</td><td>键盘不开启按键重复 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aecd9b64014a7ac3f6e2b29808de7a9d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecd9b64014a7ac3f6e2b29808de7a9d0">&#9670;&nbsp;</a></span>repeatEnabledChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DInputDeviceSetting::repeatEnabledChanged </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enabled</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>属性repeatEnabled改变时触发的信号 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">enabled</td><td>是否开启按键重复 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aaf049b4088365fa9a624638619819c4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf049b4088365fa9a624638619819c4d">&#9670;&nbsp;</a></span>repeatInterval()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">quint32 DInputDeviceSetting::repeatInterval </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取按键重复触发间隔时间 </p>
+<dl class="section return"><dt>返回</dt><dd>触发重复按键事件之间的时间间隔 </dd></dl>
+
+</div>
+</div>
+<a id="a985fcdd50bdb596e50ecb365de4fe724"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a985fcdd50bdb596e50ecb365de4fe724">&#9670;&nbsp;</a></span>repeatIntervalChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DInputDeviceSetting::repeatIntervalChanged </td>
+          <td>(</td>
+          <td class="paramtype">quint32&#160;</td>
+          <td class="paramname"><em>interval</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>属性repeatInterval改变时触发的信号 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">interval</td><td>按键重复触发间隔时间 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a59e8212b18401866fb58453abb588c57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59e8212b18401866fb58453abb588c57">&#9670;&nbsp;</a></span>setCursorBlinkInterval()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DInputDeviceSetting::setCursorBlinkInterval </td>
+          <td>(</td>
+          <td class="paramtype">qint32&#160;</td>
+          <td class="paramname"><em>interval</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置光标闪烁时间间隔 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">interval</td><td>光标闪烁的间隔时间 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="adf2c73b62fcf17c06f05d5b98923879f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf2c73b62fcf17c06f05d5b98923879f">&#9670;&nbsp;</a></span>setDisableTouchPadWhileMouse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DInputDeviceSetting::setDisableTouchPadWhileMouse </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>disabled</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置是否在连接鼠标时禁用触摸板 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">disabled</td><td>是否在连接鼠标时禁用触摸板 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac04fc1af17134e26f2066131d6923542"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac04fc1af17134e26f2066131d6923542">&#9670;&nbsp;</a></span>setDoubleClickInterval()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DInputDeviceSetting::setDoubleClickInterval </td>
+          <td>(</td>
+          <td class="paramtype">quint32&#160;</td>
+          <td class="paramname"><em>interval</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置鼠标和触摸板双击事件的时间间隔 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">interval</td><td>双击事件的时间间隔 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="adaa448d636203d81410771e1e2beed3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adaa448d636203d81410771e1e2beed3c">&#9670;&nbsp;</a></span>setDragThreshold()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DInputDeviceSetting::setDragThreshold </td>
+          <td>(</td>
+          <td class="paramtype">quint32&#160;</td>
+          <td class="paramname"><em>distance</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置拖拽事件的最小距离 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">distance</td><td>拖拽事件两坐标最小距离 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aff5367dae157dfae5e8eb4a15fc867b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff5367dae157dfae5e8eb4a15fc867b3">&#9670;&nbsp;</a></span>setForceProportions</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DExpected&lt; void &gt; DInputDeviceSetting::setForceProportions </td>
+          <td>(</td>
+          <td class="paramtype">quint32&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>force</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置特定设备是否强制调整为输出的比例 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>设备id </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">force</td><td>是否强制 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>空DExpected对象, 无效时表示操作失败 </dd></dl>
+
+</div>
+</div>
+<a id="ab342640ba26a539cde0b35a698ee29bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab342640ba26a539cde0b35a698ee29bb">&#9670;&nbsp;</a></span>setKeymap</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DExpected&lt; void &gt; DInputDeviceSetting::setKeymap </td>
+          <td>(</td>
+          <td class="paramtype">quint32&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DInputKey&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DInputKeyAction&#160;</td>
+          <td class="paramname"><em>action</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置特定设备某个按键对应的行为 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>设备id </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>特定按键 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">action</td><td>按键对应的行为 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>空DExpected对象, 无效时表示操作失败 </dd></dl>
+
+</div>
+</div>
+<a id="a7d4aede8fbcd8022e876cce677fe9a05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d4aede8fbcd8022e876cce677fe9a05">&#9670;&nbsp;</a></span>setMouseEnterRemap</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DExpected&lt; void &gt; DInputDeviceSetting::setMouseEnterRemap </td>
+          <td>(</td>
+          <td class="paramtype">quint32&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>remap</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置特定设备是否在鼠标进入新的输出的时候重新映射 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>设备id </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">remap</td><td>是否重新映射 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>空DExpected对象, 无效时表示操作失败 </dd></dl>
+
+</div>
+</div>
+<a id="ad74dabf01e133c8276d61478600fb41c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad74dabf01e133c8276d61478600fb41c">&#9670;&nbsp;</a></span>setPressureSensitivity</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DExpected&lt; void &gt; DInputDeviceSetting::setPressureSensitivity </td>
+          <td>(</td>
+          <td class="paramtype">quint32&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">quint32&#160;</td>
+          <td class="paramname"><em>sensitivity</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置特定设备的压感灵敏度 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>设备id </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sensitivity</td><td>压感灵敏度 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>空DExpected对象, 无效时表示操作失败 </dd></dl>
+
+</div>
+</div>
+<a id="a4e4a0583400a0013fc823df27b5a1479"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e4a0583400a0013fc823df27b5a1479">&#9670;&nbsp;</a></span>setPressureThreshold</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DExpected&lt; void &gt; DInputDeviceSetting::setPressureThreshold </td>
+          <td>(</td>
+          <td class="paramtype">quint32&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">quint32&#160;</td>
+          <td class="paramname"><em>threshold</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置特定设备的压感事件阈值 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>设备id </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">threshold</td><td>压感事件阈值 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>空DExpected对象, 无效时表示操作失败 </dd></dl>
+
+</div>
+</div>
+<a id="aeee342dff64a1ff71c6ca6075b4d991b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeee342dff64a1ff71c6ca6075b4d991b">&#9670;&nbsp;</a></span>setRawSampleSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DExpected&lt; void &gt; DInputDeviceSetting::setRawSampleSize </td>
+          <td>(</td>
+          <td class="paramtype">quint32&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">quint32&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置特定设备的平滑窗口取样大小 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>设备id </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>平滑取样窗口大小 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>空DExpected对象, 无效时表示操作失败 </dd></dl>
+
+</div>
+</div>
+<a id="a183f0aa5401abe78d326b9beb2972192"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a183f0aa5401abe78d326b9beb2972192">&#9670;&nbsp;</a></span>setRepeatDelay()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DInputDeviceSetting::setRepeatDelay </td>
+          <td>(</td>
+          <td class="paramtype">quint32&#160;</td>
+          <td class="paramname"><em>delay</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置按键重复触发延迟 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">delay</td><td>触发按键重复机制的延迟时间 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae2916b147b022fc65e333620ad8e5370"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2916b147b022fc65e333620ad8e5370">&#9670;&nbsp;</a></span>setRepeatEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DInputDeviceSetting::setRepeatEnabled </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enabled</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置是否开启按键重复 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">enabled</td><td>是否开启按键重复 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a39f81f8ec765f486bb8fe39378239cdc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39f81f8ec765f486bb8fe39378239cdc">&#9670;&nbsp;</a></span>setRepeatInterval()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DInputDeviceSetting::setRepeatInterval </td>
+          <td>(</td>
+          <td class="paramtype">quint32&#160;</td>
+          <td class="paramname"><em>interval</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置按键重复事件触发时间间隔 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">interval</td><td>触发重复按键事件之间的时间间隔 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae4e545f32c715d313db35ee24db53ba2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4e545f32c715d313db35ee24db53ba2">&#9670;&nbsp;</a></span>setSuppress</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DExpected&lt; void &gt; DInputDeviceSetting::setSuppress </td>
+          <td>(</td>
+          <td class="paramtype">quint32&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">quint32&#160;</td>
+          <td class="paramname"><em>suppress</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置特定设备坐标或者压感变化事件之间的最小间隔 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>设备id </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">suppress</td><td>设备坐标或者压感变化事件之间的最小间隔 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>空DExpected对象, 无效时表示操作失败 </dd></dl>
+
+</div>
+</div>
+<a id="a7c2e68d8a4712a4d36e210b73d907fe5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c2e68d8a4712a4d36e210b73d907fe5">&#9670;&nbsp;</a></span>setWheelSpeed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DInputDeviceSetting::setWheelSpeed </td>
+          <td>(</td>
+          <td class="paramtype">quint32&#160;</td>
+          <td class="paramname"><em>speed</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置滚轮速度 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">speed</td><td>滚轮速度 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad7c3216586ee321cf588e835ca757ef6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7c3216586ee321cf588e835ca757ef6">&#9670;&nbsp;</a></span>suppress</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DExpected&lt; quint32 &gt; DInputDeviceSetting::suppress </td>
+          <td>(</td>
+          <td class="paramtype">quint32&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取特定设备坐标或者压感变化事件之间的最小间隔 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>设备id </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>最小间隔的DExpected对象</dd></dl>
+<p>数位板相关的设置 </p>
+
+</div>
+</div>
+<a id="a61124fd3c89cd7d29669da2ff9da81a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61124fd3c89cd7d29669da2ff9da81a8">&#9670;&nbsp;</a></span>wheelSpeed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">quint32 DInputDeviceSetting::wheelSpeed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取滚轮速度 </p>
+<dl class="section return"><dt>返回</dt><dd>滚轮速度 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>wheelSpeed </dd></dl>
+
+</div>
+</div>
+<a id="a02b78697bf0fe53a5cec62d7199c4913"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02b78697bf0fe53a5cec62d7199c4913">&#9670;&nbsp;</a></span>wheelSpeedChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DInputDeviceSetting::wheelSpeedChanged </td>
+          <td>(</td>
+          <td class="paramtype">quint32&#160;</td>
+          <td class="paramname"><em>speed</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>属性wheelSpeed改变时触发的信号 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">speed</td><td>滚轮速度 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dtkdevice/include/inputdevices/<a class="el" href="dinputdevicesetting_8h_source.html">dinputdevicesetting.h</a></li>
+<li>dtkdevice/docs/inputdevices/dinputdevicesetting.zh_CN.dox</li>
+<li>dtkdevice/src/inputdevices/dinputdevicesetting.cpp</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classDInputDeviceSetting.html">DInputDeviceSetting</a></li>
+    <li class="footer">文档生成时间:2023-01-13-07:39  +00</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

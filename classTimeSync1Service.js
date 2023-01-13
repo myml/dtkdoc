@@ -1,0 +1,27 @@
+var classTimeSync1Service =
+[
+    [ "TimeSync1Service", "classTimeSync1Service.html#a2b9078ddbb6df980805a0a43e28f3995", null ],
+    [ "~TimeSync1Service", "classTimeSync1Service.html#ad19c0612b3be8e37fca6e5711c4c6760", null ],
+    [ "fallbackNTPServers", "classTimeSync1Service.html#acf1286379d3758a339ea5affe8a3aac3", null ],
+    [ "frequency", "classTimeSync1Service.html#a767fc69b7cf01e18db0c47a27c14f00d", null ],
+    [ "linkNTPServers", "classTimeSync1Service.html#a60ac99f5cb7a7fe34f30db402eea36ed", null ],
+    [ "NTPMessage", "classTimeSync1Service.html#a7caed85ba4b9c00a102f94f1c46a2e1c", null ],
+    [ "pollIntervalMaxUSec", "classTimeSync1Service.html#ac2bf6f07aaae67ffcc9bc9a8784282e0", null ],
+    [ "pollIntervalMinUSec", "classTimeSync1Service.html#ab60d2722918de75cf4a61c41f870dcca", null ],
+    [ "pollIntervalUSec", "classTimeSync1Service.html#a7a1f2b1534e7ea6e510ca1be0274d493", null ],
+    [ "rootDistanceMaxUSec", "classTimeSync1Service.html#a1bb40afb1ec9ecccf8fc04da5ffdb278", null ],
+    [ "serverAddress", "classTimeSync1Service.html#a0141b92b2a00cdcf76c5dfc513975bb5", null ],
+    [ "serverName", "classTimeSync1Service.html#a7706ef99874efc610ba0888dcd75332c", null ],
+    [ "systemNTPServers", "classTimeSync1Service.html#ad443ccb2ca997e624d58db8ae35e2782", null ],
+    [ "FallbackNTPServers", "classTimeSync1Service.html#ab7f6cf34d6f8a48380c17e26cca3bf5c", null ],
+    [ "Frequency", "classTimeSync1Service.html#a7029c50305fc356055b24eb3f5871807", null ],
+    [ "LinkNTPServers", "classTimeSync1Service.html#aac729804fe2709e0877d246b75d44fa7", null ],
+    [ "NTPMessage", "classTimeSync1Service.html#a08583b5eb721e8da73aee0610d9cf54d", null ],
+    [ "PollIntervalMaxUSec", "classTimeSync1Service.html#a8ac4422154ae73571f7c395c679679c2", null ],
+    [ "PollIntervalMinUSec", "classTimeSync1Service.html#a3af6521d97c9427f6899b52f7f187f1d", null ],
+    [ "PollIntervalUSec", "classTimeSync1Service.html#a998a343f24b7bb3a18f97d7a7f5e2d1c", null ],
+    [ "RootDistanceMaxUSec", "classTimeSync1Service.html#aff3b9be513cf355d0d176c375851a36e", null ],
+    [ "ServerAddress", "classTimeSync1Service.html#a331a0e7b5d25f7b3c0f3fffa33a4d32a", null ],
+    [ "ServerName", "classTimeSync1Service.html#a266681a34dd2ecfba86eac43f43ac74b", null ],
+    [ "SystemNTPServers", "classTimeSync1Service.html#ab28cd175902e9ceefb9455dbf2ae98dd", null ]
+];

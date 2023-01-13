@@ -1,0 +1,592 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: dtkio/include/dtkmount/dblockpartition.h 源文件</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="https://github.com/linuxdeepin/dtkdoc" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('dblockpartition_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">dblockpartition.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="dblockpartition_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-FileCopyrightText: 2022 UnionTech Software Technology Co., Ltd.</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// SPDX-License-Identifier: LGPL-3.0-or-later</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef DBLOCKPARTITION_H</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define DBLOCKPARTITION_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;DBlockDevice&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;DMOUNT_BEGIN_NAMESPACE</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">class </span><a class="code" href="classDBlockPartition.html">DBlockPartition</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span>DDeviceManager {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;DExpected&lt;DBlockPartition *&gt; createBlockPartition(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;path, <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *parent);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;DExpected&lt;DBlockPartition *&gt; createBlockPartitionByMountPoint(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a> &amp;path, <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *parent);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;}   <span class="comment">// namespace DDeviceManager</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">class </span><a class="code" href="classDBlockPartitionPrivate.html">DBlockPartitionPrivate</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classDBlockPartition.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDBlockPartition.html">DBlockPartition</a> : <span class="keyword">public</span> <a class="code" href="classDBlockDevice.html">DBlockDevice</a></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">Q_OBJECT</a></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    Q_DECLARE_PRIVATE(<a class="code" href="classDBlockPartition.html">DBlockPartition</a>)</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(quint64 flags READ flags NOTIFY <a class="code" href="classDBlockPartition.html#a744100f91af44c2ae70e03964ce14541">flagsChanged</a>);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(<span class="keywordtype">bool</span> isContained READ isContained NOTIFY <a class="code" href="classDBlockPartition.html#a5fae60b1fb84e542d3bbe57edbf95e24">isContainedChanged</a>);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(<span class="keywordtype">bool</span> isContainer READ isContainer NOTIFY <a class="code" href="classDBlockPartition.html#a76ada9123de3b0e876164d77f2d6c89d">isContainerChanged</a>);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> name READ name NOTIFY <a class="code" href="classDBlockPartition.html#a8531b7f9f2cb721537b378fb144d98d6">nameChanged</a>);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(uint number READ number NOTIFY <a class="code" href="classDBlockPartition.html#a82add7669ebd3670538d1f2dbba9a58b">numberChanged</a>);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(quint64 offset READ offset NOTIFY <a class="code" href="classDBlockPartition.html#aac8a764bcf486e1ba41db110e4c3ba9f">offsetChanged</a>);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(quint64 size READ size NOTIFY <a class="code" href="classDBlockPartition.html#a9fe509b1f452a685161abf7a563b63a5">sizeChanged</a>);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> table READ table CONSTANT);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> type READ type NOTIFY <a class="code" href="classDBlockPartition.html#a9d54e089ee2ed2b04353949d0fbe6351">typeChanged</a>);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(MbrPartitionType mbrType READ mbrType NOTIFY <a class="code" href="classDBlockPartition.html#a57fbd7bcbad3f6f34b2c4d6bd611154f">mbrPartitionTypeChanged</a>);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(GptPartitionType gptType READ gptType NOTIFY <a class="code" href="classDBlockPartition.html#a1c120e0774e488eff46dfa91d7b27551">gptPartitionTypeChanged</a>);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> UUID READ UUID NOTIFY <a class="code" href="classDBlockPartition.html#aa85a84e9b7a78a01310a5085d03ac9c2">UUIDChanged</a>);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">enum</span> MbrPartitionType {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        UnknownMbrType = -1,</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        EmptyMbrType = 0x00,</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        FAT12Type = 0x01,</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        XENIX_root = 0x02,</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        XENIX_usr = 0x03,</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        FAT16_Less_32M = 0x04,</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        Extended = 0x05,</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        FAT16Type = 0x06,</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        HPFS_NTFS = 0x07,</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        AIX = 0x08,</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        AIX_bootable = 0x09,</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        OS2_Boot_Manager = 0x0a,</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        Win95_FAT32 = 0x0b,</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        Win95_FAT32_LBA = 0x0c,</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        Win95_FAT16_LBA = 0x0e,</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        Win95_Extended_LBA = 0x0f,</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        OPUS = 0x10,</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        Hidden_FAT12 = 0x11,</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        Compaq_diagnostics = 0x12,</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        Hidden_FAT16_Less_32M = 0x14,</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        Hidden_FAT16 = 0x16,</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        Hidden_HPFS_or_NTFS = 0x17,</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        AST_SmartSleep = 0x18,</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        Hidden_Win95_FAT32 = 0x1b,</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        Hidden_Win95_FAT32_LBA = 0x1c,</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        Hidden_Win95_FAT16_LBA = 0x1e,</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        NEC_DOS = 0x24,</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        Plan9 = 0x39,</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        PartitionMagic_recovery = 0x3c,</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        Venix_80286 = 0x40,</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        PPC_PReP_Boot = 0x41,</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        SFS = 0x42,</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        QNX4_dot_x = 0x4d,</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        QNX4_dot_x_2nd_part = 0x4e,</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        QNX4_dot_x_3rd_part = 0x4f,</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        OnTrack_DM = 0x50,</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        OnTrack_DM6_Aux1 = 0x51,</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        CP_M = 0x52,</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        OnTrack_DM6_Aux3 = 0x53,</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        OnTrackDM6 = 0x54,</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        EZ_Drive = 0x55,</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        Golden_Bow = 0x56,</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        Priam_Edisk = 0x5c,</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        SpeedStor = 0x61,</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        GNU_HURD_or_SysV = 0x63,</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        Novell_Netware_286 = 0x64,</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        Novell_Netware_386 = 0x65,</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        DiskSecure_Multi_Boot = 0x70,</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        PC_IX = 0x75,</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        Old_Minix = 0x80,</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        Minix_old_Linux = 0x81,</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        Linux_swap = 0x82,</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        Linux = 0x83,</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        OS2_hidden_C_drive = 0x84,</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        Linux_extended = 0x85,</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        NTFS_volume_set_1 = 0x86,</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        NTFS_volume_set_2 = 0x87,</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        Linux_LVM = 0x8e,</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        Amoeba = 0x93,</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        Amoeba_BBT = 0x94,</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        BSD_OS = 0x9f,</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        IBM_Thinkpad_hibernation = 0xa0,</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        FreeBSD = 0xa5,</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        OpenBSD = 0xa6,</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        NeXTSTEP = 0xa7,</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        NetBSD = 0xa8,</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        BSDI_fs = 0xa9,</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        BSDI_swap = 0xb7,</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        Boot_Wizard_hidden = 0xb8,</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        DRDOS_sec_FAT12 = 0xbb,</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        DRDOS_sec_FAT16_Less_32M = 0xc1,</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        DRDOS_sec_FAT16 = 0xc4,</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        DRDOS_sec_extend = 0xc5,</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        Syrinx = 0xc6,</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        Non_FS_data = 0xc7,</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        Multiuser_DOS_extend = 0xd5,</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        CP_M_CTOS_dot_dot_dot = 0xda,</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        Dell_Utility = 0xdb,</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        BootIt = 0xde,</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        DOS_access = 0xdf,</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        DOS_R_O = 0xe1,</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        SpeedStor_1 = 0xe3,</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        BeOS_fs = 0xe4,</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        EFI_GPT = 0xeb,</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        EFI_FAT12_16_32 = 0xee,</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        Linux_PA_RISC_boot = 0xef,</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        SpeedStor_2 = 0xf0,</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        SeppdStor_3 = 0xf4,</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        DOS_secondary = 0xf2,</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        Linux_raid_autodetect = 0xfd,</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        LANstep = 0xfe,</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        BBT = 0xff,</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    };</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_ENUM">Q_ENUM</a>(MbrPartitionType)</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    </div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keyword">enum</span> GptPartitionType {</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        UnknownGptType = -1,</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        EmptyGptType = 0,</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160; </div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        UnusedEntryNA = 1,</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        MBRPartitionSchemeNA,</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        EFISystemPartitionNA,</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        BIOSBootPartitionNA,</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        IntelFastFlashPartitionNA,</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        SonyBootPartitionNA,</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        LenovoBootPartitionNA,</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160; </div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        MicrosoftReservedPartitionWin = 20,</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        BasicDataPartitionWin,</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        LogicalDiskManagerMetaDataPartitionWin,</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        LogicalDiskManagerDataPartitionWin,</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        WindowsRecoveryEnvironmentWin,</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        IBMGeneralParallelFileSystemPartitionWin,</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        StorageSpacesPartitionWin,</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        StorageReplicaPartitionWin,</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        DataPartitionHPUX = 40,</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        ServicePartitionHPUX,</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160; </div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        LinuxFilesystemDataLinux = 50,</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        RAIDPartitionLinux,</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        RootPartitionX86Linux,</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        RootPartitionX8664Linux,</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        RootPartitionArm32Linux,</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        RootPartitionArm64Linux,</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        BootPartitionLinux,</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        SwapPartitionLinux,</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        LogicalVolumeManagerPartitionLinux,</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        HomePartitionLinux,</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        ServerDataPartitionLinux,</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        PlainDMCryptPartitionLinux,</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        LUKSPartitionLinux,</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        ReservedLinux,</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160; </div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        BootPartitionFreeBSD = 100,</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        BSDDisklabelPartitionFreeBSD,</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        SwapPartitionFreeBSD,</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        UnixFileSystemPartitionFreeBSD,</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        VinumVolumeManagerPartitionFreeBSD,</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        ZFSPartitionFreeBSD,</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        NandfsPartitionFreeBSD,</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160; </div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        HierarchialFileSystemPlusPartitionMacOS = 120,</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        AppleAPFSContainerMacOS,</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        AppleUFSContainerMacOS,</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        ZFSMacOS,</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        AppleRAIDPartitionMacOS,</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        AppleRAIDPartitionOfflineMacOS,</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        AppleBootPartitionMacOS,</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        AppleLabelMacOS,</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        AppleTVRecoveryPartitionMacOS,</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        AppleCoreStorageContainerMacOS,</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        AppleAPFSPrebootPartitionMacOS,</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        AppleAPFSRecoveryPartitionMacOS,</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160; </div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        BootPartitionSolaris = 150,</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        RootPartitionSolaris,</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        SwapPartitionSolaris,</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        BackupPartitionSolaris,</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        UsrPartitionSolaris,</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        VarPartitionSolaris,</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        HomePartitionSolaris,</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        AlternateSectorSolaris,</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        ReservedPartitionSolaris,</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160; </div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        SwapPartitionNetBSD = 170,</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        FFSPartitionNetBSD,</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        LFSPartitionNetBSD,</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        RAIDPartitionNetBSD,</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        ConcatenatedPartitionNetBSD,</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        EncryptedPartitionNetBSD,</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160; </div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        KernelChromeOS = 190,</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        RootfsChromeOS,</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        FirmwareChromeOS,</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        FutureUseChromeOS,</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        MiniOSChromeOS,</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        HibernateChromeOS,</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160; </div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        UsrPartitionCoreOS = 220,</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        ResizableRootfsCoreOS,</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        OEMCustomizationsCoreOS,</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        RootFilesystemOnRAIDCoreOS,</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160; </div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        HaikuBFSHaiku = 230,</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160; </div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        BootPartitionMidnightBSD = 240,</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        DataPartitionMidnightBSD,</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        SwapPartitionMidnightBSD,</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        UnixFileSystemPartitionMidnightBSD,</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        VinumVolumemanagerPartitionMidnightBSD,</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        ZFSPartitionMidnightBSD,</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160; </div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        JournalCeph = 260,</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        DmCryptJournalCeph,</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        OSDCeph,</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        DmCryptOSDCeph,</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        DiskinCreationCeph,</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        DmCryptDiskinCreationCeph,</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        BlockCeph,</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        BlockDBCeph,</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        BlockWriteAheadlogCeph,</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        LockboxForDmCryptKeysCeph,</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        MultipathOSDCeph,</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        MultipathJournalCeph,</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        MultipathBlockCeph,</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        MultipathBlockDBCeph,</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        MultipathblockwriteAheadogCeph,</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        DmCryptBlockCeph,</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        DmCryptBlockDBCeph,</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        DmCryptBlockWriteAheadlogCeph,</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        DmCryptLUKSjournalCeph,</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        DmCryptLUKSBlockCeph,</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        DmCryptLUKSBlockDBCeph,</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        DmCryptLUKSBlockwriteAheadlogCeph,</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        DmCryptLUKSOSDCeph,</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160; </div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        DataPartitionOpenBSD = 300,</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160; </div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        PowerSafeFilesystemQNX = 360,</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160; </div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        Plan9PartitionPlan9 = 370,</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160; </div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        VmkCoreVMwareESX = 380,</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        VMFSFilesystemPartitionVMwareESX,</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        VMWareReservedVMwareESX,</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160; </div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        BootloaderAndroidIA = 400,</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        Bootloader2AndroidIA,</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        BootAndroidIA,</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        RecoveryAndroidIA,</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        MiscAndroidIA,</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        MetadataAndroidIA,</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;        SystemAndroidIA,</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        CacheAndroidIA,</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;        DataAndroidIA,</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        PersistentAndroidIA,</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;        VendorAndroidIA,</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;        ConfigAndroidIA,</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;        FactoryAndroidIA,</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;        FactoryAltAndroidIA,</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;        FastbootOrTertiaryAndroidIA,</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;        OEMAndroidIA,</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160; </div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        AndroidMetaAndroid6Arm = 450,</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        AndroidEXTAndroid6Arm,</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160; </div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        BootONIE = 460,</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        ConfigONIE,</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160; </div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        PRePBootPowerPC = 470,</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160; </div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        SharedBootloaderConfigurationFreedesktop = 480,</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160; </div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        BasicDataPartitionAtariTOS = 490,</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160; </div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        EncryptedDataPartitionVeraCrypt = 500,</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160; </div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        ArcaOSType1OS2 = 510,</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160; </div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        SPDKBlockDeviceSPDK = 520,</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160; </div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;        BareBoxStateBareboxBootloader = 530,</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160; </div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;        UBootEnvironmentUBootBootloader = 540,</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160; </div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;        StatusSoftRAID = 550,</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        ScratchSoftRAID,</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;        VolumeSoftRAID,</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;        CacheSoftRAID,</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160; </div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;        BootloaderFuchsiaStandard = 570,</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;        DurablemutableencryptedsystemdataFuchsiaStandard,</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;        DurablemutablebootloaderdataFuchsiaStandard,</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;        FactoryProvisionedreadOnlysystemdataFuchsiaStandard,</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;        FactoryProvisionedreadOnlybootloaderdataFuchsiaStandard,</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;        FuchsiaVolumeManagerFuchsiaStandard,</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        VerifiedbootmetadataFuchsiaStandard,</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        ZirconbootimageFuchsiaStandard,</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160; </div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;        FuchsiaEspFuchsiaLegacy = 590,</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;        FuchsiaSystemFuchsiaLegacy,</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        FuchsiaDataFuchsiaLegacy,</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        FuchsiaInstallFuchsiaLegacy,</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;        FuchsiaBlobFuchsiaLegacy,</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        FuchsiaFvmFuchsiaLegacy,</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        ZirconbootimageSlotAFuchsiaLegacy,</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;        ZirconbootimageSlotBFuchsiaLegacy,</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        ZirconbootimageSlotRFuchsiaLegacy,</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        SysConfigFuchsiaLegacy,</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;        FactoryConfigFuchsiaLegacy,</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;        BootloaderFuchsiaLegacy,</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        GuidTestFuchsiaLegacy,</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        VerifiedbootmetadataSlotAFuchsiaLegacy,</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        VerifiedbootmetadataSlotBFuchsiaLegacy,</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;        VerifiedbootmetadataSlotRFuchsiaLegacy,</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;        MiscFuchsiaLegacy,</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;        EmmcBoot1FuchsiaLegacy,</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;        EmmcBoot2FuchsiaLegacy,</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160; </div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    };</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_ENUM">Q_ENUM</a>(GptPartitionType)</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160; </div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    quint64 flags() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    <span class="keywordtype">bool</span> isContained() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    <span class="keywordtype">bool</span> isContainer() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> name() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    uint number() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    quint64 offset() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    quint64 size() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> table() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> type() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    MbrPartitionType mbrType() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    GptPartitionType gptType() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> UUID() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160; </div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    <span class="keyword">static</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> <a class="code" href="classDBlockPartition.html#af5b9c7010cf391ea126571eafdf16a50">mbrTypeDescription</a>(MbrPartitionType type);</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    <span class="keyword">static</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> <a class="code" href="classDBlockPartition.html#ab9b39c8f2a6867d38a1f8646c2cfc03e">gptTypeDescription</a>(GptPartitionType type);</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160; </div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;<span class="keyword">public</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SLOTS">Q_SLOTS</a>:</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDBlockPartition.html#a64b6867f38a53292098cc7546739fe9d">deletePartition</a>(<span class="keyword">const</span> QVariantMap &amp;options);</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDBlockPartition.html#abf41e27c2bc1f111a75bcba3d6554182">resize</a>(quint64 size, <span class="keyword">const</span> QVariantMap &amp;options);</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDBlockPartition.html#a019cf8a86866bd5bd46d86782c584e29">setFlags</a>(quint64 flags, <span class="keyword">const</span> QVariantMap &amp;options);</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDBlockPartition.html#a20546d6541a4ea1c0ac5570c2befe616">setName</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;name, <span class="keyword">const</span> QVariantMap &amp;options);</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDBlockPartition.html#ad7f0fc79e58fecfa3663bea3280601ef">setType</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;type, <span class="keyword">const</span> QVariantMap &amp;options);</div>
+<div class="line"><a name="l00368"></a><span class="lineno"><a class="line" href="classDBlockPartition.html#a759fa0be72f453e23a1d3bdfd21907d0">  368</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDBlockPartition.html#a759fa0be72f453e23a1d3bdfd21907d0">setType</a>(Dtk::Mount::DBlockPartition::MbrPartitionType type, <span class="keyword">const</span> QVariantMap &amp;options);</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160; </div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SIGNALS">Q_SIGNALS</a>:</div>
+<div class="line"><a name="l00371"></a><span class="lineno"><a class="line" href="classDBlockPartition.html#a744100f91af44c2ae70e03964ce14541">  371</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDBlockPartition.html#a744100f91af44c2ae70e03964ce14541">flagsChanged</a>(quint64 flags);</div>
+<div class="line"><a name="l00372"></a><span class="lineno"><a class="line" href="classDBlockPartition.html#a5fae60b1fb84e542d3bbe57edbf95e24">  372</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDBlockPartition.html#a5fae60b1fb84e542d3bbe57edbf95e24">isContainedChanged</a>(<span class="keywordtype">bool</span> isContained);</div>
+<div class="line"><a name="l00373"></a><span class="lineno"><a class="line" href="classDBlockPartition.html#a76ada9123de3b0e876164d77f2d6c89d">  373</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDBlockPartition.html#a76ada9123de3b0e876164d77f2d6c89d">isContainerChanged</a>(<span class="keywordtype">bool</span> isContainer);</div>
+<div class="line"><a name="l00374"></a><span class="lineno"><a class="line" href="classDBlockPartition.html#a8531b7f9f2cb721537b378fb144d98d6">  374</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDBlockPartition.html#a8531b7f9f2cb721537b378fb144d98d6">nameChanged</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;name);</div>
+<div class="line"><a name="l00375"></a><span class="lineno"><a class="line" href="classDBlockPartition.html#a82add7669ebd3670538d1f2dbba9a58b">  375</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDBlockPartition.html#a82add7669ebd3670538d1f2dbba9a58b">numberChanged</a>(uint number);</div>
+<div class="line"><a name="l00376"></a><span class="lineno"><a class="line" href="classDBlockPartition.html#aac8a764bcf486e1ba41db110e4c3ba9f">  376</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDBlockPartition.html#aac8a764bcf486e1ba41db110e4c3ba9f">offsetChanged</a>(quint64 offset);</div>
+<div class="line"><a name="l00377"></a><span class="lineno"><a class="line" href="classDBlockPartition.html#a9fe509b1f452a685161abf7a563b63a5">  377</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDBlockPartition.html#a9fe509b1f452a685161abf7a563b63a5">sizeChanged</a>(quint64 size);</div>
+<div class="line"><a name="l00378"></a><span class="lineno"><a class="line" href="classDBlockPartition.html#a9d54e089ee2ed2b04353949d0fbe6351">  378</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDBlockPartition.html#a9d54e089ee2ed2b04353949d0fbe6351">typeChanged</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;type);</div>
+<div class="line"><a name="l00379"></a><span class="lineno"><a class="line" href="classDBlockPartition.html#a57fbd7bcbad3f6f34b2c4d6bd611154f">  379</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDBlockPartition.html#a57fbd7bcbad3f6f34b2c4d6bd611154f">mbrPartitionTypeChanged</a>(Dtk::Mount::DBlockPartition::MbrPartitionType type);</div>
+<div class="line"><a name="l00380"></a><span class="lineno"><a class="line" href="classDBlockPartition.html#a1c120e0774e488eff46dfa91d7b27551">  380</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDBlockPartition.html#a1c120e0774e488eff46dfa91d7b27551">gptPartitionTypeChanged</a>(Dtk::Mount::DBlockPartition::GptPartitionType type);</div>
+<div class="line"><a name="l00381"></a><span class="lineno"><a class="line" href="classDBlockPartition.html#aa85a84e9b7a78a01310a5085d03ac9c2">  381</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDBlockPartition.html#aa85a84e9b7a78a01310a5085d03ac9c2">UUIDChanged</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;UUID);</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160; </div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDBlockPartition.html">DBlockPartition</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;path, <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a> = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160; </div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    <span class="keyword">friend</span> DExpected&lt;DBlockPartition *&gt; DDeviceManager::createBlockPartition(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;path, <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a>);</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    <span class="keyword">friend</span> DExpected&lt;DBlockPartition *&gt; DDeviceManager::createBlockPartitionByMountPoint(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a> &amp;path, <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a>);</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;};</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160; </div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;DMOUNT_END_NAMESPACE</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160; </div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;<span class="preprocessor">#endif   </span><span class="comment">// DBLOCKPARTITION_H</span></div>
+<div class="ttc" id="aclassDBlockDevice_html"><div class="ttname"><a href="classDBlockDevice.html">DBlockDevice</a></div><div class="ttdef"><b>Definition:</b> dblockdevice.h:31</div></div>
+<div class="ttc" id="aclassDBlockPartitionPrivate_html"><div class="ttname"><a href="classDBlockPartitionPrivate.html">DBlockPartitionPrivate</a></div><div class="ttdef"><b>Definition:</b> dblockpartition_p.h:15</div></div>
+<div class="ttc" id="aclassDBlockPartition_html"><div class="ttname"><a href="classDBlockPartition.html">DBlockPartition</a></div><div class="ttdef"><b>Definition:</b> dblockpartition.h:20</div></div>
+<div class="ttc" id="aclassDBlockPartition_html_a019cf8a86866bd5bd46d86782c584e29"><div class="ttname"><a href="classDBlockPartition.html#a019cf8a86866bd5bd46d86782c584e29">DBlockPartition::setFlags</a></div><div class="ttdeci">void setFlags(quint64 flags, const QVariantMap &amp;options)</div><div class="ttdoc">设置分区的标识</div><div class="ttdef"><b>Definition:</b> dblockpartition.cpp:871</div></div>
+<div class="ttc" id="aclassDBlockPartition_html_a1c120e0774e488eff46dfa91d7b27551"><div class="ttname"><a href="classDBlockPartition.html#a1c120e0774e488eff46dfa91d7b27551">DBlockPartition::gptPartitionTypeChanged</a></div><div class="ttdeci">void gptPartitionTypeChanged(Dtk::Mount::DBlockPartition::GptPartitionType type)</div><div class="ttdoc">告知 GPT 分区类型改变</div></div>
+<div class="ttc" id="aclassDBlockPartition_html_a20546d6541a4ea1c0ac5570c2befe616"><div class="ttname"><a href="classDBlockPartition.html#a20546d6541a4ea1c0ac5570c2befe616">DBlockPartition::setName</a></div><div class="ttdeci">void setName(const QString &amp;name, const QVariantMap &amp;options)</div><div class="ttdoc">设置分区名称</div><div class="ttdef"><b>Definition:</b> dblockpartition.cpp:878</div></div>
+<div class="ttc" id="aclassDBlockPartition_html_a57fbd7bcbad3f6f34b2c4d6bd611154f"><div class="ttname"><a href="classDBlockPartition.html#a57fbd7bcbad3f6f34b2c4d6bd611154f">DBlockPartition::mbrPartitionTypeChanged</a></div><div class="ttdeci">void mbrPartitionTypeChanged(Dtk::Mount::DBlockPartition::MbrPartitionType type)</div><div class="ttdoc">告知 MBR 分区类型改变</div></div>
+<div class="ttc" id="aclassDBlockPartition_html_a5fae60b1fb84e542d3bbe57edbf95e24"><div class="ttname"><a href="classDBlockPartition.html#a5fae60b1fb84e542d3bbe57edbf95e24">DBlockPartition::isContainedChanged</a></div><div class="ttdeci">void isContainedChanged(bool isContained)</div><div class="ttdoc">告知包含关系改变</div></div>
+<div class="ttc" id="aclassDBlockPartition_html_a64b6867f38a53292098cc7546739fe9d"><div class="ttname"><a href="classDBlockPartition.html#a64b6867f38a53292098cc7546739fe9d">DBlockPartition::deletePartition</a></div><div class="ttdeci">void deletePartition(const QVariantMap &amp;options)</div><div class="ttdoc">用于删除当前分区</div><div class="ttdef"><b>Definition:</b> dblockpartition.cpp:857</div></div>
+<div class="ttc" id="aclassDBlockPartition_html_a744100f91af44c2ae70e03964ce14541"><div class="ttname"><a href="classDBlockPartition.html#a744100f91af44c2ae70e03964ce14541">DBlockPartition::flagsChanged</a></div><div class="ttdeci">void flagsChanged(quint64 flags)</div><div class="ttdoc">告知分区标识改变</div></div>
+<div class="ttc" id="aclassDBlockPartition_html_a759fa0be72f453e23a1d3bdfd21907d0"><div class="ttname"><a href="classDBlockPartition.html#a759fa0be72f453e23a1d3bdfd21907d0">DBlockPartition::setType</a></div><div class="ttdeci">void setType(Dtk::Mount::DBlockPartition::MbrPartitionType type, const QVariantMap &amp;options)</div><div class="ttdoc">设置分区类型</div></div>
+<div class="ttc" id="aclassDBlockPartition_html_a76ada9123de3b0e876164d77f2d6c89d"><div class="ttname"><a href="classDBlockPartition.html#a76ada9123de3b0e876164d77f2d6c89d">DBlockPartition::isContainerChanged</a></div><div class="ttdeci">void isContainerChanged(bool isContainer)</div><div class="ttdoc">告知容器状态改变</div></div>
+<div class="ttc" id="aclassDBlockPartition_html_a82add7669ebd3670538d1f2dbba9a58b"><div class="ttname"><a href="classDBlockPartition.html#a82add7669ebd3670538d1f2dbba9a58b">DBlockPartition::numberChanged</a></div><div class="ttdeci">void numberChanged(uint number)</div><div class="ttdoc">告知分区序号改变</div></div>
+<div class="ttc" id="aclassDBlockPartition_html_a8531b7f9f2cb721537b378fb144d98d6"><div class="ttname"><a href="classDBlockPartition.html#a8531b7f9f2cb721537b378fb144d98d6">DBlockPartition::nameChanged</a></div><div class="ttdeci">void nameChanged(const QString &amp;name)</div><div class="ttdoc">告知分区名称改变</div></div>
+<div class="ttc" id="aclassDBlockPartition_html_a9d54e089ee2ed2b04353949d0fbe6351"><div class="ttname"><a href="classDBlockPartition.html#a9d54e089ee2ed2b04353949d0fbe6351">DBlockPartition::typeChanged</a></div><div class="ttdeci">void typeChanged(const QString &amp;type)</div><div class="ttdoc">告知分区类型改变（字符串型，十六进制数或 UUID）</div></div>
+<div class="ttc" id="aclassDBlockPartition_html_a9fe509b1f452a685161abf7a563b63a5"><div class="ttname"><a href="classDBlockPartition.html#a9fe509b1f452a685161abf7a563b63a5">DBlockPartition::sizeChanged</a></div><div class="ttdeci">void sizeChanged(quint64 size)</div><div class="ttdoc">告知分区大小改变</div></div>
+<div class="ttc" id="aclassDBlockPartition_html_aa85a84e9b7a78a01310a5085d03ac9c2"><div class="ttname"><a href="classDBlockPartition.html#aa85a84e9b7a78a01310a5085d03ac9c2">DBlockPartition::UUIDChanged</a></div><div class="ttdeci">void UUIDChanged(const QString &amp;UUID)</div><div class="ttdoc">告知分区 UUID 改变</div></div>
+<div class="ttc" id="aclassDBlockPartition_html_aac8a764bcf486e1ba41db110e4c3ba9f"><div class="ttname"><a href="classDBlockPartition.html#aac8a764bcf486e1ba41db110e4c3ba9f">DBlockPartition::offsetChanged</a></div><div class="ttdeci">void offsetChanged(quint64 offset)</div><div class="ttdoc">告知分区位置改变（偏移量改变）</div></div>
+<div class="ttc" id="aclassDBlockPartition_html_ab9b39c8f2a6867d38a1f8646c2cfc03e"><div class="ttname"><a href="classDBlockPartition.html#ab9b39c8f2a6867d38a1f8646c2cfc03e">DBlockPartition::gptTypeDescription</a></div><div class="ttdeci">static QString gptTypeDescription(GptPartitionType type)</div><div class="ttdoc">获取当前分区类型描述信息</div><div class="ttdef"><b>Definition:</b> dblockpartition.cpp:474</div></div>
+<div class="ttc" id="aclassDBlockPartition_html_abf41e27c2bc1f111a75bcba3d6554182"><div class="ttname"><a href="classDBlockPartition.html#abf41e27c2bc1f111a75bcba3d6554182">DBlockPartition::resize</a></div><div class="ttdeci">void resize(quint64 size, const QVariantMap &amp;options)</div><div class="ttdoc">重新设置当前分区大小</div><div class="ttdef"><b>Definition:</b> dblockpartition.cpp:864</div></div>
+<div class="ttc" id="aclassDBlockPartition_html_ad7f0fc79e58fecfa3663bea3280601ef"><div class="ttname"><a href="classDBlockPartition.html#ad7f0fc79e58fecfa3663bea3280601ef">DBlockPartition::setType</a></div><div class="ttdeci">void setType(const QString &amp;type, const QVariantMap &amp;options)</div><div class="ttdoc">设置分区类型</div><div class="ttdef"><b>Definition:</b> dblockpartition.cpp:885</div></div>
+<div class="ttc" id="aclassDBlockPartition_html_af5b9c7010cf391ea126571eafdf16a50"><div class="ttname"><a href="classDBlockPartition.html#af5b9c7010cf391ea126571eafdf16a50">DBlockPartition::mbrTypeDescription</a></div><div class="ttdeci">static QString mbrTypeDescription(MbrPartitionType type)</div><div class="ttdoc">获取当前分区类型描述信息</div><div class="ttdef"><b>Definition:</b> dblockpartition.cpp:286</div></div>
+<div class="ttc" id="aqbytearray_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a></div></div>
+<div class="ttc" id="aqobject_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html">QObject</a></div></div>
+<div class="ttc" id="aqobject_html_Q_ENUM"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_ENUM">QObject::Q_ENUM</a></div><div class="ttdeci">Q_ENUM(...)</div></div>
+<div class="ttc" id="aqobject_html_Q_OBJECT"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">QObject::Q_OBJECT</a></div><div class="ttdeci">Q_OBJECTQ_OBJECT</div></div>
+<div class="ttc" id="aqobject_html_Q_PROPERTY"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">QObject::Q_PROPERTY</a></div><div class="ttdeci">Q_PROPERTY(...)</div></div>
+<div class="ttc" id="aqobject_html_Q_SIGNALS"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_SIGNALS">QObject::Q_SIGNALS</a></div><div class="ttdeci">Q_SIGNALSQ_SIGNALS</div></div>
+<div class="ttc" id="aqobject_html_Q_SLOTS"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_SLOTS">QObject::Q_SLOTS</a></div><div class="ttdeci">Q_SLOTSQ_SLOTS</div></div>
+<div class="ttc" id="aqobject_html_parent"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#parent">QObject::parent</a></div><div class="ttdeci">QObject * parent() const const</div></div>
+<div class="ttc" id="aqstring_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstring.html">QString</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_0990604d0eb8363f4260fee8d79bba7c.html">dtkio</a></li><li class="navelem"><a class="el" href="dir_604bc778b00ebf51725a557963c2fd0c.html">include</a></li><li class="navelem"><a class="el" href="dir_f14a32aa7ea21debd10e28fcc1e93a6a.html">dtkmount</a></li><li class="navelem"><a class="el" href="dblockpartition_8h.html">dblockpartition.h</a></li>
+    <li class="footer">文档生成时间:2023-01-13-07:39  +00</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

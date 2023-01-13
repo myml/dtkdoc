@@ -153,7 +153,7 @@ $(document).ready(function(){initNavTree('dfloatingmessage_8h_source.html',''); 
 <div class="title">dfloatingmessage.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-FileCopyrightText: 2019 - 2022 UnionTech Software Technology Co., Ltd.</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-FileCopyrightText: 2019 - 2023 UnionTech Software Technology Co., Ltd.</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// SPDX-License-Identifier: LGPL-3.0-or-later</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
@@ -197,23 +197,25 @@ $(document).ready(function(){initNavTree('dfloatingmessage_8h_source.html',''); 
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">using</span> <a class="code" href="classDFloatingWidget.html#a923f8ab92157d958dfbef208a7937212">DFloatingWidget::setWidget</a>;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> showEvent(<a class="codeRef" href="http://doc.qt.io/qt-5/qshowevent.html">QShowEvent</a> *<a class="code" href="classDFloatingWidget.html#adc149c56fd7c4c627d6de403a56425c8">event</a>) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;};</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;DWIDGET_END_NAMESPACE</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// DFLOATINGMESSAGE_H</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> changeEvent(<a class="codeRef" href="http://doc.qt.io/qt-5/qevent.html">QEvent</a> *<a class="code" href="classDFloatingWidget.html#adc149c56fd7c4c627d6de403a56425c8">event</a>) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> showEvent(<a class="codeRef" href="http://doc.qt.io/qt-5/qshowevent.html">QShowEvent</a> *<a class="code" href="classDFloatingWidget.html#adc149c56fd7c4c627d6de403a56425c8">event</a>) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;DWIDGET_END_NAMESPACE</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// DFLOATINGMESSAGE_H</span></div>
 <div class="ttc" id="aclassDDciIcon_html"><div class="ttname"><a href="classDDciIcon.html">DDciIcon</a></div><div class="ttdef"><b>Definition:</b> ddciicon.h:22</div></div>
 <div class="ttc" id="aclassDFloatingMessagePrivate_html"><div class="ttname"><a href="classDFloatingMessagePrivate.html">DFloatingMessagePrivate</a></div><div class="ttdef"><b>Definition:</b> dfloatingmessage_p.h:23</div></div>
 <div class="ttc" id="aclassDFloatingMessage_html"><div class="ttname"><a href="classDFloatingMessage.html">DFloatingMessage</a></div><div class="ttdef"><b>Definition:</b> dfloatingmessage.h:18</div></div>
-<div class="ttc" id="aclassDFloatingMessage_html_a2a5cfea17af78221a467eadeef161687"><div class="ttname"><a href="classDFloatingMessage.html#a2a5cfea17af78221a467eadeef161687">DFloatingMessage::setDuration</a></div><div class="ttdeci">void setDuration(int msec)</div><div class="ttdoc">若是为临时消息,则设置时间(毫秒)后会自动消失 msec 消息显示的毫秒数, 默认是4000毫秒</div><div class="ttdef"><b>Definition:</b> dfloatingmessage.cpp:174</div></div>
-<div class="ttc" id="aclassDFloatingMessage_html_a356135eaa6a210e267fcec78319bc593"><div class="ttname"><a href="classDFloatingMessage.html#a356135eaa6a210e267fcec78319bc593">DFloatingMessage::setIcon</a></div><div class="ttdeci">void setIcon(const QIcon &amp;ico)</div><div class="ttdoc">设置控件图标 icon ico 是最终的效果图标</div><div class="ttdef"><b>Definition:</b> dfloatingmessage.cpp:131</div></div>
+<div class="ttc" id="aclassDFloatingMessage_html_a2a5cfea17af78221a467eadeef161687"><div class="ttname"><a href="classDFloatingMessage.html#a2a5cfea17af78221a467eadeef161687">DFloatingMessage::setDuration</a></div><div class="ttdeci">void setDuration(int msec)</div><div class="ttdoc">若是为临时消息,则设置时间(毫秒)后会自动消失 msec 消息显示的毫秒数, 默认是4000毫秒</div><div class="ttdef"><b>Definition:</b> dfloatingmessage.cpp:175</div></div>
+<div class="ttc" id="aclassDFloatingMessage_html_a356135eaa6a210e267fcec78319bc593"><div class="ttname"><a href="classDFloatingMessage.html#a356135eaa6a210e267fcec78319bc593">DFloatingMessage::setIcon</a></div><div class="ttdeci">void setIcon(const QIcon &amp;ico)</div><div class="ttdoc">设置控件图标 icon ico 是最终的效果图标</div><div class="ttdef"><b>Definition:</b> dfloatingmessage.cpp:132</div></div>
 <div class="ttc" id="aclassDFloatingMessage_html_a923f8ab92157d958dfbef208a7937212"><div class="ttname"><a href="classDFloatingMessage.html#a923f8ab92157d958dfbef208a7937212">DFloatingMessage::setWidget</a></div><div class="ttdeci">void setWidget(QWidget *widget)</div><div class="ttdoc">设置 widget 对象, 若是之前此处已经有对象, 会先清理旧的对象, 再将此处的新对象放到此处</div><div class="ttdef"><b>Definition:</b> dfloatingwidget.cpp:56</div></div>
-<div class="ttc" id="aclassDFloatingMessage_html_ae398619560a825b287553b3d84c71141"><div class="ttname"><a href="classDFloatingMessage.html#ae398619560a825b287553b3d84c71141">DFloatingMessage::setMessage</a></div><div class="ttdeci">void setMessage(const QString &amp;str)</div><div class="ttdoc">设置显示的文本消息(文字) str 消息文本的具体文字内容</div><div class="ttdef"><b>Definition:</b> dfloatingmessage.cpp:148</div></div>
+<div class="ttc" id="aclassDFloatingMessage_html_ae398619560a825b287553b3d84c71141"><div class="ttname"><a href="classDFloatingMessage.html#ae398619560a825b287553b3d84c71141">DFloatingMessage::setMessage</a></div><div class="ttdeci">void setMessage(const QString &amp;str)</div><div class="ttdoc">设置显示的文本消息(文字) str 消息文本的具体文字内容</div><div class="ttdef"><b>Definition:</b> dfloatingmessage.cpp:149</div></div>
 <div class="ttc" id="aclassDFloatingWidget_html"><div class="ttname"><a href="classDFloatingWidget.html">DFloatingWidget</a></div><div class="ttdef"><b>Definition:</b> dfloatingwidget.h:19</div></div>
 <div class="ttc" id="aclassDFloatingWidget_html_a923f8ab92157d958dfbef208a7937212"><div class="ttname"><a href="classDFloatingWidget.html#a923f8ab92157d958dfbef208a7937212">DFloatingWidget::setWidget</a></div><div class="ttdeci">void setWidget(QWidget *widget)</div><div class="ttdoc">设置 widget 对象, 若是之前此处已经有对象, 会先清理旧的对象, 再将此处的新对象放到此处</div><div class="ttdef"><b>Definition:</b> dfloatingwidget.cpp:56</div></div>
 <div class="ttc" id="aclassDFloatingWidget_html_adc149c56fd7c4c627d6de403a56425c8"><div class="ttname"><a href="classDFloatingWidget.html#adc149c56fd7c4c627d6de403a56425c8">DFloatingWidget::event</a></div><div class="ttdeci">bool event(QEvent *event) override</div><div class="ttdoc">主事件处理程序, 用来处理感兴趣的事件</div><div class="ttdef"><b>Definition:</b> dfloatingwidget.cpp:145</div></div>
+<div class="ttc" id="aqevent_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qevent.html">QEvent</a></div></div>
 <div class="ttc" id="aqicon_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qicon.html">QIcon</a></div></div>
 <div class="ttc" id="aqobject_html_Q_OBJECT"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">QObject::Q_OBJECT</a></div><div class="ttdeci">Q_OBJECTQ_OBJECT</div></div>
 <div class="ttc" id="aqobject_html_Q_SIGNALS"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_SIGNALS">QObject::Q_SIGNALS</a></div><div class="ttdeci">Q_SIGNALSQ_SIGNALS</div></div>
@@ -229,7 +231,7 @@ $(document).ready(function(){initNavTree('dfloatingmessage_8h_source.html',''); 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_cc1fdbae730d0dba18db2b924667b662.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_6819db61f31aacd6e31b437a606a4041.html">include</a></li><li class="navelem"><a class="el" href="dir_6719ee6af2149ba01bce2af57814b9e8.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_4faf4521db2f3764f9e00575717749e8.html">widgets</a></li><li class="navelem"><b>dfloatingmessage.h</b></li>
-    <li class="footer">文档生成时间:2023-01-03-09:52  +00</li>
+    <li class="footer">文档生成时间:2023-01-13-07:39  +00</li>
     <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
     <li class="footer">制作者:deepin doc doc go SIG</li>
     <li class="footer">文档使用CC-BY-4.0共享 </a>

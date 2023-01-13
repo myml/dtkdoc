@@ -7,7 +7,7 @@ var dir_24450d5b37828d2338747fbf63b34a61 =
     [ "ddbusextendedabstractinterface.h", "ddbusextendedabstractinterface_8h.html", [
       [ "DDBusExtendedAbstractInterface", "classDtk_1_1Core_1_1DDBusExtendedAbstractInterface.html", "classDtk_1_1Core_1_1DDBusExtendedAbstractInterface" ]
     ] ],
-    [ "ddbusinterface.h", "ddbusinterface_8h_source.html", null ],
+    [ "ddbusinterface.h", "dtkcore_2include_2util_2ddbusinterface_8h_source.html", null ],
     [ "ddbussender.h", "ddbussender_8h.html", [
       [ "DDBusData", "classDDBusData.html", "classDDBusData" ],
       [ "DDBusCaller", "classDDBusCaller.html", "classDDBusCaller" ],

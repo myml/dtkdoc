@@ -1,0 +1,27 @@
+var structDProcessDevice_1_1DProcessStatus =
+[
+    [ "cguestTime", "structDProcessDevice_1_1DProcessStatus.html#a19ecd5cbc85326a9423bc5d3d7c1548a", null ],
+    [ "cstime", "structDProcessDevice_1_1DProcessStatus.html#afae1adb58dbb80b8a914f183e7c7881d", null ],
+    [ "cutime", "structDProcessDevice_1_1DProcessStatus.html#aa2af363dc0d10018feaa94cc1aaefb18", null ],
+    [ "egid", "structDProcessDevice_1_1DProcessStatus.html#acf6a212fa5872ddfc5c9e8c1be3f4cc5", null ],
+    [ "euid", "structDProcessDevice_1_1DProcessStatus.html#a92f6e3756860c8a6ec86d3ba36bed613", null ],
+    [ "fgid", "structDProcessDevice_1_1DProcessStatus.html#aff1c8f06190232d8eb7ea5b0cbb5d91b", null ],
+    [ "fuid", "structDProcessDevice_1_1DProcessStatus.html#a8ed04ec343eea7ccd4b7e016b5d80e23", null ],
+    [ "gid", "structDProcessDevice_1_1DProcessStatus.html#a49d666294e831d74e798c6dfbb645e99", null ],
+    [ "guestTime", "structDProcessDevice_1_1DProcessStatus.html#ad7ad9c7b024ae72b68b5c8b16679cebb", null ],
+    [ "nice", "structDProcessDevice_1_1DProcessStatus.html#abb78a4b204ba987ac266d0d8e56a3e7d", null ],
+    [ "nthreads", "structDProcessDevice_1_1DProcessStatus.html#a1e4505ae4a8c1d9c8dc36ac44d61d4ae", null ],
+    [ "pgid", "structDProcessDevice_1_1DProcessStatus.html#a20f5dd1c3d76211dc0f75b2f03e0a9b3", null ],
+    [ "policy", "structDProcessDevice_1_1DProcessStatus.html#aebdeafa5b307c98eca1ebf7f2c3b0b0e", null ],
+    [ "ppid", "structDProcessDevice_1_1DProcessStatus.html#a36af966a173e3c3165d9cc8f954f6113", null ],
+    [ "processor", "structDProcessDevice_1_1DProcessStatus.html#a4734ecafe5b643c73219cf2236ec1515", null ],
+    [ "rtPrio", "structDProcessDevice_1_1DProcessStatus.html#a844e5f0a1f8321b4a51a6ce03e5d4027", null ],
+    [ "sgid", "structDProcessDevice_1_1DProcessStatus.html#a63f0c89a44e78daa7852432dbb16409e", null ],
+    [ "startTime", "structDProcessDevice_1_1DProcessStatus.html#a358d8c5862f1797e2a79235a678f1844", null ],
+    [ "state", "structDProcessDevice_1_1DProcessStatus.html#aaf1cb499571332d01a08d35fc022b9e4", null ],
+    [ "stime", "structDProcessDevice_1_1DProcessStatus.html#a7f632e1464e6954d28500f75a9ca2b57", null ],
+    [ "suid", "structDProcessDevice_1_1DProcessStatus.html#aa4369a6f9fff87aad5d39af8d0ddb5ca", null ],
+    [ "uid", "structDProcessDevice_1_1DProcessStatus.html#af885e30e21f08f95678b32d01a35bd35", null ],
+    [ "utime", "structDProcessDevice_1_1DProcessStatus.html#a5978fe3af49f570301b2b045c24310d0", null ],
+    [ "wtime", "structDProcessDevice_1_1DProcessStatus.html#ad1eb338f745e9e57c426151a2c3363cc", null ]
+];

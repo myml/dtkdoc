@@ -1,0 +1,267 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: HFSMasterDirectoryBlock结构体 参考</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="https://github.com/linuxdeepin/dtkdoc" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('structHFSMasterDirectoryBlock.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="structHFSMasterDirectoryBlock-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">HFSMasterDirectoryBlock结构体 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a3385ed53890e272bf36a3bb9eebd821f"><td class="memItemLeft" align="right" valign="top"><a id="a3385ed53890e272bf36a3bb9eebd821f"></a>
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>drSigWord</b></td></tr>
+<tr class="separator:a3385ed53890e272bf36a3bb9eebd821f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3b8298443edb9dcba726afef9bd1e95"><td class="memItemLeft" align="right" valign="top"><a id="aa3b8298443edb9dcba726afef9bd1e95"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>drCrDate</b></td></tr>
+<tr class="separator:aa3b8298443edb9dcba726afef9bd1e95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72d370e63911dcc716002660e47fc2f8"><td class="memItemLeft" align="right" valign="top"><a id="a72d370e63911dcc716002660e47fc2f8"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>drLsMod</b></td></tr>
+<tr class="separator:a72d370e63911dcc716002660e47fc2f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a394da0e34f1f00c15388e8e946603e8d"><td class="memItemLeft" align="right" valign="top"><a id="a394da0e34f1f00c15388e8e946603e8d"></a>
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>drAtrb</b></td></tr>
+<tr class="separator:a394da0e34f1f00c15388e8e946603e8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f37c520e31784903b75f806a37aeb8c"><td class="memItemLeft" align="right" valign="top"><a id="a5f37c520e31784903b75f806a37aeb8c"></a>
+int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>drNmFls</b></td></tr>
+<tr class="separator:a5f37c520e31784903b75f806a37aeb8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e77cf87a1eedf7fbe99ca76cf4501b9"><td class="memItemLeft" align="right" valign="top"><a id="a9e77cf87a1eedf7fbe99ca76cf4501b9"></a>
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>drVBMSt</b></td></tr>
+<tr class="separator:a9e77cf87a1eedf7fbe99ca76cf4501b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95d91a89757d333358e7531d8bc5d78f"><td class="memItemLeft" align="right" valign="top"><a id="a95d91a89757d333358e7531d8bc5d78f"></a>
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>drAllocPtr</b></td></tr>
+<tr class="separator:a95d91a89757d333358e7531d8bc5d78f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a652c779c9551a05571e5fc3c9bf2af91"><td class="memItemLeft" align="right" valign="top"><a id="a652c779c9551a05571e5fc3c9bf2af91"></a>
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>drNmAlBlks</b></td></tr>
+<tr class="separator:a652c779c9551a05571e5fc3c9bf2af91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60d3d00e8655835c41d90afd45fcb872"><td class="memItemLeft" align="right" valign="top"><a id="a60d3d00e8655835c41d90afd45fcb872"></a>
+int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>drAlBlkSiz</b></td></tr>
+<tr class="separator:a60d3d00e8655835c41d90afd45fcb872"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90bf4d23c9ac5b799627d0df79aeeb6c"><td class="memItemLeft" align="right" valign="top"><a id="a90bf4d23c9ac5b799627d0df79aeeb6c"></a>
+int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>drClpSiz</b></td></tr>
+<tr class="separator:a90bf4d23c9ac5b799627d0df79aeeb6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d27a873f0f90d287b1743c93e8eb87d"><td class="memItemLeft" align="right" valign="top"><a id="a2d27a873f0f90d287b1743c93e8eb87d"></a>
+int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>drAlBlSt</b></td></tr>
+<tr class="separator:a2d27a873f0f90d287b1743c93e8eb87d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcf9fdf07be996d7c30fc942a216975a"><td class="memItemLeft" align="right" valign="top"><a id="abcf9fdf07be996d7c30fc942a216975a"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>drNxtCNID</b></td></tr>
+<tr class="separator:abcf9fdf07be996d7c30fc942a216975a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2013df244525aa259efcfc407f7cf698"><td class="memItemLeft" align="right" valign="top"><a id="a2013df244525aa259efcfc407f7cf698"></a>
+int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>drFreeBks</b></td></tr>
+<tr class="separator:a2013df244525aa259efcfc407f7cf698"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a436b1c7f6e6ccc8ec5d5a066265e8506"><td class="memItemLeft" align="right" valign="top"><a id="a436b1c7f6e6ccc8ec5d5a066265e8506"></a>
+char&#160;</td><td class="memItemRight" valign="bottom"><b>drVN</b> [28]</td></tr>
+<tr class="separator:a436b1c7f6e6ccc8ec5d5a066265e8506"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e5414835ca34f1743759160956e1e14"><td class="memItemLeft" align="right" valign="top"><a id="a3e5414835ca34f1743759160956e1e14"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>drVolBkUp</b></td></tr>
+<tr class="separator:a3e5414835ca34f1743759160956e1e14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5d6a54154e4d98f8245932bdf596ca9"><td class="memItemLeft" align="right" valign="top"><a id="ac5d6a54154e4d98f8245932bdf596ca9"></a>
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>drVSeqNum</b></td></tr>
+<tr class="separator:ac5d6a54154e4d98f8245932bdf596ca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24dcd9e0befbd8fd90ed1c4e4508cacd"><td class="memItemLeft" align="right" valign="top"><a id="a24dcd9e0befbd8fd90ed1c4e4508cacd"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>drWrCnt</b></td></tr>
+<tr class="separator:a24dcd9e0befbd8fd90ed1c4e4508cacd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ca7bb32e9f75873901d1cf0f36b6ae2"><td class="memItemLeft" align="right" valign="top"><a id="a7ca7bb32e9f75873901d1cf0f36b6ae2"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>drXTClpSiz</b></td></tr>
+<tr class="separator:a7ca7bb32e9f75873901d1cf0f36b6ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b5f102b9db259ab5a052db30c0b5634"><td class="memItemLeft" align="right" valign="top"><a id="a8b5f102b9db259ab5a052db30c0b5634"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>drCTClpSiz</b></td></tr>
+<tr class="separator:a8b5f102b9db259ab5a052db30c0b5634"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6d860b88ec25c8b76459dd40e20396e"><td class="memItemLeft" align="right" valign="top"><a id="aa6d860b88ec25c8b76459dd40e20396e"></a>
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>drNmRtDirs</b></td></tr>
+<tr class="separator:aa6d860b88ec25c8b76459dd40e20396e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56bb65882d7e7d1b9fa5cc1e867334a0"><td class="memItemLeft" align="right" valign="top"><a id="a56bb65882d7e7d1b9fa5cc1e867334a0"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>drFilCnt</b></td></tr>
+<tr class="separator:a56bb65882d7e7d1b9fa5cc1e867334a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6327c5086f8cf813e978753ca6b20145"><td class="memItemLeft" align="right" valign="top"><a id="a6327c5086f8cf813e978753ca6b20145"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>drDirCnt</b></td></tr>
+<tr class="separator:a6327c5086f8cf813e978753ca6b20145"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad15250eac381cb8255c8bc3e52163994"><td class="memItemLeft" align="right" valign="top"><a id="ad15250eac381cb8255c8bc3e52163994"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>drFndrInfo</b> [8]</td></tr>
+<tr class="separator:ad15250eac381cb8255c8bc3e52163994"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4137447cfd13acd5e509cd30e3bdea9"><td class="memItemLeft" align="right" valign="top"><a id="ab4137447cfd13acd5e509cd30e3bdea9"></a>
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>drEmbedSigWord</b></td></tr>
+<tr class="separator:ab4137447cfd13acd5e509cd30e3bdea9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8ef07d4b2516fee7efa36ecd1b8b063"><td class="memItemLeft" align="right" valign="top"><a id="aa8ef07d4b2516fee7efa36ecd1b8b063"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>drEmbedExtent</b></td></tr>
+<tr class="separator:aa8ef07d4b2516fee7efa36ecd1b8b063"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa0df36731ea91cd10d9fe4e3935fab3"><td class="memItemLeft" align="right" valign="top"><a id="aaa0df36731ea91cd10d9fe4e3935fab3"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>drXTFlSize</b></td></tr>
+<tr class="separator:aaa0df36731ea91cd10d9fe4e3935fab3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af077b4d53b274903c94e1d7ca3b5280d"><td class="memItemLeft" align="right" valign="top"><a id="af077b4d53b274903c94e1d7ca3b5280d"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>drXTExtRec</b> [12]</td></tr>
+<tr class="separator:af077b4d53b274903c94e1d7ca3b5280d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d75db0ea03adb54356787f8cc2b0d42"><td class="memItemLeft" align="right" valign="top"><a id="a1d75db0ea03adb54356787f8cc2b0d42"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>drCTFlSize</b></td></tr>
+<tr class="separator:a1d75db0ea03adb54356787f8cc2b0d42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a910eccb0b4912e56b821f86e906e1ae4"><td class="memItemLeft" align="right" valign="top"><a id="a910eccb0b4912e56b821f86e906e1ae4"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>drCTExtRec</b> [12]</td></tr>
+<tr class="separator:a910eccb0b4912e56b821f86e906e1ae4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/>该结构体的文档由以下文件生成:<ul>
+<li>dtkdevice/src/3rdparty/volumes.cpp</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="structHFSMasterDirectoryBlock.html">HFSMasterDirectoryBlock</a></li>
+    <li class="footer">文档生成时间:2023-01-13-07:39  +00</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

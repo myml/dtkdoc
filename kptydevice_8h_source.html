@@ -1,0 +1,488 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: dtkio/src/dtkcompressor/3rdparty/interface/process/kptydevice.h 源文件</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="https://github.com/linuxdeepin/dtkdoc" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('kptydevice_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">kptydevice.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * This file is a part of QTerminal - http://gitorious.org/qterminal</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * This file was un-linked from KDE and modified</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * by Maxim Bourmistrov &lt;maxim@unixconn.com&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">/* This file is part of the KDE libraries</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">    Copyright (C) 2007 Oswald Buddenhagen &lt;ossi@kde.org&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">    This library is free software; you can redistribute it and/or</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">    modify it under the terms of the GNU Library General Public</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">    License as published by the Free Software Foundation; either</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">    version 2 of the License, or (at your option) any later version.</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">    This library is distributed in the hope that it will be useful,</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">    but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">    Library General Public License for more details.</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">    You should have received a copy of the GNU Library General Public License</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">    along with this library; see the file COPYING.LIB.  If not, write to</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">    the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">    Boston, MA 02110-1301, USA.</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#ifndef kptydev_h</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#define kptydev_h</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;kpty_p.h&quot;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &lt;QIODevice&gt;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#define KMAXINT ((int)(~0U &gt;&gt; 1))</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">struct </span><a class="code" href="structKPtyDevicePrivate.html">KPtyDevicePrivate</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">class </span><a class="codeRef" href="http://doc.qt.io/qt-5/qsocketnotifier.html">QSocketNotifier</a>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#define Q_DECLARE_PRIVATE_MI(Class, SuperClass) \</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">    inline Class##Private* d_func() { return reinterpret_cast&lt;Class##Private *&gt;(SuperClass::d_ptr); } \</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">    inline const Class##Private* d_func() const { return reinterpret_cast&lt;const Class##Private *&gt;(SuperClass::d_ptr); } \</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">    friend struct Class##Private;</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classKPtyDevice.html">   49</a></span>&#160;<span class="keyword">class </span><a class="code" href="classKPtyDevice.html">KPtyDevice</a> : <span class="keyword">public</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qiodevice.html">QIODevice</a>, <span class="keyword">public</span> <a class="code" href="classKPty.html">KPty</a> {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">Q_OBJECT</a></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    Q_DECLARE_PRIVATE_MI(<a class="code" href="classKPtyDevice.html">KPtyDevice</a>, <a class="code" href="classKPty.html">KPty</a>)</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="classKPtyDevice.html#a782b7c6e30f85e9e502d4f03e9939438">KPtyDevice</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a> = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="classKPtyDevice.html#af6ceb9a85d544ec5d70904287d9cbd0b">~KPtyDevice</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classKPty.html#a86bddd6694e074fd24be475caf535b37">open</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qiodevice.html#OpenModeFlag-enum">OpenMode</a> mode = <a class="codeRef" href="http://doc.qt.io/qt-5/qiodevice.html#OpenModeFlag-enum">ReadWrite</a> | <a class="codeRef" href="http://doc.qt.io/qt-5/qiodevice.html#OpenModeFlag-enum">Unbuffered</a>) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classKPty.html#a86bddd6694e074fd24be475caf535b37">open</a>(<span class="keywordtype">int</span> fd, <a class="codeRef" href="http://doc.qt.io/qt-5/qiodevice.html#OpenModeFlag-enum">OpenMode</a> mode = <a class="codeRef" href="http://doc.qt.io/qt-5/qiodevice.html#OpenModeFlag-enum">ReadWrite</a> | <a class="codeRef" href="http://doc.qt.io/qt-5/qiodevice.html#OpenModeFlag-enum">Unbuffered</a>);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classKPtyDevice.html#abb6dca39d498463d710cb783a717331d">close</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classKPtyDevice.html#a20b4b5c44df9f5f7bc5e356b204d2826">setSuspended</a>(<span class="keywordtype">bool</span> suspended);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classKPtyDevice.html#aaa946dc2a5bec86427cae8de85133cdc">isSuspended</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classKPtyDevice.html#a46c39ea9fd1adb47cff564509a19ece6">isSequential</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classKPtyDevice.html#a5f842fcbdb3b54486bd016858ff99d66">canReadLine</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classKPtyDevice.html#ac19fc99511c57cdb1293abbdad285e0b">atEnd</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    qint64 <a class="code" href="classKPtyDevice.html#a3e8a05d2a4c1b8d43a237d0ead0a4a67">bytesAvailable</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    qint64 <a class="code" href="classKPtyDevice.html#a9c7db15e4bb8db875b0be510dbd42975">bytesToWrite</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160; </div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="keywordtype">bool</span> waitForBytesWritten(<span class="keywordtype">int</span> msecs = -1) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="keywordtype">bool</span> waitForReadyRead(<span class="keywordtype">int</span> msecs = -1) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160; </div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; </div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SIGNALS">Q_SIGNALS</a>:</div>
+<div class="line"><a name="l00154"></a><span class="lineno"><a class="line" href="classKPtyDevice.html#a0b7d78a0b3a67417fc829e7399de1785">  154</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classKPtyDevice.html#a0b7d78a0b3a67417fc829e7399de1785">readEof</a>();</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    qint64 readData(<span class="keywordtype">char</span> *data, qint64 maxSize) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    qint64 readLineData(<span class="keywordtype">char</span> *data, qint64 maxSize) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    qint64 writeData(<span class="keyword">const</span> <span class="keywordtype">char</span> *data, qint64 maxSize) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    Q_PRIVATE_SLOT(d_func(), <span class="keywordtype">bool</span> _k_canRead())</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    Q_PRIVATE_SLOT(d_func(), <span class="keywordtype">bool</span> _k_canWrite())</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;};</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160; </div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="comment">// Helper. Remove when QRingBuffer becomes public. //</span></div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="preprocessor">#include &lt;QByteArray&gt;</span></div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="preprocessor">#include &lt;list&gt;</span></div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160; </div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="preprocessor">#define CHUNKSIZE 4096</span></div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160; </div>
+<div class="line"><a name="l00175"></a><span class="lineno"><a class="line" href="classKRingBuffer.html">  175</a></span>&#160;<span class="keyword">class </span><a class="code" href="classKRingBuffer.html">KRingBuffer</a></div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;{</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <a class="code" href="classKRingBuffer.html">KRingBuffer</a>()</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    {</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        clear();</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    }</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160; </div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <span class="keywordtype">void</span> clear()</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    {</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        buffers.clear();</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        <a class="codeRef" href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a> tmp;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        tmp.<a class="codeRef" href="http://doc.qt.io/qt-5/qbytearray.html#resize">resize</a>(CHUNKSIZE);</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        buffers.push_back(tmp);</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        head = tail = 0;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        totalSize = 0;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    }</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160; </div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> isEmpty()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        <span class="keywordflow">return</span> buffers.size() == 1 &amp;&amp; !tail;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    }</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160; </div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">int</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qiodevice.html#size">size</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        <span class="keywordflow">return</span> totalSize;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    }</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160; </div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">int</span> readSize()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        <span class="keywordflow">return</span> (buffers.size() == 1 ? tail : buffers.front().size()) - head;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    }</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160; </div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <span class="keyword">inline</span> <span class="keyword">const</span> <span class="keywordtype">char</span> *readPointer()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        Q_ASSERT(totalSize &gt; 0);</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        <span class="keywordflow">return</span> buffers.front().constData() + head;</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    }</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160; </div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <span class="keywordtype">void</span> free(<span class="keywordtype">int</span> bytes)</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    {</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        totalSize -= bytes;</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        Q_ASSERT(totalSize &gt;= 0);</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160; </div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        forever {</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;            <span class="keywordtype">int</span> nbs = readSize();</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160; </div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;            <span class="keywordflow">if</span> (bytes &lt; nbs) {</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;                head += bytes;</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;                <span class="keywordflow">if</span> (head == tail &amp;&amp; buffers.size() == 1) {</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;                    buffers.front().resize(CHUNKSIZE);</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;                    head = tail = 0;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;                }</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;            }</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160; </div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;            bytes -= nbs;</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;            <span class="keywordflow">if</span> (buffers.size() == 1) {</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;                buffers.front().resize(CHUNKSIZE);</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;                head = tail = 0;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;            }</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160; </div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;            buffers.pop_front();</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;            head = 0;</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        }</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    }</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160; </div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    <span class="keywordtype">char</span> *reserve(<span class="keywordtype">int</span> bytes)</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    {</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        totalSize += bytes;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160; </div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        <span class="keywordtype">char</span> *ptr;</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        <span class="keywordflow">if</span> (tail + bytes &lt;= buffers.back().size()) {</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;            ptr = buffers.back().data() + tail;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;            tail += bytes;</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;            buffers.back().resize(tail);</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;            <a class="codeRef" href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a> tmp;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;            tmp.<a class="codeRef" href="http://doc.qt.io/qt-5/qbytearray.html#resize">resize</a>(qMax(CHUNKSIZE, bytes));</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;            ptr = tmp.<a class="codeRef" href="http://doc.qt.io/qt-5/qbytearray.html#data">data</a>();</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;            buffers.push_back(tmp);</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;            tail = bytes;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        }</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        <span class="keywordflow">return</span> ptr;</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    }</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160; </div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    <span class="comment">// release a trailing part of the last reservation</span></div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> unreserve(<span class="keywordtype">int</span> bytes)</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    {</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        totalSize -= bytes;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        tail -= bytes;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    }</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160; </div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qiodevice.html#write">write</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *data, <span class="keywordtype">int</span> len)</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    {</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        memcpy(reserve(len), data, len);</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    }</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160; </div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    <span class="comment">// Find the first occurrence of c and return the index after it.</span></div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    <span class="comment">// If c is not found until maxLength, maxLength is returned, provided</span></div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    <span class="comment">// it is smaller than the buffer size. Otherwise -1 is returned.</span></div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    <span class="keywordtype">int</span> indexAfter(<span class="keywordtype">char</span> c, <span class="keywordtype">int</span> maxLength = KMAXINT)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        <span class="keywordtype">int</span> index = 0;</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;        <span class="keywordtype">int</span> start = head;</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;        std::list&lt;QByteArray&gt;::const_iterator it = buffers.cbegin();</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;        forever {</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;            <span class="keywordflow">if</span> (!maxLength)</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;                <span class="keywordflow">return</span> index;</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;            <span class="keywordflow">if</span> (index == <a class="codeRef" href="http://doc.qt.io/qt-5/qiodevice.html#size">size</a>())</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;                <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;            <span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a> &amp;buf = *it;</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;            ++it;</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;            <span class="keywordtype">int</span> len = qMin((it == buffers.cend() ? tail : buf.<a class="codeRef" href="http://doc.qt.io/qt-5/qbytearray.html#size">size</a>()) - start,</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;                           maxLength);</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">char</span> *ptr = buf.<a class="codeRef" href="http://doc.qt.io/qt-5/qbytearray.html#data">data</a>() + start;</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;            <span class="keywordflow">if</span> (<span class="keyword">const</span> <span class="keywordtype">char</span> *rptr = (<span class="keyword">const</span> <span class="keywordtype">char</span> *)memchr(ptr, c, len))</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;                <span class="keywordflow">return</span> index + (rptr - ptr) + 1;</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;            index += len;</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;            maxLength -= len;</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;            start = 0;</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        }</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    }</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160; </div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">int</span> lineSize(<span class="keywordtype">int</span> maxLength = KMAXINT)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;        <span class="keywordflow">return</span> indexAfter(<span class="charliteral">&#39;\n&#39;</span>, maxLength);</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    }</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160; </div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="classKPtyDevice.html#a5f842fcbdb3b54486bd016858ff99d66">canReadLine</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;        <span class="keywordflow">return</span> lineSize() != -1;</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    }</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160; </div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    <span class="keywordtype">int</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qiodevice.html#read">read</a>(<span class="keywordtype">char</span> *data, <span class="keywordtype">int</span> maxLength)</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    {</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;        <span class="keywordtype">int</span> bytesToRead = qMin(<a class="codeRef" href="http://doc.qt.io/qt-5/qiodevice.html#size">size</a>(), maxLength);</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;        <span class="keywordtype">int</span> readSoFar = 0;</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;        <span class="keywordflow">while</span> (readSoFar &lt; bytesToRead) {</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">char</span> *ptr = readPointer();</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;            <span class="keywordtype">int</span> bs = qMin(bytesToRead - readSoFar, readSize());</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;            memcpy(data + readSoFar, ptr, bs);</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;            readSoFar += bs;</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;            free(bs);</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        }</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        <span class="keywordflow">return</span> readSoFar;</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    }</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160; </div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    <span class="keywordtype">int</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qiodevice.html#readLine">readLine</a>(<span class="keywordtype">char</span> *data, <span class="keywordtype">int</span> maxLength)</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    {</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        <span class="keywordflow">return</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qiodevice.html#read">read</a>(data, lineSize(qMin(maxLength, <a class="codeRef" href="http://doc.qt.io/qt-5/qiodevice.html#size">size</a>())));</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    }</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160; </div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    std::list&lt;QByteArray&gt; buffers;</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    <span class="keywordtype">int</span> head, tail;</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    <span class="keywordtype">int</span> totalSize;</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;};</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160; </div>
+<div class="line"><a name="l00335"></a><span class="lineno"><a class="line" href="structKPtyDevicePrivate.html">  335</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structKPtyDevicePrivate.html">KPtyDevicePrivate</a> : <span class="keyword">public</span> <a class="code" href="classKPtyPrivate.html">KPtyPrivate</a> {</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160; </div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    Q_DECLARE_PUBLIC(<a class="code" href="classKPtyDevice.html">KPtyDevice</a>)</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160; </div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    <a class="code" href="structKPtyDevicePrivate.html">KPtyDevicePrivate</a>(<a class="code" href="classKPty.html">KPty</a>* <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a>) :</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;        <a class="code" href="classKPtyPrivate.html">KPtyPrivate</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a>),</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;        emittedReadyRead(<span class="keyword">false</span>), emittedBytesWritten(<span class="keyword">false</span>),</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;        readNotifier(<span class="keyword">nullptr</span>), writeNotifier(<span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    {</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    }</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160; </div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    <span class="keywordtype">bool</span> _k_canRead();</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    <span class="keywordtype">bool</span> _k_canWrite();</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160; </div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    <span class="keywordtype">bool</span> doWait(<span class="keywordtype">int</span> msecs, <span class="keywordtype">bool</span> reading);</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    <span class="keywordtype">void</span> finishOpen(<a class="codeRef" href="http://doc.qt.io/qt-5/qiodevice.html#OpenModeFlag-enum">QIODevice::OpenMode</a> mode);</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160; </div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    <span class="keywordtype">bool</span> emittedReadyRead;</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    <span class="keywordtype">bool</span> emittedBytesWritten;</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qsocketnotifier.html">QSocketNotifier</a> *readNotifier;</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qsocketnotifier.html">QSocketNotifier</a> *writeNotifier;</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    <a class="code" href="classKRingBuffer.html">KRingBuffer</a> readBuffer;</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    <a class="code" href="classKRingBuffer.html">KRingBuffer</a> writeBuffer;</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;};</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160; </div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160; </div>
+<div class="ttc" id="aclassKPtyDevice_html"><div class="ttname"><a href="classKPtyDevice.html">KPtyDevice</a></div><div class="ttdef"><b>Definition:</b> kptydevice.h:49</div></div>
+<div class="ttc" id="aclassKPtyDevice_html_a0b7d78a0b3a67417fc829e7399de1785"><div class="ttname"><a href="classKPtyDevice.html#a0b7d78a0b3a67417fc829e7399de1785">KPtyDevice::readEof</a></div><div class="ttdeci">void readEof()</div></div>
+<div class="ttc" id="aclassKPtyDevice_html_a20b4b5c44df9f5f7bc5e356b204d2826"><div class="ttname"><a href="classKPtyDevice.html#a20b4b5c44df9f5f7bc5e356b204d2826">KPtyDevice::setSuspended</a></div><div class="ttdeci">void setSuspended(bool suspended)</div><div class="ttdef"><b>Definition:</b> kptydevice.cpp:387</div></div>
+<div class="ttc" id="aclassKPtyDevice_html_a3e8a05d2a4c1b8d43a237d0ead0a4a67"><div class="ttname"><a href="classKPtyDevice.html#a3e8a05d2a4c1b8d43a237d0ead0a4a67">KPtyDevice::bytesAvailable</a></div><div class="ttdeci">qint64 bytesAvailable() const override</div><div class="ttdef"><b>Definition:</b> kptydevice.cpp:363</div></div>
+<div class="ttc" id="aclassKPtyDevice_html_a46c39ea9fd1adb47cff564509a19ece6"><div class="ttname"><a href="classKPtyDevice.html#a46c39ea9fd1adb47cff564509a19ece6">KPtyDevice::isSequential</a></div><div class="ttdeci">bool isSequential() const override</div><div class="ttdef"><b>Definition:</b> kptydevice.cpp:346</div></div>
+<div class="ttc" id="aclassKPtyDevice_html_a5f842fcbdb3b54486bd016858ff99d66"><div class="ttname"><a href="classKPtyDevice.html#a5f842fcbdb3b54486bd016858ff99d66">KPtyDevice::canReadLine</a></div><div class="ttdeci">bool canReadLine() const override</div><div class="ttdef"><b>Definition:</b> kptydevice.cpp:351</div></div>
+<div class="ttc" id="aclassKPtyDevice_html_a782b7c6e30f85e9e502d4f03e9939438"><div class="ttname"><a href="classKPtyDevice.html#a782b7c6e30f85e9e502d4f03e9939438">KPtyDevice::KPtyDevice</a></div><div class="ttdeci">KPtyDevice(QObject *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> kptydevice.cpp:289</div></div>
+<div class="ttc" id="aclassKPtyDevice_html_a9c7db15e4bb8db875b0be510dbd42975"><div class="ttname"><a href="classKPtyDevice.html#a9c7db15e4bb8db875b0be510dbd42975">KPtyDevice::bytesToWrite</a></div><div class="ttdeci">qint64 bytesToWrite() const override</div><div class="ttdef"><b>Definition:</b> kptydevice.cpp:369</div></div>
+<div class="ttc" id="aclassKPtyDevice_html_aaa946dc2a5bec86427cae8de85133cdc"><div class="ttname"><a href="classKPtyDevice.html#aaa946dc2a5bec86427cae8de85133cdc">KPtyDevice::isSuspended</a></div><div class="ttdeci">bool isSuspended() const</div><div class="ttdef"><b>Definition:</b> kptydevice.cpp:393</div></div>
+<div class="ttc" id="aclassKPtyDevice_html_abb6dca39d498463d710cb783a717331d"><div class="ttname"><a href="classKPtyDevice.html#abb6dca39d498463d710cb783a717331d">KPtyDevice::close</a></div><div class="ttdeci">void close() override</div><div class="ttdef"><b>Definition:</b> kptydevice.cpp:331</div></div>
+<div class="ttc" id="aclassKPtyDevice_html_ac19fc99511c57cdb1293abbdad285e0b"><div class="ttname"><a href="classKPtyDevice.html#ac19fc99511c57cdb1293abbdad285e0b">KPtyDevice::atEnd</a></div><div class="ttdeci">bool atEnd() const override</div><div class="ttdef"><b>Definition:</b> kptydevice.cpp:357</div></div>
+<div class="ttc" id="aclassKPtyDevice_html_af6ceb9a85d544ec5d70904287d9cbd0b"><div class="ttname"><a href="classKPtyDevice.html#af6ceb9a85d544ec5d70904287d9cbd0b">KPtyDevice::~KPtyDevice</a></div><div class="ttdeci">~KPtyDevice() override</div><div class="ttdef"><b>Definition:</b> kptydevice.cpp:295</div></div>
+<div class="ttc" id="aclassKPtyPrivate_html"><div class="ttname"><a href="classKPtyPrivate.html">KPtyPrivate</a></div><div class="ttdef"><b>Definition:</b> kpty_p.h:30</div></div>
+<div class="ttc" id="aclassKPty_html"><div class="ttname"><a href="classKPty.html">KPty</a></div><div class="ttdef"><b>Definition:</b> kpty.h:35</div></div>
+<div class="ttc" id="aclassKPty_html_a86bddd6694e074fd24be475caf535b37"><div class="ttname"><a href="classKPty.html#a86bddd6694e074fd24be475caf535b37">KPty::open</a></div><div class="ttdeci">bool open()</div><div class="ttdef"><b>Definition:</b> kpty.cpp:212</div></div>
+<div class="ttc" id="aclassKRingBuffer_html"><div class="ttname"><a href="classKRingBuffer.html">KRingBuffer</a></div><div class="ttdef"><b>Definition:</b> kptydevice.h:176</div></div>
+<div class="ttc" id="aqbytearray_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a></div></div>
+<div class="ttc" id="aqbytearray_html_data"><div class="ttname"><a href="http://doc.qt.io/qt-5/qbytearray.html#data">QByteArray::data</a></div><div class="ttdeci">char * data()</div></div>
+<div class="ttc" id="aqbytearray_html_resize"><div class="ttname"><a href="http://doc.qt.io/qt-5/qbytearray.html#resize">QByteArray::resize</a></div><div class="ttdeci">void resize(int size)</div></div>
+<div class="ttc" id="aqbytearray_html_size"><div class="ttname"><a href="http://doc.qt.io/qt-5/qbytearray.html#size">QByteArray::size</a></div><div class="ttdeci">int size() const const</div></div>
+<div class="ttc" id="aqiodevice_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qiodevice.html">QIODevice</a></div></div>
+<div class="ttc" id="aqiodevice_html_OpenModeFlag-enum"><div class="ttname"><a href="http://doc.qt.io/qt-5/qiodevice.html#OpenModeFlag-enum">QIODevice::OpenMode</a></div><div class="ttdeci">typedef OpenMode</div></div>
+<div class="ttc" id="aqiodevice_html_read"><div class="ttname"><a href="http://doc.qt.io/qt-5/qiodevice.html#read">QIODevice::read</a></div><div class="ttdeci">qint64 read(char *data, qint64 maxSize)</div></div>
+<div class="ttc" id="aqiodevice_html_readLine"><div class="ttname"><a href="http://doc.qt.io/qt-5/qiodevice.html#readLine">QIODevice::readLine</a></div><div class="ttdeci">qint64 readLine(char *data, qint64 maxSize)</div></div>
+<div class="ttc" id="aqiodevice_html_size"><div class="ttname"><a href="http://doc.qt.io/qt-5/qiodevice.html#size">QIODevice::size</a></div><div class="ttdeci">virtual qint64 size() const const</div></div>
+<div class="ttc" id="aqiodevice_html_write"><div class="ttname"><a href="http://doc.qt.io/qt-5/qiodevice.html#write">QIODevice::write</a></div><div class="ttdeci">qint64 write(const char *data, qint64 maxSize)</div></div>
+<div class="ttc" id="aqobject_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html">QObject</a></div></div>
+<div class="ttc" id="aqobject_html_Q_OBJECT"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">QObject::Q_OBJECT</a></div><div class="ttdeci">Q_OBJECTQ_OBJECT</div></div>
+<div class="ttc" id="aqobject_html_Q_SIGNALS"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_SIGNALS">QObject::Q_SIGNALS</a></div><div class="ttdeci">Q_SIGNALSQ_SIGNALS</div></div>
+<div class="ttc" id="aqobject_html_parent"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#parent">QObject::parent</a></div><div class="ttdeci">QObject * parent() const const</div></div>
+<div class="ttc" id="aqsocketnotifier_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qsocketnotifier.html">QSocketNotifier</a></div></div>
+<div class="ttc" id="astructKPtyDevicePrivate_html"><div class="ttname"><a href="structKPtyDevicePrivate.html">KPtyDevicePrivate</a></div><div class="ttdef"><b>Definition:</b> kptydevice.h:335</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_0990604d0eb8363f4260fee8d79bba7c.html">dtkio</a></li><li class="navelem"><a class="el" href="dir_f218eea51e6ba76871d0d7e538e54c2d.html">src</a></li><li class="navelem"><a class="el" href="dir_64e7b8374d0b59199acbe839986a12d4.html">dtkcompressor</a></li><li class="navelem"><a class="el" href="dir_d1ee9709c8a9c8a6288a9650a6bf8ddf.html">3rdparty</a></li><li class="navelem"><a class="el" href="dir_88f6681accce92f79d1508b1d9a9c26a.html">interface</a></li><li class="navelem"><a class="el" href="dir_be458f78dcfc38b2dc4f83be2ef6df51.html">process</a></li><li class="navelem"><b>kptydevice.h</b></li>
+    <li class="footer">文档生成时间:2023-01-13-07:39  +00</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

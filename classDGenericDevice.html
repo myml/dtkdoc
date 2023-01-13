@@ -1,0 +1,739 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: DGenericDevice类 参考</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="https://github.com/linuxdeepin/dtkdoc" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classDGenericDevice.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#signals">信号</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#properties">属性</a> &#124;
+<a href="classDGenericDevice-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">DGenericDevice类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 DGenericDevice 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classDGenericDevice.png" usemap="#DGenericDevice_map" alt=""/>
+  <map id="DGenericDevice_map" name="DGenericDevice_map">
+<area href="classDDevice.html" alt="DDevice" shape="rect" coords="0,56,106,80"/>
+<area target="_parent" href="http://doc.qt.io/qt-5/qobject.html" alt="QObject" shape="rect" coords="0,0,106,24"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+信号</h2></td></tr>
+<tr class="memitem:adb21f149081c57722249ab282e6ac533"><td class="memItemLeft" align="right" valign="top"><a id="adb21f149081c57722249ab282e6ac533"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGenericDevice.html#adb21f149081c57722249ab282e6ac533">HwAddressChanged</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a> &amp;addr)</td></tr>
+<tr class="memdesc:adb21f149081c57722249ab282e6ac533"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号, 当HwAddress属性发生改变时触发 <br /></td></tr>
+<tr class="separator:adb21f149081c57722249ab282e6ac533"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a284d96f9c40c9a67fc5e71635d56f5b6"><td class="memItemLeft" align="right" valign="top"><a id="a284d96f9c40c9a67fc5e71635d56f5b6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGenericDevice.html#a284d96f9c40c9a67fc5e71635d56f5b6">typeDescriptionChanged</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;desc)</td></tr>
+<tr class="memdesc:a284d96f9c40c9a67fc5e71635d56f5b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号, 当typeDescription属性发生改变时触发 <br /></td></tr>
+<tr class="separator:a284d96f9c40c9a67fc5e71635d56f5b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header signals_classDDevice"><td colspan="2" onclick="javascript:toggleInherit('signals_classDDevice')"><img src="closed.png" alt="-"/>&#160;信号 继承自 <a class="el" href="classDDevice.html">DDevice</a></td></tr>
+<tr class="memitem:a399f11785954fb8a50368bf1e007b1de inherit signals_classDDevice"><td class="memItemLeft" align="right" valign="top"><a id="a399f11785954fb8a50368bf1e007b1de"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDevice.html#a399f11785954fb8a50368bf1e007b1de">deviceStateChanged</a> (const NMDeviceState newSatate, const NMDeviceState oldState, const NMDeviceStateReason reason)</td></tr>
+<tr class="memdesc:a399f11785954fb8a50368bf1e007b1de inherit signals_classDDevice"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号, 当deviceState属性改变时触发 <br /></td></tr>
+<tr class="separator:a399f11785954fb8a50368bf1e007b1de inherit signals_classDDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4aa73e65d9c2a3a77e3cc0557ab90ad inherit signals_classDDevice"><td class="memItemLeft" align="right" valign="top"><a id="af4aa73e65d9c2a3a77e3cc0557ab90ad"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDevice.html#af4aa73e65d9c2a3a77e3cc0557ab90ad">availableConnectionsChanged</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qlist.html">QList</a>&lt; quint64 &gt; &amp;conns)</td></tr>
+<tr class="memdesc:af4aa73e65d9c2a3a77e3cc0557ab90ad inherit signals_classDDevice"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号, 当availableConnections属性改变时触发 <br /></td></tr>
+<tr class="separator:af4aa73e65d9c2a3a77e3cc0557ab90ad inherit signals_classDDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66aef8a232445ff0f5fac6b9ed876abb inherit signals_classDDevice"><td class="memItemLeft" align="right" valign="top"><a id="a66aef8a232445ff0f5fac6b9ed876abb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDevice.html#a66aef8a232445ff0f5fac6b9ed876abb">autoconnectChanged</a> (const bool enabled)</td></tr>
+<tr class="memdesc:a66aef8a232445ff0f5fac6b9ed876abb inherit signals_classDDevice"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号, 当 autoconnect属性改变时触发 <br /></td></tr>
+<tr class="separator:a66aef8a232445ff0f5fac6b9ed876abb inherit signals_classDDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0da29a78f4038330489a195ac8f74884 inherit signals_classDDevice"><td class="memItemLeft" align="right" valign="top"><a id="a0da29a78f4038330489a195ac8f74884"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDevice.html#a0da29a78f4038330489a195ac8f74884">managedChanged</a> (const bool enabled)</td></tr>
+<tr class="memdesc:a0da29a78f4038330489a195ac8f74884 inherit signals_classDDevice"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号, 当managed属性改变时触发 <br /></td></tr>
+<tr class="separator:a0da29a78f4038330489a195ac8f74884 inherit signals_classDDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4272c21b8dc32e55c8500c7f20a2074f inherit signals_classDDevice"><td class="memItemLeft" align="right" valign="top"><a id="a4272c21b8dc32e55c8500c7f20a2074f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDevice.html#a4272c21b8dc32e55c8500c7f20a2074f">activeConnectionChanged</a> (const quint64 &amp;conn)</td></tr>
+<tr class="memdesc:a4272c21b8dc32e55c8500c7f20a2074f inherit signals_classDDevice"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号, 当activeConnection属性改变时触发 <br /></td></tr>
+<tr class="separator:a4272c21b8dc32e55c8500c7f20a2074f inherit signals_classDDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3b2aac85c1c1d224bde395dee299a76 inherit signals_classDDevice"><td class="memItemLeft" align="right" valign="top"><a id="aa3b2aac85c1c1d224bde395dee299a76"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDevice.html#aa3b2aac85c1c1d224bde395dee299a76">DHCP4ConfigChanged</a> (const quint64 &amp;config)</td></tr>
+<tr class="memdesc:aa3b2aac85c1c1d224bde395dee299a76 inherit signals_classDDevice"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号, 当DHCP4Config属性改变时触发 <br /></td></tr>
+<tr class="separator:aa3b2aac85c1c1d224bde395dee299a76 inherit signals_classDDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a9d8f8a62c3ad8c7a07b4291663adb0 inherit signals_classDDevice"><td class="memItemLeft" align="right" valign="top"><a id="a5a9d8f8a62c3ad8c7a07b4291663adb0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDevice.html#a5a9d8f8a62c3ad8c7a07b4291663adb0">DHCP6ConfigChanged</a> (const quint64 &amp;config)</td></tr>
+<tr class="memdesc:a5a9d8f8a62c3ad8c7a07b4291663adb0 inherit signals_classDDevice"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号, 当DHCP6Config属性改变时触发 <br /></td></tr>
+<tr class="separator:a5a9d8f8a62c3ad8c7a07b4291663adb0 inherit signals_classDDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca7a9e069b79ddc5e017b2c1e22e5c58 inherit signals_classDDevice"><td class="memItemLeft" align="right" valign="top"><a id="aca7a9e069b79ddc5e017b2c1e22e5c58"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDevice.html#aca7a9e069b79ddc5e017b2c1e22e5c58">IPv4ConfigChanged</a> (const quint64 &amp;config)</td></tr>
+<tr class="memdesc:aca7a9e069b79ddc5e017b2c1e22e5c58 inherit signals_classDDevice"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号, 当IPv4Config属性改变时触发 <br /></td></tr>
+<tr class="separator:aca7a9e069b79ddc5e017b2c1e22e5c58 inherit signals_classDDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a531da35913c08f721e93dae24b94b805 inherit signals_classDDevice"><td class="memItemLeft" align="right" valign="top"><a id="a531da35913c08f721e93dae24b94b805"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDevice.html#a531da35913c08f721e93dae24b94b805">IPv6ConfigChanged</a> (const quint64 &amp;config)</td></tr>
+<tr class="memdesc:a531da35913c08f721e93dae24b94b805 inherit signals_classDDevice"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号, 当IPv6Config属性改变时触发 <br /></td></tr>
+<tr class="separator:a531da35913c08f721e93dae24b94b805 inherit signals_classDDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fd93c9ab9ce883238c5f7afbba2c03d inherit signals_classDDevice"><td class="memItemLeft" align="right" valign="top"><a id="a7fd93c9ab9ce883238c5f7afbba2c03d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDevice.html#a7fd93c9ab9ce883238c5f7afbba2c03d">driverChanged</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a> &amp;driver)</td></tr>
+<tr class="memdesc:a7fd93c9ab9ce883238c5f7afbba2c03d inherit signals_classDDevice"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号, 当driver属性改变时触发 <br /></td></tr>
+<tr class="separator:a7fd93c9ab9ce883238c5f7afbba2c03d inherit signals_classDDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74d5bb5b619d2554ed7e1f31ee58638c inherit signals_classDDevice"><td class="memItemLeft" align="right" valign="top"><a id="a74d5bb5b619d2554ed7e1f31ee58638c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDevice.html#a74d5bb5b619d2554ed7e1f31ee58638c">interfaceChanged</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a> &amp;ifc)</td></tr>
+<tr class="memdesc:a74d5bb5b619d2554ed7e1f31ee58638c inherit signals_classDDevice"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号, 当interface属性改变时触发 <br /></td></tr>
+<tr class="separator:a74d5bb5b619d2554ed7e1f31ee58638c inherit signals_classDDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a293f578e1a23fa813b6198c614ea372e inherit signals_classDDevice"><td class="memItemLeft" align="right" valign="top"><a id="a293f578e1a23fa813b6198c614ea372e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDevice.html#a293f578e1a23fa813b6198c614ea372e">udiChanged</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a> &amp;udi)</td></tr>
+<tr class="memdesc:a293f578e1a23fa813b6198c614ea372e inherit signals_classDDevice"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号, 当udi属性改变时触发 <br /></td></tr>
+<tr class="separator:a293f578e1a23fa813b6198c614ea372e inherit signals_classDDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae50c54ad9cc147b07f369217be149aca inherit signals_classDDevice"><td class="memItemLeft" align="right" valign="top"><a id="ae50c54ad9cc147b07f369217be149aca"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDevice.html#ae50c54ad9cc147b07f369217be149aca">deviceTypeChanged</a> (const NMDeviceType type)</td></tr>
+<tr class="memdesc:ae50c54ad9cc147b07f369217be149aca inherit signals_classDDevice"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号, 当deviceType属性改变时触发 <br /></td></tr>
+<tr class="separator:ae50c54ad9cc147b07f369217be149aca inherit signals_classDDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a943a76f54d0d0da96d77a8062246223f inherit signals_classDDevice"><td class="memItemLeft" align="right" valign="top"><a id="a943a76f54d0d0da96d77a8062246223f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDevice.html#a943a76f54d0d0da96d77a8062246223f">interfaceFlagsChanged</a> (const DeviceInterfaceFlags flags)</td></tr>
+<tr class="memdesc:a943a76f54d0d0da96d77a8062246223f inherit signals_classDDevice"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号, 当interface属性改变时触发 <br /></td></tr>
+<tr class="separator:a943a76f54d0d0da96d77a8062246223f inherit signals_classDDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61360b25dafa511db34fb386593522ef inherit signals_classDDevice"><td class="memItemLeft" align="right" valign="top"><a id="a61360b25dafa511db34fb386593522ef"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDevice.html#a61360b25dafa511db34fb386593522ef">refreshRateMsChanged</a> (const quint32 rate)</td></tr>
+<tr class="memdesc:a61360b25dafa511db34fb386593522ef inherit signals_classDDevice"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号, 当refreshRateMs属性改变时触发 <br /></td></tr>
+<tr class="separator:a61360b25dafa511db34fb386593522ef inherit signals_classDDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab727cb844086b3f4f2c10e72fc77237f inherit signals_classDDevice"><td class="memItemLeft" align="right" valign="top"><a id="ab727cb844086b3f4f2c10e72fc77237f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDevice.html#ab727cb844086b3f4f2c10e72fc77237f">rxBytesChanged</a> (const quint32 bytes)</td></tr>
+<tr class="memdesc:ab727cb844086b3f4f2c10e72fc77237f inherit signals_classDDevice"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号, 当rxBytes属性改变时触发 <br /></td></tr>
+<tr class="separator:ab727cb844086b3f4f2c10e72fc77237f inherit signals_classDDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9831131b77054285c8ab5e529558c707 inherit signals_classDDevice"><td class="memItemLeft" align="right" valign="top"><a id="a9831131b77054285c8ab5e529558c707"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDevice.html#a9831131b77054285c8ab5e529558c707">txBytesChanged</a> (const quint32 bytes)</td></tr>
+<tr class="memdesc:a9831131b77054285c8ab5e529558c707 inherit signals_classDDevice"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号, 当txBytes属性改变时触发 <br /></td></tr>
+<tr class="separator:a9831131b77054285c8ab5e529558c707 inherit signals_classDDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a39c5ff462203ae458fab910bd208e016"><td class="memItemLeft" align="right" valign="top"><a id="a39c5ff462203ae458fab910bd208e016"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DGenericDevice</b> (const quint64 id, <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a>=nullptr)</td></tr>
+<tr class="separator:a39c5ff462203ae458fab910bd208e016"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40b5ea60c2270c2ce8e886ce6c2c84d3"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGenericDevice.html#a40b5ea60c2270c2ce8e886ce6c2c84d3">HwAddress</a> () const</td></tr>
+<tr class="memdesc:a40b5ea60c2270c2ce8e886ce6c2c84d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取设备的活动硬件地址  <a href="classDGenericDevice.html#a40b5ea60c2270c2ce8e886ce6c2c84d3">更多...</a><br /></td></tr>
+<tr class="separator:a40b5ea60c2270c2ce8e886ce6c2c84d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a722a4d9554e99f115b01390337dad7cd"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGenericDevice.html#a722a4d9554e99f115b01390337dad7cd">typeDescription</a> () const</td></tr>
+<tr class="memdesc:a722a4d9554e99f115b01390337dad7cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取该设备的类型描述(如果有)  <a href="classDGenericDevice.html#a722a4d9554e99f115b01390337dad7cd">更多...</a><br /></td></tr>
+<tr class="separator:a722a4d9554e99f115b01390337dad7cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classDDevice"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classDDevice')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="classDDevice.html">DDevice</a></td></tr>
+<tr class="memitem:ae2d1bf20d8c05a64ddbd025053093cec inherit pub_methods_classDDevice"><td class="memItemLeft" align="right" valign="top"><a id="ae2d1bf20d8c05a64ddbd025053093cec"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DDevice</b> (const quint64 deviceId, <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a>=nullptr)</td></tr>
+<tr class="separator:ae2d1bf20d8c05a64ddbd025053093cec inherit pub_methods_classDDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad3a508787f19997aac6abe09bccdde0 inherit pub_methods_classDDevice"><td class="memItemLeft" align="right" valign="top"><a id="aad3a508787f19997aac6abe09bccdde0"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DDevice</b> (<a class="el" href="classDDevicePrivate.html">DDevicePrivate</a> &amp;other, <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a>=nullptr)</td></tr>
+<tr class="separator:aad3a508787f19997aac6abe09bccdde0 inherit pub_methods_classDDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0ee88448fe6375f64e86e89746d8535 inherit pub_methods_classDDevice"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="http://doc.qt.io/qt-5/qlist.html">QList</a>&lt; quint64 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDevice.html#aa0ee88448fe6375f64e86e89746d8535">availableConnections</a> () const</td></tr>
+<tr class="memdesc:aa0ee88448fe6375f64e86e89746d8535 inherit pub_methods_classDDevice"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取该设备上现在可用的连接对象的id  <a href="classDDevice.html#aa0ee88448fe6375f64e86e89746d8535">更多...</a><br /></td></tr>
+<tr class="separator:aa0ee88448fe6375f64e86e89746d8535 inherit pub_methods_classDDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a624ff492432e466a13a7f902a778cbad inherit pub_methods_classDDevice"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDevice.html#a624ff492432e466a13a7f902a778cbad">autoconnect</a> () const</td></tr>
+<tr class="memdesc:a624ff492432e466a13a7f902a778cbad inherit pub_methods_classDDevice"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取设备是否自动连接  <a href="classDDevice.html#a624ff492432e466a13a7f902a778cbad">更多...</a><br /></td></tr>
+<tr class="separator:a624ff492432e466a13a7f902a778cbad inherit pub_methods_classDDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ef113e68fddd2faaa2ecb24e1cc6e82 inherit pub_methods_classDDevice"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDevice.html#a3ef113e68fddd2faaa2ecb24e1cc6e82">setAutoconnect</a> (const bool autoconnect) const</td></tr>
+<tr class="memdesc:a3ef113e68fddd2faaa2ecb24e1cc6e82 inherit pub_methods_classDDevice"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置设备是否可以自动连接  <a href="classDDevice.html#a3ef113e68fddd2faaa2ecb24e1cc6e82">更多...</a><br /></td></tr>
+<tr class="separator:a3ef113e68fddd2faaa2ecb24e1cc6e82 inherit pub_methods_classDDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a9d56be31b8838582c4c704610968e9 inherit pub_methods_classDDevice"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDevice.html#a6a9d56be31b8838582c4c704610968e9">managed</a> () const</td></tr>
+<tr class="memdesc:a6a9d56be31b8838582c4c704610968e9 inherit pub_methods_classDDevice"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取该设备是否由NetworkManager管理  <a href="classDDevice.html#a6a9d56be31b8838582c4c704610968e9">更多...</a><br /></td></tr>
+<tr class="separator:a6a9d56be31b8838582c4c704610968e9 inherit pub_methods_classDDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5a74c0419d30afdfdc80eaedb81d098 inherit pub_methods_classDDevice"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDevice.html#af5a74c0419d30afdfdc80eaedb81d098">setManaged</a> (const bool managed) const</td></tr>
+<tr class="memdesc:af5a74c0419d30afdfdc80eaedb81d098 inherit pub_methods_classDDevice"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置该设备是否由NetworkManager管理  <a href="classDDevice.html#af5a74c0419d30afdfdc80eaedb81d098">更多...</a><br /></td></tr>
+<tr class="separator:af5a74c0419d30afdfdc80eaedb81d098 inherit pub_methods_classDDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99d8652593fa13dbfdd8d355f5b557e0 inherit pub_methods_classDDevice"><td class="memItemLeft" align="right" valign="top">quint64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDevice.html#a99d8652593fa13dbfdd8d355f5b557e0">activeConnection</a> () const</td></tr>
+<tr class="memdesc:a99d8652593fa13dbfdd8d355f5b557e0 inherit pub_methods_classDDevice"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取该设备上的活动连接对象的id  <a href="classDDevice.html#a99d8652593fa13dbfdd8d355f5b557e0">更多...</a><br /></td></tr>
+<tr class="separator:a99d8652593fa13dbfdd8d355f5b557e0 inherit pub_methods_classDDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fb61b7cb6a7bd2bafe6c36819578c3c inherit pub_methods_classDDevice"><td class="memItemLeft" align="right" valign="top">quint64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDevice.html#a8fb61b7cb6a7bd2bafe6c36819578c3c">DHCP4Config</a> () const</td></tr>
+<tr class="memdesc:a8fb61b7cb6a7bd2bafe6c36819578c3c inherit pub_methods_classDDevice"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取DHCP4配置对象的Id  <a href="classDDevice.html#a8fb61b7cb6a7bd2bafe6c36819578c3c">更多...</a><br /></td></tr>
+<tr class="separator:a8fb61b7cb6a7bd2bafe6c36819578c3c inherit pub_methods_classDDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a058db6d22d58f8894fa50828a49d7b inherit pub_methods_classDDevice"><td class="memItemLeft" align="right" valign="top">quint64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDevice.html#a8a058db6d22d58f8894fa50828a49d7b">DHCP6Config</a> () const</td></tr>
+<tr class="memdesc:a8a058db6d22d58f8894fa50828a49d7b inherit pub_methods_classDDevice"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取DHCP6配置对象的Id  <a href="classDDevice.html#a8a058db6d22d58f8894fa50828a49d7b">更多...</a><br /></td></tr>
+<tr class="separator:a8a058db6d22d58f8894fa50828a49d7b inherit pub_methods_classDDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75ed8680171de016cce3871722dc6c21 inherit pub_methods_classDDevice"><td class="memItemLeft" align="right" valign="top">quint64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDevice.html#a75ed8680171de016cce3871722dc6c21">IPv4Config</a> () const</td></tr>
+<tr class="memdesc:a75ed8680171de016cce3871722dc6c21 inherit pub_methods_classDDevice"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取IPv4配置对象的Id  <a href="classDDevice.html#a75ed8680171de016cce3871722dc6c21">更多...</a><br /></td></tr>
+<tr class="separator:a75ed8680171de016cce3871722dc6c21 inherit pub_methods_classDDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01a08da220a37d2d5368835505cc4195 inherit pub_methods_classDDevice"><td class="memItemLeft" align="right" valign="top">quint64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDevice.html#a01a08da220a37d2d5368835505cc4195">IPv6Config</a> () const</td></tr>
+<tr class="memdesc:a01a08da220a37d2d5368835505cc4195 inherit pub_methods_classDDevice"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取IPv6配置对象的Id属性  <a href="classDDevice.html#a01a08da220a37d2d5368835505cc4195">更多...</a><br /></td></tr>
+<tr class="separator:a01a08da220a37d2d5368835505cc4195 inherit pub_methods_classDDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3644acd33205f4588bf63906abb58f27 inherit pub_methods_classDDevice"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDevice.html#a3644acd33205f4588bf63906abb58f27">driver</a> () const</td></tr>
+<tr class="memdesc:a3644acd33205f4588bf63906abb58f27 inherit pub_methods_classDDevice"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取设备驱动名称  <a href="classDDevice.html#a3644acd33205f4588bf63906abb58f27">更多...</a><br /></td></tr>
+<tr class="separator:a3644acd33205f4588bf63906abb58f27 inherit pub_methods_classDDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8cf116cd0c6c4f4b46ff334d1380705 inherit pub_methods_classDDevice"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDevice.html#ab8cf116cd0c6c4f4b46ff334d1380705">interface</a> () const</td></tr>
+<tr class="memdesc:ab8cf116cd0c6c4f4b46ff334d1380705 inherit pub_methods_classDDevice"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取设备的控制接口的名称  <a href="classDDevice.html#ab8cf116cd0c6c4f4b46ff334d1380705">更多...</a><br /></td></tr>
+<tr class="separator:ab8cf116cd0c6c4f4b46ff334d1380705 inherit pub_methods_classDDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a215de2efce6c63574a74afcd666d13 inherit pub_methods_classDDevice"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDevice.html#a5a215de2efce6c63574a74afcd666d13">udi</a> () const</td></tr>
+<tr class="memdesc:a5a215de2efce6c63574a74afcd666d13 inherit pub_methods_classDDevice"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取操作系统特定的临时设备硬件标识符  <a href="classDDevice.html#a5a215de2efce6c63574a74afcd666d13">更多...</a><br /></td></tr>
+<tr class="separator:a5a215de2efce6c63574a74afcd666d13 inherit pub_methods_classDDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c0d6290460534cfdc5a2f56b2f1a88d inherit pub_methods_classDDevice"><td class="memItemLeft" align="right" valign="top">NMDeviceType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDevice.html#a2c0d6290460534cfdc5a2f56b2f1a88d">deviceType</a> () const</td></tr>
+<tr class="memdesc:a2c0d6290460534cfdc5a2f56b2f1a88d inherit pub_methods_classDDevice"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取设备类型  <a href="classDDevice.html#a2c0d6290460534cfdc5a2f56b2f1a88d">更多...</a><br /></td></tr>
+<tr class="separator:a2c0d6290460534cfdc5a2f56b2f1a88d inherit pub_methods_classDDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b5dab41c58db9f07634fb08d8e66b28 inherit pub_methods_classDDevice"><td class="memItemLeft" align="right" valign="top">DeviceInterfaceFlags&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDevice.html#a2b5dab41c58db9f07634fb08d8e66b28">interfaceFlags</a> () const</td></tr>
+<tr class="memdesc:a2b5dab41c58db9f07634fb08d8e66b28 inherit pub_methods_classDDevice"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取接口的一些属性  <a href="classDDevice.html#a2b5dab41c58db9f07634fb08d8e66b28">更多...</a><br /></td></tr>
+<tr class="separator:a2b5dab41c58db9f07634fb08d8e66b28 inherit pub_methods_classDDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab84ab7665b129537fac3ece1328863d4 inherit pub_methods_classDDevice"><td class="memItemLeft" align="right" valign="top">NMDeviceState&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDevice.html#ab84ab7665b129537fac3ece1328863d4">deviceState</a> () const</td></tr>
+<tr class="memdesc:ab84ab7665b129537fac3ece1328863d4 inherit pub_methods_classDDevice"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取设备状态  <a href="classDDevice.html#ab84ab7665b129537fac3ece1328863d4">更多...</a><br /></td></tr>
+<tr class="separator:ab84ab7665b129537fac3ece1328863d4 inherit pub_methods_classDDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a295d2bc69213cb253b845fd15caad99d inherit pub_methods_classDDevice"><td class="memItemLeft" align="right" valign="top">quint32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDevice.html#a295d2bc69213cb253b845fd15caad99d">refreshRateMs</a> () const</td></tr>
+<tr class="memdesc:a295d2bc69213cb253b845fd15caad99d inherit pub_methods_classDDevice"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取该设备接口rxBytes和txBytes的刷新率  <a href="classDDevice.html#a295d2bc69213cb253b845fd15caad99d">更多...</a><br /></td></tr>
+<tr class="separator:a295d2bc69213cb253b845fd15caad99d inherit pub_methods_classDDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4957c37380c91d0f3a275ebf4d877171 inherit pub_methods_classDDevice"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDevice.html#a4957c37380c91d0f3a275ebf4d877171">setRefreshRateMs</a> (const quint32 newRate) const</td></tr>
+<tr class="memdesc:a4957c37380c91d0f3a275ebf4d877171 inherit pub_methods_classDDevice"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置该设备接口rxBytes和txBytes的刷新率  <a href="classDDevice.html#a4957c37380c91d0f3a275ebf4d877171">更多...</a><br /></td></tr>
+<tr class="separator:a4957c37380c91d0f3a275ebf4d877171 inherit pub_methods_classDDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc0eeb3d4094c9c66fa5abd6b5779d46 inherit pub_methods_classDDevice"><td class="memItemLeft" align="right" valign="top">quint32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDevice.html#abc0eeb3d4094c9c66fa5abd6b5779d46">rxBytes</a> () const</td></tr>
+<tr class="memdesc:abc0eeb3d4094c9c66fa5abd6b5779d46 inherit pub_methods_classDDevice"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取接收字节数  <a href="classDDevice.html#abc0eeb3d4094c9c66fa5abd6b5779d46">更多...</a><br /></td></tr>
+<tr class="separator:abc0eeb3d4094c9c66fa5abd6b5779d46 inherit pub_methods_classDDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2f15deedba7bb44c2a12f0e99751bf2 inherit pub_methods_classDDevice"><td class="memItemLeft" align="right" valign="top">quint32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDevice.html#ab2f15deedba7bb44c2a12f0e99751bf2">txBytes</a> () const</td></tr>
+<tr class="memdesc:ab2f15deedba7bb44c2a12f0e99751bf2 inherit pub_methods_classDDevice"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取传输字节数  <a href="classDDevice.html#ab2f15deedba7bb44c2a12f0e99751bf2">更多...</a><br /></td></tr>
+<tr class="separator:ab2f15deedba7bb44c2a12f0e99751bf2 inherit pub_methods_classDDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_qobject"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_qobject')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el"  href="http://doc.qt.io/qt-5/qobject.html">QObject</a></td></tr>
+<tr class="memitem:metaObject inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="metaObject"></a>
+virtual const <a class="elRef" href="http://doc.qt.io/qt-5/qmetaobject.html">QMetaObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#metaObject">metaObject</a> () const const</td></tr>
+<tr class="separator:metaObject inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:QObject inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="QObject"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#QObject">QObject</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a>)</td></tr>
+<tr class="separator:QObject inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:event inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="event"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#event">event</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qevent.html">QEvent</a> *e)</td></tr>
+<tr class="separator:event inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:eventFilter inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="eventFilter"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#eventFilter">eventFilter</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *watched, <a class="elRef" href="http://doc.qt.io/qt-5/qevent.html">QEvent</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#event">event</a>)</td></tr>
+<tr class="separator:eventFilter inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:objectName-prop inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="objectName-prop"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#objectName-prop">objectName</a> () const const</td></tr>
+<tr class="separator:objectName-prop inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:objectName-prop inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="objectName-prop"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#objectName-prop">setObjectName</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;name)</td></tr>
+<tr class="separator:objectName-prop inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:isWidgetType inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="isWidgetType"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#isWidgetType">isWidgetType</a> () const const</td></tr>
+<tr class="separator:isWidgetType inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:isWindowType inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="isWindowType"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#isWindowType">isWindowType</a> () const const</td></tr>
+<tr class="separator:isWindowType inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:signalsBlocked inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="signalsBlocked"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#signalsBlocked">signalsBlocked</a> () const const</td></tr>
+<tr class="separator:signalsBlocked inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:blockSignals inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="blockSignals"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#blockSignals">blockSignals</a> (bool block)</td></tr>
+<tr class="separator:blockSignals inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:thread inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="thread"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qthread.html">QThread</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#thread">thread</a> () const const</td></tr>
+<tr class="separator:thread inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:moveToThread inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="moveToThread"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#moveToThread">moveToThread</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qthread.html">QThread</a> *targetThread)</td></tr>
+<tr class="separator:moveToThread inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:startTimer inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="startTimer"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#startTimer">startTimer</a> (int interval, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#TimerType-enum">Qt::TimerType</a> timerType)</td></tr>
+<tr class="separator:startTimer inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:startTimer-1 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="startTimer-1"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#startTimer-1">startTimer</a> (std::chrono::milliseconds time, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#TimerType-enum">Qt::TimerType</a> timerType)</td></tr>
+<tr class="separator:startTimer-1 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:killTimer inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="killTimer"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#killTimer">killTimer</a> (int id)</td></tr>
+<tr class="separator:killTimer inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:findChild inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="findChild"></a>
+T&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#findChild">findChild</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;name, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#FindChildOption-enum">Qt::FindChildOptions</a> options) const const</td></tr>
+<tr class="separator:findChild inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:findChildren inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="findChildren"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qlist.html">QList</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#findChildren">findChildren</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;name, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#FindChildOption-enum">Qt::FindChildOptions</a> options) const const</td></tr>
+<tr class="separator:findChildren inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:findChildren-1 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="findChildren-1"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qlist.html">QList</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject-obsolete.html#findChildren-1">findChildren</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qregexp.html">QRegExp</a> &amp;regExp, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#FindChildOption-enum">Qt::FindChildOptions</a> options) const const</td></tr>
+<tr class="separator:findChildren-1 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:findChildren-2 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="findChildren-2"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qlist.html">QList</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#findChildren-2">findChildren</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qregularexpression.html">QRegularExpression</a> &amp;re, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#FindChildOption-enum">Qt::FindChildOptions</a> options) const const</td></tr>
+<tr class="separator:findChildren-2 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:children inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="children"></a>
+const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#QObjectList-typedef">QObjectList</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#children">children</a> () const const</td></tr>
+<tr class="separator:children inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setParent inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="setParent"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#setParent">setParent</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a>)</td></tr>
+<tr class="separator:setParent inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:installEventFilter inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="installEventFilter"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#installEventFilter">installEventFilter</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *filterObj)</td></tr>
+<tr class="separator:installEventFilter inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:removeEventFilter inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="removeEventFilter"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#removeEventFilter">removeEventFilter</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *obj)</td></tr>
+<tr class="separator:removeEventFilter inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connect-2 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect-2"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#connect-2">connect</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const char *signal, const char *method, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#ConnectionType-enum">Qt::ConnectionType</a> type) const const</td></tr>
+<tr class="separator:connect-2 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnect-2 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect-2"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#disconnect-2">disconnect</a> (const char *signal, const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const char *method) const const</td></tr>
+<tr class="separator:disconnect-2 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnect-3 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect-3"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#disconnect-3">disconnect</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const char *method) const const</td></tr>
+<tr class="separator:disconnect-3 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dumpObjectTree-1 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="dumpObjectTree-1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject-obsolete.html#dumpObjectTree-1">dumpObjectTree</a> ()</td></tr>
+<tr class="separator:dumpObjectTree-1 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dumpObjectInfo-1 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="dumpObjectInfo-1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject-obsolete.html#dumpObjectInfo-1">dumpObjectInfo</a> ()</td></tr>
+<tr class="separator:dumpObjectInfo-1 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dumpObjectTree inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="dumpObjectTree"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#dumpObjectTree">dumpObjectTree</a> () const const</td></tr>
+<tr class="separator:dumpObjectTree inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dumpObjectInfo inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="dumpObjectInfo"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#dumpObjectInfo">dumpObjectInfo</a> () const const</td></tr>
+<tr class="separator:dumpObjectInfo inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setProperty inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="setProperty"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#setProperty">setProperty</a> (const char *name, const <a class="elRef" href="http://doc.qt.io/qt-5/qvariant.html">QVariant</a> &amp;value)</td></tr>
+<tr class="separator:setProperty inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:property inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="property"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qvariant.html">QVariant</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#property">property</a> (const char *name) const const</td></tr>
+<tr class="separator:property inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dynamicPropertyNames inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="dynamicPropertyNames"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qlist.html">QList</a>&lt; <a class="elRef" href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#dynamicPropertyNames">dynamicPropertyNames</a> () const const</td></tr>
+<tr class="separator:dynamicPropertyNames inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:destroyed inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="destroyed"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#destroyed">destroyed</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *obj)</td></tr>
+<tr class="separator:destroyed inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:objectNameChanged inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="objectNameChanged"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#objectNameChanged">objectNameChanged</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#objectName-prop">objectName</a>)</td></tr>
+<tr class="separator:objectNameChanged inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:parent inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="parent"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a> () const const</td></tr>
+<tr class="separator:parent inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:inherits inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="inherits"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#inherits">inherits</a> (const char *className) const const</td></tr>
+<tr class="separator:inherits inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:deleteLater inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="deleteLater"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#deleteLater">deleteLater</a> ()</td></tr>
+<tr class="separator:deleteLater inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_DISABLE_COPY inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_DISABLE_COPY"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_DISABLE_COPY">Q_DISABLE_COPY</a> (Class)</td></tr>
+<tr class="separator:Q_DISABLE_COPY inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_DISABLE_MOVE inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_DISABLE_MOVE"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_DISABLE_MOVE">Q_DISABLE_MOVE</a> (Class)</td></tr>
+<tr class="separator:Q_DISABLE_MOVE inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_DISABLE_COPY_MOVE inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_DISABLE_COPY_MOVE"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_DISABLE_COPY_MOVE">Q_DISABLE_COPY_MOVE</a> (Class)</td></tr>
+<tr class="separator:Q_DISABLE_COPY_MOVE inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:qobject_cast inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="qobject_cast"></a>
+T&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#qobject_cast">qobject_cast</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *object)</td></tr>
+<tr class="separator:qobject_cast inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:qobject_cast-1 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="qobject_cast-1"></a>
+T&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#qobject_cast-1">qobject_cast</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *object)</td></tr>
+<tr class="separator:qobject_cast-1 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:qFindChild inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="qFindChild"></a>
+T&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject-obsolete.html#qFindChild">qFindChild</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *obj, const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;name)</td></tr>
+<tr class="separator:qFindChild inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:qFindChildren inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="qFindChildren"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qlist.html">QList</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject-obsolete.html#qFindChildren">qFindChildren</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *obj, const <a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;name)</td></tr>
+<tr class="separator:qFindChildren inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:qFindChildren-1 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="qFindChildren-1"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qlist.html">QList</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#qFindChildren-1">qFindChildren</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *obj, const <a class="elRef" href="http://doc.qt.io/qt-5/qregexp.html">QRegExp</a> &amp;regExp)</td></tr>
+<tr class="separator:qFindChildren-1 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_CLASSINFO inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_CLASSINFO"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_CLASSINFO">Q_CLASSINFO</a> (Name, Value)</td></tr>
+<tr class="separator:Q_CLASSINFO inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_INTERFACES inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_INTERFACES"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_INTERFACES">Q_INTERFACES</a> (...)</td></tr>
+<tr class="separator:Q_INTERFACES inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_PROPERTY inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_PROPERTY"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a> (...)</td></tr>
+<tr class="separator:Q_PROPERTY inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_ENUMS inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_ENUMS"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject-obsolete.html#Q_ENUMS">Q_ENUMS</a> (...)</td></tr>
+<tr class="separator:Q_ENUMS inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_FLAGS inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_FLAGS"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject-obsolete.html#Q_FLAGS">Q_FLAGS</a> (...)</td></tr>
+<tr class="separator:Q_FLAGS inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_ENUM inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_ENUM"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_ENUM">Q_ENUM</a> (...)</td></tr>
+<tr class="separator:Q_ENUM inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_FLAG inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_FLAG"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_FLAG">Q_FLAG</a> (...)</td></tr>
+<tr class="separator:Q_FLAG inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_ENUM_NS inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_ENUM_NS"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_ENUM_NS">Q_ENUM_NS</a> (...)</td></tr>
+<tr class="separator:Q_ENUM_NS inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_FLAG_NS inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_FLAG_NS"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_FLAG_NS">Q_FLAG_NS</a> (...)</td></tr>
+<tr class="separator:Q_FLAG_NS inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_OBJECT inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_OBJECT"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">Q_OBJECT</a> Q_OBJECT</td></tr>
+<tr class="separator:Q_OBJECT inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_GADGET inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_GADGET"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_GADGET">Q_GADGET</a> Q_GADGET</td></tr>
+<tr class="separator:Q_GADGET inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_NAMESPACE inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_NAMESPACE"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_NAMESPACE">Q_NAMESPACE</a> Q_NAMESPACE</td></tr>
+<tr class="separator:Q_NAMESPACE inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_NAMESPACE_EXPORT inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_NAMESPACE_EXPORT"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_NAMESPACE_EXPORT">Q_NAMESPACE_EXPORT</a> (EXPORT_MACRO)</td></tr>
+<tr class="separator:Q_NAMESPACE_EXPORT inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_SIGNALS inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_SIGNALS"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SIGNALS">Q_SIGNALS</a> Q_SIGNALS</td></tr>
+<tr class="separator:Q_SIGNALS inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_SIGNAL inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_SIGNAL"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SIGNAL">Q_SIGNAL</a> Q_SIGNAL</td></tr>
+<tr class="separator:Q_SIGNAL inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_SLOTS inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_SLOTS"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SLOTS">Q_SLOTS</a> Q_SLOTS</td></tr>
+<tr class="separator:Q_SLOTS inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_SLOT inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_SLOT"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SLOT">Q_SLOT</a> Q_SLOT</td></tr>
+<tr class="separator:Q_SLOT inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_EMIT inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_EMIT"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_EMIT">Q_EMIT</a> Q_EMIT</td></tr>
+<tr class="separator:Q_EMIT inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_INVOKABLE inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_INVOKABLE"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_INVOKABLE">Q_INVOKABLE</a> Q_INVOKABLE</td></tr>
+<tr class="separator:Q_INVOKABLE inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_REVISION inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_REVISION"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_REVISION">Q_REVISION</a> Q_REVISION</td></tr>
+<tr class="separator:Q_REVISION inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Q_SET_OBJECT_NAME inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="Q_SET_OBJECT_NAME"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#Q_SET_OBJECT_NAME">Q_SET_OBJECT_NAME</a> (<a class="el" href="classObject.html">Object</a>)</td></tr>
+<tr class="separator:Q_SET_OBJECT_NAME inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:QT_NO_NARROWING_CONVERSIONS_IN_CONNECT inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="QT_NO_NARROWING_CONVERSIONS_IN_CONNECT"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#QT_NO_NARROWING_CONVERSIONS_IN_CONNECT">QT_NO_NARROWING_CONVERSIONS_IN_CONNECT</a> QT_NO_NARROWING_CONVERSIONS_IN_CONNECT</td></tr>
+<tr class="separator:QT_NO_NARROWING_CONVERSIONS_IN_CONNECT inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:a02833a8fe0ab96dc845b4e4cc4a8d24e"><td class="memItemLeft" align="right" valign="top"><a id="a02833a8fe0ab96dc845b4e4cc4a8d24e"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a>&#160;</td><td class="memItemRight" valign="bottom"><b>HwAddress</b></td></tr>
+<tr class="separator:a02833a8fe0ab96dc845b4e4cc4a8d24e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a931bc153144d475557cf891d43100a7b"><td class="memItemLeft" align="right" valign="top"><a id="a931bc153144d475557cf891d43100a7b"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>typeDescription</b></td></tr>
+<tr class="separator:a931bc153144d475557cf891d43100a7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header properties_classDDevice"><td colspan="2" onclick="javascript:toggleInherit('properties_classDDevice')"><img src="closed.png" alt="-"/>&#160;属性 继承自 <a class="el" href="classDDevice.html">DDevice</a></td></tr>
+<tr class="memitem:ac6b62e1a365baa48cd5e833db0a726f4 inherit properties_classDDevice"><td class="memItemLeft" align="right" valign="top"><a id="ac6b62e1a365baa48cd5e833db0a726f4"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qlist.html">QList</a>&lt; quint64 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>availableConnections</b></td></tr>
+<tr class="separator:ac6b62e1a365baa48cd5e833db0a726f4 inherit properties_classDDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14167feb16aa366d3c67b04585377c58 inherit properties_classDDevice"><td class="memItemLeft" align="right" valign="top"><a id="a14167feb16aa366d3c67b04585377c58"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>autoconnect</b></td></tr>
+<tr class="separator:a14167feb16aa366d3c67b04585377c58 inherit properties_classDDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a544c65ba3612dbb020031b8d0122ce91 inherit properties_classDDevice"><td class="memItemLeft" align="right" valign="top"><a id="a544c65ba3612dbb020031b8d0122ce91"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>managed</b></td></tr>
+<tr class="separator:a544c65ba3612dbb020031b8d0122ce91 inherit properties_classDDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32990255af2ce430a486f84a14eef193 inherit properties_classDDevice"><td class="memItemLeft" align="right" valign="top"><a id="a32990255af2ce430a486f84a14eef193"></a>
+quint64&#160;</td><td class="memItemRight" valign="bottom"><b>activeConnection</b></td></tr>
+<tr class="separator:a32990255af2ce430a486f84a14eef193 inherit properties_classDDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dfbd06ae020716d2a0c350c733dd0ba inherit properties_classDDevice"><td class="memItemLeft" align="right" valign="top"><a id="a5dfbd06ae020716d2a0c350c733dd0ba"></a>
+quint64&#160;</td><td class="memItemRight" valign="bottom"><b>DHCP4Config</b></td></tr>
+<tr class="separator:a5dfbd06ae020716d2a0c350c733dd0ba inherit properties_classDDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab02a90ec5381b513349ef4e37aa2a970 inherit properties_classDDevice"><td class="memItemLeft" align="right" valign="top"><a id="ab02a90ec5381b513349ef4e37aa2a970"></a>
+quint64&#160;</td><td class="memItemRight" valign="bottom"><b>DHCP6Config</b></td></tr>
+<tr class="separator:ab02a90ec5381b513349ef4e37aa2a970 inherit properties_classDDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7b2fbdf1d445ba6bc398d88fe3bedd9 inherit properties_classDDevice"><td class="memItemLeft" align="right" valign="top"><a id="af7b2fbdf1d445ba6bc398d88fe3bedd9"></a>
+quint64&#160;</td><td class="memItemRight" valign="bottom"><b>IPv4Config</b></td></tr>
+<tr class="separator:af7b2fbdf1d445ba6bc398d88fe3bedd9 inherit properties_classDDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c5a618f6e23e5fb4afcf4ff88fc5f06 inherit properties_classDDevice"><td class="memItemLeft" align="right" valign="top"><a id="a2c5a618f6e23e5fb4afcf4ff88fc5f06"></a>
+quint64&#160;</td><td class="memItemRight" valign="bottom"><b>IPv6Config</b></td></tr>
+<tr class="separator:a2c5a618f6e23e5fb4afcf4ff88fc5f06 inherit properties_classDDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e69d8557b700a5fd84d050a190f7880 inherit properties_classDDevice"><td class="memItemLeft" align="right" valign="top"><a id="a8e69d8557b700a5fd84d050a190f7880"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a>&#160;</td><td class="memItemRight" valign="bottom"><b>driver</b></td></tr>
+<tr class="separator:a8e69d8557b700a5fd84d050a190f7880 inherit properties_classDDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae10e29f25272b017bf4d21fd76bb7239 inherit properties_classDDevice"><td class="memItemLeft" align="right" valign="top"><a id="ae10e29f25272b017bf4d21fd76bb7239"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a>&#160;</td><td class="memItemRight" valign="bottom"><b>interface</b></td></tr>
+<tr class="separator:ae10e29f25272b017bf4d21fd76bb7239 inherit properties_classDDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3240ec32a314e4a6ac7c0295f07f7074 inherit properties_classDDevice"><td class="memItemLeft" align="right" valign="top"><a id="a3240ec32a314e4a6ac7c0295f07f7074"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a>&#160;</td><td class="memItemRight" valign="bottom"><b>udi</b></td></tr>
+<tr class="separator:a3240ec32a314e4a6ac7c0295f07f7074 inherit properties_classDDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4004daedcbd57ceb2e3e37fa6691977c inherit properties_classDDevice"><td class="memItemLeft" align="right" valign="top"><a id="a4004daedcbd57ceb2e3e37fa6691977c"></a>
+NMDeviceType&#160;</td><td class="memItemRight" valign="bottom"><b>deviceType</b></td></tr>
+<tr class="separator:a4004daedcbd57ceb2e3e37fa6691977c inherit properties_classDDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55cacec66d4b498cd4a6df65c29322e4 inherit properties_classDDevice"><td class="memItemLeft" align="right" valign="top"><a id="a55cacec66d4b498cd4a6df65c29322e4"></a>
+DeviceInterfaceFlags&#160;</td><td class="memItemRight" valign="bottom"><b>interfaceFlags</b></td></tr>
+<tr class="separator:a55cacec66d4b498cd4a6df65c29322e4 inherit properties_classDDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23d708f0f01cf67108ece95e6a848412 inherit properties_classDDevice"><td class="memItemLeft" align="right" valign="top"><a id="a23d708f0f01cf67108ece95e6a848412"></a>
+NMDeviceState&#160;</td><td class="memItemRight" valign="bottom"><b>deviceState</b></td></tr>
+<tr class="separator:a23d708f0f01cf67108ece95e6a848412 inherit properties_classDDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbdb2d9413b85bc83ecd42a4711f590a inherit properties_classDDevice"><td class="memItemLeft" align="right" valign="top"><a id="acbdb2d9413b85bc83ecd42a4711f590a"></a>
+quint32&#160;</td><td class="memItemRight" valign="bottom"><b>refreshRateMs</b></td></tr>
+<tr class="separator:acbdb2d9413b85bc83ecd42a4711f590a inherit properties_classDDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12ec6c703043e9f1b084a36d56d3daae inherit properties_classDDevice"><td class="memItemLeft" align="right" valign="top"><a id="a12ec6c703043e9f1b084a36d56d3daae"></a>
+quint32&#160;</td><td class="memItemRight" valign="bottom"><b>rxBytes</b></td></tr>
+<tr class="separator:a12ec6c703043e9f1b084a36d56d3daae inherit properties_classDDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace7ad9a58e8a95b35114931f3e5e949c inherit properties_classDDevice"><td class="memItemLeft" align="right" valign="top"><a id="ace7ad9a58e8a95b35114931f3e5e949c"></a>
+quint32&#160;</td><td class="memItemRight" valign="bottom"><b>txBytes</b></td></tr>
+<tr class="separator:ace7ad9a58e8a95b35114931f3e5e949c inherit properties_classDDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header properties_qobject"><td colspan="2" onclick="javascript:toggleInherit('properties_qobject')"><img src="closed.png" alt="-"/>&#160;属性 继承自 <a class="el"  href="http://doc.qt.io/qt-5/qobject.html">QObject</a></td></tr>
+<tr class="memitem:objectName-prop inherit properties_qobject"><td class="memItemLeft" align="right" valign="top"><a id="objectName-prop"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#objectName-prop">objectName</a></td></tr>
+<tr class="separator:objectName-prop inherit properties_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pub_slots_classDDevice"><td colspan="2" onclick="javascript:toggleInherit('pub_slots_classDDevice')"><img src="closed.png" alt="-"/>&#160;Public 槽 继承自 <a class="el" href="classDDevice.html">DDevice</a></td></tr>
+<tr class="memitem:aca3aaced4ca48b2f58c5f763eb70246a inherit pub_slots_classDDevice"><td class="memItemLeft" align="right" valign="top"><a id="aca3aaced4ca48b2f58c5f763eb70246a"></a>
+DExpected&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDDevice.html#aca3aaced4ca48b2f58c5f763eb70246a">disconnect</a> () const</td></tr>
+<tr class="memdesc:aca3aaced4ca48b2f58c5f763eb70246a inherit pub_slots_classDDevice"><td class="mdescLeft">&#160;</td><td class="mdescRight">断开设备 <br /></td></tr>
+<tr class="separator:aca3aaced4ca48b2f58c5f763eb70246a inherit pub_slots_classDDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_qobject"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_qobject')"><img src="closed.png" alt="-"/>&#160;静态 Public 成员函数 继承自 <a class="el"  href="http://doc.qt.io/qt-5/qobject.html">QObject</a></td></tr>
+<tr class="memitem:tr inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="tr"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#tr">tr</a> (const char *sourceText, const char *disambiguation, int n)</td></tr>
+<tr class="separator:tr inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:trUtf8 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="trUtf8"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject-obsolete.html#trUtf8">trUtf8</a> (const char *sourceText, const char *disambiguation, int n)</td></tr>
+<tr class="separator:trUtf8 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connect inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#connect">connect</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const char *signal, const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const char *method, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#ConnectionType-enum">Qt::ConnectionType</a> type)</td></tr>
+<tr class="separator:connect inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connect-1 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect-1"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#connect-1">connect</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const <a class="elRef" href="http://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;signal, const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const <a class="elRef" href="http://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;method, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#ConnectionType-enum">Qt::ConnectionType</a> type)</td></tr>
+<tr class="separator:connect-1 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connect-3 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect-3"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#connect-3">connect</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#sender">sender</a>, PointerToMemberFunction signal, const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, PointerToMemberFunction method, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#ConnectionType-enum">Qt::ConnectionType</a> type)</td></tr>
+<tr class="separator:connect-3 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connect-4 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect-4"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#connect-4">connect</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#sender">sender</a>, PointerToMemberFunction signal, Functor functor)</td></tr>
+<tr class="separator:connect-4 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connect-5 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect-5"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#connect-5">connect</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#sender">sender</a>, PointerToMemberFunction signal, const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *context, Functor functor, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#ConnectionType-enum">Qt::ConnectionType</a> type)</td></tr>
+<tr class="separator:connect-5 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnect inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#disconnect">disconnect</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const char *signal, const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const char *method)</td></tr>
+<tr class="separator:disconnect inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnect-1 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect-1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#disconnect-1">disconnect</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const <a class="elRef" href="http://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;signal, const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const <a class="elRef" href="http://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;method)</td></tr>
+<tr class="separator:disconnect-1 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnect-4 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect-4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#disconnect-4">disconnect</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a> &amp;connection)</td></tr>
+<tr class="separator:disconnect-4 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnect-5 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect-5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#disconnect-5">disconnect</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#sender">sender</a>, PointerToMemberFunction signal, const <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, PointerToMemberFunction method)</td></tr>
+<tr class="separator:disconnect-5 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_qobject"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_qobject')"><img src="closed.png" alt="-"/>&#160;Public 属性 继承自 <a class="el"  href="http://doc.qt.io/qt-5/qobject.html">QObject</a></td></tr>
+<tr class="memitem:QObjectList-typedef inherit pub_attribs_qobject"><td class="memItemLeft" align="right" valign="top"><a id="QObjectList-typedef"></a>
+typedef&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#QObjectList-typedef">QObjectList</a></td></tr>
+<tr class="separator:QObjectList-typedef inherit pub_attribs_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_qobject"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_qobject')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el"  href="http://doc.qt.io/qt-5/qobject.html">QObject</a></td></tr>
+<tr class="memitem:sender inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="sender"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#sender">sender</a> () const const</td></tr>
+<tr class="separator:sender inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:senderSignalIndex inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="senderSignalIndex"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#senderSignalIndex">senderSignalIndex</a> () const const</td></tr>
+<tr class="separator:senderSignalIndex inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:receivers inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="receivers"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#receivers">receivers</a> (const char *signal) const const</td></tr>
+<tr class="separator:receivers inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:isSignalConnected inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="isSignalConnected"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#isSignalConnected">isSignalConnected</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;signal) const const</td></tr>
+<tr class="separator:isSignalConnected inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:timerEvent inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="timerEvent"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#timerEvent">timerEvent</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qtimerevent.html">QTimerEvent</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#event">event</a>)</td></tr>
+<tr class="separator:timerEvent inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:childEvent inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="childEvent"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#childEvent">childEvent</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qchildevent.html">QChildEvent</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#event">event</a>)</td></tr>
+<tr class="separator:childEvent inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:customEvent inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="customEvent"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#customEvent">customEvent</a> (<a class="elRef" href="http://doc.qt.io/qt-5/qevent.html">QEvent</a> *<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#event">event</a>)</td></tr>
+<tr class="separator:customEvent inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connectNotify inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connectNotify"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#connectNotify">connectNotify</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;signal)</td></tr>
+<tr class="separator:connectNotify inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnectNotify inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnectNotify"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#disconnectNotify">disconnectNotify</a> (const <a class="elRef" href="http://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;signal)</td></tr>
+<tr class="separator:disconnectNotify inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classDDevice"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classDDevice')"><img src="closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="classDDevice.html">DDevice</a></td></tr>
+<tr class="memitem:aa4cdbcc484d86080ffdda7a329529169 inherit pro_attribs_classDDevice"><td class="memItemLeft" align="right" valign="top"><a id="aa4cdbcc484d86080ffdda7a329529169"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qscopedpointer.html">QScopedPointer</a>&lt; <a class="el" href="classDDevicePrivate.html">DDevicePrivate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>d_ptr</b></td></tr>
+<tr class="separator:aa4cdbcc484d86080ffdda7a329529169 inherit pro_attribs_classDDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a40b5ea60c2270c2ce8e886ce6c2c84d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40b5ea60c2270c2ce8e886ce6c2c84d3">&#9670;&nbsp;</a></span>HwAddress()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a> DGenericDevice::HwAddress </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取设备的活动硬件地址 </p>
+<dl class="section return"><dt>返回</dt><dd>活动硬件地址 </dd></dl>
+
+</div>
+</div>
+<a id="a722a4d9554e99f115b01390337dad7cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a722a4d9554e99f115b01390337dad7cd">&#9670;&nbsp;</a></span>typeDescription()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> DGenericDevice::typeDescription </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取该设备的类型描述(如果有) </p>
+<dl class="section return"><dt>返回</dt><dd>类型描述 </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dtknetworkmanager/include/<a class="el" href="dgenericdevice_8h_source.html">dgenericdevice.h</a></li>
+<li>dtknetworkmanager/docs/dgenericdevice.zh_CN.dox</li>
+<li>dtknetworkmanager/src/dgenericdevice.cpp</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classDGenericDevice.html">DGenericDevice</a></li>
+    <li class="footer">文档生成时间:2023-01-13-07:39  +00</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['widgetcreatehandler_34854',['WidgetCreateHandler',['../classDSettingsWidgetFactory.html#a668674938916ca9c3fec5827405366a9',1,'DSettingsWidgetFactory']]]
+  ['createinstancefunction_40086',['CreateInstanceFunction',['../classKPluginFactory.html#adafb2ea531979d68792ca9ff3e8873b6',1,'KPluginFactory']]]
 ];

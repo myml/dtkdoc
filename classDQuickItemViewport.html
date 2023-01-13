@@ -1,0 +1,292 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: DQuickItemViewport类 参考</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="https://github.com/linuxdeepin/dtkdoc" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classDQuickItemViewport.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#signals">信号</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#properties">属性</a> &#124;
+<a href="classDQuickItemViewport-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">DQuickItemViewport类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><a class="el" href="classDQuickItemViewport.html" title="DQuickItemViewport 类是根据 sourceItem 属性设定的 QQuickItem 作为绘制时的材质来源，这个行为依赖于 QQuickItem::textureProvider 提供...">DQuickItemViewport</a> 类是根据 <em>sourceItem</em> 属性设定的 <em>QQuickItem</em> 作为绘制时的材质来源，这个行为依赖于 <em>QQuickItem::textureProvider</em> 提供组件的 材质。故可将qml的 Image 和 ShaderEffectSource 作为 sourceItem 使用。源材质的区域受 <em>sourceRect</em> 属性控制。此属性的坐标相对于 <em>sourceItem，当属性未</em> 设置时，坐标默认为 (0, 0)，大小则跟随 DQuickItemViewport。此外，当 <em>fixed</em> 的值 为 false 时，源材质的位置还会受到 <a class="el" href="classDQuickItemViewport.html" title="DQuickItemViewport 类是根据 sourceItem 属性设定的 QQuickItem 作为绘制时的材质来源，这个行为依赖于 QQuickItem::textureProvider 提供...">DQuickItemViewport</a> 相对于 <em>sourceItem</em> 的位置 的影响，即当 <em>fixed</em> 为 false 且 <em>sourceRect</em> 的坐标为 (0, 0) 时，源材质的位置 是 <a class="el" href="classDQuickItemViewport.html" title="DQuickItemViewport 类是根据 sourceItem 属性设定的 QQuickItem 作为绘制时的材质来源，这个行为依赖于 QQuickItem::textureProvider 提供...">DQuickItemViewport</a> 在窗口坐标系中对 <em>sourceItem</em> 的投影，且绘制时也会实时跟随。 当 <em>radius</em> 属性为 0 时，将直接使用 <em>QSGImageNode</em> 作为渲染节点，当其值大于 0 时，将使用 <a class="elRef" href="http://doc.qt.io/qt-5/qpainter.html">QPainter</a> 渲染按 radius 的值绘制一张圆角 <a class="elRef" href="http://doc.qt.io/qt-5/qimage.html">QImage</a> 资源，并将其作为 mask 材质跟 <em>sourceItem</em> 的材质一起运算，并且会使用自定义的片段着色器为材质实现圆角效果。  
+ <a href="classDQuickItemViewport.html#details">更多...</a></p>
+<div class="dynheader">
+类 DQuickItemViewport 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classDQuickItemViewport.png" alt=""/>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+信号</h2></td></tr>
+<tr class="memitem:a82181d413d26221ff56133b5dd0dc08c"><td class="memItemLeft" align="right" valign="top"><a id="a82181d413d26221ff56133b5dd0dc08c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>sourceItemChanged</b> ()</td></tr>
+<tr class="separator:a82181d413d26221ff56133b5dd0dc08c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acca429747a5c68fb79a86027f6b34cf1"><td class="memItemLeft" align="right" valign="top"><a id="acca429747a5c68fb79a86027f6b34cf1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>sourceRectChanged</b> ()</td></tr>
+<tr class="separator:acca429747a5c68fb79a86027f6b34cf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5400947e41052b6ea23d71643a29a9c"><td class="memItemLeft" align="right" valign="top"><a id="ab5400947e41052b6ea23d71643a29a9c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>radiusChanged</b> ()</td></tr>
+<tr class="separator:ab5400947e41052b6ea23d71643a29a9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70de3ad6950786fab3daecbb7263d1fd"><td class="memItemLeft" align="right" valign="top"><a id="a70de3ad6950786fab3daecbb7263d1fd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>fixedChanged</b> ()</td></tr>
+<tr class="separator:a70de3ad6950786fab3daecbb7263d1fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a928b3f636d0670b670bbc5b29b9a1dee"><td class="memItemLeft" align="right" valign="top"><a id="a928b3f636d0670b670bbc5b29b9a1dee"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>hideSourceChanged</b> ()</td></tr>
+<tr class="separator:a928b3f636d0670b670bbc5b29b9a1dee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a6a26a714be88fd7cec667d170ab89310"><td class="memItemLeft" align="right" valign="top"><a id="a6a26a714be88fd7cec667d170ab89310"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DQuickItemViewport</b> (QQuickItem *parent=nullptr)</td></tr>
+<tr class="separator:a6a26a714be88fd7cec667d170ab89310"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a136c149234fd3b92300f8a971b69ed9a"><td class="memItemLeft" align="right" valign="top"><a id="a136c149234fd3b92300f8a971b69ed9a"></a>
+QQuickItem *&#160;</td><td class="memItemRight" valign="bottom"><b>sourceItem</b> () const</td></tr>
+<tr class="separator:a136c149234fd3b92300f8a971b69ed9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fb69302c96160b9a6685c051948f2a9"><td class="memItemLeft" align="right" valign="top"><a id="a9fb69302c96160b9a6685c051948f2a9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setSourceItem</b> (QQuickItem *sourceItem)</td></tr>
+<tr class="separator:a9fb69302c96160b9a6685c051948f2a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff36edee5ed47ef8c8963f2850201aac"><td class="memItemLeft" align="right" valign="top"><a id="aff36edee5ed47ef8c8963f2850201aac"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qrectf.html">QRectF</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sourceRect</b> () const</td></tr>
+<tr class="separator:aff36edee5ed47ef8c8963f2850201aac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0d05caf0a05e4ef4f818f93d8eebe98"><td class="memItemLeft" align="right" valign="top"><a id="ad0d05caf0a05e4ef4f818f93d8eebe98"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setSourceRect</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qrectf.html">QRectF</a> &amp;sourceRect)</td></tr>
+<tr class="separator:ad0d05caf0a05e4ef4f818f93d8eebe98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a428a3962b3333e1b73fa80e542177059"><td class="memItemLeft" align="right" valign="top"><a id="a428a3962b3333e1b73fa80e542177059"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>radius</b> () const</td></tr>
+<tr class="separator:a428a3962b3333e1b73fa80e542177059"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a7445900b8dba9c40d870f40092a07b"><td class="memItemLeft" align="right" valign="top"><a id="a1a7445900b8dba9c40d870f40092a07b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setRadius</b> (float radius)</td></tr>
+<tr class="separator:a1a7445900b8dba9c40d870f40092a07b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1adaf53fe28da6748203176d62848242"><td class="memItemLeft" align="right" valign="top"><a id="a1adaf53fe28da6748203176d62848242"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>fixed</b> () const</td></tr>
+<tr class="separator:a1adaf53fe28da6748203176d62848242"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04dd6e59a5a64eefdb67c21874b8ccca"><td class="memItemLeft" align="right" valign="top"><a id="a04dd6e59a5a64eefdb67c21874b8ccca"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setFixed</b> (bool newFixed)</td></tr>
+<tr class="separator:a04dd6e59a5a64eefdb67c21874b8ccca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ca3a8db631b00497ff0aa23e1ebcc24"><td class="memItemLeft" align="right" valign="top"><a id="a4ca3a8db631b00497ff0aa23e1ebcc24"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>hideSource</b> () const</td></tr>
+<tr class="separator:a4ca3a8db631b00497ff0aa23e1ebcc24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fbc38c4ef97735027abd7db972a5026"><td class="memItemLeft" align="right" valign="top"><a id="a1fbc38c4ef97735027abd7db972a5026"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setHideSource</b> (bool newHideSource)</td></tr>
+<tr class="separator:a1fbc38c4ef97735027abd7db972a5026"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72b1d1e4fc1c8d70d9f9fb2c34ea078c"><td class="memItemLeft" align="right" valign="top"><a id="a72b1d1e4fc1c8d70d9f9fb2c34ea078c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isTextureProvider</b> () const override</td></tr>
+<tr class="separator:a72b1d1e4fc1c8d70d9f9fb2c34ea078c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f51b784e3cc7696e28be1396aa8284c"><td class="memItemLeft" align="right" valign="top"><a id="a3f51b784e3cc7696e28be1396aa8284c"></a>
+QSGTextureProvider *&#160;</td><td class="memItemRight" valign="bottom"><b>textureProvider</b> () const override</td></tr>
+<tr class="separator:a3f51b784e3cc7696e28be1396aa8284c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:ae4a69f5dbe82018f25f340ef7141037f"><td class="memItemLeft" align="right" valign="top"><a id="ae4a69f5dbe82018f25f340ef7141037f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>itemChange</b> (ItemChange, const ItemChangeData &amp;) override</td></tr>
+<tr class="separator:ae4a69f5dbe82018f25f340ef7141037f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7a781884e28d002d38b4e5c49889b0f"><td class="memItemLeft" align="right" valign="top"><a id="ad7a781884e28d002d38b4e5c49889b0f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>geometryChanged</b> (const <a class="elRef" href="http://doc.qt.io/qt-5/qrectf.html">QRectF</a> &amp;newGeometry, const <a class="elRef" href="http://doc.qt.io/qt-5/qrectf.html">QRectF</a> &amp;oldGeometry) override</td></tr>
+<tr class="separator:ad7a781884e28d002d38b4e5c49889b0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85bd57404d721505e31361fb3682c47c"><td class="memItemLeft" align="right" valign="top"><a id="a85bd57404d721505e31361fb3682c47c"></a>
+QSGNode *&#160;</td><td class="memItemRight" valign="bottom"><b>updatePaintNode</b> (QSGNode *old, UpdatePaintNodeData *) override</td></tr>
+<tr class="separator:a85bd57404d721505e31361fb3682c47c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a310550badb8d67cbd6f679e1525777c0"><td class="memItemLeft" align="right" valign="top"><a id="a310550badb8d67cbd6f679e1525777c0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>componentComplete</b> () override</td></tr>
+<tr class="separator:a310550badb8d67cbd6f679e1525777c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae791bc858201dbbf028478b2a32becf9"><td class="memItemLeft" align="right" valign="top"><a id="ae791bc858201dbbf028478b2a32becf9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>releaseResources</b> () override</td></tr>
+<tr class="separator:ae791bc858201dbbf028478b2a32becf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:a16877dad68d2dc2208fb4f10807d196d"><td class="memItemLeft" align="right" valign="top"><a id="a16877dad68d2dc2208fb4f10807d196d"></a>
+QQuickItem *&#160;</td><td class="memItemRight" valign="bottom"><b>sourceItem</b></td></tr>
+<tr class="separator:a16877dad68d2dc2208fb4f10807d196d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad72be980f9385cf8e9164391dae246a6"><td class="memItemLeft" align="right" valign="top"><a id="ad72be980f9385cf8e9164391dae246a6"></a>
+<a class="elRef" href="http://doc.qt.io/qt-5/qrectf.html">QRectF</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sourceRect</b></td></tr>
+<tr class="separator:ad72be980f9385cf8e9164391dae246a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17ab326e0aaeccceae9d6b383e6b4cde"><td class="memItemLeft" align="right" valign="top"><a id="a17ab326e0aaeccceae9d6b383e6b4cde"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>radius</b></td></tr>
+<tr class="separator:a17ab326e0aaeccceae9d6b383e6b4cde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c710b0cc7662db66f87790fabb931ff"><td class="memItemLeft" align="right" valign="top"><a id="a4c710b0cc7662db66f87790fabb931ff"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>fixed</b></td></tr>
+<tr class="separator:a4c710b0cc7662db66f87790fabb931ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9578d76686304c3fb82f4a8164905e1e"><td class="memItemLeft" align="right" valign="top"><a id="a9578d76686304c3fb82f4a8164905e1e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>hideSource</b></td></tr>
+<tr class="separator:a9578d76686304c3fb82f4a8164905e1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p><a class="el" href="classDQuickItemViewport.html" title="DQuickItemViewport 类是根据 sourceItem 属性设定的 QQuickItem 作为绘制时的材质来源，这个行为依赖于 QQuickItem::textureProvider 提供...">DQuickItemViewport</a> 类是根据 <em>sourceItem</em> 属性设定的 <em>QQuickItem</em> 作为绘制时的材质来源，这个行为依赖于 <em>QQuickItem::textureProvider</em> 提供组件的 材质。故可将qml的 Image 和 ShaderEffectSource 作为 sourceItem 使用。</p>
+<p>源材质的区域受 <em>sourceRect</em> 属性控制。此属性的坐标相对于 <em>sourceItem，当属性未</em> 设置时，坐标默认为 (0, 0)，大小则跟随 DQuickItemViewport。此外，当 <em>fixed</em> 的值 为 false 时，源材质的位置还会受到 <a class="el" href="classDQuickItemViewport.html" title="DQuickItemViewport 类是根据 sourceItem 属性设定的 QQuickItem 作为绘制时的材质来源，这个行为依赖于 QQuickItem::textureProvider 提供...">DQuickItemViewport</a> 相对于 <em>sourceItem</em> 的位置 的影响，即当 <em>fixed</em> 为 false 且 <em>sourceRect</em> 的坐标为 (0, 0) 时，源材质的位置 是 <a class="el" href="classDQuickItemViewport.html" title="DQuickItemViewport 类是根据 sourceItem 属性设定的 QQuickItem 作为绘制时的材质来源，这个行为依赖于 QQuickItem::textureProvider 提供...">DQuickItemViewport</a> 在窗口坐标系中对 <em>sourceItem</em> 的投影，且绘制时也会实时跟随。 当 <em>radius</em> 属性为 0 时，将直接使用 <em>QSGImageNode</em> 作为渲染节点，当其值大于 0 时，将使用 <a class="elRef" href="http://doc.qt.io/qt-5/qpainter.html">QPainter</a> 渲染按 radius 的值绘制一张圆角 <a class="elRef" href="http://doc.qt.io/qt-5/qimage.html">QImage</a> 资源，并将其作为 mask 材质跟 <em>sourceItem</em> 的材质一起运算，并且会使用自定义的片段着色器为材质实现圆角效果。 </p>
+<dl class="section see"><dt>参见</dt><dd>QQuickItem::textureProvider </dd>
+<dd>
+QQuickItem::isTextureProvider </dd></dl>
+</div><hr/>该类的文档由以下文件生成:<ul>
+<li>dtkdeclarative/src/<a class="el" href="dquickitemviewport_8h_source.html">dquickitemviewport.h</a></li>
+<li>dtkdeclarative/src/dquickitemviewport.cpp</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classDQuickItemViewport.html">DQuickItemViewport</a></li>
+    <li class="footer">文档生成时间:2023-01-13-07:39  +00</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

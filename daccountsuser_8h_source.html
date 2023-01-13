@@ -1,0 +1,364 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: dtksystemsettings/include/accounts/daccountsuser.h 源文件</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="https://github.com/linuxdeepin/dtkdoc" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('daccountsuser_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">daccountsuser.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="daccountsuser_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-FileCopyrightText: 2022 Uniontech Software Technology Co., Ltd.</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// SPDX-License-Identifier: LGPL-3.0-or-later</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="daccountstypes_8h.html">daccountstypes.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;QDateTime&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;QUrl&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;QObject&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;DExpected&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">using</span> AccountsReminderInfo = DTK_ACCOUNTS_NAMESPACE::ReminderInfo;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">using</span> AccountsPasswdExpirInfo = <a class="code" href="daccountstypes_8h.html#a2651e54bd02bf7eab446d1071467e26a">DTK_ACCOUNTS_NAMESPACE::PasswdExpirInfo</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;DACCOUNTS_BEGIN_NAMESPACE</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;DCORE_USE_NAMESPACE</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">class </span><a class="code" href="classDAccountsUserPrivate.html">DAccountsUserPrivate</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classDAccountsUser.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDtk_1_1Accounts_1_1DAccountsUser.html">DAccountsUser</a> : <span class="keyword">public</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">Q_OBJECT</a></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classDAccountsUser.html#ac9e22cbd24c56843b3c9ad086a0f3935">   25</a></span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classDtk_1_1Accounts_1_1DAccountsUser.html">DAccountsUser</a>();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(<a class="code" href="daccountstypes_8h.html#ac50c4ac7f80a43c2fadc5fab8cbd2cd7">AccountTypes</a> <a class="code" href="classDAccountsUser.html#ac9e22cbd24c56843b3c9ad086a0f3935">accountType</a> READ <a class="code" href="classDAccountsUser.html#ac9e22cbd24c56843b3c9ad086a0f3935">accountType</a>)</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(<span class="keywordtype">bool</span> <a class="code" href="classDAccountsUser.html#aeca164fd4a8aab5d87f63981e09045a4">automaticLogin</a> READ <a class="code" href="classDAccountsUser.html#aeca164fd4a8aab5d87f63981e09045a4">automaticLogin</a> WRITE <a class="code" href="classDAccountsUser.html#ae84dce8ac8e218c41ce9ed44516efe44">setAutomaticLogin</a> NOTIFY <a class="code" href="classDAccountsUser.html#ae30338c8a757982a296c8b99495eee4d">automaticLoginChanged</a>)</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> <a class="code" href="classDAccountsUser.html#a524a54c5d09fb233dbad3832b2614285">fullName</a> READ <a class="code" href="classDAccountsUser.html#a524a54c5d09fb233dbad3832b2614285">fullName</a> WRITE <a class="code" href="classDAccountsUser.html#aecfd41c41734249e1a2c5f44b9c00cd7">setFullName</a>)</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(quint64 <a class="code" href="classDAccountsUser.html#a3623a885aa8fb1903a81f6f1ac164383">GID</a> READ <a class="code" href="classDAccountsUser.html#a3623a885aa8fb1903a81f6f1ac164383">GID</a>)</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(quint64 <a class="code" href="classDAccountsUser.html#a961ffa9ab4dac1e6ffd151d25aba6e56">UID</a> READ <a class="code" href="classDAccountsUser.html#a961ffa9ab4dac1e6ffd151d25aba6e56">UID</a>)</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> <a class="code" href="classDAccountsUser.html#a039e5fe7280b33cafa2a67f62e542068">groups</a> READ <a class="code" href="classDAccountsUser.html#a039e5fe7280b33cafa2a67f62e542068">groups</a> WRITE <a class="code" href="classDAccountsUser.html#a6bb9b15fab15d637979c5beb16caa47b">setGroups</a> NOTIFY <a class="code" href="classDAccountsUser.html#a821de4d5b21e7c9576cc03dbcac6eb44">groupsChanged</a>)</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qlist.html">QList&lt;QByteArray&gt;</a> <a class="code" href="classDAccountsUser.html#ac35d09685fb3454218ff27364fb46352">layoutList</a> READ <a class="code" href="classDAccountsUser.html#ac35d09685fb3454218ff27364fb46352">layoutList</a> WRITE <a class="code" href="classDAccountsUser.html#a92ff34e44eac43dd2fb06f26bca2755f">setLayoutList</a> NOTIFY <a class="code" href="classDAccountsUser.html#af213213b880f35e06ff46ca5970962da">layoutListChanged</a>)</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> <a class="code" href="classDAccountsUser.html#a26fae08b2338a66f48d747b79f70e1bb">homeDir</a> READ <a class="code" href="classDAccountsUser.html#a26fae08b2338a66f48d747b79f70e1bb">homeDir</a> WRITE <a class="code" href="classDAccountsUser.html#a43c3511bc014ed74864cd4983eb640e2">setHomeDir</a>)</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qlist.html">QList&lt;QByteArray&gt;</a> <a class="code" href="classDAccountsUser.html#a834249e01051094b6468f3829ee022bf">iconFileList</a> READ <a class="code" href="classDAccountsUser.html#a834249e01051094b6468f3829ee022bf">iconFileList</a> NOTIFY <a class="code" href="classDAccountsUser.html#ab73fff8d79c6298967a4561626395e39">iconFileListChanged</a>)</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qurl.html">QUrl</a> <a class="code" href="classDAccountsUser.html#a5faa922aef14f2428077d967d963237f">iconFile</a> READ <a class="code" href="classDAccountsUser.html#a5faa922aef14f2428077d967d963237f">iconFile</a> WRITE <a class="code" href="classDAccountsUser.html#a40f09ae8b25763dd34b3eb87ab5075bd">setIconFile</a> NOTIFY <a class="code" href="classDAccountsUser.html#a40aaf2a6d31e8e713cb7ba0ae10ed475">iconFileChanged</a>)</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a> <a class="code" href="classDAccountsUser.html#a9fa648dc0f3069850db3beefc8eddf1b">layout</a> READ <a class="code" href="classDAccountsUser.html#a9fa648dc0f3069850db3beefc8eddf1b">layout</a> WRITE <a class="code" href="classDAccountsUser.html#a17db66542665db799c5d9421f43a98be">setLayout</a> NOTIFY <a class="code" href="classDAccountsUser.html#ac291fed022ee34fbfce554c8613765ec">layoutChanged</a>)</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a> <a class="code" href="classDAccountsUser.html#a256491f30ecd2fd859202a77bba47eea">locale</a> READ <a class="code" href="classDAccountsUser.html#a256491f30ecd2fd859202a77bba47eea">locale</a> WRITE <a class="code" href="classDAccountsUser.html#addf728935878a3d24161d8170ad208e3">setLocale</a> NOTIFY <a class="code" href="classDAccountsUser.html#a30728d020213048f3c5a505412d1cb61">localeChanged</a>)</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(<span class="keywordtype">bool</span> <a class="code" href="classDAccountsUser.html#a4f3b1a4b8398f9dfc33176110faef542">locked</a> READ <a class="code" href="classDAccountsUser.html#a4f3b1a4b8398f9dfc33176110faef542">locked</a> WRITE <a class="code" href="classDAccountsUser.html#ac4268f4f5f128b47c106c9fca7ebdacf">setLocked</a> NOTIFY <a class="code" href="classDAccountsUser.html#a2d5ca453444c5e63e2c73607e4e7f082">lockedChanged</a>)</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(qint32 <a class="code" href="classDAccountsUser.html#add5c3127eeb9b4ee8811e5d27722d39b">maxPasswordAge</a> READ <a class="code" href="classDAccountsUser.html#add5c3127eeb9b4ee8811e5d27722d39b">maxPasswordAge</a> WRITE <a class="code" href="classDAccountsUser.html#a0fe2b0a287768aa409e5646b9a5a14fa">setMaxPasswordAge</a> NOTIFY <a class="code" href="classDAccountsUser.html#a2b22ec6790c91fc1ecadf0510331386e">maxPasswordAgeChanged</a>)</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> <a class="code" href="classDAccountsUser.html#a6ca60ba6f2666052801eb636fecfc6c5">passwordHint</a> READ <a class="code" href="classDAccountsUser.html#a6ca60ba6f2666052801eb636fecfc6c5">passwordHint</a> WRITE <a class="code" href="classDAccountsUser.html#ae2b87908cf6103cb2f99a7cdc4c653b2">setPasswordHint</a> NOTIFY <a class="code" href="classDAccountsUser.html#af7df4a3b12b7047d650e5c616fd3fed1">passwordHintChanged</a>)</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qdatetime.html">QDateTime</a> <a class="code" href="classDAccountsUser.html#a4e0f4ca8785dcf27515b78f98778ebb5">passwordLastChange</a> READ <a class="code" href="classDAccountsUser.html#a4e0f4ca8785dcf27515b78f98778ebb5">passwordLastChange</a>)</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(<a class="code" href="daccountstypes_8h.html#a0258837169dfd39818c05e644fc3dbdf">PasswdStatus</a> <a class="code" href="classDAccountsUser.html#a1f57a6b837919bef3a61b42fb1af9fa0">passwordStatus</a> READ <a class="code" href="classDAccountsUser.html#a1f57a6b837919bef3a61b42fb1af9fa0">passwordStatus</a>)</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> <a class="code" href="classDAccountsUser.html#a877a3fa5fc42f9d947f084adc816b631">shell</a> READ <a class="code" href="classDAccountsUser.html#a877a3fa5fc42f9d947f084adc816b631">shell</a> WRITE <a class="code" href="classDAccountsUser.html#add56ea7668f20712b9e10ef377782bcd">setShell</a>)</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a> <a class="code" href="classDAccountsUser.html#a45fc78b23fe3bdb50abe8b94dca569ba">UUID</a> READ <a class="code" href="classDAccountsUser.html#a45fc78b23fe3bdb50abe8b94dca569ba">UUID</a>)</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a> <a class="code" href="classDAccountsUser.html#a136a980d53f28794b6e7e0c51cc7ee06">userName</a> READ <a class="code" href="classDAccountsUser.html#a136a980d53f28794b6e7e0c51cc7ee06">userName</a>)</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(<span class="keywordtype">bool</span> <a class="code" href="classDAccountsUser.html#aa9fd5283c04da02e622e7bf92eeeb476">noPasswdLogin</a> READ <a class="code" href="classDAccountsUser.html#aa9fd5283c04da02e622e7bf92eeeb476">noPasswdLogin</a> WRITE <a class="code" href="classDAccountsUser.html#ab6598c24a96ff504e39ba97df54857ce">setNopasswdLogin</a> NOTIFY <a class="code" href="classDAccountsUser.html#ae54eace5f952d3a3ef1fc160d7b3362f">noPasswdLoginChanged</a>)</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qdatetime.html">QDateTime</a> <a class="code" href="classDAccountsUser.html#a6e9a06d91b08d901486bfe7174632956">loginTime</a> READ <a class="code" href="classDAccountsUser.html#a6e9a06d91b08d901486bfe7174632956">loginTime</a>)</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qdatetime.html">QDateTime</a> <a class="code" href="classDAccountsUser.html#adb930898cb31ce730885ee0e6b84ed89">createdTime</a> READ <a class="code" href="classDAccountsUser.html#adb930898cb31ce730885ee0e6b84ed89">createdTime</a>)</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="daccountstypes_8h.html#ac50c4ac7f80a43c2fadc5fab8cbd2cd7">AccountTypes</a> <a class="code" href="classDAccountsUser.html#ac9e22cbd24c56843b3c9ad086a0f3935">accountType</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classDAccountsUser.html#aeca164fd4a8aab5d87f63981e09045a4">automaticLogin</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> <a class="code" href="classDAccountsUser.html#a524a54c5d09fb233dbad3832b2614285">fullName</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    quint64 <a class="code" href="classDAccountsUser.html#a3623a885aa8fb1903a81f6f1ac164383">GID</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    quint64 <a class="code" href="classDAccountsUser.html#a961ffa9ab4dac1e6ffd151d25aba6e56">UID</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> <a class="code" href="classDAccountsUser.html#a039e5fe7280b33cafa2a67f62e542068">groups</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qlist.html">QList&lt;QByteArray&gt;</a> <a class="code" href="classDAccountsUser.html#ac35d09685fb3454218ff27364fb46352">layoutList</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> <a class="code" href="classDAccountsUser.html#a26fae08b2338a66f48d747b79f70e1bb">homeDir</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qlist.html">QList&lt;QByteArray&gt;</a> <a class="code" href="classDAccountsUser.html#a834249e01051094b6468f3829ee022bf">iconFileList</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a> <a class="code" href="classDAccountsUser.html#a5faa922aef14f2428077d967d963237f">iconFile</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a> <a class="code" href="classDAccountsUser.html#a9fa648dc0f3069850db3beefc8eddf1b">layout</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a> <a class="code" href="classDAccountsUser.html#a256491f30ecd2fd859202a77bba47eea">locale</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classDAccountsUser.html#a4f3b1a4b8398f9dfc33176110faef542">locked</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    qint32 <a class="code" href="classDAccountsUser.html#add5c3127eeb9b4ee8811e5d27722d39b">maxPasswordAge</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> <a class="code" href="classDAccountsUser.html#a6ca60ba6f2666052801eb636fecfc6c5">passwordHint</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qdatetime.html">QDateTime</a> <a class="code" href="classDAccountsUser.html#a4e0f4ca8785dcf27515b78f98778ebb5">passwordLastChange</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="daccountstypes_8h.html#a0258837169dfd39818c05e644fc3dbdf">PasswdStatus</a> <a class="code" href="classDAccountsUser.html#a1f57a6b837919bef3a61b42fb1af9fa0">passwordStatus</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> <a class="code" href="classDAccountsUser.html#a877a3fa5fc42f9d947f084adc816b631">shell</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a> <a class="code" href="classDAccountsUser.html#a45fc78b23fe3bdb50abe8b94dca569ba">UUID</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a> <a class="code" href="classDAccountsUser.html#a136a980d53f28794b6e7e0c51cc7ee06">userName</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classDAccountsUser.html#aa9fd5283c04da02e622e7bf92eeeb476">noPasswdLogin</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qdatetime.html">QDateTime</a> <a class="code" href="classDAccountsUser.html#a6e9a06d91b08d901486bfe7174632956">loginTime</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qdatetime.html">QDateTime</a> <a class="code" href="classDAccountsUser.html#adb930898cb31ce730885ee0e6b84ed89">createdTime</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">public</span> slots:</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="classDtk_1_1Core_1_1DExpected.html">DExpected&lt;void&gt;</a> <a class="code" href="classDAccountsUser.html#ae84dce8ac8e218c41ce9ed44516efe44">setAutomaticLogin</a>(<span class="keyword">const</span> <span class="keywordtype">bool</span> enabled);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <a class="code" href="classDtk_1_1Core_1_1DExpected.html">DExpected&lt;void&gt;</a> <a class="code" href="classDAccountsUser.html#aecfd41c41734249e1a2c5f44b9c00cd7">setFullName</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;newfullname);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <a class="code" href="classDtk_1_1Core_1_1DExpected.html">DExpected&lt;void&gt;</a> <a class="code" href="classDAccountsUser.html#a6bb9b15fab15d637979c5beb16caa47b">setGroups</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> &amp;newgroups);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <a class="code" href="classDtk_1_1Core_1_1DExpected.html">DExpected&lt;void&gt;</a> <a class="code" href="classDAccountsUser.html#a92ff34e44eac43dd2fb06f26bca2755f">setLayoutList</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qlist.html">QList&lt;QByteArray&gt;</a> &amp;newlayouts);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <a class="code" href="classDtk_1_1Core_1_1DExpected.html">DExpected&lt;void&gt;</a> <a class="code" href="classDAccountsUser.html#a43c3511bc014ed74864cd4983eb640e2">setHomeDir</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;newhomedir);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <a class="code" href="classDtk_1_1Core_1_1DExpected.html">DExpected&lt;void&gt;</a> <a class="code" href="classDAccountsUser.html#a40f09ae8b25763dd34b3eb87ab5075bd">setIconFile</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qurl.html">QUrl</a> &amp;newiconURL);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <a class="code" href="classDtk_1_1Core_1_1DExpected.html">DExpected&lt;void&gt;</a> <a class="code" href="classDAccountsUser.html#a17db66542665db799c5d9421f43a98be">setLayout</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a> &amp;newlayout);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <a class="code" href="classDtk_1_1Core_1_1DExpected.html">DExpected&lt;void&gt;</a> <a class="code" href="classDAccountsUser.html#addf728935878a3d24161d8170ad208e3">setLocale</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a> &amp;newlocale);  <span class="comment">// TODO:这个方法只能由控制中心调用</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <a class="code" href="classDtk_1_1Core_1_1DExpected.html">DExpected&lt;void&gt;</a> <a class="code" href="classDAccountsUser.html#ac4268f4f5f128b47c106c9fca7ebdacf">setLocked</a>(<span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code" href="classDAccountsUser.html#a4f3b1a4b8398f9dfc33176110faef542">locked</a>);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <a class="code" href="classDtk_1_1Core_1_1DExpected.html">DExpected&lt;void&gt;</a> <a class="code" href="classDAccountsUser.html#a0fe2b0a287768aa409e5646b9a5a14fa">setMaxPasswordAge</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> newndays);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <a class="code" href="classDtk_1_1Core_1_1DExpected.html">DExpected&lt;void&gt;</a> <a class="code" href="classDAccountsUser.html#a91f50ab0c1adaa4acc3738b0c90f75c3">setPassword</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a> &amp;newpassword);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <a class="code" href="classDtk_1_1Core_1_1DExpected.html">DExpected&lt;void&gt;</a> <a class="code" href="classDAccountsUser.html#ae2b87908cf6103cb2f99a7cdc4c653b2">setPasswordHint</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;newpasswordhint);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="code" href="classDtk_1_1Core_1_1DExpected.html">DExpected&lt;void&gt;</a> <a class="code" href="classDAccountsUser.html#add56ea7668f20712b9e10ef377782bcd">setShell</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;newshellpath);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <a class="code" href="classDtk_1_1Core_1_1DExpected.html">DExpected&lt;void&gt;</a> <a class="code" href="classDAccountsUser.html#ab6598c24a96ff504e39ba97df54857ce">setNopasswdLogin</a>(<span class="keyword">const</span> <span class="keywordtype">bool</span> enabled);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <a class="code" href="classDtk_1_1Core_1_1DExpected.html">DExpected&lt;void&gt;</a> <a class="code" href="classDAccountsUser.html#ab668404f56846bf0ea57815c6d0f7424">addGroup</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;group);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <a class="code" href="classDtk_1_1Core_1_1DExpected.html">DExpected&lt;void&gt;</a> <a class="code" href="classDAccountsUser.html#a94ba66bef8a9fc87a0beba9b4ba9ab7a">deleteGroup</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;group);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <a class="code" href="classDtk_1_1Core_1_1DExpected.html">DExpected&lt;void&gt;</a> <a class="code" href="classDAccountsUser.html#affa77f80832dfe4dd0897cc6514878ae">deleteIconFile</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qurl.html">QUrl</a> &amp;iconURL);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <a class="code" href="classDtk_1_1Core_1_1DExpected.html">DExpected&lt;bool&gt;</a> <a class="code" href="classDAccountsUser.html#a7b4ef6ef03aa87beed45e21ec1cd843d">isPasswordExpired</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <a class="code" href="classDtk_1_1Core_1_1DExpected.html">DExpected&lt;AccountsReminderInfo&gt;</a> <a class="code" href="classDAccountsUser.html#adaf0fa83f40932ae7d3fef831efe2c10">getReminderInfo</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <a class="code" href="classDtk_1_1Core_1_1DExpected.html">DExpected&lt;AccountsPasswdExpirInfo&gt;</a> <a class="code" href="classDAccountsUser.html#a3a7463d61ab5230b8f26d93fb56a6e1c">passwordExpirationInfo</a>(qint64 &amp;dayLeft) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;signals:</div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="classDAccountsUser.html#ae30338c8a757982a296c8b99495eee4d">  100</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDAccountsUser.html#ae30338c8a757982a296c8b99495eee4d">automaticLoginChanged</a>(<span class="keyword">const</span> <span class="keywordtype">bool</span> enabled);</div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="classDAccountsUser.html#a821de4d5b21e7c9576cc03dbcac6eb44">  101</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDAccountsUser.html#a821de4d5b21e7c9576cc03dbcac6eb44">groupsChanged</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a> &amp;list);</div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="classDAccountsUser.html#af213213b880f35e06ff46ca5970962da">  102</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDAccountsUser.html#af213213b880f35e06ff46ca5970962da">layoutListChanged</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qlist.html">QList&lt;QByteArray&gt;</a> &amp;list);</div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="classDAccountsUser.html#ab73fff8d79c6298967a4561626395e39">  103</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDAccountsUser.html#ab73fff8d79c6298967a4561626395e39">iconFileListChanged</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qlist.html">QList&lt;QByteArray&gt;</a> &amp;list);</div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="classDAccountsUser.html#a40aaf2a6d31e8e713cb7ba0ae10ed475">  104</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDAccountsUser.html#a40aaf2a6d31e8e713cb7ba0ae10ed475">iconFileChanged</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qurl.html">QUrl</a> &amp;url);</div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="classDAccountsUser.html#ac291fed022ee34fbfce554c8613765ec">  105</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDAccountsUser.html#ac291fed022ee34fbfce554c8613765ec">layoutChanged</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a> &amp;<a class="code" href="classDAccountsUser.html#a9fa648dc0f3069850db3beefc8eddf1b">layout</a>);</div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="classDAccountsUser.html#a30728d020213048f3c5a505412d1cb61">  106</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDAccountsUser.html#a30728d020213048f3c5a505412d1cb61">localeChanged</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a> &amp;<a class="code" href="classDAccountsUser.html#a256491f30ecd2fd859202a77bba47eea">locale</a>);</div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="classDAccountsUser.html#a2d5ca453444c5e63e2c73607e4e7f082">  107</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDAccountsUser.html#a2d5ca453444c5e63e2c73607e4e7f082">lockedChanged</a>(<span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code" href="classDAccountsUser.html#a4f3b1a4b8398f9dfc33176110faef542">locked</a>);</div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="classDAccountsUser.html#a2b22ec6790c91fc1ecadf0510331386e">  108</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDAccountsUser.html#a2b22ec6790c91fc1ecadf0510331386e">maxPasswordAgeChanged</a>(<span class="keyword">const</span> qint32 age);</div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="classDAccountsUser.html#af7df4a3b12b7047d650e5c616fd3fed1">  109</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDAccountsUser.html#af7df4a3b12b7047d650e5c616fd3fed1">passwordHintChanged</a>(<span class="keyword">const</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qstring.html">QString</a> &amp;hint);</div>
+<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="classDAccountsUser.html#ae54eace5f952d3a3ef1fc160d7b3362f">  110</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDAccountsUser.html#ae54eace5f952d3a3ef1fc160d7b3362f">noPasswdLoginChanged</a>(<span class="keyword">const</span> <span class="keywordtype">bool</span> enabled);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classDtk_1_1Accounts_1_1DAccountsUser.html">DAccountsUser</a>(<span class="keyword">const</span> quint64 uid, <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#parent">parent</a> = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qscopedpointer.html">QScopedPointer&lt;DAccountsUserPrivate&gt;</a> d_ptr;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classDtk_1_1Accounts_1_1DAccountsManager.html">DAccountsManager</a>;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    Q_DECLARE_PRIVATE(<a class="code" href="classDtk_1_1Accounts_1_1DAccountsUser.html">DAccountsUser</a>)</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <a class="codeRef" href="http://doc.qt.io/qt-5/qobject.html#Q_DISABLE_COPY">Q_DISABLE_COPY</a>(<a class="code" href="classDtk_1_1Accounts_1_1DAccountsUser.html">DAccountsUser</a>)</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;};</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;DACCOUNTS_END_NAMESPACE</div>
+<div class="ttc" id="aclassDAccountsUserPrivate_html"><div class="ttname"><a href="classDAccountsUserPrivate.html">DAccountsUserPrivate</a></div><div class="ttdef"><b>Definition:</b> daccountsuser_p.h:16</div></div>
+<div class="ttc" id="aclassDAccountsUser_html_a039e5fe7280b33cafa2a67f62e542068"><div class="ttname"><a href="classDAccountsUser.html#a039e5fe7280b33cafa2a67f62e542068">DAccountsUser::groups</a></div><div class="ttdeci">QStringList groups</div><div class="ttdoc">用户所在的组</div><div class="ttdef"><b>Definition:</b> daccountsuser.h:32</div></div>
+<div class="ttc" id="aclassDAccountsUser_html_a0fe2b0a287768aa409e5646b9a5a14fa"><div class="ttname"><a href="classDAccountsUser.html#a0fe2b0a287768aa409e5646b9a5a14fa">DAccountsUser::setMaxPasswordAge</a></div><div class="ttdeci">DExpected&lt; void &gt; setMaxPasswordAge(const int newndays)</div><div class="ttdoc">设置DAccountsUser指向的用户的最大密码过期时间</div><div class="ttdef"><b>Definition:</b> daccountsuser.cpp:386</div></div>
+<div class="ttc" id="aclassDAccountsUser_html_a136a980d53f28794b6e7e0c51cc7ee06"><div class="ttname"><a href="classDAccountsUser.html#a136a980d53f28794b6e7e0c51cc7ee06">DAccountsUser::userName</a></div><div class="ttdeci">QByteArray userName</div><div class="ttdoc">用户名</div><div class="ttdef"><b>Definition:</b> daccountsuser.h:46</div></div>
+<div class="ttc" id="aclassDAccountsUser_html_a17db66542665db799c5d9421f43a98be"><div class="ttname"><a href="classDAccountsUser.html#a17db66542665db799c5d9421f43a98be">DAccountsUser::setLayout</a></div><div class="ttdeci">DExpected&lt; void &gt; setLayout(const QByteArray &amp;newlayout)</div><div class="ttdoc">设置DAccountsUser指向的用户的布局信息</div><div class="ttdef"><b>Definition:</b> daccountsuser.cpp:356</div></div>
+<div class="ttc" id="aclassDAccountsUser_html_a1f57a6b837919bef3a61b42fb1af9fa0"><div class="ttname"><a href="classDAccountsUser.html#a1f57a6b837919bef3a61b42fb1af9fa0">DAccountsUser::passwordStatus</a></div><div class="ttdeci">PasswdStatus passwordStatus</div><div class="ttdoc">密码的状态</div><div class="ttdef"><b>Definition:</b> daccountsuser.h:43</div></div>
+<div class="ttc" id="aclassDAccountsUser_html_a256491f30ecd2fd859202a77bba47eea"><div class="ttname"><a href="classDAccountsUser.html#a256491f30ecd2fd859202a77bba47eea">DAccountsUser::locale</a></div><div class="ttdeci">QByteArray locale</div><div class="ttdoc">用户当前的本地化选项</div><div class="ttdef"><b>Definition:</b> daccountsuser.h:38</div></div>
+<div class="ttc" id="aclassDAccountsUser_html_a26fae08b2338a66f48d747b79f70e1bb"><div class="ttname"><a href="classDAccountsUser.html#a26fae08b2338a66f48d747b79f70e1bb">DAccountsUser::homeDir</a></div><div class="ttdeci">QString homeDir</div><div class="ttdoc">用户的家目录</div><div class="ttdef"><b>Definition:</b> daccountsuser.h:34</div></div>
+<div class="ttc" id="aclassDAccountsUser_html_a2b22ec6790c91fc1ecadf0510331386e"><div class="ttname"><a href="classDAccountsUser.html#a2b22ec6790c91fc1ecadf0510331386e">DAccountsUser::maxPasswordAgeChanged</a></div><div class="ttdeci">void maxPasswordAgeChanged(const qint32 age)</div><div class="ttdoc">属性maxPasswordAge发生变化时触发该信号</div></div>
+<div class="ttc" id="aclassDAccountsUser_html_a2d5ca453444c5e63e2c73607e4e7f082"><div class="ttname"><a href="classDAccountsUser.html#a2d5ca453444c5e63e2c73607e4e7f082">DAccountsUser::lockedChanged</a></div><div class="ttdeci">void lockedChanged(const bool locked)</div><div class="ttdoc">属性locked发生变化时触发该信号</div></div>
+<div class="ttc" id="aclassDAccountsUser_html_a30728d020213048f3c5a505412d1cb61"><div class="ttname"><a href="classDAccountsUser.html#a30728d020213048f3c5a505412d1cb61">DAccountsUser::localeChanged</a></div><div class="ttdeci">void localeChanged(const QByteArray &amp;locale)</div><div class="ttdoc">属性locale发生变化时触发该信号</div></div>
+<div class="ttc" id="aclassDAccountsUser_html_a3623a885aa8fb1903a81f6f1ac164383"><div class="ttname"><a href="classDAccountsUser.html#a3623a885aa8fb1903a81f6f1ac164383">DAccountsUser::GID</a></div><div class="ttdeci">quint64 GID</div><div class="ttdoc">用户的组id</div><div class="ttdef"><b>Definition:</b> daccountsuser.h:30</div></div>
+<div class="ttc" id="aclassDAccountsUser_html_a3a7463d61ab5230b8f26d93fb56a6e1c"><div class="ttname"><a href="classDAccountsUser.html#a3a7463d61ab5230b8f26d93fb56a6e1c">DAccountsUser::passwordExpirationInfo</a></div><div class="ttdeci">DExpected&lt; AccountsPasswdExpirInfo &gt; passwordExpirationInfo(qint64 &amp;dayLeft) const</div><div class="ttdoc">获取DAccountsUser指向的用户的密码过期信息</div><div class="ttdef"><b>Definition:</b> daccountsuser.cpp:501</div></div>
+<div class="ttc" id="aclassDAccountsUser_html_a40aaf2a6d31e8e713cb7ba0ae10ed475"><div class="ttname"><a href="classDAccountsUser.html#a40aaf2a6d31e8e713cb7ba0ae10ed475">DAccountsUser::iconFileChanged</a></div><div class="ttdeci">void iconFileChanged(const QUrl &amp;url)</div><div class="ttdoc">属性iconFile发生变化时触发该信号</div></div>
+<div class="ttc" id="aclassDAccountsUser_html_a40f09ae8b25763dd34b3eb87ab5075bd"><div class="ttname"><a href="classDAccountsUser.html#a40f09ae8b25763dd34b3eb87ab5075bd">DAccountsUser::setIconFile</a></div><div class="ttdeci">DExpected&lt; void &gt; setIconFile(const QUrl &amp;newiconURL)</div><div class="ttdoc">设置DAccountsUser指向的用户的图标</div><div class="ttdef"><b>Definition:</b> daccountsuser.cpp:346</div></div>
+<div class="ttc" id="aclassDAccountsUser_html_a43c3511bc014ed74864cd4983eb640e2"><div class="ttname"><a href="classDAccountsUser.html#a43c3511bc014ed74864cd4983eb640e2">DAccountsUser::setHomeDir</a></div><div class="ttdeci">DExpected&lt; void &gt; setHomeDir(const QString &amp;newhomedir)</div><div class="ttdoc">设置DAccountsUser指向的用户的家目录</div><div class="ttdef"><b>Definition:</b> daccountsuser.cpp:336</div></div>
+<div class="ttc" id="aclassDAccountsUser_html_a45fc78b23fe3bdb50abe8b94dca569ba"><div class="ttname"><a href="classDAccountsUser.html#a45fc78b23fe3bdb50abe8b94dca569ba">DAccountsUser::UUID</a></div><div class="ttdeci">QByteArray UUID</div><div class="ttdoc">用户唯一的UUID</div><div class="ttdef"><b>Definition:</b> daccountsuser.h:45</div></div>
+<div class="ttc" id="aclassDAccountsUser_html_a4e0f4ca8785dcf27515b78f98778ebb5"><div class="ttname"><a href="classDAccountsUser.html#a4e0f4ca8785dcf27515b78f98778ebb5">DAccountsUser::passwordLastChange</a></div><div class="ttdeci">QDateTime passwordLastChange</div><div class="ttdoc">密码最后一次更改的时间</div><div class="ttdef"><b>Definition:</b> daccountsuser.h:42</div></div>
+<div class="ttc" id="aclassDAccountsUser_html_a4f3b1a4b8398f9dfc33176110faef542"><div class="ttname"><a href="classDAccountsUser.html#a4f3b1a4b8398f9dfc33176110faef542">DAccountsUser::locked</a></div><div class="ttdeci">bool locked</div><div class="ttdoc">是否锁定用户</div><div class="ttdef"><b>Definition:</b> daccountsuser.h:39</div></div>
+<div class="ttc" id="aclassDAccountsUser_html_a524a54c5d09fb233dbad3832b2614285"><div class="ttname"><a href="classDAccountsUser.html#a524a54c5d09fb233dbad3832b2614285">DAccountsUser::fullName</a></div><div class="ttdeci">QString fullName</div><div class="ttdoc">用户的全名</div><div class="ttdef"><b>Definition:</b> daccountsuser.h:29</div></div>
+<div class="ttc" id="aclassDAccountsUser_html_a5faa922aef14f2428077d967d963237f"><div class="ttname"><a href="classDAccountsUser.html#a5faa922aef14f2428077d967d963237f">DAccountsUser::iconFile</a></div><div class="ttdeci">QUrl iconFile</div><div class="ttdoc">用户当前的图标的路径</div><div class="ttdef"><b>Definition:</b> daccountsuser.h:36</div></div>
+<div class="ttc" id="aclassDAccountsUser_html_a6bb9b15fab15d637979c5beb16caa47b"><div class="ttname"><a href="classDAccountsUser.html#a6bb9b15fab15d637979c5beb16caa47b">DAccountsUser::setGroups</a></div><div class="ttdeci">DExpected&lt; void &gt; setGroups(const QStringList &amp;newgroups)</div><div class="ttdoc">设置DAccountsUser指向的用户所属的组</div><div class="ttdef"><b>Definition:</b> daccountsuser.cpp:312</div></div>
+<div class="ttc" id="aclassDAccountsUser_html_a6ca60ba6f2666052801eb636fecfc6c5"><div class="ttname"><a href="classDAccountsUser.html#a6ca60ba6f2666052801eb636fecfc6c5">DAccountsUser::passwordHint</a></div><div class="ttdeci">QString passwordHint</div><div class="ttdoc">密码提示</div><div class="ttdef"><b>Definition:</b> daccountsuser.h:41</div></div>
+<div class="ttc" id="aclassDAccountsUser_html_a6e9a06d91b08d901486bfe7174632956"><div class="ttname"><a href="classDAccountsUser.html#a6e9a06d91b08d901486bfe7174632956">DAccountsUser::loginTime</a></div><div class="ttdeci">QDateTime loginTime</div><div class="ttdoc">用户的登录时间</div><div class="ttdef"><b>Definition:</b> daccountsuser.h:48</div></div>
+<div class="ttc" id="aclassDAccountsUser_html_a7b4ef6ef03aa87beed45e21ec1cd843d"><div class="ttname"><a href="classDAccountsUser.html#a7b4ef6ef03aa87beed45e21ec1cd843d">DAccountsUser::isPasswordExpired</a></div><div class="ttdeci">DExpected&lt; bool &gt; isPasswordExpired() const</div><div class="ttdoc">判断DAccountsUser指向的用户的密码是否过期</div><div class="ttdef"><b>Definition:</b> daccountsuser.cpp:456</div></div>
+<div class="ttc" id="aclassDAccountsUser_html_a821de4d5b21e7c9576cc03dbcac6eb44"><div class="ttname"><a href="classDAccountsUser.html#a821de4d5b21e7c9576cc03dbcac6eb44">DAccountsUser::groupsChanged</a></div><div class="ttdeci">void groupsChanged(const QStringList &amp;list)</div><div class="ttdoc">属性groups发生变化时触发该信号</div></div>
+<div class="ttc" id="aclassDAccountsUser_html_a834249e01051094b6468f3829ee022bf"><div class="ttname"><a href="classDAccountsUser.html#a834249e01051094b6468f3829ee022bf">DAccountsUser::iconFileList</a></div><div class="ttdeci">QList&lt; QByteArray &gt; iconFileList</div><div class="ttdoc">用户的图标文件路径的列表</div><div class="ttdef"><b>Definition:</b> daccountsuser.h:35</div></div>
+<div class="ttc" id="aclassDAccountsUser_html_a877a3fa5fc42f9d947f084adc816b631"><div class="ttname"><a href="classDAccountsUser.html#a877a3fa5fc42f9d947f084adc816b631">DAccountsUser::shell</a></div><div class="ttdeci">QString shell</div><div class="ttdoc">用户的shell路径</div><div class="ttdef"><b>Definition:</b> daccountsuser.h:44</div></div>
+<div class="ttc" id="aclassDAccountsUser_html_a91f50ab0c1adaa4acc3738b0c90f75c3"><div class="ttname"><a href="classDAccountsUser.html#a91f50ab0c1adaa4acc3738b0c90f75c3">DAccountsUser::setPassword</a></div><div class="ttdeci">DExpected&lt; void &gt; setPassword(const QByteArray &amp;newpassword)</div><div class="ttdoc">设置DAccountsUser指向的用户的密码</div><div class="ttdef"><b>Definition:</b> daccountsuser.cpp:396</div></div>
+<div class="ttc" id="aclassDAccountsUser_html_a92ff34e44eac43dd2fb06f26bca2755f"><div class="ttname"><a href="classDAccountsUser.html#a92ff34e44eac43dd2fb06f26bca2755f">DAccountsUser::setLayoutList</a></div><div class="ttdeci">DExpected&lt; void &gt; setLayoutList(const QList&lt; QByteArray &gt; &amp;newlayouts)</div><div class="ttdoc">设置DAccountsUser指向的用户的布局列表</div><div class="ttdef"><b>Definition:</b> daccountsuser.cpp:322</div></div>
+<div class="ttc" id="aclassDAccountsUser_html_a94ba66bef8a9fc87a0beba9b4ba9ab7a"><div class="ttname"><a href="classDAccountsUser.html#a94ba66bef8a9fc87a0beba9b4ba9ab7a">DAccountsUser::deleteGroup</a></div><div class="ttdeci">DExpected&lt; void &gt; deleteGroup(const QString &amp;group)</div><div class="ttdoc">把DAccountsUser指向的用户从某个用户组中移除</div><div class="ttdef"><b>Definition:</b> daccountsuser.cpp:436</div></div>
+<div class="ttc" id="aclassDAccountsUser_html_a961ffa9ab4dac1e6ffd151d25aba6e56"><div class="ttname"><a href="classDAccountsUser.html#a961ffa9ab4dac1e6ffd151d25aba6e56">DAccountsUser::UID</a></div><div class="ttdeci">quint64 UID</div><div class="ttdoc">用户的用户id</div><div class="ttdef"><b>Definition:</b> daccountsuser.h:31</div></div>
+<div class="ttc" id="aclassDAccountsUser_html_a9fa648dc0f3069850db3beefc8eddf1b"><div class="ttname"><a href="classDAccountsUser.html#a9fa648dc0f3069850db3beefc8eddf1b">DAccountsUser::layout</a></div><div class="ttdeci">QByteArray layout</div><div class="ttdoc">用户的当前的键盘布局</div><div class="ttdef"><b>Definition:</b> daccountsuser.h:37</div></div>
+<div class="ttc" id="aclassDAccountsUser_html_aa9fd5283c04da02e622e7bf92eeeb476"><div class="ttname"><a href="classDAccountsUser.html#aa9fd5283c04da02e622e7bf92eeeb476">DAccountsUser::noPasswdLogin</a></div><div class="ttdeci">bool noPasswdLogin</div><div class="ttdoc">是否可以无密码登录</div><div class="ttdef"><b>Definition:</b> daccountsuser.h:47</div></div>
+<div class="ttc" id="aclassDAccountsUser_html_ab6598c24a96ff504e39ba97df54857ce"><div class="ttname"><a href="classDAccountsUser.html#ab6598c24a96ff504e39ba97df54857ce">DAccountsUser::setNopasswdLogin</a></div><div class="ttdeci">DExpected&lt; void &gt; setNopasswdLogin(const bool enabled)</div><div class="ttdoc">设置DAccountsUser指向的用户是否能无密码登录</div><div class="ttdef"><b>Definition:</b> daccountsuser.cpp:282</div></div>
+<div class="ttc" id="aclassDAccountsUser_html_ab668404f56846bf0ea57815c6d0f7424"><div class="ttname"><a href="classDAccountsUser.html#ab668404f56846bf0ea57815c6d0f7424">DAccountsUser::addGroup</a></div><div class="ttdeci">DExpected&lt; void &gt; addGroup(const QString &amp;group)</div><div class="ttdoc">把DAccountsUser指向的用户加入某个用户组</div><div class="ttdef"><b>Definition:</b> daccountsuser.cpp:426</div></div>
+<div class="ttc" id="aclassDAccountsUser_html_ab73fff8d79c6298967a4561626395e39"><div class="ttname"><a href="classDAccountsUser.html#ab73fff8d79c6298967a4561626395e39">DAccountsUser::iconFileListChanged</a></div><div class="ttdeci">void iconFileListChanged(const QList&lt; QByteArray &gt; &amp;list)</div><div class="ttdoc">属性iconFileList发生变化时触发该信号</div></div>
+<div class="ttc" id="aclassDAccountsUser_html_ac291fed022ee34fbfce554c8613765ec"><div class="ttname"><a href="classDAccountsUser.html#ac291fed022ee34fbfce554c8613765ec">DAccountsUser::layoutChanged</a></div><div class="ttdeci">void layoutChanged(const QByteArray &amp;layout)</div><div class="ttdoc">属性layout发生变化时触发该信号</div></div>
+<div class="ttc" id="aclassDAccountsUser_html_ac35d09685fb3454218ff27364fb46352"><div class="ttname"><a href="classDAccountsUser.html#ac35d09685fb3454218ff27364fb46352">DAccountsUser::layoutList</a></div><div class="ttdeci">QList&lt; QByteArray &gt; layoutList</div><div class="ttdoc">用户的键盘布局列表</div><div class="ttdef"><b>Definition:</b> daccountsuser.h:33</div></div>
+<div class="ttc" id="aclassDAccountsUser_html_ac4268f4f5f128b47c106c9fca7ebdacf"><div class="ttname"><a href="classDAccountsUser.html#ac4268f4f5f128b47c106c9fca7ebdacf">DAccountsUser::setLocked</a></div><div class="ttdeci">DExpected&lt; void &gt; setLocked(const bool locked)</div><div class="ttdoc">设置是否锁定当前用户</div><div class="ttdef"><b>Definition:</b> daccountsuser.cpp:376</div></div>
+<div class="ttc" id="aclassDAccountsUser_html_ac9e22cbd24c56843b3c9ad086a0f3935"><div class="ttname"><a href="classDAccountsUser.html#ac9e22cbd24c56843b3c9ad086a0f3935">DAccountsUser::accountType</a></div><div class="ttdeci">AccountTypes accountType</div><div class="ttdoc">用户类型</div><div class="ttdef"><b>Definition:</b> daccountsuser.h:27</div></div>
+<div class="ttc" id="aclassDAccountsUser_html_adaf0fa83f40932ae7d3fef831efe2c10"><div class="ttname"><a href="classDAccountsUser.html#adaf0fa83f40932ae7d3fef831efe2c10">DAccountsUser::getReminderInfo</a></div><div class="ttdeci">DExpected&lt; AccountsReminderInfo &gt; getReminderInfo() const</div><div class="ttdoc">获取DAccountsUser指向的用户的一些信息</div><div class="ttdef"><b>Definition:</b> daccountsuser.cpp:464</div></div>
+<div class="ttc" id="aclassDAccountsUser_html_adb930898cb31ce730885ee0e6b84ed89"><div class="ttname"><a href="classDAccountsUser.html#adb930898cb31ce730885ee0e6b84ed89">DAccountsUser::createdTime</a></div><div class="ttdeci">QDateTime createdTime</div><div class="ttdoc">用户的~/.bash_logout或配置文件的ctime</div><div class="ttdef"><b>Definition:</b> daccountsuser.h:49</div></div>
+<div class="ttc" id="aclassDAccountsUser_html_add56ea7668f20712b9e10ef377782bcd"><div class="ttname"><a href="classDAccountsUser.html#add56ea7668f20712b9e10ef377782bcd">DAccountsUser::setShell</a></div><div class="ttdeci">DExpected&lt; void &gt; setShell(const QString &amp;newshellpath)</div><div class="ttdoc">设置DAccountsUser指向的用户的shell</div><div class="ttdef"><b>Definition:</b> daccountsuser.cpp:416</div></div>
+<div class="ttc" id="aclassDAccountsUser_html_add5c3127eeb9b4ee8811e5d27722d39b"><div class="ttname"><a href="classDAccountsUser.html#add5c3127eeb9b4ee8811e5d27722d39b">DAccountsUser::maxPasswordAge</a></div><div class="ttdeci">qint32 maxPasswordAge</div><div class="ttdoc">密码最大的过期时间时间</div><div class="ttdef"><b>Definition:</b> daccountsuser.h:40</div></div>
+<div class="ttc" id="aclassDAccountsUser_html_addf728935878a3d24161d8170ad208e3"><div class="ttname"><a href="classDAccountsUser.html#addf728935878a3d24161d8170ad208e3">DAccountsUser::setLocale</a></div><div class="ttdeci">DExpected&lt; void &gt; setLocale(const QByteArray &amp;newlocale)</div><div class="ttdoc">设置DAccountsUser指向的用户的本地化信息</div><div class="ttdef"><b>Definition:</b> daccountsuser.cpp:366</div></div>
+<div class="ttc" id="aclassDAccountsUser_html_ae2b87908cf6103cb2f99a7cdc4c653b2"><div class="ttname"><a href="classDAccountsUser.html#ae2b87908cf6103cb2f99a7cdc4c653b2">DAccountsUser::setPasswordHint</a></div><div class="ttdeci">DExpected&lt; void &gt; setPasswordHint(const QString &amp;newpasswordhint)</div><div class="ttdoc">设置DAccountsUser指向的用户的密码提示</div><div class="ttdef"><b>Definition:</b> daccountsuser.cpp:406</div></div>
+<div class="ttc" id="aclassDAccountsUser_html_ae30338c8a757982a296c8b99495eee4d"><div class="ttname"><a href="classDAccountsUser.html#ae30338c8a757982a296c8b99495eee4d">DAccountsUser::automaticLoginChanged</a></div><div class="ttdeci">void automaticLoginChanged(const bool enabled)</div><div class="ttdoc">属性automaticLogin发生变化时触发该信号</div></div>
+<div class="ttc" id="aclassDAccountsUser_html_ae54eace5f952d3a3ef1fc160d7b3362f"><div class="ttname"><a href="classDAccountsUser.html#ae54eace5f952d3a3ef1fc160d7b3362f">DAccountsUser::noPasswdLoginChanged</a></div><div class="ttdeci">void noPasswdLoginChanged(const bool enabled)</div><div class="ttdoc">属性noPasswdLogin发生变化时触发该信号</div></div>
+<div class="ttc" id="aclassDAccountsUser_html_ae84dce8ac8e218c41ce9ed44516efe44"><div class="ttname"><a href="classDAccountsUser.html#ae84dce8ac8e218c41ce9ed44516efe44">DAccountsUser::setAutomaticLogin</a></div><div class="ttdeci">DExpected&lt; void &gt; setAutomaticLogin(const bool enabled)</div><div class="ttdoc">设置当前用户是否使用自动登录</div><div class="ttdef"><b>Definition:</b> daccountsuser.cpp:292</div></div>
+<div class="ttc" id="aclassDAccountsUser_html_aeca164fd4a8aab5d87f63981e09045a4"><div class="ttname"><a href="classDAccountsUser.html#aeca164fd4a8aab5d87f63981e09045a4">DAccountsUser::automaticLogin</a></div><div class="ttdeci">bool automaticLogin</div><div class="ttdoc">是否可以自动登录</div><div class="ttdef"><b>Definition:</b> daccountsuser.h:28</div></div>
+<div class="ttc" id="aclassDAccountsUser_html_aecfd41c41734249e1a2c5f44b9c00cd7"><div class="ttname"><a href="classDAccountsUser.html#aecfd41c41734249e1a2c5f44b9c00cd7">DAccountsUser::setFullName</a></div><div class="ttdeci">DExpected&lt; void &gt; setFullName(const QString &amp;newfullname)</div><div class="ttdoc">设置DAccountsUser指向的用户的全名</div><div class="ttdef"><b>Definition:</b> daccountsuser.cpp:302</div></div>
+<div class="ttc" id="aclassDAccountsUser_html_af213213b880f35e06ff46ca5970962da"><div class="ttname"><a href="classDAccountsUser.html#af213213b880f35e06ff46ca5970962da">DAccountsUser::layoutListChanged</a></div><div class="ttdeci">void layoutListChanged(const QList&lt; QByteArray &gt; &amp;list)</div><div class="ttdoc">属性layoutList发生变化时触发该信号</div></div>
+<div class="ttc" id="aclassDAccountsUser_html_af7df4a3b12b7047d650e5c616fd3fed1"><div class="ttname"><a href="classDAccountsUser.html#af7df4a3b12b7047d650e5c616fd3fed1">DAccountsUser::passwordHintChanged</a></div><div class="ttdeci">void passwordHintChanged(const QString &amp;hint)</div><div class="ttdoc">属性passwordHint发生变化时触发该信号</div></div>
+<div class="ttc" id="aclassDAccountsUser_html_affa77f80832dfe4dd0897cc6514878ae"><div class="ttname"><a href="classDAccountsUser.html#affa77f80832dfe4dd0897cc6514878ae">DAccountsUser::deleteIconFile</a></div><div class="ttdeci">DExpected&lt; void &gt; deleteIconFile(const QUrl &amp;iconURL)</div><div class="ttdoc">将DAccountsUser指向的用户的某个图标删除</div><div class="ttdef"><b>Definition:</b> daccountsuser.cpp:446</div></div>
+<div class="ttc" id="aclassDtk_1_1Accounts_1_1DAccountsManager_html"><div class="ttname"><a href="classDtk_1_1Accounts_1_1DAccountsManager.html">DAccountsManager</a></div><div class="ttdoc">管理用户账户信息</div></div>
+<div class="ttc" id="aclassDtk_1_1Accounts_1_1DAccountsUser_html"><div class="ttname"><a href="classDtk_1_1Accounts_1_1DAccountsUser.html">DAccountsUser</a></div><div class="ttdoc">用户属性相关信息的封装类</div></div>
+<div class="ttc" id="aclassDtk_1_1Core_1_1DExpected_html"><div class="ttname"><a href="classDtk_1_1Core_1_1DExpected.html">Dtk::Core::DExpected</a></div><div class="ttdoc">模板类Dtk::Core::DExpected提供存储两个值之一的方式。Dtk::Core::DExpected的对象要么保有一个期待的T类型值，要么保有一个不期待的E类型值，不会没有值。</div><div class="ttdef"><b>Definition:</b> dexpected.h:376</div></div>
+<div class="ttc" id="adaccountstypes_8h_html"><div class="ttname"><a href="daccountstypes_8h.html">daccountstypes.h</a></div><div class="ttdoc">在daccountstypes.h中定义了一些dtkaccounts模块中所用到的自定义类型。</div></div>
+<div class="ttc" id="adaccountstypes_8h_html_a0258837169dfd39818c05e644fc3dbdf"><div class="ttname"><a href="daccountstypes_8h.html#a0258837169dfd39818c05e644fc3dbdf">PasswdStatus</a></div><div class="ttdeci">PasswdStatus</div><div class="ttdef"><b>Definition:</b> daccountstypes.h:16</div></div>
+<div class="ttc" id="adaccountstypes_8h_html_a2651e54bd02bf7eab446d1071467e26a"><div class="ttname"><a href="daccountstypes_8h.html#a2651e54bd02bf7eab446d1071467e26a">PasswdExpirInfo</a></div><div class="ttdeci">PasswdExpirInfo</div><div class="ttdef"><b>Definition:</b> daccountstypes.h:18</div></div>
+<div class="ttc" id="adaccountstypes_8h_html_ac50c4ac7f80a43c2fadc5fab8cbd2cd7"><div class="ttname"><a href="daccountstypes_8h.html#ac50c4ac7f80a43c2fadc5fab8cbd2cd7">AccountTypes</a></div><div class="ttdeci">AccountTypes</div><div class="ttdef"><b>Definition:</b> daccountstypes.h:14</div></div>
+<div class="ttc" id="aqbytearray_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qbytearray.html">QByteArray</a></div></div>
+<div class="ttc" id="aqdatetime_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qdatetime.html">QDateTime</a></div></div>
+<div class="ttc" id="aqlist_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qlist.html">QList&lt; QByteArray &gt;</a></div></div>
+<div class="ttc" id="aqobject_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html">QObject</a></div></div>
+<div class="ttc" id="aqobject_html_Q_DISABLE_COPY"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_DISABLE_COPY">QObject::Q_DISABLE_COPY</a></div><div class="ttdeci">Q_DISABLE_COPY(Class)</div></div>
+<div class="ttc" id="aqobject_html_Q_OBJECT"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_OBJECT">QObject::Q_OBJECT</a></div><div class="ttdeci">Q_OBJECTQ_OBJECT</div></div>
+<div class="ttc" id="aqobject_html_Q_PROPERTY"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#Q_PROPERTY">QObject::Q_PROPERTY</a></div><div class="ttdeci">Q_PROPERTY(...)</div></div>
+<div class="ttc" id="aqobject_html_parent"><div class="ttname"><a href="http://doc.qt.io/qt-5/qobject.html#parent">QObject::parent</a></div><div class="ttdeci">QObject * parent() const const</div></div>
+<div class="ttc" id="aqscopedpointer_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qscopedpointer.html">QScopedPointer&lt; DAccountsUserPrivate &gt;</a></div></div>
+<div class="ttc" id="aqstring_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstring.html">QString</a></div></div>
+<div class="ttc" id="aqstringlist_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qstringlist.html">QStringList</a></div></div>
+<div class="ttc" id="aqurl_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qurl.html">QUrl</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_e026ef78b2e8057db961dedccd38eaa6.html">dtksystemsettings</a></li><li class="navelem"><a class="el" href="dir_74c8413d5fcf4a8002824ebffa0726a6.html">include</a></li><li class="navelem"><a class="el" href="dir_5b050e905e63219added1ce12d3b2c64.html">accounts</a></li><li class="navelem"><a class="el" href="daccountsuser_8h.html">daccountsuser.h</a></li>
+    <li class="footer">文档生成时间:2023-01-13-07:39  +00</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

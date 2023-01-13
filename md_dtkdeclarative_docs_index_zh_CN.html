@@ -1,0 +1,376 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BEGIN opengraph metadata -->
+    <meta property="og:title" content="deepin doc doc go" />
+    <meta property="og:image"
+        content="#" />
+    <meta property="og:description"
+        content="深度文档SIG维护的开发者文档主题." />
+    <meta property="og:url" content="https://github.com/linuxdeepin/doxygen-theme" />
+    <!-- END opengraph metadata -->
+    <title>DTK Docs: dtkdeclarative</title>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./deepin.png" />
+    <link href="/deepin-custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/deepin-custom.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./dynsections.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="./doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="./toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="./doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="https://github.com/linuxdeepin/dtkdoc" class="github-corner" title="View source on GitHub"
+        target="_blank">
+        <!--TODO:需要修改此处连接指向项目地址 -->
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">DTK Docs
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('md_dtkdeclarative_docs_index_zh_CN.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="PageDoc"><div class="header">
+  <div class="headertitle">
+<div class="title">dtkdeclarative </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><h1><a class="anchor" id="autotoc_md49"></a>
+简介</h1>
+<p>dtkdeclarative 是基于 QtQuick及QtQml实现的开发控件库，它是用于代替已有的dtkwidget所开发的全新的DTK模块，其代码以 qtdeclarative 为基础进行开发，实现了对QML已有控件的覆盖（包含Qt Quick Controls 2中的所有控件），增加了大量在 DTK 环境下友好显示的视觉特效和颜色风格。该模块通过Qt插件的形式新增了名为“Chameleon”的样式插件，安装在 <code>/usr/lib/x86_64-linux-gnu/qt5/qml/QtQuick/Controls.2/Chameleon</code> 目录(由qml-module-qtquick-controls2-styles-chameleon包提供)。此外，与dtkwidget类似，dtkdeclarative也提供了一些QtQuick中所没有的功能，此类功能都以QML接口的形式提供，包含在 org.deepin.dtk 1.0 中，安装在 <code>/usr/lib/x86_64-linux-gnu/qt5/qml/org/deepin/dtk/</code> 目录（由libdtkdeclarative5包提供）。使用 dtkdeclarative 在 DTK 环境下编程具备一下特点：</p>
+<ol type="1">
+<li>原始的 <a class="elRef" href="http://doc.qt.io/qt-5/qt.html">Qt</a> 和 Qml 代码风格</li>
+<li>适配传统 Qml 的所有 API</li>
+<li>简单快速的界面开发接口</li>
+<li>统一的控件主题风格</li>
+<li>丰富的特效和色彩</li>
+</ol>
+<p>dtkdeclative 设计图如下：<br  />
+ <img src="images/introduction.png" alt="introduction" class="inline"/></p>
+<h1><a class="anchor" id="autotoc_md50"></a>
+与dtkwidget的区别</h1>
+<p>dtkwidget基于QtWidgets模块开发，其与dtkdeclarative的区别主要体现在QtWidgets和QtQuick/QtQml的差异。 QtWidget使用 C++ 语言开发，其控件都继承于 <a class="elRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a> 并进行拓展，通过QPainter 在风格插件中进行样式的统一绘制。由于 C++ 语言的特殊性，其信号基于回调函数的方式实现，其事件处理基于多态的特性实现。因此在代码复杂度和冗余度上都有明显的劣势。 QtQuick/QtQml基于Qml语言开发，其特点是通过树状模型来指定父子类别，通过属性绑定来响应变化。除此之外，它能兼容JavaScript和C++语言的特性，保证开发过程的高效和快速，减少QtWidget编程中信号槽链接的繁琐程度。<br  />
+ 在使用dtkdeclarative之前，应当先熟悉QtQuick的开发模式，其最大的特点是使用“声明式语言（QML）”来描述UI的状态，而不用关心UI具体的渲染过程。下面是一些小例子：<br  />
+</p>
+<h2><a class="anchor" id="autotoc_md51"></a>
+渲染方式的区别</h2>
+<ol type="1">
+<li>使用dtkwidget显示一个100x100大小的红色矩形 <div class="fragment"><div class="line"><span class="keyword">class </span>Rectangle : <span class="keyword">public</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a></div>
+<div class="line">{</div>
+<div class="line"><span class="keyword">private</span>:</div>
+<div class="line">    <span class="keywordtype">void</span> <a class="codeRef" href="http://doc.qt.io/qt-5/qwidget.html#paintEvent">paintEvent</a>(<a class="codeRef" href="http://doc.qt.io/qt-5/qpaintevent.html">QPaintEvent</a> *)<span class="keyword"> override </span>{</div>
+<div class="line">        <a class="codeRef" href="http://doc.qt.io/qt-5/qpainter.html">QPainter</a> pa(<span class="keyword">this</span>);</div>
+<div class="line">        pa.fillRect(0, 0, 100, 100, <a class="codeRef" href="http://doc.qt.io/qt-5/qt.html#GlobalColor-enum">Qt::red</a>);</div>
+<div class="line">    }</div>
+<div class="line">};</div>
+<div class="ttc" id="aqpainter_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qpainter.html">QPainter</a></div></div>
+<div class="ttc" id="aqpaintevent_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qpaintevent.html">QPaintEvent</a></div></div>
+<div class="ttc" id="aqt_html_GlobalColor-enum"><div class="ttname"><a href="http://doc.qt.io/qt-5/qt.html#GlobalColor-enum">Qt::red</a></div><div class="ttdeci">red</div></div>
+<div class="ttc" id="aqwidget_html"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a></div></div>
+<div class="ttc" id="aqwidget_html_paintEvent"><div class="ttname"><a href="http://doc.qt.io/qt-5/qwidget.html#paintEvent">QWidget::paintEvent</a></div><div class="ttdeci">virtual void paintEvent(QPaintEvent *event)</div></div>
+</div><!-- fragment --></li>
+</ol>
+<p>2.使用dtkdeclarative显示一个100x100大小的红色矩形</p>
+<div class="fragment"><div class="line">Rectangle {</div>
+<div class="line">    width: 100</div>
+<div class="line">    height: 100</div>
+<div class="line">    color: &quot;red&quot;</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md52"></a>
+布局方式上的区别</h2>
+<ol type="1">
+<li><p class="startli">使用dtkwidget可以通过布局控件实现</p>
+<p class="startli">```cpp int main(int argc, char *argv[]) { <a class="elRef" href="http://doc.qt.io/qt-5/qapplication.html">QApplication</a> app(argc, argv);</p>
+<p class="startli"><a class="elRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a> mainWidget; mainWidget.resize(200, 200); <a class="elRef" href="http://doc.qt.io/qt-5/qhboxlayout.html">QHBoxLayout</a> layout1(&amp;mainWidget); <a class="elRef" href="http://doc.qt.io/qt-5/qpushbutton.html">QPushButton</a> btn1("Button 1"); layout1.addWidget(&amp;btn1); <a class="elRef" href="http://doc.qt.io/qt-5/qvboxlayout.html">QVBoxLayout</a> layout2; <a class="elRef" href="http://doc.qt.io/qt-5/qpushbutton.html">QPushButton</a> btn2("Button 2"); <a class="elRef" href="http://doc.qt.io/qt-5/qlineedit.html">QLineEdit</a> lineEdit; layout2.addWidget(&amp;btn2); layout2.addWidget(&amp;lineEdit); layout1.addLayout(&amp;layout2); mainWidget.show();</p>
+<p class="startli">return app.exec(); } ```</p>
+</li>
+<li><p class="startli">使用dtkdeclarative通过锚布局或布局器</p>
+<p class="startli">2.1. 使用锚布局</p>
+<p class="startli">```qml Rectangle { width: 400</p>
+<p class="startli">height: 200 color: "blue"</p>
+<p class="startli"><a class="el" href="classButton.html" title="提供一种行云设计风格的 Button 控件.">Button</a> { anchors.left: parent.left anchors.verticalCenter: parent.verticalCenter text: "Button 1" }</p>
+<p class="startli"><a class="el" href="classButton.html" title="提供一种行云设计风格的 Button 控件.">Button</a> { anchors.right: parent.right anchors.verticalCenter: parent.verticalCenter text: "Button 2" }</p>
+<p class="startli">Label { text: "Center" color: "white" anchors.centerIn: parent } } ```</p>
+<p class="startli">2.2. 使用布局器</p>
+<p class="startli">```qml </p><pre class="fragment">RowLayout {
+    spacing: 20
+    Button {
+        text: "Button 1"
+        // 设置Layout的附加属性
+        Layout.fillWidth: true
+        Layout.minimumWidth: 50
+        Layout.preferredWidth: 100
+        Layout.maximumWidth: 300
+        Layout.minimumHeight: 150
+    }
+
+    Label {
+        text: "Center"
+    }
+
+    Button {
+        text: "Button 2"
+        // 设置Layout的附加属性
+        Layout.fillWidth: true
+        Layout.minimumWidth: 100
+        Layout.preferredWidth: 200
+        Layout.preferredHeight: 100
+    }
+}
+</pre><p> ```</p>
+</li>
+</ol>
+<h2><a class="anchor" id="autotoc_md53"></a>
+信号槽连接上的区别</h2>
+<ol type="1">
+<li><p class="startli">dtkwidget使用<code>QObject::connection</code>方式连接</p>
+<p class="startli">```cpp int main(int argc, char *argv[]) { <a class="elRef" href="http://doc.qt.io/qt-5/qapplication.html">QApplication</a> app(argc, argv);</p>
+<p class="startli"><a class="elRef" href="http://doc.qt.io/qt-5/qwidget.html">QWidget</a> widget; widget.resize(300, 300); <a class="elRef" href="http://doc.qt.io/qt-5/qpushbutton.html">QPushButton</a> btn("Button", &amp;widget); btn.move(50, 50); <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#connect">QObject::connect</a>(&amp;btn, &amp;<a class="elRef" href="http://doc.qt.io/qt-5/qabstractbutton.html#clicked">QPushButton::clicked</a>, []() { qDebug() &lt;&lt; "Button Clicked..."; }); widget.show(); } ```</p>
+</li>
+<li><p class="startli">dtkdeclarative使用function或Connections实现</p>
+<p class="startli">使用<code>on&lt;Signal&gt;</code>的方式连接</p>
+<p class="startli">```qml <a class="el" href="classButton.html" title="提供一种行云设计风格的 Button 控件.">Button</a> { anchors.centerIn: parent text: "Button" // on&lt;Signal&gt; 进行信号槽连接 onClicked: { console.log("Button clicked....."); } } ```</p>
+<p class="startli">使用Connections 方式连接 该种方式应用于同一个信号链接到多个槽函数或者链接作用域不一样的多个组件。</p>
+<p class="startli">```qml <a class="el" href="classButton.html" title="提供一种行云设计风格的 Button 控件.">Button</a> { id: btn anchors.centerIn: parent text: "Button" }</p>
+<p class="startli">// 5.15以下版本使用 Connections { target: btn onClicked: { console.log("Button clicked...") } } // 5.15以上版本使用 Connections { target: btn function onClicked() { console.log("Button clicked...") } } ```</p>
+</li>
+</ol>
+<h1><a class="anchor" id="autotoc_md54"></a>
+入门资料</h1>
+<p><a href="https://doc.qt.io/qt-5/qtquick-bestpractices.html">QtQml和QtQuick的最佳编程方式</a></p>
+<p>本质上dtkdeclarative就是对于qt的qml模块的扩展，使用qt的资料学习qml再对照本文档进行开发是一种行之有效的手段</p>
+<p>同时我们提供了对应的开发规范，详细介绍了对于DCI图标，调色板和DConfig的使用，以方便开发者开发: <a class="el" href="DevSpecification.html">开发规范</a></p>
+<h1><a class="anchor" id="autotoc_md55"></a>
+依赖关系</h1>
+<p>dtkdeclarative项目依赖于dtk的部分项目以及qtqml的相关依赖。项目中使用到dtkdeclarative项目时，构建运行环境是项目迁移的开始。</p>
+<p>由于 dtkdeclarative 被用于替代 dtkwidget 而实现的快速高效的UI编程开发，因此它并不依赖于 dtkwidget 而依赖于 dtkcommon、dtkcore以及dtkgui项目， 这是构建dtkdeclarative时所必需的依赖项，对于DTK的无标题以及圆角窗口等属性，在程序运行和显示时需要依赖 qt5platform-plugins 项目内容，用于深度适配 DTK 开发工具。</p>
+<p>除此之外，dtkdeclarative需要依赖 QtQml以及QtQuick 相关内容，如 qtdeclarative 和 qtquickcontrols2 。 对于某些运行依赖，即某些qml控件插件，dtkdeclarative也需要依赖安装，如qml-module-qtquick-shape和qml-module-qtgraphicaleffects。</p>
+<p>下表列出dtkdeclarative项目所依赖大部分的库文件： </p><table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">组件   </th><th class="markdownTableHeadNone">依赖项    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">dtkcommon   </td><td class="markdownTableBodyNone">libdtkcommon-dev    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">dtkcore   </td><td class="markdownTableBodyNone">libdtkcore-dev    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">dtkcore   </td><td class="markdownTableBodyNone">libdtkcore5    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">dtkcore   </td><td class="markdownTableBodyNone">libqt5dbus5    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">dtkcore   </td><td class="markdownTableBodyNone">libqt5xml5    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">dtkgui   </td><td class="markdownTableBodyNone">libdtkgui5    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">dtkgui   </td><td class="markdownTableBodyNone">libdtkgui-dev    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">dtkgui   </td><td class="markdownTableBodyNone">libqt5gui5    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">dtkgui   </td><td class="markdownTableBodyNone">libqt5dbus5    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">dtkgui   </td><td class="markdownTableBodyNone">libqt5xml5    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">dtkgui   </td><td class="markdownTableBodyNone">qt5-image-formats-plugins    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="elRef" href="http://doc.qt.io/qt-5/qt.html">Qt</a>   </td><td class="markdownTableBodyNone">qtbase5-dev    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="elRef" href="http://doc.qt.io/qt-5/qt.html">Qt</a>   </td><td class="markdownTableBodyNone">qtdeclarative5-dev    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="elRef" href="http://doc.qt.io/qt-5/qt.html">Qt</a>   </td><td class="markdownTableBodyNone">libqt5quickcontrols2-5    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">qt5-platform-plugins    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">qml-module-qtgraphicaleffects    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">qml-module-qtquick-shapes   </td></tr>
+</table>
+<h1><a class="anchor" id="autotoc_md56"></a>
+使用教程</h1>
+<p>dtkdeclarative和Chameleon均为Qt的插件，所以都是动态加载的，不需要进行链接，只需考虑在运行时使Qt引擎能够找到并加载插件。</p>
+<ul>
+<li>工程文件：不需要引用dtkdeclarative库信息。</li>
+<li>风格适配：当成功配置dtk环境后，除非手动指定其他风格，否则所使用的控件风格将全部自动使用行云设计风格。</li>
+<li>控件中导入dtk相关组件，应确保在最后引入，**可取别名以防被Qt原生同名控件覆盖**，例如：</li>
+</ul>
+<div class="fragment"><div class="line">import org.deepin.dtk 1.0</div>
+</div><!-- fragment --><div class="fragment"><div class="line">import org.deepin.dtk 1.0 as D</div>
+</div><!-- fragment --><p>引用dtk控件，例如: 使用Button控件和dtk提供的字体绑定。</p>
+<div class="fragment"><div class="line">Button {</div>
+<div class="line">    font: D.DTK.fontManager.t6</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md57"></a>
+简单的qml项目创建方式：</h2>
+<p>（由于qt官方已经从QMake切换到CMake,且在完成文档之前，dtk项目组已经完成了向CMake项目的迁移，故不提供QMake项目的创建的方式） （因为版本缘故 下列截图可能存在风格主题以及其他差异请以你安装的qtcreator为准）</p>
+<ol type="1">
+<li><p class="startli">QtCreator新建qml项目 <img src="images/init1.png" alt="新建项目" class="inline"/></p>
+<p class="startli">需要选择构建系统为CMake</p>
+<p class="startli"><img src="images/init2.png" alt="选择cmake" class="inline"/></p>
+<p class="startli">然后qt会自动给你创建一个例子</p>
+<p class="startli">如果出现例子不能运行的情况，显示qtquick not found 则需要检查 qml-module-qtquick-window2 是否被正确安装</p>
+</li>
+<li><p class="startli">指定风格控件</p>
+<p class="startli">在cmake中添加和修改：</p>
+<p class="startli">```cmake find_package(Qt5QuickControls2) # 添加</p>
+</li>
+</ol>
+<h1><a class="anchor" id="autotoc_md58"></a>
+修改连接库</h1>
+<p>target_link_libraries(untitled1 PRIVATE <a class="elRef" href="http://doc.qt.io/qt-5/qt.html">Qt</a>${QT_VERSION_MAJOR}::Core <a class="elRef" href="http://doc.qt.io/qt-5/qt.html">Qt</a>${QT_VERSION_MAJOR}::Quick <a class="elRef" href="http://doc.qt.io/qt-5/qt.html">Qt</a>${QT_VERSION_MAJOR}::QuickControls2)</p>
+<p>```</p>
+<p>在main函数中手动指定：</p>
+<p>```cpp #include &lt;QGuiApplication&gt; #include &lt;QQmlApplicationEngine&gt; #include &lt;QQuickStyle&gt; //添加</p>
+<p>#include &lt;DGuiApplicationHelper&gt;</p>
+<p>int main(int argc, char *argv[]) { #if QT_VERSION &lt; QT_VERSION_CHECK(6, 0, 0) QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling); #endif <a class="elRef" href="http://doc.qt.io/qt-5/qguiapplication.html">QGuiApplication</a> app(argc, argv); auto pt = Dtk::Gui::DGuiApplicationHelper::instance()-&gt;applicationPalette(); //添加 QQuickStyle::setStyle("Chameleon"); QQmlApplicationEngine engine; const <a class="elRef" href="http://doc.qt.io/qt-5/qurl.html">QUrl</a> url(QStringLiteral("qrc:/main.qml")); <a class="elRef" href="http://doc.qt.io/qt-5/qobject.html#connect">QObject::connect</a>(&amp;engine, &amp;QQmlApplicationEngine::objectCreated, &amp;app, [url](<a class="elRef" href="http://doc.qt.io/qt-5/qobject.html">QObject</a> *obj, const <a class="elRef" href="http://doc.qt.io/qt-5/qurl.html">QUrl</a> &amp;objUrl) { if (!obj &amp;&amp; url == objUrl) <a class="elRef" href="http://doc.qt.io/qt-5/qcoreapplication.html#exit">QCoreApplication::exit</a>(-1); }, <a class="elRef" href="http://doc.qt.io/qt-5/qt.html#ConnectionType-enum">Qt::QueuedConnection</a>); engine.load(url);</p>
+<p>return app.exec(); }</p>
+<p>```</p>
+<p>然后在QML中导入dtk库(前提：dtk组件被正确安装)，并开启dtk窗口圆角特性</p>
+<p>main.qml： </p><div class="fragment"><div class="line">import QtQuick 2.15</div>
+<div class="line">import QtQuick.Window 2.15</div>
+<div class="line">import org.deepin.dtk 1.0</div>
+<div class="line"> </div>
+<div class="line">ApplicationWindow {</div>
+<div class="line">    width: 640</div>
+<div class="line">    height: 480</div>
+<div class="line">    visible: true</div>
+<div class="line">    title: qsTr(&quot;Hello World&quot;)</div>
+<div class="line"> </div>
+<div class="line">    flags: Qt.Window | Qt.WindowMinMaxButtonsHint | Qt.WindowCloseButtonHint | Qt.WindowTitleHint</div>
+<div class="line">    header: TitleBar {</div>
+<div class="line"> </div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --><p> 得到效果如下：</p>
+<p><img src="images/init3.png" alt="" class="inline"/></p>
+<p>实际效果可能和这个效果会有差异（因为在测试多系统的兼容性，此代码是在debian sid + gnome + dtk上运行） </p>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">文档生成时间:2023-01-13-07:39  +00</li>
+    <li class="footer">Doxygen Version <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">制作者:deepin doc doc go SIG</li>
+    <li class="footer">文档使用CC-BY-4.0共享 </a>
+  </ul>
+</div>
+</body>
+</html>

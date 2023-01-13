@@ -1,0 +1,25 @@
+var classDOcrPluginInterface =
+[
+    [ "DOcrPluginInterface", "classDOcrPluginInterface.html#af8feca5fbb50655997dad7a660d41ee1", null ],
+    [ "~DOcrPluginInterface", "classDOcrPluginInterface.html#a747bf554f6d0761d3075ca1f919c1a06", null ],
+    [ "analyze", "classDOcrPluginInterface.html#a9f2b4c017a34ef674020d2884ccf1b6e", null ],
+    [ "authKeys", "classDOcrPluginInterface.html#a6f7e610532b028701dccf2f6c2666e4b", null ],
+    [ "breakAnalyze", "classDOcrPluginInterface.html#a9945f0d8fd6a048b730def22d74f7a15", null ],
+    [ "charBoxes", "classDOcrPluginInterface.html#aaa7eef404719de86e2b940f846218155", null ],
+    [ "hardwareSupportList", "classDOcrPluginInterface.html#aed98db095a214a94b5707af907ce7e9f", null ],
+    [ "imageCached", "classDOcrPluginInterface.html#aea2f0a576bb16d55d61203d0bcebe535", null ],
+    [ "imageFileSupportFormats", "classDOcrPluginInterface.html#abddecc24defacc5abd005ded7a09317c", null ],
+    [ "isRunning", "classDOcrPluginInterface.html#a8c87497a1880c3a90cbbb6bb00fb7d15", null ],
+    [ "languageSupport", "classDOcrPluginInterface.html#ad19402bd60ee8de8d83ce02ec67079d9", null ],
+    [ "pluginExpandParam", "classDOcrPluginInterface.html#ade0d33f5c6429dfa886fe14ce6783873", null ],
+    [ "resultFromBox", "classDOcrPluginInterface.html#aeac7cbfeb72377c6703d8802d6f4b72a", null ],
+    [ "setAuth", "classDOcrPluginInterface.html#ac8ea992ac95d51188928638a45446f49", null ],
+    [ "setImage", "classDOcrPluginInterface.html#ab61f27c31284d9d68597c477694ef0b8", null ],
+    [ "setImageFile", "classDOcrPluginInterface.html#aa55b0c34977acc8accef70a3021e2285", null ],
+    [ "setLanguage", "classDOcrPluginInterface.html#aff3a4a5c4498e7bb7777fcd35b1dd600", null ],
+    [ "setPluginExpandParam", "classDOcrPluginInterface.html#a78ac2d98189ba94c0f020d851f382ae9", null ],
+    [ "setUseHardware", "classDOcrPluginInterface.html#a6ba0144ec63e748854be167f35babd97", null ],
+    [ "setUseMaxThreadsCount", "classDOcrPluginInterface.html#ab35effb64b4bb2edac87efe5f13fbec4", null ],
+    [ "simpleResult", "classDOcrPluginInterface.html#ac136eccc12506d22f889070965003fec", null ],
+    [ "textBoxes", "classDOcrPluginInterface.html#a7912626724e0a637536be846cf1145b7", null ]
+];
